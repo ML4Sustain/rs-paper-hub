@@ -681,7 +681,7 @@ const LANG = {
     exportRange: 'Export range:',
     includeAbstracts: 'Include abstracts',
     downloadBib: 'Download .bib',
-    dsAllPapers: 'All Papers', dsVLM: 'Vision-Language Model',
+    ds_all: 'All Papers', ds_vlm: 'Vision-Language Model', ds_agent: 'Agent',
     noBibtex: 'No BibTeX available',
     scholar: 'Scholar',
     before: 'Before', more: 'more',
@@ -724,7 +724,7 @@ const LANG = {
     exportRange: '导出范围：',
     includeAbstracts: '包含摘要',
     downloadBib: '下载 .bib',
-    dsAllPapers: '全部论文', dsVLM: '视觉语言模型',
+    ds_all: '全部论文', ds_vlm: '视觉语言模型', ds_agent: 'Agent',
     noBibtex: '暂无引用信息',
     scholar: '谷歌学术',
     before: '早于', more: '更多',
@@ -836,8 +836,8 @@ function applyLang() {
   if (exportAvailLabel) exportAvailLabel.textContent = t('filteredAvail');
   // Data source select
   const dsSel = document.getElementById('dataSource');
-  [...dsSel.options].forEach((opt, i) => {
-    opt.textContent = i === 0 ? t('dsAllPapers') : t('dsVLM');
+  [...dsSel.options].forEach(opt => {
+    opt.textContent = t('ds_' + opt.value);
   });
   // Lang toggle button text
   const langBtn = document.getElementById('langToggle');
@@ -873,6 +873,7 @@ const TASK_NAMES = {
 const DATA_SOURCES = [
   { label: 'All Papers', file: 'papers.json', key: 'all' },
   { label: 'Vision-Language Model', file: 'papers_vlm.json', key: 'vlm' },
+  { label: 'Agent', file: 'papers_agent.json', key: 'agent' },
 ];
 let allPapers = [];
 let filtered = [];
@@ -886,21 +887,26 @@ let fuzzySearch = false;
 
 function initDataSourceSelect() {
   const sel = document.getElementById('dataSource');
-  DATA_SOURCES.forEach((ds, i) => {
+  DATA_SOURCES.forEach(ds => {
     const o = document.createElement('option');
-    o.value = ds.file;
-    o.textContent = i === 0 ? t('dsAllPapers') : t('dsVLM');
+    o.value = ds.key;
+    o.textContent = t('ds_' + ds.key);
     sel.appendChild(o);
   });
   // Restore last selection from URL hash or default
   const hash = location.hash.replace('#', '');
   const matchedDs = DATA_SOURCES.find(d => d.key === hash);
-  if (matchedDs) sel.value = matchedDs.file;
+  if (matchedDs) sel.value = matchedDs.key;
   sel.addEventListener('change', () => {
-    const ds = DATA_SOURCES.find(d => d.file === sel.value);
+    const ds = DATA_SOURCES.find(d => d.key === sel.value);
     location.hash = ds ? ds.key : '';
-    loadData(sel.value);
+    loadDataFromSource(ds);
   });
+}
+
+function loadDataFromSource(ds) {
+  if (!ds) ds = DATA_SOURCES[0];
+  loadData(ds.file);
 }
 
 async function loadData(file) {
@@ -962,7 +968,9 @@ async function loadData(file) {
 
 async function init() {
   initDataSourceSelect();
-  await loadData(document.getElementById('dataSource').value);
+  const selKey = document.getElementById('dataSource').value;
+  const ds = DATA_SOURCES.find(d => d.key === selKey) || DATA_SOURCES[0];
+  await loadData(ds.file);
   // Update recent papers badge
   renderRecentList();
   // Apply saved language
