@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RS Paper Hub</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<style>
+  :root {
+    --bg: #f5f7fa;
+    --card: #ffffff;
+    --primary: #4f46e5;
+    --primary-light: #e0e7ff;
+    --text: #1e293b;
+    --text-secondary: #64748b;
+    --border: #e2e8f0;
+    --tag-bg: #f1f5f9;
+    --shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: white; padding: 32px 24px; text-align: center;
+  }
+  .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 4px; }
+  .header p { opacity: 0.85; font-size: 14px; }
+
+  /* Stats bar */
+  .stats-bar {
+    display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
+    padding: 16px 24px; background: var(--card); border-bottom: 1px solid var(--border);
+  }
+  .stat { text-align: center; min-width: 100px; }
+  .stat .num { font-size: 22px; font-weight: 700; color: var(--primary); }
+  .stat .label { font-size: 12px; color: var(--text-secondary); }
+
+  /* Controls */
+  .controls {
+    max-width: 1200px; margin: 20px auto; padding: 0 20px;
+    display: flex; gap: 12px; flex-wrap: wrap; align-items: center;
+  }
+  .search-box {
+    flex: 1; min-width: 260px; padding: 10px 16px; border: 1px solid var(--border);
+    border-radius: 8px; font-size: 14px; outline: none; transition: border 0.2s;
+  }
+  .search-box:focus { border-color: var(--primary); }
+  select {
+    padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px;
+    font-size: 14px; background: var(--card); outline: none; cursor: pointer;
+  }
+  .result-count { font-size: 13px; color: var(--text-secondary); white-space: nowrap; }
+
+  /* Charts area */
+  .charts {
+    max-width: 1200px; margin: 0 auto 20px; padding: 0 20px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+  }
+  .chart-card {
+    background: var(--card); border-radius: 12px; padding: 20px;
+    box-shadow: var(--shadow); border: 1px solid var(--border);
+  }
+  .chart-card h3 { font-size: 14px; color: var(--text-secondary); margin-bottom: 12px; }
+  .bar-chart { display: flex; flex-direction: column; gap: 6px; }
+  .bar-row { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+  .bar-label { width: 140px; text-align: right; flex-shrink: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .bar-track { flex: 1; height: 22px; background: var(--tag-bg); border-radius: 4px; overflow: hidden; position: relative; }
+  .bar-fill { height: 100%; background: linear-gradient(90deg, #4f46e5, #7c3aed); border-radius: 4px; transition: width 0.4s; min-width: 2px; }
+  .bar-value { position: absolute; right: 6px; top: 2px; font-size: 11px; color: var(--text-secondary); }
+
+  /* Paper list */
+  .paper-list { max-width: 1200px; margin: 0 auto; padding: 0 20px 40px; }
+  .paper-card {
+    background: var(--card); border-radius: 12px; padding: 20px; margin-bottom: 12px;
+    box-shadow: var(--shadow); border: 1px solid var(--border);
+    transition: box-shadow 0.2s; cursor: pointer;
+  }
+  .paper-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  .paper-title {
+    font-size: 16px; font-weight: 600; margin-bottom: 8px; color: var(--text);
+  }
+  .paper-title a { color: inherit; text-decoration: none; }
+  .paper-title a:hover { color: var(--primary); }
+  .paper-meta { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
+  .tag {
+    display: inline-block; padding: 2px 10px; border-radius: 12px;
+    font-size: 12px; background: var(--primary-light); color: var(--primary); font-weight: 500;
+  }
+  .tag.year { background: #fef3c7; color: #92400e; }
+  .tag.pub { background: #d1fae5; color: #065f46; }
+  .tag.category { background: #dbeafe; color: #1e40af; }
+  .tag.vlm { background: #fce7f3; color: #9d174d; }
+  .tag.vlm-kw { background: #ede9fe; color: #5b21b6; font-size: 11px; }
+  .paper-authors { font-size: 13px; color: var(--text-secondary); margin-bottom: 6px; }
+  .paper-abstract {
+    font-size: 13px; color: var(--text-secondary); line-height: 1.7;
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+    overflow: hidden; transition: all 0.3s;
+  }
+  .paper-abstract.expanded { -webkit-line-clamp: unset; }
+  .paper-links { margin-top: 8px; display: flex; gap: 12px; }
+  .paper-links a {
+    font-size: 12px; color: var(--primary); text-decoration: none; font-weight: 500;
+  }
+  .paper-links a:hover { text-decoration: underline; }
+
+  /* Pagination */
+  .pagination {
+    display: flex; justify-content: center; align-items: center; gap: 8px;
+    padding: 20px; flex-wrap: wrap;
+  }
+  .pagination button {
+    padding: 8px 14px; border: 1px solid var(--border); border-radius: 6px;
+    background: var(--card); cursor: pointer; font-size: 13px; transition: all 0.2s;
+  }
+  .pagination button:hover { border-color: var(--primary); color: var(--primary); }
+  .pagination button.active { background: var(--primary); color: white; border-color: var(--primary); }
+  .pagination button:disabled { opacity: 0.4; cursor: default; }
+
+  /* Sort buttons */
+  .sort-group { display: flex; gap: 0; }
+  .sort-btn {
+    padding: 10px 14px; border: 1px solid var(--border); background: var(--card);
+    font-size: 13px; cursor: pointer; transition: all 0.2s;
+  }
+  .sort-btn:first-child { border-radius: 8px 0 0 8px; }
+  .sort-btn:last-child { border-radius: 0 8px 8px 0; }
+  .sort-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
+
+  /* Toggle charts */
+  .toggle-charts {
+    padding: 8px 16px; border: 1px solid var(--border); border-radius: 8px;
+    background: var(--card); cursor: pointer; font-size: 13px;
+  }
+
+  /* Bibtex modal */
+  .modal-overlay {
+    display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5); z-index: 100; justify-content: center; align-items: center;
+  }
+  .modal-overlay.show { display: flex; }
+  .modal {
+    background: var(--card); border-radius: 12px; padding: 24px; max-width: 640px;
+    width: 90%; max-height: 80vh; overflow-y: auto; position: relative;
+  }
+  .modal h3 { margin-bottom: 12px; }
+  .modal pre {
+    background: var(--tag-bg); padding: 16px; border-radius: 8px;
+    font-size: 12px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+  }
+  .modal .close-btn {
+    position: absolute; top: 12px; right: 16px; background: none; border: none;
+    font-size: 20px; cursor: pointer; color: var(--text-secondary);
+  }
+  .modal .copy-btn {
+    margin-top: 12px; padding: 8px 16px; background: var(--primary); color: white;
+    border: none; border-radius: 6px; cursor: pointer; font-size: 13px;
+  }
+
+  @media (max-width: 768px) {
+    .charts { grid-template-columns: 1fr; }
+    .controls { flex-direction: column; }
+    .search-box { min-width: unset; width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>RS Paper Hub</h1>
+  <p>Remote Sensing Paper Collection Browser</p>
+</div>
+
+<div class="stats-bar" id="statsBar"></div>
+
+<div class="controls">
+  <select id="dataSource"></select>
+  <input class="search-box" id="searchInput" type="text" placeholder="Search title, authors, abstract, keywords...">
+  <select id="typeFilter"><option value="">All Types</option></select>
+  <select id="yearFilter"><option value="">All Years</option></select>
+  <select id="vlmFilter" style="display:none;">
+    <option value="">All VLM</option>
+    <option value="true">VLM Only</option>
+    <option value="false">Non-VLM</option>
+  </select>
+  <select id="vlmKeywordFilter" style="display:none;max-width:200px;"></select>
+  <select id="categoryFilter" style="display:none;"></select>
+  <div class="sort-group">
+    <button class="sort-btn active" data-sort="newest">Newest</button>
+    <button class="sort-btn" data-sort="oldest">Oldest</button>
+    <button class="sort-btn" data-sort="title">A-Z</button>
+  </div>
+  <button class="toggle-charts" id="toggleCharts">Charts ▼</button>
+  <span class="result-count" id="resultCount"></span>
+</div>
+
+<div class="charts" id="chartsArea" style="display: none;">
+  <div class="chart-card">
+    <h3>Papers by Year</h3>
+    <div class="bar-chart" id="yearChart"></div>
+  </div>
+  <div class="chart-card">
+    <h3>Top Types</h3>
+    <div class="bar-chart" id="typeChart"></div>
+  </div>
+</div>
+
+<div class="paper-list" id="paperList"></div>
+<div class="pagination" id="pagination"></div>
+
+<div style="text-align:center;padding:20px 0 30px;font-size:11px;color:#94a3b8;opacity:0.6;">
+  <a href='https://www.counters-free.net/' style="color:inherit;text-decoration:none;">visits:</a>
+  <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=fb6eb33e03e201b26048add495de3cda89f56796'></script>
+  <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1536583/t/5"></script>
+</div>
+
+<div class="modal-overlay" id="bibtexModal">
+  <div class="modal">
+    <button class="close-btn" onclick="closeBibtex()">&times;</button>
+    <h3>BibTeX</h3>
+    <pre id="bibtexContent"></pre>
+    <button class="copy-btn" onclick="copyBibtex()">Copy to Clipboard</button>
+  </div>
+</div>
+
+<script>
+const PER_PAGE = 20;
+const DATA_SOURCES = [
+  { label: 'All Papers', file: 'papers.json' },
+  { label: 'VLM', file: 'papers_vlm.json' },
+  { label: 'VLM Annotated', file: 'papers_vlm_annotated.json' },
+  { label: 'Cleaned', file: 'papers_cleaned.json' },
+  { label: 'Original', file: 'papers_ori.json' },
+];
+let allPapers = [];
+let filtered = [];
+let currentPage = 1;
+let chartsVisible = false;
+
+function initDataSourceSelect() {
+  const sel = document.getElementById('dataSource');
+  DATA_SOURCES.forEach(ds => {
+    const o = document.createElement('option');
+    o.value = ds.file;
+    o.textContent = ds.label;
+    sel.appendChild(o);
+  });
+  // Restore last selection from URL hash or default
+  const hash = location.hash.replace('#', '');
+  if (hash && DATA_SOURCES.some(d => d.file === hash)) sel.value = hash;
+  sel.addEventListener('change', () => { location.hash = sel.value; loadData(sel.value); });
+}
+
+async function loadData(file) {
+  const resp = await fetch('./output/' + file);
+  if (!resp.ok) { alert('Failed to load ' + file); return; }
+  const text = await resp.text();
+  allPapers = JSON.parse(text.replace(/:\s*NaN\b/g, ': null'));
+  allPapers.forEach(p => { for (const k in p) { if (p[k] === null) p[k] = ''; } });
+  // Reset filters
+  const typeSelect = document.getElementById('typeFilter');
+  const yearSelect = document.getElementById('yearFilter');
+  typeSelect.innerHTML = '<option value="">All Types</option>';
+  yearSelect.innerHTML = '<option value="">All Years</option>';
+  document.getElementById('searchInput').value = '';
+  // Show/hide VLM filters based on data
+  const hasVlm = allPapers.some(p => '_is_vlm' in p);
+  document.getElementById('vlmFilter').style.display = hasVlm ? '' : 'none';
+  document.getElementById('vlmKeywordFilter').style.display = hasVlm ? '' : 'none';
+  if (hasVlm) populateVlmKeywords();
+  else { document.getElementById('vlmFilter').value = ''; document.getElementById('vlmKeywordFilter').value = ''; }
+  // Show/hide Category filter
+  const hasCat = allPapers.some(p => p.Category);
+  const catSel = document.getElementById('categoryFilter');
+  catSel.style.display = hasCat ? '' : 'none';
+  catSel.innerHTML = '<option value="">All Categories</option>';
+  if (hasCat) {
+    const cats = {};
+    allPapers.forEach(p => { if (p.Category) cats[p.Category] = (cats[p.Category] || 0) + 1; });
+    Object.entries(cats).sort((a,b) => b[1] - a[1]).forEach(([c, n]) => {
+      const o = document.createElement('option');
+      o.value = c; o.textContent = c + ' (' + n + ')'; catSel.appendChild(o);
+    });
+  }
+  populateFilters();
+  applyFilters();
+  renderStats(allPapers);
+}
+
+async function init() {
+  initDataSourceSelect();
+  await loadData(document.getElementById('dataSource').value);
+}
+
+function cleanRegexLabel(s) {
+  return s.trim()
+    .replace(/\(\?:/g, '(')          // (?:...) -> (...)
+    .replace(/\(([^)]+)\)/g, function(_, inner) {
+      return inner.replace(/\|/g, '/');  // (a|b|c) -> a/b/c
+    })
+    .replace(/\\b/g, '')              // \b -> nothing
+    .replace(/\\s\+/g, ' ')          // \s+ -> space
+    .replace(/\[\\-\\s\]/g, '-')     // [\-\s] -> -
+    .replace(/\[\\-\\s\]\?/g, '-')   // [\-\s]? -> -
+    .replace(/\\s\+\?/g, ' ')        // \s+? -> space
+    .replace(/\.\+/g, ' ')           // .+ -> space
+    .replace(/\.\*/g, ' ')           // .* -> space
+    .replace(/\\/g, '')              // remaining backslashes
+    .replace(/[[\]^$*+?{}()]/g, '')  // leftover regex chars
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function populateVlmKeywords() {
+  const sel = document.getElementById('vlmKeywordFilter');
+  sel.innerHTML = '<option value="">All Keywords</option>';
+  // Extract readable keyword labels from regex patterns
+  const kwSet = new Set();
+  allPapers.forEach(p => {
+    const kw = p._vlm_keywords || '';
+    if (kw) kw.split(';').forEach(k => { k = k.trim(); if (k) kwSet.add(k); });
+  });
+  const cleaned = [...kwSet].map(k => ({ raw: k, label: cleanRegexLabel(k) }))
+    .sort((a, b) => a.label.localeCompare(b.label));
+  cleaned.forEach(k => {
+    const o = document.createElement('option');
+    o.value = k.raw;
+    o.textContent = k.label.substring(0, 40);
+    o.title = k.label;
+    sel.appendChild(o);
+  });
+}
+
+function populateFilters() {
+  const types = [...new Set(allPapers.map(p => p.Type).filter(Boolean))].sort();
+  const years = [...new Set(allPapers.map(p => p.Year).filter(Boolean))].sort((a,b) => b - a);
+  const typeSelect = document.getElementById('typeFilter');
+  const yearSelect = document.getElementById('yearFilter');
+  types.forEach(t => { const o = document.createElement('option'); o.value = t; o.textContent = t; typeSelect.appendChild(o); });
+  years.forEach(y => { const o = document.createElement('option'); o.value = y; o.textContent = y; yearSelect.appendChild(o); });
+}
+
+function renderStats(papers) {
+  const types = new Set(papers.map(p => p.Type).filter(Boolean));
+  const years = new Set(papers.map(p => p.Year).filter(Boolean));
+  const withCode = papers.filter(p => p.code && p.code.trim()).length;
+  document.getElementById('statsBar').innerHTML = `
+    <div class="stat"><div class="num">${papers.length}</div><div class="label">Papers</div></div>
+    <div class="stat"><div class="num">${types.size}</div><div class="label">Types</div></div>
+    <div class="stat"><div class="num">${years.size}</div><div class="label">Years</div></div>
+    <div class="stat"><div class="num">${withCode}</div><div class="label">With Code</div></div>
+  `;
+}
+
+function applyFilters() {
+  const q = document.getElementById('searchInput').value.toLowerCase().trim();
+  const type = document.getElementById('typeFilter').value;
+  const year = document.getElementById('yearFilter').value;
+
+  const vlm = document.getElementById('vlmFilter').value;
+  const vlmKw = document.getElementById('vlmKeywordFilter').value;
+  const cat = document.getElementById('categoryFilter').value;
+
+  filtered = allPapers.filter(p => {
+    if (type && p.Type !== type) return false;
+    if (year && String(p.Year) !== year) return false;
+    if (cat && p.Category !== cat) return false;
+    if (vlm === 'true' && !p._is_vlm) return false;
+    if (vlm === 'false' && p._is_vlm) return false;
+    if (vlmKw && !(p._vlm_keywords || '').includes(vlmKw)) return false;
+    if (q) {
+      const haystack = [p.Title, p.Authors, p.Abstract, p.Type, p.Subtype, p['abbr.'], p.Publication, p._vlm_keywords || ''].join(' ').toLowerCase();
+      const terms = q.split(/\s+/);
+      if (!terms.every(t => haystack.includes(t))) return false;
+    }
+    return true;
+  });
+
+  applySorting();
+  currentPage = 1;
+  render();
+  renderCharts();
+}
+
+function applySorting() {
+  const active = document.querySelector('.sort-btn.active');
+  const sort = active ? active.dataset.sort : 'newest';
+  if (sort === 'newest') filtered.sort((a,b) => (b.Year*100+b.Month) - (a.Year*100+a.Month));
+  else if (sort === 'oldest') filtered.sort((a,b) => (a.Year*100+a.Month) - (b.Year*100+b.Month));
+  else if (sort === 'title') filtered.sort((a,b) => a.Title.localeCompare(b.Title));
+}
+
+function render() {
+  document.getElementById('resultCount').textContent = `${filtered.length} papers found`;
+  const start = (currentPage - 1) * PER_PAGE;
+  const page = filtered.slice(start, start + PER_PAGE);
+  const list = document.getElementById('paperList');
+
+  list.innerHTML = page.map((p, localIdx) => {
+    const idx = start + localIdx;
+    const pubTag = p.Publication ? `<span class="tag pub">${escHtml(p.Publication.substring(0, 60))}</span>` : '';
+    const codeLink = p.code && p.code.trim() ? `<a href="${escHtml(p.code)}" target="_blank">Code</a>` : '';
+    const catTag = p.Category ? `<span class="tag category">${escHtml(p.Category)}</span>` : '';
+    const vlmTag = p._is_vlm ? '<span class="tag vlm">VLM</span>' : '';
+    const vlmKwTags = (p._vlm_keywords || '').split(';').filter(k => k.trim()).map(k => {
+      return `<span class="tag vlm-kw">${escHtml(cleanRegexLabel(k))}</span>`;
+    }).join('');
+    return `
+    <div class="paper-card" onclick="toggleAbstract(event, ${idx})">
+      <div class="paper-title"><a href="${escHtml(p.Paper_link)}" target="_blank" onclick="event.stopPropagation()">${renderLatex(p.Title)}</a></div>
+      <div class="paper-meta">
+        <span class="tag">${escHtml(p.Type)}</span>
+        ${p.Subtype ? `<span class="tag">${escHtml(p.Subtype.substring(0, 50))}</span>` : ''}
+        <span class="tag year">${p.Year}-${String(p.Month).padStart(2,'0')}</span>
+        ${pubTag}
+        ${catTag}${vlmTag}${vlmKwTags}
+      </div>
+      <div class="paper-authors">${escHtml(p.Authors)}</div>
+      <div class="paper-abstract" id="abs-${idx}">${renderLatex(p.Abstract)}</div>
+      <div class="paper-links">
+        <a href="${escHtml(p.Paper_link)}" target="_blank" onclick="event.stopPropagation()">Paper</a>
+        ${codeLink}
+        <a href="javascript:void(0)" onclick="event.stopPropagation(); showBibtex(${idx})">BibTeX</a>
+      </div>
+    </div>`;
+  }).join('');
+
+  renderPagination();
+  // Render LaTeX math formulas after DOM update
+  requestAnimationFrame(renderMathInPage);
+}
+
+function toggleAbstract(e, idx) {
+  if (e.target.tagName === 'A') return;
+  const el = document.getElementById('abs-' + idx);
+  if (el) el.classList.toggle('expanded');
+}
+
+function renderPagination() {
+  const total = Math.ceil(filtered.length / PER_PAGE);
+  if (total <= 1) { document.getElementById('pagination').innerHTML = ''; return; }
+  let html = `<button onclick="goPage(${currentPage-1})" ${currentPage===1?'disabled':''}>‹ Prev</button>`;
+
+  const pages = [];
+  const range = 2;
+  for (let i = 1; i <= total; i++) {
+    if (i === 1 || i === total || (i >= currentPage - range && i <= currentPage + range)) {
+      pages.push(i);
+    } else if (pages[pages.length-1] !== '...') {
+      pages.push('...');
+    }
+  }
+  pages.forEach(p => {
+    if (p === '...') html += `<span style="color:var(--text-secondary)">…</span>`;
+    else html += `<button class="${p===currentPage?'active':''}" onclick="goPage(${p})">${p}</button>`;
+  });
+
+  html += `<button onclick="goPage(${currentPage+1})" ${currentPage===total?'disabled':''}>Next ›</button>`;
+  document.getElementById('pagination').innerHTML = html;
+}
+
+function goPage(p) {
+  const total = Math.ceil(filtered.length / PER_PAGE);
+  if (p < 1 || p > total) return;
+  currentPage = p;
+  render();
+  window.scrollTo({ top: document.querySelector('.paper-list').offsetTop - 20, behavior: 'smooth' });
+}
+
+function renderCharts() {
+  if (!chartsVisible) return;
+  // Year chart
+  const yearCounts = {};
+  filtered.forEach(p => { yearCounts[p.Year] = (yearCounts[p.Year] || 0) + 1; });
+  const yearEntries = Object.entries(yearCounts).sort((a,b) => a[0] - b[0]);
+  const maxYear = Math.max(...yearEntries.map(e => e[1]));
+  document.getElementById('yearChart').innerHTML = yearEntries.map(([y, c]) =>
+    `<div class="bar-row"><span class="bar-label">${y}</span><div class="bar-track"><div class="bar-fill" style="width:${c/maxYear*100}%"></div><span class="bar-value">${c}</span></div></div>`
+  ).join('');
+
+  // Type chart
+  const typeCounts = {};
+  filtered.forEach(p => { if(p.Type) typeCounts[p.Type] = (typeCounts[p.Type] || 0) + 1; });
+  const typeEntries = Object.entries(typeCounts).sort((a,b) => b[1] - a[1]).slice(0, 10);
+  const maxType = Math.max(...typeEntries.map(e => e[1]));
+  document.getElementById('typeChart').innerHTML = typeEntries.map(([t, c]) =>
+    `<div class="bar-row"><span class="bar-label" title="${t}">${t}</span><div class="bar-track"><div class="bar-fill" style="width:${c/maxType*100}%"></div><span class="bar-value">${c}</span></div></div>`
+  ).join('');
+}
+
+function showBibtex(idx) {
+  const paper = filtered[idx];
+  if (!paper) return;
+  document.getElementById('bibtexContent').textContent = paper.BibTex || 'No BibTeX available';
+  document.getElementById('bibtexModal').classList.add('show');
+}
+
+function closeBibtex() {
+  document.getElementById('bibtexModal').classList.remove('show');
+}
+
+function copyBibtex() {
+  const text = document.getElementById('bibtexContent').textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.querySelector('.copy-btn');
+    btn.textContent = 'Copied!';
+    setTimeout(() => btn.textContent = 'Copy to Clipboard', 1500);
+  });
+}
+
+function escHtml(s) {
+  if (!s) return '';
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// Render LaTeX: handle $...$, $$...$$, and \emph, \textbf, \textit etc.
+function renderLatex(s) {
+  if (!s) return '';
+  // First escape HTML
+  let out = escHtml(s);
+  // Convert LaTeX text commands to HTML
+  out = out.replace(/\\emph\{([^}]*)\}/g, '<em>$1</em>');
+  out = out.replace(/\\textbf\{([^}]*)\}/g, '<strong>$1</strong>');
+  out = out.replace(/\\textit\{([^}]*)\}/g, '<em>$1</em>');
+  out = out.replace(/\\texttt\{([^}]*)\}/g, '<code>$1</code>');
+  return out;
+}
+
+function renderMathInPage() {
+  if (typeof renderMathInElement === 'function') {
+    renderMathInElement(document.getElementById('paperList'), {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false},
+        {left: '\\(', right: '\\)', display: false},
+        {left: '\\[', right: '\\]', display: true}
+      ],
+      throwOnError: false
+    });
+  }
+}
+
+// Event listeners
+document.getElementById('searchInput').addEventListener('input', debounce(applyFilters, 300));
+document.getElementById('typeFilter').addEventListener('change', applyFilters);
+document.getElementById('yearFilter').addEventListener('change', applyFilters);
+document.getElementById('vlmFilter').addEventListener('change', applyFilters);
+document.getElementById('vlmKeywordFilter').addEventListener('change', applyFilters);
+document.getElementById('categoryFilter').addEventListener('change', applyFilters);
+document.querySelectorAll('.sort-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    applySorting();
+    currentPage = 1;
+    render();
+  });
+});
+document.getElementById('toggleCharts').addEventListener('click', () => {
+  chartsVisible = !chartsVisible;
+  document.getElementById('chartsArea').style.display = chartsVisible ? 'grid' : 'none';
+  document.getElementById('toggleCharts').textContent = chartsVisible ? 'Charts ▲' : 'Charts ▼';
+  if (chartsVisible) renderCharts();
+});
+document.getElementById('bibtexModal').addEventListener('click', e => {
+  if (e.target === e.currentTarget) closeBibtex();
+});
+
+function debounce(fn, ms) { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; }
+
+init();
+</script>
+</body>
+</html>
