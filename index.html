@@ -46,7 +46,17 @@
   /* Controls */
   .controls {
     max-width: 1200px; margin: 20px auto; padding: 0 20px;
-    display: flex; gap: 12px; flex-wrap: wrap; align-items: center;
+  }
+  .controls-top {
+    display: flex; gap: 12px; align-items: center; flex-wrap: wrap;
+  }
+  .filter-toggle {
+    display: none; padding: 8px 14px; border: 1px solid var(--border); border-radius: 8px;
+    background: var(--card); cursor: pointer; font-size: 13px; white-space: nowrap; transition: all 0.2s;
+  }
+  .filter-toggle.open { border-color: var(--primary); color: var(--primary); }
+  .filter-panel {
+    display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-top: 12px;
   }
   .search-box {
     flex: 1; min-width: 260px; padding: 10px 16px; border: 1px solid var(--border);
@@ -200,8 +210,19 @@
 
   @media (max-width: 768px) {
     .charts { grid-template-columns: 1fr; }
-    .controls { flex-direction: column; }
-    .search-box { min-width: unset; width: 100%; }
+    .search-box { min-width: 0; flex: 1; }
+    .filter-toggle { display: block; }
+    .filter-panel {
+      display: none; flex-direction: column; align-items: flex-start;
+      background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+      padding: 14px; margin-top: 10px; box-shadow: var(--shadow);
+    }
+    .filter-panel.open { display: flex; }
+    .filter-panel select,
+    .filter-panel .sort-group,
+    .filter-panel .toggle-charts { width: 100%; }
+    .filter-panel select { min-width: unset; }
+    .result-count { width: 100%; text-align: right; }
   }
 </style>
 </head>
@@ -215,36 +236,41 @@
 <div class="stats-bar" id="statsBar"></div>
 
 <div class="controls">
-  <select id="dataSource"></select>
-  <input class="search-box" id="searchInput" type="text" placeholder="Search title, authors, abstract, keywords...">
-  <select id="typeFilter"><option value="">All Types</option></select>
-  <select id="yearFilter"><option value="">All Years</option></select>
-  <div id="yearRangeGroup" style="display:none;align-items:center;gap:4px;">
-    <select id="yearFromFilter"></select>
-    <span style="color:var(--text-secondary);font-size:13px;">~</span>
-    <select id="yearToFilter"></select>
+  <div class="controls-top">
+    <input class="search-box" id="searchInput" type="text" placeholder="Search title, authors, abstract, keywords...">
+    <button class="filter-toggle" id="filterToggle" onclick="document.getElementById('filterPanel').classList.toggle('open');this.classList.toggle('open')">Filters ▼</button>
+    <span class="result-count" id="resultCount"></span>
   </div>
-  <select id="monthFilter">
-    <option value="">All Months</option>
-    <option value="1">Jan</option><option value="2">Feb</option><option value="3">Mar</option>
-    <option value="4">Apr</option><option value="5">May</option><option value="6">Jun</option>
-    <option value="7">Jul</option><option value="8">Aug</option><option value="9">Sep</option>
-    <option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option>
-  </select>
-  <select id="vlmFilter" style="display:none;">
-    <option value="">All VLM</option>
-    <option value="true">VLM Only</option>
-    <option value="false">Non-VLM</option>
-  </select>
-  <select id="vlmKeywordFilter" style="display:none;max-width:200px;"></select>
-  <select id="categoryFilter" style="display:none;"></select>
-  <div class="sort-group">
-    <button class="sort-btn active" data-sort="newest">Newest</button>
-    <button class="sort-btn" data-sort="oldest">Oldest</button>
-    <button class="sort-btn" data-sort="title">A-Z</button>
+  <div class="filter-panel" id="filterPanel">
+    <select id="dataSource"></select>
+    <select id="typeFilter"><option value="">All Types</option></select>
+    <select id="yearFilter"><option value="">All Years</option></select>
+    <div id="yearRangeGroup" style="display:none;align-items:center;gap:4px;">
+      <select id="yearFromFilter"></select>
+      <span style="color:var(--text-secondary);font-size:13px;">~</span>
+      <select id="yearToFilter"></select>
+    </div>
+    <select id="monthFilter">
+      <option value="">All Months</option>
+      <option value="1">Jan</option><option value="2">Feb</option><option value="3">Mar</option>
+      <option value="4">Apr</option><option value="5">May</option><option value="6">Jun</option>
+      <option value="7">Jul</option><option value="8">Aug</option><option value="9">Sep</option>
+      <option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option>
+    </select>
+    <select id="vlmFilter" style="display:none;">
+      <option value="">All VLM</option>
+      <option value="true">VLM Only</option>
+      <option value="false">Non-VLM</option>
+    </select>
+    <select id="vlmKeywordFilter" style="display:none;max-width:200px;"></select>
+    <select id="categoryFilter" style="display:none;"></select>
+    <div class="sort-group">
+      <button class="sort-btn active" data-sort="newest">Newest</button>
+      <button class="sort-btn" data-sort="oldest">Oldest</button>
+      <button class="sort-btn" data-sort="title">A-Z</button>
+    </div>
+    <button class="toggle-charts" id="toggleCharts">Charts ▼</button>
   </div>
-  <button class="toggle-charts" id="toggleCharts">Charts ▼</button>
-  <span class="result-count" id="resultCount"></span>
 </div>
 
 <div class="charts" id="chartsArea" style="display: none;">
