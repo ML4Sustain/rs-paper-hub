@@ -402,8 +402,8 @@ function applyFilters() {
 function applySorting() {
   const active = document.querySelector('.sort-btn.active');
   const sort = active ? active.dataset.sort : 'newest';
-  if (sort === 'newest') filtered.sort((a,b) => (b.Year*100+b.Month) - (a.Year*100+a.Month));
-  else if (sort === 'oldest') filtered.sort((a,b) => (a.Year*100+a.Month) - (b.Year*100+b.Month));
+  if (sort === 'newest') filtered.sort((a,b) => (b.Date || '').localeCompare(a.Date || '') || (b.Year*100+b.Month) - (a.Year*100+a.Month));
+  else if (sort === 'oldest') filtered.sort((a,b) => (a.Date || '').localeCompare(b.Date || '') || (a.Year*100+a.Month) - (b.Year*100+b.Month));
   else if (sort === 'title') filtered.sort((a,b) => a.Title.localeCompare(b.Title));
 }
 
@@ -428,7 +428,7 @@ function render() {
       <div class="paper-meta">
         <span class="tag">${escHtml(p.Type)}</span>
         ${p.Subtype ? `<span class="tag">${escHtml(p.Subtype.substring(0, 50))}</span>` : ''}
-        <span class="tag year">${p.Year}-${String(p.Month).padStart(2,'0')}</span>
+        <span class="tag year">${p.Date || (p.Year + '-' + String(p.Month).padStart(2,'0'))}</span>
         ${pubTag}
         ${catTag}${vlmTag}${vlmKwTags}
       </div>
