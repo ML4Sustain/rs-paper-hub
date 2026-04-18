@@ -19,7 +19,7 @@
 
 ## Overview
 
-RS-Paper-Hub automatically scrapes remote sensing and earth observation papers from arXiv (2020–present), extracts structured metadata, and provides a one-click pipeline for data cleaning, task tagging, VLM filtering, and classification. Updated daily via GitHub Actions.
+RS-Paper-Hub automatically scrapes remote sensing and earth observation papers from arXiv, extracts structured metadata, and provides a one-click pipeline for data cleaning, task tagging, VLM filtering, and classification. Updated daily via GitHub Actions.
 
 ### Key Features
 
@@ -29,8 +29,9 @@ RS-Paper-Hub automatically scrapes remote sensing and earth observation papers f
 - **Task Tagging** — Auto-tags papers with 11 task types: Classification, Object Detection, Change Detection, Segmentation, VQA, Image Captioning, Visual Grounding, Image-Text Retrieval, Geolocation, Super-Resolution, 3D Reconstruction
 - **Paper Classification** — Labels papers as `Method`, `Dataset`, or `Survey` based on title keywords
 - **VLM Filtering** — Keyword-based filtering for Vision-Language Model related papers (1000+ papers identified)
-- **Interactive Web Viewer** — Search, multi-dimensional chart filtering, task/category/year filters, BibTeX export, Google Scholar links, and mobile-friendly UI
-- **BibTeX Batch Export** — Export filtered search results as `.bib` file with optional abstracts
+- **Interactive Web Viewer** — Search, multi-dimensional chart filtering, task/category/year filters, Google Scholar links, and mobile-friendly UI
+- **Paper Collection** — Collect papers across multiple searches into a personal collection, then view or export them together
+- **BibTeX Batch Export** — Export filtered results, current page, custom range, or collection as `.bib` file with optional abstracts
 - **Code Discovery** — Automatically extracts code repository URLs from abstracts
 - **PDF Download** — Batch download with deduplication, organized by year
 
@@ -71,7 +72,7 @@ That's it. All output files (`papers.csv/json`, `papers_vlm.csv/json`) are updat
 ### Scraping
 
 ```bash
-# Full scrape (2020–present)
+# Full scrape
 python main.py
 
 # Custom year range
@@ -249,8 +250,9 @@ Features include:
 - **Task distribution chart** — Top 5 tasks shown with collapsible remaining tasks
 - **Year range selection** — Single year or custom range via dropdown
 - **Paper classification** — All papers labeled as Method, Dataset, or Survey
+- **Paper collection** — Collect papers across multiple searches, then view or export them together
+- **BibTeX batch export** — Export filtered results, current page, custom range, or collection as `.bib` file with optional abstracts
 - **New papers panel** — Side panel showing today's and this week's papers
-- **BibTeX batch export** — Export filtered results as `.bib` file with optional abstracts
 - **Google Scholar links** — One-click search on Google Scholar for each paper
 - **Mobile-friendly** — Responsive layout with collapsible filters and wrapping navigation
 - **LaTeX rendering** — Math formulas rendered via KaTeX
