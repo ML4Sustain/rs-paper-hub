@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RS Paper Hub</title>
+<title>RS Paper Hub - A curated collection of remote sensing papers from arXiv</title>
 <link rel="icon" type="image/png" href="asset/logo.png">
 <link rel="apple-touch-icon" href="asset/logo.png">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
@@ -549,19 +549,36 @@ function applyFilters() {
     return true;
   });
 
-  applySorting();
+  // Relevance sort when searching, otherwise normal sort
+  if (q) {
+    const terms = q.split(/\s+/);
+    filtered.forEach(p => {
+      const title = (p.Title || '').toLowerCase();
+      const abbr = (p['abbr.'] || '').toLowerCase();
+      const authors = (p.Authors || '').toLowerCase();
+      if (terms.every(t => title.includes(t) || abbr.includes(t))) p._rel = 0;
+      else if (terms.some(t => title.includes(t) || abbr.includes(t))) p._rel = 1;
+      else if (terms.some(t => authors.includes(t))) p._rel = 2;
+      else p._rel = 3;
+    });
+    filtered.sort((a, b) => (a._rel - b._rel) || sortCompare(a, b));
+  } else {
+    filtered.sort(sortCompare);
+  }
   currentPage = 1;
   render();
   renderCharts();
 }
 
-function applySorting() {
+function sortCompare(a, b) {
   const active = document.querySelector('.sort-btn.active');
   const sort = active ? active.dataset.sort : 'newest';
-  if (sort === 'newest') filtered.sort((a,b) => (b.Date || '').localeCompare(a.Date || '') || (b.Year*100+b.Month) - (a.Year*100+a.Month));
-  else if (sort === 'oldest') filtered.sort((a,b) => (a.Date || '').localeCompare(b.Date || '') || (a.Year*100+a.Month) - (b.Year*100+b.Month));
-  else if (sort === 'title') filtered.sort((a,b) => a.Title.localeCompare(b.Title));
+  if (sort === 'newest') return (b.Date || '').localeCompare(a.Date || '') || (b.Year*100+b.Month) - (a.Year*100+a.Month);
+  if (sort === 'oldest') return (a.Date || '').localeCompare(b.Date || '') || (a.Year*100+a.Month) - (b.Year*100+b.Month);
+  if (sort === 'title') return a.Title.localeCompare(b.Title);
+  return 0;
 }
+function applySorting() { filtered.sort(sortCompare); }
 
 function render() {
   document.getElementById('resultCount').textContent = `${filtered.length} papers found`;

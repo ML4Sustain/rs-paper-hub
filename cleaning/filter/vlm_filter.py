@@ -58,6 +58,9 @@ CORE_KEYWORDS = [
     r"open[\-\s]vocabulary",
     r"open[\-\s]world\s+(?:detection|segmentation|recognition)",
     r"zero[\-\s]shot.*(?:classif|detect|segment|recogni)",
+    # Earth Observation + language/VLM
+    r"earth\s+observation.*(?:language|text|caption|foundation\s+model|VLM|MLLM|multimodal)",
+    r"(?:language|text|caption|VLM|MLLM|multimodal).*earth\s+observation",
 ]
 
 # 知名模型名（命中即入选）
