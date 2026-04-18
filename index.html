@@ -553,9 +553,7 @@ const TASK_NAMES = {
 };
 const DATA_SOURCES = [
   { label: 'All Papers', file: 'papers.json', key: 'all' },
-  { label: 'VLM', file: 'papers_vlm.json', key: 'vlm' },
-  { label: 'VLM Annotated', file: 'papers_vlm_annotated.json', key: 'vlm-annotated' },
-  { label: 'Cleaned', file: 'papers_cleaned.json', key: 'cleaned' },
+  { label: 'Vision-Language Model', file: 'papers_vlm.json', key: 'vlm' },
 ];
 let allPapers = [];
 let filtered = [];
@@ -999,7 +997,7 @@ function renderCharts() {
   if (catEntries.length > 0) {
     catCard.style.display = '';
     const maxCat = Math.max(...catEntries.map(e => e[1]));
-    const colors = { Method: '#4f46e5', Survey: '#0891b2', Dataset: '#059669', 'Dataset+Method': '#7c3aed', Application: '#d97706', Other: '#94a3b8' };
+    const colors = { Method: '#4f46e5', Survey: '#0891b2', Dataset: '#059669' };
     document.getElementById('categoryChart').innerHTML = catEntries.map(([c, n]) => {
       const color = colors[c] || '#4f46e5';
       const safe = c.replace(/'/g, "\\'").replace(/"/g, '&quot;');
