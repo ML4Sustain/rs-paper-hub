@@ -45,6 +45,60 @@
   .nav-bar a:hover { color: #fff; }
   .nav-bar a svg { flex-shrink: 0; }
 
+  /* Loading overlay */
+  .loading-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(245,247,250,0.92); z-index: 200;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    transition: opacity 0.4s;
+  }
+  .loading-overlay.hidden { opacity: 0; pointer-events: none; }
+  .loading-scene { position: relative; width: 120px; height: 120px; }
+  .loading-earth {
+    position: absolute; top: 50%; left: 50%; width: 50px; height: 50px;
+    margin: -25px 0 0 -25px; border-radius: 50%;
+    background: linear-gradient(135deg, #3b82f6 25%, #22c55e 50%, #3b82f6 75%);
+    box-shadow: inset -4px -4px 10px rgba(0,0,0,0.2), 0 0 20px rgba(59,130,246,0.3);
+    animation: earthSpin 8s linear infinite;
+  }
+  .loading-satellite {
+    position: absolute; top: 50%; left: 50%; width: 8px; height: 8px;
+    margin: -4px 0 0 -4px;
+    animation: orbit 2s linear infinite;
+  }
+  .loading-satellite::before {
+    content: ''; position: absolute; width: 8px; height: 8px;
+    background: var(--primary); border-radius: 50%;
+    box-shadow: 0 0 8px var(--primary);
+  }
+  .loading-satellite::after {
+    content: ''; position: absolute; top: -1px; left: -6px;
+    width: 20px; height: 2px; background: linear-gradient(90deg, #94a3b8, var(--primary), #94a3b8);
+    border-radius: 1px; transform: rotate(-30deg); transform-origin: center;
+  }
+  .loading-orbit {
+    position: absolute; top: 50%; left: 50%; width: 90px; height: 90px;
+    margin: -45px 0 0 -45px; border: 1px dashed rgba(79,70,229,0.2);
+    border-radius: 50%;
+  }
+  .loading-text {
+    margin-top: 20px; font-size: 14px; color: var(--text-secondary); font-weight: 500;
+  }
+  .loading-dots::after {
+    content: ''; animation: dots 1.5s steps(4, end) infinite;
+  }
+  @keyframes orbit {
+    from { transform: rotate(0deg) translateX(45px) rotate(0deg); }
+    to { transform: rotate(360deg) translateX(45px) rotate(-360deg); }
+  }
+  @keyframes earthSpin {
+    from { background-position: 0 0; }
+    to { background-position: 100px 0; }
+  }
+  @keyframes dots {
+    0% { content: ''; } 25% { content: '.'; } 50% { content: '..'; } 75% { content: '...'; }
+  }
+
   /* Back to top */
   .back-top {
     position: fixed; bottom: 28px; right: 28px; width: 40px; height: 40px;
@@ -267,6 +321,15 @@
 </head>
 <body>
 
+<div class="loading-overlay" id="loadingOverlay">
+  <div class="loading-scene">
+    <div class="loading-orbit"></div>
+    <div class="loading-earth"></div>
+    <div class="loading-satellite"></div>
+  </div>
+  <div class="loading-text">Scanning papers from orbit<span class="loading-dots"></span></div>
+</div>
+
 <div class="header">
   <h1><img src="asset/logo.png" alt="Logo">RS Paper Hub</h1>
   <p>A curated collection of remote sensing papers from arXiv</p>
@@ -436,6 +499,10 @@ async function loadData(file) {
 async function init() {
   initDataSourceSelect();
   await loadData(document.getElementById('dataSource').value);
+  // Hide loading overlay
+  const overlay = document.getElementById('loadingOverlay');
+  overlay.classList.add('hidden');
+  setTimeout(() => overlay.remove(), 500);
 }
 
 function cleanRegexLabel(s) {
