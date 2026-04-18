@@ -126,10 +126,10 @@
   .paper-authors { font-size: 13px; color: var(--text-secondary); margin-bottom: 6px; }
   .paper-abstract {
     font-size: 13px; color: var(--text-secondary); line-height: 1.7;
-    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
-    overflow: hidden; transition: all 0.3s;
+    max-height: 4.2em; overflow: hidden; transition: max-height 0.3s;
+    position: relative;
   }
-  .paper-abstract.expanded { -webkit-line-clamp: unset; }
+  .paper-abstract.expanded { max-height: none; }
   .paper-abstract p { margin: 4px 0; }
   .paper-abstract ul, .paper-abstract ol { margin: 4px 0 4px 20px; }
   .paper-abstract code { background: var(--tag-bg); padding: 1px 4px; border-radius: 3px; font-size: 12px; }
@@ -138,11 +138,15 @@
   .paper-abstract a:hover { text-decoration: underline; }
   .paper-abstract h1, .paper-abstract h2, .paper-abstract h3 { font-size: 14px; margin: 6px 0 2px; }
   .paper-title p { display: inline; margin: 0; }
-  .paper-links { margin-top: 8px; display: flex; gap: 12px; }
+  .paper-links { margin-top: 8px; display: flex; gap: 10px; align-items: center; }
   .paper-links a {
-    font-size: 12px; color: var(--primary); text-decoration: none; font-weight: 500;
+    font-size: 12px; color: var(--text-secondary); text-decoration: none; font-weight: 500;
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 3px 8px; border-radius: 5px; border: 1px solid var(--border);
+    transition: all 0.15s;
   }
-  .paper-links a:hover { text-decoration: underline; }
+  .paper-links a:hover { border-color: var(--primary); color: var(--primary); background: var(--primary-light); }
+  .paper-links a svg { flex-shrink: 0; }
 
   /* Pagination */
   .pagination {
@@ -308,6 +312,11 @@
 
 <script>
 const PER_PAGE = 20;
+const ICON = {
+  arxiv: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>',
+  github: '<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>',
+  bibtex: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V4a2 2 0 0 1 2-2h8.5L20 7.5V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-3"/><polyline points="14 2 14 8 20 8"/><path d="M2 15h7"/><path d="M5 12l-3 3 3 3"/></svg>',
+};
 const DATA_SOURCES = [
   { label: 'All Papers', file: 'papers.json', key: 'all' },
   { label: 'VLM', file: 'papers_vlm.json', key: 'vlm' },
@@ -519,7 +528,7 @@ function render() {
   list.innerHTML = page.map((p, localIdx) => {
     const idx = start + localIdx;
     const pubTag = p.Publication ? `<span class="tag pub">${escHtml(p.Publication.substring(0, 60))}</span>` : '';
-    const codeLink = p.code && p.code.trim() ? `<a href="${escHtml(p.code)}" target="_blank">Code</a>` : '';
+    const codeLink = p.code && p.code.trim() ? `<a href="${escHtml(p.code)}" target="_blank">${ICON.github}Code</a>` : '';
     const catTag = p.Category ? `<span class="tag category">${escHtml(p.Category)}</span>` : '';
     const vlmTag = p._is_vlm ? '<span class="tag vlm">VLM</span>' : '';
     const vlmKwTags = (p._vlm_keywords || '').split(';').filter(k => k.trim()).map(k => {
@@ -538,9 +547,9 @@ function render() {
       <div class="paper-authors">${escHtml(p.Authors)}</div>
       <div class="paper-abstract" id="abs-${idx}">${renderLatex(p.Abstract)}</div>
       <div class="paper-links">
-        <a href="${escHtml(p.Paper_link)}" target="_blank" onclick="event.stopPropagation()">Paper</a>
+        <a href="${escHtml(p.Paper_link)}" target="_blank" onclick="event.stopPropagation()">${ICON.arxiv}Paper</a>
         ${codeLink}
-        <a href="javascript:void(0)" onclick="event.stopPropagation(); showBibtex(${idx})">BibTeX</a>
+        <a href="javascript:void(0)" onclick="event.stopPropagation(); showBibtex(${idx})">${ICON.bibtex}BibTeX</a>
       </div>
     </div>`;
   }).join('');
