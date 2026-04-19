@@ -2,8 +2,10 @@ name: Daily Paper Update
 
 on:
   schedule:
-    # Run daily at 08:00 UTC (16:00 Beijing Time)
-    - cron: '0 8 * * *'
+    # Run Mon-Fri at 00:30 UTC (08:30 Beijing Time), 30min after arXiv announcements
+    # arXiv publishes new papers Sun-Thu at 20:00 EDT (00:00 UTC next day)
+    # No arXiv announcements on Fri/Sat, so skip weekends
+    - cron: '30 0 * * 1-5'
   workflow_dispatch:  # Allow manual trigger
 
 permissions:
@@ -46,7 +48,8 @@ jobs:
           git add output/
           PAPER_COUNT=$(python -c "import json; print(len(json.load(open('output/papers.json'))))")
           VLM_COUNT=$(python -c "import json; print(len(json.load(open('output/papers_vlm.json'))))")
-          git commit -m "chore: daily update ${PAPER_COUNT} papers (${VLM_COUNT} VLM)
+          AGENT_COUNT=$(python -c "import json; print(len(json.load(open('output/papers_agent.json'))))")
+          git commit -m "chore: daily update ${PAPER_COUNT} papers (${VLM_COUNT} VLM, ${AGENT_COUNT} Agent)
 
           Updated: $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
