@@ -10,6 +10,7 @@
 [![arXiv](https://img.shields.io/badge/source-arXiv-b31b1b.svg)](https://arxiv.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Website](https://img.shields.io/badge/website-rspaper.top-4f46e5.svg)](https://rspaper.top)
+[![Team](https://img.shields.io/badge/team-ML4Sustain-green.svg?logo=github)](https://github.com/ML4Sustain)
 
 [English](README.md) | [中文](README_zh.md) | [Live Demo](https://rspaper.top)
 
