@@ -704,7 +704,7 @@ const LANG = {
     visits: 'visits:',
   },
   zh: {
-    siteTitle: '遥感论文社区 (RS Paper Hub)',
+    siteTitle: '遥感论文社 (RS Paper Hub)',
     siteSubtitle: '来自 arXiv 的遥感论文精选合集',
     github: 'GitHub', issues: '问题反馈', docs: '文档', contact: '联系我们',
     statPapers: '论文总数', statTypes: '类型', statYears: '年份', statWithCode: '含代码',
@@ -762,7 +762,7 @@ function applyLang() {
   if (currentLang === 'zh') {
     const wrap = document.createElement('span');
     wrap.className = 'h1-text-wrap';
-    wrap.innerHTML = '遥感论文社区<span>(RS Paper Hub)</span>';
+    wrap.innerHTML = '遥感论文社<span>(RS Paper Hub)</span>';
     h1.appendChild(wrap);
   } else {
     h1.appendChild(document.createTextNode(t('siteTitle')));
