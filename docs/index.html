@@ -47,6 +47,23 @@
   }
   .nav-bar a:hover { color: #fff; }
   .nav-bar a svg { flex-shrink: 0; }
+  /* .nav-bar a svg { flex-shrink: 0; stroke: rgba(255,255,255,0.8); fill: none; } */
+  /* RSS dropdown */
+  .rss-dropdown .rss-menu {
+    display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+    margin-top: 8px; background: rgba(255,255,255,0.5); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    min-width: 150px; z-index: 9999; overflow: hidden;
+  }
+  .rss-dropdown.open .rss-menu { display: block; }
+  .rss-dropdown {
+    display: inline-flex; align-items: center;
+  }
+  .rss-menu a {
+    display: block; padding: 8px 14px; color: #1e293b; font-size: 13px;
+    text-decoration: none; transition: background 0.15s;
+  }
+  .rss-menu a:hover { background: #f1f5f9; }
 
   /* Layout */
   .docs-container { display: flex; max-width: 1200px; margin: 0 auto; min-height: calc(100vh - 120px); }
@@ -71,6 +88,9 @@
   }
   .sidebar-nav li a:hover { color: var(--primary); background: var(--primary-light); }
   .sidebar-nav li a.active { color: var(--primary); background: var(--primary-light); border-left-color: var(--primary); font-weight: 500; }
+  .sidebar-nav li a { display: flex; align-items: center; gap: 8px; }
+  .sidebar-nav li a svg { flex-shrink: 0; opacity: 0.6; }
+  .sidebar-nav li a:hover svg, .sidebar-nav li a.active svg { opacity: 1; }
 
   /* Mobile sidebar toggle */
   .sidebar-toggle {
@@ -162,14 +182,22 @@
 <div class="sidebar-overlay" onclick="document.querySelector('.sidebar').classList.remove('open');this.classList.remove('show')"></div>
 
 <div class="header">
-  <h1><span class="h1-text-wrap"><img src="../asset/logo.png" alt="Logo">RS Paper Hub</span></h1>
-  <p>A curated collection of remote sensing papers from arXiv</p>
+  <h1><span class="h1-text-wrap"><img src="../asset/logo.png" alt="Logo"><span id="siteTitle">RS Paper Hub</span></span></h1>
+  <p id="siteSubtitle">A curated collection of remote sensing papers from arXiv</p>
   <nav class="nav-bar">
     <a href="../"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span data-i18n="home">Home</span></a>
     <a href="https://github.com/ML4Sustain/rs-paper-hub" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg><span data-i18n="github">GitHub</span></a>
     <a href="https://github.com/ML4Sustain/rs-paper-hub/issues" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span data-i18n="issues">Issues</span></a>
     <a href="../docs/" data-i18n="docs"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg><span data-i18n="docs">Docs</span></a>
     <a href="mailto:jiancheng.pan.plus@gmail.com"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span data-i18n="contact">Contact</span></a>
+    <span class="rss-dropdown" style="position:relative;">
+      <a href="javascript:void(0)" onclick="this.parentElement.classList.toggle('open')" title="RSS Feeds"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="6.18" cy="17.82" r="2.18"/><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56z"/><path d="M4 10.1v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/></svg>RSS</a>
+      <div class="rss-menu">
+        <a href="../output/feed.xml" target="_blank" data-i18n="rssAll">All Papers</a>
+        <a href="../output/feed_vlm.xml" target="_blank" data-i18n="rssVlm">VLM Papers</a>
+        <a href="../output/feed_agent.xml" target="_blank" data-i18n="rssAgent">Agent Papers</a>
+      </div>
+    </span>
     <a href="javascript:void(0)" id="langToggle" onclick="toggleLang()">中文</a>
   </nav>
 </div>
@@ -179,19 +207,19 @@
   <div class="sidebar-section">
     <div class="sidebar-title" data-i18n="gettingStarted">Getting Started</div>
     <ul class="sidebar-nav">
-      <li><a href="#overview" class="active" data-i18n="overview">Overview</a></li>
-      <li><a href="#features" data-i18n="features">Features</a></li>
-      <li><a href="#web-viewer" data-i18n="webViewer">Web Viewer Guide</a></li>
-      <li><a href="#rss-zotero" data-i18n="rssZotero">RSS & Zotero</a></li>
+      <li><a href="#overview" class="active"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span data-i18n="overview">Overview</span></a></li>
+      <li><a href="#features"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><span data-i18n="features">Features</span></a></li>
+      <li><a href="#web-viewer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg><span data-i18n="webViewer">Web Viewer Guide</span></a></li>
+      <li><a href="#rss-zotero"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="6.18" cy="17.82" r="2.18"/><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56z"/></svg><span data-i18n="rssZotero">RSS & Zotero</span></a></li>
     </ul>
   </div>
   <div class="sidebar-section">
     <div class="sidebar-title" data-i18n="technical">Technical</div>
     <ul class="sidebar-nav">
-      <li><a href="#pipeline" data-i18n="pipeline">Pipeline</a></li>
-      <li><a href="#cli" data-i18n="cli">CLI Reference</a></li>
-      <li><a href="#schema" data-i18n="schema">Output Schema</a></li>
-      <li><a href="#task-tags" data-i18n="taskTags">Task Tags</a></li>
+      <li><a href="#pipeline"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span data-i18n="pipeline">Pipeline</span></a></li>
+      <li><a href="#cli"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg><span data-i18n="cli">CLI Reference</span></a></li>
+      <li><a href="#schema"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg><span data-i18n="schema">Output Schema</span></a></li>
+      <li><a href="#task-tags"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg><span data-i18n="taskTags">Task Tags</span></a></li>
     </ul>
   </div>
 </aside>
@@ -430,9 +458,11 @@ python main.py --verbose</code></pre>
 const LANG = {
   en: {
     home: 'Home', github: 'GitHub', issues: 'Issues', docs: 'Docs', contact: 'Contact',
+    rssAll: 'All Papers', rssVlm: 'VLM Papers', rssAgent: 'Agent Papers',
     gettingStarted: 'Getting Started', technical: 'Technical',
     overview: 'Overview', features: 'Features', webViewer: 'Web Viewer Guide', rssZotero: 'RSS & Zotero',
     pipeline: 'Pipeline', cli: 'CLI Reference', schema: 'Output Schema', taskTags: 'Task Tags',
+    siteTitle: 'RS Paper Hub', siteSubtitle: 'A curated collection of remote sensing papers from arXiv',
     overviewDesc1: 'RS Paper Hub is an automated system that collects, filters, and categorizes remote sensing papers from arXiv. It helps researchers stay updated with the latest developments in remote sensing, vision-language models, and AI agents.',
     overviewDesc2: 'The project provides multiple ways to access papers: a web interface, RSS feeds, and direct JSON downloads. All papers are automatically tagged with categories, tasks, and VLM-related keywords.',
     feat1Title: 'Daily Automated Updates', feat1Desc: 'Papers are fetched and processed automatically every day, ensuring you always have access to the latest research.',
@@ -458,9 +488,11 @@ const LANG = {
   },
   zh: {
     home: '首页', github: 'GitHub', issues: '问题反馈', docs: '文档', contact: '联系我们',
+    rssAll: '全部论文', rssVlm: 'VLM 论文', rssAgent: 'Agent 论文',
     gettingStarted: '入门', technical: '技术文档',
     overview: '项目简介', features: '核心功能', webViewer: '网页使用指南', rssZotero: 'RSS 与 Zotero',
     pipeline: '处理流程', cli: '命令行参考', schema: '输出格式', taskTags: '任务标签',
+    siteTitle: '遥感论文社<span>(RS Paper Hub)</span>', siteSubtitle: '来自 arXiv 的遥感论文精选合集',
     overviewDesc1: 'RS Paper Hub 是一个自动化系统，从 arXiv 收集、筛选和整理遥感论文。帮助研究人员及时了解遥感、视觉语言模型和 AI Agent 领域的最新进展。',
     overviewDesc2: '该项目提供多种访问论文的方式：网页界面、RSS 订阅和直接下载 JSON。所有论文都会自动标记类别、任务和 VLM 相关关键词。',
     feat1Title: '每日自动更新', feat1Desc: '论文每天自动获取和处理，确保您始终能够访问最新研究成果。',
@@ -492,6 +524,12 @@ function t(k) { return LANG[currentLang][k] || LANG.en[k] || k; }
 
 function applyLang() {
   document.documentElement.lang = currentLang === 'zh' ? 'zh-CN' : 'en';
+  // Site title (special handling for Chinese with HTML)
+  const siteTitle = document.getElementById('siteTitle');
+  if (siteTitle) siteTitle.innerHTML = t('siteTitle');
+  const siteSubtitle = document.getElementById('siteSubtitle');
+  if (siteSubtitle) siteSubtitle.textContent = t('siteSubtitle');
+  // Other i18n elements
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     el.textContent = t(key);
@@ -527,6 +565,12 @@ if (location.hash) {
 // Back to top button
 window.addEventListener('scroll', () => {
   document.getElementById('backTop').classList.toggle('show', window.scrollY > 300);
+});
+
+// Close RSS dropdown when clicking outside
+document.addEventListener('click', function(e) {
+  var dd = document.querySelector('.rss-dropdown');
+  if (dd && !dd.contains(e.target)) dd.classList.remove('open');
 });
 
 applyLang();
