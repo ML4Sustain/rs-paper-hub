@@ -398,16 +398,16 @@
   .paper-abstract-wrap .field-icon { position: absolute; left: 0; top: 2px; opacity: 0.5; }
   .paper-abstract {
     font-size: 13px; color: var(--text-secondary); line-height: 1.7;
-    max-height: 5.1em; overflow: hidden; transition: max-height 0.3s;
-    position: relative; cursor: pointer; text-align: justify;
+    max-height: 5.8em; overflow: hidden; transition: max-height 0.3s;
+    position: relative; cursor: pointer; text-align: justify; padding-bottom: 0.9em;
   }
   .paper-abstract::after {
-    content: '... Show more ▾'; position: absolute; bottom: 0; right: 0;
+    content: '... Show more ▾'; position: absolute; bottom: 0.45em; right: 0;
     padding-left: 40px; font-size: 11px; color: var(--primary); font-weight: 500;
     background: linear-gradient(90deg, transparent, var(--card) 30%);
   }
-  .paper-abstract.expanded { max-height: none; }
-  .paper-abstract.expanded::after { content: 'Show less ▴'; position: static; display: block; text-align: right; padding: 4px 0 0; background: none; }
+  .paper-abstract.expanded { max-height: none; padding-bottom: 0; }
+  .paper-abstract.expanded::after { content: 'Show less ▴'; position: absolute; bottom: 0.4em; right: 0; padding-left: 40px; background: linear-gradient(90deg, transparent, var(--card) 30%); }
   .paper-abstract p { margin: 4px 0; }
   .paper-abstract ul, .paper-abstract ol { margin: 4px 0 4px 20px; }
   .paper-abstract code { background: var(--tag-bg); padding: 1px 4px; border-radius: 3px; font-size: 12px; }
@@ -728,7 +728,7 @@ const LANG = {
     siteSubtitle: 'A curated collection of remote sensing papers from arXiv',
     github: 'GitHub', issues: 'Issues', docs: 'Docs', contact: 'Contact',
     statPapers: 'Papers', statTypes: 'Types', statYears: 'Years', statWithCode: 'With Code',
-    noteDisclaimer: 'Note: Category and task labels are rule-based and may contain inaccuracies. We are continuously improving them. This does not affect tracking the latest research trends.',
+    noteDisclaimer: 'Note: There is a 2–3 day delay between the publication date and the announcement date of arXiv papers; Category and task labels are rule-based and may contain inaccuracies. We are continuously improving them. This does not affect tracking the latest research trends.',
     today: 'Today', thisWeek: 'This Week',
     searchAll: 'All', searchTitle: 'Title', searchAuthor: 'Author', searchAbstract: 'Abstract',
     searchExactPlaceholder: 'Search title, author, abstract (exact phrase)...',

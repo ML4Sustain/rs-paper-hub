@@ -6,12 +6,12 @@
 
 **arXiv 遥感论文自动采集、清洗、VLM 筛选与 Agent 筛选工具**
 
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![arXiv](https://img.shields.io/badge/source-arXiv-b31b1b.svg)](https://arxiv.org/)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![arXiv](https://img.shields.io/badge/Source-arXiv-b31b1b.svg)](https://arxiv.org/)
+[![Website](https://img.shields.io/badge/Website-rspaper.top-4f46e5.svg)](https://rspaper.top)
+[![Team](https://img.shields.io/badge/Team-ML4Sustain-green.svg?logo=github)](https://github.com/ML4Sustain)
+[![Docs](https://img.shields.io/badge/Docs-online-blue.svg)](https://rspaper.top/docs/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Website](https://img.shields.io/badge/website-rspaper.top-4f46e5.svg)](https://rspaper.top)
-[![Team](https://img.shields.io/badge/team-ML4Sustain-green.svg?logo=github)](https://github.com/ML4Sustain)
-[![Docs](https://img.shields.io/badge/docs-online-blue.svg)](https://rspaper.top/docs/)
 
 [English](README.md) | [中文](README_zh.md)
 
