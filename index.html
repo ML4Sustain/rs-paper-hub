@@ -1772,13 +1772,15 @@ function toggleSearchMode() {
 
 /**
  * Compute "today" and "this week" date ranges based on arXiv announcement schedule.
- * arXiv announcements converted to Beijing time (UTC+8):
- *   Mon 8AM: papers submitted Thu-Fri (ET)  -> paper dates: Thu, Fri
- *   Tue 8AM: papers submitted Fri-Mon (ET)  -> paper dates: Fri, Sat, Sun, Mon
- *   Wed 8AM: papers submitted Mon-Tue (ET)  -> paper dates: Mon, Tue
- *   Thu 8AM: papers submitted Tue-Wed (ET)  -> paper dates: Tue, Wed
- *   Fri 8AM: papers submitted Wed-Thu (ET)  -> paper dates: Wed, Thu
+ * Simplified: each announcement ≈ previous day's submissions.
+ * Beijing time (UTC+8):
+ *   Mon 8AM: Fri papers       (Thu already grabbed on Fri)
+ *   Tue 8AM: Sat-Mon papers   (weekend batch)
+ *   Wed 8AM: Tue papers
+ *   Thu 8AM: Wed papers
+ *   Fri 8AM: Thu papers
  *   Sat/Sun: no announcement
+ * "This week" starts from Fri of the previous week (Mon announcement).
  */
 function getArxivDateRanges() {
   const now = new Date();
@@ -1796,12 +1798,12 @@ function getArxivDateRanges() {
   // ref is now the effective announcement day (Mon=1 ... Fri=5)
   // Map to paper-date offsets relative to ref
   let startOff, endOff;
-  if (wd === 1) {       // Mon: Thu-Fri papers
-    startOff = -4; endOff = -3;
-  } else if (wd === 2) { // Tue: Fri-Mon papers
-    startOff = -4; endOff = -1;
-  } else {               // Wed/Thu/Fri: 2-day window
-    startOff = -2; endOff = -1;
+  if (wd === 1) {       // Mon: Fri papers only
+    startOff = -3; endOff = -3;
+  } else if (wd === 2) { // Tue: Sat-Mon papers (weekend batch)
+    startOff = -3; endOff = -1;
+  } else {               // Wed/Thu/Fri: previous day only
+    startOff = -1; endOff = -1;
   }
 
   const todayFrom = new Date(ref);
@@ -1809,11 +1811,11 @@ function getArxivDateRanges() {
   const todayTo = new Date(ref);
   todayTo.setDate(todayTo.getDate() + endOff);
 
-  // "This week" starts from Monday announcement's earliest papers (last Thursday)
+  // "This week" starts from Monday announcement's papers (last Friday)
   const monday = new Date(ref);
   monday.setDate(monday.getDate() - (wd - 1)); // go to Monday of this announcement week
   const weekFrom = new Date(monday);
-  weekFrom.setDate(weekFrom.getDate() - 4); // Monday - 4 = last Thursday
+  weekFrom.setDate(weekFrom.getDate() - 3); // Monday - 3 = last Friday
 
   return {
     todayFrom: todayFrom.toISOString().slice(0, 10),
