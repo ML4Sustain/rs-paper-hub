@@ -183,6 +183,29 @@
     .recent-toggle { font-size: 11px; padding: 10px 5px; }
   }
 
+  /* Footer */
+  .site-footer {
+    margin-top: 40px; background: linear-gradient(135deg, #312e81, #4c1d95);
+    color: rgba(255,255,255,0.6); padding: 28px 24px 20px; text-align: center;
+  }
+  .footer-inner { max-width: 1200px; margin: 0 auto; }
+  .footer-links {
+    display: flex; align-items: center; justify-content: center;
+    gap: 8px; flex-wrap: wrap; margin-bottom: 14px;
+  }
+  .footer-links-label {
+    font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.45);
+  }
+  .footer-links a {
+    font-size: 12px; color: rgba(255,255,255,0.75); text-decoration: none;
+    padding: 4px 12px; border: 1px solid rgba(255,255,255,0.18); border-radius: 14px;
+    transition: all 0.2s; display: inline-flex; align-items: center; gap: 4px;
+  }
+  .footer-links a:hover {
+    color: #fff; border-color: rgba(255,255,255,0.45); background: rgba(255,255,255,0.1);
+  }
+  .footer-links a svg { flex-shrink: 0; }
+
   /* Back to top */
   .back-top {
     position: fixed; bottom: 28px; right: 28px; width: 40px; height: 40px;
@@ -613,10 +636,20 @@
 <div class="pagination" id="pagination"></div>
 
 </div><!-- .main-wrap -->
-<footer style="padding:16px 0;text-align:center;font-size:11px;color:#94a3b8;">
+
+<div style="padding:8px 0 12px;text-align:center;font-size:11px;color:#94a3b8;">
   <a href='https://www.counters-free.net/' style="color:inherit;text-decoration:none;">visits:</a>
   <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=fb6eb33e03e201b26048add495de3cda89f56796'></script>
   <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1536583/t/5"></script>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-links">
+      <span class="footer-links-label" data-i18n="friendLinks">Links</span>
+      <a href="https://jianchengpan.space/ccf-ddl-tracker/" target="_blank"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>CCF DDL Tracker</a>
+    </div>
+  </div>
 </footer>
 
 <button class="recent-toggle" id="recentToggle" onclick="toggleRecentPanel()">NEW PAPERS</button>
@@ -729,6 +762,7 @@ const LANG = {
     scholar: 'Scholar',
     before: 'Before', more: 'more',
     visits: 'visits:',
+    friendLinks: 'Links',
   },
   zh: {
     siteTitle: '遥感论文社 (RS Paper Hub)',
@@ -772,6 +806,7 @@ const LANG = {
     scholar: '谷歌学术',
     before: '早于', more: '更多',
     visits: '访问量：',
+    friendLinks: '友情链接',
   }
 };
 
@@ -780,7 +815,7 @@ function t(k) { return LANG[currentLang][k] || LANG.en[k] || k; }
 
 function applyLang() {
   document.documentElement.lang = currentLang === 'zh' ? 'zh-CN' : 'en';
-  document.title = t('siteTitle') + ' - ' + t('siteSubtitle');
+  document.title = LANG.en.siteTitle + ' - ' + LANG.en.siteSubtitle;
   // Header
   const h1 = document.querySelector('.header h1');
   const img = h1.querySelector('img');
@@ -806,6 +841,9 @@ function applyLang() {
   // Note
   const noteEl = document.getElementById('noteDisclaimer');
   if (noteEl) noteEl.textContent = t('noteDisclaimer');
+  // Footer links label
+  const flLabel = document.querySelector('.footer-links-label');
+  if (flLabel) flLabel.textContent = t('friendLinks');
   // Quick filters
   const qfToday = document.getElementById('qfToday');
   const qfWeek = document.getElementById('qfWeek');
