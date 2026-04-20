@@ -202,8 +202,13 @@ def run(input_path: str, output_dir: str):
         json.dump(uav_annotated, f, ensure_ascii=False, indent=2)
     logger.info(f"  -> {uav_annotated_path}")
 
-    # ── Step 11: Generate Atom feeds for Zotero ──────────
-    logger.info("[11/11] Generating Atom feeds...")
+    # ── Step 11: Update auto groups ────────────────────
+    logger.info("[11/12] Updating auto groups...")
+    from update_groups import update_auto_groups
+    update_auto_groups(os.path.join(output_dir, "papers.json"), "groups")
+
+    # ── Step 12: Generate Atom feeds for Zotero ──────────
+    logger.info("[12/12] Generating Atom feeds...")
     from rss_generator import generate_feeds
     generate_feeds(papers, matched, agent_matched, uav_matched, output_dir,
                    site_url="https://rspaper.top")
