@@ -1145,16 +1145,14 @@ function renderStats(papers) {
     <div class="stat"><div class="num">${years.size}</div><div class="label">${t('statYears')}</div></div>
     <div class="stat" style="cursor:pointer" onclick="toggleCodeFilter()"><div class="num">${withCode}</div><div class="label" id="codeLabel">${t('statWithCode')}${codeOnly?' ✓':''}</div></div>
   `;
-  // Load new count from progress.json
-  fetch('./output/progress.json').then(r => r.ok ? r.json() : null).then(data => {
-    if (!data) return;
-    const count = data.last_new_count || 0;
-    const badge = document.getElementById('newBadge');
-    if (badge) {
-      badge.style.cssText = `font-size:12px;color:${count > 0 ? '#10b981' : '#94a3b8'};font-weight:500;margin-left:4px`;
-      badge.textContent = '+' + count;
-    }
-  }).catch(() => {});
+  // Compute new paper count from arXiv announcement schedule
+  const ranges = getArxivDateRanges();
+  const newCount = allPapers.filter(p => p.Date >= ranges.todayFrom && p.Date <= ranges.todayTo).length;
+  const badge = document.getElementById('newBadge');
+  if (badge) {
+    badge.style.cssText = `font-size:12px;color:${newCount > 0 ? '#10b981' : '#94a3b8'};font-weight:500;margin-left:4px`;
+    badge.textContent = '+' + newCount;
+  }
 }
 
 function applyFilters() {
