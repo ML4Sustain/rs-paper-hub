@@ -1021,7 +1021,7 @@ async function loadData(file) {
   yearSelect.innerHTML = `<option value="">${t('allYears')}</option>`;
   document.getElementById('yearRangeGroup').style.display = 'none';
   chartSel.year.clear(); chartSel.type.clear(); chartSel.category.clear(); chartSel.task.clear();
-  quickDateFilter = ''; tagDateFilter = '';
+  quickDateFilter = ''; tagDateFilter = ''; for (const k in activeTags) delete activeTags[k];
   document.getElementById('qfToday').classList.remove('active');
   document.getElementById('qfWeek').classList.remove('active');
   document.getElementById('searchInput').value = '';
@@ -1161,7 +1161,7 @@ function renderStats(papers) {
 
 let _tagDriven = false;
 function applyFilters() {
-  if (!_tagDriven) { tagDateFilter = ''; activeTag.field = ''; activeTag.value = ''; }
+  if (!_tagDriven) { tagDateFilter = ''; for (const k in activeTags) delete activeTags[k]; }
   _tagDriven = false;
   const q = document.getElementById('searchInput').value.toLowerCase().trim();
   const typeDD = document.getElementById('typeFilter').value;
@@ -1276,58 +1276,33 @@ function sortCompare(a, b) {
 }
 function applySorting() { filtered.sort(sortCompare); }
 
-const activeTag = { field: '', value: '' };
+const activeTags = {}; // field -> value, e.g. { type: 'Computer Vision', task: 'CLS' }
 
 function filterByTag(field, value) {
-  // Toggle: click same tag again to clear
-  const isToggleOff = (activeTag.field === field && activeTag.value === value);
+  // Toggle: same field+value = remove, same field+different value = replace, new field = add
+  if (activeTags[field] === value) {
+    delete activeTags[field];
+  } else {
+    activeTags[field] = value;
+  }
   // Reset chart selections and quick date filter
   chartSel.year.clear(); chartSel.type.clear(); chartSel.category.clear(); chartSel.task.clear();
   quickDateFilter = '';
   document.getElementById('qfToday').classList.remove('active');
   document.getElementById('qfWeek').classList.remove('active');
-  // Reset all dropdown filters
-  document.getElementById('searchInput').value = '';
-  document.getElementById('typeFilter').value = '';
-  document.getElementById('yearFilter').value = '';
-  document.getElementById('yearRangeGroup').style.display = 'none';
-  document.getElementById('monthFilter').value = '';
-  document.getElementById('vlmFilter').value = '';
-  document.getElementById('vlmKeywordFilter').value = '';
-  document.getElementById('categoryFilter').value = '';
-  document.getElementById('taskFilter').value = '';
-  tagDateFilter = '';
   _tagDriven = true;
-
-  if (isToggleOff) {
-    activeTag.field = ''; activeTag.value = '';
-  } else {
-    activeTag.field = field; activeTag.value = value;
-    switch (field) {
-      case 'date':
-        tagDateFilter = value;
-        break;
-      case 'type':
-        document.getElementById('typeFilter').value = value;
-        break;
-      case 'subtype':
-        document.getElementById('searchInput').value = value;
-        document.getElementById('searchScope').value = 'all';
-        break;
-      case 'category':
-        document.getElementById('categoryFilter').value = value;
-        break;
-      case 'vlm':
-        document.getElementById('vlmFilter').value = 'true';
-        break;
-      case 'vlmkw':
-        document.getElementById('vlmKeywordFilter').value = value;
-        break;
-      case 'task':
-        document.getElementById('taskFilter').value = value;
-        break;
-    }
-  }
+  // Sync all dropdown filters from activeTags
+  document.getElementById('searchInput').value = activeTags.subtype || '';
+  if (activeTags.subtype) document.getElementById('searchScope').value = 'all';
+  document.getElementById('typeFilter').value = activeTags.type || '';
+  document.getElementById('yearFilter').value = activeTags.date ? activeTags.date.substring(0, 4) : '';
+  document.getElementById('yearRangeGroup').style.display = 'none';
+  document.getElementById('monthFilter').value = activeTags.date ? String(parseInt(activeTags.date.substring(5, 7), 10)) : '';
+  tagDateFilter = activeTags.date || '';
+  document.getElementById('categoryFilter').value = activeTags.category || '';
+  document.getElementById('vlmFilter').value = activeTags.vlm ? 'true' : '';
+  document.getElementById('vlmKeywordFilter').value = activeTags.vlmkw || '';
+  document.getElementById('taskFilter').value = activeTags.task || '';
   applyFilters();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
@@ -1352,7 +1327,7 @@ function render() {
     return;
   }
 
-  const _ta = (f, v) => (activeTag.field === f && activeTag.value === v) ? ' active' : '';
+  const _ta = (f, v) => activeTags[f] === v ? ' active' : '';
   list.innerHTML = page.map((p, localIdx) => {
     const idx = start + localIdx;
     const pDate = p.Date || (p.Year + '-' + String(p.Month).padStart(2,'0'));
