@@ -33,7 +33,7 @@ RS-Paper-Hub automatically scrapes remote sensing and earth observation papers f
 - **VLM Filtering** — Keyword-based filtering for Vision-Language Model related papers with context-aware rules (avoids false positives from non-VLM cross-modal or retrieval terms)
 - **Agent Filtering** — Keyword-based filtering for Agent / Autonomous Decision-Making related papers (multi-agent systems, RL-based agents, LLM agents, agentic workflows, etc.)
 - **UAV Filtering** — Keyword-based filtering for UAV / drone related papers (unmanned aerial vehicles, drone-based remote sensing, aerial photogrammetry, etc.)
-- **Four-Tab Web Viewer** — Browse All Papers, VLM subset, Agent subset, or UAV subset; with search, multi-dimensional chart filtering, task/category/year filters, Google Scholar links, and mobile-friendly UI
+- **Four-Tab Web Viewer** — Browse All Papers, UAV subset, VLM subset, or Agent subset; with search, multi-dimensional chart filtering, task/category/year filters, Google Scholar links, and mobile-friendly UI
 - **Clickable Tag Filtering** — Click any tag (date, type, category, task, VLM, etc.) on a paper card to filter by that value; stack multiple tags for progressive filtering, click again to remove
 - **Paper Collection** — Collect papers across multiple searches into a personal collection, then view or export them together
 - **BibTeX Batch Export** — Export filtered results, current page, custom range, or collection as timestamped `.bib` file with optional abstracts
@@ -249,7 +249,7 @@ rs-paper-hub/
 │       └── uav_filter.py     # UAV keyword rules
 ├── .github/workflows/
 │   └── daily-update.yml      # Daily CI/CD pipeline (Mon-Fri, synced with arXiv)
-├── index.html               # Interactive web viewer (4 tabs: All / VLM / Agent / UAV)
+├── index.html               # Interactive web viewer (4 tabs: All / UAV / VLM / Agent)
 ├── groups/                  # Paper groups for curated reading lists
 │   ├── index.json           # Group registry (key, label, file)
 │   └── *.json               # Individual group files (arrays of arXiv URLs)
@@ -291,7 +291,7 @@ python3 -m http.server 8080
 
 Features include:
 
-- **Three data tabs** — Switch between All Papers, VLM subset, and Agent subset
+- **Three data tabs** — Switch between All Papers, UAV subset, VLM subset, and Agent subset
 - **Quick date filters** — "Today" and "This Week" buttons with red badge counts
 - **Relevance-ranked search** — Title matches prioritized over abstract matches
 - **Multi-dimensional chart filtering** — Click year/type/category/task bars to filter, multi-select supported
