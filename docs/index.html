@@ -305,7 +305,7 @@
   </div>
   <div class="feature-card">
     <h4 data-i18n="feat9Title">Group Export & Sharing</h4>
-    <p data-i18n="feat9Desc">Export selected papers as a Group JSON file with a custom name. Groups appear in the "All Groups" dropdown for quick filtering. Submit your group via Pull Request to share it with the community.</p>
+    <p data-i18n="feat9Desc">Export selected papers as a Group JSON file with a custom name. Groups appear in the "All Groups" dropdown for quick filtering. Submit your group via PR, or set up auto-updated groups by author name — the pipeline keeps them in sync daily.</p>
   </div>
 </div>
 </section>
@@ -525,6 +525,18 @@ python main.py --verbose</code></pre>
 
 <h3 data-i18n="sgStep3Title">3. Submit a Pull Request</h3>
 <p data-i18n="sgStep3Desc">Fork the repository, add your JSON file to the <code>groups/</code> directory, update <code>groups/index.json</code>, and submit a Pull Request. Once merged, your group will appear in the dropdown for all users.</p>
+
+<h3 data-i18n="sgAutoTitle">Auto-updated groups by author</h3>
+<p data-i18n="sgAutoDesc">You can also create groups that automatically stay up to date. Add <code>"auto": true</code> and an <code>"authors"</code> array to your entry in <code>groups/index.json</code>. The pipeline will match papers by author name and update the group file daily.</p>
+<div class="code-block"><pre><code>{
+  "key": "xian-sun",
+  "label": "Xian Sun",
+  "label_zh": "孙显",
+  "file": "xian-sun.json",
+  "auto": true,
+  "authors": ["Xian Sun"]
+}</code></pre></div>
+<p data-i18n="sgAutoNote">Multiple author name variants are supported (e.g., <code>["Gui-Song Xia", "Guisong Xia"]</code>). No need to create the JSON file manually — it will be generated automatically.</p>
 </section>
 
 </main>
@@ -558,7 +570,7 @@ const LANG = {
     feat6Title: 'Paper Collection & BibTeX Export', feat6Desc: 'Collect favorite papers and export them as BibTeX for easy reference management.',
     feat7Title: 'RSS Feeds & Zotero', feat7Desc: 'Subscribe to RSS feeds for all papers, VLM papers, or Agent papers. Integrate with Zotero for automatic bibliography management.',
     feat8Title: 'Clickable Tag Filtering', feat8Desc: 'Click on any tag (date, type, category, task, VLM, etc.) on a paper card to instantly filter by that value. Multiple tags can be stacked for progressive filtering, and clicking the same tag again removes the filter.',
-    feat9Title: 'Group Export & Sharing', feat9Desc: 'Export selected papers as a Group JSON file with a custom name. Groups appear in the "All Groups" dropdown for quick filtering. Submit your group via Pull Request to share it with the community.',
+    feat9Title: 'Group Export & Sharing', feat9Desc: 'Export selected papers as a Group JSON file with a custom name. Groups appear in the "All Groups" dropdown for quick filtering. Submit your group via PR, or set up auto-updated groups by author name — the pipeline keeps them in sync daily.',
     webViewerIntro: 'The web interface provides powerful tools for exploring and filtering papers:',
     viewer1Title: 'Four-Tab Data Source Switching', viewer1Desc: 'Use the tabs at the top to switch between: All Papers, UAV papers, Vision-Language Model papers, and Agent papers. The selection is preserved in the URL for sharing.',
     viewer2Title: 'Search & Filtering', viewer2a: 'Search by title, author, or abstract with exact phrase or fuzzy (split-word) matching', viewer2b: 'Filter by year, month, paper type, category, VLM keywords, and task tags', viewer2c: 'Quick filters for "Today" and "This Week" to see recently published papers', viewer2d: 'Toggle "With Code" to show only papers with available code',
@@ -582,6 +594,8 @@ const LANG = {
     sgFieldName: 'Field', sgFieldDesc: 'Description',
     sgKeyDesc: 'Unique identifier for your group (use lowercase and hyphens)', sgLabelDesc: 'Display name in English', sgLabelZhDesc: 'Display name in Chinese (optional)', sgFileDesc: 'Filename of your paper list JSON (placed in the groups/ directory)',
     sgStep3Title: '3. Submit a Pull Request', sgStep3Desc: 'Fork the repository, add your JSON file to the groups/ directory, update groups/index.json, and submit a Pull Request. Once merged, your group will appear in the dropdown for all users.',
+    sgAutoTitle: 'Auto-updated groups by author', sgAutoDesc: 'You can also create groups that automatically stay up to date. Add "auto": true and an "authors" array to your entry in groups/index.json. The pipeline will match papers by author name and update the group file daily.',
+    sgAutoNote: 'Multiple author name variants are supported (e.g., ["Gui-Song Xia", "Guisong Xia"]). No need to create the JSON file manually — it will be generated automatically.',
     footer: 'RS Paper Hub - A curated collection of remote sensing papers from arXiv',
   },
   zh: {
@@ -601,7 +615,7 @@ const LANG = {
     feat6Title: '论文收藏与 BibTeX 导出', feat6Desc: '收藏感兴趣的论文并导出为 BibTeX 格式，方便参考文献管理。',
     feat7Title: 'RSS 订阅与 Zotero', feat7Desc: '订阅全部论文、VLM 论文或 Agent 论文的 RSS 订阅源。可与 Zotero 集成实现自动文献管理。',
     feat8Title: '标签点击筛选', feat8Desc: '点击论文卡片上的任意标签（日期、类型、类别、任务、VLM 等）即可按该值筛选。支持多标签叠加筛选，再次点击同一标签可取消筛选。',
-    feat9Title: '研究组导出与分享', feat9Desc: '将筛选论文导出为研究组 JSON 文件，支持自定义命名。研究组显示在"所有研究组"下拉菜单中，方便快速筛选。通过提交 Pull Request 可与社区共享您的研究组。',
+    feat9Title: '研究组导出与分享', feat9Desc: '将筛选论文导出为研究组 JSON 文件，支持自定义命名。研究组显示在"所有研究组"下拉菜单中，方便快速筛选。可通过 PR 提交，或设置按作者自动更新——pipeline 每日自动同步。',
     webViewerIntro: '网页界面提供强大的论文浏览和筛选功能：',
     viewer1Title: '四标签数据源切换', viewer1Desc: '使用顶部的标签切换：全部论文、无人机论文、视觉语言模型论文和 Agent 论文。选中状态会保存在 URL 中以便分享。',
     viewer2Title: '搜索与筛选', viewer2a: '按标题、作者或摘要搜索，支持精确匹配或模糊（分词）匹配', viewer2b: '按年份、月份、论文类型、类别、VLM 关键词和任务标签筛选', viewer2c: '"今日"和"本周"快速筛选，查看近期发布的论文', viewer2d: '切换"含代码"仅显示提供代码的论文',
@@ -625,6 +639,8 @@ const LANG = {
     sgFieldName: '字段', sgFieldDesc: '说明',
     sgKeyDesc: '研究组唯一标识（使用小写字母和连字符）', sgLabelDesc: '英文显示名称', sgLabelZhDesc: '中文显示名称（可选）', sgFileDesc: '论文列表 JSON 文件名（放在 groups/ 目录下）',
     sgStep3Title: '3. 提交 Pull Request', sgStep3Desc: 'Fork 本仓库，将 JSON 文件添加到 groups/ 目录，更新 groups/index.json，然后提交 Pull Request。合并后，您的研究组将显示在下拉菜单中供所有用户使用。',
+    sgAutoTitle: '按作者自动更新研究组', sgAutoDesc: '您也可以创建按作者自动更新的研究组。在 groups/index.json 的条目中添加 "auto": true 和 "authors" 数组，pipeline 会按作者名匹配论文并每日自动更新研究组文件。',
+    sgAutoNote: '支持多个作者名称变体（例如 ["Gui-Song Xia", "Guisong Xia"]）。无需手动创建 JSON 文件，系统会自动生成。',
     footer: '遥感论文社 - 来自 arXiv 的遥感论文精选合集',
   }
 };

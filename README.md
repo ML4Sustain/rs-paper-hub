@@ -251,8 +251,9 @@ rs-paper-hub/
 │   └── daily-update.yml      # Daily CI/CD pipeline (Mon-Fri, synced with arXiv)
 ├── index.html               # Interactive web viewer (4 tabs: All / UAV / VLM / Agent)
 ├── groups/                  # Paper groups for curated reading lists
-│   ├── index.json           # Group registry (key, label, file)
+│   ├── index.json           # Group registry (key, label, file; auto+authors for auto-update)
 │   └── *.json               # Individual group files (arrays of arXiv URLs)
+├── update_groups.py         # Auto-update groups by author matching
 ├── requirements.txt
 └── output/
     ├── papers.csv/json              # All papers (cleaned + classified + tagged)
@@ -301,6 +302,7 @@ Features include:
 - **Paper collection** — Collect papers across multiple searches, then view or export them together
 - **BibTeX batch export** — Export filtered results, current page, custom range, or collection as timestamped `.bib` file with optional abstracts
 - **Group export & sharing** — Export papers as a Group JSON file with custom name; groups appear in "All Groups" dropdown for quick filtering. Submit your group via PR to share with the community ([learn more](https://rspaper.top/docs/#submit-group))
+- **Auto-updated author groups** — Define groups with `"auto": true` and `"authors": [...]` in `groups/index.json`; the pipeline automatically matches papers by author name and keeps group files up to date daily
 - **New papers panel** — Side panel showing today's and this week's papers
 - **Google Scholar links** — One-click search on Google Scholar for each paper
 - **Bilingual UI** — Switch between English and Chinese
