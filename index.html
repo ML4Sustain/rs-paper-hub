@@ -99,8 +99,37 @@
     padding: 4px 10px; border-radius: 6px; border: 1px solid var(--border); transition: all 0.15s;
   }
   .skill-card-links a:hover { border-color: var(--primary); color: var(--primary); background: var(--primary-light); }
+  .venues-category { margin-bottom: 28px; }
+  .venues-category h3 {
+    font-size: 15px; font-weight: 600; color: var(--text); margin: 0 0 12px;
+    padding-bottom: 8px; border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; gap: 8px;
+  }
+  .venues-category h3 svg { color: var(--primary); flex-shrink: 0; }
+  .venue-card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+    padding: 14px 18px; transition: box-shadow 0.2s, border-color 0.2s;
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  }
+  .venue-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-color: var(--primary); }
+  .venue-info { flex: 1; min-width: 0; }
+  .venue-name { font-size: 13px; font-weight: 600; color: var(--text); line-height: 1.4; }
+  .venue-abbr {
+    display: inline-block; font-size: 11px; padding: 1px 7px; border-radius: 4px;
+    background: var(--primary-light); color: var(--primary); font-weight: 600; margin-left: 8px; vertical-align: middle;
+  }
+  .venue-link {
+    font-size: 12px; color: var(--text-secondary); text-decoration: none; font-weight: 500;
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 4px 10px; border-radius: 6px; border: 1px solid var(--border); transition: all 0.15s; flex-shrink: 0;
+  }
+  .venue-link:hover { border-color: var(--primary); color: var(--primary); background: var(--primary-light); }
+  .venues-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 10px;
+  }
   @media (max-width: 768px) {
     .skills-grid { grid-template-columns: 1fr; }
+    .venues-grid { grid-template-columns: 1fr; }
   }
   @media (max-width: 768px) {
     .sidebar { left: auto; right: 12px; top: auto; bottom: 80px; transform: none; }
@@ -618,6 +647,10 @@
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
       <span class="sidebar-item-label" data-i18n="navSkills">Skills</span>
     </a>
+    <a class="sidebar-item" data-page="venues" onclick="switchPage('venues', this)" title="Venues">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      <span class="sidebar-item-label" data-i18n="navVenues">Venues</span>
+    </a>
   </nav>
 </aside>
 
@@ -821,6 +854,58 @@
   </div>
 </div>
 
+<div id="page-venues" class="page-section">
+  <div class="skills-page">
+    <div class="skills-header">
+      <h2 data-i18n="navVenues">Venues</h2>
+    </div>
+
+    <div class="venues-category">
+      <h3><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>Remote Sensing Journals</h3>
+      <div class="venues-grid">
+        <div class="venue-card"><div class="venue-info"><span class="venue-name">IEEE Trans. Geoscience and Remote Sensing<span class="venue-abbr">TGRS</span></span></div><a class="venue-link" href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=36" target="_blank"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Site</a></div>
+        <div class="venue-card"><div class="venue-info"><span class="venue-name">ISPRS J. Photogrammetry and Remote Sensing<span class="venue-abbr">ISPRS</span></span></div><a class="venue-link" href="https://www.sciencedirect.com/journal/isprs-journal-of-photogrammetry-and-remote-sensing" target="_blank"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Site</a></div>
+        <div class="venue-card"><div class="venue-info"><span class="venue-name">Remote Sensing of Environment<span class="venue-abbr">RSE</span></span></div><a class="venue-link" href="https://www.sciencedirect.com/journal/remote-sensing-of-environment" target="_blank"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Site</a></div>
+        <div class="venue-card"><div class="venue-info"><span class="venue-name">Int. J. Applied Earth Observation and Geoinformation<span class="venue-abbr">JAG</span></span></div><a class="venue-link" href="https://www.sciencedirect.com/journal/international-journal-of-applied-earth-observation-and-geoinformation" target="_blank"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Site</a></div>
+        <div class="venue-card"><div class="venue-info"><span class="venue-name">IEEE Geoscience and Remote Sensing Letters<span class="venue-abbr">GRSL</span></span></div><a class="venue-link" href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859" target="_blank"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Site</a></div>
+        <div class="venue-card"><div class="venue-info"><span class="venue-name">Remote Sensing (MDPI)<span class="venue-abbr">RS</span></span></div><a class="venue-link" href="https://www.mdpi.com/journal/remotesensing" target="_blank"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Site</a></div>
+        <div class="venue-card"><div class="venue-info"><span class="venue-name">IEEE J. Selected Topics in Applied Earth Obs. & RS<span class="venue-abbr">JSTARS</span></span></div><a class="venue-link" href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4609443" target="_blank"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Site</a></div>
+        <div class="venue-card"><div class="venue-info"><span class="venue-name">GIScience & Remote Sensing<span class="venue-abbr">GRS</span></span></div><a class="venue-link" href="https://www.tandfonline.com/journals/tgrs20" target="_blank"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Site</a></div>
+      </div>
+    </div>
+
+    <div class="venues-category">
+      <h3><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>CV / AI Journals</h3>
+      <div class="venues-grid">
+        <div class="venue-card"><div class="venue-info"><span class="venue-name">IEEE Trans. Pattern Analysis and Machine Intelligence<span class="venue-abbr">TPAMI</span></span></div><a class="venue-link" href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34" target="_blank"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Site</a></div>
+        <div class="venue-card"><div class="venue-info"><span class="venue-name">International Journal of Computer Vision<span class="venue-abbr">IJCV</span></span></div><a class="venue-link" href="https://www.springer.com/journal/11263" target="_blank"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Site</a></div>
+        <div class="venue-card"><div class="venue-info"><span class="venue-name">IEEE Trans. Image Processing<span class="venue-abbr">TIP</span></span></div><a class="venue-link" href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=83" target="_blank"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Site</a></div>
+      </div>
+    </div>
+
+    <div class="venues-category">
+      <h3><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>CV / AI Conferences</h3>
+      <div class="venues-grid">
+        <div class="venue-card"><div class="venue-info"><span class="venue-name">Computer Vision and Pattern Recognition<span class="venue-abbr">CVPR</span></span></div><a class="venue-link" href="https://cvpr.thecvf.com/" target="_blank"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Site</a></div>
+        <div class="venue-card"><div class="venue-info"><span class="venue-name">International Conference on Computer Vision<span class="venue-abbr">ICCV</span></span></div><a class="venue-link" href="https://iccv.thecvf.com/" target="_blank"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Site</a></div>
+        <div class="venue-card"><div class="venue-info"><span class="venue-name">European Conference on Computer Vision<span class="venue-abbr">ECCV</span></span></div><a class="venue-link" href="https://eccv.ecva.net/" target="_blank"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Site</a></div>
+        <div class="venue-card"><div class="venue-info"><span class="venue-name">Neural Information Processing Systems<span class="venue-abbr">NeurIPS</span></span></div><a class="venue-link" href="https://neurips.cc/" target="_blank"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Site</a></div>
+        <div class="venue-card"><div class="venue-info"><span class="venue-name">International Conference on Machine Learning<span class="venue-abbr">ICML</span></span></div><a class="venue-link" href="https://icml.cc/" target="_blank"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Site</a></div>
+        <div class="venue-card"><div class="venue-info"><span class="venue-name">AAAI Conference on Artificial Intelligence<span class="venue-abbr">AAAI</span></span></div><a class="venue-link" href="https://aaai.org/conference/aaai/" target="_blank"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Site</a></div>
+        <div class="venue-card"><div class="venue-info"><span class="venue-name">ACM International Conference on Multimedia<span class="venue-abbr">ACM MM</span></span></div><a class="venue-link" href="https://acmmm.org/" target="_blank"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Site</a></div>
+      </div>
+    </div>
+
+    <div class="venues-category">
+      <h3><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Remote Sensing Conferences</h3>
+      <div class="venues-grid">
+        <div class="venue-card"><div class="venue-info"><span class="venue-name">IEEE Int. Geoscience and Remote Sensing Symposium<span class="venue-abbr">IGARSS</span></span></div><a class="venue-link" href="https://www.igarss.org/" target="_blank"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Site</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 <div style="padding:8px 0 12px;text-align:center;font-size:11px;color:#94a3b8;">
   <a href='https://www.counters-free.net/' style="color:inherit;text-decoration:none;">visits:</a>
   <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=fb6eb33e03e201b26048add495de3cda89f56796'></script>
@@ -951,10 +1036,11 @@ const LANG = {
     ds_all: 'All Papers', ds_vlm: 'Vision-Language Model', ds_agent: 'Agent', ds_uav: 'UAV',
     noBibtex: 'No BibTeX available',
     scholar: 'Scholar', copyInfo: 'Copy', copyInfoDone: 'Copied!',
-    navPapers: 'Papers', navSkills: 'Skills',
+    navPapers: 'Papers', navSkills: 'Skills', navVenues: 'Venues',
     skillsTitle: 'Skills', skillsDesc: 'A curated collection of research skills — reading, writing, coding and beyond. Contributions welcome!',
     notePapers: 'Note: There is a 2–3 day delay between the publication date and the announcement date of arXiv papers; Category and task labels are rule-based and may contain inaccuracies. We are continuously improving them. This does not affect tracking the latest research trends.',
     noteSkills: 'Note: A curated collection of research skills — reading, writing, coding and beyond. Contributions welcome!',
+    noteVenues: 'Note: A curated list of key journals and conferences in remote sensing and related AI/CV fields.',
     before: 'Before', more: 'more',
     visits: 'visits:',
     friendLinks: 'Links',
@@ -999,10 +1085,11 @@ const LANG = {
     ds_all: '全部论文', ds_vlm: '视觉语言模型', ds_agent: 'Agent', ds_uav: '无人机',
     noBibtex: '暂无引用信息',
     scholar: '谷歌学术', copyInfo: '复制', copyInfoDone: '已复制！',
-    navPapers: '论文', navSkills: '技能',
+    navPapers: '论文', navSkills: '技能', navVenues: '期刊会议',
     skillsTitle: '技能工具', skillsDesc: '汇集阅读、写作、编程等科研技能，欢迎分享与贡献！',
     notePapers: 'Note: arXiv 论文的发布日期与公布日期之间有 2-3 天的延迟；类别和任务标签基于规则生成，可能存在不准确之处。我们正在持续改进。这不影响追踪最新研究动态。',
     noteSkills: 'Note: 汇集阅读、写作、编程等科研技能，欢迎分享与贡献！',
+    noteVenues: 'Note: 遥感及相关 AI/CV 领域的核心期刊与会议汇总。',
     before: '早于', more: '更多',
     visits: '访问量：',
     friendLinks: '友情链接',
