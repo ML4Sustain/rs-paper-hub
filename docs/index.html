@@ -571,8 +571,12 @@ python main.py --verbose</code></pre>
   tools.json          # Tools &amp; libraries</code></pre></div>
 
 <h3 data-i18n="srStep1Title">1. Add to an existing category</h3>
-<p data-i18n="srStep1Desc">Open the corresponding JSON file (e.g., <code>resources/obj-det.json</code>) and add a new entry with <code>name</code> and <code>url</code>:</p>
-<div class="code-block"><pre><code>{ "name": "My Dataset", "url": "https://example.com" }</code></pre></div>
+<p data-i18n="srStep1Desc">Open the corresponding JSON file (e.g., <code>resources/obj-det.json</code>) and add a new entry with <code>name</code>, <code>url</code>, and <code>desc</code>:</p>
+<div class="code-block"><pre><code>{
+  "name": "My Dataset",
+  "url": "https://example.com",
+  "desc": "A brief one-line description of the dataset"
+}</code></pre></div>
 
 <h3 data-i18n="srStep2Title">2. Add a new category</h3>
 <p data-i18n="srStep2Desc">Create a new JSON file in the <code>resources/</code> directory, then register it in <code>resources/index.json</code>:</p>
@@ -652,7 +656,7 @@ const LANG = {
     submitResource: 'Submit Resource',
     srIntro: 'You can contribute datasets, tools, or libraries to the Resources page. All resource data is stored as JSON files in the resources/ directory, making it easy to add or update via Pull Request.',
     srStructTitle: 'Directory Structure',
-    srStep1Title: '1. Add to an existing category', srStep1Desc: 'Open the corresponding JSON file (e.g., resources/obj-det.json) and add a new entry with name and url:',
+    srStep1Title: '1. Add to an existing category', srStep1Desc: 'Open the corresponding JSON file (e.g., resources/obj-det.json) and add a new entry with name, url, and desc:',
     srStep2Title: '2. Add a new category', srStep2Desc: 'Create a new JSON file in the resources/ directory, then register it in resources/index.json:',
     srIconNote: 'Available icons: cube, grid, layers, trending, wrench.',
     srStep3Title: '3. Submit a Pull Request', srStep3Desc: 'Fork the repository, make your changes in the resources/ directory, and submit a Pull Request. Once merged, your contribution will appear on the Resources page for all users.',
@@ -707,7 +711,7 @@ const LANG = {
     submitResource: '提交资源',
     srIntro: '您可以向 Resources 页面贡献数据集、工具或库。所有资源数据以 JSON 文件形式存储在 resources/ 目录下，方便通过 Pull Request 添加或更新。',
     srStructTitle: '目录结构',
-    srStep1Title: '1. 添加到已有分类', srStep1Desc: '打开对应的 JSON 文件（如 resources/obj-det.json），添加一条包含 name 和 url 的新条目：',
+    srStep1Title: '1. 添加到已有分类', srStep1Desc: '打开对应的 JSON 文件（如 resources/obj-det.json），添加一条包含 name、url 和 desc 的新条目：',
     srStep2Title: '2. 添加新分类', srStep2Desc: '在 resources/ 目录下创建新的 JSON 文件，然后在 resources/index.json 中注册：',
     srIconNote: '可用图标：cube、grid、layers、trending、wrench。',
     srStep3Title: '3. 提交 Pull Request', srStep3Desc: 'Fork 本仓库，在 resources/ 目录下进行修改，然后提交 Pull Request。合并后，您的贡献将显示在 Resources 页面上。',
