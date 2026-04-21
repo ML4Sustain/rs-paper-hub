@@ -2221,8 +2221,7 @@ function getArxivDateRanges() {
   const today = new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Shanghai' }));
   const todayStr = toBJDate(today);
 
-  const addedToday = allPapers.filter(p => (p._added_date || '') === todayStr);
-  const todayDate = addedToday.length > 0 ? todayStr : '';
+  const todayDate = todayStr;
 
   // "This Week" = from Monday of the current natural week (Beijing time)
   const wd = today.getDay(); // 0=Sun, 1=Mon...
