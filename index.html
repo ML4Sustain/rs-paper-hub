@@ -672,6 +672,10 @@
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
       <span class="sidebar-item-label" data-i18n="navPapers">Papers</span>
     </a>
+    <a class="sidebar-item" data-page="trends" onclick="switchPage('trends', this)" title="Trends">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      <span class="sidebar-item-label" data-i18n="navTrends">Trends</span>
+    </a>
     <a class="sidebar-item" data-page="skills" onclick="switchPage('skills', this)" title="Skills">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
       <span class="sidebar-item-label" data-i18n="navSkills">Skills</span>
@@ -832,6 +836,17 @@
 
 </div><!-- .main-wrap -->
 </div><!-- #page-papers -->
+
+<div id="page-trends" class="page-section">
+  <div class="skills-page">
+    <div class="skills-header">
+      <h2 data-i18n="navTrends">Trends</h2>
+    </div>
+    <div id="trendsDataSourceWrap" style="display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap;">
+    </div>
+    <div id="trendsContent" style="display:flex;flex-direction:column;gap:24px;"></div>
+  </div>
+</div>
 
 <div id="page-skills" class="page-section">
   <div class="skills-page">
@@ -1106,7 +1121,10 @@ const LANG = {
     ds_all: 'All Papers', ds_vlm: 'Vision-Language Model', ds_agent: 'Agent', ds_uav: 'UAV',
     noBibtex: 'No BibTeX available',
     scholar: 'Scholar', copyInfo: 'Copy', copyInfoDone: 'Copied!',
-    navPapers: 'Papers', navSkills: 'Skills', navVenues: 'Venues', navResources: 'Resources',
+    navPapers: 'Papers', navTrends: 'Trends', navSkills: 'Skills', navVenues: 'Venues', navResources: 'Resources',
+    noteTrends: 'Paper statistics — yearly, monthly, and top authors. Statistics generated from all paper data sources. More statistics coming soon.',
+    trendsYearly: 'Yearly Distribution', trendsMonthly: 'Monthly Distribution', trendsTopAuthors: 'Top Authors',
+    trendsPapers: 'papers', trendsSelectYear: 'Select a year to view monthly breakdown.',
     skillsTitle: 'Skills', skillsDesc: 'A curated collection of research skills — reading, writing, coding and beyond. Contributions welcome!',
     notePapers: 'arXiv papers have a 2–3 day publication-to-announcement delay; category/task labels are rule-based and may be imprecise — we are continuously improving them.',
     noteSkills: 'A curated collection of research skills — reading, writing, coding and beyond. Contributions welcome!',
@@ -1164,7 +1182,10 @@ const LANG = {
     ds_all: '全部论文', ds_vlm: '视觉语言模型', ds_agent: 'Agent', ds_uav: '无人机',
     noBibtex: '暂无引用信息',
     scholar: '谷歌学术', copyInfo: '复制', copyInfoDone: '已复制！',
-    navPapers: '论文', navSkills: '技能', navVenues: '期刊会议', navResources: '资源',
+    navPapers: '论文', navTrends: '趋势', navSkills: '技能', navVenues: '期刊会议', navResources: '资源',
+    noteTrends: '论文统计 — 年度分布、月度分布与高产作者。统计数据来源于所有论文数据集。陆续推出更多统计数据。',
+    trendsYearly: '年度分布', trendsMonthly: '月度分布', trendsTopAuthors: '高产作者',
+    trendsPapers: '篇', trendsSelectYear: '选择年份查看月度分布。',
     skillsTitle: '技能', skillsDesc: '汇集阅读、写作、编程等科研技能，欢迎分享与贡献！',
     notePapers: 'arXiv 论文发布与公告存在 2–3 天延迟；类别/任务标签基于规则，可能不完全准确，我们正在持续优化。',
     noteSkills: '汇集阅读、写作、编程等科研技能，欢迎分享与贡献！',
@@ -1506,6 +1527,7 @@ async function init() {
   initGroups();
   loadVenues();
   loadResources();
+  loadTrends();
   const activeBtn = document.querySelector('#dataSource button.active');
   const ds = DATA_SOURCES.find(d => d.key === (activeBtn ? activeBtn.dataset.key : 'all')) || DATA_SOURCES[0];
   await loadData(ds.file);
@@ -1517,6 +1539,419 @@ async function init() {
   const overlay = document.getElementById('loadingOverlay');
   overlay.classList.add('hidden');
   setTimeout(() => overlay.remove(), 500);
+}
+
+// ---- Trends ----
+let trendsData = null;
+let trendsCurrentDS = 'all';
+const TREND_COLORS = [
+  '#6366f1','#8b5cf6','#a78bfa','#c084fc','#e879f9','#f472b6','#fb7185',
+  '#f87171','#fb923c','#fbbf24','#a3e635','#4ade80','#34d399','#2dd4bf',
+  '#22d3ee','#38bdf8','#60a5fa','#818cf8'
+];
+function trendColor(i) { return TREND_COLORS[i % TREND_COLORS.length]; }
+
+async function loadTrends() {
+  try {
+    const resp = await fetch('trends/trends.json');
+    trendsData = await resp.json();
+    initTrendsDataSource();
+    renderTrends();
+  } catch(e) {
+    console.warn('Could not load trends data', e);
+  }
+}
+
+function initTrendsDataSource() {
+  const wrap = document.getElementById('trendsDataSourceWrap');
+  if (!wrap || !trendsData) return;
+  wrap.innerHTML = '';
+  const keys = Object.keys(trendsData).filter(k => k !== '_last_updated');
+  const labels_en = { all: 'All Papers', vlm: 'VLM', uav: 'UAV', agent: 'Agent' };
+  const labels_zh = { all: '全部论文', vlm: '视觉语言模型', uav: '无人机', agent: 'Agent' };
+  const labels = currentLang === 'zh' ? labels_zh : labels_en;
+  keys.forEach(k => {
+    const btn = document.createElement('button');
+    btn.textContent = labels[k] || k;
+    const isActive = k === trendsCurrentDS;
+    btn.style.cssText = 'padding:6px 18px;border-radius:20px;border:1.5px solid ' + (isActive ? 'transparent' : 'var(--border)') + ';background:' + (isActive ? 'linear-gradient(135deg,#6366f1,#8b5cf6)' : 'var(--bg-card)') + ';color:' + (isActive ? '#fff' : 'var(--text-primary)') + ';cursor:pointer;font-size:13px;font-weight:500;transition:all 0.25s;box-shadow:' + (isActive ? '0 2px 10px rgba(99,102,241,0.3)' : 'none') + ';';
+    btn.onmouseenter = () => { if (k !== trendsCurrentDS) btn.style.borderColor = '#8b5cf6'; };
+    btn.onmouseleave = () => { if (k !== trendsCurrentDS) btn.style.borderColor = 'var(--border)'; };
+    btn.onclick = () => {
+      trendsCurrentDS = k;
+      initTrendsDataSource();
+      renderTrends();
+    };
+    wrap.appendChild(btn);
+  });
+}
+
+function renderTrends() {
+  const container = document.getElementById('trendsContent');
+  if (!container || !trendsData || !trendsData[trendsCurrentDS]) return;
+  const d = trendsData[trendsCurrentDS];
+  container.innerHTML = '';
+  _activeAuthorName = null;
+
+  // --- Summary stat cards ---
+  const totalYears = Object.keys(d.yearly).length;
+  const topAuthor = d.top_authors.length ? d.top_authors[0].name : '-';
+  const summaryWrap = document.createElement('div');
+  summaryWrap.style.cssText = 'display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;';
+  [{label: currentLang==='zh'?'论文总数':'Total Papers', value: d.total.toLocaleString(), color: '#6366f1', icon: '📄'},
+   {label: currentLang==='zh'?'跨越年份':'Years Span', value: totalYears, color: '#8b5cf6', icon: '📅'},
+   {label: currentLang==='zh'?'最高产作者':'Top Author', value: topAuthor, color: '#a78bfa', icon: '👤', small: true}
+  ].forEach(s => {
+    const card = document.createElement('div');
+    card.style.cssText = 'background:var(--bg-card);border-radius:12px;padding:16px 18px;border:1px solid var(--border);position:relative;overflow:hidden;transition:transform 0.2s,box-shadow 0.2s;cursor:default;';
+    card.innerHTML = '<div style="position:absolute;top:-8px;right:-8px;font-size:36px;opacity:0.1;">' + s.icon + '</div>'
+      + '<div style="font-size:11px;color:var(--text-secondary);margin-bottom:4px;text-transform:uppercase;letter-spacing:0.5px;">' + s.label + '</div>'
+      + '<div style="font-size:' + (s.small ? '15' : '22') + 'px;font-weight:700;color:' + s.color + ';' + (s.small ? 'overflow:hidden;text-overflow:ellipsis;white-space:nowrap;' : '') + '">' + s.value + '</div>';
+    card.onmouseenter = () => { card.style.transform = 'translateY(-2px)'; card.style.boxShadow = '0 4px 16px rgba(99,102,241,0.12)'; };
+    card.onmouseleave = () => { card.style.transform = ''; card.style.boxShadow = ''; };
+    summaryWrap.appendChild(card);
+  });
+  container.appendChild(summaryWrap);
+
+  // --- Yearly bar chart ---
+  const yearlyCard = document.createElement('div');
+  yearlyCard.style.cssText = 'background:var(--bg-card);border-radius:12px;padding:24px;padding-top:32px;border:1px solid var(--border);transition:box-shadow 0.2s;overflow:visible;';
+  const yearlyHeader = document.createElement('div');
+  yearlyHeader.style.cssText = 'display:flex;align-items:center;gap:8px;margin-bottom:16px;';
+  yearlyHeader.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="3" x2="9" y2="21"/></svg>'
+    + '<h3 style="margin:0;font-size:16px;font-weight:600;color:var(--text-primary);">' + t('trendsYearly') + '</h3>'
+    + '<span style="font-size:12px;color:var(--text-secondary);margin-left:auto;">' + (currentLang === 'zh' ? '点击柱形查看月度' : 'Click a bar for monthly view') + '</span>';
+  yearlyCard.appendChild(yearlyHeader);
+
+  const years = Object.entries(d.yearly);
+  const maxY = Math.max(...years.map(e => e[1]));
+  const yearlyBars = document.createElement('div');
+  yearlyBars.style.cssText = 'display:flex;align-items:flex-end;gap:3px;height:220px;overflow:visible;padding:24px 0 28px;';
+  years.forEach(([year, count], idx) => {
+    const col = document.createElement('div');
+    col.style.cssText = 'display:flex;flex-direction:column;align-items:center;flex:1;min-width:28px;cursor:pointer;position:relative;';
+    col.title = year + ': ' + count;
+    const bar = document.createElement('div');
+    const h = maxY ? Math.max((count / maxY) * 160, 3) : 3;
+    const c = trendColor(idx);
+    bar.style.cssText = 'width:100%;max-width:36px;height:0px;background:linear-gradient(180deg,' + c + ',' + c + 'cc);border-radius:6px 6px 0 0;transition:height 0.6s cubic-bezier(.4,0,.2,1),opacity 0.15s,box-shadow 0.2s;box-shadow:0 -2px 8px ' + c + '30;';
+    // animate in
+    requestAnimationFrame(() => { requestAnimationFrame(() => { bar.style.height = h + 'px'; }); });
+    const lbl = document.createElement('div');
+    lbl.style.cssText = 'font-size:9px;color:var(--text-secondary);margin-top:6px;white-space:nowrap;transform:rotate(-50deg);transform-origin:top center;';
+    lbl.textContent = year;
+    const cnt = document.createElement('div');
+    cnt.style.cssText = 'font-size:10px;font-weight:600;color:' + c + ';margin-bottom:4px;opacity:0;transition:opacity 0.6s 0.3s;';
+    cnt.textContent = count;
+    requestAnimationFrame(() => { requestAnimationFrame(() => { cnt.style.opacity = '1'; }); });
+    col.appendChild(cnt);
+    col.appendChild(bar);
+    col.appendChild(lbl);
+    col.onmouseenter = () => { bar.style.opacity = '0.8'; bar.style.boxShadow = '0 -4px 16px ' + c + '50'; };
+    col.onmouseleave = () => { bar.style.opacity = '1'; bar.style.boxShadow = '0 -2px 8px ' + c + '30'; };
+    col.onclick = () => renderMonthlyDetail(year);
+    yearlyBars.appendChild(col);
+  });
+  yearlyCard.appendChild(yearlyBars);
+  container.appendChild(yearlyCard);
+
+  // --- Monthly detail ---
+  const monthlyCard = document.createElement('div');
+  monthlyCard.id = 'trendsMonthlyCard';
+  monthlyCard.style.cssText = 'background:var(--bg-card);border-radius:12px;padding:24px;border:1px solid var(--border);';
+  const monthlyHeader = document.createElement('div');
+  monthlyHeader.style.cssText = 'display:flex;align-items:center;gap:8px;margin-bottom:16px;';
+  monthlyHeader.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>'
+    + '<h3 style="margin:0;font-size:16px;font-weight:600;color:var(--text-primary);">' + t('trendsMonthly') + '</h3>'
+    + '<span id="trendsMonthlyHint" style="font-size:13px;color:#8b5cf6;font-weight:600;margin-left:8px;"></span>';
+  monthlyCard.appendChild(monthlyHeader);
+  const monthlyBars = document.createElement('div');
+  monthlyBars.id = 'trendsMonthlyBars';
+  monthlyBars.style.cssText = 'display:flex;align-items:flex-end;gap:8px;height:180px;padding-top:20px;';
+  monthlyCard.appendChild(monthlyBars);
+  container.appendChild(monthlyCard);
+
+  // Render latest year by default
+  const latestYear = years.length ? years[years.length - 1][0] : null;
+  if (latestYear) renderMonthlyDetail(latestYear);
+
+  // --- Top Authors ---
+  const authCard = document.createElement('div');
+  authCard.style.cssText = 'background:var(--bg-card);border-radius:12px;padding:24px;border:1px solid var(--border);';
+  const authHeader = document.createElement('div');
+  authHeader.style.cssText = 'display:flex;align-items:center;gap:8px;margin-bottom:16px;';
+  authHeader.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e879f9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>'
+    + '<h3 style="margin:0;font-size:16px;font-weight:600;color:var(--text-primary);">' + t('trendsTopAuthors') + '</h3>'
+    + '<span style="font-size:12px;color:var(--text-secondary);margin-left:auto;">' + (currentLang === 'zh' ? '点击作者查看详情' : 'Click author for detail') + '</span>';
+  authCard.appendChild(authHeader);
+
+  const topN = d.top_authors.slice(0, 20);
+  const maxA = topN.length ? topN[0].count : 1;
+  const authList = document.createElement('div');
+  authList.style.cssText = 'display:flex;flex-direction:column;gap:5px;';
+  renderAuthorRows(authList, topN, maxA, true);
+  authCard.appendChild(authList);
+
+  // Author detail panel (shown when clicking an author)
+  const authDetail = document.createElement('div');
+  authDetail.id = 'trendsAuthorDetail';
+  authDetail.style.cssText = 'max-height:0;overflow:hidden;transition:max-height 0.5s cubic-bezier(.4,0,.2,1),opacity 0.4s;opacity:0;';
+  authCard.appendChild(authDetail);
+
+  // Show more / less
+  if (d.top_authors.length > 20) {
+    const moreBtn = document.createElement('button');
+    moreBtn.style.cssText = 'margin-top:14px;background:linear-gradient(135deg,#6366f1,#8b5cf6);border:none;border-radius:20px;padding:7px 20px;color:#fff;cursor:pointer;font-size:12px;font-weight:500;transition:all 0.25s;box-shadow:0 2px 8px rgba(99,102,241,0.2);';
+    moreBtn.textContent = t('more') + ' (' + d.top_authors.length + ')';
+    moreBtn.onmouseenter = () => { moreBtn.style.transform = 'translateY(-1px)'; moreBtn.style.boxShadow = '0 4px 14px rgba(99,102,241,0.3)'; };
+    moreBtn.onmouseleave = () => { moreBtn.style.transform = ''; moreBtn.style.boxShadow = '0 2px 8px rgba(99,102,241,0.2)'; };
+    let expanded = false;
+    moreBtn.onclick = () => {
+      expanded = !expanded;
+      const list = expanded ? d.top_authors : d.top_authors.slice(0, 20);
+      authList.innerHTML = '';
+      renderAuthorRows(authList, list, maxA, expanded ? false : true);
+      moreBtn.textContent = expanded ? '▲ ' + (currentLang === 'zh' ? '收起' : 'Collapse') : (t('more') + ' (' + d.top_authors.length + ')');
+    };
+    authCard.appendChild(moreBtn);
+  }
+
+  container.appendChild(authCard);
+}
+
+function renderAuthorRows(container, authors, maxA, animate) {
+  const medals = ['🥇','🥈','🥉'];
+  authors.forEach((a, i) => {
+    const row = document.createElement('div');
+    row.style.cssText = 'display:flex;align-items:center;gap:10px;font-size:13px;padding:6px 8px;border-radius:8px;transition:background 0.15s,transform 0.2s;cursor:pointer;' + (animate ? 'opacity:0;transform:translateX(-12px);' : '');
+    if (animate) {
+      setTimeout(() => { row.style.opacity = '1'; row.style.transform = 'translateX(0)'; row.style.transition = 'opacity 0.4s,transform 0.4s,background 0.15s'; }, i * 40);
+    }
+    row.onmouseenter = () => { row.style.background = 'var(--primary-light)'; };
+    row.onmouseleave = () => { row.style.background = ''; };
+    row.onclick = () => renderAuthorDetail(a, i);
+    const rank = document.createElement('span');
+    rank.style.cssText = 'width:28px;text-align:center;font-size:' + (i < 3 ? '16' : '12') + 'px;flex-shrink:0;' + (i >= 3 ? 'color:var(--text-secondary);' : '');
+    rank.textContent = i < 3 ? medals[i] : (i + 1);
+    const name = document.createElement('span');
+    name.style.cssText = 'width:180px;flex-shrink:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-primary);font-weight:' + (i < 3 ? '600' : '400') + ';';
+    name.textContent = a.name;
+    name.title = a.name;
+    const barWrap = document.createElement('div');
+    barWrap.style.cssText = 'flex:1;height:20px;background:var(--bg-main);border-radius:10px;overflow:hidden;';
+    const bar = document.createElement('div');
+    const w = Math.max((a.count / maxA) * 100, 3);
+    const c = trendColor(i);
+    bar.style.cssText = 'height:100%;width:' + (animate ? '0' : w) + '%;background:linear-gradient(90deg,' + c + ',' + c + 'aa);border-radius:10px;transition:width 0.8s cubic-bezier(.4,0,.2,1);';
+    if (animate) {
+      setTimeout(() => { bar.style.width = w + '%'; }, i * 40 + 100);
+    }
+    barWrap.appendChild(bar);
+    const cnt = document.createElement('span');
+    cnt.style.cssText = 'width:44px;text-align:right;color:' + c + ';font-size:12px;font-weight:600;flex-shrink:0;';
+    cnt.textContent = a.count;
+    // expand arrow
+    const arrow = document.createElement('span');
+    arrow.style.cssText = 'font-size:10px;color:var(--text-secondary);flex-shrink:0;transition:transform 0.2s;';
+    arrow.textContent = '▸';
+    row.appendChild(rank);
+    row.appendChild(name);
+    row.appendChild(barWrap);
+    row.appendChild(cnt);
+    row.appendChild(arrow);
+    container.appendChild(row);
+  });
+}
+
+let _activeAuthorName = null;
+
+function renderAuthorDetail(author, colorIdx) {
+  const panel = document.getElementById('trendsAuthorDetail');
+  if (!panel) return;
+  const c = trendColor(colorIdx);
+
+  // Toggle off if same author clicked
+  if (_activeAuthorName === author.name) {
+    _activeAuthorName = null;
+    panel.style.maxHeight = '0';
+    panel.style.opacity = '0';
+    return;
+  }
+  _activeAuthorName = author.name;
+
+  // Build content
+  panel.innerHTML = '';
+  panel.style.maxHeight = '0';
+  panel.style.opacity = '0';
+
+  const inner = document.createElement('div');
+  inner.style.cssText = 'margin-top:16px;padding:20px;background:linear-gradient(135deg,var(--bg-main),var(--bg-card));border-radius:12px;border:1.5px solid ' + c + '30;';
+
+  // Header
+  const header = document.createElement('div');
+  header.style.cssText = 'display:flex;align-items:center;gap:10px;margin-bottom:18px;';
+  header.innerHTML = '<div style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,' + c + ',' + c + 'aa);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:15px;">' + author.name.charAt(0).toUpperCase() + '</div>'
+    + '<div><div style="font-size:15px;font-weight:600;color:var(--text-primary);">' + author.name + '</div>'
+    + '<div style="font-size:12px;color:var(--text-secondary);">' + author.count + ' ' + t('trendsPapers') + '</div></div>'
+    + '<button onclick="_activeAuthorName=null;var p=document.getElementById(\'trendsAuthorDetail\');p.style.maxHeight=\'0\';p.style.opacity=\'0\';" style="margin-left:auto;background:none;border:none;cursor:pointer;color:var(--text-secondary);font-size:18px;line-height:1;">✕</button>';
+  inner.appendChild(header);
+
+  // Yearly mini bars
+  const yearlyData = author.yearly || {};
+  const yearEntries = Object.entries(yearlyData);
+  if (yearEntries.length > 0) {
+    const ySec = document.createElement('div');
+    ySec.style.cssText = 'margin-bottom:18px;';
+    const yTitle = document.createElement('div');
+    yTitle.style.cssText = 'font-size:12px;font-weight:600;color:var(--text-secondary);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px;';
+    yTitle.textContent = t('trendsYearly');
+    ySec.appendChild(yTitle);
+
+    const yBars = document.createElement('div');
+    yBars.style.cssText = 'display:flex;align-items:flex-end;gap:4px;height:100px;padding-top:16px;';
+    const maxAY = Math.max(...yearEntries.map(e => e[1]), 1);
+    yearEntries.forEach(([yr, cnt], yi) => {
+      const col = document.createElement('div');
+      col.style.cssText = 'display:flex;flex-direction:column;align-items:center;flex:1;min-width:22px;cursor:pointer;';
+      col.title = yr + ': ' + cnt;
+      const cntEl = document.createElement('div');
+      cntEl.style.cssText = 'font-size:9px;font-weight:600;color:' + c + ';margin-bottom:2px;opacity:0;transition:opacity 0.4s ' + (yi * 30) + 'ms;';
+      cntEl.textContent = cnt;
+      const bar = document.createElement('div');
+      const h = Math.max((cnt / maxAY) * 70, cnt > 0 ? 4 : 2);
+      bar.style.cssText = 'width:100%;max-width:28px;height:0;background:linear-gradient(180deg,' + c + ',' + c + '88);border-radius:4px 4px 0 0;transition:height 0.5s cubic-bezier(.4,0,.2,1) ' + (yi * 30) + 'ms,box-shadow 0.2s;';
+      requestAnimationFrame(() => { requestAnimationFrame(() => { bar.style.height = h + 'px'; cntEl.style.opacity = '1'; }); });
+      bar.onmouseenter = () => { bar.style.boxShadow = '0 -3px 10px ' + c + '40'; };
+      bar.onmouseleave = () => { bar.style.boxShadow = ''; };
+      col.onclick = (e) => { e.stopPropagation(); renderAuthorMonthly(author, yr, c, inner); };
+      const lbl = document.createElement('div');
+      lbl.style.cssText = 'font-size:8px;color:var(--text-secondary);margin-top:3px;white-space:nowrap;';
+      lbl.textContent = yr.slice(-2);
+      col.appendChild(cntEl);
+      col.appendChild(bar);
+      col.appendChild(lbl);
+      yBars.appendChild(col);
+    });
+    ySec.appendChild(yBars);
+
+    // Hint
+    const hint = document.createElement('div');
+    hint.style.cssText = 'font-size:11px;color:var(--text-secondary);margin-top:8px;text-align:center;';
+    hint.textContent = currentLang === 'zh' ? '点击年份柱形查看该年月度分布' : 'Click a year bar for monthly breakdown';
+    ySec.appendChild(hint);
+
+    inner.appendChild(ySec);
+  }
+
+  // Monthly section placeholder
+  const mSec = document.createElement('div');
+  mSec.id = 'authorMonthlySection';
+  inner.appendChild(mSec);
+
+  panel.appendChild(inner);
+
+  // Animate open
+  requestAnimationFrame(() => {
+    panel.style.maxHeight = panel.scrollHeight + 200 + 'px';
+    panel.style.opacity = '1';
+  });
+
+  // Auto-show latest year monthly
+  if (yearEntries.length > 0) {
+    const latestYr = yearEntries[yearEntries.length - 1][0];
+    renderAuthorMonthly(author, latestYr, c, inner);
+  }
+
+  // Scroll into view
+  setTimeout(() => { panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }, 100);
+}
+
+function renderAuthorMonthly(author, year, color, parentEl) {
+  const mSec = parentEl.querySelector('#authorMonthlySection');
+  if (!mSec) return;
+  mSec.innerHTML = '';
+
+  const mData = (author.monthly || {})[String(year)];
+  if (!mData) {
+    mSec.innerHTML = '<div style="font-size:12px;color:var(--text-secondary);padding:8px 0;">' + (currentLang === 'zh' ? '该年无月度数据' : 'No monthly data for this year') + '</div>';
+    return;
+  }
+
+  const mTitle = document.createElement('div');
+  mTitle.style.cssText = 'font-size:12px;font-weight:600;color:var(--text-secondary);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px;display:flex;align-items:center;gap:6px;';
+  mTitle.innerHTML = t('trendsMonthly') + ' <span style="color:' + color + ';font-weight:700;">' + year + '</span>';
+  mSec.appendChild(mTitle);
+
+  const monthNames = currentLang === 'zh'
+    ? ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+    : ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+  const vals = Object.values(mData);
+  const maxM = Math.max(...vals, 1);
+
+  const mBars = document.createElement('div');
+  mBars.style.cssText = 'display:flex;align-items:flex-end;gap:6px;height:110px;padding-top:14px;';
+  vals.forEach((count, i) => {
+    const col = document.createElement('div');
+    col.style.cssText = 'display:flex;flex-direction:column;align-items:center;flex:1;min-width:24px;';
+    col.title = monthNames[i] + ': ' + count;
+    const cnt = document.createElement('div');
+    cnt.style.cssText = 'font-size:10px;font-weight:600;color:' + color + ';margin-bottom:3px;opacity:0;transition:opacity 0.4s ' + (i * 40) + 'ms;';
+    cnt.textContent = count || '';
+    const bar = document.createElement('div');
+    const h = maxM ? Math.max((count / maxM) * 70, count > 0 ? 4 : 2) : 2;
+    bar.style.cssText = 'width:100%;max-width:36px;height:0;background:linear-gradient(180deg,' + color + ',' + color + '77);border-radius:6px 6px 0 0;transition:height 0.4s cubic-bezier(.4,0,.2,1) ' + (i * 40) + 'ms;';
+    requestAnimationFrame(() => { requestAnimationFrame(() => { bar.style.height = h + 'px'; cnt.style.opacity = '1'; }); });
+    const lbl = document.createElement('div');
+    lbl.style.cssText = 'font-size:10px;color:var(--text-secondary);margin-top:4px;font-weight:500;';
+    lbl.textContent = monthNames[i];
+    col.appendChild(cnt);
+    col.appendChild(bar);
+    col.appendChild(lbl);
+    mBars.appendChild(col);
+  });
+  mSec.appendChild(mBars);
+
+  // Update parent max-height to accommodate new content
+  const panel = document.getElementById('trendsAuthorDetail');
+  if (panel) panel.style.maxHeight = panel.scrollHeight + 200 + 'px';
+}
+
+function renderMonthlyDetail(year) {
+  const d = trendsData[trendsCurrentDS];
+  const mData = d.monthly[String(year)];
+  const hint = document.getElementById('trendsMonthlyHint');
+  const barsEl = document.getElementById('trendsMonthlyBars');
+  if (!mData || !barsEl) return;
+  if (hint) hint.textContent = year;
+  barsEl.innerHTML = '';
+  const monthNames = currentLang === 'zh'
+    ? ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+    : ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const vals = Object.values(mData);
+  const maxM = Math.max(...vals, 1);
+  vals.forEach((count, i) => {
+    const col = document.createElement('div');
+    col.style.cssText = 'display:flex;flex-direction:column;align-items:center;flex:1;min-width:32px;';
+    col.title = monthNames[i] + ': ' + count;
+    const cnt = document.createElement('div');
+    cnt.style.cssText = 'font-size:11px;font-weight:600;color:' + trendColor(i) + ';margin-bottom:4px;opacity:0;transition:opacity 0.5s;';
+    cnt.textContent = count || '';
+    const bar = document.createElement('div');
+    const h = maxM ? Math.max((count / maxM) * 130, count > 0 ? 6 : 2) : 2;
+    const c = trendColor(i);
+    bar.style.cssText = 'width:100%;max-width:44px;height:0px;background:linear-gradient(180deg,' + c + ',' + c + '99);border-radius:8px 8px 0 0;transition:height 0.5s cubic-bezier(.4,0,.2,1) ' + (i * 50) + 'ms,box-shadow 0.2s;box-shadow:0 -2px 8px ' + c + '25;';
+    requestAnimationFrame(() => { requestAnimationFrame(() => { bar.style.height = h + 'px'; cnt.style.opacity = '1'; }); });
+    bar.onmouseenter = () => { bar.style.boxShadow = '0 -4px 16px ' + c + '45'; };
+    bar.onmouseleave = () => { bar.style.boxShadow = '0 -2px 8px ' + c + '25'; };
+    const lbl = document.createElement('div');
+    lbl.style.cssText = 'font-size:11px;color:var(--text-secondary);margin-top:6px;font-weight:500;';
+    lbl.textContent = monthNames[i];
+    col.appendChild(cnt);
+    col.appendChild(bar);
+    col.appendChild(lbl);
+    barsEl.appendChild(col);
+  });
 }
 
 function cleanRegexLabel(s) {
