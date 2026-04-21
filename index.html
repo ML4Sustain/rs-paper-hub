@@ -123,6 +123,12 @@
     padding: 4px 10px; border-radius: 6px; border: 1px solid var(--border); transition: all 0.15s; flex-shrink: 0;
   }
   .venue-link:hover { border-color: var(--primary); color: var(--primary); background: var(--primary-light); }
+  .venue-editions { display: flex; gap: 4px; margin-top: 4px; flex-wrap: wrap; }
+  .venue-editions a {
+    font-size: 11px; color: var(--text-secondary); text-decoration: none; padding: 1px 6px;
+    border-radius: 4px; background: var(--bg); border: 1px solid var(--border); transition: all 0.15s;
+  }
+  .venue-editions a:hover { border-color: var(--primary); color: var(--primary); background: var(--primary-light); }
   .venues-grid {
     display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 10px;
   }
@@ -1092,7 +1098,7 @@ const LANG = {
     noBibtex: '暂无引用信息',
     scholar: '谷歌学术', copyInfo: '复制', copyInfoDone: '已复制！',
     navPapers: '论文', navSkills: '技能', navVenues: '期刊会议', navResources: '资源',
-    skillsTitle: '技能工具', skillsDesc: '汇集阅读、写作、编程等科研技能，欢迎分享与贡献！',
+    skillsTitle: '技能', skillsDesc: '汇集阅读、写作、编程等科研技能，欢迎分享与贡献！',
     notePapers: 'arXiv 论文发布与公告存在 2–3 天延迟；类别/任务标签基于规则，可能不完全准确，我们正在持续优化。',
     noteSkills: '汇集阅读、写作、编程等科研技能，欢迎分享与贡献！',
     noteVenues: '遥感及相关 AI/CV 领域的核心期刊与会议汇总。',
@@ -2389,7 +2395,12 @@ function renderVenues() {
     const count = cat.items.length;
     const cards = cat.items.map(v => {
       const abbr = v.abbr ? `<span class="venue-abbr">${v.abbr}</span>` : '';
-      return `<div class="venue-card"><div class="venue-info"><span class="venue-name">${v.name}${abbr}</span></div><a class="venue-link" href="${v.url}" target="_blank">${linkSvg}Site</a></div>`;
+      let editions = '';
+      if (v.editions) {
+        const years = Object.keys(v.editions).sort();
+        editions = `<div class="venue-editions">${years.map(y => `<a href="${v.editions[y]}" target="_blank">${y}</a>`).join('')}</div>`;
+      }
+      return `<div class="venue-card"><div class="venue-info"><span class="venue-name">${v.name}${abbr}</span>${editions}</div><a class="venue-link" href="${v.url}" target="_blank">${linkSvg}Site</a></div>`;
     }).join('');
     return `<div class="venues-category"><h3>${icon}<span>${label}</span><span class="res-cat-count">${count}</span></h3><div class="venues-grid">${cards}</div></div>`;
   }).join('');
