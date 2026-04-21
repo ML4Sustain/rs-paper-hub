@@ -1234,7 +1234,8 @@ function applyLang() {
   });
   // Note - update based on active page
   const noteEl = document.getElementById('noteText');
-  const activePage = localStorage.getItem('activePage') || 'papers';
+  const hash = location.hash.replace('#', '');
+  const activePage = (PAGE_KEYS.includes(hash)) ? hash : 'papers';
   if (noteEl) noteEl.textContent = t('note' + activePage.charAt(0).toUpperCase() + activePage.slice(1));
   // Generic data-i18n elements (sidebar labels, page headings, etc.)
   document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -1359,6 +1360,7 @@ function toggleLang() {
 }
 
 // Sidebar navigation
+const PAGE_KEYS = ['papers','trends','skills','venues','resources'];
 function switchPage(page, el) {
   document.querySelectorAll('.page-section').forEach(s => s.classList.remove('active'));
   document.querySelectorAll('.sidebar-item').forEach(s => s.classList.remove('active'));
@@ -1371,16 +1373,29 @@ function switchPage(page, el) {
   // Show/hide stats bar on non-papers pages
   const stats = document.getElementById('statsBar');
   if (stats) stats.style.display = page === 'papers' ? '' : 'none';
-  localStorage.setItem('activePage', page);
+  // Write page to hash (papers = clean URL)
+  if (page === 'papers') {
+    if (location.hash.replace('#','') && PAGE_KEYS.includes(location.hash.replace('#',''))) history.replaceState(null, '', location.pathname + location.search);
+  } else {
+    history.replaceState(null, '', '#' + page);
+  }
   window.scrollTo({ top: 0 });
 }
 
 (function initSidebar() {
-  const saved = localStorage.getItem('activePage');
-  if (saved && saved !== 'papers') {
-    const item = document.querySelector(`.sidebar-item[data-page="${saved}"]`);
-    if (item) switchPage(saved, item);
+  const hash = location.hash.replace('#', '');
+  const page = PAGE_KEYS.includes(hash) ? hash : 'papers';
+  if (page !== 'papers') {
+    const item = document.querySelector(`.sidebar-item[data-page="${page}"]`);
+    if (item) switchPage(page, item);
   }
+  // Listen for hash changes (back/forward)
+  window.addEventListener('hashchange', () => {
+    const h = location.hash.replace('#', '');
+    const p = PAGE_KEYS.includes(h) ? h : 'papers';
+    const el = document.querySelector(`.sidebar-item[data-page="${p}"]`);
+    if (el) switchPage(p, el);
+  });
 })();
 const ICON = {
   arxiv: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>',
