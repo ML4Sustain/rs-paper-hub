@@ -62,12 +62,16 @@ def run(input_path: str, output_dir: str):
         papers = json.load(f)
     logger.info(f"Loaded {len(papers)} papers")
 
-    # ── Deduplicate by Paper_link (keep last occurrence) ──
+    # ── Deduplicate by Paper_link (keep last, preserve _added_date) ──
     before = len(papers)
     seen = {}
     for p in papers:
         link = p.get("Paper_link", "")
-        seen[link if link else id(p)] = p
+        key = link if link else id(p)
+        existing = seen.get(key)
+        if existing and existing.get("_added_date") and not p.get("_added_date"):
+            p["_added_date"] = existing["_added_date"]
+        seen[key] = p
     papers = list(seen.values())
     if len(papers) < before:
         logger.info(f"  Deduplicated: {before} -> {len(papers)} ({before - len(papers)} duplicates removed)")
