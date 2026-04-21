@@ -126,18 +126,22 @@
   .venues-grid {
     display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 10px;
   }
-  .tag-wall { display: flex; flex-wrap: wrap; gap: 8px; }
-  .tag-wall a {
-    display: inline-flex; align-items: center; gap: 4px; padding: 5px 14px; border-radius: 8px;
-    font-size: 13px; font-weight: 500; text-decoration: none; transition: all 0.15s;
-    border: 1px solid var(--border); color: var(--text); background: var(--card);
+  .res-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px;
   }
-  .tag-wall a:hover { border-color: var(--primary); color: var(--primary); background: var(--primary-light); }
-  .tag-wall a svg { flex-shrink: 0; opacity: 0.4; }
-  .tag-wall a:hover svg { opacity: 0.7; }
+  .res-card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+    padding: 12px 16px; transition: box-shadow 0.2s, border-color 0.2s;
+    text-decoration: none; display: block; cursor: pointer;
+  }
+  .res-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-color: var(--primary); }
+  .res-name { font-size: 13px; font-weight: 600; color: var(--text); }
+  .res-desc { font-size: 11px; color: var(--text-secondary); margin-top: 3px; line-height: 1.4; }
+  .res-cat-count { font-size: 11px; font-weight: 500; color: var(--primary); background: var(--primary-light); padding: 1px 8px; border-radius: 10px; margin-left: 6px; }
   @media (max-width: 768px) {
     .skills-grid { grid-template-columns: 1fr; }
     .venues-grid { grid-template-columns: 1fr; }
+    .res-grid { grid-template-columns: 1fr; }
   }
   @media (max-width: 768px) {
     .sidebar { left: auto; right: 12px; top: auto; bottom: 80px; transform: none; }
@@ -2409,21 +2413,20 @@ async function initGroups() {
 }
 
 // Resources feature
-let resourcesData = []; // { label, label_zh, items[] }
+let resourcesData = []; // { label, label_zh, icon, items[] }
+const RES_ICONS = {
+  cube: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>',
+  grid: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="1" width="22" height="22" rx="2" ry="2"/><line x1="1" y1="12" x2="23" y2="12"/><line x1="12" y1="1" x2="12" y2="23"/></svg>',
+  layers: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/></svg>',
+  trending: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>',
+  wrench: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>',
+};
 
 async function loadResources() {
   try {
     const resp = await fetch('./resources/index.json');
     if (!resp.ok) return;
     const cats = await resp.json();
-    const arrow = '<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>';
-    const icons = {
-      cube: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>',
-      grid: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="1" width="22" height="22" rx="2" ry="2"/><line x1="1" y1="12" x2="23" y2="12"/><line x1="12" y1="1" x2="12" y2="23"/></svg>',
-      layers: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/></svg>',
-      trending: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>',
-      wrench: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>',
-    };
     resourcesData = [];
     for (const cat of cats) {
       const r = await fetch('./resources/' + cat.file);
@@ -2431,22 +2434,22 @@ async function loadResources() {
       const items = await r.json();
       resourcesData.push({ label: cat.label, label_zh: cat.label_zh, icon: cat.icon, items });
     }
-    renderResources(icons, arrow);
+    renderResources();
   } catch(e) { /* resources not available */ }
 }
 
-function renderResources(icons, arrow) {
+function renderResources() {
   const el = document.getElementById('resourcesList');
   if (!el) return;
-  if (!icons) icons = {};
-  if (!arrow) arrow = '';
   el.innerHTML = resourcesData.map(cat => {
     const label = currentLang === 'zh' ? (cat.label_zh || cat.label) : cat.label;
-    const icon = icons[cat.icon] || '';
-    const tags = cat.items.map(it =>
-      `<a href="${it.url}" target="_blank">${it.name}${arrow}</a>`
-    ).join('');
-    return `<div class="venues-category"><h3>${icon}<span>${label}</span></h3><div class="tag-wall">${tags}</div></div>`;
+    const icon = RES_ICONS[cat.icon] || '';
+    const count = cat.items.length;
+    const cards = cat.items.map(it => {
+      const desc = it.desc ? `<div class="res-desc">${it.desc}</div>` : '';
+      return `<a class="res-card" href="${it.url}" target="_blank"><div class="res-name">${it.name}</div>${desc}</a>`;
+    }).join('');
+    return `<div class="venues-category"><h3>${icon}<span>${label}</span><span class="res-cat-count">${count}</span></h3><div class="res-grid">${cards}</div></div>`;
   }).join('');
 }
 
