@@ -63,14 +63,45 @@
   .main-wrap { flex: 1; }
   .page-section { display: none; }
   .page-section.active { display: block; }
-  .skills-placeholder {
-    display: flex; flex-direction: column; align-items: center; justify-content: center;
-    min-height: 60vh; color: var(--text-secondary); text-align: center; padding: 40px 24px;
+  .skills-page {
+    max-width: 1200px; margin: 0 auto; padding: 32px 24px;
   }
-  .skills-placeholder-icon { width: 80px; height: 80px; border-radius: 20px; background: linear-gradient(135deg, #4f46e5, #7c3aed); display: flex; align-items: center; justify-content: center; margin-bottom: 24px; }
-  .skills-placeholder-icon svg { width: 40px; height: 40px; color: #fff; }
-  .skills-placeholder h2 { font-size: 24px; color: var(--text); margin: 0 0 8px; }
-  .skills-placeholder p { font-size: 14px; margin: 0; max-width: 400px; line-height: 1.6; }
+  .skills-header {
+    text-align: center; margin-bottom: 32px;
+  }
+  .skills-header h2 { font-size: 24px; color: var(--text); margin: 0 0 8px; }
+  .skills-header p { font-size: 14px; color: var(--text-secondary); margin: 0; }
+  .skills-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px;
+  }
+  .skill-card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 20px 24px; transition: box-shadow 0.2s, border-color 0.2s;
+  }
+  .skill-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-color: var(--primary); }
+  .skill-card-top { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+  .skill-card-icon {
+    width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .skill-card-icon svg { width: 22px; height: 22px; }
+  .skill-card-name { font-size: 16px; font-weight: 600; color: var(--text); }
+  .skill-card-author { font-size: 12px; color: var(--text-secondary); }
+  .skill-card-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 14px; }
+  .skill-card-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
+  .skill-tag {
+    font-size: 11px; padding: 2px 8px; border-radius: 4px;
+    background: var(--primary-light); color: var(--primary); font-weight: 500;
+  }
+  .skill-card-links { display: flex; gap: 8px; }
+  .skill-card-links a {
+    font-size: 12px; color: var(--text-secondary); text-decoration: none; font-weight: 500;
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 4px 10px; border-radius: 6px; border: 1px solid var(--border); transition: all 0.15s;
+  }
+  .skill-card-links a:hover { border-color: var(--primary); color: var(--primary); background: var(--primary-light); }
+  @media (max-width: 768px) {
+    .skills-grid { grid-template-columns: 1fr; }
+  }
   @media (max-width: 768px) {
     .sidebar { left: auto; right: 12px; top: auto; bottom: 80px; transform: none; }
   }
@@ -736,12 +767,58 @@
 </div><!-- #page-papers -->
 
 <div id="page-skills" class="page-section">
-  <div class="skills-placeholder">
-    <div class="skills-placeholder-icon">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+  <div class="skills-page">
+    <div class="skills-header">
+      <h2 data-i18n="skillsTitle">Skills</h2>
+      <p data-i18n="skillsDesc">A curated collection of research skills — reading, writing, coding and beyond. Contributions welcome!</p>
     </div>
-    <h2 data-i18n="skillsTitle">Skills</h2>
-    <p data-i18n="skillsDesc">A curated collection of research skills — reading, writing, coding and beyond. Contributions welcome!</p>
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <div class="skill-card-top">
+          <div class="skill-card-icon" style="background:linear-gradient(135deg,#4f46e5,#7c3aed);color:#fff;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <div>
+            <div class="skill-card-name">Superpowers</div>
+            <div class="skill-card-author">by obra (Jesse Vincent)</div>
+          </div>
+        </div>
+        <div class="skill-card-desc">A complete software development methodology framework for Claude Code agents. Features composable skills for autonomous development workflows, including plan execution, code review, and a community-driven skill marketplace.</div>
+        <div class="skill-card-tags">
+          <span class="skill-tag">Coding</span>
+          <span class="skill-tag">Writing</span>
+          <span class="skill-tag">Workflow</span>
+          <span class="skill-tag">Claude Code</span>
+        </div>
+        <div class="skill-card-links">
+          <a href="https://github.com/obra/superpowers" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>GitHub</a>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-top">
+          <div class="skill-card-icon" style="background:linear-gradient(135deg,#059669,#10b981);color:#fff;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="14" y1="4" x2="10" y2="20"/></svg>
+          </div>
+          <div>
+            <div class="skill-card-name">Ralph</div>
+            <div class="skill-card-author">by snarktank</div>
+          </div>
+        </div>
+        <div class="skill-card-desc">An autonomous AI agent loop that runs coding tools (Claude Code / Amp) repeatedly until all PRD requirements are complete, with a fresh context window on each iteration. Ship features while you sleep.</div>
+        <div class="skill-card-tags">
+          <span class="skill-tag">Coding</span>
+          <span class="skill-tag">Autonomous</span>
+          <span class="skill-tag">Agent Loop</span>
+        </div>
+        <div class="skill-card-links">
+          <a href="https://github.com/snarktank/ralph" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>GitHub</a>
+          <a href="https://claytonfarr.github.io/ralph-playbook/" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>Playbook</a>
+        </div>
+      </div>
+
+    </div>
   </div>
 </div>
 
