@@ -306,6 +306,8 @@ Features include:
 - **New papers panel** — Side panel showing today's and this week's papers
 - **Google Scholar links** — One-click search on Google Scholar for each paper
 - **Bilingual UI** — Switch between English and Chinese
+- **Skills page** — A curated collection of research skills (coding, writing, workflows and more) with community contributions welcome
+- **Venues page** — Quick-reference directory of key journals and conferences in remote sensing and related AI/CV fields, organized by category
 - **Mobile-friendly** — Responsive layout with collapsible filters and wrapping navigation
 - **LaTeX rendering** — Math formulas rendered via KaTeX
 
