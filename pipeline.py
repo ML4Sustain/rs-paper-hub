@@ -62,14 +62,16 @@ def run(input_path: str, output_dir: str):
         papers = json.load(f)
     logger.info(f"Loaded {len(papers)} papers")
 
-    # ── Deduplicate by Paper_link (keep last, preserve _added_date) ──
+    # ── Deduplicate by arxiv_id (strip version), keep latest version ──
+    import re
     before = len(papers)
     seen = {}
     for p in papers:
         link = p.get("Paper_link", "")
-        key = link if link else id(p)
+        # Strip version suffix (e.g. v1, v2) to treat all versions as same paper
+        key = re.sub(r'v\d+$', '', link) if link else str(id(p))
         existing = seen.get(key)
-        if existing and existing.get("_added_date") and not p.get("_added_date"):
+        if existing and existing.get("_added_date"):
             p["_added_date"] = existing["_added_date"]
         seen[key] = p
     papers = list(seen.values())
@@ -79,9 +81,20 @@ def run(input_path: str, output_dir: str):
     # ── Stamp _added_date for new papers ─────────────────
     from datetime import date
     today_str = date.today().isoformat()
-    new_count = sum(1 for p in papers if not p.get("_added_date"))
+
+    def _has_added_date(p):
+        v = p.get("_added_date")
+        if not v:
+            return False
+        if isinstance(v, float) and pd.isna(v):
+            return False
+        if str(v).strip() in ("", "nan"):
+            return False
+        return True
+
+    new_count = sum(1 for p in papers if not _has_added_date(p))
     for p in papers:
-        if not p.get("_added_date"):
+        if not _has_added_date(p):
             p["_added_date"] = today_str
     if new_count:
         logger.info(f"  Stamped _added_date={today_str} on {new_count} new papers")

@@ -4,12 +4,267 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-04-21T00:24:56Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 13 entries</subtitle>
+  <updated>2026-04-21T05:29:08Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 21 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Revisiting Change VQA in Remote Sensing with Structured and Native Multimodal Qwen Models</title>
+    <link href="http://arxiv.org/abs/2604.18429v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.18429v1</id>
+    <published>2026-04-20T00:00:00Z</published>
+    <updated>2026-04-20T00:00:00Z</updated>
+    <author>
+      <name>Yakoub Bazi</name>
+    </author>
+    <author>
+      <name>Mohamad M. Al Rahhal</name>
+    </author>
+    <author>
+      <name>Mansour Zuair</name>
+    </author>
+    <author>
+      <name>Faroun Mohamed</name>
+    </author>
+    <summary type="text">Change visual question answering (Change VQA) addresses the problem of answering natural-language questions about semantic changes between bi-temporal remote sensing (RS) images. Although vision-language models (VLMs) have recently been studied for temporal RS image understanding, Change VQA remains underexplored in the context of modern multimodal models. In this letter, we revisit the CDVQA benchmark using recent Qwen models under a unified low-rank adaptation (LoRA) setting. We compare Qwen3-VL, which follows a structured vision-language pipeline with multi-depth visual conditioning and a full-attention decoder, with Qwen3.5, a native multimodal model that combines a single-stage alignment with a hybrid decoder backbone. Experimental results on the official CDVQA test splits show that recent VLMs improve over earlier specialized baselines. They further show that performance does not scale monotonically with model size, and that native multimodal models are more effective than structured vision-language pipelines for this task. These findings indicate that tightly integrated multimodal backbones contribute more to performance than scale or explicit multi-depth visual conditioning for language-driven semantic change reasoning in RS imagery.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>DiffuSAM: Diffusion Guided Zero-Shot Object Grounding for Remote Sensing Imagery</title>
+    <link href="http://arxiv.org/abs/2604.18201v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.18201v1</id>
+    <published>2026-04-20T00:00:00Z</published>
+    <updated>2026-04-20T00:00:00Z</updated>
+    <author>
+      <name>Geet Sethi</name>
+    </author>
+    <author>
+      <name>Panav Shah</name>
+    </author>
+    <author>
+      <name>Ashutosh Gandhe</name>
+    </author>
+    <author>
+      <name>Soumitra Darshan Nayak</name>
+    </author>
+    <summary type="text">Diffusion models have emerged as powerful tools for a wide range of vision tasks, including text-guided image generation and editing. In this work, we explore their potential for object grounding in remote sensing imagery. We propose a hybrid pipeline that integrates diffusion-based localization cues with state-of-the-art segmentation models such as RemoteSAM and SAM3 to obtain more accurate bounding boxes. By leveraging the complementary strengths of generative diffusion models and foundational segmentation models, our approach enables robust and adaptive object localization across complex scenes. Experiments demonstrate that our pipeline significantly improves localization performance, achieving over a 14% increase in Acc@0.5 compared to existing state-of-the-art methods.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICLR 2026 ML4RS Workshop&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Understanding the complex morphology of a CME II: how pre-eruptive conditions shape CME evolution</title>
+    <link href="http://arxiv.org/abs/2604.18188v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.18188v1</id>
+    <published>2026-04-20T00:00:00Z</published>
+    <updated>2026-04-20T00:00:00Z</updated>
+    <author>
+      <name>Abril Sahade</name>
+    </author>
+    <author>
+      <name>Cecilia Mac Cormack</name>
+    </author>
+    <author>
+      <name>Angelos Vourlidas</name>
+    </author>
+    <author>
+      <name>Teresa Nieves-Chinchilla</name>
+    </author>
+    <author>
+      <name>Cooper Downs</name>
+    </author>
+    <author>
+      <name>Clementina Sasso</name>
+    </author>
+    <author>
+      <name>Judith Karpen</name>
+    </author>
+    <summary type="text">The morphology and heliospheric impact of coronal mass ejections (CMEs) are strongly shaped by their preeruptive magnetic configuration and surrounding coronal environment, yet these influences remain difficult to constrain observationally. We analyze a complex CME that erupted on 2024 October 26 using multiviewpoint remote sensing observations and in situ measurements. Using the physics based CORHELCME magnetohydrodynamic model, we test multiple physically plausible realizations of the preeruptive magnetic flux rope (MFR) and background magnetic field, using agreement with the observed evolution as a constraint on the CMEs initial state. We find that modest changes in MFR footpoint location and force balance lead to substantially different coronal trajectories, enabling rapid discrimination among candidate initial states. While several configurations reproduce the CMEs large scale propagation, realistic small scale morphology is achieved only when a near dated background magnetic field is employed. The resulting simulation reproduces key morphologies observed from three viewpoints without fine tuning, indicating that the inferred preeruptive configuration represents a robust, global solution and provides a physically consistent interpretation of their magnetic origin. Comparison with in situ shock detections highlights the role of CME solar wind interactions in shaping heliospheric signatures, though shock arrival times remain uncertain at the 11 hr level. These results demonstrate that data informed, physics based modeling can meaningfully constrain CME preeruptive conditions and bridge remote and in situ observations, while emphasizing the need for timely magnetic field measurements to improve predictive capability.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="astro-ph.SR" />
+  </entry>
+  <entry>
+    <title>Producing High-Resolution Martian Surface Temperature Maps Using VIR-TIR Relationships</title>
+    <link href="http://arxiv.org/abs/2604.17859v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.17859v1</id>
+    <published>2026-04-20T00:00:00Z</published>
+    <updated>2026-04-20T00:00:00Z</updated>
+    <author>
+      <name>Michael A. Frazer</name>
+    </author>
+    <author>
+      <name>Eriita G. Jones</name>
+    </author>
+    <author>
+      <name>Katarina Miljkovic</name>
+    </author>
+    <author>
+      <name>Gretchen K. Benedix</name>
+    </author>
+    <summary type="text">Thermal infrared data (TIR; 8 - 15 $μm$) has a wide range of applications in Earth and planetary remote sensing. On Mars, this includes deriving thermal inertia (TI), which describes surface physical characteristics (e.g. particle size, degree of cementation) and is key for understanding geologic processes, assessing in-situ resource utilisation (ISRU) environments, and assisting mission planning. However, TI data from the THEMIS instrument is limited to 100 m/pixel resolution. Hyperspectral visible and near-infrared data (VIR; 0.5 - 5 $μm$) compliments TIR data by providing information on surface composition and is provided by the CRISM instrument at 12 m/pixel. In this work, we generate a machine learning regressor-based model to constrain relationships between THEMIS TI and CRISM VIR images at THEMIS resolution, and predict TI values from CRISM spectra with high accuracy (R2 $\sim$ 0.90, RMSE $\sim$ 23.6 TIU). We use the model to produce a downscaled TI map at a spatial resolution of 12 m/pixel, an order of magnitude finer than currently available, revealing decametre-scale features previously unresolved in THEMIS data.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 pages, 12 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="astro-ph.EP" />
+  </entry>
+  <entry>
+    <title>RS-HyRe-R1: A Hybrid Reward Mechanism to Overcome Perceptual Inertia for Remote Sensing Images Understanding</title>
+    <link href="http://arxiv.org/abs/2604.17504v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.17504v1</id>
+    <published>2026-04-19T00:00:00Z</published>
+    <updated>2026-04-19T00:00:00Z</updated>
+    <author>
+      <name>Gaozhi Zhou</name>
+    </author>
+    <author>
+      <name>Hu He</name>
+    </author>
+    <author>
+      <name>Peng Shen</name>
+    </author>
+    <author>
+      <name>Jipeng Zhang</name>
+    </author>
+    <author>
+      <name>Liujue Zhang</name>
+    </author>
+    <author>
+      <name>Linrui Xu</name>
+    </author>
+    <author>
+      <name>Zeyuan Wang</name>
+    </author>
+    <author>
+      <name>Ziyu Li</name>
+    </author>
+    <author>
+      <name>Xuezhi Cui</name>
+    </author>
+    <author>
+      <name>Wang Guo</name>
+    </author>
+    <author>
+      <name>Haifeng Li</name>
+    </author>
+    <summary type="text">Reinforcement learning (RL) post-training substantially improves remote sensing vision-language models (RS-VLMs). However, when handling complex remote sensing imagery (RSI) requiring exhaustive visual scanning, models tend to rely on localized salient cues for rapid inference. We term this RL-induced bias "perceptual inertia". Driven by reward maximization, models favor quick outcome fitting, leading to two limitations: cognitively, overreliance on specific features impedes complete evidence construction; operationally, models struggle to flexibly shift visual focus across tasks. To address this bias and encourage comprehensive visual evidence mining, we propose RS-HyRe-R1, a hybrid reward framework for RSI understanding. It introduces: (1) a spatial reasoning activation reward that enforces structured visual reasoning; (2) a perception correctness reward that provides adaptive quality anchors across RS tasks, ensuring accurate geometric and semantic alignment; and (3) a visual-semantic path evolution reward that penalizes repetitive reasoning and promotes exploration of complementary cues to build richer evidence chains. Experiments show RS-HyRe-R1 effectively mitigates "perceptual inertia", encouraging deeper, more diverse reasoning. With only 3B parameters, it achieves state-of-the-art performance on REC, OVD, and VQA tasks, outperforming models up to 7B parameters. It also demonstrates strong zero-shot generalization, surpassing the second-best model by 3.16%, 3.97%, and 2.72% on VQA, OVD, and REC, respectively. Code and datasets are available at https://github.com/geox-lab/RS-HyRe-R1.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/geox-lab/RS-HyRe-R1"&gt;https://github.com/geox-lab/RS-HyRe-R1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>RemoteShield: Enable Robust Multimodal Large Language Models for Earth Observation</title>
+    <link href="http://arxiv.org/abs/2604.17243v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.17243v1</id>
+    <published>2026-04-19T00:00:00Z</published>
+    <updated>2026-04-19T00:00:00Z</updated>
+    <author>
+      <name>Rui Min</name>
+    </author>
+    <author>
+      <name>Liang Yao</name>
+    </author>
+    <author>
+      <name>Shiyu Miao</name>
+    </author>
+    <author>
+      <name>Shengxiang Xu</name>
+    </author>
+    <author>
+      <name>Yuxuan Liu</name>
+    </author>
+    <author>
+      <name>Chuanyi Zhang</name>
+    </author>
+    <author>
+      <name>Shimin Di</name>
+    </author>
+    <author>
+      <name>Fan Liu</name>
+    </author>
+    <summary type="text">A robust Multimodal Large Language Model (MLLM) for Earth Observation should maintain consistent interpretation and reasoning under realistic input variations. However, current Remote Sensing MLLMs fail to meet this requirement. Trained on carefully curated clean datasets, they learn brittle mappings that do not generalize to noisy conditions in operational Earth Observation. Consequently, their performance degrades when confronted with imperfect inputs in deployment. To quantify this vulnerability, we construct a realistic set of multimodal perturbations, including visual degradations such as cloud and fog cover, together with diverse human-centric textual variations ranging from colloquialisms to vague or omitted instructions. Empirical evaluations show that these perturbations significantly impair the visual-semantic reasoning capabilities of leading RS foundation models. To address this limitation, we introduce RemoteShield, a robust Remote Sensing MLLM trained to maintain consistent outputs across realistic input variations. During training, each clean sample is paired with its image-text perturbed variants to form a semantic equivalence cluster. Rather than directly fitting noisy samples, RemoteShield is optimized through preference learning over clean and perturbed conditions within the same cluster. By comparing model responses to clean and corrupted inputs, the model is encouraged to favor stable responses over perturbation-induced failures. This cross-condition alignment helps the model focus on underlying task semantics despite visual degradations and textual noise. Experiments on three Earth Observation tasks show that RemoteShield consistently delivers stronger robustness and cross-condition consistency than representative baselines under realistic multimodal perturbations.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Hyperspectral Unmixing Hierarchies</title>
+    <link href="http://arxiv.org/abs/2604.16969v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.16969v1</id>
+    <published>2026-04-18T00:00:00Z</published>
+    <updated>2026-04-18T00:00:00Z</updated>
+    <author>
+      <name>Joseph L. Garrett</name>
+    </author>
+    <author>
+      <name>P. S. Vishnu</name>
+    </author>
+    <author>
+      <name>Pauliina Salmi</name>
+    </author>
+    <author>
+      <name>Daniela Lupu</name>
+    </author>
+    <author>
+      <name>Nitesh Kumar Singh</name>
+    </author>
+    <author>
+      <name>Ion Necoara</name>
+    </author>
+    <author>
+      <name>Tor Arne Johansen</name>
+    </author>
+    <summary type="text">Unmixing reveals the spatial distribution and spectral details of different constituents, called endmembers, in a hyperspectral image. Because unmixing has limited ground truth requirements, can accommodate mixed pixels, and is closely tied to light propagation, it is a uniquely powerful tool for analyzing hyperspectral images. However, spectral variability inhibits unmixing performance, the proper way to determine the number of endmembers is ambiguous, and the clarity of the endmembers degrades as more are included. Hierarchical structure is a possible solution to all three problems.   Here, hierarchical unmixing is defined by imposing a hierarchical abundance sum constraint on Deep Nonnegative Matrix Factorization. Binary Linear Unmixing Tactile Hierarchies (BLUTHs) solve the hierarchical unmixing problem with a simple network architecture. Sparsity modulation unmixing growth tailors the topology of a BLUTH to each scene. The structure imposed by BLUTHs allows endmembers with varying levels of spectral contrast to be revealed, mitigating the challenge of spectral variability.   The performance of BLUTHs exceeds state-of-the-art unmixing algorithms on laboratory scenes, particularly with regard to abundance estimation, while their performance remains competitive on remote sensing scenes. In addition, ocean color unmixing by BLUTHs is demonstrated on hyperspectral scenes from the HYPSO and PACE satellites.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Main text and supplemental&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Image and Video Processing" />
+  </entry>
+  <entry>
+    <title>When Earth Foundation Models Meet Diffusion: An Application to Land Surface Temperature Super-Resolution</title>
+    <link href="http://arxiv.org/abs/2604.16841v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.16841v1</id>
+    <published>2026-04-18T00:00:00Z</published>
+    <updated>2026-04-18T00:00:00Z</updated>
+    <author>
+      <name>Yiheng Chen</name>
+    </author>
+    <author>
+      <name>Zihui Ma</name>
+    </author>
+    <author>
+      <name>Peishi Jiang</name>
+    </author>
+    <author>
+      <name>Yilong Dai</name>
+    </author>
+    <author>
+      <name>Qikai Hu</name>
+    </author>
+    <author>
+      <name>Xinyue Ye</name>
+    </author>
+    <author>
+      <name>Lingyao Li</name>
+    </author>
+    <author>
+      <name>Rita Sousa</name>
+    </author>
+    <author>
+      <name>Runlong Yu</name>
+    </author>
+    <summary type="text">Land surface temperature (LST) super-resolution is important for environmental monitoring. However, it remains challenging as coarse thermal observations severely underdetermine fine-scale structure. In this paper, we propose Earth Foundation Model-guided Diffusion (EFDiff), a novel framework for super-resolution under extreme spatial degradation. EFDiff uses the Prithvi-EO-2.0 Earth foundation model to encode high-resolution multispectral reflectance into geospatial embeddings, which are injected into the denoising network via cross-attention to guide fine-scale reconstruction from highly degraded observations. We study two variants, EFDiff-$ε$ and EFDiff-$x_0$, which offer complementary trade-offs between perceptual realism and pixel-level fidelity. We evaluate EFDiff under an extreme $32\times$ scale gap using a globally diverse benchmark comprising 242,416 co-registered Landsat thermal-reflectance patches. Results show that EFDiff consistently outperforms baseline methods and that cross-attention conditioning by EFM is more effective than HLS channel concatenation. Although we present EFDiff in the context of LST super-resolution, the framework is broadly applicable to remote sensing problems in which pretrained geospatial representations can guide generative reconstruction.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
   <entry>
     <title>From Articles to Canopies: Knowledge-Driven Pseudo-Labelling for Tree Species Classification using LLM Experts</title>
     <link href="http://arxiv.org/abs/2604.16115v1" rel="alternate" type="text/html" />
@@ -154,6 +409,23 @@
     <summary type="text">Open-vocabulary remote sensing image segmentation (OVRSIS) remains underexplored due to fragmented datasets, limited training diversity, and the lack of evaluation benchmarks that reflect realistic geospatial application demands. Our previous \textit{OVRSISBenchV1} established an initial cross-dataset evaluation protocol, but its limited scope is insufficient for assessing realistic open-world generalization. To address this issue, we propose \textit{OVRSISBenchV2}, a large-scale and application-oriented benchmark for OVRSIS. We first construct \textbf{OVRSIS95K}, a balanced dataset of about 95K image--mask pairs covering 35 common semantic categories across diverse remote sensing scenes. Built upon OVRSIS95K and 10 downstream datasets, OVRSISBenchV2 contains 170K images and 128 categories, substantially expanding scene diversity, semantic coverage, and evaluation difficulty. Beyond standard open-vocabulary segmentation, it further includes downstream protocols for building extraction, road extraction, and flood detection, thereby better reflecting realistic geospatial application demands and complex deployment scenarios. We also propose \textbf{Pi-Seg}, a baseline for OVRSIS. Pi-Seg improves transferability through a \textbf{positive-incentive noise} mechanism, where learnable and semantically guided perturbations broaden the visual-text feature space during training. Extensive experiments on OVRSISBenchV1, OVRSISBenchV2, and downstream tasks show that Pi-Seg delivers strong and consistent results, particularly on the more challenging OVRSISBenchV2 benchmark. Our results highlight both the importance of realistic benchmark design and the effectiveness of perturbation-based transfer for OVRSIS. The code and datasets are available at \href{https://github.com/LiBingyu01/RSKT-Seg/tree/Pi-Seg}{LiBingyu01/RSKT-Seg/tree/Pi-Seg}.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/LiBingyu01/RSKT-Seg/tree/Pi-Seg"&gt;https://github.com/LiBingyu01/RSKT-Seg/tree/Pi-Seg&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>IncepDeHazeGAN: Novel Satellite Image Dehazing</title>
+    <link href="http://arxiv.org/abs/2604.16609v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.16609v1</id>
+    <published>2026-04-17T00:00:00Z</published>
+    <updated>2026-04-17T00:00:00Z</updated>
+    <author>
+      <name>Tejeswar Pokuri</name>
+    </author>
+    <author>
+      <name>Shivarth Rai</name>
+    </author>
+    <summary type="text">Dehazing is a technique in computer vision for enhancing the visual quality of images captured in cloudy or foggy conditions. Dehazing helps to recover clear, high-quality images from haze-affected remote sensing data. In this study, we introduce IncepDeHazeGAN, a novel Generative Adversarial Network (GAN) involving Inception block and multi-layer feature fusion for the task of single-image dehazing. Utilizing the Inception block allows for multi-scale feature extraction. On the other hand, the multi-layer feature fusion design achieves efficient reuse of features as the features extracted at different convolution layers are fused several times. Grad-CAM XAI technique has been applied to our network, highlighting the regions focused on by the network for dehazing and its adaptation to different haze conditions. Experiments demonstrate that our network achieves state-of-the-art results in several datasets.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; CV4DC Workshop&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
   <entry>
@@ -358,27 +630,6 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;CD;VG&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>SatBLIP: Context Understanding and Feature Identification from Satellite Imagery with Vision-Language Learning</title>
-    <link href="http://arxiv.org/abs/2604.14373v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.14373v1</id>
-    <published>2026-04-15T00:00:00Z</published>
-    <updated>2026-04-15T00:00:00Z</updated>
-    <author>
-      <name>Xue Wu</name>
-    </author>
-    <author>
-      <name>Shengting Cao</name>
-    </author>
-    <author>
-      <name>Jiaqi Gong</name>
-    </author>
-    <summary type="text">Rural environmental risks are shaped by place-based conditions (e.g., housing quality, road access, land-surface patterns), yet standard vulnerability indices are coarse and provide limited insight into risk contexts. We propose SatBLIP, a satellite-specific vision-language framework for rural context understanding and feature identification that predicts county-level Social Vulnerability Index (SVI). SatBLIP addresses limitations of prior remote sensing pipelines-handcrafted features, manual virtual audits, and natural-image-trained VLMs-by coupling contrastive image-text alignment with bootstrapped captioning tailored to satellite semantics. We use GPT-4o to generate structured descriptions of satellite tiles (roof type/condition, house size, yard attributes, greenery, and road context), then fine-tune a satellite-adapted BLIP model to generate captions for unseen images. Captions are encoded with CLIP and fused with LLM-derived embeddings via attention for SVI estimation under spatial aggregation. Using SHAP, we identify salient attributes (e.g., roof form/condition, street width, vegetation, cars/open space) that consistently drive robust predictions, enabling interpretable mapping of rural risk environments.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
   </entry>
   <entry>
     <title>SatBLIP: Context Understanding and Feature Identification from Satellite Imagery with Vision-Language Learning</title>
