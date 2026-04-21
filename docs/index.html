@@ -257,6 +257,7 @@
       <li><a href="#schema"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg><span data-i18n="schema">Output Schema</span></a></li>
       <li><a href="#task-tags"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg><span data-i18n="taskTags">Task Tags</span></a></li>
       <li><a href="#submit-group"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span data-i18n="submitGroup">Submit Group</span></a></li>
+      <li><a href="#submit-resource"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg><span data-i18n="submitResource">Submit Resource</span></a></li>
     </ul>
   </div>
 </div>
@@ -556,6 +557,38 @@ python main.py --verbose</code></pre>
 <p data-i18n="sgAutoNote">Multiple author name variants are supported (e.g., <code>["Gui-Song Xia", "Guisong Xia"]</code>). No need to create the JSON file manually — it will be generated automatically.</p>
 </section>
 
+<section id="submit-resource">
+<h2 data-i18n="submitResource">Submit Resource</h2>
+<p data-i18n="srIntro">You can contribute datasets, tools, or libraries to the Resources page. All resource data is stored as JSON files in the <code>resources/</code> directory, making it easy to add or update via Pull Request.</p>
+
+<h3 data-i18n="srStructTitle">Directory Structure</h3>
+<div class="code-block"><pre><code>resources/
+  index.json          # Category index
+  scene-cls.json      # Scene classification datasets
+  obj-det.json        # Object detection datasets
+  segmentation.json   # Segmentation datasets
+  change-det.json     # Change detection datasets
+  tools.json          # Tools &amp; libraries</code></pre></div>
+
+<h3 data-i18n="srStep1Title">1. Add to an existing category</h3>
+<p data-i18n="srStep1Desc">Open the corresponding JSON file (e.g., <code>resources/obj-det.json</code>) and add a new entry with <code>name</code> and <code>url</code>:</p>
+<div class="code-block"><pre><code>{ "name": "My Dataset", "url": "https://example.com" }</code></pre></div>
+
+<h3 data-i18n="srStep2Title">2. Add a new category</h3>
+<p data-i18n="srStep2Desc">Create a new JSON file in the <code>resources/</code> directory, then register it in <code>resources/index.json</code>:</p>
+<div class="code-block"><pre><code>{
+  "key": "vqa",
+  "label": "Datasets — VQA",
+  "label_zh": "数据集 — 视觉问答",
+  "file": "vqa.json",
+  "icon": "cube"
+}</code></pre></div>
+<p data-i18n="srIconNote">Available icons: <code>cube</code>, <code>grid</code>, <code>layers</code>, <code>trending</code>, <code>wrench</code>.</p>
+
+<h3 data-i18n="srStep3Title">3. Submit a Pull Request</h3>
+<p data-i18n="srStep3Desc">Fork the repository, make your changes in the <code>resources/</code> directory, and submit a Pull Request. Once merged, your contribution will appear on the Resources page for all users.</p>
+</section>
+
 </main>
 </div>
 
@@ -616,6 +649,13 @@ const LANG = {
     sgStep3Title: '3. Submit a Pull Request', sgStep3Desc: 'Fork the repository, add your JSON file to the groups/ directory, update groups/index.json, and submit a Pull Request. Once merged, your group will appear in the dropdown for all users.',
     sgAutoTitle: 'Auto-updated groups by author', sgAutoDesc: 'You can also create groups that automatically stay up to date. Add "auto": true and an "authors" array to your entry in groups/index.json. The pipeline will match papers by author name and update the group file daily.',
     sgAutoNote: 'Multiple author name variants are supported (e.g., ["Gui-Song Xia", "Guisong Xia"]). No need to create the JSON file manually — it will be generated automatically.',
+    submitResource: 'Submit Resource',
+    srIntro: 'You can contribute datasets, tools, or libraries to the Resources page. All resource data is stored as JSON files in the resources/ directory, making it easy to add or update via Pull Request.',
+    srStructTitle: 'Directory Structure',
+    srStep1Title: '1. Add to an existing category', srStep1Desc: 'Open the corresponding JSON file (e.g., resources/obj-det.json) and add a new entry with name and url:',
+    srStep2Title: '2. Add a new category', srStep2Desc: 'Create a new JSON file in the resources/ directory, then register it in resources/index.json:',
+    srIconNote: 'Available icons: cube, grid, layers, trending, wrench.',
+    srStep3Title: '3. Submit a Pull Request', srStep3Desc: 'Fork the repository, make your changes in the resources/ directory, and submit a Pull Request. Once merged, your contribution will appear on the Resources page for all users.',
     footer: 'RS Paper Hub - A curated collection of remote sensing papers from arXiv',
   },
   zh: {
@@ -664,6 +704,13 @@ const LANG = {
     sgStep3Title: '3. 提交 Pull Request', sgStep3Desc: 'Fork 本仓库，将 JSON 文件添加到 groups/ 目录，更新 groups/index.json，然后提交 Pull Request。合并后，您的研究组将显示在下拉菜单中供所有用户使用。',
     sgAutoTitle: '按作者自动更新研究组', sgAutoDesc: '您也可以创建按作者自动更新的研究组。在 groups/index.json 的条目中添加 "auto": true 和 "authors" 数组，pipeline 会按作者名匹配论文并每日自动更新研究组文件。',
     sgAutoNote: '支持多个作者名称变体（例如 ["Gui-Song Xia", "Guisong Xia"]）。无需手动创建 JSON 文件，系统会自动生成。',
+    submitResource: '提交资源',
+    srIntro: '您可以向 Resources 页面贡献数据集、工具或库。所有资源数据以 JSON 文件形式存储在 resources/ 目录下，方便通过 Pull Request 添加或更新。',
+    srStructTitle: '目录结构',
+    srStep1Title: '1. 添加到已有分类', srStep1Desc: '打开对应的 JSON 文件（如 resources/obj-det.json），添加一条包含 name 和 url 的新条目：',
+    srStep2Title: '2. 添加新分类', srStep2Desc: '在 resources/ 目录下创建新的 JSON 文件，然后在 resources/index.json 中注册：',
+    srIconNote: '可用图标：cube、grid、layers、trending、wrench。',
+    srStep3Title: '3. 提交 Pull Request', srStep3Desc: 'Fork 本仓库，在 resources/ 目录下进行修改，然后提交 Pull Request。合并后，您的贡献将显示在 Resources 页面上。',
     footer: '遥感论文社 - 来自 arXiv 的遥感论文精选合集',
   }
 };
