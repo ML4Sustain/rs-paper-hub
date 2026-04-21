@@ -33,8 +33,47 @@
   ::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.15); border-radius: 3px; }
   ::-webkit-scrollbar-thumb:hover { background: rgba(0,0,0,0.25); }
   html { scrollbar-width: thin; scrollbar-color: rgba(0,0,0,0.15) transparent; }
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; min-height: 100vh; display: flex; flex-direction: row; }
+  .sidebar {
+    position: fixed; left: 16px; top: 50%; transform: translateY(-50%); z-index: 200;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    border-radius: 16px; padding: 6px; display: flex; flex-direction: column; gap: 4px;
+    box-shadow: 0 4px 20px rgba(79,70,229,0.35);
+  }
+  .sidebar-nav { display: flex; flex-direction: column; gap: 4px; }
+  .sidebar-item {
+    width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center;
+    color: rgba(255,255,255,0.6); cursor: pointer; transition: all 0.15s; text-decoration: none; position: relative;
+  }
+  .sidebar-item:hover { background: rgba(255,255,255,0.15); color: #fff; }
+  .sidebar-item.active { background: rgba(255,255,255,0.22); color: #fff; }
+  .sidebar-item svg { flex-shrink: 0; }
+  .sidebar-item-label {
+    position: absolute; left: calc(100% + 10px); top: 50%; transform: translateY(-50%);
+    background: var(--text); color: var(--bg); font-size: 12px; font-weight: 500;
+    padding: 4px 10px; border-radius: 6px; white-space: nowrap;
+    opacity: 0; pointer-events: none; transition: opacity 0.15s;
+  }
+  .sidebar-item:hover .sidebar-item-label { opacity: 1; }
+  .top-fixed {
+    position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  .page-content { flex: 1; display: flex; flex-direction: column; min-height: 100vh; }
   .main-wrap { flex: 1; }
+  .page-section { display: none; }
+  .page-section.active { display: block; }
+  .skills-placeholder {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    min-height: 60vh; color: var(--text-secondary); text-align: center; padding: 40px 24px;
+  }
+  .skills-placeholder-icon { width: 80px; height: 80px; border-radius: 20px; background: linear-gradient(135deg, #4f46e5, #7c3aed); display: flex; align-items: center; justify-content: center; margin-bottom: 24px; }
+  .skills-placeholder-icon svg { width: 40px; height: 40px; color: #fff; }
+  .skills-placeholder h2 { font-size: 24px; color: var(--text); margin: 0 0 8px; }
+  .skills-placeholder p { font-size: 14px; margin: 0; max-width: 400px; line-height: 1.6; }
+  @media (max-width: 768px) {
+    .sidebar { left: auto; right: 12px; top: auto; bottom: 80px; transform: none; }
+  }
 
   /* Header */
   .header {
@@ -538,16 +577,22 @@
 </head>
 <body>
 
-<div class="main-wrap">
-<div class="loading-overlay" id="loadingOverlay">
-  <div class="loading-scene">
-    <div class="loading-orbit"></div>
-    <div class="loading-earth"></div>
-    <div class="loading-satellite"></div>
-  </div>
-  <div class="loading-text">Scanning papers from orbit<span class="loading-dots"></span></div>
-</div>
+<aside class="sidebar" id="sidebar">
+  <nav class="sidebar-nav">
+    <a class="sidebar-item active" data-page="papers" onclick="switchPage('papers', this)" title="Papers">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+      <span class="sidebar-item-label" data-i18n="navPapers">Papers</span>
+    </a>
+    <a class="sidebar-item" data-page="skills" onclick="switchPage('skills', this)" title="Skills">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+      <span class="sidebar-item-label" data-i18n="navSkills">Skills</span>
+    </a>
+  </nav>
+</aside>
 
+<div class="page-content">
+
+<div class="top-fixed" id="topFixed">
 <div class="header">
   <h1><span class="h1-text-wrap"><img src="asset/logo.png" alt="Logo">RS Paper Hub</span></h1>
   <p>A curated collection of remote sensing papers from arXiv</p>
@@ -587,10 +632,22 @@
 </div>
 
 <div class="stats-bar" id="statsBar"></div>
-<div style="max-width:1200px;margin:0 auto;padding:8px 24px 0;">
+<div style="max-width:1200px;margin:0 auto;padding:8px 24px 4px;background:var(--bg);">
   <div id="noteDisclaimer" style="font-size:12px;color:#94a3b8;background:#f8fafc;border:1px dashed #e2e8f0;border-radius:6px;padding:6px 12px;text-align:center;">
     Note: There is a 2–3 day delay between the publication date and the announcement date of arXiv papers; Category and task labels are rule-based and may contain inaccuracies. We are continuously improving them. This does not affect tracking the latest research trends.
   </div>
+</div>
+</div><!-- .top-fixed -->
+
+<div id="page-papers" class="page-section active">
+<div class="main-wrap">
+<div class="loading-overlay" id="loadingOverlay">
+  <div class="loading-scene">
+    <div class="loading-orbit"></div>
+    <div class="loading-earth"></div>
+    <div class="loading-satellite"></div>
+  </div>
+  <div class="loading-text">Scanning papers from orbit<span class="loading-dots"></span></div>
 </div>
 
 <div class="controls">
@@ -676,6 +733,17 @@
 <div class="pagination" id="pagination"></div>
 
 </div><!-- .main-wrap -->
+</div><!-- #page-papers -->
+
+<div id="page-skills" class="page-section">
+  <div class="skills-placeholder">
+    <div class="skills-placeholder-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+    </div>
+    <h2 data-i18n="skillsTitle">Skills</h2>
+    <p data-i18n="skillsDesc">Reading & writing tools for researchers. Coming soon.</p>
+  </div>
+</div>
 
 <div style="padding:8px 0 12px;text-align:center;font-size:11px;color:#94a3b8;">
   <a href='https://www.counters-free.net/' style="color:inherit;text-decoration:none;">visits:</a>
@@ -691,6 +759,7 @@
     </div>
   </div>
 </footer>
+</div><!-- .page-content -->
 
 <button class="recent-toggle" id="recentToggle" onclick="toggleRecentPanel()">NEW PAPERS</button>
 <div class="recent-panel-overlay" id="recentOverlay" onclick="toggleRecentPanel()"></div>
@@ -806,6 +875,8 @@ const LANG = {
     ds_all: 'All Papers', ds_vlm: 'Vision-Language Model', ds_agent: 'Agent', ds_uav: 'UAV',
     noBibtex: 'No BibTeX available',
     scholar: 'Scholar', copyInfo: 'Copy', copyInfoDone: 'Copied!',
+    navPapers: 'Papers', navSkills: 'Skills',
+    skillsTitle: 'Skills', skillsDesc: 'Reading & writing tools for researchers. Coming soon.',
     before: 'Before', more: 'more',
     visits: 'visits:',
     friendLinks: 'Links',
@@ -850,6 +921,8 @@ const LANG = {
     ds_all: '全部论文', ds_vlm: '视觉语言模型', ds_agent: 'Agent', ds_uav: '无人机',
     noBibtex: '暂无引用信息',
     scholar: '谷歌学术', copyInfo: '复制', copyInfoDone: '已复制！',
+    navPapers: '论文', navSkills: '技能',
+    skillsTitle: '技能工具', skillsDesc: '面向研究者的阅读与写作工具，即将上线。',
     before: '早于', more: '更多',
     visits: '访问量：',
     friendLinks: '友情链接',
@@ -999,6 +1072,25 @@ function toggleLang() {
   localStorage.setItem('lang', currentLang);
   applyLang();
 }
+
+// Sidebar navigation
+function switchPage(page, el) {
+  document.querySelectorAll('.page-section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.sidebar-item').forEach(s => s.classList.remove('active'));
+  const target = document.getElementById('page-' + page);
+  if (target) target.classList.add('active');
+  if (el) el.classList.add('active');
+  localStorage.setItem('activePage', page);
+  window.scrollTo({ top: 0 });
+}
+
+(function initSidebar() {
+  const saved = localStorage.getItem('activePage');
+  if (saved && saved !== 'papers') {
+    const item = document.querySelector(`.sidebar-item[data-page="${saved}"]`);
+    if (item) switchPage(saved, item);
+  }
+})();
 const ICON = {
   arxiv: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>',
   github: '<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>',
