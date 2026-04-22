@@ -808,8 +808,9 @@
     <div class="loading-earth"></div>
     <div class="loading-satellite"></div>
   </div>
-  <div class="loading-text">Scanning papers from orbit<span class="loading-dots"></span></div>
+  <div class="loading-text" id="loadingText">Scanning papers from orbit<span class="loading-dots"></span></div>
 </div>
+<script>(function(){var l=localStorage.getItem('lang');if(l==='zh'){var el=document.getElementById('loadingText');if(el)el.childNodes[0].textContent='正在从轨道扫描论文';}})()</script>
 
 <div class="controls">
   <div class="controls-top">
