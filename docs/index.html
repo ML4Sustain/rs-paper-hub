@@ -258,6 +258,7 @@
       <li><a href="#schema"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg><span data-i18n="schema">Output Schema</span></a></li>
       <li><a href="#task-tags"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg><span data-i18n="taskTags">Task Tags</span></a></li>
       <li><a href="#submit-group"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span data-i18n="submitGroup">Submit Group</span></a></li>
+      <li><a href="#radar-page"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg><span data-i18n="radarPage">Radar Page</span></a></li>
       <li><a href="#submit-resource"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg><span data-i18n="submitResource">Submit Resource</span></a></li>
     </ul>
   </div>
@@ -323,6 +324,10 @@
     <h4 data-i18n="feat12Title">Resources Page</h4>
     <p data-i18n="feat12Desc">Community-driven collection of remote sensing datasets and tools, organized by category. Contribute via Pull Request.</p>
   </div>
+  <div class="feature-card">
+    <h4 data-i18n="feat13Title">🛰️ Radar — Globe Word Cloud & Weekly Rankings</h4>
+    <p data-i18n="feat13Desc">Interactive 3D globe word cloud of BERT-weighted keywords, paired with weekly hot paper rankings scored by keyword matching. Switch data sources and ranking modes on the fly.</p>
+  </div>
 </div>
 </section>
 
@@ -368,6 +373,13 @@
   <li data-i18n="viewer7a">Use the floating sidebar on the left (or bottom bar on mobile) to switch between Papers, Skills, and Venues pages</li>
   <li data-i18n="viewer7b">The Skills page features community-contributed research tools and methodologies for coding, writing, and more</li>
   <li data-i18n="viewer7c">The Venues page provides a categorized directory of key journals and conferences in remote sensing and AI/CV fields with direct links</li>
+</ul>
+
+<h3 data-i18n="viewer8Title">Radar Page</h3>
+<ul>
+  <li data-i18n="viewer8a">Access via the Radar icon in the sidebar (between Papers and Trends); the page shows a 3D rotating globe word cloud and weekly hot paper rankings side by side</li>
+  <li data-i18n="viewer8b">Click and drag the globe to rotate it manually; click any keyword to instantly search that term in the Papers page; colors are per-word for easy visual scanning</li>
+  <li data-i18n="viewer8c">Switch between three ranking modes — Trend (recency-weighted keyword score), Frequency (raw keyword hit count), and Comprehensive (combined score) — and switch data sources (All, VLM, UAV, Agent, SAR) using the source tabs</li>
 </ul>
 </section>
 
@@ -605,6 +617,33 @@ python main_web.py --update --max-results 50</code></pre>
 <p data-i18n="sgAutoNote">Multiple author name variants are supported (e.g., <code>["Gui-Song Xia", "Guisong Xia"]</code>). No need to create the JSON file manually — it will be generated automatically.</p>
 </section>
 
+<section id="radar-page">
+<h2 data-i18n="radarPage">Radar Page</h2>
+<p data-i18n="radarPageIntro">The Radar page combines a 3D globe word cloud with weekly hot paper rankings to give you a visual overview of trending topics across all data sources.</p>
+
+<h3 data-i18n="radar1Title">Globe Word Cloud</h3>
+<ul>
+  <li data-i18n="radar1a">Keywords from <code>wordcloud/keywords.json</code> are distributed on a Fibonacci sphere and rendered as a 3D rotating globe</li>
+  <li data-i18n="radar1b">Each word has a unique color from a 20-color palette; back-facing words are desaturated for a natural depth effect</li>
+  <li data-i18n="radar1c">Latitude and longitude grid lines are drawn faintly on the globe surface for visual polish</li>
+  <li data-i18n="radar1d">Drag to rotate manually; click any keyword to apply it as a search filter in the Papers page</li>
+</ul>
+
+<h3 data-i18n="radar2Title">Weekly Hot Paper Rankings</h3>
+<p data-i18n="radar2Desc">Papers from the current week are scored by BERT-weighted keyword matching and ranked in three modes:</p>
+<div class="table-wrap">
+<table>
+  <tr><th data-i18n="radarModeCol">Mode</th><th data-i18n="radarDescCol">Description</th></tr>
+  <tr><td><strong data-i18n="radarModeTrend">Trend</strong></td><td data-i18n="radarModeTrendDesc">Score weighted by keyword recency (2025 × 2.5, 2024 × 2.0, 2023 × 1.2, 2022 × 0.8)</td></tr>
+  <tr><td><strong data-i18n="radarModeFreq">Frequency</strong></td><td data-i18n="radarModeFreqDesc">Raw count of matched keywords across title and abstract</td></tr>
+  <tr><td><strong data-i18n="radarModeComp">Comprehensive</strong></td><td data-i18n="radarModeCompDesc">Combined trend + frequency score for a balanced ranking</td></tr>
+</table>
+</div>
+
+<h3 data-i18n="radar3Title">Source Switching</h3>
+<p data-i18n="radar3Desc">Use the source tabs (All Papers, VLM, UAV, Agent, SAR) to filter both the globe keywords and the weekly ranking to a specific topic area. Each source has its own keyword set and paper pool.</p>
+</section>
+
 <section id="submit-resource">
 <h2 data-i18n="submitResource">Submit Resource</h2>
 <p data-i18n="srIntro">You can contribute datasets, tools, or libraries to the Resources page. All resource data is stored as JSON files in the <code>resources/</code> directory, making it easy to add or update via Pull Request.</p>
@@ -684,6 +723,26 @@ const LANG = {
     feat10Title: 'Skills Page', feat10Desc: 'A curated collection of research skills — coding, writing, workflows and beyond. Browse community-contributed tools and methodologies to boost your research productivity.',
     feat11Title: 'Venues Page', feat11Desc: 'Quick-reference directory of key journals and conferences in remote sensing and related AI/CV fields, organized by category with direct links to official sites.',
     feat12Title: 'Resources Page', feat12Desc: 'Community-driven collection of remote sensing datasets and tools, organized by category. Contribute via Pull Request.',
+    feat13Title: '🛰️ Radar — Globe Word Cloud & Weekly Rankings', feat13Desc: 'Interactive 3D globe word cloud of BERT-weighted keywords, paired with weekly hot paper rankings scored by keyword matching. Switch data sources and ranking modes on the fly.',
+    radarPage: 'Radar Page',
+    radarPageIntro: 'The Radar page combines a 3D globe word cloud with weekly hot paper rankings to give you a visual overview of trending topics across all data sources.',
+    radar1Title: 'Globe Word Cloud',
+    radar1a: 'Keywords from wordcloud/keywords.json are distributed on a Fibonacci sphere and rendered as a 3D rotating globe',
+    radar1b: 'Each word has a unique color from a 20-color palette; back-facing words are desaturated for a natural depth effect',
+    radar1c: 'Latitude and longitude grid lines are drawn faintly on the globe surface for visual polish',
+    radar1d: 'Drag to rotate manually; click any keyword to apply it as a search filter in the Papers page',
+    radar2Title: 'Weekly Hot Paper Rankings',
+    radar2Desc: 'Papers from the current week are scored by BERT-weighted keyword matching and ranked in three modes:',
+    radarModeCol: 'Mode', radarDescCol: 'Description',
+    radarModeTrend: 'Trend', radarModeTrendDesc: 'Score weighted by keyword recency (2025 × 2.5, 2024 × 2.0, 2023 × 1.2, 2022 × 0.8)',
+    radarModeFreq: 'Frequency', radarModeFreqDesc: 'Raw count of matched keywords across title and abstract',
+    radarModeComp: 'Comprehensive', radarModeCompDesc: 'Combined trend + frequency score for a balanced ranking',
+    radar3Title: 'Source Switching',
+    radar3Desc: 'Use the source tabs (All Papers, VLM, UAV, Agent, SAR) to filter both the globe keywords and the weekly ranking to a specific topic area. Each source has its own keyword set and paper pool.',
+    viewer8Title: 'Radar Page',
+    viewer8a: 'Access via the Radar icon in the sidebar (between Papers and Trends); the page shows a 3D rotating globe word cloud and weekly hot paper rankings side by side',
+    viewer8b: 'Click and drag the globe to rotate it manually; click any keyword to instantly search that term in the Papers page; colors are per-word for easy visual scanning',
+    viewer8c: 'Switch between three ranking modes — Trend (recency-weighted), Frequency (raw hit count), Comprehensive (combined) — and switch data sources using the source tabs',
     rssIntro: 'RS Paper Hub provides RSS feeds that can be used with any RSS reader or integrated with Zotero:',
     rss1Title: 'Available RSS Feeds', rss2Title: 'Using with Zotero', rss2Desc: 'In Zotero, go to File → New Feed, and paste one of the RSS URLs above. Zotero will automatically fetch new papers as they are added.',
     rss3Title: 'Direct JSON Download', rss3Desc: 'For programmatic access, JSON files are also available:',
@@ -746,6 +805,26 @@ const LANG = {
     feat10Title: '技能工具页', feat10Desc: '汇集阅读、写作、编程等科研技能，浏览社区贡献的工具与方法，提升科研效率。',
     feat11Title: '期刊会议页', feat11Desc: '遥感及相关 AI/CV 领域核心期刊与会议快速导航，按类别分组，直达官网。',
     feat12Title: '资源页', feat12Desc: '社区共建的遥感数据集与工具汇总，按类别分组，欢迎通过 PR 贡献。',
+    feat13Title: '🛰️ 雷达 — 地球词云与本周热门榜', feat13Desc: '交互式 3D 地球词云，展示 BERT 加权关键词；旁边是本周热门论文排行，支持切换数据源和评分模式。',
+    radarPage: '雷达页',
+    radarPageIntro: '雷达页将 3D 地球词云与本周热门论文排行结合，直观呈现各主题领域的趋势动态。',
+    radar1Title: '地球词云',
+    radar1a: 'wordcloud/keywords.json 中的关键词均匀分布在 Fibonacci 球面上，渲染为 3D 旋转地球仪',
+    radar1b: '每个词拥有独立颜色（20 色调色板）；背面词汇自动降饱和度，营造真实的景深效果',
+    radar1c: '地球仪表面绘有淡淡的经纬网格线，增强视觉层次',
+    radar1d: '拖拽可手动旋转；点击关键词可将其作为搜索词应用到论文页',
+    radar2Title: '本周热门论文榜',
+    radar2Desc: '本周论文通过 BERT 加权关键词匹配计算得分，提供三种排名模式：',
+    radarModeCol: '模式', radarDescCol: '说明',
+    radarModeTrend: '趋势匹配', radarModeTrendDesc: '按关键词时效性加权评分（2025×2.5，2024×2.0，2023×1.2，2022×0.8）',
+    radarModeFreq: '词频热度', radarModeFreqDesc: '标题和摘要中匹配关键词的原始次数',
+    radarModeComp: '综合评分', radarModeCompDesc: '趋势得分与词频热度的综合评分，兼顾时效与热度',
+    radar3Title: '数据源切换',
+    radar3Desc: '使用数据源标签（全部论文、VLM、UAV、Agent、SAR）可同时筛选地球词云和热门榜单。每个数据源拥有独立的关键词集合与论文池。',
+    viewer8Title: '雷达页',
+    viewer8a: '通过侧边栏的雷达图标访问（位于论文和趋势之间）；页面左侧为 3D 旋转地球词云，右侧为本周热门排行',
+    viewer8b: '拖拽地球仪手动旋转；点击任意关键词可立即在论文页搜索该词；每个词颜色不同，便于快速识别',
+    viewer8c: '支持三种排名模式切换——趋势匹配（时效加权）、词频热度（原始次数）、综合评分（综合两者）；并可通过数据源标签切换不同主题',
     rssIntro: 'RS Paper Hub 提供 RSS 订阅源，可配合任何 RSS 阅读器或 Zotero 使用：',
     rss1Title: '可用 RSS 订阅源', rss2Title: '配合 Zotero 使用', rss2Desc: '在 Zotero 中，转到文件 → 新建订阅源，然后粘贴上述 RSS URL。Zotero 将自动获取新添加的论文。',
     rss3Title: '直接下载 JSON', rss3Desc: '为了方便程序调用，也提供 JSON 文件下载：',

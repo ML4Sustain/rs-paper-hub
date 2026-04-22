@@ -353,6 +353,7 @@ Features include:
 - **Venues page** — Quick-reference directory of key journals and conferences in remote sensing and related AI/CV fields, organized by category
 - **Resources page** — Community-driven collection of remote sensing datasets and tools, loaded from `resources/` JSON files — contribute via PR ([learn more](https://rspaper.top/docs/#submit-resource))
 - **Trends page** — Interactive statistics dashboard with yearly/monthly paper distributions and top author rankings; click authors to see their individual publication timeline
+- **Radar page** — 3D globe word cloud of BERT-weighted keywords (drag to rotate, click to search) paired with weekly hot paper rankings in three scoring modes (Trend / Frequency / Comprehensive); switch between All Papers, VLM, UAV, Agent, and SAR sources
 - **Mobile-friendly** — Responsive layout with collapsible filters and wrapping navigation
 - **LaTeX rendering** — Math formulas rendered via KaTeX
 
