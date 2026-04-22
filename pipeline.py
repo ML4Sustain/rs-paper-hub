@@ -266,7 +266,7 @@ def run(input_path: str, output_dir: str):
     logger.info("[14/15] Generating Atom feeds...")
     from rss_generator import generate_feeds
     generate_feeds(papers, matched, agent_matched, uav_matched, output_dir,
-                   site_url="https://rspaper.top")
+                   site_url="https://rspaper.top", sar_papers=sar_matched)
 
     # ── Step 15: Generate trends statistics ──────────────
     logger.info("[15/15] Generating trends statistics...")

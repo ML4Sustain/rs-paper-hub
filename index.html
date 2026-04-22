@@ -10,6 +10,7 @@
 <link rel="alternate" type="application/atom+xml" title="RS Papers - VLM" href="output/feed_vlm.xml">
 <link rel="alternate" type="application/atom+xml" title="RS Papers - Agent" href="output/feed_agent.xml">
 <link rel="alternate" type="application/atom+xml" title="RS Papers - UAV" href="output/feed_uav.xml">
+<link rel="alternate" type="application/atom+xml" title="RS Papers - SAR" href="output/feed_sar.xml">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
@@ -150,7 +151,7 @@
     .res-grid { grid-template-columns: 1fr; }
   }
   @media (max-width: 768px) {
-    .sidebar { left: auto; right: 12px; top: auto; bottom: 80px; transform: none; }
+    .sidebar { left: 8px; right: auto; top: auto; bottom: 80px; transform: none; }
   }
 
   /* Header */
@@ -678,6 +679,13 @@
     .paper-authors { white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
     .paper-authors.expanded { display: block; -webkit-line-clamp: unset; overflow: visible; }
   }
+  /* Trends mobile optimization */
+  @media (max-width: 768px) {
+    #trendsDataSourceWrap { gap: 6px !important; }
+    #trendsDataSourceWrap button { padding: 5px 12px !important; font-size: 12px !important; }
+    #trendsContent > div { padding: 14px !important; }
+    #trendsContent h3 { font-size: 14px !important; }
+  }
 </style>
 </head>
 <body>
@@ -726,6 +734,7 @@
         <div class="rss-menu-item"><a href="output/feed_vlm.xml" target="_blank">VLM Papers</a><button class="rss-copy-btn" onclick="copyFeedUrl(this,'output/feed_vlm.xml')" title="Copy URL"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
         <div class="rss-menu-item"><a href="output/feed_agent.xml" target="_blank">Agent Papers</a><button class="rss-copy-btn" onclick="copyFeedUrl(this,'output/feed_agent.xml')" title="Copy URL"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
         <div class="rss-menu-item"><a href="output/feed_uav.xml" target="_blank">UAV Papers</a><button class="rss-copy-btn" onclick="copyFeedUrl(this,'output/feed_uav.xml')" title="Copy URL"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
+        <div class="rss-menu-item"><a href="output/feed_sar.xml" target="_blank">SAR Papers</a><button class="rss-copy-btn" onclick="copyFeedUrl(this,'output/feed_sar.xml')" title="Copy URL"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
       </div>
     </span>
     <a href="javascript:void(0)" id="langToggle" onclick="toggleLang()" style="cursor:pointer;font-weight:600;position:relative;top:-0.5px;">中文</a>
@@ -1717,7 +1726,7 @@ function renderTrends() {
   const totalYears = Object.keys(d.yearly).length;
   const topAuthor = d.top_authors.length ? d.top_authors[0].name : '-';
   const summaryWrap = document.createElement('div');
-  summaryWrap.style.cssText = 'display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;';
+  summaryWrap.style.cssText = 'display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;';
   [{label: currentLang==='zh'?'论文总数':'Total Papers', value: d.total.toLocaleString(), color: '#6366f1', icon: '📄'},
    {label: currentLang==='zh'?'跨越年份':'Years Span', value: totalYears, color: '#8b5cf6', icon: '📅'},
    {label: currentLang==='zh'?'最高产作者':'Top Author', value: topAuthor, color: '#a78bfa', icon: '👤', small: true}
@@ -1735,7 +1744,7 @@ function renderTrends() {
 
   // --- Yearly bar chart ---
   const yearlyCard = document.createElement('div');
-  yearlyCard.style.cssText = 'background:var(--bg-card);border-radius:12px;padding:24px;padding-top:32px;border:1px solid var(--border);transition:box-shadow 0.2s;overflow:visible;';
+  yearlyCard.style.cssText = 'background:var(--bg-card);border-radius:12px;padding:24px;padding-top:32px;border:1px solid var(--border);transition:box-shadow 0.2s;overflow:hidden;';
   const yearlyHeader = document.createElement('div');
   yearlyHeader.style.cssText = 'display:flex;align-items:center;gap:8px;margin-bottom:16px;';
   yearlyHeader.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="3" x2="9" y2="21"/></svg>'
@@ -1746,7 +1755,7 @@ function renderTrends() {
   const years = Object.entries(d.yearly);
   const maxY = Math.max(...years.map(e => e[1]));
   const yearlyBars = document.createElement('div');
-  yearlyBars.style.cssText = 'display:flex;align-items:flex-end;gap:3px;height:220px;overflow:visible;padding:24px 0 28px;';
+  yearlyBars.style.cssText = 'display:flex;align-items:flex-end;gap:3px;height:220px;overflow-x:auto;overflow-y:visible;padding:24px 0 28px;-webkit-overflow-scrolling:touch;';
   years.forEach(([year, count], idx) => {
     const col = document.createElement('div');
     col.style.cssText = 'display:flex;flex-direction:column;align-items:center;flex:1;min-width:28px;cursor:pointer;position:relative;';
@@ -1854,7 +1863,8 @@ function renderAuthorRows(container, authors, maxA, animate) {
     rank.style.cssText = 'width:28px;text-align:center;font-size:' + (i < 3 ? '16' : '12') + 'px;flex-shrink:0;' + (i >= 3 ? 'color:var(--text-secondary);' : '');
     rank.textContent = i < 3 ? medals[i] : (i + 1);
     const name = document.createElement('span');
-    name.style.cssText = 'width:180px;flex-shrink:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-primary);font-weight:' + (i < 3 ? '600' : '400') + ';';
+    const nameW = window.innerWidth <= 768 ? '100px' : '180px';
+    name.style.cssText = 'width:' + nameW + ';flex-shrink:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-primary);font-weight:' + (i < 3 ? '600' : '400') + ';';
     name.textContent = a.name;
     name.title = a.name;
     const barWrap = document.createElement('div');

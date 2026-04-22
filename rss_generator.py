@@ -145,6 +145,7 @@ def generate_feeds(
     output_dir: str,
     site_url: str = SITE_URL,
     days: int = 7,
+    sar_papers: list[dict] | None = None,
 ):
     """Generate all Atom feeds."""
     global SITE_URL
@@ -156,6 +157,8 @@ def generate_feeds(
         (agent_papers, "RS-Paper-Hub — Agent Papers", "feed_agent.xml"),
         (uav_papers, "RS-Paper-Hub — UAV Papers", "feed_uav.xml"),
     ]
+    if sar_papers is not None:
+        feeds.append((sar_papers, "RS-Paper-Hub — SAR Papers", "feed_sar.xml"))
 
     for papers, title, filename in feeds:
         out_path = os.path.join(output_dir, filename)
