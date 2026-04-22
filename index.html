@@ -697,10 +697,14 @@
     .filter-panel.open { display: flex; }
     .filter-panel select,
     .filter-panel .sort-group,
-    .filter-panel .toggle-charts { width: 100%; }
+    .filter-panel .toggle-charts,
+    .filter-panel .rank-btn { width: 100%; justify-content: center; }
     .filter-panel select { min-width: unset; }
     .paper-authors { white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
     .paper-authors.expanded { display: block; -webkit-line-clamp: unset; overflow: visible; }
+    .ranking-panel { width: 100vw; right: -100vw; top: auto; bottom: -100vh; height: 80vh; border-left: none; border-top: 1px solid var(--border); transition: bottom 0.3s cubic-bezier(.4,0,.2,1), right 0s 0.3s; }
+    .ranking-panel.open { right: 0; bottom: 0; transition: bottom 0.3s cubic-bezier(.4,0,.2,1); }
+    .rank-badge { top: 8px; right: 8px; }
   }
   /* Trends mobile optimization */
   @media (max-width: 768px) {
@@ -719,6 +723,231 @@
   @media (min-width: 769px) {
     .trend-fold-arrow { display: none !important; }
   }
+
+  /* ---- Ranking Panel ---- */
+  .rank-btn {
+    padding: 8px 12px; border: 1px solid var(--border); background: var(--card);
+    font-size: 13px; cursor: pointer; border-radius: 8px;
+    transition: all 0.2s; display: flex; align-items: center; gap: 5px;
+    white-space: nowrap;
+  }
+  .rank-btn:hover { border-color: #f97316; color: #f97316; }
+  .rank-btn.active { background: linear-gradient(135deg,#f97316,#ef4444); color: white; border-color: transparent; box-shadow: 0 2px 8px rgba(249,115,22,.35); }
+
+  .ranking-panel {
+    position: fixed; top: 0; right: -420px; width: 400px; max-width: 94vw;
+    height: 100vh; background: var(--card); border-left: 1px solid var(--border);
+    box-shadow: -4px 0 24px rgba(0,0,0,.12); z-index: 200;
+    display: flex; flex-direction: column; transition: right 0.3s cubic-bezier(.4,0,.2,1);
+    overflow: hidden;
+  }
+  .ranking-panel.open { right: 0; }
+  .ranking-panel-header {
+    padding: 16px 16px 12px; border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; gap: 8px; flex-shrink: 0;
+  }
+  .ranking-panel-title { font-size: 16px; font-weight: 700; flex: 1; }
+  .ranking-panel-close {
+    background: none; border: none; cursor: pointer; font-size: 18px;
+    color: var(--text-secondary); padding: 2px 6px; border-radius: 4px;
+    line-height: 1;
+  }
+  .ranking-panel-close:hover { background: var(--tag-bg); }
+  .ranking-controls {
+    padding: 10px 16px; border-bottom: 1px solid var(--border);
+    display: flex; gap: 8px; align-items: center; flex-wrap: wrap; flex-shrink: 0;
+  }
+  .ranking-controls label { font-size: 12px; color: var(--text-secondary); }
+  .ranking-controls select {
+    font-size: 12px; padding: 4px 8px; border: 1px solid var(--border);
+    border-radius: 6px; background: var(--bg); color: var(--text);
+    cursor: pointer;
+  }
+  .ranking-body { flex: 1; overflow-y: auto; padding: 8px 0; }
+  .ranking-item {
+    display: flex; align-items: flex-start; gap: 10px;
+    padding: 10px 16px; cursor: pointer; transition: background 0.15s;
+  }
+  .ranking-item:hover { background: var(--tag-bg); }
+  .rank-medal { font-size: 18px; flex-shrink: 0; width: 24px; text-align: center; line-height: 1.6; }
+  .rank-num {
+    font-size: 13px; font-weight: 700; color: var(--text-secondary);
+    flex-shrink: 0; width: 24px; text-align: center; line-height: 2;
+  }
+  .rank-content { flex: 1; min-width: 0; }
+  .rank-title { font-size: 13px; font-weight: 500; line-height: 1.4; margin-bottom: 4px; }
+  .rank-title a { color: var(--text); text-decoration: none; }
+  .rank-title a:hover { color: var(--primary); }
+  .rank-meta { font-size: 11px; color: var(--text-secondary); display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+  .rank-score {
+    font-size: 11px; font-weight: 700; padding: 1px 6px; border-radius: 10px;
+    background: linear-gradient(135deg,#f97316,#ef4444); color: white;
+    white-space: nowrap; flex-shrink: 0;
+  }
+  .rank-keywords { font-size: 10px; color: var(--text-secondary); margin-top: 2px; font-style: italic; }
+  .ranking-empty {
+    padding: 40px 16px; text-align: center; color: var(--text-secondary); font-size: 13px;
+  }
+  .ranking-footer {
+    padding: 10px 16px; border-top: 1px solid var(--border); font-size: 11px;
+    color: var(--text-secondary); flex-shrink: 0;
+  }
+
+  /* Rank badge on paper cards */
+  .paper-card { position: relative; }
+  .rank-badge {
+    position: absolute; top: 10px; right: 12px;
+    font-size: 11px; font-weight: 800; padding: 2px 8px;
+    border-radius: 12px; pointer-events: none; z-index: 2;
+    line-height: 1.6;
+  }
+  .rank-badge.medal-1 { background: #fbbf24; color: #78350f; }
+  .rank-badge.medal-2 { background: #d1d5db; color: #374151; }
+  .rank-badge.medal-3 { background: #cd7c2f; color: #fff; }
+  .rank-badge.medal-n { background: linear-gradient(135deg,#f97316,#ef4444); color: white; }
+
+  /* ===== Radar Page ===== */
+  .radar-page {
+    padding: 24px 48px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .radar-top {
+    display: flex; align-items: flex-end; justify-content: space-between;
+    flex-wrap: wrap; gap: 10px; margin-bottom: 18px;
+  }
+  .radar-title { font-size: 22px; font-weight: 800; display: flex; align-items: center; gap: 8px; }
+  .radar-title-sub { font-size: 12px; font-weight: 400; color: var(--text-secondary); letter-spacing: .03em; }
+  .radar-source-tabs { display: flex; gap: 5px; flex-wrap: wrap; }
+  .radar-src-btn {
+    padding: 4px 12px; border-radius: 20px; border: 1px solid var(--border);
+    background: var(--card); cursor: pointer; font-size: 11px; font-weight: 500;
+    transition: all 0.2s; color: var(--text);
+  }
+  .radar-src-btn:hover { border-color: var(--primary); color: var(--primary); }
+  .radar-src-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
+
+  /* Desktop: side-by-side, globe narrower */
+  .radar-body {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 380px;
+    gap: 20px;
+    align-items: start;
+  }
+
+  /* Globe */
+  .radar-globe-panel { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .globe-wrap {
+    width: 100%; position: relative;
+    background: radial-gradient(ellipse at 38% 38%, rgba(99,102,241,.08) 0%, transparent 70%);
+    border-radius: 14px; border: 1px solid var(--border);
+    overflow: hidden;
+  }
+  .globe-container {
+    width: 100%; height: clamp(260px, 32vw, 400px);
+    position: relative; cursor: grab; user-select: none;
+    -webkit-user-select: none;
+  }
+  .globe-container:active { cursor: grabbing; }
+  .globe-ring {
+    position: absolute; pointer-events: none; border-radius: 50%;
+    border: 1px dashed rgba(99,102,241,.18);
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%) rotateX(72deg);
+  }
+  .globe-ring-2 {
+    position: absolute; pointer-events: none; border-radius: 50%;
+    border: 1px dashed rgba(99,102,241,.10);
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%) rotateX(72deg) rotateY(60deg);
+  }
+  .globe-word {
+    position: absolute; white-space: nowrap; font-weight: 600;
+    pointer-events: auto; will-change: transform, opacity;
+    text-shadow: 0 1px 3px rgba(0,0,0,.08);
+    transition: filter .15s;
+  }
+  .globe-word:hover { filter: brightness(1.3); z-index: 9999 !important; cursor: pointer; }
+  .globe-info-bar {
+    display: flex; gap: 14px; font-size: 11px; color: var(--text-secondary);
+    padding: 5px 12px 8px; flex-wrap: wrap;
+  }
+  .globe-info-item { display: flex; align-items: center; gap: 4px; }
+  .globe-hint { font-size: 11px; color: var(--text-secondary); opacity: 0.6; text-align: center; }
+
+  /* Ranking panel */
+  .radar-ranking-panel {
+    background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+    display: flex; flex-direction: column;
+    max-height: clamp(360px, 46vw, 500px);
+    overflow: hidden;
+    position: sticky; top: 80px;
+  }
+  .radar-ranking-hdr {
+    padding: 11px 14px 10px; border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between; flex-shrink: 0;
+  }
+  .radar-ranking-hdr-left { font-size: 13px; font-weight: 700; display: flex; align-items: center; gap: 6px; }
+  .radar-week-badge {
+    font-size: 11px; padding: 2px 8px; border-radius: 10px;
+    background: var(--tag-bg); color: var(--text-secondary);
+  }
+  .radar-ranking-mode {
+    display: flex; gap: 4px; padding: 7px 12px; border-bottom: 1px solid var(--border); flex-shrink: 0;
+  }
+  .radar-mode-btn {
+    flex: 1; font-size: 11px; padding: 4px 6px; border-radius: 6px; border: 1px solid var(--border);
+    background: var(--bg); cursor: pointer; color: var(--text-secondary); transition: all .15s;
+  }
+  .radar-mode-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
+  .radar-ranking-list { flex: 1; overflow-y: auto; }
+  .radar-rank-item {
+    display: flex; gap: 9px; padding: 9px 14px; cursor: pointer;
+    transition: background .12s; align-items: flex-start;
+    border-bottom: 1px solid var(--border);
+  }
+  .radar-rank-item:last-child { border-bottom: none; }
+  .radar-rank-item:hover { background: var(--tag-bg); }
+  .radar-rank-num {
+    font-size: 12px; font-weight: 800; width: 22px; text-align: center;
+    flex-shrink: 0; line-height: 1.7; color: var(--text-secondary);
+  }
+  .radar-rank-content { flex: 1; min-width: 0; }
+  .radar-rank-title { font-size: 12px; font-weight: 500; line-height: 1.4; margin-bottom: 3px; }
+  .radar-rank-title a { color: var(--text); text-decoration: none; }
+  .radar-rank-title a:hover { color: var(--primary); }
+  .radar-rank-meta { font-size: 11px; color: var(--text-secondary); display: flex; gap: 5px; flex-wrap: wrap; align-items: center; }
+  .radar-rank-score {
+    font-size: 11px; font-weight: 700; padding: 1px 6px; border-radius: 8px;
+    background: linear-gradient(135deg,#f97316,#ef4444); color: white; white-space: nowrap;
+  }
+  .radar-rank-kws { font-size: 10px; color: var(--text-secondary); margin-top: 2px; font-style: italic; }
+  .radar-ranking-empty, .radar-ranking-loading {
+    padding: 32px 16px; text-align: center; color: var(--text-secondary); font-size: 12px;
+  }
+  .radar-ranking-footer {
+    padding: 7px 14px; border-top: 1px solid var(--border); font-size: 11px;
+    color: var(--text-secondary); flex-shrink: 0; text-align: center;
+  }
+
+  /* Radar — mobile: single column, globe on top */
+  @media (max-width: 768px) {
+    .radar-page { padding: 14px 14px 32px; }
+    .radar-top { flex-direction: column; align-items: flex-start; gap: 10px; }
+    .radar-source-tabs { gap: 5px; }
+    .radar-src-btn { font-size: 11px; padding: 4px 10px; }
+    .radar-body {
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    .globe-container { height: clamp(240px, 70vw, 340px); }
+    .radar-ranking-panel {
+      max-height: none;       /* let it expand fully on mobile */
+      position: static;
+    }
+    .radar-ranking-list { max-height: 420px; overflow-y: auto; }
+  }
 </style>
 </head>
 <body>
@@ -728,6 +957,10 @@
     <a class="sidebar-item active" data-page="papers" onclick="switchPage('papers', this)" title="Papers">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
       <span class="sidebar-item-label" data-i18n="navPapers">Papers</span>
+    </a>
+    <a class="sidebar-item" data-page="radar" onclick="switchPage('radar', this)" title="Radar">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/></svg>
+      <span class="sidebar-item-label" data-i18n="navRadar">Radar</span>
     </a>
     <a class="sidebar-item" data-page="trends" onclick="switchPage('trends', this)" title="Trends">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
@@ -909,8 +1142,34 @@
       <button class="sort-btn" data-sort="oldest">Old</button>
       <button class="sort-btn" data-sort="title">A-Z</button>
     </div>
+    <button class="rank-btn" id="rankingBtn" onclick="toggleRankingPanel()">🔥 <span id="rankingBtnLabel">Hot</span></button>
     <button class="toggle-charts" id="toggleCharts">Charts ▼</button>
   </div>
+</div>
+
+<!-- Ranking Panel -->
+<div class="ranking-panel" id="rankingPanel">
+  <div class="ranking-panel-header">
+    <span style="font-size:20px;">🔥</span>
+    <span class="ranking-panel-title" id="rankingPanelTitle">Hot Papers</span>
+    <button class="ranking-panel-close" onclick="toggleRankingPanel()">×</button>
+  </div>
+  <div class="ranking-controls">
+    <label>Scope:</label>
+    <select id="rankScopeSelect" onchange="computeRankings()">
+      <option value="week">This Week</option>
+      <option value="current">Current View</option>
+      <option value="all">All Papers</option>
+    </select>
+    <label>Mode:</label>
+    <select id="rankModeSelect" onchange="computeRankings()">
+      <option value="trend">Trend Match</option>
+      <option value="freq">Hot Frequency</option>
+      <option value="comprehensive">Comprehensive</option>
+    </select>
+  </div>
+  <div class="ranking-body" id="rankingBody"></div>
+  <div class="ranking-footer" id="rankingFooter"></div>
 </div>
 
 <div class="charts" id="chartsArea" style="display: none;">
@@ -937,6 +1196,57 @@
 
 </div><!-- .main-wrap -->
 </div><!-- #page-papers -->
+
+<!-- =================== RADAR PAGE =================== -->
+<div id="page-radar" class="page-section">
+<div class="radar-page">
+  <div class="radar-top">
+    <div>
+      <div class="radar-title">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--primary)"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1" fill="currentColor"/><line x1="12" y1="2" x2="12" y2="7"/><line x1="12" y1="17" x2="12" y2="22"/><line x1="2" y1="12" x2="7" y2="12"/><line x1="17" y1="12" x2="22" y2="12"/></svg>
+        Radar <span class="radar-title-sub">· <span data-i18n="radarSubtitle">Field Signal Monitor</span></span>
+      </div>
+    </div>
+    <div class="radar-source-tabs" id="radarSourceTabs"></div>
+  </div>
+
+  <div class="radar-body">
+    <!-- Globe -->
+    <div class="radar-globe-panel">
+      <div class="globe-wrap">
+        <div class="globe-container" id="globeContainer">
+          <canvas id="globeCanvas" style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;"></canvas>
+          <div class="globe-ring" id="globeRing"></div>
+          <div class="globe-ring-2" id="globeRing2"></div>
+        </div>
+        <div class="globe-info-bar" id="globeInfoBar">
+          <span class="globe-info-item">🔑 <span id="globeKwCount">—</span> <span data-i18n="radarGlobeKw">keywords</span></span>
+          <span class="globe-info-item">🔥 <span id="globeWeekCount">—</span> <span data-i18n="radarGlobeWeek">papers this week</span></span>
+          <span class="globe-info-item" id="globeUpdatedInfo"></span>
+        </div>
+      </div>
+      <div class="globe-hint" data-i18n="radarGlobeHint">🖱 Drag to rotate · Click a keyword to search</div>
+    </div>
+
+    <!-- Ranking -->
+    <div class="radar-ranking-panel">
+      <div class="radar-ranking-hdr">
+        <span class="radar-ranking-hdr-left">🔥 <span data-i18n="radarWeekHot">This Week Hot Papers</span></span>
+        <span class="radar-week-badge" id="radarWeekBadge">—</span>
+      </div>
+      <div class="radar-ranking-mode" id="radarModeBar">
+        <button class="radar-mode-btn active" data-mode="trend" onclick="switchRadarMode('trend')" data-i18n="radarModeHot">Trend</button>
+        <button class="radar-mode-btn" data-mode="freq" onclick="switchRadarMode('freq')" data-i18n="radarModeFreq">Frequency</button>
+        <button class="radar-mode-btn" data-mode="comprehensive" onclick="switchRadarMode('comprehensive')" data-i18n="radarModeComp">Comprehensive</button>
+      </div>
+      <div class="radar-ranking-list" id="radarRankingList">
+        <div class="radar-ranking-loading" data-i18n="radarSelectTopic">Select a topic above to begin…</div>
+      </div>
+      <div class="radar-ranking-footer" id="radarRankingFooter"></div>
+    </div>
+  </div>
+</div>
+</div><!-- #page-radar -->
 
 <div id="page-trends" class="page-section">
   <div class="skills-page">
@@ -1223,7 +1533,21 @@ const LANG = {
     ds_all: 'All Papers', ds_vlm: 'Vision-Language Model', ds_agent: 'Agent', ds_uav: 'UAV', ds_sar: 'SAR', ds_hyp: 'Hyperspectral/MS',
     noBibtex: 'No BibTeX available',
     scholar: 'Scholar', copyInfo: 'Copy', copyInfoDone: 'Copied!',
-    navPapers: 'Papers', navTrends: 'Trends', navSkills: 'Skills', navVenues: 'Venues', navResources: 'Resources',
+    navPapers: 'Papers', navRadar: 'Radar', navTrends: 'Trends', navSkills: 'Skills', navVenues: 'Venues', navResources: 'Resources',
+    noteRadar: 'Keyword globe & weekly hot paper rankings — scored by BERT-weighted keyword matching across topic areas.',
+    radarSubtitle: 'Field Signal Monitor',
+    radarModeHot: 'Trend', radarModeFreq: 'Frequency', radarModeComp: 'Comprehensive',
+    radarWeekHot: 'This Week Hot Papers',
+    radarGlobeKw: 'keywords', radarGlobeWeek: 'papers this week',
+    radarGlobeHint: '🖱 Drag to rotate · Click a keyword to search',
+    radarScanning: '📡 Scanning this week…',
+    radarNoWeek: 'No new papers this week yet.',
+    radarNoKw: 'No keyword data for this topic.',
+    radarNoMatch: 'No papers matched trending keywords this week.',
+    radarScoredBy: 'scored by', radarKwWeight: 'keyword weight',
+    radarKwFreq: 'keyword frequency', radarKwComp: 'keyword weight + code/VLM bonus',
+    radarOf: 'of', radarMatched: 'matched',
+    radarSelectTopic: 'Select a topic above to begin…',
     noteTrends: 'Author names are from arXiv and may include homonyms. More statistics coming soon.',
     trendsYearly: 'Yearly Distribution', trendsMonthly: 'Monthly Distribution', trendsTopAuthors: 'Top Authors',
     trendsPapers: 'papers', trendsSelectYear: 'Select a year to view monthly breakdown.',
@@ -1284,7 +1608,21 @@ const LANG = {
     ds_all: '全部论文', ds_vlm: '视觉语言模型', ds_agent: 'Agent', ds_uav: '无人机', ds_sar: 'SAR', ds_hyp: '高光谱/多光谱',
     noBibtex: '暂无引用信息',
     scholar: '谷歌学术', copyInfo: '复制', copyInfoDone: '已复制！',
-    navPapers: '论文', navTrends: '趋势', navSkills: '技能', navVenues: '期刊会议', navResources: '资源',
+    navPapers: '论文', navRadar: '雷达', navTrends: '趋势', navSkills: '技能', navVenues: '期刊会议', navResources: '资源',
+    noteRadar: '关键词地球仪 & 本周热门论文排行 — 基于 BERT 加权关键词匹配评分。',
+    radarSubtitle: '领域信号监测',
+    radarModeHot: '趋势匹配', radarModeFreq: '词频热度', radarModeComp: '综合评分',
+    radarWeekHot: '本周热门论文',
+    radarGlobeKw: '个关键词', radarGlobeWeek: '篇本周新增',
+    radarGlobeHint: '🖱 拖拽旋转 · 点击关键词搜索',
+    radarScanning: '📡 正在扫描本周论文…',
+    radarNoWeek: '本周暂无新增论文。',
+    radarNoKw: '该话题暂无关键词数据。',
+    radarNoMatch: '本周暂无论文匹配热门关键词。',
+    radarScoredBy: '评分依据', radarKwWeight: '关键词权重',
+    radarKwFreq: '关键词词频', radarKwComp: '关键词权重 + 代码/VLM 加成',
+    radarOf: '/', radarMatched: '篇匹配',
+    radarSelectTopic: '请在上方选择话题…',
     noteTrends: '作者姓名仅按 arXiv 署名统计，可能存在同名情况。陆续推出更多统计数据。',
     trendsYearly: '年度分布', trendsMonthly: '月度分布', trendsTopAuthors: '高产作者',
     trendsPapers: '篇', trendsSelectYear: '选择年份查看月度分布。',
@@ -1455,6 +1793,8 @@ function applyLang() {
   renderResources();
   // Refresh trends (data source labels + content)
   if (trendsData) { initTrendsDataSource(); renderTrends(); }
+  // Rebuild radar source tabs with updated language
+  if (document.getElementById('radarSourceTabs')) buildRadarSourceTabs();
 }
 
 function toggleLang() {
@@ -1464,7 +1804,7 @@ function toggleLang() {
 }
 
 // Sidebar navigation
-const PAGE_KEYS = ['papers','trends','skills','venues','resources'];
+const PAGE_KEYS = ['papers','radar','trends','skills','venues','resources'];
 function switchPage(page, el) {
   document.querySelectorAll('.page-section').forEach(s => s.classList.remove('active'));
   document.querySelectorAll('.sidebar-item').forEach(s => s.classList.remove('active'));
@@ -1484,6 +1824,9 @@ function switchPage(page, el) {
     history.replaceState(null, '', '#' + page);
   }
   window.scrollTo({ top: 0 });
+  // Globe lifecycle
+  if (page !== 'radar' && globeAnimFrame) stopGlobeAnim();
+  if (page === 'radar') setTimeout(initRadarPage, 0);
 }
 
 (function initSidebar() {
@@ -1538,6 +1881,11 @@ let groupList = []; // loaded from groups/index.json
 let collection = new Map(); // Paper_link -> paper object
 let collectionView = false;
 let fuzzySearch = false;
+
+// ---- Ranking state ----
+let keywordsData = null;
+let rankingOpen = false;
+let paperRanks = {}; // Paper_link -> {rank, score, matchedKws}
 
 function initDataSourceSelect() {
   const container = document.getElementById('dataSource');
@@ -1728,6 +2076,7 @@ async function loadData(file) {
   applyFilters();
   renderStats(allPapers);
   updateQuickFilterCounts();
+  if (rankingOpen) computeRankings();
 }
 
 async function init() {
@@ -2611,8 +2960,13 @@ function render() {
     const scholarUrl = 'https://scholar.google.com/scholar?q=' + encodeURIComponent(p.Title);
     const isCollected = collection.has(p.Paper_link);
     const collectIcon = isCollected ? '<svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>' : '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>';
+    const rankInfo = rankingOpen ? paperRanks[p.Paper_link] : null;
+    const rankBadge = rankInfo
+      ? `<span class="rank-badge ${rankInfo.rank <= 3 ? 'medal-' + rankInfo.rank : 'medal-n'}">${rankInfo.rank <= 3 ? ['🥇','🥈','🥉'][rankInfo.rank-1] : '#' + rankInfo.rank}</span>`
+      : '';
     return `
     <div class="paper-card" onclick="toggleAbstract(event, ${idx})">
+      ${rankBadge}
       <div class="paper-title"><a href="${escHtml(p.Paper_link)}" target="_blank" onclick="event.stopPropagation()">${renderLatex(p.Title)}</a></div>
       <div class="paper-meta">
         <span class="tag year clickable${_ta('date',pDate)}" onclick="event.stopPropagation(); filterByTag('date','${pDate}')">${pDate}</span>
@@ -3394,6 +3748,628 @@ function clearGroupFilter() {
 }
 
 function updateGroupUI() {}
+
+// ---- Ranking / Hot Papers ----
+
+async function ensureKeywords() {
+  if (keywordsData) return keywordsData;
+  try {
+    const r = await fetch('./wordcloud/keywords.json');
+    keywordsData = await r.json();
+  } catch(e) { keywordsData = {}; }
+  return keywordsData;
+}
+
+function getActiveDsKey() {
+  const btn = document.querySelector('#dataSource button.active');
+  return btn ? btn.dataset.key : 'all';
+}
+
+// Aggregate keywords for a given ds key, weighting recent years higher
+function getEffectiveKeywords(dsKey) {
+  if (!keywordsData) return [];
+  const yearWeights = { '2025': 2.5, '2024': 2.0, '2023': 1.2, '2022': 0.8 };
+  const defaultYearW = 0.5;
+  const sources = dsKey === 'all'
+    ? Object.keys(keywordsData).filter(k => k !== '_last_updated')
+    : [dsKey];
+  const map = {};
+  for (const src of sources) {
+    const srcData = keywordsData[src];
+    if (!srcData) continue;
+    for (const [yr, yrData] of Object.entries(srcData)) {
+      if (!yrData || !yrData.keywords) continue;
+      const yw = yearWeights[yr] || defaultYearW;
+      for (const kw of yrData.keywords) {
+        const word = kw.word.toLowerCase();
+        if (!map[word]) map[word] = { word, freq: 0, weight: 0 };
+        map[word].freq += kw.freq * yw;
+        map[word].weight += kw.weight * yw;
+      }
+    }
+  }
+  return Object.values(map).sort((a, b) => b.weight - a.weight);
+}
+
+function scorePaper(paper, keywords, mode) {
+  const text = ((paper.Title || '') + ' ' + (paper.Abstract || '')).toLowerCase();
+  let score = 0;
+  const matched = [];
+  for (const kw of keywords) {
+    if (text.includes(kw.word)) {
+      if (mode === 'freq') score += kw.freq;
+      else score += kw.weight; // trend or comprehensive base
+      matched.push(kw.word);
+    }
+  }
+  if (mode === 'comprehensive') {
+    if (paper.code && paper.code.trim()) score *= 1.3;
+    if (paper._is_vlm) score *= 1.15;
+    if ((paper._tasks || '').trim()) score *= 1.05;
+  }
+  return { score: Math.round(score * 100) / 100, matched };
+}
+
+function getScopeLabel(scope) {
+  return scope === 'week' ? 'This Week' : scope === 'current' ? 'Current View' : 'All Papers';
+}
+
+function getModeLabel(mode) {
+  return mode === 'trend' ? 'Trend Match' : mode === 'freq' ? 'Hot Frequency' : 'Comprehensive';
+}
+
+function getScopePapers() {
+  const scope = document.getElementById('rankScopeSelect').value;
+  if (scope === 'current') return filtered.slice();
+  if (scope === 'week') {
+    const ranges = getArxivDateRanges();
+    return allPapers.filter(p => {
+      const ad = p._added_date || '';
+      return ad >= ranges.weekFrom;
+    });
+  }
+  // all
+  return allPapers.slice();
+}
+
+async function computeRankings() {
+  await ensureKeywords();
+  const mode = document.getElementById('rankModeSelect').value;
+  const dsKey = getActiveDsKey();
+  const keywords = getEffectiveKeywords(dsKey);
+  const papers = getScopePapers();
+
+  if (!papers.length || !keywords.length) {
+    paperRanks = {};
+    renderRankingPanel([], mode, 0);
+    render();
+    return;
+  }
+
+  const scored = papers.map(p => {
+    const { score, matched } = scorePaper(p, keywords, mode);
+    return { paper: p, score, matched };
+  }).filter(x => x.score > 0)
+    .sort((a, b) => b.score - a.score);
+
+  paperRanks = {};
+  scored.forEach((x, i) => {
+    paperRanks[x.paper.Paper_link] = { rank: i + 1, score: x.score, matched: x.matched };
+  });
+
+  renderRankingPanel(scored.slice(0, 50), mode, papers.length);
+  render(); // re-render cards to show/hide badges
+}
+
+function renderRankingPanel(items, mode, total) {
+  const medals = ['🥇', '🥈', '🥉'];
+  const scope = document.getElementById('rankScopeSelect').value;
+
+  document.getElementById('rankingPanelTitle').textContent =
+    `🔥 Hot Papers · ${getScopeLabel(scope)}`;
+
+  const body = document.getElementById('rankingBody');
+  const footer = document.getElementById('rankingFooter');
+
+  if (!items.length) {
+    body.innerHTML = `<div class="ranking-empty">No papers with keyword matches found.<br>Try changing scope or data source.</div>`;
+    footer.textContent = '';
+    return;
+  }
+
+  body.innerHTML = items.map((x, i) => {
+    const rank = i + 1;
+    const badge = rank <= 3 ? `<span class="rank-medal">${medals[rank-1]}</span>` : `<span class="rank-num">${rank}</span>`;
+    const p = x.paper;
+    const pLink = p.Paper_link || '#';
+    const kwsStr = x.matched.slice(0, 4).join(', ');
+    const tags = [
+      p._added_date || (p.Year ? String(p.Year) : ''),
+      p.Category || '',
+      p._is_vlm ? 'VLM' : '',
+      p.code ? '⚙️ Code' : ''
+    ].filter(Boolean).join(' · ');
+    return `<div class="ranking-item" onclick="scrollToRankedPaper(${JSON.stringify(pLink)})">
+      ${badge}
+      <div class="rank-content">
+        <div class="rank-title"><a href="${escHtml(pLink)}" target="_blank" onclick="event.stopPropagation()">${escHtml(p.Title || '')}</a></div>
+        <div class="rank-meta"><span>${escHtml(tags)}</span><span class="rank-score">${x.score.toFixed(1)}</span></div>
+        ${kwsStr ? `<div class="rank-keywords">🔑 ${escHtml(kwsStr)}</div>` : ''}
+      </div>
+    </div>`;
+  }).join('');
+
+  const modeDesc = mode === 'trend' ? 'keyword weight (freq × BERT score)'
+    : mode === 'freq' ? 'raw keyword frequency'
+    : 'keyword weight + code/VLM bonuses';
+  footer.textContent = `${items.length} ranked of ${total} papers · scored by ${modeDesc}`;
+}
+
+function scrollToRankedPaper(link) {
+  // Find paper in current filtered list and scroll to it (switch to all scope if needed)
+  const idx = filtered.findIndex(p => p.Paper_link === link);
+  if (idx >= 0) {
+    const targetPage = Math.floor(idx / PER_PAGE) + 1;
+    if (targetPage !== currentPage) { currentPage = targetPage; render(); }
+    setTimeout(() => {
+      const cards = document.querySelectorAll('#paperList .paper-card');
+      const localIdx = idx - (targetPage - 1) * PER_PAGE;
+      if (cards[localIdx]) {
+        cards[localIdx].scrollIntoView({ behavior: 'smooth', block: 'center' });
+        cards[localIdx].style.outline = '2px solid #f97316';
+        setTimeout(() => { cards[localIdx].style.outline = ''; }, 1500);
+      }
+    }, 80);
+  } else {
+    // paper not in current filter → open in new tab
+    window.open(link, '_blank');
+  }
+}
+
+async function toggleRankingPanel() {
+  rankingOpen = !rankingOpen;
+  document.getElementById('rankingPanel').classList.toggle('open', rankingOpen);
+  document.getElementById('rankingBtn').classList.toggle('active', rankingOpen);
+  document.getElementById('rankingBtnLabel').textContent = rankingOpen ? 'Hot ▶' : 'Hot';
+  if (rankingOpen) {
+    await computeRankings();
+  } else {
+    paperRanks = {};
+    render(); // remove badges
+  }
+}
+
+// ===============================================================
+// RADAR PAGE — 3D Globe Word Cloud + Weekly Hot Papers Ranking
+// ===============================================================
+
+const RADAR_DS_COLORS = {
+  all:   { fg: '#6366f1', mid: '#818cf8' },
+  vlm:   { fg: '#8b5cf6', mid: '#a78bfa' },
+  uav:   { fg: '#0ea5e9', mid: '#38bdf8' },
+  agent: { fg: '#f97316', mid: '#fb923c' },
+  sar:   { fg: '#10b981', mid: '#34d399' },
+  hyp:   { fg: '#d97706', mid: '#fbbf24' },
+};
+
+let radarCurrentSource = 'all';
+let radarCurrentMode   = 'trend';
+let radarPapersCache   = {};
+let globePoints        = [];   // { x,y,z, el, baseSize }
+let globeRotX          = 0.30;
+let globeRotY          = 0;
+let globeAnimFrame     = null;
+let globeDragging      = false;
+let globeLastMouse     = { x: 0, y: 0 };
+let globeHovered       = false;
+let radarInitDone      = false;
+
+// ---- Fibonacci sphere distribution ----
+function fibSphere(n) {
+  const pts = [];
+  const phi = Math.PI * (3 - Math.sqrt(5));
+  for (let i = 0; i < n; i++) {
+    const y = 1 - (i / (n - 1)) * 2;
+    const r = Math.sqrt(Math.max(0, 1 - y * y));
+    const th = phi * i;
+    pts.push({ x: Math.cos(th) * r, y, z: Math.sin(th) * r });
+  }
+  return pts;
+}
+
+// Rich 20-color palette covering full hue wheel
+const GLOBE_PALETTE = [
+  '#6366f1','#8b5cf6','#a855f7','#ec4899','#f43f5e',
+  '#ef4444','#f97316','#f59e0b','#eab308','#84cc16',
+  '#22c55e','#10b981','#14b8a6','#06b6d4','#0ea5e9',
+  '#3b82f6','#60a5fa','#c084fc','#fb7185','#34d399',
+];
+
+// ---- 3-D rotation (X then Y axis) ----
+function rotXY(px, py, pz, rx, ry) {
+  const y1 = py * Math.cos(rx) - pz * Math.sin(rx);
+  const z1 = py * Math.sin(rx) + pz * Math.cos(rx);
+  const x2 = px * Math.cos(ry) + z1 * Math.sin(ry);
+  const z2 = -px * Math.sin(ry) + z1 * Math.cos(ry);
+  return { x: x2, y: y1, z: z2 };
+}
+
+// ---- Build word list from keywordsData ----
+function buildGlobeWords(srcKey) {
+  if (!keywordsData) return [];
+  const yw = { '2025': 2.5, '2024': 2.0, '2023': 1.2, '2022': 0.8 };
+  const srcs = srcKey === 'all'
+    ? Object.keys(keywordsData).filter(k => k !== '_last_updated')
+    : [srcKey];
+  const map = {};
+  for (const s of srcs) {
+    const sd = keywordsData[s];
+    if (!sd) continue;
+    for (const [yr, yd] of Object.entries(sd)) {
+      if (!yd?.keywords) continue;
+      const w = yw[yr] || 0.5;
+      for (const kw of yd.keywords) {
+        const word = kw.word;
+        if (!map[word]) map[word] = { word, weight: 0 };
+        map[word].weight += kw.weight * w;
+      }
+    }
+  }
+  return Object.values(map).sort((a, b) => b.weight - a.weight).slice(0, 90);
+}
+
+// ---- Build + mount globe DOM ----
+function buildGlobe(srcKey) {
+  const container = document.getElementById('globeContainer');
+  if (!container) return;
+
+  // Remove only word spans, keep decorative ring divs
+  Array.from(container.children).forEach(ch => {
+    if (!ch.classList.contains('globe-ring') && ch.id !== 'globeRing' && ch.id !== 'globeRing2') {
+      container.removeChild(ch);
+    }
+  });
+
+  const words = buildGlobeWords(srcKey);
+  if (!words.length) {
+    container.insertAdjacentHTML('beforeend', '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:var(--text-secondary);font-size:13px;">No keyword data for this topic.</div>');
+    globePoints = [];
+    return;
+  }
+
+  const pts = fibSphere(words.length);
+  const maxW = words[0].weight;
+
+  globePoints = words.map((w, i) => {
+    const el = document.createElement('span');
+    el.className = 'globe-word';
+    el.textContent = w.word;
+    const sizeRatio = w.weight / maxW;
+    const baseSize = 10 + sizeRatio * 18; // 10–28 px
+    const wordColor = GLOBE_PALETTE[i % GLOBE_PALETTE.length];
+    el.title = `${w.word}  (score: ${w.weight.toFixed(1)})`;
+    el.style.color = wordColor;
+    el.onclick = (e) => {
+      e.stopPropagation();
+      const paperNav = document.querySelector('.sidebar-item[data-page="papers"]');
+      switchPage('papers', paperNav);
+      setTimeout(() => {
+        const inp = document.getElementById('searchInput');
+        if (inp) { inp.value = w.word; inp.dispatchEvent(new Event('input')); }
+        applyFilters();
+      }, 80);
+    };
+    container.appendChild(el);
+    return { ...pts[i], el, baseSize, wordColor };
+  });
+
+  // Update info bar
+  const kwEl = document.getElementById('globeKwCount');
+  if (kwEl) kwEl.textContent = words.length;
+  const updEl = document.getElementById('globeUpdatedInfo');
+  if (updEl && keywordsData._last_updated) updEl.textContent = '📅 ' + keywordsData._last_updated;
+
+  // Resize rings proportionally to container
+  sizeGlobeRings();
+}
+
+function sizeGlobeRings() {
+  const c = document.getElementById('globeContainer');
+  if (!c) return;
+  const R = Math.min(c.offsetWidth, c.offsetHeight) * 0.42 * 2;
+  [['globeRing', 1.0], ['globeRing2', 0.85]].forEach(([id, scale]) => {
+    const el = document.getElementById(id);
+    if (el) { el.style.width = R * scale + 'px'; el.style.height = R * scale + 'px'; }
+  });
+  // Sync canvas physical pixels for sharp rendering on HiDPI
+  const cv = document.getElementById('globeCanvas');
+  if (cv) {
+    const dpr = window.devicePixelRatio || 1;
+    cv.width  = c.offsetWidth  * dpr;
+    cv.height = c.offsetHeight * dpr;
+    const ctx = cv.getContext('2d');
+    ctx.scale(dpr, dpr);
+  }
+}
+
+// ---- Draw latitude / longitude grid on canvas ----
+function drawGlobeGrid(W, H, R) {
+  const cv = document.getElementById('globeCanvas');
+  if (!cv) return;
+  const dpr = window.devicePixelRatio || 1;
+  // Resize if container changed
+  if (cv.width !== Math.round(W * dpr) || cv.height !== Math.round(H * dpr)) {
+    cv.width  = Math.round(W * dpr);
+    cv.height = Math.round(H * dpr);
+  }
+  const ctx = cv.getContext('2d');
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.clearRect(0, 0, W, H);
+
+  // Detect color scheme
+  const dark = document.documentElement.getAttribute('data-theme') === 'dark'
+    || document.documentElement.classList.contains('dark')
+    || window.matchMedia('(prefers-color-scheme: dark)').matches;
+  // Base RGBA for grid lines  (r,g,b vary: indigo-ish)
+  const [lr, lg, lb] = dark ? [160, 180, 255] : [99, 102, 241];
+
+  const SEG = 90; // segments per line — smooth enough
+  const CX = W / 2, CY = H / 2;
+
+  // Draw one great/small circle defined by a generator function
+  function drawLine(points3d, frontAlpha, backAlpha, lineW) {
+    // Draw segment-by-segment so back of globe is visually distinct
+    for (let i = 0; i < points3d.length - 1; i++) {
+      const { x: x1, y: y1, z: z1 } = rotXY(...points3d[i],   globeRotX, globeRotY);
+      const { x: x2, y: y2, z: z2 } = rotXY(...points3d[i+1], globeRotX, globeRotY);
+      const midZ = (z1 + z2) / 2;
+      // Skip heavily back-facing segments (they'd show through the globe)
+      if (midZ < -0.05) continue;
+      const a = midZ > 0 ? frontAlpha : backAlpha * (1 + midZ * 5); // fade near edge
+      if (a <= 0.005) continue;
+      ctx.beginPath();
+      ctx.moveTo(CX + x1 * R, CY + y1 * R);
+      ctx.lineTo(CX + x2 * R, CY + y2 * R);
+      ctx.strokeStyle = `rgba(${lr},${lg},${lb},${a.toFixed(3)})`;
+      ctx.lineWidth = lineW;
+      ctx.stroke();
+    }
+  }
+
+  // Pre-compute 3-D points for a latitude circle at angle φ (radians)
+  function latPts(phi) {
+    const pts = [];
+    for (let i = 0; i <= SEG; i++) {
+      const th = (i / SEG) * 2 * Math.PI;
+      pts.push([Math.cos(phi) * Math.cos(th), Math.sin(phi), Math.cos(phi) * Math.sin(th)]);
+    }
+    return pts;
+  }
+
+  // Pre-compute 3-D points for a meridian at angle λ (radians)
+  function lonPts(lambda) {
+    const pts = [];
+    for (let i = 0; i <= SEG; i++) {
+      const phi = -Math.PI / 2 + (i / SEG) * Math.PI;
+      pts.push([Math.cos(phi) * Math.cos(lambda), Math.sin(phi), Math.cos(phi) * Math.sin(lambda)]);
+    }
+    return pts;
+  }
+
+  // Latitude parallels every 30° (skip poles)
+  for (let lat = -60; lat <= 60; lat += 30) {
+    const isEquator = lat === 0;
+    drawLine(latPts(lat * Math.PI / 180),
+      isEquator ? 0.22 : 0.11,   // front alpha
+      isEquator ? 0.06 : 0.03,   // back alpha
+      isEquator ? 0.8  : 0.5);
+  }
+
+  // Meridians every 30° (12 lines)
+  for (let lon = 0; lon < 360; lon += 30) {
+    drawLine(lonPts(lon * Math.PI / 180), 0.10, 0.02, 0.5);
+  }
+}
+
+// ---- Render a single animation frame ----
+function renderGlobeFrame() {
+  const c = document.getElementById('globeContainer');
+  if (!c || !globePoints.length) return;
+  const W = c.offsetWidth, H = c.offsetHeight;
+  const R = Math.min(W, H) * 0.42;
+
+  // Draw lat/lon grid first (behind words)
+  drawGlobeGrid(W, H, R);
+
+  globePoints.forEach(p => {
+    const { x, y, z } = rotXY(p.x, p.y, p.z, globeRotX, globeRotY);
+    const depth = (z + 1) / 2;            // 0 = far back, 1 = front
+    const px = W / 2 + x * R;
+    const py = H / 2 + y * R;
+    const fs  = p.baseSize * (0.45 + depth * 0.7);
+    const op  = 0.18 + depth * 0.82;     // back words very faint
+    const el  = p.el;
+    el.style.left      = px + 'px';
+    el.style.top       = py + 'px';
+    el.style.fontSize  = fs + 'px';
+    el.style.opacity   = op;
+    el.style.zIndex    = Math.round(depth * 200);
+    el.style.transform = 'translate(-50%,-50%)';
+    el.style.filter    = depth < 0.35 ? 'grayscale(60%) brightness(0.7)' : 'none';
+  });
+}
+
+// ---- Animation loop ----
+function startGlobeAnim() {
+  if (globeAnimFrame) cancelAnimationFrame(globeAnimFrame);
+  const tick = () => {
+    if (!globeHovered && !globeDragging) globeRotY += 0.004;
+    renderGlobeFrame();
+    globeAnimFrame = requestAnimationFrame(tick);
+  };
+  tick();
+}
+
+function stopGlobeAnim() {
+  if (globeAnimFrame) { cancelAnimationFrame(globeAnimFrame); globeAnimFrame = null; }
+  globePoints = [];
+}
+
+// ---- Globe mouse / touch ----
+function attachGlobeEvents() {
+  const c = document.getElementById('globeContainer');
+  if (!c) return;
+  c.onmousedown  = (e) => { globeDragging = true; globeLastMouse = { x: e.clientX, y: e.clientY }; };
+  c.onmousemove  = (e) => {
+    if (!globeDragging) return;
+    globeRotY += (e.clientX - globeLastMouse.x) * 0.005;
+    globeRotX += (e.clientY - globeLastMouse.y) * 0.005;
+    globeLastMouse = { x: e.clientX, y: e.clientY };
+  };
+  c.onmouseup    = c.onmouseleave = () => { globeDragging = false; };
+  c.onmouseenter = () => { globeHovered = true; };
+  c.onmouseleave = () => { globeHovered = false; globeDragging = false; };
+  c.ontouchstart = (e) => { globeDragging = true; globeLastMouse = { x: e.touches[0].clientX, y: e.touches[0].clientY }; };
+  c.ontouchmove  = (e) => {
+    e.preventDefault();
+    if (!globeDragging) return;
+    globeRotY += (e.touches[0].clientX - globeLastMouse.x) * 0.005;
+    globeRotX += (e.touches[0].clientY - globeLastMouse.y) * 0.005;
+    globeLastMouse = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+  };
+  c.ontouchend   = () => { globeDragging = false; };
+}
+
+// ---- Source tabs ----
+function buildRadarSourceTabs() {
+  const wrap = document.getElementById('radarSourceTabs');
+  if (!wrap) return;
+  wrap.innerHTML = '';
+  DATA_SOURCES.forEach(ds => {
+    const btn = document.createElement('button');
+    btn.className = 'radar-src-btn' + (ds.key === radarCurrentSource ? ' active' : '');
+    btn.textContent = t('ds_' + ds.key);
+    btn.dataset.key  = ds.key;
+    btn.onclick = () => switchRadarSource(ds.key);
+    wrap.appendChild(btn);
+  });
+}
+
+async function switchRadarSource(key) {
+  radarCurrentSource = key;
+  document.querySelectorAll('.radar-src-btn').forEach(b => b.classList.toggle('active', b.dataset.key === key));
+  buildGlobe(key);
+  attachGlobeEvents();
+  startGlobeAnim();
+  await renderRadarRanking(key, radarCurrentMode);
+  updateRadarWeekCount(key);
+}
+
+function switchRadarMode(mode) {
+  radarCurrentMode = mode;
+  document.querySelectorAll('.radar-mode-btn').forEach(b => b.classList.toggle('active', b.dataset.mode === mode));
+  renderRadarRanking(radarCurrentSource, mode);
+}
+
+// ---- Fetch papers for a given source (cached) ----
+async function getRadarPapers(srcKey) {
+  if (radarPapersCache[srcKey]) return radarPapersCache[srcKey];
+  const fileMap = { all:'papers.json', vlm:'papers_vlm.json', uav:'papers_uav.json', agent:'papers_agent.json', sar:'papers_sar.json', hyp:'papers_hyp.json' };
+  try {
+    const resp = await fetch('./output/' + (fileMap[srcKey] || 'papers.json'));
+    const text = await resp.text();
+    const arr  = JSON.parse(text.replace(/:\s*NaN\b/g, ': null'));
+    arr.forEach(p => { for (const k in p) { if (p[k] === null) p[k] = ''; } });
+    radarPapersCache[srcKey] = arr;
+    return arr;
+  } catch { return []; }
+}
+
+async function updateRadarWeekCount(srcKey) {
+  const papers = await getRadarPapers(srcKey);
+  const ranges = getArxivDateRanges();
+  const cnt = papers.filter(p => (p._added_date || '') >= ranges.weekFrom).length;
+  const el = document.getElementById('globeWeekCount');
+  if (el) el.textContent = cnt;
+  const badge = document.getElementById('radarWeekBadge');
+  if (badge) badge.textContent = cnt + ' papers';
+}
+
+// ---- Render ranking list ----
+async function renderRadarRanking(srcKey, mode) {
+  const listEl   = document.getElementById('radarRankingList');
+  const footerEl = document.getElementById('radarRankingFooter');
+  if (!listEl) return;
+  listEl.innerHTML   = `<div class="radar-ranking-loading">${t('radarScanning')}</div>`;
+  if (footerEl) footerEl.textContent = '';
+
+  await ensureKeywords();
+  const papers  = await getRadarPapers(srcKey);
+  const ranges  = getArxivDateRanges();
+  const week    = papers.filter(p => (p._added_date || '') >= ranges.weekFrom);
+
+  const badge = document.getElementById('radarWeekBadge');
+  if (badge) badge.textContent = week.length + ' ' + t('trendsPapers');
+
+  if (!week.length) {
+    listEl.innerHTML = `<div class="radar-ranking-empty">${t('radarNoWeek')}</div>`;
+    return;
+  }
+
+  const kws = getEffectiveKeywords(srcKey);
+  if (!kws.length) {
+    listEl.innerHTML = `<div class="radar-ranking-empty">${t('radarNoKw')}</div>`;
+    return;
+  }
+
+  const scored = week
+    .map(p => { const r = scorePaper(p, kws, mode); return { p, score: r.score, matched: r.matched }; })
+    .filter(x => x.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 30);
+
+  if (!scored.length) {
+    listEl.innerHTML = `<div class="radar-ranking-empty">${t('radarNoMatch')}</div>`;
+    return;
+  }
+
+  const medals = ['🥇','🥈','🥉'];
+  const col = RADAR_DS_COLORS[srcKey] || RADAR_DS_COLORS.all;
+
+  listEl.innerHTML = scored.map(({ p, score, matched }, i) => {
+    const rank = i + 1;
+    const numHtml = rank <= 3
+      ? `<span class="radar-rank-num" style="font-size:17px;">${medals[rank-1]}</span>`
+      : `<span class="radar-rank-num">${rank}</span>`;
+    const tags = [p._added_date, p.Category, p._is_vlm ? 'VLM' : '', p.code ? '⚙️ Code' : ''].filter(Boolean).join(' · ');
+    const kwStr = matched.slice(0, 4).join(', ');
+    return `<div class="radar-rank-item" onclick="window.open('${escHtml(p.Paper_link)}','_blank')">
+      ${numHtml}
+      <div class="radar-rank-content">
+        <div class="radar-rank-title"><a href="${escHtml(p.Paper_link)}" target="_blank" onclick="event.stopPropagation()">${escHtml(p.Title || '')}</a></div>
+        <div class="radar-rank-meta"><span>${escHtml(tags)}</span><span class="radar-rank-score" style="background:linear-gradient(135deg,${col.fg},${col.mid})">${score.toFixed(1)}</span></div>
+        ${kwStr ? `<div class="radar-rank-kws">🔑 ${escHtml(kwStr)}</div>` : ''}
+      </div>
+    </div>`;
+  }).join('');
+
+  const modeDesc = mode === 'trend' ? t('radarKwWeight') : mode === 'freq' ? t('radarKwFreq') : t('radarKwComp');
+  if (footerEl) footerEl.textContent = `${scored.length} ${t('radarOf')} ${week.length} ${t('radarMatched')} · ${t('radarScoredBy')} ${modeDesc}`;
+}
+
+// ---- Entry point called by switchPage ----
+async function initRadarPage() {
+  buildRadarSourceTabs();
+  await ensureKeywords();
+  buildGlobe(radarCurrentSource);
+  sizeGlobeRings();
+  attachGlobeEvents();
+  startGlobeAnim();
+  await renderRadarRanking(radarCurrentSource, radarCurrentMode);
+  await updateRadarWeekCount(radarCurrentSource);
+  // Keep rings sized on resize
+  window.addEventListener('resize', sizeGlobeRings, { passive: true });
+}
 
 init();
 </script>
