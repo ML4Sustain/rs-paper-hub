@@ -26,6 +26,7 @@ DATA_FILES = {
     "uav": "papers_uav.json",
     "agent": "papers_agent.json",
     "sar": "papers_sar.json",
+    "hyp": "papers_hyp.json",
 }
 
 

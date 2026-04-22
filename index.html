@@ -11,6 +11,7 @@
 <link rel="alternate" type="application/atom+xml" title="RS Papers - Agent" href="output/feed_agent.xml">
 <link rel="alternate" type="application/atom+xml" title="RS Papers - UAV" href="output/feed_uav.xml">
 <link rel="alternate" type="application/atom+xml" title="RS Papers - SAR" href="output/feed_sar.xml">
+<link rel="alternate" type="application/atom+xml" title="RS Papers - Hyperspectral/MS" href="output/feed_hyp.xml">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
@@ -268,6 +269,10 @@
   }
   .loading-dots::after {
     content: ''; animation: dots 1.5s steps(4, end) infinite;
+  }
+  .loading-tip {
+    margin-top: 22px; width: min(360px, 88vw);
+    font-size: 13px; color: #64748b; text-align: center; line-height: 1.6;
   }
   @keyframes orbit {
     from { transform: rotate(0deg) translateX(45px) rotate(0deg); }
@@ -769,6 +774,7 @@
         <div class="rss-menu-item"><a href="output/feed_agent.xml" target="_blank">Agent Papers</a><button class="rss-copy-btn" onclick="copyFeedUrl(this,'output/feed_agent.xml')" title="Copy URL"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
         <div class="rss-menu-item"><a href="output/feed_uav.xml" target="_blank">UAV Papers</a><button class="rss-copy-btn" onclick="copyFeedUrl(this,'output/feed_uav.xml')" title="Copy URL"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
         <div class="rss-menu-item"><a href="output/feed_sar.xml" target="_blank">SAR Papers</a><button class="rss-copy-btn" onclick="copyFeedUrl(this,'output/feed_sar.xml')" title="Copy URL"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
+        <div class="rss-menu-item"><a href="output/feed_hyp.xml" target="_blank">Hyperspectral/MS Papers</a><button class="rss-copy-btn" onclick="copyFeedUrl(this,'output/feed_hyp.xml')" title="Copy URL"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
       </div>
     </span>
     <a href="javascript:void(0)" id="langToggle" onclick="toggleLang()" style="cursor:pointer;font-weight:600;position:relative;top:-0.5px;">中文</a>
@@ -809,8 +815,43 @@
     <div class="loading-satellite"></div>
   </div>
   <div class="loading-text" id="loadingText">Scanning papers from orbit<span class="loading-dots"></span></div>
+  <div class="loading-tip" id="loadingTip"></div>
 </div>
-<script>(function(){var l=localStorage.getItem('lang');if(l==='zh'){var el=document.getElementById('loadingText');if(el)el.childNodes[0].textContent='正在从轨道扫描论文';}})()</script>
+<script>(function(){
+  var l = localStorage.getItem('lang');
+  if (l === 'zh') { var el = document.getElementById('loadingText'); if (el) el.childNodes[0].textContent = '正在从轨道扫描论文'; }
+  var TIPS_EN = [
+    '🌈 Hyperspectral/MS: 966 papers on spectral unmixing, endmember extraction, pan-sharpening and band selection',
+    '📡 SAR: 342 papers covering InSAR, PolSAR, SAR image processing and target detection',
+    '🚁 UAV: cutting-edge low-altitude sensing — 3D reconstruction, object tracking, path planning',
+    '🤖 VLM: tracking the latest vision-language model advances in remote sensing',
+    '🧠 Agent: autonomous remote sensing analysis with AI agent-based methods',
+    '📈 Trends: view Top 100 prolific authors per topic, plus yearly and monthly publication charts',
+    '🔍 Filter by task tag: object detection, semantic segmentation, change detection, super-resolution and more',
+    '⚡ Filter by paper type: Method / Survey / Dataset — quickly find what you need',
+    '📋 Select papers and export all BibTeX citations in one click',
+    '📰 Each topic has an Atom/RSS feed — subscribe in Zotero to auto-track new papers',
+    '🗂️ Resources panel: browse remote sensing benchmarks — DOTA, DIOR, xView, LoveDA and more',
+    '🔗 arXiv · Papers with Code · Semantic Scholar · IEEE Xplore · Google Scholar',
+  ];
+  var TIPS_ZH = [
+    '🌈 高光谱/多光谱专题：收录 966 篇，涵盖光谱解混、端元提取、pan-sharpening、波段选择等核心方向',
+    '📡 SAR 专题：收录 342 篇，涵盖 InSAR、PolSAR、SAR 图像去噪与目标检测等',
+    '🚁 无人机（UAV）专题：汇聚低空遥感前沿，含三维重建、目标跟踪、路径规划等',
+    '🤖 视觉语言模型（VLM）专题：持续追踪遥感领域大模型最新进展',
+    '🧠 Agent 专题：基于智能体的自动化遥感分析研究',
+    '📈 趋势页面：查看各专题 Top 100 高产作者，及年度 / 月度论文发表趋势',
+    '🔍 按任务标签快速过滤：目标检测、语义分割、变化检测、超分辨率等 10+ 类',
+    '⚡ 按论文类型筛选：Method / Survey / Dataset，快速定位所需文献',
+    '📋 勾选论文后一键导出全部 BibTeX 引用',
+    '📰 每个专题均提供 Atom/RSS 订阅源，可导入 Zotero 自动追踪最新论文',
+    '🗂️ 资源面板：内置遥感常用数据集目录，快速查阅 DOTA、DIOR、xView、LoveDA 等标准基准',
+    '🔗 arXiv · Papers with Code · Semantic Scholar · IEEE Xplore · Google Scholar',
+  ];
+  var TIPS = (l === 'zh') ? TIPS_ZH : TIPS_EN;
+  var el = document.getElementById('loadingTip');
+  if (el) el.textContent = TIPS[Math.floor(Math.random() * TIPS.length)];
+})()</script>
 
 <div class="controls">
   <div class="controls-top">
@@ -1179,7 +1220,7 @@ const LANG = {
     exportRange: 'Export range:',
     includeAbstracts: 'Include abstracts',
     downloadBib: 'Download .bib', exportGroup: 'Export Group', groupNamePlaceholder: 'Group name',
-    ds_all: 'All Papers', ds_vlm: 'Vision-Language Model', ds_agent: 'Agent', ds_uav: 'UAV', ds_sar: 'SAR',
+    ds_all: 'All Papers', ds_vlm: 'Vision-Language Model', ds_agent: 'Agent', ds_uav: 'UAV', ds_sar: 'SAR', ds_hyp: 'Hyperspectral/MS',
     noBibtex: 'No BibTeX available',
     scholar: 'Scholar', copyInfo: 'Copy', copyInfoDone: 'Copied!',
     navPapers: 'Papers', navTrends: 'Trends', navSkills: 'Skills', navVenues: 'Venues', navResources: 'Resources',
@@ -1240,7 +1281,7 @@ const LANG = {
     exportRange: '导出范围：',
     includeAbstracts: '包含摘要',
     downloadBib: '下载 .bib', exportGroup: '导出研究组', groupNamePlaceholder: '研究组名称',
-    ds_all: '全部论文', ds_vlm: '视觉语言模型', ds_agent: 'Agent', ds_uav: '无人机', ds_sar: 'SAR',
+    ds_all: '全部论文', ds_vlm: '视觉语言模型', ds_agent: 'Agent', ds_uav: '无人机', ds_sar: 'SAR', ds_hyp: '高光谱/多光谱',
     noBibtex: '暂无引用信息',
     scholar: '谷歌学术', copyInfo: '复制', copyInfoDone: '已复制！',
     navPapers: '论文', navTrends: '趋势', navSkills: '技能', navVenues: '期刊会议', navResources: '资源',
@@ -1481,6 +1522,7 @@ const DATA_SOURCES = [
   { label: 'UAV', file: 'papers_uav.json', key: 'uav' },
   { label: 'Agent', file: 'papers_agent.json', key: 'agent' },
   { label: 'SAR', file: 'papers_sar.json', key: 'sar' },
+  { label: 'Hyperspectral/MS', file: 'papers_hyp.json', key: 'hyp' },
 ];
 let allPapers = [];
 let filtered = [];
@@ -1731,8 +1773,8 @@ function initTrendsDataSource() {
   if (!wrap || !trendsData) return;
   wrap.innerHTML = '';
   const keys = Object.keys(trendsData).filter(k => k !== '_last_updated');
-  const labels_en = { all: 'All Papers', vlm: 'VLM', uav: 'UAV', agent: 'Agent', sar: 'SAR' };
-  const labels_zh = { all: '全部论文', vlm: '视觉语言模型', uav: '无人机', agent: 'Agent', sar: 'SAR' };
+  const labels_en = { all: 'All Papers', vlm: 'VLM', uav: 'UAV', agent: 'Agent', sar: 'SAR', hyp: 'Hyperspectral/MS' };
+  const labels_zh = { all: '全部论文', vlm: '视觉语言模型', uav: '无人机', agent: 'Agent', sar: 'SAR', hyp: '高光谱/多光谱' };
   const labels = currentLang === 'zh' ? labels_zh : labels_en;
   keys.forEach(k => {
     const btn = document.createElement('button');

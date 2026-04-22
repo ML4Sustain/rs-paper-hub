@@ -230,13 +230,13 @@ def run(input_path: str, output_dir: str):
     logger.info(f"  -> {uav_annotated_path}")
 
     # ── Step 11: Filter SAR papers ─────────────────────
-    logger.info("[11/15] Filtering SAR-related papers...")
+    logger.info("[11/17] Filtering SAR-related papers...")
     from cleaning.filter.sar_filter import filter_sar_papers
     sar_matched, sar_annotated = filter_sar_papers(papers)
     logger.info(f"  SAR-related: {len(sar_matched)} / {len(papers)}")
 
     # ── Step 12: Classify SAR papers ─────────────────────
-    logger.info("[12/15] Classifying SAR papers...")
+    logger.info("[12/17] Classifying SAR papers...")
     classify_papers(sar_matched)
 
     sar_cat_counter = Counter(p.get("Category", "Other") for p in sar_matched)
@@ -257,25 +257,54 @@ def run(input_path: str, output_dir: str):
         json.dump(sar_annotated, f, ensure_ascii=False, indent=2)
     logger.info(f"  -> {sar_annotated_path}")
 
-    # ── Step 13: Update auto groups ────────────────────
-    logger.info("[13/15] Updating auto groups...")
+    # ── Step 13: Filter Hyperspectral/Multispectral papers ─
+    logger.info("[13/17] Filtering Hyperspectral/Multispectral-related papers...")
+    from cleaning.filter.hyperspectral_filter import filter_hyperspectral_papers
+    hyp_matched, hyp_annotated = filter_hyperspectral_papers(papers)
+    logger.info(f"  Hyperspectral/MS-related: {len(hyp_matched)} / {len(papers)}")
+
+    # ── Step 14: Classify Hyperspectral papers ────────────
+    logger.info("[14/17] Classifying Hyperspectral/MS papers...")
+    classify_papers(hyp_matched)
+
+    hyp_cat_counter = Counter(p.get("Category", "Other") for p in hyp_matched)
+    for cat, count in hyp_cat_counter.most_common():
+        logger.info(f"  {cat}: {count}")
+
+    # ── Save Hyperspectral outputs ────────────────────────
+    logger.info("Saving Hyperspectral/MS outputs...")
+    save(
+        hyp_matched,
+        os.path.join(output_dir, "papers_hyp.csv"),
+        os.path.join(output_dir, "papers_hyp.json"),
+        ALL_COLUMNS,
+    )
+
+    hyp_annotated_path = os.path.join(output_dir, "papers_hyp_annotated.json")
+    with open(hyp_annotated_path, "w", encoding="utf-8") as f:
+        json.dump(hyp_annotated, f, ensure_ascii=False, indent=2)
+    logger.info(f"  -> {hyp_annotated_path}")
+
+    # ── Step 15: Update auto groups ────────────────────
+    logger.info("[15/17] Updating auto groups...")
     from update_groups import update_auto_groups
     update_auto_groups(os.path.join(output_dir, "papers.json"), "groups")
 
-    # ── Step 14: Generate Atom feeds for Zotero ──────────
-    logger.info("[14/15] Generating Atom feeds...")
+    # ── Step 16: Generate Atom feeds for Zotero ──────────
+    logger.info("[16/17] Generating Atom feeds...")
     from rss_generator import generate_feeds
     generate_feeds(papers, matched, agent_matched, uav_matched, output_dir,
-                   site_url="https://rspaper.top", sar_papers=sar_matched)
+                   site_url="https://rspaper.top", sar_papers=sar_matched,
+                   hyp_papers=hyp_matched)
 
-    # ── Step 15: Generate trends statistics ──────────────
-    logger.info("[15/15] Generating trends statistics...")
+    # ── Step 17: Generate trends statistics ──────────────
+    logger.info("[17/17] Generating trends statistics...")
     from trends.generate import main as generate_trends
     generate_trends()
 
     # ── Summary ───────────────────────────────────────────
     logger.info("=" * 50)
-    logger.info(f"Done! Total: {len(papers)} | VLM: {len(matched)} | Agent: {len(agent_matched)} | UAV: {len(uav_matched)} | SAR: {len(sar_matched)}")
+    logger.info(f"Done! Total: {len(papers)} | VLM: {len(matched)} | Agent: {len(agent_matched)} | UAV: {len(uav_matched)} | SAR: {len(sar_matched)} | Hyp/MS: {len(hyp_matched)}")
     logger.info(f"  papers.csv/json             - all {len(papers)} papers (cleaned)")
     logger.info(f"  papers_vlm.csv/json         - {len(matched)} VLM papers (with Category)")
     logger.info(f"  papers_vlm_annotated.json   - full list with VLM flags")
@@ -285,6 +314,8 @@ def run(input_path: str, output_dir: str):
     logger.info(f"  papers_uav_annotated.json   - full list with UAV flags")
     logger.info(f"  papers_sar.csv/json         - {len(sar_matched)} SAR papers (with Category)")
     logger.info(f"  papers_sar_annotated.json   - full list with SAR flags")
+    logger.info(f"  papers_hyp.csv/json         - {len(hyp_matched)} Hyperspectral/MS papers (with Category)")
+    logger.info(f"  papers_hyp_annotated.json   - full list with Hyp/MS flags")
 
 
 def main():

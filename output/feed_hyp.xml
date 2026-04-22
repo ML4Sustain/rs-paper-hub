@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='utf-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>RS-Paper-Hub — Hyperspectral/MS Papers</title>
+  <id>https://rspaper.top/output/feed_hyp.xml</id>
+  <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
+  <link href="https://rspaper.top" rel="alternate" type="text/html" />
+  <updated>2026-04-22T13:04:54Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 8 entries</subtitle>
+  <author>
+    <name>RS-Paper-Hub</name>
+    <uri>https://rspaper.top</uri>
+  </author>
+  <entry>
+    <title>Producing High-Resolution Martian Surface Temperature Maps Using VIR-TIR Relationships</title>
+    <link href="http://arxiv.org/abs/2604.17859v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.17859v1</id>
+    <published>2026-04-20T00:00:00Z</published>
+    <updated>2026-04-20T00:00:00Z</updated>
+    <author>
+      <name>Michael A. Frazer</name>
+    </author>
+    <author>
+      <name>Eriita G. Jones</name>
+    </author>
+    <author>
+      <name>Katarina Miljkovic</name>
+    </author>
+    <author>
+      <name>Gretchen K. Benedix</name>
+    </author>
+    <summary type="text">Thermal infrared data (TIR; 8 - 15 $μm$) has a wide range of applications in Earth and planetary remote sensing. On Mars, this includes deriving thermal inertia (TI), which describes surface physical characteristics (e.g. particle size, degree of cementation) and is key for understanding geologic processes, assessing in-situ resource utilisation (ISRU) environments, and assisting mission planning. However, TI data from the THEMIS instrument is limited to 100 m/pixel resolution. Hyperspectral visible and near-infrared data (VIR; 0.5 - 5 $μm$) compliments TIR data by providing information on surface composition and is provided by the CRISM instrument at 12 m/pixel. In this work, we generate a machine learning regressor-based model to constrain relationships between THEMIS TI and CRISM VIR images at THEMIS resolution, and predict TI values from CRISM spectra with high accuracy (R2 $\sim$ 0.90, RMSE $\sim$ 23.6 TIU). We use the model to produce a downscaled TI map at a spatial resolution of 12 m/pixel, an order of magnitude finer than currently available, revealing decametre-scale features previously unresolved in THEMIS data.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 pages, 12 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="astro-ph.EP" />
+  </entry>
+  <entry>
+    <title>ExplainS2A: Explainable Spectral-Spatial Duality Model for Fast Transforming Sentinel-2 Image to AVIRIS-Level Hyperspectral Image</title>
+    <link href="http://arxiv.org/abs/2604.19007v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.19007v1</id>
+    <published>2026-04-20T00:00:00Z</published>
+    <updated>2026-04-20T00:00:00Z</updated>
+    <author>
+      <name>Chia-Hsiang Lin</name>
+    </author>
+    <author>
+      <name>Zi-Chao Leng</name>
+    </author>
+    <summary type="text">Mainstream optical satellites often acquire multispectral multi-resolution images, which have limited material identifiability compared to the HSIs. Thus, spectrally super-resolving the MSI into their hyperspectral counterparts greatly facilitates remote material identification and the downstream tasks. However, spectrally super-resolving the MSI into an HSI is often constrained by the multi-resolution nature of the sensor. Specifically, due to the presence of some LR bands in the MSI, the initial spectral super-resolution results often appear to be spatially blurry, resulting in an LR HSI. To overcome this bottleneck, we then leverage some HR band inherent in the acquired MSI to spatially guide the reconstruction procedure, thereby yielding the desired HR HSI. This fusion procedure elegantly coincides with a widely known spatial super-resolution problem in satellite remote sensing. Hence, we have reformulated the tough spectral super-resolution problem into a more widely investigated spatial super-resolution problem, referred to as the spectral-spatial duality theory. Accordingly, we propose ExplainS2A, consisting of a deep unfolding network and an explainable fusion network, that unifies spectral recovery and spatial fusion into a single explainable framework. Unlike conventional black-box models, ExplainS2A offers interpretability and operates as a linear-time algorithm. Remarkably, it can process a million-scale Sentinel-2 image in less than one second, yielding high-fidelity HSI over the same scene, and upgrades the blind source separation results. Although demonstrated on the Sentinel-2 and AVIRIS sensors, ExplainS2A also serves as a general framework applicable to various sensor pairs with different resolution configurations, and has experimentally demonstrated cross-region and cross-season generalization ability. Source codes: https://github.com/IHCLab/ExplainS2A.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/IHCLab/ExplainS2A"&gt;https://github.com/IHCLab/ExplainS2A&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 16 pages, 11 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+  </entry>
+  <entry>
+    <title>ConvVitMamba: Efficient Multiscale Convolution, Transformer, and Mamba-Based Sequence modelling for Hyperspectral Image Classification</title>
+    <link href="http://arxiv.org/abs/2604.18856" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.18856</id>
+    <published>2026-04-20T00:00:00Z</published>
+    <updated>2026-04-20T00:00:00Z</updated>
+    <author>
+      <name>Mohammed Q. Alkhatib</name>
+    </author>
+    <summary type="text">Hyperspectral image (HSI) classification remains challenging due to high spectral dimensionality, redundancy, and limited labeled data. Although convolutional neural networks (CNNs) and Vision Transformers (ViTs) achieve strong performance by exploiting spectral-spatial information and long-range dependencies, they often incur high computational cost and large model size, limiting practical use. To address these limitations, a unified hybrid framework, termed ConvVitMamba, is proposed for efficient HSI classification. The architecture integrates three components: a multiscale convolutional feature extractor to capture local spectral, spatial, and joint patterns; a Vision Transformer based tokenization and encoding stage to model global contextual relationships; and a lightweight Mamba inspired gated sequence mixing module for efficient content-aware refinement without quadratic self-attention. Principal Component Analysis (PCA) is used as preprocessing to reduce redundancy and improve efficiency. Experiments on four benchmark datasets, including Houston and three UAV borne QUH datasets (Pingan, Qingyun, and Tangdaowan), demonstrate that ConvVitMamba consistently outperforms CNN, Transformer, and Mamba based methods while maintaining a favorable balance between accuracy, model size, and inference efficiency. Ablation studies confirm the complementary contributions of all components. The results indicate that the proposed framework provides an effective and efficient solution for HSI classification in diverse scenarios. The source code is publicly available at https://github.com/mqalkhatib/ConvVitMamba</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/mqalkhatib/ConvVitMamba"&gt;https://github.com/mqalkhatib/ConvVitMamba&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Pre-print Accepted for Publication in International Journal of Remote Sensing&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="doi; 10.1080/01431161.2026.2663567" />
+  </entry>
+  <entry>
+    <title>Hyperspectral Unmixing Hierarchies</title>
+    <link href="http://arxiv.org/abs/2604.16969v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.16969v1</id>
+    <published>2026-04-18T00:00:00Z</published>
+    <updated>2026-04-18T00:00:00Z</updated>
+    <author>
+      <name>Joseph L. Garrett</name>
+    </author>
+    <author>
+      <name>P. S. Vishnu</name>
+    </author>
+    <author>
+      <name>Pauliina Salmi</name>
+    </author>
+    <author>
+      <name>Daniela Lupu</name>
+    </author>
+    <author>
+      <name>Nitesh Kumar Singh</name>
+    </author>
+    <author>
+      <name>Ion Necoara</name>
+    </author>
+    <author>
+      <name>Tor Arne Johansen</name>
+    </author>
+    <summary type="text">Unmixing reveals the spatial distribution and spectral details of different constituents, called endmembers, in a hyperspectral image. Because unmixing has limited ground truth requirements, can accommodate mixed pixels, and is closely tied to light propagation, it is a uniquely powerful tool for analyzing hyperspectral images. However, spectral variability inhibits unmixing performance, the proper way to determine the number of endmembers is ambiguous, and the clarity of the endmembers degrades as more are included. Hierarchical structure is a possible solution to all three problems.   Here, hierarchical unmixing is defined by imposing a hierarchical abundance sum constraint on Deep Nonnegative Matrix Factorization. Binary Linear Unmixing Tactile Hierarchies (BLUTHs) solve the hierarchical unmixing problem with a simple network architecture. Sparsity modulation unmixing growth tailors the topology of a BLUTH to each scene. The structure imposed by BLUTHs allows endmembers with varying levels of spectral contrast to be revealed, mitigating the challenge of spectral variability.   The performance of BLUTHs exceeds state-of-the-art unmixing algorithms on laboratory scenes, particularly with regard to abundance estimation, while their performance remains competitive on remote sensing scenes. In addition, ocean color unmixing by BLUTHs is demonstrated on hyperspectral scenes from the HYPSO and PACE satellites.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Main text and supplemental&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Image and Video Processing" />
+  </entry>
+  <entry>
+    <title>When Earth Foundation Models Meet Diffusion: An Application to Land Surface Temperature Super-Resolution</title>
+    <link href="http://arxiv.org/abs/2604.16841v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.16841v1</id>
+    <published>2026-04-18T00:00:00Z</published>
+    <updated>2026-04-18T00:00:00Z</updated>
+    <author>
+      <name>Yiheng Chen</name>
+    </author>
+    <author>
+      <name>Zihui Ma</name>
+    </author>
+    <author>
+      <name>Peishi Jiang</name>
+    </author>
+    <author>
+      <name>Yilong Dai</name>
+    </author>
+    <author>
+      <name>Qikai Hu</name>
+    </author>
+    <author>
+      <name>Xinyue Ye</name>
+    </author>
+    <author>
+      <name>Lingyao Li</name>
+    </author>
+    <author>
+      <name>Rita Sousa</name>
+    </author>
+    <author>
+      <name>Runlong Yu</name>
+    </author>
+    <summary type="text">Land surface temperature (LST) super-resolution is important for environmental monitoring. However, it remains challenging as coarse thermal observations severely underdetermine fine-scale structure. In this paper, we propose Earth Foundation Model-guided Diffusion (EFDiff), a novel framework for super-resolution under extreme spatial degradation. EFDiff uses the Prithvi-EO-2.0 Earth foundation model to encode high-resolution multispectral reflectance into geospatial embeddings, which are injected into the denoising network via cross-attention to guide fine-scale reconstruction from highly degraded observations. We study two variants, EFDiff-$ε$ and EFDiff-$x_0$, which offer complementary trade-offs between perceptual realism and pixel-level fidelity. We evaluate EFDiff under an extreme $32\times$ scale gap using a globally diverse benchmark comprising 242,416 co-registered Landsat thermal-reflectance patches. Results show that EFDiff consistently outperforms baseline methods and that cross-attention conditioning by EFM is more effective than HLS channel concatenation. Although we present EFDiff in the context of LST super-resolution, the framework is broadly applicable to remote sensing problems in which pretrained geospatial representations can guide generative reconstruction.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>From Articles to Canopies: Knowledge-Driven Pseudo-Labelling for Tree Species Classification using LLM Experts</title>
+    <link href="http://arxiv.org/abs/2604.16115v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.16115v1</id>
+    <published>2026-04-17T00:00:00Z</published>
+    <updated>2026-04-17T00:00:00Z</updated>
+    <author>
+      <name>Michał Romaszewski</name>
+    </author>
+    <author>
+      <name>Dominik Kopeć</name>
+    </author>
+    <author>
+      <name>Michał Cholewa</name>
+    </author>
+    <author>
+      <name>Katarzyna Kołodziej</name>
+    </author>
+    <author>
+      <name>Przemysław Głomb</name>
+    </author>
+    <author>
+      <name>Jan Niedzielko</name>
+    </author>
+    <author>
+      <name>Jakub Charyton</name>
+    </author>
+    <author>
+      <name>Justyna Wylazłowska</name>
+    </author>
+    <author>
+      <name>Anna Jarocińska</name>
+    </author>
+    <summary type="text">Hyperspectral tree species classification is challenging due to limited and imbalanced class labels, spectral mixing (overlapping light signatures from multiple species), and ecological heterogeneity (variability among ecological systems). Addressing these challenges requires methods that integrate biological and structural characteristics of vegetation, such as canopy architecture and interspecific interactions, rather than relying solely on spectral signatures. This paper presents a biologically informed, semi-supervised deep learning method that integrates multi-sensor Earth observation data, specifically hyperspectral imaging (HSI) and airborne laser scanning (ALS), with expert, ecological knowledge. The approach relies on biologically inspired pseudo-labelling over a precomputed canopy graph, yielding accurate classification at low training cost. In addition, ecological priors on species cohabitation are automatically derived from reliable sources using large language models (LLMs) and encoded as a cohabitation matrix with likelihoods of species occurring together. These priors are incorporated into the pseudo-labelling strategy, effectively introducing expert knowledge into the model. Experiments on a real-world forest dataset demonstrate 5.6% improvement over the best reference method. Expert evaluation of cohabitation priors reveals high accuracy with differences no larger than 15%.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Robust Multispectral Semantic Segmentation under Missing or Full Modalities via Structured Latent Projection</title>
+    <link href="http://arxiv.org/abs/2604.15856v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.15856v1</id>
+    <published>2026-04-17T00:00:00Z</published>
+    <updated>2026-04-17T00:00:00Z</updated>
+    <author>
+      <name>Irem Ulku</name>
+    </author>
+    <author>
+      <name>Erdem Akagündüz</name>
+    </author>
+    <author>
+      <name>Ömer Özgür Tanrıöver</name>
+    </author>
+    <summary type="text">Multimodal remote sensing data provide complementary information for semantic segmentation, but in real-world deployments, some modalities may be unavailable due to sensor failures, acquisition issues, or challenging atmospheric conditions. Existing multimodal segmentation models typically address missing modalities by learning a shared representation across inputs. However, this approach can introduce a trade-off by compromising modality-specific complementary information and reducing performance when all modalities are available. In this paper, we tackle this limitation with CBC-SLP, a multimodal semantic segmentation model designed to preserve both modality-invariant and modality-specific information. Inspired by the theoretical results on modality alignment, which state that perfectly aligned multimodal representations can lead to sub-optimal performance in downstream prediction tasks, we propose a novel structured latent projection approach as an architectural inductive bias. Rather than enforcing this strategy through a loss term, we incorporate it directly into the architecture. In particular, to use the complementary information effectively while maintaining robustness under random modality dropout, we structure the latent representations into shared and modality-specific components and adaptively transfer them to the decoder according to the random modality availability mask. Extensive experiments on three multimodal remote sensing image sets demonstrate that CBC-SLP consistently outperforms state-of-the-art multimodal models across full and missing modality scenarios. Besides, we empirically demonstrate that the proposed strategy can recover the complementary information that may not be preserved in a shared representation. The code is available at https://github.com/iremulku/Multispectral-Semantic-Segmentation-via-Structured-Latent-Projection-CBC-SLP-.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/iremulku/Multispectral-Semantic-Segmentation-via-Structured-Latent-Projection-CBC-SLP-"&gt;https://github.com/iremulku/Multispectral-Semantic-Segmentation-via-Structured-Latent-Projection-CBC-SLP-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>SSFT: A Lightweight Spectral-Spatial Fusion Transformer for Generic Hyperspectral Classification</title>
+    <link href="http://arxiv.org/abs/2604.15828v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.15828v1</id>
+    <published>2026-04-17T00:00:00Z</published>
+    <updated>2026-04-17T00:00:00Z</updated>
+    <author>
+      <name>Alexander Musiat</name>
+    </author>
+    <author>
+      <name>Nikolas Ebert</name>
+    </author>
+    <author>
+      <name>Oliver Wasenmüller</name>
+    </author>
+    <summary type="text">Hyperspectral imaging enables fine-grained recognition of materials by capturing rich spectral signatures, but learning robust classifiers is challenging due to high dimensionality, spectral redundancy, limited labeled data, and strong domain shifts. Beyond earth observation, labeled HSI data is often scarce and imbalanced, motivating compact models for generic hyperspectral classification across diverse acquisition regimes. We propose the lightweight Spectral-Spatial Fusion Transformer (SSFT), which factorizes representation learning into spectral and spatial pathways and integrates them via cross-attention to capture complementary wavelength-dependent and structural information. We evaluate our SSFT on the challenging HSI-Benchmark, a heterogeneous multi-dataset benchmark covering earth observation, fruit condition assessment, and fine-grained material recognition. SSFT achieves state-of-the-art overall performance, ranking first while using less than 2% of the parameters of the previous leading method. We further evaluate transfer to the substantially larger SpectralEarth benchmark under the official protocol, where SSFT remains competitive despite its compact size. Ablation studies show that both spectral and spatial pathways are crucial, with spatial modeling contributing most, and that SSFT remains robust without data augmentation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+</feed>
