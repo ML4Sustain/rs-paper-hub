@@ -1794,8 +1794,7 @@ function renderTrends() {
   ].forEach(s => {
     const card = document.createElement('div');
     card.style.cssText = 'background:var(--bg-card);border-radius:12px;padding:16px 18px;border:1px solid var(--border);position:relative;overflow:hidden;transition:transform 0.2s,box-shadow 0.2s;cursor:default;';
-    card.innerHTML = '<div style="position:absolute;top:-8px;right:-8px;font-size:36px;opacity:0.1;">' + s.icon + '</div>'
-      + '<div style="font-size:11px;color:var(--text-secondary);margin-bottom:4px;text-transform:uppercase;letter-spacing:0.5px;">' + s.label + '</div>'
+    card.innerHTML = '<div style="font-size:11px;color:var(--text-secondary);margin-bottom:4px;text-transform:uppercase;letter-spacing:0.5px;">' + s.label + '</div>'
       + '<div style="font-size:' + (s.small ? '15' : '22') + 'px;font-weight:700;color:' + s.color + ';' + (s.small ? 'overflow:hidden;text-overflow:ellipsis;white-space:nowrap;' : '') + '">' + s.value + '</div>';
     card.onmouseenter = () => { card.style.transform = 'translateY(-2px)'; card.style.boxShadow = '0 4px 16px rgba(99,102,241,0.12)'; };
     card.onmouseleave = () => { card.style.transform = ''; card.style.boxShadow = ''; };
