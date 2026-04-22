@@ -697,14 +697,10 @@
     .filter-panel.open { display: flex; }
     .filter-panel select,
     .filter-panel .sort-group,
-    .filter-panel .toggle-charts,
-    .filter-panel .rank-btn { width: 100%; justify-content: center; }
+    .filter-panel .toggle-charts { width: 100%; }
     .filter-panel select { min-width: unset; }
     .paper-authors { white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
     .paper-authors.expanded { display: block; -webkit-line-clamp: unset; overflow: visible; }
-    .ranking-panel { width: 100vw; right: -100vw; top: auto; bottom: -100vh; height: 80vh; border-left: none; border-top: 1px solid var(--border); transition: bottom 0.3s cubic-bezier(.4,0,.2,1), right 0s 0.3s; }
-    .ranking-panel.open { right: 0; bottom: 0; transition: bottom 0.3s cubic-bezier(.4,0,.2,1); }
-    .rank-badge { top: 8px; right: 8px; }
   }
   /* Trends mobile optimization */
   @media (max-width: 768px) {
@@ -725,87 +721,6 @@
   }
 
   /* ---- Ranking Panel ---- */
-  .rank-btn {
-    padding: 8px 12px; border: 1px solid var(--border); background: var(--card);
-    font-size: 13px; cursor: pointer; border-radius: 8px;
-    transition: all 0.2s; display: flex; align-items: center; gap: 5px;
-    white-space: nowrap;
-  }
-  .rank-btn:hover { border-color: #f97316; color: #f97316; }
-  .rank-btn.active { background: linear-gradient(135deg,#f97316,#ef4444); color: white; border-color: transparent; box-shadow: 0 2px 8px rgba(249,115,22,.35); }
-
-  .ranking-panel {
-    position: fixed; top: 0; right: -420px; width: 400px; max-width: 94vw;
-    height: 100vh; background: var(--card); border-left: 1px solid var(--border);
-    box-shadow: -4px 0 24px rgba(0,0,0,.12); z-index: 200;
-    display: flex; flex-direction: column; transition: right 0.3s cubic-bezier(.4,0,.2,1);
-    overflow: hidden;
-  }
-  .ranking-panel.open { right: 0; }
-  .ranking-panel-header {
-    padding: 16px 16px 12px; border-bottom: 1px solid var(--border);
-    display: flex; align-items: center; gap: 8px; flex-shrink: 0;
-  }
-  .ranking-panel-title { font-size: 16px; font-weight: 700; flex: 1; }
-  .ranking-panel-close {
-    background: none; border: none; cursor: pointer; font-size: 18px;
-    color: var(--text-secondary); padding: 2px 6px; border-radius: 4px;
-    line-height: 1;
-  }
-  .ranking-panel-close:hover { background: var(--tag-bg); }
-  .ranking-controls {
-    padding: 10px 16px; border-bottom: 1px solid var(--border);
-    display: flex; gap: 8px; align-items: center; flex-wrap: wrap; flex-shrink: 0;
-  }
-  .ranking-controls label { font-size: 12px; color: var(--text-secondary); }
-  .ranking-controls select {
-    font-size: 12px; padding: 4px 8px; border: 1px solid var(--border);
-    border-radius: 6px; background: var(--bg); color: var(--text);
-    cursor: pointer;
-  }
-  .ranking-body { flex: 1; overflow-y: auto; padding: 8px 0; }
-  .ranking-item {
-    display: flex; align-items: flex-start; gap: 10px;
-    padding: 10px 16px; cursor: pointer; transition: background 0.15s;
-  }
-  .ranking-item:hover { background: var(--tag-bg); }
-  .rank-medal { font-size: 18px; flex-shrink: 0; width: 24px; text-align: center; line-height: 1.6; }
-  .rank-num {
-    font-size: 13px; font-weight: 700; color: var(--text-secondary);
-    flex-shrink: 0; width: 24px; text-align: center; line-height: 2;
-  }
-  .rank-content { flex: 1; min-width: 0; }
-  .rank-title { font-size: 13px; font-weight: 500; line-height: 1.4; margin-bottom: 4px; }
-  .rank-title a { color: var(--text); text-decoration: none; }
-  .rank-title a:hover { color: var(--primary); }
-  .rank-meta { font-size: 11px; color: var(--text-secondary); display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
-  .rank-score {
-    font-size: 11px; font-weight: 700; padding: 1px 6px; border-radius: 10px;
-    background: linear-gradient(135deg,#f97316,#ef4444); color: white;
-    white-space: nowrap; flex-shrink: 0;
-  }
-  .rank-keywords { font-size: 10px; color: var(--text-secondary); margin-top: 2px; font-style: italic; }
-  .ranking-empty {
-    padding: 40px 16px; text-align: center; color: var(--text-secondary); font-size: 13px;
-  }
-  .ranking-footer {
-    padding: 10px 16px; border-top: 1px solid var(--border); font-size: 11px;
-    color: var(--text-secondary); flex-shrink: 0;
-  }
-
-  /* Rank badge on paper cards */
-  .paper-card { position: relative; }
-  .rank-badge {
-    position: absolute; top: 10px; right: 12px;
-    font-size: 11px; font-weight: 800; padding: 2px 8px;
-    border-radius: 12px; pointer-events: none; z-index: 2;
-    line-height: 1.6;
-  }
-  .rank-badge.medal-1 { background: #fbbf24; color: #78350f; }
-  .rank-badge.medal-2 { background: #d1d5db; color: #374151; }
-  .rank-badge.medal-3 { background: #cd7c2f; color: #fff; }
-  .rank-badge.medal-n { background: linear-gradient(135deg,#f97316,#ef4444); color: white; }
-
   /* ===== Radar Page ===== */
   .radar-page {
     padding: 24px 48px 40px;
@@ -1142,34 +1057,8 @@
       <button class="sort-btn" data-sort="oldest">Old</button>
       <button class="sort-btn" data-sort="title">A-Z</button>
     </div>
-    <button class="rank-btn" id="rankingBtn" onclick="toggleRankingPanel()">🔥 <span id="rankingBtnLabel">Hot</span></button>
     <button class="toggle-charts" id="toggleCharts">Charts ▼</button>
   </div>
-</div>
-
-<!-- Ranking Panel -->
-<div class="ranking-panel" id="rankingPanel">
-  <div class="ranking-panel-header">
-    <span style="font-size:20px;">🔥</span>
-    <span class="ranking-panel-title" id="rankingPanelTitle">Hot Papers</span>
-    <button class="ranking-panel-close" onclick="toggleRankingPanel()">×</button>
-  </div>
-  <div class="ranking-controls">
-    <label>Scope:</label>
-    <select id="rankScopeSelect" onchange="computeRankings()">
-      <option value="week">This Week</option>
-      <option value="current">Current View</option>
-      <option value="all">All Papers</option>
-    </select>
-    <label>Mode:</label>
-    <select id="rankModeSelect" onchange="computeRankings()">
-      <option value="trend">Trend Match</option>
-      <option value="freq">Hot Frequency</option>
-      <option value="comprehensive">Comprehensive</option>
-    </select>
-  </div>
-  <div class="ranking-body" id="rankingBody"></div>
-  <div class="ranking-footer" id="rankingFooter"></div>
 </div>
 
 <div class="charts" id="chartsArea" style="display: none;">
@@ -1882,10 +1771,8 @@ let collection = new Map(); // Paper_link -> paper object
 let collectionView = false;
 let fuzzySearch = false;
 
-// ---- Ranking state ----
+// ---- Keywords data (shared with Radar page) ----
 let keywordsData = null;
-let rankingOpen = false;
-let paperRanks = {}; // Paper_link -> {rank, score, matchedKws}
 
 function initDataSourceSelect() {
   const container = document.getElementById('dataSource');
@@ -2076,7 +1963,6 @@ async function loadData(file) {
   applyFilters();
   renderStats(allPapers);
   updateQuickFilterCounts();
-  if (rankingOpen) computeRankings();
 }
 
 async function init() {
@@ -2960,13 +2846,8 @@ function render() {
     const scholarUrl = 'https://scholar.google.com/scholar?q=' + encodeURIComponent(p.Title);
     const isCollected = collection.has(p.Paper_link);
     const collectIcon = isCollected ? '<svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>' : '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>';
-    const rankInfo = rankingOpen ? paperRanks[p.Paper_link] : null;
-    const rankBadge = rankInfo
-      ? `<span class="rank-badge ${rankInfo.rank <= 3 ? 'medal-' + rankInfo.rank : 'medal-n'}">${rankInfo.rank <= 3 ? ['🥇','🥈','🥉'][rankInfo.rank-1] : '#' + rankInfo.rank}</span>`
-      : '';
     return `
     <div class="paper-card" onclick="toggleAbstract(event, ${idx})">
-      ${rankBadge}
       <div class="paper-title"><a href="${escHtml(p.Paper_link)}" target="_blank" onclick="event.stopPropagation()">${renderLatex(p.Title)}</a></div>
       <div class="paper-meta">
         <span class="tag year clickable${_ta('date',pDate)}" onclick="event.stopPropagation(); filterByTag('date','${pDate}')">${pDate}</span>
@@ -3808,135 +3689,6 @@ function scorePaper(paper, keywords, mode) {
     if ((paper._tasks || '').trim()) score *= 1.05;
   }
   return { score: Math.round(score * 100) / 100, matched };
-}
-
-function getScopeLabel(scope) {
-  return scope === 'week' ? 'This Week' : scope === 'current' ? 'Current View' : 'All Papers';
-}
-
-function getModeLabel(mode) {
-  return mode === 'trend' ? 'Trend Match' : mode === 'freq' ? 'Hot Frequency' : 'Comprehensive';
-}
-
-function getScopePapers() {
-  const scope = document.getElementById('rankScopeSelect').value;
-  if (scope === 'current') return filtered.slice();
-  if (scope === 'week') {
-    const ranges = getArxivDateRanges();
-    return allPapers.filter(p => {
-      const ad = p._added_date || '';
-      return ad >= ranges.weekFrom;
-    });
-  }
-  // all
-  return allPapers.slice();
-}
-
-async function computeRankings() {
-  await ensureKeywords();
-  const mode = document.getElementById('rankModeSelect').value;
-  const dsKey = getActiveDsKey();
-  const keywords = getEffectiveKeywords(dsKey);
-  const papers = getScopePapers();
-
-  if (!papers.length || !keywords.length) {
-    paperRanks = {};
-    renderRankingPanel([], mode, 0);
-    render();
-    return;
-  }
-
-  const scored = papers.map(p => {
-    const { score, matched } = scorePaper(p, keywords, mode);
-    return { paper: p, score, matched };
-  }).filter(x => x.score > 0)
-    .sort((a, b) => b.score - a.score);
-
-  paperRanks = {};
-  scored.forEach((x, i) => {
-    paperRanks[x.paper.Paper_link] = { rank: i + 1, score: x.score, matched: x.matched };
-  });
-
-  renderRankingPanel(scored.slice(0, 50), mode, papers.length);
-  render(); // re-render cards to show/hide badges
-}
-
-function renderRankingPanel(items, mode, total) {
-  const medals = ['🥇', '🥈', '🥉'];
-  const scope = document.getElementById('rankScopeSelect').value;
-
-  document.getElementById('rankingPanelTitle').textContent =
-    `🔥 Hot Papers · ${getScopeLabel(scope)}`;
-
-  const body = document.getElementById('rankingBody');
-  const footer = document.getElementById('rankingFooter');
-
-  if (!items.length) {
-    body.innerHTML = `<div class="ranking-empty">No papers with keyword matches found.<br>Try changing scope or data source.</div>`;
-    footer.textContent = '';
-    return;
-  }
-
-  body.innerHTML = items.map((x, i) => {
-    const rank = i + 1;
-    const badge = rank <= 3 ? `<span class="rank-medal">${medals[rank-1]}</span>` : `<span class="rank-num">${rank}</span>`;
-    const p = x.paper;
-    const pLink = p.Paper_link || '#';
-    const kwsStr = x.matched.slice(0, 4).join(', ');
-    const tags = [
-      p._added_date || (p.Year ? String(p.Year) : ''),
-      p.Category || '',
-      p._is_vlm ? 'VLM' : '',
-      p.code ? '⚙️ Code' : ''
-    ].filter(Boolean).join(' · ');
-    return `<div class="ranking-item" onclick="scrollToRankedPaper(${JSON.stringify(pLink)})">
-      ${badge}
-      <div class="rank-content">
-        <div class="rank-title"><a href="${escHtml(pLink)}" target="_blank" onclick="event.stopPropagation()">${escHtml(p.Title || '')}</a></div>
-        <div class="rank-meta"><span>${escHtml(tags)}</span><span class="rank-score">${x.score.toFixed(1)}</span></div>
-        ${kwsStr ? `<div class="rank-keywords">🔑 ${escHtml(kwsStr)}</div>` : ''}
-      </div>
-    </div>`;
-  }).join('');
-
-  const modeDesc = mode === 'trend' ? 'keyword weight (freq × BERT score)'
-    : mode === 'freq' ? 'raw keyword frequency'
-    : 'keyword weight + code/VLM bonuses';
-  footer.textContent = `${items.length} ranked of ${total} papers · scored by ${modeDesc}`;
-}
-
-function scrollToRankedPaper(link) {
-  // Find paper in current filtered list and scroll to it (switch to all scope if needed)
-  const idx = filtered.findIndex(p => p.Paper_link === link);
-  if (idx >= 0) {
-    const targetPage = Math.floor(idx / PER_PAGE) + 1;
-    if (targetPage !== currentPage) { currentPage = targetPage; render(); }
-    setTimeout(() => {
-      const cards = document.querySelectorAll('#paperList .paper-card');
-      const localIdx = idx - (targetPage - 1) * PER_PAGE;
-      if (cards[localIdx]) {
-        cards[localIdx].scrollIntoView({ behavior: 'smooth', block: 'center' });
-        cards[localIdx].style.outline = '2px solid #f97316';
-        setTimeout(() => { cards[localIdx].style.outline = ''; }, 1500);
-      }
-    }, 80);
-  } else {
-    // paper not in current filter → open in new tab
-    window.open(link, '_blank');
-  }
-}
-
-async function toggleRankingPanel() {
-  rankingOpen = !rankingOpen;
-  document.getElementById('rankingPanel').classList.toggle('open', rankingOpen);
-  document.getElementById('rankingBtn').classList.toggle('active', rankingOpen);
-  document.getElementById('rankingBtnLabel').textContent = rankingOpen ? 'Hot ▶' : 'Hot';
-  if (rankingOpen) {
-    await computeRankings();
-  } else {
-    paperRanks = {};
-    render(); // remove badges
-  }
 }
 
 // ===============================================================
