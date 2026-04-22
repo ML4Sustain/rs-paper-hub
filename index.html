@@ -1525,6 +1525,7 @@ const DATA_SOURCES = [
   { label: 'Hyperspectral/MS', file: 'papers_hyp.json', key: 'hyp' },
 ];
 let allPapers = [];
+let allPapersGlobal = [];  // always holds papers.json, used by recent panel
 let filtered = [];
 let currentPage = 1;
 let chartsVisible = false;
@@ -1674,6 +1675,7 @@ async function loadData(file) {
   const text = await resp.text();
   allPapers = JSON.parse(text.replace(/:\s*NaN\b/g, ': null'));
   allPapers.forEach(p => { for (const k in p) { if (p[k] === null) p[k] = ''; } });
+  if (file === 'papers.json') allPapersGlobal = allPapers;
   // Reset filters
   const typeSelect = document.getElementById('typeFilter');
   const yearSelect = document.getElementById('yearFilter');
@@ -1736,7 +1738,14 @@ async function init() {
   loadTrends();
   const activeBtn = document.querySelector('#dataSource button.active');
   const ds = DATA_SOURCES.find(d => d.key === (activeBtn ? activeBtn.dataset.key : 'all')) || DATA_SOURCES[0];
-  await loadData(ds.file);
+  // Always pre-load papers.json for the recent panel (runs in parallel with active tab)
+  const globalLoad = ds.file !== 'papers.json'
+    ? fetch('./output/papers.json').then(r => r.text()).then(text => {
+        allPapersGlobal = JSON.parse(text.replace(/:\s*NaN\b/g, ': null'));
+        allPapersGlobal.forEach(p => { for (const k in p) { if (p[k] === null) p[k] = ''; } });
+      })
+    : Promise.resolve();
+  await Promise.all([loadData(ds.file), globalLoad]);
   // Update recent papers badge
   renderRecentList();
   // Apply saved language
@@ -3191,8 +3200,8 @@ function renderRecentList() {
   const list = document.getElementById('recentList');
   const ranges = getArxivDateRanges();
 
-  const dailyPapers = allPapers.filter(p => ranges.todayFrom && (p._added_date || '') >= ranges.todayFrom && (p._added_date || '') <= ranges.todayTo);
-  const weeklyPapers = allPapers.filter(p => (p._added_date || '') >= ranges.weekFrom);
+  const dailyPapers = allPapersGlobal.filter(p => ranges.todayFrom && (p._added_date || '') >= ranges.todayFrom && (p._added_date || '') <= ranges.todayTo);
+  const weeklyPapers = allPapersGlobal.filter(p => (p._added_date || '') >= ranges.weekFrom);
 
   // Update tab labels with counts
   const tabs = document.querySelectorAll('.recent-tab');
