@@ -302,6 +302,14 @@ def run(input_path: str, output_dir: str):
     from trends.generate import main as generate_trends
     generate_trends()
 
+    # ── Step 18: Pre-compute Radar weekly rankings ────────
+    logger.info("[18/18] Generating radar_weekly.json...")
+    try:
+        from generate_radar_weekly import generate as generate_radar
+        generate_radar()
+    except Exception as e:
+        logger.warning(f"  radar_weekly generation failed (non-fatal): {e}")
+
     # ── Summary ───────────────────────────────────────────
     logger.info("=" * 50)
     logger.info(f"Done! Total: {len(papers)} | VLM: {len(matched)} | Agent: {len(agent_matched)} | UAV: {len(uav_matched)} | SAR: {len(sar_matched)} | Hyp/MS: {len(hyp_matched)}")

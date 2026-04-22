@@ -4038,6 +4038,17 @@ async function getRadarPapers(srcKey) {
 }
 
 async function updateRadarWeekCount(srcKey) {
+  // Fast path: use pre-computed data
+  const weekly = await getRadarWeekly();
+  if (weekly && weekly[srcKey]) {
+    const cnt = weekly[srcKey].paper_count || 0;
+    const el = document.getElementById('globeWeekCount');
+    if (el) el.textContent = cnt;
+    const badge = document.getElementById('radarWeekBadge');
+    if (badge) badge.textContent = cnt + ' papers';
+    return;
+  }
+  // Fallback
   const papers = await getRadarPapers(srcKey);
   const ranges = getArxivDateRanges();
   const cnt = papers.filter(p => (p._added_date || '') >= ranges.weekFrom).length;
@@ -4045,6 +4056,19 @@ async function updateRadarWeekCount(srcKey) {
   if (el) el.textContent = cnt;
   const badge = document.getElementById('radarWeekBadge');
   if (badge) badge.textContent = cnt + ' papers';
+}
+
+// ---- Pre-computed weekly data cache ----
+let radarWeeklyCache = null;   // contents of output/radar_weekly.json
+
+async function getRadarWeekly() {
+  if (radarWeeklyCache) return radarWeeklyCache;
+  try {
+    const resp = await fetch('./output/radar_weekly.json');
+    if (!resp.ok) return null;
+    radarWeeklyCache = await resp.json();
+    return radarWeeklyCache;
+  } catch { return null; }
 }
 
 // ---- Render ranking list ----
@@ -4055,6 +4079,52 @@ async function renderRadarRanking(srcKey, mode) {
   listEl.innerHTML   = `<div class="radar-ranking-loading">${t('radarScanning')}</div>`;
   if (footerEl) footerEl.textContent = '';
 
+  // ── Fast path: use pre-computed radar_weekly.json ──
+  const weekly = await getRadarWeekly();
+  if (weekly && weekly[srcKey]) {
+    const srcData = weekly[srcKey];
+    const scored  = srcData[mode] || [];
+    const weekCnt = srcData.paper_count || 0;
+
+    const badge = document.getElementById('radarWeekBadge');
+    if (badge) badge.textContent = weekCnt + ' ' + t('trendsPapers');
+
+    if (!weekCnt) {
+      listEl.innerHTML = `<div class="radar-ranking-empty">${t('radarNoWeek')}</div>`;
+      return;
+    }
+    if (!scored.length) {
+      listEl.innerHTML = `<div class="radar-ranking-empty">${t('radarNoMatch')}</div>`;
+      return;
+    }
+
+    const medals = ['🥇','🥈','🥉'];
+    const col = RADAR_DS_COLORS[srcKey] || RADAR_DS_COLORS.all;
+    listEl.innerHTML = scored.map((p, i) => {
+      const rank = i + 1;
+      const numHtml = rank <= 3
+        ? `<span class="radar-rank-num" style="font-size:17px;">${medals[rank-1]}</span>`
+        : `<span class="radar-rank-num">${rank}</span>`;
+      const tags = [p._added_date, p.Category, p._is_vlm ? 'VLM' : '', p.code ? '⚙️ Code' : ''].filter(Boolean).join(' · ');
+      const kwStr = (p.matched || []).slice(0, 4).join(', ');
+      const score = p.score || 0;
+      return `<div class="radar-rank-item" onclick="window.open('${escHtml(p.Paper_link)}','_blank')">
+        ${numHtml}
+        <div class="radar-rank-content">
+          <div class="radar-rank-title"><a href="${escHtml(p.Paper_link)}" target="_blank" onclick="event.stopPropagation()">${escHtml(p.Title || '')}</a></div>
+          <div class="radar-rank-meta"><span>${escHtml(tags)}</span><span class="radar-rank-score" style="background:linear-gradient(135deg,${col.fg},${col.mid})">${score.toFixed(1)}</span></div>
+          ${kwStr ? `<div class="radar-rank-kws">🔑 ${escHtml(kwStr)}</div>` : ''}
+        </div>
+      </div>`;
+    }).join('');
+
+    const modeDesc = mode === 'trend' ? t('radarKwWeight') : mode === 'freq' ? t('radarKwFreq') : t('radarKwComp');
+    const genDate = weekly._generated ? ` · ${weekly._generated}` : '';
+    if (footerEl) footerEl.textContent = `${scored.length} ${t('radarOf')} ${weekCnt} ${t('radarMatched')} · ${t('radarScoredBy')} ${modeDesc}${genDate}`;
+    return;
+  }
+
+  // ── Fallback: compute in-browser from full papers JSON ──
   await ensureKeywords();
   const papers  = await getRadarPapers(srcKey);
   const ranges  = getArxivDateRanges();
