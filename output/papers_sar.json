@@ -6496,5 +6496,24 @@
     "_added_date": "2026-04-18",
     "Category": "Method",
     "_tasks": "OD"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-04-22",
+    "Month": 4,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Fourier Series Coder: A Novel Perspective on Angle Boundary Discontinuity Problem for Oriented Object Detection",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2604.20281v1",
+    "Abstract": "With the rapid advancement of intelligent driving and remote sensing, oriented object detection has gained widespread attention. However, achieving high-precision performance is fundamentally constrained by the Angle Boundary Discontinuity (ABD) and Cyclic Ambiguity (CA) problems, which typically cause significant angle fluctuations near periodic boundaries. Although recent studies propose continuous angle coders to alleviate these issues, our theoretical and empirical analyses reveal that state-of-the-art methods still suffer from substantial cyclic errors. We attribute this instability to the structural noise amplification within their non-orthogonal decoding mechanisms. This mathematical vulnerability significantly exacerbates angular deviations, particularly for square-like objects. To resolve this fundamentally, we propose the Fourier Series Coder (FSC), a lightweight plug-and-play component that establishes a continuous, reversible, and mathematically robust angle encoding-decoding paradigm. By rigorously mapping angles onto a minimal orthogonal Fourier basis and explicitly enforcing a geometric manifold constraint, FSC effectively prevents feature modulus collapse. This structurally stabilized representation ensures highly robust phase unwrapping, intrinsically eliminating the need for heuristic truncations while achieving strict boundary continuity and superior noise immunity. Extensive experiments across three large-scale datasets demonstrate that FSC achieves highly competitive overall performance, yielding substantial improvements in high-precision detection. The code will be available at https://github.com/weiminghong/FSC.",
+    "code": "https://github.com/weiminghong/FSC",
+    "Publication": "",
+    "BibTex": "@article{wei2026fourier,\n  title={Fourier Series Coder: A Novel Perspective on Angle Boundary Discontinuity Problem for Oriented Object Detection},\n  author={Minghong Wei and Pu Cao and Zhihao Chen and Zhiyuan Zang and Lu Yang and Qing Song},\n  journal={arXiv preprint arXiv:2604.20281v1},\n  year={2026},\n  url={http://arxiv.org/abs/2604.20281v1}\n}",
+    "Authors": "Minghong Wei, Pu Cao, Zhihao Chen, Zhiyuan Zang, Lu Yang, Qing Song",
+    "_added_date": "2026-04-23",
+    "Category": "Method",
+    "_tasks": "OD"
   }
 ]

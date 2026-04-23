@@ -4,12 +4,99 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-04-22T18:34:54Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 27 entries</subtitle>
+  <updated>2026-04-23T01:50:26Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 28 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>RSRCC: A Remote Sensing Regional Change Comprehension Benchmark Constructed via Retrieval-Augmented Best-of-N Ranking</title>
+    <link href="http://arxiv.org/abs/2604.20623v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.20623v1</id>
+    <published>2026-04-22T00:00:00Z</published>
+    <updated>2026-04-22T00:00:00Z</updated>
+    <author>
+      <name>Roie Kazoom</name>
+    </author>
+    <author>
+      <name>Yotam Gigi</name>
+    </author>
+    <author>
+      <name>George Leifman</name>
+    </author>
+    <author>
+      <name>Tomer Shekel</name>
+    </author>
+    <author>
+      <name>Genady Beryozkin</name>
+    </author>
+    <summary type="text">Traditional change detection identifies where changes occur, but does not explain what changed in natural language. Existing remote sensing change captioning datasets typically describe overall image-level differences, leaving fine-grained localized semantic reasoning largely unexplored. To close this gap, we present RSRCC, a new benchmark for remote sensing change question-answering containing 126k questions, split into 87k training, 17.1k validation, and 22k test instances. Unlike prior datasets, RSRCC is built around localized, change-specific questions that require reasoning about a particular semantic change. To the best of our knowledge, this is the first remote sensing change question-answering benchmark designed explicitly for such fine-grained reasoning-based supervision. To construct RSRCC, we introduce a hierarchical semi-supervised curation pipeline that uses Best-of-N ranking as a critical final ambiguity-resolution stage. First, candidate change regions are extracted from semantic segmentation masks, then initially screened using an image-text embedding model, and finally validated through retrieval-augmented vision-language curation with Best-of-N ranking. This process enables scalable filtering of noisy and ambiguous candidates while preserving semantically meaningful changes. The dataset is available at https://huggingface.co/datasets/google/RSRCC.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://huggingface.co/datasets/google/RSRCC"&gt;https://huggingface.co/datasets/google/RSRCC&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD;SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Fast-then-Fine: A Two-Stage Framework with Multi-Granular Representation for Cross-Modal Retrieval in Remote Sensing</title>
+    <link href="http://arxiv.org/abs/2604.20429v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.20429v1</id>
+    <published>2026-04-22T00:00:00Z</published>
+    <updated>2026-04-22T00:00:00Z</updated>
+    <author>
+      <name>Xi Chen</name>
+    </author>
+    <author>
+      <name>Xu Chen</name>
+    </author>
+    <author>
+      <name>Xiangyang Jia</name>
+    </author>
+    <author>
+      <name>Xu Zhang</name>
+    </author>
+    <author>
+      <name>Shuquan Wei</name>
+    </author>
+    <author>
+      <name>Wei Wang</name>
+    </author>
+    <summary type="text">Remote sensing (RS) image-text retrieval plays a critical role in understanding massive RS imagery. However, the dense multi-object distribution and complex backgrounds in RS imagery make it difficult to simultaneously achieve fine-grained cross-modal alignment and efficient retrieval. Existing methods either rely on complex cross-modal interactions that lead to low retrieval efficiency, or depend on large-scale vision-language model pre-training, which requires massive data and computational resources. To address these issues, we propose a fast-then-fine (FTF) two-stage retrieval framework that decomposes retrieval into a text-agnostic recall stage for efficient candidate selection and a text-guided rerank stage for fine-grained alignment. Specifically, in the recall stage, text-agnostic coarse-grained representations are employed for efficient candidate selection; in the rerank stage, a parameter-free balanced text-guided interaction block enhances fine-grained alignment without introducing additional learnable parameters. Furthermore, an inter- and intra-modal loss is designed to jointly optimize cross-modal alignment across multi-granular representations. Extensive experiments on public benchmarks demonstrate that the FTF achieves competitive retrieval accuracy while significantly improving retrieval efficiency compared with existing methods.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Fourier Series Coder: A Novel Perspective on Angle Boundary Discontinuity Problem for Oriented Object Detection</title>
+    <link href="http://arxiv.org/abs/2604.20281v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.20281v1</id>
+    <published>2026-04-22T00:00:00Z</published>
+    <updated>2026-04-22T00:00:00Z</updated>
+    <author>
+      <name>Minghong Wei</name>
+    </author>
+    <author>
+      <name>Pu Cao</name>
+    </author>
+    <author>
+      <name>Zhihao Chen</name>
+    </author>
+    <author>
+      <name>Zhiyuan Zang</name>
+    </author>
+    <author>
+      <name>Lu Yang</name>
+    </author>
+    <author>
+      <name>Qing Song</name>
+    </author>
+    <summary type="text">With the rapid advancement of intelligent driving and remote sensing, oriented object detection has gained widespread attention. However, achieving high-precision performance is fundamentally constrained by the Angle Boundary Discontinuity (ABD) and Cyclic Ambiguity (CA) problems, which typically cause significant angle fluctuations near periodic boundaries. Although recent studies propose continuous angle coders to alleviate these issues, our theoretical and empirical analyses reveal that state-of-the-art methods still suffer from substantial cyclic errors. We attribute this instability to the structural noise amplification within their non-orthogonal decoding mechanisms. This mathematical vulnerability significantly exacerbates angular deviations, particularly for square-like objects. To resolve this fundamentally, we propose the Fourier Series Coder (FSC), a lightweight plug-and-play component that establishes a continuous, reversible, and mathematically robust angle encoding-decoding paradigm. By rigorously mapping angles onto a minimal orthogonal Fourier basis and explicitly enforcing a geometric manifold constraint, FSC effectively prevents feature modulus collapse. This structurally stabilized representation ensures highly robust phase unwrapping, intrinsically eliminating the need for heuristic truncations while achieving strict boundary continuity and superior noise immunity. Extensive experiments across three large-scale datasets demonstrate that FSC achieves highly competitive overall performance, yielding substantial improvements in high-precision detection. The code will be available at https://github.com/weiminghong/FSC.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/weiminghong/FSC"&gt;https://github.com/weiminghong/FSC&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>HarmoniDiff-RS: Training-Free Diffusion Harmonization for Satellite Image Composition</title>
     <link href="http://arxiv.org/abs/2604.19392v1" rel="alternate" type="text/html" />
@@ -33,8 +120,8 @@
   </entry>
   <entry>
     <title>Structure-Semantic Decoupled Modulation of Global Geospatial Embeddings for High-Resolution Remote Sensing Mapping</title>
-    <link href="http://arxiv.org/abs/2604.19591v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.19591v1</id>
+    <link href="http://arxiv.org/abs/2604.19591v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.19591v2</id>
     <published>2026-04-21T00:00:00Z</published>
     <updated>2026-04-21T00:00:00Z</updated>
     <author>
@@ -61,6 +148,23 @@
     <summary type="text">Fine-grained high-resolution remote sensing mapping typically relies on localized visual features, which restricts cross-domain generalizability and often leads to fragmented predictions of large-scale land covers. While global geospatial foundation models offer powerful, generalizable representations, directly fusing their high-dimensional implicit embeddings with high-resolution visual features frequently triggers feature interference and spatial structure degradation due to a severe semantic-spatial gap. To overcome these limitations, we propose a Structure-Semantic Decoupled Modulation (SSDM) framework, which decouples global geospatial representations into two complementary cross-modal injection pathways. First, the structural prior modulation branch introduces the macroscopic receptive field priors from global representations into the self-attention modules of the high-resolution encoder. By guiding local feature extraction with holistic structural constraints, it effectively suppresses prediction fragmentation caused by high-frequency detail noise and excessive intra-class variance. Second, the global semantic injection branch explicitly aligns holistic context with the deep high-resolution feature space and directly supplements global semantics via cross-modal integration, thereby significantly enhancing the semantic consistency and category-level discrimination of complex land covers. Extensive experiments demonstrate that our method achieves state-of-the-art performance compared to existing cross-modal fusion approaches. By unleashing the potential of global embeddings, SSDM consistently improves high-resolution mapping accuracy across diverse scenarios, providing a universal and effective paradigm for integrating geospatial foundation models into high-resolution vision tasks.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Equinox: Decentralized Scheduling for Hardware-Aware Orbital Intelligence</title>
+    <link href="http://arxiv.org/abs/2604.19958v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.19958v1</id>
+    <published>2026-04-21T00:00:00Z</published>
+    <updated>2026-04-21T00:00:00Z</updated>
+    <author>
+      <name>Ansel Kaplan Erol</name>
+    </author>
+    <author>
+      <name>Divya Mahajan</name>
+    </author>
+    <summary type="text">Earth-observation satellites are emerging as distributed edge platforms for time-critical tasks, yet orbital scheduling remains challenged by intermittent energy harvesting and temporal coupling where eager execution risks future battery depletion. Existing schedulers rely on static priorities and lack mechanisms to adaptively shed work. We present Equinox, a lightweight, decentralized runtime for resource-constrained orbital systems. Equinox enables adaptive scheduling by compressing time-varying constraints, including battery charge, thermal headroom, and queue backlog, into a single state-dependent marginal cost of execution. Derived from a barrier function that rises sharply near safety limits, this cost encodes both instantaneous pressure and future risk. This local signal serves as a constellation-wide coordination primitive. Tasks execute only when their value exceeds the current cost, enabling value-ordered load shedding without explicit policies. If local costs exceed a neighbor's, tasks are dynamically offloaded over inter-satellite links, achieving distributed load balancing without routing protocols or global state. We evaluate Equinox using a multi-day simulation of a 143-satellite constellation grounded in physical Jetson Orin Nano measurements. Equinox improves scientific goodput by 20% and image-processing throughput by 31% over priority-based scheduling while maintaining 2.2x higher mean battery reserves. Under high demand, Equinox achieves 5.2x the execution rate of static scheduling by gracefully shedding work rather than collapsing under contention.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.DC" />
+    <category term="cs.OS; eess.SY" />
   </entry>
   <entry>
     <title>Revisiting Change VQA in Remote Sensing with Structured and Native Multimodal Qwen Models</title>
@@ -679,110 +783,6 @@
     <summary type="text">Dehazing is a technique in computer vision for enhancing the visual quality of images captured in cloudy or foggy conditions. Dehazing helps to recover clear, high-quality images from haze-affected remote sensing data. In this study, we introduce IncepDeHazeGAN, a novel Generative Adversarial Network (GAN) involving Inception block and multi-layer feature fusion for the task of single-image dehazing. Utilizing the Inception block allows for multi-scale feature extraction. On the other hand, the multi-layer feature fusion design achieves efficient reuse of features as the features extracted at different convolution layers are fused several times. Grad-CAM XAI technique has been applied to our network, highlighting the regions focused on by the network for dehazing and its adaptation to different haze conditions. Experiments demonstrate that our network achieves state-of-the-art results in several datasets.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; CV4DC Workshop&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Physically-Induced Atmospheric Adversarial Perturbations: Enhancing Transferability and Robustness in Remote Sensing Image Classification</title>
-    <link href="http://arxiv.org/abs/2604.14643v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.14643v1</id>
-    <published>2026-04-16T00:00:00Z</published>
-    <updated>2026-04-16T00:00:00Z</updated>
-    <author>
-      <name>Weiwei Zhuang</name>
-    </author>
-    <author>
-      <name>Wangze Xie</name>
-    </author>
-    <author>
-      <name>Qi Zhang</name>
-    </author>
-    <author>
-      <name>Xia Du</name>
-    </author>
-    <author>
-      <name>Zihan Lin</name>
-    </author>
-    <author>
-      <name>Zheng Lin</name>
-    </author>
-    <author>
-      <name>Hanlin Cai</name>
-    </author>
-    <author>
-      <name>Jizhe Zhou</name>
-    </author>
-    <author>
-      <name>Zihan Fang</name>
-    </author>
-    <author>
-      <name>Chi-man Pun</name>
-    </author>
-    <author>
-      <name>Wei Ni</name>
-    </author>
-    <author>
-      <name>Jun Luo</name>
-    </author>
-    <summary type="text">Adversarial attacks pose a severe threat to the reliability of deep learning models in remote sensing (RS) image classification. Most existing methods rely on direct pixel-wise perturbations, failing to exploit the inherent atmospheric characteristics of RS imagery or survive real-world image degradations. In this paper, we propose FogFool, a physically plausible adversarial framework that generates fog-based perturbations by iteratively optimizing atmospheric patterns based on Perlin noise. By modeling fog formations with natural, irregular structures, FogFool generates adversarial examples that are not only visually consistent with authentic RS scenes but also deceptive. By leveraging the spatial coherence and mid-to-low-frequency nature of atmospheric phenomena, FogFool embeds adversarial information into structural features shared across diverse architectures. Extensive experiments on two benchmark RS datasets demonstrate that FogFool achieves superior performance: not only does it exceed in white-box settings, but also exhibits exceptional black-box transferability (reaching 83.74% TASR) and robustness against common preprocessing-based defenses such as JPEG compression and filtering. Detailed analyses, including confusion matrices and Class Activation Map (CAM) visualizations, reveal that our atmospheric-driven perturbations induce a universal shift in model attention. These results indicate that FogFool represents a practical, stealthy, and highly persistent threat to RS classification systems, providing a robust benchmark for evaluating model reliability in complex environments.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 14 pages, 11 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>OmniGCD: Abstracting Generalized Category Discovery for Modality Agnosticism</title>
-    <link href="http://arxiv.org/abs/2604.14762v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.14762v1</id>
-    <published>2026-04-16T00:00:00Z</published>
-    <updated>2026-04-16T00:00:00Z</updated>
-    <author>
-      <name>Jordan Shipard</name>
-    </author>
-    <author>
-      <name>Arnold Wiliem</name>
-    </author>
-    <author>
-      <name>Kien Nguyen Thanh</name>
-    </author>
-    <author>
-      <name>Wei Xiang</name>
-    </author>
-    <author>
-      <name>Clinton Fookes</name>
-    </author>
-    <summary type="text">Generalized Category Discovery (GCD) challenges methods to identify known and novel classes using partially labeled data, mirroring human category learning. Unlike prior GCD methods, which operate within a single modality and require dataset-specific fine-tuning, we propose a modality-agnostic GCD approach inspired by the human brain's abstract category formation. Our $\textbf{OmniGCD}$ leverages modality-specific encoders (e.g., vision, audio, text, remote sensing) to process inputs, followed by dimension reduction to construct a $\textbf{GCD latent space}$, which is transformed at test-time into a representation better suited for clustering using a novel synthetically trained Transformer-based model. To evaluate OmniGCD, we introduce a $\textbf{zero-shot GCD setting}$ where no dataset-specific fine-tuning is allowed, enabling modality-agnostic category discovery. $\textbf{Trained once on synthetic data}$, OmniGCD performs zero-shot GCD across 16 datasets spanning four modalities, improving classification accuracy for known and novel classes over baselines (average percentage point improvement of $\textbf{+6.2}$, $\textbf{+17.9}$, $\textbf{+1.5}$ and $\textbf{+12.7}$ for vision, text, audio and remote sensing). This highlights the importance of strong encoders while decoupling representation learning from category discovery. Improving modality-agnostic methods will propagate across modalities, enabling encoder development independent of GCD. Our work serves as a benchmark for future modality-agnostic GCD works, paving the way for scalable, human-inspired category discovery. All code is available $\href{https://github.com/Jordan-HS/OmniGCD}{here}$</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Jordan-HS/OmniGCD"&gt;https://github.com/Jordan-HS/OmniGCD&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; CVPR 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Building Extraction from Remote Sensing Imagery under Hazy and Low-light Conditions: Benchmark and Baseline</title>
-    <link href="http://arxiv.org/abs/2604.15088v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.15088v1</id>
-    <published>2026-04-16T00:00:00Z</published>
-    <updated>2026-04-16T00:00:00Z</updated>
-    <author>
-      <name>Feifei Sang</name>
-    </author>
-    <author>
-      <name>Wei Lu</name>
-    </author>
-    <author>
-      <name>Hongruixuan Chen</name>
-    </author>
-    <author>
-      <name>Sibao Chen</name>
-    </author>
-    <author>
-      <name>Bin Luo</name>
-    </author>
-    <summary type="text">Building extraction from optical Remote Sensing (RS) imagery suffers from performance degradation under real-world hazy and low-light conditions. However, existing optical methods and benchmarks focus primarily on ideal clear-weather conditions. While SAR offers all-weather sensing, its side-looking geometry causes geometric distortions. To address these challenges, we introduce HaLoBuilding, the first optical benchmark specifically designed for building extraction under hazy and low-light conditions. By leveraging a same-scene multitemporal pairing strategy, we ensure pixel-level label alignment and high fidelity even under extreme degradation. Building upon this benchmark, we propose HaLoBuild-Net, a novel end-to-end framework for building extraction in adverse RS scenarios. At its core, we develop a Spatial-Frequency Focus Module (SFFM) to effectively mitigate meteorological interference on building features by coupling large receptive field attention with frequency-aware channel reweighting guided by stable low-frequency anchors. Additionally, a Global Multi-scale Guidance Module (GMGM) provides global semantic constraints to anchor building topologies, while a Mutual-Guided Fusion Module (MGFM) implements bidirectional semantic-spatial calibration to suppress shallow noise and sharpen weather-induced blurred boundaries. Extensive experiments demonstrate that HaLoBuild-Net significantly outperforms state-of-the-art methods and conventional cascaded restoration-segmentation paradigms on the HaLoBuilding dataset, while maintaining robust generalization on WHU, INRIA, and LoveDA datasets. The source code and datasets are publicly available at: https://github.com/AeroVILab-AHU/HaLoBuilding.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/AeroVILab-AHU/HaLoBuilding"&gt;https://github.com/AeroVILab-AHU/HaLoBuilding&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 14 pages, 12 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>
