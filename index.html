@@ -70,7 +70,7 @@
   .skills-header {
     text-align: center; margin-bottom: 32px;
   }
-  .skills-header h2 { font-size: 24px; color: var(--text); margin: 0 0 8px; }
+  .skills-header h2 { font-size: 22px; font-weight: 800; color: var(--text); margin: 0 0 8px; display: flex; align-items: center; justify-content: center; gap: 8px; }
   .skills-header p { font-size: 14px; color: var(--text-secondary); margin: 0; }
   .skills-grid {
     display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px;
@@ -732,7 +732,7 @@
     display: flex; align-items: flex-end; justify-content: space-between;
     flex-wrap: wrap; gap: 10px; margin-bottom: 18px;
   }
-  .radar-title { font-size: 22px; font-weight: 800; display: flex; align-items: center; gap: 8px; }
+  .radar-title { font-size: 22px; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 8px; }
   .radar-title-sub { font-size: 12px; font-weight: 400; color: var(--text-secondary); letter-spacing: .03em; }
   .radar-source-tabs { display: flex; gap: 5px; flex-wrap: wrap; }
   .radar-src-btn {
@@ -1093,7 +1093,7 @@
     <div>
       <div class="radar-title">
         <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--primary)"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1" fill="currentColor"/><line x1="12" y1="2" x2="12" y2="7"/><line x1="12" y1="17" x2="12" y2="22"/><line x1="2" y1="12" x2="7" y2="12"/><line x1="17" y1="12" x2="22" y2="12"/></svg>
-        Radar <span class="radar-title-sub">· <span data-i18n="radarSubtitle">Field Signal Monitor</span></span>
+        <span data-i18n="navRadar">Radar</span> <span class="radar-title-sub">· <span data-i18n="radarSubtitle">Field Signal Monitor</span></span>
       </div>
     </div>
     <div class="radar-source-tabs" id="radarSourceTabs"></div>
@@ -1140,7 +1140,7 @@
 <div id="page-trends" class="page-section">
   <div class="skills-page">
     <div class="skills-header">
-      <h2 data-i18n="navTrends">Trends</h2>
+      <h2 data-i18n="navTrends"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--primary);flex-shrink:0"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>Trends</h2>
     </div>
     <div id="trendsDataSourceWrap" style="display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap;">
     </div>
@@ -1151,7 +1151,7 @@
 <div id="page-skills" class="page-section">
   <div class="skills-page">
     <div class="skills-header">
-      <h2 data-i18n="skillsTitle">Skills</h2>
+      <h2 data-i18n="skillsTitle"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--primary);flex-shrink:0"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>Skills</h2>
     </div>
     <div class="skills-grid">
 
@@ -1269,7 +1269,7 @@
 <div id="page-venues" class="page-section">
   <div class="skills-page">
     <div class="skills-header">
-      <h2 data-i18n="navVenues">Venues</h2>
+      <h2 data-i18n="navVenues"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--primary);flex-shrink:0"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>Venues</h2>
     </div>
     <div id="venuesList"></div>
   </div>
@@ -1278,7 +1278,7 @@
 <div id="page-resources" class="page-section">
   <div class="skills-page">
     <div class="skills-header">
-      <h2 data-i18n="navResources">Resources</h2>
+      <h2 data-i18n="navResources"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--primary);flex-shrink:0"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>Resources</h2>
     </div>
     <div id="resourcesList"></div>
     <div style="text-align:center;padding:24px 0 8px;">
@@ -1571,7 +1571,17 @@ function applyLang() {
     if (el.closest('.nav-bar')) return; // already handled above
     const key = el.getAttribute('data-i18n');
     const val = t(key);
-    if (val && val !== key) el.textContent = val;
+    if (!val || val === key) return;
+    // If element contains child elements (e.g. SVG icon), update only the text node
+    const hasChildren = Array.from(el.childNodes).some(n => n.nodeType === 1);
+    if (hasChildren) {
+      // Find or create a trailing text node after child elements
+      let textNode = Array.from(el.childNodes).find(n => n.nodeType === 3 && n.textContent.trim());
+      if (textNode) textNode.textContent = val;
+      else el.appendChild(document.createTextNode(val));
+    } else {
+      el.textContent = val;
+    }
   });
   // Footer links label
   const flLabel = document.querySelector('.footer-links-label');
