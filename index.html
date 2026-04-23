@@ -4115,7 +4115,7 @@ async function renderRadarRanking(srcKey, mode) {
       const numHtml = rank <= 3
         ? `<span class="radar-rank-num" style="font-size:17px;">${medals[rank-1]}</span>`
         : `<span class="radar-rank-num">${rank}</span>`;
-      const tags = [p._added_date, p.Category, p._is_vlm ? 'VLM' : '', p.code ? '⚙️ Code' : ''].filter(Boolean).join(' · ');
+      const tags = [p.Date || p._added_date, p.Category, p._is_vlm ? 'VLM' : '', p.code ? '⚙️ Code' : ''].filter(Boolean).join(' · ');
       const kwStr = (p.matched || []).slice(0, 4).join(', ');
       const score = p.score || 0;
       return `<div class="radar-rank-item" onclick="window.open('${escHtml(p.Paper_link)}','_blank')">
@@ -4173,7 +4173,7 @@ async function renderRadarRanking(srcKey, mode) {
     const numHtml = rank <= 3
       ? `<span class="radar-rank-num" style="font-size:17px;">${medals[rank-1]}</span>`
       : `<span class="radar-rank-num">${rank}</span>`;
-    const tags = [p._added_date, p.Category, p._is_vlm ? 'VLM' : '', p.code ? '⚙️ Code' : ''].filter(Boolean).join(' · ');
+    const tags = [p.Date || p._added_date, p.Category, p._is_vlm ? 'VLM' : '', p.code ? '⚙️ Code' : ''].filter(Boolean).join(' · ');
     const kwStr = matched.slice(0, 4).join(', ');
     return `<div class="radar-rank-item" onclick="window.open('${escHtml(p.Paper_link)}','_blank')">
       ${numHtml}
