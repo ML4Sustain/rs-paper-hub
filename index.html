@@ -601,6 +601,12 @@
   .paper-abstract a { color: var(--primary); text-decoration: none; }
   .paper-abstract a:hover { text-decoration: underline; }
   .paper-abstract h1, .paper-abstract h2, .paper-abstract h3 { font-size: 14px; margin: 6px 0 2px; }
+  .abstract-loading {
+    display: block; height: 2.8em; border-radius: 4px;
+    background: linear-gradient(90deg, var(--border) 25%, var(--bg) 50%, var(--border) 75%);
+    background-size: 200% 100%; animation: shimmer 1.5s infinite;
+  }
+  @keyframes shimmer { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
   .paper-title p { display: inline; margin: 0; }
   .paper-links { margin-top: 8px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
   .paper-links a {
@@ -1384,6 +1390,27 @@
 <script>
 const PER_PAGE = 20;
 
+// Render KaTeX math only when each card enters the viewport (avoids blocking on all 20 cards at once)
+const mathObserver = typeof IntersectionObserver !== 'undefined'
+  ? new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        mathObserver.unobserve(entry.target);
+        if (typeof renderMathInElement === 'function') {
+          renderMathInElement(entry.target, {
+            delimiters: [
+              { left: '$$', right: '$$', display: true },
+              { left: '$', right: '$', display: false },
+              { left: '\\(', right: '\\)', display: false },
+              { left: '\\[', right: '\\]', display: true }
+            ],
+            throwOnError: false
+          });
+        }
+      });
+    }, { rootMargin: '200px' })
+  : null;
+
 // ── i18n ──
 const LANG = {
   en: {
@@ -1767,7 +1794,7 @@ const TASK_NAMES = {
   SR: 'Super-Resolution', '3D': '3D Reconstruction',
 };
 const DATA_SOURCES = [
-  { label: 'All Papers', file: 'papers.json', key: 'all' },
+  { label: 'All Papers', file: 'papers_slim.json', key: 'all' },
   { label: 'Vision-Language Model', file: 'papers_vlm.json', key: 'vlm' },
   { label: 'UAV', file: 'papers_uav.json', key: 'uav' },
   { label: 'Agent', file: 'papers_agent.json', key: 'agent' },
@@ -1775,9 +1802,10 @@ const DATA_SOURCES = [
   { label: 'Hyperspectral/MS', file: 'papers_hyp.json', key: 'hyp' },
 ];
 let allPapers = [];
-let allPapersGlobal = [];  // holds papers for recent panel (from recent_papers.json or papers.json)
+let allPapersGlobal = [];  // holds papers for recent panel (from recent_papers.json or papers_slim.json)
 let filtered = [];
 let venuesLoaded = false, resourcesLoaded = false, trendsLoaded = false;
+let abstractsReady = false;
 let currentPage = 1;
 let chartsVisible = false;
 let codeOnly = false;
@@ -1920,16 +1948,71 @@ function initDataSourceSelect() {
 
 function loadDataFromSource(ds) {
   if (!ds) ds = DATA_SOURCES[0];
+  // Disable abstract search when switching to slim file; re-enable for full files
+  const opt = document.querySelector('#searchScope option[value="abstract"]');
+  if (opt) {
+    const isSlim = ds.file === 'papers_slim.json';
+    opt.disabled = isSlim;
+    opt.textContent = isSlim ? (opt.textContent.endsWith('…') ? opt.textContent : opt.textContent + '…')
+                             : opt.textContent.replace('…', '');
+    if (isSlim && document.getElementById('searchScope').value === 'abstract')
+      document.getElementById('searchScope').value = 'all';
+  }
   loadData(ds.file);
+  if (ds.file === 'papers_slim.json') loadAbstractsInBackground();
+}
+
+// ── IndexedDB cache: skip re-downloading unchanged files on repeat visits ──
+async function fetchWithCache(url) {
+  let db, cached;
+  try {
+    db = await new Promise((res, rej) => {
+      const r = indexedDB.open('rs-papers-db', 1);
+      r.onupgradeneeded = e => e.target.result.createObjectStore('files');
+      r.onsuccess = e => res(e.target.result);
+      r.onerror = () => rej(r.error);
+    });
+    cached = await new Promise(res => {
+      const req = db.transaction('files').objectStore('files').get(url);
+      req.onsuccess = () => res(req.result);
+      req.onerror = () => res(null);
+    });
+  } catch(e) { /* IDB unavailable (private browsing, etc.), fall through */ }
+
+  const headers = cached?.lastModified ? { 'If-Modified-Since': cached.lastModified } : {};
+  let resp;
+  try { resp = await fetch(url, { headers }); }
+  catch(e) { throw e; }
+
+  if (resp.status === 304 && cached?.text) return cached.text;
+
+  if (!resp.ok) throw new Error('HTTP ' + resp.status);
+  const text = await resp.text();
+
+  if (db) {
+    const lm = resp.headers.get('Last-Modified');
+    if (lm) {
+      try {
+        const tx = db.transaction('files', 'readwrite');
+        tx.objectStore('files').put({ lastModified: lm, text }, url);
+      } catch(e) { /* quota exceeded or structured clone error, ignore */ }
+    }
+  }
+  return text;
 }
 
 async function loadData(file) {
-  const resp = await fetch('./output/' + file);
-  if (!resp.ok) { alert('Failed to load ' + file); return; }
-  const text = await resp.text();
+  let text;
+  try {
+    text = await fetchWithCache('./output/' + file);
+  } catch(e) {
+    alert('Failed to load ' + file);
+    return;
+  }
+  abstractsReady = false;
   allPapers = JSON.parse(text.replace(/:\s*NaN\b/g, ': null'));
   allPapers.forEach(p => { for (const k in p) { if (p[k] === null) p[k] = ''; } });
-  if (file === 'papers.json') allPapersGlobal = allPapers;
+  if (file === 'papers.json' || file === 'papers_slim.json') allPapersGlobal = allPapers;
   // Reset filters
   const typeSelect = document.getElementById('typeFilter');
   const yearSelect = document.getElementById('yearFilter');
@@ -1989,10 +2072,14 @@ async function init() {
   initGroups();
   const activeBtn = document.querySelector('#dataSource button.active');
   const ds = DATA_SOURCES.find(d => d.key === (activeBtn ? activeBtn.dataset.key : 'all')) || DATA_SOURCES[0];
-  // Load small recent_papers.json (~100 KB) for sidebar instead of full papers.json (13 MB)
-  // papers.json tab sets allPapersGlobal inside loadData() so no separate fetch needed
-  const recentLoad = ds.file !== 'papers.json'
-    ? fetch('./output/recent_papers.json').then(r => r.json()).then(data => {
+  // Disable abstract search until background load completes
+  if (ds.file === 'papers_slim.json') {
+    const opt = document.querySelector('#searchScope option[value="abstract"]');
+    if (opt) { opt.disabled = true; opt.textContent = opt.textContent + '…'; }
+  }
+  // Load small recent_papers.json for sidebar; papers_slim.json already sets allPapersGlobal
+  const recentLoad = (ds.file !== 'papers.json' && ds.file !== 'papers_slim.json')
+    ? fetchWithCache('./output/recent_papers.json').then(t => JSON.parse(t)).then(data => {
         allPapersGlobal = data;
       }).catch(() => {})
     : Promise.resolve();
@@ -2002,6 +2089,31 @@ async function init() {
   const overlay = document.getElementById('loadingOverlay');
   overlay.classList.add('hidden');
   setTimeout(() => overlay.remove(), 500);
+  if (ds.file === 'papers_slim.json') loadAbstractsInBackground();
+}
+
+async function loadAbstractsInBackground() {
+  const targetPapers = allPapers;
+  try {
+    const text = await fetchWithCache('./output/papers_abstract.json');
+    const map = JSON.parse(text);
+    if (allPapers !== targetPapers) return; // user switched source tab
+    targetPapers.forEach(p => {
+      const id = (p.Paper_link || '').split('/').pop().replace(/v\d+$/, '');
+      if (map[id]) p.Abstract = map[id];
+    });
+    abstractsReady = true;
+    // Fill in abstract placeholders in visible cards
+    document.querySelectorAll('.paper-abstract[data-idx]').forEach(el => {
+      const idx = parseInt(el.dataset.idx);
+      const p = filtered[idx];
+      if (p?.Abstract) el.innerHTML = renderLatex(p.Abstract);
+    });
+    // Re-enable abstract search
+    const opt = document.querySelector('#searchScope option[value="abstract"]');
+    if (opt) { opt.disabled = false; opt.textContent = opt.textContent.replace('…', ''); }
+    requestAnimationFrame(renderMathInPage);
+  } catch(e) { /* abstract load failed silently */ }
 }
 
 // ---- Trends ----
@@ -2738,8 +2850,8 @@ function applyFilters() {
       let haystack;
       if (scope === 'author') haystack = (p.Authors || '').toLowerCase();
       else if (scope === 'title') haystack = (p.Title || '').toLowerCase();
-      else if (scope === 'abstract') haystack = (p.Abstract || '').toLowerCase();
-      else haystack = [p.Title, p.Authors, p.Abstract, p.Type, p.Subtype, p['abbr.'], p.Publication, p._vlm_keywords || '', p._tasks || ''].join(' ').toLowerCase();
+      else if (scope === 'abstract') haystack = abstractsReady ? (p.Abstract || '').toLowerCase() : '';
+      else haystack = [p.Title, p.Authors, abstractsReady ? p.Abstract : '', p.Type, p.Subtype, p['abbr.'], p.Publication, p._vlm_keywords || '', p._tasks || ''].join(' ').toLowerCase();
 
       if (fuzzySearch) {
         // Fuzzy: split into words, all must appear
@@ -2870,7 +2982,7 @@ function render() {
         ${catTag}${vlmTag}${vlmKwTags}${taskTags}
       </div>
       <div class="paper-authors"><span class="field-icon">${ICON.authors}</span>${escHtml(p.Authors)}</div>
-      <div class="paper-abstract-wrap"><span class="field-icon">${ICON.abstract}</span><div class="paper-abstract" id="abs-${idx}">${renderLatex(p.Abstract)}</div></div>
+      <div class="paper-abstract-wrap"><span class="field-icon">${ICON.abstract}</span><div class="paper-abstract" id="abs-${idx}" data-idx="${idx}">${p.Abstract ? renderLatex(p.Abstract) : '<span class="abstract-loading"></span>'}</div></div>
       <div class="paper-links">
         <a href="${escHtml(p.Paper_link.replace('/abs/', '/pdf/'))}" target="_blank" onclick="event.stopPropagation()">${ICON.arxiv}${t('paper')}</a>
         ${codeLink}
@@ -2883,8 +2995,12 @@ function render() {
   }).join('');
 
   renderPagination();
-  // Render LaTeX math formulas after DOM update
-  requestAnimationFrame(renderMathInPage);
+  // Observe each card individually — KaTeX runs only when card enters viewport
+  if (mathObserver) {
+    document.querySelectorAll('#paperList .paper-card').forEach(card => mathObserver.observe(card));
+  } else {
+    requestAnimationFrame(renderMathInPage);
+  }
 }
 
 function toggleAbstract(e, idx) {
@@ -3066,9 +3182,16 @@ function renderCharts() {
 }
 
 function showBibtex(idx) {
-  const paper = filtered[idx];
-  if (!paper) return;
-  document.getElementById('bibtexContent').textContent = paper.BibTex || t('noBibtex');
+  const p = filtered[idx];
+  if (!p) return;
+  let bib = p.BibTex && p.BibTex.trim();
+  if (!bib) {
+    const id = (p.Paper_link || '').split('/').pop() || 'unknown';
+    const fa = (p.Authors || 'Unknown').split(',')[0].trim().split(' ').pop().toLowerCase();
+    const key = fa + (p.Year || '') + id.replace(/\./g, '');
+    bib = `@article{${key},\n  title={${p.Title || ''}},\n  author={${p.Authors || ''}},\n  year={${p.Year || ''}},\n  url={${p.Paper_link || ''}}\n}`;
+  }
+  document.getElementById('bibtexContent').textContent = bib;
   document.getElementById('bibtexModal').classList.add('show');
 }
 
@@ -3078,7 +3201,9 @@ function closeBibtex() {
 
 function copyPaperInfo(el, idx) {
   const p = filtered[idx];
-  const text = `Title: ${p.Title}\nAuthors: ${p.Authors}\nPaper_Link: ${p.Paper_link}\nAbstract: ${p.Abstract}`;
+  const lines = [`Title: ${p.Title}`, `Authors: ${p.Authors}`, `Paper_Link: ${p.Paper_link}`];
+  if (p.Abstract) lines.push(`Abstract: ${p.Abstract}`);
+  const text = lines.join('\n');
   navigator.clipboard.writeText(text).then(() => {
     const orig = el.innerHTML;
     el.innerHTML = ICON.copy + t('copyInfoDone');

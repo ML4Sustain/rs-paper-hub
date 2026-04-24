@@ -154,6 +154,29 @@ def run(input_path: str, output_dir: str):
         json.dump(recent_papers, f, ensure_ascii=False)
     logger.info(f"  -> {recent_path} ({len(recent_papers)} recent papers)")
 
+    # Generate papers_slim.json — no Abstract/BibTex, for fast initial load (~3 MB vs 13 MB)
+    SLIM_COLUMNS = ["Category", "Type", "Subtype", "Date", "Month", "Year",
+                    "Title", "Paper_link", "Authors", "code", "Publication",
+                    "_tasks", "_added_date", "abbr."]
+    slim_papers = [{k: p.get(k, "") for k in SLIM_COLUMNS} for p in papers]
+    slim_path = os.path.join(output_dir, "papers_slim.json")
+    with open(slim_path, "w", encoding="utf-8") as f:
+        json.dump(slim_papers, f, ensure_ascii=False)
+    logger.info(f"  -> {slim_path} ({len(slim_papers)} slim records)")
+
+    # Generate papers_abstract.json — {arxiv_id: abstract} map for lazy loading
+    import re as _re
+    abstract_map = {}
+    for p in papers:
+        link = p.get("Paper_link", "")
+        aid = _re.sub(r'v\d+$', '', link.split('/')[-1]) if link else None
+        if aid and p.get("Abstract"):
+            abstract_map[aid] = p["Abstract"]
+    abs_path = os.path.join(output_dir, "papers_abstract.json")
+    with open(abs_path, "w", encoding="utf-8") as f:
+        json.dump(abstract_map, f, ensure_ascii=False)
+    logger.info(f"  -> {abs_path} ({len(abstract_map)} abstracts)")
+
     # ── Step 4: Filter VLM papers ─────────────────────────
     logger.info("[5/11] Filtering VLM-related papers...")
     matched, annotated = filter_vlm_papers(papers)
