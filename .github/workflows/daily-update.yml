@@ -2,10 +2,11 @@ name: Daily Paper Update
 
 on:
   schedule:
-    # Run Mon-Fri at 00:15 UTC (08:15 Beijing Time), 15min after arXiv announcements
+    # Run 1: Mon-Fri at 23:00 UTC Sun-Thu (07:00 Beijing Time)
+    - cron: '0 23 * * 0-4'
+    # Run 2: Mon-Fri at 00:30 UTC (08:30 Beijing Time), 30min after arXiv announcements
     # arXiv publishes new papers Sun-Thu at 20:00 EDT (00:00 UTC next day)
-    # No arXiv announcements on Fri/Sat, so skip weekends
-    - cron: '15 0 * * 1-5'
+    - cron: '30 0 * * 1-5'
   workflow_dispatch:  # Allow manual trigger
 
 permissions:
