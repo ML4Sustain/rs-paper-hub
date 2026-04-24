@@ -168,8 +168,10 @@ def main():
     args = parser.parse_args()
 
     existing_data, last_updated = load_existing()
-    is_incremental = (not args.full) and existing_data and last_updated
     today_str = date.today().isoformat()
+    # Force full recomputation if last_updated == today: a same-day re-run with > filter
+    # would silently drop papers added between runs (since _added_date > today is always false).
+    is_incremental = (not args.full) and existing_data and last_updated and last_updated < today_str
 
     if is_incremental:
         print(f"Incremental update (papers added after {last_updated})...")
