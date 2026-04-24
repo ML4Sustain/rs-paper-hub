@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-04-23T03:51:56Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 10 entries</subtitle>
+  <updated>2026-04-24T02:33:23Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 8 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -65,6 +65,27 @@
     <summary type="text">Remote sensing (RS) image-text retrieval plays a critical role in understanding massive RS imagery. However, the dense multi-object distribution and complex backgrounds in RS imagery make it difficult to simultaneously achieve fine-grained cross-modal alignment and efficient retrieval. Existing methods either rely on complex cross-modal interactions that lead to low retrieval efficiency, or depend on large-scale vision-language model pre-training, which requires massive data and computational resources. To address these issues, we propose a fast-then-fine (FTF) two-stage retrieval framework that decomposes retrieval into a text-agnostic recall stage for efficient candidate selection and a text-guided rerank stage for fine-grained alignment. Specifically, in the recall stage, text-agnostic coarse-grained representations are employed for efficient candidate selection; in the rerank stage, a parameter-free balanced text-guided interaction block enhances fine-grained alignment without introducing additional learnable parameters. Furthermore, an inter- and intra-modal loss is designed to jointly optimize cross-modal alignment across multi-granular representations. Extensive experiments on public benchmarks demonstrate that the FTF achieves competitive retrieval accuracy while significantly improving retrieval efficiency compared with existing methods.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Unlocking Multi-Spectral Data for Multi-Modal Models with Guided Inputs and Chain-of-Thought Reasoning</title>
+    <link href="http://arxiv.org/abs/2604.21032v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.21032v1</id>
+    <published>2026-04-22T00:00:00Z</published>
+    <updated>2026-04-22T00:00:00Z</updated>
+    <author>
+      <name>Dahun Kim</name>
+    </author>
+    <author>
+      <name>Ganesh Satish Mallya</name>
+    </author>
+    <author>
+      <name>Anelia Angelova</name>
+    </author>
+    <summary type="text">Multi-spectral imagery is a valuable input signal for Remote Sensing applications, such as land-use and land-cover classification and environmental monitoring. However, generalist Large Multi-modal Models (LMMs) are typically trained on RGB images, limiting their applicability to the RGB domain. At the same time, training multi-spectral multi-modal models is expensive and produces uniquely specialized models. To address this, we propose a novel training-free approach that introduces multi-spectral data within the inference pipeline of standard RGB-only LMMs, allowing large gains in performance. Our approach leverages the LMMs' understanding of the visual space by adapting non-RGB inputs to that space and injecting domain-specific information and Chain-of-Thought reasoning as instructions. We demonstrate this with the Gemini 2.5 model and observe strong Zero-Shot performance gains on popular Remote Sensing benchmarks. These results highlight the potential for geospatial professionals to leverage powerful generalist models for specialized sensor inputs, benefiting from rich reasoning capabilities grounded in specialized data.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to IGARSS 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
   <entry>
@@ -215,108 +236,6 @@
     </author>
     <summary type="text">A robust Multimodal Large Language Model (MLLM) for Earth Observation should maintain consistent interpretation and reasoning under realistic input variations. However, current Remote Sensing MLLMs fail to meet this requirement. Trained on carefully curated clean datasets, they learn brittle mappings that do not generalize to noisy conditions in operational Earth Observation. Consequently, their performance degrades when confronted with imperfect inputs in deployment. To quantify this vulnerability, we construct a realistic set of multimodal perturbations, including visual degradations such as cloud and fog cover, together with diverse human-centric textual variations ranging from colloquialisms to vague or omitted instructions. Empirical evaluations show that these perturbations significantly impair the visual-semantic reasoning capabilities of leading RS foundation models. To address this limitation, we introduce RemoteShield, a robust Remote Sensing MLLM trained to maintain consistent outputs across realistic input variations. During training, each clean sample is paired with its image-text perturbed variants to form a semantic equivalence cluster. Rather than directly fitting noisy samples, RemoteShield is optimized through preference learning over clean and perturbed conditions within the same cluster. By comparing model responses to clean and corrupted inputs, the model is encouraged to favor stable responses over perturbation-induced failures. This cross-condition alignment helps the model focus on underlying task semantics despite visual degradations and textual noise. Experiments on three Earth Observation tasks show that RemoteShield consistently delivers stronger robustness and cross-condition consistency than representative baselines under realistic multimodal perturbations.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>From Articles to Canopies: Knowledge-Driven Pseudo-Labelling for Tree Species Classification using LLM Experts</title>
-    <link href="http://arxiv.org/abs/2604.16115v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.16115v1</id>
-    <published>2026-04-17T00:00:00Z</published>
-    <updated>2026-04-17T00:00:00Z</updated>
-    <author>
-      <name>Michał Romaszewski</name>
-    </author>
-    <author>
-      <name>Dominik Kopeć</name>
-    </author>
-    <author>
-      <name>Michał Cholewa</name>
-    </author>
-    <author>
-      <name>Katarzyna Kołodziej</name>
-    </author>
-    <author>
-      <name>Przemysław Głomb</name>
-    </author>
-    <author>
-      <name>Jan Niedzielko</name>
-    </author>
-    <author>
-      <name>Jakub Charyton</name>
-    </author>
-    <author>
-      <name>Justyna Wylazłowska</name>
-    </author>
-    <author>
-      <name>Anna Jarocińska</name>
-    </author>
-    <summary type="text">Hyperspectral tree species classification is challenging due to limited and imbalanced class labels, spectral mixing (overlapping light signatures from multiple species), and ecological heterogeneity (variability among ecological systems). Addressing these challenges requires methods that integrate biological and structural characteristics of vegetation, such as canopy architecture and interspecific interactions, rather than relying solely on spectral signatures. This paper presents a biologically informed, semi-supervised deep learning method that integrates multi-sensor Earth observation data, specifically hyperspectral imaging (HSI) and airborne laser scanning (ALS), with expert, ecological knowledge. The approach relies on biologically inspired pseudo-labelling over a precomputed canopy graph, yielding accurate classification at low training cost. In addition, ecological priors on species cohabitation are automatically derived from reliable sources using large language models (LLMs) and encoded as a cohabitation matrix with likelihoods of species occurring together. These priors are incorporated into the pseudo-labelling strategy, effectively introducing expert knowledge into the model. Experiments on a real-world forest dataset demonstrate 5.6% improvement over the best reference method. Expert evaluation of cohabitation priors reveals high accuracy with differences no larger than 15%.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>PixDLM: A Dual-Path Multimodal Language Model for UAV Reasoning Segmentation</title>
-    <link href="http://arxiv.org/abs/2604.15670v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.15670v1</id>
-    <published>2026-04-17T00:00:00Z</published>
-    <updated>2026-04-17T00:00:00Z</updated>
-    <author>
-      <name>Shuyan Ke</name>
-    </author>
-    <author>
-      <name>Yifan Mei</name>
-    </author>
-    <author>
-      <name>Changli Wu</name>
-    </author>
-    <author>
-      <name>Yonghan Zheng</name>
-    </author>
-    <author>
-      <name>Jiayi Ji</name>
-    </author>
-    <author>
-      <name>Liujuan Cao</name>
-    </author>
-    <author>
-      <name>Rongrong Ji</name>
-    </author>
-    <summary type="text">Reasoning segmentation has recently expanded from ground-level scenes to remote-sensing imagery, yet UAV data poses distinct challenges, including oblique viewpoints, ultra-high resolutions, and extreme scale variations. To address these issues, we formally define the UAV Reasoning Segmentation task and organize its semantic requirements into three dimensions: Spatial, Attribute, and Scene-level reasoning. Based on this formulation, we construct DRSeg, a large-scale benchmark for UAV reasoning segmentation, containing 10k high-resolution aerial images paired with Chain-of-Thought QA supervision across all three reasoning types. As a benchmark companion, we introduce PixDLM, a simple yet effective pixel-level multimodal language model that serves as a unified baseline for this task. Experiments on DRSeg establish strong baseline results and highlight the unique challenges of UAV reasoning segmentation, providing a solid foundation for future research.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; CVPR 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Towards Realistic Open-Vocabulary Remote Sensing Segmentation: Benchmark and Baseline</title>
-    <link href="http://arxiv.org/abs/2604.15652v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.15652v1</id>
-    <published>2026-04-17T00:00:00Z</published>
-    <updated>2026-04-17T00:00:00Z</updated>
-    <author>
-      <name>Bingyu Li</name>
-    </author>
-    <author>
-      <name>Tao Huo</name>
-    </author>
-    <author>
-      <name>Haocheng Dong</name>
-    </author>
-    <author>
-      <name>Da Zhang</name>
-    </author>
-    <author>
-      <name>Zhiyuan Zhao</name>
-    </author>
-    <author>
-      <name>Junyu Gao</name>
-    </author>
-    <author>
-      <name>Xuelong Li</name>
-    </author>
-    <summary type="text">Open-vocabulary remote sensing image segmentation (OVRSIS) remains underexplored due to fragmented datasets, limited training diversity, and the lack of evaluation benchmarks that reflect realistic geospatial application demands. Our previous \textit{OVRSISBenchV1} established an initial cross-dataset evaluation protocol, but its limited scope is insufficient for assessing realistic open-world generalization. To address this issue, we propose \textit{OVRSISBenchV2}, a large-scale and application-oriented benchmark for OVRSIS. We first construct \textbf{OVRSIS95K}, a balanced dataset of about 95K image--mask pairs covering 35 common semantic categories across diverse remote sensing scenes. Built upon OVRSIS95K and 10 downstream datasets, OVRSISBenchV2 contains 170K images and 128 categories, substantially expanding scene diversity, semantic coverage, and evaluation difficulty. Beyond standard open-vocabulary segmentation, it further includes downstream protocols for building extraction, road extraction, and flood detection, thereby better reflecting realistic geospatial application demands and complex deployment scenarios. We also propose \textbf{Pi-Seg}, a baseline for OVRSIS. Pi-Seg improves transferability through a \textbf{positive-incentive noise} mechanism, where learnable and semantically guided perturbations broaden the visual-text feature space during training. Extensive experiments on OVRSISBenchV1, OVRSISBenchV2, and downstream tasks show that Pi-Seg delivers strong and consistent results, particularly on the more challenging OVRSISBenchV2 benchmark. Our results highlight both the importance of realistic benchmark design and the effectiveness of perturbation-based transfer for OVRSIS. The code and datasets are available at \href{https://github.com/LiBingyu01/RSKT-Seg/tree/Pi-Seg}{LiBingyu01/RSKT-Seg/tree/Pi-Seg}.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/LiBingyu01/RSKT-Seg/tree/Pi-Seg"&gt;https://github.com/LiBingyu01/RSKT-Seg/tree/Pi-Seg&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>

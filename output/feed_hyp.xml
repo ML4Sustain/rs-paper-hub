@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-04-23T03:51:56Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 8 entries</subtitle>
+  <updated>2026-04-24T02:33:23Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 5 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -140,87 +140,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>From Articles to Canopies: Knowledge-Driven Pseudo-Labelling for Tree Species Classification using LLM Experts</title>
-    <link href="http://arxiv.org/abs/2604.16115v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.16115v1</id>
-    <published>2026-04-17T00:00:00Z</published>
-    <updated>2026-04-17T00:00:00Z</updated>
-    <author>
-      <name>Michał Romaszewski</name>
-    </author>
-    <author>
-      <name>Dominik Kopeć</name>
-    </author>
-    <author>
-      <name>Michał Cholewa</name>
-    </author>
-    <author>
-      <name>Katarzyna Kołodziej</name>
-    </author>
-    <author>
-      <name>Przemysław Głomb</name>
-    </author>
-    <author>
-      <name>Jan Niedzielko</name>
-    </author>
-    <author>
-      <name>Jakub Charyton</name>
-    </author>
-    <author>
-      <name>Justyna Wylazłowska</name>
-    </author>
-    <author>
-      <name>Anna Jarocińska</name>
-    </author>
-    <summary type="text">Hyperspectral tree species classification is challenging due to limited and imbalanced class labels, spectral mixing (overlapping light signatures from multiple species), and ecological heterogeneity (variability among ecological systems). Addressing these challenges requires methods that integrate biological and structural characteristics of vegetation, such as canopy architecture and interspecific interactions, rather than relying solely on spectral signatures. This paper presents a biologically informed, semi-supervised deep learning method that integrates multi-sensor Earth observation data, specifically hyperspectral imaging (HSI) and airborne laser scanning (ALS), with expert, ecological knowledge. The approach relies on biologically inspired pseudo-labelling over a precomputed canopy graph, yielding accurate classification at low training cost. In addition, ecological priors on species cohabitation are automatically derived from reliable sources using large language models (LLMs) and encoded as a cohabitation matrix with likelihoods of species occurring together. These priors are incorporated into the pseudo-labelling strategy, effectively introducing expert knowledge into the model. Experiments on a real-world forest dataset demonstrate 5.6% improvement over the best reference method. Expert evaluation of cohabitation priors reveals high accuracy with differences no larger than 15%.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Robust Multispectral Semantic Segmentation under Missing or Full Modalities via Structured Latent Projection</title>
-    <link href="http://arxiv.org/abs/2604.15856v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.15856v1</id>
-    <published>2026-04-17T00:00:00Z</published>
-    <updated>2026-04-17T00:00:00Z</updated>
-    <author>
-      <name>Irem Ulku</name>
-    </author>
-    <author>
-      <name>Erdem Akagündüz</name>
-    </author>
-    <author>
-      <name>Ömer Özgür Tanrıöver</name>
-    </author>
-    <summary type="text">Multimodal remote sensing data provide complementary information for semantic segmentation, but in real-world deployments, some modalities may be unavailable due to sensor failures, acquisition issues, or challenging atmospheric conditions. Existing multimodal segmentation models typically address missing modalities by learning a shared representation across inputs. However, this approach can introduce a trade-off by compromising modality-specific complementary information and reducing performance when all modalities are available. In this paper, we tackle this limitation with CBC-SLP, a multimodal semantic segmentation model designed to preserve both modality-invariant and modality-specific information. Inspired by the theoretical results on modality alignment, which state that perfectly aligned multimodal representations can lead to sub-optimal performance in downstream prediction tasks, we propose a novel structured latent projection approach as an architectural inductive bias. Rather than enforcing this strategy through a loss term, we incorporate it directly into the architecture. In particular, to use the complementary information effectively while maintaining robustness under random modality dropout, we structure the latent representations into shared and modality-specific components and adaptively transfer them to the decoder according to the random modality availability mask. Extensive experiments on three multimodal remote sensing image sets demonstrate that CBC-SLP consistently outperforms state-of-the-art multimodal models across full and missing modality scenarios. Besides, we empirically demonstrate that the proposed strategy can recover the complementary information that may not be preserved in a shared representation. The code is available at https://github.com/iremulku/Multispectral-Semantic-Segmentation-via-Structured-Latent-Projection-CBC-SLP-.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/iremulku/Multispectral-Semantic-Segmentation-via-Structured-Latent-Projection-CBC-SLP-"&gt;https://github.com/iremulku/Multispectral-Semantic-Segmentation-via-Structured-Latent-Projection-CBC-SLP-&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages, 7 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>SSFT: A Lightweight Spectral-Spatial Fusion Transformer for Generic Hyperspectral Classification</title>
-    <link href="http://arxiv.org/abs/2604.15828v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.15828v1</id>
-    <published>2026-04-17T00:00:00Z</published>
-    <updated>2026-04-17T00:00:00Z</updated>
-    <author>
-      <name>Alexander Musiat</name>
-    </author>
-    <author>
-      <name>Nikolas Ebert</name>
-    </author>
-    <author>
-      <name>Oliver Wasenmüller</name>
-    </author>
-    <summary type="text">Hyperspectral imaging enables fine-grained recognition of materials by capturing rich spectral signatures, but learning robust classifiers is challenging due to high dimensionality, spectral redundancy, limited labeled data, and strong domain shifts. Beyond earth observation, labeled HSI data is often scarce and imbalanced, motivating compact models for generic hyperspectral classification across diverse acquisition regimes. We propose the lightweight Spectral-Spatial Fusion Transformer (SSFT), which factorizes representation learning into spectral and spatial pathways and integrates them via cross-attention to capture complementary wavelength-dependent and structural information. We evaluate our SSFT on the challenging HSI-Benchmark, a heterogeneous multi-dataset benchmark covering earth observation, fruit condition assessment, and fine-grained material recognition. SSFT achieves state-of-the-art overall performance, ranking first while using less than 2% of the parameters of the previous leading method. We further evaluate transfer to the substantially larger SpectralEarth benchmark under the official protocol, where SSFT remains competitive despite its compact size. Ablation studies show that both spectral and spatial pathways are crucial, with spatial modeling contributing most, and that SSFT remains robust without data augmentation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>

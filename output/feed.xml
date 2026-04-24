@@ -4,12 +4,287 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-04-23T03:51:56Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 29 entries</subtitle>
+  <updated>2026-04-24T02:33:23Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 27 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>SyMTRS: Benchmark Multi-Task Synthetic Dataset for Depth, Domain Adaptation and Super-Resolution in Aerial Imagery</title>
+    <link href="http://arxiv.org/abs/2604.21801v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.21801v1</id>
+    <published>2026-04-23T00:00:00Z</published>
+    <updated>2026-04-23T00:00:00Z</updated>
+    <author>
+      <name>Safouane El Ghazouali</name>
+    </author>
+    <author>
+      <name>Nicola Venturi</name>
+    </author>
+    <author>
+      <name>Michael Rueegsegger</name>
+    </author>
+    <author>
+      <name>Umberto Michelucci</name>
+    </author>
+    <summary type="text">Recent advances in deep learning for remote sensing rely heavily on large annotated datasets, yet acquiring high-quality ground truth for geometric, radiometric, and multi-domain tasks remains costly and often infeasible. In particular, the lack of accurate depth annotations, controlled illumination variations, and multi-scale paired imagery limits progress in monocular depth estimation, domain adaptation, and super-resolution for aerial scenes. We present SyMTRS, a large-scale synthetic dataset generated using a high-fidelity urban simulation pipeline. The dataset provides high-resolution RGB aerial imagery (2048 x 2048), pixel-perfect depth maps, night-time counterparts for domain adaptation, and aligned low-resolution variants for super-resolution at x2, x4, and x8 scales. Unlike existing remote sensing datasets that focus on a single task or modality, SyMTRS is designed as a unified multi-task benchmark enabling joint research in geometric understanding, cross-domain robustness, and resolution enhancement. We describe the dataset generation process, its statistical properties, and its positioning relative to existing benchmarks. SyMTRS aims to bridge critical gaps in remote sensing research by enabling controlled experiments with perfect geometric ground truth and consistent multi-domain supervision. The results obtained in this work can be reproduced from this Github repository: https://github.com/safouaneelg/SyMTRS.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/safouaneelg/SyMTRS"&gt;https://github.com/safouaneelg/SyMTRS&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR;3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>UHR-DETR: Efficient End-to-End Small Object Detection for Ultra-High-Resolution Remote Sensing Imagery</title>
+    <link href="http://arxiv.org/abs/2604.21435v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.21435v1</id>
+    <published>2026-04-23T00:00:00Z</published>
+    <updated>2026-04-23T00:00:00Z</updated>
+    <author>
+      <name>Jingfang Li</name>
+    </author>
+    <author>
+      <name>Haoran Zhu</name>
+    </author>
+    <author>
+      <name>Wen Yang</name>
+    </author>
+    <author>
+      <name>Jinrui Zhang</name>
+    </author>
+    <author>
+      <name>Fang Xu</name>
+    </author>
+    <author>
+      <name>Haijian Zhang</name>
+    </author>
+    <author>
+      <name>Gui-Song Xia</name>
+    </author>
+    <summary type="text">Ultra-High-Resolution (UHR) imagery has become essential for modern remote sensing, offering unprecedented spatial coverage. However, detecting small objects in such vast scenes presents a critical dilemma: retaining the original resolution for small objects causes prohibitive memory bottlenecks. Conversely, conventional compromises like image downsampling or patch cropping either erase small objects or destroy context. To break this dilemma, we propose UHR-DETR, an efficient end-to-end transformer-based detector designed for UHR imagery. First, we introduce a Coverage-Maximizing Sparse Encoder that dynamically allocates finite computational resources to informative high-resolution regions, ensuring maximum object coverage with minimal spatial redundancy. Second, we design a Global-Local Decoupled Decoder. By integrating macroscopic scene awareness with microscopic object details, this module resolves semantic ambiguities and prevents scene fragmentation. Extensive experiments on the UHR imagery datasets (e.g., STAR and SODA-A) demonstrate the superiority of UHR-DETR under strict hardware constraints (e.g., a single 24GB RTX 3090). It achieves a 2.8\% mAP improvement while delivering a 10$\times$ inference speedup compared to standard sliding-window baselines on the STAR dataset. Our codes and models will be available at https://github.com/Li-JingFang/UHR-DETR.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Li-JingFang/UHR-DETR"&gt;https://github.com/Li-JingFang/UHR-DETR&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>The First Challenge on Remote Sensing Infrared Image Super-Resolution at NTIRE 2026: Benchmark Results and Method Overview</title>
+    <link href="http://arxiv.org/abs/2604.21312v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.21312v1</id>
+    <published>2026-04-23T00:00:00Z</published>
+    <updated>2026-04-23T00:00:00Z</updated>
+    <author>
+      <name>Kai Liu</name>
+    </author>
+    <author>
+      <name>Haoyang Yue</name>
+    </author>
+    <author>
+      <name>Zeli Lin</name>
+    </author>
+    <author>
+      <name>Zheng Chen</name>
+    </author>
+    <author>
+      <name>Jingkai Wang</name>
+    </author>
+    <author>
+      <name>Jue Gong</name>
+    </author>
+    <author>
+      <name>Jiatong Li</name>
+    </author>
+    <author>
+      <name>Xianglong Yan</name>
+    </author>
+    <author>
+      <name>Libo Zhu</name>
+    </author>
+    <author>
+      <name>Jianze Li</name>
+    </author>
+    <author>
+      <name>Ziqing Zhang</name>
+    </author>
+    <author>
+      <name>Zihan Zhou</name>
+    </author>
+    <author>
+      <name>Xiaoyang Liu</name>
+    </author>
+    <author>
+      <name>Radu Timofte</name>
+    </author>
+    <author>
+      <name>Yulun Zhang</name>
+    </author>
+    <author>
+      <name>Junye Chen</name>
+    </author>
+    <author>
+      <name>Zhenming Yan</name>
+    </author>
+    <author>
+      <name>Yucong Hong</name>
+    </author>
+    <author>
+      <name>Ruize Han</name>
+    </author>
+    <author>
+      <name>Song Wang</name>
+    </author>
+    <author>
+      <name>Li Pang</name>
+    </author>
+    <author>
+      <name>Heng Zhao</name>
+    </author>
+    <author>
+      <name>Xinqiao Wu</name>
+    </author>
+    <author>
+      <name>Deyu Meng</name>
+    </author>
+    <author>
+      <name>Xiangyong Cao</name>
+    </author>
+    <author>
+      <name>Weijun Yuan</name>
+    </author>
+    <author>
+      <name>Zhan Li</name>
+    </author>
+    <author>
+      <name>Zhanglu Chen</name>
+    </author>
+    <author>
+      <name>Boyang Yao</name>
+    </author>
+    <author>
+      <name>Yihang Chen</name>
+    </author>
+    <author>
+      <name>Yifan Deng</name>
+    </author>
+    <author>
+      <name>Zengyuan Zuo</name>
+    </author>
+    <author>
+      <name>Junjun Jiang</name>
+    </author>
+    <author>
+      <name>Saiprasad Meesiyawar</name>
+    </author>
+    <author>
+      <name>Sulocha Yatageri</name>
+    </author>
+    <author>
+      <name>Nikhil Akalwadi</name>
+    </author>
+    <author>
+      <name>Ramesh Ashok Tabib</name>
+    </author>
+    <author>
+      <name>Uma Mudenagudi</name>
+    </author>
+    <author>
+      <name>Jiachen Tu</name>
+    </author>
+    <author>
+      <name>Yaokun Shi</name>
+    </author>
+    <author>
+      <name>Guoyi Xu</name>
+    </author>
+    <author>
+      <name>Yaoxin Jiang</name>
+    </author>
+    <author>
+      <name>Cici Liu</name>
+    </author>
+    <author>
+      <name>Tongyao Mu</name>
+    </author>
+    <author>
+      <name>Qiong Cao</name>
+    </author>
+    <author>
+      <name>Yifan Wang</name>
+    </author>
+    <author>
+      <name>Kosuke Shigematsu</name>
+    </author>
+    <author>
+      <name>Hiroto Shirono</name>
+    </author>
+    <author>
+      <name>Asuka Shin</name>
+    </author>
+    <author>
+      <name>Wei Zhou</name>
+    </author>
+    <author>
+      <name>Linfeng Li</name>
+    </author>
+    <author>
+      <name>Lingdong Kong</name>
+    </author>
+    <author>
+      <name>Ce Wang</name>
+    </author>
+    <author>
+      <name>Xingwei Zhong</name>
+    </author>
+    <author>
+      <name>Wanjie Sun</name>
+    </author>
+    <author>
+      <name>Dafeng Zhang</name>
+    </author>
+    <author>
+      <name>Hongxin Lan</name>
+    </author>
+    <author>
+      <name>Qisheng Xu</name>
+    </author>
+    <author>
+      <name>Mingyue He</name>
+    </author>
+    <author>
+      <name>Hui Geng</name>
+    </author>
+    <author>
+      <name>Tianjiao Wan</name>
+    </author>
+    <author>
+      <name>Kele Xu</name>
+    </author>
+    <author>
+      <name>Changjian Wang</name>
+    </author>
+    <author>
+      <name>Antoine Carreaud</name>
+    </author>
+    <author>
+      <name>Nicola Santacroce</name>
+    </author>
+    <author>
+      <name>Shanci Li</name>
+    </author>
+    <author>
+      <name>Jan Skaloud</name>
+    </author>
+    <author>
+      <name>Adrien Gressin</name>
+    </author>
+    <summary type="text">This paper presents the NTIRE 2026 Remote Sensing Infrared Image Super-Resolution (x4) Challenge, one of the associated challenges of NTIRE 2026. The challenge aims to recover high-resolution (HR) infrared images from low-resolution (LR) inputs generated through bicubic downsampling with a x4 scaling factor. The objective is to develop effective models or solutions that achieve state-of-the-art performance for infrared image SR in remote sensing scenarios. To reflect the characteristics of infrared data and practical application needs, the challenge adopts a single-track setting. A total of 115 participants registered for the competition, with 13 teams submitting valid entries. This report summarizes the challenge design, dataset, evaluation protocol, main results, and the representative methods of each team. The challenge serves as a benchmark to advance research in infrared image super-resolution and promote the development of effective solutions for real-world remote sensing applications.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Github Repo: https://github.com/Kai-Liu001/NTIRE2026_infraredSR&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Survey&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>RSRCC: A Remote Sensing Regional Change Comprehension Benchmark Constructed via Retrieval-Augmented Best-of-N Ranking</title>
     <link href="http://arxiv.org/abs/2604.20623v1" rel="alternate" type="text/html" />
@@ -69,8 +344,8 @@
   </entry>
   <entry>
     <title>Fourier Series Coder: A Novel Perspective on Angle Boundary Discontinuity Problem for Oriented Object Detection</title>
-    <link href="http://arxiv.org/abs/2604.20281v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.20281v1</id>
+    <link href="http://arxiv.org/abs/2604.20281v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.20281v2</id>
     <published>2026-04-22T00:00:00Z</published>
     <updated>2026-04-22T00:00:00Z</updated>
     <author>
@@ -118,6 +393,27 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;OD&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Unlocking Multi-Spectral Data for Multi-Modal Models with Guided Inputs and Chain-of-Thought Reasoning</title>
+    <link href="http://arxiv.org/abs/2604.21032v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.21032v1</id>
+    <published>2026-04-22T00:00:00Z</published>
+    <updated>2026-04-22T00:00:00Z</updated>
+    <author>
+      <name>Dahun Kim</name>
+    </author>
+    <author>
+      <name>Ganesh Satish Mallya</name>
+    </author>
+    <author>
+      <name>Anelia Angelova</name>
+    </author>
+    <summary type="text">Multi-spectral imagery is a valuable input signal for Remote Sensing applications, such as land-use and land-cover classification and environmental monitoring. However, generalist Large Multi-modal Models (LMMs) are typically trained on RGB images, limiting their applicability to the RGB domain. At the same time, training multi-spectral multi-modal models is expensive and produces uniquely specialized models. To address this, we propose a novel training-free approach that introduces multi-spectral data within the inference pipeline of standard RGB-only LMMs, allowing large gains in performance. Our approach leverages the LMMs' understanding of the visual space by adapting non-RGB inputs to that space and injecting domain-specific information and Chain-of-Thought reasoning as instructions. We demonstrate this with the Gemini 2.5 model and observe strong Zero-Shot performance gains on popular Remote Sensing benchmarks. These results highlight the potential for geospatial professionals to leverage powerful generalist models for specialized sensor inputs, benefiting from rich reasoning capabilities grounded in specialized data.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to IGARSS 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
   </entry>
   <entry>
     <title>HarmoniDiff-RS: Training-Free Diffusion Harmonization for Satellite Image Composition</title>
@@ -643,168 +939,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>From Articles to Canopies: Knowledge-Driven Pseudo-Labelling for Tree Species Classification using LLM Experts</title>
-    <link href="http://arxiv.org/abs/2604.16115v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.16115v1</id>
-    <published>2026-04-17T00:00:00Z</published>
-    <updated>2026-04-17T00:00:00Z</updated>
-    <author>
-      <name>Michał Romaszewski</name>
-    </author>
-    <author>
-      <name>Dominik Kopeć</name>
-    </author>
-    <author>
-      <name>Michał Cholewa</name>
-    </author>
-    <author>
-      <name>Katarzyna Kołodziej</name>
-    </author>
-    <author>
-      <name>Przemysław Głomb</name>
-    </author>
-    <author>
-      <name>Jan Niedzielko</name>
-    </author>
-    <author>
-      <name>Jakub Charyton</name>
-    </author>
-    <author>
-      <name>Justyna Wylazłowska</name>
-    </author>
-    <author>
-      <name>Anna Jarocińska</name>
-    </author>
-    <summary type="text">Hyperspectral tree species classification is challenging due to limited and imbalanced class labels, spectral mixing (overlapping light signatures from multiple species), and ecological heterogeneity (variability among ecological systems). Addressing these challenges requires methods that integrate biological and structural characteristics of vegetation, such as canopy architecture and interspecific interactions, rather than relying solely on spectral signatures. This paper presents a biologically informed, semi-supervised deep learning method that integrates multi-sensor Earth observation data, specifically hyperspectral imaging (HSI) and airborne laser scanning (ALS), with expert, ecological knowledge. The approach relies on biologically inspired pseudo-labelling over a precomputed canopy graph, yielding accurate classification at low training cost. In addition, ecological priors on species cohabitation are automatically derived from reliable sources using large language models (LLMs) and encoded as a cohabitation matrix with likelihoods of species occurring together. These priors are incorporated into the pseudo-labelling strategy, effectively introducing expert knowledge into the model. Experiments on a real-world forest dataset demonstrate 5.6% improvement over the best reference method. Expert evaluation of cohabitation priors reveals high accuracy with differences no larger than 15%.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Robust Multispectral Semantic Segmentation under Missing or Full Modalities via Structured Latent Projection</title>
-    <link href="http://arxiv.org/abs/2604.15856v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.15856v1</id>
-    <published>2026-04-17T00:00:00Z</published>
-    <updated>2026-04-17T00:00:00Z</updated>
-    <author>
-      <name>Irem Ulku</name>
-    </author>
-    <author>
-      <name>Erdem Akagündüz</name>
-    </author>
-    <author>
-      <name>Ömer Özgür Tanrıöver</name>
-    </author>
-    <summary type="text">Multimodal remote sensing data provide complementary information for semantic segmentation, but in real-world deployments, some modalities may be unavailable due to sensor failures, acquisition issues, or challenging atmospheric conditions. Existing multimodal segmentation models typically address missing modalities by learning a shared representation across inputs. However, this approach can introduce a trade-off by compromising modality-specific complementary information and reducing performance when all modalities are available. In this paper, we tackle this limitation with CBC-SLP, a multimodal semantic segmentation model designed to preserve both modality-invariant and modality-specific information. Inspired by the theoretical results on modality alignment, which state that perfectly aligned multimodal representations can lead to sub-optimal performance in downstream prediction tasks, we propose a novel structured latent projection approach as an architectural inductive bias. Rather than enforcing this strategy through a loss term, we incorporate it directly into the architecture. In particular, to use the complementary information effectively while maintaining robustness under random modality dropout, we structure the latent representations into shared and modality-specific components and adaptively transfer them to the decoder according to the random modality availability mask. Extensive experiments on three multimodal remote sensing image sets demonstrate that CBC-SLP consistently outperforms state-of-the-art multimodal models across full and missing modality scenarios. Besides, we empirically demonstrate that the proposed strategy can recover the complementary information that may not be preserved in a shared representation. The code is available at https://github.com/iremulku/Multispectral-Semantic-Segmentation-via-Structured-Latent-Projection-CBC-SLP-.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/iremulku/Multispectral-Semantic-Segmentation-via-Structured-Latent-Projection-CBC-SLP-"&gt;https://github.com/iremulku/Multispectral-Semantic-Segmentation-via-Structured-Latent-Projection-CBC-SLP-&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages, 7 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>SSFT: A Lightweight Spectral-Spatial Fusion Transformer for Generic Hyperspectral Classification</title>
-    <link href="http://arxiv.org/abs/2604.15828v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.15828v1</id>
-    <published>2026-04-17T00:00:00Z</published>
-    <updated>2026-04-17T00:00:00Z</updated>
-    <author>
-      <name>Alexander Musiat</name>
-    </author>
-    <author>
-      <name>Nikolas Ebert</name>
-    </author>
-    <author>
-      <name>Oliver Wasenmüller</name>
-    </author>
-    <summary type="text">Hyperspectral imaging enables fine-grained recognition of materials by capturing rich spectral signatures, but learning robust classifiers is challenging due to high dimensionality, spectral redundancy, limited labeled data, and strong domain shifts. Beyond earth observation, labeled HSI data is often scarce and imbalanced, motivating compact models for generic hyperspectral classification across diverse acquisition regimes. We propose the lightweight Spectral-Spatial Fusion Transformer (SSFT), which factorizes representation learning into spectral and spatial pathways and integrates them via cross-attention to capture complementary wavelength-dependent and structural information. We evaluate our SSFT on the challenging HSI-Benchmark, a heterogeneous multi-dataset benchmark covering earth observation, fruit condition assessment, and fine-grained material recognition. SSFT achieves state-of-the-art overall performance, ranking first while using less than 2% of the parameters of the previous leading method. We further evaluate transfer to the substantially larger SpectralEarth benchmark under the official protocol, where SSFT remains competitive despite its compact size. Ablation studies show that both spectral and spatial pathways are crucial, with spatial modeling contributing most, and that SSFT remains robust without data augmentation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>PixDLM: A Dual-Path Multimodal Language Model for UAV Reasoning Segmentation</title>
-    <link href="http://arxiv.org/abs/2604.15670v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.15670v1</id>
-    <published>2026-04-17T00:00:00Z</published>
-    <updated>2026-04-17T00:00:00Z</updated>
-    <author>
-      <name>Shuyan Ke</name>
-    </author>
-    <author>
-      <name>Yifan Mei</name>
-    </author>
-    <author>
-      <name>Changli Wu</name>
-    </author>
-    <author>
-      <name>Yonghan Zheng</name>
-    </author>
-    <author>
-      <name>Jiayi Ji</name>
-    </author>
-    <author>
-      <name>Liujuan Cao</name>
-    </author>
-    <author>
-      <name>Rongrong Ji</name>
-    </author>
-    <summary type="text">Reasoning segmentation has recently expanded from ground-level scenes to remote-sensing imagery, yet UAV data poses distinct challenges, including oblique viewpoints, ultra-high resolutions, and extreme scale variations. To address these issues, we formally define the UAV Reasoning Segmentation task and organize its semantic requirements into three dimensions: Spatial, Attribute, and Scene-level reasoning. Based on this formulation, we construct DRSeg, a large-scale benchmark for UAV reasoning segmentation, containing 10k high-resolution aerial images paired with Chain-of-Thought QA supervision across all three reasoning types. As a benchmark companion, we introduce PixDLM, a simple yet effective pixel-level multimodal language model that serves as a unified baseline for this task. Experiments on DRSeg establish strong baseline results and highlight the unique challenges of UAV reasoning segmentation, providing a solid foundation for future research.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; CVPR 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Towards Realistic Open-Vocabulary Remote Sensing Segmentation: Benchmark and Baseline</title>
-    <link href="http://arxiv.org/abs/2604.15652v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.15652v1</id>
-    <published>2026-04-17T00:00:00Z</published>
-    <updated>2026-04-17T00:00:00Z</updated>
-    <author>
-      <name>Bingyu Li</name>
-    </author>
-    <author>
-      <name>Tao Huo</name>
-    </author>
-    <author>
-      <name>Haocheng Dong</name>
-    </author>
-    <author>
-      <name>Da Zhang</name>
-    </author>
-    <author>
-      <name>Zhiyuan Zhao</name>
-    </author>
-    <author>
-      <name>Junyu Gao</name>
-    </author>
-    <author>
-      <name>Xuelong Li</name>
-    </author>
-    <summary type="text">Open-vocabulary remote sensing image segmentation (OVRSIS) remains underexplored due to fragmented datasets, limited training diversity, and the lack of evaluation benchmarks that reflect realistic geospatial application demands. Our previous \textit{OVRSISBenchV1} established an initial cross-dataset evaluation protocol, but its limited scope is insufficient for assessing realistic open-world generalization. To address this issue, we propose \textit{OVRSISBenchV2}, a large-scale and application-oriented benchmark for OVRSIS. We first construct \textbf{OVRSIS95K}, a balanced dataset of about 95K image--mask pairs covering 35 common semantic categories across diverse remote sensing scenes. Built upon OVRSIS95K and 10 downstream datasets, OVRSISBenchV2 contains 170K images and 128 categories, substantially expanding scene diversity, semantic coverage, and evaluation difficulty. Beyond standard open-vocabulary segmentation, it further includes downstream protocols for building extraction, road extraction, and flood detection, thereby better reflecting realistic geospatial application demands and complex deployment scenarios. We also propose \textbf{Pi-Seg}, a baseline for OVRSIS. Pi-Seg improves transferability through a \textbf{positive-incentive noise} mechanism, where learnable and semantically guided perturbations broaden the visual-text feature space during training. Extensive experiments on OVRSISBenchV1, OVRSISBenchV2, and downstream tasks show that Pi-Seg delivers strong and consistent results, particularly on the more challenging OVRSISBenchV2 benchmark. Our results highlight both the importance of realistic benchmark design and the effectiveness of perturbation-based transfer for OVRSIS. The code and datasets are available at \href{https://github.com/LiBingyu01/RSKT-Seg/tree/Pi-Seg}{LiBingyu01/RSKT-Seg/tree/Pi-Seg}.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/LiBingyu01/RSKT-Seg/tree/Pi-Seg"&gt;https://github.com/LiBingyu01/RSKT-Seg/tree/Pi-Seg&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>IncepDeHazeGAN: Novel Satellite Image Dehazing</title>
-    <link href="http://arxiv.org/abs/2604.16609v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.16609v1</id>
-    <published>2026-04-17T00:00:00Z</published>
-    <updated>2026-04-17T00:00:00Z</updated>
-    <author>
-      <name>Tejeswar Pokuri</name>
-    </author>
-    <author>
-      <name>Shivarth Rai</name>
-    </author>
-    <summary type="text">Dehazing is a technique in computer vision for enhancing the visual quality of images captured in cloudy or foggy conditions. Dehazing helps to recover clear, high-quality images from haze-affected remote sensing data. In this study, we introduce IncepDeHazeGAN, a novel Generative Adversarial Network (GAN) involving Inception block and multi-layer feature fusion for the task of single-image dehazing. Utilizing the Inception block allows for multi-scale feature extraction. On the other hand, the multi-layer feature fusion design achieves efficient reuse of features as the features extracted at different convolution layers are fused several times. Grad-CAM XAI technique has been applied to our network, highlighting the regions focused on by the network for dehazing and its adaptation to different haze conditions. Experiments demonstrate that our network achieves state-of-the-art results in several datasets.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; CV4DC Workshop&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>
