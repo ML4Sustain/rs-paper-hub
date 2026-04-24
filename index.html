@@ -1959,7 +1959,6 @@ function loadDataFromSource(ds) {
       document.getElementById('searchScope').value = 'all';
   }
   loadData(ds.file);
-  if (ds.file === 'papers_slim.json') loadAbstractsInBackground();
 }
 
 // ── IndexedDB cache: skip re-downloading unchanged files on repeat visits ──
@@ -2065,6 +2064,8 @@ async function loadData(file) {
   applyFilters();
   renderStats(allPapers);
   updateQuickFilterCounts();
+  // Start background abstract load only after allPapers is fully set
+  if (file === 'papers_slim.json') loadAbstractsInBackground();
 }
 
 async function init() {
@@ -2089,7 +2090,6 @@ async function init() {
   const overlay = document.getElementById('loadingOverlay');
   overlay.classList.add('hidden');
   setTimeout(() => overlay.remove(), 500);
-  if (ds.file === 'papers_slim.json') loadAbstractsInBackground();
 }
 
 async function loadAbstractsInBackground() {
