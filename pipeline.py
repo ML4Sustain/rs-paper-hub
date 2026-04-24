@@ -164,6 +164,17 @@ def run(input_path: str, output_dir: str):
         json.dump(slim_papers, f, ensure_ascii=False)
     logger.info(f"  -> {slim_path} ({len(slim_papers)} slim records)")
 
+    # papers_preview.json — 20 most recent papers for instant first-page display
+    preview_papers = sorted(
+        slim_papers,
+        key=lambda p: (p.get("_added_date") or "", p.get("Date") or ""),
+        reverse=True
+    )[:20]
+    preview_path = os.path.join(output_dir, "papers_preview.json")
+    with open(preview_path, "w", encoding="utf-8") as f:
+        json.dump(preview_papers, f, ensure_ascii=False)
+    logger.info(f"  -> {preview_path} ({len(preview_papers)} preview records)")
+
     # Generate papers_abstract.json — {arxiv_id: abstract} map for lazy loading
     import re as _re
     abstract_map = {}

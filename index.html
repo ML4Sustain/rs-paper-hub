@@ -607,6 +607,19 @@
     background-size: 200% 100%; animation: shimmer 1.5s infinite;
   }
   @keyframes shimmer { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
+  #bgLoadBadge {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-size: 12px; color: var(--text-secondary); padding: 2px 8px;
+    border: 1px solid var(--border); border-radius: 12px;
+    vertical-align: middle; margin-left: 6px;
+  }
+  #bgLoadBadge.hidden { display: none; }
+  .badge-spinner {
+    width: 10px; height: 10px; border: 2px solid var(--border);
+    border-top-color: var(--primary); border-radius: 50%; flex-shrink: 0;
+    animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
   .paper-title p { display: inline; margin: 0; }
   .paper-links { margin-top: 8px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
   .paper-links a {
@@ -1034,6 +1047,7 @@
     </button>
     <button class="filter-toggle" id="filterToggle" onclick="document.getElementById('filterPanel').classList.toggle('open');this.classList.toggle('open');this.textContent=this.classList.contains('open')?t('filters')+' ▲':t('filters')+' ▼'">Filters ▼</button>
     <span class="result-count" id="resultCount"></span>
+    <span id="bgLoadBadge" class="hidden"><span class="badge-spinner"></span><span id="bgLoadText">Loading...</span></span>
   </div>
   <div class="filter-panel" id="filterPanel">
     <select id="typeFilter"><option value="">All Types</option></select>
@@ -1806,6 +1820,8 @@ let allPapersGlobal = [];  // holds papers for recent panel (from recent_papers.
 let filtered = [];
 let venuesLoaded = false, resourcesLoaded = false, trendsLoaded = false;
 let abstractsReady = false;
+let fullDataReady = false;
+let _loadGeneration = 0;
 let currentPage = 1;
 let chartsVisible = false;
 let codeOnly = false;
@@ -2001,18 +2017,36 @@ async function fetchWithCache(url) {
 }
 
 async function loadData(file) {
-  let text;
-  try {
-    text = await fetchWithCache('./output/' + file);
-  } catch(e) {
-    alert('Failed to load ' + file);
+  abstractsReady = false;
+  fullDataReady = false;
+  _loadGeneration++;
+  const badge = document.getElementById('bgLoadBadge');
+  if (badge) badge.classList.add('hidden');
+
+  if (file === 'papers_slim.json') {
+    try {
+      const previewText = await fetchWithCache('./output/papers_preview.json');
+      allPapers = JSON.parse(previewText);
+      allPapersGlobal = allPapers;
+    } catch(e) {
+      allPapers = [];
+      allPapersGlobal = [];
+    }
+    _runLoadSetup(file);
+    _loadSlimInBackground(_loadGeneration);
     return;
   }
-  abstractsReady = false;
+
+  let text;
+  try { text = await fetchWithCache('./output/' + file); }
+  catch(e) { alert('Failed to load ' + file); return; }
   allPapers = JSON.parse(text.replace(/:\s*NaN\b/g, ': null'));
   allPapers.forEach(p => { for (const k in p) { if (p[k] === null) p[k] = ''; } });
-  if (file === 'papers.json' || file === 'papers_slim.json') allPapersGlobal = allPapers;
-  // Reset filters
+  if (file === 'papers.json') allPapersGlobal = allPapers;
+  _runLoadSetup(file);
+}
+
+function _runLoadSetup(file) {
   const typeSelect = document.getElementById('typeFilter');
   const yearSelect = document.getElementById('yearFilter');
   typeSelect.innerHTML = `<option value="">${t('allTypes')}</option>`;
@@ -2026,13 +2060,11 @@ async function loadData(file) {
   document.getElementById('qfToday').classList.remove('active');
   document.getElementById('qfWeek').classList.remove('active');
   document.getElementById('searchInput').value = '';
-  // Show/hide VLM filters based on data
   const hasVlm = allPapers.some(p => '_is_vlm' in p);
   document.getElementById('vlmFilter').style.display = hasVlm ? '' : 'none';
   document.getElementById('vlmKeywordFilter').style.display = hasVlm ? '' : 'none';
   if (hasVlm) populateVlmKeywords();
   else { document.getElementById('vlmFilter').value = ''; document.getElementById('vlmKeywordFilter').value = ''; }
-  // Show/hide Category filter
   const hasCat = allPapers.some(p => p.Category);
   const catSel = document.getElementById('categoryFilter');
   catSel.style.display = hasCat ? '' : 'none';
@@ -2041,11 +2073,9 @@ async function loadData(file) {
     const cats = {};
     allPapers.forEach(p => { if (p.Category) cats[p.Category] = (cats[p.Category] || 0) + 1; });
     Object.entries(cats).sort((a,b) => b[1] - a[1]).forEach(([c, n]) => {
-      const o = document.createElement('option');
-      o.value = c; o.textContent = c + ' (' + n + ')'; catSel.appendChild(o);
+      const o = document.createElement('option'); o.value = c; o.textContent = c + ' (' + n + ')'; catSel.appendChild(o);
     });
   }
-  // Show/hide Task filter
   const hasTask = allPapers.some(p => p._tasks);
   const taskSel = document.getElementById('taskFilter');
   taskSel.style.display = hasTask ? '' : 'none';
@@ -2053,19 +2083,81 @@ async function loadData(file) {
   if (hasTask) {
     const tasks = {};
     allPapers.forEach(p => {
-      (p._tasks || '').split(';').filter(t => t.trim()).forEach(t => { tasks[t] = (tasks[t] || 0) + 1; });
+      (p._tasks || '').split(';').filter(tk => tk.trim()).forEach(tk => { tasks[tk] = (tasks[tk] || 0) + 1; });
     });
-    Object.entries(tasks).sort((a,b) => b[1] - a[1]).forEach(([t, n]) => {
-      const o = document.createElement('option');
-      o.value = t; o.textContent = (TASK_NAMES[t] || t) + ' (' + n + ')'; taskSel.appendChild(o);
+    Object.entries(tasks).sort((a,b) => b[1] - a[1]).forEach(([tk, n]) => {
+      const o = document.createElement('option'); o.value = tk; o.textContent = (TASK_NAMES[tk] || tk) + ' (' + n + ')'; taskSel.appendChild(o);
     });
   }
   populateFilters();
   applyFilters();
   renderStats(allPapers);
   updateQuickFilterCounts();
-  // Start background abstract load only after allPapers is fully set
-  if (file === 'papers_slim.json') loadAbstractsInBackground();
+}
+
+async function _loadSlimInBackground(gen) {
+  const badge = document.getElementById('bgLoadBadge');
+  if (badge) badge.classList.remove('hidden');
+  let text;
+  try {
+    text = await fetchWithCache('./output/papers_slim.json');
+  } catch(e) {
+    if (badge) badge.classList.add('hidden');
+    return;
+  }
+  if (_loadGeneration !== gen) { if (badge) badge.classList.add('hidden'); return; }
+
+  const typeVal = document.getElementById('typeFilter').value;
+  const yearVal = document.getElementById('yearFilter').value;
+  const catVal = document.getElementById('categoryFilter').value;
+  const taskVal = document.getElementById('taskFilter').value;
+
+  allPapers = JSON.parse(text.replace(/:\s*NaN\b/g, ': null'));
+  allPapers.forEach(p => { for (const k in p) { if (p[k] === null) p[k] = ''; } });
+  allPapersGlobal = allPapers;
+  fullDataReady = true;
+
+  // Rebuild filter option lists with full data
+  const typeSelect = document.getElementById('typeFilter');
+  const yearSelect = document.getElementById('yearFilter');
+  typeSelect.innerHTML = `<option value="">${t('allTypes')}</option>`;
+  yearSelect.innerHTML = `<option value="">${t('allYears')}</option>`;
+  const hasCat = allPapers.some(p => p.Category);
+  const catSel = document.getElementById('categoryFilter');
+  catSel.innerHTML = `<option value="">${t('allCategories')}</option>`;
+  if (hasCat) {
+    const cats = {};
+    allPapers.forEach(p => { if (p.Category) cats[p.Category] = (cats[p.Category] || 0) + 1; });
+    Object.entries(cats).sort((a,b) => b[1] - a[1]).forEach(([c, n]) => {
+      const o = document.createElement('option'); o.value = c; o.textContent = c + ' (' + n + ')'; catSel.appendChild(o);
+    });
+  }
+  const hasTask = allPapers.some(p => p._tasks);
+  const taskSel = document.getElementById('taskFilter');
+  taskSel.innerHTML = `<option value="">${t('allTasks')}</option>`;
+  if (hasTask) {
+    const tasks = {};
+    allPapers.forEach(p => {
+      (p._tasks || '').split(';').filter(tk => tk.trim()).forEach(tk => { tasks[tk] = (tasks[tk] || 0) + 1; });
+    });
+    Object.entries(tasks).sort((a,b) => b[1] - a[1]).forEach(([tk, n]) => {
+      const o = document.createElement('option'); o.value = tk; o.textContent = (TASK_NAMES[tk] || tk) + ' (' + n + ')'; taskSel.appendChild(o);
+    });
+  }
+  populateFilters();
+
+  // Restore user's current selections
+  document.getElementById('typeFilter').value = typeVal;
+  document.getElementById('yearFilter').value = yearVal;
+  document.getElementById('categoryFilter').value = catVal;
+  document.getElementById('taskFilter').value = taskVal;
+
+  applyFilters();
+  renderStats(allPapers);
+  updateQuickFilterCounts();
+  renderRecentList();
+  if (badge) badge.classList.add('hidden');
+  loadAbstractsInBackground();
 }
 
 async function init() {
