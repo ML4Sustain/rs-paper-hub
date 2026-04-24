@@ -141,6 +141,19 @@ def run(input_path: str, output_dir: str):
         ALL_COLUMNS,
     )
 
+    # Generate recent_papers.json with only last 14 days, minimal fields for sidebar
+    from datetime import datetime, timedelta
+    recent_cutoff = (datetime.now() - timedelta(days=14)).strftime("%Y-%m-%d")
+    recent_fields = ["Title", "Date", "Paper_link", "Type", "Category", "_added_date"]
+    recent_papers = [
+        {k: p.get(k, "") for k in recent_fields}
+        for p in papers if (p.get("_added_date") or "") >= recent_cutoff
+    ]
+    recent_path = os.path.join(output_dir, "recent_papers.json")
+    with open(recent_path, "w", encoding="utf-8") as f:
+        json.dump(recent_papers, f, ensure_ascii=False)
+    logger.info(f"  -> {recent_path} ({len(recent_papers)} recent papers)")
+
     # ── Step 4: Filter VLM papers ─────────────────────────
     logger.info("[5/11] Filtering VLM-related papers...")
     matched, annotated = filter_vlm_papers(papers)

@@ -12,10 +12,11 @@
 <link rel="alternate" type="application/atom+xml" title="RS Papers - UAV" href="output/feed_uav.xml">
 <link rel="alternate" type="application/atom+xml" title="RS Papers - SAR" href="output/feed_sar.xml">
 <link rel="alternate" type="application/atom+xml" title="RS Papers - Hyperspectral/MS" href="output/feed_hyp.xml">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"></noscript>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/marked@14.0.0/marked.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/marked@14.0.0/marked.min.js"></script>
 <style>
   :root {
     --bg: #f5f7fa;
@@ -1729,6 +1730,10 @@ function switchPage(page, el) {
   // Globe lifecycle
   if (page !== 'radar' && globeAnimFrame) stopGlobeAnim();
   if (page === 'radar') setTimeout(initRadarPage, 0);
+  // Lazy-load tab data on first visit
+  if (page === 'venues' && !venuesLoaded) { venuesLoaded = true; loadVenues(); }
+  if (page === 'resources' && !resourcesLoaded) { resourcesLoaded = true; loadResources(); }
+  if (page === 'trends' && !trendsLoaded) { trendsLoaded = true; loadTrends(); }
 }
 
 (function initSidebar() {
@@ -1770,8 +1775,9 @@ const DATA_SOURCES = [
   { label: 'Hyperspectral/MS', file: 'papers_hyp.json', key: 'hyp' },
 ];
 let allPapers = [];
-let allPapersGlobal = [];  // always holds papers.json, used by recent panel
+let allPapersGlobal = [];  // holds papers for recent panel (from recent_papers.json or papers.json)
 let filtered = [];
+let venuesLoaded = false, resourcesLoaded = false, trendsLoaded = false;
 let currentPage = 1;
 let chartsVisible = false;
 let codeOnly = false;
@@ -1981,24 +1987,18 @@ async function loadData(file) {
 async function init() {
   initDataSourceSelect();
   initGroups();
-  loadVenues();
-  loadResources();
-  loadTrends();
   const activeBtn = document.querySelector('#dataSource button.active');
   const ds = DATA_SOURCES.find(d => d.key === (activeBtn ? activeBtn.dataset.key : 'all')) || DATA_SOURCES[0];
-  // Always pre-load papers.json for the recent panel (runs in parallel with active tab)
-  const globalLoad = ds.file !== 'papers.json'
-    ? fetch('./output/papers.json').then(r => r.text()).then(text => {
-        allPapersGlobal = JSON.parse(text.replace(/:\s*NaN\b/g, ': null'));
-        allPapersGlobal.forEach(p => { for (const k in p) { if (p[k] === null) p[k] = ''; } });
-      })
+  // Load small recent_papers.json (~100 KB) for sidebar instead of full papers.json (13 MB)
+  // papers.json tab sets allPapersGlobal inside loadData() so no separate fetch needed
+  const recentLoad = ds.file !== 'papers.json'
+    ? fetch('./output/recent_papers.json').then(r => r.json()).then(data => {
+        allPapersGlobal = data;
+      }).catch(() => {})
     : Promise.resolve();
-  await Promise.all([loadData(ds.file), globalLoad]);
-  // Update recent papers badge
+  await Promise.all([loadData(ds.file), recentLoad]);
   renderRecentList();
-  // Apply saved language
   applyLang();
-  // Hide loading overlay
   const overlay = document.getElementById('loadingOverlay');
   overlay.classList.add('hidden');
   setTimeout(() => overlay.remove(), 500);
