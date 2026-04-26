@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-04-24T02:33:23Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 5 entries</subtitle>
+  <updated>2026-04-26T23:49:01Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -68,77 +68,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="doi; 10.1080/01431161.2026.2663567" />
-  </entry>
-  <entry>
-    <title>Hyperspectral Unmixing Hierarchies</title>
-    <link href="http://arxiv.org/abs/2604.16969v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.16969v1</id>
-    <published>2026-04-18T00:00:00Z</published>
-    <updated>2026-04-18T00:00:00Z</updated>
-    <author>
-      <name>Joseph L. Garrett</name>
-    </author>
-    <author>
-      <name>P. S. Vishnu</name>
-    </author>
-    <author>
-      <name>Pauliina Salmi</name>
-    </author>
-    <author>
-      <name>Daniela Lupu</name>
-    </author>
-    <author>
-      <name>Nitesh Kumar Singh</name>
-    </author>
-    <author>
-      <name>Ion Necoara</name>
-    </author>
-    <author>
-      <name>Tor Arne Johansen</name>
-    </author>
-    <summary type="text">Unmixing reveals the spatial distribution and spectral details of different constituents, called endmembers, in a hyperspectral image. Because unmixing has limited ground truth requirements, can accommodate mixed pixels, and is closely tied to light propagation, it is a uniquely powerful tool for analyzing hyperspectral images. However, spectral variability inhibits unmixing performance, the proper way to determine the number of endmembers is ambiguous, and the clarity of the endmembers degrades as more are included. Hierarchical structure is a possible solution to all three problems.   Here, hierarchical unmixing is defined by imposing a hierarchical abundance sum constraint on Deep Nonnegative Matrix Factorization. Binary Linear Unmixing Tactile Hierarchies (BLUTHs) solve the hierarchical unmixing problem with a simple network architecture. Sparsity modulation unmixing growth tailors the topology of a BLUTH to each scene. The structure imposed by BLUTHs allows endmembers with varying levels of spectral contrast to be revealed, mitigating the challenge of spectral variability.   The performance of BLUTHs exceeds state-of-the-art unmixing algorithms on laboratory scenes, particularly with regard to abundance estimation, while their performance remains competitive on remote sensing scenes. In addition, ocean color unmixing by BLUTHs is demonstrated on hyperspectral scenes from the HYPSO and PACE satellites.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Main text and supplemental&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Image and Video Processing" />
-  </entry>
-  <entry>
-    <title>When Earth Foundation Models Meet Diffusion: An Application to Land Surface Temperature Super-Resolution</title>
-    <link href="http://arxiv.org/abs/2604.16841v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.16841v1</id>
-    <published>2026-04-18T00:00:00Z</published>
-    <updated>2026-04-18T00:00:00Z</updated>
-    <author>
-      <name>Yiheng Chen</name>
-    </author>
-    <author>
-      <name>Zihui Ma</name>
-    </author>
-    <author>
-      <name>Peishi Jiang</name>
-    </author>
-    <author>
-      <name>Yilong Dai</name>
-    </author>
-    <author>
-      <name>Qikai Hu</name>
-    </author>
-    <author>
-      <name>Xinyue Ye</name>
-    </author>
-    <author>
-      <name>Lingyao Li</name>
-    </author>
-    <author>
-      <name>Rita Sousa</name>
-    </author>
-    <author>
-      <name>Runlong Yu</name>
-    </author>
-    <summary type="text">Land surface temperature (LST) super-resolution is important for environmental monitoring. However, it remains challenging as coarse thermal observations severely underdetermine fine-scale structure. In this paper, we propose Earth Foundation Model-guided Diffusion (EFDiff), a novel framework for super-resolution under extreme spatial degradation. EFDiff uses the Prithvi-EO-2.0 Earth foundation model to encode high-resolution multispectral reflectance into geospatial embeddings, which are injected into the denoising network via cross-attention to guide fine-scale reconstruction from highly degraded observations. We study two variants, EFDiff-$ε$ and EFDiff-$x_0$, which offer complementary trade-offs between perceptual realism and pixel-level fidelity. We evaluate EFDiff under an extreme $32\times$ scale gap using a globally diverse benchmark comprising 242,416 co-registered Landsat thermal-reflectance patches. Results show that EFDiff consistently outperforms baseline methods and that cross-attention conditioning by EFM is more effective than HLS channel concatenation. Although we present EFDiff in the context of LST super-resolution, the framework is broadly applicable to remote sensing problems in which pretrained geospatial representations can guide generative reconstruction.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
   </entry>
 </feed>

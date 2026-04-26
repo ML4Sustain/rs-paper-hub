@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-04-24T02:33:23Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 8 entries</subtitle>
+  <updated>2026-04-26T23:49:01Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 6 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -157,85 +157,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
     <category term="cs.CL" />
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>RS-HyRe-R1: A Hybrid Reward Mechanism to Overcome Perceptual Inertia for Remote Sensing Images Understanding</title>
-    <link href="http://arxiv.org/abs/2604.17504v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.17504v1</id>
-    <published>2026-04-19T00:00:00Z</published>
-    <updated>2026-04-19T00:00:00Z</updated>
-    <author>
-      <name>Gaozhi Zhou</name>
-    </author>
-    <author>
-      <name>Hu He</name>
-    </author>
-    <author>
-      <name>Peng Shen</name>
-    </author>
-    <author>
-      <name>Jipeng Zhang</name>
-    </author>
-    <author>
-      <name>Liujue Zhang</name>
-    </author>
-    <author>
-      <name>Linrui Xu</name>
-    </author>
-    <author>
-      <name>Zeyuan Wang</name>
-    </author>
-    <author>
-      <name>Ziyu Li</name>
-    </author>
-    <author>
-      <name>Xuezhi Cui</name>
-    </author>
-    <author>
-      <name>Wang Guo</name>
-    </author>
-    <author>
-      <name>Haifeng Li</name>
-    </author>
-    <summary type="text">Reinforcement learning (RL) post-training substantially improves remote sensing vision-language models (RS-VLMs). However, when handling complex remote sensing imagery (RSI) requiring exhaustive visual scanning, models tend to rely on localized salient cues for rapid inference. We term this RL-induced bias "perceptual inertia". Driven by reward maximization, models favor quick outcome fitting, leading to two limitations: cognitively, overreliance on specific features impedes complete evidence construction; operationally, models struggle to flexibly shift visual focus across tasks. To address this bias and encourage comprehensive visual evidence mining, we propose RS-HyRe-R1, a hybrid reward framework for RSI understanding. It introduces: (1) a spatial reasoning activation reward that enforces structured visual reasoning; (2) a perception correctness reward that provides adaptive quality anchors across RS tasks, ensuring accurate geometric and semantic alignment; and (3) a visual-semantic path evolution reward that penalizes repetitive reasoning and promotes exploration of complementary cues to build richer evidence chains. Experiments show RS-HyRe-R1 effectively mitigates "perceptual inertia", encouraging deeper, more diverse reasoning. With only 3B parameters, it achieves state-of-the-art performance on REC, OVD, and VQA tasks, outperforming models up to 7B parameters. It also demonstrates strong zero-shot generalization, surpassing the second-best model by 3.16%, 3.97%, and 2.72% on VQA, OVD, and REC, respectively. Code and datasets are available at https://github.com/geox-lab/RS-HyRe-R1.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/geox-lab/RS-HyRe-R1"&gt;https://github.com/geox-lab/RS-HyRe-R1&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>RemoteShield: Enable Robust Multimodal Large Language Models for Earth Observation</title>
-    <link href="http://arxiv.org/abs/2604.17243v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.17243v1</id>
-    <published>2026-04-19T00:00:00Z</published>
-    <updated>2026-04-19T00:00:00Z</updated>
-    <author>
-      <name>Rui Min</name>
-    </author>
-    <author>
-      <name>Liang Yao</name>
-    </author>
-    <author>
-      <name>Shiyu Miao</name>
-    </author>
-    <author>
-      <name>Shengxiang Xu</name>
-    </author>
-    <author>
-      <name>Yuxuan Liu</name>
-    </author>
-    <author>
-      <name>Chuanyi Zhang</name>
-    </author>
-    <author>
-      <name>Shimin Di</name>
-    </author>
-    <author>
-      <name>Fan Liu</name>
-    </author>
-    <summary type="text">A robust Multimodal Large Language Model (MLLM) for Earth Observation should maintain consistent interpretation and reasoning under realistic input variations. However, current Remote Sensing MLLMs fail to meet this requirement. Trained on carefully curated clean datasets, they learn brittle mappings that do not generalize to noisy conditions in operational Earth Observation. Consequently, their performance degrades when confronted with imperfect inputs in deployment. To quantify this vulnerability, we construct a realistic set of multimodal perturbations, including visual degradations such as cloud and fog cover, together with diverse human-centric textual variations ranging from colloquialisms to vague or omitted instructions. Empirical evaluations show that these perturbations significantly impair the visual-semantic reasoning capabilities of leading RS foundation models. To address this limitation, we introduce RemoteShield, a robust Remote Sensing MLLM trained to maintain consistent outputs across realistic input variations. During training, each clean sample is paired with its image-text perturbed variants to form a semantic equivalence cluster. Rather than directly fitting noisy samples, RemoteShield is optimized through preference learning over clean and perturbed conditions within the same cluster. By comparing model responses to clean and corrupted inputs, the model is encouraged to favor stable responses over perturbation-induced failures. This cross-condition alignment helps the model focus on underlying task semantics despite visual degradations and textual noise. Experiments on three Earth Observation tasks show that RemoteShield consistently delivers stronger robustness and cross-condition consistency than representative baselines under realistic multimodal perturbations.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>
