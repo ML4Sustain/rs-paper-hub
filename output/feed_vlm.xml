@@ -4,12 +4,51 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-04-26T23:49:01Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 6 entries</subtitle>
+  <updated>2026-04-27T02:26:35Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>ChangeQuery: Advancing Remote Sensing Change Analysis for Natural and Human-Induced Disasters from Visual Detection to Semantic Understanding</title>
+    <link href="http://arxiv.org/abs/2604.22333v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.22333v1</id>
+    <published>2026-04-24T00:00:00Z</published>
+    <updated>2026-04-24T00:00:00Z</updated>
+    <author>
+      <name>Dongwei Sun</name>
+    </author>
+    <author>
+      <name>Jing Yao</name>
+    </author>
+    <author>
+      <name>Kan Wei</name>
+    </author>
+    <author>
+      <name>Xiangyong Cao</name>
+    </author>
+    <author>
+      <name>Chen Wu</name>
+    </author>
+    <author>
+      <name>Zhenghui Zhao</name>
+    </author>
+    <author>
+      <name>Pedram Ghamisi</name>
+    </author>
+    <author>
+      <name>Jun Zhou</name>
+    </author>
+    <author>
+      <name>Jón Atli Benediktsson</name>
+    </author>
+    <summary type="text">Rapid situational awareness is critical in post-disaster response. While remote sensing damage assessment is evolving from pixel-level change detection to high-level semantic analysis, existing vision-language methodologies still struggle to provide actionable intelligence for complex strategic queries. They remain severely constrained by unimodal optical dependence, a prevailing bias towards natural disasters, and a fundamental lack of grounded interactivity. To address these limitations, we present ChangeQuery, a unified multimodal framework designed for comprehensive, all-weather disaster situation awareness. To overcome modality constraints and scenario biases, we construct the Disaster-Induced Change Query (DICQ) dataset, a large-scale benchmark coupling pre-event optical semantics with post-event SAR structural features across a balanced distribution of natural catastrophes and armed conflicts. Furthermore, to provide the high-quality supervision required for interactive reasoning, we propose a novel Automated Semantic Annotation Pipeline. Adhering to a ``statistics-first, generation-later'' paradigm, this engine automatically transforms raw segmentation masks into grounded, hierarchical instruction sets, effectively equipping the model with fine-grained spatial and quantitative awareness. Trained on this structured data, the ChangeQuery architecture operates as an interactive disaster analyst. It supports multi-task reasoning driven by diverse user queries, delivering precise damage quantification, region-specific descriptions, and holistic post-disaster summaries. Extensive experiments demonstrate that ChangeQuery establishes a new state-of-the-art, providing a robust and interpretable solution for complex disaster monitoring. The code is available at \href{https://sundongwei.github.io/changequery/}{https://sundongwei.github.io/changequery/}.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>RSRCC: A Remote Sensing Regional Change Comprehension Benchmark Constructed via Retrieval-Augmented Best-of-N Ranking</title>
     <link href="http://arxiv.org/abs/2604.20623v1" rel="alternate" type="text/html" />
@@ -87,75 +126,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Revisiting Change VQA in Remote Sensing with Structured and Native Multimodal Qwen Models</title>
-    <link href="http://arxiv.org/abs/2604.18429v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.18429v1</id>
-    <published>2026-04-20T00:00:00Z</published>
-    <updated>2026-04-20T00:00:00Z</updated>
-    <author>
-      <name>Yakoub Bazi</name>
-    </author>
-    <author>
-      <name>Mohamad M. Al Rahhal</name>
-    </author>
-    <author>
-      <name>Mansour Zuair</name>
-    </author>
-    <author>
-      <name>Faroun Mohamed</name>
-    </author>
-    <summary type="text">Change visual question answering (Change VQA) addresses the problem of answering natural-language questions about semantic changes between bi-temporal remote sensing (RS) images. Although vision-language models (VLMs) have recently been studied for temporal RS image understanding, Change VQA remains underexplored in the context of modern multimodal models. In this letter, we revisit the CDVQA benchmark using recent Qwen models under a unified low-rank adaptation (LoRA) setting. We compare Qwen3-VL, which follows a structured vision-language pipeline with multi-depth visual conditioning and a full-attention decoder, with Qwen3.5, a native multimodal model that combines a single-stage alignment with a hybrid decoder backbone. Experimental results on the official CDVQA test splits show that recent VLMs improve over earlier specialized baselines. They further show that performance does not scale monotonically with model size, and that native multimodal models are more effective than structured vision-language pipelines for this task. These findings indicate that tightly integrated multimodal backbones contribute more to performance than scale or explicit multi-depth visual conditioning for language-driven semantic change reasoning in RS imagery.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>DiffuSAM: Diffusion Guided Zero-Shot Object Grounding for Remote Sensing Imagery</title>
-    <link href="http://arxiv.org/abs/2604.18201v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.18201v1</id>
-    <published>2026-04-20T00:00:00Z</published>
-    <updated>2026-04-20T00:00:00Z</updated>
-    <author>
-      <name>Geet Sethi</name>
-    </author>
-    <author>
-      <name>Panav Shah</name>
-    </author>
-    <author>
-      <name>Ashutosh Gandhe</name>
-    </author>
-    <author>
-      <name>Soumitra Darshan Nayak</name>
-    </author>
-    <summary type="text">Diffusion models have emerged as powerful tools for a wide range of vision tasks, including text-guided image generation and editing. In this work, we explore their potential for object grounding in remote sensing imagery. We propose a hybrid pipeline that integrates diffusion-based localization cues with state-of-the-art segmentation models such as RemoteSAM and SAM3 to obtain more accurate bounding boxes. By leveraging the complementary strengths of generative diffusion models and foundational segmentation models, our approach enables robust and adaptive object localization across complex scenes. Experiments demonstrate that our pipeline significantly improves localization performance, achieving over a 14% increase in Acc@0.5 compared to existing state-of-the-art methods.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICLR 2026 ML4RS Workshop&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Characterizing AlphaEarth Embedding Geometry for Agentic Environmental Reasoning</title>
-    <link href="http://arxiv.org/abs/2604.18715v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.18715v1</id>
-    <published>2026-04-20T00:00:00Z</published>
-    <updated>2026-04-20T00:00:00Z</updated>
-    <author>
-      <name>Mashrekur Rahman</name>
-    </author>
-    <author>
-      <name>Samuel J. Barrett</name>
-    </author>
-    <author>
-      <name>Christina Last</name>
-    </author>
-    <summary type="text">Earth observation foundation models encode land surface information into dense embedding vectors, yet the geometric structure of these representations and its implications for downstream reasoning remain underexplored. We characterize the manifold geometry of Google AlphaEarth's 64-dimensional embeddings across 12.1 million Continental United States samples (2017--2023) and develop an agentic system that leverages this geometric understanding for environmental reasoning. The manifold is non-Euclidean: effective dimensionality is 13.3 (participation ratio) from 64 raw dimensions, with local intrinsic dimensionality of approximately 10. Tangent spaces rotate substantially, with 84\% of locations exceeding 60\textdegree{} and local-global alignment (mean$|\cosθ| = 0.17$) approaching the random baseline of 0.125. Supervised linear probes indicate that concept directions rotate across the manifold, and compositional vector arithmetic using both PCA-derived and probe-derived directions yields poor precision. Retrieval instead produces physically coherent results, with local geometry predicting retrieval coherence ($R^2 = 0.32$). Building on this characterization, we introduce an agentic system with nine specialized tools that decomposes environmental queries into reasoning chains over a FAISS-indexed embedding database. A five-condition ablation (120 queries, three complexity tiers) shows that embedding retrieval dominates response quality ($μ= 3.79 \pm 0.90$ vs.\ $3.03 \pm 0.77$ parametric-only; scale 1--5), with peak performance on multi-step comparisons ($μ= 4.28 \pm 0.43$). A cross-model benchmark show that geometric tools reduce Sonnet 4.5's score by 0.12 points but improve Opus 4.6's by 0.07, with Opus achieving higher geometric grounding (3.38 vs.\ 2.64), suggesting that the value of geometric characterization scales with the reasoning capability of the consuming model.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
-    <category term="cs.CL" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>

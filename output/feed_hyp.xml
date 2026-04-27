@@ -4,69 +4,10 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-04-26T23:49:01Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
+  <updated>2026-04-27T02:26:35Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 0 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
-  <entry>
-    <title>Producing High-Resolution Martian Surface Temperature Maps Using VIR-TIR Relationships</title>
-    <link href="http://arxiv.org/abs/2604.17859v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.17859v1</id>
-    <published>2026-04-20T00:00:00Z</published>
-    <updated>2026-04-20T00:00:00Z</updated>
-    <author>
-      <name>Michael A. Frazer</name>
-    </author>
-    <author>
-      <name>Eriita G. Jones</name>
-    </author>
-    <author>
-      <name>Katarina Miljkovic</name>
-    </author>
-    <author>
-      <name>Gretchen K. Benedix</name>
-    </author>
-    <summary type="text">Thermal infrared data (TIR; 8 - 15 $μm$) has a wide range of applications in Earth and planetary remote sensing. On Mars, this includes deriving thermal inertia (TI), which describes surface physical characteristics (e.g. particle size, degree of cementation) and is key for understanding geologic processes, assessing in-situ resource utilisation (ISRU) environments, and assisting mission planning. However, TI data from the THEMIS instrument is limited to 100 m/pixel resolution. Hyperspectral visible and near-infrared data (VIR; 0.5 - 5 $μm$) compliments TIR data by providing information on surface composition and is provided by the CRISM instrument at 12 m/pixel. In this work, we generate a machine learning regressor-based model to constrain relationships between THEMIS TI and CRISM VIR images at THEMIS resolution, and predict TI values from CRISM spectra with high accuracy (R2 $\sim$ 0.90, RMSE $\sim$ 23.6 TIU). We use the model to produce a downscaled TI map at a spatial resolution of 12 m/pixel, an order of magnitude finer than currently available, revealing decametre-scale features previously unresolved in THEMIS data.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 pages, 12 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="astro-ph.EP" />
-  </entry>
-  <entry>
-    <title>ExplainS2A: Explainable Spectral-Spatial Duality Model for Fast Transforming Sentinel-2 Image to AVIRIS-Level Hyperspectral Image</title>
-    <link href="http://arxiv.org/abs/2604.19007v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.19007v1</id>
-    <published>2026-04-20T00:00:00Z</published>
-    <updated>2026-04-20T00:00:00Z</updated>
-    <author>
-      <name>Chia-Hsiang Lin</name>
-    </author>
-    <author>
-      <name>Zi-Chao Leng</name>
-    </author>
-    <summary type="text">Mainstream optical satellites often acquire multispectral multi-resolution images, which have limited material identifiability compared to the HSIs. Thus, spectrally super-resolving the MSI into their hyperspectral counterparts greatly facilitates remote material identification and the downstream tasks. However, spectrally super-resolving the MSI into an HSI is often constrained by the multi-resolution nature of the sensor. Specifically, due to the presence of some LR bands in the MSI, the initial spectral super-resolution results often appear to be spatially blurry, resulting in an LR HSI. To overcome this bottleneck, we then leverage some HR band inherent in the acquired MSI to spatially guide the reconstruction procedure, thereby yielding the desired HR HSI. This fusion procedure elegantly coincides with a widely known spatial super-resolution problem in satellite remote sensing. Hence, we have reformulated the tough spectral super-resolution problem into a more widely investigated spatial super-resolution problem, referred to as the spectral-spatial duality theory. Accordingly, we propose ExplainS2A, consisting of a deep unfolding network and an explainable fusion network, that unifies spectral recovery and spatial fusion into a single explainable framework. Unlike conventional black-box models, ExplainS2A offers interpretability and operates as a linear-time algorithm. Remarkably, it can process a million-scale Sentinel-2 image in less than one second, yielding high-fidelity HSI over the same scene, and upgrades the blind source separation results. Although demonstrated on the Sentinel-2 and AVIRIS sensors, ExplainS2A also serves as a general framework applicable to various sensor pairs with different resolution configurations, and has experimentally demonstrated cross-region and cross-season generalization ability. Source codes: https://github.com/IHCLab/ExplainS2A.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/IHCLab/ExplainS2A"&gt;https://github.com/IHCLab/ExplainS2A&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 16 pages, 11 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
-    <category term="Image and Video Processing" />
-  </entry>
-  <entry>
-    <title>ConvVitMamba: Efficient Multiscale Convolution, Transformer, and Mamba-Based Sequence modelling for Hyperspectral Image Classification</title>
-    <link href="http://arxiv.org/abs/2604.18856" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.18856</id>
-    <published>2026-04-20T00:00:00Z</published>
-    <updated>2026-04-20T00:00:00Z</updated>
-    <author>
-      <name>Mohammed Q. Alkhatib</name>
-    </author>
-    <summary type="text">Hyperspectral image (HSI) classification remains challenging due to high spectral dimensionality, redundancy, and limited labeled data. Although convolutional neural networks (CNNs) and Vision Transformers (ViTs) achieve strong performance by exploiting spectral-spatial information and long-range dependencies, they often incur high computational cost and large model size, limiting practical use. To address these limitations, a unified hybrid framework, termed ConvVitMamba, is proposed for efficient HSI classification. The architecture integrates three components: a multiscale convolutional feature extractor to capture local spectral, spatial, and joint patterns; a Vision Transformer based tokenization and encoding stage to model global contextual relationships; and a lightweight Mamba inspired gated sequence mixing module for efficient content-aware refinement without quadratic self-attention. Principal Component Analysis (PCA) is used as preprocessing to reduce redundancy and improve efficiency. Experiments on four benchmark datasets, including Houston and three UAV borne QUH datasets (Pingan, Qingyun, and Tangdaowan), demonstrate that ConvVitMamba consistently outperforms CNN, Transformer, and Mamba based methods while maintaining a favorable balance between accuracy, model size, and inference efficiency. Ablation studies confirm the complementary contributions of all components. The results indicate that the proposed framework provides an effective and efficient solution for HSI classification in diverse scenarios. The source code is publicly available at https://github.com/mqalkhatib/ConvVitMamba</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/mqalkhatib/ConvVitMamba"&gt;https://github.com/mqalkhatib/ConvVitMamba&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Pre-print Accepted for Publication in International Journal of Remote Sensing&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="doi; 10.1080/01431161.2026.2663567" />
-  </entry>
 </feed>

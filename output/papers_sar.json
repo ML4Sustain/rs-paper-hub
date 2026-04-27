@@ -6534,5 +6534,24 @@
     "_added_date": "2026-04-23",
     "Category": "Method",
     "_tasks": "CLS;OD"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Artificial Intelligence",
+    "Date": "2026-04-24",
+    "Month": 4,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "ChangeQuery: Advancing Remote Sensing Change Analysis for Natural and Human-Induced Disasters from Visual Detection to Semantic Understanding",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2604.22333v1",
+    "Abstract": "Rapid situational awareness is critical in post-disaster response. While remote sensing damage assessment is evolving from pixel-level change detection to high-level semantic analysis, existing vision-language methodologies still struggle to provide actionable intelligence for complex strategic queries. They remain severely constrained by unimodal optical dependence, a prevailing bias towards natural disasters, and a fundamental lack of grounded interactivity. To address these limitations, we present ChangeQuery, a unified multimodal framework designed for comprehensive, all-weather disaster situation awareness. To overcome modality constraints and scenario biases, we construct the Disaster-Induced Change Query (DICQ) dataset, a large-scale benchmark coupling pre-event optical semantics with post-event SAR structural features across a balanced distribution of natural catastrophes and armed conflicts. Furthermore, to provide the high-quality supervision required for interactive reasoning, we propose a novel Automated Semantic Annotation Pipeline. Adhering to a ``statistics-first, generation-later'' paradigm, this engine automatically transforms raw segmentation masks into grounded, hierarchical instruction sets, effectively equipping the model with fine-grained spatial and quantitative awareness. Trained on this structured data, the ChangeQuery architecture operates as an interactive disaster analyst. It supports multi-task reasoning driven by diverse user queries, delivering precise damage quantification, region-specific descriptions, and holistic post-disaster summaries. Extensive experiments demonstrate that ChangeQuery establishes a new state-of-the-art, providing a robust and interpretable solution for complex disaster monitoring. The code is available at \\href{https://sundongwei.github.io/changequery/}{https://sundongwei.github.io/changequery/}.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{sun2026changequery,\n  title={ChangeQuery: Advancing Remote Sensing Change Analysis for Natural and Human-Induced Disasters from Visual Detection to Semantic Understanding},\n  author={Dongwei Sun and Jing Yao and Kan Wei and Xiangyong Cao and Chen Wu and Zhenghui Zhao and Pedram Ghamisi and Jun Zhou and Jón Atli Benediktsson},\n  journal={arXiv preprint arXiv:2604.22333v1},\n  year={2026},\n  url={http://arxiv.org/abs/2604.22333v1}\n}",
+    "Authors": "Dongwei Sun, Jing Yao, Kan Wei, Xiangyong Cao, Chen Wu, Zhenghui Zhao, Pedram Ghamisi, Jun Zhou, Jón Atli Benediktsson",
+    "_added_date": "2026-04-27",
+    "Category": "Method",
+    "_tasks": "CD"
   }
 ]
