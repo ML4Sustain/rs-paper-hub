@@ -2127,6 +2127,7 @@ async function _loadSlimInBackground(gen) {
   yearSelect.innerHTML = `<option value="">${t('allYears')}</option>`;
   const hasCat = allPapers.some(p => p.Category);
   const catSel = document.getElementById('categoryFilter');
+  catSel.style.display = hasCat ? '' : 'none';
   catSel.innerHTML = `<option value="">${t('allCategories')}</option>`;
   if (hasCat) {
     const cats = {};
@@ -2137,6 +2138,7 @@ async function _loadSlimInBackground(gen) {
   }
   const hasTask = allPapers.some(p => p._tasks);
   const taskSel = document.getElementById('taskFilter');
+  taskSel.style.display = hasTask ? '' : 'none';
   taskSel.innerHTML = `<option value="">${t('allTasks')}</option>`;
   if (hasTask) {
     const tasks = {};
