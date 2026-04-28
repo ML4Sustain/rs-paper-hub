@@ -4,12 +4,202 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-04-28T00:05:30Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 10 entries</subtitle>
+  <updated>2026-04-28T03:27:30Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 17 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Diffusion Model as a Generalist Segmentation Learner</title>
+    <link href="http://arxiv.org/abs/2604.24575v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.24575v1</id>
+    <published>2026-04-27T00:00:00Z</published>
+    <updated>2026-04-27T00:00:00Z</updated>
+    <author>
+      <name>Haoxiao Wang</name>
+    </author>
+    <author>
+      <name>Antao Xiang</name>
+    </author>
+    <author>
+      <name>Haiyang Sun</name>
+    </author>
+    <author>
+      <name>Peilin Sun</name>
+    </author>
+    <author>
+      <name>Changhao Pan</name>
+    </author>
+    <author>
+      <name>Yifu Chen</name>
+    </author>
+    <author>
+      <name>Minjie Hong</name>
+    </author>
+    <author>
+      <name>Weijie Wang</name>
+    </author>
+    <author>
+      <name>Shuang Chen</name>
+    </author>
+    <author>
+      <name>Yue Chen</name>
+    </author>
+    <author>
+      <name>Zhou Zhao</name>
+    </author>
+    <summary type="text">Diffusion models are primarily trained for image synthesis, yet their denoising trajectories encode rich, spatially aligned visual priors. In this paper, we demonstrate that these priors can be utilized for text-conditioned semantic and open-vocabulary segmentation, and this approach can be generalized to various downstream tasks to make a general-purpose diffusion segmentation framework. Concretely, we introduce DiGSeg (Diffusion Models as a Generalist Segmentation Learner), which repurposes a pretrained diffusion model into a unified segmentation framework. Our approach encodes the input image and ground-truth mask into the latent space and concatenates them as conditioning signals for the diffusion U-Net. A parallel CLIP-aligned text pathway injects language features across multiple scales, enabling the model to align textual queries with evolving visual representations. This design transforms an off-the-shelf diffusion backbone into a universal interface that produces structured segmentation masks conditioned on both appearance and arbitrary text prompts. Extensive experiments demonstrate state-of-the-art performance on standard semantic segmentation benchmarks, as well as strong open-vocabulary generalization and cross-domain transfer to medical, remote sensing, and agricultural scenarios-without domain-specific architectural customization. These results indicate that modern diffusion backbones can serve as generalist segmentation learners rather than pure generators, narrowing the gap between visual generation and visual understanding.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>6thGrid-Net: Unified Remote Sensing Image Dehazing Based on Color Restoration and Edge-Preserving</title>
+    <link href="http://arxiv.org/abs/2604.24149v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.24149v1</id>
+    <published>2026-04-27T00:00:00Z</published>
+    <updated>2026-04-27T00:00:00Z</updated>
+    <author>
+      <name>Runci Bai</name>
+    </author>
+    <author>
+      <name>Kui Jiang</name>
+    </author>
+    <author>
+      <name>Xiang Chen</name>
+    </author>
+    <author>
+      <name>Chen Wu</name>
+    </author>
+    <author>
+      <name>Dianjie Lu</name>
+    </author>
+    <author>
+      <name>Guijuan Zhang</name>
+    </author>
+    <author>
+      <name>Zhuoran Zheng</name>
+    </author>
+    <summary type="text">Remote sensing images are frequently degraded by adverse weather conditions, particularly clouds and haze, which severely impair downstream applications. Existing restoration methods typically rely on computationally heavy architectures or sequential pipelines (e.g., detail enhancement followed by color rendition) that suffer from mutual interference and artifact accumulation. Furthermore, recent unified grid-based approaches utilize fixed, isotropic interpolation kernels, neglecting the intrinsic low-dimensional manifold of natural images and inevitably causing edge blur. To address these limitations, we propose 6th Grid-Net, a highly efficient and unified remote sensing image restoration framework tailored for resource-constrained edge devices. Specifically, we construct a novel six-dimensional fusion tensor that seamlessly integrates the color rendition capabilities of 3D LUTs with the spatial-luminance detail preservation of bilateral grids. To overcome the drawbacks of standard trilinear interpolation, we introduce a manifold-adaptive high-dimensional sampling mechanism. This mechanism dynamically adjusts the interpolation kernel based on local edge orientation, texture strength, and color similarity, enabling simultaneous global color stylization and local edge refinement in a single forward pass. Additionally, an edge-aware grid smoothing constraint and dynamic quantization are incorporated to suppress ghosting artifacts and significantly compress the model size. Extensive experiments on multiple benchmark datasets demonstrate that 6th Grid-Net achieves state-of-the-art restoration quality across various degradation scenarios.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Open-Vocabulary Semantic Segmentation Network Integrating Object-Level Label and Scene-Level Semantic Features for Multimodal Remote Sensing Images</title>
+    <link href="http://arxiv.org/abs/2604.24125v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.24125v1</id>
+    <published>2026-04-27T00:00:00Z</published>
+    <updated>2026-04-27T00:00:00Z</updated>
+    <author>
+      <name>Jinkun Dai</name>
+    </author>
+    <author>
+      <name>Yuanxin Ye</name>
+    </author>
+    <author>
+      <name>Peng Tang</name>
+    </author>
+    <author>
+      <name>Tengfeng Tang</name>
+    </author>
+    <author>
+      <name>Xianping Ma</name>
+    </author>
+    <author>
+      <name>Jing Xiao</name>
+    </author>
+    <author>
+      <name>Mi Wang</name>
+    </author>
+    <summary type="text">Semantic segmentation of multi-modal remote sensing imagery plays a pivotal role in land use/land cover (LULC) mapping, environmental monitoring, and precision earth observation. Current multi-modal approaches mainly focus on integrating complementary visual modalities, yet neglect the incorporating of non-visual textual data - a rich source of knowledge that can bridge semantic gaps between visual patterns and real-world concepts. To address this limitation, we propose TSMNet, a text supervised multi-modal open vocabulary semantic segmentation network that synergistically integrates textual supervision with visual representation for open-vocabulary semantic segmentation. Unlike conventional multi-modal segmentation frameworks, TSMNet introduces a dual-branch text encoder to extract both scene-level semantic and object-level label information from various textual data, enabling dynamic cross-modal fusion. These text-derived features dynamically interact with visual embeddings through the proposed text-guided visual semantic fusion module, enabling domain-aware feature refinement and human-interpretable decision-making. To verify our method, we innovatively construct two new multi-modal datasets, and carry out extensive experiments to make a comprehensive comparison between the proposed method and other state-of-the-art (SOTA) semantic segmentation models. Results demonstrate that TSMNet achieves superior segmentation accuracy while exhibiting robust generalization capabilities across diverse geographical and sensor-specific scenarios. This work establishes a new paradigm for explainable remote sensing analysis, demonstrating that textual knowledge integration significantly enhances model generalizability. The source code will be available at https://github.com/yeyuanxin110/TSMNet</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/yeyuanxin110/TSMNet"&gt;https://github.com/yeyuanxin110/TSMNet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>JSSFF: A Joint Structural-Semantic Fusion Framework for Remote Sensing Image Captioning</title>
+    <link href="http://arxiv.org/abs/2604.24031v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.24031v1</id>
+    <published>2026-04-27T00:00:00Z</published>
+    <updated>2026-04-27T00:00:00Z</updated>
+    <author>
+      <name>Swadhin Das</name>
+    </author>
+    <author>
+      <name>Vivek Yadav</name>
+    </author>
+    <summary type="text">The encoder-decoder framework has become widely popular nowadays. In this model, the encoder extracts informative visual features from an input image, and the decoder employs a sequence-to-sequence formulation to generate the corresponding textual description from these features. The existing models focus more on the decision part. However, extracting meaningful information from the image can help the decoder generate an accurate caption by providing information about the objects and their relationship. Remote sensing images are highly complex. One major challenge is detecting objects that extend beyond their visible boundaries due to occlusion, overlapping structures, and unclear edges. Hence, there is a need to design an approach that can effectively capture both high-level semantics and low-level spatial details for accurate caption generation. In this work, we have proposed an edge-aware fusion method by incorporating the original image and its edge-aware version into the encoder to enhance feature representation and boundary awareness. We used a comparison-based beam search (CBBS) to generate captions to achieve a balanced trade-off between quantitative metrics and qualitative caption relevance through fairness-based comparison of candidate captions. Experimental results demonstrate our model's superiority over several baseline models in quantitative and qualitative perspectives.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>ZID-Net: Zero-Inference Diffusion Prior Decoupling Network for Single Image Dehazing</title>
+    <link href="http://arxiv.org/abs/2604.23709v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.23709v1</id>
+    <published>2026-04-26T00:00:00Z</published>
+    <updated>2026-04-26T00:00:00Z</updated>
+    <author>
+      <name>Xinheng Li</name>
+    </author>
+    <author>
+      <name>Minghao Chen</name>
+    </author>
+    <author>
+      <name>Mengqing Wu</name>
+    </author>
+    <author>
+      <name>Yan Liu</name>
+    </author>
+    <author>
+      <name>Guanying Huo</name>
+    </author>
+    <summary type="text">Single image dehazing is often constrained by a trade-off between restoration quality and computational efficiency. While efficient, CNN networks struggle to learn robust priors for dense and non-homogeneous haze. Conversely, diffusion models provide strong generative priors but suffer from severe inference latency and sampling instability. To address these limitations, we propose ZID-Net, a novel framework that explicitly decouples diffusion supervision from feed-forward inference. For efficient inference, we design a frequency-spatial decoupled feed-forward backbone. Within this backbone, a Channel-Spatial Laplacian Mask (CSLM) filters haze-amplified noise to extract purified structural details, while Lightweight Global Context Blocks (LGCBs) establish long-range spatial dependencies to capture the global variations of haze. A Dynamic Feature Arbitration Block (DFAB) then adaptively fuses these semantic and structural features for robust reconstruction. To provide this backbone with physical priors without the inference cost, we introduce a Zero-Inference Prior Propagation Head (ZI-PPH) during training. ZI-PPH leverages a conditional diffusion process to predict residual noise, providing degradation-aware structural supervision to the backbone. By discarding the diffusion branch at test time, ZID-Net integrates diffusion priors into a pure feed-forward architecture for accurate and efficient restoration. ZID-Net achieves 40.75 dB PSNR on the synthetic RESIDE dataset and outperforms existing methods with a 1.13 dB gain on real-world datasets. Additionally, it yields a 3.06 dB PSNR gain on the StateHaze1k remote sensing dataset with an inference time of just 19.35 ms. The project code is available at: https://github.com/XoomitLXH/ZID-Net.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/XoomitLXH/ZID-Net"&gt;https://github.com/XoomitLXH/ZID-Net&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Submitted to Neurocomputing. Includes 12 figures and 8 tables&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Image and Video Processing" />
+  </entry>
+  <entry>
+    <title>STAND: Semantic Anchoring Constraint with Dual-Granularity Disambiguation for Remote Sensing Image Change Captioning</title>
+    <link href="http://arxiv.org/abs/2604.23309v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.23309v1</id>
+    <published>2026-04-25T00:00:00Z</published>
+    <updated>2026-04-25T00:00:00Z</updated>
+    <author>
+      <name>Yanpei Gong</name>
+    </author>
+    <author>
+      <name>Beichen Zhang</name>
+    </author>
+    <author>
+      <name>Hao Wang</name>
+    </author>
+    <author>
+      <name>Zhaobo Qi</name>
+    </author>
+    <author>
+      <name>Xinyan Liu</name>
+    </author>
+    <author>
+      <name>Yuanrong Xu</name>
+    </author>
+    <author>
+      <name>Ruiyang Gao</name>
+    </author>
+    <author>
+      <name>Weigang Zhang</name>
+    </author>
+    <summary type="text">Remote sensing image change captioning (RSICC) aims to describe the difference between two remote sensing images. While recent methods have explored video modeling, they largely overlook the inherent ambiguities in viewpoint, scale, and prior knowledge, lacking effective constraints on the encoder. In this paper, we present STAND, a Semantic Anchoring Constraint with Dual-Granularity Disambiguation for RSICC, to progressively resolve these ambiguities. Specifically, to establish a reliable feature foundation, we first introduce an interpretable constraint to regularize temporal representations. Operating on these purified features, a dual-granularity disambiguation module resolves spatial uncertainties by coupling macro-level global context aggregation for viewpoint confusion with micro-level frequency-refocused attention for small-object scale enhancement. Ultimately, to translate these visually disambiguated features into precise text, a semantic concept anchoring module leverages language categorical priors to tackle knowledge ambiguity during decoding. Extensive experiments verify the superiority of STAND and its effectiveness in addressing ambiguities.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
   <entry>
     <title>ChangeQuery: Advancing Remote Sensing Change Analysis for Natural and Human-Induced Disasters from Visual Detection to Semantic Understanding</title>
     <link href="http://arxiv.org/abs/2604.22333v1" rel="alternate" type="text/html" />
@@ -475,6 +665,36 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to IGARSS 2026&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Evaluating Remote Sensing Image Captions Beyond Metric Biases</title>
+    <link href="http://arxiv.org/abs/2604.22855v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.22855v1</id>
+    <published>2026-04-22T00:00:00Z</published>
+    <updated>2026-04-22T00:00:00Z</updated>
+    <author>
+      <name>Ziyun Chen</name>
+    </author>
+    <author>
+      <name>Fan Liu</name>
+    </author>
+    <author>
+      <name>Liang Yao</name>
+    </author>
+    <author>
+      <name>Chuanyi Zhang</name>
+    </author>
+    <author>
+      <name>Yuye Ma</name>
+    </author>
+    <author>
+      <name>Wei Zhou</name>
+    </author>
+    <summary type="text">The core objective of image captioning is to achieve lossless semantic compression from visual signals into textual modalities. However, the reliance on manually curated reference texts for evaluation essentially forces models to mimic specific human annotation styles, thereby masking the true descriptive capabilities of advanced foundation models. This systemic misalignment prompts a critical question: Is task-specific fine-tuning truly necessary for Remote Sensing Image Captioning, or is the perceived performance gap merely an artifact of flawed evaluation criteria? To investigate this discrepancy, we propose ReconScore, a novel reference-free evaluation metric. Rather than computing textual similarities, we assess caption quality by its capability to reconstruct the original visual elements solely from the generated text, effectively neutralizing human annotation biases. Applying this metric, we uncover a profound, counterintuitive truth: inherently powerful, unfine-tuned MLLMs surpass their fine-tuned counterparts in authentic zero-shot RSIC tasks. Driven by this structural discovery, we introduce RemoteDescriber, a completely training-free generation methodology. By employing ReconScore as a self-correction mechanism, we iteratively refine the semantic precision of MLLM outputs without any computational fine-tuning overhead. Comprehensive experiments demonstrate that RemoteDescriber achieves state-of-the-art performance on three datasets. Furthermore, we validate ReconScore's reliability and analyze the flaws of traditional metrics. Our code is available at https://github.com/hhu-czy/RemoteDescriber.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/hhu-czy/RemoteDescriber"&gt;https://github.com/hhu-czy/RemoteDescriber&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>
