@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-04-27T04:13:51Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 13 entries</subtitle>
+  <updated>2026-04-28T00:05:30Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 10 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -476,74 +476,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>HarmoniDiff-RS: Training-Free Diffusion Harmonization for Satellite Image Composition</title>
-    <link href="http://arxiv.org/abs/2604.19392v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.19392v1</id>
-    <published>2026-04-21T00:00:00Z</published>
-    <updated>2026-04-21T00:00:00Z</updated>
-    <author>
-      <name>Xiaoqi Zhuang</name>
-    </author>
-    <author>
-      <name>Jefersson A. Dos Santos</name>
-    </author>
-    <author>
-      <name>Jungong Han</name>
-    </author>
-    <summary type="text">Satellite image composition plays a critical role in remote sensing applications such as data augmentation, disaste simulation, and urban planning. We propose HarmoniDiff-RS, a training-free diffusion-based framework for harmonizing composite satellite images under diverse domain conditions. Our method aligns the source and target domains through a Latent Mean Shift operation that transfers radiometric characteristics between them. To balance harmonization and content preservation, we introduce a Timestep-wise Latent Fusion strategy by leveraging early inverted latents for high harmonization and late latents for semantic consistency to generate a set of composite candidates. A lightweight harmony classifier is trained to further automatically select the most coherent result among them. We also construct RSIC-H, a benchmark dataset for satellite image harmonization derived from fMoW, providing 500 paired composition samples. Experiments demonstrate that our method effectively performs satellite image composition, showing strong potential for scalable remote-sensing synthesis and simulation tasks. Code is available at: https://github.com/XiaoqiZhuang/HarmoniDiff-RS.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/XiaoqiZhuang/HarmoniDiff-RS"&gt;https://github.com/XiaoqiZhuang/HarmoniDiff-RS&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; CVPR 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Structure-Semantic Decoupled Modulation of Global Geospatial Embeddings for High-Resolution Remote Sensing Mapping</title>
-    <link href="http://arxiv.org/abs/2604.19591v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.19591v2</id>
-    <published>2026-04-21T00:00:00Z</published>
-    <updated>2026-04-21T00:00:00Z</updated>
-    <author>
-      <name>Jienan Lyu</name>
-    </author>
-    <author>
-      <name>Miao Yang</name>
-    </author>
-    <author>
-      <name>Jinchen Cai</name>
-    </author>
-    <author>
-      <name>Yiwen Hu</name>
-    </author>
-    <author>
-      <name>Guanyi Lu</name>
-    </author>
-    <author>
-      <name>Junhao Qiu</name>
-    </author>
-    <author>
-      <name>Runmin Dong</name>
-    </author>
-    <summary type="text">Fine-grained high-resolution remote sensing mapping typically relies on localized visual features, which restricts cross-domain generalizability and often leads to fragmented predictions of large-scale land covers. While global geospatial foundation models offer powerful, generalizable representations, directly fusing their high-dimensional implicit embeddings with high-resolution visual features frequently triggers feature interference and spatial structure degradation due to a severe semantic-spatial gap. To overcome these limitations, we propose a Structure-Semantic Decoupled Modulation (SSDM) framework, which decouples global geospatial representations into two complementary cross-modal injection pathways. First, the structural prior modulation branch introduces the macroscopic receptive field priors from global representations into the self-attention modules of the high-resolution encoder. By guiding local feature extraction with holistic structural constraints, it effectively suppresses prediction fragmentation caused by high-frequency detail noise and excessive intra-class variance. Second, the global semantic injection branch explicitly aligns holistic context with the deep high-resolution feature space and directly supplements global semantics via cross-modal integration, thereby significantly enhancing the semantic consistency and category-level discrimination of complex land covers. Extensive experiments demonstrate that our method achieves state-of-the-art performance compared to existing cross-modal fusion approaches. By unleashing the potential of global embeddings, SSDM consistently improves high-resolution mapping accuracy across diverse scenarios, providing a universal and effective paradigm for integrating geospatial foundation models into high-resolution vision tasks.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Equinox: Decentralized Scheduling for Hardware-Aware Orbital Intelligence</title>
-    <link href="http://arxiv.org/abs/2604.19958v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.19958v1</id>
-    <published>2026-04-21T00:00:00Z</published>
-    <updated>2026-04-21T00:00:00Z</updated>
-    <author>
-      <name>Ansel Kaplan Erol</name>
-    </author>
-    <author>
-      <name>Divya Mahajan</name>
-    </author>
-    <summary type="text">Earth-observation satellites are emerging as distributed edge platforms for time-critical tasks, yet orbital scheduling remains challenged by intermittent energy harvesting and temporal coupling where eager execution risks future battery depletion. Existing schedulers rely on static priorities and lack mechanisms to adaptively shed work. We present Equinox, a lightweight, decentralized runtime for resource-constrained orbital systems. Equinox enables adaptive scheduling by compressing time-varying constraints, including battery charge, thermal headroom, and queue backlog, into a single state-dependent marginal cost of execution. Derived from a barrier function that rises sharply near safety limits, this cost encodes both instantaneous pressure and future risk. This local signal serves as a constellation-wide coordination primitive. Tasks execute only when their value exceeds the current cost, enabling value-ordered load shedding without explicit policies. If local costs exceed a neighbor's, tasks are dynamically offloaded over inter-satellite links, achieving distributed load balancing without routing protocols or global state. We evaluate Equinox using a multi-day simulation of a 143-satellite constellation grounded in physical Jetson Orin Nano measurements. Equinox improves scientific goodput by 20% and image-processing throughput by 31% over priority-based scheduling while maintaining 2.2x higher mean battery reserves. Under high demand, Equinox achieves 5.2x the execution rate of static scheduling by gracefully shedding work rather than collapsing under contention.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.DC" />
-    <category term="cs.OS; eess.SY" />
   </entry>
 </feed>
