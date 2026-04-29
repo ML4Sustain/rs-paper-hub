@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-04-28T04:28:03Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 9 entries</subtitle>
+  <updated>2026-04-29T01:52:02Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 6 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -105,6 +105,41 @@
     <category term="Computer Vision" />
   </entry>
   <entry>
+    <title>Agentic AI for Remote Sensing: Technical Challenges and Research Directions</title>
+    <link href="http://arxiv.org/abs/2604.24919v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.24919v1</id>
+    <published>2026-04-27T00:00:00Z</published>
+    <updated>2026-04-27T00:00:00Z</updated>
+    <author>
+      <name>Muhammad Akhtar Munir</name>
+    </author>
+    <author>
+      <name>Muhammad Umer Sheikh</name>
+    </author>
+    <author>
+      <name>Akashah Shabbir</name>
+    </author>
+    <author>
+      <name>Muhammad Haris Khan</name>
+    </author>
+    <author>
+      <name>Fahad Khan</name>
+    </author>
+    <author>
+      <name>Xiao Xiang Zhu</name>
+    </author>
+    <author>
+      <name>Begum Demir</name>
+    </author>
+    <author>
+      <name>Salman Khan</name>
+    </author>
+    <summary type="text">Earth Observation (EO) is moving beyond static prediction toward multi-step analytical workflows that require coordinated reasoning over data, tools, and geospatial state. While foundation models and vision-language models have expanded representation learning and language-grounded interaction for remote sensing, and agentic AI has demonstrated long-horizon reasoning and external tool use, EO is not a straightforward extension of generic agentic AI. EO workflows operate over georeferenced, multi-modal, and temporally structured data, where operations such as reprojection, resampling, compositing, and aggregation actively transform the underlying state and can constrain subsequent analysis. As a result, errors may propagate silently across steps, and correctness depends not only on internal coherence, but also on geospatial consistency, temporally valid comparisons, and physical validity. This position paper argues that these challenges are structural rather than incidental. We identify the implicit assumptions commonly made in generic agentic models, analyze how they break in geospatial workflows, and characterize the resulting failure modes in multi-step EO pipelines. We then outline design principles for EO-native agents centered on structured geospatial state, tool-aware reasoning, verifier-guided execution, and learning objectives aligned with geospatial and physical validity. Finally, we present research directions spanning EO-specific benchmarks, hybrid supervised and reinforcement learning, constrained self-improvement, and trajectory-level evaluation beyond final-answer accuracy. Building reliable geospatial agents therefore requires rethinking agent design around the physical, geospatial, and workflow constraints that govern EO analysis.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 31 pages. Position Paper&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
     <title>STAND: Semantic Anchoring Constraint with Dual-Granularity Disambiguation for Remote Sensing Image Change Captioning</title>
     <link href="http://arxiv.org/abs/2604.23309v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2604.23309v1</id>
@@ -178,113 +213,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>RSRCC: A Remote Sensing Regional Change Comprehension Benchmark Constructed via Retrieval-Augmented Best-of-N Ranking</title>
-    <link href="http://arxiv.org/abs/2604.20623v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.20623v1</id>
-    <published>2026-04-22T00:00:00Z</published>
-    <updated>2026-04-22T00:00:00Z</updated>
-    <author>
-      <name>Roie Kazoom</name>
-    </author>
-    <author>
-      <name>Yotam Gigi</name>
-    </author>
-    <author>
-      <name>George Leifman</name>
-    </author>
-    <author>
-      <name>Tomer Shekel</name>
-    </author>
-    <author>
-      <name>Genady Beryozkin</name>
-    </author>
-    <summary type="text">Traditional change detection identifies where changes occur, but does not explain what changed in natural language. Existing remote sensing change captioning datasets typically describe overall image-level differences, leaving fine-grained localized semantic reasoning largely unexplored. To close this gap, we present RSRCC, a new benchmark for remote sensing change question-answering containing 126k questions, split into 87k training, 17.1k validation, and 22k test instances. Unlike prior datasets, RSRCC is built around localized, change-specific questions that require reasoning about a particular semantic change. To the best of our knowledge, this is the first remote sensing change question-answering benchmark designed explicitly for such fine-grained reasoning-based supervision. To construct RSRCC, we introduce a hierarchical semi-supervised curation pipeline that uses Best-of-N ranking as a critical final ambiguity-resolution stage. First, candidate change regions are extracted from semantic segmentation masks, then initially screened using an image-text embedding model, and finally validated through retrieval-augmented vision-language curation with Best-of-N ranking. This process enables scalable filtering of noisy and ambiguous candidates while preserving semantically meaningful changes. The dataset is available at https://huggingface.co/datasets/google/RSRCC.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://huggingface.co/datasets/google/RSRCC"&gt;https://huggingface.co/datasets/google/RSRCC&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD;SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Fast-then-Fine: A Two-Stage Framework with Multi-Granular Representation for Cross-Modal Retrieval in Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2604.20429v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.20429v1</id>
-    <published>2026-04-22T00:00:00Z</published>
-    <updated>2026-04-22T00:00:00Z</updated>
-    <author>
-      <name>Xi Chen</name>
-    </author>
-    <author>
-      <name>Xu Chen</name>
-    </author>
-    <author>
-      <name>Xiangyang Jia</name>
-    </author>
-    <author>
-      <name>Xu Zhang</name>
-    </author>
-    <author>
-      <name>Shuquan Wei</name>
-    </author>
-    <author>
-      <name>Wei Wang</name>
-    </author>
-    <summary type="text">Remote sensing (RS) image-text retrieval plays a critical role in understanding massive RS imagery. However, the dense multi-object distribution and complex backgrounds in RS imagery make it difficult to simultaneously achieve fine-grained cross-modal alignment and efficient retrieval. Existing methods either rely on complex cross-modal interactions that lead to low retrieval efficiency, or depend on large-scale vision-language model pre-training, which requires massive data and computational resources. To address these issues, we propose a fast-then-fine (FTF) two-stage retrieval framework that decomposes retrieval into a text-agnostic recall stage for efficient candidate selection and a text-guided rerank stage for fine-grained alignment. Specifically, in the recall stage, text-agnostic coarse-grained representations are employed for efficient candidate selection; in the rerank stage, a parameter-free balanced text-guided interaction block enhances fine-grained alignment without introducing additional learnable parameters. Furthermore, an inter- and intra-modal loss is designed to jointly optimize cross-modal alignment across multi-granular representations. Extensive experiments on public benchmarks demonstrate that the FTF achieves competitive retrieval accuracy while significantly improving retrieval efficiency compared with existing methods.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Unlocking Multi-Spectral Data for Multi-Modal Models with Guided Inputs and Chain-of-Thought Reasoning</title>
-    <link href="http://arxiv.org/abs/2604.21032v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.21032v1</id>
-    <published>2026-04-22T00:00:00Z</published>
-    <updated>2026-04-22T00:00:00Z</updated>
-    <author>
-      <name>Dahun Kim</name>
-    </author>
-    <author>
-      <name>Ganesh Satish Mallya</name>
-    </author>
-    <author>
-      <name>Anelia Angelova</name>
-    </author>
-    <summary type="text">Multi-spectral imagery is a valuable input signal for Remote Sensing applications, such as land-use and land-cover classification and environmental monitoring. However, generalist Large Multi-modal Models (LMMs) are typically trained on RGB images, limiting their applicability to the RGB domain. At the same time, training multi-spectral multi-modal models is expensive and produces uniquely specialized models. To address this, we propose a novel training-free approach that introduces multi-spectral data within the inference pipeline of standard RGB-only LMMs, allowing large gains in performance. Our approach leverages the LMMs' understanding of the visual space by adapting non-RGB inputs to that space and injecting domain-specific information and Chain-of-Thought reasoning as instructions. We demonstrate this with the Gemini 2.5 model and observe strong Zero-Shot performance gains on popular Remote Sensing benchmarks. These results highlight the potential for geospatial professionals to leverage powerful generalist models for specialized sensor inputs, benefiting from rich reasoning capabilities grounded in specialized data.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to IGARSS 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Evaluating Remote Sensing Image Captions Beyond Metric Biases</title>
-    <link href="http://arxiv.org/abs/2604.22855v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.22855v1</id>
-    <published>2026-04-22T00:00:00Z</published>
-    <updated>2026-04-22T00:00:00Z</updated>
-    <author>
-      <name>Ziyun Chen</name>
-    </author>
-    <author>
-      <name>Fan Liu</name>
-    </author>
-    <author>
-      <name>Liang Yao</name>
-    </author>
-    <author>
-      <name>Chuanyi Zhang</name>
-    </author>
-    <author>
-      <name>Yuye Ma</name>
-    </author>
-    <author>
-      <name>Wei Zhou</name>
-    </author>
-    <summary type="text">The core objective of image captioning is to achieve lossless semantic compression from visual signals into textual modalities. However, the reliance on manually curated reference texts for evaluation essentially forces models to mimic specific human annotation styles, thereby masking the true descriptive capabilities of advanced foundation models. This systemic misalignment prompts a critical question: Is task-specific fine-tuning truly necessary for Remote Sensing Image Captioning, or is the perceived performance gap merely an artifact of flawed evaluation criteria? To investigate this discrepancy, we propose ReconScore, a novel reference-free evaluation metric. Rather than computing textual similarities, we assess caption quality by its capability to reconstruct the original visual elements solely from the generated text, effectively neutralizing human annotation biases. Applying this metric, we uncover a profound, counterintuitive truth: inherently powerful, unfine-tuned MLLMs surpass their fine-tuned counterparts in authentic zero-shot RSIC tasks. Driven by this structural discovery, we introduce RemoteDescriber, a completely training-free generation methodology. By employing ReconScore as a self-correction mechanism, we iteratively refine the semantic precision of MLLM outputs without any computational fine-tuning overhead. Comprehensive experiments demonstrate that RemoteDescriber achieves state-of-the-art performance on three datasets. Furthermore, we validate ReconScore's reliability and analyze the flaws of traditional metrics. Our code is available at https://github.com/hhu-czy/RemoteDescriber.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/hhu-czy/RemoteDescriber"&gt;https://github.com/hhu-czy/RemoteDescriber&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>

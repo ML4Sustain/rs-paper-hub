@@ -4,12 +4,84 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-04-28T04:28:03Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 17 entries</subtitle>
+  <updated>2026-04-29T01:52:02Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 15 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>SARU: A Shadow-Aware and Removal Unified Framework for Remote Sensing Images with New Benchmarks</title>
+    <link href="http://arxiv.org/abs/2604.25432v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.25432v1</id>
+    <published>2026-04-28T00:00:00Z</published>
+    <updated>2026-04-28T00:00:00Z</updated>
+    <author>
+      <name>Zi-Yang Bo</name>
+    </author>
+    <author>
+      <name>Wei Lu</name>
+    </author>
+    <author>
+      <name>Hongruixuan Chen</name>
+    </author>
+    <author>
+      <name>Si-Bao Chen</name>
+    </author>
+    <author>
+      <name>Bin Luo</name>
+    </author>
+    <summary type="text">Shadows are a prevalent problem in remote sensing imagery (RSI), degrading visual quality and severely limiting the performance of downstream tasks like object detection and semantic segmentation. Most prior works treat shadow detection and removal as separate, cascaded tasks, which can lead to cumbersome process and error accumulation. Furthermore, many deep learning methods rely on paired shadow and non-shadow images for training, which are often unavailable in practice. To address these challenges, we propose Shadow-Aware and Removal Unified (SARU) Framework , a cohesive two-stage framework. First, its dual-branch detection module (DBCSF-Net) fuses multi-color space and semantic features to generate high-fidelity shadow masks, effectively distinguishing shadows from dark objects. Then, leveraging these masks, a novel, training-free physical algorithm (N$^2$SGSR) restores illumination by transferring properties from adjacent non-shadow regions within the single input image. To facilitate rigorous evaluation and foster future work, we also introduce two new benchmark datasets: the RSI Shadow Detection (RSISD) dataset and the Single-image Shadow Removal Benchmark (SiSRB). Extensive experiments demonstrate that SARU achieves state-of-the-art performance on both the public AISD dataset and our newly introduced benchmarks. By holistically integrating shadow detection and removal to mitigate error propagation and eliminating the dependency on paired training data, SARU establishes a robust, practical framework for real-world RSI analysis. The source code and datasets are publicly available at: https://github.com/AeroVILab-AHU/SARU-Framework.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/AeroVILab-AHU/SARU-Framework"&gt;https://github.com/AeroVILab-AHU/SARU-Framework&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 17 pages, 14 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD;SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>On the use of satellite information to estimate agricultural carbon footprint in a small area framework</title>
+    <link href="http://arxiv.org/abs/2604.25342v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.25342v1</id>
+    <published>2026-04-28T00:00:00Z</published>
+    <updated>2026-04-28T00:00:00Z</updated>
+    <author>
+      <name>Riccardo Pajno</name>
+    </author>
+    <author>
+      <name>Felicetta Carillo</name>
+    </author>
+    <author>
+      <name>Paolo Maranzano</name>
+    </author>
+    <author>
+      <name>Timo Schmid</name>
+    </author>
+    <author>
+      <name>Riccardo Borgoni</name>
+    </author>
+    <summary type="text">The agricultural sector is undergoing rapid change due to climate pressures, demographic shifts, and uneven economic development, increasing the demand for reliable environmental indicators at fine spatial scales. However, limited data availability often constrains subregional analyses. This study develops a model-based framework for producing reliable small-area estimates for assessing the agricultural carbon footprint in the Po Valley (Northern Italy), a region characterized by intensive livestock farming and high environmental pressure. We integrate survey, census, and satellite-derived emission data into a unified framework and produce estimates at the level of Agrarian Subregions, defined as agriculturally homogeneous municipalities by the Italian National Institute of Statistics. Satellite-based ammonia emission data are incorporated as auxiliary covariates to improve precision and spatial coherence. A key methodological contribution is the treatment of spatial misalignment between gridded satellite data and administrative boundaries. This issue is addressed through a geostatistical upscaling procedure combined with a parametric bootstrap that propagates uncertainty from the covariate construction stage to the final small-area estimates. The results show that satellite-derived information substantially improves the accuracy and stability of carbon footprint estimates while reducing reliance on large, heterogeneous auxiliary datasets, illustrating the potential of Earth observation data in model-based environmental statistics.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 30 pages; 17 figures; submitted to Computational Statistics &amp; Data Analysis&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="stat.AP" />
+  </entry>
+  <entry>
+    <title>Edge-Cloud Collaborative Reconstruction via Structure-Aware Latent Diffusion for Downstream Remote Sensing Perception</title>
+    <link href="http://arxiv.org/abs/2604.25319v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.25319v1</id>
+    <published>2026-04-28T00:00:00Z</published>
+    <updated>2026-04-28T00:00:00Z</updated>
+    <author>
+      <name>Yun Li</name>
+    </author>
+    <author>
+      <name>Xianju Li</name>
+    </author>
+    <summary type="text">The exponential surge in high-resolution remote sensing data faces a severe bottleneck in satellite-to-ground transmission. Limited downlink bandwidth forces the use of extreme high-ratio compression, which irreversibly destroys high-frequency structural details essential for downstream machine perception tasks like object detection. While current super-resolution techniques attempt to recover these details, regression-based methods often yield over-smoothed textures, and generative diffusion models frequently introduce structural hallucinations that mislead detection systems. To address this trade-off, we propose the Structure-Aware Latent Diffusion (SALD) framework, an asymmetric edge-cloud collaborative SR system. At the resource-constrained edge, the system decouples imagery into a highly compressed low-frequency payload and a lightweight soft structural prior. Transmitting this decoupled representation minimizes bandwidth consumption. On the powerful cloud side, we introduce a Structure-Gated Large Kernel (SGLK) module and a Semantic-Guidance Engine (SGE) within the diffusion backbone. These modules leverage the transmitted structural priors to gate large-kernel convolutions, effectively capturing long-range dependencies inherent in aerial scenes while actively suppressing generative hallucinations. Extensive experiments on both the MSCM and UCMerced datasets demonstrate that, even under extreme bandwidth constraints, SALD achieves superior perceptual quality (LPIPS) and significantly enhances downstream performance in both scene classification and small-target detection.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 6 pages, 3 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;OD;SR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Diffusion Model as a Generalist Segmentation Learner</title>
     <link href="http://arxiv.org/abs/2604.24575v1" rel="alternate" type="text/html" />
@@ -134,6 +206,41 @@
     <summary type="text">The encoder-decoder framework has become widely popular nowadays. In this model, the encoder extracts informative visual features from an input image, and the decoder employs a sequence-to-sequence formulation to generate the corresponding textual description from these features. The existing models focus more on the decision part. However, extracting meaningful information from the image can help the decoder generate an accurate caption by providing information about the objects and their relationship. Remote sensing images are highly complex. One major challenge is detecting objects that extend beyond their visible boundaries due to occlusion, overlapping structures, and unclear edges. Hence, there is a need to design an approach that can effectively capture both high-level semantics and low-level spatial details for accurate caption generation. In this work, we have proposed an edge-aware fusion method by incorporating the original image and its edge-aware version into the encoder to enhance feature representation and boundary awareness. We used a comparison-based beam search (CBBS) to generate captions to achieve a balanced trade-off between quantitative metrics and qualitative caption relevance through fairness-based comparison of candidate captions. Experimental results demonstrate our model's superiority over several baseline models in quantitative and qualitative perspectives.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Agentic AI for Remote Sensing: Technical Challenges and Research Directions</title>
+    <link href="http://arxiv.org/abs/2604.24919v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.24919v1</id>
+    <published>2026-04-27T00:00:00Z</published>
+    <updated>2026-04-27T00:00:00Z</updated>
+    <author>
+      <name>Muhammad Akhtar Munir</name>
+    </author>
+    <author>
+      <name>Muhammad Umer Sheikh</name>
+    </author>
+    <author>
+      <name>Akashah Shabbir</name>
+    </author>
+    <author>
+      <name>Muhammad Haris Khan</name>
+    </author>
+    <author>
+      <name>Fahad Khan</name>
+    </author>
+    <author>
+      <name>Xiao Xiang Zhu</name>
+    </author>
+    <author>
+      <name>Begum Demir</name>
+    </author>
+    <author>
+      <name>Salman Khan</name>
+    </author>
+    <summary type="text">Earth Observation (EO) is moving beyond static prediction toward multi-step analytical workflows that require coordinated reasoning over data, tools, and geospatial state. While foundation models and vision-language models have expanded representation learning and language-grounded interaction for remote sensing, and agentic AI has demonstrated long-horizon reasoning and external tool use, EO is not a straightforward extension of generic agentic AI. EO workflows operate over georeferenced, multi-modal, and temporally structured data, where operations such as reprojection, resampling, compositing, and aggregation actively transform the underlying state and can constrain subsequent analysis. As a result, errors may propagate silently across steps, and correctness depends not only on internal coherence, but also on geospatial consistency, temporally valid comparisons, and physical validity. This position paper argues that these challenges are structural rather than incidental. We identify the implicit assumptions commonly made in generic agentic models, analyze how they break in geospatial workflows, and characterize the resulting failure modes in multi-step EO pipelines. We then outline design principles for EO-native agents centered on structured geospatial state, tool-aware reasoning, verifier-guided execution, and learning objectives aligned with geospatial and physical validity. Finally, we present research directions spanning EO-specific benchmarks, hybrid supervised and reinforcement learning, constrained self-improvement, and trajectory-level evaluation beyond final-answer accuracy. Building reliable geospatial agents therefore requires rethinking agent design around the physical, geospatial, and workflow constraints that govern EO analysis.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 31 pages. Position Paper&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
   <entry>
@@ -536,165 +643,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="q-bio.PE" />
     <category term="nlin.PS; physics.bio-ph" />
-  </entry>
-  <entry>
-    <title>RSRCC: A Remote Sensing Regional Change Comprehension Benchmark Constructed via Retrieval-Augmented Best-of-N Ranking</title>
-    <link href="http://arxiv.org/abs/2604.20623v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.20623v1</id>
-    <published>2026-04-22T00:00:00Z</published>
-    <updated>2026-04-22T00:00:00Z</updated>
-    <author>
-      <name>Roie Kazoom</name>
-    </author>
-    <author>
-      <name>Yotam Gigi</name>
-    </author>
-    <author>
-      <name>George Leifman</name>
-    </author>
-    <author>
-      <name>Tomer Shekel</name>
-    </author>
-    <author>
-      <name>Genady Beryozkin</name>
-    </author>
-    <summary type="text">Traditional change detection identifies where changes occur, but does not explain what changed in natural language. Existing remote sensing change captioning datasets typically describe overall image-level differences, leaving fine-grained localized semantic reasoning largely unexplored. To close this gap, we present RSRCC, a new benchmark for remote sensing change question-answering containing 126k questions, split into 87k training, 17.1k validation, and 22k test instances. Unlike prior datasets, RSRCC is built around localized, change-specific questions that require reasoning about a particular semantic change. To the best of our knowledge, this is the first remote sensing change question-answering benchmark designed explicitly for such fine-grained reasoning-based supervision. To construct RSRCC, we introduce a hierarchical semi-supervised curation pipeline that uses Best-of-N ranking as a critical final ambiguity-resolution stage. First, candidate change regions are extracted from semantic segmentation masks, then initially screened using an image-text embedding model, and finally validated through retrieval-augmented vision-language curation with Best-of-N ranking. This process enables scalable filtering of noisy and ambiguous candidates while preserving semantically meaningful changes. The dataset is available at https://huggingface.co/datasets/google/RSRCC.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://huggingface.co/datasets/google/RSRCC"&gt;https://huggingface.co/datasets/google/RSRCC&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD;SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Fast-then-Fine: A Two-Stage Framework with Multi-Granular Representation for Cross-Modal Retrieval in Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2604.20429v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.20429v1</id>
-    <published>2026-04-22T00:00:00Z</published>
-    <updated>2026-04-22T00:00:00Z</updated>
-    <author>
-      <name>Xi Chen</name>
-    </author>
-    <author>
-      <name>Xu Chen</name>
-    </author>
-    <author>
-      <name>Xiangyang Jia</name>
-    </author>
-    <author>
-      <name>Xu Zhang</name>
-    </author>
-    <author>
-      <name>Shuquan Wei</name>
-    </author>
-    <author>
-      <name>Wei Wang</name>
-    </author>
-    <summary type="text">Remote sensing (RS) image-text retrieval plays a critical role in understanding massive RS imagery. However, the dense multi-object distribution and complex backgrounds in RS imagery make it difficult to simultaneously achieve fine-grained cross-modal alignment and efficient retrieval. Existing methods either rely on complex cross-modal interactions that lead to low retrieval efficiency, or depend on large-scale vision-language model pre-training, which requires massive data and computational resources. To address these issues, we propose a fast-then-fine (FTF) two-stage retrieval framework that decomposes retrieval into a text-agnostic recall stage for efficient candidate selection and a text-guided rerank stage for fine-grained alignment. Specifically, in the recall stage, text-agnostic coarse-grained representations are employed for efficient candidate selection; in the rerank stage, a parameter-free balanced text-guided interaction block enhances fine-grained alignment without introducing additional learnable parameters. Furthermore, an inter- and intra-modal loss is designed to jointly optimize cross-modal alignment across multi-granular representations. Extensive experiments on public benchmarks demonstrate that the FTF achieves competitive retrieval accuracy while significantly improving retrieval efficiency compared with existing methods.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Fourier Series Coder: A Novel Perspective on Angle Boundary Discontinuity Problem for Oriented Object Detection</title>
-    <link href="http://arxiv.org/abs/2604.20281v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.20281v2</id>
-    <published>2026-04-22T00:00:00Z</published>
-    <updated>2026-04-22T00:00:00Z</updated>
-    <author>
-      <name>Minghong Wei</name>
-    </author>
-    <author>
-      <name>Pu Cao</name>
-    </author>
-    <author>
-      <name>Zhihao Chen</name>
-    </author>
-    <author>
-      <name>Zhiyuan Zang</name>
-    </author>
-    <author>
-      <name>Lu Yang</name>
-    </author>
-    <author>
-      <name>Qing Song</name>
-    </author>
-    <summary type="text">With the rapid advancement of intelligent driving and remote sensing, oriented object detection has gained widespread attention. However, achieving high-precision performance is fundamentally constrained by the Angle Boundary Discontinuity (ABD) and Cyclic Ambiguity (CA) problems, which typically cause significant angle fluctuations near periodic boundaries. Although recent studies propose continuous angle coders to alleviate these issues, our theoretical and empirical analyses reveal that state-of-the-art methods still suffer from substantial cyclic errors. We attribute this instability to the structural noise amplification within their non-orthogonal decoding mechanisms. This mathematical vulnerability significantly exacerbates angular deviations, particularly for square-like objects. To resolve this fundamentally, we propose the Fourier Series Coder (FSC), a lightweight plug-and-play component that establishes a continuous, reversible, and mathematically robust angle encoding-decoding paradigm. By rigorously mapping angles onto a minimal orthogonal Fourier basis and explicitly enforcing a geometric manifold constraint, FSC effectively prevents feature modulus collapse. This structurally stabilized representation ensures highly robust phase unwrapping, intrinsically eliminating the need for heuristic truncations while achieving strict boundary continuity and superior noise immunity. Extensive experiments across three large-scale datasets demonstrate that FSC achieves highly competitive overall performance, yielding substantial improvements in high-precision detection. The code will be available at https://github.com/weiminghong/FSC.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/weiminghong/FSC"&gt;https://github.com/weiminghong/FSC&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Global Offshore Wind Infrastructure: Deployment and Operational Dynamics from Dense Sentinel-1 Time Series</title>
-    <link href="http://arxiv.org/abs/2604.20822v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.20822v1</id>
-    <published>2026-04-22T00:00:00Z</published>
-    <updated>2026-04-22T00:00:00Z</updated>
-    <author>
-      <name>Thorsten Hoeser</name>
-    </author>
-    <author>
-      <name>Felix Bachofer</name>
-    </author>
-    <author>
-      <name>Claudia Kuenzer</name>
-    </author>
-    <summary type="text">The offshore wind energy sector is expanding rapidly, increasing the need for independent, high-temporal-resolution monitoring of infrastructure deployment and operation at global scale. While Earth Observation based offshore wind infrastructure mapping has matured for spatial localization, existing open datasets lack temporally dense and semantically fine-grained information on construction and operational dynamics. We introduce a global Sentinel-1 synthetic aperture radar (SAR) time series data corpus that resolves deployment and operational phases of offshore wind infrastructure from 2016Q1 to 2025Q1. Building on an updated object detection workflow, we compile 15,606 time series at detected infrastructure locations, with overall 14,840,637 events as analysis-ready 1D SAR backscatter profiles, one profile per Sentinel-1 acquisition and location. To enable direct use and benchmarking, we release (i) the analysis ready 1D SAR profiles, (ii) event-level baseline semantic labels generated by a rule-based classifier, and (iii) an expert-annotated benchmark dataset of 553 time series with 328,657 event labels. The baseline classifier achieves a macro F1 score of 0.84 in event-wise evaluation and an area under the collapsed edit similarity-quality threshold curve (AUC) of 0.785, indicating temporal coherence. We demonstrate that the resulting corpus supports global-scale analyses of deployment dynamics, the identification of differences in regional deployment patterns, vessel interactions, and operational events, and provides a reference for developing and comparing time series classification methods for offshore wind infrastructure monitoring.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 25 pages, 16 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;OD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Unlocking Multi-Spectral Data for Multi-Modal Models with Guided Inputs and Chain-of-Thought Reasoning</title>
-    <link href="http://arxiv.org/abs/2604.21032v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.21032v1</id>
-    <published>2026-04-22T00:00:00Z</published>
-    <updated>2026-04-22T00:00:00Z</updated>
-    <author>
-      <name>Dahun Kim</name>
-    </author>
-    <author>
-      <name>Ganesh Satish Mallya</name>
-    </author>
-    <author>
-      <name>Anelia Angelova</name>
-    </author>
-    <summary type="text">Multi-spectral imagery is a valuable input signal for Remote Sensing applications, such as land-use and land-cover classification and environmental monitoring. However, generalist Large Multi-modal Models (LMMs) are typically trained on RGB images, limiting their applicability to the RGB domain. At the same time, training multi-spectral multi-modal models is expensive and produces uniquely specialized models. To address this, we propose a novel training-free approach that introduces multi-spectral data within the inference pipeline of standard RGB-only LMMs, allowing large gains in performance. Our approach leverages the LMMs' understanding of the visual space by adapting non-RGB inputs to that space and injecting domain-specific information and Chain-of-Thought reasoning as instructions. We demonstrate this with the Gemini 2.5 model and observe strong Zero-Shot performance gains on popular Remote Sensing benchmarks. These results highlight the potential for geospatial professionals to leverage powerful generalist models for specialized sensor inputs, benefiting from rich reasoning capabilities grounded in specialized data.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to IGARSS 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Evaluating Remote Sensing Image Captions Beyond Metric Biases</title>
-    <link href="http://arxiv.org/abs/2604.22855v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.22855v1</id>
-    <published>2026-04-22T00:00:00Z</published>
-    <updated>2026-04-22T00:00:00Z</updated>
-    <author>
-      <name>Ziyun Chen</name>
-    </author>
-    <author>
-      <name>Fan Liu</name>
-    </author>
-    <author>
-      <name>Liang Yao</name>
-    </author>
-    <author>
-      <name>Chuanyi Zhang</name>
-    </author>
-    <author>
-      <name>Yuye Ma</name>
-    </author>
-    <author>
-      <name>Wei Zhou</name>
-    </author>
-    <summary type="text">The core objective of image captioning is to achieve lossless semantic compression from visual signals into textual modalities. However, the reliance on manually curated reference texts for evaluation essentially forces models to mimic specific human annotation styles, thereby masking the true descriptive capabilities of advanced foundation models. This systemic misalignment prompts a critical question: Is task-specific fine-tuning truly necessary for Remote Sensing Image Captioning, or is the perceived performance gap merely an artifact of flawed evaluation criteria? To investigate this discrepancy, we propose ReconScore, a novel reference-free evaluation metric. Rather than computing textual similarities, we assess caption quality by its capability to reconstruct the original visual elements solely from the generated text, effectively neutralizing human annotation biases. Applying this metric, we uncover a profound, counterintuitive truth: inherently powerful, unfine-tuned MLLMs surpass their fine-tuned counterparts in authentic zero-shot RSIC tasks. Driven by this structural discovery, we introduce RemoteDescriber, a completely training-free generation methodology. By employing ReconScore as a self-correction mechanism, we iteratively refine the semantic precision of MLLM outputs without any computational fine-tuning overhead. Comprehensive experiments demonstrate that RemoteDescriber achieves state-of-the-art performance on three datasets. Furthermore, we validate ReconScore's reliability and analyze the flaws of traditional metrics. Our code is available at https://github.com/hhu-czy/RemoteDescriber.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/hhu-czy/RemoteDescriber"&gt;https://github.com/hhu-czy/RemoteDescriber&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>
