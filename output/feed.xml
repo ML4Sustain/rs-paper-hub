@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-04-29T01:52:02Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 15 entries</subtitle>
+  <updated>2026-04-29T04:30:48Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 16 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -81,6 +81,96 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;OD;SR&lt;/p&gt;</content>
     <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>EOS-Bench: A Comprehensive Benchmark for Earth Observation Satellite Scheduling</title>
+    <link href="http://arxiv.org/abs/2604.25782v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.25782v1</id>
+    <published>2026-04-28T00:00:00Z</published>
+    <updated>2026-04-28T00:00:00Z</updated>
+    <author>
+      <name>Qian Yin</name>
+    </author>
+    <author>
+      <name>Jiaxing Li</name>
+    </author>
+    <author>
+      <name>Jiaqi Cheng</name>
+    </author>
+    <author>
+      <name>Qizhang Luo</name>
+    </author>
+    <author>
+      <name>Annalisa Riccardi</name>
+    </author>
+    <author>
+      <name>Abhijit Chatterjee</name>
+    </author>
+    <author>
+      <name>Rafael Vazquez</name>
+    </author>
+    <author>
+      <name>Carlo Novara</name>
+    </author>
+    <author>
+      <name>Michalis Mavrovouniotis</name>
+    </author>
+    <author>
+      <name>Ponnuthurai Nagaratnam Suganthan</name>
+    </author>
+    <author>
+      <name>Shengzhou Bai</name>
+    </author>
+    <author>
+      <name>Xiaoxuan Hu</name>
+    </author>
+    <author>
+      <name>Lining Xing</name>
+    </author>
+    <author>
+      <name>Ming Xu</name>
+    </author>
+    <author>
+      <name>Shuang Li</name>
+    </author>
+    <author>
+      <name>Zixuan Zheng</name>
+    </author>
+    <author>
+      <name>Xin Shen</name>
+    </author>
+    <author>
+      <name>Xiaoyu Chen</name>
+    </author>
+    <author>
+      <name>Yi Gu</name>
+    </author>
+    <author>
+      <name>Yanjie Song</name>
+    </author>
+    <author>
+      <name>Witold Pedrycz</name>
+    </author>
+    <author>
+      <name>Evan L. Kramer</name>
+    </author>
+    <author>
+      <name>Laio Oriel Seman</name>
+    </author>
+    <author>
+      <name>Cletah Shoko</name>
+    </author>
+    <author>
+      <name>Guohua Wu</name>
+    </author>
+    <author>
+      <name>Xinwei Wang</name>
+    </author>
+    <summary type="text">Earth observation satellite imaging scheduling is a challenging NP-hard combinatorial optimisation problem central to space mission operations. While next-generation agile Earth observation satellites (EOS) increase operational flexibility, they also significantly raise scheduling complexity. The lack of a unified, open-source benchmark makes it difficult to compare algorithms across studies. This paper introduces EOS-Bench, a comprehensive framework for systematic and reproducible evaluation of scheduling methods. By integrating high-fidelity orbital dynamics and platform constraints, EOS-Bench generates 1,390 scenarios and 13,900 benchmark instances, spanning from small-scale validation cases to large coordination problems with up to 1,000 satellites and 10,000 requests.   We further propose a scenario characterisation scheme to quantify structural difficulty based on factors such as opportunity density, task flexibility, conflict intensity, and satellite congestion. A multidimensional evaluation protocol is introduced, assessing performance across five metrics: task profit, completion rate, workload balance, timeliness, and runtime. The framework is evaluated using mixed-integer programming, heuristics, meta-heuristics, and deep reinforcement learning across both agile and non-agile settings. Results show that EOS-Bench effectively distinguishes solver performance across scales and conditions, revealing trade-offs between solution quality and computational efficiency, and providing deeper insight into scenario complexity.   EOS-Bench offers a unified and extensible open testbed for advancing research in Earth observation satellite scheduling. The code and data are available at https://github.com/Ethan19YQ/EOS-Bench.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Ethan19YQ/EOS-Bench"&gt;https://github.com/Ethan19YQ/EOS-Bench&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="cs.NI" />
+    <category term="Robotics" />
   </entry>
   <entry>
     <title>Diffusion Model as a Generalist Segmentation Learner</title>
