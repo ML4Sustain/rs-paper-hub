@@ -4,10 +4,67 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-04-29T04:30:48Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 0 entries</subtitle>
+  <updated>2026-04-30T01:47:59Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Cross-Domain Transfer of Hyperspectral Foundation Models</title>
+    <link href="http://arxiv.org/abs/2604.26478v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.26478v1</id>
+    <published>2026-04-29T00:00:00Z</published>
+    <updated>2026-04-29T00:00:00Z</updated>
+    <author>
+      <name>Nick Theisen</name>
+    </author>
+    <author>
+      <name>Peer Neubert</name>
+    </author>
+    <summary type="text">Hyperspectral imaging (HSI) semantic segmentation typically relies on in-domain training, but limited data availability often restricts model performance in real-world applications. Current approaches to leverage foundation models in proximal sensing use cross-modality techniques, bridging RGB and HSI to exploit vision foundation models. However, these methods either discard spectral information or introduce architectural complexity. We propose cross-domain transfer as an alternative, reusing HSI foundation models - originally trained in remote sensing - for proximal sensing applications. By eliminating the need to bridge modality gaps, our approach preserves spectral information while maintaining a simple architecture. Using the HS3-Bench benchmark, we systematically evaluate and compare conventional in-domain, in-modality training, cross-modality transfer and cross-domain transfer strategies. Our results demonstrate that cross-domain transfer achieves large performance improvements over in-domain, in-modality training, reduces the performance gap to cross-modality approaches and maintains strong performance in limited data settings. Thus, this work advances more effective HSI semantic segmentation in diverse applications.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted for publication at ICPR 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>High-Dimensional Noise to Low-Dimensional Manifolds: A Manifold-Space Diffusion Framework for Degraded Hyperspectral Image Classification</title>
+    <link href="http://arxiv.org/abs/2604.26279v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.26279v1</id>
+    <published>2026-04-29T00:00:00Z</published>
+    <updated>2026-04-29T00:00:00Z</updated>
+    <author>
+      <name>Boxiang Yang</name>
+    </author>
+    <author>
+      <name>Ning Chen</name>
+    </author>
+    <author>
+      <name>Xia Yue</name>
+    </author>
+    <author>
+      <name>Yichang Luo</name>
+    </author>
+    <author>
+      <name>Yingbo Fan</name>
+    </author>
+    <author>
+      <name>Haoyuan Zhang</name>
+    </author>
+    <author>
+      <name>Haoyu Ma</name>
+    </author>
+    <author>
+      <name>Jun Yue</name>
+    </author>
+    <author>
+      <name>Shanjun Mao</name>
+    </author>
+    <summary type="text">Recently, Hyperspectral Image (HSI) classification has attracted increasing attention in remote sensing. However, HSI data are inherently high-dimensional but low-rank, with discriminative information concentrated on a low-dimensional latent manifold. In real-world remote sensing scenarios, the superposition of multiple degradation factors disrupts this intrinsic manifold structure, driving samples away from their original low-dimensional distribution and introducing substantial redundant and non-discriminative variations. To better handle this challenge, this paper proposes a manifold-space diffusion framework (MSDiff) for robust hyperspectral classification under complex degradation conditions. Specifically, the proposed method first maps high-dimensional, degradation-affected HSI data into a compact low-dimensional manifold through a discriminative spectral-spatial reconstruction task, preserving class semantics and reducing redundant variations. A diffusion-based generative model is then applied to regularize the spectral-spatial distribution within the manifold, enabling progressive refinement and stabilization of latent features against residual degradations. The key advantage of the proposed framework lies in performing diffusion-based distribution modeling directly on the low-dimensional manifold, effectively decoupling degradation-induced disturbances from intrinsic discriminative structures and enhancing representation stability under complex degradations. Experimental results on multiple hyperspectral benchmarks demonstrate consistent performance improvements over state-of-the-art methods under diverse composite degradation settings. The code will be available at https://github.com/yangboxiang1207/MSDiff</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/yangboxiang1207/MSDiff"&gt;https://github.com/yangboxiang1207/MSDiff&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
 </feed>

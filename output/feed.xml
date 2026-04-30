@@ -4,12 +4,181 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-04-29T04:30:48Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 16 entries</subtitle>
+  <updated>2026-04-30T01:47:59Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 20 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>MemOVCD: Training-Free Open-Vocabulary Change Detection via Cross-Temporal Memory Reasoning and Global-Local Adaptive Rectification</title>
+    <link href="http://arxiv.org/abs/2604.26774v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.26774v1</id>
+    <published>2026-04-29T00:00:00Z</published>
+    <updated>2026-04-29T00:00:00Z</updated>
+    <author>
+      <name>Zuzheng Kuang</name>
+    </author>
+    <author>
+      <name>Honghao Chang</name>
+    </author>
+    <author>
+      <name>Boqiang Liang</name>
+    </author>
+    <author>
+      <name>Haoqian Wang</name>
+    </author>
+    <author>
+      <name>Lijun He</name>
+    </author>
+    <author>
+      <name>Fan Li</name>
+    </author>
+    <author>
+      <name>Haixia Bi</name>
+    </author>
+    <summary type="text">Open-vocabulary change detection aims to identify semantic changes in bi-temporal remote sensing images without predefined categories. Recent methods combine foundation models such as SAM, DINO and CLIP, but typically process each timestamp independently or interact only at the final comparison stage. Such paradigms suffer from insufficient temporal coupling during semantic reasoning, which limits their ability to distinguish genuine semantic changes from non-semantic appearance discrepancies. In addition, patch-dominant inference on high-resolution images often weakens global semantic continuity and produces fragmented change regions. To address these issues, we propose MemOVCD, a training-free open-vocabulary change detection framework based on cross-temporal memory reasoning and global-local adaptive rectification. Specifically, we reformulate bi-temporal change detection as a two-frame tracking problem and introduce weighted bidirectional propagation to aggregate semantic evidence from both temporal directions. To stabilize memory propagation across large temporal gaps, we construct histogram-aligned transition frames to smooth abrupt appearance changes. Moreover, a global-local adaptive rectification strategy adaptively fuses local and global-view predictions, improving spatial consistency while preserving fine-grained details. Experiments on five benchmarks demonstrate that MemOVCD achieves favorable performance on two change detection tasks, validating its effectiveness and generalization under diverse open-vocabulary settings.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Cross-Domain Transfer of Hyperspectral Foundation Models</title>
+    <link href="http://arxiv.org/abs/2604.26478v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.26478v1</id>
+    <published>2026-04-29T00:00:00Z</published>
+    <updated>2026-04-29T00:00:00Z</updated>
+    <author>
+      <name>Nick Theisen</name>
+    </author>
+    <author>
+      <name>Peer Neubert</name>
+    </author>
+    <summary type="text">Hyperspectral imaging (HSI) semantic segmentation typically relies on in-domain training, but limited data availability often restricts model performance in real-world applications. Current approaches to leverage foundation models in proximal sensing use cross-modality techniques, bridging RGB and HSI to exploit vision foundation models. However, these methods either discard spectral information or introduce architectural complexity. We propose cross-domain transfer as an alternative, reusing HSI foundation models - originally trained in remote sensing - for proximal sensing applications. By eliminating the need to bridge modality gaps, our approach preserves spectral information while maintaining a simple architecture. Using the HS3-Bench benchmark, we systematically evaluate and compare conventional in-domain, in-modality training, cross-modality transfer and cross-domain transfer strategies. Our results demonstrate that cross-domain transfer achieves large performance improvements over in-domain, in-modality training, reduces the performance gap to cross-modality approaches and maintains strong performance in limited data settings. Thus, this work advances more effective HSI semantic segmentation in diverse applications.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted for publication at ICPR 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Topology-Aware Representation Alignment for Semi-Supervised Vision-Language Learning</title>
+    <link href="http://arxiv.org/abs/2604.26370v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.26370v1</id>
+    <published>2026-04-29T00:00:00Z</published>
+    <updated>2026-04-29T00:00:00Z</updated>
+    <author>
+      <name>Junwon You</name>
+    </author>
+    <author>
+      <name>Mihyun Jang</name>
+    </author>
+    <author>
+      <name>Sangwoo Mo</name>
+    </author>
+    <author>
+      <name>Jae-Hun Jung</name>
+    </author>
+    <summary type="text">Vision-language models have shown strong performance, but they often generalize poorly to specialized domains. While semi-supervised vision-language learning mitigates this limitation by leveraging a small set of labeled image-text pairs together with abundant unlabeled images, existing methods remain fundamentally pairwise and fail to model the global structure of multimodal representation manifolds. Existing topology-based alignment methods rely on persistence diagram matching, which neither guarantees geometric alignment nor utilizes the image-text pairing information central to vision-language learning. We propose Topology-Aware Multimodal Representation Alignment (ToMA), a framework that uses persistent homology to identify topologically salient edges and aligns them across modalities through available cross-modal correspondences. ToMA leverages both H_0-death edges and lightweight H_1-birth edges, allowing it to capture both connectivity and cycle structure without constructing 2-simplices. Experiments show that ToMA yields stable gains, with clear improvements on remote sensing and modest but consistent benefits on fashion retrieval. Additional analysis shows that ToMA is more stable than alternative topology-based objectives and that lightweight H_1-birth edges provide useful higher-order structural signals.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 30 pages, 10 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning; math.AT" />
+  </entry>
+  <entry>
+    <title>Point Cloud Registration via Probabilistic Self-Update Local Correspondence and Line Vector Sets</title>
+    <link href="http://arxiv.org/abs/2604.26318v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.26318v1</id>
+    <published>2026-04-29T00:00:00Z</published>
+    <updated>2026-04-29T00:00:00Z</updated>
+    <author>
+      <name>Kuo-Liang Chung</name>
+    </author>
+    <author>
+      <name>Yu-Cheng Lin</name>
+    </author>
+    <author>
+      <name>Wu-Chi Chen</name>
+    </author>
+    <summary type="text">Point cloud registration (PCR) is a fundamental task for integrating 3D observations in remote sensing applications. This paper proposes a fast and effective PCR algorithm utilizing probabilistic self-updating local correspondence and line vector sets. Our dual RANSAC interaction model comprises a global RANSAC evaluating the global correspondence set and a local RANSAC operating on dynamically updated local sets. Initially, these local sets are constructed using angle histogram statistics and line vector length preservation techniques. To improve accuracy, a probabilistic self-updating strategy refines the local sets after each interaction round. To reduce runtime, we introduce a global early termination condition that optimally balances accuracy and efficiency. Finally, a weighted singular value decomposition estimates the registration solution. Evaluations on public datasets demonstrate our algorithm achieves superior time efficiency and at least a 10% root mean square error improvement over state-of-the-art methods. The C++ source code is publicly available at https://github.com/ivpml84079/Probabilistic-Self-Update-Line-Vector-Set-Based-Point-Cloud-Registration.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/ivpml84079/Probabilistic-Self-Update-Line-Vector-Set-Based-Point-Cloud-Registration"&gt;https://github.com/ivpml84079/Probabilistic-Self-Update-Line-Vector-Set-Based-Point-Cloud-Registration&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>High-Dimensional Noise to Low-Dimensional Manifolds: A Manifold-Space Diffusion Framework for Degraded Hyperspectral Image Classification</title>
+    <link href="http://arxiv.org/abs/2604.26279v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.26279v1</id>
+    <published>2026-04-29T00:00:00Z</published>
+    <updated>2026-04-29T00:00:00Z</updated>
+    <author>
+      <name>Boxiang Yang</name>
+    </author>
+    <author>
+      <name>Ning Chen</name>
+    </author>
+    <author>
+      <name>Xia Yue</name>
+    </author>
+    <author>
+      <name>Yichang Luo</name>
+    </author>
+    <author>
+      <name>Yingbo Fan</name>
+    </author>
+    <author>
+      <name>Haoyuan Zhang</name>
+    </author>
+    <author>
+      <name>Haoyu Ma</name>
+    </author>
+    <author>
+      <name>Jun Yue</name>
+    </author>
+    <author>
+      <name>Shanjun Mao</name>
+    </author>
+    <summary type="text">Recently, Hyperspectral Image (HSI) classification has attracted increasing attention in remote sensing. However, HSI data are inherently high-dimensional but low-rank, with discriminative information concentrated on a low-dimensional latent manifold. In real-world remote sensing scenarios, the superposition of multiple degradation factors disrupts this intrinsic manifold structure, driving samples away from their original low-dimensional distribution and introducing substantial redundant and non-discriminative variations. To better handle this challenge, this paper proposes a manifold-space diffusion framework (MSDiff) for robust hyperspectral classification under complex degradation conditions. Specifically, the proposed method first maps high-dimensional, degradation-affected HSI data into a compact low-dimensional manifold through a discriminative spectral-spatial reconstruction task, preserving class semantics and reducing redundant variations. A diffusion-based generative model is then applied to regularize the spectral-spatial distribution within the manifold, enabling progressive refinement and stabilization of latent features against residual degradations. The key advantage of the proposed framework lies in performing diffusion-based distribution modeling directly on the low-dimensional manifold, effectively decoupling degradation-induced disturbances from intrinsic discriminative structures and enhancing representation stability under complex degradations. Experimental results on multiple hyperspectral benchmarks demonstrate consistent performance improvements over state-of-the-art methods under diverse composite degradation settings. The code will be available at https://github.com/yangboxiang1207/MSDiff</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/yangboxiang1207/MSDiff"&gt;https://github.com/yangboxiang1207/MSDiff&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Seeking Consensus: Geometric-Semantic On-the-Fly Recalibration for Open-Vocabulary Remote Sensing Semantic Segmentation</title>
+    <link href="http://arxiv.org/abs/2604.26221v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.26221v1</id>
+    <published>2026-04-29T00:00:00Z</published>
+    <updated>2026-04-29T00:00:00Z</updated>
+    <author>
+      <name>Guanchun Wang</name>
+    </author>
+    <author>
+      <name>Chenxiao Wu</name>
+    </author>
+    <author>
+      <name>Xiangrong Zhang</name>
+    </author>
+    <author>
+      <name>Zelin Peng</name>
+    </author>
+    <author>
+      <name>Jianxun Lai</name>
+    </author>
+    <author>
+      <name>Tianyang Zhang</name>
+    </author>
+    <author>
+      <name>Xu Tang</name>
+    </author>
+    <summary type="text">Open-vocabulary semantic segmentation (OVSS) in remote sensing images is a promising task that employs textual descriptions for identifying undefined land cover categories. Despite notable advances, existing methods typically employ a static inference paradigm, overlooking the distinct distribution of each scene, resulting in semantic ambiguity in diverse land covers and incomplete foreground activation. Motivated by this, we propose Seeking Consensus, termed SeeCo, a plug-and-play framework to boost the performance of training-free OVSS models in remote sensing images, which recalibrates arbitrary OVSS models on-the-fly by seeking dual consensus: geometric consensus learning (GCL) through multi-view consistent observations and semantic consensus learning (SCL) via textual description adaptive calibration, which assists collaborative recalibration of visual and textual semantics. The two consensus are injected via an online consensus injector (OCI), effectively alleviating the under-activation and semantic bias. SeeCo requires no specific training process, yet recalibrates semantic-geometric alignment for each unique scene during inference. Extensive experiments on eight remote sensing OVSS benchmarks show consistent gains, proving its effectiveness and universality.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 11 pages, 9 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>SARU: A Shadow-Aware and Removal Unified Framework for Remote Sensing Images with New Benchmarks</title>
     <link href="http://arxiv.org/abs/2604.25432v1" rel="alternate" type="text/html" />
@@ -171,6 +340,50 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
     <category term="cs.NI" />
     <category term="Robotics" />
+  </entry>
+  <entry>
+    <title>Spatially-constrained clustering of geospatial features for heat vulnerability assessment of favelas in Rio de Janeiro</title>
+    <link href="http://arxiv.org/abs/2604.26133v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.26133v1</id>
+    <published>2026-04-28T00:00:00Z</published>
+    <updated>2026-04-28T00:00:00Z</updated>
+    <author>
+      <name>Baptiste Clemence</name>
+    </author>
+    <author>
+      <name>Thomas Hallopeau</name>
+    </author>
+    <author>
+      <name>Vanderlei Pascoal De Matos</name>
+    </author>
+    <author>
+      <name>Laurent Demagistri</name>
+    </author>
+    <author>
+      <name>Joris Guerin</name>
+    </author>
+    <summary type="text">Informal settlements face disproportionate exposure to climate-related health hazards. However, existing methodologies lack systematic approaches to link diverse settlement characteristics with environmental health outcomes. We develop a data-driven framework to assess heat vulnerability in Rio de Janeiro's favelas by combining spatially-constrained clustering with land surface temperature (LST) analysis. Using remote sensing and geospatial features, we identify two distinct favela typologies: recent, well-connected settlements on flat terrain (Cluster 0) and historical, poorly-connected communities on vegetated slopes (Cluster 1). Analysis of 16 extreme heat events reveals systematic temperature differences of 2--3$^\circ$C between clusters, with flat-terrain favelas experiencing significantly higher heat exposure. Our findings demonstrate that settlement morphology critically influences heat vulnerability, providing a replicable framework for targeted urban planning and public health interventions in informal settlements globally.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICLR ML4RS 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Evaluating the Alignment Between GeoAI Explanations and Domain Knowledge in Satellite-Based Flood Mapping</title>
+    <link href="http://arxiv.org/abs/2604.26051v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.26051v1</id>
+    <published>2026-04-28T00:00:00Z</published>
+    <updated>2026-04-28T00:00:00Z</updated>
+    <author>
+      <name>Hyunho Lee</name>
+    </author>
+    <author>
+      <name>Wenwen Li</name>
+    </author>
+    <summary type="text">The increasing number of satellites has improved the temporal resolution of Earth observation, making satellite-based flood mapping a promising approach for operational flood monitoring. Deep learning-based approaches for flood mapping using satellite imagery, an important application within Geospatial Artificial Intelligence (GeoAI), have shown improved predictive performance by learning complex spatial and spectral patterns from large volumes of remote sensing data. However, the opaque decision-making processes of deep learning models remain a major barrier to their integration into critical scientific and operational workflows. This highlights the need for a systematic assessment of whether model explanations align with established domain knowledge in remote sensing. To address this research gap, this study introduces the ADAGE (Alignment between Domain Knowledge And GeoAI Explanation Evaluation) framework. The proposed framework is designed to systematically evaluate how well explanations of deep learning models align with established remote sensing knowledge, particularly regarding the distinctive spectral properties of the Earth's surface. The ADAGE framework employs Channel-Group SHAP (SHapley Additive exPlanations) method to estimate the contributions of grouped input channels to pixel-level predictions. Experiments on two satellite-based flood mapping tasks demonstrate that the ADAGE framework can (1) quantitatively assess the alignment between model explanations and reference explanations derived from domain knowledge and (2) help domain experts identify misaligned explanations through alignment scores. This study contributes to bridging the gap between explainability and domain knowledge in GeoAI for Earth observation, enhancing the applicability of GeoAI models in scientific and operational workflows.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 21 pages, 6 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
   </entry>
   <entry>
     <title>Diffusion Model as a Generalist Segmentation Learner</title>
@@ -435,303 +648,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>SyMTRS: Benchmark Multi-Task Synthetic Dataset for Depth, Domain Adaptation and Super-Resolution in Aerial Imagery</title>
-    <link href="http://arxiv.org/abs/2604.21801v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.21801v1</id>
-    <published>2026-04-23T00:00:00Z</published>
-    <updated>2026-04-23T00:00:00Z</updated>
-    <author>
-      <name>Safouane El Ghazouali</name>
-    </author>
-    <author>
-      <name>Nicola Venturi</name>
-    </author>
-    <author>
-      <name>Michael Rueegsegger</name>
-    </author>
-    <author>
-      <name>Umberto Michelucci</name>
-    </author>
-    <summary type="text">Recent advances in deep learning for remote sensing rely heavily on large annotated datasets, yet acquiring high-quality ground truth for geometric, radiometric, and multi-domain tasks remains costly and often infeasible. In particular, the lack of accurate depth annotations, controlled illumination variations, and multi-scale paired imagery limits progress in monocular depth estimation, domain adaptation, and super-resolution for aerial scenes. We present SyMTRS, a large-scale synthetic dataset generated using a high-fidelity urban simulation pipeline. The dataset provides high-resolution RGB aerial imagery (2048 x 2048), pixel-perfect depth maps, night-time counterparts for domain adaptation, and aligned low-resolution variants for super-resolution at x2, x4, and x8 scales. Unlike existing remote sensing datasets that focus on a single task or modality, SyMTRS is designed as a unified multi-task benchmark enabling joint research in geometric understanding, cross-domain robustness, and resolution enhancement. We describe the dataset generation process, its statistical properties, and its positioning relative to existing benchmarks. SyMTRS aims to bridge critical gaps in remote sensing research by enabling controlled experiments with perfect geometric ground truth and consistent multi-domain supervision. The results obtained in this work can be reproduced from this Github repository: https://github.com/safouaneelg/SyMTRS.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/safouaneelg/SyMTRS"&gt;https://github.com/safouaneelg/SyMTRS&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR;3D&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>UHR-DETR: Efficient End-to-End Small Object Detection for Ultra-High-Resolution Remote Sensing Imagery</title>
-    <link href="http://arxiv.org/abs/2604.21435v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.21435v1</id>
-    <published>2026-04-23T00:00:00Z</published>
-    <updated>2026-04-23T00:00:00Z</updated>
-    <author>
-      <name>Jingfang Li</name>
-    </author>
-    <author>
-      <name>Haoran Zhu</name>
-    </author>
-    <author>
-      <name>Wen Yang</name>
-    </author>
-    <author>
-      <name>Jinrui Zhang</name>
-    </author>
-    <author>
-      <name>Fang Xu</name>
-    </author>
-    <author>
-      <name>Haijian Zhang</name>
-    </author>
-    <author>
-      <name>Gui-Song Xia</name>
-    </author>
-    <summary type="text">Ultra-High-Resolution (UHR) imagery has become essential for modern remote sensing, offering unprecedented spatial coverage. However, detecting small objects in such vast scenes presents a critical dilemma: retaining the original resolution for small objects causes prohibitive memory bottlenecks. Conversely, conventional compromises like image downsampling or patch cropping either erase small objects or destroy context. To break this dilemma, we propose UHR-DETR, an efficient end-to-end transformer-based detector designed for UHR imagery. First, we introduce a Coverage-Maximizing Sparse Encoder that dynamically allocates finite computational resources to informative high-resolution regions, ensuring maximum object coverage with minimal spatial redundancy. Second, we design a Global-Local Decoupled Decoder. By integrating macroscopic scene awareness with microscopic object details, this module resolves semantic ambiguities and prevents scene fragmentation. Extensive experiments on the UHR imagery datasets (e.g., STAR and SODA-A) demonstrate the superiority of UHR-DETR under strict hardware constraints (e.g., a single 24GB RTX 3090). It achieves a 2.8\% mAP improvement while delivering a 10$\times$ inference speedup compared to standard sliding-window baselines on the STAR dataset. Our codes and models will be available at https://github.com/Li-JingFang/UHR-DETR.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Li-JingFang/UHR-DETR"&gt;https://github.com/Li-JingFang/UHR-DETR&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>The First Challenge on Remote Sensing Infrared Image Super-Resolution at NTIRE 2026: Benchmark Results and Method Overview</title>
-    <link href="http://arxiv.org/abs/2604.21312v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.21312v1</id>
-    <published>2026-04-23T00:00:00Z</published>
-    <updated>2026-04-23T00:00:00Z</updated>
-    <author>
-      <name>Kai Liu</name>
-    </author>
-    <author>
-      <name>Haoyang Yue</name>
-    </author>
-    <author>
-      <name>Zeli Lin</name>
-    </author>
-    <author>
-      <name>Zheng Chen</name>
-    </author>
-    <author>
-      <name>Jingkai Wang</name>
-    </author>
-    <author>
-      <name>Jue Gong</name>
-    </author>
-    <author>
-      <name>Jiatong Li</name>
-    </author>
-    <author>
-      <name>Xianglong Yan</name>
-    </author>
-    <author>
-      <name>Libo Zhu</name>
-    </author>
-    <author>
-      <name>Jianze Li</name>
-    </author>
-    <author>
-      <name>Ziqing Zhang</name>
-    </author>
-    <author>
-      <name>Zihan Zhou</name>
-    </author>
-    <author>
-      <name>Xiaoyang Liu</name>
-    </author>
-    <author>
-      <name>Radu Timofte</name>
-    </author>
-    <author>
-      <name>Yulun Zhang</name>
-    </author>
-    <author>
-      <name>Junye Chen</name>
-    </author>
-    <author>
-      <name>Zhenming Yan</name>
-    </author>
-    <author>
-      <name>Yucong Hong</name>
-    </author>
-    <author>
-      <name>Ruize Han</name>
-    </author>
-    <author>
-      <name>Song Wang</name>
-    </author>
-    <author>
-      <name>Li Pang</name>
-    </author>
-    <author>
-      <name>Heng Zhao</name>
-    </author>
-    <author>
-      <name>Xinqiao Wu</name>
-    </author>
-    <author>
-      <name>Deyu Meng</name>
-    </author>
-    <author>
-      <name>Xiangyong Cao</name>
-    </author>
-    <author>
-      <name>Weijun Yuan</name>
-    </author>
-    <author>
-      <name>Zhan Li</name>
-    </author>
-    <author>
-      <name>Zhanglu Chen</name>
-    </author>
-    <author>
-      <name>Boyang Yao</name>
-    </author>
-    <author>
-      <name>Yihang Chen</name>
-    </author>
-    <author>
-      <name>Yifan Deng</name>
-    </author>
-    <author>
-      <name>Zengyuan Zuo</name>
-    </author>
-    <author>
-      <name>Junjun Jiang</name>
-    </author>
-    <author>
-      <name>Saiprasad Meesiyawar</name>
-    </author>
-    <author>
-      <name>Sulocha Yatageri</name>
-    </author>
-    <author>
-      <name>Nikhil Akalwadi</name>
-    </author>
-    <author>
-      <name>Ramesh Ashok Tabib</name>
-    </author>
-    <author>
-      <name>Uma Mudenagudi</name>
-    </author>
-    <author>
-      <name>Jiachen Tu</name>
-    </author>
-    <author>
-      <name>Yaokun Shi</name>
-    </author>
-    <author>
-      <name>Guoyi Xu</name>
-    </author>
-    <author>
-      <name>Yaoxin Jiang</name>
-    </author>
-    <author>
-      <name>Cici Liu</name>
-    </author>
-    <author>
-      <name>Tongyao Mu</name>
-    </author>
-    <author>
-      <name>Qiong Cao</name>
-    </author>
-    <author>
-      <name>Yifan Wang</name>
-    </author>
-    <author>
-      <name>Kosuke Shigematsu</name>
-    </author>
-    <author>
-      <name>Hiroto Shirono</name>
-    </author>
-    <author>
-      <name>Asuka Shin</name>
-    </author>
-    <author>
-      <name>Wei Zhou</name>
-    </author>
-    <author>
-      <name>Linfeng Li</name>
-    </author>
-    <author>
-      <name>Lingdong Kong</name>
-    </author>
-    <author>
-      <name>Ce Wang</name>
-    </author>
-    <author>
-      <name>Xingwei Zhong</name>
-    </author>
-    <author>
-      <name>Wanjie Sun</name>
-    </author>
-    <author>
-      <name>Dafeng Zhang</name>
-    </author>
-    <author>
-      <name>Hongxin Lan</name>
-    </author>
-    <author>
-      <name>Qisheng Xu</name>
-    </author>
-    <author>
-      <name>Mingyue He</name>
-    </author>
-    <author>
-      <name>Hui Geng</name>
-    </author>
-    <author>
-      <name>Tianjiao Wan</name>
-    </author>
-    <author>
-      <name>Kele Xu</name>
-    </author>
-    <author>
-      <name>Changjian Wang</name>
-    </author>
-    <author>
-      <name>Antoine Carreaud</name>
-    </author>
-    <author>
-      <name>Nicola Santacroce</name>
-    </author>
-    <author>
-      <name>Shanci Li</name>
-    </author>
-    <author>
-      <name>Jan Skaloud</name>
-    </author>
-    <author>
-      <name>Adrien Gressin</name>
-    </author>
-    <summary type="text">This paper presents the NTIRE 2026 Remote Sensing Infrared Image Super-Resolution (x4) Challenge, one of the associated challenges of NTIRE 2026. The challenge aims to recover high-resolution (HR) infrared images from low-resolution (LR) inputs generated through bicubic downsampling with a x4 scaling factor. The objective is to develop effective models or solutions that achieve state-of-the-art performance for infrared image SR in remote sensing scenarios. To reflect the characteristics of infrared data and practical application needs, the challenge adopts a single-track setting. A total of 115 participants registered for the competition, with 13 teams submitting valid entries. This report summarizes the challenge design, dataset, evaluation protocol, main results, and the representative methods of each team. The challenge serves as a benchmark to advance research in infrared image super-resolution and promote the development of effective solutions for real-world remote sensing applications.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Github Repo: https://github.com/Kai-Liu001/NTIRE2026_infraredSR&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Survey&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Global remote sensing reveals vegetation clustering as a physical footprint of shifting aridity trends in drylands</title>
-    <link href="http://arxiv.org/abs/2604.22122v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.22122v1</id>
-    <published>2026-04-23T00:00:00Z</published>
-    <updated>2026-04-23T00:00:00Z</updated>
-    <author>
-      <name>David Pinto-Ramos</name>
-    </author>
-    <author>
-      <name>Marcel Gabriel Clerc</name>
-    </author>
-    <author>
-      <name>Abdelkader Makhoute</name>
-    </author>
-    <author>
-      <name>Mustapha Tlidi</name>
-    </author>
-    <summary type="text">Due to climatic changes, excessive grazing, and deforestation, semi-arid and arid ecosystems are vulnerable to desertification and land degradation. As aridity increases, vegetation cover often self-organizes into spatial patterns before collapsing to bare soil. While recent theoretical work has established that spatially heterogeneous yet isotropic environments induce a smooth hysteresis loop -- yielding either periodic (hexagonal) patterns during degradation or disordered (clustered) patterns during recovery -- empirical validation of this physical footprint at a global scale has been lacking. Here, we present an extensive empirical validation using remote sensing across eight distinct global ecosystems, coupled with historical bio-climatic databases. We demonstrate that the spatial morphology of vegetation patches acts as a direct physical footprint of the ecosystem's historical aridity trend. Our results show that ecosystems experiencing increasing aridity display periodic arrays with a defined wavelength, whereas those recovering under decreasing aridity exhibit scale-free clustering. This framework provides a non-destructive, robust satellite-based indicator for diagnosing whether a dryland ecosystem is on a degradation or recovery pathway.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="q-bio.PE" />
-    <category term="nlin.PS; physics.bio-ph" />
   </entry>
 </feed>

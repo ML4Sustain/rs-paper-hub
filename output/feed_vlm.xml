@@ -4,12 +4,121 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-04-29T04:30:48Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 6 entries</subtitle>
+  <updated>2026-04-30T01:47:59Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 10 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>MemOVCD: Training-Free Open-Vocabulary Change Detection via Cross-Temporal Memory Reasoning and Global-Local Adaptive Rectification</title>
+    <link href="http://arxiv.org/abs/2604.26774v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.26774v1</id>
+    <published>2026-04-29T00:00:00Z</published>
+    <updated>2026-04-29T00:00:00Z</updated>
+    <author>
+      <name>Zuzheng Kuang</name>
+    </author>
+    <author>
+      <name>Honghao Chang</name>
+    </author>
+    <author>
+      <name>Boqiang Liang</name>
+    </author>
+    <author>
+      <name>Haoqian Wang</name>
+    </author>
+    <author>
+      <name>Lijun He</name>
+    </author>
+    <author>
+      <name>Fan Li</name>
+    </author>
+    <author>
+      <name>Haixia Bi</name>
+    </author>
+    <summary type="text">Open-vocabulary change detection aims to identify semantic changes in bi-temporal remote sensing images without predefined categories. Recent methods combine foundation models such as SAM, DINO and CLIP, but typically process each timestamp independently or interact only at the final comparison stage. Such paradigms suffer from insufficient temporal coupling during semantic reasoning, which limits their ability to distinguish genuine semantic changes from non-semantic appearance discrepancies. In addition, patch-dominant inference on high-resolution images often weakens global semantic continuity and produces fragmented change regions. To address these issues, we propose MemOVCD, a training-free open-vocabulary change detection framework based on cross-temporal memory reasoning and global-local adaptive rectification. Specifically, we reformulate bi-temporal change detection as a two-frame tracking problem and introduce weighted bidirectional propagation to aggregate semantic evidence from both temporal directions. To stabilize memory propagation across large temporal gaps, we construct histogram-aligned transition frames to smooth abrupt appearance changes. Moreover, a global-local adaptive rectification strategy adaptively fuses local and global-view predictions, improving spatial consistency while preserving fine-grained details. Experiments on five benchmarks demonstrate that MemOVCD achieves favorable performance on two change detection tasks, validating its effectiveness and generalization under diverse open-vocabulary settings.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Cross-Domain Transfer of Hyperspectral Foundation Models</title>
+    <link href="http://arxiv.org/abs/2604.26478v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.26478v1</id>
+    <published>2026-04-29T00:00:00Z</published>
+    <updated>2026-04-29T00:00:00Z</updated>
+    <author>
+      <name>Nick Theisen</name>
+    </author>
+    <author>
+      <name>Peer Neubert</name>
+    </author>
+    <summary type="text">Hyperspectral imaging (HSI) semantic segmentation typically relies on in-domain training, but limited data availability often restricts model performance in real-world applications. Current approaches to leverage foundation models in proximal sensing use cross-modality techniques, bridging RGB and HSI to exploit vision foundation models. However, these methods either discard spectral information or introduce architectural complexity. We propose cross-domain transfer as an alternative, reusing HSI foundation models - originally trained in remote sensing - for proximal sensing applications. By eliminating the need to bridge modality gaps, our approach preserves spectral information while maintaining a simple architecture. Using the HS3-Bench benchmark, we systematically evaluate and compare conventional in-domain, in-modality training, cross-modality transfer and cross-domain transfer strategies. Our results demonstrate that cross-domain transfer achieves large performance improvements over in-domain, in-modality training, reduces the performance gap to cross-modality approaches and maintains strong performance in limited data settings. Thus, this work advances more effective HSI semantic segmentation in diverse applications.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted for publication at ICPR 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Topology-Aware Representation Alignment for Semi-Supervised Vision-Language Learning</title>
+    <link href="http://arxiv.org/abs/2604.26370v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.26370v1</id>
+    <published>2026-04-29T00:00:00Z</published>
+    <updated>2026-04-29T00:00:00Z</updated>
+    <author>
+      <name>Junwon You</name>
+    </author>
+    <author>
+      <name>Mihyun Jang</name>
+    </author>
+    <author>
+      <name>Sangwoo Mo</name>
+    </author>
+    <author>
+      <name>Jae-Hun Jung</name>
+    </author>
+    <summary type="text">Vision-language models have shown strong performance, but they often generalize poorly to specialized domains. While semi-supervised vision-language learning mitigates this limitation by leveraging a small set of labeled image-text pairs together with abundant unlabeled images, existing methods remain fundamentally pairwise and fail to model the global structure of multimodal representation manifolds. Existing topology-based alignment methods rely on persistence diagram matching, which neither guarantees geometric alignment nor utilizes the image-text pairing information central to vision-language learning. We propose Topology-Aware Multimodal Representation Alignment (ToMA), a framework that uses persistent homology to identify topologically salient edges and aligns them across modalities through available cross-modal correspondences. ToMA leverages both H_0-death edges and lightweight H_1-birth edges, allowing it to capture both connectivity and cycle structure without constructing 2-simplices. Experiments show that ToMA yields stable gains, with clear improvements on remote sensing and modest but consistent benefits on fashion retrieval. Additional analysis shows that ToMA is more stable than alternative topology-based objectives and that lightweight H_1-birth edges provide useful higher-order structural signals.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 30 pages, 10 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning; math.AT" />
+  </entry>
+  <entry>
+    <title>Seeking Consensus: Geometric-Semantic On-the-Fly Recalibration for Open-Vocabulary Remote Sensing Semantic Segmentation</title>
+    <link href="http://arxiv.org/abs/2604.26221v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.26221v1</id>
+    <published>2026-04-29T00:00:00Z</published>
+    <updated>2026-04-29T00:00:00Z</updated>
+    <author>
+      <name>Guanchun Wang</name>
+    </author>
+    <author>
+      <name>Chenxiao Wu</name>
+    </author>
+    <author>
+      <name>Xiangrong Zhang</name>
+    </author>
+    <author>
+      <name>Zelin Peng</name>
+    </author>
+    <author>
+      <name>Jianxun Lai</name>
+    </author>
+    <author>
+      <name>Tianyang Zhang</name>
+    </author>
+    <author>
+      <name>Xu Tang</name>
+    </author>
+    <summary type="text">Open-vocabulary semantic segmentation (OVSS) in remote sensing images is a promising task that employs textual descriptions for identifying undefined land cover categories. Despite notable advances, existing methods typically employ a static inference paradigm, overlooking the distinct distribution of each scene, resulting in semantic ambiguity in diverse land covers and incomplete foreground activation. Motivated by this, we propose Seeking Consensus, termed SeeCo, a plug-and-play framework to boost the performance of training-free OVSS models in remote sensing images, which recalibrates arbitrary OVSS models on-the-fly by seeking dual consensus: geometric consensus learning (GCL) through multi-view consistent observations and semantic consensus learning (SCL) via textual description adaptive calibration, which assists collaborative recalibration of visual and textual semantics. The two consensus are injected via an online consensus injector (OCI), effectively alleviating the under-activation and semantic bias. SeeCo requires no specific training process, yet recalibrates semantic-geometric alignment for each unique scene during inference. Extensive experiments on eight remote sensing OVSS benchmarks show consistent gains, proving its effectiveness and universality.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 11 pages, 9 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>Diffusion Model as a Generalist Segmentation Learner</title>
     <link href="http://arxiv.org/abs/2604.24575v1" rel="alternate" type="text/html" />
