@@ -6553,5 +6553,24 @@
     "_added_date": "2026-04-27",
     "Category": "Method",
     "_tasks": "CD"
+  },
+  {
+    "Type": "Image and Video Processing",
+    "Subtype": "Computer Vision",
+    "Date": "2026-04-30",
+    "Month": 4,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Representative Spectral Correlation Network for Multi-source Remote Sensing Image Classification",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2604.27323v1",
+    "Abstract": "Hyperspectral image (HSI) and SAR/LiDAR data offer complementary spectral and structural information for land-cover classification. However, their effective fusion remains challenging due to two major limitations: The spectral redundancy in high-dimensional HSI and the heterogeneous characteristics between multi-source data. To this end, we propose Representative Spectral Correlation Network (RSCNet), a novel multi-source image classification framework specifically designed to address the above challenges through spectral selection and adaptive interaction. The network incorporates two key components: (1) Key Band Selection Module (KBSM) that adaptively selects task-relevant spectral bands from the original HSI under cross-source guidance, thereby alleviating redundancy and mitigating information loss from conventional PCA-based spectral reduction. Moreover, the learned band subset exhibits highly discriminative spectral structures that align with discriminative semantic cues, promoting compact yet expressive representations. (2) Cross-source Adaptive Fusion Module (CAFM) that performs cross-source attention weighting and local-global contextual refinement to enhance cross-source feature interaction. Experiments on three public benchmark datasets demonstrate that our RSCNet achieves superior performance compared with state-of-the-art methods, while maintaining substantially lower computational complexity. Our codes are publicly available at https://github.com/oucailab/RSCNet.",
+    "code": "https://github.com/oucailab/RSCNet",
+    "Publication": "IEEE TGRS 2026",
+    "BibTex": "@article{gong2026representative,\n  title={Representative Spectral Correlation Network for Multi-source Remote Sensing Image Classification},\n  author={Chuanzheng Gong and Feng Gao and Junyan Lin and Junyu Dong and Qian Du},\n  journal={arXiv preprint arXiv:2604.27323v1},\n  year={2026},\n  url={http://arxiv.org/abs/2604.27323v1}\n}",
+    "Authors": "Chuanzheng Gong, Feng Gao, Junyan Lin, Junyu Dong, Qian Du",
+    "_added_date": "2026-05-01",
+    "Category": "Method",
+    "_tasks": "CLS"
   }
 ]

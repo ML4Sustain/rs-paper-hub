@@ -4,49 +4,39 @@
   <id>https://rspaper.top/output/feed_sar.xml</id>
   <link href="https://rspaper.top/output/feed_sar.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-04-30T04:33:53Z</updated>
+  <updated>2026-05-01T01:59:47Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 1 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
   <entry>
-    <title>ChangeQuery: Advancing Remote Sensing Change Analysis for Natural and Human-Induced Disasters from Visual Detection to Semantic Understanding</title>
-    <link href="http://arxiv.org/abs/2604.22333v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.22333v1</id>
-    <published>2026-04-24T00:00:00Z</published>
-    <updated>2026-04-24T00:00:00Z</updated>
+    <title>Representative Spectral Correlation Network for Multi-source Remote Sensing Image Classification</title>
+    <link href="http://arxiv.org/abs/2604.27323v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.27323v1</id>
+    <published>2026-04-30T00:00:00Z</published>
+    <updated>2026-04-30T00:00:00Z</updated>
     <author>
-      <name>Dongwei Sun</name>
+      <name>Chuanzheng Gong</name>
     </author>
     <author>
-      <name>Jing Yao</name>
+      <name>Feng Gao</name>
     </author>
     <author>
-      <name>Kan Wei</name>
+      <name>Junyan Lin</name>
     </author>
     <author>
-      <name>Xiangyong Cao</name>
+      <name>Junyu Dong</name>
     </author>
     <author>
-      <name>Chen Wu</name>
+      <name>Qian Du</name>
     </author>
-    <author>
-      <name>Zhenghui Zhao</name>
-    </author>
-    <author>
-      <name>Pedram Ghamisi</name>
-    </author>
-    <author>
-      <name>Jun Zhou</name>
-    </author>
-    <author>
-      <name>Jón Atli Benediktsson</name>
-    </author>
-    <summary type="text">Rapid situational awareness is critical in post-disaster response. While remote sensing damage assessment is evolving from pixel-level change detection to high-level semantic analysis, existing vision-language methodologies still struggle to provide actionable intelligence for complex strategic queries. They remain severely constrained by unimodal optical dependence, a prevailing bias towards natural disasters, and a fundamental lack of grounded interactivity. To address these limitations, we present ChangeQuery, a unified multimodal framework designed for comprehensive, all-weather disaster situation awareness. To overcome modality constraints and scenario biases, we construct the Disaster-Induced Change Query (DICQ) dataset, a large-scale benchmark coupling pre-event optical semantics with post-event SAR structural features across a balanced distribution of natural catastrophes and armed conflicts. Furthermore, to provide the high-quality supervision required for interactive reasoning, we propose a novel Automated Semantic Annotation Pipeline. Adhering to a ``statistics-first, generation-later'' paradigm, this engine automatically transforms raw segmentation masks into grounded, hierarchical instruction sets, effectively equipping the model with fine-grained spatial and quantitative awareness. Trained on this structured data, the ChangeQuery architecture operates as an interactive disaster analyst. It supports multi-task reasoning driven by diverse user queries, delivering precise damage quantification, region-specific descriptions, and holistic post-disaster summaries. Extensive experiments demonstrate that ChangeQuery establishes a new state-of-the-art, providing a robust and interpretable solution for complex disaster monitoring. The code is available at \href{https://sundongwei.github.io/changequery/}{https://sundongwei.github.io/changequery/}.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
+    <summary type="text">Hyperspectral image (HSI) and SAR/LiDAR data offer complementary spectral and structural information for land-cover classification. However, their effective fusion remains challenging due to two major limitations: The spectral redundancy in high-dimensional HSI and the heterogeneous characteristics between multi-source data. To this end, we propose Representative Spectral Correlation Network (RSCNet), a novel multi-source image classification framework specifically designed to address the above challenges through spectral selection and adaptive interaction. The network incorporates two key components: (1) Key Band Selection Module (KBSM) that adaptively selects task-relevant spectral bands from the original HSI under cross-source guidance, thereby alleviating redundancy and mitigating information loss from conventional PCA-based spectral reduction. Moreover, the learned band subset exhibits highly discriminative spectral structures that align with discriminative semantic cues, promoting compact yet expressive representations. (2) Cross-source Adaptive Fusion Module (CAFM) that performs cross-source attention weighting and local-global contextual refinement to enhance cross-source feature interaction. Experiments on three public benchmark datasets demonstrate that our RSCNet achieves superior performance compared with state-of-the-art methods, while maintaining substantially lower computational complexity. Our codes are publicly available at https://github.com/oucailab/RSCNet.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/oucailab/RSCNet"&gt;https://github.com/oucailab/RSCNet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE TGRS 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
     <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>

@@ -4,12 +4,118 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-04-30T04:33:53Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 20 entries</subtitle>
+  <updated>2026-05-01T01:59:47Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 25 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Noise2Map: End-to-End Diffusion Model for Semantic Segmentation and Change Detection</title>
+    <link href="http://arxiv.org/abs/2604.27889v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.27889v1</id>
+    <published>2026-04-30T00:00:00Z</published>
+    <updated>2026-04-30T00:00:00Z</updated>
+    <author>
+      <name>Ali Shibli</name>
+    </author>
+    <author>
+      <name>Andrea Nascetti</name>
+    </author>
+    <author>
+      <name>Yifang Ban</name>
+    </author>
+    <summary type="text">Semantic segmentation and change detection are two fundamental challenges in remote sensing, requiring models to capture either spatial semantics or temporal differences from satellite imagery. Existing deep learning models often struggle with temporal inconsistencies or in capturing fine-grained spatial structures, require extensive pretraining, and offer limited interpretability - especially in real-world remote sensing scenarios. Recent advances in diffusion models show that Gaussian noise can be systematically leveraged to learn expressive data representations through denoising. Motivated by this, we investigate whether the noise process in diffusion models can be effectively utilized for discriminative tasks. We propose Noise2Map, a unified diffusion-based framework that repurposes the denoising process for fast, end-to-end discriminative learning. Unlike prior work that uses diffusion only for generation or feature extraction, Noise2Map directly predicts semantic or change maps using task-specific noise schedules and timestep conditioning, avoiding the costly sampling procedures of traditional diffusion models. The model is pretrained via self-supervised denoising and fine-tuned with supervision, enabling both interpretability and robustness. Our architecture supports both tasks (SS and CD) through a shared backbone and task-specific noise schedulers. Extensive evaluations on the SpaceNet7, WHU, and xView2 buildings damaged by wildfires datasets demonstrate that Noise2Map ranks on average 1st among seven models on semantic segmentation and 1st on change detection by a cross-dataset rank metric (average F1 primary, IoU tie-break). Ablation studies highlight the robustness of our model against different training noise schedulers and timestep control in the diffusion process, as well as the ability of the model to perform multi-task learning.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD;SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>A generalised pre-training strategy for deep learning networks in semantic segmentation of remotely sensed images</title>
+    <link href="http://arxiv.org/abs/2604.27704v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.27704v1</id>
+    <published>2026-04-30T00:00:00Z</published>
+    <updated>2026-04-30T00:00:00Z</updated>
+    <author>
+      <name>Yuan Fang</name>
+    </author>
+    <author>
+      <name>Yuanzhi Cai</name>
+    </author>
+    <author>
+      <name>Jagannath Aryal</name>
+    </author>
+    <author>
+      <name>Qinfeng Zhu</name>
+    </author>
+    <author>
+      <name>Hong Huang</name>
+    </author>
+    <author>
+      <name>Cheng Zhang</name>
+    </author>
+    <author>
+      <name>Lei Fan</name>
+    </author>
+    <summary type="text">In the segmentation of remotely sensed images, deep learning models are typically pre-trained using large image databases like ImageNet before fine-tuned on domain-specific datasets. However, the performance of these fine-tuned models is often hindered by the large domain gaps (i.e., differences in scenes and modalities) between ImageNet's images and remotely sensed images being processed. Therefore, many researchers have undertaken efforts to establish large-scale domain-specific image datasets for pre-training, aiming to enhance model performance. However, establishing such datasets is often challenging, requiring significant effort, and these datasets often exhibit limited generaliza-bility to other application scenarios. To address these issues, this study introduces a novel yet simple pre-training strategy designed to guide a model away from learning domain-specific features in a pre-training dataset during pre-training, thereby improving the generalisation ability of the pre-trained model. To evaluate the strategy's effectiveness, deep learning models are pre-trained on ImageNet and subsequently fine-tuned on four semantic segmentation datasets with diverse scenes and modalities, including iSAID, MFNet, PST900 and Potsdam. Experimental results show that the proposed pre-training strategy led to state-of-the-art accuracies on all four datasets, namely 67.4% mIoU for iSAID, 56.9% mIoU for MFNet, 84.22% mIoU for PST900, 91.88% mF1 for Potsdam. This research lays the groundwork for developing a unified foundation model applicable to both computer vision and remote sensing applications.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>ZAYAN: Disentangled Contrastive Transformer for Tabular Remote Sensing Data</title>
+    <link href="http://arxiv.org/abs/2604.27606v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.27606v1</id>
+    <published>2026-04-30T00:00:00Z</published>
+    <updated>2026-04-30T00:00:00Z</updated>
+    <author>
+      <name>Al Zadid Sultan Bin Habib</name>
+    </author>
+    <author>
+      <name>Tanpia Tasnim</name>
+    </author>
+    <author>
+      <name>Md. Ekramul Islam</name>
+    </author>
+    <author>
+      <name>Muntasir Tabasum</name>
+    </author>
+    <summary type="text">Learning informative representations from tabular data in remote sensing and environmental science is challenging due to heterogeneity, scarce labels, and redundancy among features. We present ZAYAN (Zero-Anchor dYnamic feAture eNcoding), a self-supervised, feature-centric contrastive framework for tabular data. ZAYAN performs contrastive learning at the feature rather than sample level, removing the need for explicit anchor selection and any reliance on class labels, while encouraging a redundancy-minimized, disentangled embedding space. The framework has two modules: ZAYAN-CL, which pretrains feature embeddings via a zero-anchor contrastive objective with dynamic perturbations and masking, and ZAYAN-T, a Transformer that conditions on these embeddings for downstream classification. Across eight datasets, including six remote-sensing tabular benchmarks and two remote-sensing-driven flood-prediction tables from satellite and GIS products, ZAYAN achieves superior accuracy, robustness, and generalization over tabular deep learning baselines, with consistent gains under label scarcity and distribution shift. These results indicate that feature-level contrastive learning and dynamic feature encoding provide an effective recipe for learning from tabular sensing data.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted for presentation at the 28th International Conference on Pattern Recognition (ICPR 2026) at Lyon, France. Code available at https://github.com/zadid6pretam/ZAYAN. PyPI package: pip install zayan&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+    <category term="Artificial Intelligence; Computer Vision" />
+  </entry>
+  <entry>
+    <title>Representative Spectral Correlation Network for Multi-source Remote Sensing Image Classification</title>
+    <link href="http://arxiv.org/abs/2604.27323v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.27323v1</id>
+    <published>2026-04-30T00:00:00Z</published>
+    <updated>2026-04-30T00:00:00Z</updated>
+    <author>
+      <name>Chuanzheng Gong</name>
+    </author>
+    <author>
+      <name>Feng Gao</name>
+    </author>
+    <author>
+      <name>Junyan Lin</name>
+    </author>
+    <author>
+      <name>Junyu Dong</name>
+    </author>
+    <author>
+      <name>Qian Du</name>
+    </author>
+    <summary type="text">Hyperspectral image (HSI) and SAR/LiDAR data offer complementary spectral and structural information for land-cover classification. However, their effective fusion remains challenging due to two major limitations: The spectral redundancy in high-dimensional HSI and the heterogeneous characteristics between multi-source data. To this end, we propose Representative Spectral Correlation Network (RSCNet), a novel multi-source image classification framework specifically designed to address the above challenges through spectral selection and adaptive interaction. The network incorporates two key components: (1) Key Band Selection Module (KBSM) that adaptively selects task-relevant spectral bands from the original HSI under cross-source guidance, thereby alleviating redundancy and mitigating information loss from conventional PCA-based spectral reduction. Moreover, the learned band subset exhibits highly discriminative spectral structures that align with discriminative semantic cues, promoting compact yet expressive representations. (2) Cross-source Adaptive Fusion Module (CAFM) that performs cross-source attention weighting and local-global contextual refinement to enhance cross-source feature interaction. Experiments on three public benchmark datasets demonstrate that our RSCNet achieves superior performance compared with state-of-the-art methods, while maintaining substantially lower computational complexity. Our codes are publicly available at https://github.com/oucailab/RSCNet.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/oucailab/RSCNet"&gt;https://github.com/oucailab/RSCNet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE TGRS 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>MemOVCD: Training-Free Open-Vocabulary Change Detection via Cross-Temporal Memory Reasoning and Global-Local Adaptive Rectification</title>
     <link href="http://arxiv.org/abs/2604.26774v1" rel="alternate" type="text/html" />
@@ -178,6 +284,56 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Towards Generalizable Mapping of Hedges and Linear Woody Features from Earth Observation Data: a national Product for Germany</title>
+    <link href="http://arxiv.org/abs/2604.27247v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.27247v1</id>
+    <published>2026-04-29T00:00:00Z</published>
+    <updated>2026-04-29T00:00:00Z</updated>
+    <author>
+      <name>Thorsten Hoeser</name>
+    </author>
+    <author>
+      <name>Verena Huber-Garcia</name>
+    </author>
+    <author>
+      <name>Sarah Asam</name>
+    </author>
+    <author>
+      <name>Ursula Gessner</name>
+    </author>
+    <author>
+      <name>Claudia Kuenzer</name>
+    </author>
+    <summary type="text">Hedges and other linear woody features provide valuable ecosystem services, particularly within intensively managed agricultural landscapes. They are key elements for climate adaptation and biodiversity amongst others not only due to a largely varying flora, but also as a feeding-, resting-, and nesting place for many animals and insects including valuable pollinators. Therefore, they require dedicated management, preservation, and attention. Thus, systematic and large-scale mapping of these features from Earth observation data is of high importance. However, transferable and reusable workflows for linear woody feature mapping remain a key methodological challenge, given the diversity of sensor types, spatial resolutions, data acquisition conditions, and complex landscape variability encountered across study areas. We introduce a modular workflow built around two independently optimizable components. Firstly, a flexible input data interface that consolidates heterogeneous Earth observation data into a binary woody vegetation mask, and secondly, a deep neural network trained to separate linear from non-linear shapes within these masks. We demonstrate the workflow by deriving three national-scale linear woody feature maps for all of Germany from three input sources by using a single trained model without retraining. Evaluation against refined reference data from four federal state biotope mapping campaigns and comparison with two existing linear woody feature maps demonstrate that the workflow produces competitive results across all evaluation sites on a national level. The modular design and its demonstrated applicability at national scale provide a foundation for scalable and generalizable linear woody feature mapping beyond Germany.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 31 pages, 14 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>HQ-UNet: A Hybrid Quantum-Classical U-Net with a Quantum Bottleneck for Remote Sensing Image Segmentation</title>
+    <link href="http://arxiv.org/abs/2604.27206v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2604.27206v1</id>
+    <published>2026-04-29T00:00:00Z</published>
+    <updated>2026-04-29T00:00:00Z</updated>
+    <author>
+      <name>Md Aminur Hossain</name>
+    </author>
+    <author>
+      <name>Ayush V. Patel</name>
+    </author>
+    <author>
+      <name>Ikshwaku Vanani</name>
+    </author>
+    <author>
+      <name>Biplab Banerjee</name>
+    </author>
+    <summary type="text">Semantic segmentation in remote sensing is commonly addressed using classical deep learning architectures such as U-Net, which require a large number of parameters to model complex spatial relationships. Quantum machine learning (QML) provides an alternative representation paradigm by mapping classical features into quantum states, but its direct application to high-dimensional images remains challenging under near-term quantum hardware constraints. In this work, we propose HQ-UNet, a hybrid quantum-classical U-Net architecture that integrates a compact parameterized quantum circuit at the bottleneck of a classical U-Net. The proposed design uses a non-pooling quantum convolutional module to enrich highly compressed encoder features before decoding, while keeping the quantum component shallow and parameter-efficient. Experiments on the LandCover.ai dataset show that HQ-UNet achieves a mean IoU of 0.8050 and an overall accuracy of 94.76%, outperforming the classical U-Net baseline. These results suggest that compact quantum bottlenecks can enhance feature representation for remote sensing image segmentation under near-term quantum constraints. This highlights the potential of hybrid quantum-classical designs as a promising direction for parameter-efficient dense prediction in Earth observation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 6 pages&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
   </entry>
   <entry>
     <title>SARU: A Shadow-Aware and Removal Unified Framework for Remote Sensing Images with New Benchmarks</title>
@@ -609,44 +765,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>ChangeQuery: Advancing Remote Sensing Change Analysis for Natural and Human-Induced Disasters from Visual Detection to Semantic Understanding</title>
-    <link href="http://arxiv.org/abs/2604.22333v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2604.22333v1</id>
-    <published>2026-04-24T00:00:00Z</published>
-    <updated>2026-04-24T00:00:00Z</updated>
-    <author>
-      <name>Dongwei Sun</name>
-    </author>
-    <author>
-      <name>Jing Yao</name>
-    </author>
-    <author>
-      <name>Kan Wei</name>
-    </author>
-    <author>
-      <name>Xiangyong Cao</name>
-    </author>
-    <author>
-      <name>Chen Wu</name>
-    </author>
-    <author>
-      <name>Zhenghui Zhao</name>
-    </author>
-    <author>
-      <name>Pedram Ghamisi</name>
-    </author>
-    <author>
-      <name>Jun Zhou</name>
-    </author>
-    <author>
-      <name>Jón Atli Benediktsson</name>
-    </author>
-    <summary type="text">Rapid situational awareness is critical in post-disaster response. While remote sensing damage assessment is evolving from pixel-level change detection to high-level semantic analysis, existing vision-language methodologies still struggle to provide actionable intelligence for complex strategic queries. They remain severely constrained by unimodal optical dependence, a prevailing bias towards natural disasters, and a fundamental lack of grounded interactivity. To address these limitations, we present ChangeQuery, a unified multimodal framework designed for comprehensive, all-weather disaster situation awareness. To overcome modality constraints and scenario biases, we construct the Disaster-Induced Change Query (DICQ) dataset, a large-scale benchmark coupling pre-event optical semantics with post-event SAR structural features across a balanced distribution of natural catastrophes and armed conflicts. Furthermore, to provide the high-quality supervision required for interactive reasoning, we propose a novel Automated Semantic Annotation Pipeline. Adhering to a ``statistics-first, generation-later'' paradigm, this engine automatically transforms raw segmentation masks into grounded, hierarchical instruction sets, effectively equipping the model with fine-grained spatial and quantitative awareness. Trained on this structured data, the ChangeQuery architecture operates as an interactive disaster analyst. It supports multi-task reasoning driven by diverse user queries, delivering precise damage quantification, region-specific descriptions, and holistic post-disaster summaries. Extensive experiments demonstrate that ChangeQuery establishes a new state-of-the-art, providing a robust and interpretable solution for complex disaster monitoring. The code is available at \href{https://sundongwei.github.io/changequery/}{https://sundongwei.github.io/changequery/}.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>
