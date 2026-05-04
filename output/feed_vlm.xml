@@ -4,12 +4,54 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-04T01:37:54Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
+  <updated>2026-05-04T03:59:55Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 6 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Foundation AI Models for Aerosol Optical Depth Estimation from PACE Satellite Data</title>
+    <link href="http://arxiv.org/abs/2605.00678v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.00678v1</id>
+    <published>2026-05-01T00:00:00Z</published>
+    <updated>2026-05-01T00:00:00Z</updated>
+    <author>
+      <name>Zahid Hassan Tushar</name>
+    </author>
+    <author>
+      <name>Sanjay Purushotham</name>
+    </author>
+    <summary type="text">Aerosol Optical Depth (AOD) retrieval is essential for Earth observation, supporting applications from air quality monitoring to climate studies. Conventional physics-based AOD retrieval methods formulate the problem as a pixel-wise inversion, relying on radiative transfer modeling, memory-intensive look-up tables, and auxiliary meteorological data. While recent data-driven approaches have shown promise, many fail to exploit the spatial-spectral coherence of hyperspectral imagery, leading to spatially inconsistent and noise-sensitive retrievals. We present the first study exploring Foundation AI models for AOD retrieval and propose ViTCG, a Vision Transformer with Channel-wise Grouping-based spatial regression framework that reduces retrieval bias and error. ViTCG uses hyperspectral top-of-atmosphere radiance as input and jointly models spatial context and spectral information. Validation with PACE radiance observations demonstrates a 62% reduction in mean squared error compared to state-of-the-art foundation models, including Prithvi, and produces spatially coherent AOD fields.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 2026 IEEE International Geoscience and Remote Sensing Symposium&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Remote SAMsing: From Segment Anything to Segment Everything</title>
+    <link href="http://arxiv.org/abs/2605.00256v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.00256v1</id>
+    <published>2026-04-30T00:00:00Z</published>
+    <updated>2026-04-30T00:00:00Z</updated>
+    <author>
+      <name>Osmar Luiz Ferreira de Carvalho</name>
+    </author>
+    <author>
+      <name>Osmar Abílio de Carvalho Júnior</name>
+    </author>
+    <author>
+      <name>Anesmar Olino de Albuquerque</name>
+    </author>
+    <author>
+      <name>Daniel Guerreiro e Silva</name>
+    </author>
+    <summary type="text">SAM2 produces high-quality zero-shot segmentation on natural images, but applying it to large remote sensing scenes exposes two problems: (1) its mask generator faces an inherent quality-coverage trade-off: strict thresholds yield precise masks but leave most of the image unsegmented, while relaxed thresholds increase coverage at the cost of mask quality; and (2) large images must be tiled, fragmenting objects across tile boundaries. We propose Remote SAMsing, an open-source pipeline that solves both problems without modifying SAM2 or requiring training data. For coverage, a multi-pass algorithm runs SAM2 repeatedly on each tile, painting accepted masks black between passes to simplify the scene for the next iteration, and relaxing quality thresholds only when coverage gains stagnate, ensuring that the most precise masks are always captured first. For spatial consistency, contextual padding and a parameter-free best-match merge reconstruct objects fragmented across tile boundaries. Evaluated on seven scenes (5~cm to 4.78~m GSD), the pipeline raises coverage from 30--68\% (single-pass SAM2) to 91--98\%. Ablation experiments quantify the contribution of each component to coverage and detection quality. Per-class evaluation shows that SAM2 transfers well to discrete RS objects (buildings 95\%, cars 82--93\% Det@0.5) with segment boundaries 3--8$\times$ more precise than SLIC and Felzenszwalb baselines. Tile size functions as an implicit scale parameter: reducing it from $1{,}000$ to 250 raises Det@0.5 from 56\% to 85\%, outperforming SAM2's built-in multi-scale mechanism. The pipeline generalizes to MNF false-color imagery without retraining (99.5\% ASA) and scales to production-sized images: a 1.94 billion pixel Potsdam mosaic achieved 97\% coverage without quality degradation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 31 pages, 8 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>MemOVCD: Training-Free Open-Vocabulary Change Detection via Cross-Temporal Memory Reasoning and Global-Local Adaptive Rectification</title>
     <link href="http://arxiv.org/abs/2604.26774v1" rel="alternate" type="text/html" />
