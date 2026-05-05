@@ -4,12 +4,64 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-05T01:38:20Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 6 entries</subtitle>
+  <updated>2026-05-05T04:30:56Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 8 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Rethinking Electro-Optical Vision Foundation Models for Remote Sensing Retrieval: A Controlled Comparison with Generalist VFM</title>
+    <link href="http://arxiv.org/abs/2605.02283v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.02283v1</id>
+    <published>2026-05-04T00:00:00Z</published>
+    <updated>2026-05-04T00:00:00Z</updated>
+    <author>
+      <name>Hyobin Park</name>
+    </author>
+    <author>
+      <name>Minseok Seo</name>
+    </author>
+    <author>
+      <name>Dong-Geol Choi</name>
+    </author>
+    <summary type="text">Vision foundation models have attracted significant attention for their ability to leverage large-scale unlabeled visual data. This advantage is particularly important in remote sensing, where data acquisition is costly and annotation often requires expert knowledge. Recent electro-optical vision foundation models aim to learn domain-specific representations from remote sensing imagery, but it remains unclear whether they are more effective than strong generalist vision foundation models under retrieval-based evaluation. In this study, we conduct a controlled comparison between representative EO-specific and generalist vision foundation models for remote sensing image retrieval. Using the same datasets, retrieval protocol, and evaluation metric, we evaluate both in-domain performance and cross-scene generalization. Our results show that strong generalist vision foundation models are competitive with, and in some cases outperform, existing EO-specific models. Moreover, EO-specific models often suffer from substantial degradation under cross-scene evaluation, while generalist models show more stable transfer. These findings suggest that EO pretraining alone does not guarantee stronger retrieval-oriented remote sensing representations. We discuss the limitations of current EO-specific pretraining strategies and highlight the need for future EO vision foundation models to better exploit the physical, spatial, spectral, and geographic characteristics of remote sensing imagery.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>EO-Gym: A Multimodal, Interactive Environment for Earth Observation Agents</title>
+    <link href="http://arxiv.org/abs/2605.01250v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.01250v1</id>
+    <published>2026-05-02T00:00:00Z</published>
+    <updated>2026-05-02T00:00:00Z</updated>
+    <author>
+      <name>Sai Ma</name>
+    </author>
+    <author>
+      <name>Zhuang Li</name>
+    </author>
+    <author>
+      <name>Sichao Li</name>
+    </author>
+    <author>
+      <name>Xinyue Xu</name>
+    </author>
+    <author>
+      <name>Ruibiao Zhu</name>
+    </author>
+    <author>
+      <name>Tony Boston</name>
+    </author>
+    <author>
+      <name>John A. Taylor</name>
+    </author>
+    <summary type="text">Earth Observation (EO) analysis is inherently interactive: resolving uncertainty often requires expanding the region of interest, retrieving historical observations, and switching across sensors such as optical and Synthetic Aperture Radar. However, most EO benchmarks collapse this process into fixed-input, single-turn tasks. To address this gap, we present EO-Gym, a controlled executable framework for multimodal, tool-using EO agents that formulates EO analysis as a Gymnasium-style local geospatial workspace backed by more than 660k multimodal files indexed by location, time, and sensor type, with 35 EO-specialized tools spanning six task families. Built on this environment, we construct EO-Gym-Data, a benchmark of 9,078 trajectories and 34,604 reasoning steps, and grounded in eight public EO datasets together with Landsat and Sentinel-2 imagery. Evaluating $10$ open and closed VLMs shows that strong general-purpose models still struggle with interactive EO reasoning, especially on temporal and cross-modal workflows. As a reference baseline, EO-Gym-4B, obtained by fine-tuning Qwen3-VL-4B-Instruct on EO-Gym-Data, improves overall Pass@3 from $0.49$ to $0.74$ under the main evaluation setting. O-Gym provides a reproducible environment for interactive EO agents, operationalizing EO as an evidence-gathering problem that requires planning across geospatial, temporal, and sensing modality.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>Foundation AI Models for Aerosol Optical Depth Estimation from PACE Satellite Data</title>
     <link href="http://arxiv.org/abs/2605.00678v1" rel="alternate" type="text/html" />

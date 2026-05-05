@@ -4,12 +4,157 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-05T01:38:20Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 15 entries</subtitle>
+  <updated>2026-05-05T04:30:56Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 20 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Rethinking Electro-Optical Vision Foundation Models for Remote Sensing Retrieval: A Controlled Comparison with Generalist VFM</title>
+    <link href="http://arxiv.org/abs/2605.02283v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.02283v1</id>
+    <published>2026-05-04T00:00:00Z</published>
+    <updated>2026-05-04T00:00:00Z</updated>
+    <author>
+      <name>Hyobin Park</name>
+    </author>
+    <author>
+      <name>Minseok Seo</name>
+    </author>
+    <author>
+      <name>Dong-Geol Choi</name>
+    </author>
+    <summary type="text">Vision foundation models have attracted significant attention for their ability to leverage large-scale unlabeled visual data. This advantage is particularly important in remote sensing, where data acquisition is costly and annotation often requires expert knowledge. Recent electro-optical vision foundation models aim to learn domain-specific representations from remote sensing imagery, but it remains unclear whether they are more effective than strong generalist vision foundation models under retrieval-based evaluation. In this study, we conduct a controlled comparison between representative EO-specific and generalist vision foundation models for remote sensing image retrieval. Using the same datasets, retrieval protocol, and evaluation metric, we evaluate both in-domain performance and cross-scene generalization. Our results show that strong generalist vision foundation models are competitive with, and in some cases outperform, existing EO-specific models. Moreover, EO-specific models often suffer from substantial degradation under cross-scene evaluation, while generalist models show more stable transfer. These findings suggest that EO pretraining alone does not guarantee stronger retrieval-oriented remote sensing representations. We discuss the limitations of current EO-specific pretraining strategies and highlight the need for future EO vision foundation models to better exploit the physical, spatial, spectral, and geographic characteristics of remote sensing imagery.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>SlimDiffSR: Toward Lightweight and Efficient Remote Sensing Image Super-Resolution via Diffusion Model Distillation</title>
+    <link href="http://arxiv.org/abs/2605.02198v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.02198v1</id>
+    <published>2026-05-04T00:00:00Z</published>
+    <updated>2026-05-04T00:00:00Z</updated>
+    <author>
+      <name>Ce Wang</name>
+    </author>
+    <author>
+      <name>Zhenyu Hu</name>
+    </author>
+    <author>
+      <name>Wanjie Sun</name>
+    </author>
+    <summary type="text">Diffusion models have recently achieved remarkable performance in image super-resolution (SR), but their high computational cost limits practical deployment in remote sensing applications. To address this issue, we propose SlimDiffSR, a lightweight and efficient diffusion-based framework for real-world remote sensing image super-resolution. Unlike existing single-step diffusion methods that rely on fixed timesteps, we first introduce an uncertainty-guided timestep assignment strategy to construct a stronger single-step teacher model, where reconstruction difficulty is explicitly linked to diffusion timesteps, enabling adaptive generative strength. Building upon this teacher, we further present a structured pruning strategy tailored to remote sensing imagery, which systematically removes redundant semantic modules and replaces standard operations with lightweight designs, including frequency-separable convolution, direction-separable convolution, and a query-driven global aggregation module. These components explicitly exploit the unique characteristics of remote sensing data, such as sparse high-frequency details, strong directional patterns, and long-range spatial dependencies. To enhance knowledge transfer, we incorporate Maximum Mean Discrepancy (MMD) into the distillation process to align feature distributions between the teacher and student models. Extensive experiments on multiple remote sensing benchmarks demonstrate that SlimDiffSR achieves a favorable balance between efficiency and reconstruction quality. In particular, it attains up to $200\times$ inference acceleration and a $20\times$ reduction in model parameters compared with multi-step diffusion models, while achieving competitive perceptual quality and clearly outperforming existing lightweight diffusion baselines in efficiency. The code is available at: https://github.com/wwangcece/SlimDiffSR.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/wwangcece/SlimDiffSR"&gt;https://github.com/wwangcece/SlimDiffSR&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>RAFNet: Region-Aware Fusion Network for Pansharpening</title>
+    <link href="http://arxiv.org/abs/2605.02184v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.02184v1</id>
+    <published>2026-05-04T00:00:00Z</published>
+    <updated>2026-05-04T00:00:00Z</updated>
+    <author>
+      <name>Jianing Zhang</name>
+    </author>
+    <author>
+      <name>Zijian Zhou</name>
+    </author>
+    <author>
+      <name>Kai Sun</name>
+    </author>
+    <summary type="text">Pansharpening aims to generate high-resolution multispectral (HRMS) images by fusing low-resolution multispectral (LRMS) and high-resolution panchromatic (PAN) images. Although deep learning has advanced this field, mainstream frequency-based methods relying on standard scaled dot-product attention suffer from quadratic computational complexity and fail to exploit the inherent regional sparsity of remote sensing imagery. Furthermore, existing spatial enhancement strategies typically employ static convolution kernels, which struggle to adapt to the complex frequency and regional variations of PAN and MS images. To address these bottlenecks, we propose a Region-Aware Fusion (RAFNet) Network that synergistically models spatial and frequency information. Specifically, we design a Spatial Adaptive Refinement (SAR) module that leverages the discrete wavelet transform (DWT) for directional frequency separation and K-means clustering for regional partitioning, which enables the dynamic construction of region-specific adaptive convolution kernels, achieving spatially and frequency-adaptive feature enhancement. Moreover, we introduce a Clustered Frequency Aggregation (CFA) module based on a sparse attention mechanism guided by the semantic clusters, which executes a region-aware sparse attention strategy that drastically reduces computational redundancy while ensuring high-quality frequency feature extraction. In addition we integrated these modules into a progressive, multi-level spatial-frequency network architecture to facilitate robust interaction and accurate image reconstruction. Extensive experiments on multiple benchmark datasets demonstrate that the proposed RAFNet significantly outperforms state-of-the-art pansharpening methods in both reduced- and full-resolution assessments. The code is available at https://github.com/PatrickNod/RAFNet.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/PatrickNod/RAFNet"&gt;https://github.com/PatrickNod/RAFNet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages, 10 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence; Machine Learning" />
+  </entry>
+  <entry>
+    <title>Sapphire Photonic Crystal Fiber Sensor</title>
+    <link href="http://arxiv.org/abs/2605.02088v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.02088v1</id>
+    <published>2026-05-03T00:00:00Z</published>
+    <updated>2026-05-03T00:00:00Z</updated>
+    <author>
+      <name>Mohan Wang</name>
+    </author>
+    <author>
+      <name>Tongyu Liu</name>
+    </author>
+    <author>
+      <name>Zipei Song</name>
+    </author>
+    <author>
+      <name>Richard Reeves</name>
+    </author>
+    <author>
+      <name>Frank P. Payne</name>
+    </author>
+    <author>
+      <name>Igor N. Dyson</name>
+    </author>
+    <author>
+      <name>Kaihui Zhang</name>
+    </author>
+    <author>
+      <name>Tao Wang</name>
+    </author>
+    <author>
+      <name>Jian Zhang</name>
+    </author>
+    <author>
+      <name>Zhitai Jia</name>
+    </author>
+    <author>
+      <name>Patrick S. Salter</name>
+    </author>
+    <author>
+      <name>Martin J. Booth</name>
+    </author>
+    <author>
+      <name>Julian A. J. Fells</name>
+    </author>
+    <summary type="text">Sapphire optical fiber shows great promise for remote sensing in extreme environments approaching 2000 degC, by using laser-processing to form a single-mode waveguide within it. However, for practical application, longer devices with high manufacturability and reliability are required. We report the design, modeling, fabrication, and optimization of an index-guiding sapphire photonic crystal fiber Bragg grating temperature sensor. The device is fabricated using femtosecond laser direct writing to inscribe both the photonic crystal waveguide and the Bragg grating. A spatial light modulator was used to compensate for the mismatch between the immersion objective and the high-index oil used. This improved the aspect ratio and suppressed cracking during fabrication, for higher reliability. The design results in a 6-fold reduction in fabrication time over an equivalent depressed cladding waveguide, significantly reducing the cost of manufacture. Devices up to 7 cm long were fabricated and spliced to standard single-mode fiber. The propagation loss was estimated to be 0.7 dB/cm and the Bragg gratings had a bandwidth of approximately 0.12 nm. Devices were tested in a furnace showing a temperature sensitivity of between 19.0-32.3 pm/degC over a range 25-1200 degC. These longer devices have the potential to enable practical high precision extreme temperature monitoring in many applications, with lower manufacturing cost and higher reliability.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; This work has been submitted to the IEEE for possible publication. 9 pages + 2 pages Supplementary Information&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="physics.optics" />
+  </entry>
+  <entry>
+    <title>EO-Gym: A Multimodal, Interactive Environment for Earth Observation Agents</title>
+    <link href="http://arxiv.org/abs/2605.01250v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.01250v1</id>
+    <published>2026-05-02T00:00:00Z</published>
+    <updated>2026-05-02T00:00:00Z</updated>
+    <author>
+      <name>Sai Ma</name>
+    </author>
+    <author>
+      <name>Zhuang Li</name>
+    </author>
+    <author>
+      <name>Sichao Li</name>
+    </author>
+    <author>
+      <name>Xinyue Xu</name>
+    </author>
+    <author>
+      <name>Ruibiao Zhu</name>
+    </author>
+    <author>
+      <name>Tony Boston</name>
+    </author>
+    <author>
+      <name>John A. Taylor</name>
+    </author>
+    <summary type="text">Earth Observation (EO) analysis is inherently interactive: resolving uncertainty often requires expanding the region of interest, retrieving historical observations, and switching across sensors such as optical and Synthetic Aperture Radar. However, most EO benchmarks collapse this process into fixed-input, single-turn tasks. To address this gap, we present EO-Gym, a controlled executable framework for multimodal, tool-using EO agents that formulates EO analysis as a Gymnasium-style local geospatial workspace backed by more than 660k multimodal files indexed by location, time, and sensor type, with 35 EO-specialized tools spanning six task families. Built on this environment, we construct EO-Gym-Data, a benchmark of 9,078 trajectories and 34,604 reasoning steps, and grounded in eight public EO datasets together with Landsat and Sentinel-2 imagery. Evaluating $10$ open and closed VLMs shows that strong general-purpose models still struggle with interactive EO reasoning, especially on temporal and cross-modal workflows. As a reference baseline, EO-Gym-4B, obtained by fine-tuning Qwen3-VL-4B-Instruct on EO-Gym-Data, improves overall Pass@3 from $0.49$ to $0.74$ under the main evaluation setting. O-Gym provides a reproducible environment for interactive EO agents, operationalizing EO as an evidence-gathering problem that requires planning across geospatial, temporal, and sensing modality.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>Foundation AI Models for Aerosol Optical Depth Estimation from PACE Satellite Data</title>
     <link href="http://arxiv.org/abs/2605.00678v1" rel="alternate" type="text/html" />
