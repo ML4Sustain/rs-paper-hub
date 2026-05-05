@@ -31,7 +31,7 @@ def build_query(year: int, month: int | None = None) -> str:
         else:
             end = f"{year}{month + 1:02d}01"
         date_filter = f" AND submittedDate:[{start}0000 TO {end}0000]"
-        return base + date_filter
+        return f'({base}){date_filter}'
     return base
 
 
@@ -53,7 +53,7 @@ def _build_date_range_query(date_from: datetime, date_to: datetime) -> str:
     """Build arXiv search query for a specific date range."""
     start = date_from.strftime("%Y%m%d")
     end = date_to.strftime("%Y%m%d")
-    return f'{SEARCH_QUERY} AND submittedDate:[{start}0000 TO {end}2359]'
+    return f'({SEARCH_QUERY}) AND submittedDate:[{start}0000 TO {end}2359]'
 
 
 def fetch_papers(
