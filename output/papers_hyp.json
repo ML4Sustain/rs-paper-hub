@@ -18466,5 +18466,43 @@
     "_added_date": "2026-05-05",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-05-05",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "SoDa2: Single-Stage Open-Set Domain Adaptation via Decoupled Alignment for Cross-Scene Hyperspectral Image Classification",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.03371v1",
+    "Abstract": "Cross-scene hyperspectral image (HSI) classification stands as a fundamental research topic in remote sensing, with extensive applications spanning various fields. Owing to the inclusion of unknown categories in the target domain and the existence of domain shift across different scenes, open-set domain adaptation techniques are commonly employed to address cross-scene HSI classification. However, existing open-set cross-scene HSI classification methods still face two critical challenges: (1) domain shift issues arising from the direct alignment of mixed spectral-spatial features; (2) high computational costs caused by two-stage training strategies. To address these issues, this paper proposes a single-stage open-set domain adaptation method with decoupled alignment (SoDa$^2$) for cross-scene HSI classification. A contribution-aware dual-modality feature extraction is customized to disentangle the characteristics from spectral sequence signals and spatial details, selectively and adaptively enhancing discriminative features. The decoupled alignment module minimizes the Maximum Mean Discrepancy to independently reduce the spectral discrepancy and the spatial discrepancy between the source and target domains, extracting more fine-grained domain-invariant features. A cost-effective single-stage dual-branch framework is designed to learn MMD-constrainted aligned features and constraint-free intrinsic features for adaptive distinction between known and unknown classes. This framework employs a Gaussian Mixture Model to model the squared cosine similarity distribution between the two feature types, enabling open-set recognition without prior knowledge of unknown classes. Extensive experiments on three groups of HSI datasets demonstrate that SoDa$^2$ outperforms state-of-the-art methods, achieving superior classification accuracy and model transferability for open-set cross-scene tasks.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{liu2026soda,\n  title={SoDa2: Single-Stage Open-Set Domain Adaptation via Decoupled Alignment for Cross-Scene Hyperspectral Image Classification},\n  author={Yiwen Liu and Minghua Wang and Jing Yao and Xin Zhao and Gemine Vivone},\n  journal={arXiv preprint arXiv:2605.03371v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.03371v1}\n}",
+    "Authors": "Yiwen Liu, Minghua Wang, Jing Yao, Xin Zhao, Gemine Vivone",
+    "_added_date": "2026-05-06",
+    "Category": "Method",
+    "_tasks": "CLS"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-05-04",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Sentinel2Cap: A Human-Annotated Benchmark Dataset for Multimodal Remote Sensing Image Captioning",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.03189v1",
+    "Abstract": "Image captioning has become an important task in computer vision, enabling models to generate natural language descriptions of visual content. While several datasets exist for natural images and high-resolution optical remote sensing imagery, the availability of captioning datasets for multimodal satellite data remains limited, particularly for SAR imagery and medium-resolution sensors. We introduce Sentinel2Cap, a human-annotated multimodal captioning dataset containing Sentinel-1 SAR and Sentinel-2 multi-spectral image patches at 10 m and 20 m spatial resolution with diverse land cover compositions. Captions are created manually and carefully validated to ensure both semantic accuracy and linguistic quality. To evaluate Sentinel2Cap, we perform a zero-shot captioning using the Qwen3-VL-8B-Instruct model across three image modalities: RGB, multi-spectral, and SAR pseudo-RGB representations. Results show that RGB images achieve the highest captioning performance, while SAR images remain more challenging for vision-language models. Providing modality-specific contextual prompts consistently improves performance across all metrics. These findings highlight both the challenges of multimodal remote sensing image captioning and the potential value of human-annotated datasets for advancing research in cross-modal scene understanding. All the material is publicly avaiable.",
+    "code": "",
+    "Publication": "10 pages, 6 figures",
+    "BibTex": "@article{tosato2026sentinelcap,\n  title={Sentinel2Cap: A Human-Annotated Benchmark Dataset for Multimodal Remote Sensing Image Captioning},\n  author={Lucrezia Tosato and Gianluca Lombardi and Ronny Hansch},\n  journal={arXiv preprint arXiv:2605.03189v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.03189v1}\n}",
+    "Authors": "Lucrezia Tosato, Gianluca Lombardi, Ronny Hansch",
+    "_added_date": "2026-05-06",
+    "Category": "Dataset",
+    "_tasks": "IC"
   }
 ]

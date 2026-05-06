@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_sar.xml</id>
   <link href="https://rspaper.top/output/feed_sar.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-06T01:35:03Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
+  <updated>2026-05-06T02:45:26Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -31,6 +31,27 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence; Machine Learning" />
+  </entry>
+  <entry>
+    <title>Sentinel2Cap: A Human-Annotated Benchmark Dataset for Multimodal Remote Sensing Image Captioning</title>
+    <link href="http://arxiv.org/abs/2605.03189v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.03189v1</id>
+    <published>2026-05-04T00:00:00Z</published>
+    <updated>2026-05-04T00:00:00Z</updated>
+    <author>
+      <name>Lucrezia Tosato</name>
+    </author>
+    <author>
+      <name>Gianluca Lombardi</name>
+    </author>
+    <author>
+      <name>Ronny Hansch</name>
+    </author>
+    <summary type="text">Image captioning has become an important task in computer vision, enabling models to generate natural language descriptions of visual content. While several datasets exist for natural images and high-resolution optical remote sensing imagery, the availability of captioning datasets for multimodal satellite data remains limited, particularly for SAR imagery and medium-resolution sensors. We introduce Sentinel2Cap, a human-annotated multimodal captioning dataset containing Sentinel-1 SAR and Sentinel-2 multi-spectral image patches at 10 m and 20 m spatial resolution with diverse land cover compositions. Captions are created manually and carefully validated to ensure both semantic accuracy and linguistic quality. To evaluate Sentinel2Cap, we perform a zero-shot captioning using the Qwen3-VL-8B-Instruct model across three image modalities: RGB, multi-spectral, and SAR pseudo-RGB representations. Results show that RGB images achieve the highest captioning performance, while SAR images remain more challenging for vision-language models. Providing modality-specific contextual prompts consistently improves performance across all metrics. These findings highlight both the challenges of multimodal remote sensing image captioning and the potential value of human-annotated datasets for advancing research in cross-modal scene understanding. All the material is publicly avaiable.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, 6 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC&lt;/p&gt;</content>
+    <category term="Computer Vision" />
   </entry>
   <entry>
     <title>EO-Gym: A Multimodal, Interactive Environment for Earth Observation Agents</title>

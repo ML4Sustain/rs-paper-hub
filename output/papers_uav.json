@@ -5584,5 +5584,24 @@
     "_added_date": "2026-04-22",
     "Category": "Method",
     "_tasks": "CLS"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Image and Video Processing",
+    "Date": "2026-05-05",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "deSEO: Physics-Aware Dataset Creation for High-Resolution Satellite Image Shadow Removal",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.03610v1",
+    "Abstract": "Shadows cast by terrain and tall structures remain a major obstacle for high-resolution satellite image analysis, degrading classification, detection, and 3D reconstruction performance. Public resources offering geometry-consistent paired shadow/shadow-free satellite imagery are essentially missing, and most Earth-observation datasets are designed for shadow detection or 3D modelling rather than removal. Existing deep shadow-removal datasets either target ground-level or aerial scenes or rely on unpaired and weakly supervised formulations rather than explicit satellite pairs. We address this gap with deSEO, a geometry-aware and physics-informed methodology that, to the best of our knowledge, is the first to derive paired supervision for satellite shadow removal from the S-EO shadow detection dataset through a fully replicable pipeline. For each tile, deSEO selects a minimally shadowed acquisition as a weak reference and pairs it with shadowed counterparts using temporal and geometric filtering, Jacobian-based orientation normalisation, and LoFTR-RANSAC registration. A per-pixel validity mask restricts learning to reliably aligned regions, enabling supervision despite residual off-nadir parallax. In addition to this paired dataset, we develop a DSM-aware deshadowing model that combines residual translation, perceptual objectives, and mask-constrained adversarial learning. In contrast, a direct adaptation of a UAV-based SRNet/pix2pix architecture fails to converge under satellite viewpoint variability. Our model consistently reduces the visual impact of cast shadows across diverse illumination and viewing conditions, achieving improved structural and perceptual fidelity on held-out scenes. deSEO therefore provides the first reproducible, geometry-aware paired dataset and baseline for shadow removal in satellite Earth observation.",
+    "code": "",
+    "Publication": "the annals track at the ISPRS 2026 Congress",
+    "BibTex": "@article{beltrame2026deseo,\n  title={deSEO: Physics-Aware Dataset Creation for High-Resolution Satellite Image Shadow Removal},\n  author={Lorenzo Beltrame and Jules Salzinger and Filip Svoboda and Phillipp Fanta-Jende and Jasmin Lampert and Radu Timofte and Marco Körner},\n  journal={arXiv preprint arXiv:2605.03610v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.03610v1}\n}",
+    "Authors": "Lorenzo Beltrame, Jules Salzinger, Filip Svoboda, Phillipp Fanta-Jende, Jasmin Lampert, Radu Timofte, Marco Körner",
+    "_added_date": "2026-05-06",
+    "Category": "Dataset",
+    "_tasks": "CLS;3D"
   }
 ]

@@ -16224,5 +16224,43 @@
     "_added_date": "2026-05-05",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-05-04",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Sentinel2Cap: A Human-Annotated Benchmark Dataset for Multimodal Remote Sensing Image Captioning",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.03189v1",
+    "Abstract": "Image captioning has become an important task in computer vision, enabling models to generate natural language descriptions of visual content. While several datasets exist for natural images and high-resolution optical remote sensing imagery, the availability of captioning datasets for multimodal satellite data remains limited, particularly for SAR imagery and medium-resolution sensors. We introduce Sentinel2Cap, a human-annotated multimodal captioning dataset containing Sentinel-1 SAR and Sentinel-2 multi-spectral image patches at 10 m and 20 m spatial resolution with diverse land cover compositions. Captions are created manually and carefully validated to ensure both semantic accuracy and linguistic quality. To evaluate Sentinel2Cap, we perform a zero-shot captioning using the Qwen3-VL-8B-Instruct model across three image modalities: RGB, multi-spectral, and SAR pseudo-RGB representations. Results show that RGB images achieve the highest captioning performance, while SAR images remain more challenging for vision-language models. Providing modality-specific contextual prompts consistently improves performance across all metrics. These findings highlight both the challenges of multimodal remote sensing image captioning and the potential value of human-annotated datasets for advancing research in cross-modal scene understanding. All the material is publicly avaiable.",
+    "code": "",
+    "Publication": "10 pages, 6 figures",
+    "BibTex": "@article{tosato2026sentinelcap,\n  title={Sentinel2Cap: A Human-Annotated Benchmark Dataset for Multimodal Remote Sensing Image Captioning},\n  author={Lucrezia Tosato and Gianluca Lombardi and Ronny Hansch},\n  journal={arXiv preprint arXiv:2605.03189v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.03189v1}\n}",
+    "Authors": "Lucrezia Tosato, Gianluca Lombardi, Ronny Hansch",
+    "_added_date": "2026-05-06",
+    "Category": "Dataset",
+    "_tasks": "IC"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-05-04",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "DINO Soars: DINOv3 for Open-Vocabulary Semantic Segmentation of Remote Sensing Imagery",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.03175v1",
+    "Abstract": "The remote sensing (RS) domain suffers from a lack of densely labeled datasets, which are costly to obtain. Thus, models that can segment RS imagery well without supervised fine-tuning are valuable, but existing solutions fall behind supervised methods. Recently, DINOv3 surpassed SOTA RS foundation models on the GEO-bench segmentation benchmark without pre-training on RS data. Additionally, DINO.txt has enabled open vocabulary semantic segmentation (OVSS) with the DINOv3 backbone. We leverage these developments to form an OVSS model for RS imagery, free of RS-domain fine-tuning. Our model, CAFe-DINO (Cost Aggregation + Feature Upsampling with DINO) exploits the strong OVSS performance of DINOv3 for RS imagery via cost aggregation and training-free upsampling of text-image similarity scores. The robust latent of the DINOv3 backbone eliminates the need for fine-tuning on RS imagery; we instead fine-tune our model on a RS-targeted subset of COCO-Stuff. CAFe-DINO achieves state-of-the-art performance on key RS segmentation datasets, outperforming OVSS methods fine-tuned on RS data. Our code and data are publicly available at https://github.com/rfaulk/DINO_Soars.",
+    "code": "https://github.com/rfaulk/DINO_Soars",
+    "Publication": "2026 CVPR MORSE Workshop",
+    "BibTex": "@article{faulkenberry2026dino,\n  title={DINO Soars: DINOv3 for Open-Vocabulary Semantic Segmentation of Remote Sensing Imagery},\n  author={Ryan Faulkenberry and Saurabh Prasad},\n  journal={arXiv preprint arXiv:2605.03175v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.03175v1}\n}",
+    "Authors": "Ryan Faulkenberry, Saurabh Prasad",
+    "_added_date": "2026-05-06",
+    "Category": "Method",
+    "_tasks": "SEG"
   }
 ]
