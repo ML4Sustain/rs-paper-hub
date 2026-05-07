@@ -4,12 +4,36 @@
   <id>https://rspaper.top/output/feed_uav.xml</id>
   <link href="https://rspaper.top/output/feed_uav.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-07T01:41:37Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 1 entries</subtitle>
+  <updated>2026-05-07T02:35:19Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>UAV as Urban Construction Change Monitor: A New Benchmark and Change Captioning Model</title>
+    <link href="http://arxiv.org/abs/2605.04409v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.04409v1</id>
+    <published>2026-05-06T00:00:00Z</published>
+    <updated>2026-05-06T00:00:00Z</updated>
+    <author>
+      <name>Yupeng Gao</name>
+    </author>
+    <author>
+      <name>Tianyu Li</name>
+    </author>
+    <author>
+      <name>Guoqing Wang</name>
+    </author>
+    <author>
+      <name>Yang Yang</name>
+    </author>
+    <summary type="text">Remote Sensing Image Change Captioning (RSICC) aims to generate spatially grounded natural language descriptions of scene evolution from bi-temporal imagery, moving beyond binary change masks toward semantic-level understanding. However, existing methods rely on implicit feature differencing without explicitly modeling structured change semantics, and struggle to reconcile the conflicting representation demands of change detection and caption generation. In addition, current benchmarks provide limited coverage of high-resolution urban construction scenarios. To address these challenges, we propose PTNet, a prototype-guided task-adaptive framework for joint change captioning and detection. PTNet explicitly models structured change semantics through a learnable prototype bank that guides cross-temporal interaction, disentangles task-specific representations via multi-head gating, and injects detection-derived spatial priors into caption generation, enabling coherent semantic correspondence while preserving fine-grained spatial sensitivity. Furthermore, we construct UCCD, a large-scale UAV-based benchmark comprising 9,000 high-resolution image pairs and 45,000 annotated sentences for urban construction monitoring. Extensive experiments on UCCD and WHU-CDC demonstrate that PTNet consistently outperforms existing methods. The dataset and source code are publicly available at https://github.com/G124556/ptnet.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/G124556/ptnet"&gt;https://github.com/G124556/ptnet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>deSEO: Physics-Aware Dataset Creation for High-Resolution Satellite Image Shadow Removal</title>
     <link href="http://arxiv.org/abs/2605.03610v1" rel="alternate" type="text/html" />

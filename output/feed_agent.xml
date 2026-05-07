@@ -4,12 +4,87 @@
   <id>https://rspaper.top/output/feed_agent.xml</id>
   <link href="https://rspaper.top/output/feed_agent.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-07T01:41:37Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 1 entries</subtitle>
+  <updated>2026-05-07T02:35:19Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Bridging Perception and Action: A Lightweight Multimodal Meta-Planner Framework for Robust Earth Observation Agents</title>
+    <link href="http://arxiv.org/abs/2605.04777v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.04777v1</id>
+    <published>2026-05-06T00:00:00Z</published>
+    <updated>2026-05-06T00:00:00Z</updated>
+    <author>
+      <name>Jinghui Xu</name>
+    </author>
+    <author>
+      <name>Boyi Shangguan</name>
+    </author>
+    <author>
+      <name>Mengke Zhu</name>
+    </author>
+    <author>
+      <name>Hao Liu</name>
+    </author>
+    <author>
+      <name>Junhuan Jiang</name>
+    </author>
+    <author>
+      <name>Guangjun He</name>
+    </author>
+    <author>
+      <name>Pengming Feng</name>
+    </author>
+    <author>
+      <name>Shichao Jin</name>
+    </author>
+    <author>
+      <name>Bin Liang</name>
+    </author>
+    <author>
+      <name>Yongzhe Chang</name>
+    </author>
+    <author>
+      <name>Junbo Tan</name>
+    </author>
+    <author>
+      <name>Tiantian Zhang</name>
+    </author>
+    <author>
+      <name>Xueqian Wang</name>
+    </author>
+    <summary type="text">Autonomous Earth Observation (EO) agents are transitioning from passive perception to complex, multi-step task execution. However, current architectures that integrate planning and execution within a single model often struggle with combinatorial complexity and reasoning errors in dynamic EO scenarios. To resolve these challenges, we propose the Lightweight Multimodal Meta-Planner (LMMP) framework. LMMP incorporates a dual-awareness mechanism that grounds strategic plans in both multimodal image features and high-level task semantics. Crucially, we introduce a Meta Task Library to inject remote sensing expert knowledge directly into the workflow, which standardizes domain logic and ensures plans are physically feasible. We further implement a two-stage training pipeline, initializing the Meta-Planner via expert-distilled Supervised Fine-Tuning and refining it through Direct Preference Optimization based on execution feedback. Extensive experiments on a dataset derived from EarthBench and ThinkGeo demonstrate that LMMP significantly improves tool-calling accuracy and task success rates. Moreover, the framework exhibits strong ``plug-and-play'' versatility, consistently enhancing the performance of diverse executor backbones across previously unseen EO missions.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.MA" />
+  </entry>
+  <entry>
+    <title>Delay-Aware Large-Small Model Collaboration over LEO Satellite Networks</title>
+    <link href="http://arxiv.org/abs/2605.04565v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.04565v1</id>
+    <published>2026-05-06T00:00:00Z</published>
+    <updated>2026-05-06T00:00:00Z</updated>
+    <author>
+      <name>Mingyu Guo</name>
+    </author>
+    <author>
+      <name>Wen Wu</name>
+    </author>
+    <author>
+      <name>Ying Wang</name>
+    </author>
+    <author>
+      <name>Songge Zhang</name>
+    </author>
+    <author>
+      <name>Liang Li</name>
+    </author>
+    <summary type="text">In this paper, we introduce a delay-aware largesmall model collaboration scheme for low Earth orbit (LEO) satellite networks, which can balance the computational load among satellites and the communication load across inter-satellite links. Specifically, computational resource constrained remote sensing satellites are responsible for data collection and local processing using small models, while collaborating with computing satellites that provide large model processing. To minimize the service delay, we formulate a joint optimization problem for offloading decision and routing strategy design, which is transformed into a decentralized partially observable Markov decision process. To solve the problem, we develop a multi-agent reinforcement learning (MARL)-based algorithm with offline policy training and online bisection search. The offline trained policy determines routing strategies, while online bisection search iteratively adjusts the offloading decisions. Simulation results demonstrate that the proposed scheme can reduce the service delay by up to 31.85% compared with the benchmarks.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 6 pages, 6 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.DC" />
+  </entry>
   <entry>
     <title>EO-Gym: A Multimodal, Interactive Environment for Earth Observation Agents</title>
     <link href="http://arxiv.org/abs/2605.01250v1" rel="alternate" type="text/html" />
@@ -40,5 +115,44 @@
     <summary type="text">Earth Observation (EO) analysis is inherently interactive: resolving uncertainty often requires expanding the region of interest, retrieving historical observations, and switching across sensors such as optical and Synthetic Aperture Radar. However, most EO benchmarks collapse this process into fixed-input, single-turn tasks. To address this gap, we present EO-Gym, a controlled executable framework for multimodal, tool-using EO agents that formulates EO analysis as a Gymnasium-style local geospatial workspace backed by more than 660k multimodal files indexed by location, time, and sensor type, with 35 EO-specialized tools spanning six task families. Built on this environment, we construct EO-Gym-Data, a benchmark of 9,078 trajectories and 34,604 reasoning steps, and grounded in eight public EO datasets together with Landsat and Sentinel-2 imagery. Evaluating $10$ open and closed VLMs shows that strong general-purpose models still struggle with interactive EO reasoning, especially on temporal and cross-modal workflows. As a reference baseline, EO-Gym-4B, obtained by fine-tuning Qwen3-VL-4B-Instruct on EO-Gym-Data, improves overall Pass@3 from $0.49$ to $0.74$ under the main evaluation setting. O-Gym provides a reproducible environment for interactive EO agents, operationalizing EO as an evidence-gathering problem that requires planning across geospatial, temporal, and sensing modality.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>The Perceptual Bandwidth Bottleneck in Vision-Language Models: Active Visual Reasoning via Sequential Experimental Design</title>
+    <link href="http://arxiv.org/abs/2605.01345v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.01345v2</id>
+    <published>2026-05-02T00:00:00Z</published>
+    <updated>2026-05-02T00:00:00Z</updated>
+    <author>
+      <name>Anjie Liu</name>
+    </author>
+    <author>
+      <name>Ziqin Gong</name>
+    </author>
+    <author>
+      <name>Yan Song</name>
+    </author>
+    <author>
+      <name>Yuxiang Chen</name>
+    </author>
+    <author>
+      <name>Xiaolong Liu</name>
+    </author>
+    <author>
+      <name>Hengtong Lu</name>
+    </author>
+    <author>
+      <name>Kaike Zhang</name>
+    </author>
+    <author>
+      <name>Chen Wei</name>
+    </author>
+    <author>
+      <name>Jun Wang</name>
+    </author>
+    <summary type="text">Visual perception in modern Vision-Language Models (VLMs) is constrained by a perceptual bandwidth bottleneck: a broad field of view preserves global context but sacrifices the fine-grained details required for complex reasoning. We argue that high-resolution visual reasoning is therefore not only semantic reasoning but also task-relevant evidence acquisition under limited perceptual bandwidth. Inspired by active vision and information foraging, we formalise this process as sequential Bayesian optimal experimental design (S-BOED), where an agent decides which visual evidence to acquire before answering. Since exact Bayesian inference is intractable in continuous gigapixel spaces, we derive a tractable coverage--resolution objective as a proxy for task-relevant information gain. We instantiate this framework with FOVEA, a training-free procedure that refines VLM crop proposals through evidence-oriented probing. Experiments on high-resolution benchmarks show consistent gains over direct and ReAct-style baselines, with particularly strong improvements in search-dominated remote-sensing settings.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICML 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence; Machine Learning" />
   </entry>
 </feed>

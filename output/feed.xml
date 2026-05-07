@@ -4,12 +4,207 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-07T01:41:37Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 11 entries</subtitle>
+  <updated>2026-05-07T02:35:19Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 23 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Low-Rank Adaptation of Geospatial Foundation Models for Wildfire Mapping Using Sentinel-2 Data</title>
+    <link href="http://arxiv.org/abs/2605.04989v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.04989v1</id>
+    <published>2026-05-06T00:00:00Z</published>
+    <updated>2026-05-06T00:00:00Z</updated>
+    <author>
+      <name>Ali Shibli</name>
+    </author>
+    <author>
+      <name>Andrea Nascetti</name>
+    </author>
+    <author>
+      <name>Yifang Ban</name>
+    </author>
+    <summary type="text">Wildfire burned-area mapping is essential for damage assessment, emissions modeling, and understanding fire-climate interactions across diverse ecological regions. Recent geospatial foundation models provide strong general-purpose representations for satellite imagery, yet there is still no clear understanding of how to efficiently adapt these models for downstream Earth observation tasks, particularly under geographic and temporal domain shift. This study evaluates three state-of-the-art Geospatial Foundation Models (GFMs) - Terramind, DINOv3, and Prithvi-v2 - for burned-area mapping across the United States and Canada using Sentinel-2 data. Leveraging 3,820 wildfire events from 2017-2023, we conduct spatial and temporal generalization tests across diverse biomes. We systematically compare full fine-tuning, decoder-only fine-tuning, and Low-Rank Adaptation (LoRA) for adapting each model. Across all experiments, LoRA provides the strongest cross-domain generalization while updating less than 1% of parameters, demonstrating a favorable trade-off between accuracy and efficiency. Prithvi-v2 with LoRA achieves the highest overall accuracy and the largest improvement compared to full fine-tuning. These findings indicate that geospatial foundation models, when adapted using lightweight parameter-efficient methods such as LoRA, offer a robust and scalable solution for large-scale burned-area mapping. Code is available at https://github.com/alishibli97/wildfire-lora-gfm.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/alishibli97/wildfire-lora-gfm"&gt;https://github.com/alishibli97/wildfire-lora-gfm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IGARSS 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Bridging Perception and Action: A Lightweight Multimodal Meta-Planner Framework for Robust Earth Observation Agents</title>
+    <link href="http://arxiv.org/abs/2605.04777v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.04777v1</id>
+    <published>2026-05-06T00:00:00Z</published>
+    <updated>2026-05-06T00:00:00Z</updated>
+    <author>
+      <name>Jinghui Xu</name>
+    </author>
+    <author>
+      <name>Boyi Shangguan</name>
+    </author>
+    <author>
+      <name>Mengke Zhu</name>
+    </author>
+    <author>
+      <name>Hao Liu</name>
+    </author>
+    <author>
+      <name>Junhuan Jiang</name>
+    </author>
+    <author>
+      <name>Guangjun He</name>
+    </author>
+    <author>
+      <name>Pengming Feng</name>
+    </author>
+    <author>
+      <name>Shichao Jin</name>
+    </author>
+    <author>
+      <name>Bin Liang</name>
+    </author>
+    <author>
+      <name>Yongzhe Chang</name>
+    </author>
+    <author>
+      <name>Junbo Tan</name>
+    </author>
+    <author>
+      <name>Tiantian Zhang</name>
+    </author>
+    <author>
+      <name>Xueqian Wang</name>
+    </author>
+    <summary type="text">Autonomous Earth Observation (EO) agents are transitioning from passive perception to complex, multi-step task execution. However, current architectures that integrate planning and execution within a single model often struggle with combinatorial complexity and reasoning errors in dynamic EO scenarios. To resolve these challenges, we propose the Lightweight Multimodal Meta-Planner (LMMP) framework. LMMP incorporates a dual-awareness mechanism that grounds strategic plans in both multimodal image features and high-level task semantics. Crucially, we introduce a Meta Task Library to inject remote sensing expert knowledge directly into the workflow, which standardizes domain logic and ensures plans are physically feasible. We further implement a two-stage training pipeline, initializing the Meta-Planner via expert-distilled Supervised Fine-Tuning and refining it through Direct Preference Optimization based on execution feedback. Extensive experiments on a dataset derived from EarthBench and ThinkGeo demonstrate that LMMP significantly improves tool-calling accuracy and task success rates. Moreover, the framework exhibits strong ``plug-and-play'' versatility, consistently enhancing the performance of diverse executor backbones across previously unseen EO missions.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.MA" />
+  </entry>
+  <entry>
+    <title>Morphology-Guided Cross-Task Coupling for Joint Building Height and Footprint Estimation</title>
+    <link href="http://arxiv.org/abs/2605.04731v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.04731v1</id>
+    <published>2026-05-06T00:00:00Z</published>
+    <updated>2026-05-06T00:00:00Z</updated>
+    <author>
+      <name>Jinzhen Han</name>
+    </author>
+    <author>
+      <name>JinByeong Lee</name>
+    </author>
+    <author>
+      <name>Jisung Kim</name>
+    </author>
+    <author>
+      <name>HongSik Yun</name>
+    </author>
+    <summary type="text">Building height (BH) and building footprint (BF) jointly describe the vertical and horizontal extent of the built environment and are required inputs for urban climate, disaster-risk, and population-mapping models. The two parameters are coupled through floor-area-ratio (FAR) constraints, yet remote-sensing approaches typically treat them as independent regression targets. We argue that explicitly encoding this cross-task coupling is more impactful than further refining individual encoders, and propose MorphoFormer, a joint BH/BF estimation framework built around two complementary mechanisms: (i) a BF-Guided Task Decoder (BGTD) that gates the height branch via cross-attention on a footprint-derived morphology context, and (ii) a Morphology Consistency Loss (MCL) that supervises a height-from-footprint surrogate against the ground-truth BH, indirectly forcing the BF feature to encode height-correlated structure. The encoder is a single-stage Swin backbone fed by Sentinel-1 SAR, Sentinel-2 multispectral, and DEM inputs, trained and evaluated on a geo-blocked split of 54 cities. Against a Swin-MTL baseline at identical receptive field, MorphoFormer reduces BH test RMSE from 3.39 to 3.15 m (R^2 improves 0.62 -&gt; 0.67) with BF R^2 stable at 0.80. Controlled ablations at identical capacity attribute most of this 0.24 m improvement to the two proposed mechanisms: removing BGTD raises BH RMSE by 0.11 m and removing MCL raises it by 0.11 m, with the residual approximately 0.02 m falling within the noise floor of encoder-side variations. Because both mechanisms act on cross-task representations rather than pixels, the design carries no intrinsic dependence on input resolution.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Delay-Aware Large-Small Model Collaboration over LEO Satellite Networks</title>
+    <link href="http://arxiv.org/abs/2605.04565v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.04565v1</id>
+    <published>2026-05-06T00:00:00Z</published>
+    <updated>2026-05-06T00:00:00Z</updated>
+    <author>
+      <name>Mingyu Guo</name>
+    </author>
+    <author>
+      <name>Wen Wu</name>
+    </author>
+    <author>
+      <name>Ying Wang</name>
+    </author>
+    <author>
+      <name>Songge Zhang</name>
+    </author>
+    <author>
+      <name>Liang Li</name>
+    </author>
+    <summary type="text">In this paper, we introduce a delay-aware largesmall model collaboration scheme for low Earth orbit (LEO) satellite networks, which can balance the computational load among satellites and the communication load across inter-satellite links. Specifically, computational resource constrained remote sensing satellites are responsible for data collection and local processing using small models, while collaborating with computing satellites that provide large model processing. To minimize the service delay, we formulate a joint optimization problem for offloading decision and routing strategy design, which is transformed into a decentralized partially observable Markov decision process. To solve the problem, we develop a multi-agent reinforcement learning (MARL)-based algorithm with offline policy training and online bisection search. The offline trained policy determines routing strategies, while online bisection search iteratively adjusts the offloading decisions. Simulation results demonstrate that the proposed scheme can reduce the service delay by up to 31.85% compared with the benchmarks.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 6 pages, 6 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.DC" />
+  </entry>
+  <entry>
+    <title>RemoteZero: Geospatial Reasoning with Zero Human Annotations</title>
+    <link href="http://arxiv.org/abs/2605.04451v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.04451v1</id>
+    <published>2026-05-06T00:00:00Z</published>
+    <updated>2026-05-06T00:00:00Z</updated>
+    <author>
+      <name>Liang Yao</name>
+    </author>
+    <author>
+      <name>Fan Liu</name>
+    </author>
+    <author>
+      <name>Shengxiang Xu</name>
+    </author>
+    <author>
+      <name>Chuanyi Zhang</name>
+    </author>
+    <author>
+      <name>Rui Min</name>
+    </author>
+    <author>
+      <name>Shimin Di</name>
+    </author>
+    <author>
+      <name>Yuhui Zheng</name>
+    </author>
+    <summary type="text">Geospatial reasoning requires models to resolve complex spatial semantics and user intent into precise target locations for Earth observation. Recent progress has liberated the reasoning path from manual curation, allowing models to generate their own inference chains. Yet a final dependency remains: they are still supervised by human-annotated ground-truth coordinates. This leaves the reasoning process autonomous, but not its spatial endpoint, and prevents true self-evolution on abundant unlabeled remote sensing data. To break this bottleneck, we introduce RemoteZero, a box-supervision-free framework for geospatial reasoning. RemoteZero is motivated by a simple asymmetry: an MLLM is typically better at verifying whether a region satisfies a query than at directly generating precise coordinates. Leveraging this stronger discriminative ability, RemoteZero replaces geometric supervision with intrinsic semantic verification and enables GRPO training without box annotations. The resulting framework further supports iterative self-evolution, allowing the model to improve from unlabeled remote sensing imagery through its own verification signal. Experiments show that RemoteZero achieves competitive performance against strong supervised methods, demonstrating the potential of self-verifying training for geospatial reasoning localization.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>UAV as Urban Construction Change Monitor: A New Benchmark and Change Captioning Model</title>
+    <link href="http://arxiv.org/abs/2605.04409v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.04409v1</id>
+    <published>2026-05-06T00:00:00Z</published>
+    <updated>2026-05-06T00:00:00Z</updated>
+    <author>
+      <name>Yupeng Gao</name>
+    </author>
+    <author>
+      <name>Tianyu Li</name>
+    </author>
+    <author>
+      <name>Guoqing Wang</name>
+    </author>
+    <author>
+      <name>Yang Yang</name>
+    </author>
+    <summary type="text">Remote Sensing Image Change Captioning (RSICC) aims to generate spatially grounded natural language descriptions of scene evolution from bi-temporal imagery, moving beyond binary change masks toward semantic-level understanding. However, existing methods rely on implicit feature differencing without explicitly modeling structured change semantics, and struggle to reconcile the conflicting representation demands of change detection and caption generation. In addition, current benchmarks provide limited coverage of high-resolution urban construction scenarios. To address these challenges, we propose PTNet, a prototype-guided task-adaptive framework for joint change captioning and detection. PTNet explicitly models structured change semantics through a learnable prototype bank that guides cross-temporal interaction, disentangles task-specific representations via multi-head gating, and injects detection-derived spatial priors into caption generation, enabling coherent semantic correspondence while preserving fine-grained spatial sensitivity. Furthermore, we construct UCCD, a large-scale UAV-based benchmark comprising 9,000 high-resolution image pairs and 45,000 annotated sentences for urban construction monitoring. Extensive experiments on UCCD and WHU-CDC demonstrate that PTNet consistently outperforms existing methods. The dataset and source code are publicly available at https://github.com/G124556/ptnet.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/G124556/ptnet"&gt;https://github.com/G124556/ptnet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Hyperspectral Anomaly Detection Using Einstein Fuzzy Computing and Quantum Neural Network</title>
+    <link href="http://arxiv.org/abs/2605.04388v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.04388v1</id>
+    <published>2026-05-06T00:00:00Z</published>
+    <updated>2026-05-06T00:00:00Z</updated>
+    <author>
+      <name>Chia-Hsiang Lin</name>
+    </author>
+    <author>
+      <name>Si-Sheng Young</name>
+    </author>
+    <author>
+      <name>Reza Langari</name>
+    </author>
+    <summary type="text">In the remote sensing (RS) field, hyperspectral imagery provides rich spectral information and facilitates numerous critical applications, such as material identification. Among these applications, hyperspectral anomaly detection (HAD) aims to detect substances whose spectral characteristics deviate from background spectra, which are termed anomalies. However, many widely used HAD algorithms in the RS community identify anomalies by relying on a ``background reconstruction'' strategy. Furthermore, the lack of prior target hyperspectrum and real-world limitations collectively reduces the spectral discrepancy between anomaly and background, limiting the performance of mainstream detections. By exploring the widely applicable fuzzy theory in the RS field, this study develops an unsupervised hybrid quantum-fuzzy multi-criteria decision framework (HyFuHAD) to detect anomalies from multiple perspectives. In our HyFuHAD, each pixel is first fuzzified using multiple HAD-based membership functions (MFs), including morphological, geometrical, and statistical MFs, to obtain various types of fuzzy degrees. Then, a multi-fuzzy-rule system, empowered by Einstein fuzzy computing, infers the classical fuzzy detection from these fuzzy degrees with sub-second-level computing. The Einstein sum and product provide significantly smoother transitions compared to typical min-max-based fuzzy ``OR'' and ``AND'' during the fuzzy matching and inference steps, thereby enabling effective detections. Moreover, a lightweight quantum defuzzifier obtains the quantum fuzzy detection from fuzzy features derived from the proposed fuzzy feature aggregation network. Experiments demonstrate that our HyFuHAD algorithm achieves state-of-the-art performance by fusing the information from the quantum and classical detectors. The demo code will be publicly available at https://github.com/IHCLab/HyFuHAD.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/IHCLab/HyFuHAD"&gt;https://github.com/IHCLab/HyFuHAD&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Transactions on Geoscience and Remote Sensing&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+  </entry>
   <entry>
     <title>deSEO: Physics-Aware Dataset Creation for High-Resolution Satellite Image Shadow Removal</title>
     <link href="http://arxiv.org/abs/2605.03610v1" rel="alternate" type="text/html" />
@@ -69,6 +264,115 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Transport of electrons in tangled magnetic fields</title>
+    <link href="http://arxiv.org/abs/2605.04293v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.04293v1</id>
+    <published>2026-05-05T00:00:00Z</published>
+    <updated>2026-05-05T00:00:00Z</updated>
+    <author>
+      <name>Daniel Verscharen</name>
+    </author>
+    <author>
+      <name>Natasha Jeffrey</name>
+    </author>
+    <author>
+      <name>Anton Artemyev</name>
+    </author>
+    <author>
+      <name>Jesse T. Coburn</name>
+    </author>
+    <author>
+      <name>Matthew W. Kunz</name>
+    </author>
+    <author>
+      <name>Oreste Pezzi</name>
+    </author>
+    <author>
+      <name>Mario Riquelme</name>
+    </author>
+    <author>
+      <name>Ida Svenningsson</name>
+    </author>
+    <author>
+      <name>Lynn B. Wilson</name>
+    </author>
+    <summary type="text">Cosmic magnetic fields are typically inhomogeneous and often highly tangled due to large-scale plasma flows, turbulence, and instabilities. If the variations in the magnetic field occur on scales that are large compared to the gyro-radius of the plasma electrons, the electrons are primarily confined to gyro-centre trajectories along the field lines. Therefore, in-situ electron measurements help us map out the connectivity of the magnetic field in space plasmas. Gyro-centre drifts, wave-particle interactions, trapping, and cross-field diffusion are processes related to field inhomogeneities and fluctuations; they have the potential to modify or even disrupt the transport of electrons along field lines. We introduce the basic principles of electron transport in tangled magnetic fields and review the creation of tangled fields through turbulence and instabilities as well as the modulation of parallel electron transport through kinetic instabilities. We then describe trapping and de-trapping effects in inhomogeneous magnetic fields, as well as electron diffusion and energisation across the magnetic field. The transport of electrons in tangled fields results from a complex interplay of plasma processes that occur on a broad range of scales. A combination of in-situ plasma measurements, remote-sensing plasma observations, and plasma theory and simulations is required to resolve this contemporary challenge to the fields of heliophysics and astrophysics.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 84 pages, 16 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="physics.space-ph" />
+    <category term="astro-ph.GA; astro-ph.SR; Geophysics" />
+  </entry>
+  <entry>
+    <title>Densification and forecasting of Sentinel-2 time series from multimodal SAR and Optical satellite data using deep generative models</title>
+    <link href="http://arxiv.org/abs/2605.04239v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.04239v1</id>
+    <published>2026-05-05T00:00:00Z</published>
+    <updated>2026-05-05T00:00:00Z</updated>
+    <author>
+      <name>Véronique Defonte</name>
+    </author>
+    <author>
+      <name>Dawa Derksen</name>
+    </author>
+    <author>
+      <name>Alexandre Constantin</name>
+    </author>
+    <author>
+      <name>Bastien Nespoulous</name>
+    </author>
+    <summary type="text">Optical satellite image time series are extensively used in many Earth observation applications, including agriculture, climate monitoring, and land surface analysis. However, clouds and swath edges result in irregular sampling along the temporal dimension, limiting continuous monitoring. To address this issue, a growing body of work has focused on temporal densification and reconstruction of satellite image time series, with the objective of filling missing or cloud-contaminated observations within the temporal extent of the available data. While these approaches improve temporal continuity, they are inherently restricted to the reconstruction of the gaps within the observed time periods, and do not address the prediction of future observations. This work proposes a probabilistic deep learning framework for the densification and forecasting of Sentinel-2 time series by generating optical images at arbitrary past or future dates. The approach leverages multimodal satellite data by jointly exploiting Sentinel-2 optical and Sentinel-1 SAR observations. Unlike most existing works, we propose to focus on the uncertainty of the generated images. Experimental results demonstrate effective densification and forecasting, on sparse and temporally misaligned time series.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Climate-based Pre-screening of Self-sustaining Regreening Opportunities in Drylands: A Case Study for Saudi Arabia</title>
+    <link href="http://arxiv.org/abs/2605.04206v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.04206v1</id>
+    <published>2026-05-05T00:00:00Z</published>
+    <updated>2026-05-05T00:00:00Z</updated>
+    <author>
+      <name>Katja Froehlich</name>
+    </author>
+    <author>
+      <name>Jonathan Klein</name>
+    </author>
+    <author>
+      <name>Ibrahim S. Elbasyoni</name>
+    </author>
+    <author>
+      <name>Julian D. Hunt</name>
+    </author>
+    <author>
+      <name>Yoshihide Wada</name>
+    </author>
+    <author>
+      <name>Dominik L. Michels</name>
+    </author>
+    <summary type="text">Large-scale restoration in drylands is widely promoted to address land degradation and biodiversity loss, yet many efforts rely on long-term irrigation, limiting sustainability in water-scarce regions. A key challenge is identifying locations where native vegetation can persist without intensive management while minimizing costly field campaigns. A scalable pre-screening framework is presented that integrates climate and remote sensing data to enable cost-efficient site selection in arid environments using Saudi Arabia as a case study. A Climate Suitability Score (CSS), derived from machine learning models trained on expert-curated reference sites, captures complex climatic dependencies on vegetation persistence. Using multi-year ERA5-Land data for Saudi Arabia, national-scale prediction maps are generated and combined with vegetation indices to identify areas where climate is favorable, but vegetation remains underdeveloped. Multi-criteria screening reduces candidates to thirteen priority locations. Climatically analogous intact ecosystems provide benchmarks for restoration targets and indicate that an average 2.5 fold increase in vegetation coverage is a realistic target for restoration efforts. Overall, this approach narrows the search space, reduces costs, and supports resilient ecosystem recovery planning in water-limited regions.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Impact of Climate States and Seasons on Future Exo-Earth Observations</title>
+    <link href="http://arxiv.org/abs/2605.04187v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.04187v1</id>
+    <published>2026-05-05T00:00:00Z</published>
+    <updated>2026-05-05T00:00:00Z</updated>
+    <author>
+      <name>Kyle Batra</name>
+    </author>
+    <author>
+      <name>Stephanie Olson</name>
+    </author>
+    <author>
+      <name>Vincent Kofman</name>
+    </author>
+    <summary type="text">Many planetary parameters impact the climate state of Earth-like exoplanets and could vary significantly from those on Earth. However, some of these parameters may be impossible to observe, causing ambiguity in determining exoplanet climate and characterizing their atmospheric features. We explore how distinct planetary climate states impact their reflectance spectra to reduce uncertainty in the interpretation of future direct imaging observations, such as with the Habitable Worlds Observatory. We find that worlds with the same atmospheric composition but distinct climate states have notable differences in apparent albedos and feature detectability. An additional consequence is that the exposure time required to detect atmospheric features and biosignatures, such as O$_2$, will depend on climate state, with icier worlds being more favorable for biosignature detection while ice-limited worlds may be more habitable. We find that clouds improve the strength and detectability of atmospheric features in reflected light, especially for ice-limited low albedo worlds. We find temporal variation in the strength of spectra at different seasons on high obliquity worlds, causing the required time to resolve atmospheric features to vary between the equinoxes and solstices. This abiogenic seasonality could be detectable through repeated direct imaging observations and may help inform the planetary climate state, especially in combination with constraints on inclination and mass. Our work elevates the importance of astrometry performed concurrently with direct imaging for characterizing climate state and planetary habitability of exoplanets. Interpretation of future spectroscopic observations must also account for temporal variations created by obliquity when searching for biosignatures.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 Pages, 9 Figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="astro-ph.EP" />
   </entry>
   <entry>
     <title>Rethinking Electro-Optical Vision Foundation Models for Remote Sensing Retrieval: A Controlled Comparison with Generalist VFM</title>
@@ -254,6 +558,45 @@
     <summary type="text">Earth Observation (EO) analysis is inherently interactive: resolving uncertainty often requires expanding the region of interest, retrieving historical observations, and switching across sensors such as optical and Synthetic Aperture Radar. However, most EO benchmarks collapse this process into fixed-input, single-turn tasks. To address this gap, we present EO-Gym, a controlled executable framework for multimodal, tool-using EO agents that formulates EO analysis as a Gymnasium-style local geospatial workspace backed by more than 660k multimodal files indexed by location, time, and sensor type, with 35 EO-specialized tools spanning six task families. Built on this environment, we construct EO-Gym-Data, a benchmark of 9,078 trajectories and 34,604 reasoning steps, and grounded in eight public EO datasets together with Landsat and Sentinel-2 imagery. Evaluating $10$ open and closed VLMs shows that strong general-purpose models still struggle with interactive EO reasoning, especially on temporal and cross-modal workflows. As a reference baseline, EO-Gym-4B, obtained by fine-tuning Qwen3-VL-4B-Instruct on EO-Gym-Data, improves overall Pass@3 from $0.49$ to $0.74$ under the main evaluation setting. O-Gym provides a reproducible environment for interactive EO agents, operationalizing EO as an evidence-gathering problem that requires planning across geospatial, temporal, and sensing modality.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>The Perceptual Bandwidth Bottleneck in Vision-Language Models: Active Visual Reasoning via Sequential Experimental Design</title>
+    <link href="http://arxiv.org/abs/2605.01345v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.01345v2</id>
+    <published>2026-05-02T00:00:00Z</published>
+    <updated>2026-05-02T00:00:00Z</updated>
+    <author>
+      <name>Anjie Liu</name>
+    </author>
+    <author>
+      <name>Ziqin Gong</name>
+    </author>
+    <author>
+      <name>Yan Song</name>
+    </author>
+    <author>
+      <name>Yuxiang Chen</name>
+    </author>
+    <author>
+      <name>Xiaolong Liu</name>
+    </author>
+    <author>
+      <name>Hengtong Lu</name>
+    </author>
+    <author>
+      <name>Kaike Zhang</name>
+    </author>
+    <author>
+      <name>Chen Wei</name>
+    </author>
+    <author>
+      <name>Jun Wang</name>
+    </author>
+    <summary type="text">Visual perception in modern Vision-Language Models (VLMs) is constrained by a perceptual bandwidth bottleneck: a broad field of view preserves global context but sacrifices the fine-grained details required for complex reasoning. We argue that high-resolution visual reasoning is therefore not only semantic reasoning but also task-relevant evidence acquisition under limited perceptual bandwidth. Inspired by active vision and information foraging, we formalise this process as sequential Bayesian optimal experimental design (S-BOED), where an agent decides which visual evidence to acquire before answering. Since exact Bayesian inference is intractable in continuous gigapixel spaces, we derive a tractable coverage--resolution objective as a proxy for task-relevant information gain. We instantiate this framework with FOVEA, a training-free procedure that refines VLM crop proposals through evidence-oriented probing. Experiments on high-resolution benchmarks show consistent gains over direct and ReAct-style baselines, with particularly strong improvements in search-dominated remote-sensing settings.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICML 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence; Machine Learning" />
   </entry>
   <entry>
     <title>Foundation AI Models for Aerosol Optical Depth Estimation from PACE Satellite Data</title>

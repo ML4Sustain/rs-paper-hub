@@ -4,12 +4,77 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-07T01:41:37Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 5 entries</subtitle>
+  <updated>2026-05-07T02:35:19Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 9 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Low-Rank Adaptation of Geospatial Foundation Models for Wildfire Mapping Using Sentinel-2 Data</title>
+    <link href="http://arxiv.org/abs/2605.04989v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.04989v1</id>
+    <published>2026-05-06T00:00:00Z</published>
+    <updated>2026-05-06T00:00:00Z</updated>
+    <author>
+      <name>Ali Shibli</name>
+    </author>
+    <author>
+      <name>Andrea Nascetti</name>
+    </author>
+    <author>
+      <name>Yifang Ban</name>
+    </author>
+    <summary type="text">Wildfire burned-area mapping is essential for damage assessment, emissions modeling, and understanding fire-climate interactions across diverse ecological regions. Recent geospatial foundation models provide strong general-purpose representations for satellite imagery, yet there is still no clear understanding of how to efficiently adapt these models for downstream Earth observation tasks, particularly under geographic and temporal domain shift. This study evaluates three state-of-the-art Geospatial Foundation Models (GFMs) - Terramind, DINOv3, and Prithvi-v2 - for burned-area mapping across the United States and Canada using Sentinel-2 data. Leveraging 3,820 wildfire events from 2017-2023, we conduct spatial and temporal generalization tests across diverse biomes. We systematically compare full fine-tuning, decoder-only fine-tuning, and Low-Rank Adaptation (LoRA) for adapting each model. Across all experiments, LoRA provides the strongest cross-domain generalization while updating less than 1% of parameters, demonstrating a favorable trade-off between accuracy and efficiency. Prithvi-v2 with LoRA achieves the highest overall accuracy and the largest improvement compared to full fine-tuning. These findings indicate that geospatial foundation models, when adapted using lightweight parameter-efficient methods such as LoRA, offer a robust and scalable solution for large-scale burned-area mapping. Code is available at https://github.com/alishibli97/wildfire-lora-gfm.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/alishibli97/wildfire-lora-gfm"&gt;https://github.com/alishibli97/wildfire-lora-gfm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IGARSS 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Morphology-Guided Cross-Task Coupling for Joint Building Height and Footprint Estimation</title>
+    <link href="http://arxiv.org/abs/2605.04731v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.04731v1</id>
+    <published>2026-05-06T00:00:00Z</published>
+    <updated>2026-05-06T00:00:00Z</updated>
+    <author>
+      <name>Jinzhen Han</name>
+    </author>
+    <author>
+      <name>JinByeong Lee</name>
+    </author>
+    <author>
+      <name>Jisung Kim</name>
+    </author>
+    <author>
+      <name>HongSik Yun</name>
+    </author>
+    <summary type="text">Building height (BH) and building footprint (BF) jointly describe the vertical and horizontal extent of the built environment and are required inputs for urban climate, disaster-risk, and population-mapping models. The two parameters are coupled through floor-area-ratio (FAR) constraints, yet remote-sensing approaches typically treat them as independent regression targets. We argue that explicitly encoding this cross-task coupling is more impactful than further refining individual encoders, and propose MorphoFormer, a joint BH/BF estimation framework built around two complementary mechanisms: (i) a BF-Guided Task Decoder (BGTD) that gates the height branch via cross-attention on a footprint-derived morphology context, and (ii) a Morphology Consistency Loss (MCL) that supervises a height-from-footprint surrogate against the ground-truth BH, indirectly forcing the BF feature to encode height-correlated structure. The encoder is a single-stage Swin backbone fed by Sentinel-1 SAR, Sentinel-2 multispectral, and DEM inputs, trained and evaluated on a geo-blocked split of 54 cities. Against a Swin-MTL baseline at identical receptive field, MorphoFormer reduces BH test RMSE from 3.39 to 3.15 m (R^2 improves 0.62 -&gt; 0.67) with BF R^2 stable at 0.80. Controlled ablations at identical capacity attribute most of this 0.24 m improvement to the two proposed mechanisms: removing BGTD raises BH RMSE by 0.11 m and removing MCL raises it by 0.11 m, with the residual approximately 0.02 m falling within the noise floor of encoder-side variations. Because both mechanisms act on cross-task representations rather than pixels, the design carries no intrinsic dependence on input resolution.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Hyperspectral Anomaly Detection Using Einstein Fuzzy Computing and Quantum Neural Network</title>
+    <link href="http://arxiv.org/abs/2605.04388v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.04388v1</id>
+    <published>2026-05-06T00:00:00Z</published>
+    <updated>2026-05-06T00:00:00Z</updated>
+    <author>
+      <name>Chia-Hsiang Lin</name>
+    </author>
+    <author>
+      <name>Si-Sheng Young</name>
+    </author>
+    <author>
+      <name>Reza Langari</name>
+    </author>
+    <summary type="text">In the remote sensing (RS) field, hyperspectral imagery provides rich spectral information and facilitates numerous critical applications, such as material identification. Among these applications, hyperspectral anomaly detection (HAD) aims to detect substances whose spectral characteristics deviate from background spectra, which are termed anomalies. However, many widely used HAD algorithms in the RS community identify anomalies by relying on a ``background reconstruction'' strategy. Furthermore, the lack of prior target hyperspectrum and real-world limitations collectively reduces the spectral discrepancy between anomaly and background, limiting the performance of mainstream detections. By exploring the widely applicable fuzzy theory in the RS field, this study develops an unsupervised hybrid quantum-fuzzy multi-criteria decision framework (HyFuHAD) to detect anomalies from multiple perspectives. In our HyFuHAD, each pixel is first fuzzified using multiple HAD-based membership functions (MFs), including morphological, geometrical, and statistical MFs, to obtain various types of fuzzy degrees. Then, a multi-fuzzy-rule system, empowered by Einstein fuzzy computing, infers the classical fuzzy detection from these fuzzy degrees with sub-second-level computing. The Einstein sum and product provide significantly smoother transitions compared to typical min-max-based fuzzy ``OR'' and ``AND'' during the fuzzy matching and inference steps, thereby enabling effective detections. Moreover, a lightweight quantum defuzzifier obtains the quantum fuzzy detection from fuzzy features derived from the proposed fuzzy feature aggregation network. Experiments demonstrate that our HyFuHAD algorithm achieves state-of-the-art performance by fusing the information from the quantum and classical detectors. The demo code will be publicly available at https://github.com/IHCLab/HyFuHAD.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/IHCLab/HyFuHAD"&gt;https://github.com/IHCLab/HyFuHAD&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Transactions on Geoscience and Remote Sensing&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+  </entry>
   <entry>
     <title>SoDa2: Single-Stage Open-Set Domain Adaptation via Decoupled Alignment for Cross-Scene Hyperspectral Image Classification</title>
     <link href="http://arxiv.org/abs/2605.03371v1" rel="alternate" type="text/html" />
@@ -34,6 +99,28 @@
     <summary type="text">Cross-scene hyperspectral image (HSI) classification stands as a fundamental research topic in remote sensing, with extensive applications spanning various fields. Owing to the inclusion of unknown categories in the target domain and the existence of domain shift across different scenes, open-set domain adaptation techniques are commonly employed to address cross-scene HSI classification. However, existing open-set cross-scene HSI classification methods still face two critical challenges: (1) domain shift issues arising from the direct alignment of mixed spectral-spatial features; (2) high computational costs caused by two-stage training strategies. To address these issues, this paper proposes a single-stage open-set domain adaptation method with decoupled alignment (SoDa$^2$) for cross-scene HSI classification. A contribution-aware dual-modality feature extraction is customized to disentangle the characteristics from spectral sequence signals and spatial details, selectively and adaptively enhancing discriminative features. The decoupled alignment module minimizes the Maximum Mean Discrepancy to independently reduce the spectral discrepancy and the spatial discrepancy between the source and target domains, extracting more fine-grained domain-invariant features. A cost-effective single-stage dual-branch framework is designed to learn MMD-constrainted aligned features and constraint-free intrinsic features for adaptive distinction between known and unknown classes. This framework employs a Gaussian Mixture Model to model the squared cosine similarity distribution between the two feature types, enabling open-set recognition without prior knowledge of unknown classes. Extensive experiments on three groups of HSI datasets demonstrate that SoDa$^2$ outperforms state-of-the-art methods, achieving superior classification accuracy and model transferability for open-set cross-scene tasks.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Densification and forecasting of Sentinel-2 time series from multimodal SAR and Optical satellite data using deep generative models</title>
+    <link href="http://arxiv.org/abs/2605.04239v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.04239v1</id>
+    <published>2026-05-05T00:00:00Z</published>
+    <updated>2026-05-05T00:00:00Z</updated>
+    <author>
+      <name>Véronique Defonte</name>
+    </author>
+    <author>
+      <name>Dawa Derksen</name>
+    </author>
+    <author>
+      <name>Alexandre Constantin</name>
+    </author>
+    <author>
+      <name>Bastien Nespoulous</name>
+    </author>
+    <summary type="text">Optical satellite image time series are extensively used in many Earth observation applications, including agriculture, climate monitoring, and land surface analysis. However, clouds and swath edges result in irregular sampling along the temporal dimension, limiting continuous monitoring. To address this issue, a growing body of work has focused on temporal densification and reconstruction of satellite image time series, with the objective of filling missing or cloud-contaminated observations within the temporal extent of the available data. While these approaches improve temporal continuity, they are inherently restricted to the reconstruction of the gaps within the observed time periods, and do not address the prediction of future observations. This work proposes a probabilistic deep learning framework for the densification and forecasting of Sentinel-2 time series by generating optical images at arbitrary past or future dates. The approach leverages multimodal satellite data by jointly exploiting Sentinel-2 optical and Sentinel-1 SAR observations. Unlike most existing works, we propose to focus on the uncertainty of the generated images. Experimental results demonstrate effective densification and forecasting, on sparse and temporally misaligned time series.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
   <entry>

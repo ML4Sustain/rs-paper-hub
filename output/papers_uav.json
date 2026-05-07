@@ -5603,5 +5603,24 @@
     "_added_date": "2026-05-06",
     "Category": "Dataset",
     "_tasks": "CLS;3D"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-05-06",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "UAV as Urban Construction Change Monitor: A New Benchmark and Change Captioning Model",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.04409v1",
+    "Abstract": "Remote Sensing Image Change Captioning (RSICC) aims to generate spatially grounded natural language descriptions of scene evolution from bi-temporal imagery, moving beyond binary change masks toward semantic-level understanding. However, existing methods rely on implicit feature differencing without explicitly modeling structured change semantics, and struggle to reconcile the conflicting representation demands of change detection and caption generation. In addition, current benchmarks provide limited coverage of high-resolution urban construction scenarios. To address these challenges, we propose PTNet, a prototype-guided task-adaptive framework for joint change captioning and detection. PTNet explicitly models structured change semantics through a learnable prototype bank that guides cross-temporal interaction, disentangles task-specific representations via multi-head gating, and injects detection-derived spatial priors into caption generation, enabling coherent semantic correspondence while preserving fine-grained spatial sensitivity. Furthermore, we construct UCCD, a large-scale UAV-based benchmark comprising 9,000 high-resolution image pairs and 45,000 annotated sentences for urban construction monitoring. Extensive experiments on UCCD and WHU-CDC demonstrate that PTNet consistently outperforms existing methods. The dataset and source code are publicly available at https://github.com/G124556/ptnet.",
+    "code": "https://github.com/G124556/ptnet",
+    "Publication": "",
+    "BibTex": "@article{gao2026uav,\n  title={UAV as Urban Construction Change Monitor: A New Benchmark and Change Captioning Model},\n  author={Yupeng Gao and Tianyu Li and Guoqing Wang and Yang Yang},\n  journal={arXiv preprint arXiv:2605.04409v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.04409v1}\n}",
+    "Authors": "Yupeng Gao, Tianyu Li, Guoqing Wang, Yang Yang",
+    "_added_date": "2026-05-07",
+    "Category": "Dataset",
+    "_tasks": "IC;CD"
   }
 ]

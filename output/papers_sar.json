@@ -6629,5 +6629,43 @@
     "_added_date": "2026-05-06",
     "Category": "Dataset",
     "_tasks": "IC"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-05-06",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Morphology-Guided Cross-Task Coupling for Joint Building Height and Footprint Estimation",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.04731v1",
+    "Abstract": "Building height (BH) and building footprint (BF) jointly describe the vertical and horizontal extent of the built environment and are required inputs for urban climate, disaster-risk, and population-mapping models. The two parameters are coupled through floor-area-ratio (FAR) constraints, yet remote-sensing approaches typically treat them as independent regression targets. We argue that explicitly encoding this cross-task coupling is more impactful than further refining individual encoders, and propose MorphoFormer, a joint BH/BF estimation framework built around two complementary mechanisms: (i) a BF-Guided Task Decoder (BGTD) that gates the height branch via cross-attention on a footprint-derived morphology context, and (ii) a Morphology Consistency Loss (MCL) that supervises a height-from-footprint surrogate against the ground-truth BH, indirectly forcing the BF feature to encode height-correlated structure. The encoder is a single-stage Swin backbone fed by Sentinel-1 SAR, Sentinel-2 multispectral, and DEM inputs, trained and evaluated on a geo-blocked split of 54 cities. Against a Swin-MTL baseline at identical receptive field, MorphoFormer reduces BH test RMSE from 3.39 to 3.15 m (R^2 improves 0.62 -> 0.67) with BF R^2 stable at 0.80. Controlled ablations at identical capacity attribute most of this 0.24 m improvement to the two proposed mechanisms: removing BGTD raises BH RMSE by 0.11 m and removing MCL raises it by 0.11 m, with the residual approximately 0.02 m falling within the noise floor of encoder-side variations. Because both mechanisms act on cross-task representations rather than pixels, the design carries no intrinsic dependence on input resolution.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{han2026morphologyguided,\n  title={Morphology-Guided Cross-Task Coupling for Joint Building Height and Footprint Estimation},\n  author={Jinzhen Han and JinByeong Lee and Jisung Kim and HongSik Yun},\n  journal={arXiv preprint arXiv:2605.04731v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.04731v1}\n}",
+    "Authors": "Jinzhen Han, JinByeong Lee, Jisung Kim, HongSik Yun",
+    "_added_date": "2026-05-07",
+    "Category": "Method",
+    "_tasks": "3D"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-05-05",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Densification and forecasting of Sentinel-2 time series from multimodal SAR and Optical satellite data using deep generative models",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.04239v1",
+    "Abstract": "Optical satellite image time series are extensively used in many Earth observation applications, including agriculture, climate monitoring, and land surface analysis. However, clouds and swath edges result in irregular sampling along the temporal dimension, limiting continuous monitoring. To address this issue, a growing body of work has focused on temporal densification and reconstruction of satellite image time series, with the objective of filling missing or cloud-contaminated observations within the temporal extent of the available data. While these approaches improve temporal continuity, they are inherently restricted to the reconstruction of the gaps within the observed time periods, and do not address the prediction of future observations. This work proposes a probabilistic deep learning framework for the densification and forecasting of Sentinel-2 time series by generating optical images at arbitrary past or future dates. The approach leverages multimodal satellite data by jointly exploiting Sentinel-2 optical and Sentinel-1 SAR observations. Unlike most existing works, we propose to focus on the uncertainty of the generated images. Experimental results demonstrate effective densification and forecasting, on sparse and temporally misaligned time series.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{defonte2026densification,\n  title={Densification and forecasting of Sentinel-2 time series from multimodal SAR and Optical satellite data using deep generative models},\n  author={Véronique Defonte and Dawa Derksen and Alexandre Constantin and Bastien Nespoulous},\n  journal={arXiv preprint arXiv:2605.04239v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.04239v1}\n}",
+    "Authors": "Véronique Defonte, Dawa Derksen, Alexandre Constantin, Bastien Nespoulous",
+    "_added_date": "2026-05-07",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]
