@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-08T01:47:59Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 11 entries</subtitle>
+  <updated>2026-05-08T04:27:25Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 12 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -63,6 +63,25 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICLR 2026&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>LiVeAction: a Lightweight, Versatile, and Asymmetric Neural Codec Design for Real-time Operation</title>
+    <link href="http://arxiv.org/abs/2605.06628v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.06628v1</id>
+    <published>2026-05-07T00:00:00Z</published>
+    <updated>2026-05-07T00:00:00Z</updated>
+    <author>
+      <name>Dan Jacobellis</name>
+    </author>
+    <author>
+      <name>Neeraja J. Yadwadkar</name>
+    </author>
+    <summary type="text">Modern sensors generate rich, high-fidelity data, yet applications operating on wearable or remote sensing devices remain constrained by bandwidth and power budgets. Standardized codecs such as JPEG and MPEG achieve efficient trade-offs between bitrate and perceptual quality but are designed for human perception, limiting their applicability to machine-perception tasks and non-traditional modalities such as spatial audio arrays, hyperspectral images, and 3D medical images. General-purpose compression schemes based on scalar quantization or resolution reduction are broadly applicable but fail to exploit inherent signal redundancies, resulting in suboptimal rate-distortion performance. Recent generative neural codecs, or tokenizers, model complex signal dependencies but are often over-parameterized, data-hungry, and modality-specific, making them impractical for resource-constrained environments. We introduce a Lightweight, Versatile, and Asymmetric neural codec architecture (LiVeAction), that addresses these limitations through two key ideas. (1) To reduce the complexity of the encoder to meet the resource constraints of the execution environments, we impose an FFT-like structure and reduce the overall size and depth of the neural-network-based analysis transform. (2) To allow arbitrary signal modalities and simplify training, we replace adversarial and perceptual losses with a variance-based rate penalty. Our design produces codecs that deliver superior rate-distortion performance compared to state-of-the-art generative tokenizers, while remaining practical for deployment on low-power sensors. We release our code, experiments, and python library at https://github.com/UT-SysML/liveaction .</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/UT-SysML/liveaction"&gt;https://github.com/UT-SysML/liveaction&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; DCC 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+    <category term="Machine Learning; Multimedia; Audio and Speech Processing" />
   </entry>
   <entry>
     <title>Low-Rank Adaptation of Geospatial Foundation Models for Wildfire Mapping Using Sentinel-2 Data</title>

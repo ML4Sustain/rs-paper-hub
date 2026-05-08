@@ -18637,5 +18637,24 @@
     "_added_date": "2026-05-08",
     "Category": "Method",
     "_tasks": "ITR;VG"
+  },
+  {
+    "Type": "Image and Video Processing",
+    "Subtype": "Machine Learning; Multimedia; Audio and Speech Processing",
+    "Date": "2026-05-07",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "LiVeAction: a Lightweight, Versatile, and Asymmetric Neural Codec Design for Real-time Operation",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.06628v1",
+    "Abstract": "Modern sensors generate rich, high-fidelity data, yet applications operating on wearable or remote sensing devices remain constrained by bandwidth and power budgets. Standardized codecs such as JPEG and MPEG achieve efficient trade-offs between bitrate and perceptual quality but are designed for human perception, limiting their applicability to machine-perception tasks and non-traditional modalities such as spatial audio arrays, hyperspectral images, and 3D medical images. General-purpose compression schemes based on scalar quantization or resolution reduction are broadly applicable but fail to exploit inherent signal redundancies, resulting in suboptimal rate-distortion performance. Recent generative neural codecs, or tokenizers, model complex signal dependencies but are often over-parameterized, data-hungry, and modality-specific, making them impractical for resource-constrained environments. We introduce a Lightweight, Versatile, and Asymmetric neural codec architecture (LiVeAction), that addresses these limitations through two key ideas. (1) To reduce the complexity of the encoder to meet the resource constraints of the execution environments, we impose an FFT-like structure and reduce the overall size and depth of the neural-network-based analysis transform. (2) To allow arbitrary signal modalities and simplify training, we replace adversarial and perceptual losses with a variance-based rate penalty. Our design produces codecs that deliver superior rate-distortion performance compared to state-of-the-art generative tokenizers, while remaining practical for deployment on low-power sensors. We release our code, experiments, and python library at https://github.com/UT-SysML/liveaction .",
+    "code": "https://github.com/UT-SysML/liveaction",
+    "Publication": "DCC 2026",
+    "BibTex": "@article{jacobellis2026liveaction,\n  title={LiVeAction: a Lightweight, Versatile, and Asymmetric Neural Codec Design for Real-time Operation},\n  author={Dan Jacobellis and Neeraja J. Yadwadkar},\n  journal={arXiv preprint arXiv:2605.06628v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.06628v1}\n}",
+    "Authors": "Dan Jacobellis, Neeraja J. Yadwadkar",
+    "_added_date": "2026-05-08",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]
