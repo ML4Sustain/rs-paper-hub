@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_agent.xml</id>
   <link href="https://rspaper.top/output/feed_agent.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-07T04:32:30Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
+  <updated>2026-05-08T01:47:59Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 5 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -84,6 +84,29 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 6 pages, 6 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="cs.DC" />
+  </entry>
+  <entry>
+    <title>Zero-Shot Satellite Image Retrieval through Joint Embeddings: Application to Crisis Response</title>
+    <link href="http://arxiv.org/abs/2605.05405v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.05405v1</id>
+    <published>2026-05-06T00:00:00Z</published>
+    <updated>2026-05-06T00:00:00Z</updated>
+    <author>
+      <name>James Walsh</name>
+    </author>
+    <author>
+      <name>William Fawcett</name>
+    </author>
+    <author>
+      <name>Grace Colvard</name>
+    </author>
+    <author>
+      <name>Raúl Ramos-Pollán</name>
+    </author>
+    <summary type="text">Semantic search of Earth observation archives remains challenging. Visual foundation models such as CLAY produce rich embeddings of satellite imagery but lack the natural-language grounding needed for intuitive query, and full contrastive training of a remote-sensing CLIP-style model requires paired data and compute that are unavailable at global scale. We present GeoQuery, a zero-shot retrieval system that sidesteps this constraint through prompt-aligned text proxies. Rather than training a joint encoder, we generate language descriptions for a 100k proxy subset of global Sentinel-2 tiles and optimise the description-generation prompt so that distances in the resulting text-embedding space correlate with distances in the frozen CLAY visual-embedding space. Queries are resolved in two stages, with a text-similarity search over the proxy subset followed by a visual nearest-neighbour search over worldwide CLAY embeddings. On 76 disaster-location queries covering UK floods, US wildfires, and US droughts, GeoQuery achieves 31.6% accuracy within 50 km, with the strongest performance on floods (50% within 50 km) where terrain features are well captured by RGB embeddings. Deployed within ECHO, a crisis response system using Agentic Action Graphs, GeoQuery identified vulnerable areas during Brisbane's 2025 Cyclone Alfred, with downstream flood simulations reproducing historical patterns. Prompt-aligned proxies offer a practical bridge between EO foundation models and operational retrieval when full contrastive training is out of reach.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR;VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
   </entry>
   <entry>
     <title>EO-Gym: A Multimodal, Interactive Environment for Earth Observation Agents</title>

@@ -4,12 +4,66 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-07T04:32:30Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 9 entries</subtitle>
+  <updated>2026-05-08T01:47:59Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 11 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Region-adaptable retrieval of coastal biogeochemical parameters from near-surface hyperspectral remote sensing reflectance using physics-aware meta-learning</title>
+    <link href="http://arxiv.org/abs/2605.05623v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.05623v1</id>
+    <published>2026-05-07T00:00:00Z</published>
+    <updated>2026-05-07T00:00:00Z</updated>
+    <author>
+      <name>Yiqing Guo</name>
+    </author>
+    <author>
+      <name>Nagur R. C. Cherukuru</name>
+    </author>
+    <author>
+      <name>Eric A. Lehmann</name>
+    </author>
+    <author>
+      <name>S. L. Kesav Unnithan</name>
+    </author>
+    <author>
+      <name>Tim J. Malthus</name>
+    </author>
+    <author>
+      <name>Gemma Kerrisk</name>
+    </author>
+    <author>
+      <name>Xiubin Qi</name>
+    </author>
+    <author>
+      <name>Faisal Islam</name>
+    </author>
+    <author>
+      <name>Tisham Dhar</name>
+    </author>
+    <author>
+      <name>Mark J. Doubell</name>
+    </author>
+    <summary type="text">Hyperspectral in situ sensing has shown promise in retrieving aquatic biogeochemical (BGC) parameters, such as total suspended solids, dissolved organic carbon, and total chlorophyll-a, for cost-effective monitoring of coastal water quality. However, generalising such retrieval algorithms across water bodies remains challenging, as the relationship between remote sensing reflectance (Rrs) and BGC parameters can vary considerably from one region to another due to regional distinctions in environmental conditions and biogeochemistry that lead to different BGC ranges and bio-optical properties. In this study, we propose a two-stage physics-aware meta-learning framework for retrieving coastal BGC parameters from near-surface Rrs observations. In the first stage, a bio-optical forward model is used to generate a large synthetic dataset based on an in situ bio-optical spectral library with broad representativeness of Australian coastal waters. This dataset is then used to pretrain a region-agnostic base model with meta-learning, allowing the model to learn fundamental physical relationships. In the second stage, the pretrained base model is fine-tuned for specific regions with local samples. We collected in situ hyperspectral Rrs and BGC measurements from five geographically distinct sites in Australian coastal waters. Our experimental results suggest: (1) the BGC parameters and their corresponding hyperspectral Rrs signatures exhibited clear regional distinctions among the experimental sites; (2) the synthetic dataset was physically plausible and closely aligned with real-world samples in both parameter distributions and inter-parameter correlations; (3) the proposed approach outperformed five benchmark models in BGC retrieval; and (4) time series of in situ measured and model-predicted BGC parameters showed good agreement in both magnitude and temporal dynamics.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Characterizing Brazilian Atlantic Forest Restoration Outcomes with Geospatial AlphaEarth Embeddings</title>
+    <link href="http://arxiv.org/abs/2605.05547v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.05547v1</id>
+    <published>2026-05-07T00:00:00Z</published>
+    <updated>2026-05-07T00:00:00Z</updated>
+    <author>
+      <name>Alice Heiman</name>
+    </author>
+    <summary type="text">The Atlantic Forest in Brazil is a critical biodiversity hotspot, yet less than 12-15% of its original cover remains. Although monitoring forest restoration on a large scale is essential, traditional methods are limited by the impracticality of on-the-ground reporting on such a scale and by the saturation of remote-sensing indices such as NDVI. Furthermore, reforestation is a gradual process as opposed to the rapid spectral changes caused by deforestation. In this study, we examine 1,729 restoration sites in São Paulo, using satellite embeddings from the AlphaEarth Foundation's model to evaluate their effectiveness in characterising early restoration success. We introduce the concept of a 'Reference Trajectory Embedding', defining a metric of restoration success based on cosine similarity to reference sites of mature secondary forest. We observe distinct clusters in embedding space according to different land use and land cover (LULC) types, and we can identify sites with clear change vectors. However, the signal can be noisy, and embeddings may require further fine-tuning to capture and predict site metadata beyond LULC.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICLR 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Low-Rank Adaptation of Geospatial Foundation Models for Wildfire Mapping Using Sentinel-2 Data</title>
     <link href="http://arxiv.org/abs/2605.04989v1" rel="alternate" type="text/html" />
@@ -74,6 +128,29 @@
 &lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Transactions on Geoscience and Remote Sensing&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Image and Video Processing" />
+  </entry>
+  <entry>
+    <title>Zero-Shot Satellite Image Retrieval through Joint Embeddings: Application to Crisis Response</title>
+    <link href="http://arxiv.org/abs/2605.05405v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.05405v1</id>
+    <published>2026-05-06T00:00:00Z</published>
+    <updated>2026-05-06T00:00:00Z</updated>
+    <author>
+      <name>James Walsh</name>
+    </author>
+    <author>
+      <name>William Fawcett</name>
+    </author>
+    <author>
+      <name>Grace Colvard</name>
+    </author>
+    <author>
+      <name>Raúl Ramos-Pollán</name>
+    </author>
+    <summary type="text">Semantic search of Earth observation archives remains challenging. Visual foundation models such as CLAY produce rich embeddings of satellite imagery but lack the natural-language grounding needed for intuitive query, and full contrastive training of a remote-sensing CLIP-style model requires paired data and compute that are unavailable at global scale. We present GeoQuery, a zero-shot retrieval system that sidesteps this constraint through prompt-aligned text proxies. Rather than training a joint encoder, we generate language descriptions for a 100k proxy subset of global Sentinel-2 tiles and optimise the description-generation prompt so that distances in the resulting text-embedding space correlate with distances in the frozen CLAY visual-embedding space. Queries are resolved in two stages, with a text-similarity search over the proxy subset followed by a visual nearest-neighbour search over worldwide CLAY embeddings. On 76 disaster-location queries covering UK floods, US wildfires, and US droughts, GeoQuery achieves 31.6% accuracy within 50 km, with the strongest performance on floods (50% within 50 km) where terrain features are well captured by RGB embeddings. Deployed within ECHO, a crisis response system using Agentic Action Graphs, GeoQuery identified vulnerable areas during Brisbane's 2025 Cyclone Alfred, with downstream flood simulations reproducing historical patterns. Prompt-aligned proxies offer a practical bridge between EO foundation models and operational retrieval when full contrastive training is out of reach.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR;VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
   </entry>
   <entry>
     <title>SoDa2: Single-Stage Open-Set Domain Adaptation via Decoupled Alignment for Cross-Scene Hyperspectral Image Classification</title>
@@ -196,23 +273,5 @@
     <summary type="text">Earth Observation (EO) analysis is inherently interactive: resolving uncertainty often requires expanding the region of interest, retrieving historical observations, and switching across sensors such as optical and Synthetic Aperture Radar. However, most EO benchmarks collapse this process into fixed-input, single-turn tasks. To address this gap, we present EO-Gym, a controlled executable framework for multimodal, tool-using EO agents that formulates EO analysis as a Gymnasium-style local geospatial workspace backed by more than 660k multimodal files indexed by location, time, and sensor type, with 35 EO-specialized tools spanning six task families. Built on this environment, we construct EO-Gym-Data, a benchmark of 9,078 trajectories and 34,604 reasoning steps, and grounded in eight public EO datasets together with Landsat and Sentinel-2 imagery. Evaluating $10$ open and closed VLMs shows that strong general-purpose models still struggle with interactive EO reasoning, especially on temporal and cross-modal workflows. As a reference baseline, EO-Gym-4B, obtained by fine-tuning Qwen3-VL-4B-Instruct on EO-Gym-Data, improves overall Pass@3 from $0.49$ to $0.74$ under the main evaluation setting. O-Gym provides a reproducible environment for interactive EO agents, operationalizing EO as an evidence-gathering problem that requires planning across geospatial, temporal, and sensing modality.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Foundation AI Models for Aerosol Optical Depth Estimation from PACE Satellite Data</title>
-    <link href="http://arxiv.org/abs/2605.00678v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.00678v1</id>
-    <published>2026-05-01T00:00:00Z</published>
-    <updated>2026-05-01T00:00:00Z</updated>
-    <author>
-      <name>Zahid Hassan Tushar</name>
-    </author>
-    <author>
-      <name>Sanjay Purushotham</name>
-    </author>
-    <summary type="text">Aerosol Optical Depth (AOD) retrieval is essential for Earth observation, supporting applications from air quality monitoring to climate studies. Conventional physics-based AOD retrieval methods formulate the problem as a pixel-wise inversion, relying on radiative transfer modeling, memory-intensive look-up tables, and auxiliary meteorological data. While recent data-driven approaches have shown promise, many fail to exploit the spatial-spectral coherence of hyperspectral imagery, leading to spatially inconsistent and noise-sensitive retrievals. We present the first study exploring Foundation AI models for AOD retrieval and propose ViTCG, a Vision Transformer with Channel-wise Grouping-based spatial regression framework that reduces retrieval bias and error. ViTCG uses hyperspectral top-of-atmosphere radiance as input and jointly models spatial context and spectral information. Validation with PACE radiance observations demonstrates a 62% reduction in mean squared error compared to state-of-the-art foundation models, including Prithvi, and produces spatially coherent AOD fields.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 2026 IEEE International Geoscience and Remote Sensing Symposium&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>
