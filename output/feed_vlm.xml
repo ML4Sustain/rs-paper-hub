@@ -4,12 +4,115 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-08T04:27:25Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 11 entries</subtitle>
+  <updated>2026-05-11T01:53:52Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 9 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>LithoBench: Benchmarking Large Multimodal Models for Remote-Sensing Lithology Interpretation</title>
+    <link href="http://arxiv.org/abs/2605.07640v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.07640v1</id>
+    <published>2026-05-08T00:00:00Z</published>
+    <updated>2026-05-08T00:00:00Z</updated>
+    <author>
+      <name>Jun Wang</name>
+    </author>
+    <author>
+      <name>Fengpeng Li</name>
+    </author>
+    <author>
+      <name>Hang Dong</name>
+    </author>
+    <author>
+      <name>Tianjin Huang</name>
+    </author>
+    <author>
+      <name>Wei Han</name>
+    </author>
+    <summary type="text">Remote sensing lithology interpretation is fundamental to geological surveys, mineral exploration, and regional geological mapping. Unlike general land-cover recognition, lithology interpretation is a knowledge-intensive task that requires experts to infer rock types from various features, e.g., subtle visual, spectral, textural, geomorphological, and contextual cues, making reliable automated interpretation highly challenging. Geological knowledge-guided large multimodal models offer new opportunities, yet their evaluation remains constrained by the lack of benchmarks that capture lithological annotations, multi-level geological semantics, and expert-informed assessment. Here, we propose LithoBench, a multi-level benchmark for evaluating geological semantic understanding in remote sensing lithology interpretation. LithoBench contains 10,000 expert-annotated interpretation instances across 12 representative lithological categories, including 4,000 multiple-choice and 6,000 open-ended tasks organized into five cognitive levels: Identification and Description, Comparative Analysis, Mechanism Explanation, Practical Application, and Comprehensive Reasoning. We further develop an expert-in-the-loop, knowledge-grounded semi-automated construction pipeline, coupling multi sub-processes, e.g., structured geological image descriptions, to enhance geological validity and evaluation reliability. Experiments with multiple large vision-language models eveal substantial limitations in geological semantic understanding, particularly on higher-order explanation, application, and reasoning tasks.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Beyond GSD-as-Token: Continuous Scale Conditioning for Remote Sensing VLMs</title>
+    <link href="http://arxiv.org/abs/2605.07562v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.07562v1</id>
+    <published>2026-05-08T00:00:00Z</published>
+    <updated>2026-05-08T00:00:00Z</updated>
+    <author>
+      <name>Song Zhang</name>
+    </author>
+    <author>
+      <name>Yanlong Chen</name>
+    </author>
+    <author>
+      <name>Yilin Li</name>
+    </author>
+    <author>
+      <name>Yining Chen</name>
+    </author>
+    <author>
+      <name>Zili Yi</name>
+    </author>
+    <author>
+      <name>Xiaowei Zhang</name>
+    </author>
+    <author>
+      <name>Yawei Li</name>
+    </author>
+    <summary type="text">Remote sensing vision-language models (RS-VLMs) face a fundamental mismatch with natural-image counterparts: the same geographic object exhibits radically different visual evidence across ground sampling distances (GSDs) spanning multiple orders of magnitude. Yet existing RS-VLMs often discard GSD or inject it as a discrete text token, forcing a single static parameter set to absorb the entire scale spectrum. We introduce ScaleEarth, a parameter-efficient fine-tuning framework built on Qwen3-VL that treats GSD as a continuous conditioning variable governing the model's computation path. At its core, CS-HLoRA (Continuous Scale-Conditioned Hyper-LoRA) modulates the LoRA low-rank subspace through a GSD-driven gate, enabling the model to dynamically route computation by physical scale. To remove reliance on sensor metadata at deployment, we pair CS-HLoRA with SSE-U, a lightweight heteroscedastic sub-head that predicts GSD and its uncertainty from visual features. To provide matching supervision, we construct GeoScale-VQA, a 1.5M-sample scale-layered RS-VQA corpus whose question-answer generation is conditioned on the same physical scalar that drives CS-HLoRA, forming a closed method-data loop. Trained with QLoRA on an 8B backbone, ScaleEarth achieves state-of-the-art results on remote-sensing benchmarks covering diverse Earth-system tasks, including XLRS-Bench and OmniEarth-Bench.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 30 pages, 16 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>From Clouds to Hallucinations: Atmospheric Retrieval Hijacking in Remote Sensing Vision-Language RAG</title>
+    <link href="http://arxiv.org/abs/2605.07273v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.07273v1</id>
+    <published>2026-05-08T00:00:00Z</published>
+    <updated>2026-05-08T00:00:00Z</updated>
+    <author>
+      <name>Jiaju Han</name>
+    </author>
+    <author>
+      <name>Chao Li</name>
+    </author>
+    <author>
+      <name>Chengyin Hu</name>
+    </author>
+    <author>
+      <name>Qike Zhang</name>
+    </author>
+    <author>
+      <name>Xuemeng Sun</name>
+    </author>
+    <author>
+      <name>Xin Wang</name>
+    </author>
+    <author>
+      <name>Fengyu Zhang</name>
+    </author>
+    <author>
+      <name>Xiang Chen</name>
+    </author>
+    <author>
+      <name>Yiwei Wei</name>
+    </author>
+    <author>
+      <name>Jiahuan Long</name>
+    </author>
+    <author>
+      <name>Jiujiang Guo</name>
+    </author>
+    <summary type="text">Multimodal RAG systems increasingly rely on vision-language retrievers to ground visual queries in external textual evidence. Existing adversarial studies on RAG mainly manipulate the retrieval corpus or memory, while attacks on vision-language and remote sensing models typically target end-task predictions. Input-space threats to the evidence retrieval stage of remote sensing multimodal RAG remain underexplored. To address this gap, we introduce CloudWeb, an atmospheric retrieval hijacking attack that modifies only the input image while keeping the retriever, generator, and knowledge base fixed at deployment. CloudWeb overlays parameterized cloud- and haze-like patterns on remote sensing images and optimizes them with a retrieval-oriented objective that pulls adversarial image embeddings toward target atmospheric evidence, suppresses source-scene evidence, enforces rank separation, and regularizes naturalness and coverage. To the best of our knowledge, this is the first study of retrieval-stage atmospheric evidence hijacking in remote sensing multimodal RAG. We evaluate CloudWeb on a seven-dataset remote sensing RAG benchmark with five CLIP-style retrievers, including GeoRSCLIP, RemoteCLIP, OpenAI CLIP, and OpenCLIP, together with downstream vision-language generators. Across retrievers, CloudWeb consistently outperforms clean retrieval, handcrafted atmospheric baselines, random cloud perturbations, and fixed variants in injecting weather-related evidence into top-ranked results. On GeoRSCLIP ViT-B/32, Weather@5 increases from 0.71\% to 43.29\%. Downstream generation further shows measurable weather hallucination and semantic shift, indicating that retrieval-stage hijacking can propagate to the final RAG response. These findings reveal a practical failure mode: natural-looking atmospheric changes can compromise evidence retrieval before generation begins.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>Earth-o1: A Grid-free Observation-native Atmospheric World Model</title>
     <link href="http://arxiv.org/abs/2605.06337v1" rel="alternate" type="text/html" />
@@ -201,8 +304,8 @@
   </entry>
   <entry>
     <title>Zero-Shot Satellite Image Retrieval through Joint Embeddings: Application to Crisis Response</title>
-    <link href="http://arxiv.org/abs/2605.05405v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.05405v1</id>
+    <link href="http://arxiv.org/abs/2605.05405v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.05405v2</id>
     <published>2026-05-06T00:00:00Z</published>
     <updated>2026-05-06T00:00:00Z</updated>
     <author>
@@ -243,136 +346,5 @@
     <summary type="text">Optical satellite image time series are extensively used in many Earth observation applications, including agriculture, climate monitoring, and land surface analysis. However, clouds and swath edges result in irregular sampling along the temporal dimension, limiting continuous monitoring. To address this issue, a growing body of work has focused on temporal densification and reconstruction of satellite image time series, with the objective of filling missing or cloud-contaminated observations within the temporal extent of the available data. While these approaches improve temporal continuity, they are inherently restricted to the reconstruction of the gaps within the observed time periods, and do not address the prediction of future observations. This work proposes a probabilistic deep learning framework for the densification and forecasting of Sentinel-2 time series by generating optical images at arbitrary past or future dates. The approach leverages multimodal satellite data by jointly exploiting Sentinel-2 optical and Sentinel-1 SAR observations. Unlike most existing works, we propose to focus on the uncertainty of the generated images. Experimental results demonstrate effective densification and forecasting, on sparse and temporally misaligned time series.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Rethinking Electro-Optical Vision Foundation Models for Remote Sensing Retrieval: A Controlled Comparison with Generalist VFM</title>
-    <link href="http://arxiv.org/abs/2605.02283v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.02283v1</id>
-    <published>2026-05-04T00:00:00Z</published>
-    <updated>2026-05-04T00:00:00Z</updated>
-    <author>
-      <name>Hyobin Park</name>
-    </author>
-    <author>
-      <name>Minseok Seo</name>
-    </author>
-    <author>
-      <name>Dong-Geol Choi</name>
-    </author>
-    <summary type="text">Vision foundation models have attracted significant attention for their ability to leverage large-scale unlabeled visual data. This advantage is particularly important in remote sensing, where data acquisition is costly and annotation often requires expert knowledge. Recent electro-optical vision foundation models aim to learn domain-specific representations from remote sensing imagery, but it remains unclear whether they are more effective than strong generalist vision foundation models under retrieval-based evaluation. In this study, we conduct a controlled comparison between representative EO-specific and generalist vision foundation models for remote sensing image retrieval. Using the same datasets, retrieval protocol, and evaluation metric, we evaluate both in-domain performance and cross-scene generalization. Our results show that strong generalist vision foundation models are competitive with, and in some cases outperform, existing EO-specific models. Moreover, EO-specific models often suffer from substantial degradation under cross-scene evaluation, while generalist models show more stable transfer. These findings suggest that EO pretraining alone does not guarantee stronger retrieval-oriented remote sensing representations. We discuss the limitations of current EO-specific pretraining strategies and highlight the need for future EO vision foundation models to better exploit the physical, spatial, spectral, and geographic characteristics of remote sensing imagery.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Sentinel2Cap: A Human-Annotated Benchmark Dataset for Multimodal Remote Sensing Image Captioning</title>
-    <link href="http://arxiv.org/abs/2605.03189v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.03189v1</id>
-    <published>2026-05-04T00:00:00Z</published>
-    <updated>2026-05-04T00:00:00Z</updated>
-    <author>
-      <name>Lucrezia Tosato</name>
-    </author>
-    <author>
-      <name>Gianluca Lombardi</name>
-    </author>
-    <author>
-      <name>Ronny Hansch</name>
-    </author>
-    <summary type="text">Image captioning has become an important task in computer vision, enabling models to generate natural language descriptions of visual content. While several datasets exist for natural images and high-resolution optical remote sensing imagery, the availability of captioning datasets for multimodal satellite data remains limited, particularly for SAR imagery and medium-resolution sensors. We introduce Sentinel2Cap, a human-annotated multimodal captioning dataset containing Sentinel-1 SAR and Sentinel-2 multi-spectral image patches at 10 m and 20 m spatial resolution with diverse land cover compositions. Captions are created manually and carefully validated to ensure both semantic accuracy and linguistic quality. To evaluate Sentinel2Cap, we perform a zero-shot captioning using the Qwen3-VL-8B-Instruct model across three image modalities: RGB, multi-spectral, and SAR pseudo-RGB representations. Results show that RGB images achieve the highest captioning performance, while SAR images remain more challenging for vision-language models. Providing modality-specific contextual prompts consistently improves performance across all metrics. These findings highlight both the challenges of multimodal remote sensing image captioning and the potential value of human-annotated datasets for advancing research in cross-modal scene understanding. All the material is publicly avaiable.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, 6 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>DINO Soars: DINOv3 for Open-Vocabulary Semantic Segmentation of Remote Sensing Imagery</title>
-    <link href="http://arxiv.org/abs/2605.03175v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.03175v1</id>
-    <published>2026-05-04T00:00:00Z</published>
-    <updated>2026-05-04T00:00:00Z</updated>
-    <author>
-      <name>Ryan Faulkenberry</name>
-    </author>
-    <author>
-      <name>Saurabh Prasad</name>
-    </author>
-    <summary type="text">The remote sensing (RS) domain suffers from a lack of densely labeled datasets, which are costly to obtain. Thus, models that can segment RS imagery well without supervised fine-tuning are valuable, but existing solutions fall behind supervised methods. Recently, DINOv3 surpassed SOTA RS foundation models on the GEO-bench segmentation benchmark without pre-training on RS data. Additionally, DINO.txt has enabled open vocabulary semantic segmentation (OVSS) with the DINOv3 backbone. We leverage these developments to form an OVSS model for RS imagery, free of RS-domain fine-tuning. Our model, CAFe-DINO (Cost Aggregation + Feature Upsampling with DINO) exploits the strong OVSS performance of DINOv3 for RS imagery via cost aggregation and training-free upsampling of text-image similarity scores. The robust latent of the DINOv3 backbone eliminates the need for fine-tuning on RS imagery; we instead fine-tune our model on a RS-targeted subset of COCO-Stuff. CAFe-DINO achieves state-of-the-art performance on key RS segmentation datasets, outperforming OVSS methods fine-tuned on RS data. Our code and data are publicly available at https://github.com/rfaulk/DINO_Soars.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/rfaulk/DINO_Soars"&gt;https://github.com/rfaulk/DINO_Soars&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 2026 CVPR MORSE Workshop&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>EO-Gym: A Multimodal, Interactive Environment for Earth Observation Agents</title>
-    <link href="http://arxiv.org/abs/2605.01250v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.01250v1</id>
-    <published>2026-05-02T00:00:00Z</published>
-    <updated>2026-05-02T00:00:00Z</updated>
-    <author>
-      <name>Sai Ma</name>
-    </author>
-    <author>
-      <name>Zhuang Li</name>
-    </author>
-    <author>
-      <name>Sichao Li</name>
-    </author>
-    <author>
-      <name>Xinyue Xu</name>
-    </author>
-    <author>
-      <name>Ruibiao Zhu</name>
-    </author>
-    <author>
-      <name>Tony Boston</name>
-    </author>
-    <author>
-      <name>John A. Taylor</name>
-    </author>
-    <summary type="text">Earth Observation (EO) analysis is inherently interactive: resolving uncertainty often requires expanding the region of interest, retrieving historical observations, and switching across sensors such as optical and Synthetic Aperture Radar. However, most EO benchmarks collapse this process into fixed-input, single-turn tasks. To address this gap, we present EO-Gym, a controlled executable framework for multimodal, tool-using EO agents that formulates EO analysis as a Gymnasium-style local geospatial workspace backed by more than 660k multimodal files indexed by location, time, and sensor type, with 35 EO-specialized tools spanning six task families. Built on this environment, we construct EO-Gym-Data, a benchmark of 9,078 trajectories and 34,604 reasoning steps, and grounded in eight public EO datasets together with Landsat and Sentinel-2 imagery. Evaluating $10$ open and closed VLMs shows that strong general-purpose models still struggle with interactive EO reasoning, especially on temporal and cross-modal workflows. As a reference baseline, EO-Gym-4B, obtained by fine-tuning Qwen3-VL-4B-Instruct on EO-Gym-Data, improves overall Pass@3 from $0.49$ to $0.74$ under the main evaluation setting. O-Gym provides a reproducible environment for interactive EO agents, operationalizing EO as an evidence-gathering problem that requires planning across geospatial, temporal, and sensing modality.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>The Perceptual Bandwidth Bottleneck in Vision-Language Models: Active Visual Reasoning via Sequential Experimental Design</title>
-    <link href="http://arxiv.org/abs/2605.01345v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.01345v2</id>
-    <published>2026-05-02T00:00:00Z</published>
-    <updated>2026-05-02T00:00:00Z</updated>
-    <author>
-      <name>Anjie Liu</name>
-    </author>
-    <author>
-      <name>Ziqin Gong</name>
-    </author>
-    <author>
-      <name>Yan Song</name>
-    </author>
-    <author>
-      <name>Yuxiang Chen</name>
-    </author>
-    <author>
-      <name>Xiaolong Liu</name>
-    </author>
-    <author>
-      <name>Hengtong Lu</name>
-    </author>
-    <author>
-      <name>Kaike Zhang</name>
-    </author>
-    <author>
-      <name>Chen Wei</name>
-    </author>
-    <author>
-      <name>Jun Wang</name>
-    </author>
-    <summary type="text">Visual perception in modern Vision-Language Models (VLMs) is constrained by a perceptual bandwidth bottleneck: a broad field of view preserves global context but sacrifices the fine-grained details required for complex reasoning. We argue that high-resolution visual reasoning is therefore not only semantic reasoning but also task-relevant evidence acquisition under limited perceptual bandwidth. Inspired by active vision and information foraging, we formalise this process as sequential Bayesian optimal experimental design (S-BOED), where an agent decides which visual evidence to acquire before answering. Since exact Bayesian inference is intractable in continuous gigapixel spaces, we derive a tractable coverage--resolution objective as a proxy for task-relevant information gain. We instantiate this framework with FOVEA, a training-free procedure that refines VLM crop proposals through evidence-oriented probing. Experiments on high-resolution benchmarks show consistent gains over direct and ReAct-style baselines, with particularly strong improvements in search-dominated remote-sensing settings.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICML 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence; Machine Learning" />
   </entry>
 </feed>
