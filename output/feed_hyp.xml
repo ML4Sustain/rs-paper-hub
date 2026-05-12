@@ -4,12 +4,52 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-11T04:56:19Z</updated>
+  <updated>2026-05-12T01:51:12Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 9 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>HyGAS: an Open, Sensor-Agnostic Platform for Multi-Satellite Methane Plume Retrieval, Uncertainty Propagation, and Emission-Rate Estimation</title>
+    <link href="http://arxiv.org/abs/2605.09049v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.09049v1</id>
+    <published>2026-05-09T00:00:00Z</published>
+    <updated>2026-05-09T00:00:00Z</updated>
+    <author>
+      <name>Alvise Ferrari</name>
+    </author>
+    <author>
+      <name>Valerio Pampanoni</name>
+    </author>
+    <author>
+      <name>Giovanni Laneve</name>
+    </author>
+    <summary type="text">The rapid expansion of spaceborne methane observing capabilities at the facility-scale (fostered both by public missions and commercial constellations) has created a need for harmonised, reproducible, and uncertainty-aware processing chains that support both monitoring workflows and fair inter-sensor comparisons. This paper presents HyGAS (Hyperspectral Gas Analysis Suite), an open and sensor-agnostic framework that standardises methane processing across multiple imaging spectrometers. HyGAS currently supports end-to-end processing from Level-1 radiance to methane enhancement for PRISMA, EnMAP, and Tanager-1, and it supports ingestion of Level-2 methane enhancement products from EMIT and GHGSat, which are subsequently processed through common downstream modules for background selection, plume segmentation, Integrated Mass Enhancement (IME), and emission-rate inversion. HyGAS prioritises operational robustness via (i) matched-filter variants designed to mitigate background heterogeneity and pushbroom artefacts, (ii) explicit decomposition and propagation of uncertainty from instrument noise and scene-driven clutter to IME and flux, and (iii) a scale-aware segmentation strategy defined in physical units and rescaled by ground sampling distance to improve multi-sensor comparability. Representative sample outputs are reported for PRISMA, EnMAP, and Tanager-1.   Keywords: Methane emissions, hyperspectral satellites, Tanager-1, PRISMA, EnMAP, GHGSat, EMIT, Tanager, oil and gas, landfills, remote sensing, atmospheric science, greenhouse gas monitoring, spectral analysis, emission quantification, satellite synergy, environmental monitoring.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+  </entry>
+  <entry>
+    <title>Learnability and Competition in High-Dimensional Multi-Component ICA</title>
+    <link href="http://arxiv.org/abs/2605.08552v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.08552v1</id>
+    <published>2026-05-08T00:00:00Z</published>
+    <updated>2026-05-08T00:00:00Z</updated>
+    <author>
+      <name>Eser Ilke Genc</name>
+    </author>
+    <author>
+      <name>Samet Demir</name>
+    </author>
+    <author>
+      <name>Zafer Dogan</name>
+    </author>
+    <summary type="text">Independent Component Analysis (ICA) is a foundational tool for unsupervised representation learning, yet its high-dimensional theory remains largely limited to single-component recovery. We develop an asymptotically exact mean-field theory for multi-component online ICA, capturing the coupling induced by simultaneous learning and orthogonalization. In the high-dimensional limit, the joint empirical distribution of learned estimates and ground-truth components converges to a deterministic process, yielding a closed ODE system for the overlap matrix between learned directions and true components. This characterization reveals a genuinely multi-component, initialization-driven phase structure: a decoupled regime, where estimates align with distinct components and evolve nearly independently, and a competition regime, where overlapping initializations induce orthogonality-driven conflicts, slow reorientation, and delayed convergence. Our steady-state analysis gives explicit learnability boundaries and competition conditions linking step size, data moments, and initialization. These conditions show that larger higher-order moments and competition shrink the stable learning-rate window, increase convergence times, and predict a staircase phenomenon in which the number of recoverable components changes discretely with the learning rate. Experiments on synthetic data and hyperspectral remote sensing data validate the predicted trajectories and phase behavior.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 56 pages, 9 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning (Statistics)" />
+    <category term="Machine Learning" />
+  </entry>
   <entry>
     <title>Region-adaptable retrieval of coastal biogeochemical parameters from near-surface hyperspectral remote sensing reflectance using physics-aware meta-learning</title>
     <link href="http://arxiv.org/abs/2605.05623v1" rel="alternate" type="text/html" />
@@ -169,54 +209,6 @@
     <summary type="text">Semantic search of Earth observation archives remains challenging. Visual foundation models such as CLAY produce rich embeddings of satellite imagery but lack the natural-language grounding needed for intuitive query, and full contrastive training of a remote-sensing CLIP-style model requires paired data and compute that are unavailable at global scale. We present GeoQuery, a zero-shot retrieval system that sidesteps this constraint through prompt-aligned text proxies. Rather than training a joint encoder, we generate language descriptions for a 100k proxy subset of global Sentinel-2 tiles and optimise the description-generation prompt so that distances in the resulting text-embedding space correlate with distances in the frozen CLAY visual-embedding space. Queries are resolved in two stages, with a text-similarity search over the proxy subset followed by a visual nearest-neighbour search over worldwide CLAY embeddings. On 76 disaster-location queries covering UK floods, US wildfires, and US droughts, GeoQuery achieves 31.6% accuracy within 50 km, with the strongest performance on floods (50% within 50 km) where terrain features are well captured by RGB embeddings. Deployed within ECHO, a crisis response system using Agentic Action Graphs, GeoQuery identified vulnerable areas during Brisbane's 2025 Cyclone Alfred, with downstream flood simulations reproducing historical patterns. Prompt-aligned proxies offer a practical bridge between EO foundation models and operational retrieval when full contrastive training is out of reach.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR;VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>SoDa2: Single-Stage Open-Set Domain Adaptation via Decoupled Alignment for Cross-Scene Hyperspectral Image Classification</title>
-    <link href="http://arxiv.org/abs/2605.03371v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.03371v1</id>
-    <published>2026-05-05T00:00:00Z</published>
-    <updated>2026-05-05T00:00:00Z</updated>
-    <author>
-      <name>Yiwen Liu</name>
-    </author>
-    <author>
-      <name>Minghua Wang</name>
-    </author>
-    <author>
-      <name>Jing Yao</name>
-    </author>
-    <author>
-      <name>Xin Zhao</name>
-    </author>
-    <author>
-      <name>Gemine Vivone</name>
-    </author>
-    <summary type="text">Cross-scene hyperspectral image (HSI) classification stands as a fundamental research topic in remote sensing, with extensive applications spanning various fields. Owing to the inclusion of unknown categories in the target domain and the existence of domain shift across different scenes, open-set domain adaptation techniques are commonly employed to address cross-scene HSI classification. However, existing open-set cross-scene HSI classification methods still face two critical challenges: (1) domain shift issues arising from the direct alignment of mixed spectral-spatial features; (2) high computational costs caused by two-stage training strategies. To address these issues, this paper proposes a single-stage open-set domain adaptation method with decoupled alignment (SoDa$^2$) for cross-scene HSI classification. A contribution-aware dual-modality feature extraction is customized to disentangle the characteristics from spectral sequence signals and spatial details, selectively and adaptively enhancing discriminative features. The decoupled alignment module minimizes the Maximum Mean Discrepancy to independently reduce the spectral discrepancy and the spatial discrepancy between the source and target domains, extracting more fine-grained domain-invariant features. A cost-effective single-stage dual-branch framework is designed to learn MMD-constrainted aligned features and constraint-free intrinsic features for adaptive distinction between known and unknown classes. This framework employs a Gaussian Mixture Model to model the squared cosine similarity distribution between the two feature types, enabling open-set recognition without prior knowledge of unknown classes. Extensive experiments on three groups of HSI datasets demonstrate that SoDa$^2$ outperforms state-of-the-art methods, achieving superior classification accuracy and model transferability for open-set cross-scene tasks.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Densification and forecasting of Sentinel-2 time series from multimodal SAR and Optical satellite data using deep generative models</title>
-    <link href="http://arxiv.org/abs/2605.04239v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.04239v1</id>
-    <published>2026-05-05T00:00:00Z</published>
-    <updated>2026-05-05T00:00:00Z</updated>
-    <author>
-      <name>Véronique Defonte</name>
-    </author>
-    <author>
-      <name>Dawa Derksen</name>
-    </author>
-    <author>
-      <name>Alexandre Constantin</name>
-    </author>
-    <author>
-      <name>Bastien Nespoulous</name>
-    </author>
-    <summary type="text">Optical satellite image time series are extensively used in many Earth observation applications, including agriculture, climate monitoring, and land surface analysis. However, clouds and swath edges result in irregular sampling along the temporal dimension, limiting continuous monitoring. To address this issue, a growing body of work has focused on temporal densification and reconstruction of satellite image time series, with the objective of filling missing or cloud-contaminated observations within the temporal extent of the available data. While these approaches improve temporal continuity, they are inherently restricted to the reconstruction of the gaps within the observed time periods, and do not address the prediction of future observations. This work proposes a probabilistic deep learning framework for the densification and forecasting of Sentinel-2 time series by generating optical images at arbitrary past or future dates. The approach leverages multimodal satellite data by jointly exploiting Sentinel-2 optical and Sentinel-1 SAR observations. Unlike most existing works, we propose to focus on the uncertainty of the generated images. Experimental results demonstrate effective densification and forecasting, on sparse and temporally misaligned time series.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>

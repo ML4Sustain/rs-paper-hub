@@ -18656,5 +18656,43 @@
     "_added_date": "2026-05-08",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Image and Video Processing",
+    "Subtype": "",
+    "Date": "2026-05-09",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "HyGAS: an Open, Sensor-Agnostic Platform for Multi-Satellite Methane Plume Retrieval, Uncertainty Propagation, and Emission-Rate Estimation",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.09049v1",
+    "Abstract": "The rapid expansion of spaceborne methane observing capabilities at the facility-scale (fostered both by public missions and commercial constellations) has created a need for harmonised, reproducible, and uncertainty-aware processing chains that support both monitoring workflows and fair inter-sensor comparisons. This paper presents HyGAS (Hyperspectral Gas Analysis Suite), an open and sensor-agnostic framework that standardises methane processing across multiple imaging spectrometers. HyGAS currently supports end-to-end processing from Level-1 radiance to methane enhancement for PRISMA, EnMAP, and Tanager-1, and it supports ingestion of Level-2 methane enhancement products from EMIT and GHGSat, which are subsequently processed through common downstream modules for background selection, plume segmentation, Integrated Mass Enhancement (IME), and emission-rate inversion. HyGAS prioritises operational robustness via (i) matched-filter variants designed to mitigate background heterogeneity and pushbroom artefacts, (ii) explicit decomposition and propagation of uncertainty from instrument noise and scene-driven clutter to IME and flux, and (iii) a scale-aware segmentation strategy defined in physical units and rescaled by ground sampling distance to improve multi-sensor comparability. Representative sample outputs are reported for PRISMA, EnMAP, and Tanager-1.   Keywords: Methane emissions, hyperspectral satellites, Tanager-1, PRISMA, EnMAP, GHGSat, EMIT, Tanager, oil and gas, landfills, remote sensing, atmospheric science, greenhouse gas monitoring, spectral analysis, emission quantification, satellite synergy, environmental monitoring.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{ferrari2026hygas,\n  title={HyGAS: an Open, Sensor-Agnostic Platform for Multi-Satellite Methane Plume Retrieval, Uncertainty Propagation, and Emission-Rate Estimation},\n  author={Alvise Ferrari and Valerio Pampanoni and Giovanni Laneve},\n  journal={arXiv preprint arXiv:2605.09049v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.09049v1}\n}",
+    "Authors": "Alvise Ferrari, Valerio Pampanoni, Giovanni Laneve",
+    "_added_date": "2026-05-12",
+    "Category": "Method",
+    "_tasks": ""
+  },
+  {
+    "Type": "Machine Learning (Statistics)",
+    "Subtype": "Machine Learning",
+    "Date": "2026-05-08",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Learnability and Competition in High-Dimensional Multi-Component ICA",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.08552v1",
+    "Abstract": "Independent Component Analysis (ICA) is a foundational tool for unsupervised representation learning, yet its high-dimensional theory remains largely limited to single-component recovery. We develop an asymptotically exact mean-field theory for multi-component online ICA, capturing the coupling induced by simultaneous learning and orthogonalization. In the high-dimensional limit, the joint empirical distribution of learned estimates and ground-truth components converges to a deterministic process, yielding a closed ODE system for the overlap matrix between learned directions and true components. This characterization reveals a genuinely multi-component, initialization-driven phase structure: a decoupled regime, where estimates align with distinct components and evolve nearly independently, and a competition regime, where overlapping initializations induce orthogonality-driven conflicts, slow reorientation, and delayed convergence. Our steady-state analysis gives explicit learnability boundaries and competition conditions linking step size, data moments, and initialization. These conditions show that larger higher-order moments and competition shrink the stable learning-rate window, increase convergence times, and predict a staircase phenomenon in which the number of recoverable components changes discretely with the learning rate. Experiments on synthetic data and hyperspectral remote sensing data validate the predicted trajectories and phase behavior.",
+    "code": "",
+    "Publication": "56 pages, 9 figures",
+    "BibTex": "@article{genc2026learnability,\n  title={Learnability and Competition in High-Dimensional Multi-Component ICA},\n  author={Eser Ilke Genc and Samet Demir and Zafer Dogan},\n  journal={arXiv preprint arXiv:2605.08552v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.08552v1}\n}",
+    "Authors": "Eser Ilke Genc, Samet Demir, Zafer Dogan",
+    "_added_date": "2026-05-12",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]

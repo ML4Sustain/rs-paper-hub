@@ -4,7 +4,7 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-11T04:56:19Z</updated>
+  <updated>2026-05-12T01:51:12Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 9 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
@@ -112,6 +112,30 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Built Environment Reasoning from Remote Sensing Imagery Using Large Vision--Language Models</title>
+    <link href="http://arxiv.org/abs/2605.08404v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.08404v1</id>
+    <published>2026-05-08T00:00:00Z</published>
+    <updated>2026-05-08T00:00:00Z</updated>
+    <author>
+      <name>Dongdong Wang</name>
+    </author>
+    <author>
+      <name>Deepak Balakrishnan</name>
+    </author>
+    <author>
+      <name>Ravi Srinivasan</name>
+    </author>
+    <author>
+      <name>Shenhao Wang</name>
+    </author>
+    <summary type="text">This work investigates the use of large language models (LLMs) for tasks in smart cities. The core idea is to leverage remote sensing imagery to characterize the built environment, including design suggestions, constructability assessment, landuse patterns, and risk identification. We examine remote sensing imagery at multiple spatial scales as inputs for multimodal language modeling and evaluate their effects on built-environment-related reasoning. In addition, we compare state-of-the-art LLMs, including InternVL and Qwen, in terms of accuracy and reliability when generating built environment recommendations. The results demonstrate the potential of integrating remote sensing imagery with large language models to assist smart cities and decision-making.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the International Conference on Industrialized Construction 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.CL" />
+    <category term="Artificial Intelligence; Computer Vision; cs.ET" />
   </entry>
   <entry>
     <title>Earth-o1: A Grid-free Observation-native Atmospheric World Model</title>
@@ -323,28 +347,6 @@
     <summary type="text">Semantic search of Earth observation archives remains challenging. Visual foundation models such as CLAY produce rich embeddings of satellite imagery but lack the natural-language grounding needed for intuitive query, and full contrastive training of a remote-sensing CLIP-style model requires paired data and compute that are unavailable at global scale. We present GeoQuery, a zero-shot retrieval system that sidesteps this constraint through prompt-aligned text proxies. Rather than training a joint encoder, we generate language descriptions for a 100k proxy subset of global Sentinel-2 tiles and optimise the description-generation prompt so that distances in the resulting text-embedding space correlate with distances in the frozen CLAY visual-embedding space. Queries are resolved in two stages, with a text-similarity search over the proxy subset followed by a visual nearest-neighbour search over worldwide CLAY embeddings. On 76 disaster-location queries covering UK floods, US wildfires, and US droughts, GeoQuery achieves 31.6% accuracy within 50 km, with the strongest performance on floods (50% within 50 km) where terrain features are well captured by RGB embeddings. Deployed within ECHO, a crisis response system using Agentic Action Graphs, GeoQuery identified vulnerable areas during Brisbane's 2025 Cyclone Alfred, with downstream flood simulations reproducing historical patterns. Prompt-aligned proxies offer a practical bridge between EO foundation models and operational retrieval when full contrastive training is out of reach.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR;VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Densification and forecasting of Sentinel-2 time series from multimodal SAR and Optical satellite data using deep generative models</title>
-    <link href="http://arxiv.org/abs/2605.04239v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.04239v1</id>
-    <published>2026-05-05T00:00:00Z</published>
-    <updated>2026-05-05T00:00:00Z</updated>
-    <author>
-      <name>Véronique Defonte</name>
-    </author>
-    <author>
-      <name>Dawa Derksen</name>
-    </author>
-    <author>
-      <name>Alexandre Constantin</name>
-    </author>
-    <author>
-      <name>Bastien Nespoulous</name>
-    </author>
-    <summary type="text">Optical satellite image time series are extensively used in many Earth observation applications, including agriculture, climate monitoring, and land surface analysis. However, clouds and swath edges result in irregular sampling along the temporal dimension, limiting continuous monitoring. To address this issue, a growing body of work has focused on temporal densification and reconstruction of satellite image time series, with the objective of filling missing or cloud-contaminated observations within the temporal extent of the available data. While these approaches improve temporal continuity, they are inherently restricted to the reconstruction of the gaps within the observed time periods, and do not address the prediction of future observations. This work proposes a probabilistic deep learning framework for the densification and forecasting of Sentinel-2 time series by generating optical images at arbitrary past or future dates. The approach leverages multimodal satellite data by jointly exploiting Sentinel-2 optical and Sentinel-1 SAR observations. Unlike most existing works, we propose to focus on the uncertainty of the generated images. Experimental results demonstrate effective densification and forecasting, on sparse and temporally misaligned time series.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>
