@@ -2088,5 +2088,43 @@
     "_added_date": "2026-05-08",
     "Category": "Method",
     "_tasks": "ITR;VG"
+  },
+  {
+    "Type": "Artificial Intelligence",
+    "Subtype": "",
+    "Date": "2026-05-12",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Can LLM Agents Respond to Disasters? Benchmarking Heterogeneous Geospatial Reasoning in Emergency Operations",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.11633v1",
+    "Abstract": "Operational disaster response goes beyond damage assessment, requiring responders to integrate multi-sensor signals, reason over road networks, populations and key facilities, plan evacuations, and produce actionable reports. However, prior work largely isolates remote-sensing perception or evaluates generic tool use, leaving the end-to-end workflows of emergency operations underexplored. In this paper, we introduce Disaster Operational Response Agent benchmark (DORA), the first agentic benchmark for end-to-end disaster response: 515 expert-authored tasks across 45 real-world disaster events spanning 10 types, paired with expert-verified, replayable gold trajectories totaling 3,500 tool-call steps. Tasks span five dimensions that cover the operational disaster-response pipeline: disaster perception, spatial relational analysis, rescue and evacuation planning, temporal evolution reasoning, and multi-modal report synthesis. Agents compose calls from a 108-tool MCP library over heterogeneous geospatial data: optical, SAR, and multi-spectral imagery across single-, bi-, and multi-temporal sequences (0.015-10m GSD), complemented by elevation and social vector layers. We comprehensively evaluate 13 frontier LLMs on our benchmark, revealing three persistent challenges: 1) disaster-domain grounding exposes unique failure modes (damage-semantic grounding, sensor-modality mismatch, and disaster-pipeline composition); 2) agents are doubly bottlenecked by tool selection and argument grounding, where gold tool-order hints improve accuracy by only 1.08-4.40%, and alternative scaffolds yield at most a 3.24% gain; 3) compositional fragility scales with trajectory length, the agent-to-gold gap widening from 7% to 56% on long pipelines. DORA establishes a rigorous testbed for operationally reliable disaster-response agents.",
+    "code": "",
+    "Publication": "DORA stress-tests LLM agents on real-world disaster operations that demand comprehensive orchestration of 108 specialized tools over heterogeneous geospatial data",
+    "BibTex": "@article{wang2026can,\n  title={Can LLM Agents Respond to Disasters? Benchmarking Heterogeneous Geospatial Reasoning in Emergency Operations},\n  author={Junjue Wang and Weihao Xuan and Heli Qi and Pengyu Dai and Kunyi Liu and Hongruixuan Chen and Zhuo Zheng and Junshi Xia and Stefano Ermon and Naoto Yokoya},\n  journal={arXiv preprint arXiv:2605.11633v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.11633v1}\n}",
+    "Authors": "Junjue Wang, Weihao Xuan, Heli Qi, Pengyu Dai, Kunyi Liu, Hongruixuan Chen, Zhuo Zheng, Junshi Xia, Stefano Ermon, Naoto Yokoya",
+    "_added_date": "2026-05-13",
+    "Category": "Method",
+    "_tasks": "VG"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Artificial Intelligence",
+    "Date": "2026-05-11",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "AnomalyClaw: A Universal Visual Anomaly Detection Agent via Tool-Grounded Refutation",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.10397v1",
+    "Abstract": "Visual anomaly detection (VAD) is crucial in many real-world fields, such as industrial inspection, medical imaging, infrastructure monitoring, and remote sensing. However, the specific anomaly definitions, data modalities, and annotation standards across different domains make it difficult to transfer single-domain trained VAD models. Vision-language models (VLMs), pre-trained on large-scale cross-domain data, can perform visual perception under task instructions, offering a promising solution for cross-domain VAD. However, single-inference VLM judgments are unreliable, since they rely more on prior knowledge than on normal-sample references or fine-grained feature evidence. We therefore present AnomalyClaw, a training-free VAD agent that turns anomaly judgment into a multi-round refutation process. In each round, the agent proposes candidate anomalies and refutes each against normal-sample references, drawing on a 13-tool library for visual verification, reference parsing, and frozen expert probing. On the CrossDomainVAD-12 benchmark (12 datasets), AnomalyClaw achieves consistent macro-AUROC improvements over single-step direct inference with +6.23 pp on GPT-5.5, +7.93 pp on Seed2.0-lite, and +3.52 pp on Qwen3.5-VL-27B. We further introduce an optional verbalized self-evolution extension. It builds an online rulebook from internal-branch disagreement without oracle labels. On Qwen3.5-VL-27B, it delivers a +2.09 pp mean gain, comparable to a K = 10 oracle-label supervised baseline (+1.99 pp). These results show that agentic refutation improve anomaly understanding and reasoning of VLMs, rather than merely aggregating tool outputs.",
+    "code": "",
+    "Publication": "We release the agent, the benchmark, and the analysis artifacts at https://github.com/jam-cc/AnomalyClaw",
+    "BibTex": "@article{jiang2026anomalyclaw,\n  title={AnomalyClaw: A Universal Visual Anomaly Detection Agent via Tool-Grounded Refutation},\n  author={Xi Jiang and Yinjie Zhao and Zesheng Yang and Feng Zheng},\n  journal={arXiv preprint arXiv:2605.10397v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.10397v1}\n}",
+    "Authors": "Xi Jiang, Yinjie Zhao, Zesheng Yang, Feng Zheng",
+    "_added_date": "2026-05-13",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]

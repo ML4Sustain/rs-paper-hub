@@ -4,12 +4,488 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-12T04:36:41Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 22 entries</subtitle>
+  <updated>2026-05-13T01:52:09Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 30 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Can LLM Agents Respond to Disasters? Benchmarking Heterogeneous Geospatial Reasoning in Emergency Operations</title>
+    <link href="http://arxiv.org/abs/2605.11633v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.11633v1</id>
+    <published>2026-05-12T00:00:00Z</published>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <author>
+      <name>Junjue Wang</name>
+    </author>
+    <author>
+      <name>Weihao Xuan</name>
+    </author>
+    <author>
+      <name>Heli Qi</name>
+    </author>
+    <author>
+      <name>Pengyu Dai</name>
+    </author>
+    <author>
+      <name>Kunyi Liu</name>
+    </author>
+    <author>
+      <name>Hongruixuan Chen</name>
+    </author>
+    <author>
+      <name>Zhuo Zheng</name>
+    </author>
+    <author>
+      <name>Junshi Xia</name>
+    </author>
+    <author>
+      <name>Stefano Ermon</name>
+    </author>
+    <author>
+      <name>Naoto Yokoya</name>
+    </author>
+    <summary type="text">Operational disaster response goes beyond damage assessment, requiring responders to integrate multi-sensor signals, reason over road networks, populations and key facilities, plan evacuations, and produce actionable reports. However, prior work largely isolates remote-sensing perception or evaluates generic tool use, leaving the end-to-end workflows of emergency operations underexplored. In this paper, we introduce Disaster Operational Response Agent benchmark (DORA), the first agentic benchmark for end-to-end disaster response: 515 expert-authored tasks across 45 real-world disaster events spanning 10 types, paired with expert-verified, replayable gold trajectories totaling 3,500 tool-call steps. Tasks span five dimensions that cover the operational disaster-response pipeline: disaster perception, spatial relational analysis, rescue and evacuation planning, temporal evolution reasoning, and multi-modal report synthesis. Agents compose calls from a 108-tool MCP library over heterogeneous geospatial data: optical, SAR, and multi-spectral imagery across single-, bi-, and multi-temporal sequences (0.015-10m GSD), complemented by elevation and social vector layers. We comprehensively evaluate 13 frontier LLMs on our benchmark, revealing three persistent challenges: 1) disaster-domain grounding exposes unique failure modes (damage-semantic grounding, sensor-modality mismatch, and disaster-pipeline composition); 2) agents are doubly bottlenecked by tool selection and argument grounding, where gold tool-order hints improve accuracy by only 1.08-4.40%, and alternative scaffolds yield at most a 3.24% gain; 3) compositional fragility scales with trajectory length, the agent-to-gold gap widening from 7% to 56% on long pipelines. DORA establishes a rigorous testbed for operationally reliable disaster-response agents.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; DORA stress-tests LLM agents on real-world disaster operations that demand comprehensive orchestration of 108 specialized tools over heterogeneous geospatial data&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>GeoR-Bench: Evaluating Geoscience Visual Reasoning</title>
+    <link href="http://arxiv.org/abs/2605.11541v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.11541v1</id>
+    <published>2026-05-12T00:00:00Z</published>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <author>
+      <name>Yushuo Zheng</name>
+    </author>
+    <author>
+      <name>Zicheng Zhang</name>
+    </author>
+    <author>
+      <name>Huiyu Duan</name>
+    </author>
+    <author>
+      <name>Chunyi Li</name>
+    </author>
+    <author>
+      <name>Zijian Chen</name>
+    </author>
+    <author>
+      <name>Ziheng Jia</name>
+    </author>
+    <author>
+      <name>Yue Shi</name>
+    </author>
+    <author>
+      <name>Ke Gu</name>
+    </author>
+    <author>
+      <name>Xiongkuo Min</name>
+    </author>
+    <author>
+      <name>Guangtao Zhai</name>
+    </author>
+    <summary type="text">Geoscience intelligence is expected to understand, reason about, and predict earth system changes to support human decision-making in critical domains such as disaster response, climate adaptation and environmental protection. Although current research has shown promising progress on specific geoscience tasks, such as remote sensing interpretation, geographic question-answering, existing benchmarks remain largely task-specific which failing to capture the open-ended real world geoscience problems. As a result, it remains unclear how far current AI systems are from achieving genuine geoscience intelligence. To address this gap, we present \textbf{GeoR-Bench}, a \underline{Bench}mark for evaluating \underline{Geo}science visual \underline{R}easoning through reasoning informed visual editing tasks. GeoR-Bench contains 440 curated samples spanning 6 geoscience categories and 24 task types, covering earth observation imagery and structured scientific representations such as maps and diagrams. We evaluate outputs along three dimensions, including reasoning, consistency, and quality. Benchmark results of 21 closed- and open-source multimodal models reveal that geoscience reasoning remains a critical bottleneck. The highest-performing model achieves 42.7\% overall strict accuracy, while the best open-source models only get 10.3\%. Notably, the visual consistency and image quality of the outputs frequently surpass their scientific accuracy. Ultimately, these findings indicate that current models generate superficially plausible results but fail to capture underlying earth science processes.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Rapid Forest Fuel Load Estimation via Virtual Remote Sensing and Metric-Scale Feed-Forward 3D Reconstruction</title>
+    <link href="http://arxiv.org/abs/2605.10789v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.10789v1</id>
+    <published>2026-05-11T00:00:00Z</published>
+    <updated>2026-05-11T00:00:00Z</updated>
+    <author>
+      <name>Quanyun Wu</name>
+    </author>
+    <author>
+      <name>Kyle Gao</name>
+    </author>
+    <author>
+      <name>Wentao Sun</name>
+    </author>
+    <author>
+      <name>Zhengsen Xu</name>
+    </author>
+    <author>
+      <name>Hudson Sun</name>
+    </author>
+    <author>
+      <name>Linlin Xu</name>
+    </author>
+    <author>
+      <name>Yuhao Chen</name>
+    </author>
+    <author>
+      <name>David A. Clausi</name>
+    </author>
+    <author>
+      <name>Jonathan Li</name>
+    </author>
+    <summary type="text">Accurate quantification of forest coverage and combustible biomass (fuel load) is critical for wildfire risk assessment and ecosystem management. However, traditional methods relying on airborne LiDAR or field surveys are cost-prohibitive and time-intensive, while satellite imagery often lacks the vertical resolution required for canopy volume analysis. This paper proposes a novel, automated pipeline for rapid forest inventory using virtual remote sensing data derived from Google Earth Studio (GES). Our approach first generates low-altitude orbital imagery and camera poses for a target region. For dense 3D reconstruction, we employ Pi-Long, developed within the VGGT-Long framework. This model serves as a scalable extension of the Pi-3 feed-forward Transformer architecture. To address the inherent scale ambiguity in monocular reconstruction, we introduce a metric recovery module that aligns the reconstructed trajectory with GES ground truth poses via Sim(3) Umeyama optimization. The metric-scale point cloud is then orthogonally projected into Bird's-Eye-View (BEV) height and density maps. Finally, we employ a watershed-based segmentation algorithm combined with height variance analysis to classify tree species (conifer vs. broadleaf), calculate Leaf Area Index (LAI), and estimate total fuel load. Experimental results demonstrate that this pipeline offers a scalable, cost-effective alternative to physical scanning, enabling near-real-time estimation of forest biomass with high geometric consistency.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE IGARSS 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Towards a Large Language-Vision Question Answering Model for MSTAR Automatic Target Recognition</title>
+    <link href="http://arxiv.org/abs/2605.10772v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.10772v1</id>
+    <published>2026-05-11T00:00:00Z</published>
+    <updated>2026-05-11T00:00:00Z</updated>
+    <author>
+      <name>David F. Ramirez</name>
+    </author>
+    <author>
+      <name>Tim L. Overman</name>
+    </author>
+    <author>
+      <name>Kristen Jaskie</name>
+    </author>
+    <author>
+      <name>Marv Kleine</name>
+    </author>
+    <author>
+      <name>Andreas Spanias</name>
+    </author>
+    <summary type="text">Large language-vision models (LLVM), such as OpenAI's ChatGPT and GPT-4, have gained prominence as powerful tools for analyzing text and imagery. The merging of these data domains represents a significant paradigm shift with far-reaching implications for automatic target recognition (ATR). Recent transformer-based LLVM research has shown substantial improvements for geospatial perception tasks. Our study examines the application of LLVM to remote sensing image captioning and visual question-answering (VQA), with a specific focus on synthetic aperture radar (SAR) imagery. We examine newly published LLVM methods, including CLIP and LLaVA neural network transformer architectures. We have developed a work-in-progress SAR training and evaluation benchmark derived from the MSTAR Public Dataset. This has been extended to include descriptive text captions and question-answer pairs for VQA tasks. This challenge dataset is designed to push the boundaries of an LLVM in identifying nuanced ATR details in SAR imagery. Utilizing parameter-efficient fine-tuning, we train an LLVM method to identify fine-grained target qualities at 98% accuracy. We detail our data setup and experiments, addressing potential pitfalls that could lead to misleading conclusions. Accurately identifying and differentiating military vehicle types in SAR data poses a critical challenge, especially under complex environmental conditions. Mastering this target recognition skill may require a human analyst months of training and years of practice. This research represents a unique effort to apply LLVM to SAR applications, advancing machine-assisted remote sensing ATR for military and intelligence contexts.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to SPIE Defense + Commercial Sensing, Automatic Target Recognition XXXV&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;IC&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence; Image and Video Processing" />
+  </entry>
+  <entry>
+    <title>MPerS: Dynamic MLLM MixExperts Perception-Guided Remote Sensing Scene Segmentation</title>
+    <link href="http://arxiv.org/abs/2605.10769v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.10769v1</id>
+    <published>2026-05-11T00:00:00Z</published>
+    <updated>2026-05-11T00:00:00Z</updated>
+    <author>
+      <name>Ziyi Wang</name>
+    </author>
+    <author>
+      <name>Xianping Ma</name>
+    </author>
+    <author>
+      <name>Ziyao Wang</name>
+    </author>
+    <author>
+      <name>Hongyang Zhang</name>
+    </author>
+    <author>
+      <name>Man On Pun</name>
+    </author>
+    <summary type="text">The multimodal fusion of images and scene captions has been extensively explored and applied in various fields. However, when dealing with complex remote sensing (RS) scenes, existing studies have predominantly concentrated on architectural optimizations for integrating textual semantic information with visual features, while largely neglecting the generation of high-quality RS captions and the investigation of their effectiveness in multimodal semantic fusion.In this context, we propose the Dynamic MLLM Mixture-of-Experts Perception-Guided Remote Sensing Scene Segmentation, referred to as MPerS.We design multiple prompts for MLLMs to generate high-quality RS captions, enabling MLLMs to perceive RS scenes from diverse expert perspectives. DINOv3 is employed to extract dense visual representations of land-covers.We design a Dynamic MixExperts module that adaptively integrates the most effective textual semantics. Linguistic Query Guided Attention is constructed to utilize textual semantic information to guide visual features for precise segmentation. The MLLMs include LLaVA, ChatGPT, and Qwen. Our method achieves superior performance on three public semantic segmentation RS datasets.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; CVPR 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>The first global agricultural field boundary map at 10m resolution</title>
+    <link href="http://arxiv.org/abs/2605.11055v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.11055v1</id>
+    <published>2026-05-11T00:00:00Z</published>
+    <updated>2026-05-11T00:00:00Z</updated>
+    <author>
+      <name>Caleb Robinson</name>
+    </author>
+    <author>
+      <name>Gedeon Muhawenayo</name>
+    </author>
+    <author>
+      <name>Subash Khanal</name>
+    </author>
+    <author>
+      <name>Zhanpei Fang</name>
+    </author>
+    <author>
+      <name>Isaac Corley</name>
+    </author>
+    <author>
+      <name>Ana M. Tárano</name>
+    </author>
+    <author>
+      <name>Lyndon Estes</name>
+    </author>
+    <author>
+      <name>Jennifer Marcus</name>
+    </author>
+    <author>
+      <name>Nathan Jacobs</name>
+    </author>
+    <author>
+      <name>Hannah Kerner</name>
+    </author>
+    <author>
+      <name>Inbal Becker-Reshef</name>
+    </author>
+    <author>
+      <name>Juan M. Lavista Ferres</name>
+    </author>
+    <summary type="text">The agricultural field is the natural unit at which crops are planted, managed, regulated, and reported, yet most global remote-sensing products for agriculture are only available at the pixel level. While some high-quality field-level data products exist, they come from parcel registries covering only parts of Europe or from ML-derived products for individual countries. No openly available, globally consistent map of agricultural field boundaries exists to date. Here we present the first global field boundary dataset at 10\,m resolution for the years 2024 and 2025, comprising 3.17 billion remote-sensing field polygons (1.62 B in 2024 and 1.55 B in 2025) across 241 countries and territories, produced by applying a U-Net segmentation model trained on the Fields of The World dataset to cloud-free Sentinel-2 mosaics. Validated against ground-truth field boundaries in 24 countries, the map achieved a mean pixel-level recall of 0.85 with 14 countries exceeding 0.90. Evaluation against full-country ground-truth datasets in Austria, Latvia, and Finland yielded F1 scores of 0.89, 0.88, and 0.74, respectively. Because reference data for global validation is inherently incomplete, we accompanied the map with a 500 m confidence layer that identifies regions where predictions are reliable. We release the dataset openly as three global maps: the confidence-thresholded default field boundary dataset, the full unfiltered dataset, and the continuous-valued confidence raster. These maps provide the first globally consistent field-level unit of analysis for crop monitoring, food security, and downstream agricultural science.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Geospatial-Temporal Sensemaking of Remote Sensing Activity Detections with Multimodal Large Language Model</title>
+    <link href="http://arxiv.org/abs/2605.10739v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.10739v1</id>
+    <published>2026-05-11T00:00:00Z</published>
+    <updated>2026-05-11T00:00:00Z</updated>
+    <author>
+      <name>David F. Ramirez</name>
+    </author>
+    <author>
+      <name>Tim Overman</name>
+    </author>
+    <author>
+      <name>Kristen Jaskie</name>
+    </author>
+    <author>
+      <name>Andreas Spanias</name>
+    </author>
+    <summary type="text">We introduce SMART-HC-VQA, a Sentinel-2-based visual question answering dataset derived from the IARPA SMART Heavy Construction dataset, designed for spatiotemporal analysis of human activity. The dataset transforms construction-site annotations, construction-type labels, temporal-phase labels, geographic metadata, and observation relationships into natural language question-answer triplets. This approach redefines the existing dataset as a temporally extended automatic target recognition and visual question answering (VQA) challenge, considering a fixed geospatial site as a target whose attributes and activity states evolve across sparse satellite observations. Currently, SMART-HC-VQA comprises 21,837 accessible Sentinel-2 image chips, 65,511 single-image VQA examples, and approximately 2.3 million two-image temporal comparison examples generated via our novel Image-Pairwise Combinatorial Augmentation. We detail the workflow for retrieving and processing Sentinel-2 imagery, segmenting large satellite tiles into site-centered images, maintaining traceability to SMART-HC annotations, and analyzing the distributions of site size, observation count, temporal coverage, construction type, and phase labels. Additionally, we describe an implemented multi-image MLLM training framework based on LLaVA-NeXT Mistral-7B, adapted to accept multiple dated image inputs and train on metadata-derived VQA examples. This work offers a reproducible foundation for understanding language-guided remote sensing activities, aiming not only to detect change but also to reason about the ongoing processes, their progression, and potential future developments.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to 2026 SPIE Defense + Security, Automatic Target Recognition XXXVI&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+    <category term="Artificial Intelligence; Computer Vision" />
+  </entry>
+  <entry>
+    <title>SenseBench: A Benchmark for Remote Sensing Low-Level Visual Perception and Description in Large Vision-Language Models</title>
+    <link href="http://arxiv.org/abs/2605.10576v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.10576v1</id>
+    <published>2026-05-11T00:00:00Z</published>
+    <updated>2026-05-11T00:00:00Z</updated>
+    <author>
+      <name>Chen Zhong</name>
+    </author>
+    <author>
+      <name>Xiao An</name>
+    </author>
+    <author>
+      <name>Jiaxing Sun</name>
+    </author>
+    <author>
+      <name>Zihan Gui</name>
+    </author>
+    <author>
+      <name>Guangyi Yang</name>
+    </author>
+    <author>
+      <name>Wei He</name>
+    </author>
+    <summary type="text">Low-level visual perception underpins reliable remote sensing (RS) image analysis, yet current image quality assessment (IQA) methods output uninterpretable scalar scores rather than characterizing physics-driven RS degradations, deviating markedly from the diagnostic needs of RS experts. While Vision-Language Models (VLMs) present a compelling alternative by delivering language-grounded IQA, their visual priors are heavily biased toward ground-level natural images. Consequently, whether VLMs can overcome this domain gap to perceive and articulate RS artifacts remains insufficiently studied. To bridge this gap, we propose \textbf{SenseBench}, the first dedicated diagnostic benchmark for RS low-level visual perception and description. Driven by a physics-based hierarchical taxonomy that unifies both non-reference and reference-based paradigms, SenseBench features over 10K meticulously curated instances across 6 major and 22 fine-grained RS degradation categories. Specifically, two complementary protocols are designed for evaluation: objective low-level visual \textit{perception} and subjective diagnostic \textit{description}. Comprehensive evaluation of 29 state-of-the-art VLMs reveals not only skewed domain priors and multi-distortion collapse, but also \textit{fluency illusion} and a \textit{perception-description inversion} effect. We hope SenseBench provides a robust evaluation testbed and high-quality diagnostic data to advance the development of VLMs in RS low-level perception. Code and datasets are available \href{https://github.com/Zhong-Chenchen/SenseBench}{\textcolor{blue}{here}}.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Zhong-Chenchen/SenseBench"&gt;https://github.com/Zhong-Chenchen/SenseBench&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>AnomalyClaw: A Universal Visual Anomaly Detection Agent via Tool-Grounded Refutation</title>
+    <link href="http://arxiv.org/abs/2605.10397v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.10397v1</id>
+    <published>2026-05-11T00:00:00Z</published>
+    <updated>2026-05-11T00:00:00Z</updated>
+    <author>
+      <name>Xi Jiang</name>
+    </author>
+    <author>
+      <name>Yinjie Zhao</name>
+    </author>
+    <author>
+      <name>Zesheng Yang</name>
+    </author>
+    <author>
+      <name>Feng Zheng</name>
+    </author>
+    <summary type="text">Visual anomaly detection (VAD) is crucial in many real-world fields, such as industrial inspection, medical imaging, infrastructure monitoring, and remote sensing. However, the specific anomaly definitions, data modalities, and annotation standards across different domains make it difficult to transfer single-domain trained VAD models. Vision-language models (VLMs), pre-trained on large-scale cross-domain data, can perform visual perception under task instructions, offering a promising solution for cross-domain VAD. However, single-inference VLM judgments are unreliable, since they rely more on prior knowledge than on normal-sample references or fine-grained feature evidence. We therefore present AnomalyClaw, a training-free VAD agent that turns anomaly judgment into a multi-round refutation process. In each round, the agent proposes candidate anomalies and refutes each against normal-sample references, drawing on a 13-tool library for visual verification, reference parsing, and frozen expert probing. On the CrossDomainVAD-12 benchmark (12 datasets), AnomalyClaw achieves consistent macro-AUROC improvements over single-step direct inference with +6.23 pp on GPT-5.5, +7.93 pp on Seed2.0-lite, and +3.52 pp on Qwen3.5-VL-27B. We further introduce an optional verbalized self-evolution extension. It builds an online rulebook from internal-branch disagreement without oracle labels. On Qwen3.5-VL-27B, it delivers a +2.09 pp mean gain, comparable to a K = 10 oracle-label supervised baseline (+1.99 pp). These results show that agentic refutation improve anomaly understanding and reasoning of VLMs, rather than merely aggregating tool outputs.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; We release the agent, the benchmark, and the analysis artifacts at https://github.com/jam-cc/AnomalyClaw&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Coronal Mass Ejection and Heliospheric Current Sheet Interaction Causing a Long-Duration Magnetic Field Sector Transition</title>
+    <link href="http://arxiv.org/abs/2605.10193v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.10193v1</id>
+    <published>2026-05-11T00:00:00Z</published>
+    <updated>2026-05-11T00:00:00Z</updated>
+    <author>
+      <name>Manuela Temmer</name>
+    </author>
+    <author>
+      <name>Stephan G. Heinemann</name>
+    </author>
+    <author>
+      <name>Nina Dresing</name>
+    </author>
+    <author>
+      <name>Mateja Dumbovic</name>
+    </author>
+    <author>
+      <name>Eleanna Asvestari</name>
+    </author>
+    <summary type="text">We present a study that combines remote-sensing and in-situ observations of coronal mass ejections (CMEs) interacting with the nearby heliospheric current sheet (HCS). The sequence of eruptive events under study culminates in the largest directly observed flare of solar cycle 25 on 3 October 2024, producing a fast halo CME. Their source region can be linked to a so-called nested active region (or active longitude) that persisted over several solar rotations. Such long-lived regions reflect deep-seated magnetic structures that shape the global magnetic field configuration.   By applying the drag-based CME propagation model, we connect the near-Sun observations from several CMEs during that activity period with in-situ measurements. While one of the CMEs propagated on the opposite side of the HCS from Earth, and therefore did not produce in-situ signatures near Earth, we detect, over the period October 5-10, 2024, a complex of HCS and CME structures propagating together with a shock ahead of them. The HCS seems to be locally replaced by the CME signatures, leading to a long-duration sector reversal of more than 48 hours.   This event highlights the intrinsic connection between solar surface structures, the global magnetic field, and the evolution of complex eruptive events.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted for ApJ&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="astro-ph.SR" />
+  </entry>
+  <entry>
+    <title>Developing a foundation model for high-resolution remote sensing data of the Netherlands</title>
+    <link href="http://arxiv.org/abs/2605.10184v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.10184v1</id>
+    <published>2026-05-11T00:00:00Z</published>
+    <updated>2026-05-11T00:00:00Z</updated>
+    <author>
+      <name>Paul Vermeeren</name>
+    </author>
+    <author>
+      <name>Heysem Kaya</name>
+    </author>
+    <summary type="text">We develop a foundation model using 1.2m high resolution satellite images of the Netherlands. By combining a Convolutional Neural Network and a Vision Transformer, the model captures both low- and high-frequency landscape features, such as fine textures, edges, and small objects as well as large terrain structures, elevation patterns, and land-cover distributions. Leveraging temporal data as input, the model learns from broader contextual information across time, allowing the model to exploit the temporal dependencies, such as topographic features, land-cover changes, and seasonal dynamics. These additional constraints reduce feature ambiguity, improve representation learning, and enable better generalization with fewer labeled samples. The foundation model is evaluated on multiple downstream tasks, ranging from use cases within the Netherlands to global benchmarking datasets. On the vegetation monitoring dataset of the Netherlands, the model shows clear performance improvements by incorporating temporal information instead of relying on a single time point. Despite using a smaller model and less pretraining data limited to the Netherlands, it achieves competitive results on global benchmarks when compared to state-of-the-art models. These results demonstrate that the model can learn rich, generalizable representations from limited data, achieving competitive performance on global benchmarks while using a fraction of the parameters of larger state-of-the-art remote sensing models. To maximize reproducibility and reuse, we made the scripts and the model accessible on GitHub.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 pages, 4 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Active-SAOOD: Active Sparsely Annotated Oriented Object Detection in Remote Sensing Images</title>
+    <link href="http://arxiv.org/abs/2605.10162v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.10162v1</id>
+    <published>2026-05-11T00:00:00Z</published>
+    <updated>2026-05-11T00:00:00Z</updated>
+    <author>
+      <name>Yu Lin</name>
+    </author>
+    <author>
+      <name>Jianghang Lin</name>
+    </author>
+    <author>
+      <name>Kai Ye</name>
+    </author>
+    <author>
+      <name>Shengchuan Zhang</name>
+    </author>
+    <author>
+      <name>Liujuan Cao</name>
+    </author>
+    <summary type="text">Reducing the annotation cost of oriented object detection in remote sensing remains a major challenge. Recently, sparse annotation has gained attention for effectively reducing annotation redundancy in densely remote sensing scenes. However, (1) the sparse data reliance on class-dependent sampling, and (2) the lack of in-depth investigation into the characteristics of sparse samples hinders its further development. This paper proposes an active learning-based sparsely annotated oriented object detection (SAOOD) method, termed Active-SAOOD. Based on a model state observation module, Active-SAOOD actively selects the most valuable sparse samples at the instance level that are best suited to the current model state, by jointly considering orientation, classification, and localization uncertainty, as well as inter- and intra-class diversity. This design enables SAOOD to operate stably under completely randomly initialized sparse annotations and extends its applicability to broader real-world. Experiments on multiple datasets demonstrate that Active-SAOOD significantly improves both performance and stability of existing SAOOD methods under various random sparse annotation. In particular, with only 1\% annotated ratios, it achieves a 9\% performance gain over the baseline, further enhancing the practical value of SAOOD in remote sensing. The code will be public.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;OD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Sequential Feature Selection for Efficient Landslide Segmentation from Multi-Spectral Data</title>
+    <link href="http://arxiv.org/abs/2605.09746v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.09746v1</id>
+    <published>2026-05-10T00:00:00Z</published>
+    <updated>2026-05-10T00:00:00Z</updated>
+    <author>
+      <name>Arsalaan Ahmad</name>
+    </author>
+    <author>
+      <name>Oktay Karakus</name>
+    </author>
+    <author>
+      <name>Paul L. Rosin</name>
+    </author>
+    <summary type="text">Landslide detection from satellite imagery has advanced through deep learning, yet most models rely on large, highly correlated spectral-topographic inputs whose contributions remain poorly understood. The question of which channels are actually necessary has received surprisingly little attention. This matters: redundant or correlated inputs obscure physical interpretability, inflate computational overhead, and can actively degrade model performance through the Hughes Phenomenon. We present a systematic, explainable channel-selection framework for the Landslide4Sense benchmark, combining Sentinel-2 multispectral and ALOS PALSAR terrain data with 16 engineered spectral and structural indices. Rather than relying on conventional single-band drop tests, which evaluate channels in isolation and miss interaction effects, we apply Sequential Forward Floating Selection (SFFS) to iteratively build and prune a candidate feature pool using a lightweight U-Net++ proxy model. Beyond identifying a compact 8-channel subset that matches or exceeds the segmentation F1 of configurations using up to 30 channels, we use the selection process itself to interrogate which spectral and topographic features landslide models genuinely rely on, and what this reveals about the physical cues driving their predictions. We argue that SFFS represents a principled feature selection approach to input design in Earth observation, in contrast to the prevailing practice of appending every available band and hoping the model learns what to ignore.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; In Process of Submission to Frontiers in Remote Sensing. Keywords: landslide segmentation, multispectral remote sensing, feature selection, explainability, Landslide4Sense&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Spatial-Frequency Gated Swin Transformer for Remote Sensing Single-Image Super-Resolution</title>
+    <link href="http://arxiv.org/abs/2605.09687v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.09687v1</id>
+    <published>2026-05-10T00:00:00Z</published>
+    <updated>2026-05-10T00:00:00Z</updated>
+    <author>
+      <name>Md Aminur Hossain</name>
+    </author>
+    <author>
+      <name>Parekh Valkesh</name>
+    </author>
+    <author>
+      <name>Ayush V. Patel</name>
+    </author>
+    <author>
+      <name>Yogesh Jethani</name>
+    </author>
+    <author>
+      <name>Sanjay K. Singh</name>
+    </author>
+    <author>
+      <name>Biplab Banerjee</name>
+    </author>
+    <summary type="text">Remote Sensing (RS) single-image super-resolution aims to reconstruct high-resolution imagery from low-resolution observations while preserving fine spatial structures. Recent Swin Transformer-based models, including Swin2SR, provide strong spatial context modeling throughshifted-window self-attention, but their feed-forward networks remain generic channel-mixing modules and do not separate low-frequency structural content from high-frequency residual detail. To address this limitation, we propose SFG-SwinSR, a Spatial-Frequency Gated Swin Transformer for single-image super-resolution in remote sensing. SFG-SwinSR modifies the original Swin2SR attention block by replacing each transformer block's standard feed-forward network with a lightweight Spatial-Frequency Gated Feed-Forward Network (SFG-FFN). The module estimates low-frequency content via a depthwise-blur branch, extracts high-frequency residuals by subtraction, refines them with a lightweight spatial branch, and adaptively injects detail through a bottleneck gate. Experiments on SpaceNet and SEN2VENμS show that SFG-SwinSR improves reconstruction quality under the evaluated settings. On SpaceNet, it achieves 45.19 dB PSNR and 0.9852 SSIM, indicating effective enhancement of high-frequency details. This demonstrates that spatial-frequency transformation within the transformer feed-forward network improves detail reconstruction in RS super-resolution.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>From Expansion to Consolidation: Socio-Spatial Contagion Dynamics in Off-Grid PV Adoption</title>
+    <link href="http://arxiv.org/abs/2605.09642v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.09642v2</id>
+    <published>2026-05-10T00:00:00Z</published>
+    <updated>2026-05-10T00:00:00Z</updated>
+    <author>
+      <name>Roni Blushtein-Livnon</name>
+    </author>
+    <author>
+      <name>Tal Svoray</name>
+    </author>
+    <author>
+      <name>Itay Fischhendler</name>
+    </author>
+    <author>
+      <name>Havatzelet Yahel</name>
+    </author>
+    <author>
+      <name>Emir Galilee</name>
+    </author>
+    <summary type="text">In traditional rural societies, where social ties are embedded in physical space, the diffusion of emerging technologies may be amplified through socio-spatial contagion (SSC). Such processes may play a key role in accelerating residential PV adoption in off-grid regions. Yet empirical evidence on SSC in PV adoption remains largely limited to affluent, grid-connected settings, while off-grid regions often lack systematic installation records. To address these gaps, we use a deep learning segmentation model to extract PV installations from a decade-long series of remote sensing imagery across 507 off-grid settlement clusters (hereafter, communities). This enables data-driven spatio-temporal point pattern inference of SSC in data-scarce contexts. SSC is quantified through the range and intensity of clustering of new installations around prior adopters, and the dynamics of these dimensions are linked to adoption outcomes. We found that SSC is nearly ubiquitous, often spanning most of the community's spatial extent, while exhibiting substantial heterogeneity in intensity. Although SSC intensifies over time, its effects remain temporally concentrated, peaking within 1 to 2 years of nearby installations and weakening thereafter. SSC intensity is positively associated with adoption rates in both cross-sectional and temporal analyses. However, the relationship between SSC range and adoption changes over time - in early diffusion phases, adoption growth is associated with range expansion, whereas in later phases it is associated with range contraction. This shift reflects a transition from clustering to consolidation of installations. These findings highlight the potential of seeding interventions to accelerate PV diffusion in off-grid regions.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="econ.GN" />
+  </entry>
+  <entry>
+    <title>Adaptive 3D Convolution for Remote Sensing Image Fusion</title>
+    <link href="http://arxiv.org/abs/2605.09455v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.09455v1</id>
+    <published>2026-05-10T00:00:00Z</published>
+    <updated>2026-05-10T00:00:00Z</updated>
+    <author>
+      <name>Siran Peng</name>
+    </author>
+    <author>
+      <name>Xiangyu Zhu</name>
+    </author>
+    <author>
+      <name>Shang-Qi Deng</name>
+    </author>
+    <author>
+      <name>Liang-Jian Deng</name>
+    </author>
+    <author>
+      <name>Zhen Lei</name>
+    </author>
+    <summary type="text">Remote sensing image fusion aims to create a high-resolution multi/hyper-spectral image from a high-resolution image with limited spectral information and a low-resolution image with abundant spectral data. Recently, deep learning (DL) techniques have shown significant effectiveness in this area. Most DL-based methods approach image fusion as a 2D problem by encoding spectral information into feature map channels. However, our research suggests that this strategy introduces notable spectral distortions. In contrast, some methods consider spectral data as an additional dimension, utilizing standard 3D convolutions to preserve spectral information. Nevertheless, in a standard 3D convolutional layer, the same set of kernels is applied across all input regions, which we have found to be sub-optimal for image fusion. Furthermore, standard 3D convolutions necessitate substantial computational resources. To address these challenges, we propose a novel convolutional paradigm called Adaptive 3D Convolution (Ada3D) for remote sensing image fusion. Ada3D applies a unique set of 3D kernels to each input voxel, enabling the capture of fine-grained details. These adaptive kernels are generated through a two-step process: (i) spatial and spectral kernels are derived from their respective image sources; (ii) these two types of kernels are then combined to form content-aware 3D kernels that effectively integrate spatial and spectral information. Additionally, adaptive biases are introduced to enhance the convolutional outcome at the voxel level. Furthermore, we incorporate the group convolution technique to reduce computational complexity. As a result, Ada3D offers full adaptivity in an efficient manner. Evaluation results across five datasets demonstrate that our method achieves SOTA performance, underscoring the superiority of Ada3D. The code is available at https://github.com/PSRben/Ada3D.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/PSRben/Ada3D"&gt;https://github.com/PSRben/Ada3D&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Transactions on Image Processing (TIP)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>HyGAS: an Open, Sensor-Agnostic Platform for Multi-Satellite Methane Plume Retrieval, Uncertainty Propagation, and Emission-Rate Estimation</title>
     <link href="http://arxiv.org/abs/2605.09049v1" rel="alternate" type="text/html" />
@@ -472,224 +948,6 @@
     </author>
     <summary type="text">Despite the unprecedented volume of multimodal data provided by modern Earth observation systems, our ability to model atmospheric dynamics remains constrained. Traditional modeling frameworks force heterogeneous measurements into predefined spatial grids, inherently limiting the full exploitation of raw sensor data and creating severe computational bottlenecks. Here we present Earth-o1, an observation-native atmospheric world model that overcomes these structural limitations. Rather than relying on conventional atmospheric dynamical modeling systems or traditional data assimilation, Earth-o1 directly learns the continuous, three-dimensional physical evolution of the Earth system from ungridded observational data. By integrating diverse sensor inputs into a unified, grid-free dynamical field, the model autonomously advances the atmospheric state in space and time. We show that this fundamentally distinct paradigm enables direct, real-time forecasting and cross-sensor inference without the overhead of explicit numerical solvers. In hindcast evaluations, Earth-o1 achieves surface forecast skill comparable to the operational Integrated Forecasting System (IFS). These results establish that continuous, observation-driven world models -- a new class of fully observation-native geophysical simulators -- can match the fidelity of established physical frameworks, providing a scalable data-driven foundation for a digital twin of the Earth.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Low-Rank Adaptation of Geospatial Foundation Models for Wildfire Mapping Using Sentinel-2 Data</title>
-    <link href="http://arxiv.org/abs/2605.04989v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.04989v1</id>
-    <published>2026-05-06T00:00:00Z</published>
-    <updated>2026-05-06T00:00:00Z</updated>
-    <author>
-      <name>Ali Shibli</name>
-    </author>
-    <author>
-      <name>Andrea Nascetti</name>
-    </author>
-    <author>
-      <name>Yifang Ban</name>
-    </author>
-    <summary type="text">Wildfire burned-area mapping is essential for damage assessment, emissions modeling, and understanding fire-climate interactions across diverse ecological regions. Recent geospatial foundation models provide strong general-purpose representations for satellite imagery, yet there is still no clear understanding of how to efficiently adapt these models for downstream Earth observation tasks, particularly under geographic and temporal domain shift. This study evaluates three state-of-the-art Geospatial Foundation Models (GFMs) - Terramind, DINOv3, and Prithvi-v2 - for burned-area mapping across the United States and Canada using Sentinel-2 data. Leveraging 3,820 wildfire events from 2017-2023, we conduct spatial and temporal generalization tests across diverse biomes. We systematically compare full fine-tuning, decoder-only fine-tuning, and Low-Rank Adaptation (LoRA) for adapting each model. Across all experiments, LoRA provides the strongest cross-domain generalization while updating less than 1% of parameters, demonstrating a favorable trade-off between accuracy and efficiency. Prithvi-v2 with LoRA achieves the highest overall accuracy and the largest improvement compared to full fine-tuning. These findings indicate that geospatial foundation models, when adapted using lightweight parameter-efficient methods such as LoRA, offer a robust and scalable solution for large-scale burned-area mapping. Code is available at https://github.com/alishibli97/wildfire-lora-gfm.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/alishibli97/wildfire-lora-gfm"&gt;https://github.com/alishibli97/wildfire-lora-gfm&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IGARSS 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Bridging Perception and Action: A Lightweight Multimodal Meta-Planner Framework for Robust Earth Observation Agents</title>
-    <link href="http://arxiv.org/abs/2605.04777v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.04777v1</id>
-    <published>2026-05-06T00:00:00Z</published>
-    <updated>2026-05-06T00:00:00Z</updated>
-    <author>
-      <name>Jinghui Xu</name>
-    </author>
-    <author>
-      <name>Boyi Shangguan</name>
-    </author>
-    <author>
-      <name>Mengke Zhu</name>
-    </author>
-    <author>
-      <name>Hao Liu</name>
-    </author>
-    <author>
-      <name>Junhuan Jiang</name>
-    </author>
-    <author>
-      <name>Guangjun He</name>
-    </author>
-    <author>
-      <name>Pengming Feng</name>
-    </author>
-    <author>
-      <name>Shichao Jin</name>
-    </author>
-    <author>
-      <name>Bin Liang</name>
-    </author>
-    <author>
-      <name>Yongzhe Chang</name>
-    </author>
-    <author>
-      <name>Junbo Tan</name>
-    </author>
-    <author>
-      <name>Tiantian Zhang</name>
-    </author>
-    <author>
-      <name>Xueqian Wang</name>
-    </author>
-    <summary type="text">Autonomous Earth Observation (EO) agents are transitioning from passive perception to complex, multi-step task execution. However, current architectures that integrate planning and execution within a single model often struggle with combinatorial complexity and reasoning errors in dynamic EO scenarios. To resolve these challenges, we propose the Lightweight Multimodal Meta-Planner (LMMP) framework. LMMP incorporates a dual-awareness mechanism that grounds strategic plans in both multimodal image features and high-level task semantics. Crucially, we introduce a Meta Task Library to inject remote sensing expert knowledge directly into the workflow, which standardizes domain logic and ensures plans are physically feasible. We further implement a two-stage training pipeline, initializing the Meta-Planner via expert-distilled Supervised Fine-Tuning and refining it through Direct Preference Optimization based on execution feedback. Extensive experiments on a dataset derived from EarthBench and ThinkGeo demonstrate that LMMP significantly improves tool-calling accuracy and task success rates. Moreover, the framework exhibits strong ``plug-and-play'' versatility, consistently enhancing the performance of diverse executor backbones across previously unseen EO missions.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.MA" />
-  </entry>
-  <entry>
-    <title>Morphology-Guided Cross-Task Coupling for Joint Building Height and Footprint Estimation</title>
-    <link href="http://arxiv.org/abs/2605.04731v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.04731v1</id>
-    <published>2026-05-06T00:00:00Z</published>
-    <updated>2026-05-06T00:00:00Z</updated>
-    <author>
-      <name>Jinzhen Han</name>
-    </author>
-    <author>
-      <name>JinByeong Lee</name>
-    </author>
-    <author>
-      <name>Jisung Kim</name>
-    </author>
-    <author>
-      <name>HongSik Yun</name>
-    </author>
-    <summary type="text">Building height (BH) and building footprint (BF) jointly describe the vertical and horizontal extent of the built environment and are required inputs for urban climate, disaster-risk, and population-mapping models. The two parameters are coupled through floor-area-ratio (FAR) constraints, yet remote-sensing approaches typically treat them as independent regression targets. We argue that explicitly encoding this cross-task coupling is more impactful than further refining individual encoders, and propose MorphoFormer, a joint BH/BF estimation framework built around two complementary mechanisms: (i) a BF-Guided Task Decoder (BGTD) that gates the height branch via cross-attention on a footprint-derived morphology context, and (ii) a Morphology Consistency Loss (MCL) that supervises a height-from-footprint surrogate against the ground-truth BH, indirectly forcing the BF feature to encode height-correlated structure. The encoder is a single-stage Swin backbone fed by Sentinel-1 SAR, Sentinel-2 multispectral, and DEM inputs, trained and evaluated on a geo-blocked split of 54 cities. Against a Swin-MTL baseline at identical receptive field, MorphoFormer reduces BH test RMSE from 3.39 to 3.15 m (R^2 improves 0.62 -&gt; 0.67) with BF R^2 stable at 0.80. Controlled ablations at identical capacity attribute most of this 0.24 m improvement to the two proposed mechanisms: removing BGTD raises BH RMSE by 0.11 m and removing MCL raises it by 0.11 m, with the residual approximately 0.02 m falling within the noise floor of encoder-side variations. Because both mechanisms act on cross-task representations rather than pixels, the design carries no intrinsic dependence on input resolution.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Delay-Aware Large-Small Model Collaboration over LEO Satellite Networks</title>
-    <link href="http://arxiv.org/abs/2605.04565v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.04565v1</id>
-    <published>2026-05-06T00:00:00Z</published>
-    <updated>2026-05-06T00:00:00Z</updated>
-    <author>
-      <name>Mingyu Guo</name>
-    </author>
-    <author>
-      <name>Wen Wu</name>
-    </author>
-    <author>
-      <name>Ying Wang</name>
-    </author>
-    <author>
-      <name>Songge Zhang</name>
-    </author>
-    <author>
-      <name>Liang Li</name>
-    </author>
-    <summary type="text">In this paper, we introduce a delay-aware largesmall model collaboration scheme for low Earth orbit (LEO) satellite networks, which can balance the computational load among satellites and the communication load across inter-satellite links. Specifically, computational resource constrained remote sensing satellites are responsible for data collection and local processing using small models, while collaborating with computing satellites that provide large model processing. To minimize the service delay, we formulate a joint optimization problem for offloading decision and routing strategy design, which is transformed into a decentralized partially observable Markov decision process. To solve the problem, we develop a multi-agent reinforcement learning (MARL)-based algorithm with offline policy training and online bisection search. The offline trained policy determines routing strategies, while online bisection search iteratively adjusts the offloading decisions. Simulation results demonstrate that the proposed scheme can reduce the service delay by up to 31.85% compared with the benchmarks.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 6 pages, 6 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.DC" />
-  </entry>
-  <entry>
-    <title>RemoteZero: Geospatial Reasoning with Zero Human Annotations</title>
-    <link href="http://arxiv.org/abs/2605.04451v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.04451v1</id>
-    <published>2026-05-06T00:00:00Z</published>
-    <updated>2026-05-06T00:00:00Z</updated>
-    <author>
-      <name>Liang Yao</name>
-    </author>
-    <author>
-      <name>Fan Liu</name>
-    </author>
-    <author>
-      <name>Shengxiang Xu</name>
-    </author>
-    <author>
-      <name>Chuanyi Zhang</name>
-    </author>
-    <author>
-      <name>Rui Min</name>
-    </author>
-    <author>
-      <name>Shimin Di</name>
-    </author>
-    <author>
-      <name>Yuhui Zheng</name>
-    </author>
-    <summary type="text">Geospatial reasoning requires models to resolve complex spatial semantics and user intent into precise target locations for Earth observation. Recent progress has liberated the reasoning path from manual curation, allowing models to generate their own inference chains. Yet a final dependency remains: they are still supervised by human-annotated ground-truth coordinates. This leaves the reasoning process autonomous, but not its spatial endpoint, and prevents true self-evolution on abundant unlabeled remote sensing data. To break this bottleneck, we introduce RemoteZero, a box-supervision-free framework for geospatial reasoning. RemoteZero is motivated by a simple asymmetry: an MLLM is typically better at verifying whether a region satisfies a query than at directly generating precise coordinates. Leveraging this stronger discriminative ability, RemoteZero replaces geometric supervision with intrinsic semantic verification and enables GRPO training without box annotations. The resulting framework further supports iterative self-evolution, allowing the model to improve from unlabeled remote sensing imagery through its own verification signal. Experiments show that RemoteZero achieves competitive performance against strong supervised methods, demonstrating the potential of self-verifying training for geospatial reasoning localization.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>UAV as Urban Construction Change Monitor: A New Benchmark and Change Captioning Model</title>
-    <link href="http://arxiv.org/abs/2605.04409v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.04409v1</id>
-    <published>2026-05-06T00:00:00Z</published>
-    <updated>2026-05-06T00:00:00Z</updated>
-    <author>
-      <name>Yupeng Gao</name>
-    </author>
-    <author>
-      <name>Tianyu Li</name>
-    </author>
-    <author>
-      <name>Guoqing Wang</name>
-    </author>
-    <author>
-      <name>Yang Yang</name>
-    </author>
-    <summary type="text">Remote Sensing Image Change Captioning (RSICC) aims to generate spatially grounded natural language descriptions of scene evolution from bi-temporal imagery, moving beyond binary change masks toward semantic-level understanding. However, existing methods rely on implicit feature differencing without explicitly modeling structured change semantics, and struggle to reconcile the conflicting representation demands of change detection and caption generation. In addition, current benchmarks provide limited coverage of high-resolution urban construction scenarios. To address these challenges, we propose PTNet, a prototype-guided task-adaptive framework for joint change captioning and detection. PTNet explicitly models structured change semantics through a learnable prototype bank that guides cross-temporal interaction, disentangles task-specific representations via multi-head gating, and injects detection-derived spatial priors into caption generation, enabling coherent semantic correspondence while preserving fine-grained spatial sensitivity. Furthermore, we construct UCCD, a large-scale UAV-based benchmark comprising 9,000 high-resolution image pairs and 45,000 annotated sentences for urban construction monitoring. Extensive experiments on UCCD and WHU-CDC demonstrate that PTNet consistently outperforms existing methods. The dataset and source code are publicly available at https://github.com/G124556/ptnet.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/G124556/ptnet"&gt;https://github.com/G124556/ptnet&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Hyperspectral Anomaly Detection Using Einstein Fuzzy Computing and Quantum Neural Network</title>
-    <link href="http://arxiv.org/abs/2605.04388v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.04388v1</id>
-    <published>2026-05-06T00:00:00Z</published>
-    <updated>2026-05-06T00:00:00Z</updated>
-    <author>
-      <name>Chia-Hsiang Lin</name>
-    </author>
-    <author>
-      <name>Si-Sheng Young</name>
-    </author>
-    <author>
-      <name>Reza Langari</name>
-    </author>
-    <summary type="text">In the remote sensing (RS) field, hyperspectral imagery provides rich spectral information and facilitates numerous critical applications, such as material identification. Among these applications, hyperspectral anomaly detection (HAD) aims to detect substances whose spectral characteristics deviate from background spectra, which are termed anomalies. However, many widely used HAD algorithms in the RS community identify anomalies by relying on a ``background reconstruction'' strategy. Furthermore, the lack of prior target hyperspectrum and real-world limitations collectively reduces the spectral discrepancy between anomaly and background, limiting the performance of mainstream detections. By exploring the widely applicable fuzzy theory in the RS field, this study develops an unsupervised hybrid quantum-fuzzy multi-criteria decision framework (HyFuHAD) to detect anomalies from multiple perspectives. In our HyFuHAD, each pixel is first fuzzified using multiple HAD-based membership functions (MFs), including morphological, geometrical, and statistical MFs, to obtain various types of fuzzy degrees. Then, a multi-fuzzy-rule system, empowered by Einstein fuzzy computing, infers the classical fuzzy detection from these fuzzy degrees with sub-second-level computing. The Einstein sum and product provide significantly smoother transitions compared to typical min-max-based fuzzy ``OR'' and ``AND'' during the fuzzy matching and inference steps, thereby enabling effective detections. Moreover, a lightweight quantum defuzzifier obtains the quantum fuzzy detection from fuzzy features derived from the proposed fuzzy feature aggregation network. Experiments demonstrate that our HyFuHAD algorithm achieves state-of-the-art performance by fusing the information from the quantum and classical detectors. The demo code will be publicly available at https://github.com/IHCLab/HyFuHAD.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/IHCLab/HyFuHAD"&gt;https://github.com/IHCLab/HyFuHAD&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Transactions on Geoscience and Remote Sensing&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Image and Video Processing" />
-  </entry>
-  <entry>
-    <title>Zero-Shot Satellite Image Retrieval through Joint Embeddings: Application to Crisis Response</title>
-    <link href="http://arxiv.org/abs/2605.05405v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.05405v2</id>
-    <published>2026-05-06T00:00:00Z</published>
-    <updated>2026-05-06T00:00:00Z</updated>
-    <author>
-      <name>James Walsh</name>
-    </author>
-    <author>
-      <name>William Fawcett</name>
-    </author>
-    <author>
-      <name>Grace Colvard</name>
-    </author>
-    <author>
-      <name>Raúl Ramos-Pollán</name>
-    </author>
-    <summary type="text">Semantic search of Earth observation archives remains challenging. Visual foundation models such as CLAY produce rich embeddings of satellite imagery but lack the natural-language grounding needed for intuitive query, and full contrastive training of a remote-sensing CLIP-style model requires paired data and compute that are unavailable at global scale. We present GeoQuery, a zero-shot retrieval system that sidesteps this constraint through prompt-aligned text proxies. Rather than training a joint encoder, we generate language descriptions for a 100k proxy subset of global Sentinel-2 tiles and optimise the description-generation prompt so that distances in the resulting text-embedding space correlate with distances in the frozen CLAY visual-embedding space. Queries are resolved in two stages, with a text-similarity search over the proxy subset followed by a visual nearest-neighbour search over worldwide CLAY embeddings. On 76 disaster-location queries covering UK floods, US wildfires, and US droughts, GeoQuery achieves 31.6% accuracy within 50 km, with the strongest performance on floods (50% within 50 km) where terrain features are well captured by RGB embeddings. Deployed within ECHO, a crisis response system using Agentic Action Graphs, GeoQuery identified vulnerable areas during Brisbane's 2025 Cyclone Alfred, with downstream flood simulations reproducing historical patterns. Prompt-aligned proxies offer a practical bridge between EO foundation models and operational retrieval when full contrastive training is out of reach.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR;VG&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>

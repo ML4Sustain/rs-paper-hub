@@ -4,12 +4,105 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-12T04:36:41Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 9 entries</subtitle>
+  <updated>2026-05-13T01:52:09Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 8 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>The first global agricultural field boundary map at 10m resolution</title>
+    <link href="http://arxiv.org/abs/2605.11055v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.11055v1</id>
+    <published>2026-05-11T00:00:00Z</published>
+    <updated>2026-05-11T00:00:00Z</updated>
+    <author>
+      <name>Caleb Robinson</name>
+    </author>
+    <author>
+      <name>Gedeon Muhawenayo</name>
+    </author>
+    <author>
+      <name>Subash Khanal</name>
+    </author>
+    <author>
+      <name>Zhanpei Fang</name>
+    </author>
+    <author>
+      <name>Isaac Corley</name>
+    </author>
+    <author>
+      <name>Ana M. Tárano</name>
+    </author>
+    <author>
+      <name>Lyndon Estes</name>
+    </author>
+    <author>
+      <name>Jennifer Marcus</name>
+    </author>
+    <author>
+      <name>Nathan Jacobs</name>
+    </author>
+    <author>
+      <name>Hannah Kerner</name>
+    </author>
+    <author>
+      <name>Inbal Becker-Reshef</name>
+    </author>
+    <author>
+      <name>Juan M. Lavista Ferres</name>
+    </author>
+    <summary type="text">The agricultural field is the natural unit at which crops are planted, managed, regulated, and reported, yet most global remote-sensing products for agriculture are only available at the pixel level. While some high-quality field-level data products exist, they come from parcel registries covering only parts of Europe or from ML-derived products for individual countries. No openly available, globally consistent map of agricultural field boundaries exists to date. Here we present the first global field boundary dataset at 10\,m resolution for the years 2024 and 2025, comprising 3.17 billion remote-sensing field polygons (1.62 B in 2024 and 1.55 B in 2025) across 241 countries and territories, produced by applying a U-Net segmentation model trained on the Fields of The World dataset to cloud-free Sentinel-2 mosaics. Validated against ground-truth field boundaries in 24 countries, the map achieved a mean pixel-level recall of 0.85 with 14 countries exceeding 0.90. Evaluation against full-country ground-truth datasets in Austria, Latvia, and Finland yielded F1 scores of 0.89, 0.88, and 0.74, respectively. Because reference data for global validation is inherently incomplete, we accompanied the map with a 500 m confidence layer that identifies regions where predictions are reliable. We release the dataset openly as three global maps: the confidence-thresholded default field boundary dataset, the full unfiltered dataset, and the continuous-valued confidence raster. These maps provide the first globally consistent field-level unit of analysis for crop monitoring, food security, and downstream agricultural science.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Geospatial-Temporal Sensemaking of Remote Sensing Activity Detections with Multimodal Large Language Model</title>
+    <link href="http://arxiv.org/abs/2605.10739v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.10739v1</id>
+    <published>2026-05-11T00:00:00Z</published>
+    <updated>2026-05-11T00:00:00Z</updated>
+    <author>
+      <name>David F. Ramirez</name>
+    </author>
+    <author>
+      <name>Tim Overman</name>
+    </author>
+    <author>
+      <name>Kristen Jaskie</name>
+    </author>
+    <author>
+      <name>Andreas Spanias</name>
+    </author>
+    <summary type="text">We introduce SMART-HC-VQA, a Sentinel-2-based visual question answering dataset derived from the IARPA SMART Heavy Construction dataset, designed for spatiotemporal analysis of human activity. The dataset transforms construction-site annotations, construction-type labels, temporal-phase labels, geographic metadata, and observation relationships into natural language question-answer triplets. This approach redefines the existing dataset as a temporally extended automatic target recognition and visual question answering (VQA) challenge, considering a fixed geospatial site as a target whose attributes and activity states evolve across sparse satellite observations. Currently, SMART-HC-VQA comprises 21,837 accessible Sentinel-2 image chips, 65,511 single-image VQA examples, and approximately 2.3 million two-image temporal comparison examples generated via our novel Image-Pairwise Combinatorial Augmentation. We detail the workflow for retrieving and processing Sentinel-2 imagery, segmenting large satellite tiles into site-centered images, maintaining traceability to SMART-HC annotations, and analyzing the distributions of site size, observation count, temporal coverage, construction type, and phase labels. Additionally, we describe an implemented multi-image MLLM training framework based on LLaVA-NeXT Mistral-7B, adapted to accept multiple dated image inputs and train on metadata-derived VQA examples. This work offers a reproducible foundation for understanding language-guided remote sensing activities, aiming not only to detect change but also to reason about the ongoing processes, their progression, and potential future developments.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to 2026 SPIE Defense + Security, Automatic Target Recognition XXXVI&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+    <category term="Artificial Intelligence; Computer Vision" />
+  </entry>
+  <entry>
+    <title>Sequential Feature Selection for Efficient Landslide Segmentation from Multi-Spectral Data</title>
+    <link href="http://arxiv.org/abs/2605.09746v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.09746v1</id>
+    <published>2026-05-10T00:00:00Z</published>
+    <updated>2026-05-10T00:00:00Z</updated>
+    <author>
+      <name>Arsalaan Ahmad</name>
+    </author>
+    <author>
+      <name>Oktay Karakus</name>
+    </author>
+    <author>
+      <name>Paul L. Rosin</name>
+    </author>
+    <summary type="text">Landslide detection from satellite imagery has advanced through deep learning, yet most models rely on large, highly correlated spectral-topographic inputs whose contributions remain poorly understood. The question of which channels are actually necessary has received surprisingly little attention. This matters: redundant or correlated inputs obscure physical interpretability, inflate computational overhead, and can actively degrade model performance through the Hughes Phenomenon. We present a systematic, explainable channel-selection framework for the Landslide4Sense benchmark, combining Sentinel-2 multispectral and ALOS PALSAR terrain data with 16 engineered spectral and structural indices. Rather than relying on conventional single-band drop tests, which evaluate channels in isolation and miss interaction effects, we apply Sequential Forward Floating Selection (SFFS) to iteratively build and prune a candidate feature pool using a lightweight U-Net++ proxy model. Beyond identifying a compact 8-channel subset that matches or exceeds the segmentation F1 of configurations using up to 30 channels, we use the selection process itself to interrogate which spectral and topographic features landslide models genuinely rely on, and what this reveals about the physical cues driving their predictions. We argue that SFFS represents a principled feature selection approach to input design in Earth observation, in contrast to the prevailing practice of appending every available band and hoping the model learns what to ignore.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; In Process of Submission to Frontiers in Remote Sensing. Keywords: landslide segmentation, multispectral remote sensing, feature selection, explainability, Landslide4Sense&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>HyGAS: an Open, Sensor-Agnostic Platform for Multi-Satellite Methane Plume Retrieval, Uncertainty Propagation, and Emission-Rate Estimation</title>
     <link href="http://arxiv.org/abs/2605.09049v1" rel="alternate" type="text/html" />
@@ -122,93 +215,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Image and Video Processing" />
     <category term="Machine Learning; Multimedia; Audio and Speech Processing" />
-  </entry>
-  <entry>
-    <title>Low-Rank Adaptation of Geospatial Foundation Models for Wildfire Mapping Using Sentinel-2 Data</title>
-    <link href="http://arxiv.org/abs/2605.04989v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.04989v1</id>
-    <published>2026-05-06T00:00:00Z</published>
-    <updated>2026-05-06T00:00:00Z</updated>
-    <author>
-      <name>Ali Shibli</name>
-    </author>
-    <author>
-      <name>Andrea Nascetti</name>
-    </author>
-    <author>
-      <name>Yifang Ban</name>
-    </author>
-    <summary type="text">Wildfire burned-area mapping is essential for damage assessment, emissions modeling, and understanding fire-climate interactions across diverse ecological regions. Recent geospatial foundation models provide strong general-purpose representations for satellite imagery, yet there is still no clear understanding of how to efficiently adapt these models for downstream Earth observation tasks, particularly under geographic and temporal domain shift. This study evaluates three state-of-the-art Geospatial Foundation Models (GFMs) - Terramind, DINOv3, and Prithvi-v2 - for burned-area mapping across the United States and Canada using Sentinel-2 data. Leveraging 3,820 wildfire events from 2017-2023, we conduct spatial and temporal generalization tests across diverse biomes. We systematically compare full fine-tuning, decoder-only fine-tuning, and Low-Rank Adaptation (LoRA) for adapting each model. Across all experiments, LoRA provides the strongest cross-domain generalization while updating less than 1% of parameters, demonstrating a favorable trade-off between accuracy and efficiency. Prithvi-v2 with LoRA achieves the highest overall accuracy and the largest improvement compared to full fine-tuning. These findings indicate that geospatial foundation models, when adapted using lightweight parameter-efficient methods such as LoRA, offer a robust and scalable solution for large-scale burned-area mapping. Code is available at https://github.com/alishibli97/wildfire-lora-gfm.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/alishibli97/wildfire-lora-gfm"&gt;https://github.com/alishibli97/wildfire-lora-gfm&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IGARSS 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Morphology-Guided Cross-Task Coupling for Joint Building Height and Footprint Estimation</title>
-    <link href="http://arxiv.org/abs/2605.04731v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.04731v1</id>
-    <published>2026-05-06T00:00:00Z</published>
-    <updated>2026-05-06T00:00:00Z</updated>
-    <author>
-      <name>Jinzhen Han</name>
-    </author>
-    <author>
-      <name>JinByeong Lee</name>
-    </author>
-    <author>
-      <name>Jisung Kim</name>
-    </author>
-    <author>
-      <name>HongSik Yun</name>
-    </author>
-    <summary type="text">Building height (BH) and building footprint (BF) jointly describe the vertical and horizontal extent of the built environment and are required inputs for urban climate, disaster-risk, and population-mapping models. The two parameters are coupled through floor-area-ratio (FAR) constraints, yet remote-sensing approaches typically treat them as independent regression targets. We argue that explicitly encoding this cross-task coupling is more impactful than further refining individual encoders, and propose MorphoFormer, a joint BH/BF estimation framework built around two complementary mechanisms: (i) a BF-Guided Task Decoder (BGTD) that gates the height branch via cross-attention on a footprint-derived morphology context, and (ii) a Morphology Consistency Loss (MCL) that supervises a height-from-footprint surrogate against the ground-truth BH, indirectly forcing the BF feature to encode height-correlated structure. The encoder is a single-stage Swin backbone fed by Sentinel-1 SAR, Sentinel-2 multispectral, and DEM inputs, trained and evaluated on a geo-blocked split of 54 cities. Against a Swin-MTL baseline at identical receptive field, MorphoFormer reduces BH test RMSE from 3.39 to 3.15 m (R^2 improves 0.62 -&gt; 0.67) with BF R^2 stable at 0.80. Controlled ablations at identical capacity attribute most of this 0.24 m improvement to the two proposed mechanisms: removing BGTD raises BH RMSE by 0.11 m and removing MCL raises it by 0.11 m, with the residual approximately 0.02 m falling within the noise floor of encoder-side variations. Because both mechanisms act on cross-task representations rather than pixels, the design carries no intrinsic dependence on input resolution.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Hyperspectral Anomaly Detection Using Einstein Fuzzy Computing and Quantum Neural Network</title>
-    <link href="http://arxiv.org/abs/2605.04388v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.04388v1</id>
-    <published>2026-05-06T00:00:00Z</published>
-    <updated>2026-05-06T00:00:00Z</updated>
-    <author>
-      <name>Chia-Hsiang Lin</name>
-    </author>
-    <author>
-      <name>Si-Sheng Young</name>
-    </author>
-    <author>
-      <name>Reza Langari</name>
-    </author>
-    <summary type="text">In the remote sensing (RS) field, hyperspectral imagery provides rich spectral information and facilitates numerous critical applications, such as material identification. Among these applications, hyperspectral anomaly detection (HAD) aims to detect substances whose spectral characteristics deviate from background spectra, which are termed anomalies. However, many widely used HAD algorithms in the RS community identify anomalies by relying on a ``background reconstruction'' strategy. Furthermore, the lack of prior target hyperspectrum and real-world limitations collectively reduces the spectral discrepancy between anomaly and background, limiting the performance of mainstream detections. By exploring the widely applicable fuzzy theory in the RS field, this study develops an unsupervised hybrid quantum-fuzzy multi-criteria decision framework (HyFuHAD) to detect anomalies from multiple perspectives. In our HyFuHAD, each pixel is first fuzzified using multiple HAD-based membership functions (MFs), including morphological, geometrical, and statistical MFs, to obtain various types of fuzzy degrees. Then, a multi-fuzzy-rule system, empowered by Einstein fuzzy computing, infers the classical fuzzy detection from these fuzzy degrees with sub-second-level computing. The Einstein sum and product provide significantly smoother transitions compared to typical min-max-based fuzzy ``OR'' and ``AND'' during the fuzzy matching and inference steps, thereby enabling effective detections. Moreover, a lightweight quantum defuzzifier obtains the quantum fuzzy detection from fuzzy features derived from the proposed fuzzy feature aggregation network. Experiments demonstrate that our HyFuHAD algorithm achieves state-of-the-art performance by fusing the information from the quantum and classical detectors. The demo code will be publicly available at https://github.com/IHCLab/HyFuHAD.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/IHCLab/HyFuHAD"&gt;https://github.com/IHCLab/HyFuHAD&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Transactions on Geoscience and Remote Sensing&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Image and Video Processing" />
-  </entry>
-  <entry>
-    <title>Zero-Shot Satellite Image Retrieval through Joint Embeddings: Application to Crisis Response</title>
-    <link href="http://arxiv.org/abs/2605.05405v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.05405v2</id>
-    <published>2026-05-06T00:00:00Z</published>
-    <updated>2026-05-06T00:00:00Z</updated>
-    <author>
-      <name>James Walsh</name>
-    </author>
-    <author>
-      <name>William Fawcett</name>
-    </author>
-    <author>
-      <name>Grace Colvard</name>
-    </author>
-    <author>
-      <name>Raúl Ramos-Pollán</name>
-    </author>
-    <summary type="text">Semantic search of Earth observation archives remains challenging. Visual foundation models such as CLAY produce rich embeddings of satellite imagery but lack the natural-language grounding needed for intuitive query, and full contrastive training of a remote-sensing CLIP-style model requires paired data and compute that are unavailable at global scale. We present GeoQuery, a zero-shot retrieval system that sidesteps this constraint through prompt-aligned text proxies. Rather than training a joint encoder, we generate language descriptions for a 100k proxy subset of global Sentinel-2 tiles and optimise the description-generation prompt so that distances in the resulting text-embedding space correlate with distances in the frozen CLAY visual-embedding space. Queries are resolved in two stages, with a text-similarity search over the proxy subset followed by a visual nearest-neighbour search over worldwide CLAY embeddings. On 76 disaster-location queries covering UK floods, US wildfires, and US droughts, GeoQuery achieves 31.6% accuracy within 50 km, with the strongest performance on floods (50% within 50 km) where terrain features are well captured by RGB embeddings. Deployed within ECHO, a crisis response system using Agentic Action Graphs, GeoQuery identified vulnerable areas during Brisbane's 2025 Cyclone Alfred, with downstream flood simulations reproducing historical patterns. Prompt-aligned proxies offer a practical bridge between EO foundation models and operational retrieval when full contrastive training is out of reach.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR;VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>

@@ -4,33 +4,101 @@
   <id>https://rspaper.top/output/feed_sar.xml</id>
   <link href="https://rspaper.top/output/feed_sar.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-12T04:36:41Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 1 entries</subtitle>
+  <updated>2026-05-13T01:52:09Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
   <entry>
-    <title>Morphology-Guided Cross-Task Coupling for Joint Building Height and Footprint Estimation</title>
-    <link href="http://arxiv.org/abs/2605.04731v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.04731v1</id>
-    <published>2026-05-06T00:00:00Z</published>
-    <updated>2026-05-06T00:00:00Z</updated>
+    <title>Can LLM Agents Respond to Disasters? Benchmarking Heterogeneous Geospatial Reasoning in Emergency Operations</title>
+    <link href="http://arxiv.org/abs/2605.11633v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.11633v1</id>
+    <published>2026-05-12T00:00:00Z</published>
+    <updated>2026-05-12T00:00:00Z</updated>
     <author>
-      <name>Jinzhen Han</name>
+      <name>Junjue Wang</name>
     </author>
     <author>
-      <name>JinByeong Lee</name>
+      <name>Weihao Xuan</name>
     </author>
     <author>
-      <name>Jisung Kim</name>
+      <name>Heli Qi</name>
     </author>
     <author>
-      <name>HongSik Yun</name>
+      <name>Pengyu Dai</name>
     </author>
-    <summary type="text">Building height (BH) and building footprint (BF) jointly describe the vertical and horizontal extent of the built environment and are required inputs for urban climate, disaster-risk, and population-mapping models. The two parameters are coupled through floor-area-ratio (FAR) constraints, yet remote-sensing approaches typically treat them as independent regression targets. We argue that explicitly encoding this cross-task coupling is more impactful than further refining individual encoders, and propose MorphoFormer, a joint BH/BF estimation framework built around two complementary mechanisms: (i) a BF-Guided Task Decoder (BGTD) that gates the height branch via cross-attention on a footprint-derived morphology context, and (ii) a Morphology Consistency Loss (MCL) that supervises a height-from-footprint surrogate against the ground-truth BH, indirectly forcing the BF feature to encode height-correlated structure. The encoder is a single-stage Swin backbone fed by Sentinel-1 SAR, Sentinel-2 multispectral, and DEM inputs, trained and evaluated on a geo-blocked split of 54 cities. Against a Swin-MTL baseline at identical receptive field, MorphoFormer reduces BH test RMSE from 3.39 to 3.15 m (R^2 improves 0.62 -&gt; 0.67) with BF R^2 stable at 0.80. Controlled ablations at identical capacity attribute most of this 0.24 m improvement to the two proposed mechanisms: removing BGTD raises BH RMSE by 0.11 m and removing MCL raises it by 0.11 m, with the residual approximately 0.02 m falling within the noise floor of encoder-side variations. Because both mechanisms act on cross-task representations rather than pixels, the design carries no intrinsic dependence on input resolution.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <author>
+      <name>Kunyi Liu</name>
+    </author>
+    <author>
+      <name>Hongruixuan Chen</name>
+    </author>
+    <author>
+      <name>Zhuo Zheng</name>
+    </author>
+    <author>
+      <name>Junshi Xia</name>
+    </author>
+    <author>
+      <name>Stefano Ermon</name>
+    </author>
+    <author>
+      <name>Naoto Yokoya</name>
+    </author>
+    <summary type="text">Operational disaster response goes beyond damage assessment, requiring responders to integrate multi-sensor signals, reason over road networks, populations and key facilities, plan evacuations, and produce actionable reports. However, prior work largely isolates remote-sensing perception or evaluates generic tool use, leaving the end-to-end workflows of emergency operations underexplored. In this paper, we introduce Disaster Operational Response Agent benchmark (DORA), the first agentic benchmark for end-to-end disaster response: 515 expert-authored tasks across 45 real-world disaster events spanning 10 types, paired with expert-verified, replayable gold trajectories totaling 3,500 tool-call steps. Tasks span five dimensions that cover the operational disaster-response pipeline: disaster perception, spatial relational analysis, rescue and evacuation planning, temporal evolution reasoning, and multi-modal report synthesis. Agents compose calls from a 108-tool MCP library over heterogeneous geospatial data: optical, SAR, and multi-spectral imagery across single-, bi-, and multi-temporal sequences (0.015-10m GSD), complemented by elevation and social vector layers. We comprehensively evaluate 13 frontier LLMs on our benchmark, revealing three persistent challenges: 1) disaster-domain grounding exposes unique failure modes (damage-semantic grounding, sensor-modality mismatch, and disaster-pipeline composition); 2) agents are doubly bottlenecked by tool selection and argument grounding, where gold tool-order hints improve accuracy by only 1.08-4.40%, and alternative scaffolds yield at most a 3.24% gain; 3) compositional fragility scales with trajectory length, the agent-to-gold gap widening from 7% to 56% on long pipelines. DORA establishes a rigorous testbed for operationally reliable disaster-response agents.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; DORA stress-tests LLM agents on real-world disaster operations that demand comprehensive orchestration of 108 specialized tools over heterogeneous geospatial data&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Towards a Large Language-Vision Question Answering Model for MSTAR Automatic Target Recognition</title>
+    <link href="http://arxiv.org/abs/2605.10772v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.10772v1</id>
+    <published>2026-05-11T00:00:00Z</published>
+    <updated>2026-05-11T00:00:00Z</updated>
+    <author>
+      <name>David F. Ramirez</name>
+    </author>
+    <author>
+      <name>Tim L. Overman</name>
+    </author>
+    <author>
+      <name>Kristen Jaskie</name>
+    </author>
+    <author>
+      <name>Marv Kleine</name>
+    </author>
+    <author>
+      <name>Andreas Spanias</name>
+    </author>
+    <summary type="text">Large language-vision models (LLVM), such as OpenAI's ChatGPT and GPT-4, have gained prominence as powerful tools for analyzing text and imagery. The merging of these data domains represents a significant paradigm shift with far-reaching implications for automatic target recognition (ATR). Recent transformer-based LLVM research has shown substantial improvements for geospatial perception tasks. Our study examines the application of LLVM to remote sensing image captioning and visual question-answering (VQA), with a specific focus on synthetic aperture radar (SAR) imagery. We examine newly published LLVM methods, including CLIP and LLaVA neural network transformer architectures. We have developed a work-in-progress SAR training and evaluation benchmark derived from the MSTAR Public Dataset. This has been extended to include descriptive text captions and question-answer pairs for VQA tasks. This challenge dataset is designed to push the boundaries of an LLVM in identifying nuanced ATR details in SAR imagery. Utilizing parameter-efficient fine-tuning, we train an LLVM method to identify fine-grained target qualities at 98% accuracy. We detail our data setup and experiments, addressing potential pitfalls that could lead to misleading conclusions. Accurately identifying and differentiating military vehicle types in SAR data poses a critical challenge, especially under complex environmental conditions. Mastering this target recognition skill may require a human analyst months of training and years of practice. This research represents a unique effort to apply LLVM to SAR applications, advancing machine-assisted remote sensing ATR for military and intelligence contexts.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to SPIE Defense + Commercial Sensing, Automatic Target Recognition XXXV&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;IC&lt;/p&gt;</content>
     <category term="Computer Vision" />
+    <category term="Artificial Intelligence; Image and Video Processing" />
+  </entry>
+  <entry>
+    <title>Sequential Feature Selection for Efficient Landslide Segmentation from Multi-Spectral Data</title>
+    <link href="http://arxiv.org/abs/2605.09746v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.09746v1</id>
+    <published>2026-05-10T00:00:00Z</published>
+    <updated>2026-05-10T00:00:00Z</updated>
+    <author>
+      <name>Arsalaan Ahmad</name>
+    </author>
+    <author>
+      <name>Oktay Karakus</name>
+    </author>
+    <author>
+      <name>Paul L. Rosin</name>
+    </author>
+    <summary type="text">Landslide detection from satellite imagery has advanced through deep learning, yet most models rely on large, highly correlated spectral-topographic inputs whose contributions remain poorly understood. The question of which channels are actually necessary has received surprisingly little attention. This matters: redundant or correlated inputs obscure physical interpretability, inflate computational overhead, and can actively degrade model performance through the Hughes Phenomenon. We present a systematic, explainable channel-selection framework for the Landslide4Sense benchmark, combining Sentinel-2 multispectral and ALOS PALSAR terrain data with 16 engineered spectral and structural indices. Rather than relying on conventional single-band drop tests, which evaluate channels in isolation and miss interaction effects, we apply Sequential Forward Floating Selection (SFFS) to iteratively build and prune a candidate feature pool using a lightweight U-Net++ proxy model. Beyond identifying a compact 8-channel subset that matches or exceeds the segmentation F1 of configurations using up to 30 channels, we use the selection process itself to interrogate which spectral and topographic features landslide models genuinely rely on, and what this reveals about the physical cues driving their predictions. We argue that SFFS represents a principled feature selection approach to input design in Earth observation, in contrast to the prevailing practice of appending every available band and hoping the model learns what to ignore.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; In Process of Submission to Frontiers in Remote Sensing. Keywords: landslide segmentation, multispectral remote sensing, feature selection, explainability, Landslide4Sense&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+    <category term="Artificial Intelligence" />
   </entry>
 </feed>
