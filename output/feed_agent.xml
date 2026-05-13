@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_agent.xml</id>
   <link href="https://rspaper.top/output/feed_agent.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-13T01:52:09Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
+  <updated>2026-05-13T04:40:15Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -51,6 +51,39 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
     <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>UHR-Micro: Diagnosing and Mitigating the Resolution Illusion in Earth Observation VLMs</title>
+    <link href="http://arxiv.org/abs/2605.12237v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.12237v1</id>
+    <published>2026-05-12T00:00:00Z</published>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <author>
+      <name>Shuo Ni</name>
+    </author>
+    <author>
+      <name>Tong Wang</name>
+    </author>
+    <author>
+      <name>Jing Zhang</name>
+    </author>
+    <author>
+      <name>He Chen</name>
+    </author>
+    <author>
+      <name>Haonan Guo</name>
+    </author>
+    <author>
+      <name>Ning Zhang</name>
+    </author>
+    <author>
+      <name>Bo Du</name>
+    </author>
+    <summary type="text">Vision-Language Models (VLMs) increasingly operate on ultra-high-resolution (UHR) Earth observation imagery, yet they remain vulnerable to a severe scale mismatch between large-scale scene context and micro-scale targets. We refer to this empirical gap as a "resolution illusion": higher input resolution provides the appearance of richer visual detail, but does not necessarily yield reliable perception of spatially small, task-relevant evidence. To benchmark this challenge, we introduce UHR-Micro, a benchmark comprising 11,253 instructions grounded in 1,212 UHR images, designed to evaluate VLMs at the spatial limits of native Earth observation imagery. UHR-Micro spans diverse micro-target scales, context requirements, task families, and visual conditions, and provides diagnostic annotations that support controlled evaluation and fine-grained error attribution. Experiments with representative high-resolution VLMs show substantial failures in spatial grounding and evidence parsing, despite access to high-resolution inputs. Further analysis suggests that these failures are not fully resolved by increasing model capacity, but are closely tied to insufficient guidance in locating and using task-relevant micro-evidence. Motivated by this finding, we propose Micro-evidence Active Perception (MAP), a reference agent that decomposes queries into evidence-seeking steps, actively inspects candidate regions, and grounds its answers in localized observations. MAP-Agent improves micro-level perception by making high-resolution reasoning evidence-centered rather than image-centered. Together, UHR-Micro and MAP-Agent provide a diagnostic platform for evaluating, understanding, and advancing high-resolution reasoning in Earth observation VLMs. Datasets and source code were released at https://github.com/MiliLab/UHR-Micro.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/MiliLab/UHR-Micro"&gt;https://github.com/MiliLab/UHR-Micro&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
   </entry>
   <entry>
     <title>AnomalyClaw: A Universal Visual Anomaly Detection Agent via Tool-Grounded Refutation</title>
