@@ -4,12 +4,36 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-13T04:40:15Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 32 entries</subtitle>
+  <updated>2026-05-14T01:54:31Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 28 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>On Hallucinations in Inverse Problems: Fundamental Limits and Provable Assessment Methods</title>
+    <link href="http://arxiv.org/abs/2605.13146v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.13146v1</id>
+    <published>2026-05-13T00:00:00Z</published>
+    <updated>2026-05-13T00:00:00Z</updated>
+    <author>
+      <name>David Iagaru</name>
+    </author>
+    <author>
+      <name>Nina M. Gottschling</name>
+    </author>
+    <author>
+      <name>Anders C. Hansen</name>
+    </author>
+    <author>
+      <name>Josselin Garnier</name>
+    </author>
+    <summary type="text">Artificial intelligence (AI) has transformed imaging inverse problems, from medical diagnostics to Earth observation. Yet deep neural networks can produce hallucinations, realistic-looking but incorrect details, undermining their reliability, especially when ground truth data is unavailable. We develop a theoretical framework showing that such hallucinations are not merely artifacts of particular models, but can arise from the ill-posed nature of the inverse problem itself. We derive necessary and sufficient conditions for hallucinations, together with computable bounds on their magnitude that depend only on the forward model. Building on this theory, we introduce algorithms to: (1) estimate the minimum hallucination magnitude achievable by any reconstruction model for a given input; (2) assess the faithfulness of reconstructed details by a given reconstruction model. Experiments across three imaging tasks demonstrate that our approach applies broadly, including to modern generative models, and provides a principled way to quantify and evaluate AI hallucinations.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 31 pages, 11 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning (Statistics)" />
+    <category term="Computer Vision; Machine Learning" />
+  </entry>
   <entry>
     <title>Can LLM Agents Respond to Disasters? Benchmarking Heterogeneous Geospatial Reasoning in Emergency Operations</title>
     <link href="http://arxiv.org/abs/2605.11633v1" rel="alternate" type="text/html" />
@@ -152,6 +176,44 @@
     <summary type="text">Existing deep learning-based methods can capture shared features from optical and synthetic aperture radar (SAR) images for spatial alignment. However, optical-SAR registration remains challenging under large geometric deformations, because the model needs to simultaneously handle cross-modal appearance discrepancies and complex spatial transformations. To address this issue, this paper proposes a text semantic-assisted cross-modal image registration framework, named TAR, for optical and SAR images. TAR exploits text semantic priors from remote sensing scenes and land-cover categories to alleviate the modality gap and enhance cross-modal feature learning. TAR consists of three components: a multi-scale visual feature learning (MSFL) module, a text-assisted feature enhancement (TAFE) module, and a coarse-to-fine dense matching (CFDM) module. MSFL extracts multi-scale visual features from optical and SAR images. TAFE constructs text descriptors related to remote sensing scenes and land-cover objects, and uses a frozen RemoteCLIP text encoder to extract text features. These text features are introduced through visual-text interaction to enhance high-level visual features for more reliable coarse matching. CFDM then establishes coarse correspondences based on the enhanced high-level features and refines the matched locations using low-level features. Experimental results on cross-modal remote sensing images demonstrate the effectiveness of TAR, which achieves stronger matching performance than several state-of-the-art methods and yields significant gains under large geometric deformations.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>No One Knows the State of the Art in Geospatial Foundation Models</title>
+    <link href="http://arxiv.org/abs/2605.12678v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.12678v1</id>
+    <published>2026-05-12T00:00:00Z</published>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <author>
+      <name>Isaac Corley</name>
+    </author>
+    <author>
+      <name>Nils Lehmann</name>
+    </author>
+    <author>
+      <name>Caleb Robinson</name>
+    </author>
+    <author>
+      <name>Gabriel Tseng</name>
+    </author>
+    <author>
+      <name>Anthony Fuller</name>
+    </author>
+    <author>
+      <name>Hamed Alemohammad</name>
+    </author>
+    <author>
+      <name>Evan Shelhamer</name>
+    </author>
+    <author>
+      <name>Jennifer Marcus</name>
+    </author>
+    <author>
+      <name>Hannah Kerner</name>
+    </author>
+    <summary type="text">Geospatial foundation models (GFMs) have been proposed as generalizable backbones for disaster response, land-cover mapping, food-security monitoring, and other high-stakes Earth-observation tasks. Yet the published work about these models does not give reviewers or users enough information to tell which model fits a given task. We argue that nobody knows what the current state of the art is in geospatial foundation models. The methods may be useful, but the GFM literature does not standardize evaluations, training and testing protocols, released weights, or pretraining controls well enough for anyone to compare or rank them. In a 152-paper audit, we find 46 cross-paper disagreements of at least 10 points for the same model, benchmark, and protocol; 94/126 papers with extractable pretraining data use a configuration no other paper uses; and 39% of GFM papers release no model weights. This lack of community standards can be solved. We propose six concrete expectations: named-license weight release, shared core evaluations, copied-versus-rerun baseline annotations, variance reporting, one shared evaluation harness, and data-vs-architecture-vs-algorithm controls. These gaps are a coordination failure, not a fault of any individual lab; the authors of this paper, like many others in the GFM community, have contributed to them. Rather than just critiquing the community, we aim to provide concrete steps toward a shared understanding of how to innovate GFMs.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="cs.CY" />
   </entry>
   <entry>
     <title>Rapid Forest Fuel Load Estimation via Virtual Remote Sensing and Metric-Scale Feed-Forward 3D Reconstruction</title>
@@ -804,211 +866,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="cs.CL" />
     <category term="Artificial Intelligence; Computer Vision; cs.ET" />
-  </entry>
-  <entry>
-    <title>Passive Imaging with Quantum Advantage</title>
-    <link href="http://arxiv.org/abs/2605.05961v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.05961v1</id>
-    <published>2026-05-07T00:00:00Z</published>
-    <updated>2026-05-07T00:00:00Z</updated>
-    <author>
-      <name>Li Gong</name>
-    </author>
-    <author>
-      <name>Aonan Zhang</name>
-    </author>
-    <author>
-      <name>Madhura Ghosh Dastidar</name>
-    </author>
-    <author>
-      <name>Alexander Duplinskii</name>
-    </author>
-    <author>
-      <name>A. I. Lvovsky</name>
-    </author>
-    <summary type="text">Far-field optical imaging inevitably involves low-pass spatial filtering, limiting the resolution. Moreover, conventional imaging suppresses high spatial frequency components close to the cutoff, making them invisible under noise, particularly the shot noise arising from discrete and random nature of quantum light. Here we propose and implement a method for reducing the effect of this noise by optically pre-processing the incoming light prior to detection, thereby optimizing the quantum measurement performed on it. Our scheme, termed Fourier Domain Division (FDD), partitions the Fourier plane into multiple regions for independent detection and subsequent post-processing for image reconstruction. By analyzing the quantum and classical Fisher information, we show that our method is advantageous with respect to direct imaging for high spatial-frequency components. As a result, the number of photons required to achieve a certain signal-to-noise-ratio in the Fourier domain is reduced, thus enhancing the overall resolution in the photon-starved regime. We demonstrate our method in microscopy, achieving 5-fold improvement of Fisher information on high spatial-frequency components. Unlike active super-resolution methods, FDD is passive, making it broadly applicable in microscopy and other imaging scenarios where active illumination is impractical, including astronomy and remote sensing. Our work establishes a general strategy for designing quantum optimized superresolution imaging systems, bridging fundamental quantum limits, practical image analysis and computer vision applications.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
-    <category term="quant-ph" />
-    <category term="physics.optics" />
-  </entry>
-  <entry>
-    <title>Region-adaptable retrieval of coastal biogeochemical parameters from near-surface hyperspectral remote sensing reflectance using physics-aware meta-learning</title>
-    <link href="http://arxiv.org/abs/2605.05623v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.05623v1</id>
-    <published>2026-05-07T00:00:00Z</published>
-    <updated>2026-05-07T00:00:00Z</updated>
-    <author>
-      <name>Yiqing Guo</name>
-    </author>
-    <author>
-      <name>Nagur R. C. Cherukuru</name>
-    </author>
-    <author>
-      <name>Eric A. Lehmann</name>
-    </author>
-    <author>
-      <name>S. L. Kesav Unnithan</name>
-    </author>
-    <author>
-      <name>Tim J. Malthus</name>
-    </author>
-    <author>
-      <name>Gemma Kerrisk</name>
-    </author>
-    <author>
-      <name>Xiubin Qi</name>
-    </author>
-    <author>
-      <name>Faisal Islam</name>
-    </author>
-    <author>
-      <name>Tisham Dhar</name>
-    </author>
-    <author>
-      <name>Mark J. Doubell</name>
-    </author>
-    <summary type="text">Hyperspectral in situ sensing has shown promise in retrieving aquatic biogeochemical (BGC) parameters, such as total suspended solids, dissolved organic carbon, and total chlorophyll-a, for cost-effective monitoring of coastal water quality. However, generalising such retrieval algorithms across water bodies remains challenging, as the relationship between remote sensing reflectance (Rrs) and BGC parameters can vary considerably from one region to another due to regional distinctions in environmental conditions and biogeochemistry that lead to different BGC ranges and bio-optical properties. In this study, we propose a two-stage physics-aware meta-learning framework for retrieving coastal BGC parameters from near-surface Rrs observations. In the first stage, a bio-optical forward model is used to generate a large synthetic dataset based on an in situ bio-optical spectral library with broad representativeness of Australian coastal waters. This dataset is then used to pretrain a region-agnostic base model with meta-learning, allowing the model to learn fundamental physical relationships. In the second stage, the pretrained base model is fine-tuned for specific regions with local samples. We collected in situ hyperspectral Rrs and BGC measurements from five geographically distinct sites in Australian coastal waters. Our experimental results suggest: (1) the BGC parameters and their corresponding hyperspectral Rrs signatures exhibited clear regional distinctions among the experimental sites; (2) the synthetic dataset was physically plausible and closely aligned with real-world samples in both parameter distributions and inter-parameter correlations; (3) the proposed approach outperformed five benchmark models in BGC retrieval; and (4) time series of in situ measured and model-predicted BGC parameters showed good agreement in both magnitude and temporal dynamics.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Uncertainty-Guided Edge Learning for Deep Image Regression in Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2605.05590v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.05590v1</id>
-    <published>2026-05-07T00:00:00Z</published>
-    <updated>2026-05-07T00:00:00Z</updated>
-    <author>
-      <name>Anh Vu Nguyen</name>
-    </author>
-    <author>
-      <name>Dino Sejdinovic</name>
-    </author>
-    <author>
-      <name>Tat-Jun Chin</name>
-    </author>
-    <summary type="text">Edge learning refers to training machine learning models deployed on edge platforms, typically using new data accumulated onboard. The computational limitations on edge devices affect not only model optimisation, but also calculation of the predictive uncertainty of the current model on the unlabelled data, which is vital for informing model updating. In this paper, we investigate edge learning in the context of performing deep image regression on a remote sensing satellite, where a deep network is executed by an onboard computer to regress a scalar $y$ from an input image, e.g., $y$ is the percentage of pixels indicating cloud coverage or land use. We propose an uncertainty-guided edge learning (UGEL) algorithm that can accurately prioritise the data to speed up training convergence of the on-board regression model. Underpinning UGEL is the calculation of predictive uncertainty based on deep beta regression, where a deep network is used to estimate the parameters of a beta distribution for which the target $y$ for an input image has a high likelihood. Compared to established methods for uncertainty estimation that are either too costly on edge devices (e.g., require many forward passes per sample) or make strict assumptions on the predictive distribution (e.g., Gaussian), deep beta regression is computable in a single forward pass and allows more general predictive distributions. Results show that UGEL delivers faster-converging edge learning than active or semi-supervised learning. Code and models are publicly available at https://github.com/anh-vunguyen/UGEL.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/anh-vunguyen/UGEL"&gt;https://github.com/anh-vunguyen/UGEL&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; CVPR 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Characterizing Brazilian Atlantic Forest Restoration Outcomes with Geospatial AlphaEarth Embeddings</title>
-    <link href="http://arxiv.org/abs/2605.05547v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.05547v1</id>
-    <published>2026-05-07T00:00:00Z</published>
-    <updated>2026-05-07T00:00:00Z</updated>
-    <author>
-      <name>Alice Heiman</name>
-    </author>
-    <summary type="text">The Atlantic Forest in Brazil is a critical biodiversity hotspot, yet less than 12-15% of its original cover remains. Although monitoring forest restoration on a large scale is essential, traditional methods are limited by the impracticality of on-the-ground reporting on such a scale and by the saturation of remote-sensing indices such as NDVI. Furthermore, reforestation is a gradual process as opposed to the rapid spectral changes caused by deforestation. In this study, we examine 1,729 restoration sites in São Paulo, using satellite embeddings from the AlphaEarth Foundation's model to evaluate their effectiveness in characterising early restoration success. We introduce the concept of a 'Reference Trajectory Embedding', defining a metric of restoration success based on cosine similarity to reference sites of mature secondary forest. We observe distinct clusters in embedding space according to different land use and land cover (LULC) types, and we can identify sites with clear change vectors. However, the signal can be noisy, and embeddings may require further fine-tuning to capture and predict site metadata beyond LULC.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICLR 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>LiVeAction: a Lightweight, Versatile, and Asymmetric Neural Codec Design for Real-time Operation</title>
-    <link href="http://arxiv.org/abs/2605.06628v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.06628v1</id>
-    <published>2026-05-07T00:00:00Z</published>
-    <updated>2026-05-07T00:00:00Z</updated>
-    <author>
-      <name>Dan Jacobellis</name>
-    </author>
-    <author>
-      <name>Neeraja J. Yadwadkar</name>
-    </author>
-    <summary type="text">Modern sensors generate rich, high-fidelity data, yet applications operating on wearable or remote sensing devices remain constrained by bandwidth and power budgets. Standardized codecs such as JPEG and MPEG achieve efficient trade-offs between bitrate and perceptual quality but are designed for human perception, limiting their applicability to machine-perception tasks and non-traditional modalities such as spatial audio arrays, hyperspectral images, and 3D medical images. General-purpose compression schemes based on scalar quantization or resolution reduction are broadly applicable but fail to exploit inherent signal redundancies, resulting in suboptimal rate-distortion performance. Recent generative neural codecs, or tokenizers, model complex signal dependencies but are often over-parameterized, data-hungry, and modality-specific, making them impractical for resource-constrained environments. We introduce a Lightweight, Versatile, and Asymmetric neural codec architecture (LiVeAction), that addresses these limitations through two key ideas. (1) To reduce the complexity of the encoder to meet the resource constraints of the execution environments, we impose an FFT-like structure and reduce the overall size and depth of the neural-network-based analysis transform. (2) To allow arbitrary signal modalities and simplify training, we replace adversarial and perceptual losses with a variance-based rate penalty. Our design produces codecs that deliver superior rate-distortion performance compared to state-of-the-art generative tokenizers, while remaining practical for deployment on low-power sensors. We release our code, experiments, and python library at https://github.com/UT-SysML/liveaction .</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/UT-SysML/liveaction"&gt;https://github.com/UT-SysML/liveaction&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; DCC 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Image and Video Processing" />
-    <category term="Machine Learning; Multimedia; Audio and Speech Processing" />
-  </entry>
-  <entry>
-    <title>Earth-o1: A Grid-free Observation-native Atmospheric World Model</title>
-    <link href="http://arxiv.org/abs/2605.06337v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.06337v1</id>
-    <published>2026-05-07T00:00:00Z</published>
-    <updated>2026-05-07T00:00:00Z</updated>
-    <author>
-      <name>Junchao Gong</name>
-    </author>
-    <author>
-      <name>Kaiyi Xu</name>
-    </author>
-    <author>
-      <name>Wangxu Wei</name>
-    </author>
-    <author>
-      <name>Siwei Tu</name>
-    </author>
-    <author>
-      <name>Jingyi Xu</name>
-    </author>
-    <author>
-      <name>Zili Liu</name>
-    </author>
-    <author>
-      <name>Hang Fan</name>
-    </author>
-    <author>
-      <name>Zhiwang Zhou</name>
-    </author>
-    <author>
-      <name>Tao Han</name>
-    </author>
-    <author>
-      <name>Yi Xiao</name>
-    </author>
-    <author>
-      <name>Xinyu Gu</name>
-    </author>
-    <author>
-      <name>Zhangrui Li</name>
-    </author>
-    <author>
-      <name>Wenlong Zhang</name>
-    </author>
-    <author>
-      <name>Hao Chen</name>
-    </author>
-    <author>
-      <name>Xiaokang Yang</name>
-    </author>
-    <author>
-      <name>Yaqiang Wang</name>
-    </author>
-    <author>
-      <name>Lijing Cheng</name>
-    </author>
-    <author>
-      <name>Pierre Gentine</name>
-    </author>
-    <author>
-      <name>Wanli Ouyang</name>
-    </author>
-    <author>
-      <name>Feng Zhang</name>
-    </author>
-    <author>
-      <name>Zhe-Min Tan</name>
-    </author>
-    <author>
-      <name>Bowen Zhou</name>
-    </author>
-    <author>
-      <name>Fenghua Ling</name>
-    </author>
-    <author>
-      <name>Ben Fei</name>
-    </author>
-    <author>
-      <name>Lei Bai</name>
-    </author>
-    <summary type="text">Despite the unprecedented volume of multimodal data provided by modern Earth observation systems, our ability to model atmospheric dynamics remains constrained. Traditional modeling frameworks force heterogeneous measurements into predefined spatial grids, inherently limiting the full exploitation of raw sensor data and creating severe computational bottlenecks. Here we present Earth-o1, an observation-native atmospheric world model that overcomes these structural limitations. Rather than relying on conventional atmospheric dynamical modeling systems or traditional data assimilation, Earth-o1 directly learns the continuous, three-dimensional physical evolution of the Earth system from ungridded observational data. By integrating diverse sensor inputs into a unified, grid-free dynamical field, the model autonomously advances the atmospheric state in space and time. We show that this fundamentally distinct paradigm enables direct, real-time forecasting and cross-sensor inference without the overhead of explicit numerical solvers. In hindcast evaluations, Earth-o1 achieves surface forecast skill comparable to the operational Integrated Forecasting System (IFS). These results establish that continuous, observation-driven world models -- a new class of fully observation-native geophysical simulators -- can match the fidelity of established physical frameworks, providing a scalable data-driven foundation for a digital twin of the Earth.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>

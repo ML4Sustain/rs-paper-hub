@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-13T04:40:15Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 8 entries</subtitle>
+  <updated>2026-05-14T01:54:31Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 5 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -142,78 +142,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Machine Learning (Statistics)" />
     <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Region-adaptable retrieval of coastal biogeochemical parameters from near-surface hyperspectral remote sensing reflectance using physics-aware meta-learning</title>
-    <link href="http://arxiv.org/abs/2605.05623v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.05623v1</id>
-    <published>2026-05-07T00:00:00Z</published>
-    <updated>2026-05-07T00:00:00Z</updated>
-    <author>
-      <name>Yiqing Guo</name>
-    </author>
-    <author>
-      <name>Nagur R. C. Cherukuru</name>
-    </author>
-    <author>
-      <name>Eric A. Lehmann</name>
-    </author>
-    <author>
-      <name>S. L. Kesav Unnithan</name>
-    </author>
-    <author>
-      <name>Tim J. Malthus</name>
-    </author>
-    <author>
-      <name>Gemma Kerrisk</name>
-    </author>
-    <author>
-      <name>Xiubin Qi</name>
-    </author>
-    <author>
-      <name>Faisal Islam</name>
-    </author>
-    <author>
-      <name>Tisham Dhar</name>
-    </author>
-    <author>
-      <name>Mark J. Doubell</name>
-    </author>
-    <summary type="text">Hyperspectral in situ sensing has shown promise in retrieving aquatic biogeochemical (BGC) parameters, such as total suspended solids, dissolved organic carbon, and total chlorophyll-a, for cost-effective monitoring of coastal water quality. However, generalising such retrieval algorithms across water bodies remains challenging, as the relationship between remote sensing reflectance (Rrs) and BGC parameters can vary considerably from one region to another due to regional distinctions in environmental conditions and biogeochemistry that lead to different BGC ranges and bio-optical properties. In this study, we propose a two-stage physics-aware meta-learning framework for retrieving coastal BGC parameters from near-surface Rrs observations. In the first stage, a bio-optical forward model is used to generate a large synthetic dataset based on an in situ bio-optical spectral library with broad representativeness of Australian coastal waters. This dataset is then used to pretrain a region-agnostic base model with meta-learning, allowing the model to learn fundamental physical relationships. In the second stage, the pretrained base model is fine-tuned for specific regions with local samples. We collected in situ hyperspectral Rrs and BGC measurements from five geographically distinct sites in Australian coastal waters. Our experimental results suggest: (1) the BGC parameters and their corresponding hyperspectral Rrs signatures exhibited clear regional distinctions among the experimental sites; (2) the synthetic dataset was physically plausible and closely aligned with real-world samples in both parameter distributions and inter-parameter correlations; (3) the proposed approach outperformed five benchmark models in BGC retrieval; and (4) time series of in situ measured and model-predicted BGC parameters showed good agreement in both magnitude and temporal dynamics.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Characterizing Brazilian Atlantic Forest Restoration Outcomes with Geospatial AlphaEarth Embeddings</title>
-    <link href="http://arxiv.org/abs/2605.05547v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.05547v1</id>
-    <published>2026-05-07T00:00:00Z</published>
-    <updated>2026-05-07T00:00:00Z</updated>
-    <author>
-      <name>Alice Heiman</name>
-    </author>
-    <summary type="text">The Atlantic Forest in Brazil is a critical biodiversity hotspot, yet less than 12-15% of its original cover remains. Although monitoring forest restoration on a large scale is essential, traditional methods are limited by the impracticality of on-the-ground reporting on such a scale and by the saturation of remote-sensing indices such as NDVI. Furthermore, reforestation is a gradual process as opposed to the rapid spectral changes caused by deforestation. In this study, we examine 1,729 restoration sites in São Paulo, using satellite embeddings from the AlphaEarth Foundation's model to evaluate their effectiveness in characterising early restoration success. We introduce the concept of a 'Reference Trajectory Embedding', defining a metric of restoration success based on cosine similarity to reference sites of mature secondary forest. We observe distinct clusters in embedding space according to different land use and land cover (LULC) types, and we can identify sites with clear change vectors. However, the signal can be noisy, and embeddings may require further fine-tuning to capture and predict site metadata beyond LULC.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICLR 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>LiVeAction: a Lightweight, Versatile, and Asymmetric Neural Codec Design for Real-time Operation</title>
-    <link href="http://arxiv.org/abs/2605.06628v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.06628v1</id>
-    <published>2026-05-07T00:00:00Z</published>
-    <updated>2026-05-07T00:00:00Z</updated>
-    <author>
-      <name>Dan Jacobellis</name>
-    </author>
-    <author>
-      <name>Neeraja J. Yadwadkar</name>
-    </author>
-    <summary type="text">Modern sensors generate rich, high-fidelity data, yet applications operating on wearable or remote sensing devices remain constrained by bandwidth and power budgets. Standardized codecs such as JPEG and MPEG achieve efficient trade-offs between bitrate and perceptual quality but are designed for human perception, limiting their applicability to machine-perception tasks and non-traditional modalities such as spatial audio arrays, hyperspectral images, and 3D medical images. General-purpose compression schemes based on scalar quantization or resolution reduction are broadly applicable but fail to exploit inherent signal redundancies, resulting in suboptimal rate-distortion performance. Recent generative neural codecs, or tokenizers, model complex signal dependencies but are often over-parameterized, data-hungry, and modality-specific, making them impractical for resource-constrained environments. We introduce a Lightweight, Versatile, and Asymmetric neural codec architecture (LiVeAction), that addresses these limitations through two key ideas. (1) To reduce the complexity of the encoder to meet the resource constraints of the execution environments, we impose an FFT-like structure and reduce the overall size and depth of the neural-network-based analysis transform. (2) To allow arbitrary signal modalities and simplify training, we replace adversarial and perceptual losses with a variance-based rate penalty. Our design produces codecs that deliver superior rate-distortion performance compared to state-of-the-art generative tokenizers, while remaining practical for deployment on low-power sensors. We release our code, experiments, and python library at https://github.com/UT-SysML/liveaction .</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/UT-SysML/liveaction"&gt;https://github.com/UT-SysML/liveaction&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; DCC 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Image and Video Processing" />
-    <category term="Machine Learning; Multimedia; Audio and Speech Processing" />
   </entry>
 </feed>
