@@ -4,12 +4,55 @@
   <id>https://rspaper.top/output/feed_agent.xml</id>
   <link href="https://rspaper.top/output/feed_agent.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-14T01:54:31Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
+  <updated>2026-05-14T04:39:46Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>RS-Claw: Progressive Active Tool Exploration via Hierarchical Skill Trees for Remote Sensing Agents</title>
+    <link href="http://arxiv.org/abs/2605.13391v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.13391v1</id>
+    <published>2026-05-13T00:00:00Z</published>
+    <updated>2026-05-13T00:00:00Z</updated>
+    <author>
+      <name>Liangtian Liu</name>
+    </author>
+    <author>
+      <name>Zeyuan Wang</name>
+    </author>
+    <author>
+      <name>Ziyu Li</name>
+    </author>
+    <author>
+      <name>Kai Ouyang</name>
+    </author>
+    <author>
+      <name>Zichao Tang</name>
+    </author>
+    <author>
+      <name>Chengfu Liu</name>
+    </author>
+    <author>
+      <name>Haifeng Li</name>
+    </author>
+    <author>
+      <name>Hanwen Yu</name>
+    </author>
+    <author>
+      <name>Wentao Yang</name>
+    </author>
+    <author>
+      <name>Cheng Yang</name>
+    </author>
+    <author>
+      <name>Dongyang Hou</name>
+    </author>
+    <summary type="text">The rise of multi-modal large language models (MLLMs) is shifting remote sensing (RS) intelligence from "see" to "action", as OpenClaw-style frameworks enable agents to autonomously operate massive RS image-processing tools for complex tasks. Existing RS agents adopt a passive selection paradigm for tool invocation, relying on either full tool registration (Flat) or retrieval-augmented generation (RAG). However, in the massive and multi-source heterogeneous RS tool ecosystem, such passive mechanisms struggle to dynamically balance "context load" and "toolset completeness" throughout task reasoning, thus exhibiting inherent limitations: full tool registration triggers context space deficits during long-horizon tasks, whereas RAG retrieval may omit critical tools in essential steps. To overcome these bottlenecks, this paper redefines tool selection by arguing that the agent should act as an active explorer within the tool space. Based on this perspective, we propose RS-Claw, a novel RS agent architecture. By leveraging Skill encapsulation technology at the tool end, this architecture hierarchically structures tool descriptions, enabling the agent to execute on-demand sequential decision-making: initially selecting relevant skill branches by reading only tool summaries, then dynamically loading detailed descriptions, and ultimately achieving precise invocation. This active paradigm not only significantly liberates the agent's context space but also effectively ensures the accurate hit rate of critical tools during long-horizon reasoning. Systematic experiments on the Earth-Bench benchmark demonstrate that RS-Claw's active exploration mechanism effectively filters semantic noise and substantially frees up reasoning space, achieving an input token compression ratio of up to 86%, and comprehensively outperforming existing Flat and RAG baselines across complex reasoning evaluations.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>Can LLM Agents Respond to Disasters? Benchmarking Heterogeneous Geospatial Reasoning in Emergency Operations</title>
     <link href="http://arxiv.org/abs/2605.11633v1" rel="alternate" type="text/html" />

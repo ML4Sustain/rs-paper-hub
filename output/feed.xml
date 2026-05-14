@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-14T01:54:31Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 28 entries</subtitle>
+  <updated>2026-05-14T04:39:46Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 31 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -33,6 +33,102 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Machine Learning (Statistics)" />
     <category term="Computer Vision; Machine Learning" />
+  </entry>
+  <entry>
+    <title>GHGbench: A Unified Multi-Entity, Multi-Task Benchmark for Carbon Emission Prediction</title>
+    <link href="http://arxiv.org/abs/2605.13743v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.13743v1</id>
+    <published>2026-05-13T00:00:00Z</published>
+    <updated>2026-05-13T00:00:00Z</updated>
+    <author>
+      <name>Yifan Duan</name>
+    </author>
+    <author>
+      <name>Siyuan Zheng</name>
+    </author>
+    <author>
+      <name>Lihuan Li</name>
+    </author>
+    <author>
+      <name>Chao Xue</name>
+    </author>
+    <author>
+      <name>Flora Salim</name>
+    </author>
+    <summary type="text">Open datasets and benchmarks for entity-level carbon-emission prediction remain fragmented across access, scale, granularity, and evaluation. We introduce GHGbench, an open dataset and benchmark for company- and building-level greenhouse-gas prediction. The company track contains 32,000+ company-year records from 12,000+ firms with Scope 1+2 and Scope 3 disclosures and financial/sectoral signals; the building track harmonises 491,591 building-year records from 13 open sources into a single schema across 26 metropolitan areas (10 U.S., 15 Australian, 1 Singaporean), with climate covariates and multimodal remote-sensing embeddings. GHGbench defines canonical splits with in-distribution and cross-region/city transfer as primary tasks and temporal hold-out plus short-horizon forecasting as supplementary appendix evidence; headline baselines span gradient-boosted trees, a tabular foundation model, MLP, FT-Transformer, and multimodal fusion, with an LLM panel as auxiliary, all evaluated under multi-seed paired-bootstrap tests. Three benchmark-level findings emerge: (i) building emissions are structurally harder than company emissions; (ii) the in-distribution to out-of-distribution gap dwarfs any within-model gap across both the company track and the building track, and a tabular foundation model is, to our knowledge, the first baseline to open a paired-bootstrap-significant gap over tuned trees on a multi-city building-emissions task; (iii) multimodal remote-sensing embeddings help precisely where tabular generalisation breaks. GHGbench also exposes catastrophic city transfer and the sector-factor lookup ceiling as systematic failure modes. Code and reconstruction recipes are available at GHGbench.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>High-order mid-infrared nonlinear topological differentiator</title>
+    <link href="http://arxiv.org/abs/2605.13541v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.13541v1</id>
+    <published>2026-05-13T00:00:00Z</published>
+    <updated>2026-05-13T00:00:00Z</updated>
+    <author>
+      <name>Jixi Zhang</name>
+    </author>
+    <author>
+      <name>Kun Huang</name>
+    </author>
+    <author>
+      <name>Shina Liao</name>
+    </author>
+    <author>
+      <name>Zhuohang Wei</name>
+    </author>
+    <author>
+      <name>Jianan Fang</name>
+    </author>
+    <author>
+      <name>Heping Zeng</name>
+    </author>
+    <summary type="text">High-order edge-enhanced imaging enables precise feature localization and effective background suppression, offering a powerful tool for real-time recognition and high-contrast visualization. Extending this capability to the mid-infrared (MIR) regime is particularly valuable for applications such as biomedical diagnostics, material inspection, and remote sensing, yet remains limited by inadequate spatial-frequency modulation fidelity and low detection sensitivity. Here, we demonstrate a high-sensitivity MIR upconversion differentiator operating at 3 $μ$m, which achieves isotropic high-order edge enhancement by optically imprinting topological complex-amplitude patterns onto MIR Fourier components via nonlinear parametric interaction. Vortex transfer functions $t(k_r, φ) \propto k_r^\ell e^{i\ellφ}$ are precisely encoded on a phase-only spatial light modulator to enable tunable MIR differentiation from first- to fourth- order, with real-time switching at up to 60 Hz. Benefiting from a low-noise upconversion process and a single-photon-sensitive silicon camera, the system achieves high-contrast edge imaging under low-light conditions. Experimental results confirm accurate edge extraction and background suppression for both amplitude and phase objects, hence underscoring its potential for noninvasive diagnostics and label-free material analysis.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="physics.optics" />
+  </entry>
+  <entry>
+    <title>RS-Claw: Progressive Active Tool Exploration via Hierarchical Skill Trees for Remote Sensing Agents</title>
+    <link href="http://arxiv.org/abs/2605.13391v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.13391v1</id>
+    <published>2026-05-13T00:00:00Z</published>
+    <updated>2026-05-13T00:00:00Z</updated>
+    <author>
+      <name>Liangtian Liu</name>
+    </author>
+    <author>
+      <name>Zeyuan Wang</name>
+    </author>
+    <author>
+      <name>Ziyu Li</name>
+    </author>
+    <author>
+      <name>Kai Ouyang</name>
+    </author>
+    <author>
+      <name>Zichao Tang</name>
+    </author>
+    <author>
+      <name>Chengfu Liu</name>
+    </author>
+    <author>
+      <name>Haifeng Li</name>
+    </author>
+    <author>
+      <name>Hanwen Yu</name>
+    </author>
+    <author>
+      <name>Wentao Yang</name>
+    </author>
+    <author>
+      <name>Cheng Yang</name>
+    </author>
+    <author>
+      <name>Dongyang Hou</name>
+    </author>
+    <summary type="text">The rise of multi-modal large language models (MLLMs) is shifting remote sensing (RS) intelligence from "see" to "action", as OpenClaw-style frameworks enable agents to autonomously operate massive RS image-processing tools for complex tasks. Existing RS agents adopt a passive selection paradigm for tool invocation, relying on either full tool registration (Flat) or retrieval-augmented generation (RAG). However, in the massive and multi-source heterogeneous RS tool ecosystem, such passive mechanisms struggle to dynamically balance "context load" and "toolset completeness" throughout task reasoning, thus exhibiting inherent limitations: full tool registration triggers context space deficits during long-horizon tasks, whereas RAG retrieval may omit critical tools in essential steps. To overcome these bottlenecks, this paper redefines tool selection by arguing that the agent should act as an active explorer within the tool space. Based on this perspective, we propose RS-Claw, a novel RS agent architecture. By leveraging Skill encapsulation technology at the tool end, this architecture hierarchically structures tool descriptions, enabling the agent to execute on-demand sequential decision-making: initially selecting relevant skill branches by reading only tool summaries, then dynamically loading detailed descriptions, and ultimately achieving precise invocation. This active paradigm not only significantly liberates the agent's context space but also effectively ensures the accurate hit rate of critical tools during long-horizon reasoning. Systematic experiments on the Earth-Bench benchmark demonstrate that RS-Claw's active exploration mechanism effectively filters semantic noise and substantially frees up reasoning space, achieving an input token compression ratio of up to 86%, and comprehensively outperforming existing Flat and RAG baselines across complex reasoning evaluations.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
   </entry>
   <entry>
     <title>Can LLM Agents Respond to Disasters? Benchmarking Heterogeneous Geospatial Reasoning in Emergency Operations</title>
