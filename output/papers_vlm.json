@@ -16642,5 +16642,43 @@
     "_added_date": "2026-05-14",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-05-14",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "GeoVista: Visually Grounded Active Perception for Ultra-High-Resolution Remote Sensing Understanding",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.14475v1",
+    "Abstract": "Interpreting ultra-high-resolution (UHR) remote sensing images requires models to search for sparse and tiny visual evidence across large-scale scenes. Existing remote sensing vision-language models can inspect local regions with zooming and cropping tools, but most exploration strategies follow either a one-shot focus or a single sequential trajectory. Such single-path exploration can lose global context, leave scattered regions unvisited, and revisit or count the same evidence multiple times. To this end, we propose GeoVista, a planning-driven active perception framework for UHR remote sensing interpretation. Instead of committing to one zooming path, GeoVista first builds a global exploration plan, then verifies multiple candidate regions through branch-wise local inspection, while maintaining an explicit evidence state for cross-region aggregation and de-duplication. To enable this behavior, we introduce APEX-GRO, a cold-start supervised trajectory corpus that reformulates diverse UHR tasks as Global-Region-Object interactive reasoning processes with a unified, scale-invariant spatial representation. We further design an Observe-Plan-Track mechanism for global observation, adaptive region inspection, and evidence tracking, and align the model with a GRPO-based strategy using step-wise rewards for planning, localization, and final answer correctness. Experiments on RSHR-Bench, XLRS-Bench, and LRS-VQA show that GeoVista achieves state-of-the-art performance. Code and dataset are available at https://github.com/ryan6073/GeoVista",
+    "code": "https://github.com/ryan6073/GeoVista",
+    "Publication": "",
+    "BibTex": "@article{zhu2026geovista,\n  title={GeoVista: Visually Grounded Active Perception for Ultra-High-Resolution Remote Sensing Understanding},\n  author={Jiashun Zhu and Ronghao Fu and Jiasen Hu and Nachuan Xing and Xu Na and Xiao Yang and Zhiwen Lin and Weipeng Zhang and Lang Sun and Zhiheng Xue and Haoran Liu and Weijie Zhang and Bo Yang},\n  journal={arXiv preprint arXiv:2605.14475v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.14475v1}\n}",
+    "Authors": "Jiashun Zhu, Ronghao Fu, Jiasen Hu, Nachuan Xing, Xu Na, Xiao Yang, Zhiwen Lin, Weipeng Zhang, Lang Sun, Zhiheng Xue, Haoran Liu, Weijie Zhang, Bo Yang",
+    "_added_date": "2026-05-15",
+    "Category": "Method",
+    "_tasks": "VQA"
+  },
+  {
+    "Type": "Machine Learning",
+    "Subtype": "Computer Vision",
+    "Date": "2026-05-14",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "GeoViSTA: Geospatial Vision-Tabular Transformer for Multimodal Environment Representation",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.14406v1",
+    "Abstract": "Large-scale pretraining on Earth observation imagery has yielded powerful representations of the natural and built environment. However, most existing geospatial foundation models do not directly model the structured socioeconomic covariates typically stored in tabular form. This modality gap limits their ability to capture the complete total environment, which is critical for reasoning about complex environmental, social, and health-related outcomes. In this work, we propose GeoViSTA (Geospatial Vision-Tabular Transformer), a vision-tabular architecture that learns unified geospatial embeddings from co-registered gridded imagery and tabular data. GeoViSTA utilizes bilateral cross-attention to exchange spatial and semantic information across modalities, guided by a geography-aware attention mechanism that aligns continuous image patches with irregular census-tract tokens. We train GeoViSTA with a self-supervised joint masked-autoencoding objective, forcing it to recover missing image patches and tabular rows using local spatial context and cross-modal cues. Empirically, GeoViSTA's unified embeddings improve linear probing performance on high-impact downstream tasks, outperforming baselines in predicting disease-specific mortality and fire hazard frequency across held-out regions. These results demonstrate that jointly modeling the physical environment alongside structured socioeconomic context yields highly transferable representations for holistic geospatial inference.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{liu2026geovista,\n  title={GeoViSTA: Geospatial Vision-Tabular Transformer for Multimodal Environment Representation},\n  author={Yuhao Liu and Sadeer Al-Kindi and Ashok Veeraraghavan and Guha Balakrishnan},\n  journal={arXiv preprint arXiv:2605.14406v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.14406v1}\n}",
+    "Authors": "Yuhao Liu, Sadeer Al-Kindi, Ashok Veeraraghavan, Guha Balakrishnan",
+    "_added_date": "2026-05-15",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]

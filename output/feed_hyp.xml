@@ -4,12 +4,63 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-14T04:39:46Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 5 entries</subtitle>
+  <updated>2026-05-15T01:52:26Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 6 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>TERRA-CD: Multi-Temporal Framework for Multi-class and Semantic Change Detection</title>
+    <link href="http://arxiv.org/abs/2605.14651v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.14651v1</id>
+    <published>2026-05-14T00:00:00Z</published>
+    <updated>2026-05-14T00:00:00Z</updated>
+    <author>
+      <name>Omkar Oak</name>
+    </author>
+    <author>
+      <name>Rukmini Nazre</name>
+    </author>
+    <author>
+      <name>Rujuta Budke</name>
+    </author>
+    <author>
+      <name>Suraj Sawant</name>
+    </author>
+    <summary type="text">Urban vegetation monitoring plays a vital role in understanding environmental changes, yet comprehensive datasets for this purpose remain limited. To address this gap, we present the Temporal Remote-sensing Repository for Analyzing Change Detection (TERRA-CD), a benchmark dataset comprising 5,221 Sentinel-2 image pairs from 2019 and 2024, covering 232 cities across the USA and Europe. The dataset features three distinct annotation schemes: 4-class land cover mapping masks, 3-class vegetation change masks, and 13-class semantic change masks capturing all possible land cover transitions. Using various deep learning approaches including Siamese networks, STANet variants, Bi-SRNet, Changemask, Post-Classification Comparison, and HRSCD strategies, we evaluated the dataset's effectiveness for both vegetation Multi-class Change Detection as well as Semantic Change Detection. The proposed dataset and methods are available at https://github.com/omkarsoak/TERRA-CD.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/omkarsoak/TERRA-CD"&gt;https://github.com/omkarsoak/TERRA-CD&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Paper presented at 11th International Congress on Information and Communication Technology (ICICT) 2026, London&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>ArcGate: Adaptive Arctangent Gated Activation</title>
+    <link href="http://arxiv.org/abs/2605.14518v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.14518v1</id>
+    <published>2026-05-14T00:00:00Z</published>
+    <updated>2026-05-14T00:00:00Z</updated>
+    <author>
+      <name>Avik Bhattacharya</name>
+    </author>
+    <author>
+      <name>Siddhant Dnyanesh Gole</name>
+    </author>
+    <author>
+      <name>Subhasis Chaudhuri</name>
+    </author>
+    <author>
+      <name>Alejandro C. Frery</name>
+    </author>
+    <author>
+      <name>Biplab Banerjee</name>
+    </author>
+    <summary type="text">Activation functions are central to deep networks, influencing non-linearity, feature learning, convergence, and robustness. This paper proposes the Adaptive Arctangent Gated Activation (ArcGate) function, a flexible formulation that generates a broad spectrum of activation shapes via a three-stage non-linear transformation. Unlike conventional fixed-shape activations such as ReLU, GELU, or SiLU, ArcGate uses seven learnable parameters per layer, allowing the neural network to autonomously optimize its non-linearity to the specific requirements of the feature hierarchy and data distribution. We evaluate ArcGate using ResNet-50 and Vision Transformer (ViT-B/16) architectures on three widely used remote sensing benchmarks: PatternNet, UC Merced Land Use, and the 13-band EuroSAT MSI multispectral dataset. Experimental results show that ArcGate consistently outperforms standard baselines, achieving a peak overall accuracy of 99.67% on PatternNet. Most notably, ArcGate exhibits superior structural resilience in noisy environments, maintaining a 26.65% performance lead over ReLU under moderate Gaussian noise (standard deviation 0.1). Analysis of the learned parameters reveals a depth-dependent functional evolution, where the model increases gating strength in deeper layers to enhance signal propagation. These findings suggest that ArcGate is a robust and adaptive general node activation function for high-resolution earth observation tasks.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
   <entry>
     <title>The first global agricultural field boundary map at 10m resolution</title>
     <link href="http://arxiv.org/abs/2605.11055v1" rel="alternate" type="text/html" />
@@ -121,26 +172,5 @@
     <summary type="text">The rapid expansion of spaceborne methane observing capabilities at the facility-scale (fostered both by public missions and commercial constellations) has created a need for harmonised, reproducible, and uncertainty-aware processing chains that support both monitoring workflows and fair inter-sensor comparisons. This paper presents HyGAS (Hyperspectral Gas Analysis Suite), an open and sensor-agnostic framework that standardises methane processing across multiple imaging spectrometers. HyGAS currently supports end-to-end processing from Level-1 radiance to methane enhancement for PRISMA, EnMAP, and Tanager-1, and it supports ingestion of Level-2 methane enhancement products from EMIT and GHGSat, which are subsequently processed through common downstream modules for background selection, plume segmentation, Integrated Mass Enhancement (IME), and emission-rate inversion. HyGAS prioritises operational robustness via (i) matched-filter variants designed to mitigate background heterogeneity and pushbroom artefacts, (ii) explicit decomposition and propagation of uncertainty from instrument noise and scene-driven clutter to IME and flux, and (iii) a scale-aware segmentation strategy defined in physical units and rescaled by ground sampling distance to improve multi-sensor comparability. Representative sample outputs are reported for PRISMA, EnMAP, and Tanager-1.   Keywords: Methane emissions, hyperspectral satellites, Tanager-1, PRISMA, EnMAP, GHGSat, EMIT, Tanager, oil and gas, landfills, remote sensing, atmospheric science, greenhouse gas monitoring, spectral analysis, emission quantification, satellite synergy, environmental monitoring.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Image and Video Processing" />
-  </entry>
-  <entry>
-    <title>Learnability and Competition in High-Dimensional Multi-Component ICA</title>
-    <link href="http://arxiv.org/abs/2605.08552v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.08552v1</id>
-    <published>2026-05-08T00:00:00Z</published>
-    <updated>2026-05-08T00:00:00Z</updated>
-    <author>
-      <name>Eser Ilke Genc</name>
-    </author>
-    <author>
-      <name>Samet Demir</name>
-    </author>
-    <author>
-      <name>Zafer Dogan</name>
-    </author>
-    <summary type="text">Independent Component Analysis (ICA) is a foundational tool for unsupervised representation learning, yet its high-dimensional theory remains largely limited to single-component recovery. We develop an asymptotically exact mean-field theory for multi-component online ICA, capturing the coupling induced by simultaneous learning and orthogonalization. In the high-dimensional limit, the joint empirical distribution of learned estimates and ground-truth components converges to a deterministic process, yielding a closed ODE system for the overlap matrix between learned directions and true components. This characterization reveals a genuinely multi-component, initialization-driven phase structure: a decoupled regime, where estimates align with distinct components and evolve nearly independently, and a competition regime, where overlapping initializations induce orthogonality-driven conflicts, slow reorientation, and delayed convergence. Our steady-state analysis gives explicit learnability boundaries and competition conditions linking step size, data moments, and initialization. These conditions show that larger higher-order moments and competition shrink the stable learning-rate window, increase convergence times, and predict a staircase phenomenon in which the number of recoverable components changes discretely with the learning rate. Experiments on synthetic data and hyperspectral remote sensing data validate the predicted trajectories and phase behavior.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 56 pages, 9 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning (Statistics)" />
-    <category term="Machine Learning" />
   </entry>
 </feed>

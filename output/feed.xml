@@ -4,12 +4,233 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-14T04:39:46Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 31 entries</subtitle>
+  <updated>2026-05-15T01:52:26Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 32 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>TERRA-CD: Multi-Temporal Framework for Multi-class and Semantic Change Detection</title>
+    <link href="http://arxiv.org/abs/2605.14651v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.14651v1</id>
+    <published>2026-05-14T00:00:00Z</published>
+    <updated>2026-05-14T00:00:00Z</updated>
+    <author>
+      <name>Omkar Oak</name>
+    </author>
+    <author>
+      <name>Rukmini Nazre</name>
+    </author>
+    <author>
+      <name>Rujuta Budke</name>
+    </author>
+    <author>
+      <name>Suraj Sawant</name>
+    </author>
+    <summary type="text">Urban vegetation monitoring plays a vital role in understanding environmental changes, yet comprehensive datasets for this purpose remain limited. To address this gap, we present the Temporal Remote-sensing Repository for Analyzing Change Detection (TERRA-CD), a benchmark dataset comprising 5,221 Sentinel-2 image pairs from 2019 and 2024, covering 232 cities across the USA and Europe. The dataset features three distinct annotation schemes: 4-class land cover mapping masks, 3-class vegetation change masks, and 13-class semantic change masks capturing all possible land cover transitions. Using various deep learning approaches including Siamese networks, STANet variants, Bi-SRNet, Changemask, Post-Classification Comparison, and HRSCD strategies, we evaluated the dataset's effectiveness for both vegetation Multi-class Change Detection as well as Semantic Change Detection. The proposed dataset and methods are available at https://github.com/omkarsoak/TERRA-CD.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/omkarsoak/TERRA-CD"&gt;https://github.com/omkarsoak/TERRA-CD&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Paper presented at 11th International Congress on Information and Communication Technology (ICICT) 2026, London&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>ArcGate: Adaptive Arctangent Gated Activation</title>
+    <link href="http://arxiv.org/abs/2605.14518v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.14518v1</id>
+    <published>2026-05-14T00:00:00Z</published>
+    <updated>2026-05-14T00:00:00Z</updated>
+    <author>
+      <name>Avik Bhattacharya</name>
+    </author>
+    <author>
+      <name>Siddhant Dnyanesh Gole</name>
+    </author>
+    <author>
+      <name>Subhasis Chaudhuri</name>
+    </author>
+    <author>
+      <name>Alejandro C. Frery</name>
+    </author>
+    <author>
+      <name>Biplab Banerjee</name>
+    </author>
+    <summary type="text">Activation functions are central to deep networks, influencing non-linearity, feature learning, convergence, and robustness. This paper proposes the Adaptive Arctangent Gated Activation (ArcGate) function, a flexible formulation that generates a broad spectrum of activation shapes via a three-stage non-linear transformation. Unlike conventional fixed-shape activations such as ReLU, GELU, or SiLU, ArcGate uses seven learnable parameters per layer, allowing the neural network to autonomously optimize its non-linearity to the specific requirements of the feature hierarchy and data distribution. We evaluate ArcGate using ResNet-50 and Vision Transformer (ViT-B/16) architectures on three widely used remote sensing benchmarks: PatternNet, UC Merced Land Use, and the 13-band EuroSAT MSI multispectral dataset. Experimental results show that ArcGate consistently outperforms standard baselines, achieving a peak overall accuracy of 99.67% on PatternNet. Most notably, ArcGate exhibits superior structural resilience in noisy environments, maintaining a 26.65% performance lead over ReLU under moderate Gaussian noise (standard deviation 0.1). Analysis of the learned parameters reveals a depth-dependent functional evolution, where the model increases gating strength in deeper layers to enhance signal propagation. These findings suggest that ArcGate is a robust and adaptive general node activation function for high-resolution earth observation tasks.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>GeoVista: Visually Grounded Active Perception for Ultra-High-Resolution Remote Sensing Understanding</title>
+    <link href="http://arxiv.org/abs/2605.14475v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.14475v1</id>
+    <published>2026-05-14T00:00:00Z</published>
+    <updated>2026-05-14T00:00:00Z</updated>
+    <author>
+      <name>Jiashun Zhu</name>
+    </author>
+    <author>
+      <name>Ronghao Fu</name>
+    </author>
+    <author>
+      <name>Jiasen Hu</name>
+    </author>
+    <author>
+      <name>Nachuan Xing</name>
+    </author>
+    <author>
+      <name>Xu Na</name>
+    </author>
+    <author>
+      <name>Xiao Yang</name>
+    </author>
+    <author>
+      <name>Zhiwen Lin</name>
+    </author>
+    <author>
+      <name>Weipeng Zhang</name>
+    </author>
+    <author>
+      <name>Lang Sun</name>
+    </author>
+    <author>
+      <name>Zhiheng Xue</name>
+    </author>
+    <author>
+      <name>Haoran Liu</name>
+    </author>
+    <author>
+      <name>Weijie Zhang</name>
+    </author>
+    <author>
+      <name>Bo Yang</name>
+    </author>
+    <summary type="text">Interpreting ultra-high-resolution (UHR) remote sensing images requires models to search for sparse and tiny visual evidence across large-scale scenes. Existing remote sensing vision-language models can inspect local regions with zooming and cropping tools, but most exploration strategies follow either a one-shot focus or a single sequential trajectory. Such single-path exploration can lose global context, leave scattered regions unvisited, and revisit or count the same evidence multiple times. To this end, we propose GeoVista, a planning-driven active perception framework for UHR remote sensing interpretation. Instead of committing to one zooming path, GeoVista first builds a global exploration plan, then verifies multiple candidate regions through branch-wise local inspection, while maintaining an explicit evidence state for cross-region aggregation and de-duplication. To enable this behavior, we introduce APEX-GRO, a cold-start supervised trajectory corpus that reformulates diverse UHR tasks as Global-Region-Object interactive reasoning processes with a unified, scale-invariant spatial representation. We further design an Observe-Plan-Track mechanism for global observation, adaptive region inspection, and evidence tracking, and align the model with a GRPO-based strategy using step-wise rewards for planning, localization, and final answer correctness. Experiments on RSHR-Bench, XLRS-Bench, and LRS-VQA show that GeoVista achieves state-of-the-art performance. Code and dataset are available at https://github.com/ryan6073/GeoVista</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/ryan6073/GeoVista"&gt;https://github.com/ryan6073/GeoVista&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>GeoViSTA: Geospatial Vision-Tabular Transformer for Multimodal Environment Representation</title>
+    <link href="http://arxiv.org/abs/2605.14406v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.14406v1</id>
+    <published>2026-05-14T00:00:00Z</published>
+    <updated>2026-05-14T00:00:00Z</updated>
+    <author>
+      <name>Yuhao Liu</name>
+    </author>
+    <author>
+      <name>Sadeer Al-Kindi</name>
+    </author>
+    <author>
+      <name>Ashok Veeraraghavan</name>
+    </author>
+    <author>
+      <name>Guha Balakrishnan</name>
+    </author>
+    <summary type="text">Large-scale pretraining on Earth observation imagery has yielded powerful representations of the natural and built environment. However, most existing geospatial foundation models do not directly model the structured socioeconomic covariates typically stored in tabular form. This modality gap limits their ability to capture the complete total environment, which is critical for reasoning about complex environmental, social, and health-related outcomes. In this work, we propose GeoViSTA (Geospatial Vision-Tabular Transformer), a vision-tabular architecture that learns unified geospatial embeddings from co-registered gridded imagery and tabular data. GeoViSTA utilizes bilateral cross-attention to exchange spatial and semantic information across modalities, guided by a geography-aware attention mechanism that aligns continuous image patches with irregular census-tract tokens. We train GeoViSTA with a self-supervised joint masked-autoencoding objective, forcing it to recover missing image patches and tabular rows using local spatial context and cross-modal cues. Empirically, GeoViSTA's unified embeddings improve linear probing performance on high-impact downstream tasks, outperforming baselines in predicting disease-specific mortality and fire hazard frequency across held-out regions. These results demonstrate that jointly modeling the physical environment alongside structured socioeconomic context yields highly transferable representations for holistic geospatial inference.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>AnyBand-Diff: A Unified Remote Sensing Image Generation and Band Repair Framework with Spectral Priors</title>
+    <link href="http://arxiv.org/abs/2605.14341v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.14341v1</id>
+    <published>2026-05-14T00:00:00Z</published>
+    <updated>2026-05-14T00:00:00Z</updated>
+    <author>
+      <name>Zuopeng Zhao</name>
+    </author>
+    <author>
+      <name>Ying Liu</name>
+    </author>
+    <author>
+      <name>Xiaoyu Li</name>
+    </author>
+    <author>
+      <name>Su Luo</name>
+    </author>
+    <author>
+      <name>Lu Li</name>
+    </author>
+    <author>
+      <name>Wenwen Liu</name>
+    </author>
+    <summary type="text">Existing diffusion models have made significant progress in generating realistic images. However, their direct adaptation to remote sensing imagery often disregards intrinsic physical laws. This oversight frequently leads to spectral distortion and radiometric inconsistency, severely limiting the scientific utility of generated data. To address this issue, this paper introduces AnyBand-Diff, a novel spectral-prior-guided diffusion framework tailored for robust spectral reconstruction. Specifically, we design a Masked Conditional Diffusion backbone integrated with a dual stochastic masking strategy, empowering the model to recover complete spectral information from arbitrary band subsets. Subsequently, to ensure radiometric fidelity, a Physics-Guided Sampling mechanism is proposed, leveraging gradients from a differentiable physical model to explicitly steer the denoising trajectory toward the manifold of physically plausible solutions. Furthermore, a Multi-Scale Physical Loss is formulated to enforce rigorous constraints across pixel, region, and global levels in a joint manner. Extensive experiments confirm the effectiveness of AnyBand-Diff in generating reliable imagery and achieving accurate spectral reconstruction, contributing to the advancement of physics-aware generative methods for Earth observation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>D2-CDIG: Controlled Diffusion Remote Sensing Image Generation with Dual Priors of DEM and Cloud-Fog</title>
+    <link href="http://arxiv.org/abs/2605.14326v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.14326v1</id>
+    <published>2026-05-14T00:00:00Z</published>
+    <updated>2026-05-14T00:00:00Z</updated>
+    <author>
+      <name>Zuopeng Zhao</name>
+    </author>
+    <author>
+      <name>Ying Liu</name>
+    </author>
+    <author>
+      <name>Kanyaphakphachsorn Pharksuwan</name>
+    </author>
+    <author>
+      <name>Su Luo</name>
+    </author>
+    <author>
+      <name>Xiaoyu Li</name>
+    </author>
+    <author>
+      <name>Maocai Ning</name>
+    </author>
+    <summary type="text">Remote sensing image generation provides a reliable data foundation for remote sensing large models and downstream tasks. However, existing controllable remote sensing image generation methods typically rely on traditional techniques such as segmentation and edge detection, which do not fully leverage terrain or atmospheric conditions. As a result, the generated images often lack accuracy and naturalness when dealing with complex terrains and atmospheric phenomena. In this paper, we propose a novel remote sensing image generation framework, D2-CDIG, which integrates diffusion models with a dual-prior control mechanism. By incorporating both Digital Elevation Model (DEM) and cloud-fog information as dual prior knowledge, D2-CDIG precisely controls ground features and atmospheric phenomena within the generated images. Specifically, D2-CDIG decouples the terrain and atmospheric generation processes through independent control of ground and atmospheric branches. Additionally, a refined cloud-fog slider is introduced to flexibly adjust cloud thickness and distribution. During training, ground and atmospheric control signals are injected in layers to ensure a seamless transition within the images. Compared to traditional methods based on segmentation or edge detection, D2-CDIG shows significant improvements in image quality, detail richness, and realism. D2-CDIG offers a flexible and precise solution for remote sensing image generation, providing high-quality data for training large remote sensing models and downstream tasks.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Quantum optical synthesis of high-dimensional ultrafast frequency-bin qudits</title>
+    <link href="http://arxiv.org/abs/2605.14314v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.14314v1</id>
+    <published>2026-05-14T00:00:00Z</published>
+    <updated>2026-05-14T00:00:00Z</updated>
+    <author>
+      <name>Prasad Koviri</name>
+    </author>
+    <author>
+      <name>Tomoya Okita</name>
+    </author>
+    <author>
+      <name>Rina Yabumoto</name>
+    </author>
+    <author>
+      <name>Yuta Fujihashi</name>
+    </author>
+    <author>
+      <name>Masahiro Yabuno</name>
+    </author>
+    <author>
+      <name>Hirotaka Terai</name>
+    </author>
+    <author>
+      <name>Shigehito Miki</name>
+    </author>
+    <author>
+      <name>Kali P. Nayak</name>
+    </author>
+    <author>
+      <name>Ryosuke Shimizu</name>
+    </author>
+    <summary type="text">Frequency modes of light are one of the most promising platforms that provide access to high-dimensional quantum states amongst different photonic degrees of freedom capable of high-dimensionality, enabling robust, error-tolerant, and scalable quantum optical information systems. We demonstrate engineering of precisely controlled two-photon high-dimensional states entangled in frequency through time-domain Fourier optical synthesis. We generate and convert a continuous broadband frequency-entangled state into a large range of discrete frequency bins suitable for ITU standards, with spacings ranging from 12.5 GHz to 750 GHz, and observe spectral anticorrelations over 38 frequency bins, including intra-bin pure states at a 100 GHz bin spacing. We characterize the full quantum state dimensionality via Schmidt decomposition and observe lower bounds on the frequency-binned Hilbert-space dimensionalities of at least 289, formed by two entangled qudits with dimension 17. Furthermore, we demonstrate quantum nonlocality via frequency correlations in a transmission experiment over a campus-scale two-node fiber network. This work represents a crucial step towards building a versatile and relatively simple way of generating precisely controlled high-dimensional spectral qudits, with the potential of harnessing in wavelength-multiplexed quantum networks, high-dimensional information processing, and communication of quantum states specifically, and fiber-optic quantum remote sensing.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages and 6 figures. The first two listed authors contributed equally to this work&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="quant-ph" />
+    <category term="physics.optics" />
+  </entry>
   <entry>
     <title>On Hallucinations in Inverse Problems: Fundamental Limits and Provable Assessment Methods</title>
     <link href="http://arxiv.org/abs/2605.13146v1" rel="alternate" type="text/html" />
@@ -785,182 +1006,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="cs.DC" />
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>LithoBench: Benchmarking Large Multimodal Models for Remote-Sensing Lithology Interpretation</title>
-    <link href="http://arxiv.org/abs/2605.07640v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.07640v1</id>
-    <published>2026-05-08T00:00:00Z</published>
-    <updated>2026-05-08T00:00:00Z</updated>
-    <author>
-      <name>Jun Wang</name>
-    </author>
-    <author>
-      <name>Fengpeng Li</name>
-    </author>
-    <author>
-      <name>Hang Dong</name>
-    </author>
-    <author>
-      <name>Tianjin Huang</name>
-    </author>
-    <author>
-      <name>Wei Han</name>
-    </author>
-    <summary type="text">Remote sensing lithology interpretation is fundamental to geological surveys, mineral exploration, and regional geological mapping. Unlike general land-cover recognition, lithology interpretation is a knowledge-intensive task that requires experts to infer rock types from various features, e.g., subtle visual, spectral, textural, geomorphological, and contextual cues, making reliable automated interpretation highly challenging. Geological knowledge-guided large multimodal models offer new opportunities, yet their evaluation remains constrained by the lack of benchmarks that capture lithological annotations, multi-level geological semantics, and expert-informed assessment. Here, we propose LithoBench, a multi-level benchmark for evaluating geological semantic understanding in remote sensing lithology interpretation. LithoBench contains 10,000 expert-annotated interpretation instances across 12 representative lithological categories, including 4,000 multiple-choice and 6,000 open-ended tasks organized into five cognitive levels: Identification and Description, Comparative Analysis, Mechanism Explanation, Practical Application, and Comprehensive Reasoning. We further develop an expert-in-the-loop, knowledge-grounded semi-automated construction pipeline, coupling multi sub-processes, e.g., structured geological image descriptions, to enhance geological validity and evaluation reliability. Experiments with multiple large vision-language models eveal substantial limitations in geological semantic understanding, particularly on higher-order explanation, application, and reasoning tasks.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Beyond GSD-as-Token: Continuous Scale Conditioning for Remote Sensing VLMs</title>
-    <link href="http://arxiv.org/abs/2605.07562v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.07562v1</id>
-    <published>2026-05-08T00:00:00Z</published>
-    <updated>2026-05-08T00:00:00Z</updated>
-    <author>
-      <name>Song Zhang</name>
-    </author>
-    <author>
-      <name>Yanlong Chen</name>
-    </author>
-    <author>
-      <name>Yilin Li</name>
-    </author>
-    <author>
-      <name>Yining Chen</name>
-    </author>
-    <author>
-      <name>Zili Yi</name>
-    </author>
-    <author>
-      <name>Xiaowei Zhang</name>
-    </author>
-    <author>
-      <name>Yawei Li</name>
-    </author>
-    <summary type="text">Remote sensing vision-language models (RS-VLMs) face a fundamental mismatch with natural-image counterparts: the same geographic object exhibits radically different visual evidence across ground sampling distances (GSDs) spanning multiple orders of magnitude. Yet existing RS-VLMs often discard GSD or inject it as a discrete text token, forcing a single static parameter set to absorb the entire scale spectrum. We introduce ScaleEarth, a parameter-efficient fine-tuning framework built on Qwen3-VL that treats GSD as a continuous conditioning variable governing the model's computation path. At its core, CS-HLoRA (Continuous Scale-Conditioned Hyper-LoRA) modulates the LoRA low-rank subspace through a GSD-driven gate, enabling the model to dynamically route computation by physical scale. To remove reliance on sensor metadata at deployment, we pair CS-HLoRA with SSE-U, a lightweight heteroscedastic sub-head that predicts GSD and its uncertainty from visual features. To provide matching supervision, we construct GeoScale-VQA, a 1.5M-sample scale-layered RS-VQA corpus whose question-answer generation is conditioned on the same physical scalar that drives CS-HLoRA, forming a closed method-data loop. Trained with QLoRA on an 8B backbone, ScaleEarth achieves state-of-the-art results on remote-sensing benchmarks covering diverse Earth-system tasks, including XLRS-Bench and OmniEarth-Bench.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 30 pages, 16 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>From Clouds to Hallucinations: Atmospheric Retrieval Hijacking in Remote Sensing Vision-Language RAG</title>
-    <link href="http://arxiv.org/abs/2605.07273v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.07273v1</id>
-    <published>2026-05-08T00:00:00Z</published>
-    <updated>2026-05-08T00:00:00Z</updated>
-    <author>
-      <name>Jiaju Han</name>
-    </author>
-    <author>
-      <name>Chao Li</name>
-    </author>
-    <author>
-      <name>Chengyin Hu</name>
-    </author>
-    <author>
-      <name>Qike Zhang</name>
-    </author>
-    <author>
-      <name>Xuemeng Sun</name>
-    </author>
-    <author>
-      <name>Xin Wang</name>
-    </author>
-    <author>
-      <name>Fengyu Zhang</name>
-    </author>
-    <author>
-      <name>Xiang Chen</name>
-    </author>
-    <author>
-      <name>Yiwei Wei</name>
-    </author>
-    <author>
-      <name>Jiahuan Long</name>
-    </author>
-    <author>
-      <name>Jiujiang Guo</name>
-    </author>
-    <summary type="text">Multimodal RAG systems increasingly rely on vision-language retrievers to ground visual queries in external textual evidence. Existing adversarial studies on RAG mainly manipulate the retrieval corpus or memory, while attacks on vision-language and remote sensing models typically target end-task predictions. Input-space threats to the evidence retrieval stage of remote sensing multimodal RAG remain underexplored. To address this gap, we introduce CloudWeb, an atmospheric retrieval hijacking attack that modifies only the input image while keeping the retriever, generator, and knowledge base fixed at deployment. CloudWeb overlays parameterized cloud- and haze-like patterns on remote sensing images and optimizes them with a retrieval-oriented objective that pulls adversarial image embeddings toward target atmospheric evidence, suppresses source-scene evidence, enforces rank separation, and regularizes naturalness and coverage. To the best of our knowledge, this is the first study of retrieval-stage atmospheric evidence hijacking in remote sensing multimodal RAG. We evaluate CloudWeb on a seven-dataset remote sensing RAG benchmark with five CLIP-style retrievers, including GeoRSCLIP, RemoteCLIP, OpenAI CLIP, and OpenCLIP, together with downstream vision-language generators. Across retrievers, CloudWeb consistently outperforms clean retrieval, handcrafted atmospheric baselines, random cloud perturbations, and fixed variants in injecting weather-related evidence into top-ranked results. On GeoRSCLIP ViT-B/32, Weather@5 increases from 0.71\% to 43.29\%. Downstream generation further shows measurable weather hallucination and semantic shift, indicating that retrieval-stage hijacking can propagate to the final RAG response. These findings reveal a practical failure mode: natural-looking atmospheric changes can compromise evidence retrieval before generation begins.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Masks Can Talk: Extracting Structured Text Information from Single-Modal Images for Remote Sensing Change Detection</title>
-    <link href="http://arxiv.org/abs/2605.07178v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.07178v1</id>
-    <published>2026-05-08T00:00:00Z</published>
-    <updated>2026-05-08T00:00:00Z</updated>
-    <author>
-      <name>Kai Zheng</name>
-    </author>
-    <author>
-      <name>Hang-Cheng Dong</name>
-    </author>
-    <author>
-      <name>Jiatong Pan</name>
-    </author>
-    <author>
-      <name>Zhenkai Wu</name>
-    </author>
-    <author>
-      <name>Fupeng Wei</name>
-    </author>
-    <author>
-      <name>Wei Zhang</name>
-    </author>
-    <summary type="text">Remote sensing change detection is pivotal for urban monitoring, disaster assessment, and environmental resource management. Yet, unimodal deep learning methods frequently confuse genuine semantic changes with visually similar but irrelevant variations. Recent multimodal approaches incorporate text as auxiliary supervision, but their descriptions are either semantically coarse and unstructured or model-generated and thus noisy. Critically, all of them overlook a simple fact: fine-grained change semantics are already implicitly encoded in the ground-truth mask labels that come standard with every change detection dataset. These masks know where the change happened, what the land-cover types were before and after, how the transition occurred, and how many objects were involved. In this paper, we propose S2M, a framework that obtains structured textual features directly from change labels at zero additional annotation cost. Specifically, each change region is automatically transcribed into a semantic quadruple (where, what, how, how many) and converted into several fixed-template text descriptions, providing precise, dense, and noise-free multimodal supervision. We adopts a two-stage training strategy to fine-tune on remote sensing imagery firstly for robust domain-specific representation, after which a multimodal decoder with a bi-directional contrastive loss is introduced to achieve deep alignment between visual features and structured textual embeddings. To validate our method, we construct Gaza-Change-v2, a new multi-class change detection (MCD) dataset about the Gaza Strip. On this MCD dataset, S2M achieves a Sek of 17.80\% and an F$_{\text{scd}}$ of 66.14\%, notably surpassing even multimodal methods that leverage large language models. Our work demonstrates that masks can indeed talk. They tell us exactly what, where, how, and how many changes have occurred.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Learnability and Competition in High-Dimensional Multi-Component ICA</title>
-    <link href="http://arxiv.org/abs/2605.08552v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.08552v1</id>
-    <published>2026-05-08T00:00:00Z</published>
-    <updated>2026-05-08T00:00:00Z</updated>
-    <author>
-      <name>Eser Ilke Genc</name>
-    </author>
-    <author>
-      <name>Samet Demir</name>
-    </author>
-    <author>
-      <name>Zafer Dogan</name>
-    </author>
-    <summary type="text">Independent Component Analysis (ICA) is a foundational tool for unsupervised representation learning, yet its high-dimensional theory remains largely limited to single-component recovery. We develop an asymptotically exact mean-field theory for multi-component online ICA, capturing the coupling induced by simultaneous learning and orthogonalization. In the high-dimensional limit, the joint empirical distribution of learned estimates and ground-truth components converges to a deterministic process, yielding a closed ODE system for the overlap matrix between learned directions and true components. This characterization reveals a genuinely multi-component, initialization-driven phase structure: a decoupled regime, where estimates align with distinct components and evolve nearly independently, and a competition regime, where overlapping initializations induce orthogonality-driven conflicts, slow reorientation, and delayed convergence. Our steady-state analysis gives explicit learnability boundaries and competition conditions linking step size, data moments, and initialization. These conditions show that larger higher-order moments and competition shrink the stable learning-rate window, increase convergence times, and predict a staircase phenomenon in which the number of recoverable components changes discretely with the learning rate. Experiments on synthetic data and hyperspectral remote sensing data validate the predicted trajectories and phase behavior.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 56 pages, 9 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning (Statistics)" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Built Environment Reasoning from Remote Sensing Imagery Using Large Vision--Language Models</title>
-    <link href="http://arxiv.org/abs/2605.08404v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.08404v1</id>
-    <published>2026-05-08T00:00:00Z</published>
-    <updated>2026-05-08T00:00:00Z</updated>
-    <author>
-      <name>Dongdong Wang</name>
-    </author>
-    <author>
-      <name>Deepak Balakrishnan</name>
-    </author>
-    <author>
-      <name>Ravi Srinivasan</name>
-    </author>
-    <author>
-      <name>Shenhao Wang</name>
-    </author>
-    <summary type="text">This work investigates the use of large language models (LLMs) for tasks in smart cities. The core idea is to leverage remote sensing imagery to characterize the built environment, including design suggestions, constructability assessment, landuse patterns, and risk identification. We examine remote sensing imagery at multiple spatial scales as inputs for multimodal language modeling and evaluate their effects on built-environment-related reasoning. In addition, we compare state-of-the-art LLMs, including InternVL and Qwen, in terms of accuracy and reliability when generating built environment recommendations. The results demonstrate the potential of integrating remote sensing imagery with large language models to assist smart cities and decision-making.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the International Conference on Industrialized Construction 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.CL" />
-    <category term="Artificial Intelligence; Computer Vision; cs.ET" />
   </entry>
 </feed>

@@ -18751,5 +18751,43 @@
     "_added_date": "2026-05-13",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-05-14",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "TERRA-CD: Multi-Temporal Framework for Multi-class and Semantic Change Detection",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.14651v1",
+    "Abstract": "Urban vegetation monitoring plays a vital role in understanding environmental changes, yet comprehensive datasets for this purpose remain limited. To address this gap, we present the Temporal Remote-sensing Repository for Analyzing Change Detection (TERRA-CD), a benchmark dataset comprising 5,221 Sentinel-2 image pairs from 2019 and 2024, covering 232 cities across the USA and Europe. The dataset features three distinct annotation schemes: 4-class land cover mapping masks, 3-class vegetation change masks, and 13-class semantic change masks capturing all possible land cover transitions. Using various deep learning approaches including Siamese networks, STANet variants, Bi-SRNet, Changemask, Post-Classification Comparison, and HRSCD strategies, we evaluated the dataset's effectiveness for both vegetation Multi-class Change Detection as well as Semantic Change Detection. The proposed dataset and methods are available at https://github.com/omkarsoak/TERRA-CD.",
+    "code": "https://github.com/omkarsoak/TERRA-CD",
+    "Publication": "Paper presented at 11th International Congress on Information and Communication Technology (ICICT) 2026, London",
+    "BibTex": "@article{oak2026terracd,\n  title={TERRA-CD: Multi-Temporal Framework for Multi-class and Semantic Change Detection},\n  author={Omkar Oak and Rukmini Nazre and Rujuta Budke and Suraj Sawant},\n  journal={arXiv preprint arXiv:2605.14651v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.14651v1}\n}",
+    "Authors": "Omkar Oak, Rukmini Nazre, Rujuta Budke, Suraj Sawant",
+    "_added_date": "2026-05-15",
+    "Category": "Method",
+    "_tasks": "CLS;CD"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Machine Learning",
+    "Date": "2026-05-14",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "ArcGate: Adaptive Arctangent Gated Activation",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.14518v1",
+    "Abstract": "Activation functions are central to deep networks, influencing non-linearity, feature learning, convergence, and robustness. This paper proposes the Adaptive Arctangent Gated Activation (ArcGate) function, a flexible formulation that generates a broad spectrum of activation shapes via a three-stage non-linear transformation. Unlike conventional fixed-shape activations such as ReLU, GELU, or SiLU, ArcGate uses seven learnable parameters per layer, allowing the neural network to autonomously optimize its non-linearity to the specific requirements of the feature hierarchy and data distribution. We evaluate ArcGate using ResNet-50 and Vision Transformer (ViT-B/16) architectures on three widely used remote sensing benchmarks: PatternNet, UC Merced Land Use, and the 13-band EuroSAT MSI multispectral dataset. Experimental results show that ArcGate consistently outperforms standard baselines, achieving a peak overall accuracy of 99.67% on PatternNet. Most notably, ArcGate exhibits superior structural resilience in noisy environments, maintaining a 26.65% performance lead over ReLU under moderate Gaussian noise (standard deviation 0.1). Analysis of the learned parameters reveals a depth-dependent functional evolution, where the model increases gating strength in deeper layers to enhance signal propagation. These findings suggest that ArcGate is a robust and adaptive general node activation function for high-resolution earth observation tasks.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{bhattacharya2026arcgate,\n  title={ArcGate: Adaptive Arctangent Gated Activation},\n  author={Avik Bhattacharya and Siddhant Dnyanesh Gole and Subhasis Chaudhuri and Alejandro C. Frery and Biplab Banerjee},\n  journal={arXiv preprint arXiv:2605.14518v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.14518v1}\n}",
+    "Authors": "Avik Bhattacharya, Siddhant Dnyanesh Gole, Subhasis Chaudhuri, Alejandro C. Frery, Biplab Banerjee",
+    "_added_date": "2026-05-15",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]

@@ -4,12 +4,86 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-14T04:39:46Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 13 entries</subtitle>
+  <updated>2026-05-15T01:52:26Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 11 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>GeoVista: Visually Grounded Active Perception for Ultra-High-Resolution Remote Sensing Understanding</title>
+    <link href="http://arxiv.org/abs/2605.14475v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.14475v1</id>
+    <published>2026-05-14T00:00:00Z</published>
+    <updated>2026-05-14T00:00:00Z</updated>
+    <author>
+      <name>Jiashun Zhu</name>
+    </author>
+    <author>
+      <name>Ronghao Fu</name>
+    </author>
+    <author>
+      <name>Jiasen Hu</name>
+    </author>
+    <author>
+      <name>Nachuan Xing</name>
+    </author>
+    <author>
+      <name>Xu Na</name>
+    </author>
+    <author>
+      <name>Xiao Yang</name>
+    </author>
+    <author>
+      <name>Zhiwen Lin</name>
+    </author>
+    <author>
+      <name>Weipeng Zhang</name>
+    </author>
+    <author>
+      <name>Lang Sun</name>
+    </author>
+    <author>
+      <name>Zhiheng Xue</name>
+    </author>
+    <author>
+      <name>Haoran Liu</name>
+    </author>
+    <author>
+      <name>Weijie Zhang</name>
+    </author>
+    <author>
+      <name>Bo Yang</name>
+    </author>
+    <summary type="text">Interpreting ultra-high-resolution (UHR) remote sensing images requires models to search for sparse and tiny visual evidence across large-scale scenes. Existing remote sensing vision-language models can inspect local regions with zooming and cropping tools, but most exploration strategies follow either a one-shot focus or a single sequential trajectory. Such single-path exploration can lose global context, leave scattered regions unvisited, and revisit or count the same evidence multiple times. To this end, we propose GeoVista, a planning-driven active perception framework for UHR remote sensing interpretation. Instead of committing to one zooming path, GeoVista first builds a global exploration plan, then verifies multiple candidate regions through branch-wise local inspection, while maintaining an explicit evidence state for cross-region aggregation and de-duplication. To enable this behavior, we introduce APEX-GRO, a cold-start supervised trajectory corpus that reformulates diverse UHR tasks as Global-Region-Object interactive reasoning processes with a unified, scale-invariant spatial representation. We further design an Observe-Plan-Track mechanism for global observation, adaptive region inspection, and evidence tracking, and align the model with a GRPO-based strategy using step-wise rewards for planning, localization, and final answer correctness. Experiments on RSHR-Bench, XLRS-Bench, and LRS-VQA show that GeoVista achieves state-of-the-art performance. Code and dataset are available at https://github.com/ryan6073/GeoVista</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/ryan6073/GeoVista"&gt;https://github.com/ryan6073/GeoVista&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>GeoViSTA: Geospatial Vision-Tabular Transformer for Multimodal Environment Representation</title>
+    <link href="http://arxiv.org/abs/2605.14406v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.14406v1</id>
+    <published>2026-05-14T00:00:00Z</published>
+    <updated>2026-05-14T00:00:00Z</updated>
+    <author>
+      <name>Yuhao Liu</name>
+    </author>
+    <author>
+      <name>Sadeer Al-Kindi</name>
+    </author>
+    <author>
+      <name>Ashok Veeraraghavan</name>
+    </author>
+    <author>
+      <name>Guha Balakrishnan</name>
+    </author>
+    <summary type="text">Large-scale pretraining on Earth observation imagery has yielded powerful representations of the natural and built environment. However, most existing geospatial foundation models do not directly model the structured socioeconomic covariates typically stored in tabular form. This modality gap limits their ability to capture the complete total environment, which is critical for reasoning about complex environmental, social, and health-related outcomes. In this work, we propose GeoViSTA (Geospatial Vision-Tabular Transformer), a vision-tabular architecture that learns unified geospatial embeddings from co-registered gridded imagery and tabular data. GeoViSTA utilizes bilateral cross-attention to exchange spatial and semantic information across modalities, guided by a geography-aware attention mechanism that aligns continuous image patches with irregular census-tract tokens. We train GeoViSTA with a self-supervised joint masked-autoencoding objective, forcing it to recover missing image patches and tabular rows using local spatial context and cross-modal cues. Empirically, GeoViSTA's unified embeddings improve linear probing performance on high-impact downstream tasks, outperforming baselines in predicting disease-specific mortality and fire hazard frequency across held-out regions. These results demonstrate that jointly modeling the physical environment alongside structured socioeconomic context yields highly transferable representations for holistic geospatial inference.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>RS-Claw: Progressive Active Tool Exploration via Hierarchical Skill Trees for Remote Sensing Agents</title>
     <link href="http://arxiv.org/abs/2605.13391v1" rel="alternate" type="text/html" />
@@ -288,132 +362,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>LithoBench: Benchmarking Large Multimodal Models for Remote-Sensing Lithology Interpretation</title>
-    <link href="http://arxiv.org/abs/2605.07640v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.07640v1</id>
-    <published>2026-05-08T00:00:00Z</published>
-    <updated>2026-05-08T00:00:00Z</updated>
-    <author>
-      <name>Jun Wang</name>
-    </author>
-    <author>
-      <name>Fengpeng Li</name>
-    </author>
-    <author>
-      <name>Hang Dong</name>
-    </author>
-    <author>
-      <name>Tianjin Huang</name>
-    </author>
-    <author>
-      <name>Wei Han</name>
-    </author>
-    <summary type="text">Remote sensing lithology interpretation is fundamental to geological surveys, mineral exploration, and regional geological mapping. Unlike general land-cover recognition, lithology interpretation is a knowledge-intensive task that requires experts to infer rock types from various features, e.g., subtle visual, spectral, textural, geomorphological, and contextual cues, making reliable automated interpretation highly challenging. Geological knowledge-guided large multimodal models offer new opportunities, yet their evaluation remains constrained by the lack of benchmarks that capture lithological annotations, multi-level geological semantics, and expert-informed assessment. Here, we propose LithoBench, a multi-level benchmark for evaluating geological semantic understanding in remote sensing lithology interpretation. LithoBench contains 10,000 expert-annotated interpretation instances across 12 representative lithological categories, including 4,000 multiple-choice and 6,000 open-ended tasks organized into five cognitive levels: Identification and Description, Comparative Analysis, Mechanism Explanation, Practical Application, and Comprehensive Reasoning. We further develop an expert-in-the-loop, knowledge-grounded semi-automated construction pipeline, coupling multi sub-processes, e.g., structured geological image descriptions, to enhance geological validity and evaluation reliability. Experiments with multiple large vision-language models eveal substantial limitations in geological semantic understanding, particularly on higher-order explanation, application, and reasoning tasks.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Beyond GSD-as-Token: Continuous Scale Conditioning for Remote Sensing VLMs</title>
-    <link href="http://arxiv.org/abs/2605.07562v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.07562v1</id>
-    <published>2026-05-08T00:00:00Z</published>
-    <updated>2026-05-08T00:00:00Z</updated>
-    <author>
-      <name>Song Zhang</name>
-    </author>
-    <author>
-      <name>Yanlong Chen</name>
-    </author>
-    <author>
-      <name>Yilin Li</name>
-    </author>
-    <author>
-      <name>Yining Chen</name>
-    </author>
-    <author>
-      <name>Zili Yi</name>
-    </author>
-    <author>
-      <name>Xiaowei Zhang</name>
-    </author>
-    <author>
-      <name>Yawei Li</name>
-    </author>
-    <summary type="text">Remote sensing vision-language models (RS-VLMs) face a fundamental mismatch with natural-image counterparts: the same geographic object exhibits radically different visual evidence across ground sampling distances (GSDs) spanning multiple orders of magnitude. Yet existing RS-VLMs often discard GSD or inject it as a discrete text token, forcing a single static parameter set to absorb the entire scale spectrum. We introduce ScaleEarth, a parameter-efficient fine-tuning framework built on Qwen3-VL that treats GSD as a continuous conditioning variable governing the model's computation path. At its core, CS-HLoRA (Continuous Scale-Conditioned Hyper-LoRA) modulates the LoRA low-rank subspace through a GSD-driven gate, enabling the model to dynamically route computation by physical scale. To remove reliance on sensor metadata at deployment, we pair CS-HLoRA with SSE-U, a lightweight heteroscedastic sub-head that predicts GSD and its uncertainty from visual features. To provide matching supervision, we construct GeoScale-VQA, a 1.5M-sample scale-layered RS-VQA corpus whose question-answer generation is conditioned on the same physical scalar that drives CS-HLoRA, forming a closed method-data loop. Trained with QLoRA on an 8B backbone, ScaleEarth achieves state-of-the-art results on remote-sensing benchmarks covering diverse Earth-system tasks, including XLRS-Bench and OmniEarth-Bench.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 30 pages, 16 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>From Clouds to Hallucinations: Atmospheric Retrieval Hijacking in Remote Sensing Vision-Language RAG</title>
-    <link href="http://arxiv.org/abs/2605.07273v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.07273v1</id>
-    <published>2026-05-08T00:00:00Z</published>
-    <updated>2026-05-08T00:00:00Z</updated>
-    <author>
-      <name>Jiaju Han</name>
-    </author>
-    <author>
-      <name>Chao Li</name>
-    </author>
-    <author>
-      <name>Chengyin Hu</name>
-    </author>
-    <author>
-      <name>Qike Zhang</name>
-    </author>
-    <author>
-      <name>Xuemeng Sun</name>
-    </author>
-    <author>
-      <name>Xin Wang</name>
-    </author>
-    <author>
-      <name>Fengyu Zhang</name>
-    </author>
-    <author>
-      <name>Xiang Chen</name>
-    </author>
-    <author>
-      <name>Yiwei Wei</name>
-    </author>
-    <author>
-      <name>Jiahuan Long</name>
-    </author>
-    <author>
-      <name>Jiujiang Guo</name>
-    </author>
-    <summary type="text">Multimodal RAG systems increasingly rely on vision-language retrievers to ground visual queries in external textual evidence. Existing adversarial studies on RAG mainly manipulate the retrieval corpus or memory, while attacks on vision-language and remote sensing models typically target end-task predictions. Input-space threats to the evidence retrieval stage of remote sensing multimodal RAG remain underexplored. To address this gap, we introduce CloudWeb, an atmospheric retrieval hijacking attack that modifies only the input image while keeping the retriever, generator, and knowledge base fixed at deployment. CloudWeb overlays parameterized cloud- and haze-like patterns on remote sensing images and optimizes them with a retrieval-oriented objective that pulls adversarial image embeddings toward target atmospheric evidence, suppresses source-scene evidence, enforces rank separation, and regularizes naturalness and coverage. To the best of our knowledge, this is the first study of retrieval-stage atmospheric evidence hijacking in remote sensing multimodal RAG. We evaluate CloudWeb on a seven-dataset remote sensing RAG benchmark with five CLIP-style retrievers, including GeoRSCLIP, RemoteCLIP, OpenAI CLIP, and OpenCLIP, together with downstream vision-language generators. Across retrievers, CloudWeb consistently outperforms clean retrieval, handcrafted atmospheric baselines, random cloud perturbations, and fixed variants in injecting weather-related evidence into top-ranked results. On GeoRSCLIP ViT-B/32, Weather@5 increases from 0.71\% to 43.29\%. Downstream generation further shows measurable weather hallucination and semantic shift, indicating that retrieval-stage hijacking can propagate to the final RAG response. These findings reveal a practical failure mode: natural-looking atmospheric changes can compromise evidence retrieval before generation begins.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Built Environment Reasoning from Remote Sensing Imagery Using Large Vision--Language Models</title>
-    <link href="http://arxiv.org/abs/2605.08404v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.08404v1</id>
-    <published>2026-05-08T00:00:00Z</published>
-    <updated>2026-05-08T00:00:00Z</updated>
-    <author>
-      <name>Dongdong Wang</name>
-    </author>
-    <author>
-      <name>Deepak Balakrishnan</name>
-    </author>
-    <author>
-      <name>Ravi Srinivasan</name>
-    </author>
-    <author>
-      <name>Shenhao Wang</name>
-    </author>
-    <summary type="text">This work investigates the use of large language models (LLMs) for tasks in smart cities. The core idea is to leverage remote sensing imagery to characterize the built environment, including design suggestions, constructability assessment, landuse patterns, and risk identification. We examine remote sensing imagery at multiple spatial scales as inputs for multimodal language modeling and evaluate their effects on built-environment-related reasoning. In addition, we compare state-of-the-art LLMs, including InternVL and Qwen, in terms of accuracy and reliability when generating built environment recommendations. The results demonstrate the potential of integrating remote sensing imagery with large language models to assist smart cities and decision-making.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the International Conference on Industrialized Construction 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.CL" />
-    <category term="Artificial Intelligence; Computer Vision; cs.ET" />
   </entry>
 </feed>
