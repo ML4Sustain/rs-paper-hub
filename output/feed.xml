@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-15T01:52:26Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 32 entries</subtitle>
+  <updated>2026-05-15T04:45:42Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 33 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -230,6 +230,42 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="quant-ph" />
     <category term="physics.optics" />
+  </entry>
+  <entry>
+    <title>HiSem: Hierarchical Semantic Disentangling for Remote Sensing Image Change Captioning</title>
+    <link href="http://arxiv.org/abs/2605.15024v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.15024v1</id>
+    <published>2026-05-14T00:00:00Z</published>
+    <updated>2026-05-14T00:00:00Z</updated>
+    <author>
+      <name>Man Wang</name>
+    </author>
+    <author>
+      <name>Chenyang Liu</name>
+    </author>
+    <author>
+      <name>Wenjun Li</name>
+    </author>
+    <author>
+      <name>Feng Ni</name>
+    </author>
+    <author>
+      <name>Bing Jia</name>
+    </author>
+    <author>
+      <name>Baoqi Huang</name>
+    </author>
+    <author>
+      <name>Riting Xia</name>
+    </author>
+    <author>
+      <name>Zhenwei Shi</name>
+    </author>
+    <summary type="text">Remote sensing image change captioning (RSICC) aims to achieve high-level semantic understanding of genuine changes occurring between bi-temporal images. Despite notable progress, existing methods are fundamentally limited by a shared modeling assumption: changed and unchanged image pairs, which have intrinsically different semantic granularities, are processed under a unified modeling strategy. This modeling inconsistency leads to semantic entanglement between coarse-grained change existence judgment and fine-grained semantic understanding.To address the above limitation, we propose a novel hierarchical semantic disentangling network (HiSem) that explicitly disentangles semantic representations of different granularities. Specifically, we first introduce the Bidirectional Differential Attention Modulation (BDAM) module that leverages discrepancy-aware attention to enhance cross-temporal interactions, thereby amplifying true change signals while suppressing irrelevant variations. Building upon this, we design a Hierarchical Adaptive Semantic Disentanglement (HASD) module that performs adaptive routing at two hierarchical levels: a coarse-grained image-level routing mechanism distinguishes changed and unchanged image pairs, while a fine-grained token-level Mixture-of-Experts (MoE) block models diverse and heterogeneous change semantics for changed samples. Extensive experiments on two benchmark datasets demonstrate that HiSem outperfoms previous methods, achieving a significant improvement of +7.52\% BLEU-4 on the WHU-CDC dataset. More importantly, our approach provides a structured perspective for RSICC by explicitly aligning model design with the intrinsic semantic heterogeneity of bi-temporal scenes. The code will be available at https://github.com/Man-Wang-star/HiSem</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Man-Wang-star/HiSem"&gt;https://github.com/Man-Wang-star/HiSem&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
   </entry>
   <entry>
     <title>On Hallucinations in Inverse Problems: Fundamental Limits and Provable Assessment Methods</title>

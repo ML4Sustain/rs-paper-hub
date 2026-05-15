@@ -16680,5 +16680,24 @@
     "_added_date": "2026-05-15",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-05-14",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "HiSem: Hierarchical Semantic Disentangling for Remote Sensing Image Change Captioning",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.15024v1",
+    "Abstract": "Remote sensing image change captioning (RSICC) aims to achieve high-level semantic understanding of genuine changes occurring between bi-temporal images. Despite notable progress, existing methods are fundamentally limited by a shared modeling assumption: changed and unchanged image pairs, which have intrinsically different semantic granularities, are processed under a unified modeling strategy. This modeling inconsistency leads to semantic entanglement between coarse-grained change existence judgment and fine-grained semantic understanding.To address the above limitation, we propose a novel hierarchical semantic disentangling network (HiSem) that explicitly disentangles semantic representations of different granularities. Specifically, we first introduce the Bidirectional Differential Attention Modulation (BDAM) module that leverages discrepancy-aware attention to enhance cross-temporal interactions, thereby amplifying true change signals while suppressing irrelevant variations. Building upon this, we design a Hierarchical Adaptive Semantic Disentanglement (HASD) module that performs adaptive routing at two hierarchical levels: a coarse-grained image-level routing mechanism distinguishes changed and unchanged image pairs, while a fine-grained token-level Mixture-of-Experts (MoE) block models diverse and heterogeneous change semantics for changed samples. Extensive experiments on two benchmark datasets demonstrate that HiSem outperfoms previous methods, achieving a significant improvement of +7.52\\% BLEU-4 on the WHU-CDC dataset. More importantly, our approach provides a structured perspective for RSICC by explicitly aligning model design with the intrinsic semantic heterogeneity of bi-temporal scenes. The code will be available at https://github.com/Man-Wang-star/HiSem",
+    "code": "https://github.com/Man-Wang-star/HiSem",
+    "Publication": "",
+    "BibTex": "@article{wang2026hisem,\n  title={HiSem: Hierarchical Semantic Disentangling for Remote Sensing Image Change Captioning},\n  author={Man Wang and Chenyang Liu and Wenjun Li and Feng Ni and Bing Jia and Baoqi Huang and Riting Xia and Zhenwei Shi},\n  journal={arXiv preprint arXiv:2605.15024v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.15024v1}\n}",
+    "Authors": "Man Wang, Chenyang Liu, Wenjun Li, Feng Ni, Bing Jia, Baoqi Huang, Riting Xia, Zhenwei Shi",
+    "_added_date": "2026-05-15",
+    "Category": "Method",
+    "_tasks": "IC;CD"
   }
 ]
