@@ -4,12 +4,38 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-15T04:45:42Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 12 entries</subtitle>
+  <updated>2026-05-18T02:08:55Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 9 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Text-RSIR: A Text-Guided Framework for Efficient Remote Sensing Image Transmission and Reconstruction</title>
+    <link href="http://arxiv.org/abs/2605.15558v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.15558v1</id>
+    <published>2026-05-15T00:00:00Z</published>
+    <updated>2026-05-15T00:00:00Z</updated>
+    <author>
+      <name>Hao Yang</name>
+    </author>
+    <author>
+      <name>Xianping Ma</name>
+    </author>
+    <author>
+      <name>Peifeng Ma</name>
+    </author>
+    <author>
+      <name>Man-On Pun</name>
+    </author>
+    <summary type="text">High-resolution remote sensing imagery is critical for environmental monitoring, urban mapping, and land cover analysis, but its transmission is often hindered by limited bandwidth and high communication costs. Conventional pipelines transmit full-resolution pixel data, resulting in redundant and inefficient delivery. This paper proposes a text-guided remote sensing image transmission system that replaces complete high-resolution data with low-resolution images accompanied by compact textual descriptions. An onboard text generator produces spatial and semantic summaries, reducing the transmitted data volume to approximately 2\% of the original size. For ground-based reconstruction, a text-conditioned image restoration model is introduced, which leverages cross-modal learning to recover fine spatial details and maintain semantic coherence. Experimental results on the Alsat-2B, UC Merced Land Use, and Aerial Image datasets demonstrate that the proposed framework achieves reconstruction PSNRs of 16.36 dB, 26.87 dB, and 27.41 dB, respectively, enabling efficient and information-preserving image transfer for remote sensing applications. The implementation will be made publicly available at \href{https://github.com/haoyangofficial/textrssr}{GitHub}.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/haoyangofficial/textrssr"&gt;https://github.com/haoyangofficial/textrssr&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages, 8 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>GeoVista: Visually Grounded Active Perception for Ultra-High-Resolution Remote Sensing Understanding</title>
     <link href="http://arxiv.org/abs/2605.14475v1" rel="alternate" type="text/html" />
@@ -118,6 +144,63 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Man-Wang-star/HiSem"&gt;https://github.com/Man-Wang-star/HiSem&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>ELDOR: A Dataset and Benchmark for Illegal Gold Mining in the Amazon Rainforest</title>
+    <link href="http://arxiv.org/abs/2605.15397v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.15397v1</id>
+    <published>2026-05-14T00:00:00Z</published>
+    <updated>2026-05-14T00:00:00Z</updated>
+    <author>
+      <name>Kangning Cui</name>
+    </author>
+    <author>
+      <name>Surendra Bohara</name>
+    </author>
+    <author>
+      <name>Suraj Prasai</name>
+    </author>
+    <author>
+      <name>Zishan Shao</name>
+    </author>
+    <author>
+      <name>Wei Tang</name>
+    </author>
+    <author>
+      <name>Martin Pillaca</name>
+    </author>
+    <author>
+      <name>Edwin Flores</name>
+    </author>
+    <author>
+      <name>Zhen Yang</name>
+    </author>
+    <author>
+      <name>Gregory Larsen</name>
+    </author>
+    <author>
+      <name>Evan Dethier</name>
+    </author>
+    <author>
+      <name>David Lutz</name>
+    </author>
+    <author>
+      <name>Jean-Michel Morel</name>
+    </author>
+    <author>
+      <name>Miles Silman</name>
+    </author>
+    <author>
+      <name>Victor Pauca</name>
+    </author>
+    <author>
+      <name>Fan Yang</name>
+    </author>
+    <summary type="text">Illegal gold mining in the Amazon rainforest causes deforestation, water contamination, and long-term ecosystem disruption, yet remains difficult to monitor at fine spatial scales. Satellite imagery supports large-scale observation, but often misses small mining-related structures and subtle land-cover transitions, especially under frequent cloud cover. We introduce ELDOR, a large-scale UAV benchmark for monitoring environmental and landscape disturbance from illegal gold mining in the rainforest. ELDOR contains manually annotated orthomosaic imagery covering over 2,500 hectares, with pixel-level semantic labels for both mining-related activities and surrounding ecological structures. With this unified annotation source, we establish four benchmark tasks: semantic segmentation, segmentation-derived recognition, direct multi-label classification, and class-presence recognition with vision-language models. Across these tasks, we compare generic and remote-sensing-specific segmentation models, vision foundation model-related segmentation methods, direct multi-label classification methods, and vision-language models under a controlled closed-set protocol. Results show that current methods still struggle with rare small-scale mining structures and fine-grained recovery classes, suggesting the need for context-aware and multimodal modeling. To support domain analysis and practical use, we further build an interactive explorer for domain experts that provides a unified interface for data exploration and model inference.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 70 pages, 35 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;SEG&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
   <entry>
@@ -263,140 +346,5 @@
     <summary type="text">Existing deep learning-based methods can capture shared features from optical and synthetic aperture radar (SAR) images for spatial alignment. However, optical-SAR registration remains challenging under large geometric deformations, because the model needs to simultaneously handle cross-modal appearance discrepancies and complex spatial transformations. To address this issue, this paper proposes a text semantic-assisted cross-modal image registration framework, named TAR, for optical and SAR images. TAR exploits text semantic priors from remote sensing scenes and land-cover categories to alleviate the modality gap and enhance cross-modal feature learning. TAR consists of three components: a multi-scale visual feature learning (MSFL) module, a text-assisted feature enhancement (TAFE) module, and a coarse-to-fine dense matching (CFDM) module. MSFL extracts multi-scale visual features from optical and SAR images. TAFE constructs text descriptors related to remote sensing scenes and land-cover objects, and uses a frozen RemoteCLIP text encoder to extract text features. These text features are introduced through visual-text interaction to enhance high-level visual features for more reliable coarse matching. CFDM then establishes coarse correspondences based on the enhanced high-level features and refines the matched locations using low-level features. Experimental results on cross-modal remote sensing images demonstrate the effectiveness of TAR, which achieves stronger matching performance than several state-of-the-art methods and yields significant gains under large geometric deformations.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Towards a Large Language-Vision Question Answering Model for MSTAR Automatic Target Recognition</title>
-    <link href="http://arxiv.org/abs/2605.10772v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.10772v1</id>
-    <published>2026-05-11T00:00:00Z</published>
-    <updated>2026-05-11T00:00:00Z</updated>
-    <author>
-      <name>David F. Ramirez</name>
-    </author>
-    <author>
-      <name>Tim L. Overman</name>
-    </author>
-    <author>
-      <name>Kristen Jaskie</name>
-    </author>
-    <author>
-      <name>Marv Kleine</name>
-    </author>
-    <author>
-      <name>Andreas Spanias</name>
-    </author>
-    <summary type="text">Large language-vision models (LLVM), such as OpenAI's ChatGPT and GPT-4, have gained prominence as powerful tools for analyzing text and imagery. The merging of these data domains represents a significant paradigm shift with far-reaching implications for automatic target recognition (ATR). Recent transformer-based LLVM research has shown substantial improvements for geospatial perception tasks. Our study examines the application of LLVM to remote sensing image captioning and visual question-answering (VQA), with a specific focus on synthetic aperture radar (SAR) imagery. We examine newly published LLVM methods, including CLIP and LLaVA neural network transformer architectures. We have developed a work-in-progress SAR training and evaluation benchmark derived from the MSTAR Public Dataset. This has been extended to include descriptive text captions and question-answer pairs for VQA tasks. This challenge dataset is designed to push the boundaries of an LLVM in identifying nuanced ATR details in SAR imagery. Utilizing parameter-efficient fine-tuning, we train an LLVM method to identify fine-grained target qualities at 98% accuracy. We detail our data setup and experiments, addressing potential pitfalls that could lead to misleading conclusions. Accurately identifying and differentiating military vehicle types in SAR data poses a critical challenge, especially under complex environmental conditions. Mastering this target recognition skill may require a human analyst months of training and years of practice. This research represents a unique effort to apply LLVM to SAR applications, advancing machine-assisted remote sensing ATR for military and intelligence contexts.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to SPIE Defense + Commercial Sensing, Automatic Target Recognition XXXV&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;IC&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence; Image and Video Processing" />
-  </entry>
-  <entry>
-    <title>MPerS: Dynamic MLLM MixExperts Perception-Guided Remote Sensing Scene Segmentation</title>
-    <link href="http://arxiv.org/abs/2605.10769v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.10769v1</id>
-    <published>2026-05-11T00:00:00Z</published>
-    <updated>2026-05-11T00:00:00Z</updated>
-    <author>
-      <name>Ziyi Wang</name>
-    </author>
-    <author>
-      <name>Xianping Ma</name>
-    </author>
-    <author>
-      <name>Ziyao Wang</name>
-    </author>
-    <author>
-      <name>Hongyang Zhang</name>
-    </author>
-    <author>
-      <name>Man On Pun</name>
-    </author>
-    <summary type="text">The multimodal fusion of images and scene captions has been extensively explored and applied in various fields. However, when dealing with complex remote sensing (RS) scenes, existing studies have predominantly concentrated on architectural optimizations for integrating textual semantic information with visual features, while largely neglecting the generation of high-quality RS captions and the investigation of their effectiveness in multimodal semantic fusion.In this context, we propose the Dynamic MLLM Mixture-of-Experts Perception-Guided Remote Sensing Scene Segmentation, referred to as MPerS.We design multiple prompts for MLLMs to generate high-quality RS captions, enabling MLLMs to perceive RS scenes from diverse expert perspectives. DINOv3 is employed to extract dense visual representations of land-covers.We design a Dynamic MixExperts module that adaptively integrates the most effective textual semantics. Linguistic Query Guided Attention is constructed to utilize textual semantic information to guide visual features for precise segmentation. The MLLMs include LLaVA, ChatGPT, and Qwen. Our method achieves superior performance on three public semantic segmentation RS datasets.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; CVPR 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Geospatial-Temporal Sensemaking of Remote Sensing Activity Detections with Multimodal Large Language Model</title>
-    <link href="http://arxiv.org/abs/2605.10739v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.10739v1</id>
-    <published>2026-05-11T00:00:00Z</published>
-    <updated>2026-05-11T00:00:00Z</updated>
-    <author>
-      <name>David F. Ramirez</name>
-    </author>
-    <author>
-      <name>Tim Overman</name>
-    </author>
-    <author>
-      <name>Kristen Jaskie</name>
-    </author>
-    <author>
-      <name>Andreas Spanias</name>
-    </author>
-    <summary type="text">We introduce SMART-HC-VQA, a Sentinel-2-based visual question answering dataset derived from the IARPA SMART Heavy Construction dataset, designed for spatiotemporal analysis of human activity. The dataset transforms construction-site annotations, construction-type labels, temporal-phase labels, geographic metadata, and observation relationships into natural language question-answer triplets. This approach redefines the existing dataset as a temporally extended automatic target recognition and visual question answering (VQA) challenge, considering a fixed geospatial site as a target whose attributes and activity states evolve across sparse satellite observations. Currently, SMART-HC-VQA comprises 21,837 accessible Sentinel-2 image chips, 65,511 single-image VQA examples, and approximately 2.3 million two-image temporal comparison examples generated via our novel Image-Pairwise Combinatorial Augmentation. We detail the workflow for retrieving and processing Sentinel-2 imagery, segmenting large satellite tiles into site-centered images, maintaining traceability to SMART-HC annotations, and analyzing the distributions of site size, observation count, temporal coverage, construction type, and phase labels. Additionally, we describe an implemented multi-image MLLM training framework based on LLaVA-NeXT Mistral-7B, adapted to accept multiple dated image inputs and train on metadata-derived VQA examples. This work offers a reproducible foundation for understanding language-guided remote sensing activities, aiming not only to detect change but also to reason about the ongoing processes, their progression, and potential future developments.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to 2026 SPIE Defense + Security, Automatic Target Recognition XXXVI&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA&lt;/p&gt;</content>
-    <category term="Image and Video Processing" />
-    <category term="Artificial Intelligence; Computer Vision" />
-  </entry>
-  <entry>
-    <title>SenseBench: A Benchmark for Remote Sensing Low-Level Visual Perception and Description in Large Vision-Language Models</title>
-    <link href="http://arxiv.org/abs/2605.10576v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.10576v1</id>
-    <published>2026-05-11T00:00:00Z</published>
-    <updated>2026-05-11T00:00:00Z</updated>
-    <author>
-      <name>Chen Zhong</name>
-    </author>
-    <author>
-      <name>Xiao An</name>
-    </author>
-    <author>
-      <name>Jiaxing Sun</name>
-    </author>
-    <author>
-      <name>Zihan Gui</name>
-    </author>
-    <author>
-      <name>Guangyi Yang</name>
-    </author>
-    <author>
-      <name>Wei He</name>
-    </author>
-    <summary type="text">Low-level visual perception underpins reliable remote sensing (RS) image analysis, yet current image quality assessment (IQA) methods output uninterpretable scalar scores rather than characterizing physics-driven RS degradations, deviating markedly from the diagnostic needs of RS experts. While Vision-Language Models (VLMs) present a compelling alternative by delivering language-grounded IQA, their visual priors are heavily biased toward ground-level natural images. Consequently, whether VLMs can overcome this domain gap to perceive and articulate RS artifacts remains insufficiently studied. To bridge this gap, we propose \textbf{SenseBench}, the first dedicated diagnostic benchmark for RS low-level visual perception and description. Driven by a physics-based hierarchical taxonomy that unifies both non-reference and reference-based paradigms, SenseBench features over 10K meticulously curated instances across 6 major and 22 fine-grained RS degradation categories. Specifically, two complementary protocols are designed for evaluation: objective low-level visual \textit{perception} and subjective diagnostic \textit{description}. Comprehensive evaluation of 29 state-of-the-art VLMs reveals not only skewed domain priors and multi-distortion collapse, but also \textit{fluency illusion} and a \textit{perception-description inversion} effect. We hope SenseBench provides a robust evaluation testbed and high-quality diagnostic data to advance the development of VLMs in RS low-level perception. Code and datasets are available \href{https://github.com/Zhong-Chenchen/SenseBench}{\textcolor{blue}{here}}.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Zhong-Chenchen/SenseBench"&gt;https://github.com/Zhong-Chenchen/SenseBench&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>AnomalyClaw: A Universal Visual Anomaly Detection Agent via Tool-Grounded Refutation</title>
-    <link href="http://arxiv.org/abs/2605.10397v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.10397v1</id>
-    <published>2026-05-11T00:00:00Z</published>
-    <updated>2026-05-11T00:00:00Z</updated>
-    <author>
-      <name>Xi Jiang</name>
-    </author>
-    <author>
-      <name>Yinjie Zhao</name>
-    </author>
-    <author>
-      <name>Zesheng Yang</name>
-    </author>
-    <author>
-      <name>Feng Zheng</name>
-    </author>
-    <summary type="text">Visual anomaly detection (VAD) is crucial in many real-world fields, such as industrial inspection, medical imaging, infrastructure monitoring, and remote sensing. However, the specific anomaly definitions, data modalities, and annotation standards across different domains make it difficult to transfer single-domain trained VAD models. Vision-language models (VLMs), pre-trained on large-scale cross-domain data, can perform visual perception under task instructions, offering a promising solution for cross-domain VAD. However, single-inference VLM judgments are unreliable, since they rely more on prior knowledge than on normal-sample references or fine-grained feature evidence. We therefore present AnomalyClaw, a training-free VAD agent that turns anomaly judgment into a multi-round refutation process. In each round, the agent proposes candidate anomalies and refutes each against normal-sample references, drawing on a 13-tool library for visual verification, reference parsing, and frozen expert probing. On the CrossDomainVAD-12 benchmark (12 datasets), AnomalyClaw achieves consistent macro-AUROC improvements over single-step direct inference with +6.23 pp on GPT-5.5, +7.93 pp on Seed2.0-lite, and +3.52 pp on Qwen3.5-VL-27B. We further introduce an optional verbalized self-evolution extension. It builds an online rulebook from internal-branch disagreement without oracle labels. On Qwen3.5-VL-27B, it delivers a +2.09 pp mean gain, comparable to a K = 10 oracle-label supervised baseline (+1.99 pp). These results show that agentic refutation improve anomaly understanding and reasoning of VLMs, rather than merely aggregating tool outputs.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; We release the agent, the benchmark, and the analysis artifacts at https://github.com/jam-cc/AnomalyClaw&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>

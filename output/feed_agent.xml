@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_agent.xml</id>
   <link href="https://rspaper.top/output/feed_agent.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-15T04:45:42Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
+  <updated>2026-05-18T02:08:55Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -127,29 +127,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>AnomalyClaw: A Universal Visual Anomaly Detection Agent via Tool-Grounded Refutation</title>
-    <link href="http://arxiv.org/abs/2605.10397v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.10397v1</id>
-    <published>2026-05-11T00:00:00Z</published>
-    <updated>2026-05-11T00:00:00Z</updated>
-    <author>
-      <name>Xi Jiang</name>
-    </author>
-    <author>
-      <name>Yinjie Zhao</name>
-    </author>
-    <author>
-      <name>Zesheng Yang</name>
-    </author>
-    <author>
-      <name>Feng Zheng</name>
-    </author>
-    <summary type="text">Visual anomaly detection (VAD) is crucial in many real-world fields, such as industrial inspection, medical imaging, infrastructure monitoring, and remote sensing. However, the specific anomaly definitions, data modalities, and annotation standards across different domains make it difficult to transfer single-domain trained VAD models. Vision-language models (VLMs), pre-trained on large-scale cross-domain data, can perform visual perception under task instructions, offering a promising solution for cross-domain VAD. However, single-inference VLM judgments are unreliable, since they rely more on prior knowledge than on normal-sample references or fine-grained feature evidence. We therefore present AnomalyClaw, a training-free VAD agent that turns anomaly judgment into a multi-round refutation process. In each round, the agent proposes candidate anomalies and refutes each against normal-sample references, drawing on a 13-tool library for visual verification, reference parsing, and frozen expert probing. On the CrossDomainVAD-12 benchmark (12 datasets), AnomalyClaw achieves consistent macro-AUROC improvements over single-step direct inference with +6.23 pp on GPT-5.5, +7.93 pp on Seed2.0-lite, and +3.52 pp on Qwen3.5-VL-27B. We further introduce an optional verbalized self-evolution extension. It builds an online rulebook from internal-branch disagreement without oracle labels. On Qwen3.5-VL-27B, it delivers a +2.09 pp mean gain, comparable to a K = 10 oracle-label supervised baseline (+1.99 pp). These results show that agentic refutation improve anomaly understanding and reasoning of VLMs, rather than merely aggregating tool outputs.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; We release the agent, the benchmark, and the analysis artifacts at https://github.com/jam-cc/AnomalyClaw&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>

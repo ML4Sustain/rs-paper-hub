@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_sar.xml</id>
   <link href="https://rspaper.top/output/feed_sar.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-15T04:45:42Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
+  <updated>2026-05-18T02:08:55Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -79,54 +79,5 @@
     <summary type="text">Existing deep learning-based methods can capture shared features from optical and synthetic aperture radar (SAR) images for spatial alignment. However, optical-SAR registration remains challenging under large geometric deformations, because the model needs to simultaneously handle cross-modal appearance discrepancies and complex spatial transformations. To address this issue, this paper proposes a text semantic-assisted cross-modal image registration framework, named TAR, for optical and SAR images. TAR exploits text semantic priors from remote sensing scenes and land-cover categories to alleviate the modality gap and enhance cross-modal feature learning. TAR consists of three components: a multi-scale visual feature learning (MSFL) module, a text-assisted feature enhancement (TAFE) module, and a coarse-to-fine dense matching (CFDM) module. MSFL extracts multi-scale visual features from optical and SAR images. TAFE constructs text descriptors related to remote sensing scenes and land-cover objects, and uses a frozen RemoteCLIP text encoder to extract text features. These text features are introduced through visual-text interaction to enhance high-level visual features for more reliable coarse matching. CFDM then establishes coarse correspondences based on the enhanced high-level features and refines the matched locations using low-level features. Experimental results on cross-modal remote sensing images demonstrate the effectiveness of TAR, which achieves stronger matching performance than several state-of-the-art methods and yields significant gains under large geometric deformations.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Towards a Large Language-Vision Question Answering Model for MSTAR Automatic Target Recognition</title>
-    <link href="http://arxiv.org/abs/2605.10772v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.10772v1</id>
-    <published>2026-05-11T00:00:00Z</published>
-    <updated>2026-05-11T00:00:00Z</updated>
-    <author>
-      <name>David F. Ramirez</name>
-    </author>
-    <author>
-      <name>Tim L. Overman</name>
-    </author>
-    <author>
-      <name>Kristen Jaskie</name>
-    </author>
-    <author>
-      <name>Marv Kleine</name>
-    </author>
-    <author>
-      <name>Andreas Spanias</name>
-    </author>
-    <summary type="text">Large language-vision models (LLVM), such as OpenAI's ChatGPT and GPT-4, have gained prominence as powerful tools for analyzing text and imagery. The merging of these data domains represents a significant paradigm shift with far-reaching implications for automatic target recognition (ATR). Recent transformer-based LLVM research has shown substantial improvements for geospatial perception tasks. Our study examines the application of LLVM to remote sensing image captioning and visual question-answering (VQA), with a specific focus on synthetic aperture radar (SAR) imagery. We examine newly published LLVM methods, including CLIP and LLaVA neural network transformer architectures. We have developed a work-in-progress SAR training and evaluation benchmark derived from the MSTAR Public Dataset. This has been extended to include descriptive text captions and question-answer pairs for VQA tasks. This challenge dataset is designed to push the boundaries of an LLVM in identifying nuanced ATR details in SAR imagery. Utilizing parameter-efficient fine-tuning, we train an LLVM method to identify fine-grained target qualities at 98% accuracy. We detail our data setup and experiments, addressing potential pitfalls that could lead to misleading conclusions. Accurately identifying and differentiating military vehicle types in SAR data poses a critical challenge, especially under complex environmental conditions. Mastering this target recognition skill may require a human analyst months of training and years of practice. This research represents a unique effort to apply LLVM to SAR applications, advancing machine-assisted remote sensing ATR for military and intelligence contexts.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to SPIE Defense + Commercial Sensing, Automatic Target Recognition XXXV&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;IC&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence; Image and Video Processing" />
-  </entry>
-  <entry>
-    <title>Sequential Feature Selection for Efficient Landslide Segmentation from Multi-Spectral Data</title>
-    <link href="http://arxiv.org/abs/2605.09746v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.09746v1</id>
-    <published>2026-05-10T00:00:00Z</published>
-    <updated>2026-05-10T00:00:00Z</updated>
-    <author>
-      <name>Arsalaan Ahmad</name>
-    </author>
-    <author>
-      <name>Oktay Karakus</name>
-    </author>
-    <author>
-      <name>Paul L. Rosin</name>
-    </author>
-    <summary type="text">Landslide detection from satellite imagery has advanced through deep learning, yet most models rely on large, highly correlated spectral-topographic inputs whose contributions remain poorly understood. The question of which channels are actually necessary has received surprisingly little attention. This matters: redundant or correlated inputs obscure physical interpretability, inflate computational overhead, and can actively degrade model performance through the Hughes Phenomenon. We present a systematic, explainable channel-selection framework for the Landslide4Sense benchmark, combining Sentinel-2 multispectral and ALOS PALSAR terrain data with 16 engineered spectral and structural indices. Rather than relying on conventional single-band drop tests, which evaluate channels in isolation and miss interaction effects, we apply Sequential Forward Floating Selection (SFFS) to iteratively build and prune a candidate feature pool using a lightweight U-Net++ proxy model. Beyond identifying a compact 8-channel subset that matches or exceeds the segmentation F1 of configurations using up to 30 channels, we use the selection process itself to interrogate which spectral and topographic features landslide models genuinely rely on, and what this reveals about the physical cues driving their predictions. We argue that SFFS represents a principled feature selection approach to input design in Earth observation, in contrast to the prevailing practice of appending every available band and hoping the model learns what to ignore.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; In Process of Submission to Frontiers in Remote Sensing. Keywords: landslide segmentation, multispectral remote sensing, feature selection, explainability, Landslide4Sense&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>

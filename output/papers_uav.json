@@ -5641,5 +5641,43 @@
     "_added_date": "2026-05-12",
     "Category": "Survey",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-05-14",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "ELDOR: A Dataset and Benchmark for Illegal Gold Mining in the Amazon Rainforest",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.15397v1",
+    "Abstract": "Illegal gold mining in the Amazon rainforest causes deforestation, water contamination, and long-term ecosystem disruption, yet remains difficult to monitor at fine spatial scales. Satellite imagery supports large-scale observation, but often misses small mining-related structures and subtle land-cover transitions, especially under frequent cloud cover. We introduce ELDOR, a large-scale UAV benchmark for monitoring environmental and landscape disturbance from illegal gold mining in the rainforest. ELDOR contains manually annotated orthomosaic imagery covering over 2,500 hectares, with pixel-level semantic labels for both mining-related activities and surrounding ecological structures. With this unified annotation source, we establish four benchmark tasks: semantic segmentation, segmentation-derived recognition, direct multi-label classification, and class-presence recognition with vision-language models. Across these tasks, we compare generic and remote-sensing-specific segmentation models, vision foundation model-related segmentation methods, direct multi-label classification methods, and vision-language models under a controlled closed-set protocol. Results show that current methods still struggle with rare small-scale mining structures and fine-grained recovery classes, suggesting the need for context-aware and multimodal modeling. To support domain analysis and practical use, we further build an interactive explorer for domain experts that provides a unified interface for data exploration and model inference.",
+    "code": "",
+    "Publication": "70 pages, 35 figures",
+    "BibTex": "@article{cui2026eldor,\n  title={ELDOR: A Dataset and Benchmark for Illegal Gold Mining in the Amazon Rainforest},\n  author={Kangning Cui and Surendra Bohara and Suraj Prasai and Zishan Shao and Wei Tang and Martin Pillaca and Edwin Flores and Zhen Yang and Gregory Larsen and Evan Dethier and David Lutz and Jean-Michel Morel and Miles Silman and Victor Pauca and Fan Yang},\n  journal={arXiv preprint arXiv:2605.15397v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.15397v1}\n}",
+    "Authors": "Kangning Cui, Surendra Bohara, Suraj Prasai, Zishan Shao, Wei Tang, Martin Pillaca, Edwin Flores, Zhen Yang, Gregory Larsen, Evan Dethier, David Lutz, Jean-Michel Morel, Miles Silman, Victor Pauca, Fan Yang",
+    "_added_date": "2026-05-18",
+    "Category": "Dataset",
+    "_tasks": "CLS;SEG"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-05-14",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Multimodal Object Detection Under Sparse Forest-Canopy Occlusion",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.15326v1",
+    "Abstract": "Reliable detection of humans beneath forest canopy remains a difficult remote-sensing challenge due to sparse, structured, and viewpoint-dependent occlusion. This paper presents a multimodal proof-of-concept pipeline that integrates three complementary approaches: (i) experimental evaluation of LiDAR returns through vegetation to assess the feasibility of active sensing, (ii) visible--thermal image fusion using a multi-scale transform and sparse-representation framework to enhance human saliency, and (iii) synthetic-aperture image formation via Airborne Optical Sectioning (AOS) to suppress canopy clutter. A YOLOv5 detector is fine-tuned on the Teledyne FLIR thermal dataset and evaluated on thermal and fused imagery. Results show that the tested terrestrial LiDAR configuration provides limited penetration for object-level detection, while visible--thermal fusion improves target visibility in low-contrast scenes and AOS enhances ground-plane detection in synthetic forest imagery. The fine-tuned YOLOv5 achieves a mean average precision of $\\sim$0.83 on the top three FLIR classes. These findings establish an initial baseline for UAV-deployable search-and-rescue and surveillance systems operating in forested environments, and motivate future work on dedicated forest datasets and real-time multimodal integration.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{jain2026multimodal,\n  title={Multimodal Object Detection Under Sparse Forest-Canopy Occlusion},\n  author={Nitik Jain and Mangal Kothari},\n  journal={arXiv preprint arXiv:2605.15326v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.15326v1}\n}",
+    "Authors": "Nitik Jain, Mangal Kothari",
+    "_added_date": "2026-05-18",
+    "Category": "Method",
+    "_tasks": "OD"
   }
 ]
