@@ -4,12 +4,94 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-19T01:59:28Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 7 entries</subtitle>
+  <updated>2026-05-19T04:58:50Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 9 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>SkyNative: A Native Multimodal Framework for Remote Sensing Visual Evidence Reasoning</title>
+    <link href="http://arxiv.org/abs/2605.17949v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.17949v1</id>
+    <published>2026-05-18T00:00:00Z</published>
+    <updated>2026-05-18T00:00:00Z</updated>
+    <author>
+      <name>Xiao Yang</name>
+    </author>
+    <author>
+      <name>Ronghao Fu</name>
+    </author>
+    <author>
+      <name>Zhiwen Lin</name>
+    </author>
+    <author>
+      <name>Zhuoran Duan</name>
+    </author>
+    <author>
+      <name>Jiashun Zhu</name>
+    </author>
+    <author>
+      <name>Jiasen Hu</name>
+    </author>
+    <author>
+      <name>Lang Sun</name>
+    </author>
+    <author>
+      <name>Weipeng Zhang</name>
+    </author>
+    <author>
+      <name>Jiaqi Liu</name>
+    </author>
+    <author>
+      <name>Xu Na</name>
+    </author>
+    <author>
+      <name>Haoran Liu</name>
+    </author>
+    <author>
+      <name>Weijie Zhang</name>
+    </author>
+    <author>
+      <name>Bo Yang</name>
+    </author>
+    <summary type="text">Remote sensing vision-language models commonly rely on pretrained visual encoders to convert images into semantic features before language-model reasoning. While effective for scene-level understanding, this pipeline may prematurely compress local visual evidence, making fine-grained spatial reasoning vulnerable to language priors, especially in ultra-high-resolution remote sensing imagery. We present SkyNative, a native multimodal framework for remote sensing that adopts an encoder-free architecture, removing the pretrained visual backbone to directly represent images as raw patch tokens in the language-model token space. To reconcile low-level visual patches with textual tokens, SkyNative introduces a modality-aware decoupling mechanism that uses modality-specific parameters within a unified autoregressive backbone. We further introduce a visual reliance benchmark that diagnoses whether models ground their answers in image evidence through progressive visual degradation and misleading textual prompts. Across standard remote sensing understanding tasks and large-format spatial reasoning evaluations, SkyNative shows stronger image-grounded perception and improved robustness against prompt-induced language priors. These results suggest that native patch-level multimodal modeling is a promising direction for reliable remote sensing vision-language reasoning.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>HydroAgent: Closing the Gap Between Frontier LLMs and Human Experts in Hydrologic Model Calibration via Simulator-Grounded RL</title>
+    <link href="http://arxiv.org/abs/2605.17792v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.17792v1</id>
+    <published>2026-05-18T00:00:00Z</published>
+    <updated>2026-05-18T00:00:00Z</updated>
+    <author>
+      <name>Zhi Li</name>
+    </author>
+    <author>
+      <name>Songkun Yan</name>
+    </author>
+    <author>
+      <name>Jie Cao</name>
+    </author>
+    <author>
+      <name>Mofan Zhang</name>
+    </author>
+    <author>
+      <name>Anjiang Wei</name>
+    </author>
+    <author>
+      <name>Jinwoong Yoo</name>
+    </author>
+    <author>
+      <name>Yang Hong</name>
+    </author>
+    <summary type="text">Calibrating distributed hydrologic models is a critical bottleneck across operational water resources management - streamflow prediction, reservoir operation, drought monitoring, infrastructure design, and flood forecasting all depend on it. Each basin demands an expert to translate hydrograph signatures into adjustments of a high-dimensional parameter vector, and the resulting workflow does not transfer between watersheds. We ask: can frontier large language model (LLM) agents replace the human hydrologic modeler, and if not, what would it take? We benchmark nine frontier LLM agents - Claude Opus 4.6/4.7, Sonnet 4.6, GPT-5/5.4/5.4-pro, and Gemini 2.5-pro/3.1-pro/3-flash - on the operational CREST distributed hydrologic model used by the U.S. National Weather Service for flash-flood forecasting. Best-of-twenty-rounds Nash-Sutcliffe Efficiency (NSE) across four held-out gauges spanning 329-40,792 km2 ranges from -0.16 (GPT-5.4) to 0.75 (Sonnet 4.6); the ceiling reproduces across all three vendors and capability tiers, with the strongest models concentrating in the 0.65-0.75 band, and no model reaches the human-expert reference except Opus-4.7 on one gauge. We argue this gap is not a parameter-count problem but a domain-grounding problem. We then propose HYDROAGENT, fine-tuning open-weight Qwen3-4B with supervised fine-tuning on 2,576 expert calibration trajectories and Group-Relative Policy Optimization using NSE as a verifiable reward from online CREST simulations - reinforcement learning with simulation feedback (RLSF). For Earth system science, a small domain-tuned policy with simulator-in-the-loop RL is a more compute-efficient and physically faithful path than scaling generic frontier models, and the multi-modal richness of Earth data - remote sensing, in-situ time series, and forecaster narrative - makes domain agents a leveraged direction for AI in physical science.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+    <category term="Geophysics" />
+  </entry>
   <entry>
     <title>Axial-Relation Guided Fusion State Space Model for Optical-Elevation Sensing Image Segmentation</title>
     <link href="http://arxiv.org/abs/2605.16768v1" rel="alternate" type="text/html" />

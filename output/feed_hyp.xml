@@ -4,12 +4,45 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-19T01:59:28Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
+  <updated>2026-05-19T04:58:50Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Large-Scale Quantum Kernels for Hyperspectral Data Classification</title>
+    <link href="http://arxiv.org/abs/2605.17587v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.17587v1</id>
+    <published>2026-05-17T00:00:00Z</published>
+    <updated>2026-05-17T00:00:00Z</updated>
+    <author>
+      <name>A. Delilbasic</name>
+    </author>
+    <author>
+      <name>A. Miroszewski</name>
+    </author>
+    <author>
+      <name>A. Wijata</name>
+    </author>
+    <author>
+      <name>J. Nalepa</name>
+    </author>
+    <author>
+      <name>J. Mielczarek</name>
+    </author>
+    <author>
+      <name>M. Riedel</name>
+    </author>
+    <author>
+      <name>G. Cavallaro</name>
+    </author>
+    <summary type="text">Quantum kernel methods have emerged as a promising approach for leveraging high-dimensional feature spaces in machine learning, particularly in domains where classical kernel methods face scalability limitations. In this work, we present the first large-scale study of fidelity-quantum-kernel support vector machines for hyperspectral data classification without requiring heavy prior feature selection or dimensionality reduction. By simulating quantum kernels using tensor network contraction techniques and GPU acceleration, we overcome the computational bottlenecks traditionally associated with quantum models, achieving quadratic scaling O(n^2) in the number of qubits. Our approach enables the evaluation of quantum kernels on hyperspectral data with hundreds of spectral bands, aligning quantum feature spaces with real-world remote sensing applications. We provide an in-depth analysis of kernel bandwidth optimization, demonstrating its crucial role in mitigating exponential concentration effects and ensuring the model's ability to generalize. Experimental results on binary classification (Indian Pines and Methane Detection) and multiclass classification (Indian Pines) demonstrate that quantum kernels achieve competitive performance compared to a broad range of state-of-the-art classical baselines. As illustrative cases, on four 50-band splits selected from Indian Pines, the quantum model achieved a 78.0 pm6.2% accuracy for a binary classification task compared to 72.0 pm5.0% for the standard radial basis function (RBF) kernel. For a four-class classification task, the quantum kernel reached 83.3 pm3.1% accuracy, outperforming several state-of-the-art baselines. On five 75-band splits selected from the Methane Detection dataset, the quantum approach yielded 58.5\pm5.0% accuracy versus 55.1\pm2.5% for the classical counterpart...</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 21 pages, 13 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="quant-ph" />
+  </entry>
   <entry>
     <title>ChronoEarth-492K: A Large Scale and Long Horizon Spatiotemporal Hyperspectral Earth Observation Dataset and Benchmark</title>
     <link href="http://arxiv.org/abs/2605.15666v1" rel="alternate" type="text/html" />
