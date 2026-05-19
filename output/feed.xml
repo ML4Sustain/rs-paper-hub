@@ -4,12 +4,41 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-18T05:06:37Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 25 entries</subtitle>
+  <updated>2026-05-19T01:59:28Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 22 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Axial-Relation Guided Fusion State Space Model for Optical-Elevation Sensing Image Segmentation</title>
+    <link href="http://arxiv.org/abs/2605.16768v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.16768v1</id>
+    <published>2026-05-16T00:00:00Z</published>
+    <updated>2026-05-16T00:00:00Z</updated>
+    <author>
+      <name>Feng Gao</name>
+    </author>
+    <author>
+      <name>Zhilin Jin</name>
+    </author>
+    <author>
+      <name>Yanhai Gan</name>
+    </author>
+    <author>
+      <name>Junyu Dong</name>
+    </author>
+    <author>
+      <name>Qian Du</name>
+    </author>
+    <summary type="text">Semantic segmentation of multi-source remote sensing images is a fundamental task for Earth observation applications. Existing methods often struggle with insufficient multi-scale context modeling and suboptimal cross-modal feature fusion, limiting their performance in complex high-resolution scenes. To this end, we propose Axial-Relation Guided Fusion Mamba (ARG-Mamba), a state space model-based framework for optical-elevation remote sensing image segmentation. Specifically, we introduce a Multi-Scale State Space Module to capture both fine-grained local details and global contextual dependencies with linear computational complexity. Moreover, an Axial-Relation Guided Fusion Module is designed to explicitly model global cross-modal correlations along horizontal and vertical axes, enabling efficient feature fusion between optical and elevation modalities. Extensive experiments conducted on the ISPRS Vaihingen and Potsdam datasets demonstrate that our ARG-Mamba consistently outperforms state-of-the-art methods while maintaining favorable computational efficiency. The code will be made publicly available at \url{https://github.com/oucailab/ARG-Mamba}.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/oucailab/ARG-Mamba"&gt;https://github.com/oucailab/ARG-Mamba&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE GRSL 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Image and Video Processing" />
+  </entry>
   <entry>
     <title>Energy Evolution from the Chromosphere to the Heliosphere in the 2021 October 28 Solar Eruption</title>
     <link href="http://arxiv.org/abs/2605.16111v1" rel="alternate" type="text/html" />
@@ -175,6 +204,23 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
     <category term="Image and Video Processing" />
     <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>A Cubing Strategy for Identifying Stable Hyperparameter Regions for Uncertainty Quantification in Spatial Deep Learning</title>
+    <link href="http://arxiv.org/abs/2605.16570v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.16570v1</id>
+    <published>2026-05-15T00:00:00Z</published>
+    <updated>2026-05-15T00:00:00Z</updated>
+    <author>
+      <name>Isaac Amouzou</name>
+    </author>
+    <author>
+      <name>Ben Seiyon Lee</name>
+    </author>
+    <summary type="text">Spatially referenced datasets have become increasingly prevalent across many fields, largely driven by advances in data collection methods such as satellite remote sensing. In many applications, predictions at unobserved locations are accompanied by reliable uncertainty estimates. While deep learning methods provide both scalable and accurate models for spatial predictions, there remains no clear consensus for addressing uncertainty quantification in spatial deep learning. Monte Carlo (MC) dropout has become a popular approach for uncertainty quantification, yet existing implementations typically focus on tuning the dropout rate while fixing other influential hyperparameters, such as weight decay and the predictive standard deviation multiplier, often through ad-hoc or manual tuning. We propose a cubing-based diagnostic framework that recursively partitions the hyperparameter space to identify stable regions where MC dropout yields well-calibrated predictive intervals. The approach evaluates hyperparameter regions using scoring rules relative to a statistical baseline model, which serves as a calibration anchor. Through a simulation study spanning multiple spatial dependence regimes as well as a large remotely-sensed land surface temperature dataset, we demonstrate that our approach produces competitive or superior predictive intervals compared to the baseline model. Our methodology provides practitioners with a systematic procedure for incorporating uncertainty quantification into spatial deep learning models.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="stat.CO" />
+    <category term="Machine Learning (Statistics)" />
   </entry>
   <entry>
     <title>TERRA-CD: Multi-Temporal Framework for Multi-class and Semantic Change Detection</title>
@@ -650,186 +696,5 @@
     <summary type="text">The rise of multi-modal large language models (MLLMs) is shifting remote sensing (RS) intelligence from "see" to "action", as OpenClaw-style frameworks enable agents to autonomously operate massive RS image-processing tools for complex tasks. Existing RS agents adopt a passive selection paradigm for tool invocation, relying on either full tool registration (Flat) or retrieval-augmented generation (RAG). However, in the massive and multi-source heterogeneous RS tool ecosystem, such passive mechanisms struggle to dynamically balance "context load" and "toolset completeness" throughout task reasoning, thus exhibiting inherent limitations: full tool registration triggers context space deficits during long-horizon tasks, whereas RAG retrieval may omit critical tools in essential steps. To overcome these bottlenecks, this paper redefines tool selection by arguing that the agent should act as an active explorer within the tool space. Based on this perspective, we propose RS-Claw, a novel RS agent architecture. By leveraging Skill encapsulation technology at the tool end, this architecture hierarchically structures tool descriptions, enabling the agent to execute on-demand sequential decision-making: initially selecting relevant skill branches by reading only tool summaries, then dynamically loading detailed descriptions, and ultimately achieving precise invocation. This active paradigm not only significantly liberates the agent's context space but also effectively ensures the accurate hit rate of critical tools during long-horizon reasoning. Systematic experiments on the Earth-Bench benchmark demonstrate that RS-Claw's active exploration mechanism effectively filters semantic noise and substantially frees up reasoning space, achieving an input token compression ratio of up to 86%, and comprehensively outperforming existing Flat and RAG baselines across complex reasoning evaluations.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Can LLM Agents Respond to Disasters? Benchmarking Heterogeneous Geospatial Reasoning in Emergency Operations</title>
-    <link href="http://arxiv.org/abs/2605.11633v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.11633v1</id>
-    <published>2026-05-12T00:00:00Z</published>
-    <updated>2026-05-12T00:00:00Z</updated>
-    <author>
-      <name>Junjue Wang</name>
-    </author>
-    <author>
-      <name>Weihao Xuan</name>
-    </author>
-    <author>
-      <name>Heli Qi</name>
-    </author>
-    <author>
-      <name>Pengyu Dai</name>
-    </author>
-    <author>
-      <name>Kunyi Liu</name>
-    </author>
-    <author>
-      <name>Hongruixuan Chen</name>
-    </author>
-    <author>
-      <name>Zhuo Zheng</name>
-    </author>
-    <author>
-      <name>Junshi Xia</name>
-    </author>
-    <author>
-      <name>Stefano Ermon</name>
-    </author>
-    <author>
-      <name>Naoto Yokoya</name>
-    </author>
-    <summary type="text">Operational disaster response goes beyond damage assessment, requiring responders to integrate multi-sensor signals, reason over road networks, populations and key facilities, plan evacuations, and produce actionable reports. However, prior work largely isolates remote-sensing perception or evaluates generic tool use, leaving the end-to-end workflows of emergency operations underexplored. In this paper, we introduce Disaster Operational Response Agent benchmark (DORA), the first agentic benchmark for end-to-end disaster response: 515 expert-authored tasks across 45 real-world disaster events spanning 10 types, paired with expert-verified, replayable gold trajectories totaling 3,500 tool-call steps. Tasks span five dimensions that cover the operational disaster-response pipeline: disaster perception, spatial relational analysis, rescue and evacuation planning, temporal evolution reasoning, and multi-modal report synthesis. Agents compose calls from a 108-tool MCP library over heterogeneous geospatial data: optical, SAR, and multi-spectral imagery across single-, bi-, and multi-temporal sequences (0.015-10m GSD), complemented by elevation and social vector layers. We comprehensively evaluate 13 frontier LLMs on our benchmark, revealing three persistent challenges: 1) disaster-domain grounding exposes unique failure modes (damage-semantic grounding, sensor-modality mismatch, and disaster-pipeline composition); 2) agents are doubly bottlenecked by tool selection and argument grounding, where gold tool-order hints improve accuracy by only 1.08-4.40%, and alternative scaffolds yield at most a 3.24% gain; 3) compositional fragility scales with trajectory length, the agent-to-gold gap widening from 7% to 56% on long pipelines. DORA establishes a rigorous testbed for operationally reliable disaster-response agents.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; DORA stress-tests LLM agents on real-world disaster operations that demand comprehensive orchestration of 108 specialized tools over heterogeneous geospatial data&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>GeoR-Bench: Evaluating Geoscience Visual Reasoning</title>
-    <link href="http://arxiv.org/abs/2605.11541v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.11541v1</id>
-    <published>2026-05-12T00:00:00Z</published>
-    <updated>2026-05-12T00:00:00Z</updated>
-    <author>
-      <name>Yushuo Zheng</name>
-    </author>
-    <author>
-      <name>Zicheng Zhang</name>
-    </author>
-    <author>
-      <name>Huiyu Duan</name>
-    </author>
-    <author>
-      <name>Chunyi Li</name>
-    </author>
-    <author>
-      <name>Zijian Chen</name>
-    </author>
-    <author>
-      <name>Ziheng Jia</name>
-    </author>
-    <author>
-      <name>Yue Shi</name>
-    </author>
-    <author>
-      <name>Ke Gu</name>
-    </author>
-    <author>
-      <name>Xiongkuo Min</name>
-    </author>
-    <author>
-      <name>Guangtao Zhai</name>
-    </author>
-    <summary type="text">Geoscience intelligence is expected to understand, reason about, and predict earth system changes to support human decision-making in critical domains such as disaster response, climate adaptation and environmental protection. Although current research has shown promising progress on specific geoscience tasks, such as remote sensing interpretation, geographic question-answering, existing benchmarks remain largely task-specific which failing to capture the open-ended real world geoscience problems. As a result, it remains unclear how far current AI systems are from achieving genuine geoscience intelligence. To address this gap, we present \textbf{GeoR-Bench}, a \underline{Bench}mark for evaluating \underline{Geo}science visual \underline{R}easoning through reasoning informed visual editing tasks. GeoR-Bench contains 440 curated samples spanning 6 geoscience categories and 24 task types, covering earth observation imagery and structured scientific representations such as maps and diagrams. We evaluate outputs along three dimensions, including reasoning, consistency, and quality. Benchmark results of 21 closed- and open-source multimodal models reveal that geoscience reasoning remains a critical bottleneck. The highest-performing model achieves 42.7\% overall strict accuracy, while the best open-source models only get 10.3\%. Notably, the visual consistency and image quality of the outputs frequently surpass their scientific accuracy. Ultimately, these findings indicate that current models generate superficially plausible results but fail to capture underlying earth science processes.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>UHR-Micro: Diagnosing and Mitigating the Resolution Illusion in Earth Observation VLMs</title>
-    <link href="http://arxiv.org/abs/2605.12237v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.12237v1</id>
-    <published>2026-05-12T00:00:00Z</published>
-    <updated>2026-05-12T00:00:00Z</updated>
-    <author>
-      <name>Shuo Ni</name>
-    </author>
-    <author>
-      <name>Tong Wang</name>
-    </author>
-    <author>
-      <name>Jing Zhang</name>
-    </author>
-    <author>
-      <name>He Chen</name>
-    </author>
-    <author>
-      <name>Haonan Guo</name>
-    </author>
-    <author>
-      <name>Ning Zhang</name>
-    </author>
-    <author>
-      <name>Bo Du</name>
-    </author>
-    <summary type="text">Vision-Language Models (VLMs) increasingly operate on ultra-high-resolution (UHR) Earth observation imagery, yet they remain vulnerable to a severe scale mismatch between large-scale scene context and micro-scale targets. We refer to this empirical gap as a "resolution illusion": higher input resolution provides the appearance of richer visual detail, but does not necessarily yield reliable perception of spatially small, task-relevant evidence. To benchmark this challenge, we introduce UHR-Micro, a benchmark comprising 11,253 instructions grounded in 1,212 UHR images, designed to evaluate VLMs at the spatial limits of native Earth observation imagery. UHR-Micro spans diverse micro-target scales, context requirements, task families, and visual conditions, and provides diagnostic annotations that support controlled evaluation and fine-grained error attribution. Experiments with representative high-resolution VLMs show substantial failures in spatial grounding and evidence parsing, despite access to high-resolution inputs. Further analysis suggests that these failures are not fully resolved by increasing model capacity, but are closely tied to insufficient guidance in locating and using task-relevant micro-evidence. Motivated by this finding, we propose Micro-evidence Active Perception (MAP), a reference agent that decomposes queries into evidence-seeking steps, actively inspects candidate regions, and grounds its answers in localized observations. MAP-Agent improves micro-level perception by making high-resolution reasoning evidence-centered rather than image-centered. Together, UHR-Micro and MAP-Agent provide a diagnostic platform for evaluating, understanding, and advancing high-resolution reasoning in Earth observation VLMs. Datasets and source code were released at https://github.com/MiliLab/UHR-Micro.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/MiliLab/UHR-Micro"&gt;https://github.com/MiliLab/UHR-Micro&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>TAR: Text Semantic Assisted Cross-modal Image Registration Framework for Optical and SAR Images</title>
-    <link href="http://arxiv.org/abs/2605.12064v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.12064v1</id>
-    <published>2026-05-12T00:00:00Z</published>
-    <updated>2026-05-12T00:00:00Z</updated>
-    <author>
-      <name>Zhuoyu Cai</name>
-    </author>
-    <author>
-      <name>Dou Quan</name>
-    </author>
-    <author>
-      <name>Ning Huyan</name>
-    </author>
-    <author>
-      <name>Pei He</name>
-    </author>
-    <author>
-      <name>Shuang Wang</name>
-    </author>
-    <author>
-      <name>Licheng Jiao</name>
-    </author>
-    <summary type="text">Existing deep learning-based methods can capture shared features from optical and synthetic aperture radar (SAR) images for spatial alignment. However, optical-SAR registration remains challenging under large geometric deformations, because the model needs to simultaneously handle cross-modal appearance discrepancies and complex spatial transformations. To address this issue, this paper proposes a text semantic-assisted cross-modal image registration framework, named TAR, for optical and SAR images. TAR exploits text semantic priors from remote sensing scenes and land-cover categories to alleviate the modality gap and enhance cross-modal feature learning. TAR consists of three components: a multi-scale visual feature learning (MSFL) module, a text-assisted feature enhancement (TAFE) module, and a coarse-to-fine dense matching (CFDM) module. MSFL extracts multi-scale visual features from optical and SAR images. TAFE constructs text descriptors related to remote sensing scenes and land-cover objects, and uses a frozen RemoteCLIP text encoder to extract text features. These text features are introduced through visual-text interaction to enhance high-level visual features for more reliable coarse matching. CFDM then establishes coarse correspondences based on the enhanced high-level features and refines the matched locations using low-level features. Experimental results on cross-modal remote sensing images demonstrate the effectiveness of TAR, which achieves stronger matching performance than several state-of-the-art methods and yields significant gains under large geometric deformations.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>No One Knows the State of the Art in Geospatial Foundation Models</title>
-    <link href="http://arxiv.org/abs/2605.12678v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.12678v1</id>
-    <published>2026-05-12T00:00:00Z</published>
-    <updated>2026-05-12T00:00:00Z</updated>
-    <author>
-      <name>Isaac Corley</name>
-    </author>
-    <author>
-      <name>Nils Lehmann</name>
-    </author>
-    <author>
-      <name>Caleb Robinson</name>
-    </author>
-    <author>
-      <name>Gabriel Tseng</name>
-    </author>
-    <author>
-      <name>Anthony Fuller</name>
-    </author>
-    <author>
-      <name>Hamed Alemohammad</name>
-    </author>
-    <author>
-      <name>Evan Shelhamer</name>
-    </author>
-    <author>
-      <name>Jennifer Marcus</name>
-    </author>
-    <author>
-      <name>Hannah Kerner</name>
-    </author>
-    <summary type="text">Geospatial foundation models (GFMs) have been proposed as generalizable backbones for disaster response, land-cover mapping, food-security monitoring, and other high-stakes Earth-observation tasks. Yet the published work about these models does not give reviewers or users enough information to tell which model fits a given task. We argue that nobody knows what the current state of the art is in geospatial foundation models. The methods may be useful, but the GFM literature does not standardize evaluations, training and testing protocols, released weights, or pretraining controls well enough for anyone to compare or rank them. In a 152-paper audit, we find 46 cross-paper disagreements of at least 10 points for the same model, benchmark, and protocol; 94/126 papers with extractable pretraining data use a configuration no other paper uses; and 39% of GFM papers release no model weights. This lack of community standards can be solved. We propose six concrete expectations: named-license weight release, shared core evaluations, copied-versus-rerun baseline annotations, variance reporting, one shared evaluation harness, and data-vs-architecture-vs-algorithm controls. These gaps are a coordination failure, not a fault of any individual lab; the authors of this paper, like many others in the GFM community, have contributed to them. Rather than just critiquing the community, we aim to provide concrete steps toward a shared understanding of how to innovate GFMs.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="cs.CY" />
   </entry>
 </feed>
