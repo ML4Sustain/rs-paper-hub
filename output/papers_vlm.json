@@ -16813,5 +16813,43 @@
     "_added_date": "2026-05-20",
     "Category": "Dataset",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Machine Learning",
+    "Date": "2026-05-20",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "SpectralEarth-FM: Bringing Hyperspectral Imagery into Multimodal Earth Observation Pretraining",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.21075v1",
+    "Abstract": "Earth observation (EO) foundation models (FMs) are increasingly trained on multisensor data, spanning multispectral imagery (MSI), synthetic aperture radar (SAR), and derived geospatial layers, but hyperspectral imagery (HSI) remains underrepresented. Conversely, existing hyperspectral FMs are trained on HSI alone, leaving joint pretraining and fusion of HSI with co-located EO sensors unexplored. We introduce SpectralEarth-FM, a hierarchical transformer for multisensor EO input with heterogeneous spectral dimensionality. The architecture combines spectral tokenization for hyperspectral inputs, sensor-specific encoders, a cross-sensor fusion module, and a shared hierarchical encoder, enabling joint processing of HSI and lower-channel observations. To pretrain SpectralEarth-FM, we curate SpectralEarth-MM, a dataset that co-locates HSI from three spaceborne sensors (EnMAP, EMIT, DESIS) with Sentinel-2, Landsat-8/9 optical imagery, Landsat land surface temperature (LST), and Sentinel-1 SAR, over common geographic footprints. It comprises approximately 2M globally distributed locations, 25M georeferenced patches, and over 40TB of data. Pretraining uses a Joint-Embedding Predictive Architecture (JEPA)-style objective that matches representations between global views and single-sensor local views from the same location. We evaluate SpectralEarth-FM on hyperspectral downstream tasks and standard EO benchmarks following the PANGAEA protocol, achieving state-of-the-art results across both evaluation settings.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{braham2026spectralearthfm,\n  title={SpectralEarth-FM: Bringing Hyperspectral Imagery into Multimodal Earth Observation Pretraining},\n  author={Nassim Ait Ali Braham and Aaron Banze and Conrad M. Albrecht and Julien Mairal and Jocelyn Chanussot and Xiao Xiang Zhu},\n  journal={arXiv preprint arXiv:2605.21075v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.21075v1}\n}",
+    "Authors": "Nassim Ait Ali Braham, Aaron Banze, Conrad M. Albrecht, Julien Mairal, Jocelyn Chanussot, Xiao Xiang Zhu",
+    "_added_date": "2026-05-21",
+    "Category": "Method",
+    "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-05-19",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "MetaEarth-MM: Unified Multimodal Remote Sensing Image Generation with Scene-centered Joint Modeling",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.20090v1",
+    "Abstract": "Multi-modal remote sensing images are vital for Earth observation, yet complete paired observations are often scarce in practice. Existing generative methods commonly address this problem through isolated pairwise modality translation, but their versatility and scalability remain limited as the number of modalities and generation tasks increases. Here, we develop a generative foundation model MetaEarth-MM for multi-modal remote sensing imagery, enabling paired joint generation and any-to-any translation across five modalities within a unified model. Recognizing the intrinsic scene consistency underlying multi-modal observations, we introduce a scene-centered joint modeling paradigm in MetaEarth-MM. Unlike previous methods that rely on direct appearance-level cross-modal mapping, our model organizes the generation around the underlying scene content. Specifically, MetaEarth-MM adopts a decoupled architecture that first infers a latent scene representation from available observations, and then generates target modalities conditioned on this intermediate state. To support training, we further construct EarthMM, a large-scale dataset comprising 2.8 million multi-resolution global images with 2.2 million aligned pairs. Extensive experiments demonstrate that MetaEarth-MM not only exhibits strong generative capability and robust generalization across diverse generation tasks, but also supports downstream tasks at both data and representation levels, highlighting its potential as a general foundation model for cross-modal Earth observation. The code and dataset will be available at https://github.com/YZPioneer/MetaEarth-MM.",
+    "code": "https://github.com/YZPioneer/MetaEarth-MM",
+    "Publication": "",
+    "BibTex": "@article{yu2026metaearthmm,\n  title={MetaEarth-MM: Unified Multimodal Remote Sensing Image Generation with Scene-centered Joint Modeling},\n  author={Zhiping Yu and Chenyang Liu and Jinqi Cao and Qinzhe Yang and Siwei Yu and Zhengxia Zou and Zhenwei Shi},\n  journal={arXiv preprint arXiv:2605.20090v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.20090v1}\n}",
+    "Authors": "Zhiping Yu, Chenyang Liu, Jinqi Cao, Qinzhe Yang, Siwei Yu, Zhengxia Zou, Zhenwei Shi",
+    "_added_date": "2026-05-21",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]

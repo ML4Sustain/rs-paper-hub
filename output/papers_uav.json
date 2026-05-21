@@ -5679,5 +5679,24 @@
     "_added_date": "2026-05-18",
     "Category": "Method",
     "_tasks": "OD"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-05-20",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "LER-YOLO: Reliability-Aware Expert Routing for Misaligned RGB-Infrared UAV Detection",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.20667v1",
+    "Abstract": "Detecting small unmanned aerial vehicles from RGB-infrared remote-sensing pairs remains challenging due to tiny target scale, cluttered backgrounds, and spatial misalignment between heterogeneous sensors. Existing bimodal detectors often align or fuse features without assessing the reliability of local cross-sensor correspondence, allowing mismatch artifacts to propagate into the detection head. To address this issue, we propose LER-YOLO, a reliability-aware sparse mixture-of-experts framework for misaligned RGB-infrared UAV detection. LER-YOLO first introduces an Uncertainty-Aware Target Alignment module that resamples visible features toward the infrared reference and estimates a spatial reliability map. This reliability prior is then used by a Reliability-Guided Sparse MoE Fusion module to adaptively select k experts from RGB-dominant, infrared-dominant, and interactive fusion experts, enabling trustworthy cross-modal interaction while suppressing unreliable fusion. Experiments on the public MBU benchmark under a YOLOv5s-family protocol show that LER-YOLO achieves 89.7+/-0.2% AP50 over three independent seeds, with a best result of 89.9%. Extensive ablations, parameter-matched comparisons, synthetic-shift evaluations, and complexity analysis demonstrate that the gains mainly come from reliability-guided expert routing rather than increased model capacity.",
+    "code": "",
+    "Publication": "17 pages, 6 figures",
+    "BibTex": "@article{hou2026leryolo,\n  title={LER-YOLO: Reliability-Aware Expert Routing for Misaligned RGB-Infrared UAV Detection},\n  author={Liming Hou and Yueping Peng and Hexiang Hao and Ji Wang and Xuekai Zhang and Wei Tang and Zecong Ye and Xin Ying and Yubo He},\n  journal={arXiv preprint arXiv:2605.20667v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.20667v1}\n}",
+    "Authors": "Liming Hou, Yueping Peng, Hexiang Hao, Ji Wang, Xuekai Zhang, Wei Tang, Zecong Ye, Xin Ying, Yubo He",
+    "_added_date": "2026-05-21",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]

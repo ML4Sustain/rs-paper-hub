@@ -4,12 +4,65 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-20T05:08:38Z</updated>
+  <updated>2026-05-21T01:59:52Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>SpectralEarth-FM: Bringing Hyperspectral Imagery into Multimodal Earth Observation Pretraining</title>
+    <link href="http://arxiv.org/abs/2605.21075v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.21075v1</id>
+    <published>2026-05-20T00:00:00Z</published>
+    <updated>2026-05-20T00:00:00Z</updated>
+    <author>
+      <name>Nassim Ait Ali Braham</name>
+    </author>
+    <author>
+      <name>Aaron Banze</name>
+    </author>
+    <author>
+      <name>Conrad M. Albrecht</name>
+    </author>
+    <author>
+      <name>Julien Mairal</name>
+    </author>
+    <author>
+      <name>Jocelyn Chanussot</name>
+    </author>
+    <author>
+      <name>Xiao Xiang Zhu</name>
+    </author>
+    <summary type="text">Earth observation (EO) foundation models (FMs) are increasingly trained on multisensor data, spanning multispectral imagery (MSI), synthetic aperture radar (SAR), and derived geospatial layers, but hyperspectral imagery (HSI) remains underrepresented. Conversely, existing hyperspectral FMs are trained on HSI alone, leaving joint pretraining and fusion of HSI with co-located EO sensors unexplored. We introduce SpectralEarth-FM, a hierarchical transformer for multisensor EO input with heterogeneous spectral dimensionality. The architecture combines spectral tokenization for hyperspectral inputs, sensor-specific encoders, a cross-sensor fusion module, and a shared hierarchical encoder, enabling joint processing of HSI and lower-channel observations. To pretrain SpectralEarth-FM, we curate SpectralEarth-MM, a dataset that co-locates HSI from three spaceborne sensors (EnMAP, EMIT, DESIS) with Sentinel-2, Landsat-8/9 optical imagery, Landsat land surface temperature (LST), and Sentinel-1 SAR, over common geographic footprints. It comprises approximately 2M globally distributed locations, 25M georeferenced patches, and over 40TB of data. Pretraining uses a Joint-Embedding Predictive Architecture (JEPA)-style objective that matches representations between global views and single-sensor local views from the same location. We evaluate SpectralEarth-FM on hyperspectral downstream tasks and standard EO benchmarks following the PANGAEA protocol, achieving state-of-the-art results across both evaluation settings.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Hybrid Machine Learning Model for Forest Height Estimation from TanDEM-X and Landsat Data</title>
+    <link href="http://arxiv.org/abs/2605.20997v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.20997v1</id>
+    <published>2026-05-20T00:00:00Z</published>
+    <updated>2026-05-20T00:00:00Z</updated>
+    <author>
+      <name>Islam Mansour</name>
+    </author>
+    <author>
+      <name>Ronny Haensch</name>
+    </author>
+    <author>
+      <name>Irena Hajnsek</name>
+    </author>
+    <author>
+      <name>Konstantinos Papathanassiou</name>
+    </author>
+    <summary type="text">Integrating machine learning (ML) with physical models (PM) has emerged as a promising way of retrieving geophysical parameters from remote sensing data. In this context, a ML model for estimating forest height from TanDEM-X interferometric coherence measurements has recently been proposed, that constrains the learning process through a PM. While the features used for training and inversion where selected to ensure the physical consistency of the solutions, they could not resolve all height / structure and baseline / terrain slope ambiguities in the data. To improve this, the extension of the feature space with optical Landsat data is proposed able to provide complementary information on forest type or structure. The extended model is applied and validated on several TanDEM-X acquisitions over the Gabonese Lopé national park site and assessed against airborne LiDAR measurements. Results show a 13.5% reduction in RMSE and a 16.6% reduction in MAE compared to the original hybrid model, confirming the added value of multispectral inputs.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence; Machine Learning; physics.comp-ph" />
+  </entry>
   <entry>
     <title>Large-Scale Quantum Kernels for Hyperspectral Data Classification</title>
     <link href="http://arxiv.org/abs/2605.17587v1" rel="alternate" type="text/html" />
@@ -67,56 +120,5 @@
     <summary type="text">Hyperspectral imaging (HSI) provides dense spectral information for the Earth's surface, enabling material-level understanding of land cover and ecosystem dynamics. Despite recent progress in hyperspectral self-supervised learning (SSL), existing datasets remain temporally shallow, limiting the development of long-horizon spatiotemporal modeling. To address this gap, we introduce ChronoEarth-492K, the first large-scale, temporally calibrated hyperspectral SSL dataset built upon NASA's EO-1 Hyperion mission, the world's longest continuous hyperspectral archive up to date (2001-2017). ChronoEarth-492K comprises 492,354 radiometrically harmonized patches across 185,398 global locations over 17 years, with 28,786 sites containing multi-temporal sequences ($\geq 3$ observations) that enable both short- and long-horizon temporal analysis. Building on this foundation, we establish the ChronoEarth-Benchmark, a unified evaluation suite spanning static, short-horizon, and long-horizon temporal tasks, constructed from six open-source geospatial products covering land cover, crop type, forest dynamics, and soil properties. We further introduce a standardized evaluation protocol and report extensive baseline results across state-of-the-art hyperspectral foundation models. Together, ChronoEarth and benchmark provide the first large-scale, temporally grounded platform for systematic spatiotemporal hyperspectral representation learning.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>TERRA-CD: Multi-Temporal Framework for Multi-class and Semantic Change Detection</title>
-    <link href="http://arxiv.org/abs/2605.14651v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.14651v1</id>
-    <published>2026-05-14T00:00:00Z</published>
-    <updated>2026-05-14T00:00:00Z</updated>
-    <author>
-      <name>Omkar Oak</name>
-    </author>
-    <author>
-      <name>Rukmini Nazre</name>
-    </author>
-    <author>
-      <name>Rujuta Budke</name>
-    </author>
-    <author>
-      <name>Suraj Sawant</name>
-    </author>
-    <summary type="text">Urban vegetation monitoring plays a vital role in understanding environmental changes, yet comprehensive datasets for this purpose remain limited. To address this gap, we present the Temporal Remote-sensing Repository for Analyzing Change Detection (TERRA-CD), a benchmark dataset comprising 5,221 Sentinel-2 image pairs from 2019 and 2024, covering 232 cities across the USA and Europe. The dataset features three distinct annotation schemes: 4-class land cover mapping masks, 3-class vegetation change masks, and 13-class semantic change masks capturing all possible land cover transitions. Using various deep learning approaches including Siamese networks, STANet variants, Bi-SRNet, Changemask, Post-Classification Comparison, and HRSCD strategies, we evaluated the dataset's effectiveness for both vegetation Multi-class Change Detection as well as Semantic Change Detection. The proposed dataset and methods are available at https://github.com/omkarsoak/TERRA-CD.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/omkarsoak/TERRA-CD"&gt;https://github.com/omkarsoak/TERRA-CD&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Paper presented at 11th International Congress on Information and Communication Technology (ICICT) 2026, London&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>ArcGate: Adaptive Arctangent Gated Activation</title>
-    <link href="http://arxiv.org/abs/2605.14518v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.14518v1</id>
-    <published>2026-05-14T00:00:00Z</published>
-    <updated>2026-05-14T00:00:00Z</updated>
-    <author>
-      <name>Avik Bhattacharya</name>
-    </author>
-    <author>
-      <name>Siddhant Dnyanesh Gole</name>
-    </author>
-    <author>
-      <name>Subhasis Chaudhuri</name>
-    </author>
-    <author>
-      <name>Alejandro C. Frery</name>
-    </author>
-    <author>
-      <name>Biplab Banerjee</name>
-    </author>
-    <summary type="text">Activation functions are central to deep networks, influencing non-linearity, feature learning, convergence, and robustness. This paper proposes the Adaptive Arctangent Gated Activation (ArcGate) function, a flexible formulation that generates a broad spectrum of activation shapes via a three-stage non-linear transformation. Unlike conventional fixed-shape activations such as ReLU, GELU, or SiLU, ArcGate uses seven learnable parameters per layer, allowing the neural network to autonomously optimize its non-linearity to the specific requirements of the feature hierarchy and data distribution. We evaluate ArcGate using ResNet-50 and Vision Transformer (ViT-B/16) architectures on three widely used remote sensing benchmarks: PatternNet, UC Merced Land Use, and the 13-band EuroSAT MSI multispectral dataset. Experimental results show that ArcGate consistently outperforms standard baselines, achieving a peak overall accuracy of 99.67% on PatternNet. Most notably, ArcGate exhibits superior structural resilience in noisy environments, maintaining a 26.65% performance lead over ReLU under moderate Gaussian noise (standard deviation 0.1). Analysis of the learned parameters reveals a depth-dependent functional evolution, where the model increases gating strength in deeper layers to enhance signal propagation. These findings suggest that ArcGate is a robust and adaptive general node activation function for high-resolution earth observation tasks.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
   </entry>
 </feed>

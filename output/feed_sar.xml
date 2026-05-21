@@ -4,12 +4,65 @@
   <id>https://rspaper.top/output/feed_sar.xml</id>
   <link href="https://rspaper.top/output/feed_sar.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-20T05:08:38Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 1 entries</subtitle>
+  <updated>2026-05-21T01:59:52Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>SpectralEarth-FM: Bringing Hyperspectral Imagery into Multimodal Earth Observation Pretraining</title>
+    <link href="http://arxiv.org/abs/2605.21075v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.21075v1</id>
+    <published>2026-05-20T00:00:00Z</published>
+    <updated>2026-05-20T00:00:00Z</updated>
+    <author>
+      <name>Nassim Ait Ali Braham</name>
+    </author>
+    <author>
+      <name>Aaron Banze</name>
+    </author>
+    <author>
+      <name>Conrad M. Albrecht</name>
+    </author>
+    <author>
+      <name>Julien Mairal</name>
+    </author>
+    <author>
+      <name>Jocelyn Chanussot</name>
+    </author>
+    <author>
+      <name>Xiao Xiang Zhu</name>
+    </author>
+    <summary type="text">Earth observation (EO) foundation models (FMs) are increasingly trained on multisensor data, spanning multispectral imagery (MSI), synthetic aperture radar (SAR), and derived geospatial layers, but hyperspectral imagery (HSI) remains underrepresented. Conversely, existing hyperspectral FMs are trained on HSI alone, leaving joint pretraining and fusion of HSI with co-located EO sensors unexplored. We introduce SpectralEarth-FM, a hierarchical transformer for multisensor EO input with heterogeneous spectral dimensionality. The architecture combines spectral tokenization for hyperspectral inputs, sensor-specific encoders, a cross-sensor fusion module, and a shared hierarchical encoder, enabling joint processing of HSI and lower-channel observations. To pretrain SpectralEarth-FM, we curate SpectralEarth-MM, a dataset that co-locates HSI from three spaceborne sensors (EnMAP, EMIT, DESIS) with Sentinel-2, Landsat-8/9 optical imagery, Landsat land surface temperature (LST), and Sentinel-1 SAR, over common geographic footprints. It comprises approximately 2M globally distributed locations, 25M georeferenced patches, and over 40TB of data. Pretraining uses a Joint-Embedding Predictive Architecture (JEPA)-style objective that matches representations between global views and single-sensor local views from the same location. We evaluate SpectralEarth-FM on hyperspectral downstream tasks and standard EO benchmarks following the PANGAEA protocol, achieving state-of-the-art results across both evaluation settings.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Hybrid Machine Learning Model for Forest Height Estimation from TanDEM-X and Landsat Data</title>
+    <link href="http://arxiv.org/abs/2605.20997v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.20997v1</id>
+    <published>2026-05-20T00:00:00Z</published>
+    <updated>2026-05-20T00:00:00Z</updated>
+    <author>
+      <name>Islam Mansour</name>
+    </author>
+    <author>
+      <name>Ronny Haensch</name>
+    </author>
+    <author>
+      <name>Irena Hajnsek</name>
+    </author>
+    <author>
+      <name>Konstantinos Papathanassiou</name>
+    </author>
+    <summary type="text">Integrating machine learning (ML) with physical models (PM) has emerged as a promising way of retrieving geophysical parameters from remote sensing data. In this context, a ML model for estimating forest height from TanDEM-X interferometric coherence measurements has recently been proposed, that constrains the learning process through a PM. While the features used for training and inversion where selected to ensure the physical consistency of the solutions, they could not resolve all height / structure and baseline / terrain slope ambiguities in the data. To improve this, the extension of the feature space with optical Landsat data is proposed able to provide complementary information on forest type or structure. The extended model is applied and validated on several TanDEM-X acquisitions over the Gabonese Lopé national park site and assessed against airborne LiDAR measurements. Results show a 13.5% reduction in RMSE and a 16.6% reduction in MAE compared to the original hybrid model, confirming the added value of multispectral inputs.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence; Machine Learning; physics.comp-ph" />
+  </entry>
   <entry>
     <title>GeoMamba: A Geometry-driven MambaVision Framework and Dataset for Fine-grained Optical-SAR Object Retrieval</title>
     <link href="http://arxiv.org/abs/2605.19734v1" rel="alternate" type="text/html" />

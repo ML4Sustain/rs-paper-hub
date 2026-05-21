@@ -4,12 +4,41 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-20T05:08:38Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 9 entries</subtitle>
+  <updated>2026-05-21T01:59:52Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 7 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>SpectralEarth-FM: Bringing Hyperspectral Imagery into Multimodal Earth Observation Pretraining</title>
+    <link href="http://arxiv.org/abs/2605.21075v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.21075v1</id>
+    <published>2026-05-20T00:00:00Z</published>
+    <updated>2026-05-20T00:00:00Z</updated>
+    <author>
+      <name>Nassim Ait Ali Braham</name>
+    </author>
+    <author>
+      <name>Aaron Banze</name>
+    </author>
+    <author>
+      <name>Conrad M. Albrecht</name>
+    </author>
+    <author>
+      <name>Julien Mairal</name>
+    </author>
+    <author>
+      <name>Jocelyn Chanussot</name>
+    </author>
+    <author>
+      <name>Xiao Xiang Zhu</name>
+    </author>
+    <summary type="text">Earth observation (EO) foundation models (FMs) are increasingly trained on multisensor data, spanning multispectral imagery (MSI), synthetic aperture radar (SAR), and derived geospatial layers, but hyperspectral imagery (HSI) remains underrepresented. Conversely, existing hyperspectral FMs are trained on HSI alone, leaving joint pretraining and fusion of HSI with co-located EO sensors unexplored. We introduce SpectralEarth-FM, a hierarchical transformer for multisensor EO input with heterogeneous spectral dimensionality. The architecture combines spectral tokenization for hyperspectral inputs, sensor-specific encoders, a cross-sensor fusion module, and a shared hierarchical encoder, enabling joint processing of HSI and lower-channel observations. To pretrain SpectralEarth-FM, we curate SpectralEarth-MM, a dataset that co-locates HSI from three spaceborne sensors (EnMAP, EMIT, DESIS) with Sentinel-2, Landsat-8/9 optical imagery, Landsat land surface temperature (LST), and Sentinel-1 SAR, over common geographic footprints. It comprises approximately 2M globally distributed locations, 25M georeferenced patches, and over 40TB of data. Pretraining uses a Joint-Embedding Predictive Architecture (JEPA)-style objective that matches representations between global views and single-sensor local views from the same location. We evaluate SpectralEarth-FM on hyperspectral downstream tasks and standard EO benchmarks following the PANGAEA protocol, achieving state-of-the-art results across both evaluation settings.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
   <entry>
     <title>GeoMamba: A Geometry-driven MambaVision Framework and Dataset for Fine-grained Optical-SAR Object Retrieval</title>
     <link href="http://arxiv.org/abs/2605.19734v1" rel="alternate" type="text/html" />
@@ -36,6 +65,38 @@
     </author>
     <summary type="text">Multi-source remote sensing enables complementary observation of ground objects, while cross-modal fine-grained object retrieval remains challenging, especially under unaligned optical and SAR conditions. Unlike conventional retrieval settings that rely on paired or spatially aligned samples, practical optical-SAR retrieval is affected by substantial modality discrepancy, speckle noise, and structural inconsistency, which limit robust cross-modal representation learning. To address this problem, we propose GeoMamba, a geometry-driven framework tailored for optical-SAR fine-grained retrieval. Specifically, GeoMamba introduces a Geometric Feature Injection (GFI) module that enhances cross-modal feature interaction and incorporates structural priors, thereby improving the robustness of SAR representations and promoting geometry-consistent feature learning. In addition, a Geometric Consistency Constraint (GCC) module, together with a Deep Supervision (DS) strategy, imposes hierarchical geometric constraints using classical operators, which helps preserve informative object structures during representation learning. We further construct a new dataset, FGOS-as, containing 11 aerospace and maritime categories for evaluating unaligned cross-modal fine-grained object retrieval in realistic remote sensing scenarios. Extensive experiments on FGOS-as demonstrate that GeoMamba outperforms existing methods, achieving 63.3% mAP and 77.0% Rank-1 accuracy in all-to-all retrieval setting.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>MetaEarth-MM: Unified Multimodal Remote Sensing Image Generation with Scene-centered Joint Modeling</title>
+    <link href="http://arxiv.org/abs/2605.20090v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.20090v1</id>
+    <published>2026-05-19T00:00:00Z</published>
+    <updated>2026-05-19T00:00:00Z</updated>
+    <author>
+      <name>Zhiping Yu</name>
+    </author>
+    <author>
+      <name>Chenyang Liu</name>
+    </author>
+    <author>
+      <name>Jinqi Cao</name>
+    </author>
+    <author>
+      <name>Qinzhe Yang</name>
+    </author>
+    <author>
+      <name>Siwei Yu</name>
+    </author>
+    <author>
+      <name>Zhengxia Zou</name>
+    </author>
+    <author>
+      <name>Zhenwei Shi</name>
+    </author>
+    <summary type="text">Multi-modal remote sensing images are vital for Earth observation, yet complete paired observations are often scarce in practice. Existing generative methods commonly address this problem through isolated pairwise modality translation, but their versatility and scalability remain limited as the number of modalities and generation tasks increases. Here, we develop a generative foundation model MetaEarth-MM for multi-modal remote sensing imagery, enabling paired joint generation and any-to-any translation across five modalities within a unified model. Recognizing the intrinsic scene consistency underlying multi-modal observations, we introduce a scene-centered joint modeling paradigm in MetaEarth-MM. Unlike previous methods that rely on direct appearance-level cross-modal mapping, our model organizes the generation around the underlying scene content. Specifically, MetaEarth-MM adopts a decoupled architecture that first infers a latent scene representation from available observations, and then generates target modalities conditioned on this intermediate state. To support training, we further construct EarthMM, a large-scale dataset comprising 2.8 million multi-resolution global images with 2.2 million aligned pairs. Extensive experiments demonstrate that MetaEarth-MM not only exhibits strong generative capability and robust generalization across diverse generation tasks, but also supports downstream tasks at both data and representation levels, highlighting its potential as a general foundation model for cross-modal Earth observation. The code and dataset will be available at https://github.com/YZPioneer/MetaEarth-MM.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/YZPioneer/MetaEarth-MM"&gt;https://github.com/YZPioneer/MetaEarth-MM&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
   <entry>
@@ -173,173 +234,6 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
     <category term="Image and Video Processing" />
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>GeoVista: Visually Grounded Active Perception for Ultra-High-Resolution Remote Sensing Understanding</title>
-    <link href="http://arxiv.org/abs/2605.14475v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.14475v1</id>
-    <published>2026-05-14T00:00:00Z</published>
-    <updated>2026-05-14T00:00:00Z</updated>
-    <author>
-      <name>Jiashun Zhu</name>
-    </author>
-    <author>
-      <name>Ronghao Fu</name>
-    </author>
-    <author>
-      <name>Jiasen Hu</name>
-    </author>
-    <author>
-      <name>Nachuan Xing</name>
-    </author>
-    <author>
-      <name>Xu Na</name>
-    </author>
-    <author>
-      <name>Xiao Yang</name>
-    </author>
-    <author>
-      <name>Zhiwen Lin</name>
-    </author>
-    <author>
-      <name>Weipeng Zhang</name>
-    </author>
-    <author>
-      <name>Lang Sun</name>
-    </author>
-    <author>
-      <name>Zhiheng Xue</name>
-    </author>
-    <author>
-      <name>Haoran Liu</name>
-    </author>
-    <author>
-      <name>Weijie Zhang</name>
-    </author>
-    <author>
-      <name>Bo Yang</name>
-    </author>
-    <summary type="text">Interpreting ultra-high-resolution (UHR) remote sensing images requires models to search for sparse and tiny visual evidence across large-scale scenes. Existing remote sensing vision-language models can inspect local regions with zooming and cropping tools, but most exploration strategies follow either a one-shot focus or a single sequential trajectory. Such single-path exploration can lose global context, leave scattered regions unvisited, and revisit or count the same evidence multiple times. To this end, we propose GeoVista, a planning-driven active perception framework for UHR remote sensing interpretation. Instead of committing to one zooming path, GeoVista first builds a global exploration plan, then verifies multiple candidate regions through branch-wise local inspection, while maintaining an explicit evidence state for cross-region aggregation and de-duplication. To enable this behavior, we introduce APEX-GRO, a cold-start supervised trajectory corpus that reformulates diverse UHR tasks as Global-Region-Object interactive reasoning processes with a unified, scale-invariant spatial representation. We further design an Observe-Plan-Track mechanism for global observation, adaptive region inspection, and evidence tracking, and align the model with a GRPO-based strategy using step-wise rewards for planning, localization, and final answer correctness. Experiments on RSHR-Bench, XLRS-Bench, and LRS-VQA show that GeoVista achieves state-of-the-art performance. Code and dataset are available at https://github.com/ryan6073/GeoVista</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/ryan6073/GeoVista"&gt;https://github.com/ryan6073/GeoVista&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>GeoViSTA: Geospatial Vision-Tabular Transformer for Multimodal Environment Representation</title>
-    <link href="http://arxiv.org/abs/2605.14406v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.14406v1</id>
-    <published>2026-05-14T00:00:00Z</published>
-    <updated>2026-05-14T00:00:00Z</updated>
-    <author>
-      <name>Yuhao Liu</name>
-    </author>
-    <author>
-      <name>Sadeer Al-Kindi</name>
-    </author>
-    <author>
-      <name>Ashok Veeraraghavan</name>
-    </author>
-    <author>
-      <name>Guha Balakrishnan</name>
-    </author>
-    <summary type="text">Large-scale pretraining on Earth observation imagery has yielded powerful representations of the natural and built environment. However, most existing geospatial foundation models do not directly model the structured socioeconomic covariates typically stored in tabular form. This modality gap limits their ability to capture the complete total environment, which is critical for reasoning about complex environmental, social, and health-related outcomes. In this work, we propose GeoViSTA (Geospatial Vision-Tabular Transformer), a vision-tabular architecture that learns unified geospatial embeddings from co-registered gridded imagery and tabular data. GeoViSTA utilizes bilateral cross-attention to exchange spatial and semantic information across modalities, guided by a geography-aware attention mechanism that aligns continuous image patches with irregular census-tract tokens. We train GeoViSTA with a self-supervised joint masked-autoencoding objective, forcing it to recover missing image patches and tabular rows using local spatial context and cross-modal cues. Empirically, GeoViSTA's unified embeddings improve linear probing performance on high-impact downstream tasks, outperforming baselines in predicting disease-specific mortality and fire hazard frequency across held-out regions. These results demonstrate that jointly modeling the physical environment alongside structured socioeconomic context yields highly transferable representations for holistic geospatial inference.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>HiSem: Hierarchical Semantic Disentangling for Remote Sensing Image Change Captioning</title>
-    <link href="http://arxiv.org/abs/2605.15024v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.15024v1</id>
-    <published>2026-05-14T00:00:00Z</published>
-    <updated>2026-05-14T00:00:00Z</updated>
-    <author>
-      <name>Man Wang</name>
-    </author>
-    <author>
-      <name>Chenyang Liu</name>
-    </author>
-    <author>
-      <name>Wenjun Li</name>
-    </author>
-    <author>
-      <name>Feng Ni</name>
-    </author>
-    <author>
-      <name>Bing Jia</name>
-    </author>
-    <author>
-      <name>Baoqi Huang</name>
-    </author>
-    <author>
-      <name>Riting Xia</name>
-    </author>
-    <author>
-      <name>Zhenwei Shi</name>
-    </author>
-    <summary type="text">Remote sensing image change captioning (RSICC) aims to achieve high-level semantic understanding of genuine changes occurring between bi-temporal images. Despite notable progress, existing methods are fundamentally limited by a shared modeling assumption: changed and unchanged image pairs, which have intrinsically different semantic granularities, are processed under a unified modeling strategy. This modeling inconsistency leads to semantic entanglement between coarse-grained change existence judgment and fine-grained semantic understanding.To address the above limitation, we propose a novel hierarchical semantic disentangling network (HiSem) that explicitly disentangles semantic representations of different granularities. Specifically, we first introduce the Bidirectional Differential Attention Modulation (BDAM) module that leverages discrepancy-aware attention to enhance cross-temporal interactions, thereby amplifying true change signals while suppressing irrelevant variations. Building upon this, we design a Hierarchical Adaptive Semantic Disentanglement (HASD) module that performs adaptive routing at two hierarchical levels: a coarse-grained image-level routing mechanism distinguishes changed and unchanged image pairs, while a fine-grained token-level Mixture-of-Experts (MoE) block models diverse and heterogeneous change semantics for changed samples. Extensive experiments on two benchmark datasets demonstrate that HiSem outperfoms previous methods, achieving a significant improvement of +7.52\% BLEU-4 on the WHU-CDC dataset. More importantly, our approach provides a structured perspective for RSICC by explicitly aligning model design with the intrinsic semantic heterogeneity of bi-temporal scenes. The code will be available at https://github.com/Man-Wang-star/HiSem</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Man-Wang-star/HiSem"&gt;https://github.com/Man-Wang-star/HiSem&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>ELDOR: A Dataset and Benchmark for Illegal Gold Mining in the Amazon Rainforest</title>
-    <link href="http://arxiv.org/abs/2605.15397v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.15397v1</id>
-    <published>2026-05-14T00:00:00Z</published>
-    <updated>2026-05-14T00:00:00Z</updated>
-    <author>
-      <name>Kangning Cui</name>
-    </author>
-    <author>
-      <name>Surendra Bohara</name>
-    </author>
-    <author>
-      <name>Suraj Prasai</name>
-    </author>
-    <author>
-      <name>Zishan Shao</name>
-    </author>
-    <author>
-      <name>Wei Tang</name>
-    </author>
-    <author>
-      <name>Martin Pillaca</name>
-    </author>
-    <author>
-      <name>Edwin Flores</name>
-    </author>
-    <author>
-      <name>Zhen Yang</name>
-    </author>
-    <author>
-      <name>Gregory Larsen</name>
-    </author>
-    <author>
-      <name>Evan Dethier</name>
-    </author>
-    <author>
-      <name>David Lutz</name>
-    </author>
-    <author>
-      <name>Jean-Michel Morel</name>
-    </author>
-    <author>
-      <name>Miles Silman</name>
-    </author>
-    <author>
-      <name>Victor Pauca</name>
-    </author>
-    <author>
-      <name>Fan Yang</name>
-    </author>
-    <summary type="text">Illegal gold mining in the Amazon rainforest causes deforestation, water contamination, and long-term ecosystem disruption, yet remains difficult to monitor at fine spatial scales. Satellite imagery supports large-scale observation, but often misses small mining-related structures and subtle land-cover transitions, especially under frequent cloud cover. We introduce ELDOR, a large-scale UAV benchmark for monitoring environmental and landscape disturbance from illegal gold mining in the rainforest. ELDOR contains manually annotated orthomosaic imagery covering over 2,500 hectares, with pixel-level semantic labels for both mining-related activities and surrounding ecological structures. With this unified annotation source, we establish four benchmark tasks: semantic segmentation, segmentation-derived recognition, direct multi-label classification, and class-presence recognition with vision-language models. Across these tasks, we compare generic and remote-sensing-specific segmentation models, vision foundation model-related segmentation methods, direct multi-label classification methods, and vision-language models under a controlled closed-set protocol. Results show that current methods still struggle with rare small-scale mining structures and fine-grained recovery classes, suggesting the need for context-aware and multimodal modeling. To support domain analysis and practical use, we further build an interactive explorer for domain experts that provides a unified interface for data exploration and model inference.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 70 pages, 35 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;SEG&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>
