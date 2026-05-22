@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-21T05:06:00Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 7 entries</subtitle>
+  <updated>2026-05-22T02:07:38Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 6 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -209,31 +209,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Image and Video Processing" />
-  </entry>
-  <entry>
-    <title>Text-RSIR: A Text-Guided Framework for Efficient Remote Sensing Image Transmission and Reconstruction</title>
-    <link href="http://arxiv.org/abs/2605.15558v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.15558v1</id>
-    <published>2026-05-15T00:00:00Z</published>
-    <updated>2026-05-15T00:00:00Z</updated>
-    <author>
-      <name>Hao Yang</name>
-    </author>
-    <author>
-      <name>Xianping Ma</name>
-    </author>
-    <author>
-      <name>Peifeng Ma</name>
-    </author>
-    <author>
-      <name>Man-On Pun</name>
-    </author>
-    <summary type="text">High-resolution remote sensing imagery is critical for environmental monitoring, urban mapping, and land cover analysis, but its transmission is often hindered by limited bandwidth and high communication costs. Conventional pipelines transmit full-resolution pixel data, resulting in redundant and inefficient delivery. This paper proposes a text-guided remote sensing image transmission system that replaces complete high-resolution data with low-resolution images accompanied by compact textual descriptions. An onboard text generator produces spatial and semantic summaries, reducing the transmitted data volume to approximately 2\% of the original size. For ground-based reconstruction, a text-conditioned image restoration model is introduced, which leverages cross-modal learning to recover fine spatial details and maintain semantic coherence. Experimental results on the Alsat-2B, UC Merced Land Use, and Aerial Image datasets demonstrate that the proposed framework achieves reconstruction PSNRs of 16.36 dB, 26.87 dB, and 27.41 dB, respectively, enabling efficient and information-preserving image transfer for remote sensing applications. The implementation will be made publicly available at \href{https://github.com/haoyangofficial/textrssr}{GitHub}.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/haoyangofficial/textrssr"&gt;https://github.com/haoyangofficial/textrssr&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages, 8 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
-    <category term="Image and Video Processing" />
-    <category term="Computer Vision" />
   </entry>
 </feed>
