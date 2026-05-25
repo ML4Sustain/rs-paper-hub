@@ -16851,5 +16851,24 @@
     "_added_date": "2026-05-21",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-05-22",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "SLIP-RS: Structured-Attribute Language-Image Pre-Training for Remote Sensing Object Detection",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.23144v1",
+    "Abstract": "Existing language-image pre-training for remote sensing object detection is constrained by Monolithic Label Learning, which relies on exhaustively enumerating open-set categories via black-box data to acquire fine-grained representations, creating a dependency incompatible with the domain's inherent data scarcity. To transcend this bottleneck, we propose SLIP-RS, establishing a Structured-Attribute Decoupling Paradigm that maps the open-ended category space into a finite, physically meaningful attribute space, unlocking fine-grained discriminability via explicit structural logic. This paradigm is realized via two technical pillars: (1) Structured-Attribute Contrastive Learning, which enforces the learning of decoupled intrinsic visual logic via combinatorial attribute augmentation; and (2) Conformal Attribute Reliability Engine, which leverages conformal prediction theory to rigorously distill high-fidelity supervision from noisy sources, yielding RS-Attribute-15M, the largest dataset with over 15 million attribute annotations. Extensive experiments demonstrate that SLIP-RS establishes unprecedented performance in fine-grained detection and cross-domain generalization, validating structured attributes as a vital foundation for remote sensing. Code: https://github.com/facias914/SLIP-RS.",
+    "code": "https://github.com/facias914/SLIP-RS",
+    "Publication": "",
+    "BibTex": "@article{wang2026sliprs,\n  title={SLIP-RS: Structured-Attribute Language-Image Pre-Training for Remote Sensing Object Detection},\n  author={Chenxu Wang and Yuxuan Li and Yunheng Li and Xiang Li and Jingyuan Xia and Qibin Hou},\n  journal={arXiv preprint arXiv:2605.23144v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.23144v1}\n}",
+    "Authors": "Chenxu Wang, Yuxuan Li, Yunheng Li, Xiang Li, Jingyuan Xia, Qibin Hou",
+    "_added_date": "2026-05-25",
+    "Category": "Method",
+    "_tasks": "OD"
   }
 ]
