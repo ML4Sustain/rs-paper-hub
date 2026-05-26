@@ -18884,5 +18884,43 @@
     "_added_date": "2026-05-21",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Artificial Intelligence",
+    "Date": "2026-05-23",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Coarse-to-Fine Domain Incremental Learning with Attentive Distillation for Mining Footprint Segmentation in Multispectral Imagery",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.24460v1",
+    "Abstract": "Automatically mapping and segmenting global mining footprints using remote sensing and deep learning is critical for monitoring the socio-environmental risks and impacts of mining, yet its progress is hindered by the scarcity of fine-grained annotated data. Although large-scale datasets with coarse boundaries are widely available, leveraging them to improve fine-grained segmentation is challenging due to significant domain shift. To address this, we propose MineC2FNet, a coarse-to-fine domain incremental learning framework that exploits abundant coarse data to enhance fine-grained mining footprint segmentation. MineC2FNet adopts a teacher-student architecture with attentive distillation at both the feature and prediction levels, selectively transferring generalized knowledge from the coarse domain while enabling boundary refinement using limited fine-grained data (fine domain). We further introduce an expertly validated dataset of 219 images with precise boundary annotations across diverse geographies and commodities. Extensive experiments against state-of-the-art approaches, including domain adaptation and domain incremental learning methods, demonstrate that MineC2FNet achieves superior performance while effectively handling domain shift. The dataset and code are publicly available at https://github.com/risqiutama/MineC2FNet.",
+    "code": "https://github.com/risqiutama/MineC2FNet",
+    "Publication": "",
+    "BibTex": "@article{handoyo2026coarsetofine,\n  title={Coarse-to-Fine Domain Incremental Learning with Attentive Distillation for Mining Footprint Segmentation in Multispectral Imagery},\n  author={Alif Tri Handoyo and Vincent C. S. Lee and Rizka Widyarini Purwanto and Alex M. Lechner and Deanna Kemp and Muhamad Risqi U. Saputra},\n  journal={arXiv preprint arXiv:2605.24460v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.24460v1}\n}",
+    "Authors": "Alif Tri Handoyo, Vincent C. S. Lee, Rizka Widyarini Purwanto, Alex M. Lechner, Deanna Kemp, Muhamad Risqi U. Saputra",
+    "_added_date": "2026-05-26",
+    "Category": "Method",
+    "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Artificial Intelligence; stat.AP",
+    "Date": "2026-05-19",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Remote sensing data imputation using deep learning for multispectral imagery",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.24003v1",
+    "Abstract": "Remote sensing techniques have been increasingly utilised in aquatic applications in recent years. A common challenge in using optical satellite data is the presence of missing observations due to cloud cover. These data gaps can lead to missed detection of critical events, such as algal blooms, in lakes of high interest to water authorities. As a result, enhancing the completeness of optical satellite datasets is crucial for improving the monitoring and prediction of algal blooms. In this study, we compared a traditional data imputation method (i.e., linear interpolation) with deep learning models for reconstructing missing spectral bands across four lakes with historical records of algal blooms. The deep learning models adopted include CNN-based architectures (i.e., CNN, Inception Resnet, and Autoencoder) and CNN-LSTM-based architectures (i.e., CNN-LSTM, Resnet-LSTM, and Autoencoder-LSTM). Our results demonstrated that deep learning models substantially outperformed the baseline linear interpolation method in imputing spectral band values within artificially masked regions. Among these models, CNN delivered the best performance across most lakes. Furthermore, we evaluated the performance of algal bloom indices (i.e., Green/Red and NDCI) derived from the imputed imagery by comparing them with the observed data. Our results demonstrate that deep learning models are effective for imputing missing data in PlanetScope SuperDove imagery, enabling more reliable applications in water monitoring.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{liua2026remote,\n  title={Remote sensing data imputation using deep learning for multispectral imagery},\n  author={Shuang Liua and Fiona Johnson and Rohitash Chandra},\n  journal={arXiv preprint arXiv:2605.24003v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.24003v1}\n}",
+    "Authors": "Shuang Liua, Fiona Johnson, Rohitash Chandra",
+    "_added_date": "2026-05-26",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]

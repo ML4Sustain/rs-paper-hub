@@ -4,12 +4,36 @@
   <id>https://rspaper.top/output/feed_sar.xml</id>
   <link href="https://rspaper.top/output/feed_sar.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-25T05:17:34Z</updated>
+  <updated>2026-05-26T01:56:39Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Overcoming "Physics Shock" in Earth Observation A Heteroscedastic Uncertainty Framework for PINN-based Flood Inference</title>
+    <link href="http://arxiv.org/abs/2605.24106v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.24106v1</id>
+    <published>2026-05-22T00:00:00Z</published>
+    <updated>2026-05-22T00:00:00Z</updated>
+    <author>
+      <name>Tewodros Syum Gebre</name>
+    </author>
+    <author>
+      <name>Jagrati Talreja</name>
+    </author>
+    <author>
+      <name>Matilda Anokye</name>
+    </author>
+    <author>
+      <name>Leila Hashemi-Beni</name>
+    </author>
+    <summary type="text">Rapid and accurate flood extent mapping from Remote Sensing data, such as Synthetic Aperture Radar (SAR), is critical for operational disaster response, but standard Deep Learning models often produce physically impossible predictions due to a lack of hydrological constraints. While PhysicsInformed Neural Networks (PINNs) attempt to address this by embedding governing laws directly into the loss function, their application to real-world remote sensing data frequently fails. Enforcing rigid spatial derivatives (e.g., the 2D Shallow Water Equations) onto unconditioned latent spaces attempting to fit noisy SAR speckle causes catastrophic gradient divergence, a phenomenon we term Physics Shock. In this paper, we propose a novel Uncertainty-Aware PINN framework tailored specifically for applied Earth Observation that addresses this instability. By integrating a dynamic Warm-Start protocol and modeling heteroscedastic aleatoric uncertainty via a negative log-likelihood objective, the network learns to dynamically relax physical constraints in regions of high sensor noise while strictly enforcing them in high-confidence areas. Evaluated on the Sen1Floods11 dataset, our probabilistic Attention-Gated FNO-UNet successfully stabilizes multi-objective optimization, achieving a +25% relative improvement in Intersection over Union (IoU) compared to deterministic baselines. Furthermore, through Deep Ensembles, we successfully disentangle intrinsic sensor noise from out-of-distribution terrain ignorance, providing operational agencies with highly calibrated, physically consistent confidence bounds for robust disaster mitigation and real-time decision-making.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>SpectralEarth-FM: Bringing Hyperspectral Imagery into Multimodal Earth Observation Pretraining</title>
     <link href="http://arxiv.org/abs/2605.21075v1" rel="alternate" type="text/html" />
@@ -62,33 +86,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence; Machine Learning; physics.comp-ph" />
-  </entry>
-  <entry>
-    <title>GeoMamba: A Geometry-driven MambaVision Framework and Dataset for Fine-grained Optical-SAR Object Retrieval</title>
-    <link href="http://arxiv.org/abs/2605.19734v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.19734v1</id>
-    <published>2026-05-19T00:00:00Z</published>
-    <updated>2026-05-19T00:00:00Z</updated>
-    <author>
-      <name>Tiantong Fang</name>
-    </author>
-    <author>
-      <name>Xiuwei Wang</name>
-    </author>
-    <author>
-      <name>Jing Xiao</name>
-    </author>
-    <author>
-      <name>Wujie Zhou</name>
-    </author>
-    <author>
-      <name>Liang Liao</name>
-    </author>
-    <author>
-      <name>Mi Wang</name>
-    </author>
-    <summary type="text">Multi-source remote sensing enables complementary observation of ground objects, while cross-modal fine-grained object retrieval remains challenging, especially under unaligned optical and SAR conditions. Unlike conventional retrieval settings that rely on paired or spatially aligned samples, practical optical-SAR retrieval is affected by substantial modality discrepancy, speckle noise, and structural inconsistency, which limit robust cross-modal representation learning. To address this problem, we propose GeoMamba, a geometry-driven framework tailored for optical-SAR fine-grained retrieval. Specifically, GeoMamba introduces a Geometric Feature Injection (GFI) module that enhances cross-modal feature interaction and incorporates structural priors, thereby improving the robustness of SAR representations and promoting geometry-consistent feature learning. In addition, a Geometric Consistency Constraint (GCC) module, together with a Deep Supervision (DS) strategy, imposes hierarchical geometric constraints using classical operators, which helps preserve informative object structures during representation learning. We further construct a new dataset, FGOS-as, containing 11 aerospace and maritime categories for evaluating unaligned cross-modal fine-grained object retrieval in realistic remote sensing scenarios. Extensive experiments on FGOS-as demonstrate that GeoMamba outperforms existing methods, achieving 63.3% mAP and 77.0% Rank-1 accuracy in all-to-all retrieval setting.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>

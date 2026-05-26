@@ -5698,5 +5698,43 @@
     "_added_date": "2026-05-21",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Artificial Intelligence",
+    "Date": "2026-05-23",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "DisDop: Distillation with Domain Priors for Open-Vocabulary Aerial Object Detection",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.24639v1",
+    "Abstract": "With the widespread application of drones in recent years, object detection of aerial images has attracted increasing attention, especially open-vocabulary aerial detection which is not restricted to predefined categories. Due to the scarcity of drone's viewpoint images and their significant differences from natural images, it is difficult to achieve satisfying results by directly applying vanilla open-vocabulary detection methods designed for natural scenarios. Some studies propose to transfer knowledge from pre-trained models by using lightweight networks or generating pseudo labels, but they tend to rely on models trained on natural images, neglecting the potential of foundation models specifically tailored for remote sensing and aerial imagery. To address this limitation, we propose DisDop, a unified framework that systematically distills multi-level domain priors from remote sensing foundation models (e.g., RemoteCLIP and DINOv3) into a lightweight detector. Specifically, we first distill visual priors through a teacher fusion strategy that combines RemoteCLIP's cross-modal alignment capability with DINOv3's fine-grained local feature extraction ability, transferring their complementary strengths to the detector's backbone. Second, we distill textual priors embedded in RemoteCLIP's text encoder by explicitly modeling inter-category semantic relationships, while incorporating global contextual priors to enhance local feature representation for small objects. Through this multi-level prior distillation framework, our DisDop achieves new state-of-the-art performance on open-vocabulary aerial detection benchmarks. Extensive ablation analysis also demonstrates the rationality and effectiveness of our proposed modules.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{xu2026disdop,\n  title={DisDop: Distillation with Domain Priors for Open-Vocabulary Aerial Object Detection},\n  author={Ruihao Xu and Yong Liu and Yansong Tang and Sule Bai and Xubing Ye and Bingyao Yu and Yutao Guo and Jiwen Lu and Jie Zhou},\n  journal={arXiv preprint arXiv:2605.24639v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.24639v1}\n}",
+    "Authors": "Ruihao Xu, Yong Liu, Yansong Tang, Sule Bai, Xubing Ye, Bingyao Yu, Yutao Guo, Jiwen Lu, Jie Zhou",
+    "_added_date": "2026-05-26",
+    "Category": "Method",
+    "_tasks": "OD"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-05-20",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "SkySeg: Collaborative Onboard Semantic Segmentation with Heterogeneous UAVs in the Wild",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.24014v1",
+    "Abstract": "The demand for unmanned aerial vehicle (UAV)-based image acquisition and analysis has surged, with UAVs increasingly utilized for semantic segmentation tasks. To meet the real-time analysis requirements of UAV remote sensing missions, performing onboard computation and making decisions based on the results is a natural approach. However, deploying semantic segmentation on resource-constrained UAV platforms presents two significant challenges: 1) hardware constraints limit the ability of UAVs to perform real-time semantic segmentation, and 2) environmental variations during flight cause data distribution shifts, deviating from the original training data. To address these issues, this paper introduces SkySeg, a heterogeneous multi-UAV air-air cooperation framework that integrates computer vision and flight pattern to enable onboard semantic segmentation using low-cost sensors. SkySeg employs an efficient information fusion inference method, combining low-definition, wide-area images with high-definition, focused-area images. Additionally, it incorporates a cross-device test-time adaptation (TTA) strategy to enhance segmentation performance in dynamic environments by collaboratively addressing distribution shifts of test data streams across UAVs. Experimental results demonstrate that our SkySeg framework accelerates inference latency by approximately 3.6x, improves onboard segmentation accuracy by 5.91\\%, and achieves a 10.91\\% average accuracy gain in the wild.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{lu2026skyseg,\n  title={SkySeg: Collaborative Onboard Semantic Segmentation with Heterogeneous UAVs in the Wild},\n  author={Anqi Lu and Yun Cheng and Youbing Hu and Zhiqiang Cao and Jie Liu and Zhijun Li},\n  journal={arXiv preprint arXiv:2605.24014v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.24014v1}\n}",
+    "Authors": "Anqi Lu, Yun Cheng, Youbing Hu, Zhiqiang Cao, Jie Liu, Zhijun Li",
+    "_added_date": "2026-05-26",
+    "Category": "Method",
+    "_tasks": "SEG"
   }
 ]

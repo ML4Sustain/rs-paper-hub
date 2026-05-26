@@ -4,12 +4,173 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-25T05:17:33Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 19 entries</subtitle>
+  <updated>2026-05-26T01:56:39Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 20 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Geo-Expert: Towards Expert-Level Geological Reasoning via Parameter-Efficient Fine-Tuning</title>
+    <link href="http://arxiv.org/abs/2605.24844v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.24844v1</id>
+    <published>2026-05-24T00:00:00Z</published>
+    <updated>2026-05-24T00:00:00Z</updated>
+    <author>
+      <name>Chenyou Guo</name>
+    </author>
+    <author>
+      <name>Zongqi Liu</name>
+    </author>
+    <author>
+      <name>Yizhou Zhang</name>
+    </author>
+    <author>
+      <name>Zhaorui Jiang</name>
+    </author>
+    <author>
+      <name>Ze Liu</name>
+    </author>
+    <summary type="text">While general-purpose Large Language Models (LLMs) applied to Geology often hallucinate when reasoning about subsurface structures and deep-time evolution, current AI in Earth sciences predominantly targets surface remote sensing and GIS. To bridge this gap, we introduce Geo-Expert, a family of parameter-efficient geological LLMs fine-tuned on a custom-curated, high-quality instruction dataset processed using our custom instruction synthesis pipeline. We investigate the impact of model scaling and architecture by fine-tuning three base models: Qwen3-8B, Qwen3-32B, and Gemma-3-27B, with Low-Rank Adaptation (LoRA) method. Our extensive evaluation on a novel domain-specific benchmark, Geo-Eval, reveals that a domain-aligned 8B model can outperform open-weight 70B generalists and proprietary GPT-4o on specialized geological reasoning, while a 32B variant approaches frontier reasoning models. The optimized 8B model further offers a competitive cost-performance ratio for deployment. This work provides a reproducible recipe for democratizing scientific LLMs and establishes a baseline for geological artificial intelligence.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICML 2026 AI for Science Workshop&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+    <category term="cs.CL" />
+  </entry>
+  <entry>
+    <title>DisDop: Distillation with Domain Priors for Open-Vocabulary Aerial Object Detection</title>
+    <link href="http://arxiv.org/abs/2605.24639v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.24639v1</id>
+    <published>2026-05-23T00:00:00Z</published>
+    <updated>2026-05-23T00:00:00Z</updated>
+    <author>
+      <name>Ruihao Xu</name>
+    </author>
+    <author>
+      <name>Yong Liu</name>
+    </author>
+    <author>
+      <name>Yansong Tang</name>
+    </author>
+    <author>
+      <name>Sule Bai</name>
+    </author>
+    <author>
+      <name>Xubing Ye</name>
+    </author>
+    <author>
+      <name>Bingyao Yu</name>
+    </author>
+    <author>
+      <name>Yutao Guo</name>
+    </author>
+    <author>
+      <name>Jiwen Lu</name>
+    </author>
+    <author>
+      <name>Jie Zhou</name>
+    </author>
+    <summary type="text">With the widespread application of drones in recent years, object detection of aerial images has attracted increasing attention, especially open-vocabulary aerial detection which is not restricted to predefined categories. Due to the scarcity of drone's viewpoint images and their significant differences from natural images, it is difficult to achieve satisfying results by directly applying vanilla open-vocabulary detection methods designed for natural scenarios. Some studies propose to transfer knowledge from pre-trained models by using lightweight networks or generating pseudo labels, but they tend to rely on models trained on natural images, neglecting the potential of foundation models specifically tailored for remote sensing and aerial imagery. To address this limitation, we propose DisDop, a unified framework that systematically distills multi-level domain priors from remote sensing foundation models (e.g., RemoteCLIP and DINOv3) into a lightweight detector. Specifically, we first distill visual priors through a teacher fusion strategy that combines RemoteCLIP's cross-modal alignment capability with DINOv3's fine-grained local feature extraction ability, transferring their complementary strengths to the detector's backbone. Second, we distill textual priors embedded in RemoteCLIP's text encoder by explicitly modeling inter-category semantic relationships, while incorporating global contextual priors to enhance local feature representation for small objects. Through this multi-level prior distillation framework, our DisDop achieves new state-of-the-art performance on open-vocabulary aerial detection benchmarks. Extensive ablation analysis also demonstrates the rationality and effectiveness of our proposed modules.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Image-Conditioned Instance Prompt Network for Referring Remote Sensing Image Segmentation</title>
+    <link href="http://arxiv.org/abs/2605.24532v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.24532v1</id>
+    <published>2026-05-23T00:00:00Z</published>
+    <updated>2026-05-23T00:00:00Z</updated>
+    <author>
+      <name>Biaoyu Ren</name>
+    </author>
+    <author>
+      <name>Qingsheng Wang</name>
+    </author>
+    <author>
+      <name>Cun Xu</name>
+    </author>
+    <author>
+      <name>Dingkang Yang</name>
+    </author>
+    <author>
+      <name>Wenxuan Wang</name>
+    </author>
+    <summary type="text">Referring Remote Sensing Image Segmentation (RRSIS) is a situated, task-driven cross-modal task related to the embodied perception paradigm, requiring models to align visual-spatial features with linguistic intentions for precise target perception. Recent research has focused on refining the granularity of textual features and optimizing image-text feature fusion to better guide target feature representations. However, insufficient descriptive granularity and sensitivity to semantic shifts can cause bottlenecks in cross-modal feature fusion. To address these issues, we propose the Image-Conditioned Instance Prompt Network (ICIPNet) with Bilateral Information Fusion, which is designed to alleviate bottlenecks in cross-modal feature fusion. ICIPNet introduces an Image-Conditioned Instance Prompt (ICIP) module to generate self-adaptive visual and semantic representations without external knowledge. The Bilateral Information Fusion (BIF) module enhances feature fusion along the token and channel dimensions. Experiments demonstrate that the proposed ICIPNet outperforms existing RRSIS models.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 6 pages, 3 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Coarse-to-Fine Domain Incremental Learning with Attentive Distillation for Mining Footprint Segmentation in Multispectral Imagery</title>
+    <link href="http://arxiv.org/abs/2605.24460v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.24460v1</id>
+    <published>2026-05-23T00:00:00Z</published>
+    <updated>2026-05-23T00:00:00Z</updated>
+    <author>
+      <name>Alif Tri Handoyo</name>
+    </author>
+    <author>
+      <name>Vincent C. S. Lee</name>
+    </author>
+    <author>
+      <name>Rizka Widyarini Purwanto</name>
+    </author>
+    <author>
+      <name>Alex M. Lechner</name>
+    </author>
+    <author>
+      <name>Deanna Kemp</name>
+    </author>
+    <author>
+      <name>Muhamad Risqi U. Saputra</name>
+    </author>
+    <summary type="text">Automatically mapping and segmenting global mining footprints using remote sensing and deep learning is critical for monitoring the socio-environmental risks and impacts of mining, yet its progress is hindered by the scarcity of fine-grained annotated data. Although large-scale datasets with coarse boundaries are widely available, leveraging them to improve fine-grained segmentation is challenging due to significant domain shift. To address this, we propose MineC2FNet, a coarse-to-fine domain incremental learning framework that exploits abundant coarse data to enhance fine-grained mining footprint segmentation. MineC2FNet adopts a teacher-student architecture with attentive distillation at both the feature and prediction levels, selectively transferring generalized knowledge from the coarse domain while enabling boundary refinement using limited fine-grained data (fine domain). We further introduce an expertly validated dataset of 219 images with precise boundary annotations across diverse geographies and commodities. Extensive experiments against state-of-the-art approaches, including domain adaptation and domain incremental learning methods, demonstrate that MineC2FNet achieves superior performance while effectively handling domain shift. The dataset and code are publicly available at https://github.com/risqiutama/MineC2FNet.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/risqiutama/MineC2FNet"&gt;https://github.com/risqiutama/MineC2FNet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Benchmarking Composed Image Retrieval for Applied Earth Observation</title>
+    <link href="http://arxiv.org/abs/2605.24442v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.24442v1</id>
+    <published>2026-05-23T00:00:00Z</published>
+    <updated>2026-05-23T00:00:00Z</updated>
+    <author>
+      <name>Bill Psomas</name>
+    </author>
+    <author>
+      <name>Dionysis Christopoulos</name>
+    </author>
+    <author>
+      <name>Thanasis Petropoulos</name>
+    </author>
+    <author>
+      <name>Nikos Efthymiadis</name>
+    </author>
+    <author>
+      <name>Ioannis Kakogeorgiou</name>
+    </author>
+    <author>
+      <name>Ondřej Chum</name>
+    </author>
+    <author>
+      <name>Yannis Avrithis</name>
+    </author>
+    <author>
+      <name>Giorgos Tolias</name>
+    </author>
+    <author>
+      <name>Konstantinos Karantzalos</name>
+    </author>
+    <summary type="text">Remote sensing composed image retrieval (RSCIR) enables search in large satellite image archives using composed queries that combine a reference image with a textual modifier. Although RSCIR offers a flexible interface for expressing targeted retrieval intent, the transferability of modern composition methods to Earth observation (EO) imagery and their relevance to operational EO workflows remain underexplored. We address this gap through a unified benchmark and an application-oriented study. First, we systematically adapt and evaluate representative composed image retrieval methods with six vision-language backbones on PatternCom under a standardized protocol, analyzing their behavior across backbones, composition strategies, and query types. Second, we introduce xView2-CIR, a change-centric dataset for disaster and damage monitoring, where retrieval is conditioned on scene identity and a target post-event state. Our results show that training-free composition methods provide strong and scalable baselines for EO retrieval, while change-centric retrieval presents different challenges from attribute-based retrieval, particularly due to the need to preserve scene identity. Overall, this study establishes a practical benchmark for RSCIR and positions composed retrieval as a complementary tool for remote sensing image retrieval, archive exploration, and change analysis. The dataset and code are available at https://github.com/billpsomas/rscir.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/billpsomas/rscir"&gt;https://github.com/billpsomas/rscir&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Information transfer along the causal lightcone of a brickwork quantum circuit</title>
     <link href="http://arxiv.org/abs/2605.23622v1" rel="alternate" type="text/html" />
@@ -56,6 +217,30 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
     <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Overcoming "Physics Shock" in Earth Observation A Heteroscedastic Uncertainty Framework for PINN-based Flood Inference</title>
+    <link href="http://arxiv.org/abs/2605.24106v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.24106v1</id>
+    <published>2026-05-22T00:00:00Z</published>
+    <updated>2026-05-22T00:00:00Z</updated>
+    <author>
+      <name>Tewodros Syum Gebre</name>
+    </author>
+    <author>
+      <name>Jagrati Talreja</name>
+    </author>
+    <author>
+      <name>Matilda Anokye</name>
+    </author>
+    <author>
+      <name>Leila Hashemi-Beni</name>
+    </author>
+    <summary type="text">Rapid and accurate flood extent mapping from Remote Sensing data, such as Synthetic Aperture Radar (SAR), is critical for operational disaster response, but standard Deep Learning models often produce physically impossible predictions due to a lack of hydrological constraints. While PhysicsInformed Neural Networks (PINNs) attempt to address this by embedding governing laws directly into the loss function, their application to real-world remote sensing data frequently fails. Enforcing rigid spatial derivatives (e.g., the 2D Shallow Water Equations) onto unconditioned latent spaces attempting to fit noisy SAR speckle causes catastrophic gradient divergence, a phenomenon we term Physics Shock. In this paper, we propose a novel Uncertainty-Aware PINN framework tailored specifically for applied Earth Observation that addresses this instability. By integrating a dynamic Warm-Start protocol and modeling heteroscedastic aleatoric uncertainty via a negative log-likelihood objective, the network learns to dynamically relax physical constraints in regions of high sensor noise while strictly enforcing them in high-confidence areas. Evaluated on the Sen1Floods11 dataset, our probabilistic Attention-Gated FNO-UNet successfully stabilizes multi-objective optimization, achieving a +25% relative improvement in Intersection over Union (IoU) compared to deterministic baselines. Furthermore, through Deep Ensembles, we successfully disentangle intrinsic sensor noise from out-of-distribution terrain ignorance, providing operational agencies with highly calibrated, physically consistent confidence bounds for robust disaster mitigation and real-time decision-making.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+    <category term="Artificial Intelligence" />
   </entry>
   <entry>
     <title>C-SWIM: A Coupled Space Weather Impact Model for Satellite Fleet Vulnerability and Economic Loss Under a 1-in-100-Year Solar Energetic Particle Event</title>
@@ -346,202 +531,32 @@
     <category term="Computer Vision; Machine Learning" />
   </entry>
   <entry>
-    <title>GeoMamba: A Geometry-driven MambaVision Framework and Dataset for Fine-grained Optical-SAR Object Retrieval</title>
-    <link href="http://arxiv.org/abs/2605.19734v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.19734v1</id>
-    <published>2026-05-19T00:00:00Z</published>
-    <updated>2026-05-19T00:00:00Z</updated>
+    <title>SkySeg: Collaborative Onboard Semantic Segmentation with Heterogeneous UAVs in the Wild</title>
+    <link href="http://arxiv.org/abs/2605.24014v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.24014v1</id>
+    <published>2026-05-20T00:00:00Z</published>
+    <updated>2026-05-20T00:00:00Z</updated>
     <author>
-      <name>Tiantong Fang</name>
+      <name>Anqi Lu</name>
     </author>
     <author>
-      <name>Xiuwei Wang</name>
+      <name>Yun Cheng</name>
     </author>
     <author>
-      <name>Jing Xiao</name>
+      <name>Youbing Hu</name>
     </author>
     <author>
-      <name>Wujie Zhou</name>
+      <name>Zhiqiang Cao</name>
     </author>
     <author>
-      <name>Liang Liao</name>
+      <name>Jie Liu</name>
     </author>
     <author>
-      <name>Mi Wang</name>
+      <name>Zhijun Li</name>
     </author>
-    <summary type="text">Multi-source remote sensing enables complementary observation of ground objects, while cross-modal fine-grained object retrieval remains challenging, especially under unaligned optical and SAR conditions. Unlike conventional retrieval settings that rely on paired or spatially aligned samples, practical optical-SAR retrieval is affected by substantial modality discrepancy, speckle noise, and structural inconsistency, which limit robust cross-modal representation learning. To address this problem, we propose GeoMamba, a geometry-driven framework tailored for optical-SAR fine-grained retrieval. Specifically, GeoMamba introduces a Geometric Feature Injection (GFI) module that enhances cross-modal feature interaction and incorporates structural priors, thereby improving the robustness of SAR representations and promoting geometry-consistent feature learning. In addition, a Geometric Consistency Constraint (GCC) module, together with a Deep Supervision (DS) strategy, imposes hierarchical geometric constraints using classical operators, which helps preserve informative object structures during representation learning. We further construct a new dataset, FGOS-as, containing 11 aerospace and maritime categories for evaluating unaligned cross-modal fine-grained object retrieval in realistic remote sensing scenarios. Extensive experiments on FGOS-as demonstrate that GeoMamba outperforms existing methods, achieving 63.3% mAP and 77.0% Rank-1 accuracy in all-to-all retrieval setting.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Optimal Reconstruction from Linear Queries</title>
-    <link href="http://arxiv.org/abs/2605.19625v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.19625v1</id>
-    <published>2026-05-19T00:00:00Z</published>
-    <updated>2026-05-19T00:00:00Z</updated>
-    <author>
-      <name>Yuval Filmus</name>
-    </author>
-    <author>
-      <name>Shay Moran</name>
-    </author>
-    <author>
-      <name>Elizaveta Nesterova</name>
-    </author>
-    <summary type="text">We study the problem of reconstructing an unknown point in $\mathbb{R}^d$ from approximate linear queries. This setting arises naturally in applications ranging from low-dimensional remote sensing and signal recovery to high-dimensional data analysis and privacy-sensitive inference. Our main goal is to characterize the optimal reconstruction error as a function of the number of queries $T$, the ambient dimension $d$, and the noise parameter $δ$.   We first analyze the limit $T \to \infty$ and show that the optimal reconstruction error converges to the explicit value $\sqrt{2d/(d+1)} δ$, which plays a role analogous to the Bayes optimal error in supervised learning. When the dimension is fixed, we show that the excess error above this limit decays doubly exponentially fast as $T \to \infty$, a rate that is significantly faster than those typically encountered in learning curves. When the dimension grows, we show that a number of queries on the order of $\exp(d)$ is necessary and sufficient to achieve vanishing excess error. Finally, we introduce and analyze an improper variant of the reconstruction problem.   From a technical perspective, our main contribution is a generalization of Jung's theorem (1901). The classical theorem bounds the maximum possible radius of a set of diameter 1 and characterizes extremal bodies. Our generalization provides a robust variant that characterizes near-extremal bodies and is proved via geometric and dynamical arguments exploiting symmetry and Lie group actions.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 46 pages, 4 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Latent Space Guided Scenario Sampling for Multimodal Segmentation Under Missing Modalities</title>
-    <link href="http://arxiv.org/abs/2605.20372v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.20372v1</id>
-    <published>2026-05-19T00:00:00Z</published>
-    <updated>2026-05-19T00:00:00Z</updated>
-    <author>
-      <name>Irem Ulku</name>
-    </author>
-    <author>
-      <name>Ö. Özgür Tanrıöver</name>
-    </author>
-    <author>
-      <name>Erdem Akagündüz</name>
-    </author>
-    <summary type="text">Multimodal semantic segmentation benefits remote sensing analysis by combining complementary information from different sensor modalities. In real-world remote sensing applications, one or more modalities may be unavailable due to sensor failures, adverse atmospheric conditions, or data acquisition problems. Even with pretrained multimodal representations and existing fine-tuning or adaptation strategies, performance may remain limited because all modality availability scenarios are typically treated as equally informative during training. In this paper, we propose a novel training strategy that learns a scenario sampling distribution directly from the pretrained latent space. Instead of relying on uniform random modality dropout, the proposed method guides fine-tuning toward more informative modality availability scenarios. More specifically, we quantify the effect of each scenario independently based on the distortion it induces in the shared latent representation. We then capture scenario relations using a radial basis function kernel and derive refined scenario scores through a regularized kernel smoothing. These scores are then converted into a probability distribution during scenario sampling for fine-tuning. We evaluate this strategy on three remote sensing image sets, namely DSTL, Potsdam, and Hunan, using CBC-SLP, CBC, and CMX backbones. The experimental results with different image sets and backbones show that our method outperforms standard fine-tuning and LoRA-based adaptation. These findings suggest that the pretrained latent representation can serve as an effective basis for sampling during missing modality fine-tuning. Code is available at https://github.com/iremulku/Latent-Space-Guided-Scenario-Sampling</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/iremulku/Latent-Space-Guided-Scenario-Sampling"&gt;https://github.com/iremulku/Latent-Space-Guided-Scenario-Sampling&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 14 pages, 4 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+    <summary type="text">The demand for unmanned aerial vehicle (UAV)-based image acquisition and analysis has surged, with UAVs increasingly utilized for semantic segmentation tasks. To meet the real-time analysis requirements of UAV remote sensing missions, performing onboard computation and making decisions based on the results is a natural approach. However, deploying semantic segmentation on resource-constrained UAV platforms presents two significant challenges: 1) hardware constraints limit the ability of UAVs to perform real-time semantic segmentation, and 2) environmental variations during flight cause data distribution shifts, deviating from the original training data. To address these issues, this paper introduces SkySeg, a heterogeneous multi-UAV air-air cooperation framework that integrates computer vision and flight pattern to enable onboard semantic segmentation using low-cost sensors. SkySeg employs an efficient information fusion inference method, combining low-definition, wide-area images with high-definition, focused-area images. Additionally, it incorporates a cross-device test-time adaptation (TTA) strategy to enhance segmentation performance in dynamic environments by collaboratively addressing distribution shifts of test data streams across UAVs. Experimental results demonstrate that our SkySeg framework accelerates inference latency by approximately 3.6x, improves onboard segmentation accuracy by 5.91\%, and achieves a 10.91\% average accuracy gain in the wild.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
     <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>MetaEarth-MM: Unified Multimodal Remote Sensing Image Generation with Scene-centered Joint Modeling</title>
-    <link href="http://arxiv.org/abs/2605.20090v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.20090v1</id>
-    <published>2026-05-19T00:00:00Z</published>
-    <updated>2026-05-19T00:00:00Z</updated>
-    <author>
-      <name>Zhiping Yu</name>
-    </author>
-    <author>
-      <name>Chenyang Liu</name>
-    </author>
-    <author>
-      <name>Jinqi Cao</name>
-    </author>
-    <author>
-      <name>Qinzhe Yang</name>
-    </author>
-    <author>
-      <name>Siwei Yu</name>
-    </author>
-    <author>
-      <name>Zhengxia Zou</name>
-    </author>
-    <author>
-      <name>Zhenwei Shi</name>
-    </author>
-    <summary type="text">Multi-modal remote sensing images are vital for Earth observation, yet complete paired observations are often scarce in practice. Existing generative methods commonly address this problem through isolated pairwise modality translation, but their versatility and scalability remain limited as the number of modalities and generation tasks increases. Here, we develop a generative foundation model MetaEarth-MM for multi-modal remote sensing imagery, enabling paired joint generation and any-to-any translation across five modalities within a unified model. Recognizing the intrinsic scene consistency underlying multi-modal observations, we introduce a scene-centered joint modeling paradigm in MetaEarth-MM. Unlike previous methods that rely on direct appearance-level cross-modal mapping, our model organizes the generation around the underlying scene content. Specifically, MetaEarth-MM adopts a decoupled architecture that first infers a latent scene representation from available observations, and then generates target modalities conditioned on this intermediate state. To support training, we further construct EarthMM, a large-scale dataset comprising 2.8 million multi-resolution global images with 2.2 million aligned pairs. Extensive experiments demonstrate that MetaEarth-MM not only exhibits strong generative capability and robust generalization across diverse generation tasks, but also supports downstream tasks at both data and representation levels, highlighting its potential as a general foundation model for cross-modal Earth observation. The code and dataset will be available at https://github.com/YZPioneer/MetaEarth-MM.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/YZPioneer/MetaEarth-MM"&gt;https://github.com/YZPioneer/MetaEarth-MM&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>StruMPL: Multi-task Dense Regression under Disjoint Partial Supervision and MNAR Labels</title>
-    <link href="http://arxiv.org/abs/2605.19931v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.19931v1</id>
-    <published>2026-05-19T00:00:00Z</published>
-    <updated>2026-05-19T00:00:00Z</updated>
-    <author>
-      <name>Reza M. Asiyabi</name>
-    </author>
-    <author>
-      <name>Juan Alberto Molina-Valero</name>
-    </author>
-    <author>
-      <name>The SEOSAW Partnership</name>
-    </author>
-    <author>
-      <name>Steven Hancock</name>
-    </author>
-    <author>
-      <name>Casey M. Ryan</name>
-    </author>
-    <summary type="text">Estimating forest aboveground biomass (AGB) from Earth observation combines two structurally incompatible label sources: spaceborne lidar provides canopy structure at millions of locations but no biomass estimate, and ground-based plots provide biomass at thousands of biased locations but no metrics of structure. No single training sample carries labels for all target variables, plot labels are missing not at random (MNAR), and biomass is linked to the structural variables by known but biome-specific allometric laws. We formalise this as multi-task dense regression under heterogeneous disjoint partial supervision with MNAR labels and inter-task physical constraints, and propose StruMPL to address it jointly. A shared encoder feeds per-variable regression, imputation, and propensity heads for spatial MNAR correction, and a learnable physics module that evaluates the inter-task constraint on the model's own predictions at every pixel. The supervised loss uses an Augmented IPW (AIPW) pseudo-outcome with stop-gradients on the propensity and on the imputation baseline; we show analytically and empirically that both are necessary for joint optimisation to recover IPW-weighted stationary points while keeping the loss bounded. On two ecologically distinct biomes, StruMPL outperforms ablation variants and the closest published method on AGB RMSE and bias, with a stratified analysis showing AIPW reduces high-AGB bias by ~54%.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages with 3 figures and 4 tables, References and Appendix 12 pages with 1 figure and 4 tables&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence; Machine Learning" />
-  </entry>
-  <entry>
-    <title>Deep Tech to Space: Space Data Centers and AI Revolution at the Edge</title>
-    <link href="http://arxiv.org/abs/2605.19892v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.19892v1</id>
-    <published>2026-05-19T00:00:00Z</published>
-    <updated>2026-05-19T00:00:00Z</updated>
-    <author>
-      <name>Jonas Weiss</name>
-    </author>
-    <author>
-      <name>Patricia Sagmeister</name>
-    </author>
-    <author>
-      <name>Gabriel Maiolini Capez</name>
-    </author>
-    <author>
-      <name>Dinesh Verma</name>
-    </author>
-    <author>
-      <name>Roberto Garello</name>
-    </author>
-    <author>
-      <name>Alberto Perotti</name>
-    </author>
-    <author>
-      <name>Dawid Lazaj</name>
-    </author>
-    <author>
-      <name>Alicja Musial</name>
-    </author>
-    <author>
-      <name>Jakub Nalepa</name>
-    </author>
-    <author>
-      <name>Thomas Morf</name>
-    </author>
-    <author>
-      <name>Martin Schmatz</name>
-    </author>
-    <author>
-      <name>Marek Krawczyk</name>
-    </author>
-    <author>
-      <name>Mateusz Przeliorz</name>
-    </author>
-    <author>
-      <name>Kevin Roche</name>
-    </author>
-    <author>
-      <name>Sagar Tayal</name>
-    </author>
-    <author>
-      <name>Mahalakshmi Lakshminarayanan</name>
-    </author>
-    <author>
-      <name>Nicolas Longépé</name>
-    </author>
-    <author>
-      <name>Pierre-Philippe Mathieu</name>
-    </author>
-    <author>
-      <name>Agata Wijata</name>
-    </author>
-    <summary type="text">Dramatic cost reductions driven by private sector innovations have led to a rapid increase in the number of satellites in orbit and a corresponding surge in space-generated data. As this trend continues, transmitting large volumes of data to Earth for processing may become increasingly costly and challenging due to potential space-to-Earth link congestion and increased latency. Moreover, traditional ground station networks may face difficulties accommodating growing data flows and workloads because of capacity constraints, complex scheduling logistics, and restricted visibility windows, which can limit scalability. Space Data Centers (SDCs) -- software-driven, multi-tenant artificial intelligence-based service platforms capable of processing data in orbit to generate actionable insights for client satellites and ground users -- represent a promising approach to address these challenges.   This article presents the architecture of a Low Earth Orbit SDC satellite constellation, considering orbital design, inter-satellite links and network topology, computational resource organization, and software service orchestration. We analyze the potential technical feasibility and economic viability of SDCs using forecasting models informed by technology roadmaps and illustrate the concept through Earth observation and lunar exploration use cases.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 7 pages, 4 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.DC" />
-    <category term="Artificial Intelligence; cs.ET; cs.NI" />
   </entry>
 </feed>
