@@ -327,7 +327,7 @@ rs-paper-hub/
 
 ## 搜索范围
 
-当前搜索 arXiv **所有分类**中标题或摘要包含 `"remote sensing"` 的论文。如需调整，编辑 [`config.py`](config.py) 中的 `SEARCH_QUERY`：
+当前搜索 arXiv **所有分类**中标题或摘要包含 `"remote sensing"`、`"earth observation"` 或 `"geospatial"` 的论文（新增 geospatial 覆盖 GeoX、GeoCLIP 等不使用"遥感"术语的 GeoAI 论文）。如需调整，编辑 [`config.py`](config.py) 中的 `SEARCH_QUERY`：
 
 ```python
 # 仅限 cs.CV

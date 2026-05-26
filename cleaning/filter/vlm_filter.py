@@ -63,6 +63,12 @@ CORE_KEYWORDS = [
     # Earth Observation + language/VLM
     r"earth\s+observation.*(?:language|text|caption|VLM|MLLM|multimodal)",
     r"(?:language|text|caption|VLM|MLLM|multimodal).*earth\s+observation",
+    # Geospatial + VLM/language (for papers using "geospatial" instead of "remote sensing")
+    r"geospatial\s+(?:reasoning|understanding|question\s+answering|visual|foundation\s+model|language\s+model|VLM|benchmark)",
+    r"geospatial.*(?:VLM|MLLM|large\s+language|language\s+model|vision[\-\s]language|multimodal)",
+    r"(?:VLM|MLLM|large\s+language|language\s+model|vision[\-\s]language|multimodal).*geospatial",
+    r"satellite.*(?:reasoning|question\s+answering|visual\s+understanding|language\s+model)",
+    r"aerial.*(?:reasoning|question\s+answering|visual\s+understanding|language\s+model)",
 ]
 
 # 知名模型名（命中即入选）
@@ -112,6 +118,8 @@ MODEL_KEYWORDS = [
     r"\bPointCLIP\b",
     r"\bRS[\-\s]?CLIP\b",
     r"\bSkyCLIP\b",
+    r"\bGeoX\b",
+    r"\bGeoCLIP\b",
     r"\bGeoChat\b",
     r"\bSkyEyeGPT\b",
     r"\bEarthGPT\b",

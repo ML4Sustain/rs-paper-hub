@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-26T04:58:46Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 23 entries</subtitle>
+  <updated>2026-05-26T09:49:26Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 31 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -94,6 +94,60 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
     <category term="astro-ph.SR" />
+  </entry>
+  <entry>
+    <title>Location Prior Generation via Multi-Source Urban Data Fusion for Low-Altitude Air Mobility</title>
+    <link href="http://arxiv.org/abs/2605.25530v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.25530v1</id>
+    <published>2026-05-25T00:00:00Z</published>
+    <updated>2026-05-25T00:00:00Z</updated>
+    <author>
+      <name>Xiang Xie</name>
+    </author>
+    <author>
+      <name>Xiaonan Liu</name>
+    </author>
+    <summary type="text">Building height, the third dimension (3D) of urban spatial data, is absent in over 95% of structures in global geospatial databases. For the emerging low-altitude economy, this data gap forces each aerial platform to rely on real-time onboard sensing rather than pre-computed 3D scene geometry. We present the Location Prior Generation Framework (LPGF), a multi-source data fusion pipeline that integrates Sentinel-2 imagery, UAV telemetry, vehicle GPS trajectories, and OpenStreetMap footprints into structured, reusable urban location priors. LPGF assigns building heights through a three-tier priority hierarchy: (1) explicit OSM height tags where available, (2) floor count multiplied by 3.2 m per story where recorded, and (3) building-type default heights otherwise, yielding a worst-case error of approximately 5.5 m. An optional shadow-based height estimation module (SHEM) is activated only when a four-criterion quality gate is satisfied; when any criterion fails, the pipeline routes to structured fallback. On the MiTra A50 Milan dataset, the quality gate correctly identified two imaging failure modes: sub-pixel shadows at 10 m GSD and ground shadow merging at 0.93 m GSD, producing a consistent 27-building prior in both cases. Tier 3 type-default heights were validated against manual floor counts (n=15), achieving MAE=3.07 m within the 5.0 m uncertainty bound. The framework demonstrates that structured, quality-gated fusion of universally available data streams can bootstrap 3D scene coverage for low-altitude urban operations.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 11 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>G-DRAGON: Geospatial Reasoning and Dynamic Planning for Retrieval-Augmented Outdoor Navigation</title>
+    <link href="http://arxiv.org/abs/2605.25646v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.25646v1</id>
+    <published>2026-05-25T00:00:00Z</published>
+    <updated>2026-05-25T00:00:00Z</updated>
+    <author>
+      <name>Dongzhihan Wang</name>
+    </author>
+    <author>
+      <name>Yi Du</name>
+    </author>
+    <author>
+      <name>Jianan Sun</name>
+    </author>
+    <author>
+      <name>Yuan Xue</name>
+    </author>
+    <author>
+      <name>Yingchen Zhang</name>
+    </author>
+    <author>
+      <name>Bing Xiao</name>
+    </author>
+    <author>
+      <name>Chen Wang</name>
+    </author>
+    <author>
+      <name>Liang Xu</name>
+    </author>
+    <summary type="text">Autonomous ground robots operating in large-scale outdoor environments require both robust long-range navigation and fine-grained ''last-mile'' exploration. Current advances in visual-language navigation (VLN) work well at short-range tasks, lacking geospatial grounding for long-distance missions. Some OpenStreetMap (OSM)-based methods relying on cloud-based Large Language Models (LLMs) are prone to factual hallucination and cannot conduct ''last-mile'' exploration based on human instruction. To address these challenges, we present G-DRAGON, a retrieval-augmented framework for outdoor, open-world navigation. This framework maps natural-language commands to versioned, local OSM entities via generative retrieval based on lightweight LLM, yielding accurate coordinates for global route planning. A high-level planning module bridges global topological routes with the SLAM system, projecting geospatial waypoints into the robot's navigable frame. For the ''last mile," the framework transitions to frontier-based exploration and open-set semantic voxel mapping to localize open-vocabulary targets. Experimental results in simulation demonstrate our framework outperforms state-of-the-art baselines. Furthermore, we validate the system in unseen real-world urban environments on an Unmanned Ground Vehicle (UGV), successfully completing person-search missions with trajectories of up to 500m.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Robotics and Automation Letters (RA-L)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Robotics" />
   </entry>
   <entry>
     <title>Geo-Expert: Towards Expert-Level Geological Reasoning via Parameter-Efficient Fine-Tuning</title>
@@ -257,6 +311,22 @@
     <category term="Computer Vision" />
   </entry>
   <entry>
+    <title>GRAIL: AI translation for scientists application workflow on satellite data</title>
+    <link href="http://arxiv.org/abs/2605.24784v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.24784v1</id>
+    <published>2026-05-23T00:00:00Z</published>
+    <updated>2026-05-23T00:00:00Z</updated>
+    <author>
+      <name>Zhuocheng Shang</name>
+    </author>
+    <author>
+      <name>Ahmed Eldawy</name>
+    </author>
+    <summary type="text">Domain scientists increasingly develop Python scripts to analyze satellite imagery but they lack scalability to large-scale data. This paper demonstrates GRAIL, an agentic translation system that converts Python geospatial workflows into executable Spark-based programs without requiring scientists to learn a new framework. Rather than fine-tuning a specialized LLM model, GRAIL adapts RDPro, a Scala library for satellite data analysis, to make it LLM-ready using structured documentation, API alias functions, and repair-oriented error logs. Translation is structured as a LangGraph pipeline that decomposes code generation into explicit sections with guided inputs and outputs, enabling targeted repair without regenerating the full program. We demonstrate GRAIL on real-world geospatial workflows and showcase the correctness and scalability of the translated code.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
     <title>Information transfer along the causal lightcone of a brickwork quantum circuit</title>
     <link href="http://arxiv.org/abs/2605.23622v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2605.23622v1</id>
@@ -326,6 +396,56 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Machine Learning" />
     <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>SolarChain: Bridging Physical Law, Verifiable Trust, and Sustainable Markets for Urban Energy Resilience</title>
+    <link href="http://arxiv.org/abs/2605.23162v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.23162v1</id>
+    <published>2026-05-22T00:00:00Z</published>
+    <updated>2026-05-22T00:00:00Z</updated>
+    <author>
+      <name>Shilin Ou</name>
+    </author>
+    <author>
+      <name>Yifan Xu</name>
+    </author>
+    <author>
+      <name>Zhenshan Zhang</name>
+    </author>
+    <author>
+      <name>Luyao Zhang</name>
+    </author>
+    <author>
+      <name>Ming-Chun Huang</name>
+    </author>
+    <summary type="text">Urban decarbonization requires scaling rooftop solar across millions of fragmented producers, yet cities face a fundamental tension: energy data is easily manipulated, and economic incentives often reward speculation rather than actual infrastructure deployment. We present SolarChain, a platform that resolves both problems by anchoring digital accountability to the thermodynamic limits of solar energy conversion. Using real-time meteorological data, geospatial coordinates, and first-principles calculations of solar yield, the system establishes a hard physical boundary for every panel's maximum possible output; any reported generation exceeding this limit is automatically rejected before entering the shared ledger. This trustless verification enables a peer-to-peer marketplace with programmatic reward structures that continuously reinvest value into equipment maintenance and market liquidity, preventing the speculative hoarding that typically destabilizes blockchain-based marketplaces. When electricity is consumed, the corresponding digital credits are permanently retired in direct proportion to physical energy dissipation, creating an auditable one-to-one mapping between urban consumption and carbon accounting. Deployed across heterogeneous city nodes, the prototype demonstrates resilience against data injection attacks while lowering capital barriers for community-level solar expansion. Beyond energy, the framework offers a general model for coordinating economic activity with physical law in any domain where distributed infrastructure demands both data integrity and sustainable investment. We release the data and code as open-access on GitHub.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.CY" />
+  </entry>
+  <entry>
+    <title>RadMaps: A Geospatial Framework for Simultaneously Modelling Capacity and Geographic Constraints on Radiotherapy Access</title>
+    <link href="http://arxiv.org/abs/2605.23456v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.23456v1</id>
+    <published>2026-05-22T00:00:00Z</published>
+    <updated>2026-05-22T00:00:00Z</updated>
+    <author>
+      <name>Laurence Wroe</name>
+    </author>
+    <author>
+      <name>Archie Brown</name>
+    </author>
+    <author>
+      <name>Sophia Martin</name>
+    </author>
+    <author>
+      <name>Alika Ho</name>
+    </author>
+    <author>
+      <name>Steinar Stapnes</name>
+    </author>
+    <summary type="text">Background: Access to radiotherapy (RT) is constrained by two compounding factors: insufficient machine capacity to meet patient demand and geographic distance from treatment facilities. Existing analyses address these factors separately, constraining the insights available to planners and policymakers. This paper presents RadMaps, an open-source geospatial framework that simultaneously models capacity and geographic constraints on RT access at any spatial scale.   Methods: RadMaps operates on Uber's H3 hexagonal grid and integrates population density data with national cancer incidence estimates and RT facility inventories. RT demand is estimated using cancer-site-specific RT utilisation rates, and geographic access is modelled via configurable decay functions using either distance, driving time, or public transport time. A greedy nearest-first allocation algorithm assigns demand to facilities subject to both capacity and geographic constraints, producing a localised access metric for every H3 hexagon.   Results: Applied globally with a 200 km step-function access threshold, RadMaps computes a capacity-only access of 70 %, a geography-only access of 91 %, and a combined RT access of 60 %, illustrating the compounding effect of capacity and geographic constraints to significantly reduce effective access. High-resolution analyses of six countries demonstrate the tool's ability to localise access deficits at sub-national scale and reveal distinct access profiles: capacity-limited, geographically-limited, and doubly-constrained.   Conclusions: RadMaps provides a flexible, open-access framework for visualising and identifying RT access gaps at regional to global scales, with applications in infrastructure planning and policy prioritisation. RadMaps' modular framework is also readily extensible to other spatial access modelling applications.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="physics.med-ph" />
   </entry>
   <entry>
     <title>C-SWIM: A Coupled Space Weather Impact Model for Satellite Fleet Vulnerability and Economic Loss Under a 1-in-100-Year Solar Energetic Particle Event</title>
@@ -405,6 +525,57 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
     <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>3D LULC classification using multispectral LiDAR and deep learning: current and prospective schemes</title>
+    <link href="http://arxiv.org/abs/2605.22328v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.22328v1</id>
+    <published>2026-05-21T00:00:00Z</published>
+    <updated>2026-05-21T00:00:00Z</updated>
+    <author>
+      <name>Narges Takhtkeshha</name>
+    </author>
+    <author>
+      <name>Aldino Rizaldy</name>
+    </author>
+    <author>
+      <name>Markus Hollaus</name>
+    </author>
+    <author>
+      <name>Juha Hyyppä</name>
+    </author>
+    <author>
+      <name>Fabio Remondino</name>
+    </author>
+    <author>
+      <name>Gottfried Mandlburger</name>
+    </author>
+    <summary type="text">Land Use Land Cover (LULC) classification is essential for national 3D mapping, geospatial analysis, and sustainable planning. Multispectral (MS) LiDAR provides synchronized spatial-spectral information, and deep learning (DL) enables 3D point cloud semantic segmentation; however, adoption is limited by the lack of publicly available urban and suburban MS LiDAR datasets aligned with National Mapping and Cadastral Agencies (NMCAs) classification schemes. This study addresses these gaps by introducing L1 and L2 NMCA-aligned LULC classification schemes and a new benchmark MS LiDAR dataset. We evaluate seven state-of-the-art DL models and perform spectral ablation studies at both levels of detail. Results show that Point Transformer V3 achieves the best performance, with mIoU of 79.4% (L1, 8 classes) and 58.9% (L2, 20 classes) using a dual-wavelength LiDAR system (532 nm and 1064 nm). Ablation results show that multispectral information improves performance over geometry-only inputs, with gains of 1.1 percentage points at L1 and 7.8 points at L2. These results highlight the value of LiDAR reflectance for fine-grained material discrimination and support the evolution of NMCA LULC schemes toward higher semantic detail. The Loosdorf-MSL dataset contributes a new benchmark for consistent national and international LULC mapping.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;SEG;3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>GS-QA: A Benchmark for Geospatial Question Answering</title>
+    <link href="http://arxiv.org/abs/2605.22811v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.22811v1</id>
+    <published>2026-05-21T00:00:00Z</published>
+    <updated>2026-05-21T00:00:00Z</updated>
+    <author>
+      <name>Majid Saeedan</name>
+    </author>
+    <author>
+      <name>Muhammad Shihab Rashid</name>
+    </author>
+    <author>
+      <name>Ahmed Eldawy</name>
+    </author>
+    <author>
+      <name>Vagelis Hristidis</name>
+    </author>
+    <summary type="text">Recent advances in Large Language Models (LLMs) have led to dramatic improvements in question answering (QA). To address the challenge of evaluating QA systems, standardized benchmarks have been introduced. This work focuses on the problem of geospatial QA, where a large collection of geospatial data is available in the form of a spatial database or other forms. Existing work on geospatial QA benchmarks has various limitations, including a small number of questions, limited spatial predicates, narrow output types, and no multi-source reasoning. We present GS-QA, an extensible geospatial QA benchmark with 2,800 question-answer pairs across 28 templates on top of OpenStreetMap and Wikipedia data, covering a wide range of spatial objects, predicates (including directional and towards filtering), and answer types (entity names, locations, distances, directions, counts, and aggregated areas/lengths). A key feature of GS-QA is that some questions require combining information from multiple sources, e.g., geospatial information from OSM and factual information from Wikipedia. GS-QA includes a comprehensive evaluation methodology that combines text-based QA measures with geospatial-specific measures such as distance error and angular error. We implemented nine LLM-based geospatial QA baselines using three LLMs (GPT-4o, Claude Sonnet 4.6, and Ministral-3) with combinations of direct prompting, retrieval-augmented generation, and text-to-SQL. Our results show that existing solutions perform reasonably well on simple spatial predicates with entity name outputs, but accuracy degrades significantly for questions involving complex spatial predicates, numeric output types, and multi-source reasoning, demonstrating that geospatial QA remains a challenging open problem warranting further research.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="cs.DB" />
   </entry>
   <entry>
     <title>SpectralEarth-FM: Bringing Hyperspectral Imagery into Multimodal Earth Observation Pretraining</title>
@@ -643,5 +814,22 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
     <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Broadening Access to Transportation Safety Data with Generative AI: A Schema-Grounded Framework for Spatial Natural Language Queries</title>
+    <link href="http://arxiv.org/abs/2605.21712v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.21712v1</id>
+    <published>2026-05-20T00:00:00Z</published>
+    <updated>2026-05-20T00:00:00Z</updated>
+    <author>
+      <name>Mahdi Azhdari</name>
+    </author>
+    <author>
+      <name>Eric J. Gonzales</name>
+    </author>
+    <summary type="text">Transportation safety analysis requires integrating crash records, roadway attributes, and geospatial data through GIS-based workflows, but access remains uneven across agencies and community stakeholders. Technical prerequisites create a gap between analytical tools central to safety planning and the practitioners able to use them. Local agencies, school committees, and residents may have safety concerns but limited capacity to retrieve, filter, map, and analyze relevant data. Generative AI offers a way to narrow this divide, but its public-sector use raises questions about reliability, reproducibility, and governance. This paper presents a schema-grounded natural language interface for transportation safety analysis, using a large language model (LLM) to interpret user intent while preserving deterministic, reviewable execution against an authoritative database. User queries are translated into structured semantic frames, validated by a rule-based layer, compiled into a typed directed acyclic graph of spatial operations, and executed against a PostGIS database. This bounded design separates language interpretation from deterministic execution, keeping results reproducible and schema-grounded while removing access barriers. The framework is evaluated using a statewide Massachusetts transportation safety database integrating crash records, roadway attributes, and geospatial layers including schools, bus stops, crosswalks, and municipal boundaries. All queries executed successfully; the validation layer corrects errors in 29% of evaluation queries, reflecting the gap between flexible natural language and strict schema-grounded requirements. The results suggest that combining natural language accessibility with deterministic execution is a practical direction for broadening access to transportation safety data, with implications for trustworthy AI in public-sector planning.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 30 pages, 5 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.CL" />
   </entry>
 </feed>

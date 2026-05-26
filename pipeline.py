@@ -79,8 +79,10 @@ def run(input_path: str, output_dir: str):
         logger.info(f"  Deduplicated: {before} -> {len(papers)} ({before - len(papers)} duplicates removed)")
 
     # ── Stamp _added_date for new papers ─────────────────
-    from datetime import date
-    today_str = date.today().isoformat()
+    from datetime import date, timedelta
+    today = date.today()
+    today_str = today.isoformat()
+    recent_cutoff = today - timedelta(days=7)
 
     def _has_added_date(p):
         v = p.get("_added_date")
@@ -95,9 +97,16 @@ def run(input_path: str, output_dir: str):
     new_count = sum(1 for p in papers if not _has_added_date(p))
     for p in papers:
         if not _has_added_date(p):
-            p["_added_date"] = today_str
+            paper_date_str = str(p.get("Date") or "")[:10]
+            try:
+                paper_date = date.fromisoformat(paper_date_str)
+                # Backfilled old papers use their publication date so they don't
+                # flood the "today" / "this week" filters
+                p["_added_date"] = paper_date_str if paper_date < recent_cutoff else today_str
+            except (ValueError, TypeError):
+                p["_added_date"] = today_str
     if new_count:
-        logger.info(f"  Stamped _added_date={today_str} on {new_count} new papers")
+        logger.info(f"  Stamped _added_date on {new_count} new papers")
 
     # ── Step 1: Clean abstracts → fill code field (incremental) ──
     need_code = [p for p in papers if not p.get("code") or str(p["code"]) in ("", "nan")]
@@ -187,6 +196,18 @@ def run(input_path: str, output_dir: str):
     with open(abs_path, "w", encoding="utf-8") as f:
         json.dump(abstract_map, f, ensure_ascii=False)
     logger.info(f"  -> {abs_path} ({len(abstract_map)} abstracts)")
+
+    # site_stats.json — lightweight stats for website note bar
+    geo_count = sum(
+        1 for p in papers
+        if "geospatial" in (p.get("Title", "") or "").lower()
+        or "geospatial" in (p.get("Abstract", "") or "").lower()
+    )
+    site_stats = {"total": len(papers), "geo_count": geo_count}
+    stats_path = os.path.join(output_dir, "site_stats.json")
+    with open(stats_path, "w", encoding="utf-8") as f:
+        json.dump(site_stats, f)
+    logger.info(f"  -> {stats_path} (total={len(papers)}, geo={geo_count})")
 
     # ── Step 4: Filter VLM papers ─────────────────────────
     logger.info("[5/11] Filtering VLM-related papers...")

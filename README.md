@@ -25,7 +25,7 @@ RS-Paper-Hub automatically scrapes remote sensing and earth observation papers f
 
 ### Key Features
 
-- **Dual Search Scope** — Covers both "remote sensing" and "earth observation" papers from arXiv
+- **Expanded Search Scope** — Covers "remote sensing", "earth observation", and "geospatial" papers from arXiv (capturing GeoAI papers like GeoX, GeoCLIP that use geospatial terminology without explicitly saying "remote sensing")
 - **Daily Automated Updates** — GitHub Actions fetches the latest papers (last 7 days) Mon–Fri at 00:30 UTC (08:30 Beijing Time), aligned with arXiv's announcement schedule
 - **Incremental Pipeline** — Only new papers go through cleaning, classification, and tagging; existing data is preserved
 - **Task Tagging** — Auto-tags papers with 11 task types: Classification, Object Detection, Change Detection, Segmentation, VQA, Image Captioning, Visual Grounding, Image-Text Retrieval, Geolocation, Super-Resolution, 3D Reconstruction

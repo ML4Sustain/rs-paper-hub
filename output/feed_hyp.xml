@@ -4,12 +4,30 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-26T04:58:46Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
+  <updated>2026-05-26T09:49:26Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 6 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Location Prior Generation via Multi-Source Urban Data Fusion for Low-Altitude Air Mobility</title>
+    <link href="http://arxiv.org/abs/2605.25530v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.25530v1</id>
+    <published>2026-05-25T00:00:00Z</published>
+    <updated>2026-05-25T00:00:00Z</updated>
+    <author>
+      <name>Xiang Xie</name>
+    </author>
+    <author>
+      <name>Xiaonan Liu</name>
+    </author>
+    <summary type="text">Building height, the third dimension (3D) of urban spatial data, is absent in over 95% of structures in global geospatial databases. For the emerging low-altitude economy, this data gap forces each aerial platform to rely on real-time onboard sensing rather than pre-computed 3D scene geometry. We present the Location Prior Generation Framework (LPGF), a multi-source data fusion pipeline that integrates Sentinel-2 imagery, UAV telemetry, vehicle GPS trajectories, and OpenStreetMap footprints into structured, reusable urban location priors. LPGF assigns building heights through a three-tier priority hierarchy: (1) explicit OSM height tags where available, (2) floor count multiplied by 3.2 m per story where recorded, and (3) building-type default heights otherwise, yielding a worst-case error of approximately 5.5 m. An optional shadow-based height estimation module (SHEM) is activated only when a four-criterion quality gate is satisfied; when any criterion fails, the pipeline routes to structured fallback. On the MiTra A50 Milan dataset, the quality gate correctly identified two imaging failure modes: sub-pixel shadows at 10 m GSD and ground shadow merging at 0.93 m GSD, producing a consistent 27-building prior in both cases. Tier 3 type-default heights were validated against manual floor counts (n=15), achieving MAE=3.07 m within the 5.0 m uncertainty bound. The framework demonstrates that structured, quality-gated fusion of universally available data streams can bootstrap 3D scene coverage for low-altitude urban operations.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 11 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Coarse-to-Fine Domain Incremental Learning with Attentive Distillation for Mining Footprint Segmentation in Multispectral Imagery</title>
     <link href="http://arxiv.org/abs/2605.24460v1" rel="alternate" type="text/html" />
@@ -39,6 +57,35 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>3D LULC classification using multispectral LiDAR and deep learning: current and prospective schemes</title>
+    <link href="http://arxiv.org/abs/2605.22328v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.22328v1</id>
+    <published>2026-05-21T00:00:00Z</published>
+    <updated>2026-05-21T00:00:00Z</updated>
+    <author>
+      <name>Narges Takhtkeshha</name>
+    </author>
+    <author>
+      <name>Aldino Rizaldy</name>
+    </author>
+    <author>
+      <name>Markus Hollaus</name>
+    </author>
+    <author>
+      <name>Juha Hyyppä</name>
+    </author>
+    <author>
+      <name>Fabio Remondino</name>
+    </author>
+    <author>
+      <name>Gottfried Mandlburger</name>
+    </author>
+    <summary type="text">Land Use Land Cover (LULC) classification is essential for national 3D mapping, geospatial analysis, and sustainable planning. Multispectral (MS) LiDAR provides synchronized spatial-spectral information, and deep learning (DL) enables 3D point cloud semantic segmentation; however, adoption is limited by the lack of publicly available urban and suburban MS LiDAR datasets aligned with National Mapping and Cadastral Agencies (NMCAs) classification schemes. This study addresses these gaps by introducing L1 and L2 NMCA-aligned LULC classification schemes and a new benchmark MS LiDAR dataset. We evaluate seven state-of-the-art DL models and perform spectral ablation studies at both levels of detail. Results show that Point Transformer V3 achieves the best performance, with mIoU of 79.4% (L1, 8 classes) and 58.9% (L2, 20 classes) using a dual-wavelength LiDAR system (532 nm and 1064 nm). Ablation results show that multispectral information improves performance over geometry-only inputs, with gains of 1.1 percentage points at L1 and 7.8 points at L2. These results highlight the value of LiDAR reflectance for fine-grained material discrimination and support the evolution of NMCA LULC schemes toward higher semantic detail. The Loosdorf-MSL dataset contributes a new benchmark for consistent national and international LULC mapping.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;SEG;3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
   </entry>
   <entry>
     <title>SpectralEarth-FM: Bringing Hyperspectral Imagery into Multimodal Earth Observation Pretraining</title>

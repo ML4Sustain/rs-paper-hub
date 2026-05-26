@@ -936,7 +936,7 @@
 <div class="top-fixed" id="topFixed">
 <div class="header">
   <h1><span class="h1-text-wrap"><img src="asset/logo.png" alt="Logo">RS Paper Hub</span></h1>
-  <p>A curated collection of remote sensing papers from arXiv</p>
+  <p>A curated collection of remote sensing &amp; geospatial papers from arXiv</p>
   <nav class="nav-bar">
     <a href="https://github.com/ML4Sustain/rs-paper-hub" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>GitHub</a>
     <a href="https://github.com/ML4Sustain/rs-paper-hub/issues" target="_blank" data-i18n="issues"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Issues</a>
@@ -1640,10 +1640,10 @@ const mathObserver = typeof IntersectionObserver !== 'undefined'
 const LANG = {
   en: {
     siteTitle: 'RS Paper Hub',
-    siteSubtitle: 'A curated collection of remote sensing papers from arXiv',
+    siteSubtitle: 'A curated collection of remote sensing &amp; geospatial papers from arXiv',
     github: 'GitHub', issues: 'Issues', docs: 'Docs', contact: 'Contact', groups: 'Groups', showAll: 'Show All', allGroups: 'All Groups', submitGroup: 'Submit Group',
     statPapers: 'Papers', statTypes: 'Types', statYears: 'Years', statWithCode: 'With Code',
-    noteDisclaimer: 'Note: arXiv papers have a 2–3 day publication-to-announcement delay; category/task labels are rule-based and may be imprecise — we are continuously improving them.',
+    noteDisclaimer: 'Note: arXiv papers have a 2–3 day publication-to-announcement delay; category/task labels are rule-based and may be imprecise — we are continuously improving them. Coverage now includes "geospatial" papers (e.g. GeoX, GeoCLIP) in addition to "remote sensing" and "earth observation".',
     today: 'Today', thisWeek: 'This Week',
     searchAll: 'All', searchTitle: 'Title', searchAuthor: 'Author', searchAbstract: 'Abstract',
     searchExactPlaceholder: 'Search title, author, abstract (exact phrase)...',
@@ -1697,7 +1697,7 @@ const LANG = {
     trendsYearly: 'Yearly Distribution', trendsMonthly: 'Monthly Distribution', trendsTopAuthors: 'Top Authors',
     trendsPapers: 'papers', trendsSelectYear: 'Select a year to view monthly breakdown.',
     skillsTitle: 'Skills', skillsDesc: 'A curated collection of research skills — reading, writing, coding and beyond. Contributions welcome!',
-    notePapers: 'arXiv papers have a 2–3 day publication-to-announcement delay; category/task labels are rule-based and may be imprecise — we are continuously improving them.',
+    notePapers: 'New: added 953 geospatial papers to the collection.',
     noteSkills: 'A curated collection of research skills — reading, writing, coding and beyond. Contributions welcome!',
     noteVenues: 'A curated list of key journals and conferences in remote sensing and related AI/CV fields.',
     noteResources: 'Commonly used datasets and tools in remote sensing research.',
@@ -1714,10 +1714,10 @@ const LANG = {
   },
   zh: {
     siteTitle: '遥感论文社',
-    siteSubtitle: '来自 arXiv 的遥感论文精选合集',
+    siteSubtitle: '来自 arXiv 的遥感与地理空间 AI 论文精选合集',
     github: 'GitHub', issues: '问题反馈', docs: '文档', contact: '联系我们', groups: '研究组', showAll: '显示全部', allGroups: '所有研究组', submitGroup: '提交研究组',
     statPapers: '论文总数', statTypes: '类型', statYears: '年份', statWithCode: '含代码',
-    noteDisclaimer: '注意：arXiv 论文发布与公告存在 2–3 天延迟；类别/任务标签基于规则，可能不完全准确，我们正在持续优化。',
+    noteDisclaimer: '注意：arXiv 论文发布与公告存在 2–3 天延迟；类别/任务标签基于规则，可能不完全准确，我们正在持续优化。收录范围已扩展，新增 "geospatial" 相关论文（如 GeoX、GeoCLIP 等 GeoAI 论文）。',
     today: '今日', thisWeek: '本周',
     searchAll: '全部', searchTitle: '标题', searchAuthor: '作者', searchAbstract: '摘要',
     searchExactPlaceholder: '搜索标题、作者、摘要（精确短语）...',
@@ -1772,7 +1772,7 @@ const LANG = {
     trendsYearly: '年度分布', trendsMonthly: '月度分布', trendsTopAuthors: '高产作者',
     trendsPapers: '篇', trendsSelectYear: '选择年份查看月度分布。',
     skillsTitle: '技能', skillsDesc: '汇集阅读、写作、编程等科研技能，欢迎分享与贡献！',
-    notePapers: 'arXiv 论文发布与公告存在 2–3 天延迟；类别/任务标签基于规则，可能不完全准确，我们正在持续优化。',
+    notePapers: '新增 geospatial 相关论文，收录 953 篇。',
     noteSkills: '汇集阅读、写作、编程等科研技能，欢迎分享与贡献！',
     noteVenues: '遥感及相关 AI/CV 领域的核心期刊与会议汇总。',
     noteResources: '遥感研究常用数据集与工具汇总。',
@@ -1821,7 +1821,9 @@ function applyLang() {
   const noteEl = document.getElementById('noteText');
   const hash = location.hash.replace('#', '');
   const activePage = (PAGE_KEYS.includes(hash)) ? hash : 'papers';
-  if (noteEl) noteEl.textContent = t('note' + activePage.charAt(0).toUpperCase() + activePage.slice(1));
+  const noteKey = 'note' + activePage.charAt(0).toUpperCase() + activePage.slice(1);
+  const noteVal = t(noteKey);
+  if (noteEl && noteVal) noteEl.textContent = noteVal;
   // Generic data-i18n elements (sidebar labels, page headings, etc.)
   document.querySelectorAll('[data-i18n]').forEach(el => {
     if (el.closest('.nav-bar')) return; // already handled above
@@ -1978,7 +1980,7 @@ function switchPage(page, el) {
   if (el) el.classList.add('active');
   // Update note text based on active page
   const note = document.getElementById('noteText');
-  if (note) note.textContent = t('note' + page.charAt(0).toUpperCase() + page.slice(1));
+  if (note) { const v = t('note' + page.charAt(0).toUpperCase() + page.slice(1)); if (v) note.textContent = v; }
   // Show/hide stats bar on non-papers pages
   const stats = document.getElementById('statsBar');
   if (stats) stats.style.display = page === 'papers' ? '' : 'none';
@@ -2041,6 +2043,8 @@ const DATA_SOURCES = [
 ];
 let allPapers = [];
 let allPapersGlobal = [];  // holds papers for recent panel (from recent_papers.json or papers_slim.json)
+let siteStats = { total: 0, geo_count: 0 };
+fetch('./output/site_stats.json').then(r => r.json()).then(d => { siteStats = d; }).catch(() => {});
 let filtered = [];
 let venuesLoaded = false, resourcesLoaded = false, trendsLoaded = false;
 let abstractsReady = false;

@@ -4,12 +4,30 @@
   <id>https://rspaper.top/output/feed_uav.xml</id>
   <link href="https://rspaper.top/output/feed_uav.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-26T04:58:46Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
+  <updated>2026-05-26T09:49:26Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Location Prior Generation via Multi-Source Urban Data Fusion for Low-Altitude Air Mobility</title>
+    <link href="http://arxiv.org/abs/2605.25530v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.25530v1</id>
+    <published>2026-05-25T00:00:00Z</published>
+    <updated>2026-05-25T00:00:00Z</updated>
+    <author>
+      <name>Xiang Xie</name>
+    </author>
+    <author>
+      <name>Xiaonan Liu</name>
+    </author>
+    <summary type="text">Building height, the third dimension (3D) of urban spatial data, is absent in over 95% of structures in global geospatial databases. For the emerging low-altitude economy, this data gap forces each aerial platform to rely on real-time onboard sensing rather than pre-computed 3D scene geometry. We present the Location Prior Generation Framework (LPGF), a multi-source data fusion pipeline that integrates Sentinel-2 imagery, UAV telemetry, vehicle GPS trajectories, and OpenStreetMap footprints into structured, reusable urban location priors. LPGF assigns building heights through a three-tier priority hierarchy: (1) explicit OSM height tags where available, (2) floor count multiplied by 3.2 m per story where recorded, and (3) building-type default heights otherwise, yielding a worst-case error of approximately 5.5 m. An optional shadow-based height estimation module (SHEM) is activated only when a four-criterion quality gate is satisfied; when any criterion fails, the pipeline routes to structured fallback. On the MiTra A50 Milan dataset, the quality gate correctly identified two imaging failure modes: sub-pixel shadows at 10 m GSD and ground shadow merging at 0.93 m GSD, producing a consistent 27-building prior in both cases. Tier 3 type-default heights were validated against manual floor counts (n=15), achieving MAE=3.07 m within the 5.0 m uncertainty bound. The framework demonstrates that structured, quality-gated fusion of universally available data streams can bootstrap 3D scene coverage for low-altitude urban operations.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 11 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>DisDop: Distillation with Domain Priors for Open-Vocabulary Aerial Object Detection</title>
     <link href="http://arxiv.org/abs/2605.24639v1" rel="alternate" type="text/html" />
