@@ -16946,5 +16946,24 @@
     "_added_date": "2026-05-26",
     "Category": "Method",
     "_tasks": "ITR"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Multimedia",
+    "Date": "2026-05-25",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "VertiCue-Bench: Diagnosing Whether MLLMs Use Height Cues to Resolve 2D Ambiguity in Remote Sensing Natural Scenes",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.25784v1",
+    "Abstract": "Multimodal Large Language Models (MLLMs) have recently shown promising progress in geospatial reasoning. However, existing remote sensing benchmarks remain largely 2D-centric, evaluating models primarily on optical appearance. In natural environments, this paradigm breaks down due to severe spectral confusion, where ecologically distinct regions share similar textures but differ fundamentally in vertical structure. In such cases, explicit 3D structural data, such as Canopy Height Models (CHMs), become essential geometric evidence for semantic disambiguation. Yet, it remains unclear whether current MLLMs can genuinely leverage vertical cues to resolve appearance-level ambiguity. To address this gap, we introduce VertiCue-Bench, the first diagnostic benchmark for CHM-grounded geospatial reasoning. VertiCue-Bench comprises 1,534 carefully curated instances across 17 tasks, explicitly disentangling low-level height perception from ambiguity-aware semantic reasoning. Evaluations on 14 state-of-the-art general and remote-sensing-specialized MLLMs, combined with counterfactual modality testing, reveal a striking perception-reasoning dissociation. While models exhibit emerging competence in reading raw CHM height cues, they largely fail to translate geometric perception into reliable semantic reasoning, often underperforming RGB-only baselines when joint constraints are required. Overall, VertiCue-Bench exposes a critical geometry-to-semantics gap in natural scene understanding, offering actionable insights for advancing geospatial MLLMs.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{huang2026verticuebench,\n  title={VertiCue-Bench: Diagnosing Whether MLLMs Use Height Cues to Resolve 2D Ambiguity in Remote Sensing Natural Scenes},\n  author={Jing Huang and Duanchu Wang and Junjie Yang and Zihang Cheng and Cheng Li and Lin Cui and Zhouyi Wu and Di Wang},\n  journal={arXiv preprint arXiv:2605.25784v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.25784v1}\n}",
+    "Authors": "Jing Huang, Duanchu Wang, Junjie Yang, Zihang Cheng, Cheng Li, Lin Cui, Zhouyi Wu, Di Wang",
+    "_added_date": "2026-05-26",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]

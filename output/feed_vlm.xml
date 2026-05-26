@@ -4,12 +4,47 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-26T01:56:39Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 6 entries</subtitle>
+  <updated>2026-05-26T04:58:46Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 7 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>VertiCue-Bench: Diagnosing Whether MLLMs Use Height Cues to Resolve 2D Ambiguity in Remote Sensing Natural Scenes</title>
+    <link href="http://arxiv.org/abs/2605.25784v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.25784v1</id>
+    <published>2026-05-25T00:00:00Z</published>
+    <updated>2026-05-25T00:00:00Z</updated>
+    <author>
+      <name>Jing Huang</name>
+    </author>
+    <author>
+      <name>Duanchu Wang</name>
+    </author>
+    <author>
+      <name>Junjie Yang</name>
+    </author>
+    <author>
+      <name>Zihang Cheng</name>
+    </author>
+    <author>
+      <name>Cheng Li</name>
+    </author>
+    <author>
+      <name>Lin Cui</name>
+    </author>
+    <author>
+      <name>Zhouyi Wu</name>
+    </author>
+    <author>
+      <name>Di Wang</name>
+    </author>
+    <summary type="text">Multimodal Large Language Models (MLLMs) have recently shown promising progress in geospatial reasoning. However, existing remote sensing benchmarks remain largely 2D-centric, evaluating models primarily on optical appearance. In natural environments, this paradigm breaks down due to severe spectral confusion, where ecologically distinct regions share similar textures but differ fundamentally in vertical structure. In such cases, explicit 3D structural data, such as Canopy Height Models (CHMs), become essential geometric evidence for semantic disambiguation. Yet, it remains unclear whether current MLLMs can genuinely leverage vertical cues to resolve appearance-level ambiguity. To address this gap, we introduce VertiCue-Bench, the first diagnostic benchmark for CHM-grounded geospatial reasoning. VertiCue-Bench comprises 1,534 carefully curated instances across 17 tasks, explicitly disentangling low-level height perception from ambiguity-aware semantic reasoning. Evaluations on 14 state-of-the-art general and remote-sensing-specialized MLLMs, combined with counterfactual modality testing, reveal a striking perception-reasoning dissociation. While models exhibit emerging competence in reading raw CHM height cues, they largely fail to translate geometric perception into reliable semantic reasoning, often underperforming RGB-only baselines when joint constraints are required. Overall, VertiCue-Bench exposes a critical geometry-to-semantics gap in natural scene understanding, offering actionable insights for advancing geospatial MLLMs.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Multimedia" />
+  </entry>
   <entry>
     <title>Geo-Expert: Towards Expert-Level Geological Reasoning via Parameter-Efficient Fine-Tuning</title>
     <link href="http://arxiv.org/abs/2605.24844v1" rel="alternate" type="text/html" />
