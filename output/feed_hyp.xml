@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-26T09:49:26Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 6 entries</subtitle>
+  <updated>2026-05-27T02:12:39Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -85,82 +85,6 @@
     <summary type="text">Land Use Land Cover (LULC) classification is essential for national 3D mapping, geospatial analysis, and sustainable planning. Multispectral (MS) LiDAR provides synchronized spatial-spectral information, and deep learning (DL) enables 3D point cloud semantic segmentation; however, adoption is limited by the lack of publicly available urban and suburban MS LiDAR datasets aligned with National Mapping and Cadastral Agencies (NMCAs) classification schemes. This study addresses these gaps by introducing L1 and L2 NMCA-aligned LULC classification schemes and a new benchmark MS LiDAR dataset. We evaluate seven state-of-the-art DL models and perform spectral ablation studies at both levels of detail. Results show that Point Transformer V3 achieves the best performance, with mIoU of 79.4% (L1, 8 classes) and 58.9% (L2, 20 classes) using a dual-wavelength LiDAR system (532 nm and 1064 nm). Ablation results show that multispectral information improves performance over geometry-only inputs, with gains of 1.1 percentage points at L1 and 7.8 points at L2. These results highlight the value of LiDAR reflectance for fine-grained material discrimination and support the evolution of NMCA LULC schemes toward higher semantic detail. The Loosdorf-MSL dataset contributes a new benchmark for consistent national and international LULC mapping.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;SEG;3D&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>SpectralEarth-FM: Bringing Hyperspectral Imagery into Multimodal Earth Observation Pretraining</title>
-    <link href="http://arxiv.org/abs/2605.21075v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.21075v1</id>
-    <published>2026-05-20T00:00:00Z</published>
-    <updated>2026-05-20T00:00:00Z</updated>
-    <author>
-      <name>Nassim Ait Ali Braham</name>
-    </author>
-    <author>
-      <name>Aaron Banze</name>
-    </author>
-    <author>
-      <name>Conrad M. Albrecht</name>
-    </author>
-    <author>
-      <name>Julien Mairal</name>
-    </author>
-    <author>
-      <name>Jocelyn Chanussot</name>
-    </author>
-    <author>
-      <name>Xiao Xiang Zhu</name>
-    </author>
-    <summary type="text">Earth observation (EO) foundation models (FMs) are increasingly trained on multisensor data, spanning multispectral imagery (MSI), synthetic aperture radar (SAR), and derived geospatial layers, but hyperspectral imagery (HSI) remains underrepresented. Conversely, existing hyperspectral FMs are trained on HSI alone, leaving joint pretraining and fusion of HSI with co-located EO sensors unexplored. We introduce SpectralEarth-FM, a hierarchical transformer for multisensor EO input with heterogeneous spectral dimensionality. The architecture combines spectral tokenization for hyperspectral inputs, sensor-specific encoders, a cross-sensor fusion module, and a shared hierarchical encoder, enabling joint processing of HSI and lower-channel observations. To pretrain SpectralEarth-FM, we curate SpectralEarth-MM, a dataset that co-locates HSI from three spaceborne sensors (EnMAP, EMIT, DESIS) with Sentinel-2, Landsat-8/9 optical imagery, Landsat land surface temperature (LST), and Sentinel-1 SAR, over common geographic footprints. It comprises approximately 2M globally distributed locations, 25M georeferenced patches, and over 40TB of data. Pretraining uses a Joint-Embedding Predictive Architecture (JEPA)-style objective that matches representations between global views and single-sensor local views from the same location. We evaluate SpectralEarth-FM on hyperspectral downstream tasks and standard EO benchmarks following the PANGAEA protocol, achieving state-of-the-art results across both evaluation settings.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Hybrid Machine Learning Model for Forest Height Estimation from TanDEM-X and Landsat Data</title>
-    <link href="http://arxiv.org/abs/2605.20997v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.20997v1</id>
-    <published>2026-05-20T00:00:00Z</published>
-    <updated>2026-05-20T00:00:00Z</updated>
-    <author>
-      <name>Islam Mansour</name>
-    </author>
-    <author>
-      <name>Ronny Haensch</name>
-    </author>
-    <author>
-      <name>Irena Hajnsek</name>
-    </author>
-    <author>
-      <name>Konstantinos Papathanassiou</name>
-    </author>
-    <summary type="text">Integrating machine learning (ML) with physical models (PM) has emerged as a promising way of retrieving geophysical parameters from remote sensing data. In this context, a ML model for estimating forest height from TanDEM-X interferometric coherence measurements has recently been proposed, that constrains the learning process through a PM. While the features used for training and inversion where selected to ensure the physical consistency of the solutions, they could not resolve all height / structure and baseline / terrain slope ambiguities in the data. To improve this, the extension of the feature space with optical Landsat data is proposed able to provide complementary information on forest type or structure. The extended model is applied and validated on several TanDEM-X acquisitions over the Gabonese Lopé national park site and assessed against airborne LiDAR measurements. Results show a 13.5% reduction in RMSE and a 16.6% reduction in MAE compared to the original hybrid model, confirming the added value of multispectral inputs.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence; Machine Learning; physics.comp-ph" />
-  </entry>
-  <entry>
-    <title>A Non-Reference Diffusion-Based Restoration Framework for Landsat 7 ETM+ SLC-off Imagery in Antarctica</title>
-    <link href="http://arxiv.org/abs/2605.21371v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.21371v1</id>
-    <published>2026-05-20T00:00:00Z</published>
-    <updated>2026-05-20T00:00:00Z</updated>
-    <author>
-      <name>Leyue Tang</name>
-    </author>
-    <author>
-      <name>Jonathan Louis Bamber</name>
-    </author>
-    <author>
-      <name>Gang Qiao</name>
-    </author>
-    <author>
-      <name>Yuanhang Kong</name>
-    </author>
-    <summary type="text">Acquiring usable optical imagery in Antarctica is inherently challenging due to prolonged polar nights and frequent cloud cover. Landsat provides the longest and most continuous optical observations and constitutes one of the most important remote sensing data sources for Antarctic studies. However, the scan-line corrector (SLC) failure in 2003 resulted in approximately 22% missing pixels in Landsat 7 ETM+ SLC-off imagery, severely limiting its usability. Unlike many non-polar environments, Antarctic surfaces undergo rapid and substantial changes, which makes it difficult to obtain reliable reference imagery and reduces the applicability of conventional reference-based gap-filling methods. To address this challenge, we propose DiffGF, a non-reference diffusion-based framework for restoring Landsat 7 SLC-off imagery without requiring any external reference data. DiffGF adopts a two-stage design consisting of a latent-space diffusion process and a pixel-space refinement. A dedicated Antarctic dataset, SLCANT, is constructed for training and evaluation. Quantitative and qualitative results demonstrate that DiffGF restores Antarctic SLC-off imagery with high fidelity. Its practical value is further examined through a downstream crevasse segmentation application. The results suggest that DiffGF provides a useful approach for exploiting Landsat 7 SLC-off archives in Antarctica, enabling the extraction of valuable information from historical records and supporting related Antarctic studies.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Submitted to IEEE JSTARS&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>

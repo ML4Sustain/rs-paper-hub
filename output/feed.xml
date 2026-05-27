@@ -4,12 +4,141 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-26T09:49:26Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 31 entries</subtitle>
+  <updated>2026-05-27T02:12:39Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 26 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Topological Signatures of Imperial Stress: Persistent Homology of the Eastern Mediterranean Trade Network, 0--400 CE</title>
+    <link href="http://arxiv.org/abs/2605.27200v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.27200v1</id>
+    <published>2026-05-26T00:00:00Z</published>
+    <updated>2026-05-26T00:00:00Z</updated>
+    <author>
+      <name>Jose de Jesus Bernal Alvarado</name>
+    </author>
+    <author>
+      <name>David Delepine</name>
+    </author>
+    <author>
+      <name>Carlos Pinedo Guadarrama</name>
+    </author>
+    <summary type="text">We apply persistent homology to the ORBIS Geospatial Network Model of the Roman World in order to quantify the structural resilience of the Eastern Mediterranean trade network between 0 and 400 ce. The network is represented as a weighted transport system whose edges correspond to road, maritime, and riverine routes, each carrying a base cost derived from the ORBIS cost model. To introduce historical dynamics into this static spatial infrastructure, we construct a differential friction model in which edge weights vary by decade and by transport mode according to documented historical perturbations, including epidemic mortality, civil war, military pressure, administrative reorganisation, and imperial reunification. For each decadal snapshot, we compute all-pairs shortest-path distances on the active sub-network and construct a Vietoris--Rips filtration using an adaptive threshold defined by the 90th percentile of finite pairwise distances. The resulting betti number ($β_1$) persistent entropy time series identifies three structurally distinct phases in the Eastern Mediterranean network. Phase~I, from 0 to 200 ce, is a stationary high-redundancy regime consistent with the commercial integration of the early imperial and Antonine periods. Phase~II, from 210 to 280ce, corresponds to recoverable stress during the Crisis of the Third Century: betti number ($β_1$) entropy declines during the crisis but returns to the Phase~I baseline following Aurelianic reunification. Phase~III, from 290 to 400 ce, is qualitatively different: cycle redundancy declines monotonically and does not recover. The main contribution of this study is to show that persistent homology detects a dimension of imperial stress that is not reducible to single economic, military, or political indicators.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages and 4 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="physics.soc-ph" />
+  </entry>
+  <entry>
+    <title>Image Thresholding: Understanding Bias of Evaluation Metrics towards Specific Evaluation Functions</title>
+    <link href="http://arxiv.org/abs/2605.27132v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.27132v1</id>
+    <published>2026-05-26T00:00:00Z</published>
+    <updated>2026-05-26T00:00:00Z</updated>
+    <author>
+      <name>Eslam Hegazy</name>
+    </author>
+    <author>
+      <name>Mohamed Gabr</name>
+    </author>
+    <summary type="text">Multilevel image thresholding is widely used for segmentation in applications ranging from medical imaging to remote sensing. Classical objective functions, such as Otsu's between-class variance and Kapur's entropy, are often optimized using metaheuristic algorithms, with performance evaluated via metrics like Structural Similarity Index (SSIM) and Peak Signal-to-Noise Ratio (PSNR). These evaluations implicitly assume that SSIM and PSNR provide unbiased measures of segmentation quality. In this study, we examine this assumption by analyzing the correlation between thresholding objective functions and quality metrics across all possible thresholds for images in the BSDS500 dataset. Results show that Otsu's criterion consistently exhibits high correlation with both SSIM and PSNR, while Kapur's entropy demonstrates weaker and more variable correlation. Otsu outperforms Kapur in correlation with PSNR for all images and with SSIM for over 91%. Our findings reveal an inherent metric-objective-function bias. This work highlights the need for more neutral evaluation frameworks and motivates extending the analysis to additional thresholding criteria and domains. Source code of this paper can be found at https://w3id.org/met-dp/icpr26-95</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Submitted to ICPR 2026 (https://icpr2026.org)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Copula and spatial-regularized variational autoencoder for mapping disease comorbidity in West Africa</title>
+    <link href="http://arxiv.org/abs/2605.27120v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.27120v1</id>
+    <published>2026-05-26T00:00:00Z</published>
+    <updated>2026-05-26T00:00:00Z</updated>
+    <author>
+      <name>Osafu Augustine Egbon</name>
+    </author>
+    <author>
+      <name>Bassey David Ita</name>
+    </author>
+    <author>
+      <name>Faith Eshofonie</name>
+    </author>
+    <author>
+      <name>Ezra Gayawan</name>
+    </author>
+    <summary type="text">Geospatial health disproportionality remains a critical public health concern, as communities face heterogeneous illness risks due to varying exposures to adverse socioeconomic and environmental conditions. While statistical models have been adopted to identify risk factors, studies that account for the complex, non-linear dependencies and spatial regularities inherent in comorbid disease patterns are underdeveloped. In this work, we propose a novel spatially regularized variational autoencoder (VAE) to characterize and map the geospatial disproportion of childhood comorbidity in West Africa, focusing on diarrhea, fever, and acute respiratory infection (ARI). To model dependence between these conditions, this study integrates a bivariate Gumbel copula into the VAE framework, enabling flexible modeling of asymmetric dependence and quantification of joint and conditional morbidity risks. Additionally, covariate effects within the framework were quantified to facilitate epidemiological interpretation of risk factors. The proposed method was benchmarked against commonly used methods and applied to characterize comorbidity in West Africa using the Demographic and Health Survey data. Findings reveal pronounced spatial heterogeneity in the likelihood of comorbidity among West African children, with the strongest co-occurrence observed between fever and ARI. Household wealth, maternal education, and access to improved water sources were associated with the likelihood of comorbidity. These patterns highlight high-risk areas and underscore the need for targeted, location-specific public health interventions.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="stat.ME" />
+  </entry>
+  <entry>
+    <title>RoadGIE: Towards A Global-Scale Aerial Benchmark for Generalizable Interactive Road Extraction</title>
+    <link href="http://arxiv.org/abs/2605.26862v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.26862v1</id>
+    <published>2026-05-26T00:00:00Z</published>
+    <updated>2026-05-26T00:00:00Z</updated>
+    <author>
+      <name>Chenxu Peng</name>
+    </author>
+    <author>
+      <name>Chenxu Wang</name>
+    </author>
+    <author>
+      <name>Yimian Dai</name>
+    </author>
+    <author>
+      <name>Yongxiang Liu</name>
+    </author>
+    <author>
+      <name>Ming-Ming Cheng</name>
+    </author>
+    <author>
+      <name>Xiang Li</name>
+    </author>
+    <summary type="text">Accurate road segmentation from aerial imagery is fundamental to many geospatial applications. However, existing datasets often suffer from limited scene diversity, low semantic granularity, and poor structural continuity, restricting their generalization across environments. To address these challenges, we introduce WorldRoadSeg-360K, the largest and most diverse road segmentation dataset to date, comprising 366,947 high-resolution images collected from 38 countries and 223 cities across various terrains and continents. WorldRoadSeg-360K serves as a comprehensive benchmark and reveals key challenges in handling diverse and structurally complex scenes. Automated approaches often struggle to preserve road connectivity, while current interactive methods lack efficient, topology-sensitive tools for real-world road editing. To this end, we present RoadGIE, establishing a novel interactive paradigm for road extraction in remote sensing. Unlike prior point- or box-based prompting strategies, RoadGIE supports connectivity-aware prompts, including clicks and scribbles, which inherently align with the topology of road networks. To improve structural consistency and mitigate performance degradation during iterative interactions, RoadGIE integrates an expert-guided prompting strategy and adapts the skeleton-based recall loss for interactive scenarios. RoadGIE achieves state-of-the-art performance in both segmentation accuracy and topological consistency on WorldRoadSeg-360K and other benchmarks, while maintaining efficient operation with only 3.7M parameters. The code are publicly available at: https://github.com/chaineypung/RoadGIE</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/chaineypung/RoadGIE"&gt;https://github.com/chaineypung/RoadGIE&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>High-resolution mid-infrared single-photon upconversion ranging</title>
+    <link href="http://arxiv.org/abs/2605.26455v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.26455v1</id>
+    <published>2026-05-26T00:00:00Z</published>
+    <updated>2026-05-26T00:00:00Z</updated>
+    <author>
+      <name>Shuhong Jiang</name>
+    </author>
+    <author>
+      <name>Kun Huang</name>
+    </author>
+    <author>
+      <name>Tingting Yu</name>
+    </author>
+    <author>
+      <name>Jianan Fang</name>
+    </author>
+    <author>
+      <name>Ben Sun</name>
+    </author>
+    <author>
+      <name>Yan Liang</name>
+    </author>
+    <author>
+      <name>Qiang Hao</name>
+    </author>
+    <author>
+      <name>E Wu</name>
+    </author>
+    <author>
+      <name>Ming Yan</name>
+    </author>
+    <author>
+      <name>Heping Zeng</name>
+    </author>
+    <summary type="text">Single-photon laser ranging has widespread applications in remote sensing and target recognition. However, highly-sensitive light detection and ranging (LiDAR) has long been restricted in visible or near-infrared bands. An appealing quest is to extend the operation wavelength into the mid-infrared (MIR) region, which calls for an infrared photon counting system at high detection sensitivity and precise temporal resolution. Here, we devise and demonstrate a MIR upconversion LiDAR based on nonlinear asynchronous optical sampling. Specifically, the infrared probe is interrogated in a nonlinear crystal by a train of pump pulses at a slightly different repetition rate, which favors for a temporal optical scanning at a picosecond timing resolution and a kilohertz refreshing rate over $\sim$50 ns. Moreover, the cross-correlation upconversion trace is temporally stretched by a factor of 2$\times$10$^4$, which can thus be recorded by a low-bandwidth silicon detector. In combination with time-correlated photon-counting technique, the achieved effective resolution is about two orders of magnitude better than the timing jitter of the detector itself, which facilitates a ranging precision of 4 $μ$m under a low detected flux of 8$\times$10$^{-5}$ photons per pulse. The presented MIR time-of-flight range finder is featured with single-photon sensitivity and high positioning resolution, which would be particularly useful in infrared sensing and imaging in photon-starved scenarios.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="physics.optics" />
+  </entry>
   <entry>
     <title>VertiCue-Bench: Diagnosing Whether MLLMs Use Height Cues to Resolve 2D Ambiguity in Remote Sensing Natural Scenes</title>
     <link href="http://arxiv.org/abs/2605.25784v1" rel="alternate" type="text/html" />
@@ -576,260 +705,5 @@
     <summary type="text">Recent advances in Large Language Models (LLMs) have led to dramatic improvements in question answering (QA). To address the challenge of evaluating QA systems, standardized benchmarks have been introduced. This work focuses on the problem of geospatial QA, where a large collection of geospatial data is available in the form of a spatial database or other forms. Existing work on geospatial QA benchmarks has various limitations, including a small number of questions, limited spatial predicates, narrow output types, and no multi-source reasoning. We present GS-QA, an extensible geospatial QA benchmark with 2,800 question-answer pairs across 28 templates on top of OpenStreetMap and Wikipedia data, covering a wide range of spatial objects, predicates (including directional and towards filtering), and answer types (entity names, locations, distances, directions, counts, and aggregated areas/lengths). A key feature of GS-QA is that some questions require combining information from multiple sources, e.g., geospatial information from OSM and factual information from Wikipedia. GS-QA includes a comprehensive evaluation methodology that combines text-based QA measures with geospatial-specific measures such as distance error and angular error. We implemented nine LLM-based geospatial QA baselines using three LLMs (GPT-4o, Claude Sonnet 4.6, and Ministral-3) with combinations of direct prompting, retrieval-augmented generation, and text-to-SQL. Our results show that existing solutions perform reasonably well on simple spatial predicates with entity name outputs, but accuracy degrades significantly for questions involving complex spatial predicates, numeric output types, and multi-source reasoning, demonstrating that geospatial QA remains a challenging open problem warranting further research.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
     <category term="cs.DB" />
-  </entry>
-  <entry>
-    <title>SpectralEarth-FM: Bringing Hyperspectral Imagery into Multimodal Earth Observation Pretraining</title>
-    <link href="http://arxiv.org/abs/2605.21075v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.21075v1</id>
-    <published>2026-05-20T00:00:00Z</published>
-    <updated>2026-05-20T00:00:00Z</updated>
-    <author>
-      <name>Nassim Ait Ali Braham</name>
-    </author>
-    <author>
-      <name>Aaron Banze</name>
-    </author>
-    <author>
-      <name>Conrad M. Albrecht</name>
-    </author>
-    <author>
-      <name>Julien Mairal</name>
-    </author>
-    <author>
-      <name>Jocelyn Chanussot</name>
-    </author>
-    <author>
-      <name>Xiao Xiang Zhu</name>
-    </author>
-    <summary type="text">Earth observation (EO) foundation models (FMs) are increasingly trained on multisensor data, spanning multispectral imagery (MSI), synthetic aperture radar (SAR), and derived geospatial layers, but hyperspectral imagery (HSI) remains underrepresented. Conversely, existing hyperspectral FMs are trained on HSI alone, leaving joint pretraining and fusion of HSI with co-located EO sensors unexplored. We introduce SpectralEarth-FM, a hierarchical transformer for multisensor EO input with heterogeneous spectral dimensionality. The architecture combines spectral tokenization for hyperspectral inputs, sensor-specific encoders, a cross-sensor fusion module, and a shared hierarchical encoder, enabling joint processing of HSI and lower-channel observations. To pretrain SpectralEarth-FM, we curate SpectralEarth-MM, a dataset that co-locates HSI from three spaceborne sensors (EnMAP, EMIT, DESIS) with Sentinel-2, Landsat-8/9 optical imagery, Landsat land surface temperature (LST), and Sentinel-1 SAR, over common geographic footprints. It comprises approximately 2M globally distributed locations, 25M georeferenced patches, and over 40TB of data. Pretraining uses a Joint-Embedding Predictive Architecture (JEPA)-style objective that matches representations between global views and single-sensor local views from the same location. We evaluate SpectralEarth-FM on hyperspectral downstream tasks and standard EO benchmarks following the PANGAEA protocol, achieving state-of-the-art results across both evaluation settings.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Hybrid Machine Learning Model for Forest Height Estimation from TanDEM-X and Landsat Data</title>
-    <link href="http://arxiv.org/abs/2605.20997v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.20997v1</id>
-    <published>2026-05-20T00:00:00Z</published>
-    <updated>2026-05-20T00:00:00Z</updated>
-    <author>
-      <name>Islam Mansour</name>
-    </author>
-    <author>
-      <name>Ronny Haensch</name>
-    </author>
-    <author>
-      <name>Irena Hajnsek</name>
-    </author>
-    <author>
-      <name>Konstantinos Papathanassiou</name>
-    </author>
-    <summary type="text">Integrating machine learning (ML) with physical models (PM) has emerged as a promising way of retrieving geophysical parameters from remote sensing data. In this context, a ML model for estimating forest height from TanDEM-X interferometric coherence measurements has recently been proposed, that constrains the learning process through a PM. While the features used for training and inversion where selected to ensure the physical consistency of the solutions, they could not resolve all height / structure and baseline / terrain slope ambiguities in the data. To improve this, the extension of the feature space with optical Landsat data is proposed able to provide complementary information on forest type or structure. The extended model is applied and validated on several TanDEM-X acquisitions over the Gabonese Lopé national park site and assessed against airborne LiDAR measurements. Results show a 13.5% reduction in RMSE and a 16.6% reduction in MAE compared to the original hybrid model, confirming the added value of multispectral inputs.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence; Machine Learning; physics.comp-ph" />
-  </entry>
-  <entry>
-    <title>Wide-field mid-infrared edge-enhanced upconversion imaging</title>
-    <link href="http://arxiv.org/abs/2605.20741v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.20741v1</id>
-    <published>2026-05-20T00:00:00Z</published>
-    <updated>2026-05-20T00:00:00Z</updated>
-    <author>
-      <name>Mengyao Yu</name>
-    </author>
-    <author>
-      <name>Zhuohang Wei</name>
-    </author>
-    <author>
-      <name>Jianan Fang</name>
-    </author>
-    <author>
-      <name>Jixi Zhang</name>
-    </author>
-    <author>
-      <name>Tingting Zheng</name>
-    </author>
-    <author>
-      <name>Shina Liao</name>
-    </author>
-    <author>
-      <name>Kun Huang</name>
-    </author>
-    <author>
-      <name>Heping Zeng</name>
-    </author>
-    <summary type="text">Edge-enhanced imaging is critical for visualizing weakly absorbing and transparent objects. Extending this functionality into the mid-infrared (MIR) region enables chemical sensitivity and improved imaging performance for biomedical, material, and remote-sensing applications. Here, we present a wide-field MIR edge-enhanced upconversion imaging system that integrates vortex-pump complex-amplitude engineering with aperiodic quasi-phase matching. In contrast to the bright-field modality, the wide-field edge-enhanced operation shows sensitive dependence on the crystal position relative to the Fourier plane. The system achieves single-shot operation with a 25-mm field of view and 79-$μ$m spatial resolution, yielding a record-high space-bandwidth product of $7.9 \times 10^4$. We show that this capability enables direct visualization of phase gradients in transparent optical elements and enhances structural contrast in biological specimens. The demonstrated architecture combines high sensitivity, spectral specificity, and robust edge detection, offering a promising route toward advanced MIR imaging in industrial inspection and biomedical diagnostics.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="physics.optics" />
-  </entry>
-  <entry>
-    <title>STAR-IOD: Scale-decoupled Topology Alignment with Pseudo-label Refinement for Remote Sensing Incremental Object Detection</title>
-    <link href="http://arxiv.org/abs/2605.20738v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.20738v1</id>
-    <published>2026-05-20T00:00:00Z</published>
-    <updated>2026-05-20T00:00:00Z</updated>
-    <author>
-      <name>Yaoteng Zhang</name>
-    </author>
-    <author>
-      <name>Qing Zhou</name>
-    </author>
-    <author>
-      <name>Junyu Gao</name>
-    </author>
-    <author>
-      <name>Qi Wang</name>
-    </author>
-    <summary type="text">Remote sensing imagery typically arrives in the form of continuous data streams. Traditional detectors often forget previously learned categories when learning new ones; therefore, research on Remote Sensing Incremental Object Detection (RS-IOD) is of great significance. However, existing methods largely overlook the intra-class scale variations prevalent in remote sensing scenes, which undermines the effectiveness of knowledge transfer and old knowledge preservation. Moreover, RS-IOD also suffers from missing annotations, which cause the model to misclassify old-class instances as background. To address these challenges, we propose a novel framework, STAR-IOD. First, we introduce a Subspace-decoupled Topology Distillation (STD) module to transfer structural knowledge, explicitly aligning inter-class topological relationships and mitigating intra-class representation discrepancies induced by scale shifts. Furthermore, we introduce the Clustering-driven Pseudo-label Generator (CPG), a plug-and-play module that leverages K-Means clustering to dynamically identify class-specific thresholds, thereby guaranteeing an accurate distinction between true positive targets and background noise and alleviating the issue of missing annotations for old classes. We also constructed two Remote Sensing Incremental Object Detection datasets, DIOR-IOD and DOTA-IOD to facilitate research on RS-IOD. Extensive experiments demonstrate that our method outperforms state-of-the-art approaches by 1.7% and 2.1% mAP on DIOR-IOD and DOTA-IOD, respectively, effectively alleviating catastrophic forgetting while preserving strong detection performance on both base and novel classes. The code and dataset are released at: https://github.com/zyt95579/STAR-IOD.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/zyt95579/STAR-IOD"&gt;https://github.com/zyt95579/STAR-IOD&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ISPRS Journal of Photogrammetry and Remote Sensing&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>LER-YOLO: Reliability-Aware Expert Routing for Misaligned RGB-Infrared UAV Detection</title>
-    <link href="http://arxiv.org/abs/2605.20667v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.20667v1</id>
-    <published>2026-05-20T00:00:00Z</published>
-    <updated>2026-05-20T00:00:00Z</updated>
-    <author>
-      <name>Liming Hou</name>
-    </author>
-    <author>
-      <name>Yueping Peng</name>
-    </author>
-    <author>
-      <name>Hexiang Hao</name>
-    </author>
-    <author>
-      <name>Ji Wang</name>
-    </author>
-    <author>
-      <name>Xuekai Zhang</name>
-    </author>
-    <author>
-      <name>Wei Tang</name>
-    </author>
-    <author>
-      <name>Zecong Ye</name>
-    </author>
-    <author>
-      <name>Xin Ying</name>
-    </author>
-    <author>
-      <name>Yubo He</name>
-    </author>
-    <summary type="text">Detecting small unmanned aerial vehicles from RGB-infrared remote-sensing pairs remains challenging due to tiny target scale, cluttered backgrounds, and spatial misalignment between heterogeneous sensors. Existing bimodal detectors often align or fuse features without assessing the reliability of local cross-sensor correspondence, allowing mismatch artifacts to propagate into the detection head. To address this issue, we propose LER-YOLO, a reliability-aware sparse mixture-of-experts framework for misaligned RGB-infrared UAV detection. LER-YOLO first introduces an Uncertainty-Aware Target Alignment module that resamples visible features toward the infrared reference and estimates a spatial reliability map. This reliability prior is then used by a Reliability-Guided Sparse MoE Fusion module to adaptively select k experts from RGB-dominant, infrared-dominant, and interactive fusion experts, enabling trustworthy cross-modal interaction while suppressing unreliable fusion. Experiments on the public MBU benchmark under a YOLOv5s-family protocol show that LER-YOLO achieves 89.7+/-0.2% AP50 over three independent seeds, with a best result of 89.9%. Extensive ablations, parameter-matched comparisons, synthetic-shift evaluations, and complexity analysis demonstrate that the gains mainly come from reliability-guided expert routing rather than increased model capacity.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 17 pages, 6 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>A Non-Reference Diffusion-Based Restoration Framework for Landsat 7 ETM+ SLC-off Imagery in Antarctica</title>
-    <link href="http://arxiv.org/abs/2605.21371v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.21371v1</id>
-    <published>2026-05-20T00:00:00Z</published>
-    <updated>2026-05-20T00:00:00Z</updated>
-    <author>
-      <name>Leyue Tang</name>
-    </author>
-    <author>
-      <name>Jonathan Louis Bamber</name>
-    </author>
-    <author>
-      <name>Gang Qiao</name>
-    </author>
-    <author>
-      <name>Yuanhang Kong</name>
-    </author>
-    <summary type="text">Acquiring usable optical imagery in Antarctica is inherently challenging due to prolonged polar nights and frequent cloud cover. Landsat provides the longest and most continuous optical observations and constitutes one of the most important remote sensing data sources for Antarctic studies. However, the scan-line corrector (SLC) failure in 2003 resulted in approximately 22% missing pixels in Landsat 7 ETM+ SLC-off imagery, severely limiting its usability. Unlike many non-polar environments, Antarctic surfaces undergo rapid and substantial changes, which makes it difficult to obtain reliable reference imagery and reduces the applicability of conventional reference-based gap-filling methods. To address this challenge, we propose DiffGF, a non-reference diffusion-based framework for restoring Landsat 7 SLC-off imagery without requiring any external reference data. DiffGF adopts a two-stage design consisting of a latent-space diffusion process and a pixel-space refinement. A dedicated Antarctic dataset, SLCANT, is constructed for training and evaluation. Quantitative and qualitative results demonstrate that DiffGF restores Antarctic SLC-off imagery with high fidelity. Its practical value is further examined through a downstream crevasse segmentation application. The results suggest that DiffGF provides a useful approach for exploiting Landsat 7 SLC-off archives in Antarctica, enabling the extraction of valuable information from historical records and supporting related Antarctic studies.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Submitted to IEEE JSTARS&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Vision Transformers and Convolutional Neural Networks for Land Use Scene Classification</title>
-    <link href="http://arxiv.org/abs/2605.21268v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.21268v1</id>
-    <published>2026-05-20T00:00:00Z</published>
-    <updated>2026-05-20T00:00:00Z</updated>
-    <author>
-      <name>Arun D. Kulkarni</name>
-    </author>
-    <summary type="text">Land Use Scene Classification (LUSC) from remote sensing imagery plays a critical role in environmental monitoring, urban planning, and sustainable resource management. In recent years, deep learning methods have significantly advanced the state of the art, with Convolutional Neural Networks (CNNs) dominating the field because of their strong ability to capture local spatial features. However, the emergence of Vision Transformers (ViTs) has introduced a new paradigm that models long-range dependencies through self-attention mechanisms, potentially enabling improved global context understanding. This paper presents a comparative assessment of Vision Transformers and CNN-based architecture for remote sensing land use scene classification. Representative CNN models, such as AlexNet, is evaluated alongside the Vision Transformer (ViT) using benchmark remote sensing datasets, including the UC Merced Land Use and EuroSAT Land Use datasets. The study examines classification accuracy, precision, recall, F1-score, and computational complexity to provide a comprehensive performance comparison. Experimental results demonstrate that CNNs perform robustly on datasets with limited training samples and strong local texture characteristics, whereas Vision Transformers exhibit superior performance in capturing global spatial relationships in complex scenes when sufficient training data are available. However, ViTs typically require greater computational resources and larger training datasets to achieve optimal performance. The findings of this study provide insights into the strengths and limitations of both architectures and offer guidance for selecting appropriate models for remote sensing land use scene classification applications.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Mapping Tomato Cropping Systems in California Using AlphaEarth Geospatial Embeddings and Deep Learning Analysis</title>
-    <link href="http://arxiv.org/abs/2605.21804v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.21804v1</id>
-    <published>2026-05-20T00:00:00Z</published>
-    <updated>2026-05-20T00:00:00Z</updated>
-    <author>
-      <name>Mohammadreza Narimani</name>
-    </author>
-    <author>
-      <name>Alireza Pourreza</name>
-    </author>
-    <author>
-      <name>Parastoo Farajpoor</name>
-    </author>
-    <summary type="text">Field-scale crop maps support supply-chain forecasting and policy, yet statewide crop identification still often depends on retrospective surveys or remote-sensing workflows built around hand-engineered spectral features. Those pipelines can be accurate, but they require repeated preprocessing and often lose robustness across years. This study evaluated whether Google DeepMind's AlphaEarth geospatial embeddings can serve as an analysis-ready alternative for mapping processing tomato systems in California. LandIQ 2018 crop polygons were used to assemble a balanced reference dataset of 4,742 tomato and 4,742 non-tomato fields. For each polygon, 64-band AlphaEarth embedding chips were extracted and aligned with binary masks, then divided into spatially independent training (n = 6,638), validation (n = 1,422), and test (n = 1,424) sets. A U-Net segmentation model was trained on AWS SageMaker using a composite masked binary cross-entropy and soft Dice loss. To complement hard predictions, Monte Carlo dropout was retained at inference and repeated 100 times per chip to estimate predictive mean and variance. On the independent test set, the model achieved 99.19% pixel accuracy, 98.69% precision, 99.40% recall, 99.04% F1 score, 98.11% intersection over union, and 99.02% chip accuracy. Uncertainty maps were consistently highest near field edges and low within field interiors. The results show that AlphaEarth embeddings retain crop-relevant spatial and temporal structure and can support accurate, field-scale tomato mapping without manual feature engineering.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 5 pages, 3 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Image and Video Processing" />
-    <category term="Computer Vision; Machine Learning" />
-  </entry>
-  <entry>
-    <title>SkySeg: Collaborative Onboard Semantic Segmentation with Heterogeneous UAVs in the Wild</title>
-    <link href="http://arxiv.org/abs/2605.24014v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.24014v1</id>
-    <published>2026-05-20T00:00:00Z</published>
-    <updated>2026-05-20T00:00:00Z</updated>
-    <author>
-      <name>Anqi Lu</name>
-    </author>
-    <author>
-      <name>Yun Cheng</name>
-    </author>
-    <author>
-      <name>Youbing Hu</name>
-    </author>
-    <author>
-      <name>Zhiqiang Cao</name>
-    </author>
-    <author>
-      <name>Jie Liu</name>
-    </author>
-    <author>
-      <name>Zhijun Li</name>
-    </author>
-    <summary type="text">The demand for unmanned aerial vehicle (UAV)-based image acquisition and analysis has surged, with UAVs increasingly utilized for semantic segmentation tasks. To meet the real-time analysis requirements of UAV remote sensing missions, performing onboard computation and making decisions based on the results is a natural approach. However, deploying semantic segmentation on resource-constrained UAV platforms presents two significant challenges: 1) hardware constraints limit the ability of UAVs to perform real-time semantic segmentation, and 2) environmental variations during flight cause data distribution shifts, deviating from the original training data. To address these issues, this paper introduces SkySeg, a heterogeneous multi-UAV air-air cooperation framework that integrates computer vision and flight pattern to enable onboard semantic segmentation using low-cost sensors. SkySeg employs an efficient information fusion inference method, combining low-definition, wide-area images with high-definition, focused-area images. Additionally, it incorporates a cross-device test-time adaptation (TTA) strategy to enhance segmentation performance in dynamic environments by collaboratively addressing distribution shifts of test data streams across UAVs. Experimental results demonstrate that our SkySeg framework accelerates inference latency by approximately 3.6x, improves onboard segmentation accuracy by 5.91\%, and achieves a 10.91\% average accuracy gain in the wild.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Broadening Access to Transportation Safety Data with Generative AI: A Schema-Grounded Framework for Spatial Natural Language Queries</title>
-    <link href="http://arxiv.org/abs/2605.21712v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.21712v1</id>
-    <published>2026-05-20T00:00:00Z</published>
-    <updated>2026-05-20T00:00:00Z</updated>
-    <author>
-      <name>Mahdi Azhdari</name>
-    </author>
-    <author>
-      <name>Eric J. Gonzales</name>
-    </author>
-    <summary type="text">Transportation safety analysis requires integrating crash records, roadway attributes, and geospatial data through GIS-based workflows, but access remains uneven across agencies and community stakeholders. Technical prerequisites create a gap between analytical tools central to safety planning and the practitioners able to use them. Local agencies, school committees, and residents may have safety concerns but limited capacity to retrieve, filter, map, and analyze relevant data. Generative AI offers a way to narrow this divide, but its public-sector use raises questions about reliability, reproducibility, and governance. This paper presents a schema-grounded natural language interface for transportation safety analysis, using a large language model (LLM) to interpret user intent while preserving deterministic, reviewable execution against an authoritative database. User queries are translated into structured semantic frames, validated by a rule-based layer, compiled into a typed directed acyclic graph of spatial operations, and executed against a PostGIS database. This bounded design separates language interpretation from deterministic execution, keeping results reproducible and schema-grounded while removing access barriers. The framework is evaluated using a statewide Massachusetts transportation safety database integrating crash records, roadway attributes, and geospatial layers including schools, bus stops, crosswalks, and municipal boundaries. All queries executed successfully; the validation layer corrects errors in 29% of evaluation queries, reflecting the gap between flexible natural language and strict schema-grounded requirements. The results suggest that combining natural language accessibility with deterministic execution is a practical direction for broadening access to transportation safety data, with implications for trustworthy AI in public-sector planning.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 30 pages, 5 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.CL" />
   </entry>
 </feed>

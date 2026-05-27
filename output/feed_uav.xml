@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_uav.xml</id>
   <link href="https://rspaper.top/output/feed_uav.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-26T09:49:26Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
+  <updated>2026-05-27T02:12:39Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -66,72 +66,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>LER-YOLO: Reliability-Aware Expert Routing for Misaligned RGB-Infrared UAV Detection</title>
-    <link href="http://arxiv.org/abs/2605.20667v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.20667v1</id>
-    <published>2026-05-20T00:00:00Z</published>
-    <updated>2026-05-20T00:00:00Z</updated>
-    <author>
-      <name>Liming Hou</name>
-    </author>
-    <author>
-      <name>Yueping Peng</name>
-    </author>
-    <author>
-      <name>Hexiang Hao</name>
-    </author>
-    <author>
-      <name>Ji Wang</name>
-    </author>
-    <author>
-      <name>Xuekai Zhang</name>
-    </author>
-    <author>
-      <name>Wei Tang</name>
-    </author>
-    <author>
-      <name>Zecong Ye</name>
-    </author>
-    <author>
-      <name>Xin Ying</name>
-    </author>
-    <author>
-      <name>Yubo He</name>
-    </author>
-    <summary type="text">Detecting small unmanned aerial vehicles from RGB-infrared remote-sensing pairs remains challenging due to tiny target scale, cluttered backgrounds, and spatial misalignment between heterogeneous sensors. Existing bimodal detectors often align or fuse features without assessing the reliability of local cross-sensor correspondence, allowing mismatch artifacts to propagate into the detection head. To address this issue, we propose LER-YOLO, a reliability-aware sparse mixture-of-experts framework for misaligned RGB-infrared UAV detection. LER-YOLO first introduces an Uncertainty-Aware Target Alignment module that resamples visible features toward the infrared reference and estimates a spatial reliability map. This reliability prior is then used by a Reliability-Guided Sparse MoE Fusion module to adaptively select k experts from RGB-dominant, infrared-dominant, and interactive fusion experts, enabling trustworthy cross-modal interaction while suppressing unreliable fusion. Experiments on the public MBU benchmark under a YOLOv5s-family protocol show that LER-YOLO achieves 89.7+/-0.2% AP50 over three independent seeds, with a best result of 89.9%. Extensive ablations, parameter-matched comparisons, synthetic-shift evaluations, and complexity analysis demonstrate that the gains mainly come from reliability-guided expert routing rather than increased model capacity.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 17 pages, 6 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>SkySeg: Collaborative Onboard Semantic Segmentation with Heterogeneous UAVs in the Wild</title>
-    <link href="http://arxiv.org/abs/2605.24014v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.24014v1</id>
-    <published>2026-05-20T00:00:00Z</published>
-    <updated>2026-05-20T00:00:00Z</updated>
-    <author>
-      <name>Anqi Lu</name>
-    </author>
-    <author>
-      <name>Yun Cheng</name>
-    </author>
-    <author>
-      <name>Youbing Hu</name>
-    </author>
-    <author>
-      <name>Zhiqiang Cao</name>
-    </author>
-    <author>
-      <name>Jie Liu</name>
-    </author>
-    <author>
-      <name>Zhijun Li</name>
-    </author>
-    <summary type="text">The demand for unmanned aerial vehicle (UAV)-based image acquisition and analysis has surged, with UAVs increasingly utilized for semantic segmentation tasks. To meet the real-time analysis requirements of UAV remote sensing missions, performing onboard computation and making decisions based on the results is a natural approach. However, deploying semantic segmentation on resource-constrained UAV platforms presents two significant challenges: 1) hardware constraints limit the ability of UAVs to perform real-time semantic segmentation, and 2) environmental variations during flight cause data distribution shifts, deviating from the original training data. To address these issues, this paper introduces SkySeg, a heterogeneous multi-UAV air-air cooperation framework that integrates computer vision and flight pattern to enable onboard semantic segmentation using low-cost sensors. SkySeg employs an efficient information fusion inference method, combining low-definition, wide-area images with high-definition, focused-area images. Additionally, it incorporates a cross-device test-time adaptation (TTA) strategy to enhance segmentation performance in dynamic environments by collaboratively addressing distribution shifts of test data streams across UAVs. Experimental results demonstrate that our SkySeg framework accelerates inference latency by approximately 3.6x, improves onboard segmentation accuracy by 5.91\%, and achieves a 10.91\% average accuracy gain in the wild.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>
