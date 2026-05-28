@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-27T05:12:10Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 26 entries</subtitle>
+  <updated>2026-05-28T01:58:39Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 21 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -575,135 +575,5 @@
     <summary type="text">Background: Access to radiotherapy (RT) is constrained by two compounding factors: insufficient machine capacity to meet patient demand and geographic distance from treatment facilities. Existing analyses address these factors separately, constraining the insights available to planners and policymakers. This paper presents RadMaps, an open-source geospatial framework that simultaneously models capacity and geographic constraints on RT access at any spatial scale.   Methods: RadMaps operates on Uber's H3 hexagonal grid and integrates population density data with national cancer incidence estimates and RT facility inventories. RT demand is estimated using cancer-site-specific RT utilisation rates, and geographic access is modelled via configurable decay functions using either distance, driving time, or public transport time. A greedy nearest-first allocation algorithm assigns demand to facilities subject to both capacity and geographic constraints, producing a localised access metric for every H3 hexagon.   Results: Applied globally with a 200 km step-function access threshold, RadMaps computes a capacity-only access of 70 %, a geography-only access of 91 %, and a combined RT access of 60 %, illustrating the compounding effect of capacity and geographic constraints to significantly reduce effective access. High-resolution analyses of six countries demonstrate the tool's ability to localise access deficits at sub-national scale and reveal distinct access profiles: capacity-limited, geographically-limited, and doubly-constrained.   Conclusions: RadMaps provides a flexible, open-access framework for visualising and identifying RT access gaps at regional to global scales, with applications in infrastructure planning and policy prioritisation. RadMaps' modular framework is also readily extensible to other spatial access modelling applications.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="physics.med-ph" />
-  </entry>
-  <entry>
-    <title>C-SWIM: A Coupled Space Weather Impact Model for Satellite Fleet Vulnerability and Economic Loss Under a 1-in-100-Year Solar Energetic Particle Event</title>
-    <link href="http://arxiv.org/abs/2605.22576v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.22576v1</id>
-    <published>2026-05-21T00:00:00Z</published>
-    <updated>2026-05-21T00:00:00Z</updated>
-    <author>
-      <name>D. Bor</name>
-    </author>
-    <author>
-      <name>E. J. Oughton</name>
-    </author>
-    <author>
-      <name>R. S. Weigel</name>
-    </author>
-    <author>
-      <name>R. Yang</name>
-    </author>
-    <author>
-      <name>T. Clower</name>
-    </author>
-    <author>
-      <name>M. J. Wiltberger</name>
-    </author>
-    <author>
-      <name>R. Linares</name>
-    </author>
-    <summary type="text">Modern economies depend critically on satellite infrastructure, yet the aggregate economic consequences of extreme solar energetic particle (SEP) events have not been rigorously assessed. This study develops an integrated framework linking SEP hazard characterization, dynamic geomagnetic cutoff rigidity modeling, radiation dose transport, and fleet-wide failure probability estimation to macroeconomic impact analysis. Using extreme-value analysis of 160 SEP events over 27.4 years (1996-2025), failure probability is estimated for ~10,650 US operational satellites under orbital regime-dependent shielding assumptions. The assessment reveals that ~100 satellites (1.0%) are at Critical risk, concentrated in high-altitude low Earth orbit and highly elliptical orbit, while medium Earth orbit and geosynchronous orbit satellites fall in the Negligible class (P_fail &lt; 10^-9) under the assumed radiation-hardened components and shielding. The expected capital loss across the ~$254B fleet totals ~$5.2B. Three failure scenarios, expanding from Critical satellites only (P_fail &gt; 10^-2), to Critical and Elevated (P_fail &gt; 10^-3), and to all satellites with non-negligible risk (P_fail &gt; 10^-6), yield daily economic impacts of ~$70M, ~$270M, and ~$1.3B, respectively. Earth observation suffers up to 95.6% capacity loss in the worst case, while military services experience 16.1-20.4% disruption across scenarios. Results are first-order estimates: hardware failure counts are conservative because only total ionizing dose is modeled, and daily economic impacts represent upper bounds because operator response and recovery are not included.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 35 pages, 7 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="physics.space-ph" />
-  </entry>
-  <entry>
-    <title>Impact of Atmospheric Turbulence and Pointing Error on Earth Observation</title>
-    <link href="http://arxiv.org/abs/2605.22268v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.22268v1</id>
-    <published>2026-05-21T00:00:00Z</published>
-    <updated>2026-05-21T00:00:00Z</updated>
-    <author>
-      <name>Celia Sánchez-de-Miguel</name>
-    </author>
-    <author>
-      <name>Antonio M. Mercado-Martínez</name>
-    </author>
-    <author>
-      <name>Beatriz Soret</name>
-    </author>
-    <author>
-      <name>Antonio Jurado-Navas</name>
-    </author>
-    <author>
-      <name>Miguel Castillo-Vázquez</name>
-    </author>
-    <summary type="text">Earth Observation (EO) imagery is often degraded by atmospheric turbulence and pointing jitter; yet, these effects are rarely considered in datasets used to train AI-based detection models. Based on prior work, this paper presents an enhanced image simulator that enables the incorporation of vertical-path atmospheric turbulence and satellite pointing jitter, arising from platform and sensor vibrations, to generate physically realistic distorted images. As a case study, vessel detection is evaluated using YOLOv8 and RetinaNet on images generated by the proposed simulator under different levels of turbulence and pointing errors. Results show that YOLOv8 recall decreases from 91% under ideal conditions to 60% in the presence of weak turbulence, and falls below 40% under strong turbulence or jitter. In contrast, RetinaNet demonstrates greater robustness, maintaining approximately 75% recall across degraded conditions. These results highlight the importance of incorporating realistic physical degradations into EO training datasets to ensure reliable performance of AI-based models in operational environments, as demonstrated in maritime surveillance applications.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Conference&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.NI" />
-    <category term="Artificial Intelligence; Computer Vision" />
-  </entry>
-  <entry>
-    <title>Flow-based Gaussian Splatting for Continuous-Scale Remote Sensing Image Super-Resolution</title>
-    <link href="http://arxiv.org/abs/2605.22147v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.22147v1</id>
-    <published>2026-05-21T00:00:00Z</published>
-    <updated>2026-05-21T00:00:00Z</updated>
-    <author>
-      <name>Jiangwei Mo</name>
-    </author>
-    <author>
-      <name>Xi Lu</name>
-    </author>
-    <author>
-      <name>Hanlin Wu</name>
-    </author>
-    <summary type="text">High-resolution remote sensing images (RSIs) are crucial for Earth observation applications, yet acquiring them is often limited by sensor constraints and costs. In recent years, generative super-resolution (SR) methods, particularly diffusion models, have made significant progress. However, they typically require slow iterative inference with 40--1000 steps and exhibit limited flexibility in continuous-scale SR settings. To address these issues, we propose FlowGS, a generative reconstruction framework for arbitrary-scale SR of RSIs. FlowGS models the high-frequency detail representations between high- and low-resolution images and learns a continuous probability flow from noise to detail priors via flow matching (FM) constrained by shortcut consistency, thereby reducing generative complexity and improving inference efficiency. Additionally, we employ 2D Gaussian splatting to construct a continuous feature field, thereby enabling flexible reconstruction at arbitrary query locations. Experimental results show that FlowGS delivers competitive perceptual quality compared with existing methods in both continuous-scale and fixed-scale SR settings, with substantially improved inference efficiency.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>3D LULC classification using multispectral LiDAR and deep learning: current and prospective schemes</title>
-    <link href="http://arxiv.org/abs/2605.22328v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.22328v1</id>
-    <published>2026-05-21T00:00:00Z</published>
-    <updated>2026-05-21T00:00:00Z</updated>
-    <author>
-      <name>Narges Takhtkeshha</name>
-    </author>
-    <author>
-      <name>Aldino Rizaldy</name>
-    </author>
-    <author>
-      <name>Markus Hollaus</name>
-    </author>
-    <author>
-      <name>Juha Hyyppä</name>
-    </author>
-    <author>
-      <name>Fabio Remondino</name>
-    </author>
-    <author>
-      <name>Gottfried Mandlburger</name>
-    </author>
-    <summary type="text">Land Use Land Cover (LULC) classification is essential for national 3D mapping, geospatial analysis, and sustainable planning. Multispectral (MS) LiDAR provides synchronized spatial-spectral information, and deep learning (DL) enables 3D point cloud semantic segmentation; however, adoption is limited by the lack of publicly available urban and suburban MS LiDAR datasets aligned with National Mapping and Cadastral Agencies (NMCAs) classification schemes. This study addresses these gaps by introducing L1 and L2 NMCA-aligned LULC classification schemes and a new benchmark MS LiDAR dataset. We evaluate seven state-of-the-art DL models and perform spectral ablation studies at both levels of detail. Results show that Point Transformer V3 achieves the best performance, with mIoU of 79.4% (L1, 8 classes) and 58.9% (L2, 20 classes) using a dual-wavelength LiDAR system (532 nm and 1064 nm). Ablation results show that multispectral information improves performance over geometry-only inputs, with gains of 1.1 percentage points at L1 and 7.8 points at L2. These results highlight the value of LiDAR reflectance for fine-grained material discrimination and support the evolution of NMCA LULC schemes toward higher semantic detail. The Loosdorf-MSL dataset contributes a new benchmark for consistent national and international LULC mapping.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;SEG;3D&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>GS-QA: A Benchmark for Geospatial Question Answering</title>
-    <link href="http://arxiv.org/abs/2605.22811v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.22811v1</id>
-    <published>2026-05-21T00:00:00Z</published>
-    <updated>2026-05-21T00:00:00Z</updated>
-    <author>
-      <name>Majid Saeedan</name>
-    </author>
-    <author>
-      <name>Muhammad Shihab Rashid</name>
-    </author>
-    <author>
-      <name>Ahmed Eldawy</name>
-    </author>
-    <author>
-      <name>Vagelis Hristidis</name>
-    </author>
-    <summary type="text">Recent advances in Large Language Models (LLMs) have led to dramatic improvements in question answering (QA). To address the challenge of evaluating QA systems, standardized benchmarks have been introduced. This work focuses on the problem of geospatial QA, where a large collection of geospatial data is available in the form of a spatial database or other forms. Existing work on geospatial QA benchmarks has various limitations, including a small number of questions, limited spatial predicates, narrow output types, and no multi-source reasoning. We present GS-QA, an extensible geospatial QA benchmark with 2,800 question-answer pairs across 28 templates on top of OpenStreetMap and Wikipedia data, covering a wide range of spatial objects, predicates (including directional and towards filtering), and answer types (entity names, locations, distances, directions, counts, and aggregated areas/lengths). A key feature of GS-QA is that some questions require combining information from multiple sources, e.g., geospatial information from OSM and factual information from Wikipedia. GS-QA includes a comprehensive evaluation methodology that combines text-based QA measures with geospatial-specific measures such as distance error and angular error. We implemented nine LLM-based geospatial QA baselines using three LLMs (GPT-4o, Claude Sonnet 4.6, and Ministral-3) with combinations of direct prompting, retrieval-augmented generation, and text-to-SQL. Our results show that existing solutions perform reasonably well on simple spatial predicates with entity name outputs, but accuracy degrades significantly for questions involving complex spatial predicates, numeric output types, and multi-source reasoning, demonstrating that geospatial QA remains a challenging open problem warranting further research.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="cs.DB" />
   </entry>
 </feed>
