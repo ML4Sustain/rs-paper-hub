@@ -4,12 +4,73 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-28T01:58:39Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 21 entries</subtitle>
+  <updated>2026-05-28T05:06:17Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 25 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>A Method for Imaging Interplanetary Magnetic Field Strength and Orientation</title>
+    <link href="http://arxiv.org/abs/2605.28407v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.28407v1</id>
+    <published>2026-05-27T00:00:00Z</published>
+    <updated>2026-05-27T00:00:00Z</updated>
+    <author>
+      <name>Chuanpeng Hou</name>
+    </author>
+    <author>
+      <name>Huirong Yan</name>
+    </author>
+    <author>
+      <name>Siqi Zhao</name>
+    </author>
+    <summary type="text">Measurements of interplanetary magnetic fields have long relied on spacecraft measurements, which provide only in-situ sampling and therefore cannot capture the global magnetic structure. Faraday rotation of radio signals extends in-situ measurements to line-of-sight measurements, but it still depends on the number and spatial distribution of available radio sources. The Zeeman effect offers another route to remote sensing of magnetic fields, but it is generally too weak to diagnose the weak interplanetary magnetic fields. Here, we present a remote-sensing method to constrain weak magnetic field strength and orientation using spectral-line polarization induced by ground-state alignment (GSA) and Hanle effect, with collisional effects taken into account. This method is sensitive to weak magnetic fields in environments ranging from the high solar atmosphere and solar wind to the outer heliosphere, and we identify suitable spectral lines for different targets. We further perform forward modeling of Mercury's magnetosphere to demonstrate the feasibility of this imaging method. Spectral-polarization imaging therefore provides a new way toward remote imaging of dynamic heliospheric magnetic structures.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 4 Figures, 1 Table&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="physics.space-ph" />
+    <category term="Geophysics" />
+  </entry>
+  <entry>
+    <title>FLORO: A Multimodal Geospatial Foundation Model for Ecological Remote Sensing Across Sensors and Scales</title>
+    <link href="http://arxiv.org/abs/2605.28174v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.28174v1</id>
+    <published>2026-05-27T00:00:00Z</published>
+    <updated>2026-05-27T00:00:00Z</updated>
+    <author>
+      <name>Jorge L. Rodriguez</name>
+    </author>
+    <author>
+      <name>Victor Angulo Morales</name>
+    </author>
+    <author>
+      <name>Areej Alwahas</name>
+    </author>
+    <author>
+      <name>Mariana Elias Lara</name>
+    </author>
+    <author>
+      <name>Fida Mohammad Thoker</name>
+    </author>
+    <author>
+      <name>Kasper Johansen</name>
+    </author>
+    <author>
+      <name>Bernard Ghanem</name>
+    </author>
+    <author>
+      <name>Fernando T. Maestre</name>
+    </author>
+    <author>
+      <name>Matthew F. McCabe</name>
+    </author>
+    <summary type="text">Foundation models offer a promising route to transferable remote sensing representations, but many current approaches depend on very large pretraining datasets and fixed sensor configurations, limiting their suitability for ecological and environmental applications, where observations often vary across platforms, spatial and spectral resolutions, and available modalities. We introduce FLORO, a multimodal geospatial foundation model designed to learn transferable representations from a small but highly diverse remote sensing corpus. FLORO is pretrained using masked autoencoding on a heterogeneous combination of Sentinel-1, Sentinel-2, SkySAT imagery, elevation, and UAV-derived data. To accommodate sensor variability, FLORO incorporates availability-aware inputs that indicate which spectral bands and auxiliary modalities are present in each sample, enabling a unified input space across heterogeneous sensor configurations. We evaluated FLORO on the PANGAEA benchmark under a frozen-encoder protocol across scene classification, segmentation, and regression tasks. Despite being pretrained on a smaller corpus than competing foundation models, FLORO achieved strong and stable transfer across optical, optical-SAR, and optical-elevation benchmarks spanning medium-resolution satellite, airborne, and ultra-high-resolution UAV imagery. FLORO obtained the second-best average segmentation performance across six PANGAEA benchmarks, trailing only a recently introduced foundation model pretrained on over two orders of magnitude more images, remained competitive on scene classification, and was robust in regression tasks, while qualitative results showed improved preservation of spatial structure in flood, urban, biomass, and canopy-height prediction settings. In a separate controlled experiment on EuroSAT-MS, geo-positional encoding further improved classification relative to absolute positional encoding.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 29 pages, 9 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>Topological Signatures of Imperial Stress: Persistent Homology of the Eastern Mediterranean Trade Network, 0--400 CE</title>
     <link href="http://arxiv.org/abs/2605.27200v1" rel="alternate" type="text/html" />
@@ -138,6 +199,62 @@
     <summary type="text">Single-photon laser ranging has widespread applications in remote sensing and target recognition. However, highly-sensitive light detection and ranging (LiDAR) has long been restricted in visible or near-infrared bands. An appealing quest is to extend the operation wavelength into the mid-infrared (MIR) region, which calls for an infrared photon counting system at high detection sensitivity and precise temporal resolution. Here, we devise and demonstrate a MIR upconversion LiDAR based on nonlinear asynchronous optical sampling. Specifically, the infrared probe is interrogated in a nonlinear crystal by a train of pump pulses at a slightly different repetition rate, which favors for a temporal optical scanning at a picosecond timing resolution and a kilohertz refreshing rate over $\sim$50 ns. Moreover, the cross-correlation upconversion trace is temporally stretched by a factor of 2$\times$10$^4$, which can thus be recorded by a low-bandwidth silicon detector. In combination with time-correlated photon-counting technique, the achieved effective resolution is about two orders of magnitude better than the timing jitter of the detector itself, which facilitates a ranging precision of 4 $μ$m under a low detected flux of 8$\times$10$^{-5}$ photons per pulse. The presented MIR time-of-flight range finder is featured with single-photon sensitivity and high positioning resolution, which would be particularly useful in infrared sensing and imaging in photon-starved scenarios.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="physics.optics" />
+  </entry>
+  <entry>
+    <title>Asynchronous Remote Sensing Time-Series Fusion for Cloud Removal and Anytime Reconstruction</title>
+    <link href="http://arxiv.org/abs/2605.27726v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.27726v1</id>
+    <published>2026-05-26T00:00:00Z</published>
+    <updated>2026-05-26T00:00:00Z</updated>
+    <author>
+      <name>Forouzan Fallah</name>
+    </author>
+    <author>
+      <name>Chia Yu Hsu</name>
+    </author>
+    <author>
+      <name>Wenwen Li</name>
+    </author>
+    <author>
+      <name>Anna Liljedahl</name>
+    </author>
+    <author>
+      <name>Yezhou Yang</name>
+    </author>
+    <summary type="text">Frequent cloud cover severely limits the usability of Sentinel-2 (S2) optical time series for Earth surface monitoring. Sentinel-1 (S1) SAR provides all-weather complementary observations, but practical S1/S2 fusion remains difficult because acquisitions are irregular and asynchronous. Many existing approaches assume temporally aligned inputs (or require external nearest-date matching) and typically restore only observed timestamps, limiting reconstruction under long gaps and preventing on-demand synthesis. We propose AGFlow (Time Aligned Generative Flow Matching), a spatiotemporal flow-matching model for S1/S2 cloud removal and time-series reconstruction with three capabilities: (1) timestamp-conditioned internal alignment that fuses asynchronous S1 and cloudy S2 observations without preprocessing-based pairing; (2) spatiotemporal, context-aware denoising that models spatial structure jointly with temporal dynamics (rather than independent per-pixel time series); and (3) anytime querying, enabling generation of cloud-free S2 frames at both observed and user-specified timestamps within the monitoring window. We evaluate on the RESTORE-DiT benchmark protocol with quantitative metrics, qualitative comparisons, and component ablations. AGFlow notably improves fully missing-frame reconstruction (MAE and RMSE reduce by 16-19% over RESTORE-DiT) and provides reliable reconstructions under persistent gaps, while also yielding competitive cloud removal performance and flexible temporal querying for downstream tasks such as dense vegetation monitoring.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; CVPR 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>ForestHG-Trace: Traceable Long-Horizon Ecological Reasoning over Large-Scale Forest Scenes</title>
+    <link href="http://arxiv.org/abs/2605.27590v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.27590v1</id>
+    <published>2026-05-26T00:00:00Z</published>
+    <updated>2026-05-26T00:00:00Z</updated>
+    <author>
+      <name>Zihang Cheng</name>
+    </author>
+    <author>
+      <name>Duanchu Wang</name>
+    </author>
+    <author>
+      <name>Cheng Li</name>
+    </author>
+    <author>
+      <name>Jing Huang</name>
+    </author>
+    <author>
+      <name>Huanzhao Fu</name>
+    </author>
+    <author>
+      <name>Di Wang</name>
+    </author>
+    <summary type="text">Remote sensing question answering (RS-QA) often requires more than direct semantic prediction, especially in large-scale forest scenes where ecological analysis involves multi-step filtering, numerical aggregation, neighborhood reasoning, and verifiable evidence. We introduce ForestHG-Trace, a framework for traceable long-horizon ecological reasoning over forest environments. It represents multimodal NEON forest scenes as ecological hypergraphs, where tree instances, spatial units, semantic groups, and neighborhood relations support higher-order reasoning beyond pairwise scene graphs. An LLM-guided agent then invokes deterministic tools for reading, filtering, expansion, aggregation, comparison, and auditing, producing replayable execution traces and compact evidence records rather than only free-form answers. We further construct ForestTraceQA, an executable benchmark for evaluating ecological QA across diverse task types and reasoning depths. Experiments show that ForestHG-Trace substantially improves answer accuracy and execution faithfulness over single-step baselines and scene-graph agents, while highlighting execution depth as the main bottleneck for long-horizon ecological QA.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 14 pages, 5 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Multimedia" />
   </entry>
   <entry>
     <title>VertiCue-Bench: Diagnosing Whether MLLMs Use Height Cues to Resolve 2D Ambiguity in Remote Sensing Natural Scenes</title>
