@@ -23311,5 +23311,43 @@
     "_added_date": "2026-05-28",
     "Category": "Method",
     "_tasks": "CLS"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-05-28",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "OmniCD: A Foundational Framework for Remote Sensing Image Change Detection Guided by Multimodal Semantics",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.30168v1",
+    "Abstract": "Change detection (CD) in remote sensing is vital for applications such as urban monitoring and disaster assessment, yet traditional methods struggle with generalization across diverse scenarios. We present OmniCD, a foundational framework that unifies and enhances remote sensing CD through multimodal semantic guidance. OmniCD incorporates image and text prompts -- such as textual descriptions, semantic maps, and geospatial metadata -- into a unified architecture, supporting tasks from binary CD to zero-shot semantic change understanding. The framework integrates a hierarchical scene retrieval module and a change detection module, reinforced by a style disentanglement mechanism for improved cross-domain robustness. We further introduce RSITCD, a large-scale multimodal dataset with 300K+ annotated image-text pairs. Extensive experiments show that OmniCD achieves state-of-the-art performance across benchmarks, demonstrating strong adaptability and setting a solid foundation for general-purpose CD systems in remote sensing.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{sun2026omnicd,\n  title={OmniCD: A Foundational Framework for Remote Sensing Image Change Detection Guided by Multimodal Semantics},\n  author={Chenhao Sun},\n  journal={arXiv preprint arXiv:2605.30168v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.30168v1}\n}",
+    "Authors": "Chenhao Sun",
+    "_added_date": "2026-05-29",
+    "Category": "Method",
+    "_tasks": "CD"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-05-28",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "EarthShift: a benchmark for measuring robustness to real-world distribution shifts in Earth observation",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.29330v1",
+    "Abstract": "Current Earth observation benchmarks focus on measuring performance on diverse tasks and applications, typically measuring generalization in-distribution. But when models are deployed, they must generalize to myriad out-of-distribution scenarios, such as new time periods, geographies, scales, and sensors. We introduce EarthShift: the first public testbed for benchmarking robustness across multiple realistic distribution shifts encountered in remote sensing. EarthShift enables users to measure distributional robustness by comparing performance in- and out-of-distribution using datasets from paired datasets from different sources, temporal windows, geographic locations, and sensors. Our experiments on 8 geospatial foundation models (GFMs) and 11 tasks covering 5 shift types show that GFMs consistently perform 15-20% worse out-of-distribution on average regardless of model architecture, size, pre-training or fine-tuning strategy. We show that GFM robustness is similar to that of generic vision foundation models, and even fully-supervised models. This highlights a need for future research to strive for improvements in distributional robustness, not just performance, which can be benchmarked using EarthShift. We release our code and datasets to provide a testbed to guide future work to create foundation models that are robust and reliable in real-world applications. Code and data for EarthShift are available at: https://earthshift.github.io",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{doerksen2026earthshift,\n  title={EarthShift: a benchmark for measuring robustness to real-world distribution shifts in Earth observation},\n  author={Kelsey Doerksen and Hannah Kerner},\n  journal={arXiv preprint arXiv:2605.29330v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.29330v1}\n}",
+    "Authors": "Kelsey Doerksen, Hannah Kerner",
+    "_added_date": "2026-05-29",
+    "Category": "Dataset",
+    "_tasks": ""
   }
 ]

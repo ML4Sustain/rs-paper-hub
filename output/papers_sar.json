@@ -7085,5 +7085,24 @@
     "_added_date": "2026-05-28",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-05-27",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "A Deep Learning Iterative Framework for Sentinel-1 Stripmap Enhancement Based on Azimuth Doppler Decomposition",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.29088v1",
+    "Abstract": "Synthetic Aperture Radar (SAR) imagery enables all-weather, day-and-night Earth observation; however, it remains difficult to interpret due to speckle noise and other intrinsic imaging artifacts. Sentinel-1 (S1) constitutes one of the most widely used spaceborne SAR missions, offering systematic global coverage, high temporal resolution, dual-polarization imaging, and free data availability. Among S1 modes, Stripmap (SM) provides the highest resolution, yet speckle noise and spatial constraints often hinder applications requiring finer spatial detail. This motivates the need for effective image enhancement strategies. In this work, we propose a self-supervised enhancement framework for S1 SM imagery based on azimuth subaperture decomposition. The method exploits the physical consistency between subaperture reconstructions and the corresponding full-aperture image to generate paired training data without external sensors, simulated ground truth, or multi-temporal stacks. The proposed framework integrates single- and multi-frame learning and incorporates an iterative inference scheme that progressively refines image quality. Experiments on real S1 SM data show that the proposed approach consistently outperforms the widely adopted self-supervised deep learning baseline MERLIN, in terms of PSNR and SSIM, while MERLIN attains higher ENL, highlighting a trade-off between structural fidelity and speckle smoothing. Overall, the results demonstrate that subaperture-based supervision provides a physically grounded, reproducible, and operationally viable approach for SAR image enhancement using S1 data. It is worth noting that the proposed approach can be extended to other SAR platforms, polarizations, and acquisition modes.",
+    "code": "",
+    "Publication": "the AI4Space Workshop",
+    "BibTex": "@article{amieva2026a,\n  title={A Deep Learning Iterative Framework for Sentinel-1 Stripmap Enhancement Based on Azimuth Doppler Decomposition},\n  author={Juan Francisco Amieva and Christian Ayala and Roberto Del Prete and Mikel Galar},\n  journal={arXiv preprint arXiv:2605.29088v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.29088v1}\n}",
+    "Authors": "Juan Francisco Amieva, Christian Ayala, Roberto Del Prete, Mikel Galar",
+    "_added_date": "2026-05-29",
+    "Category": "Method",
+    "_tasks": "SR"
   }
 ]
