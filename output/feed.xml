@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-28T05:06:17Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 25 entries</subtitle>
+  <updated>2026-05-29T02:03:58Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 20 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -571,126 +571,5 @@
     <summary type="text">Domain scientists increasingly develop Python scripts to analyze satellite imagery but they lack scalability to large-scale data. This paper demonstrates GRAIL, an agentic translation system that converts Python geospatial workflows into executable Spark-based programs without requiring scientists to learn a new framework. Rather than fine-tuning a specialized LLM model, GRAIL adapts RDPro, a Scala library for satellite data analysis, to make it LLM-ready using structured documentation, API alias functions, and repair-oriented error logs. Translation is structured as a LangGraph pipeline that decomposes code generation into explicit sections with guided inputs and outputs, enabling targeted repair without regenerating the full program. We demonstrate GRAIL on real-world geospatial workflows and showcase the correctness and scalability of the translated code.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Information transfer along the causal lightcone of a brickwork quantum circuit</title>
-    <link href="http://arxiv.org/abs/2605.23622v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.23622v1</id>
-    <published>2026-05-22T00:00:00Z</published>
-    <updated>2026-05-22T00:00:00Z</updated>
-    <author>
-      <name>Shivansh Singh</name>
-    </author>
-    <author>
-      <name>Shane Dooley</name>
-    </author>
-    <summary type="text">Understanding how local information propagates through many-body quantum systems is a central problem in nonequilibrium dynamics, with important implications for quantum communication, state transfer, and remote sensing. In this work, we investigate information transfer along a one-dimensional open chain of qudits, focusing on the task of recovering information initially encoded at one end via measurements performed at the opposite end. By restricting the dynamics to brickwork quantum circuits, and considering small $M$-qudit subsystems on the causal ``lightcone'' of the circuit, we obtain several results valid even for large system sizes $N$ or for nonintegrable global dynamics. Within this framework, lossless information transfer is linked to the existence of peripheral eigenvalues of a quantum channel $Φ_M$, which governs the evolution of the $M$-qudit local subsystem along the lightcone. We investigate conditions under which brickwork circuits admit such peripheral eigenvalues. For qubit chains and $M=1$, we show that the dual-unitary property is necessary, whereas for larger local subsystems ($M \geq 2$) or higher-dimensional qudits, this requirement can be relaxed. Perhaps surprisingly, we can use the peripheral eigenvalue condition to construct examples exhibiting lossless information transfer through chains of arbitrary system size $N$, even when the underlying circuit dynamics is nonintegrable and thermalising at long times.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13 pages + 3 pages of appendices&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="quant-ph" />
-  </entry>
-  <entry>
-    <title>SLIP-RS: Structured-Attribute Language-Image Pre-Training for Remote Sensing Object Detection</title>
-    <link href="http://arxiv.org/abs/2605.23144v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.23144v1</id>
-    <published>2026-05-22T00:00:00Z</published>
-    <updated>2026-05-22T00:00:00Z</updated>
-    <author>
-      <name>Chenxu Wang</name>
-    </author>
-    <author>
-      <name>Yuxuan Li</name>
-    </author>
-    <author>
-      <name>Yunheng Li</name>
-    </author>
-    <author>
-      <name>Xiang Li</name>
-    </author>
-    <author>
-      <name>Jingyuan Xia</name>
-    </author>
-    <author>
-      <name>Qibin Hou</name>
-    </author>
-    <summary type="text">Existing language-image pre-training for remote sensing object detection is constrained by Monolithic Label Learning, which relies on exhaustively enumerating open-set categories via black-box data to acquire fine-grained representations, creating a dependency incompatible with the domain's inherent data scarcity. To transcend this bottleneck, we propose SLIP-RS, establishing a Structured-Attribute Decoupling Paradigm that maps the open-ended category space into a finite, physically meaningful attribute space, unlocking fine-grained discriminability via explicit structural logic. This paradigm is realized via two technical pillars: (1) Structured-Attribute Contrastive Learning, which enforces the learning of decoupled intrinsic visual logic via combinatorial attribute augmentation; and (2) Conformal Attribute Reliability Engine, which leverages conformal prediction theory to rigorously distill high-fidelity supervision from noisy sources, yielding RS-Attribute-15M, the largest dataset with over 15 million attribute annotations. Extensive experiments demonstrate that SLIP-RS establishes unprecedented performance in fine-grained detection and cross-domain generalization, validating structured attributes as a vital foundation for remote sensing. Code: https://github.com/facias914/SLIP-RS.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/facias914/SLIP-RS"&gt;https://github.com/facias914/SLIP-RS&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Overcoming "Physics Shock" in Earth Observation A Heteroscedastic Uncertainty Framework for PINN-based Flood Inference</title>
-    <link href="http://arxiv.org/abs/2605.24106v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.24106v1</id>
-    <published>2026-05-22T00:00:00Z</published>
-    <updated>2026-05-22T00:00:00Z</updated>
-    <author>
-      <name>Tewodros Syum Gebre</name>
-    </author>
-    <author>
-      <name>Jagrati Talreja</name>
-    </author>
-    <author>
-      <name>Matilda Anokye</name>
-    </author>
-    <author>
-      <name>Leila Hashemi-Beni</name>
-    </author>
-    <summary type="text">Rapid and accurate flood extent mapping from Remote Sensing data, such as Synthetic Aperture Radar (SAR), is critical for operational disaster response, but standard Deep Learning models often produce physically impossible predictions due to a lack of hydrological constraints. While PhysicsInformed Neural Networks (PINNs) attempt to address this by embedding governing laws directly into the loss function, their application to real-world remote sensing data frequently fails. Enforcing rigid spatial derivatives (e.g., the 2D Shallow Water Equations) onto unconditioned latent spaces attempting to fit noisy SAR speckle causes catastrophic gradient divergence, a phenomenon we term Physics Shock. In this paper, we propose a novel Uncertainty-Aware PINN framework tailored specifically for applied Earth Observation that addresses this instability. By integrating a dynamic Warm-Start protocol and modeling heteroscedastic aleatoric uncertainty via a negative log-likelihood objective, the network learns to dynamically relax physical constraints in regions of high sensor noise while strictly enforcing them in high-confidence areas. Evaluated on the Sen1Floods11 dataset, our probabilistic Attention-Gated FNO-UNet successfully stabilizes multi-objective optimization, achieving a +25% relative improvement in Intersection over Union (IoU) compared to deterministic baselines. Furthermore, through Deep Ensembles, we successfully disentangle intrinsic sensor noise from out-of-distribution terrain ignorance, providing operational agencies with highly calibrated, physically consistent confidence bounds for robust disaster mitigation and real-time decision-making.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>SolarChain: Bridging Physical Law, Verifiable Trust, and Sustainable Markets for Urban Energy Resilience</title>
-    <link href="http://arxiv.org/abs/2605.23162v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.23162v1</id>
-    <published>2026-05-22T00:00:00Z</published>
-    <updated>2026-05-22T00:00:00Z</updated>
-    <author>
-      <name>Shilin Ou</name>
-    </author>
-    <author>
-      <name>Yifan Xu</name>
-    </author>
-    <author>
-      <name>Zhenshan Zhang</name>
-    </author>
-    <author>
-      <name>Luyao Zhang</name>
-    </author>
-    <author>
-      <name>Ming-Chun Huang</name>
-    </author>
-    <summary type="text">Urban decarbonization requires scaling rooftop solar across millions of fragmented producers, yet cities face a fundamental tension: energy data is easily manipulated, and economic incentives often reward speculation rather than actual infrastructure deployment. We present SolarChain, a platform that resolves both problems by anchoring digital accountability to the thermodynamic limits of solar energy conversion. Using real-time meteorological data, geospatial coordinates, and first-principles calculations of solar yield, the system establishes a hard physical boundary for every panel's maximum possible output; any reported generation exceeding this limit is automatically rejected before entering the shared ledger. This trustless verification enables a peer-to-peer marketplace with programmatic reward structures that continuously reinvest value into equipment maintenance and market liquidity, preventing the speculative hoarding that typically destabilizes blockchain-based marketplaces. When electricity is consumed, the corresponding digital credits are permanently retired in direct proportion to physical energy dissipation, creating an auditable one-to-one mapping between urban consumption and carbon accounting. Deployed across heterogeneous city nodes, the prototype demonstrates resilience against data injection attacks while lowering capital barriers for community-level solar expansion. Beyond energy, the framework offers a general model for coordinating economic activity with physical law in any domain where distributed infrastructure demands both data integrity and sustainable investment. We release the data and code as open-access on GitHub.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.CY" />
-  </entry>
-  <entry>
-    <title>RadMaps: A Geospatial Framework for Simultaneously Modelling Capacity and Geographic Constraints on Radiotherapy Access</title>
-    <link href="http://arxiv.org/abs/2605.23456v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.23456v1</id>
-    <published>2026-05-22T00:00:00Z</published>
-    <updated>2026-05-22T00:00:00Z</updated>
-    <author>
-      <name>Laurence Wroe</name>
-    </author>
-    <author>
-      <name>Archie Brown</name>
-    </author>
-    <author>
-      <name>Sophia Martin</name>
-    </author>
-    <author>
-      <name>Alika Ho</name>
-    </author>
-    <author>
-      <name>Steinar Stapnes</name>
-    </author>
-    <summary type="text">Background: Access to radiotherapy (RT) is constrained by two compounding factors: insufficient machine capacity to meet patient demand and geographic distance from treatment facilities. Existing analyses address these factors separately, constraining the insights available to planners and policymakers. This paper presents RadMaps, an open-source geospatial framework that simultaneously models capacity and geographic constraints on RT access at any spatial scale.   Methods: RadMaps operates on Uber's H3 hexagonal grid and integrates population density data with national cancer incidence estimates and RT facility inventories. RT demand is estimated using cancer-site-specific RT utilisation rates, and geographic access is modelled via configurable decay functions using either distance, driving time, or public transport time. A greedy nearest-first allocation algorithm assigns demand to facilities subject to both capacity and geographic constraints, producing a localised access metric for every H3 hexagon.   Results: Applied globally with a 200 km step-function access threshold, RadMaps computes a capacity-only access of 70 %, a geography-only access of 91 %, and a combined RT access of 60 %, illustrating the compounding effect of capacity and geographic constraints to significantly reduce effective access. High-resolution analyses of six countries demonstrate the tool's ability to localise access deficits at sub-national scale and reveal distinct access profiles: capacity-limited, geographically-limited, and doubly-constrained.   Conclusions: RadMaps provides a flexible, open-access framework for visualising and identifying RT access gaps at regional to global scales, with applications in infrastructure planning and policy prioritisation. RadMaps' modular framework is also readily extensible to other spatial access modelling applications.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="physics.med-ph" />
   </entry>
 </feed>

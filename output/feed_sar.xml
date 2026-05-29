@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_sar.xml</id>
   <link href="https://rspaper.top/output/feed_sar.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-28T05:06:17Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
+  <updated>2026-05-29T02:03:58Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -75,29 +75,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; CVPR 2026&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Overcoming "Physics Shock" in Earth Observation A Heteroscedastic Uncertainty Framework for PINN-based Flood Inference</title>
-    <link href="http://arxiv.org/abs/2605.24106v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.24106v1</id>
-    <published>2026-05-22T00:00:00Z</published>
-    <updated>2026-05-22T00:00:00Z</updated>
-    <author>
-      <name>Tewodros Syum Gebre</name>
-    </author>
-    <author>
-      <name>Jagrati Talreja</name>
-    </author>
-    <author>
-      <name>Matilda Anokye</name>
-    </author>
-    <author>
-      <name>Leila Hashemi-Beni</name>
-    </author>
-    <summary type="text">Rapid and accurate flood extent mapping from Remote Sensing data, such as Synthetic Aperture Radar (SAR), is critical for operational disaster response, but standard Deep Learning models often produce physically impossible predictions due to a lack of hydrological constraints. While PhysicsInformed Neural Networks (PINNs) attempt to address this by embedding governing laws directly into the loss function, their application to real-world remote sensing data frequently fails. Enforcing rigid spatial derivatives (e.g., the 2D Shallow Water Equations) onto unconditioned latent spaces attempting to fit noisy SAR speckle causes catastrophic gradient divergence, a phenomenon we term Physics Shock. In this paper, we propose a novel Uncertainty-Aware PINN framework tailored specifically for applied Earth Observation that addresses this instability. By integrating a dynamic Warm-Start protocol and modeling heteroscedastic aleatoric uncertainty via a negative log-likelihood objective, the network learns to dynamically relax physical constraints in regions of high sensor noise while strictly enforcing them in high-confidence areas. Evaluated on the Sen1Floods11 dataset, our probabilistic Attention-Gated FNO-UNet successfully stabilizes multi-objective optimization, achieving a +25% relative improvement in Intersection over Union (IoU) compared to deterministic baselines. Furthermore, through Deep Ensembles, we successfully disentangle intrinsic sensor noise from out-of-distribution terrain ignorance, providing operational agencies with highly calibrated, physically consistent confidence bounds for robust disaster mitigation and real-time decision-making.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>
