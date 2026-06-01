@@ -19625,5 +19625,24 @@
     "_added_date": "2026-05-28",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-05-29",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "HQ-JEPA: Hybrid Quantum Joint-Embedding Predictive Architecture for Cross-Modal Remote Sensing Representation Learning",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2605.31068v1",
+    "Abstract": "We introduce HQ-JEPA, a hybrid quantum-classical joint-embedding predictive architecture for cross-modal remote sensing representation learning. The proposed framework extends JEPA-style masked latent prediction to paired Sentinel-1 and Sentinel-2 imagery by predicting masked target representations from visible context regions while aligning heterogeneous modality features in a shared embedding space. To improve representation quality, HQ-JEPA combines four complementary objectives: latent token prediction, cross-modal token alignment, SIGReg-based Gaussian regularization in the fused latent space, and a differentiable SWAP-test-based Fidelity Quantum Similarity (FQS) loss. Unlike pixel reconstruction methods, HQ-JEPA learns semantic representations directly in latent space and uses quantum state-overlap-based similarity as an additional regularization signal. We evaluate the pretrained encoder on GeoBench classification and segmentation tasks under linear probing and fine-tuning settings. Results show that HQ-JEPA achieves competitive and often superior performance over strong self-supervised and remote sensing foundation-model baselines, demonstrating the benefit of integrating predictive self-supervision, cross-modal geometric regularization, and quantum fidelity-based representation learning for remote sensing applications.",
+    "code": "",
+    "Publication": "19 pages",
+    "BibTex": "@article{hossain2026hqjepa,\n  title={HQ-JEPA: Hybrid Quantum Joint-Embedding Predictive Architecture for Cross-Modal Remote Sensing Representation Learning},\n  author={Md Aminur Hossain and Ayush V. Patel and Sanjay K. Singh and Biplab Banerjee},\n  journal={arXiv preprint arXiv:2605.31068v1},\n  year={2026},\n  url={http://arxiv.org/abs/2605.31068v1}\n}",
+    "Authors": "Md Aminur Hossain, Ayush V. Patel, Sanjay K. Singh, Biplab Banerjee",
+    "_added_date": "2026-06-01",
+    "Category": "Method",
+    "_tasks": "CLS"
   }
 ]

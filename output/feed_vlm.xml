@@ -4,12 +4,44 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-29T05:18:25Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 9 entries</subtitle>
+  <updated>2026-06-01T02:12:58Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 5 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Count Anything</title>
+    <link href="http://arxiv.org/abs/2605.30846v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.30846v1</id>
+    <published>2026-05-29T00:00:00Z</published>
+    <updated>2026-05-29T00:00:00Z</updated>
+    <author>
+      <name>Mengqi Lei</name>
+    </author>
+    <author>
+      <name>Shuokun Cheng</name>
+    </author>
+    <author>
+      <name>Wei Bao</name>
+    </author>
+    <author>
+      <name>Shaoyi Du</name>
+    </author>
+    <author>
+      <name>Jun-Hai Yong</name>
+    </author>
+    <author>
+      <name>Siqi Li</name>
+    </author>
+    <author>
+      <name>Yue Gao</name>
+    </author>
+    <summary type="text">Object counting remains fragmented across domain-specific datasets and task formulations, despite rapid progress in generalist vision models. Existing counting models are often tailored to scenarios such as crowds, vehicles, cells, crops, or remote-sensing objects, and thus struggle to generalize across categories, visual domains, object scales, and density distributions. In this paper, we study text-guided object counting across domains, where a model takes an image and a natural-language query as input and returns an instance-grounded set of target points whose cardinality gives the count. This formulation unifies category-conditioned counting with interpretable spatial localization. To support this setting, we construct CLOC, a Cross-domain Large-scale Object Counting dataset that reorganizes diverse public data sources into a unified benchmark. CLOC covers six visual domains: General Scene, Remote Sensing, Histopathology, Cellular Microscopy, Agriculture, and Microbiology, with about 220K images, 619 categories, and 15M object instances. Based on CLOC, we propose Count Anything, a generalist model for text-guided object counting. Unlike density-map-based methods, which dominate counting models, Count Anything adopts discrete instance points and performs dual-granularity instance enumeration. A Region-level Sparse Counter provides object-level anchors for large and sparse targets, while a Pixel-level Dense Counter handles small, crowded, and weakly bounded targets via dense point prediction. A point-centric supervision strategy enables learning from heterogeneous annotations, and Complementary Count Fusion combines both counters in a parameter-free manner. Extensive experiments show that Count Anything achieves strong accuracy and multi-domain generalization, outperforming existing open-world counting methods. Code is available at: https://github.com/Mengqi-Lei/count-anything.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Mengqi-Lei/count-anything"&gt;https://github.com/Mengqi-Lei/count-anything&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>OmniCD: A Foundational Framework for Remote Sensing Image Change Detection Guided by Multimodal Semantics</title>
     <link href="http://arxiv.org/abs/2605.30168v1" rel="alternate" type="text/html" />
@@ -39,6 +71,36 @@
     <summary type="text">Current Earth observation benchmarks focus on measuring performance on diverse tasks and applications, typically measuring generalization in-distribution. But when models are deployed, they must generalize to myriad out-of-distribution scenarios, such as new time periods, geographies, scales, and sensors. We introduce EarthShift: the first public testbed for benchmarking robustness across multiple realistic distribution shifts encountered in remote sensing. EarthShift enables users to measure distributional robustness by comparing performance in- and out-of-distribution using datasets from paired datasets from different sources, temporal windows, geographic locations, and sensors. Our experiments on 8 geospatial foundation models (GFMs) and 11 tasks covering 5 shift types show that GFMs consistently perform 15-20% worse out-of-distribution on average regardless of model architecture, size, pre-training or fine-tuning strategy. We show that GFM robustness is similar to that of generic vision foundation models, and even fully-supervised models. This highlights a need for future research to strive for improvements in distributional robustness, not just performance, which can be benchmarked using EarthShift. We release our code and datasets to provide a testbed to guide future work to create foundation models that are robust and reliable in real-world applications. Code and data for EarthShift are available at: https://earthshift.github.io</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
     <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>DisasterLex: An Expert Concept-to-Schema Knowledge Graph for Geospatial Reasoning in Disaster Analytics</title>
+    <link href="http://arxiv.org/abs/2605.30538v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.30538v1</id>
+    <published>2026-05-28T00:00:00Z</published>
+    <updated>2026-05-28T00:00:00Z</updated>
+    <author>
+      <name>Yiming Xiao</name>
+    </author>
+    <author>
+      <name>Ankit Basu</name>
+    </author>
+    <author>
+      <name>Kai Yin</name>
+    </author>
+    <author>
+      <name>Sahil Vartak</name>
+    </author>
+    <author>
+      <name>Christian Swords</name>
+    </author>
+    <author>
+      <name>Ali Mostafavi</name>
+    </author>
+    <summary type="text">Disasters are inevitable and increasingly costly, and effective response depends on querying structured tabular data: precise, information-dense records of hazard, exposure, vulnerability, and lifeline infrastructure that underpin disaster management. Current text-to-SQL methods enable natural-language access to such tables but transfer poorly to the disaster domain, where queries span heterogeneous geospatial schemas and require reasoning over causal relations. We introduce DisasterLex, a knowledge-graph-mediated framework that inserts an Expert Knowledge Graph (EKG) of curated concepts and typed causal edges between the user query and the database, bridged to schema by concept-to-table links. The orchestration runs four stages (identifying query entities, routing to the operational domain, planning over causal edges, and grounding the SQL), restricting the schema passed to the model at each step. We instantiate it on a disaster-analytics database (36 geospatial tables, 150 columns) with an EKG of 107 concepts, 117 causal edges, and 52 concept-to-schema links, evaluated on a 75-query test set. On all seven base models spanning proprietary and open-weight families, DisasterLex beats four state-of-the-art baselines (LightRAG, HippoRAG 2, ReFoRCE, CHESS) by 1.4x to 2.75x, with absolute scores of 1.65 to 3.56 (of 5.0). Error analysis shows baseline failures cluster in routing and multi-table SQL composition, the operations our orchestration explicitly addresses. Code, data, and the EKG artifact are available at https://github.com/YimingXiao98/DisasterLex and on Zenodo at https://doi.org/10.5281/zenodo.20388029.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/YimingXiao98/DisasterLex"&gt;https://github.com/YimingXiao98/DisasterLex&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Machine Learning" />
   </entry>
   <entry>
     <title>FLORO: A Multimodal Geospatial Foundation Model for Ecological Remote Sensing Across Sensors and Scales</title>
@@ -79,207 +141,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>VertiCue-Bench: Diagnosing Whether MLLMs Use Height Cues to Resolve 2D Ambiguity in Remote Sensing Natural Scenes</title>
-    <link href="http://arxiv.org/abs/2605.25784v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.25784v1</id>
-    <published>2026-05-25T00:00:00Z</published>
-    <updated>2026-05-25T00:00:00Z</updated>
-    <author>
-      <name>Jing Huang</name>
-    </author>
-    <author>
-      <name>Duanchu Wang</name>
-    </author>
-    <author>
-      <name>Junjie Yang</name>
-    </author>
-    <author>
-      <name>Zihang Cheng</name>
-    </author>
-    <author>
-      <name>Cheng Li</name>
-    </author>
-    <author>
-      <name>Lin Cui</name>
-    </author>
-    <author>
-      <name>Zhouyi Wu</name>
-    </author>
-    <author>
-      <name>Di Wang</name>
-    </author>
-    <summary type="text">Multimodal Large Language Models (MLLMs) have recently shown promising progress in geospatial reasoning. However, existing remote sensing benchmarks remain largely 2D-centric, evaluating models primarily on optical appearance. In natural environments, this paradigm breaks down due to severe spectral confusion, where ecologically distinct regions share similar textures but differ fundamentally in vertical structure. In such cases, explicit 3D structural data, such as Canopy Height Models (CHMs), become essential geometric evidence for semantic disambiguation. Yet, it remains unclear whether current MLLMs can genuinely leverage vertical cues to resolve appearance-level ambiguity. To address this gap, we introduce VertiCue-Bench, the first diagnostic benchmark for CHM-grounded geospatial reasoning. VertiCue-Bench comprises 1,534 carefully curated instances across 17 tasks, explicitly disentangling low-level height perception from ambiguity-aware semantic reasoning. Evaluations on 14 state-of-the-art general and remote-sensing-specialized MLLMs, combined with counterfactual modality testing, reveal a striking perception-reasoning dissociation. While models exhibit emerging competence in reading raw CHM height cues, they largely fail to translate geometric perception into reliable semantic reasoning, often underperforming RGB-only baselines when joint constraints are required. Overall, VertiCue-Bench exposes a critical geometry-to-semantics gap in natural scene understanding, offering actionable insights for advancing geospatial MLLMs.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Multimedia" />
-  </entry>
-  <entry>
-    <title>G-DRAGON: Geospatial Reasoning and Dynamic Planning for Retrieval-Augmented Outdoor Navigation</title>
-    <link href="http://arxiv.org/abs/2605.25646v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.25646v1</id>
-    <published>2026-05-25T00:00:00Z</published>
-    <updated>2026-05-25T00:00:00Z</updated>
-    <author>
-      <name>Dongzhihan Wang</name>
-    </author>
-    <author>
-      <name>Yi Du</name>
-    </author>
-    <author>
-      <name>Jianan Sun</name>
-    </author>
-    <author>
-      <name>Yuan Xue</name>
-    </author>
-    <author>
-      <name>Yingchen Zhang</name>
-    </author>
-    <author>
-      <name>Bing Xiao</name>
-    </author>
-    <author>
-      <name>Chen Wang</name>
-    </author>
-    <author>
-      <name>Liang Xu</name>
-    </author>
-    <summary type="text">Autonomous ground robots operating in large-scale outdoor environments require both robust long-range navigation and fine-grained ''last-mile'' exploration. Current advances in visual-language navigation (VLN) work well at short-range tasks, lacking geospatial grounding for long-distance missions. Some OpenStreetMap (OSM)-based methods relying on cloud-based Large Language Models (LLMs) are prone to factual hallucination and cannot conduct ''last-mile'' exploration based on human instruction. To address these challenges, we present G-DRAGON, a retrieval-augmented framework for outdoor, open-world navigation. This framework maps natural-language commands to versioned, local OSM entities via generative retrieval based on lightweight LLM, yielding accurate coordinates for global route planning. A high-level planning module bridges global topological routes with the SLAM system, projecting geospatial waypoints into the robot's navigable frame. For the ''last mile," the framework transitions to frontier-based exploration and open-set semantic voxel mapping to localize open-vocabulary targets. Experimental results in simulation demonstrate our framework outperforms state-of-the-art baselines. Furthermore, we validate the system in unseen real-world urban environments on an Unmanned Ground Vehicle (UGV), successfully completing person-search missions with trajectories of up to 500m.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Robotics and Automation Letters (RA-L)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
-    <category term="Robotics" />
-  </entry>
-  <entry>
-    <title>Geo-Expert: Towards Expert-Level Geological Reasoning via Parameter-Efficient Fine-Tuning</title>
-    <link href="http://arxiv.org/abs/2605.24844v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.24844v1</id>
-    <published>2026-05-24T00:00:00Z</published>
-    <updated>2026-05-24T00:00:00Z</updated>
-    <author>
-      <name>Chenyou Guo</name>
-    </author>
-    <author>
-      <name>Zongqi Liu</name>
-    </author>
-    <author>
-      <name>Yizhou Zhang</name>
-    </author>
-    <author>
-      <name>Zhaorui Jiang</name>
-    </author>
-    <author>
-      <name>Ze Liu</name>
-    </author>
-    <summary type="text">While general-purpose Large Language Models (LLMs) applied to Geology often hallucinate when reasoning about subsurface structures and deep-time evolution, current AI in Earth sciences predominantly targets surface remote sensing and GIS. To bridge this gap, we introduce Geo-Expert, a family of parameter-efficient geological LLMs fine-tuned on a custom-curated, high-quality instruction dataset processed using our custom instruction synthesis pipeline. We investigate the impact of model scaling and architecture by fine-tuning three base models: Qwen3-8B, Qwen3-32B, and Gemma-3-27B, with Low-Rank Adaptation (LoRA) method. Our extensive evaluation on a novel domain-specific benchmark, Geo-Eval, reveals that a domain-aligned 8B model can outperform open-weight 70B generalists and proprietary GPT-4o on specialized geological reasoning, while a 32B variant approaches frontier reasoning models. The optimized 8B model further offers a competitive cost-performance ratio for deployment. This work provides a reproducible recipe for democratizing scientific LLMs and establishes a baseline for geological artificial intelligence.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICML 2026 AI for Science Workshop&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="cs.CL" />
-  </entry>
-  <entry>
-    <title>DisDop: Distillation with Domain Priors for Open-Vocabulary Aerial Object Detection</title>
-    <link href="http://arxiv.org/abs/2605.24639v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.24639v1</id>
-    <published>2026-05-23T00:00:00Z</published>
-    <updated>2026-05-23T00:00:00Z</updated>
-    <author>
-      <name>Ruihao Xu</name>
-    </author>
-    <author>
-      <name>Yong Liu</name>
-    </author>
-    <author>
-      <name>Yansong Tang</name>
-    </author>
-    <author>
-      <name>Sule Bai</name>
-    </author>
-    <author>
-      <name>Xubing Ye</name>
-    </author>
-    <author>
-      <name>Bingyao Yu</name>
-    </author>
-    <author>
-      <name>Yutao Guo</name>
-    </author>
-    <author>
-      <name>Jiwen Lu</name>
-    </author>
-    <author>
-      <name>Jie Zhou</name>
-    </author>
-    <summary type="text">With the widespread application of drones in recent years, object detection of aerial images has attracted increasing attention, especially open-vocabulary aerial detection which is not restricted to predefined categories. Due to the scarcity of drone's viewpoint images and their significant differences from natural images, it is difficult to achieve satisfying results by directly applying vanilla open-vocabulary detection methods designed for natural scenarios. Some studies propose to transfer knowledge from pre-trained models by using lightweight networks or generating pseudo labels, but they tend to rely on models trained on natural images, neglecting the potential of foundation models specifically tailored for remote sensing and aerial imagery. To address this limitation, we propose DisDop, a unified framework that systematically distills multi-level domain priors from remote sensing foundation models (e.g., RemoteCLIP and DINOv3) into a lightweight detector. Specifically, we first distill visual priors through a teacher fusion strategy that combines RemoteCLIP's cross-modal alignment capability with DINOv3's fine-grained local feature extraction ability, transferring their complementary strengths to the detector's backbone. Second, we distill textual priors embedded in RemoteCLIP's text encoder by explicitly modeling inter-category semantic relationships, while incorporating global contextual priors to enhance local feature representation for small objects. Through this multi-level prior distillation framework, our DisDop achieves new state-of-the-art performance on open-vocabulary aerial detection benchmarks. Extensive ablation analysis also demonstrates the rationality and effectiveness of our proposed modules.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Image-Conditioned Instance Prompt Network for Referring Remote Sensing Image Segmentation</title>
-    <link href="http://arxiv.org/abs/2605.24532v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.24532v1</id>
-    <published>2026-05-23T00:00:00Z</published>
-    <updated>2026-05-23T00:00:00Z</updated>
-    <author>
-      <name>Biaoyu Ren</name>
-    </author>
-    <author>
-      <name>Qingsheng Wang</name>
-    </author>
-    <author>
-      <name>Cun Xu</name>
-    </author>
-    <author>
-      <name>Dingkang Yang</name>
-    </author>
-    <author>
-      <name>Wenxuan Wang</name>
-    </author>
-    <summary type="text">Referring Remote Sensing Image Segmentation (RRSIS) is a situated, task-driven cross-modal task related to the embodied perception paradigm, requiring models to align visual-spatial features with linguistic intentions for precise target perception. Recent research has focused on refining the granularity of textual features and optimizing image-text feature fusion to better guide target feature representations. However, insufficient descriptive granularity and sensitivity to semantic shifts can cause bottlenecks in cross-modal feature fusion. To address these issues, we propose the Image-Conditioned Instance Prompt Network (ICIPNet) with Bilateral Information Fusion, which is designed to alleviate bottlenecks in cross-modal feature fusion. ICIPNet introduces an Image-Conditioned Instance Prompt (ICIP) module to generate self-adaptive visual and semantic representations without external knowledge. The Bilateral Information Fusion (BIF) module enhances feature fusion along the token and channel dimensions. Experiments demonstrate that the proposed ICIPNet outperforms existing RRSIS models.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 6 pages, 3 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Benchmarking Composed Image Retrieval for Applied Earth Observation</title>
-    <link href="http://arxiv.org/abs/2605.24442v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.24442v1</id>
-    <published>2026-05-23T00:00:00Z</published>
-    <updated>2026-05-23T00:00:00Z</updated>
-    <author>
-      <name>Bill Psomas</name>
-    </author>
-    <author>
-      <name>Dionysis Christopoulos</name>
-    </author>
-    <author>
-      <name>Thanasis Petropoulos</name>
-    </author>
-    <author>
-      <name>Nikos Efthymiadis</name>
-    </author>
-    <author>
-      <name>Ioannis Kakogeorgiou</name>
-    </author>
-    <author>
-      <name>Ondřej Chum</name>
-    </author>
-    <author>
-      <name>Yannis Avrithis</name>
-    </author>
-    <author>
-      <name>Giorgos Tolias</name>
-    </author>
-    <author>
-      <name>Konstantinos Karantzalos</name>
-    </author>
-    <summary type="text">Remote sensing composed image retrieval (RSCIR) enables search in large satellite image archives using composed queries that combine a reference image with a textual modifier. Although RSCIR offers a flexible interface for expressing targeted retrieval intent, the transferability of modern composition methods to Earth observation (EO) imagery and their relevance to operational EO workflows remain underexplored. We address this gap through a unified benchmark and an application-oriented study. First, we systematically adapt and evaluate representative composed image retrieval methods with six vision-language backbones on PatternCom under a standardized protocol, analyzing their behavior across backbones, composition strategies, and query types. Second, we introduce xView2-CIR, a change-centric dataset for disaster and damage monitoring, where retrieval is conditioned on scene identity and a target post-event state. Our results show that training-free composition methods provide strong and scalable baselines for EO retrieval, while change-centric retrieval presents different challenges from attribute-based retrieval, particularly due to the need to preserve scene identity. Overall, this study establishes a practical benchmark for RSCIR and positions composed retrieval as a complementary tool for remote sensing image retrieval, archive exploration, and change analysis. The dataset and code are available at https://github.com/billpsomas/rscir.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/billpsomas/rscir"&gt;https://github.com/billpsomas/rscir&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>

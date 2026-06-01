@@ -4,12 +4,114 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-29T05:18:25Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 27 entries</subtitle>
+  <updated>2026-06-01T02:12:58Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 23 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>PolSAR Image Classification using a Hybrid Complex-Valued Network (HybridCVNet)</title>
+    <link href="http://arxiv.org/abs/2605.31137v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.31137v1</id>
+    <published>2026-05-29T00:00:00Z</published>
+    <updated>2026-05-29T00:00:00Z</updated>
+    <author>
+      <name>Mohammed Q. Alkhatib</name>
+    </author>
+    <summary type="text">Recently, convolutional neural networks (CNNs) have become popular for image classification due to their effectiveness in computer vision tasks. Now, researchers are exploring the potential of vision transformers (ViTs) in remote sensing and Earth observation. However, traditional Real-Valued networks often overlook important phase information in Complex-Valued (CV) data like polarimetric synthetic aperture radar (PolSAR) data. To address this, new CV deep architectures have emerged. HybridCVNet, a novel hybrid network, blends CV-CNN and CV vision transformer (CV-ViT) techniques. It efficiently combines CV 3D and 2D CNNs as feature extractors, enhancing PolSAR image classification by extracting complementary information and effectively leveraging interdependencies within the data. Experimental results from widely-used PolSAR datasets show HybridCVNet outperforms other methods, achieving an overall accuracy of 97.39% on the Flevoland dataset and showing promise even with just a 1% sampling ratio, with a Kappa value of 0.972 on the San Francisco dataset. Source code is accessible through https://github.com/mqalkhatib/HybridCVNet</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/mqalkhatib/HybridCVNet"&gt;https://github.com/mqalkhatib/HybridCVNet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Geoscience and Remote Sensing Letters (GRSL)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>HQ-JEPA: Hybrid Quantum Joint-Embedding Predictive Architecture for Cross-Modal Remote Sensing Representation Learning</title>
+    <link href="http://arxiv.org/abs/2605.31068v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.31068v1</id>
+    <published>2026-05-29T00:00:00Z</published>
+    <updated>2026-05-29T00:00:00Z</updated>
+    <author>
+      <name>Md Aminur Hossain</name>
+    </author>
+    <author>
+      <name>Ayush V. Patel</name>
+    </author>
+    <author>
+      <name>Sanjay K. Singh</name>
+    </author>
+    <author>
+      <name>Biplab Banerjee</name>
+    </author>
+    <summary type="text">We introduce HQ-JEPA, a hybrid quantum-classical joint-embedding predictive architecture for cross-modal remote sensing representation learning. The proposed framework extends JEPA-style masked latent prediction to paired Sentinel-1 and Sentinel-2 imagery by predicting masked target representations from visible context regions while aligning heterogeneous modality features in a shared embedding space. To improve representation quality, HQ-JEPA combines four complementary objectives: latent token prediction, cross-modal token alignment, SIGReg-based Gaussian regularization in the fused latent space, and a differentiable SWAP-test-based Fidelity Quantum Similarity (FQS) loss. Unlike pixel reconstruction methods, HQ-JEPA learns semantic representations directly in latent space and uses quantum state-overlap-based similarity as an additional regularization signal. We evaluate the pretrained encoder on GeoBench classification and segmentation tasks under linear probing and fine-tuning settings. Results show that HQ-JEPA achieves competitive and often superior performance over strong self-supervised and remote sensing foundation-model baselines, demonstrating the benefit of integrating predictive self-supervision, cross-modal geometric regularization, and quantum fidelity-based representation learning for remote sensing applications.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 19 pages&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>HADT: A Heterogeneous Multi-Agent Differential Transformer for Autonomous Earth Observation Satellite Cluster</title>
+    <link href="http://arxiv.org/abs/2605.31023v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.31023v1</id>
+    <published>2026-05-29T00:00:00Z</published>
+    <updated>2026-05-29T00:00:00Z</updated>
+    <author>
+      <name>Mohamad A. Hady</name>
+    </author>
+    <author>
+      <name>Muhammad Anwar Masum</name>
+    </author>
+    <author>
+      <name>Siyi Hu</name>
+    </author>
+    <author>
+      <name>Mahardhika Pratama</name>
+    </author>
+    <author>
+      <name>Jimmy Cao</name>
+    </author>
+    <author>
+      <name>Ryszard Kowalczyk</name>
+    </author>
+    <summary type="text">This work addresses the problem of autonomous resource management in heterogeneous satellite cluster conducting Earth Observation (EO) missions including optical and Synthetic Aperture Radar (SAR) satellites. In autonomous operation mode, satellites are equipped with intelligent capabilities enabling real-time decision-making based on the latest conditions, while requiring minimal interaction with ground operators. Traditional scheduling approaches typically rely on mathematical models to represent satellite mission and resource management. Then, this problem is solved by using optimization algorithms. However, such solutions become less effective when the underlying models are not available, over complex, and inaccurate due to dynamic changes and uncertainties inherent in the space mission environment. A promising alternative is to reformulate the problem as a sequential decision-making process and apply model-free reinforcement learning techniques to enable adaptive and real-time resource management. To this end, we propose a novel transformer-based architecture tailored for heterogeneous satellite cluster autonomous EO Mission with relational observations-actions tokenization and differential attention mechanism. Our experimental results demonstrate significant performance improvements compared to the available baselines. Moreover, the proposed architecture exhibits strong adaptability and transferability with respect to varying numbers of satellite clusters.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ECML-PKDD 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+    <category term="Machine Learning; cs.MA" />
+  </entry>
+  <entry>
+    <title>Count Anything</title>
+    <link href="http://arxiv.org/abs/2605.30846v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.30846v1</id>
+    <published>2026-05-29T00:00:00Z</published>
+    <updated>2026-05-29T00:00:00Z</updated>
+    <author>
+      <name>Mengqi Lei</name>
+    </author>
+    <author>
+      <name>Shuokun Cheng</name>
+    </author>
+    <author>
+      <name>Wei Bao</name>
+    </author>
+    <author>
+      <name>Shaoyi Du</name>
+    </author>
+    <author>
+      <name>Jun-Hai Yong</name>
+    </author>
+    <author>
+      <name>Siqi Li</name>
+    </author>
+    <author>
+      <name>Yue Gao</name>
+    </author>
+    <summary type="text">Object counting remains fragmented across domain-specific datasets and task formulations, despite rapid progress in generalist vision models. Existing counting models are often tailored to scenarios such as crowds, vehicles, cells, crops, or remote-sensing objects, and thus struggle to generalize across categories, visual domains, object scales, and density distributions. In this paper, we study text-guided object counting across domains, where a model takes an image and a natural-language query as input and returns an instance-grounded set of target points whose cardinality gives the count. This formulation unifies category-conditioned counting with interpretable spatial localization. To support this setting, we construct CLOC, a Cross-domain Large-scale Object Counting dataset that reorganizes diverse public data sources into a unified benchmark. CLOC covers six visual domains: General Scene, Remote Sensing, Histopathology, Cellular Microscopy, Agriculture, and Microbiology, with about 220K images, 619 categories, and 15M object instances. Based on CLOC, we propose Count Anything, a generalist model for text-guided object counting. Unlike density-map-based methods, which dominate counting models, Count Anything adopts discrete instance points and performs dual-granularity instance enumeration. A Region-level Sparse Counter provides object-level anchors for large and sparse targets, while a Pixel-level Dense Counter handles small, crowded, and weakly bounded targets via dense point prediction. A point-centric supervision strategy enables learning from heterogeneous annotations, and Complementary Count Fusion combines both counters in a parameter-free manner. Extensive experiments show that Count Anything achieves strong accuracy and multi-domain generalization, outperforming existing open-world counting methods. Code is available at: https://github.com/Mengqi-Lei/count-anything.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Mengqi-Lei/count-anything"&gt;https://github.com/Mengqi-Lei/count-anything&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>OmniCD: A Foundational Framework for Remote Sensing Image Change Detection Guided by Multimodal Semantics</title>
     <link href="http://arxiv.org/abs/2605.30168v1" rel="alternate" type="text/html" />
@@ -109,6 +211,87 @@
     <summary type="text">Sensitive mid-infrared (MIR) detection is highly demanded in various applications, ranging from remote sensing, infrared surveillance, environmental monitoring to industrial inspection. Among others, upconversion infrared detectors have recently attracted increasing attention due to the advantageous features of high sensitivity, fast response, and room-temperature operation. However, it remains challenging to realize high-performance passive MIR sensing due to the stringent requirement of high-power continuous-wave pumping. Here, we propose and implement a high-efficiency and low-noise MIR upconversion detection system based on pumping enhancement via a low-loss optical cavity. Specifically, a single-longitudinal-mode pump at 1064 nm is significantly enhanced by a factor of 36, thus allowing for a peak conversion efficiency of up to 22\% at an intra-cavity average power of 55 W. The corresponding noise equivalent power is achieved as low as 0.3 fW/Hz$^{1/2}$, which indicates at least a ten-fold improvement over previous results. Notably, the involved single-frequency pumping would facilitate high-fidelity spectral mapping, which is particularly attractive for high-precision MIR upconversion spectroscopy in photon-starved scenarios.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="physics.optics" />
+  </entry>
+  <entry>
+    <title>DisasterLex: An Expert Concept-to-Schema Knowledge Graph for Geospatial Reasoning in Disaster Analytics</title>
+    <link href="http://arxiv.org/abs/2605.30538v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.30538v1</id>
+    <published>2026-05-28T00:00:00Z</published>
+    <updated>2026-05-28T00:00:00Z</updated>
+    <author>
+      <name>Yiming Xiao</name>
+    </author>
+    <author>
+      <name>Ankit Basu</name>
+    </author>
+    <author>
+      <name>Kai Yin</name>
+    </author>
+    <author>
+      <name>Sahil Vartak</name>
+    </author>
+    <author>
+      <name>Christian Swords</name>
+    </author>
+    <author>
+      <name>Ali Mostafavi</name>
+    </author>
+    <summary type="text">Disasters are inevitable and increasingly costly, and effective response depends on querying structured tabular data: precise, information-dense records of hazard, exposure, vulnerability, and lifeline infrastructure that underpin disaster management. Current text-to-SQL methods enable natural-language access to such tables but transfer poorly to the disaster domain, where queries span heterogeneous geospatial schemas and require reasoning over causal relations. We introduce DisasterLex, a knowledge-graph-mediated framework that inserts an Expert Knowledge Graph (EKG) of curated concepts and typed causal edges between the user query and the database, bridged to schema by concept-to-table links. The orchestration runs four stages (identifying query entities, routing to the operational domain, planning over causal edges, and grounding the SQL), restricting the schema passed to the model at each step. We instantiate it on a disaster-analytics database (36 geospatial tables, 150 columns) with an EKG of 107 concepts, 117 causal edges, and 52 concept-to-schema links, evaluated on a 75-query test set. On all seven base models spanning proprietary and open-weight families, DisasterLex beats four state-of-the-art baselines (LightRAG, HippoRAG 2, ReFoRCE, CHESS) by 1.4x to 2.75x, with absolute scores of 1.65 to 3.56 (of 5.0). Error analysis shows baseline failures cluster in routing and multi-table SQL composition, the operations our orchestration explicitly addresses. Code, data, and the EKG artifact are available at https://github.com/YimingXiao98/DisasterLex and on Zenodo at https://doi.org/10.5281/zenodo.20388029.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/YimingXiao98/DisasterLex"&gt;https://github.com/YimingXiao98/DisasterLex&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Low-cost IoT-Based Rainfall Monitoring with Web-Based Data Access</title>
+    <link href="http://arxiv.org/abs/2605.30528v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.30528v1</id>
+    <published>2026-05-28T00:00:00Z</published>
+    <updated>2026-05-28T00:00:00Z</updated>
+    <author>
+      <name>Mohammad Solaiman</name>
+    </author>
+    <author>
+      <name>Ronan Reza</name>
+    </author>
+    <author>
+      <name>Su Zhang</name>
+    </author>
+    <author>
+      <name>Gerhard Schoener</name>
+    </author>
+    <author>
+      <name>Fernando Moreu</name>
+    </author>
+    <summary type="text">Rainfall measurement with high spatial and temporal resolution is critical for flood forecasting, drought mitigation, and disaster preparedness. Rainfall patterns are highly variable, both geographically and over time. This variability presents a significant challenge for monitoring, as rain gauges can accurately capture temporal patterns only at a single location. Furthermore, the high cost of commercial instruments restricts their widespread deployment, and rain gauge networks often fail to adequately capture the spatial heterogeneity of precipitation patterns. To address these limitations, this study introduces a low-cost IoT-based rainfall monitoring system developed upon the Low-cost Efficient Wireless Intelligent Sensor (LEWIS) platform. Four rainfall sensors were designed, developed, and deployed at different locations across the semi-arid region of the United States, in the State of New Mexico, to capture localized precipitation variability. Each sensor node integrates a rainfall detection module with an LTE-enabled microcontroller and is powered by a compact solar-battery system, ensuring autonomous and self-sufficient operation. Real-time precipitation data are transmitted to a cloud server for continuous access, visualization, and integration with early-warning frameworks. The results demonstrate that IoT-based rainfall monitoring can achieve reliable accuracy at a fraction of the cost of conventional gauges, while supporting dense deployment for microscale precipitation analysis. Comparative validation with model-based precipitation data and in situ observations shows strong agreement in the detection and timing of recorded precipitation events, highlighting the system potential for early warning, disaster risk reduction, and bias correction of remotely sensed precipitation products by filling observational gaps in under-instrumented semi-arid areas.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 26 pages, 13 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Signal Processing" />
+  </entry>
+  <entry>
+    <title>Clustering Guided Domain-Specific Pretrained Foundation Model Very High-Resolution Arctic Remote Sensing</title>
+    <link href="http://arxiv.org/abs/2605.30467v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.30467v1</id>
+    <published>2026-05-28T00:00:00Z</published>
+    <updated>2026-05-28T00:00:00Z</updated>
+    <author>
+      <name>Amal S. Perera</name>
+    </author>
+    <author>
+      <name>Chandi Witharana</name>
+    </author>
+    <author>
+      <name>Elias Manos</name>
+    </author>
+    <author>
+      <name>Michael Pimenta</name>
+    </author>
+    <author>
+      <name>Anna K. Liljedahl</name>
+    </author>
+    <summary type="text">This study introduces a novel Arctic-focused remote sensing foundation model (RSFM) by combining diversity-aware regional-scale image curation with masked autoencoder (MAE) self-supervised pretraining of a Vision Transformer (ViT) encoder for very-high-spatial-resolution (VHSR) satellite image analysis. Spectral and acquisition-metadata descriptors were used in a scalable affinity-propagation clustering workflow to select approximately 3 million chips from 267 TB of Vantor VHSR imagery This curation strategy was designed to reduce oversampling of visually repetitive or low-information areas while preserving broad scene diversity across the study domain. We pretrained a ViT-Large encoder on the curated corpus using a domain-adapted MAE reconstruction objective, producing Arctic-specific transformer weights for downstream feature mapping. The pretrained encoder was integrated into an existing location-aware detection and segmentation framework and evaluated across four hand-labeled Arctic datasets. Compared to ImageNet-initialized ViT-Large baseline, Arctic MAE pretraining produced consistent improvements in foreground mean F1 scores of 0.87, 0.72, 0.93, and 0.87, for infrastructure, IWP, RTS, and TCNs, with approximately 5-8 percentage increase. The proposed model also outperformed Prithvi-EO-2.0 in all downstream comparisons, with the smallest gain corresponding to at least a 15 percentage improvement mean F1, suggesting that domain-specific self-supervised pretraining on curated Arctic VHSR imagery provides more transferable representations for fine-scale Arctic mapping than a general-purpose Earth observation foundation model. These results demonstrate that optimizing the pretraining data distribution at regional scale, while keeping the architecture and MAE objective fixed, can produce a reusable Arctic-domain encoder for multiple VHSR remote sensing applications.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
   </entry>
   <entry>
     <title>A Method for Imaging Interplanetary Magnetic Field Strength and Orientation</title>
@@ -396,321 +579,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Multimedia" />
-  </entry>
-  <entry>
-    <title>VertiCue-Bench: Diagnosing Whether MLLMs Use Height Cues to Resolve 2D Ambiguity in Remote Sensing Natural Scenes</title>
-    <link href="http://arxiv.org/abs/2605.25784v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.25784v1</id>
-    <published>2026-05-25T00:00:00Z</published>
-    <updated>2026-05-25T00:00:00Z</updated>
-    <author>
-      <name>Jing Huang</name>
-    </author>
-    <author>
-      <name>Duanchu Wang</name>
-    </author>
-    <author>
-      <name>Junjie Yang</name>
-    </author>
-    <author>
-      <name>Zihang Cheng</name>
-    </author>
-    <author>
-      <name>Cheng Li</name>
-    </author>
-    <author>
-      <name>Lin Cui</name>
-    </author>
-    <author>
-      <name>Zhouyi Wu</name>
-    </author>
-    <author>
-      <name>Di Wang</name>
-    </author>
-    <summary type="text">Multimodal Large Language Models (MLLMs) have recently shown promising progress in geospatial reasoning. However, existing remote sensing benchmarks remain largely 2D-centric, evaluating models primarily on optical appearance. In natural environments, this paradigm breaks down due to severe spectral confusion, where ecologically distinct regions share similar textures but differ fundamentally in vertical structure. In such cases, explicit 3D structural data, such as Canopy Height Models (CHMs), become essential geometric evidence for semantic disambiguation. Yet, it remains unclear whether current MLLMs can genuinely leverage vertical cues to resolve appearance-level ambiguity. To address this gap, we introduce VertiCue-Bench, the first diagnostic benchmark for CHM-grounded geospatial reasoning. VertiCue-Bench comprises 1,534 carefully curated instances across 17 tasks, explicitly disentangling low-level height perception from ambiguity-aware semantic reasoning. Evaluations on 14 state-of-the-art general and remote-sensing-specialized MLLMs, combined with counterfactual modality testing, reveal a striking perception-reasoning dissociation. While models exhibit emerging competence in reading raw CHM height cues, they largely fail to translate geometric perception into reliable semantic reasoning, often underperforming RGB-only baselines when joint constraints are required. Overall, VertiCue-Bench exposes a critical geometry-to-semantics gap in natural scene understanding, offering actionable insights for advancing geospatial MLLMs.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Multimedia" />
-  </entry>
-  <entry>
-    <title>SFR-Net: Learning Scale-Frustum Representations for Ultra-Wide Area Remote Sensing Image Segmentation</title>
-    <link href="http://arxiv.org/abs/2605.25737v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.25737v1</id>
-    <published>2026-05-25T00:00:00Z</published>
-    <updated>2026-05-25T00:00:00Z</updated>
-    <author>
-      <name>Chuyu Zhong</name>
-    </author>
-    <author>
-      <name>Keyan Chen</name>
-    </author>
-    <author>
-      <name>Qinzhe Yang</name>
-    </author>
-    <author>
-      <name>Bowen Chen</name>
-    </author>
-    <author>
-      <name>Zhengxia Zou</name>
-    </author>
-    <author>
-      <name>Zhenwei Shi</name>
-    </author>
-    <summary type="text">Pixel count and geographical coverage are two key characteristics of remote sensing images. Existing remote sensing image segmentation methods typically focus on images with either a small pixel count or a large pixel count but limited geographical coverage. In this paper, we introduce a novel segmentation task targeting ultra-wide area (UWA) remote sensing images, characterized by both a large pixel count and extremely wide geographical coverage. The core challenges of UWA segmentation lie in simultaneously handling ground objects with significantly varying scales and maintaining long-range contextual semantic continuity. To address these challenges, we propose the Scale-Frustum Representation Network (SFR-Net). Inspired by the viewing frustums of remote sensing images captured from different altitudes, we construct scale-frustum representations, enabling unified modeling of ground objects and contextual features at different scales. Furthermore, we design a cascaded cross-scale fusion mechanism to effectively integrate these representations, enhancing local semantic understanding while ensuring long-range contextual continuity. Experimental results on GID and FBPS demonstrate that SFR-Net achieves state-of-the-art performance, improving mIoU by 1.72% and 4.29%, respectively, over the strongest competing methods. In addition, the proposed scale-frustum representations can be integrated into generic segmentation networks to improve both segmentation accuracy and convergence speed. The implementation code will be publicly available at https://github.com/ChuyuZhong/SFR-Net.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/ChuyuZhong/SFR-Net"&gt;https://github.com/ChuyuZhong/SFR-Net&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Signs of Sulphur fractionation under high magnetic field strength</title>
-    <link href="http://arxiv.org/abs/2605.25325v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.25325v1</id>
-    <published>2026-05-25T00:00:00Z</published>
-    <updated>2026-05-25T00:00:00Z</updated>
-    <author>
-      <name>Dominik Orlovskij</name>
-    </author>
-    <author>
-      <name>Andy S. H. To</name>
-    </author>
-    <author>
-      <name>David M. Long</name>
-    </author>
-    <summary type="text">Sulphur, with a first ionisation potential (FIP) of 10.36 eV, lies at the boundary between low- and high-FIP elements, making it particularly sensitive to fractionation processes in the solar atmosphere. Sulphur exhibits variable behaviour across solar environments, with coronal remote sensing studies often observing it as a high-FIP element while in-situ measurements sometimes detect low-FIP-like enhancement. Sulphur also exhibits variable behaviour during flares and magnetic restructuring. To understand sulphur's variations, we quantify how sulphur's FIP bias depends on potential field source surface (PFSS)-derived loop properties. We analyse nine Hinode/EUV Imaging Spectrometer (EIS) raster observations using four diagnostic line pairs (Si X 258.37 A / S X 264.23 A, S XI 188.68 A / Ar XI 188.81 A, Ca XIV 193.87 A / Ar XIV 194.40 A, and Fe XVI 262.98 A / S XIII 256.69 A), with FIP biases derived using differential emission measures (DEM) calculated via regularised inversion. Our results show that abundances of low-FIP elements, including sulphur, decrease above approximately 150 G relative to the high-FIP element Ar, while showing no dependence on loop length. This provides evidence that FIP fractionation is modulated by mean magnetic field strength of coronal loops.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted for publication in Philosophical Transactions of the Royal Society A. Special Issue on Solar Atmospheric Abundances in Space and Time&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
-    <category term="astro-ph.SR" />
-  </entry>
-  <entry>
-    <title>Location Prior Generation via Multi-Source Urban Data Fusion for Low-Altitude Air Mobility</title>
-    <link href="http://arxiv.org/abs/2605.25530v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.25530v1</id>
-    <published>2026-05-25T00:00:00Z</published>
-    <updated>2026-05-25T00:00:00Z</updated>
-    <author>
-      <name>Xiang Xie</name>
-    </author>
-    <author>
-      <name>Xiaonan Liu</name>
-    </author>
-    <summary type="text">Building height, the third dimension (3D) of urban spatial data, is absent in over 95% of structures in global geospatial databases. For the emerging low-altitude economy, this data gap forces each aerial platform to rely on real-time onboard sensing rather than pre-computed 3D scene geometry. We present the Location Prior Generation Framework (LPGF), a multi-source data fusion pipeline that integrates Sentinel-2 imagery, UAV telemetry, vehicle GPS trajectories, and OpenStreetMap footprints into structured, reusable urban location priors. LPGF assigns building heights through a three-tier priority hierarchy: (1) explicit OSM height tags where available, (2) floor count multiplied by 3.2 m per story where recorded, and (3) building-type default heights otherwise, yielding a worst-case error of approximately 5.5 m. An optional shadow-based height estimation module (SHEM) is activated only when a four-criterion quality gate is satisfied; when any criterion fails, the pipeline routes to structured fallback. On the MiTra A50 Milan dataset, the quality gate correctly identified two imaging failure modes: sub-pixel shadows at 10 m GSD and ground shadow merging at 0.93 m GSD, producing a consistent 27-building prior in both cases. Tier 3 type-default heights were validated against manual floor counts (n=15), achieving MAE=3.07 m within the 5.0 m uncertainty bound. The framework demonstrates that structured, quality-gated fusion of universally available data streams can bootstrap 3D scene coverage for low-altitude urban operations.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 11 pages, 7 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>G-DRAGON: Geospatial Reasoning and Dynamic Planning for Retrieval-Augmented Outdoor Navigation</title>
-    <link href="http://arxiv.org/abs/2605.25646v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.25646v1</id>
-    <published>2026-05-25T00:00:00Z</published>
-    <updated>2026-05-25T00:00:00Z</updated>
-    <author>
-      <name>Dongzhihan Wang</name>
-    </author>
-    <author>
-      <name>Yi Du</name>
-    </author>
-    <author>
-      <name>Jianan Sun</name>
-    </author>
-    <author>
-      <name>Yuan Xue</name>
-    </author>
-    <author>
-      <name>Yingchen Zhang</name>
-    </author>
-    <author>
-      <name>Bing Xiao</name>
-    </author>
-    <author>
-      <name>Chen Wang</name>
-    </author>
-    <author>
-      <name>Liang Xu</name>
-    </author>
-    <summary type="text">Autonomous ground robots operating in large-scale outdoor environments require both robust long-range navigation and fine-grained ''last-mile'' exploration. Current advances in visual-language navigation (VLN) work well at short-range tasks, lacking geospatial grounding for long-distance missions. Some OpenStreetMap (OSM)-based methods relying on cloud-based Large Language Models (LLMs) are prone to factual hallucination and cannot conduct ''last-mile'' exploration based on human instruction. To address these challenges, we present G-DRAGON, a retrieval-augmented framework for outdoor, open-world navigation. This framework maps natural-language commands to versioned, local OSM entities via generative retrieval based on lightweight LLM, yielding accurate coordinates for global route planning. A high-level planning module bridges global topological routes with the SLAM system, projecting geospatial waypoints into the robot's navigable frame. For the ''last mile," the framework transitions to frontier-based exploration and open-set semantic voxel mapping to localize open-vocabulary targets. Experimental results in simulation demonstrate our framework outperforms state-of-the-art baselines. Furthermore, we validate the system in unseen real-world urban environments on an Unmanned Ground Vehicle (UGV), successfully completing person-search missions with trajectories of up to 500m.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Robotics and Automation Letters (RA-L)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
-    <category term="Robotics" />
-  </entry>
-  <entry>
-    <title>Geo-Expert: Towards Expert-Level Geological Reasoning via Parameter-Efficient Fine-Tuning</title>
-    <link href="http://arxiv.org/abs/2605.24844v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.24844v1</id>
-    <published>2026-05-24T00:00:00Z</published>
-    <updated>2026-05-24T00:00:00Z</updated>
-    <author>
-      <name>Chenyou Guo</name>
-    </author>
-    <author>
-      <name>Zongqi Liu</name>
-    </author>
-    <author>
-      <name>Yizhou Zhang</name>
-    </author>
-    <author>
-      <name>Zhaorui Jiang</name>
-    </author>
-    <author>
-      <name>Ze Liu</name>
-    </author>
-    <summary type="text">While general-purpose Large Language Models (LLMs) applied to Geology often hallucinate when reasoning about subsurface structures and deep-time evolution, current AI in Earth sciences predominantly targets surface remote sensing and GIS. To bridge this gap, we introduce Geo-Expert, a family of parameter-efficient geological LLMs fine-tuned on a custom-curated, high-quality instruction dataset processed using our custom instruction synthesis pipeline. We investigate the impact of model scaling and architecture by fine-tuning three base models: Qwen3-8B, Qwen3-32B, and Gemma-3-27B, with Low-Rank Adaptation (LoRA) method. Our extensive evaluation on a novel domain-specific benchmark, Geo-Eval, reveals that a domain-aligned 8B model can outperform open-weight 70B generalists and proprietary GPT-4o on specialized geological reasoning, while a 32B variant approaches frontier reasoning models. The optimized 8B model further offers a competitive cost-performance ratio for deployment. This work provides a reproducible recipe for democratizing scientific LLMs and establishes a baseline for geological artificial intelligence.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICML 2026 AI for Science Workshop&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="cs.CL" />
-  </entry>
-  <entry>
-    <title>DisDop: Distillation with Domain Priors for Open-Vocabulary Aerial Object Detection</title>
-    <link href="http://arxiv.org/abs/2605.24639v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.24639v1</id>
-    <published>2026-05-23T00:00:00Z</published>
-    <updated>2026-05-23T00:00:00Z</updated>
-    <author>
-      <name>Ruihao Xu</name>
-    </author>
-    <author>
-      <name>Yong Liu</name>
-    </author>
-    <author>
-      <name>Yansong Tang</name>
-    </author>
-    <author>
-      <name>Sule Bai</name>
-    </author>
-    <author>
-      <name>Xubing Ye</name>
-    </author>
-    <author>
-      <name>Bingyao Yu</name>
-    </author>
-    <author>
-      <name>Yutao Guo</name>
-    </author>
-    <author>
-      <name>Jiwen Lu</name>
-    </author>
-    <author>
-      <name>Jie Zhou</name>
-    </author>
-    <summary type="text">With the widespread application of drones in recent years, object detection of aerial images has attracted increasing attention, especially open-vocabulary aerial detection which is not restricted to predefined categories. Due to the scarcity of drone's viewpoint images and their significant differences from natural images, it is difficult to achieve satisfying results by directly applying vanilla open-vocabulary detection methods designed for natural scenarios. Some studies propose to transfer knowledge from pre-trained models by using lightweight networks or generating pseudo labels, but they tend to rely on models trained on natural images, neglecting the potential of foundation models specifically tailored for remote sensing and aerial imagery. To address this limitation, we propose DisDop, a unified framework that systematically distills multi-level domain priors from remote sensing foundation models (e.g., RemoteCLIP and DINOv3) into a lightweight detector. Specifically, we first distill visual priors through a teacher fusion strategy that combines RemoteCLIP's cross-modal alignment capability with DINOv3's fine-grained local feature extraction ability, transferring their complementary strengths to the detector's backbone. Second, we distill textual priors embedded in RemoteCLIP's text encoder by explicitly modeling inter-category semantic relationships, while incorporating global contextual priors to enhance local feature representation for small objects. Through this multi-level prior distillation framework, our DisDop achieves new state-of-the-art performance on open-vocabulary aerial detection benchmarks. Extensive ablation analysis also demonstrates the rationality and effectiveness of our proposed modules.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Image-Conditioned Instance Prompt Network for Referring Remote Sensing Image Segmentation</title>
-    <link href="http://arxiv.org/abs/2605.24532v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.24532v1</id>
-    <published>2026-05-23T00:00:00Z</published>
-    <updated>2026-05-23T00:00:00Z</updated>
-    <author>
-      <name>Biaoyu Ren</name>
-    </author>
-    <author>
-      <name>Qingsheng Wang</name>
-    </author>
-    <author>
-      <name>Cun Xu</name>
-    </author>
-    <author>
-      <name>Dingkang Yang</name>
-    </author>
-    <author>
-      <name>Wenxuan Wang</name>
-    </author>
-    <summary type="text">Referring Remote Sensing Image Segmentation (RRSIS) is a situated, task-driven cross-modal task related to the embodied perception paradigm, requiring models to align visual-spatial features with linguistic intentions for precise target perception. Recent research has focused on refining the granularity of textual features and optimizing image-text feature fusion to better guide target feature representations. However, insufficient descriptive granularity and sensitivity to semantic shifts can cause bottlenecks in cross-modal feature fusion. To address these issues, we propose the Image-Conditioned Instance Prompt Network (ICIPNet) with Bilateral Information Fusion, which is designed to alleviate bottlenecks in cross-modal feature fusion. ICIPNet introduces an Image-Conditioned Instance Prompt (ICIP) module to generate self-adaptive visual and semantic representations without external knowledge. The Bilateral Information Fusion (BIF) module enhances feature fusion along the token and channel dimensions. Experiments demonstrate that the proposed ICIPNet outperforms existing RRSIS models.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 6 pages, 3 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Coarse-to-Fine Domain Incremental Learning with Attentive Distillation for Mining Footprint Segmentation in Multispectral Imagery</title>
-    <link href="http://arxiv.org/abs/2605.24460v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.24460v2</id>
-    <published>2026-05-23T00:00:00Z</published>
-    <updated>2026-05-23T00:00:00Z</updated>
-    <author>
-      <name>Alif Tri Handoyo</name>
-    </author>
-    <author>
-      <name>Vincent C. S. Lee</name>
-    </author>
-    <author>
-      <name>Rizka Widyarini Purwanto</name>
-    </author>
-    <author>
-      <name>Alex M. Lechner</name>
-    </author>
-    <author>
-      <name>Deanna Kemp</name>
-    </author>
-    <author>
-      <name>Muhamad Risqi U. Saputra</name>
-    </author>
-    <summary type="text">Automatically mapping and segmenting global mining footprints using remote sensing and deep learning is critical for monitoring the socio-environmental risks and impacts of mining, yet its progress is hindered by the scarcity of fine-grained annotated data. Although large-scale datasets with coarse boundaries are widely available, leveraging them to improve fine-grained segmentation is challenging due to significant domain shift. To address this, we propose MineC2FNet, a coarse-to-fine domain incremental learning framework that exploits abundant coarse data to enhance fine-grained mining footprint segmentation. MineC2FNet adopts a teacher-student architecture with attentive distillation at both the feature and prediction levels, selectively transferring generalized knowledge from the coarse domain while enabling boundary refinement using limited fine-grained data (fine domain). We further introduce an expertly validated dataset of 219 images with precise boundary annotations across diverse geographies and commodities. Extensive experiments against state-of-the-art approaches, including domain adaptation and domain incremental learning methods, demonstrate that MineC2FNet achieves superior performance while effectively handling domain shift. The dataset and code are publicly available at https://github.com/risqiutama/MineC2FNet.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/risqiutama/MineC2FNet"&gt;https://github.com/risqiutama/MineC2FNet&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Benchmarking Composed Image Retrieval for Applied Earth Observation</title>
-    <link href="http://arxiv.org/abs/2605.24442v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.24442v1</id>
-    <published>2026-05-23T00:00:00Z</published>
-    <updated>2026-05-23T00:00:00Z</updated>
-    <author>
-      <name>Bill Psomas</name>
-    </author>
-    <author>
-      <name>Dionysis Christopoulos</name>
-    </author>
-    <author>
-      <name>Thanasis Petropoulos</name>
-    </author>
-    <author>
-      <name>Nikos Efthymiadis</name>
-    </author>
-    <author>
-      <name>Ioannis Kakogeorgiou</name>
-    </author>
-    <author>
-      <name>Ondřej Chum</name>
-    </author>
-    <author>
-      <name>Yannis Avrithis</name>
-    </author>
-    <author>
-      <name>Giorgos Tolias</name>
-    </author>
-    <author>
-      <name>Konstantinos Karantzalos</name>
-    </author>
-    <summary type="text">Remote sensing composed image retrieval (RSCIR) enables search in large satellite image archives using composed queries that combine a reference image with a textual modifier. Although RSCIR offers a flexible interface for expressing targeted retrieval intent, the transferability of modern composition methods to Earth observation (EO) imagery and their relevance to operational EO workflows remain underexplored. We address this gap through a unified benchmark and an application-oriented study. First, we systematically adapt and evaluate representative composed image retrieval methods with six vision-language backbones on PatternCom under a standardized protocol, analyzing their behavior across backbones, composition strategies, and query types. Second, we introduce xView2-CIR, a change-centric dataset for disaster and damage monitoring, where retrieval is conditioned on scene identity and a target post-event state. Our results show that training-free composition methods provide strong and scalable baselines for EO retrieval, while change-centric retrieval presents different challenges from attribute-based retrieval, particularly due to the need to preserve scene identity. Overall, this study establishes a practical benchmark for RSCIR and positions composed retrieval as a complementary tool for remote sensing image retrieval, archive exploration, and change analysis. The dataset and code are available at https://github.com/billpsomas/rscir.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/billpsomas/rscir"&gt;https://github.com/billpsomas/rscir&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>GRAIL: AI translation for scientists application workflow on satellite data</title>
-    <link href="http://arxiv.org/abs/2605.24784v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.24784v1</id>
-    <published>2026-05-23T00:00:00Z</published>
-    <updated>2026-05-23T00:00:00Z</updated>
-    <author>
-      <name>Zhuocheng Shang</name>
-    </author>
-    <author>
-      <name>Ahmed Eldawy</name>
-    </author>
-    <summary type="text">Domain scientists increasingly develop Python scripts to analyze satellite imagery but they lack scalability to large-scale data. This paper demonstrates GRAIL, an agentic translation system that converts Python geospatial workflows into executable Spark-based programs without requiring scientists to learn a new framework. Rather than fine-tuning a specialized LLM model, GRAIL adapts RDPro, a Scala library for satellite data analysis, to make it LLM-ready using structured documentation, API alias functions, and repair-oriented error logs. Translation is structured as a LangGraph pipeline that decomposes code generation into explicit sections with guided inputs and outputs, enabling targeted repair without regenerating the full program. We demonstrate GRAIL on real-world geospatial workflows and showcase the correctness and scalability of the translated code.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>
