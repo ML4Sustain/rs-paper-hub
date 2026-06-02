@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_sar.xml</id>
   <link href="https://rspaper.top/output/feed_sar.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-01T05:56:35Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 6 entries</subtitle>
+  <updated>2026-06-02T02:20:16Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 5 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -142,32 +142,6 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the AI4Space Workshop&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Asynchronous Remote Sensing Time-Series Fusion for Cloud Removal and Anytime Reconstruction</title>
-    <link href="http://arxiv.org/abs/2605.27726v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.27726v1</id>
-    <published>2026-05-26T00:00:00Z</published>
-    <updated>2026-05-26T00:00:00Z</updated>
-    <author>
-      <name>Forouzan Fallah</name>
-    </author>
-    <author>
-      <name>Chia Yu Hsu</name>
-    </author>
-    <author>
-      <name>Wenwen Li</name>
-    </author>
-    <author>
-      <name>Anna Liljedahl</name>
-    </author>
-    <author>
-      <name>Yezhou Yang</name>
-    </author>
-    <summary type="text">Frequent cloud cover severely limits the usability of Sentinel-2 (S2) optical time series for Earth surface monitoring. Sentinel-1 (S1) SAR provides all-weather complementary observations, but practical S1/S2 fusion remains difficult because acquisitions are irregular and asynchronous. Many existing approaches assume temporally aligned inputs (or require external nearest-date matching) and typically restore only observed timestamps, limiting reconstruction under long gaps and preventing on-demand synthesis. We propose AGFlow (Time Aligned Generative Flow Matching), a spatiotemporal flow-matching model for S1/S2 cloud removal and time-series reconstruction with three capabilities: (1) timestamp-conditioned internal alignment that fuses asynchronous S1 and cloudy S2 observations without preprocessing-based pairing; (2) spatiotemporal, context-aware denoising that models spatial structure jointly with temporal dynamics (rather than independent per-pixel time series); and (3) anytime querying, enabling generation of cloud-free S2 frames at both observed and user-specified timestamps within the monitoring window. We evaluate on the RESTORE-DiT benchmark protocol with quantitative metrics, qualitative comparisons, and component ablations. AGFlow notably improves fully missing-frame reconstruction (MAE and RMSE reduce by 16-19% over RESTORE-DiT) and provides reliable reconstructions under persistent gaps, while also yielding competitive cloud removal performance and flexible temporal querying for downstream tasks such as dense vegetation monitoring.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; CVPR 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>
