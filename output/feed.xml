@@ -4,12 +4,349 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-02T02:20:16Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 16 entries</subtitle>
+  <updated>2026-06-02T05:27:34Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 32 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Spatial Representation Learning Beyond Pixels: Unifying Raster Data and Vector Semantics for Human-Centric Geospatial Foundation Models</title>
+    <link href="http://arxiv.org/abs/2606.02374v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.02374v1</id>
+    <published>2026-06-01T00:00:00Z</published>
+    <updated>2026-06-01T00:00:00Z</updated>
+    <author>
+      <name>Steffen Knoblauch</name>
+    </author>
+    <author>
+      <name>Hao Li</name>
+    </author>
+    <author>
+      <name>Gengchen Mai</name>
+    </author>
+    <author>
+      <name>Konstantin Klemmer</name>
+    </author>
+    <author>
+      <name>Song Gao</name>
+    </author>
+    <author>
+      <name>WenWen Li</name>
+    </author>
+    <summary type="text">Earth Observation (EO) has fundamentally transformed the monitoring of environmental processes and human activities up to planetary scale. Recent advances in self-supervised learning have given rise to Earth Observation Foundation Models (EOFMs), which leverage petabyte-scale unlabeled EO data to learn transferable representations across a wide range of downstream geospatial tasks. Despite these advances, current EOFMs remain largely confined to raster modalities, overlooking the rich, structured information encoded in openly-accessible vector data sources such as OpenStreetMap and Overture. Vector data provides explicit and compact representations of geographic entities, including geometry, topology, and semantic relationships, offering critical contextual signals that are often ambiguous or inaccessible in imagery alone. Raster and vector data thus represent complementary views of geographic space: raster data captures continuous physical and spectral patterns, while vector data encodes discrete objects and their relational structure and often represents more of the human rather than the physical systems (e.g. social or demographic data). However, existing geospatial representation learning paradigms treat these modalities in isolation, relying on imperfect and often lossy transformations to bridge them. This perspective paper calls for a paradigm shift toward joint Spatial Representation Learning (SRL) in an unified embedding space that integrate raster perception with vector-based reasoning. Building on emerging efforts in multimodal geospatial learning, we highlight conceptual foundations, technical challenges, and promising directions for aligning heterogeneous spatial data sources. We contend that such integration is essential for developing next-generation geospatial AI systems capable of more accurate, interpretable, and semantically grounded understanding of the Earth.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Deep Learning for Remote Sensing to Improve Flood Inundation Mapping</title>
+    <link href="http://arxiv.org/abs/2606.02310v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.02310v1</id>
+    <published>2026-06-01T00:00:00Z</published>
+    <updated>2026-06-01T00:00:00Z</updated>
+    <author>
+      <name>Yogesh Bhattarai</name>
+    </author>
+    <author>
+      <name>Vijay Chaudhary</name>
+    </author>
+    <author>
+      <name>Wai Lim Kim</name>
+    </author>
+    <author>
+      <name>Sanjib Sharma</name>
+    </author>
+    <summary type="text">Flooding is the most pervasive natural disaster worldwide. Timely and accurate flood inundation mapping are essential for informing disaster risk management. Optical satellite missions provide high-resolution, multispectral observations critical for flood detection and inundation mapping. However, their operational utility is severely constrained by cloud cover during extreme precipitation events. Conventional cloud-removal techniques based on temporal compositing or interpolation often fail to capture inundation dynamics. In this study, we introduce a cloud-removal framework for flood imagery based on Denoising Diffusion Probabilistic Models, leveraging the Masked Diffusion Transformer architecture. The proposed approach exploits self-attention mechanisms to capture wider spatial context and employs masked token modeling to explicitly learn the reconstruction of cloud-obscured regions. Trained on multispectral Sentinel-2B flood scenes with realistic cloud patterns, the model generates cloud-free image realizations that preserve both visual fidelity and hydrological consistency. Reconstruction performance is evaluated using standard image quality metrics alongside flood-specific hydrological measures, demonstrating improved continuity of water bodies and preservation of spectral signatures critical for water detection indices. The results indicate that diffusion-based generative modeling offers a robust and physically consistent alternative for cloud removal in optical flood monitoring, enabling more reliable, continuous observations to support disaster risk management and flood-related decision making.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; This paper has been selected as the top 10 student finalists in IGRASS 2026 paper competition&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Cross-Domain Dead Tree Detection via Knowledge Distillation in Aerial Imagery</title>
+    <link href="http://arxiv.org/abs/2606.02303v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.02303v1</id>
+    <published>2026-06-01T00:00:00Z</published>
+    <updated>2026-06-01T00:00:00Z</updated>
+    <author>
+      <name>Anis Ur Rahman</name>
+    </author>
+    <author>
+      <name>Mete Ahishali</name>
+    </author>
+    <author>
+      <name>Einari Heinaro</name>
+    </author>
+    <author>
+      <name>Samuli Junttila</name>
+    </author>
+    <summary type="text">Detecting dead trees in aerial imagery is vital for assessing forest health, especially as tree mortality increases globally due to climate change, but domain variability and scarce labeled data often limit model generalization. This study advances the TreeMort-1T-UNet (Tree Mortality 1-Task U-Net) model, initially trained on Finnish aerial imagery (source domain), by applying knowledge distillation (KD) to adapt it to various target domains, including Polish, German, and Estonian datasets representing diverse forest types. We assess four KD variants: Basic, Self, Feature-level, and Ensemble, against a fine-tuning baseline, using Mean Tree IoU, Instance F1-score, Instance Precision, and Mean Centroid Error as key metrics, alongside representational analyses (e.g., cosine similarity, CKA, SSIM, t-SNE, and linear probing) for domain invariance. Feature-level KD outperforms others, yielding a Mean Tree IoU of 0.106, Instance F1-score of 0.63, Instance Precision of 0.55, and Mean Centroid Error of 3.039 on the Polish dataset, with robust precision across other target domains (e.g., 0.15 on Finnish, 0.67 on Polish, 0.60 on German, 0.59 on Estonian). It excels in low-data scenarios with fewer false positives and shows superior representational invariance (e.g., higher deep-layer CKA/SSIM, better domain mixing in t-SNE, and linear probing AUC of 0.95), making it ideal for precision-critical forestry applications. Additional ablation studies confirm that key components like feature alignment enhance its performance balance across metrics. Our findings demonstrate KD's potential to enhance transfer learning in remote sensing, offering a scalable, domain-robust tool for ecological monitoring and sustainable forest management.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 14 pages, 6 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Quantum-inspired Topographic Stereovision</title>
+    <link href="http://arxiv.org/abs/2606.02197v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.02197v1</id>
+    <published>2026-06-01T00:00:00Z</published>
+    <updated>2026-06-01T00:00:00Z</updated>
+    <author>
+      <name>Fanglin Bao</name>
+    </author>
+    <author>
+      <name>Youfei Xie</name>
+    </author>
+    <summary type="text">We challenge the long-unquestioned triangulation in distant stereovision, where shape rather than distance is the relevant observable. Our information-regret analysis reveals that the optimal measurements for absolute distance and distance gradient are unexpectedly different and incompatible. To resolve this observable-measurement mismatch, we introduce stereo regularization to address stereo anisotropies that violate prevailing emitter-number conservation, and propose the topographic interferometer, which exploits cross-detector correlations to probe topography without measuring the distance profile. Our interferometer turns parallaxing paths into Mach-Zehnder arms and incorporates a central path as the local oscillator for balanced homodyne detection, saturating the quantum Fisher information with improved topographic error scaling. Our work enables topographic stereovision of thermal sources beyond the Rayleigh limit, thereby establishing a quantum-inspired framework for heat-assisted detection and ranging in remote sensing and astronomy.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 2 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="quant-ph" />
+  </entry>
+  <entry>
+    <title>LALE: Lightweight-Transformer Architecture for Land-Cover Estimation</title>
+    <link href="http://arxiv.org/abs/2606.02092v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.02092v1</id>
+    <published>2026-06-01T00:00:00Z</published>
+    <updated>2026-06-01T00:00:00Z</updated>
+    <author>
+      <name>Ümit Mert Çağlar</name>
+    </author>
+    <author>
+      <name>Alptekin Temizel</name>
+    </author>
+    <summary type="text">Semantic segmentation of remote sensing imagery requires models that capture both global context and local detail under tight computational budgets. Prior work typically optimizes for one of these axes: attention for global context, convolution for local detail, or compactness for efficiency. While hybrid approaches aim to capture both, they require architectural changes and encoder backbones with computational overhead, limiting efficiency and performance. We present LALE (Lightweight-transformer Architecture for Land-cover Estimation), an end-to-end remote sensing image segmentation architecture, that bifurcates its encoder by resolution: lightweight ConvMixer stages handle high-resolution local features, while transformer stages handle low-resolution global context, confining the quadratic cost of self-attention to deep, downsampled feature maps. An all-MLP multi-scale decoder, together with RMSNorm and StarReLU throughout, further reduces compute and parameter count. On the large-scale ARAS400k remote-sensing segmentation benchmark, LALE establishes a strong efficiency-performance trade-off against CNN, transformer, and hybrid baselines. Our smallest variant, (just 1.6M parameters), reaches within 2.6 F1 points of the best baseline (UPerNet) while using 4.5x fewer parameters, 7x less storage, 17x fewer GMACs, and delivering 1.8x higher throughput.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+    <category term="Artificial Intelligence; Computer Vision" />
+  </entry>
+  <entry>
+    <title>Enhancing the Socioeconomic Understanding of Foundation Models with Urban Mobility</title>
+    <link href="http://arxiv.org/abs/2606.01745v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.01745v1</id>
+    <published>2026-06-01T00:00:00Z</published>
+    <updated>2026-06-01T00:00:00Z</updated>
+    <author>
+      <name>Baoshen Guo</name>
+    </author>
+    <author>
+      <name>Donghang Li</name>
+    </author>
+    <author>
+      <name>Zhiqing Hong</name>
+    </author>
+    <author>
+      <name>Kailai Sun</name>
+    </author>
+    <author>
+      <name>Heye Huang</name>
+    </author>
+    <author>
+      <name>Alok Prakash</name>
+    </author>
+    <author>
+      <name>Shenhao Wang</name>
+    </author>
+    <summary type="text">Foundation models have recently been applied to urban socioeconomic prediction using POI text, satellite imagery, and geospatial descriptions. However, these models mostly rely on static attributes of individual places, while ignoring the mobility patterns that reveal how places are functionally connected. To address this gap, we explore whether mobility networks can elicit the geospatial capabilities of foundation models by explicitly encoding connectivity among urban entities. We propose \textit{MobFusion}, a modular mobility-enhanced foundation model fusion paradigm, and instantiate it through three complementary designs: (i) mobility networks as contexts for zero-shot LLM prompting, (ii) as graph connectors for fusing geospatial visual embeddings with textual embeddings, and (iii) as structured tokens for multimodal LLM reasoning. Using anonymized large-scale mobility datasets from three U.S. metropolitan areas, we find that \textit{MobFusion} improves urban prediction tasks (e.g., median household income, population density, and crime prediction) across three instantiations, demonstrating that incorporating human mobility can effectively improve the socioeconomic understanding of foundation models.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.SI" />
+  </entry>
+  <entry>
+    <title>Mapping the Storm: Geospatial Impacts of Severe Weather on LEO Network Performance</title>
+    <link href="http://arxiv.org/abs/2606.01724v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.01724v1</id>
+    <published>2026-06-01T00:00:00Z</published>
+    <updated>2026-06-01T00:00:00Z</updated>
+    <author>
+      <name>Sina Ehsani</name>
+    </author>
+    <author>
+      <name>Bhanu Pallakonda</name>
+    </author>
+    <author>
+      <name>Pragyana K. Mishra</name>
+    </author>
+    <summary type="text">LEO satellite constellations, led by deployments such as Starlink, are playing an increasingly pivotal role in enabling global broadband connectivity. However, the reliability and performance of these space-based networks are highly sensitive to environmental dynamics, particularly localized weather phenomena that exhibit strong spatio-temporal variability. In this study, we present a continental-scale geospatial analysis of weather-induced performance degradation in the Starlink LEO network, with a focus on the contiguous United States. Leveraging a unique dataset comprising more than 870,000 terminal hours of minute-level telemetry from 1,292 Starlink terminals, we integrate high-resolution localized weather observations to quantify the impact of various meteorological conditions. We evaluated key performance indicators (KPIs)-including ping latency, ping drop rate, and signal quality-using spatial join techniques and time-aligned correlation with classified weather events. Our analysis reveals that severe weather events, such as thunderstorms with heavy rain or snow, have a pronounced effect on network performance. In particular, more than 55% affected terminals experienced substantial degradation. Temporal continuity analysis at the minute level shows that such degradation can lead to sustained impairments or full service outages lasting from several minutes to multiple hours.This work contributes to the first large-scale empirical study linking LEO satellite Internet performance with fine-grained weather data in both space and time. Our findings offer actionable insights for geospatial predictive modeling, weather-aware network provisioning, and resilient satellite communication system design. We also propose a framework for incorporating weather-inferred performance variability into future geospatial planning and service-level forecasting tools for LEO-based Internet systems.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, 8 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="stat.AP" />
+    <category term="cs.NI" />
+  </entry>
+  <entry>
+    <title>UR-JEPA: Uniform Rectifiability as a Regularizer for Joint-Embedding Predictive Architectures</title>
+    <link href="http://arxiv.org/abs/2606.01443v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.01443v1</id>
+    <published>2026-05-31T00:00:00Z</published>
+    <updated>2026-05-31T00:00:00Z</updated>
+    <author>
+      <name>Triet M. Le</name>
+    </author>
+    <summary type="text">A central difficulty in training Joint-Embedding Predictive Architectures (JEPAs) is preventing representation collapse. LeJEPA addresses this by enforcing an isotropic Gaussian target on the embeddings via Sketched Isotropic Gaussian Regularization (SIGReg). This target is in tension with the manifold hypothesis, which expects embeddings to concentrate on a low-dimensional subset of the ambient space. We propose \emph{UR-JEPA}, which targets a uniformly $n$-rectifiable measure of local tangent dimension $n$ at small scales, realized through a Gaussian-kernel smoothed Carleson-type square function $\mathcal{L}^{\text{CGLT}}$, with a complementary Jones $β$-number formulation. On Inet10, UR-JEPA($\mathcal{L}^{\text{CGLT}}$) attains $0.9141 \pm 0.0014$ for a $+0.83$\,pp gain over LeJEPA($\mathcal{L}^{\text{SIGReg}}$) with $\sim 30\%$ lower seed standard deviation; on matched-recipe Galaxy10~SDSS, a single-seed ImageNet-$100$ run, and a $3$-seed EuroSAT remote-sensing run, the two methods lie in the same peak-accuracy band at convergence, with UR-JEPA retaining its lower-seed-variance signature. On EuroSAT the in-domain pair is competitive at $96.0$ to $96.1\%$ with large remote-sensing foundation-model transfer at a $25\times$ smaller backbone. The distinction is geometric: direct visualization of the projector output distribution shows that on all four datasets UR--JEPA($\mathcal{L}^{\text{CGLT}}$) produces a global PCA spectrum with a $4$ to $5$ order-of-magnitude drop at index $\sim 20$ to $25$ out of $D = 32$, while LeJEPA's spectrum is near-flat (top-to-bottom ratio at most $3.6$). Per-dimension marginals are simultaneously near-Gaussian for both methods (mean Shapiro-Wilk $W \in [0.992, 0.996]$) as a Diaconis-Freedman consequence. At matched accuracy the two regularizers therefore yield structurally distinct projected representations.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+    <category term="Artificial Intelligence; Computer Vision" />
+  </entry>
+  <entry>
+    <title>Leaf Spectral Reflectance Prediction Using Multi-Head Attention Neural Networks</title>
+    <link href="http://arxiv.org/abs/2606.01432v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.01432v1</id>
+    <published>2026-05-31T00:00:00Z</published>
+    <updated>2026-05-31T00:00:00Z</updated>
+    <author>
+      <name>Parastoo Farajpoor</name>
+    </author>
+    <author>
+      <name>Alireza Pourreza</name>
+    </author>
+    <author>
+      <name>Mohammadreza Narimani</name>
+    </author>
+    <author>
+      <name>Ashraf El-Kereamy</name>
+    </author>
+    <author>
+      <name>Matthew W. Fidelibus</name>
+    </author>
+    <summary type="text">Accurate modeling of leaf spectral reflectance from physiological and biochemical traits is essential for advancing remote sensing applications in plant science and precision agriculture. Widely used radiative transfer models, such as PROSPECT-PRO, rely on generalized trait-reflectance relationships developed from a wide range of species, which may not fully capture the spectral behavior of specific crops like grapevines. In this study, we developed a trait-to-spectra prediction model using a multi-head attention neural network trained on a grapevine-specific dataset that includes 16 leaf traits measured across multiple varieties, growth stages, and years. The model was evaluated using stratified 5-fold cross-validation and achieved an average coefficient of determination (R^2) of 0.84 and normalized root mean squared error (NRMSE) of 1.52 percent, demonstrating high accuracy and generalizability. When compared to PROSPECT-PRO in forward mode, the neural network exhibited lower mean absolute error (MAE), especially in the near-infrared (NIR) and shortwave-infrared (SWIR) regions. These results emphasize the importance of species-specific modeling approaches and show that integrating biochemical and structural traits into data-driven architectures can significantly improve spectral prediction. The proposed model provides a robust framework for generating accurate leaf-level reflectance data, with potential applications in canopy trait retrieval, vineyard monitoring, and remote sensing-driven crop management.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages, 5 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+    <category term="Image and Video Processing; Signal Processing; Machine Learning (Statistics)" />
+  </entry>
+  <entry>
+    <title>Event-Based Vision in Space: Applications, Trends, and Future Directions</title>
+    <link href="http://arxiv.org/abs/2606.01280v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.01280v1</id>
+    <published>2026-05-31T00:00:00Z</published>
+    <updated>2026-05-31T00:00:00Z</updated>
+    <author>
+      <name>Luigi Capogrosso</name>
+    </author>
+    <author>
+      <name>Pietro Bonazzi</name>
+    </author>
+    <author>
+      <name>Michele Magno</name>
+    </author>
+    <summary type="text">Earth Observation (EO) is undergoing a significant transformation driven by the deployment of novel sensing technologies. Traditional frame-based optical sensors often struggle with motion blur, high power consumption, and extreme data redundancy in challenging orbital environments. In contrast, event-based sensors, also known as neuromorphic cameras, offer a bio-inspired asynchronous approach. By capturing only local illumination changes, they provide microsecond temporal resolution, an extremely high dynamic range, and exceptional energy efficiency. Although the use of these sensors is rapidly expanding from terrestrial systems to orbital platforms, the scientific literature surrounding their space-based applications remains heavily fragmented. To bridge this gap, this article presents a comprehensive review of the state-of-the-art in event-based vision in the space domain. Based on the retrieved literature, we introduce a taxonomy structured around four primary domains: 1) atmospheric and high-speed observation; 2) environmental monitoring and change detection; 3) operational support and onboard processing; and 4) geospatial modeling and predictive analysis. As a result, this survey highlights that neuromorphic engineering is far more than a supplementary imaging technique; it is a paradigm shift that can be used to directly address critical bottlenecks in modern remote sensing and sustainable space exploration.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the XXIV Annual Conference on Sensors and Microsystems (AISEM) 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Exploiting In-Sensor Computing for Energy-Efficient Earth Observation</title>
+    <link href="http://arxiv.org/abs/2606.01271v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.01271v1</id>
+    <published>2026-05-31T00:00:00Z</published>
+    <updated>2026-05-31T00:00:00Z</updated>
+    <author>
+      <name>Luigi Capogrosso</name>
+    </author>
+    <author>
+      <name>Pietro Bonazzi</name>
+    </author>
+    <author>
+      <name>Loris Hoxhaj</name>
+    </author>
+    <author>
+      <name>Michele Magno</name>
+    </author>
+    <summary type="text">The rapid growth of the satellite industry has driven a significant increase in geospatial data acquisition, highlighting a critical bottleneck: the severe disparity between the volume of collected sensor data and the limited downlink bandwidth available to ground stations. While On-Board Computing (OBC) has helped address this by pre-processing data in orbit, this article further advances the paradigm by introducing an in-sensor computing framework. We present an optimized end-to-end Earth Observation (EO) pipeline tailored for strict computational constraints by integrating TinyML techniques with the Sony IMX500 Intelligent Vision Sensor. Specifically, our approach shifts processing directly to the sensor level, offloading the computation from the primary embedded device, and effectively mitigating the downlink transmission of noisy or irrelevant data. We evaluated several efficient Convolutional Neural Networks (ConvNets), i.e., SqueezeNet, ShuffleNetV2, and MCUNetV1, on the EuroSAT dataset. Experimental results show that, despite the optimizations required for deployment on the IMX500 platform, our models maintain a competitive 96.68% accuracy while operating within its 8 MB constraints. Specifically, the models reach an average processing throughput of 17.40 FPS with a latency of 27.43 ms. Furthermore, our system profile exhibits high energy efficiency, with a low energy footprint of 14.19 mJ per inference and an efficiency rating of 42.26 GMAC/J, demonstrating its viability for in-sensor deployment.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the XXIV Annual Conference on Sensors and Microsystems (AISEM) 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>CR-JEPA: Cross-Modal Joint-Embedding Predictive Learning for Remote Sensing Image Retrieval</title>
+    <link href="http://arxiv.org/abs/2606.00706v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.00706v1</id>
+    <published>2026-05-30T00:00:00Z</published>
+    <updated>2026-05-30T00:00:00Z</updated>
+    <author>
+      <name>Md Aminur Hossain</name>
+    </author>
+    <author>
+      <name>Ayush V. Patel</name>
+    </author>
+    <author>
+      <name>Nitant Dube</name>
+    </author>
+    <author>
+      <name>Biplab Banerjee</name>
+    </author>
+    <summary type="text">Cross-modal remote sensing image retrieval aims to retrieve semantically related scenes across heterogeneous sensing modalities. This remains challenging because paired observations may differ substantially in imaging physics, spatial resolution, spectral configuration, and visual appearance. Moreover, a single retrieval projection trained with one objective may be insufficient to jointly support cross-modal semantic alignment and same-modal neighbourhood preservation. We propose CR-JEPA, a Cross-modal Retrieval Joint-Embedding Predictive Architecture for dual-modality remote sensing retrieval. The model uses modality-specific stems, a shared transformer trunk, and JEPA-style predictive objectives to estimate masked latent target features within and across modalities. Inspired by LeJEPA, we apply Sketched Isotropic Gaussian Regularization to raw retrieval projections to stabilize embeddings and mitigate collapse. CR-JEPA further employs a decoupled-head design with a unified retrieval head for same-modal retrieval and a cross-modal retrieval head for cross-modal search. We evaluate CR-JEPA on BEN-14K, CBRSIR_VS, and DSRSID. On BEN-14K, CR-JEPA improves S1 to S2 retrieval from 61.23% to 75.82% and S2 to S1 retrieval from 63.73% to 75.40% over X-JEPA, while also achieving competitive same-modal retrieval with fewer parameters.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 24 pages&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Improving Visual Grounding in Remote Sensing via Cluster-Guided Refinement and Model Ensemble Voting</title>
+    <link href="http://arxiv.org/abs/2606.00556v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.00556v1</id>
+    <published>2026-05-30T00:00:00Z</published>
+    <updated>2026-05-30T00:00:00Z</updated>
+    <author>
+      <name>Panav Shah</name>
+    </author>
+    <author>
+      <name>Geet Sethi</name>
+    </author>
+    <author>
+      <name>Ashutosh Gandhe</name>
+    </author>
+    <summary type="text">Visual grounding aims to locate image regions that correspond to natural language descriptions and is a key component of interpretable vision systems. In remote sensing imagery, grounding is particularly challenging due to complex scenes, small objects, and large variations in scale. Relying on a single model is often insufficient to address these diverse challenges. In this work, we propose two grounding pipelines, Sequential Grounding Refinement (SGR) and Cluster-Aware Grounding Refinement (CGR), that combine the complementary strengths of RemoteSAM, a visual grounding model specialized for remote sensing, and SAM3, a powerful general-purpose segmentation model. Our approach first uses RemoteSAM to obtain an initial estimate of object location, which is then refined using SAM3 to produce more accurate and spatially consistent segmentations. Additionally, we explore an ensemble strategy based on majority voting across six diverse grounding pipelines, each with distinct capabilities. This multi-model framework improves robustness and significantly enhances localization accuracy. Experimental results demonstrate that the proposed pipelines and ensemble approach outperform individual models, leading to more reliable and precise visual grounding predictions.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; CVPR 2026 Workshop MORSE&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>CAFOSat: A Strongly Annotated Dataset for Infrastructure-Aware CAFO Mapping Using High-Resolution Imagery</title>
+    <link href="http://arxiv.org/abs/2606.00548v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.00548v1</id>
+    <published>2026-05-30T00:00:00Z</published>
+    <updated>2026-05-30T00:00:00Z</updated>
+    <author>
+      <name>Oishee Bintey Hoque</name>
+    </author>
+    <author>
+      <name>Nibir Chandra Mandal</name>
+    </author>
+    <author>
+      <name>Mandy L Wilson</name>
+    </author>
+    <author>
+      <name>Samarth Swarup</name>
+    </author>
+    <author>
+      <name>Madhav Marathe</name>
+    </author>
+    <author>
+      <name>Abhijin Adiga</name>
+    </author>
+    <summary type="text">Concentrated Animal Feeding Operations (CAFOs) play an important role in agricultural production but are also associated with environmental, public health, and disease surveillance concerns. Large-scale mapping of CAFOs from remote sensing imagery remains challenging due to heterogeneous infrastructure layouts, noisy location records, inconsistent annotations, and incomplete inventories. We introduce CAFOSat, a strongly annotated, infrastructure-aware dataset for CAFO mapping across the United States. CAFOSat integrates high-resolution National Agriculture Imagery Program (NAIP) imagery with multi-source CAFO inventories collected across multiple states and transforms weak geolocation records into refined annotations through a human-in-the-loop pipeline combining AI-assisted annotation, GradCAM-based localization, and geometric clustering. To improve dataset quality, we curate challenging negative samples using land-cover-guided sampling with spatial exclusion constraints and provide infrastructure-level annotations, including barns, manure ponds, and grazing-related features, through manual verification. The resulting dataset contains more than 45,000 image patches spanning 20 states and four major CAFO categories. We benchmark a diverse set of convolutional, transformer-based, and vision-language models, demonstrating the value of refined annotations and curated negative samples for CAFO classification and generalization. In addition, we introduce a synthetic augmentation pipeline that generates infrastructure-aware variations to increase training diversity and improve robustness under distribution shifts. CAFOSat provides a large-scale benchmark for advancing infrastructure-aware agricultural monitoring and CAFO mapping from high-resolution remote sensing imagery.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; CVPR Workshop-2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;GeoLoc&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence; Machine Learning" />
+  </entry>
+  <entry>
+    <title>DarkVesselNet: Multi-Modal Remote Sensing and Trajectory Reasoning for Dark Vessel Detection</title>
+    <link href="http://arxiv.org/abs/2606.00445v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.00445v1</id>
+    <published>2026-05-30T00:00:00Z</published>
+    <updated>2026-05-30T00:00:00Z</updated>
+    <author>
+      <name>Arun Sharma</name>
+    </author>
+    <summary type="text">Dark vessel detection requires fusing what vessels report through AIS with what satellites observe through radar and optical sensors. DarkVesselNet is a multi-modal remote sensing stack that combines Sentinel-1 SAR, Sentinel-2 optical imagery, geospatial foundation model backbones, AIS trajectory reasoning, TGARD-style gap detection, and a Pi-DPM-inspired anomaly head. The repository exposes the system as a tested Python package and a public Hugging Face Space. The paper presents the sensor stack, backbone abstraction, fusion path, anomaly head, and current validation. The evidence currently available is software-grounded: tests for SAR speckle filtering, optical band ratios, Haversine distance, TGARD gap emission, sensor coregistration, backbone token shapes, and differentiable anomaly scoring.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence; Machine Learning" />
+  </entry>
   <entry>
     <title>PolSAR Image Classification using a Hybrid Complex-Valued Network (HybridCVNet)</title>
     <link href="http://arxiv.org/abs/2605.31137v1" rel="alternate" type="text/html" />
@@ -111,6 +448,33 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Mengqi-Lei/count-anything"&gt;https://github.com/Mengqi-Lei/count-anything&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>The Harsh Truth: Segment-Level Analysis of Harsh Driving Events in Milan Using Large-Scale Telematics, Street Networks, and Google Street View</title>
+    <link href="http://arxiv.org/abs/2606.00261v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.00261v1</id>
+    <published>2026-05-29T00:00:00Z</published>
+    <updated>2026-05-29T00:00:00Z</updated>
+    <author>
+      <name>Andrea La Grotteria</name>
+    </author>
+    <author>
+      <name>Paolo Santi</name>
+    </author>
+    <author>
+      <name>Titus Venverloo</name>
+    </author>
+    <author>
+      <name>Umberto Fugiglando</name>
+    </author>
+    <author>
+      <name>Carlo Ratti</name>
+    </author>
+    <summary type="text">Police-reported crash statistics remain the standard input for urban road-safety assessment, but their incompleteness and reporting lag limit their usefulness for timely, fine-grained intervention design. Harsh acceleration and braking events are widely used as surrogate safety indicators, but have so far been studied only in comparatively small urban samples. This study analyses harsh events across the urban road network of Milan, combining high-resolution telematics from more than 4.2 million vehicles equipped with On-Board Units, segment-level traffic metrics from TomTom, street-network and infrastructure attributes from OpenStreetMap, and visual streetscape features extracted from Google Street View via semantic segmentation using a OneFormer model. We employ an analytical framework combining non-parametric Mann--Whitney U tests of segment-feature distributions between high- and low-harshness groups with supervised machine-learning regressors. We find that, once exposure is controlled for, wider carriageways, crossings and transit stops, and more open visual fields (higher sky- and road-pixel proportions) are associated with higher harsh-event intensity, while denser built frontage is associated with lower intensity. Finally, the cycling-infrastructure case study identifies a gradient in harsh-event intensity across facility types: markings-only cycle lanes are associated with a 19.5% higher harshness score, and mixed-traffic configurations with an 11.5% higher score, relative to physically separated cycle paths, conditional on the included controls. These results support context-specific rather than uniform urban-safety interventions and illustrate how large-scale telematics combined with open geospatial and visual data can inform Vision Zero decision-making at the metropolitan scale.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="physics.soc-ph" />
   </entry>
   <entry>
     <title>OmniCD: A Foundational Framework for Remote Sensing Image Change Detection Guided by Multimodal Semantics</title>

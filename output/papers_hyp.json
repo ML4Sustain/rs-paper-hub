@@ -19644,5 +19644,43 @@
     "_added_date": "2026-06-01",
     "Category": "Method",
     "_tasks": "CLS"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Machine Learning",
+    "Date": "2026-06-01",
+    "Month": 6,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Deep Learning for Remote Sensing to Improve Flood Inundation Mapping",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2606.02310v1",
+    "Abstract": "Flooding is the most pervasive natural disaster worldwide. Timely and accurate flood inundation mapping are essential for informing disaster risk management. Optical satellite missions provide high-resolution, multispectral observations critical for flood detection and inundation mapping. However, their operational utility is severely constrained by cloud cover during extreme precipitation events. Conventional cloud-removal techniques based on temporal compositing or interpolation often fail to capture inundation dynamics. In this study, we introduce a cloud-removal framework for flood imagery based on Denoising Diffusion Probabilistic Models, leveraging the Masked Diffusion Transformer architecture. The proposed approach exploits self-attention mechanisms to capture wider spatial context and employs masked token modeling to explicitly learn the reconstruction of cloud-obscured regions. Trained on multispectral Sentinel-2B flood scenes with realistic cloud patterns, the model generates cloud-free image realizations that preserve both visual fidelity and hydrological consistency. Reconstruction performance is evaluated using standard image quality metrics alongside flood-specific hydrological measures, demonstrating improved continuity of water bodies and preservation of spectral signatures critical for water detection indices. The results indicate that diffusion-based generative modeling offers a robust and physically consistent alternative for cloud removal in optical flood monitoring, enabling more reliable, continuous observations to support disaster risk management and flood-related decision making.",
+    "code": "",
+    "Publication": "This paper has been selected as the top 10 student finalists in IGRASS 2026 paper competition",
+    "BibTex": "@article{bhattarai2026deep,\n  title={Deep Learning for Remote Sensing to Improve Flood Inundation Mapping},\n  author={Yogesh Bhattarai and Vijay Chaudhary and Wai Lim Kim and Sanjib Sharma},\n  journal={arXiv preprint arXiv:2606.02310v1},\n  year={2026},\n  url={http://arxiv.org/abs/2606.02310v1}\n}",
+    "Authors": "Yogesh Bhattarai, Vijay Chaudhary, Wai Lim Kim, Sanjib Sharma",
+    "_added_date": "2026-06-02",
+    "Category": "Method",
+    "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Artificial Intelligence; Machine Learning",
+    "Date": "2026-05-30",
+    "Month": 5,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "DarkVesselNet: Multi-Modal Remote Sensing and Trajectory Reasoning for Dark Vessel Detection",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2606.00445v1",
+    "Abstract": "Dark vessel detection requires fusing what vessels report through AIS with what satellites observe through radar and optical sensors. DarkVesselNet is a multi-modal remote sensing stack that combines Sentinel-1 SAR, Sentinel-2 optical imagery, geospatial foundation model backbones, AIS trajectory reasoning, TGARD-style gap detection, and a Pi-DPM-inspired anomaly head. The repository exposes the system as a tested Python package and a public Hugging Face Space. The paper presents the sensor stack, backbone abstraction, fusion path, anomaly head, and current validation. The evidence currently available is software-grounded: tests for SAR speckle filtering, optical band ratios, Haversine distance, TGARD gap emission, sensor coregistration, backbone token shapes, and differentiable anomaly scoring.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{sharma2026darkvesselnet,\n  title={DarkVesselNet: Multi-Modal Remote Sensing and Trajectory Reasoning for Dark Vessel Detection},\n  author={Arun Sharma},\n  journal={arXiv preprint arXiv:2606.00445v1},\n  year={2026},\n  url={http://arxiv.org/abs/2606.00445v1}\n}",
+    "Authors": "Arun Sharma",
+    "_added_date": "2026-06-02",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]
