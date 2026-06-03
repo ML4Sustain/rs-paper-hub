@@ -23501,5 +23501,24 @@
     "_added_date": "2026-06-02",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Artificial Intelligence",
+    "Date": "2026-06-01",
+    "Month": 6,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Plan2Map: A Multimodal Benchmark for Document-Grounded Geospatial Boundary Reconstruction from Planning Records",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2606.02747v1",
+    "Abstract": "Planning records define restrictions over geographic areas, but their source documents often provide only indirect spatial evidence rather than machine-readable boundaries. We introduce Plan2Map, a 208-case multimodal benchmark for document-grounded geospatial boundary reconstruction from UK planning records. Given only a source planning document, systems must reconstruct a valid geospatial boundary from notice text, schedules, map plates, map labels, and boundary annotations; the reference GeoJSON is held out for scoring. We propose GeoPlanAgent, a document-grounded, geospatial-tool-in-the-loop system that decomposes the task into evidence extraction, localisation, map registration, boundary segmentation, projection, and verification. On Plan2Map, GeoPlanAgent achieves 0.736 mean IoU and 0.904 median IoU, with 67.8\\% of predictions at or above 0.8 IoU, substantially outperforming direct VLM-to-GeoJSON baselines. Diagnostic analysis shows that direct VLM prediction remains unreliable, while remaining errors are concentrated in localisation and map registration, and supervised boundary segmentation substantially improves pixel-level mask quality. Plan2Map provides a concrete testbed for multimodal geospatial reconstruction from public planning records. Project page: https://odeb1.github.io/Plan2Map_Project_Page/.",
+    "code": "",
+    "Publication": "Project page: https://odeb1.github.io/Plan2Map_Project_Page/. Fabian Degen and Oishi Deb Contributed Equally",
+    "BibTex": "@article{degen2026planmap,\n  title={Plan2Map: A Multimodal Benchmark for Document-Grounded Geospatial Boundary Reconstruction from Planning Records},\n  author={Fabian Degen and Oishi Deb and Jindong Gu and Junchi Yu and Samuele Marro and Philip Torr and Jialin Yu},\n  journal={arXiv preprint arXiv:2606.02747v1},\n  year={2026},\n  url={http://arxiv.org/abs/2606.02747v1}\n}",
+    "Authors": "Fabian Degen, Oishi Deb, Jindong Gu, Junchi Yu, Samuele Marro, Philip Torr, Jialin Yu",
+    "_added_date": "2026-06-03",
+    "Category": "Dataset",
+    "_tasks": ""
   }
 ]

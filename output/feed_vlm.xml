@@ -4,7 +4,7 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-02T05:27:34Z</updated>
+  <updated>2026-06-03T02:31:38Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 11 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
@@ -68,6 +68,39 @@
     <summary type="text">Foundation models have recently been applied to urban socioeconomic prediction using POI text, satellite imagery, and geospatial descriptions. However, these models mostly rely on static attributes of individual places, while ignoring the mobility patterns that reveal how places are functionally connected. To address this gap, we explore whether mobility networks can elicit the geospatial capabilities of foundation models by explicitly encoding connectivity among urban entities. We propose \textit{MobFusion}, a modular mobility-enhanced foundation model fusion paradigm, and instantiate it through three complementary designs: (i) mobility networks as contexts for zero-shot LLM prompting, (ii) as graph connectors for fusing geospatial visual embeddings with textual embeddings, and (iii) as structured tokens for multimodal LLM reasoning. Using anonymized large-scale mobility datasets from three U.S. metropolitan areas, we find that \textit{MobFusion} improves urban prediction tasks (e.g., median household income, population density, and crime prediction) across three instantiations, demonstrating that incorporating human mobility can effectively improve the socioeconomic understanding of foundation models.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="cs.SI" />
+  </entry>
+  <entry>
+    <title>Plan2Map: A Multimodal Benchmark for Document-Grounded Geospatial Boundary Reconstruction from Planning Records</title>
+    <link href="http://arxiv.org/abs/2606.02747v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.02747v1</id>
+    <published>2026-06-01T00:00:00Z</published>
+    <updated>2026-06-01T00:00:00Z</updated>
+    <author>
+      <name>Fabian Degen</name>
+    </author>
+    <author>
+      <name>Oishi Deb</name>
+    </author>
+    <author>
+      <name>Jindong Gu</name>
+    </author>
+    <author>
+      <name>Junchi Yu</name>
+    </author>
+    <author>
+      <name>Samuele Marro</name>
+    </author>
+    <author>
+      <name>Philip Torr</name>
+    </author>
+    <author>
+      <name>Jialin Yu</name>
+    </author>
+    <summary type="text">Planning records define restrictions over geographic areas, but their source documents often provide only indirect spatial evidence rather than machine-readable boundaries. We introduce Plan2Map, a 208-case multimodal benchmark for document-grounded geospatial boundary reconstruction from UK planning records. Given only a source planning document, systems must reconstruct a valid geospatial boundary from notice text, schedules, map plates, map labels, and boundary annotations; the reference GeoJSON is held out for scoring. We propose GeoPlanAgent, a document-grounded, geospatial-tool-in-the-loop system that decomposes the task into evidence extraction, localisation, map registration, boundary segmentation, projection, and verification. On Plan2Map, GeoPlanAgent achieves 0.736 mean IoU and 0.904 median IoU, with 67.8\% of predictions at or above 0.8 IoU, substantially outperforming direct VLM-to-GeoJSON baselines. Diagnostic analysis shows that direct VLM prediction remains unreliable, while remaining errors are concentrated in localisation and map registration, and supervised boundary segmentation substantially improves pixel-level mask quality. Plan2Map provides a concrete testbed for multimodal geospatial reconstruction from public planning records. Project page: https://odeb1.github.io/Plan2Map_Project_Page/.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Project page: https://odeb1.github.io/Plan2Map_Project_Page/. Fabian Degen and Oishi Deb Contributed Equally&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
   </entry>
   <entry>
     <title>CR-JEPA: Cross-Modal Joint-Embedding Predictive Learning for Remote Sensing Image Retrieval</title>
@@ -250,45 +283,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
     <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>FLORO: A Multimodal Geospatial Foundation Model for Ecological Remote Sensing Across Sensors and Scales</title>
-    <link href="http://arxiv.org/abs/2605.28174v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.28174v1</id>
-    <published>2026-05-27T00:00:00Z</published>
-    <updated>2026-05-27T00:00:00Z</updated>
-    <author>
-      <name>Jorge L. Rodriguez</name>
-    </author>
-    <author>
-      <name>Victor Angulo Morales</name>
-    </author>
-    <author>
-      <name>Areej Alwahas</name>
-    </author>
-    <author>
-      <name>Mariana Elias Lara</name>
-    </author>
-    <author>
-      <name>Fida Mohammad Thoker</name>
-    </author>
-    <author>
-      <name>Kasper Johansen</name>
-    </author>
-    <author>
-      <name>Bernard Ghanem</name>
-    </author>
-    <author>
-      <name>Fernando T. Maestre</name>
-    </author>
-    <author>
-      <name>Matthew F. McCabe</name>
-    </author>
-    <summary type="text">Foundation models offer a promising route to transferable remote sensing representations, but many current approaches depend on very large pretraining datasets and fixed sensor configurations, limiting their suitability for ecological and environmental applications, where observations often vary across platforms, spatial and spectral resolutions, and available modalities. We introduce FLORO, a multimodal geospatial foundation model designed to learn transferable representations from a small but highly diverse remote sensing corpus. FLORO is pretrained using masked autoencoding on a heterogeneous combination of Sentinel-1, Sentinel-2, SkySAT imagery, elevation, and UAV-derived data. To accommodate sensor variability, FLORO incorporates availability-aware inputs that indicate which spectral bands and auxiliary modalities are present in each sample, enabling a unified input space across heterogeneous sensor configurations. We evaluated FLORO on the PANGAEA benchmark under a frozen-encoder protocol across scene classification, segmentation, and regression tasks. Despite being pretrained on a smaller corpus than competing foundation models, FLORO achieved strong and stable transfer across optical, optical-SAR, and optical-elevation benchmarks spanning medium-resolution satellite, airborne, and ultra-high-resolution UAV imagery. FLORO obtained the second-best average segmentation performance across six PANGAEA benchmarks, trailing only a recently introduced foundation model pretrained on over two orders of magnitude more images, remained competitive on scene classification, and was robust in regression tasks, while qualitative results showed improved preservation of spatial structure in flood, urban, biomass, and canopy-height prediction settings. In a separate controlled experiment on EuroSAT-MS, geo-positional encoding further improved classification relative to absolute positional encoding.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 29 pages, 9 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>

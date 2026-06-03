@@ -2645,3 +2645,10 @@ Method,Computer Vision,Artificial Intelligence; Machine Learning,2026-05-30,5,20
   year={2026},
   url={http://arxiv.org/abs/2606.00445v1}
 }",Arun Sharma,,2026-06-02
+Method,Computer Vision,,2026-06-02,6,2026,,FAF-CD: Frequency-Aware Fusion for Change Detection under Imperfect Multimodal Remote Sensing,,http://arxiv.org/abs/2606.03114v1,"Remote sensing change detection for real-world monitoring often relies on imperfect heterogeneous observations, where pre- and post-event images may be asynchronous, cross-sensor, or affected by illumination, seasonal, and modality shifts. This setting is especially challenging for EO-SAR disaster mapping, where nuisance variation can resemble structural damage. We propose FAF-CD, a frequency-aware hybrid framework with a DINOv3-pretrained ConvNeXt encoder and a linear-complexity VMamba-based decoder. Its rectification-aware tri-branch fusion module combines deformable spatial alignment with Fourier and Haar-wavelet comparisons, using adaptive gating to aggregate complementary cues across scales. On BRIGHT validation, a matched heterogeneous EO-SAR adaptation improves clean and perturbed tc-mIoU/tc-mAP over NeXt2Former-CD. FAF-CD also generalizes to binary optical CD, achieving 0.924 cF1 on LEVIR-CD and 0.955 cF1 on WHU-CD, and obtains the best average perturbed cIoU/cF1 on both binary datasets among M-CD and NeXt2Former-CD under pseudo-change-aligned stress tests. It further reduces cost by approximately 24 GFLOPs relative to NeXt2Former-CD while maintaining or improving accuracy.",,Code will be released at https://github.com/VimsLab/FAF-CD,"@article{wang2026fafcd,
+  title={FAF-CD: Frequency-Aware Fusion for Change Detection under Imperfect Multimodal Remote Sensing},
+  author={Yufan Wang and Sokratis Makrogiannis and Chandra Kambhamettu},
+  journal={arXiv preprint arXiv:2606.03114v1},
+  year={2026},
+  url={http://arxiv.org/abs/2606.03114v1}
+}","Yufan Wang, Sokratis Makrogiannis, Chandra Kambhamettu",CD,2026-06-03

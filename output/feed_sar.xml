@@ -4,12 +4,33 @@
   <id>https://rspaper.top/output/feed_sar.xml</id>
   <link href="https://rspaper.top/output/feed_sar.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-02T05:27:34Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 6 entries</subtitle>
+  <updated>2026-06-03T02:31:38Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 5 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>FAF-CD: Frequency-Aware Fusion for Change Detection under Imperfect Multimodal Remote Sensing</title>
+    <link href="http://arxiv.org/abs/2606.03114v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.03114v1</id>
+    <published>2026-06-02T00:00:00Z</published>
+    <updated>2026-06-02T00:00:00Z</updated>
+    <author>
+      <name>Yufan Wang</name>
+    </author>
+    <author>
+      <name>Sokratis Makrogiannis</name>
+    </author>
+    <author>
+      <name>Chandra Kambhamettu</name>
+    </author>
+    <summary type="text">Remote sensing change detection for real-world monitoring often relies on imperfect heterogeneous observations, where pre- and post-event images may be asynchronous, cross-sensor, or affected by illumination, seasonal, and modality shifts. This setting is especially challenging for EO-SAR disaster mapping, where nuisance variation can resemble structural damage. We propose FAF-CD, a frequency-aware hybrid framework with a DINOv3-pretrained ConvNeXt encoder and a linear-complexity VMamba-based decoder. Its rectification-aware tri-branch fusion module combines deformable spatial alignment with Fourier and Haar-wavelet comparisons, using adaptive gating to aggregate complementary cues across scales. On BRIGHT validation, a matched heterogeneous EO-SAR adaptation improves clean and perturbed tc-mIoU/tc-mAP over NeXt2Former-CD. FAF-CD also generalizes to binary optical CD, achieving 0.924 cF1 on LEVIR-CD and 0.955 cF1 on WHU-CD, and obtains the best average perturbed cIoU/cF1 on both binary datasets among M-CD and NeXt2Former-CD under pseudo-change-aligned stress tests. It further reduces cost by approximately 24 GFLOPs relative to NeXt2Former-CD while maintaining or improving accuracy.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Code will be released at https://github.com/VimsLab/FAF-CD&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>DarkVesselNet: Multi-Modal Remote Sensing and Trajectory Reasoning for Dark Vessel Detection</title>
     <link href="http://arxiv.org/abs/2606.00445v1" rel="alternate" type="text/html" />
@@ -93,69 +114,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Artificial Intelligence" />
     <category term="Machine Learning; cs.MA" />
-  </entry>
-  <entry>
-    <title>FLORO: A Multimodal Geospatial Foundation Model for Ecological Remote Sensing Across Sensors and Scales</title>
-    <link href="http://arxiv.org/abs/2605.28174v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.28174v1</id>
-    <published>2026-05-27T00:00:00Z</published>
-    <updated>2026-05-27T00:00:00Z</updated>
-    <author>
-      <name>Jorge L. Rodriguez</name>
-    </author>
-    <author>
-      <name>Victor Angulo Morales</name>
-    </author>
-    <author>
-      <name>Areej Alwahas</name>
-    </author>
-    <author>
-      <name>Mariana Elias Lara</name>
-    </author>
-    <author>
-      <name>Fida Mohammad Thoker</name>
-    </author>
-    <author>
-      <name>Kasper Johansen</name>
-    </author>
-    <author>
-      <name>Bernard Ghanem</name>
-    </author>
-    <author>
-      <name>Fernando T. Maestre</name>
-    </author>
-    <author>
-      <name>Matthew F. McCabe</name>
-    </author>
-    <summary type="text">Foundation models offer a promising route to transferable remote sensing representations, but many current approaches depend on very large pretraining datasets and fixed sensor configurations, limiting their suitability for ecological and environmental applications, where observations often vary across platforms, spatial and spectral resolutions, and available modalities. We introduce FLORO, a multimodal geospatial foundation model designed to learn transferable representations from a small but highly diverse remote sensing corpus. FLORO is pretrained using masked autoencoding on a heterogeneous combination of Sentinel-1, Sentinel-2, SkySAT imagery, elevation, and UAV-derived data. To accommodate sensor variability, FLORO incorporates availability-aware inputs that indicate which spectral bands and auxiliary modalities are present in each sample, enabling a unified input space across heterogeneous sensor configurations. We evaluated FLORO on the PANGAEA benchmark under a frozen-encoder protocol across scene classification, segmentation, and regression tasks. Despite being pretrained on a smaller corpus than competing foundation models, FLORO achieved strong and stable transfer across optical, optical-SAR, and optical-elevation benchmarks spanning medium-resolution satellite, airborne, and ultra-high-resolution UAV imagery. FLORO obtained the second-best average segmentation performance across six PANGAEA benchmarks, trailing only a recently introduced foundation model pretrained on over two orders of magnitude more images, remained competitive on scene classification, and was robust in regression tasks, while qualitative results showed improved preservation of spatial structure in flood, urban, biomass, and canopy-height prediction settings. In a separate controlled experiment on EuroSAT-MS, geo-positional encoding further improved classification relative to absolute positional encoding.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 29 pages, 9 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>A Deep Learning Iterative Framework for Sentinel-1 Stripmap Enhancement Based on Azimuth Doppler Decomposition</title>
-    <link href="http://arxiv.org/abs/2605.29088v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.29088v1</id>
-    <published>2026-05-27T00:00:00Z</published>
-    <updated>2026-05-27T00:00:00Z</updated>
-    <author>
-      <name>Juan Francisco Amieva</name>
-    </author>
-    <author>
-      <name>Christian Ayala</name>
-    </author>
-    <author>
-      <name>Roberto Del Prete</name>
-    </author>
-    <author>
-      <name>Mikel Galar</name>
-    </author>
-    <summary type="text">Synthetic Aperture Radar (SAR) imagery enables all-weather, day-and-night Earth observation; however, it remains difficult to interpret due to speckle noise and other intrinsic imaging artifacts. Sentinel-1 (S1) constitutes one of the most widely used spaceborne SAR missions, offering systematic global coverage, high temporal resolution, dual-polarization imaging, and free data availability. Among S1 modes, Stripmap (SM) provides the highest resolution, yet speckle noise and spatial constraints often hinder applications requiring finer spatial detail. This motivates the need for effective image enhancement strategies. In this work, we propose a self-supervised enhancement framework for S1 SM imagery based on azimuth subaperture decomposition. The method exploits the physical consistency between subaperture reconstructions and the corresponding full-aperture image to generate paired training data without external sensors, simulated ground truth, or multi-temporal stacks. The proposed framework integrates single- and multi-frame learning and incorporates an iterative inference scheme that progressively refines image quality. Experiments on real S1 SM data show that the proposed approach consistently outperforms the widely adopted self-supervised deep learning baseline MERLIN, in terms of PSNR and SSIM, while MERLIN attains higher ENL, highlighting a trade-off between structural fidelity and speckle smoothing. Overall, the results demonstrate that subaperture-based supervision provides a physically grounded, reproducible, and operationally viable approach for SAR image enhancement using S1 data. It is worth noting that the proposed approach can be extended to other SAR platforms, polarizations, and acquisition modes.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the AI4Space Workshop&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>
