@@ -4,12 +4,80 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-03T05:59:43Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 30 entries</subtitle>
+  <updated>2026-06-04T02:36:44Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 25 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Who Needs Labels? Adapting Vision Foundation Models With the Metadata You Already Have</title>
+    <link href="http://arxiv.org/abs/2606.05107v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.05107v1</id>
+    <published>2026-06-03T00:00:00Z</published>
+    <updated>2026-06-03T00:00:00Z</updated>
+    <author>
+      <name>Elouan Gardès</name>
+    </author>
+    <author>
+      <name>Seung Eun Yi</name>
+    </author>
+    <author>
+      <name>Kartik Ahuja</name>
+    </author>
+    <author>
+      <name>Théo Moutakanni</name>
+    </author>
+    <author>
+      <name>Huy V. Vo</name>
+    </author>
+    <author>
+      <name>Piotr Bojanowski</name>
+    </author>
+    <author>
+      <name>Wolfgang M. Pernice</name>
+    </author>
+    <author>
+      <name>Loïc Landrieu</name>
+    </author>
+    <author>
+      <name>Camille Couprie</name>
+    </author>
+    <summary type="text">We propose a label-free approach to adapt powerful but generic vision foundation models to specialized scientific domains. Standard supervised fine-tuning is often ill-suited to these settings: labels are scarce, and task-specific training can collapse the model's generality and hurt robustness. We instead leverage metadata to adapt representations to new domains in a self-supervised manner. Our method, FINO, combines a standard self-supervised objective with flexible metadata guidance that handles both highly granular discrete metadata and continuous metadata. It encourages the representation to preserve informative factors while suppressing spurious ones. Across subcellular fluorescence microscopy, Earth observation, wildlife monitoring, and medical imaging, FINO consistently outperforms standard unsupervised domain adaptation and fully supervised adaptation. It also exceeds highly-specialized domain-specific state of the art, while using no task labels for backbone adaptation and only lightweight probes for supervision.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Stateful Visual Encoders for Vision-Language Models</title>
+    <link href="http://arxiv.org/abs/2606.04433v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.04433v1</id>
+    <published>2026-06-03T00:00:00Z</published>
+    <updated>2026-06-03T00:00:00Z</updated>
+    <author>
+      <name>Zirui Wang</name>
+    </author>
+    <author>
+      <name>Junwei Yu</name>
+    </author>
+    <author>
+      <name>Adam Yala</name>
+    </author>
+    <author>
+      <name>David M. Chan</name>
+    </author>
+    <author>
+      <name>Joseph E. Gonzalez</name>
+    </author>
+    <author>
+      <name>Trevor Darrell</name>
+    </author>
+    <summary type="text">Vision-language models (VLMs) are increasingly used in multi-image, multi-turn agentic settings where decisions depend on visual changes. However, in existing open-weight VLMs, visual comparisons happen only inside the language model, while the visual encoder itself remains stateless: each image is encoded independently, without access to the prior visual context. As a result, small but task-critical changes may be attenuated before the language model has a chance to compare them, especially when those changes do not affect the high-level semantics of the scene. We introduce a Stateful Visual Encoder, which conditions each visual representation on prior visual features. Under supervised finetuning, VLMs equipped with stateful encoders achieve consistent improvements on controlled tasks involving cross-image spatial aggregation, multi-object visual differencing, and visual trajectory behavior cloning. These improvements are consistent across input resolutions, language model sizes, and VLM backbones. Finally, we validate our model on real-world tasks, including longitudinal radiology, fine-grained image comparison, and remote sensing, where stateful encoders consistently improve generalist VLM baselines and can match or surpass specialized models in selected domains. Project page: https://statefulvisualencoders.github.io/</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Project page: https://statefulvisualencoders.github.io/&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="cs.CL; Machine Learning" />
+  </entry>
   <entry>
     <title>FAF-CD: Frequency-Aware Fusion for Change Detection under Imperfect Multimodal Remote Sensing</title>
     <link href="http://arxiv.org/abs/2606.03114v1" rel="alternate" type="text/html" />
@@ -30,6 +98,22 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
     <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Contextual Geospatial Features for Identifying Informal Environmental-Health Hazards Undetectable from Satellites: A ULAB Case Study</title>
+    <link href="http://arxiv.org/abs/2606.04215v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.04215v1</id>
+    <published>2026-06-02T00:00:00Z</published>
+    <updated>2026-06-02T00:00:00Z</updated>
+    <author>
+      <name>Naia Ormaza-Zulueta</name>
+    </author>
+    <author>
+      <name>Zia Mehrabi</name>
+    </author>
+    <summary type="text">Reliable, scalable detection of informal, small-scale environmental-health hazards (used lead-acid battery (ULAB) recycling, household-scale e-waste burning, indoor mercury amalgamation, brick kilns, small tanneries) remains an unsolved problem. These operations are invisible to satellites and absent from formal registries, yet disproportionately harm low-income populations in low- and middle-income countries. This paper articulates the problem class and explores a possible response: contextual geospatial features, with case-specific feature design informed by domain expertise. We use ULAB recycling as a demonstration case, drawing on 164 verified sites in Bangladesh and India from Pure Earth's Toxic Sites Identification Programme. At this sample size, five-fold cross-validation on the training set cannot statistically distinguish the engineered contextual features from a simple two-feature socio-demographic baseline. The added value only becomes visible when we evaluate outside the training set. On 172 held-out informal-recycling sites in non-NCR India and Bangladesh, the model assigns scores several times higher than to matched random urban controls; and on an independent set of 131 regulatory-confirmed formal recyclers, informal sites score materially higher than formal ones in non-NCR India, indicating that the model is picking up informal-recycler-specific structure rather than generic industrial signal. We frame these results as exploratory rather than confirmatory: label sparsity, gaps in point-of-interest coverage, and untested transfer beyond South Asia all remain open. We close with seven open problems and invite the environmental-health and geospatial machine-learning communities to engage with informal-hazard detection as a class of problems worth solving.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="stat.AP" />
   </entry>
   <entry>
     <title>Spatial Representation Learning Beyond Pixels: Unifying Raster Data and Vector Semantics for Human-Centric Geospatial Foundation Models</title>
@@ -529,186 +613,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="physics.soc-ph" />
-  </entry>
-  <entry>
-    <title>OmniCD: A Foundational Framework for Remote Sensing Image Change Detection Guided by Multimodal Semantics</title>
-    <link href="http://arxiv.org/abs/2605.30168v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.30168v1</id>
-    <published>2026-05-28T00:00:00Z</published>
-    <updated>2026-05-28T00:00:00Z</updated>
-    <author>
-      <name>Chenhao Sun</name>
-    </author>
-    <summary type="text">Change detection (CD) in remote sensing is vital for applications such as urban monitoring and disaster assessment, yet traditional methods struggle with generalization across diverse scenarios. We present OmniCD, a foundational framework that unifies and enhances remote sensing CD through multimodal semantic guidance. OmniCD incorporates image and text prompts -- such as textual descriptions, semantic maps, and geospatial metadata -- into a unified architecture, supporting tasks from binary CD to zero-shot semantic change understanding. The framework integrates a hierarchical scene retrieval module and a change detection module, reinforced by a style disentanglement mechanism for improved cross-domain robustness. We further introduce RSITCD, a large-scale multimodal dataset with 300K+ annotated image-text pairs. Extensive experiments show that OmniCD achieves state-of-the-art performance across benchmarks, demonstrating strong adaptability and setting a solid foundation for general-purpose CD systems in remote sensing.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Building and Road Recognition in Dense Urban Informal Settlements: A Dataset and Benchmark</title>
-    <link href="http://arxiv.org/abs/2605.29856v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.29856v1</id>
-    <published>2026-05-28T00:00:00Z</published>
-    <updated>2026-05-28T00:00:00Z</updated>
-    <author>
-      <name>Hongyu Long</name>
-    </author>
-    <author>
-      <name>Jiaxuan Liu</name>
-    </author>
-    <author>
-      <name>Rui Cao</name>
-    </author>
-    <summary type="text">As a widespread form of informal settlements, urban villages present significant challenges for sustainable urban development and governance. Precise mapping of their infrastructure is essential, however, existing remote sensing datasets primarily focus on formal urban environments, lacking fine-grained annotated data for the high-density building patterns and narrow road networks typical of urban villages. To address this gap, we introduce the \textit{DenseUIS} dataset, the first high-resolution remote sensing dataset specifically designed for building and road extraction in extremely dense urban informal settlements, covering 126 urban villages across Shenzhen and Guangzhou in China. Furthermore, we conduct a comprehensive evaluation of state-of-the-art deep learning models on this dataset. Experimental results reveal the limitations of existing methods in handling the unique morphological patterns of dense informal settlements, underscoring the need for specialized approaches. \textit{DenseUIS} therefore provides a robust benchmark for advancing fine-grained urban mapping in complex and high-density informal environments. The dataset is publicly available at https://github.com/rui-research/DenseUIS.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/rui-research/DenseUIS"&gt;https://github.com/rui-research/DenseUIS&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 5 pages, 4 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Optimizing Latent Representations for Robust Building Damage Assessment Onboard Earth Observation Satellites</title>
-    <link href="http://arxiv.org/abs/2605.29575v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.29575v1</id>
-    <published>2026-05-28T00:00:00Z</published>
-    <updated>2026-05-28T00:00:00Z</updated>
-    <author>
-      <name>Thomas Goudemant</name>
-    </author>
-    <author>
-      <name>Benjamin Francesconi</name>
-    </author>
-    <summary type="text">Rapid identification of damaged buildings after natural disasters or on war areas is crucial to support emergency response and prioritize interventions. Earth Observation constellations provide timely, large-scale coverage, but actionable information is often delayed by data downlink constraints, on-ground processing, and human interpretation. Reducing this latency is essential to improve decision-making responsiveness. In this work, we propose an original AI-based system that enables object-level building damage assessment (localization and damage classification) directly onboard satellites from pre-disaster and post-disaster highresolution optical imagery. Available pre-disaster images are encoded on ground into compact latent representations, transmitted to the satellite, and compared on-board with newly acquired post-event observations. Leveraging AI interpretation capabilities and increasing processing capabilities on-board satellites, the proposed design enables processing directly at the data source, reducing the amount of information to be downlinked while preserving task-relevant content and improving overall system responsivity. We explore the design space through a systematic benchmark of onboard-compatible variants, analyzing the impact of siamese processing, cross-attention, latent-space compression, and robustness-oriented data augmentation. Experiments on xBD dataset demonstrate reliable and robust damage assessment under misalignment, with minimal performance degradation under strong compression.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; CVPRW 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>EarthShift: a benchmark for measuring robustness to real-world distribution shifts in Earth observation</title>
-    <link href="http://arxiv.org/abs/2605.29330v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.29330v1</id>
-    <published>2026-05-28T00:00:00Z</published>
-    <updated>2026-05-28T00:00:00Z</updated>
-    <author>
-      <name>Kelsey Doerksen</name>
-    </author>
-    <author>
-      <name>Hannah Kerner</name>
-    </author>
-    <summary type="text">Current Earth observation benchmarks focus on measuring performance on diverse tasks and applications, typically measuring generalization in-distribution. But when models are deployed, they must generalize to myriad out-of-distribution scenarios, such as new time periods, geographies, scales, and sensors. We introduce EarthShift: the first public testbed for benchmarking robustness across multiple realistic distribution shifts encountered in remote sensing. EarthShift enables users to measure distributional robustness by comparing performance in- and out-of-distribution using datasets from paired datasets from different sources, temporal windows, geographic locations, and sensors. Our experiments on 8 geospatial foundation models (GFMs) and 11 tasks covering 5 shift types show that GFMs consistently perform 15-20% worse out-of-distribution on average regardless of model architecture, size, pre-training or fine-tuning strategy. We show that GFM robustness is similar to that of generic vision foundation models, and even fully-supervised models. This highlights a need for future research to strive for improvements in distributional robustness, not just performance, which can be benchmarked using EarthShift. We release our code and datasets to provide a testbed to guide future work to create foundation models that are robust and reliable in real-world applications. Code and data for EarthShift are available at: https://earthshift.github.io</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Highly-sensitive mid-infrared upconversion detection based on external-cavity pump enhancement</title>
-    <link href="http://arxiv.org/abs/2605.29214v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.29214v1</id>
-    <published>2026-05-28T00:00:00Z</published>
-    <updated>2026-05-28T00:00:00Z</updated>
-    <author>
-      <name>Xiaohan Liu</name>
-    </author>
-    <author>
-      <name>Kun Huang</name>
-    </author>
-    <author>
-      <name>Wen Zhang</name>
-    </author>
-    <author>
-      <name>Ben Sun</name>
-    </author>
-    <author>
-      <name>Jianan Fang</name>
-    </author>
-    <author>
-      <name>Yan Liang</name>
-    </author>
-    <author>
-      <name>Heping Zeng</name>
-    </author>
-    <summary type="text">Sensitive mid-infrared (MIR) detection is highly demanded in various applications, ranging from remote sensing, infrared surveillance, environmental monitoring to industrial inspection. Among others, upconversion infrared detectors have recently attracted increasing attention due to the advantageous features of high sensitivity, fast response, and room-temperature operation. However, it remains challenging to realize high-performance passive MIR sensing due to the stringent requirement of high-power continuous-wave pumping. Here, we propose and implement a high-efficiency and low-noise MIR upconversion detection system based on pumping enhancement via a low-loss optical cavity. Specifically, a single-longitudinal-mode pump at 1064 nm is significantly enhanced by a factor of 36, thus allowing for a peak conversion efficiency of up to 22\% at an intra-cavity average power of 55 W. The corresponding noise equivalent power is achieved as low as 0.3 fW/Hz$^{1/2}$, which indicates at least a ten-fold improvement over previous results. Notably, the involved single-frequency pumping would facilitate high-fidelity spectral mapping, which is particularly attractive for high-precision MIR upconversion spectroscopy in photon-starved scenarios.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="physics.optics" />
-  </entry>
-  <entry>
-    <title>DisasterLex: An Expert Concept-to-Schema Knowledge Graph for Geospatial Reasoning in Disaster Analytics</title>
-    <link href="http://arxiv.org/abs/2605.30538v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.30538v1</id>
-    <published>2026-05-28T00:00:00Z</published>
-    <updated>2026-05-28T00:00:00Z</updated>
-    <author>
-      <name>Yiming Xiao</name>
-    </author>
-    <author>
-      <name>Ankit Basu</name>
-    </author>
-    <author>
-      <name>Kai Yin</name>
-    </author>
-    <author>
-      <name>Sahil Vartak</name>
-    </author>
-    <author>
-      <name>Christian Swords</name>
-    </author>
-    <author>
-      <name>Ali Mostafavi</name>
-    </author>
-    <summary type="text">Disasters are inevitable and increasingly costly, and effective response depends on querying structured tabular data: precise, information-dense records of hazard, exposure, vulnerability, and lifeline infrastructure that underpin disaster management. Current text-to-SQL methods enable natural-language access to such tables but transfer poorly to the disaster domain, where queries span heterogeneous geospatial schemas and require reasoning over causal relations. We introduce DisasterLex, a knowledge-graph-mediated framework that inserts an Expert Knowledge Graph (EKG) of curated concepts and typed causal edges between the user query and the database, bridged to schema by concept-to-table links. The orchestration runs four stages (identifying query entities, routing to the operational domain, planning over causal edges, and grounding the SQL), restricting the schema passed to the model at each step. We instantiate it on a disaster-analytics database (36 geospatial tables, 150 columns) with an EKG of 107 concepts, 117 causal edges, and 52 concept-to-schema links, evaluated on a 75-query test set. On all seven base models spanning proprietary and open-weight families, DisasterLex beats four state-of-the-art baselines (LightRAG, HippoRAG 2, ReFoRCE, CHESS) by 1.4x to 2.75x, with absolute scores of 1.65 to 3.56 (of 5.0). Error analysis shows baseline failures cluster in routing and multi-table SQL composition, the operations our orchestration explicitly addresses. Code, data, and the EKG artifact are available at https://github.com/YimingXiao98/DisasterLex and on Zenodo at https://doi.org/10.5281/zenodo.20388029.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/YimingXiao98/DisasterLex"&gt;https://github.com/YimingXiao98/DisasterLex&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Low-cost IoT-Based Rainfall Monitoring with Web-Based Data Access</title>
-    <link href="http://arxiv.org/abs/2605.30528v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.30528v1</id>
-    <published>2026-05-28T00:00:00Z</published>
-    <updated>2026-05-28T00:00:00Z</updated>
-    <author>
-      <name>Mohammad Solaiman</name>
-    </author>
-    <author>
-      <name>Ronan Reza</name>
-    </author>
-    <author>
-      <name>Su Zhang</name>
-    </author>
-    <author>
-      <name>Gerhard Schoener</name>
-    </author>
-    <author>
-      <name>Fernando Moreu</name>
-    </author>
-    <summary type="text">Rainfall measurement with high spatial and temporal resolution is critical for flood forecasting, drought mitigation, and disaster preparedness. Rainfall patterns are highly variable, both geographically and over time. This variability presents a significant challenge for monitoring, as rain gauges can accurately capture temporal patterns only at a single location. Furthermore, the high cost of commercial instruments restricts their widespread deployment, and rain gauge networks often fail to adequately capture the spatial heterogeneity of precipitation patterns. To address these limitations, this study introduces a low-cost IoT-based rainfall monitoring system developed upon the Low-cost Efficient Wireless Intelligent Sensor (LEWIS) platform. Four rainfall sensors were designed, developed, and deployed at different locations across the semi-arid region of the United States, in the State of New Mexico, to capture localized precipitation variability. Each sensor node integrates a rainfall detection module with an LTE-enabled microcontroller and is powered by a compact solar-battery system, ensuring autonomous and self-sufficient operation. Real-time precipitation data are transmitted to a cloud server for continuous access, visualization, and integration with early-warning frameworks. The results demonstrate that IoT-based rainfall monitoring can achieve reliable accuracy at a fraction of the cost of conventional gauges, while supporting dense deployment for microscale precipitation analysis. Comparative validation with model-based precipitation data and in situ observations shows strong agreement in the detection and timing of recorded precipitation events, highlighting the system potential for early warning, disaster risk reduction, and bias correction of remotely sensed precipitation products by filling observational gaps in under-instrumented semi-arid areas.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 26 pages, 13 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Signal Processing" />
-  </entry>
-  <entry>
-    <title>Clustering Guided Domain-Specific Pretrained Foundation Model Very High-Resolution Arctic Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2605.30467v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.30467v1</id>
-    <published>2026-05-28T00:00:00Z</published>
-    <updated>2026-05-28T00:00:00Z</updated>
-    <author>
-      <name>Amal S. Perera</name>
-    </author>
-    <author>
-      <name>Chandi Witharana</name>
-    </author>
-    <author>
-      <name>Elias Manos</name>
-    </author>
-    <author>
-      <name>Michael Pimenta</name>
-    </author>
-    <author>
-      <name>Anna K. Liljedahl</name>
-    </author>
-    <summary type="text">This study introduces a novel Arctic-focused remote sensing foundation model (RSFM) by combining diversity-aware regional-scale image curation with masked autoencoder (MAE) self-supervised pretraining of a Vision Transformer (ViT) encoder for very-high-spatial-resolution (VHSR) satellite image analysis. Spectral and acquisition-metadata descriptors were used in a scalable affinity-propagation clustering workflow to select approximately 3 million chips from 267 TB of Vantor VHSR imagery This curation strategy was designed to reduce oversampling of visually repetitive or low-information areas while preserving broad scene diversity across the study domain. We pretrained a ViT-Large encoder on the curated corpus using a domain-adapted MAE reconstruction objective, producing Arctic-specific transformer weights for downstream feature mapping. The pretrained encoder was integrated into an existing location-aware detection and segmentation framework and evaluated across four hand-labeled Arctic datasets. Compared to ImageNet-initialized ViT-Large baseline, Arctic MAE pretraining produced consistent improvements in foreground mean F1 scores of 0.87, 0.72, 0.93, and 0.87, for infrastructure, IWP, RTS, and TCNs, with approximately 5-8 percentage increase. The proposed model also outperformed Prithvi-EO-2.0 in all downstream comparisons, with the smallest gain corresponding to at least a 15 percentage improvement mean F1, suggesting that domain-specific self-supervised pretraining on curated Arctic VHSR imagery provides more transferable representations for fine-scale Arctic mapping than a general-purpose Earth observation foundation model. These results demonstrate that optimizing the pretraining data distribution at regional scale, while keeping the architecture and MAE objective fixed, can produce a reusable Arctic-domain encoder for multiple VHSR remote sensing applications.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>

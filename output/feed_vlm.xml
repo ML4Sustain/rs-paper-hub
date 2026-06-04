@@ -4,12 +4,80 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-03T05:59:43Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 11 entries</subtitle>
+  <updated>2026-06-04T02:36:44Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 10 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Who Needs Labels? Adapting Vision Foundation Models With the Metadata You Already Have</title>
+    <link href="http://arxiv.org/abs/2606.05107v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.05107v1</id>
+    <published>2026-06-03T00:00:00Z</published>
+    <updated>2026-06-03T00:00:00Z</updated>
+    <author>
+      <name>Elouan Gardès</name>
+    </author>
+    <author>
+      <name>Seung Eun Yi</name>
+    </author>
+    <author>
+      <name>Kartik Ahuja</name>
+    </author>
+    <author>
+      <name>Théo Moutakanni</name>
+    </author>
+    <author>
+      <name>Huy V. Vo</name>
+    </author>
+    <author>
+      <name>Piotr Bojanowski</name>
+    </author>
+    <author>
+      <name>Wolfgang M. Pernice</name>
+    </author>
+    <author>
+      <name>Loïc Landrieu</name>
+    </author>
+    <author>
+      <name>Camille Couprie</name>
+    </author>
+    <summary type="text">We propose a label-free approach to adapt powerful but generic vision foundation models to specialized scientific domains. Standard supervised fine-tuning is often ill-suited to these settings: labels are scarce, and task-specific training can collapse the model's generality and hurt robustness. We instead leverage metadata to adapt representations to new domains in a self-supervised manner. Our method, FINO, combines a standard self-supervised objective with flexible metadata guidance that handles both highly granular discrete metadata and continuous metadata. It encourages the representation to preserve informative factors while suppressing spurious ones. Across subcellular fluorescence microscopy, Earth observation, wildlife monitoring, and medical imaging, FINO consistently outperforms standard unsupervised domain adaptation and fully supervised adaptation. It also exceeds highly-specialized domain-specific state of the art, while using no task labels for backbone adaptation and only lightweight probes for supervision.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Stateful Visual Encoders for Vision-Language Models</title>
+    <link href="http://arxiv.org/abs/2606.04433v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.04433v1</id>
+    <published>2026-06-03T00:00:00Z</published>
+    <updated>2026-06-03T00:00:00Z</updated>
+    <author>
+      <name>Zirui Wang</name>
+    </author>
+    <author>
+      <name>Junwei Yu</name>
+    </author>
+    <author>
+      <name>Adam Yala</name>
+    </author>
+    <author>
+      <name>David M. Chan</name>
+    </author>
+    <author>
+      <name>Joseph E. Gonzalez</name>
+    </author>
+    <author>
+      <name>Trevor Darrell</name>
+    </author>
+    <summary type="text">Vision-language models (VLMs) are increasingly used in multi-image, multi-turn agentic settings where decisions depend on visual changes. However, in existing open-weight VLMs, visual comparisons happen only inside the language model, while the visual encoder itself remains stateless: each image is encoded independently, without access to the prior visual context. As a result, small but task-critical changes may be attenuated before the language model has a chance to compare them, especially when those changes do not affect the high-level semantics of the scene. We introduce a Stateful Visual Encoder, which conditions each visual representation on prior visual features. Under supervised finetuning, VLMs equipped with stateful encoders achieve consistent improvements on controlled tasks involving cross-image spatial aggregation, multi-object visual differencing, and visual trajectory behavior cloning. These improvements are consistent across input resolutions, language model sizes, and VLM backbones. Finally, we validate our model on real-world tasks, including longitudinal radiology, fine-grained image comparison, and remote sensing, where stateful encoders consistently improve generalist VLM baselines and can match or surpass specialized models in selected domains. Project page: https://statefulvisualencoders.github.io/</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Project page: https://statefulvisualencoders.github.io/&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="cs.CL; Machine Learning" />
+  </entry>
   <entry>
     <title>Spatial Representation Learning Beyond Pixels: Unifying Raster Data and Vector Semantics for Human-Centric Geospatial Foundation Models</title>
     <link href="http://arxiv.org/abs/2606.02374v1" rel="alternate" type="text/html" />
@@ -223,65 +291,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Mengqi-Lei/count-anything"&gt;https://github.com/Mengqi-Lei/count-anything&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>OmniCD: A Foundational Framework for Remote Sensing Image Change Detection Guided by Multimodal Semantics</title>
-    <link href="http://arxiv.org/abs/2605.30168v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.30168v1</id>
-    <published>2026-05-28T00:00:00Z</published>
-    <updated>2026-05-28T00:00:00Z</updated>
-    <author>
-      <name>Chenhao Sun</name>
-    </author>
-    <summary type="text">Change detection (CD) in remote sensing is vital for applications such as urban monitoring and disaster assessment, yet traditional methods struggle with generalization across diverse scenarios. We present OmniCD, a foundational framework that unifies and enhances remote sensing CD through multimodal semantic guidance. OmniCD incorporates image and text prompts -- such as textual descriptions, semantic maps, and geospatial metadata -- into a unified architecture, supporting tasks from binary CD to zero-shot semantic change understanding. The framework integrates a hierarchical scene retrieval module and a change detection module, reinforced by a style disentanglement mechanism for improved cross-domain robustness. We further introduce RSITCD, a large-scale multimodal dataset with 300K+ annotated image-text pairs. Extensive experiments show that OmniCD achieves state-of-the-art performance across benchmarks, demonstrating strong adaptability and setting a solid foundation for general-purpose CD systems in remote sensing.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>EarthShift: a benchmark for measuring robustness to real-world distribution shifts in Earth observation</title>
-    <link href="http://arxiv.org/abs/2605.29330v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.29330v1</id>
-    <published>2026-05-28T00:00:00Z</published>
-    <updated>2026-05-28T00:00:00Z</updated>
-    <author>
-      <name>Kelsey Doerksen</name>
-    </author>
-    <author>
-      <name>Hannah Kerner</name>
-    </author>
-    <summary type="text">Current Earth observation benchmarks focus on measuring performance on diverse tasks and applications, typically measuring generalization in-distribution. But when models are deployed, they must generalize to myriad out-of-distribution scenarios, such as new time periods, geographies, scales, and sensors. We introduce EarthShift: the first public testbed for benchmarking robustness across multiple realistic distribution shifts encountered in remote sensing. EarthShift enables users to measure distributional robustness by comparing performance in- and out-of-distribution using datasets from paired datasets from different sources, temporal windows, geographic locations, and sensors. Our experiments on 8 geospatial foundation models (GFMs) and 11 tasks covering 5 shift types show that GFMs consistently perform 15-20% worse out-of-distribution on average regardless of model architecture, size, pre-training or fine-tuning strategy. We show that GFM robustness is similar to that of generic vision foundation models, and even fully-supervised models. This highlights a need for future research to strive for improvements in distributional robustness, not just performance, which can be benchmarked using EarthShift. We release our code and datasets to provide a testbed to guide future work to create foundation models that are robust and reliable in real-world applications. Code and data for EarthShift are available at: https://earthshift.github.io</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>DisasterLex: An Expert Concept-to-Schema Knowledge Graph for Geospatial Reasoning in Disaster Analytics</title>
-    <link href="http://arxiv.org/abs/2605.30538v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.30538v1</id>
-    <published>2026-05-28T00:00:00Z</published>
-    <updated>2026-05-28T00:00:00Z</updated>
-    <author>
-      <name>Yiming Xiao</name>
-    </author>
-    <author>
-      <name>Ankit Basu</name>
-    </author>
-    <author>
-      <name>Kai Yin</name>
-    </author>
-    <author>
-      <name>Sahil Vartak</name>
-    </author>
-    <author>
-      <name>Christian Swords</name>
-    </author>
-    <author>
-      <name>Ali Mostafavi</name>
-    </author>
-    <summary type="text">Disasters are inevitable and increasingly costly, and effective response depends on querying structured tabular data: precise, information-dense records of hazard, exposure, vulnerability, and lifeline infrastructure that underpin disaster management. Current text-to-SQL methods enable natural-language access to such tables but transfer poorly to the disaster domain, where queries span heterogeneous geospatial schemas and require reasoning over causal relations. We introduce DisasterLex, a knowledge-graph-mediated framework that inserts an Expert Knowledge Graph (EKG) of curated concepts and typed causal edges between the user query and the database, bridged to schema by concept-to-table links. The orchestration runs four stages (identifying query entities, routing to the operational domain, planning over causal edges, and grounding the SQL), restricting the schema passed to the model at each step. We instantiate it on a disaster-analytics database (36 geospatial tables, 150 columns) with an EKG of 107 concepts, 117 causal edges, and 52 concept-to-schema links, evaluated on a 75-query test set. On all seven base models spanning proprietary and open-weight families, DisasterLex beats four state-of-the-art baselines (LightRAG, HippoRAG 2, ReFoRCE, CHESS) by 1.4x to 2.75x, with absolute scores of 1.65 to 3.56 (of 5.0). Error analysis shows baseline failures cluster in routing and multi-table SQL composition, the operations our orchestration explicitly addresses. Code, data, and the EKG artifact are available at https://github.com/YimingXiao98/DisasterLex and on Zenodo at https://doi.org/10.5281/zenodo.20388029.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/YimingXiao98/DisasterLex"&gt;https://github.com/YimingXiao98/DisasterLex&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
-    <category term="Machine Learning" />
   </entry>
 </feed>

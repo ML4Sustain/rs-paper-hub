@@ -3817,5 +3817,24 @@
     "_added_date": "2026-06-01",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "cs.CL; Machine Learning",
+    "Date": "2026-06-03",
+    "Month": 6,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Stateful Visual Encoders for Vision-Language Models",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2606.04433v1",
+    "Abstract": "Vision-language models (VLMs) are increasingly used in multi-image, multi-turn agentic settings where decisions depend on visual changes. However, in existing open-weight VLMs, visual comparisons happen only inside the language model, while the visual encoder itself remains stateless: each image is encoded independently, without access to the prior visual context. As a result, small but task-critical changes may be attenuated before the language model has a chance to compare them, especially when those changes do not affect the high-level semantics of the scene. We introduce a Stateful Visual Encoder, which conditions each visual representation on prior visual features. Under supervised finetuning, VLMs equipped with stateful encoders achieve consistent improvements on controlled tasks involving cross-image spatial aggregation, multi-object visual differencing, and visual trajectory behavior cloning. These improvements are consistent across input resolutions, language model sizes, and VLM backbones. Finally, we validate our model on real-world tasks, including longitudinal radiology, fine-grained image comparison, and remote sensing, where stateful encoders consistently improve generalist VLM baselines and can match or surpass specialized models in selected domains. Project page: https://statefulvisualencoders.github.io/",
+    "code": "",
+    "Publication": "Project page: https://statefulvisualencoders.github.io/",
+    "BibTex": "@article{wang2026stateful,\n  title={Stateful Visual Encoders for Vision-Language Models},\n  author={Zirui Wang and Junwei Yu and Adam Yala and David M. Chan and Joseph E. Gonzalez and Trevor Darrell},\n  journal={arXiv preprint arXiv:2606.04433v1},\n  year={2026},\n  url={http://arxiv.org/abs/2606.04433v1}\n}",
+    "Authors": "Zirui Wang, Junwei Yu, Adam Yala, David M. Chan, Joseph E. Gonzalez, Trevor Darrell",
+    "_added_date": "2026-06-04",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]
