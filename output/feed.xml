@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-04T05:53:09Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 25 entries</subtitle>
+  <updated>2026-06-05T02:12:06Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 20 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -484,134 +484,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence; Machine Learning" />
-  </entry>
-  <entry>
-    <title>PolSAR Image Classification using a Hybrid Complex-Valued Network (HybridCVNet)</title>
-    <link href="http://arxiv.org/abs/2605.31137v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.31137v1</id>
-    <published>2026-05-29T00:00:00Z</published>
-    <updated>2026-05-29T00:00:00Z</updated>
-    <author>
-      <name>Mohammed Q. Alkhatib</name>
-    </author>
-    <summary type="text">Recently, convolutional neural networks (CNNs) have become popular for image classification due to their effectiveness in computer vision tasks. Now, researchers are exploring the potential of vision transformers (ViTs) in remote sensing and Earth observation. However, traditional Real-Valued networks often overlook important phase information in Complex-Valued (CV) data like polarimetric synthetic aperture radar (PolSAR) data. To address this, new CV deep architectures have emerged. HybridCVNet, a novel hybrid network, blends CV-CNN and CV vision transformer (CV-ViT) techniques. It efficiently combines CV 3D and 2D CNNs as feature extractors, enhancing PolSAR image classification by extracting complementary information and effectively leveraging interdependencies within the data. Experimental results from widely-used PolSAR datasets show HybridCVNet outperforms other methods, achieving an overall accuracy of 97.39% on the Flevoland dataset and showing promise even with just a 1% sampling ratio, with a Kappa value of 0.972 on the San Francisco dataset. Source code is accessible through https://github.com/mqalkhatib/HybridCVNet</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/mqalkhatib/HybridCVNet"&gt;https://github.com/mqalkhatib/HybridCVNet&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Geoscience and Remote Sensing Letters (GRSL)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>HQ-JEPA: Hybrid Quantum Joint-Embedding Predictive Architecture for Cross-Modal Remote Sensing Representation Learning</title>
-    <link href="http://arxiv.org/abs/2605.31068v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.31068v1</id>
-    <published>2026-05-29T00:00:00Z</published>
-    <updated>2026-05-29T00:00:00Z</updated>
-    <author>
-      <name>Md Aminur Hossain</name>
-    </author>
-    <author>
-      <name>Ayush V. Patel</name>
-    </author>
-    <author>
-      <name>Sanjay K. Singh</name>
-    </author>
-    <author>
-      <name>Biplab Banerjee</name>
-    </author>
-    <summary type="text">We introduce HQ-JEPA, a hybrid quantum-classical joint-embedding predictive architecture for cross-modal remote sensing representation learning. The proposed framework extends JEPA-style masked latent prediction to paired Sentinel-1 and Sentinel-2 imagery by predicting masked target representations from visible context regions while aligning heterogeneous modality features in a shared embedding space. To improve representation quality, HQ-JEPA combines four complementary objectives: latent token prediction, cross-modal token alignment, SIGReg-based Gaussian regularization in the fused latent space, and a differentiable SWAP-test-based Fidelity Quantum Similarity (FQS) loss. Unlike pixel reconstruction methods, HQ-JEPA learns semantic representations directly in latent space and uses quantum state-overlap-based similarity as an additional regularization signal. We evaluate the pretrained encoder on GeoBench classification and segmentation tasks under linear probing and fine-tuning settings. Results show that HQ-JEPA achieves competitive and often superior performance over strong self-supervised and remote sensing foundation-model baselines, demonstrating the benefit of integrating predictive self-supervision, cross-modal geometric regularization, and quantum fidelity-based representation learning for remote sensing applications.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 19 pages&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>HADT: A Heterogeneous Multi-Agent Differential Transformer for Autonomous Earth Observation Satellite Cluster</title>
-    <link href="http://arxiv.org/abs/2605.31023v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.31023v1</id>
-    <published>2026-05-29T00:00:00Z</published>
-    <updated>2026-05-29T00:00:00Z</updated>
-    <author>
-      <name>Mohamad A. Hady</name>
-    </author>
-    <author>
-      <name>Muhammad Anwar Masum</name>
-    </author>
-    <author>
-      <name>Siyi Hu</name>
-    </author>
-    <author>
-      <name>Mahardhika Pratama</name>
-    </author>
-    <author>
-      <name>Jimmy Cao</name>
-    </author>
-    <author>
-      <name>Ryszard Kowalczyk</name>
-    </author>
-    <summary type="text">This work addresses the problem of autonomous resource management in heterogeneous satellite cluster conducting Earth Observation (EO) missions including optical and Synthetic Aperture Radar (SAR) satellites. In autonomous operation mode, satellites are equipped with intelligent capabilities enabling real-time decision-making based on the latest conditions, while requiring minimal interaction with ground operators. Traditional scheduling approaches typically rely on mathematical models to represent satellite mission and resource management. Then, this problem is solved by using optimization algorithms. However, such solutions become less effective when the underlying models are not available, over complex, and inaccurate due to dynamic changes and uncertainties inherent in the space mission environment. A promising alternative is to reformulate the problem as a sequential decision-making process and apply model-free reinforcement learning techniques to enable adaptive and real-time resource management. To this end, we propose a novel transformer-based architecture tailored for heterogeneous satellite cluster autonomous EO Mission with relational observations-actions tokenization and differential attention mechanism. Our experimental results demonstrate significant performance improvements compared to the available baselines. Moreover, the proposed architecture exhibits strong adaptability and transferability with respect to varying numbers of satellite clusters.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ECML-PKDD 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="Machine Learning; cs.MA" />
-  </entry>
-  <entry>
-    <title>Count Anything</title>
-    <link href="http://arxiv.org/abs/2605.30846v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.30846v1</id>
-    <published>2026-05-29T00:00:00Z</published>
-    <updated>2026-05-29T00:00:00Z</updated>
-    <author>
-      <name>Mengqi Lei</name>
-    </author>
-    <author>
-      <name>Shuokun Cheng</name>
-    </author>
-    <author>
-      <name>Wei Bao</name>
-    </author>
-    <author>
-      <name>Shaoyi Du</name>
-    </author>
-    <author>
-      <name>Jun-Hai Yong</name>
-    </author>
-    <author>
-      <name>Siqi Li</name>
-    </author>
-    <author>
-      <name>Yue Gao</name>
-    </author>
-    <summary type="text">Object counting remains fragmented across domain-specific datasets and task formulations, despite rapid progress in generalist vision models. Existing counting models are often tailored to scenarios such as crowds, vehicles, cells, crops, or remote-sensing objects, and thus struggle to generalize across categories, visual domains, object scales, and density distributions. In this paper, we study text-guided object counting across domains, where a model takes an image and a natural-language query as input and returns an instance-grounded set of target points whose cardinality gives the count. This formulation unifies category-conditioned counting with interpretable spatial localization. To support this setting, we construct CLOC, a Cross-domain Large-scale Object Counting dataset that reorganizes diverse public data sources into a unified benchmark. CLOC covers six visual domains: General Scene, Remote Sensing, Histopathology, Cellular Microscopy, Agriculture, and Microbiology, with about 220K images, 619 categories, and 15M object instances. Based on CLOC, we propose Count Anything, a generalist model for text-guided object counting. Unlike density-map-based methods, which dominate counting models, Count Anything adopts discrete instance points and performs dual-granularity instance enumeration. A Region-level Sparse Counter provides object-level anchors for large and sparse targets, while a Pixel-level Dense Counter handles small, crowded, and weakly bounded targets via dense point prediction. A point-centric supervision strategy enables learning from heterogeneous annotations, and Complementary Count Fusion combines both counters in a parameter-free manner. Extensive experiments show that Count Anything achieves strong accuracy and multi-domain generalization, outperforming existing open-world counting methods. Code is available at: https://github.com/Mengqi-Lei/count-anything.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Mengqi-Lei/count-anything"&gt;https://github.com/Mengqi-Lei/count-anything&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>The Harsh Truth: Segment-Level Analysis of Harsh Driving Events in Milan Using Large-Scale Telematics, Street Networks, and Google Street View</title>
-    <link href="http://arxiv.org/abs/2606.00261v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.00261v1</id>
-    <published>2026-05-29T00:00:00Z</published>
-    <updated>2026-05-29T00:00:00Z</updated>
-    <author>
-      <name>Andrea La Grotteria</name>
-    </author>
-    <author>
-      <name>Paolo Santi</name>
-    </author>
-    <author>
-      <name>Titus Venverloo</name>
-    </author>
-    <author>
-      <name>Umberto Fugiglando</name>
-    </author>
-    <author>
-      <name>Carlo Ratti</name>
-    </author>
-    <summary type="text">Police-reported crash statistics remain the standard input for urban road-safety assessment, but their incompleteness and reporting lag limit their usefulness for timely, fine-grained intervention design. Harsh acceleration and braking events are widely used as surrogate safety indicators, but have so far been studied only in comparatively small urban samples. This study analyses harsh events across the urban road network of Milan, combining high-resolution telematics from more than 4.2 million vehicles equipped with On-Board Units, segment-level traffic metrics from TomTom, street-network and infrastructure attributes from OpenStreetMap, and visual streetscape features extracted from Google Street View via semantic segmentation using a OneFormer model. We employ an analytical framework combining non-parametric Mann--Whitney U tests of segment-feature distributions between high- and low-harshness groups with supervised machine-learning regressors. We find that, once exposure is controlled for, wider carriageways, crossings and transit stops, and more open visual fields (higher sky- and road-pixel proportions) are associated with higher harsh-event intensity, while denser built frontage is associated with lower intensity. Finally, the cycling-infrastructure case study identifies a gradient in harsh-event intensity across facility types: markings-only cycle lanes are associated with a 19.5% higher harshness score, and mixed-traffic configurations with an 11.5% higher score, relative to physically separated cycle paths, conditional on the included controls. These results support context-specific rather than uniform urban-safety interventions and illustrate how large-scale telematics combined with open geospatial and visual data can inform Vision Zero decision-making at the metropolitan scale.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="physics.soc-ph" />
   </entry>
 </feed>
