@@ -3836,5 +3836,24 @@
     "_added_date": "2026-06-04",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Multimedia",
+    "Date": "2026-06-04",
+    "Month": 6,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "BMCR: Adaptive Backbone Module Composition via Reinforcement Learning for Remote Sensing Object Detection",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2606.05586v1",
+    "Abstract": "In remote sensing object detection, Convolutional Neural Networks (CNNs) excel at capturing local details while Vision Transformers (ViTs) are better at global context modeling. However, existing detectors typically rely on a single fixed backbone or a manually designed hybrid architecture, and thus fail to adaptively exploit these complementary strengths across inputs of diverse complexity. To address this limitation, we propose Backbone Module Composition via Reinforcement Learning (BMCR). BMCR dynamically assembles input-adaptive inference paths from reusable modules decomposed from off-the-shelf CNN and ViT backbones. To enable such cross-family composition, we first construct an extensible module toolbox. Specifically, we decompose representative CNN and ViT backbones into reusable functional modules and encapsulate each module with explicit structural, semantic, and computational metadata for compatibility-aware assembly. To bridge the gap between grid-based CNN features and token-based ViT representations, we design a lightweight Optimal Transport (OT) based transition interface that ensures distribution-aware alignment while respecting spatial consistency. The backbone composition process is then formulated as a sequential decision problem, in which a policy network progressively selects task-relevant modules according to intermediate multi-scale observations. To stabilize the joint optimization of reusable modules and the routing policy, we further develop an Adaptive Module Cooperative Optimization (AMCO) strategy that coordinates module updating, routing exploration, and reward assignment during training. On DOTA-v1.0, DOTA-v1.5 and DIOR-R, BMCR achieves 79.31\\%, 73.41\\% and 71.86\\% mAP, respectively, surpassing strong static and dynamic baselines by up to 2.5 points while maintaining competitive efficiency.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{liu2026bmcr,\n  title={BMCR: Adaptive Backbone Module Composition via Reinforcement Learning for Remote Sensing Object Detection},\n  author={Wenlin Liu and Xikun Hu and Ping Zhong},\n  journal={arXiv preprint arXiv:2606.05586v1},\n  year={2026},\n  url={http://arxiv.org/abs/2606.05586v1}\n}",
+    "Authors": "Wenlin Liu, Xikun Hu, Ping Zhong",
+    "_added_date": "2026-06-05",
+    "Category": "Method",
+    "_tasks": "OD"
   }
 ]

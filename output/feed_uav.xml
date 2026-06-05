@@ -4,10 +4,39 @@
   <id>https://rspaper.top/output/feed_uav.xml</id>
   <link href="https://rspaper.top/output/feed_uav.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-05T02:12:06Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 0 entries</subtitle>
+  <updated>2026-06-05T05:13:37Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 1 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Physics-Guided Deep Unfolding for Blind Cross-Sensor Spectral Super-Resolution via Learning the Spectral Transformation Function</title>
+    <link href="http://arxiv.org/abs/2606.05759v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.05759v1</id>
+    <published>2026-06-04T00:00:00Z</published>
+    <updated>2026-06-04T00:00:00Z</updated>
+    <author>
+      <name>Zhaolin Li</name>
+    </author>
+    <author>
+      <name>Jinsong Chen</name>
+    </author>
+    <author>
+      <name>Shanxin Guo</name>
+    </author>
+    <author>
+      <name>Tuo Zhang</name>
+    </author>
+    <author>
+      <name>Xinglong Zhang</name>
+    </author>
+    <author>
+      <name>Pan Chen</name>
+    </author>
+    <summary type="text">Hyperspectral imaging provides rich spectral information for quantitative remote sensing, yet hyperspectral sensors remain costly and thus unavailable in many UAV deployments. Spectral super-resolution (SSR) seeks to reconstruct hyperspectral images (HSIs) from multispectral images (MSIs). Most existing SSR methods assume a fixed and known spectral response function (SRF) and are therefore limited to single-sensor settings. In practical cross-sensor scenarios, the spectral degradation from HSI to MSI is unknown and varies with sensor characteristics and scene content, which renders HSI reconstruction ill-posed. This paper proposes a physics-guided deep unfolding network, termed PGU-Net, to address blind cross-sensor SSR by jointly estimating the HSI and a learnable spectral transformation function (STF). PGU-Net unrolls an alternating optimization procedure into an end-to-end trainable architecture with stages, where each stage sequentially updates the HSI and the STF. Both modules combine learnable proximal networks with differentiable closed-form solvers, enabling physical interpretability while retaining strong representation capacity. Experiments on benchmark datasets (CAVE and NTIRE 2022) with multiple SRFs demonstrate accurate recovery of the STF (degradation operator) and improved reconstruction performance over state-of-the-art SSR methods. Furthermore, evaluations on a real UAV cross-sensor dataset (Headwall Nano HSI and DJI P4 Multispectral MSI) verify the effectiveness and robustness of PGU-Net under truly blind conditions, and suggest that the estimated STF may exhibit land-cover-related differences.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
 </feed>

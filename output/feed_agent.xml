@@ -4,12 +4,33 @@
   <id>https://rspaper.top/output/feed_agent.xml</id>
   <link href="https://rspaper.top/output/feed_agent.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-05T02:12:06Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 1 entries</subtitle>
+  <updated>2026-06-05T05:13:37Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>BMCR: Adaptive Backbone Module Composition via Reinforcement Learning for Remote Sensing Object Detection</title>
+    <link href="http://arxiv.org/abs/2606.05586v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.05586v1</id>
+    <published>2026-06-04T00:00:00Z</published>
+    <updated>2026-06-04T00:00:00Z</updated>
+    <author>
+      <name>Wenlin Liu</name>
+    </author>
+    <author>
+      <name>Xikun Hu</name>
+    </author>
+    <author>
+      <name>Ping Zhong</name>
+    </author>
+    <summary type="text">In remote sensing object detection, Convolutional Neural Networks (CNNs) excel at capturing local details while Vision Transformers (ViTs) are better at global context modeling. However, existing detectors typically rely on a single fixed backbone or a manually designed hybrid architecture, and thus fail to adaptively exploit these complementary strengths across inputs of diverse complexity. To address this limitation, we propose Backbone Module Composition via Reinforcement Learning (BMCR). BMCR dynamically assembles input-adaptive inference paths from reusable modules decomposed from off-the-shelf CNN and ViT backbones. To enable such cross-family composition, we first construct an extensible module toolbox. Specifically, we decompose representative CNN and ViT backbones into reusable functional modules and encapsulate each module with explicit structural, semantic, and computational metadata for compatibility-aware assembly. To bridge the gap between grid-based CNN features and token-based ViT representations, we design a lightweight Optimal Transport (OT) based transition interface that ensures distribution-aware alignment while respecting spatial consistency. The backbone composition process is then formulated as a sequential decision problem, in which a policy network progressively selects task-relevant modules according to intermediate multi-scale observations. To stabilize the joint optimization of reusable modules and the routing policy, we further develop an Adaptive Module Cooperative Optimization (AMCO) strategy that coordinates module updating, routing exploration, and reward assignment during training. On DOTA-v1.0, DOTA-v1.5 and DIOR-R, BMCR achieves 79.31\%, 73.41\% and 71.86\% mAP, respectively, surpassing strong static and dynamic baselines by up to 2.5 points while maintaining competitive efficiency.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Multimedia" />
+  </entry>
   <entry>
     <title>Stateful Visual Encoders for Vision-Language Models</title>
     <link href="http://arxiv.org/abs/2606.04433v1" rel="alternate" type="text/html" />

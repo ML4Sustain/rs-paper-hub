@@ -23558,5 +23558,24 @@
     "_added_date": "2026-06-04",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-06-04",
+    "Month": 6,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "UltraVR: A Diagnostic Ultra-Resolution Image-VQA Benchmark for Evidence-Grounded Reasoning",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2606.05576v1",
+    "Abstract": "Vision-language models (VLMs) excel on visual question answering and multimodal reasoning benchmarks. Yet their capability on ultra-resolution images - where critical evidence is tiny, subtle, spatially distant, or distributed - remains unclear. Existing evaluations largely report final-answer accuracy, offering limited insight into whether models acquire and integrate the necessary visual evidence. We introduce UltraVR, a diagnostic benchmark for evidence-grounded visual reasoning over ultra-resolution images. UltraVR spans four high-value scenarios: CCTV surveillance, remote sensing (RS), whole-slide image (WSI) pathology, and industrial anomaly detection (AD). These domains pose complementary challenges: fine-grained object grounding in crowded CCTV scenes, long-range spatial comparison in RS, multi-scale evidence navigation in WSI, and subtle irregularity detection in repetitive industrial layouts. Beyond standard QA triples, each instance includes a structured ground-truth chain of thought with step-level questions, intermediate answers, and reasoning labels. These labels decompose reasoning into evidence grounding, local perception, quantification, evidence integration, and decision inference, enabling process-level diagnosis over black-box scoring. Using UltraVR, we evaluate frontier VLMs and show that current models remain far from reliable on ultra-resolution reasoning. Importantly, the structured annotations allow us to localize failures across the visual-to-decision pipeline: errors concentrate in evidence grounding and local perception, while downstream inference often recovers when intermediate visual facts are supplied. These findings demonstrate UltraVR as a diagnostic testbed for measuring not only whether VLMs answer correctly, but where their ultra-resolution reasoning process breaks.",
+    "code": "",
+    "Publication": "10 pages, 1 figure",
+    "BibTex": "@article{huang2026ultravr,\n  title={UltraVR: A Diagnostic Ultra-Resolution Image-VQA Benchmark for Evidence-Grounded Reasoning},\n  author={Gexin Huang and Yanting Yang and Myeongkyun Kang and Beidi Zhao and Jun Zhou and Chen Zhou and Gang Wang and Zu-hua Gao and Xiaoxiao Li},\n  journal={arXiv preprint arXiv:2606.05576v1},\n  year={2026},\n  url={http://arxiv.org/abs/2606.05576v1}\n}",
+    "Authors": "Gexin Huang, Yanting Yang, Myeongkyun Kang, Beidi Zhao, Jun Zhou, Chen Zhou, Gang Wang, Zu-hua Gao, Xiaoxiao Li",
+    "_added_date": "2026-06-05",
+    "Category": "Dataset",
+    "_tasks": "VQA;VG"
   }
 ]
