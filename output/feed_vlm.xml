@@ -4,12 +4,49 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-05T05:13:37Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 10 entries</subtitle>
+  <updated>2026-06-08T02:25:28Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Textual Supervision Enhances Geospatial Representations in Vision-Language Models</title>
+    <link href="http://arxiv.org/abs/2606.07172v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.07172v1</id>
+    <published>2026-06-05T00:00:00Z</published>
+    <updated>2026-06-05T00:00:00Z</updated>
+    <author>
+      <name>Marcelo Sartori Locatelli</name>
+    </author>
+    <author>
+      <name>Fernando Tonucci</name>
+    </author>
+    <author>
+      <name>Jea Kwon</name>
+    </author>
+    <author>
+      <name>Luiz Felipe Vecchietti</name>
+    </author>
+    <author>
+      <name>Bryan Nathanael Wijaya</name>
+    </author>
+    <author>
+      <name>Cheng Yaw Low</name>
+    </author>
+    <author>
+      <name>Virgilio Almeida</name>
+    </author>
+    <author>
+      <name>Meeyoung Cha</name>
+    </author>
+    <summary type="text">Geospatial understanding is a critical yet underexplored dimension in the development of machine learning systems for tasks such as image geolocation and spatial reasoning. In this work, we analyze the geospatial representations acquired by three model families: vision-only architectures (e.g., ViT), vision-language models (e.g., CLIP), and large-scale multimodal foundation models (e.g., LLaVA, Qwen, and Gemma). By evaluating across image clusters, including people, landmarks, and everyday objects, grouped based on the degree of localizability, we reveal systematic gaps in spatial accuracy and show that textual supervision enhances the learning of geospatial representations. Our findings suggest the role of language as an effective complementary modality for encoding spatial context and multimodal learning as a key direction for advancing geospatial AI.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICML 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; GeoLoc&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence; cs.CL; Machine Learning" />
+  </entry>
   <entry>
     <title>UltraVR: A Diagnostic Ultra-Resolution Image-VQA Benchmark for Evidence-Grounded Reasoning</title>
     <link href="http://arxiv.org/abs/2606.05576v1" rel="alternate" type="text/html" />
@@ -116,187 +153,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="cs.CL; Machine Learning" />
-  </entry>
-  <entry>
-    <title>Spatial Representation Learning Beyond Pixels: Unifying Raster Data and Vector Semantics for Human-Centric Geospatial Foundation Models</title>
-    <link href="http://arxiv.org/abs/2606.02374v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.02374v1</id>
-    <published>2026-06-01T00:00:00Z</published>
-    <updated>2026-06-01T00:00:00Z</updated>
-    <author>
-      <name>Steffen Knoblauch</name>
-    </author>
-    <author>
-      <name>Hao Li</name>
-    </author>
-    <author>
-      <name>Gengchen Mai</name>
-    </author>
-    <author>
-      <name>Konstantin Klemmer</name>
-    </author>
-    <author>
-      <name>Song Gao</name>
-    </author>
-    <author>
-      <name>WenWen Li</name>
-    </author>
-    <summary type="text">Earth Observation (EO) has fundamentally transformed the monitoring of environmental processes and human activities up to planetary scale. Recent advances in self-supervised learning have given rise to Earth Observation Foundation Models (EOFMs), which leverage petabyte-scale unlabeled EO data to learn transferable representations across a wide range of downstream geospatial tasks. Despite these advances, current EOFMs remain largely confined to raster modalities, overlooking the rich, structured information encoded in openly-accessible vector data sources such as OpenStreetMap and Overture. Vector data provides explicit and compact representations of geographic entities, including geometry, topology, and semantic relationships, offering critical contextual signals that are often ambiguous or inaccessible in imagery alone. Raster and vector data thus represent complementary views of geographic space: raster data captures continuous physical and spectral patterns, while vector data encodes discrete objects and their relational structure and often represents more of the human rather than the physical systems (e.g. social or demographic data). However, existing geospatial representation learning paradigms treat these modalities in isolation, relying on imperfect and often lossy transformations to bridge them. This perspective paper calls for a paradigm shift toward joint Spatial Representation Learning (SRL) in an unified embedding space that integrate raster perception with vector-based reasoning. Building on emerging efforts in multimodal geospatial learning, we highlight conceptual foundations, technical challenges, and promising directions for aligning heterogeneous spatial data sources. We contend that such integration is essential for developing next-generation geospatial AI systems capable of more accurate, interpretable, and semantically grounded understanding of the Earth.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Enhancing the Socioeconomic Understanding of Foundation Models with Urban Mobility</title>
-    <link href="http://arxiv.org/abs/2606.01745v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.01745v1</id>
-    <published>2026-06-01T00:00:00Z</published>
-    <updated>2026-06-01T00:00:00Z</updated>
-    <author>
-      <name>Baoshen Guo</name>
-    </author>
-    <author>
-      <name>Donghang Li</name>
-    </author>
-    <author>
-      <name>Zhiqing Hong</name>
-    </author>
-    <author>
-      <name>Kailai Sun</name>
-    </author>
-    <author>
-      <name>Heye Huang</name>
-    </author>
-    <author>
-      <name>Alok Prakash</name>
-    </author>
-    <author>
-      <name>Shenhao Wang</name>
-    </author>
-    <summary type="text">Foundation models have recently been applied to urban socioeconomic prediction using POI text, satellite imagery, and geospatial descriptions. However, these models mostly rely on static attributes of individual places, while ignoring the mobility patterns that reveal how places are functionally connected. To address this gap, we explore whether mobility networks can elicit the geospatial capabilities of foundation models by explicitly encoding connectivity among urban entities. We propose \textit{MobFusion}, a modular mobility-enhanced foundation model fusion paradigm, and instantiate it through three complementary designs: (i) mobility networks as contexts for zero-shot LLM prompting, (ii) as graph connectors for fusing geospatial visual embeddings with textual embeddings, and (iii) as structured tokens for multimodal LLM reasoning. Using anonymized large-scale mobility datasets from three U.S. metropolitan areas, we find that \textit{MobFusion} improves urban prediction tasks (e.g., median household income, population density, and crime prediction) across three instantiations, demonstrating that incorporating human mobility can effectively improve the socioeconomic understanding of foundation models.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.SI" />
-  </entry>
-  <entry>
-    <title>Plan2Map: A Multimodal Benchmark for Document-Grounded Geospatial Boundary Reconstruction from Planning Records</title>
-    <link href="http://arxiv.org/abs/2606.02747v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.02747v1</id>
-    <published>2026-06-01T00:00:00Z</published>
-    <updated>2026-06-01T00:00:00Z</updated>
-    <author>
-      <name>Fabian Degen</name>
-    </author>
-    <author>
-      <name>Oishi Deb</name>
-    </author>
-    <author>
-      <name>Jindong Gu</name>
-    </author>
-    <author>
-      <name>Junchi Yu</name>
-    </author>
-    <author>
-      <name>Samuele Marro</name>
-    </author>
-    <author>
-      <name>Philip Torr</name>
-    </author>
-    <author>
-      <name>Jialin Yu</name>
-    </author>
-    <summary type="text">Planning records define restrictions over geographic areas, but their source documents often provide only indirect spatial evidence rather than machine-readable boundaries. We introduce Plan2Map, a 208-case multimodal benchmark for document-grounded geospatial boundary reconstruction from UK planning records. Given only a source planning document, systems must reconstruct a valid geospatial boundary from notice text, schedules, map plates, map labels, and boundary annotations; the reference GeoJSON is held out for scoring. We propose GeoPlanAgent, a document-grounded, geospatial-tool-in-the-loop system that decomposes the task into evidence extraction, localisation, map registration, boundary segmentation, projection, and verification. On Plan2Map, GeoPlanAgent achieves 0.736 mean IoU and 0.904 median IoU, with 67.8\% of predictions at or above 0.8 IoU, substantially outperforming direct VLM-to-GeoJSON baselines. Diagnostic analysis shows that direct VLM prediction remains unreliable, while remaining errors are concentrated in localisation and map registration, and supervised boundary segmentation substantially improves pixel-level mask quality. Plan2Map provides a concrete testbed for multimodal geospatial reconstruction from public planning records. Project page: https://odeb1.github.io/Plan2Map_Project_Page/.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Project page: https://odeb1.github.io/Plan2Map_Project_Page/. Fabian Degen and Oishi Deb Contributed Equally&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>CR-JEPA: Cross-Modal Joint-Embedding Predictive Learning for Remote Sensing Image Retrieval</title>
-    <link href="http://arxiv.org/abs/2606.00706v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.00706v1</id>
-    <published>2026-05-30T00:00:00Z</published>
-    <updated>2026-05-30T00:00:00Z</updated>
-    <author>
-      <name>Md Aminur Hossain</name>
-    </author>
-    <author>
-      <name>Ayush V. Patel</name>
-    </author>
-    <author>
-      <name>Nitant Dube</name>
-    </author>
-    <author>
-      <name>Biplab Banerjee</name>
-    </author>
-    <summary type="text">Cross-modal remote sensing image retrieval aims to retrieve semantically related scenes across heterogeneous sensing modalities. This remains challenging because paired observations may differ substantially in imaging physics, spatial resolution, spectral configuration, and visual appearance. Moreover, a single retrieval projection trained with one objective may be insufficient to jointly support cross-modal semantic alignment and same-modal neighbourhood preservation. We propose CR-JEPA, a Cross-modal Retrieval Joint-Embedding Predictive Architecture for dual-modality remote sensing retrieval. The model uses modality-specific stems, a shared transformer trunk, and JEPA-style predictive objectives to estimate masked latent target features within and across modalities. Inspired by LeJEPA, we apply Sketched Isotropic Gaussian Regularization to raw retrieval projections to stabilize embeddings and mitigate collapse. CR-JEPA further employs a decoupled-head design with a unified retrieval head for same-modal retrieval and a cross-modal retrieval head for cross-modal search. We evaluate CR-JEPA on BEN-14K, CBRSIR_VS, and DSRSID. On BEN-14K, CR-JEPA improves S1 to S2 retrieval from 61.23% to 75.82% and S2 to S1 retrieval from 63.73% to 75.40% over X-JEPA, while also achieving competitive same-modal retrieval with fewer parameters.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 24 pages&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Improving Visual Grounding in Remote Sensing via Cluster-Guided Refinement and Model Ensemble Voting</title>
-    <link href="http://arxiv.org/abs/2606.00556v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.00556v1</id>
-    <published>2026-05-30T00:00:00Z</published>
-    <updated>2026-05-30T00:00:00Z</updated>
-    <author>
-      <name>Panav Shah</name>
-    </author>
-    <author>
-      <name>Geet Sethi</name>
-    </author>
-    <author>
-      <name>Ashutosh Gandhe</name>
-    </author>
-    <summary type="text">Visual grounding aims to locate image regions that correspond to natural language descriptions and is a key component of interpretable vision systems. In remote sensing imagery, grounding is particularly challenging due to complex scenes, small objects, and large variations in scale. Relying on a single model is often insufficient to address these diverse challenges. In this work, we propose two grounding pipelines, Sequential Grounding Refinement (SGR) and Cluster-Aware Grounding Refinement (CGR), that combine the complementary strengths of RemoteSAM, a visual grounding model specialized for remote sensing, and SAM3, a powerful general-purpose segmentation model. Our approach first uses RemoteSAM to obtain an initial estimate of object location, which is then refined using SAM3 to produce more accurate and spatially consistent segmentations. Additionally, we explore an ensemble strategy based on majority voting across six diverse grounding pipelines, each with distinct capabilities. This multi-model framework improves robustness and significantly enhances localization accuracy. Experimental results demonstrate that the proposed pipelines and ensemble approach outperform individual models, leading to more reliable and precise visual grounding predictions.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; CVPR 2026 Workshop MORSE&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>CAFOSat: A Strongly Annotated Dataset for Infrastructure-Aware CAFO Mapping Using High-Resolution Imagery</title>
-    <link href="http://arxiv.org/abs/2606.00548v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.00548v1</id>
-    <published>2026-05-30T00:00:00Z</published>
-    <updated>2026-05-30T00:00:00Z</updated>
-    <author>
-      <name>Oishee Bintey Hoque</name>
-    </author>
-    <author>
-      <name>Nibir Chandra Mandal</name>
-    </author>
-    <author>
-      <name>Mandy L Wilson</name>
-    </author>
-    <author>
-      <name>Samarth Swarup</name>
-    </author>
-    <author>
-      <name>Madhav Marathe</name>
-    </author>
-    <author>
-      <name>Abhijin Adiga</name>
-    </author>
-    <summary type="text">Concentrated Animal Feeding Operations (CAFOs) play an important role in agricultural production but are also associated with environmental, public health, and disease surveillance concerns. Large-scale mapping of CAFOs from remote sensing imagery remains challenging due to heterogeneous infrastructure layouts, noisy location records, inconsistent annotations, and incomplete inventories. We introduce CAFOSat, a strongly annotated, infrastructure-aware dataset for CAFO mapping across the United States. CAFOSat integrates high-resolution National Agriculture Imagery Program (NAIP) imagery with multi-source CAFO inventories collected across multiple states and transforms weak geolocation records into refined annotations through a human-in-the-loop pipeline combining AI-assisted annotation, GradCAM-based localization, and geometric clustering. To improve dataset quality, we curate challenging negative samples using land-cover-guided sampling with spatial exclusion constraints and provide infrastructure-level annotations, including barns, manure ponds, and grazing-related features, through manual verification. The resulting dataset contains more than 45,000 image patches spanning 20 states and four major CAFO categories. We benchmark a diverse set of convolutional, transformer-based, and vision-language models, demonstrating the value of refined annotations and curated negative samples for CAFO classification and generalization. In addition, we introduce a synthetic augmentation pipeline that generates infrastructure-aware variations to increase training diversity and improve robustness under distribution shifts. CAFOSat provides a large-scale benchmark for advancing infrastructure-aware agricultural monitoring and CAFO mapping from high-resolution remote sensing imagery.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; CVPR Workshop-2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;GeoLoc&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence; Machine Learning" />
-  </entry>
-  <entry>
-    <title>DarkVesselNet: Multi-Modal Remote Sensing and Trajectory Reasoning for Dark Vessel Detection</title>
-    <link href="http://arxiv.org/abs/2606.00445v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.00445v1</id>
-    <published>2026-05-30T00:00:00Z</published>
-    <updated>2026-05-30T00:00:00Z</updated>
-    <author>
-      <name>Arun Sharma</name>
-    </author>
-    <summary type="text">Dark vessel detection requires fusing what vessels report through AIS with what satellites observe through radar and optical sensors. DarkVesselNet is a multi-modal remote sensing stack that combines Sentinel-1 SAR, Sentinel-2 optical imagery, geospatial foundation model backbones, AIS trajectory reasoning, TGARD-style gap detection, and a Pi-DPM-inspired anomaly head. The repository exposes the system as a tested Python package and a public Hugging Face Space. The paper presents the sensor stack, backbone abstraction, fusion path, anomaly head, and current validation. The evidence currently available is software-grounded: tests for SAR speckle filtering, optical band ratios, Haversine distance, TGARD gap emission, sensor coregistration, backbone token shapes, and differentiable anomaly scoring.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence; Machine Learning" />
   </entry>
 </feed>

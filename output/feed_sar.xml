@@ -4,7 +4,7 @@
   <id>https://rspaper.top/output/feed_sar.xml</id>
   <link href="https://rspaper.top/output/feed_sar.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-05T05:13:37Z</updated>
+  <updated>2026-06-08T02:25:28Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
@@ -32,17 +32,25 @@
     <category term="Computer Vision" />
   </entry>
   <entry>
-    <title>DarkVesselNet: Multi-Modal Remote Sensing and Trajectory Reasoning for Dark Vessel Detection</title>
-    <link href="http://arxiv.org/abs/2606.00445v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.00445v1</id>
-    <published>2026-05-30T00:00:00Z</published>
-    <updated>2026-05-30T00:00:00Z</updated>
+    <title>Advanced Flood Prediction with Physics-Guided Deep Learning: Combining UNet, FNO, and SAR/Optical Imagery</title>
+    <link href="http://arxiv.org/abs/2606.06524v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.06524v1</id>
+    <published>2026-06-02T00:00:00Z</published>
+    <updated>2026-06-02T00:00:00Z</updated>
     <author>
-      <name>Arun Sharma</name>
+      <name>Tewodros Syum Gebre</name>
     </author>
-    <summary type="text">Dark vessel detection requires fusing what vessels report through AIS with what satellites observe through radar and optical sensors. DarkVesselNet is a multi-modal remote sensing stack that combines Sentinel-1 SAR, Sentinel-2 optical imagery, geospatial foundation model backbones, AIS trajectory reasoning, TGARD-style gap detection, and a Pi-DPM-inspired anomaly head. The repository exposes the system as a tested Python package and a public Hugging Face Space. The paper presents the sensor stack, backbone abstraction, fusion path, anomaly head, and current validation. The evidence currently available is software-grounded: tests for SAR speckle filtering, optical band ratios, Haversine distance, TGARD gap emission, sensor coregistration, backbone token shapes, and differentiable anomaly scoring.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence; Machine Learning" />
+    <author>
+      <name>Jagrati Talreja</name>
+    </author>
+    <author>
+      <name>Leila Hashemi-Beni</name>
+    </author>
+    <summary type="text">Accurate and scalable flood mapping remains challenging due to limited ground observations, heterogeneous terrain conditions, and the difficulty of enforcing hydrodynamic consistency within data-driven models. This work introduces a physics-guided deep learning framework that integrates multi-modal remote sensing (Sentinel-1 SAR, Sentinel-2 optical imagery, and DEM-derived terrain features) with constraints from the depth-averaged shallow water equations (SWE). The proposed hybrid architecture combines a UNet to capture fine-scale spatial details with a Fourier Neural Operator (FNO) to model basin-scale hydraulic interactions, while physics-informed residual losses ensure mass and momentum consistency. Evaluated across diverse floodplain settings, the hybrid model achieves an Intersection over Union of 0.82 and an F1 score of 0.90 for flood extent prediction, outperforming UNet-only and FNO-only baselines. Using hydrodynamic simulations as reference data, the model achieves an RMSE of 0.21 m for water depth and 0.15 m/s for flow velocity. Physics consistency is maintained, with low residuals and mass imbalance below 2.1%. Ablation studies confirm that removing physicsbased regularization significantly degrades performance, underscoring the value of physical constraints for stability and generalization. These results demonstrate that embedding hydrodynamic principles into deep learning yields more accurate, reliable, and physically coherent flood predictions, offering strong potential for operational monitoring and large-scale deployment.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Radar Conference (RadarConf 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+    <category term="Computer Vision; Machine Learning" />
   </entry>
 </feed>
