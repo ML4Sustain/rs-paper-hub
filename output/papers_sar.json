@@ -7218,5 +7218,24 @@
     "_added_date": "2026-06-08",
     "Category": "Method",
     "_tasks": "3D"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-06-08",
+    "Month": 6,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "IB-HFN: Information Bottleneck-Driven SAR-Optical Fusion Network for High-Fidelity Cloud Removal",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2606.09347v1",
+    "Abstract": "Synthetic aperture radar (SAR)-assisted optical cloud removal aims to recover surface information obscured by clouds in optical remote sensing images by exploiting complementary SAR observations. Existing multimodal fusion methods typically rely on direct spatial concatenation and pixel-wise supervision, which can propagate SAR speckle noise into optical reconstruction and lead to over-smoothed results. To address these limitations, we propose an Information Bottleneck-driven High-Fidelity Network (IB-HFN) for SAR-assisted optical cloud removal. IB-HFN employs a dual-stream backbone to preserve modality-specific representations before deep semantic fusion, thereby mitigating premature cross-modal contamination. At the fusion stage, we introduce a Spatial Information Bottleneck Fusion module that compresses SAR features through a channel-wise variational information bottleneck to suppress unstructured speckle noise. In parallel, a local-global gating mechanism predicts clear-sky regions and routes reliable optical details through a Dirac-initialized skip connection, decoupling noise suppression from texture preservation. We further develop a joint optimization strategy that integrates feature-level bottleneck regularization with image-level constraints on reconstruction accuracy, structural consistency, spectral fidelity, and contrastive sharpness. A dynamic weighting schedule balances these objectives to stabilize training and reduce hazy artifacts. Experiments on the SEN12MS-CR dataset under challenging spatio-temporal splits demonstrate that IB-HFN achieves superior structural preservation and spectral fidelity over existing methods.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{guo2026ibhfn,\n  title={IB-HFN: Information Bottleneck-Driven SAR-Optical Fusion Network for High-Fidelity Cloud Removal},\n  author={Haojun Guo and Fan Feng and Ziquan Wang},\n  journal={arXiv preprint arXiv:2606.09347v1},\n  year={2026},\n  url={http://arxiv.org/abs/2606.09347v1}\n}",
+    "Authors": "Haojun Guo, Fan Feng, Ziquan Wang",
+    "_added_date": "2026-06-09",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]
