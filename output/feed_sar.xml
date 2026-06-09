@@ -4,53 +4,10 @@
   <id>https://rspaper.top/output/feed_sar.xml</id>
   <link href="https://rspaper.top/output/feed_sar.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-08T05:26:38Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
+  <updated>2026-06-09T01:52:23Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 0 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
-  <entry>
-    <title>FAF-CD: Frequency-Aware Fusion for Change Detection under Imperfect Multimodal Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2606.03114v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.03114v1</id>
-    <published>2026-06-02T00:00:00Z</published>
-    <updated>2026-06-02T00:00:00Z</updated>
-    <author>
-      <name>Yufan Wang</name>
-    </author>
-    <author>
-      <name>Sokratis Makrogiannis</name>
-    </author>
-    <author>
-      <name>Chandra Kambhamettu</name>
-    </author>
-    <summary type="text">Remote sensing change detection for real-world monitoring often relies on imperfect heterogeneous observations, where pre- and post-event images may be asynchronous, cross-sensor, or affected by illumination, seasonal, and modality shifts. This setting is especially challenging for EO-SAR disaster mapping, where nuisance variation can resemble structural damage. We propose FAF-CD, a frequency-aware hybrid framework with a DINOv3-pretrained ConvNeXt encoder and a linear-complexity VMamba-based decoder. Its rectification-aware tri-branch fusion module combines deformable spatial alignment with Fourier and Haar-wavelet comparisons, using adaptive gating to aggregate complementary cues across scales. On BRIGHT validation, a matched heterogeneous EO-SAR adaptation improves clean and perturbed tc-mIoU/tc-mAP over NeXt2Former-CD. FAF-CD also generalizes to binary optical CD, achieving 0.924 cF1 on LEVIR-CD and 0.955 cF1 on WHU-CD, and obtains the best average perturbed cIoU/cF1 on both binary datasets among M-CD and NeXt2Former-CD under pseudo-change-aligned stress tests. It further reduces cost by approximately 24 GFLOPs relative to NeXt2Former-CD while maintaining or improving accuracy.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Code will be released at https://github.com/VimsLab/FAF-CD&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Advanced Flood Prediction with Physics-Guided Deep Learning: Combining UNet, FNO, and SAR/Optical Imagery</title>
-    <link href="http://arxiv.org/abs/2606.06524v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.06524v1</id>
-    <published>2026-06-02T00:00:00Z</published>
-    <updated>2026-06-02T00:00:00Z</updated>
-    <author>
-      <name>Tewodros Syum Gebre</name>
-    </author>
-    <author>
-      <name>Jagrati Talreja</name>
-    </author>
-    <author>
-      <name>Leila Hashemi-Beni</name>
-    </author>
-    <summary type="text">Accurate and scalable flood mapping remains challenging due to limited ground observations, heterogeneous terrain conditions, and the difficulty of enforcing hydrodynamic consistency within data-driven models. This work introduces a physics-guided deep learning framework that integrates multi-modal remote sensing (Sentinel-1 SAR, Sentinel-2 optical imagery, and DEM-derived terrain features) with constraints from the depth-averaged shallow water equations (SWE). The proposed hybrid architecture combines a UNet to capture fine-scale spatial details with a Fourier Neural Operator (FNO) to model basin-scale hydraulic interactions, while physics-informed residual losses ensure mass and momentum consistency. Evaluated across diverse floodplain settings, the hybrid model achieves an Intersection over Union of 0.82 and an F1 score of 0.90 for flood extent prediction, outperforming UNet-only and FNO-only baselines. Using hydrodynamic simulations as reference data, the model achieves an RMSE of 0.21 m for water depth and 0.15 m/s for flow velocity. Physics consistency is maintained, with low residuals and mass imbalance below 2.1%. Ablation studies confirm that removing physicsbased regularization significantly degrades performance, underscoring the value of physical constraints for stability and generalization. These results demonstrate that embedding hydrodynamic principles into deep learning yields more accurate, reliable, and physically coherent flood predictions, offering strong potential for operational monitoring and large-scale deployment.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Radar Conference (RadarConf 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
-    <category term="Image and Video Processing" />
-    <category term="Computer Vision; Machine Learning" />
-  </entry>
 </feed>

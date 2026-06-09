@@ -4,12 +4,67 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-08T05:26:38Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
+  <updated>2026-06-09T01:52:23Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 7 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>One Stone, Three Birds: Self-adaptive Optimal Transport for Multi-VLM Selection, Adaptation, and Ensembling</title>
+    <link href="http://arxiv.org/abs/2606.08126v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.08126v1</id>
+    <published>2026-06-06T00:00:00Z</published>
+    <updated>2026-06-06T00:00:00Z</updated>
+    <author>
+      <name>Qiyu Xu</name>
+    </author>
+    <author>
+      <name>Zhanxuan Hu</name>
+    </author>
+    <author>
+      <name>Yu Duan</name>
+    </author>
+    <author>
+      <name>Yonghang Tai</name>
+    </author>
+    <author>
+      <name>Huafeng Li</name>
+    </author>
+    <author>
+      <name>Quanxue Gao</name>
+    </author>
+    <author>
+      <name>Xiangyong Cao</name>
+    </author>
+    <summary type="text">Vision-language models (VLMs) enable visual recognition from semantic class descriptions, which makes them attractive when target annotations are scarce or unavailable. Most deployment pipelines, however, first choose a single VLM and then adapt that model to the unlabeled target set. This single-backbone paradigm hides a critical assumption: the selected VLM is already compatible with the target domain. In realistic cross-domain deployment, several general-purpose and domain-specialized VLMs may be plausible, yet no instance-level target labels are available to identify the reliable ones. Deployment therefore requires a coupled solution for model selection, target adaptation, and prediction integration. We revisit this problem from a system-level multi-VLM perspective. Our central observation is that the three decisions above depend on the same latent object: a trustworthy sample-class structure in the target set. Different VLMs may encode different transfer biases and produce conflicting predictions, but their outputs can still provide complementary evidence for estimating this structure. We propose One Stone, Three Birds, a training-free framework based on self-adaptive optimal transport. Given a pool of frozen candidate VLMs, OSTB estimates a consensus sample-to-class transport plan without updating VLM parameters. The learned transport structure is then reused for all deployment objectives: model selection is performed by ranking the combined semantic and visual reliability induced by the consensus plan; target adaptation is obtained by fitting transport-conditioned visual classifiers; and ensembling is implemented through reliability-aware probabilistic integration. Extensive experiments on natural-image, remote-sensing, and medical-pathology benchmarks show that OSTB improves model ranking, adaptation stability, and ensemble robustness under heterogeneous candidate pools.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>OSMGraphCLIP: Learning Global Location Representations from OpenStreetMap Graphs</title>
+    <link href="http://arxiv.org/abs/2606.08046v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.08046v1</id>
+    <published>2026-06-06T00:00:00Z</published>
+    <updated>2026-06-06T00:00:00Z</updated>
+    <author>
+      <name>Dimitrios Michail</name>
+    </author>
+    <author>
+      <name>Eleni Saka</name>
+    </author>
+    <author>
+      <name>Ioannis Giannopoulos</name>
+    </author>
+    <author>
+      <name>Ioannis Papoutsis</name>
+    </author>
+    <summary type="text">We present OSMGraphCLIP, a CLIP-style geospatial representation model that learns global location embeddings from freely available OpenStreetMap (OSM) data. OSMGraphCLIP represents geographic environments as heterogeneous graphs of typed OSM features, preserving the topological and semantic relationships among roads, buildings, land-use regions, and points of interest. A multi-scale graph encoder captures both fine-grained local structure and broader landscape composition, and supervises a spherical-harmonics location encoder through a contrastive alignment objective. We evaluate OSMGraphCLIP across a diverse suite of downstream geospatial regression and classification tasks spanning climate, ecology, socioeconomic indicators, public health, land cover, biodiversity, and wildfire forecasting, and show that structured OSM data alone supports strong global location representations across domains. OSMGraphCLIP matches or exceeds satellite-based baselines on the majority of benchmarks, with the most pronounced advantage on socioeconomic and public-health tasks, where OSM's explicit semantic annotation of the built environment encodes patterns of human activity that satellite pixels can only capture indirectly. On ecological and environmental tasks, the model remains closely competitive with imagery-based methods despite using no Earth observation data. Qualitative analysis confirms that the learned embeddings organize geographic space coherently, recovering biome boundaries, urban gradients, and tropical--temperate distinctions from map topology alone.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+    <category term="Computer Vision; Machine Learning" />
+  </entry>
   <entry>
     <title>Textual Supervision Enhances Geospatial Representations in Vision-Language Models</title>
     <link href="http://arxiv.org/abs/2606.07172v1" rel="alternate" type="text/html" />
@@ -46,6 +101,44 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; GeoLoc&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence; cs.CL; Machine Learning" />
+  </entry>
+  <entry>
+    <title>Land cover and flood type govern the detection limits of satellite-based flood mapping across diverse global flood events</title>
+    <link href="http://arxiv.org/abs/2606.07780v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.07780v1</id>
+    <published>2026-06-05T00:00:00Z</published>
+    <updated>2026-06-05T00:00:00Z</updated>
+    <author>
+      <name>Venkatesh Kolluru</name>
+    </author>
+    <author>
+      <name>Rajat Shinde</name>
+    </author>
+    <author>
+      <name>Abdelhak Marouane</name>
+    </author>
+    <author>
+      <name>Caden Helbling</name>
+    </author>
+    <author>
+      <name>Deepak Shah</name>
+    </author>
+    <author>
+      <name>Othneil Drew</name>
+    </author>
+    <author>
+      <name>Iksha Gurung</name>
+    </author>
+    <author>
+      <name>Manil Maskey</name>
+    </author>
+    <author>
+      <name>Rahul Ramachandran</name>
+    </author>
+    <summary type="text">Floods are among the most destructive natural hazards, and their increasing frequency under climate change makes satellite-based inundation mapping essential for disaster response. Geospatial foundation models pretrained on satellite archives offer geographic transferability, but their operational reliability across diverse, unseen events remains uncharacterized. Here we deploy Prithvi-EO-2.0 across 19 out-of-distribution flood events (2017-2025) spanning six continents, eight climate zones, and six flood mechanisms, validating against two independent reference products. Detection accuracy depended jointly on land cover and flood type, with cropland yielding the highest agreement (IoU=52%) and riverine events the strongest detection (F1=0.69), while tree cover and built-up areas showed near-zero detection (IoU=4%) regardless of flood mechanism. Dual-reference validation revealed that apparent model error partly reflects definitional inconsistency between reference products rather than detection failure. Iterative pipeline testing identified 23 failure modes, with pipeline engineering dominating initial error over model capacity. These findings establish environment-dependent detection boundaries for operational satellite flood mapping.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+    <category term="Computer Vision; Machine Learning" />
   </entry>
   <entry>
     <title>UltraVR: A Diagnostic Ultra-Resolution Image-VQA Benchmark for Evidence-Grounded Reasoning</title>
