@@ -4,12 +4,128 @@
   <id>https://rspaper.top/output/feed_uav.xml</id>
   <link href="https://rspaper.top/output/feed_uav.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-09T05:00:37Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 1 entries</subtitle>
+  <updated>2026-06-10T02:02:29Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>ZODS-RS -- Zero-training Oriented Detection &amp; Segmentation for Remote Sensing</title>
+    <link href="http://arxiv.org/abs/2606.10769v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.10769v1</id>
+    <published>2026-06-09T00:00:00Z</published>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <author>
+      <name>Zuan Gu</name>
+    </author>
+    <author>
+      <name>Tianhan Gao</name>
+    </author>
+    <author>
+      <name>Langxu Zhao</name>
+    </author>
+    <summary type="text">Remote-sensing and UAV applications need models that generalize across platforms and viewpoints without task-specific training. Yet training-free pipelines often falter on oriented geometry, scale/rotation variation, and crowded ports or airfields, and rarely unify detection and segmentation. We introduce ZODS-RS, a training-free, closed-form pipeline that outputs horizontal boxes (HBB) and instance masks. Built on DINOv3 dense features and SAM-style proposals, ZODS-RS chains: PP (prototype purification via Tyler covariance), R-SEM (rotation-scale equivariant matching with separable kernels and global Hungarian assignment), and UAM (uncertainty-aware pixelwise merging with adaptive priors and optional negative prototypes). A lightweight CWLA fuses multiple DINOv3 layers. On FAIR1M (HBB) we obtain $\mathrm{mAP}_{0.50:0.95}=\mathbf{13.06}$ and $\mathrm{AP}_S=\mathbf{2.93}$ \emph{(class-averaged over ship/airplane)}; on xView (HBB) we report $\mathrm{mAP}=\mathbf{16.69}$. On our UAV dataset, ZODS-RS achieves mask $\mathrm{mIoU}=\mathbf{31.10}$ and improves small-object AP by $\mathbf{+30.70}$ over Grounded-SAM on a single 5090. This work offers a unified, \emph{no-training} solution for horizontal-box detection plus instance segmentation in aerial imagery; provides explicit closed-form formulations for PP/R-SEM/UAM tightly coupled with DINOv3; and demonstrates \emph{consistent} gains on small and crowded targets and under cross-domain shifts while keeping deployment simple.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>ABot-Earth 0.5: Generative 3D Earth Model</title>
+    <link href="http://arxiv.org/abs/2606.09967v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.09967v1</id>
+    <published>2026-06-08T00:00:00Z</published>
+    <updated>2026-06-08T00:00:00Z</updated>
+    <author>
+      <name>Ming Qian</name>
+    </author>
+    <author>
+      <name>Tianjian Ouyang</name>
+    </author>
+    <author>
+      <name>Mingchao Sun</name>
+    </author>
+    <author>
+      <name>Zijian Wang</name>
+    </author>
+    <author>
+      <name>Jincheng Xiong</name>
+    </author>
+    <author>
+      <name>Jiarong Han</name>
+    </author>
+    <author>
+      <name>Yongchang Zhang</name>
+    </author>
+    <author>
+      <name>Jiawei Zhang</name>
+    </author>
+    <author>
+      <name>Xu Wang</name>
+    </author>
+    <author>
+      <name>Yu Liu</name>
+    </author>
+    <author>
+      <name>Luyang Tang</name>
+    </author>
+    <author>
+      <name>Fei Yu</name>
+    </author>
+    <author>
+      <name>Zengye Ge</name>
+    </author>
+    <author>
+      <name>Mengmeng Du</name>
+    </author>
+    <author>
+      <name>Yuan Liu</name>
+    </author>
+    <author>
+      <name>Nianfei Fan</name>
+    </author>
+    <author>
+      <name>Song Wang</name>
+    </author>
+    <author>
+      <name>Yingliang Peng</name>
+    </author>
+    <author>
+      <name>Chunxue Jia</name>
+    </author>
+    <author>
+      <name>Yang Liu</name>
+    </author>
+    <author>
+      <name>Shiying Zeng</name>
+    </author>
+    <author>
+      <name>Haozhe Shi</name>
+    </author>
+    <author>
+      <name>Junnan Lai</name>
+    </author>
+    <author>
+      <name>Hongyu Pan</name>
+    </author>
+    <author>
+      <name>Zheng Wu</name>
+    </author>
+    <author>
+      <name>Ning Guo</name>
+    </author>
+    <author>
+      <name>Mu Xu</name>
+    </author>
+    <author>
+      <name>Hang Zhang</name>
+    </author>
+    <summary type="text">We present ABot-Earth 0.5, a generative 3D framework designed to synthesize vast, seamless 3D environments from ubiquitous, geospatially referenced satellite imagery. To achieve this, we propose a novel generative model formulated directly with the 3D Gaussian Splatting (3DGS) representation. The model is trained on a diverse corpus of existing real-world urban reconstructions, learning to generate realistic geometry and textures. At inference, it synthesizes novel 3D scenes conditioned solely on satellite imagery at a scalable rate of under 10 minutes per square kilometer, while demonstrating exceptional realism. The framework is designed for accessibility, with integrated hierarchical level-of-detail (LOD) structures that permit real-time, interactive visualization on web-based map engines. This high-fidelity simulation sandbox effectively mitigates the sim-to-real domain gap, enabling critical downstream Embodied AI applications like closed-loop UAV navigation. By providing an ultra-low-cost and high-efficiency solution, ABot-Earth 0.5 significantly lowers the technical and financial barriers to large-scale 3D reconstruction and empowers the future of global digital earth visualization.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; From Amap-cvlab, Alibaba. Official page: https://abot-earth.amap.com/&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Physics-Guided Deep Unfolding for Blind Cross-Sensor Spectral Super-Resolution via Learning the Spectral Transformation Function</title>
     <link href="http://arxiv.org/abs/2606.05759v1" rel="alternate" type="text/html" />

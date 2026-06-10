@@ -6249,5 +6249,43 @@
     "_added_date": "2026-06-05",
     "Category": "Method",
     "_tasks": "SR"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-06-09",
+    "Month": 6,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "ZODS-RS -- Zero-training Oriented Detection & Segmentation for Remote Sensing",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2606.10769v1",
+    "Abstract": "Remote-sensing and UAV applications need models that generalize across platforms and viewpoints without task-specific training. Yet training-free pipelines often falter on oriented geometry, scale/rotation variation, and crowded ports or airfields, and rarely unify detection and segmentation. We introduce ZODS-RS, a training-free, closed-form pipeline that outputs horizontal boxes (HBB) and instance masks. Built on DINOv3 dense features and SAM-style proposals, ZODS-RS chains: PP (prototype purification via Tyler covariance), R-SEM (rotation-scale equivariant matching with separable kernels and global Hungarian assignment), and UAM (uncertainty-aware pixelwise merging with adaptive priors and optional negative prototypes). A lightweight CWLA fuses multiple DINOv3 layers. On FAIR1M (HBB) we obtain $\\mathrm{mAP}_{0.50:0.95}=\\mathbf{13.06}$ and $\\mathrm{AP}_S=\\mathbf{2.93}$ \\emph{(class-averaged over ship/airplane)}; on xView (HBB) we report $\\mathrm{mAP}=\\mathbf{16.69}$. On our UAV dataset, ZODS-RS achieves mask $\\mathrm{mIoU}=\\mathbf{31.10}$ and improves small-object AP by $\\mathbf{+30.70}$ over Grounded-SAM on a single 5090. This work offers a unified, \\emph{no-training} solution for horizontal-box detection plus instance segmentation in aerial imagery; provides explicit closed-form formulations for PP/R-SEM/UAM tightly coupled with DINOv3; and demonstrates \\emph{consistent} gains on small and crowded targets and under cross-domain shifts while keeping deployment simple.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{gu2026zodsrs,\n  title={ZODS-RS -- Zero-training Oriented Detection & Segmentation for Remote Sensing},\n  author={Zuan Gu and Tianhan Gao and Langxu Zhao},\n  journal={arXiv preprint arXiv:2606.10769v1},\n  year={2026},\n  url={http://arxiv.org/abs/2606.10769v1}\n}",
+    "Authors": "Zuan Gu, Tianhan Gao, Langxu Zhao",
+    "_added_date": "2026-06-10",
+    "Category": "Method",
+    "_tasks": "SEG"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-06-08",
+    "Month": 6,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "ABot-Earth 0.5: Generative 3D Earth Model",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2606.09967v1",
+    "Abstract": "We present ABot-Earth 0.5, a generative 3D framework designed to synthesize vast, seamless 3D environments from ubiquitous, geospatially referenced satellite imagery. To achieve this, we propose a novel generative model formulated directly with the 3D Gaussian Splatting (3DGS) representation. The model is trained on a diverse corpus of existing real-world urban reconstructions, learning to generate realistic geometry and textures. At inference, it synthesizes novel 3D scenes conditioned solely on satellite imagery at a scalable rate of under 10 minutes per square kilometer, while demonstrating exceptional realism. The framework is designed for accessibility, with integrated hierarchical level-of-detail (LOD) structures that permit real-time, interactive visualization on web-based map engines. This high-fidelity simulation sandbox effectively mitigates the sim-to-real domain gap, enabling critical downstream Embodied AI applications like closed-loop UAV navigation. By providing an ultra-low-cost and high-efficiency solution, ABot-Earth 0.5 significantly lowers the technical and financial barriers to large-scale 3D reconstruction and empowers the future of global digital earth visualization.",
+    "code": "",
+    "Publication": "From Amap-cvlab, Alibaba. Official page: https://abot-earth.amap.com/",
+    "BibTex": "@article{qian2026abotearth,\n  title={ABot-Earth 0.5: Generative 3D Earth Model},\n  author={Ming Qian and Tianjian Ouyang and Mingchao Sun and Zijian Wang and Jincheng Xiong and Jiarong Han and Yongchang Zhang and Jiawei Zhang and Xu Wang and Yu Liu and Luyang Tang and Fei Yu and Zengye Ge and Mengmeng Du and Yuan Liu and Nianfei Fan and Song Wang and Yingliang Peng and Chunxue Jia and Yang Liu and Shiying Zeng and Haozhe Shi and Junnan Lai and Hongyu Pan and Zheng Wu and Ning Guo and Mu Xu and Hang Zhang},\n  journal={arXiv preprint arXiv:2606.09967v1},\n  year={2026},\n  url={http://arxiv.org/abs/2606.09967v1}\n}",
+    "Authors": "Ming Qian, Tianjian Ouyang, Mingchao Sun, Zijian Wang, Jincheng Xiong, Jiarong Han, Yongchang Zhang, Jiawei Zhang, Xu Wang, Yu Liu, Luyang Tang, Fei Yu, Zengye Ge, Mengmeng Du, Yuan Liu, Nianfei Fan, Song Wang, Yingliang Peng, Chunxue Jia, Yang Liu, Shiying Zeng, Haozhe Shi, Junnan Lai, Hongyu Pan, Zheng Wu, Ning Guo, Mu Xu, Hang Zhang",
+    "_added_date": "2026-06-10",
+    "Category": "Method",
+    "_tasks": "3D"
   }
 ]

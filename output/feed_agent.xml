@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_agent.xml</id>
   <link href="https://rspaper.top/output/feed_agent.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-09T05:00:37Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
+  <updated>2026-06-10T02:02:29Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 1 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -30,35 +30,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Multimedia" />
-  </entry>
-  <entry>
-    <title>Stateful Visual Encoders for Vision-Language Models</title>
-    <link href="http://arxiv.org/abs/2606.04433v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.04433v1</id>
-    <published>2026-06-03T00:00:00Z</published>
-    <updated>2026-06-03T00:00:00Z</updated>
-    <author>
-      <name>Zirui Wang</name>
-    </author>
-    <author>
-      <name>Junwei Yu</name>
-    </author>
-    <author>
-      <name>Adam Yala</name>
-    </author>
-    <author>
-      <name>David M. Chan</name>
-    </author>
-    <author>
-      <name>Joseph E. Gonzalez</name>
-    </author>
-    <author>
-      <name>Trevor Darrell</name>
-    </author>
-    <summary type="text">Vision-language models (VLMs) are increasingly used in multi-image, multi-turn agentic settings where decisions depend on visual changes. However, in existing open-weight VLMs, visual comparisons happen only inside the language model, while the visual encoder itself remains stateless: each image is encoded independently, without access to the prior visual context. As a result, small but task-critical changes may be attenuated before the language model has a chance to compare them, especially when those changes do not affect the high-level semantics of the scene. We introduce a Stateful Visual Encoder, which conditions each visual representation on prior visual features. Under supervised finetuning, VLMs equipped with stateful encoders achieve consistent improvements on controlled tasks involving cross-image spatial aggregation, multi-object visual differencing, and visual trajectory behavior cloning. These improvements are consistent across input resolutions, language model sizes, and VLM backbones. Finally, we validate our model on real-world tasks, including longitudinal radiology, fine-grained image comparison, and remote sensing, where stateful encoders consistently improve generalist VLM baselines and can match or surpass specialized models in selected domains. Project page: https://statefulvisualencoders.github.io/</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Project page: https://statefulvisualencoders.github.io/&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="cs.CL; Machine Learning" />
   </entry>
 </feed>
