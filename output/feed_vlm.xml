@@ -4,12 +4,31 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-10T05:12:27Z</updated>
+  <updated>2026-06-11T02:13:30Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 9 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Adapting Prithvi-EO for Fallow Detection for Food-Water Nexus: ViT-Adapter Necks and Parameter-Efficient Backbone tuning of Geospatial Foundation Model</title>
+    <link href="http://arxiv.org/abs/2606.12218v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.12218v1</id>
+    <published>2026-06-10T00:00:00Z</published>
+    <updated>2026-06-10T00:00:00Z</updated>
+    <author>
+      <name>Sk Muhammad Asif</name>
+    </author>
+    <author>
+      <name>Orhun Aydin</name>
+    </author>
+    <summary type="text">Understanding spatial distribution of fallow land is important for optimizing the food-water (FW) nexus, given fallowing's role in crop rotation and water conservation. Fallow is a low accuracy class in USDA Cropland Data Layer (CDL). Geospatial foundation model (GFM), Prithvi-EO has shown strong transferability across computer vision tasks. However, its Vision Transformer (ViT) backbone produces features at a single spatial scale that are ill-suited for the multi-scale features required by object detection heads. Existing approaches synthesise multi-scale pyramids through scaling of single stride tokens, sacrificing spatial heterogeneity, and full backbone fine-tuning is computationally prohibitive for GFMs. We evaluate a fallow detection pipeline combining two parameter-efficient fine tuning (PEFT) schemes: Low-Rank Adaptation (LoRA) and a hybrid PEFT, with three neck designs: pseudo multi-scale, Lite ViT-Adapter, and Full ViT-Adapter. Our best configuration, Lite ViT-Adapter with a one-stage head, achieves a mAP@50 of 0.9479 with the Diou loss, suggesting the effectiveness of center-aware localization for irregular fallow field detection. ViT-Adapter free one-stage detection under LoRA improves the adapter-free anchor-based approach by 6.42%, and the best configuration improves baseline adapter-free anchor-based approach by 25.70%. These results demonstrate that lightweight spatial prior fusion and selective backbone unfreezing enable Prithvi-EO to capture local fallow patterns more effectively, outperforming approaches that rely on reshaped single-stride ViT tokens.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, 6 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>Earth-OneVision: Extending Remote Sensing Multimodal Large Language Models to More Sensor Modalities and Tasks</title>
     <link href="http://arxiv.org/abs/2606.10819v1" rel="alternate" type="text/html" />
@@ -268,44 +287,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Artificial Intelligence" />
     <category term="Computer Vision; Machine Learning" />
-  </entry>
-  <entry>
-    <title>UltraVR: A Diagnostic Ultra-Resolution Image-VQA Benchmark for Evidence-Grounded Reasoning</title>
-    <link href="http://arxiv.org/abs/2606.05576v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.05576v1</id>
-    <published>2026-06-04T00:00:00Z</published>
-    <updated>2026-06-04T00:00:00Z</updated>
-    <author>
-      <name>Gexin Huang</name>
-    </author>
-    <author>
-      <name>Yanting Yang</name>
-    </author>
-    <author>
-      <name>Myeongkyun Kang</name>
-    </author>
-    <author>
-      <name>Beidi Zhao</name>
-    </author>
-    <author>
-      <name>Jun Zhou</name>
-    </author>
-    <author>
-      <name>Chen Zhou</name>
-    </author>
-    <author>
-      <name>Gang Wang</name>
-    </author>
-    <author>
-      <name>Zu-hua Gao</name>
-    </author>
-    <author>
-      <name>Xiaoxiao Li</name>
-    </author>
-    <summary type="text">Vision-language models (VLMs) excel on visual question answering and multimodal reasoning benchmarks. Yet their capability on ultra-resolution images - where critical evidence is tiny, subtle, spatially distant, or distributed - remains unclear. Existing evaluations largely report final-answer accuracy, offering limited insight into whether models acquire and integrate the necessary visual evidence. We introduce UltraVR, a diagnostic benchmark for evidence-grounded visual reasoning over ultra-resolution images. UltraVR spans four high-value scenarios: CCTV surveillance, remote sensing (RS), whole-slide image (WSI) pathology, and industrial anomaly detection (AD). These domains pose complementary challenges: fine-grained object grounding in crowded CCTV scenes, long-range spatial comparison in RS, multi-scale evidence navigation in WSI, and subtle irregularity detection in repetitive industrial layouts. Beyond standard QA triples, each instance includes a structured ground-truth chain of thought with step-level questions, intermediate answers, and reasoning labels. These labels decompose reasoning into evidence grounding, local perception, quantification, evidence integration, and decision inference, enabling process-level diagnosis over black-box scoring. Using UltraVR, we evaluate frontier VLMs and show that current models remain far from reliable on ultra-resolution reasoning. Importantly, the structured annotations allow us to localize failures across the visual-to-decision pipeline: errors concentrate in evidence grounding and local perception, while downstream inference often recovers when intermediate visual facts are supplied. These findings demonstrate UltraVR as a diagnostic testbed for measuring not only whether VLMs answer correctly, but where their ultra-resolution reasoning process breaks.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, 1 figure&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>

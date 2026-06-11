@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-10T05:12:27Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 5 entries</subtitle>
+  <updated>2026-06-11T02:13:30Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -70,89 +70,5 @@
     <summary type="text">Snapshot Broadband Filter Array (BFA) imaging provides high light throughput for spectral reconstruction but introduces severe spectral aliasing due to complex modulation. Current deep learning approaches, limited to spatial denoising, often fail to address the global frequency-specific degradations caused by the mask structure. To address this, we propose a Physics-embedded Frequency-aware Transformer (PF-Trans) for high-fidelity remote sensing spectral reconstruction. Our method explicitly integrates the physical sensing model through mask injection and a gray-scale consistency loss to ensure physical fidelity. Furthermore, we introduce a Dual-domain Block with a parallel Fast Fourier Transform (FFT) branch, enabling the network to perceive and suppress aliasing artifacts in the frequency domain. Extensive experiments on multiple datasets demonstrate that PF-Trans achieves state-of-the-art performance, achieving a Peak Signal-to-Noise Ratio (PSNR) of up to 48.50 dB on the GF-5 Shanghai dataset, significantly outperforming comparison methods.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>GMBFormer: An NDVI-Guided Global Memory Bank Transformer for Urban Green-Space Extraction from Ultra-High-Resolution Imagery</title>
-    <link href="http://arxiv.org/abs/2606.06363v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.06363v1</id>
-    <published>2026-06-04T00:00:00Z</published>
-    <updated>2026-06-04T00:00:00Z</updated>
-    <author>
-      <name>Hao Lei</name>
-    </author>
-    <author>
-      <name>Xi Cheng</name>
-    </author>
-    <author>
-      <name>Chenlu Shu</name>
-    </author>
-    <author>
-      <name>Zhiheng Chen</name>
-    </author>
-    <author>
-      <name>Zhengjie Duan</name>
-    </author>
-    <author>
-      <name>Haoyu Wang</name>
-    </author>
-    <author>
-      <name>Zhanfeng Shen</name>
-    </author>
-    <summary type="text">Urban green-space extraction from ultra-high-resolution (UHR) imagery is commonly performed patch by patch, which limits semantic reuse among spatially separated but visually similar vegetation patterns. Directly injecting the Normalized Difference Vegetation Index (NDVI) into red-green-blue (RGB) backbones can also blur the roles of visual appearance learning and physical vegetation confidence. We propose GMBFormer, a SegFormer-based framework that replaces adjacency-driven feature propagation with selective, similarity-driven prototype retrieval. Only RGB channels enter the backbone and decoder, while NDVI is decoupled as a physics-informed gate that admits high-confidence vegetation descriptors into a compact global memory bank through momentum updates. During training and inference, the current patch queries stored prototypes through memory-mediated cross-attention, and the retrieved response is integrated with bounded overhead. Experiments use a self-constructed Chengdu UHR dataset with 7,700 labeled 512 x 512 patches and two reduced-label settings derived from the public International Society for Photogrammetry and Remote Sensing (ISPRS) Potsdam dataset. Under the same training and evaluation protocol, GMBFormer obtains mean intersection over union (mIoU)/mean Dice (mDice) scores of 89.25%/94.31%, 92.17%/95.92%, and 83.72%/90.86%, respectively, improving the controlled SegFormer-B4 baseline in each setting. Ablation studies indicate that decoupled NDVI admission, memory retrieval, capacity, and momentum jointly shape the final performance.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 34 pages, 5 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Physics-Guided Deep Unfolding for Blind Cross-Sensor Spectral Super-Resolution via Learning the Spectral Transformation Function</title>
-    <link href="http://arxiv.org/abs/2606.05759v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.05759v1</id>
-    <published>2026-06-04T00:00:00Z</published>
-    <updated>2026-06-04T00:00:00Z</updated>
-    <author>
-      <name>Zhaolin Li</name>
-    </author>
-    <author>
-      <name>Jinsong Chen</name>
-    </author>
-    <author>
-      <name>Shanxin Guo</name>
-    </author>
-    <author>
-      <name>Tuo Zhang</name>
-    </author>
-    <author>
-      <name>Xinglong Zhang</name>
-    </author>
-    <author>
-      <name>Pan Chen</name>
-    </author>
-    <summary type="text">Hyperspectral imaging provides rich spectral information for quantitative remote sensing, yet hyperspectral sensors remain costly and thus unavailable in many UAV deployments. Spectral super-resolution (SSR) seeks to reconstruct hyperspectral images (HSIs) from multispectral images (MSIs). Most existing SSR methods assume a fixed and known spectral response function (SRF) and are therefore limited to single-sensor settings. In practical cross-sensor scenarios, the spectral degradation from HSI to MSI is unknown and varies with sensor characteristics and scene content, which renders HSI reconstruction ill-posed. This paper proposes a physics-guided deep unfolding network, termed PGU-Net, to address blind cross-sensor SSR by jointly estimating the HSI and a learnable spectral transformation function (STF). PGU-Net unrolls an alternating optimization procedure into an end-to-end trainable architecture with stages, where each stage sequentially updates the HSI and the STF. Both modules combine learnable proximal networks with differentiable closed-form solvers, enabling physical interpretability while retaining strong representation capacity. Experiments on benchmark datasets (CAVE and NTIRE 2022) with multiple SRFs demonstrate accurate recovery of the STF (degradation operator) and improved reconstruction performance over state-of-the-art SSR methods. Furthermore, evaluations on a real UAV cross-sensor dataset (Headwall Nano HSI and DJI P4 Multispectral MSI) verify the effectiveness and robustness of PGU-Net under truly blind conditions, and suggest that the estimated STF may exhibit land-cover-related differences.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Intercomparison of Machine Learning Algorithms for Remote Sensing-based In-season Crop Mapping</title>
-    <link href="http://arxiv.org/abs/2606.05731v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.05731v1</id>
-    <published>2026-06-04T00:00:00Z</published>
-    <updated>2026-06-04T00:00:00Z</updated>
-    <author>
-      <name>August Posch</name>
-    </author>
-    <author>
-      <name>Jitendra Kumar</name>
-    </author>
-    <author>
-      <name>Forrest M. Hoffman</name>
-    </author>
-    <author>
-      <name>Auroop R. Ganguly</name>
-    </author>
-    <summary type="text">In-season crop type mapping is critical for food security in the face of increasingly extreme climate-related threats to crops. Currently, the USDA Cropland Data Layer provides crop type labels at 30m resolution and is available the February after harvest, but no product exists that maps crop types before harvest with satisfactory accuracy that would allow emergency managers to respond to crop threats in near real time. Furthermore, the relative advantages of a wide range of algorithms have not been evaluated in a way that accounts for interannual variability, until this study. Here, Harmonized Landsat-Sentinel surface reflectance imagery time series and crop rotation history information are combined to map corn in Iowa and almonds in California at 30m resolution accurately by early June in unseen years, with robust quantification of uncertainty due to phenology and crop distribution. Thousands of model configurations across ten machine learning algorithms were compared using a year-wise cross-validation and a suite of metrics. Hyperparameter search revealed Support Vector Machines to be the most successful algorithm overall, with a mean F1 score of 0.74 (0.59) across five unseen validation years for almonds by early June in California (corn by early June in Iowa). Interannual variation was a large source of uncertainty, but patterns showed the potential to further improve performance with ensemble approaches or ancillary data. Future work may extend these methods to include multiclass maps of all crop types, CONUS-wide maps, and in-season crop yield forecasting.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 22 pages, 8 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
   </entry>
 </feed>

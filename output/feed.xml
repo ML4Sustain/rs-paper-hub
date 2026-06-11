@@ -4,12 +4,281 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-10T05:12:27Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 30 entries</subtitle>
+  <updated>2026-06-11T02:13:30Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 29 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Partitioned Iterative Quantum Scheduling of Satellites for Urgent Disaster Response: Case study of Wildfire</title>
+    <link href="http://arxiv.org/abs/2606.12310v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.12310v1</id>
+    <published>2026-06-10T00:00:00Z</published>
+    <updated>2026-06-10T00:00:00Z</updated>
+    <author>
+      <name>Lucas T. Braydwood</name>
+    </author>
+    <author>
+      <name>Taejin Park</name>
+    </author>
+    <author>
+      <name>Hirofumi Hashimoto</name>
+    </author>
+    <author>
+      <name>Zoe Gonzalez Izquierdo</name>
+    </author>
+    <author>
+      <name>Andrew Michaelis</name>
+    </author>
+    <author>
+      <name>Eleanor Rieffel</name>
+    </author>
+    <author>
+      <name>Shon Grabbe</name>
+    </author>
+    <summary type="text">The standard in Earth-observation tasks today is having near real-time access to surface images in response to changing conditions. For instance, as urban environments interface more with wildlands and wildfires become less predictable, their tracking with satellite resources becomes essential. This requires the coordination of increasingly large constellations of satellites, giving rise to challenging computational problems. With wildfire detection and tracking as a backdrop, we investigate the power of special purpose and novel computing paradigms to tackle the ensuing satellite scheduling problems, making a compelling case for quantum algorithms. We bring quantum scheduling algorithms closer to implementation by examining both the emerging iterative quantum algorithm framework, which comes with analytic guarantees compared to some classical algorithms, and distributed quantum computing methods whose relevance is on the rise as utility-scale problems begin to get solved with quantum computers. Drawing strength from several computing fronts, we develop a distributed/parallelization scheme in conjunction with the quantum algorithm design and apply these techniques to real-world datasets for wildfire detection. While our quantum subprocesses are currently too small to see significant quantum advantage, our results validate the utility of these techniques, and continue forging the path toward distributed quantum computing.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 11 pages, 3 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="quant-ph" />
+  </entry>
+  <entry>
+    <title>Adapting Prithvi-EO for Fallow Detection for Food-Water Nexus: ViT-Adapter Necks and Parameter-Efficient Backbone tuning of Geospatial Foundation Model</title>
+    <link href="http://arxiv.org/abs/2606.12218v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.12218v1</id>
+    <published>2026-06-10T00:00:00Z</published>
+    <updated>2026-06-10T00:00:00Z</updated>
+    <author>
+      <name>Sk Muhammad Asif</name>
+    </author>
+    <author>
+      <name>Orhun Aydin</name>
+    </author>
+    <summary type="text">Understanding spatial distribution of fallow land is important for optimizing the food-water (FW) nexus, given fallowing's role in crop rotation and water conservation. Fallow is a low accuracy class in USDA Cropland Data Layer (CDL). Geospatial foundation model (GFM), Prithvi-EO has shown strong transferability across computer vision tasks. However, its Vision Transformer (ViT) backbone produces features at a single spatial scale that are ill-suited for the multi-scale features required by object detection heads. Existing approaches synthesise multi-scale pyramids through scaling of single stride tokens, sacrificing spatial heterogeneity, and full backbone fine-tuning is computationally prohibitive for GFMs. We evaluate a fallow detection pipeline combining two parameter-efficient fine tuning (PEFT) schemes: Low-Rank Adaptation (LoRA) and a hybrid PEFT, with three neck designs: pseudo multi-scale, Lite ViT-Adapter, and Full ViT-Adapter. Our best configuration, Lite ViT-Adapter with a one-stage head, achieves a mAP@50 of 0.9479 with the Diou loss, suggesting the effectiveness of center-aware localization for irregular fallow field detection. ViT-Adapter free one-stage detection under LoRA improves the adapter-free anchor-based approach by 6.42%, and the best configuration improves baseline adapter-free anchor-based approach by 25.70%. These results demonstrate that lightweight spatial prior fusion and selective backbone unfreezing enable Prithvi-EO to capture local fallow patterns more effectively, outperforming approaches that rely on reshaped single-stride ViT tokens.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, 6 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>The TEAMx Observational Campaign</title>
+    <link href="http://arxiv.org/abs/2606.12152v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.12152v1</id>
+    <published>2026-06-10T00:00:00Z</published>
+    <updated>2026-06-10T00:00:00Z</updated>
+    <author>
+      <name>Manuela Lehner</name>
+    </author>
+    <author>
+      <name>Claudia Acquistapace</name>
+    </author>
+    <author>
+      <name>Marco Arpagaus</name>
+    </author>
+    <author>
+      <name>Timothy P. Banyard</name>
+    </author>
+    <author>
+      <name>Francesco Barbano</name>
+    </author>
+    <author>
+      <name>Kathrin Baumann-Stanzer</name>
+    </author>
+    <author>
+      <name>Christophe Brun</name>
+    </author>
+    <author>
+      <name>Warren R. L. Cairns</name>
+    </author>
+    <author>
+      <name>Charles Chemel</name>
+    </author>
+    <author>
+      <name>Helen E. Dacre</name>
+    </author>
+    <author>
+      <name>Paolo di Girolamo</name>
+    </author>
+    <author>
+      <name>Luca di Liberto</name>
+    </author>
+    <author>
+      <name>Giorgio Doglioni</name>
+    </author>
+    <author>
+      <name>Philipp Gasch</name>
+    </author>
+    <author>
+      <name>Giacomo Gerosa</name>
+    </author>
+    <author>
+      <name>Lorenzo Giovannini</name>
+    </author>
+    <author>
+      <name>Sonja Gisinger</name>
+    </author>
+    <author>
+      <name>Alexander Gohm</name>
+    </author>
+    <author>
+      <name>Jan Handwerker</name>
+    </author>
+    <author>
+      <name>Neil P. Hindley</name>
+    </author>
+    <author>
+      <name>Stefan Kneifel</name>
+    </author>
+    <author>
+      <name>Peter Knippertz</name>
+    </author>
+    <author>
+      <name>Martin Kohler</name>
+    </author>
+    <author>
+      <name>Meinolf Kossmann</name>
+    </author>
+    <author>
+      <name>Stephen Mobbs</name>
+    </author>
+    <author>
+      <name>Andrew Orr</name>
+    </author>
+    <author>
+      <name>Andreas Platis</name>
+    </author>
+    <author>
+      <name>Ian Renfrew</name>
+    </author>
+    <author>
+      <name>Didier Ricard</name>
+    </author>
+    <author>
+      <name>Andrew Ross</name>
+    </author>
+    <author>
+      <name>Harald Saathoff</name>
+    </author>
+    <author>
+      <name>Leopold M. Schlagbauer</name>
+    </author>
+    <author>
+      <name>Stefano Serafin</name>
+    </author>
+    <author>
+      <name>Peter Sheridan</name>
+    </author>
+    <author>
+      <name>Ivana Stiperski</name>
+    </author>
+    <author>
+      <name>Nadia Vendrame</name>
+    </author>
+    <author>
+      <name>Hannes Vogelmann</name>
+    </author>
+    <author>
+      <name>Jutta Vüllers</name>
+    </author>
+    <author>
+      <name>Helen C. Ward</name>
+    </author>
+    <author>
+      <name>Clemens Wastl</name>
+    </author>
+    <author>
+      <name>Stephanie Westerhuis</name>
+    </author>
+    <author>
+      <name>Andreas Wieser</name>
+    </author>
+    <author>
+      <name>Norman Wildmann</name>
+    </author>
+    <author>
+      <name>Günther Zängl</name>
+    </author>
+    <author>
+      <name>Dino Zardi</name>
+    </author>
+    <author>
+      <name>TOC team</name>
+    </author>
+    <author>
+      <name>Mathias W. Rotach</name>
+    </author>
+    <summary type="text">As part of the international research programme TEAMx (multi-scale transport and exchange processes in the atmosphere over mountains - programme and experiment) a one-year long measurement campaign, the TEAMx Observational Campaign (TOC), was conducted between 2024 and 2025 in a north-south transect through the Alps. Building on the dense operational measurement network in the Alps, the TOC was designed to collect long-term atmospheric observations over the highly complex Alpine terrain. During two six-week long Extended Observational Periods, more than 40 research institutions came together to instrument about 30 sites in the four target areas of the TEAMx domain and study different transport processes, from gravity waves to orographic convection, thermally driven flows, and turbulent exchange. In addition to a suite of ground-based in-situ and remote-sensing instruments, observational activities included airborne measurements with up to three research aircraft and multiple UAS. This paper gives an overview of the science goals and the TOC design, together with preliminary analyses that highlight the potential of the collected dataset.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; This manuscript was submitted to the Journal of the European Meteorological Society for review on 4 June 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Atmospheric and Oceanic Physics" />
+  </entry>
+  <entry>
+    <title>AI4Land: Scalable Deep Learning for Global High-Resolution Land Use Reconstruction</title>
+    <link href="http://arxiv.org/abs/2606.11793v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.11793v1</id>
+    <published>2026-06-10T00:00:00Z</published>
+    <updated>2026-06-10T00:00:00Z</updated>
+    <author>
+      <name>Amirpasha Mozaffari</name>
+    </author>
+    <author>
+      <name>Marina Castaño</name>
+    </author>
+    <author>
+      <name>Stefano Materia</name>
+    </author>
+    <author>
+      <name>Etienne Tourigny</name>
+    </author>
+    <author>
+      <name>Oscar Molina-Sedano</name>
+    </author>
+    <author>
+      <name>Jordi Varela-Agrelo</name>
+    </author>
+    <author>
+      <name>Dario Garcia-Gasulla</name>
+    </author>
+    <author>
+      <name>Miguel Castrillo Melguizo</name>
+    </author>
+    <author>
+      <name>Mario Acosta</name>
+    </author>
+    <author>
+      <name>Amanda Duarte</name>
+    </author>
+    <summary type="text">Uncertainty in the terrestrial carbon cycle remains a major constraint in climate projections, partly driven by the uncertainties affecting the land surface representation and variability in Earth system models. To address this limitation, we present a data-driven framework AI4Land, for generating high-resolution historical reconstructions and future projections of key land surface variables. The framework follows a two-phase approach using a U-Net architecture. In the first phase, which is the focus of this work, it reconstructs annual land use and land cover by integrating coarse-resolution scenario data with static geophysical features. In a planned second phase, the resulting high-resolution maps will be used to predict dynamic biophysical variables, particularly leaf area index, at finer temporal scales. Trained on Earth observation data, the models learn to reproduce spatially explicit and physically consistent land surface patterns, extending temporal coverage to periods lacking direct observations. AI4Land was developed and trained on MareNostrum5, demonstrating how GPU-accelerated HPC infrastructure enables global-scale climate AI pipelines. The final product is a suite of open-source emulators designed for real-time coupling with digital twin platforms, such as those developed under the Destination Earth initiative. By delivering realistic and evolving land surface conditions on demand, this work aims to reduce critical uncertainties and improve the predictive power of next-generation climate simulations.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+    <category term="Artificial Intelligence; Atmospheric and Oceanic Physics" />
+  </entry>
+  <entry>
+    <title>Magnitude-Based Features for Multispecies Spatial Data</title>
+    <link href="http://arxiv.org/abs/2606.11775v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.11775v1</id>
+    <published>2026-06-10T00:00:00Z</published>
+    <updated>2026-06-10T00:00:00Z</updated>
+    <author>
+      <name>Julia Sollberger</name>
+    </author>
+    <author>
+      <name>Joshua Bull</name>
+    </author>
+    <author>
+      <name>Sara Kališnik</name>
+    </author>
+    <author>
+      <name>Bernadette Stolz</name>
+    </author>
+    <summary type="text">Multispecies spatial data arise in many applications where interactions between different entities are central to system behaviour, including biomedical imaging, geospatial analysis, and species ecology. Despite their importance, relatively few quantitative tools exist to capture such interactions. In this work, we propose magnitude-based features for the analysis of multispecies spatial data. Magnitude is a real-valued invariant of finite metric spaces that can be interpreted as an effective number of points, incorporating both spatial configuration and scale. We develop global and local magnitude feature vectors and demonstrate their utility on synthetic tumour microenvironment data, and in tissue microarray data from human colorectal cancer samples. Locally, the method identifies distinct neighbourhood types and reveals spatial heterogeneity; in the model, this includes radial patterns associated with different qualitative outcomes of the simulations, while in the real-world data it reflects the importance of tertiary lymphoid structure-like interactions between B and T cell populations. Globally, the approach recovers known classifications of long-term simulation outcomes across parameter regimes in synthetic data, and suggests important roles for CD4+ T cells and CD163+ macrophages in distinguishing patients with favourable Crohn's like reactions from unfavourable diffuse immune infiltration. Together, these results suggest that magnitude-based features provide a powerful and flexible tool for the analysis of multispecies spatial data.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 32 pages, 24 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="math.MG" />
+    <category term="q-bio.QM; Machine Learning (Statistics)" />
+  </entry>
   <entry>
     <title>COGENT: Continuous Graph Emulators with Neural Ordinary Differential Equations for Long-Term Physical Forecasting</title>
     <link href="http://arxiv.org/abs/2606.11162v1" rel="alternate" type="text/html" />
@@ -67,8 +336,8 @@
   </entry>
   <entry>
     <title>Spatially Selective Self-Training for Unsupervised Building Change Detection</title>
-    <link href="http://arxiv.org/abs/2606.10775v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.10775v1</id>
+    <link href="http://arxiv.org/abs/2606.10775v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.10775v2</id>
     <published>2026-06-09T00:00:00Z</published>
     <updated>2026-06-09T00:00:00Z</updated>
     <author>
@@ -283,6 +552,33 @@
     <category term="Artificial Intelligence" />
   </entry>
   <entry>
+    <title>Continuous biome representations from Earth observation embeddings</title>
+    <link href="http://arxiv.org/abs/2606.11510v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.11510v1</id>
+    <published>2026-06-09T00:00:00Z</published>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <author>
+      <name>Maxwell B. Joseph</name>
+    </author>
+    <author>
+      <name>Flávia De Souza Mendes</name>
+    </author>
+    <author>
+      <name>Dieu My T. Nguyen</name>
+    </author>
+    <author>
+      <name>Camile Sothe</name>
+    </author>
+    <author>
+      <name>Christopher B. Anderson</name>
+    </author>
+    <summary type="text">Biotic communities vary continuously across space, yet biome maps impose categorical boundaries that compress this variation, particularly at ecotones where transitional communities are ecologically distinct. Could Earth observation (EO) foundation models, which encode spectral, spatial, and temporal information with dense embeddings, convert discrete biome maps into continuous representations that better capture ecological variation? Here, we fit a linear classifier on Clay v1.5 satellite image embeddings to predict biome labels from a categorical map. The softmax output yields a continuous probability vector whose dimensions correspond to named biome classes. We evaluate this approach using six Brazilian biomes, 1.3 million embeddings, and 10,015 withheld forest inventory plots spanning 4,672 plant species. The continuous biome representation outperforms discrete biome labels for predicting species occurrence (mean per-species AUC 0.618 vs. 0.570 across 10 spatial cross-validation folds). Decomposing this gain shows that continuity in the graded probability output, rather than label reassignment, accounts for the improvement; the pattern holds across all distances from biome boundaries. The raw 1024-dimensional embedding remains the strongest predictor we tested (mean AUC 0.646 vs. 0.618), but the continuous representation recovers most of the embedding's gain over discrete labels. This simple approach provides a probabilistic replacement for categorical map labels, preserving their meaning while encoding graded variation that discrete maps suppress.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages, 4 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="q-bio.QM" />
+    <category term="q-bio.PE; Machine Learning (Statistics)" />
+  </entry>
+  <entry>
     <title>SemDINO: A DINOv3-Driven Network for Cross-Temporal Semantic Alignment in Change Detection</title>
     <link href="http://arxiv.org/abs/2606.09772v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2606.09772v1</id>
@@ -310,8 +606,8 @@
   </entry>
   <entry>
     <title>IB-HFN: Information Bottleneck-Driven SAR-Optical Fusion Network for High-Fidelity Cloud Removal</title>
-    <link href="http://arxiv.org/abs/2606.09347v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.09347v1</id>
+    <link href="http://arxiv.org/abs/2606.09347v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.09347v2</id>
     <published>2026-06-08T00:00:00Z</published>
     <updated>2026-06-08T00:00:00Z</updated>
     <author>
@@ -678,203 +974,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Artificial Intelligence" />
     <category term="Computer Vision; Machine Learning" />
-  </entry>
-  <entry>
-    <title>GMBFormer: An NDVI-Guided Global Memory Bank Transformer for Urban Green-Space Extraction from Ultra-High-Resolution Imagery</title>
-    <link href="http://arxiv.org/abs/2606.06363v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.06363v1</id>
-    <published>2026-06-04T00:00:00Z</published>
-    <updated>2026-06-04T00:00:00Z</updated>
-    <author>
-      <name>Hao Lei</name>
-    </author>
-    <author>
-      <name>Xi Cheng</name>
-    </author>
-    <author>
-      <name>Chenlu Shu</name>
-    </author>
-    <author>
-      <name>Zhiheng Chen</name>
-    </author>
-    <author>
-      <name>Zhengjie Duan</name>
-    </author>
-    <author>
-      <name>Haoyu Wang</name>
-    </author>
-    <author>
-      <name>Zhanfeng Shen</name>
-    </author>
-    <summary type="text">Urban green-space extraction from ultra-high-resolution (UHR) imagery is commonly performed patch by patch, which limits semantic reuse among spatially separated but visually similar vegetation patterns. Directly injecting the Normalized Difference Vegetation Index (NDVI) into red-green-blue (RGB) backbones can also blur the roles of visual appearance learning and physical vegetation confidence. We propose GMBFormer, a SegFormer-based framework that replaces adjacency-driven feature propagation with selective, similarity-driven prototype retrieval. Only RGB channels enter the backbone and decoder, while NDVI is decoupled as a physics-informed gate that admits high-confidence vegetation descriptors into a compact global memory bank through momentum updates. During training and inference, the current patch queries stored prototypes through memory-mediated cross-attention, and the retrieved response is integrated with bounded overhead. Experiments use a self-constructed Chengdu UHR dataset with 7,700 labeled 512 x 512 patches and two reduced-label settings derived from the public International Society for Photogrammetry and Remote Sensing (ISPRS) Potsdam dataset. Under the same training and evaluation protocol, GMBFormer obtains mean intersection over union (mIoU)/mean Dice (mDice) scores of 89.25%/94.31%, 92.17%/95.92%, and 83.72%/90.86%, respectively, improving the controlled SegFormer-B4 baseline in each setting. Ablation studies indicate that decoupled NDVI admission, memory retrieval, capacity, and momentum jointly shape the final performance.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 34 pages, 5 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Assessing Power System Vulnerability to Climate-Related Stressors and Shocks: The Case of Indonesia</title>
-    <link href="http://arxiv.org/abs/2606.06262v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.06262v1</id>
-    <published>2026-06-04T00:00:00Z</published>
-    <updated>2026-06-04T00:00:00Z</updated>
-    <author>
-      <name>Hariadi Aji</name>
-    </author>
-    <author>
-      <name>Nihit Goyal</name>
-    </author>
-    <author>
-      <name>Stefan Pfenninger-Lee</name>
-    </author>
-    <author>
-      <name>Igor Nikolic</name>
-    </author>
-    <summary type="text">Climate change and extreme weather are increasing the vulnerability of power systems globally, particularly in emerging economies such as Indonesia. Yet, existing studies often assess these impacts in isolation, focusing on individual components or specific hazards, leaving system-level implications under-examined. To address this gap, we develop an integrated, spatially explicit approach to assess an energy system's climate-related vulnerabilities and their impacts, and apply the approach to Indonesia. We quantify climate-based vulnerabilities in generation and transmission infrastructure as well as in demand by distinguishing stressors (temperature rise) and shocks (disruptive hazards due to sea-level rise, flooding, and landslides). Through geospatial data analysis, derating models, and regression analysis, we examine existing and planned assets and demand under historical and future climate conditions. Results indicate that both existing and planned generation are likely to experience stress, which implies a reduction in usable capacity, even as electricity demand increases due to temperature rise, and transmission assets face potential disruption from climate change-induced shocks. Together, these effects erode reserve margins by up to 36 percentage points under the 10-year plan, indicating a substantial reduction in system resilience. The largest system, Jawa-Madura-Bali, experiences a 20.8 percentage point decline, leaving a remaining margin of 26.5%, below the 10-year planning threshold. Importantly, the findings suggest that a growing share of future capacity expansion may be absorbed by climate-induced losses, implying that adaptation-related investments may increasingly be required simply to maintain existing supply levels rather than meet future requirements. We conclude that there is an urgent need to embed climate considerations more explicitly into power sector planning.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="physics.soc-ph" />
-  </entry>
-  <entry>
-    <title>ATT-CR: Adaptive Triangular Transformer for Cloud Removal</title>
-    <link href="http://arxiv.org/abs/2606.05999v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.05999v1</id>
-    <published>2026-06-04T00:00:00Z</published>
-    <updated>2026-06-04T00:00:00Z</updated>
-    <author>
-      <name>Yang Wu</name>
-    </author>
-    <author>
-      <name>Ye Deng</name>
-    </author>
-    <author>
-      <name>Pengna Li</name>
-    </author>
-    <author>
-      <name>Wenli Huang</name>
-    </author>
-    <author>
-      <name>Kangyi Wu</name>
-    </author>
-    <author>
-      <name>Xiaomeng Xin</name>
-    </author>
-    <author>
-      <name>Jinjun Wang</name>
-    </author>
-    <summary type="text">Cloud removal aims to accurately reconstruct the ground objects obscured by clouds in remote sensing images. Existing Transformer-based methods utilizing self-attention have shown impressive results by effectively modeling long-range dependencies in cloudy images. However, they suffer from the following issues: 1) the high computational complexity of self-attention limits scalability; 2) treating both cloudy and clean pixels as valid within the attention computation brings disturbances in subsequent layers, leading to suboptimal performance. To address these challenges, we propose the Adaptive Triangular Transformer for Cloud Removal (ATT-CR), a model that effectively reduces computational costs and mitigates interference from cloudy pixels. Specifically, it consists of two core components: Triangular Attention (TAN) and Feature Selected Gating Module (FSGM). TAN employs lower and upper triangular matrices to approximate Softmax attention with O(N) computational complexity, significantly reducing the computational costs. The FSGM, on the other hand, integrates with TAN to adaptively distinguish between cloudy and clean features, which minimizes the introduction of invalid information into subsequent layers. Extensive experiments on cloud removal benchmarks demonstrate that ATT-CR delivers superior performance compared to existing methods.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Physics-Guided Deep Unfolding for Blind Cross-Sensor Spectral Super-Resolution via Learning the Spectral Transformation Function</title>
-    <link href="http://arxiv.org/abs/2606.05759v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.05759v1</id>
-    <published>2026-06-04T00:00:00Z</published>
-    <updated>2026-06-04T00:00:00Z</updated>
-    <author>
-      <name>Zhaolin Li</name>
-    </author>
-    <author>
-      <name>Jinsong Chen</name>
-    </author>
-    <author>
-      <name>Shanxin Guo</name>
-    </author>
-    <author>
-      <name>Tuo Zhang</name>
-    </author>
-    <author>
-      <name>Xinglong Zhang</name>
-    </author>
-    <author>
-      <name>Pan Chen</name>
-    </author>
-    <summary type="text">Hyperspectral imaging provides rich spectral information for quantitative remote sensing, yet hyperspectral sensors remain costly and thus unavailable in many UAV deployments. Spectral super-resolution (SSR) seeks to reconstruct hyperspectral images (HSIs) from multispectral images (MSIs). Most existing SSR methods assume a fixed and known spectral response function (SRF) and are therefore limited to single-sensor settings. In practical cross-sensor scenarios, the spectral degradation from HSI to MSI is unknown and varies with sensor characteristics and scene content, which renders HSI reconstruction ill-posed. This paper proposes a physics-guided deep unfolding network, termed PGU-Net, to address blind cross-sensor SSR by jointly estimating the HSI and a learnable spectral transformation function (STF). PGU-Net unrolls an alternating optimization procedure into an end-to-end trainable architecture with stages, where each stage sequentially updates the HSI and the STF. Both modules combine learnable proximal networks with differentiable closed-form solvers, enabling physical interpretability while retaining strong representation capacity. Experiments on benchmark datasets (CAVE and NTIRE 2022) with multiple SRFs demonstrate accurate recovery of the STF (degradation operator) and improved reconstruction performance over state-of-the-art SSR methods. Furthermore, evaluations on a real UAV cross-sensor dataset (Headwall Nano HSI and DJI P4 Multispectral MSI) verify the effectiveness and robustness of PGU-Net under truly blind conditions, and suggest that the estimated STF may exhibit land-cover-related differences.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Intercomparison of Machine Learning Algorithms for Remote Sensing-based In-season Crop Mapping</title>
-    <link href="http://arxiv.org/abs/2606.05731v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.05731v1</id>
-    <published>2026-06-04T00:00:00Z</published>
-    <updated>2026-06-04T00:00:00Z</updated>
-    <author>
-      <name>August Posch</name>
-    </author>
-    <author>
-      <name>Jitendra Kumar</name>
-    </author>
-    <author>
-      <name>Forrest M. Hoffman</name>
-    </author>
-    <author>
-      <name>Auroop R. Ganguly</name>
-    </author>
-    <summary type="text">In-season crop type mapping is critical for food security in the face of increasingly extreme climate-related threats to crops. Currently, the USDA Cropland Data Layer provides crop type labels at 30m resolution and is available the February after harvest, but no product exists that maps crop types before harvest with satisfactory accuracy that would allow emergency managers to respond to crop threats in near real time. Furthermore, the relative advantages of a wide range of algorithms have not been evaluated in a way that accounts for interannual variability, until this study. Here, Harmonized Landsat-Sentinel surface reflectance imagery time series and crop rotation history information are combined to map corn in Iowa and almonds in California at 30m resolution accurately by early June in unseen years, with robust quantification of uncertainty due to phenology and crop distribution. Thousands of model configurations across ten machine learning algorithms were compared using a year-wise cross-validation and a suite of metrics. Hyperparameter search revealed Support Vector Machines to be the most successful algorithm overall, with a mean F1 score of 0.74 (0.59) across five unseen validation years for almonds by early June in California (corn by early June in Iowa). Interannual variation was a large source of uncertainty, but patterns showed the potential to further improve performance with ensemble approaches or ancillary data. Future work may extend these methods to include multiclass maps of all crop types, CONUS-wide maps, and in-season crop yield forecasting.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 22 pages, 8 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>BMCR: Adaptive Backbone Module Composition via Reinforcement Learning for Remote Sensing Object Detection</title>
-    <link href="http://arxiv.org/abs/2606.05586v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.05586v1</id>
-    <published>2026-06-04T00:00:00Z</published>
-    <updated>2026-06-04T00:00:00Z</updated>
-    <author>
-      <name>Wenlin Liu</name>
-    </author>
-    <author>
-      <name>Xikun Hu</name>
-    </author>
-    <author>
-      <name>Ping Zhong</name>
-    </author>
-    <summary type="text">In remote sensing object detection, Convolutional Neural Networks (CNNs) excel at capturing local details while Vision Transformers (ViTs) are better at global context modeling. However, existing detectors typically rely on a single fixed backbone or a manually designed hybrid architecture, and thus fail to adaptively exploit these complementary strengths across inputs of diverse complexity. To address this limitation, we propose Backbone Module Composition via Reinforcement Learning (BMCR). BMCR dynamically assembles input-adaptive inference paths from reusable modules decomposed from off-the-shelf CNN and ViT backbones. To enable such cross-family composition, we first construct an extensible module toolbox. Specifically, we decompose representative CNN and ViT backbones into reusable functional modules and encapsulate each module with explicit structural, semantic, and computational metadata for compatibility-aware assembly. To bridge the gap between grid-based CNN features and token-based ViT representations, we design a lightweight Optimal Transport (OT) based transition interface that ensures distribution-aware alignment while respecting spatial consistency. The backbone composition process is then formulated as a sequential decision problem, in which a policy network progressively selects task-relevant modules according to intermediate multi-scale observations. To stabilize the joint optimization of reusable modules and the routing policy, we further develop an Adaptive Module Cooperative Optimization (AMCO) strategy that coordinates module updating, routing exploration, and reward assignment during training. On DOTA-v1.0, DOTA-v1.5 and DIOR-R, BMCR achieves 79.31\%, 73.41\% and 71.86\% mAP, respectively, surpassing strong static and dynamic baselines by up to 2.5 points while maintaining competitive efficiency.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Multimedia" />
-  </entry>
-  <entry>
-    <title>UltraVR: A Diagnostic Ultra-Resolution Image-VQA Benchmark for Evidence-Grounded Reasoning</title>
-    <link href="http://arxiv.org/abs/2606.05576v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.05576v1</id>
-    <published>2026-06-04T00:00:00Z</published>
-    <updated>2026-06-04T00:00:00Z</updated>
-    <author>
-      <name>Gexin Huang</name>
-    </author>
-    <author>
-      <name>Yanting Yang</name>
-    </author>
-    <author>
-      <name>Myeongkyun Kang</name>
-    </author>
-    <author>
-      <name>Beidi Zhao</name>
-    </author>
-    <author>
-      <name>Jun Zhou</name>
-    </author>
-    <author>
-      <name>Chen Zhou</name>
-    </author>
-    <author>
-      <name>Gang Wang</name>
-    </author>
-    <author>
-      <name>Zu-hua Gao</name>
-    </author>
-    <author>
-      <name>Xiaoxiao Li</name>
-    </author>
-    <summary type="text">Vision-language models (VLMs) excel on visual question answering and multimodal reasoning benchmarks. Yet their capability on ultra-resolution images - where critical evidence is tiny, subtle, spatially distant, or distributed - remains unclear. Existing evaluations largely report final-answer accuracy, offering limited insight into whether models acquire and integrate the necessary visual evidence. We introduce UltraVR, a diagnostic benchmark for evidence-grounded visual reasoning over ultra-resolution images. UltraVR spans four high-value scenarios: CCTV surveillance, remote sensing (RS), whole-slide image (WSI) pathology, and industrial anomaly detection (AD). These domains pose complementary challenges: fine-grained object grounding in crowded CCTV scenes, long-range spatial comparison in RS, multi-scale evidence navigation in WSI, and subtle irregularity detection in repetitive industrial layouts. Beyond standard QA triples, each instance includes a structured ground-truth chain of thought with step-level questions, intermediate answers, and reasoning labels. These labels decompose reasoning into evidence grounding, local perception, quantification, evidence integration, and decision inference, enabling process-level diagnosis over black-box scoring. Using UltraVR, we evaluate frontier VLMs and show that current models remain far from reliable on ultra-resolution reasoning. Importantly, the structured annotations allow us to localize failures across the visual-to-decision pipeline: errors concentrate in evidence grounding and local perception, while downstream inference often recovers when intermediate visual facts are supplied. These findings demonstrate UltraVR as a diagnostic testbed for measuring not only whether VLMs answer correctly, but where their ultra-resolution reasoning process breaks.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, 1 figure&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>
