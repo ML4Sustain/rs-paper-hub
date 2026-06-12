@@ -4,12 +4,73 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-11T05:25:30Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 9 entries</subtitle>
+  <updated>2026-06-12T02:09:43Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 10 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>TerraBench: Can Agents Reason Over Heterogeneous Earth-System Data?</title>
+    <link href="http://arxiv.org/abs/2606.13148v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.13148v1</id>
+    <published>2026-06-11T00:00:00Z</published>
+    <updated>2026-06-11T00:00:00Z</updated>
+    <author>
+      <name>Dat Tien Nguyen</name>
+    </author>
+    <author>
+      <name>Thao Nguyen</name>
+    </author>
+    <author>
+      <name>Fadillah Adamsyah Maani</name>
+    </author>
+    <author>
+      <name>Huy M. Le</name>
+    </author>
+    <author>
+      <name>Muhammad Umer Sheikh</name>
+    </author>
+    <author>
+      <name>Numan Saeed</name>
+    </author>
+    <author>
+      <name>Muhammad Haris Khan</name>
+    </author>
+    <author>
+      <name>Salman Khan</name>
+    </author>
+    <summary type="text">Climate and environmental decision-making increasingly requires reasoning across heterogeneous inputs, including gridded physical data, satellite imagery, geospatial context, and simulator outputs. Weather and climate foundation models can forecast well, but do not reason interactively in language, while large language models (LLMs) reason in language but cannot operate directly on high-dimensional Earth-system data. As a result, real scientific workflows in Earth-science remain underserved. We introduce TerraBench, a benchmark for grounded Earth-science reasoning, built on TerraAgent, a ReAct-style executable framework that interleaves reasoning, tool calls, and observations to couple LLM planning with scientific tools for environmental retrieval, geospatial processing, simulation, and artifact-backed computation. TerraBench unifies analysis of Earth observation imagery, gridded data, GIS reasoning and simulation in a single executable interface, whereas prior benchmarks isolate these capabilities into narrow individual tasks. It is also the first in this space to pair process-level tool-use metrics with tolerance-aware numeric scoring. The benchmark comprises 403 extensive agentic tasks across three tracks (Fundamentals, Simulator-Grounded, and Document-Grounded Verification) and eight application domains with 24,500 verified execution steps. These results indicate that reliable Earth-science agents must go beyond tool access to coordinate heterogeneous workflows, parameterize tools precisely, and preserve artifact provenance.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>GeoNatureAgent Benchmark: Benchmarking LLM Agents for Environmental Geospatial Analysis Across Frontier and Open-Weight Foundation Models</title>
+    <link href="http://arxiv.org/abs/2606.12821v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.12821v1</id>
+    <published>2026-06-11T00:00:00Z</published>
+    <updated>2026-06-11T00:00:00Z</updated>
+    <author>
+      <name>Gabriel Diaz-Ireland</name>
+    </author>
+    <author>
+      <name>Diego Prieto-Herráez</name>
+    </author>
+    <author>
+      <name>Mario García Peces</name>
+    </author>
+    <author>
+      <name>Javier Velázquez</name>
+    </author>
+    <author>
+      <name>Devika Jain</name>
+    </author>
+    <summary type="text">Environmental scientists spend disproportionate effort on data wrangling rather than analysis, and AI agents that automate geospatial workflows remain unvalidated: no benchmark evaluates agents operating through structured tool calling against real APIs. We introduce the GeoNatureAgent Benchmark, the first benchmark for environmental analysis agents that operate via structured tool calls to a production-style geospatial API. It comprises 93 tasks across 18 categories, covering municipality analysis, multi-turn conversation, spatial reasoning, cross-indicator synthesis, error handling and recovery, ranking, comparison, multilingual understanding, habitat analysis, and task rejection. Tasks are evaluated against an open, self-hostable API serving three environmental indicators across Spain and Portugal via sixteen tools. We evaluate seven LLMs (Claude Sonnet 4, DeepSeek V3.2, GLM-5, Gemini 2.5 Pro, Qwen3-235B, GPT-OSS-120B, Llama 4 Scout) under three temperature-1.0 seeds, reporting capability and per-case cost as orthogonal axes. We find: (1) Claude Sonnet 4 leads at 60.8% +/- 0.8%, followed by DeepSeek V3.2 at 56.3% +/- 3.1%, with no other model above 51%; (2) the cost-accuracy Pareto frontier is occupied mostly by open-weight models, with DeepSeek V3.2 offering 93% of Claude's capability at 11x lower cost ($0.011/case); (3) comparison tasks remain universally unsolved (0% on close-value comparisons), exposing systematic reasoning limits; and (4) structured tool calling against a real API is more discriminative than general-purpose GIS benchmarks, with accuracies 25-35 points lower. We further show extensibility by integrating BigEarthNet V2 land cover for Portugal alongside Spanish CO2 and erosion indicators. The benchmark, harness, and self-hostable API are publicly available.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, 8 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+    <category term="cs.ET" />
+  </entry>
   <entry>
     <title>Adapting Prithvi-EO for Fallow Detection for Food-Water Nexus: ViT-Adapter Necks and Parameter-Efficient Backbone tuning of Geospatial Foundation Model</title>
     <link href="http://arxiv.org/abs/2606.12218v1" rel="alternate" type="text/html" />
@@ -28,6 +89,39 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Emerging Flexible Designs for Geospatial Multimodal Foundation Models</title>
+    <link href="http://arxiv.org/abs/2606.12595v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.12595v1</id>
+    <published>2026-06-10T00:00:00Z</published>
+    <updated>2026-06-10T00:00:00Z</updated>
+    <author>
+      <name>Philipe Dias</name>
+    </author>
+    <author>
+      <name>Waqwoya Abebe</name>
+    </author>
+    <author>
+      <name>Abhishek Potnis</name>
+    </author>
+    <author>
+      <name>Aristeidis Tsaris</name>
+    </author>
+    <author>
+      <name>Dan Lu</name>
+    </author>
+    <author>
+      <name>Xiao Wang</name>
+    </author>
+    <author>
+      <name>Dalton Lunga</name>
+    </author>
+    <summary type="text">Foundation models are rapidly transforming Earth observation by enabling scalable pretraining across diverse unlabeled geospatial modalities. However, their architectural diversity ranging from encoder-only to encoder-decoder and masked autoencoding paradigms makes it challenging to assess performance trade offs in a consistent manner. In this work, we present an apples-to-apples comparison of leading FM architectures designed for geospatial multimodal reasoning, with a particular focus on flexibility across varied spectral band configurations. We standardize pretraining using identical self supervised learning objectives and training datasets, and evaluate all models under consistent parameterization on the GEOBench benchmark across classification and segmentation tasks. Our results offer new insights into the design trade-offs between model flexibility, modality alignment, and downstream task performance. By highlighting architectural strengths and limitations under controlled conditions, this study provides practical guidance for building next generation geospatial foundation models capable of robust multimodal reasoning.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+    <category term="Artificial Intelligence; Computer Vision" />
   </entry>
   <entry>
     <title>Earth-OneVision: Extending Remote Sensing Multimodal Large Language Models to More Sensor Modalities and Tasks</title>
@@ -210,81 +304,6 @@
     <summary type="text">We present OSMGraphCLIP, a CLIP-style geospatial representation model that learns global location embeddings from freely available OpenStreetMap (OSM) data. OSMGraphCLIP represents geographic environments as heterogeneous graphs of typed OSM features, preserving the topological and semantic relationships among roads, buildings, land-use regions, and points of interest. A multi-scale graph encoder captures both fine-grained local structure and broader landscape composition, and supervises a spherical-harmonics location encoder through a contrastive alignment objective. We evaluate OSMGraphCLIP across a diverse suite of downstream geospatial regression and classification tasks spanning climate, ecology, socioeconomic indicators, public health, land cover, biodiversity, and wildfire forecasting, and show that structured OSM data alone supports strong global location representations across domains. OSMGraphCLIP matches or exceeds satellite-based baselines on the majority of benchmarks, with the most pronounced advantage on socioeconomic and public-health tasks, where OSM's explicit semantic annotation of the built environment encodes patterns of human activity that satellite pixels can only capture indirectly. On ecological and environmental tasks, the model remains closely competitive with imagery-based methods despite using no Earth observation data. Qualitative analysis confirms that the learned embeddings organize geographic space coherently, recovering biome boundaries, urban gradients, and tropical--temperate distinctions from map topology alone.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="Computer Vision; Machine Learning" />
-  </entry>
-  <entry>
-    <title>Textual Supervision Enhances Geospatial Representations in Vision-Language Models</title>
-    <link href="http://arxiv.org/abs/2606.07172v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.07172v1</id>
-    <published>2026-06-05T00:00:00Z</published>
-    <updated>2026-06-05T00:00:00Z</updated>
-    <author>
-      <name>Marcelo Sartori Locatelli</name>
-    </author>
-    <author>
-      <name>Fernando Tonucci</name>
-    </author>
-    <author>
-      <name>Jea Kwon</name>
-    </author>
-    <author>
-      <name>Luiz Felipe Vecchietti</name>
-    </author>
-    <author>
-      <name>Bryan Nathanael Wijaya</name>
-    </author>
-    <author>
-      <name>Cheng Yaw Low</name>
-    </author>
-    <author>
-      <name>Virgilio Almeida</name>
-    </author>
-    <author>
-      <name>Meeyoung Cha</name>
-    </author>
-    <summary type="text">Geospatial understanding is a critical yet underexplored dimension in the development of machine learning systems for tasks such as image geolocation and spatial reasoning. In this work, we analyze the geospatial representations acquired by three model families: vision-only architectures (e.g., ViT), vision-language models (e.g., CLIP), and large-scale multimodal foundation models (e.g., LLaVA, Qwen, and Gemma). By evaluating across image clusters, including people, landmarks, and everyday objects, grouped based on the degree of localizability, we reveal systematic gaps in spatial accuracy and show that textual supervision enhances the learning of geospatial representations. Our findings suggest the role of language as an effective complementary modality for encoding spatial context and multimodal learning as a key direction for advancing geospatial AI.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICML 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; GeoLoc&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence; cs.CL; Machine Learning" />
-  </entry>
-  <entry>
-    <title>Land cover and flood type govern the detection limits of satellite-based flood mapping across diverse global flood events</title>
-    <link href="http://arxiv.org/abs/2606.07780v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.07780v1</id>
-    <published>2026-06-05T00:00:00Z</published>
-    <updated>2026-06-05T00:00:00Z</updated>
-    <author>
-      <name>Venkatesh Kolluru</name>
-    </author>
-    <author>
-      <name>Rajat Shinde</name>
-    </author>
-    <author>
-      <name>Abdelhak Marouane</name>
-    </author>
-    <author>
-      <name>Caden Helbling</name>
-    </author>
-    <author>
-      <name>Deepak Shah</name>
-    </author>
-    <author>
-      <name>Othneil Drew</name>
-    </author>
-    <author>
-      <name>Iksha Gurung</name>
-    </author>
-    <author>
-      <name>Manil Maskey</name>
-    </author>
-    <author>
-      <name>Rahul Ramachandran</name>
-    </author>
-    <summary type="text">Floods are among the most destructive natural hazards, and their increasing frequency under climate change makes satellite-based inundation mapping essential for disaster response. Geospatial foundation models pretrained on satellite archives offer geographic transferability, but their operational reliability across diverse, unseen events remains uncharacterized. Here we deploy Prithvi-EO-2.0 across 19 out-of-distribution flood events (2017-2025) spanning six continents, eight climate zones, and six flood mechanisms, validating against two independent reference products. Detection accuracy depended jointly on land cover and flood type, with cropland yielding the highest agreement (IoU=52%) and riverine events the strongest detection (F1=0.69), while tree cover and built-up areas showed near-zero detection (IoU=4%) regardless of flood mechanism. Dual-reference validation revealed that apparent model error partly reflects definitional inconsistency between reference products rather than detection failure. Iterative pipeline testing identified 23 failure modes, with pipeline engineering dominating initial error over model capacity. These findings establish environment-dependent detection boundaries for operational satellite flood mapping.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Artificial Intelligence" />
     <category term="Computer Vision; Machine Learning" />
   </entry>

@@ -4,12 +4,36 @@
   <id>https://rspaper.top/output/feed_sar.xml</id>
   <link href="https://rspaper.top/output/feed_sar.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-11T05:25:30Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
+  <updated>2026-06-12T02:09:43Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Free-Placement Optimization of Ground Station Locations for Low-Earth Orbit Satellites</title>
+    <link href="http://arxiv.org/abs/2606.12667v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.12667v1</id>
+    <published>2026-06-10T00:00:00Z</published>
+    <updated>2026-06-10T00:00:00Z</updated>
+    <author>
+      <name>Grace Ra Kim</name>
+    </author>
+    <author>
+      <name>Duncan Eddy</name>
+    </author>
+    <author>
+      <name>Vedant Srinivas</name>
+    </author>
+    <author>
+      <name>Mykel J. Kochenderfer</name>
+    </author>
+    <summary type="text">Rapidly expanding low Earth orbit satellite constellations are placing increasing demands on terrestrial ground networks, motivating the development of more efficient ground station network designs. Current approaches select sites from predefined locations, limiting optimization to existing infrastructure and constraining performance. In contrast, free-placement optimization operates over a continuous spatial domain on Earth, broadening the search space and allowing higher-throughput configurations at the cost of potentially requiring new infrastructure deployment. In this work, we introduce SCORE (Sequential Cyclic Optimization via Refinement &amp; Evaluation), a two-stage free-placement method for ground station design. SCORE combines sequential coordinate selection with cyclic refinement to manage high-dimensionality, non-convexity, and local minima that challenge global optimizers. We benchmark SCORE against one-shot methods such as differential evolution (DE) and integer programming approaches using locations from Kongsberg Satellite Services and the World Teleport Association. Tests across two commercial Earth observation constellations (Capella Space and ICEYE) and one synthetic Walker-Star constellation show that SCORE requires up to 5x fewer function evaluations to converge relative to DE while improving downlink throughput by up to 13%. Compared to fixed-site methods, unconstrained SCORE achieves up to 15% greater total downlink, establishing a strong empirical performance benchmark for flexible placement; infrastructure-constrained SCORE retains over 92% of this gain while restricting placement to within proximity of existing fiber and power infrastructure. We also explore trade-offs between expanding existing stations and deploying new sites, informing future ground network design for operational constellations.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 34 pages, 13 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.NI" />
+    <category term="Artificial Intelligence; eess.SY" />
+  </entry>
   <entry>
     <title>Earth-OneVision: Extending Remote Sensing Multimodal Large Language Models to More Sensor Modalities and Tasks</title>
     <link href="http://arxiv.org/abs/2606.10819v1" rel="alternate" type="text/html" />
