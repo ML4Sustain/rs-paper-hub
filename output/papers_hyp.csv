@@ -7293,3 +7293,10 @@ Method,Computer Vision,,2026-06-09,6,2026,,PF-Trans: Physics-Embedded Frequency-
   year={2026},
   url={http://arxiv.org/abs/2606.10373v1}
 }","Yuzhe Gui, Tianzhu Liu, Yanfeng Gu, Xian Li",,2026-06-10
+Method,Computer Vision,Artificial Intelligence; Machine Learning; Image and Video Processing,2026-06-12,6,2026,,Clay-CNN Hybrids: Leveraging Geospatial Foundation Models as Auxiliary Context for Landslide Detection,,http://arxiv.org/abs/2606.14081v2,"Rapid post-event landslide mapping is essential for disaster response but remains difficult to automate due to extreme class imbalance. This study evaluates whether Clay v1.5, a Geospatial Foundation Model (GFM), can improve pixel-level landslide segmentation on the Landslide4Sense (L4S) benchmark, which contains 3,799 training chips with 14 Sentinel-2 and terrain bands and approximately 2% positive pixels. We compare three strategies: Clay as the primary encoder with multi-scale residual terrain fusion, a U-Net backbone augmented with Clay semantic context at the bottleneck, and a standard U-Net baseline. The hybrid U-Net + Clay model with two-stage Low-Rank Adaptation (LoRA) achieved the best test F1 of 64.5 +/- 1.8% over three seeds, surpassing the Clay-only backbone (55.2 +/- 3.6%) and the U-Net baseline (59.9%). Clay as a standalone encoder underperformed the U-Net due to the absence of multi-scale skip connections, but its pretrained representations consistently improved performance when injected as auxiliary context. These findings suggest that GFMs are most effective for landslide detection when they complement spatially detailed convolutional architectures rather than replace them.",,"9 pages, 7 figures","@article{vu2026claycnn,
+  title={Clay-CNN Hybrids: Leveraging Geospatial Foundation Models as Auxiliary Context for Landslide Detection},
+  author={Huong Binh Vu},
+  journal={arXiv preprint arXiv:2606.14081v2},
+  year={2026},
+  url={http://arxiv.org/abs/2606.14081v2}
+}",Huong Binh Vu,,2026-06-16

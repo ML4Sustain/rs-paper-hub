@@ -4,12 +4,39 @@
   <id>https://rspaper.top/output/feed_agent.xml</id>
   <link href="https://rspaper.top/output/feed_agent.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-15T06:18:44Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
+  <updated>2026-06-16T02:31:20Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Risk-Aware LLM Agents for Geospatial Data Retrieval: Design and Preliminary Adversarial Evaluation</title>
+    <link href="http://arxiv.org/abs/2606.15077v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.15077v1</id>
+    <published>2026-06-13T00:00:00Z</published>
+    <updated>2026-06-13T00:00:00Z</updated>
+    <author>
+      <name>Kyle Gao</name>
+    </author>
+    <author>
+      <name>Joel Cumming</name>
+    </author>
+    <author>
+      <name>Jonathan Li</name>
+    </author>
+    <author>
+      <name>Linlin Xu</name>
+    </author>
+    <author>
+      <name>David A. Clausi</name>
+    </author>
+    <summary type="text">We present an LLM-driven framework for retrieving remote sensing data from cloud-based geospatial catalogues using natural language queries. The system converts user intent into structured API calls, enabling efficient access to satellite imagery and environmental datasets. The architecture integrates three agents: Guardrail for safety and policy enforcement, General-QA for intent interpretation, and Recommender-Analyst for schema-aware API call generation. This coordinated design ensures reliable, semantically aligned interaction with external data services. The modular framework is portable across platforms through API schema substitution and supports applications in environmental monitoring, disaster response, and climate analysis. It establishes a scalable interface between user intent and geospatial infrastructure, enabling streamlined and automated Earth observation workflows. Preliminary experiments under adversarial multi-turn settings show that prompt-level safety instructions improve robustness, although rare high-impact failures persist in API manipulation scenarios and highlight the need for adaptive, system-level defenses that balance safety, usability, and cost efficiency, which motivates the use of our intercept-level Guardrail agent.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ISPRS Congress 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+    <category term="cs.CL" />
+  </entry>
   <entry>
     <title>TerraBench: Can Agents Reason Over Heterogeneous Earth-System Data?</title>
     <link href="http://arxiv.org/abs/2606.13148v1" rel="alternate" type="text/html" />

@@ -4,12 +4,225 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-15T06:18:44Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 25 entries</subtitle>
+  <updated>2026-06-16T02:31:19Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 21 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Hierarchical Fine-Grained Aerial Object Detection</title>
+    <link href="http://arxiv.org/abs/2606.16448v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.16448v1</id>
+    <published>2026-06-15T00:00:00Z</published>
+    <updated>2026-06-15T00:00:00Z</updated>
+    <author>
+      <name>Yan Zhang</name>
+    </author>
+    <author>
+      <name>Fang Xu</name>
+    </author>
+    <author>
+      <name>Wen Yang</name>
+    </author>
+    <author>
+      <name>Gui-Song Xia</name>
+    </author>
+    <summary type="text">Fine-grained aerial object detection, driven by the intrinsic granularity of real-world object categories, is crucial for advanced scene understanding in remote sensing. Existing methods largely inherit the paradigm of coarse-grained object detection, relying solely on single-label supervision and thus struggling to distinguish model-level categories with subtle structural differences. However, for each specific model (e.g., Boeing 787), structured prior knowledge such as attributes and hierarchies offers discriminative semantics across multiple granularities. Motivated by this, we present ExpertDet, a scheme that incorporates expert-informed cues to enhance fine-grained aerial object detection. Specifically, we design Vision-aware Masked Attribute Modeling (VMAM), which aligns attribute semantics with visual structures by reconstructing randomly masked attributes from visual cues, enabling the detector to capture subtle structural distinctions. We further propose Hierarchical Visual Instance Promotion (HierVIP), which builds a visual prototype tree based on hierarchical relations and imposes taxonomy-aware constraints to preserve cross-level semantic continuity while enhancing category discrimination. Moreover, we curate a new fine-grained object detection benchmark for Precise recognition of model-specific Ships and Planes from aerial imagery, PSP, covering 106 ship classes and 30 airplane models, respectively, featuring the most extensive collection of model-specific categories among existing aerial object detection datasets to date. We benchmark state-of-the-art object detection algorithms on the PSP benchmark. Extensive evaluation demonstrates that ExpertDet consistently outperforms other fine-grained competitors across hierarchy levels. The dataset, benchmark, and code are available at https://nnnnerd.github.io/PSP-Benchmark/.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Training-Free Open-Vocabulary Visual Grounding for Remote Sensing Images and Videos</title>
+    <link href="http://arxiv.org/abs/2606.16124v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.16124v1</id>
+    <published>2026-06-15T00:00:00Z</published>
+    <updated>2026-06-15T00:00:00Z</updated>
+    <author>
+      <name>Ke Li</name>
+    </author>
+    <author>
+      <name>Di Wang</name>
+    </author>
+    <author>
+      <name>Yongshan Zhu</name>
+    </author>
+    <author>
+      <name>Ting Wang</name>
+    </author>
+    <author>
+      <name>Weiping Ni</name>
+    </author>
+    <author>
+      <name>Tao Lei</name>
+    </author>
+    <author>
+      <name>Quan Wang</name>
+    </author>
+    <author>
+      <name>Xinbo Gao</name>
+    </author>
+    <summary type="text">Remote sensing visual grounding (RSVG) aims to localize a referred target in a remote sensing image or video according to a natural language expression. Existing RSVG methods usually rely on task-specific manual annotations, which are costly to collect and inevitably limited in covering the diversity of real-world geospatial scenarios. As a result, they often struggle to generalize to open-vocabulary queries involving novel objects, fine-grained attributes, complex spatial relationships, and functional semantics. In this paper, we propose RSVG-ZeroOV, a training-free framework that leverages frozen generic foundation models for zero-shot open-vocabulary RSVG. RSVG-ZeroOV follows an Overview-Focus-Evolve paradigm, which exploits the distinct yet complementary attention patterns of vision-language models (VLMs) and diffusion models (DMs) to progressively generate precise grounding results. Specifically, (i) Overview utilizes a VLM to extract cross-attention maps that capture semantic correlations between the referring expression and visual regions; (ii) Focus leverages the fine-grained modeling priors of a DM to compensate for object structure and shape information often overlooked by VLM attention; and (iii) Evolve introduces a simple yet effective attention evolution module to suppress irrelevant activations, yielding purified object masks. To handle video inputs, we further present Video RSVG-ZeroOV, which extends image-level grounding to spatio-temporal grounding through a query-relevant key-frame selector and a temporal propagator, enabling efficient and temporally coherent video grounding without video annotations or fine-tuning. Extensive experiments on six image and video grounding benchmarks show that RSVG-ZeroOV consistently outperforms existing zero-shot baselines and achieves competitive or superior performance compared with weakly- and fully-supervised methods.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Geospatial sensitivity of transmission-constrained ACOPF to generator retirement</title>
+    <link href="http://arxiv.org/abs/2606.16117v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.16117v1</id>
+    <published>2026-06-15T00:00:00Z</published>
+    <updated>2026-06-15T00:00:00Z</updated>
+    <author>
+      <name>Willa Gutowski</name>
+    </author>
+    <author>
+      <name>Ulyana Shyrokaya</name>
+    </author>
+    <author>
+      <name>Nicholson Koukpaizan</name>
+    </author>
+    <author>
+      <name>Joshua Hambrick</name>
+    </author>
+    <author>
+      <name>Slaven Peles</name>
+    </author>
+    <author>
+      <name>Eve Tsybina</name>
+    </author>
+    <summary type="text">The US faces a growing resource adequacy challenge: new loads are being added at unprecedented scale while aging generating assets are being retired. In transmission-constrained grids, it is difficult to determine which units can be safely retired and which cannot be retired and instead require lifetime extensions until new generation can be built. Historically, this analysis was prohibitively time consuming. Transmission-constrained AC optimal power flow (ACOPF) is computationally intensive, and a thorough comparison and prioritization of generators could require hundreds or thousands of scenarios. We present an HPC-enabled framework that enables computation and geospatial mapping of the effects of generator retirement in terms of voltage magnitude and angle effects in the steady state. Specifically, our framework detects the effects of generator retirement using a simple k-nearest-neighbors model and a voltage-class-adjusted neighbor model. We demonstrate the results on over 8,000 generator retirement scenarios for a 70,000-bus transmission-constrained synthetic grid.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="eess.SY" />
+  </entry>
+  <entry>
+    <title>Intelligent Multimodal Retrieval and Reasoning for Geospatial Knowledge Discovery on the I-GUIDE Platform</title>
+    <link href="http://arxiv.org/abs/2606.15838v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.15838v1</id>
+    <published>2026-06-14T00:00:00Z</published>
+    <updated>2026-06-14T00:00:00Z</updated>
+    <author>
+      <name>Yunfan Kang</name>
+    </author>
+    <author>
+      <name>Erick Li</name>
+    </author>
+    <author>
+      <name>Furqan Baig</name>
+    </author>
+    <author>
+      <name>Wei Hu</name>
+    </author>
+    <author>
+      <name>Alexander Michels</name>
+    </author>
+    <author>
+      <name>Anand Padmanabhan</name>
+    </author>
+    <author>
+      <name>Shaowen Wang</name>
+    </author>
+    <summary type="text">Geospatial knowledge discovery increasingly requires search across heterogeneous artifacts: datasets, maps, notebooks, software, publications, and the provenance links among them. Conventional geoportals support metadata and spatial filtering, but they rarely provide semantic retrieval, graph-aware provenance traversal, and conversational synthesis in one integrated system. This paper presents I-GUIDE Smart Search, a production multimodal geospatial retrieval-augmented generation (RAG) system embedded in the I-GUIDE Platform, and reports on its design, deployment, and evaluation. The system combines production-maintained OpenSearch keyword, vector, and spatial indexes with a Neo4j knowledge graph and an iterative RAG pipeline for memory-aware query augmentation, reasoning, retrieval-method routing, relevance grading, grounded generation, hallucination and relevance checking. In a single-A100 RAG deployment, I-GUIDE Smart Search supports interactive use up to about 100 concurrent simulated users, reaching 4.4 requests per second with p50 latency near 25 seconds despite 20-50 LLM calls per query. For answer quality, we evaluate a four-category benchmark of 170 unique human-filtered user-facing queries, together with ten intent-specific probe sets generated from the deployed indexes and graph. Smart Search improves retrieved evidence coverage and judged answer quality over non-retrieval and naive-RAG baselines, with the clearest gains on exact-identifier, spatially constrained, simple-recommendation, and domain-specific factual queries requiring current indexed evidence. We distill transferable deployment lessons for spatial RAG systems, covering spatial metadata quality, graph provenance, retrieval routing, interface contracts, refusal-aware evaluation, latency-cost tradeoffs, and the role of the user interface in deployed geospatial cyberinfrastructure.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Information Retrieval" />
+  </entry>
+  <entry>
+    <title>Risk-Aware LLM Agents for Geospatial Data Retrieval: Design and Preliminary Adversarial Evaluation</title>
+    <link href="http://arxiv.org/abs/2606.15077v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.15077v1</id>
+    <published>2026-06-13T00:00:00Z</published>
+    <updated>2026-06-13T00:00:00Z</updated>
+    <author>
+      <name>Kyle Gao</name>
+    </author>
+    <author>
+      <name>Joel Cumming</name>
+    </author>
+    <author>
+      <name>Jonathan Li</name>
+    </author>
+    <author>
+      <name>Linlin Xu</name>
+    </author>
+    <author>
+      <name>David A. Clausi</name>
+    </author>
+    <summary type="text">We present an LLM-driven framework for retrieving remote sensing data from cloud-based geospatial catalogues using natural language queries. The system converts user intent into structured API calls, enabling efficient access to satellite imagery and environmental datasets. The architecture integrates three agents: Guardrail for safety and policy enforcement, General-QA for intent interpretation, and Recommender-Analyst for schema-aware API call generation. This coordinated design ensures reliable, semantically aligned interaction with external data services. The modular framework is portable across platforms through API schema substitution and supports applications in environmental monitoring, disaster response, and climate analysis. It establishes a scalable interface between user intent and geospatial infrastructure, enabling streamlined and automated Earth observation workflows. Preliminary experiments under adversarial multi-turn settings show that prompt-level safety instructions improve robustness, although rare high-impact failures persist in API manipulation scenarios and highlight the need for adaptive, system-level defenses that balance safety, usability, and cost efficiency, which motivates the use of our intercept-level Guardrail agent.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ISPRS Congress 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+    <category term="cs.CL" />
+  </entry>
+  <entry>
+    <title>A RAG-Enhanced Bi-Level Cognitive Orchestration Framework for LEO Satellite Networks</title>
+    <link href="http://arxiv.org/abs/2606.15076v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.15076v1</id>
+    <published>2026-06-13T00:00:00Z</published>
+    <updated>2026-06-13T00:00:00Z</updated>
+    <author>
+      <name>Yuhong Jiang</name>
+    </author>
+    <author>
+      <name>Zhishu Shen</name>
+    </author>
+    <author>
+      <name>Tong Yin</name>
+    </author>
+    <author>
+      <name>Qiushi Zheng</name>
+    </author>
+    <author>
+      <name>Yichao Jin</name>
+    </author>
+    <author>
+      <name>Fidan Mehmeti</name>
+    </author>
+    <author>
+      <name>Jiong Jin</name>
+    </author>
+    <summary type="text">The rapid growth of remote sensing data in Low Earth Orbit (LEO) satellite networks is increasingly constrained by limited downlink capacity to terrestrial networks. Satellite edge computing alleviates this pressure by enabling in-orbit data processing. However, it introduces a new challenge of spatio-temporal resource fragmentation. Variations in onboard computing capability, constrained energy availability, and intermittent inter-satellite and satellite-ground connectivity lead to highly dynamic and uneven resource distribution, which degrades the performance of conventional static routing and scheduling approaches. To address this, we propose a Retrieval-Augmented Generation (RAG)-enhanced bi-level cognitive orchestration framework for knowledge-guided, multi-objective scheduling. The proposed framework explicitly decouples network control across two different operational scales: at the strategic upper level, a Large Language Model (LLM) leverages an offline-distilled Expert Knowledge Base (EKB) to dynamically infer preference weights based on a compact abstract-state descriptor of real-time network conditions. At the lower execution level, a fidelity-aware genetic scheduler utilizes these inferred weights to compute physically feasible, collision-free joint routing and task offloading schedules. Extensive evaluations on a high-fidelity Walker-Delta network testbed under mixed-criticality workloads demonstrate that the proposed framework effectively consolidates fragmented resources, achieving a 30.7% reduction in packet loss, a 30% improvement in energy efficiency over the most competitive learning-based baseline, and an 8.5% decrease in end-to-end latency, while maintaining robust performance under cascading node-failure scenarios.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.DC" />
+  </entry>
+  <entry>
+    <title>Multi-Modal Attention for Automated Disaster Damage Assessment Using Remote Sensing Imagery and Deep Learning</title>
+    <link href="http://arxiv.org/abs/2606.14963v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.14963v1</id>
+    <published>2026-06-12T00:00:00Z</published>
+    <updated>2026-06-12T00:00:00Z</updated>
+    <author>
+      <name>Tewodros Syum Gebre</name>
+    </author>
+    <author>
+      <name>Jagrati Talreja</name>
+    </author>
+    <author>
+      <name>Leila Hashemi-Beni</name>
+    </author>
+    <summary type="text">Timely and accurate disaster damage assessment is crucial for effective emergency response, resource allocation, and recovery. Traditional methods, which often rely on manual inspections or sparse data, are typically slow and error-prone. This paper introduces a novel framework leveraging remote sensing imagery and deep learning to automate building damage classification. Using pre- and post-disaster satellite imagery, our model categorizes buildings into four damage levels: no damage, minor damage, major damage, and destroyed. The core innovation is a multi-modal attention mechanism that fuses bi-temporal features to explicitly detect and assess structural changes. We employ a lightweight ConvNeXT-Tiny backbone to ensure efficient processing without compromising performance. Key contributions include: (1) a cross-attention module for multi-modal data fusion, (2) an optimized preprocessing pipeline for large-scale datasets, and (3) robust data augmentation techniques. Experiments on a large-scale disaster dataset demonstrate an overall classification accuracy of 94.90%. The model effectively discriminates between damage categories and remains resilient to incomplete data. This system significantly improves assessment speed and accuracy, aiding emergency responders in prioritizing interventions. This work advances automated disaster damage detection by integrating multi-temporal imagery with deep learning, offering a scalable solution for real-time response.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ISPRS Congress 2026 and the 47th Canadian Symposium on Remote Sensing (CSRS 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Clay-CNN Hybrids: Leveraging Geospatial Foundation Models as Auxiliary Context for Landslide Detection</title>
+    <link href="http://arxiv.org/abs/2606.14081v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.14081v2</id>
+    <published>2026-06-12T00:00:00Z</published>
+    <updated>2026-06-12T00:00:00Z</updated>
+    <author>
+      <name>Huong Binh Vu</name>
+    </author>
+    <summary type="text">Rapid post-event landslide mapping is essential for disaster response but remains difficult to automate due to extreme class imbalance. This study evaluates whether Clay v1.5, a Geospatial Foundation Model (GFM), can improve pixel-level landslide segmentation on the Landslide4Sense (L4S) benchmark, which contains 3,799 training chips with 14 Sentinel-2 and terrain bands and approximately 2% positive pixels. We compare three strategies: Clay as the primary encoder with multi-scale residual terrain fusion, a U-Net backbone augmented with Clay semantic context at the bottleneck, and a standard U-Net baseline. The hybrid U-Net + Clay model with two-stage Low-Rank Adaptation (LoRA) achieved the best test F1 of 64.5 +/- 1.8% over three seeds, surpassing the Clay-only backbone (55.2 +/- 3.6%) and the U-Net baseline (59.9%). Clay as a standalone encoder underperformed the U-Net due to the absence of multi-scale skip connections, but its pretrained representations consistently improved performance when injected as auxiliary context. These findings suggest that GFMs are most effective for landslide detection when they complement spatially detailed convolutional architectures rather than replace them.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence; Machine Learning; Image and Video Processing" />
+  </entry>
   <entry>
     <title>Spectrum Sharing Across Terrestrial and Non-Terrestrial Services in the FR3 Upper Midband</title>
     <link href="http://arxiv.org/abs/2606.13511v1" rel="alternate" type="text/html" />
@@ -495,304 +708,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Machine Learning" />
     <category term="Artificial Intelligence; Computer Vision" />
-  </entry>
-  <entry>
-    <title>COGENT: Continuous Graph Emulators with Neural Ordinary Differential Equations for Long-Term Physical Forecasting</title>
-    <link href="http://arxiv.org/abs/2606.11162v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.11162v1</id>
-    <published>2026-06-09T00:00:00Z</published>
-    <updated>2026-06-09T00:00:00Z</updated>
-    <author>
-      <name>Zesheng Liu</name>
-    </author>
-    <author>
-      <name>Maryam Rahnemoonfar</name>
-    </author>
-    <summary type="text">In this work, we present COGENT, a continuous graph emulator with Neural Ordinary Differential Equations for long-term physical forecasting on irregular geospatial meshes. COGENT encodes a finite history of system states and associated forcing fields and external forcings with a graph-based history encoder, producing node-wise context vectors that capture both local spatial interactions and temporal evolution. These context vectors initialize and condition a latent Neural Ordinary Differential Equation whose dynamics are driven by interpolated future forcings and explicit relative rollout time. By modeling the forecast trajectory as a continuous latent dynamical system, COGENT can generate predictions at arbitrary future times rather than being restricted to a fixed temporal discretization. A residual decoder maps the resulting latent trajectories back to future physical states, enabling direct multi-step forecasting without repeatedly feeding predicted states back into the model. This formulation combines graph-based spatial representation, history-conditioned latent dynamics, and continuous-time rollout in a unified framework for mesh-based physical simulation emulation. In order to stabilize training with long-horizon supervision, we also propose effective rollout-horizon sampling and a progressive rollout-horizon scheduling strategy. We evaluate COGENT on transient ice-sheet simulations generated by the Ice-sheet and Sea-level System Model, demonstrating improved long-range stability over autoregressive graph baselines. These results suggest that continuous graph Neural ODEs provide a promising methodology for scalable physical forecasting on irregular geospatial meshes, particularly in applications that require stable long-horizon predictions and the ability to query system states at arbitrary times.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Earth-OneVision: Extending Remote Sensing Multimodal Large Language Models to More Sensor Modalities and Tasks</title>
-    <link href="http://arxiv.org/abs/2606.10819v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.10819v1</id>
-    <published>2026-06-09T00:00:00Z</published>
-    <updated>2026-06-09T00:00:00Z</updated>
-    <author>
-      <name>Miaoxin Cai</name>
-    </author>
-    <author>
-      <name>Guanqun Wang</name>
-    </author>
-    <author>
-      <name>Wei Zhang</name>
-    </author>
-    <author>
-      <name>Guangyao Zhou</name>
-    </author>
-    <author>
-      <name>Yin Zhuang</name>
-    </author>
-    <author>
-      <name>Tong Zhang</name>
-    </author>
-    <author>
-      <name>Hao Wang</name>
-    </author>
-    <author>
-      <name>He Chen</name>
-    </author>
-    <author>
-      <name>Jun Li</name>
-    </author>
-    <summary type="text">RS-MLLMs enable natural-language understanding and spatial reasoning over earth observation imagery. However, existing models support only a narrow range of sensor types and tasks, yielding a fragmented view of the earth and leaving cross-modal geoscientific knowledge largely unexploited. This work presents Earth-OneVision, a 2B RS-MLLM that unifies six sensor modalities (i.e., optical, SAR, infrared, multispectral, temporal, and video) and cross-sensor fusion across 9 task categories within a single autoregressive framework. Three dedicated mechanisms address three bottlenecks. Full-Granularity Vision-Language Alignment (FGVLA) aligns multi-level visual features with the multi-dimensional language space. Spatial-Linguistic Isomorphic Serialization (SLIS) unifies heterogeneous spatial outputs as autoregressive tokens. Progressive Cross-Modality Adaptation (PCMA) decomposes the compound domain gap into sequential stages, tackling the viewpoint and imaging physics gaps in turn. To support joint training, MMRS-OneVision is constructed with ~34M QA pairs spanning all six sensor modalities and cross-sensor fusion across 9 task categories, substantially exceeding existing RS multimodal instruction datasets. With only 2B parameters, Earth-OneVision achieves competitive or state-of-the-art results across extensive benchmarks, consistently matching or outperforming 4B-72B RS-MLLMs. It achieves 87.52% P@0.5 on the OPT-RSVG testset for optical visual grounding and 80.68% on the SAR VQA benchmark SARLANG-Bench, exceeding 7B models by over 7%. It further achieves 75.74% recall on the BigEarthNet-MS testset for multispectral classification, and 81.94% MCQ accuracy on EarthMind-Bench for cross-modality reasoning.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;VQA;VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Spatially Selective Self-Training for Unsupervised Building Change Detection</title>
-    <link href="http://arxiv.org/abs/2606.10775v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.10775v2</id>
-    <published>2026-06-09T00:00:00Z</published>
-    <updated>2026-06-09T00:00:00Z</updated>
-    <author>
-      <name>Wafaa I. M. Hussin</name>
-    </author>
-    <author>
-      <name>Zhi Lu</name>
-    </author>
-    <author>
-      <name>Anas M. I. Mohammed</name>
-    </author>
-    <author>
-      <name>Xiang Zhou</name>
-    </author>
-    <author>
-      <name>Ratiba A. H. Abubaker</name>
-    </author>
-    <author>
-      <name>Zhenming Peng</name>
-    </author>
-    <summary type="text">Unsupervised building change detection aims to learn building-change masks from unlabeled bi-temporal remote sensing images. Existing label-free methods often follow a discrepancy-to-mask paradigm, directly using temporal differences, frozen foundation-model responses, prompt-based outputs, or post-processing results as final change maps. Although these strategies provide annotation-free cues, they do not learn a task-specific building-change detector and remain vulnerable to the gap between generic temporal discrepancies and building-defined structural changes. In practice, such discrepancies are often noisy and task-irrelevant, as appearance shifts, registration errors, and non-building modifications can produce strong but misleading responses. To address this problem, we propose SST-CD, a spatially selective self-training framework that reformulates fully label-free building change detection as end-to-end detector learning under noisy pseudo supervision.   SST-CD uses temporal discrepancies as candidate pseudo labels and trains the detector only on spatially reliable pixels, whose reliability is estimated by a local consistency criterion that filters inconsistent regions from supervision. To further stabilize noisy self-training, a lightweight feature adapter recalibrates bi-temporal features, while a prototype-based decoder produces compact change and no-change representations. Experiments on LEVIR-CD, WHU-CD, and DSIFN-CD show that SST-CD achieves F1 scores of 83.08\%, 91.69\%, and 86.60\%, respectively, outperforming existing unsupervised and label-free baselines. Code will be made publicly available.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Under Review&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>ZODS-RS -- Zero-training Oriented Detection &amp; Segmentation for Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2606.10769v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.10769v1</id>
-    <published>2026-06-09T00:00:00Z</published>
-    <updated>2026-06-09T00:00:00Z</updated>
-    <author>
-      <name>Zuan Gu</name>
-    </author>
-    <author>
-      <name>Tianhan Gao</name>
-    </author>
-    <author>
-      <name>Langxu Zhao</name>
-    </author>
-    <summary type="text">Remote-sensing and UAV applications need models that generalize across platforms and viewpoints without task-specific training. Yet training-free pipelines often falter on oriented geometry, scale/rotation variation, and crowded ports or airfields, and rarely unify detection and segmentation. We introduce ZODS-RS, a training-free, closed-form pipeline that outputs horizontal boxes (HBB) and instance masks. Built on DINOv3 dense features and SAM-style proposals, ZODS-RS chains: PP (prototype purification via Tyler covariance), R-SEM (rotation-scale equivariant matching with separable kernels and global Hungarian assignment), and UAM (uncertainty-aware pixelwise merging with adaptive priors and optional negative prototypes). A lightweight CWLA fuses multiple DINOv3 layers. On FAIR1M (HBB) we obtain $\mathrm{mAP}_{0.50:0.95}=\mathbf{13.06}$ and $\mathrm{AP}_S=\mathbf{2.93}$ \emph{(class-averaged over ship/airplane)}; on xView (HBB) we report $\mathrm{mAP}=\mathbf{16.69}$. On our UAV dataset, ZODS-RS achieves mask $\mathrm{mIoU}=\mathbf{31.10}$ and improves small-object AP by $\mathbf{+30.70}$ over Grounded-SAM on a single 5090. This work offers a unified, \emph{no-training} solution for horizontal-box detection plus instance segmentation in aerial imagery; provides explicit closed-form formulations for PP/R-SEM/UAM tightly coupled with DINOv3; and demonstrates \emph{consistent} gains on small and crowded targets and under cross-domain shifts while keeping deployment simple.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Vector Map as Language: Toward Unified Remote Sensing Vector Mapping</title>
-    <link href="http://arxiv.org/abs/2606.10701v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.10701v1</id>
-    <published>2026-06-09T00:00:00Z</published>
-    <updated>2026-06-09T00:00:00Z</updated>
-    <author>
-      <name>Yinglong Yan</name>
-    </author>
-    <author>
-      <name>Yunkai Yang</name>
-    </author>
-    <author>
-      <name>Haoyi Wang</name>
-    </author>
-    <author>
-      <name>Wei Fu</name>
-    </author>
-    <author>
-      <name>Linshan Wu</name>
-    </author>
-    <author>
-      <name>Honghu Pan</name>
-    </author>
-    <author>
-      <name>Shaobo Xia</name>
-    </author>
-    <author>
-      <name>Shanghang Zhang</name>
-    </author>
-    <author>
-      <name>Hao Chen</name>
-    </author>
-    <author>
-      <name>Leyuan Fang</name>
-    </author>
-    <summary type="text">Remote sensing vector mapping aims to generate structured maps of geospatial entities, such as buildings, roads, and water bodies, from remote sensing imagery. In practice, vector maps usually contain multiple category layers and heterogeneous entity structures, requiring a unified model for diverse mapping needs. However, existing methods typically represent vector objects as polygons or graphs, making them suitable only for specific categories: polygons poorly capture topological relations, while graphs often blur instance boundaries. We observe that language, as a natural medium for human communication, offers a flexible and expressive representation that can accommodate heterogeneous map elements, including geometry, semantics, and topolog. Motivated by this insight, we propose Vector Map as Language (VecLang), a unified paradigm that reformulates multiclass vector mapping as structured text generation. VecLang encodes the common elements of different geospatial entities into a GeoJSON-like vector language, enabling cross-category modeling within a shared textual format. To generate this language reliably, we design a progressive vision-language mapping framework that first localizes vectorization units and then generates structured map elements. We further introduce Hierarchical Vector Language Optimization, which uses reinforcement learning to improve syntax validity, content fidelity, and map executability. We also build VecMap-Bench with 54K images and 800K instances, supporting training and evaluation across standard and generalization settings. Extensive experiments demonstrate that VecLang handles both single-class and multiclass vector mapping while achieving strong cross-dataset and open-vocabulary generalization. The model and dataset are publicly available at https://github.com/yyyyll0ss/VecLang.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/yyyyll0ss/VecLang"&gt;https://github.com/yyyyll0ss/VecLang&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Certification of Network Quantum Sensing</title>
-    <link href="http://arxiv.org/abs/2606.10700v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.10700v1</id>
-    <published>2026-06-09T00:00:00Z</published>
-    <updated>2026-06-09T00:00:00Z</updated>
-    <author>
-      <name>Matteo Rosati</name>
-    </author>
-    <author>
-      <name>Gabriele Bizzarri</name>
-    </author>
-    <author>
-      <name>Marco Barbieri</name>
-    </author>
-    <summary type="text">The distribution of quantum sensors on quantum networks is a key enabler of quantum technologies in interferometry, gravimetry, timekeeping, biological monitoring, and beyond. Yet, guaranteeing the security of these distributed sensors over noisy, insecure networks remains a formidable challenge. Previous efforts to combine quantum metrology and cryptography have encountered an apparently unavoidable tension, proposing bounds for security which are only loosely tied to the achievable measurement performance.   Here we introduce a quantum remote sensing protocol that can rigorously certify privacy and integrity of the estimation. By employing offline bilateral Pauli-twirling, our approach forces the effective quantum channel into a Bell-diagonal form, independently of the attack. Surprisingly, this also preserves metrological sensitivity without introducing additional experimental overhead. Relying solely on public communication alongside an insecure quantum link, the protocol enables legitimate users to exactly quantify their estimation error relative to an eavesdropper controlling the channels.   We experimentally demonstrate this framework by estimating an optical phase using entangled photons, observing that the users' precision consistently surpasses the eavesdropper's capabilities across a broad parameter regime. By unifying quantum cryptography and metrology, our results provide a practical pathway to achieve simultaneous quantum-limited precision and rigorous information security in real-world quantum networks.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="quant-ph" />
-  </entry>
-  <entry>
-    <title>Post-Quantum Secure Federated DeFi for Inclusive Banking</title>
-    <link href="http://arxiv.org/abs/2606.10658v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.10658v1</id>
-    <published>2026-06-09T00:00:00Z</published>
-    <updated>2026-06-09T00:00:00Z</updated>
-    <author>
-      <name>Swati Sachan</name>
-    </author>
-    <author>
-      <name>Dale Fickett</name>
-    </author>
-    <author>
-      <name>Richard Buchinger</name>
-    </author>
-    <author>
-      <name>Theo Miller</name>
-    </author>
-    <summary type="text">Recent advances in error-corrected qubits have accelerated the timeline for practical quantum computing. It poses a threat to cryptographic primitives used to secure financial systems, government infrastructure, communication networks, and DeFi (Decentralized Finance) ecosystems. This paper introduces a post-quantum secure federated DeFi framework that enables inter-bank collaboration to improve the inclusivity of individuals underserved by local lenders due to limited financial histories. Multiple banks contribute encrypted information batches to a virtual server, where lattice-based Fully Homomorphic Encryption (FHE) enables end-to-end homomorphic computation. The server fuses local data-driven probabilistic assessments, expert beliefs, and verifiable evidence generated by the NASA-IBM Prithvi Geospatial Foundation Model (GFM), in encrypted format. Decentralized technologies are employed to ensure tamper-proof evidence and auditable accountability for all encrypted data exchanges between institutions and the server. The framework is tested on agricultural lending decisions for rural borrowers in Virginia.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.CR" />
-    <category term="Artificial Intelligence; cs.CE; q-fin.CP" />
-  </entry>
-  <entry>
-    <title>Geometric Coastline Localization using Vision-Language Models</title>
-    <link href="http://arxiv.org/abs/2606.10468v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.10468v1</id>
-    <published>2026-06-09T00:00:00Z</published>
-    <updated>2026-06-09T00:00:00Z</updated>
-    <author>
-      <name>Rafia Malik</name>
-    </author>
-    <author>
-      <name>Bernhard Pfahringer</name>
-    </author>
-    <author>
-      <name>Karin Bryan</name>
-    </author>
-    <author>
-      <name>Mark Dickson</name>
-    </author>
-    <author>
-      <name>Eibe Frank</name>
-    </author>
-    <summary type="text">Coastline detection in remote sensing imagery is commonly formulated as a pixel-wise segmentation problem, where the final coastline is extracted from a predicted mask through post-processing. This formulation relegates coastline geometry, the primary representation used in coastal change analysis, to a secondary artifact rather than the learning objective. In practice, coastlines are defined by geomorphic proxies such as vegetation lines, dune toes, or cliff edges, rather than an instantaneous land-water boundary often used in pixel-based segmentation approaches. In this work, we revisit coastline extraction from a representation perspective and formulate the task as geometric boundary localization. We use the New Zealand Coastal Change Dataset (NZCCD) and high-resolution aerial imagery from Land Information New Zealand (LINZ) to develop CoastlineVLM-7B, a vision-language model (VLM) built on the GeoChat-7B/LLaVA-1.5 architecture that jointly performs coastline presence detection, proxy-type classification, and coastline grounding. The model directly predicts a coastline as a polyline rather than a dense segmentation mask. We evaluate CoastlineVLM-7B against segmentation baselines under strict one-pixel boundary supervision. Results show that geometry-based metrics are more suitable for assessing coastline localization quality than pixel-overlap metrics such as Intersection over Union (IoU). CoastlineVLM-7B improves global geometric alignment with reference coastlines, reducing Hausdorff distance from 37.74 m to 31.84 m and Earth Mover's Distance from 21.12 m to 17.32 m. These results indicate that output representation is a critical design choice in coastline extraction, and that geometry-oriented learning, combined with the semantic reasoning capabilities of vision-language models, aligns well with how coastlines are defined and evaluated in operational coastal monitoring.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>PF-Trans: Physics-Embedded Frequency-Aware Transformer for Spectral Reconstruction</title>
-    <link href="http://arxiv.org/abs/2606.10373v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.10373v1</id>
-    <published>2026-06-09T00:00:00Z</published>
-    <updated>2026-06-09T00:00:00Z</updated>
-    <author>
-      <name>Yuzhe Gui</name>
-    </author>
-    <author>
-      <name>Tianzhu Liu</name>
-    </author>
-    <author>
-      <name>Yanfeng Gu</name>
-    </author>
-    <author>
-      <name>Xian Li</name>
-    </author>
-    <summary type="text">Snapshot Broadband Filter Array (BFA) imaging provides high light throughput for spectral reconstruction but introduces severe spectral aliasing due to complex modulation. Current deep learning approaches, limited to spatial denoising, often fail to address the global frequency-specific degradations caused by the mask structure. To address this, we propose a Physics-embedded Frequency-aware Transformer (PF-Trans) for high-fidelity remote sensing spectral reconstruction. Our method explicitly integrates the physical sensing model through mask injection and a gray-scale consistency loss to ensure physical fidelity. Furthermore, we introduce a Dual-domain Block with a parallel Fast Fourier Transform (FFT) branch, enabling the network to perceive and suppress aliasing artifacts in the frequency domain. Extensive experiments on multiple datasets demonstrate that PF-Trans achieves state-of-the-art performance, achieving a Peak Signal-to-Noise Ratio (PSNR) of up to 48.50 dB on the GF-5 Shanghai dataset, significantly outperforming comparison methods.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Building Change Detection in Earthquake: A Multi-Scale Interaction Network and A Change Detection Dataset</title>
-    <link href="http://arxiv.org/abs/2606.10329v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.10329v1</id>
-    <published>2026-06-09T00:00:00Z</published>
-    <updated>2026-06-09T00:00:00Z</updated>
-    <author>
-      <name>Yunlong Liu</name>
-    </author>
-    <author>
-      <name>Zekai Zhang</name>
-    </author>
-    <summary type="text">As one of the most destructive natural disasters, earthquakes have struck many countries around the world in recent years, causing serious economic losses. Change detection (CD) can be applied to post-earthquake damage assessment as it can infer destroyed change regions from multi-temporal remote sensing images. Furthermore, the CD with short imaging interval will better satisfy the needs of the emergency rescues after earthquakes. However, the capability of current methods built on deep neural networks is limited because the dataset with short imaging interval is absent. To meet post-disaster immediate relief, we create a CD dataset, Turkey earthquake CD dataset (TUE-CD), for the evaluation of building damage in the short term after an earthquake. Because of the short acquisition interval of the post-event images, the imaging angle is different for different temporal images, which leads to some side-looking problems. To deal with these challenges, we present a multi-scale feature interaction network (MSI-Net) for efficient interaction between bi-temporal features, as well as mitigating the effect of side-looking problems. Specifically, the proposed MSI-Net consists of joint cross-attention (JCA) modules, multi-scale offset calibration (MOC) modules, and feature integration (FeI) modules. The JCA module unifies channel cross-attention and spatial joint attention for sufficient feature interaction. The MOC module further estimates the offsets to align the bi-temporal image with the multi-scale features. Finally, calibrated features and multi-scale features are fused by FeI modules for the prediction of changed areas. Experiments on the WHU-CD, CLCD, and the constructed TUE-CD dataset indicate that the proposed MSI-Net provides better results than considered state-of-the-art CD methods.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Content-Induced Spatial-Spectral Aggregation Network for Change Detection in Remote Sensing Images</title>
-    <link href="http://arxiv.org/abs/2606.10328v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.10328v1</id>
-    <published>2026-06-09T00:00:00Z</published>
-    <updated>2026-06-09T00:00:00Z</updated>
-    <author>
-      <name>Yunlong Liu</name>
-    </author>
-    <author>
-      <name>Zekai Zhang</name>
-    </author>
-    <summary type="text">The integration of spatial and spectral information is beneficial to the improvement of change detection performance. However, existing methods cannot efficiently suppress the influences of spatial and spectral differences in unchanged areas. To address these issues, in this paper we propose a content-guided spatial-spectral integration network (CSI-Net) for the fusion of global spatial details and spectral difference information. Specifically, the proposed CSI-Net is composed of a spatial reasoning (SR) module, a spectral difference (SD) module, and a content-guided integration (CGI) module. In the SR module, the spatial information is learned by cascaded graph convolution blocks for global modeling. The SD module is responsible for the extraction of spectral features, by calculating the means and variances of features to reduce the impact of spectral differences in unchanged regions. In addition, in order to integrate the spatial-spectral features efficiently, we design a CGI module to further take advantage of their complementary information. In this module, high-level content information is introduced as a guide for a proper interaction. Due to the efficient spatial-spectral fusion, the proposed CSI-Net can learn the changed features better while achieving a suppression of spectral differences. Experimental results on LEVIR-CD, WHU-CD, and CLCD datasets demonstrate that the proposed CSI-Net produces better performance compared to state-of-the-art methods, and is applicable to different scenarios</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Continuous biome representations from Earth observation embeddings</title>
-    <link href="http://arxiv.org/abs/2606.11510v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.11510v1</id>
-    <published>2026-06-09T00:00:00Z</published>
-    <updated>2026-06-09T00:00:00Z</updated>
-    <author>
-      <name>Maxwell B. Joseph</name>
-    </author>
-    <author>
-      <name>Flávia De Souza Mendes</name>
-    </author>
-    <author>
-      <name>Dieu My T. Nguyen</name>
-    </author>
-    <author>
-      <name>Camile Sothe</name>
-    </author>
-    <author>
-      <name>Christopher B. Anderson</name>
-    </author>
-    <summary type="text">Biotic communities vary continuously across space, yet biome maps impose categorical boundaries that compress this variation, particularly at ecotones where transitional communities are ecologically distinct. Could Earth observation (EO) foundation models, which encode spectral, spatial, and temporal information with dense embeddings, convert discrete biome maps into continuous representations that better capture ecological variation? Here, we fit a linear classifier on Clay v1.5 satellite image embeddings to predict biome labels from a categorical map. The softmax output yields a continuous probability vector whose dimensions correspond to named biome classes. We evaluate this approach using six Brazilian biomes, 1.3 million embeddings, and 10,015 withheld forest inventory plots spanning 4,672 plant species. The continuous biome representation outperforms discrete biome labels for predicting species occurrence (mean per-species AUC 0.618 vs. 0.570 across 10 spatial cross-validation folds). Decomposing this gain shows that continuity in the graded probability output, rather than label reassignment, accounts for the improvement; the pattern holds across all distances from biome boundaries. The raw 1024-dimensional embedding remains the strongest predictor we tested (mean AUC 0.646 vs. 0.618), but the continuous representation recovers most of the embedding's gain over discrete labels. This simple approach provides a probabilistic replacement for categorical map labels, preserving their meaning while encoding graded variation that discrete maps suppress.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages, 4 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="q-bio.QM" />
-    <category term="q-bio.PE; Machine Learning (Statistics)" />
   </entry>
 </feed>

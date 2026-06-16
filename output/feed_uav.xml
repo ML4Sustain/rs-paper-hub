@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_uav.xml</id>
   <link href="https://rspaper.top/output/feed_uav.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-15T06:18:44Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
+  <updated>2026-06-16T02:31:20Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 1 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -161,25 +161,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; This manuscript was submitted to the Journal of the European Meteorological Society for review on 4 June 2026&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Atmospheric and Oceanic Physics" />
-  </entry>
-  <entry>
-    <title>ZODS-RS -- Zero-training Oriented Detection &amp; Segmentation for Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2606.10769v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.10769v1</id>
-    <published>2026-06-09T00:00:00Z</published>
-    <updated>2026-06-09T00:00:00Z</updated>
-    <author>
-      <name>Zuan Gu</name>
-    </author>
-    <author>
-      <name>Tianhan Gao</name>
-    </author>
-    <author>
-      <name>Langxu Zhao</name>
-    </author>
-    <summary type="text">Remote-sensing and UAV applications need models that generalize across platforms and viewpoints without task-specific training. Yet training-free pipelines often falter on oriented geometry, scale/rotation variation, and crowded ports or airfields, and rarely unify detection and segmentation. We introduce ZODS-RS, a training-free, closed-form pipeline that outputs horizontal boxes (HBB) and instance masks. Built on DINOv3 dense features and SAM-style proposals, ZODS-RS chains: PP (prototype purification via Tyler covariance), R-SEM (rotation-scale equivariant matching with separable kernels and global Hungarian assignment), and UAM (uncertainty-aware pixelwise merging with adaptive priors and optional negative prototypes). A lightweight CWLA fuses multiple DINOv3 layers. On FAIR1M (HBB) we obtain $\mathrm{mAP}_{0.50:0.95}=\mathbf{13.06}$ and $\mathrm{AP}_S=\mathbf{2.93}$ \emph{(class-averaged over ship/airplane)}; on xView (HBB) we report $\mathrm{mAP}=\mathbf{16.69}$. On our UAV dataset, ZODS-RS achieves mask $\mathrm{mIoU}=\mathbf{31.10}$ and improves small-object AP by $\mathbf{+30.70}$ over Grounded-SAM on a single 5090. This work offers a unified, \emph{no-training} solution for horizontal-box detection plus instance segmentation in aerial imagery; provides explicit closed-form formulations for PP/R-SEM/UAM tightly coupled with DINOv3; and demonstrates \emph{consistent} gains on small and crowded targets and under cross-domain shifts while keeping deployment simple.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>
