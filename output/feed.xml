@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-16T02:31:19Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 21 entries</subtitle>
+  <updated>2026-06-16T06:28:58Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 22 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -96,6 +96,45 @@
     <summary type="text">The US faces a growing resource adequacy challenge: new loads are being added at unprecedented scale while aging generating assets are being retired. In transmission-constrained grids, it is difficult to determine which units can be safely retired and which cannot be retired and instead require lifetime extensions until new generation can be built. Historically, this analysis was prohibitively time consuming. Transmission-constrained AC optimal power flow (ACOPF) is computationally intensive, and a thorough comparison and prioritization of generators could require hundreds or thousands of scenarios. We present an HPC-enabled framework that enables computation and geospatial mapping of the effects of generator retirement in terms of voltage magnitude and angle effects in the steady state. Specifically, our framework detects the effects of generator retirement using a simple k-nearest-neighbors model and a voltage-class-adjusted neighbor model. We demonstrate the results on over 8,000 generator retirement scenarios for a 70,000-bus transmission-constrained synthetic grid.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="eess.SY" />
+  </entry>
+  <entry>
+    <title>FusionRS: A Large-Scale RGB-Infrared Remote Sensing Dataset for Dual-Modal Vision-Language Foundation Models</title>
+    <link href="http://arxiv.org/abs/2606.17020v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.17020v1</id>
+    <published>2026-06-15T00:00:00Z</published>
+    <updated>2026-06-15T00:00:00Z</updated>
+    <author>
+      <name>Jiaju Han</name>
+    </author>
+    <author>
+      <name>Ben Zhang</name>
+    </author>
+    <author>
+      <name>Xuemeng Sun</name>
+    </author>
+    <author>
+      <name>Qike Zhang</name>
+    </author>
+    <author>
+      <name>Yuxian Dong</name>
+    </author>
+    <author>
+      <name>Chengyin Hu</name>
+    </author>
+    <author>
+      <name>Fengyu Zhang</name>
+    </author>
+    <author>
+      <name>Yiwei Wei</name>
+    </author>
+    <author>
+      <name>Jiujiang Guo</name>
+    </author>
+    <summary type="text">Remote sensing vision-language models have advanced Earth observation understanding, but most existing work remains centered on RGB imagery, leaving the complementary information in infrared data underexplored. Infrared images provide distinctive cues, including thermal intensity structures, object boundaries, and illumination-invariant scene features, which can enrich visual-language learning beyond conventional RGB observations. However, a large-scale RGB-infrared-text dataset for remote sensing vision-language modeling is still absent. To address this gap, we introduce FusionRS, the first large-scale RGB-infrared-text dataset designed for dual-modal vision-language learning in remote sensing. FusionRS is constructed by translating diverse public RGB remote sensing images into infrared-style counterparts, forming aligned RGB-IR image pairs. Each pair is associated with conventional scene captions and IR-aware captions that explicitly describe infrared-specific visual properties while preserving semantic content. Based on FusionRS, we train dual-modal vision-language foundation models for RGB-IR joint understanding. We first train CLIP-style models for RGB-IR-text alignment, and then fine-tune generative VLMs for dual-modal RGB-IR captioning. Experiments show that FusionRS improves RGB-IR alignment, infrared-to-text retrieval, and dual-modal captioning over RGB-only and non-IR-aware training settings. Ablation studies further verify that IR-aware captions are crucial for strengthening infrared-language alignment, highlighting the importance of modality-specific textual supervision for more scalable RGB-infrared remote sensing vision-language representation learning.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
   </entry>
   <entry>
     <title>Intelligent Multimodal Retrieval and Reasoning for Geospatial Knowledge Discovery on the I-GUIDE Platform</title>

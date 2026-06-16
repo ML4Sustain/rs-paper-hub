@@ -131801,5 +131801,24 @@
     "_added_date": "2026-06-16",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Artificial Intelligence",
+    "Date": "2026-06-15",
+    "Month": 6,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "FusionRS: A Large-Scale RGB-Infrared Remote Sensing Dataset for Dual-Modal Vision-Language Foundation Models",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2606.17020v1",
+    "Abstract": "Remote sensing vision-language models have advanced Earth observation understanding, but most existing work remains centered on RGB imagery, leaving the complementary information in infrared data underexplored. Infrared images provide distinctive cues, including thermal intensity structures, object boundaries, and illumination-invariant scene features, which can enrich visual-language learning beyond conventional RGB observations. However, a large-scale RGB-infrared-text dataset for remote sensing vision-language modeling is still absent. To address this gap, we introduce FusionRS, the first large-scale RGB-infrared-text dataset designed for dual-modal vision-language learning in remote sensing. FusionRS is constructed by translating diverse public RGB remote sensing images into infrared-style counterparts, forming aligned RGB-IR image pairs. Each pair is associated with conventional scene captions and IR-aware captions that explicitly describe infrared-specific visual properties while preserving semantic content. Based on FusionRS, we train dual-modal vision-language foundation models for RGB-IR joint understanding. We first train CLIP-style models for RGB-IR-text alignment, and then fine-tune generative VLMs for dual-modal RGB-IR captioning. Experiments show that FusionRS improves RGB-IR alignment, infrared-to-text retrieval, and dual-modal captioning over RGB-only and non-IR-aware training settings. Ablation studies further verify that IR-aware captions are crucial for strengthening infrared-language alignment, highlighting the importance of modality-specific textual supervision for more scalable RGB-infrared remote sensing vision-language representation learning.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{han2026fusionrs,\n  title={FusionRS: A Large-Scale RGB-Infrared Remote Sensing Dataset for Dual-Modal Vision-Language Foundation Models},\n  author={Jiaju Han and Ben Zhang and Xuemeng Sun and Qike Zhang and Yuxian Dong and Chengyin Hu and Fengyu Zhang and Yiwei Wei and Jiujiang Guo},\n  journal={arXiv preprint arXiv:2606.17020v1},\n  year={2026},\n  url={http://arxiv.org/abs/2606.17020v1}\n}",
+    "Authors": "Jiaju Han, Ben Zhang, Xuemeng Sun, Qike Zhang, Yuxian Dong, Chengyin Hu, Fengyu Zhang, Yiwei Wei, Jiujiang Guo",
+    "_added_date": "2026-06-16",
+    "Category": "Dataset",
+    "_tasks": "IC"
   }
 ]
