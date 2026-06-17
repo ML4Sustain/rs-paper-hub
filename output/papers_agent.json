@@ -3912,5 +3912,43 @@
     "_added_date": "2026-06-16",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "cs.MA",
+    "Date": "2026-06-15",
+    "Month": 6,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "GeoDisaster: Benchmarking Orchestrated Agents for Operational Disaster Geo-Intelligence",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2606.17246v1",
+    "Abstract": "Remote-sensing vision-language models (RS-VLMs) have advanced Earth-observation analysis toward visual interpretation and instruction-following, yet fall short of operational geo-intelligence, which demands tool-grounded spatial reasoning and structured, evidence-backed decisions. We introduce GeoDisaster, an operational geospatial disaster reasoning benchmark with 2,921 verified instances across 43 question types and five task families: deforestation monitoring, multi-hazard analysis, building-damage assessment, flood-safe routing, and Sentinel-1 SAR flood monitoring. Instances integrate heterogeneous EO/GIS evidence-optical and SAR imagery, raster masks, vector geometries, road networks, and exposure layers-spanning hazard detection, damage assessment, exposure estimation, and diagnostic report generation. Ground-truth answers are grounded in executable geospatial workflows and deterministic consistency checks, removing the need for language-model annotation. We further propose an orchestrated multi-agent framework with 18 disaster-oriented tools, where role-specialized agents coordinate through explicit execution contracts, aligned via Role-Contract Expectation Alignment (RCEA): failure-aware supervised fine-tuning combined with contract-grounded reinforcement learning over dense step-level signals. Experiments show that GeoDisaster challenges existing RS-VLMs and agentic systems, while RCEA improves tool use, evidence grounding, state consistency, and decision generation.",
+    "code": "",
+    "Publication": "28 pages, 11 Figures",
+    "BibTex": "@article{hasan2026geodisaster,\n  title={GeoDisaster: Benchmarking Orchestrated Agents for Operational Disaster Geo-Intelligence},\n  author={Maram Hasan and Aman Verma and Savitra Roy and Hariseetharam Gunduboina and Daksh Jain and Muhammad Haris Khan and Subhasis Chaudhuri and Biplab Banerjee},\n  journal={arXiv preprint arXiv:2606.17246v1},\n  year={2026},\n  url={http://arxiv.org/abs/2606.17246v1}\n}",
+    "Authors": "Maram Hasan, Aman Verma, Savitra Roy, Hariseetharam Gunduboina, Daksh Jain, Muhammad Haris Khan, Subhasis Chaudhuri, Biplab Banerjee",
+    "_added_date": "2026-06-17",
+    "Category": "Method",
+    "_tasks": "VG"
+  },
+  {
+    "Type": "cs.CR",
+    "Subtype": "cs.CL",
+    "Date": "2026-06-13",
+    "Month": 6,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Securing Multi-Agent GIS Systems: Risk Evaluation and Prompt Hardening Optimization",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2606.17092v1",
+    "Abstract": "Agentic systems are increasingly integrated with geographic information systems (GIS), where multi-agent coordination enables complex conversational and spatial analysis but introduces security risks. This work presents a security-oriented framework for risk identification, evaluation, and mitigation in a multi-agent GIS system while maintaining adaptability to broader agentic architectures. We test the agentic system of a commercial geospatial partner while developing a modular state-machine-based orchestration framework that abstracts agent behavior into reusable components. We evaluate robustness using a red-teaming framework with an adaptive attacker LLM and a deterministic judge that produces binary outcomes with supporting rationales across multi-turn attacks. We further improve resilience with a prompt optimization framework that treats prompts as structured signatures and injects adversarial demonstrations, enabling systematic security improvements without degrading task performance.",
+    "code": "",
+    "Publication": "Kyle Gao and Pranavi Kotta contributed equally to this work",
+    "BibTex": "@article{gao2026securing,\n  title={Securing Multi-Agent GIS Systems: Risk Evaluation and Prompt Hardening Optimization},\n  author={Kyle Gao and Pranavi Kotta and Linlin Xu and Jonathan Li and David A. Clausi},\n  journal={arXiv preprint arXiv:2606.17092v1},\n  year={2026},\n  url={http://arxiv.org/abs/2606.17092v1}\n}",
+    "Authors": "Kyle Gao, Pranavi Kotta, Linlin Xu, Jonathan Li, David A. Clausi",
+    "_added_date": "2026-06-17",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]

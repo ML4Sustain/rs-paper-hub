@@ -4,16 +4,81 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-16T06:28:58Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 1 entries</subtitle>
+  <updated>2026-06-17T02:16:28Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
   <entry>
+    <title>A simplified engineering algorithm for collision risk assessment and classification of LEO satellites</title>
+    <link href="http://arxiv.org/abs/2606.17947v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.17947v1</id>
+    <published>2026-06-16T00:00:00Z</published>
+    <updated>2026-06-16T00:00:00Z</updated>
+    <author>
+      <name>Federico Toson</name>
+    </author>
+    <summary type="text">Collision risk in low Earth orbit is now a sustainability constraint, not only a mission-level concern. Current standards (ECSS, NASA) classify risk in discrete per-mission categories and yield no continuous index that can be aggregated across missions or fed into broader sustainability assessments. This paper develops an engineering algorithm in which the expected number of collisions is estimated from the kinetic theory of the debris flux and combined with a severity term to give a continuous, dimensionally consistent risk index. An individual index, weighted by replacement cost, captures the expected loss to the operator; a collective index with homogeneous severity captures the burden imposed on the operational population at the mission altitude band, independent of the mission's own value. Applied with a May 2026 Celestrak snapshot to three cases (ENVISAT, Sentinel-6, Starlink V2 Mini), the collective index exceeds the individual one by over two orders of magnitude for the constellation element: operator-centred assessment understates the collective cost of large constellations. A random sample of 100 LEO satellites, swept over 100 seeds, confirms the asymmetry as structural across the constellation and Earth-observation tiers. The construction is checked internally against a snapshot proxy of the ECOB family (Spearman correlation 0.91 over 103 objects) and externally against published ECOB values for MetOp-A and Sentinel-2, matched within a factor of two. A parametric analysis gives an explicit replacement-cost threshold per altitude band, about one to five million USD across the operational LEO bands, below which any satellite is structurally underestimated by operator-centred frameworks. The index is released as an open MATLAB toolchain and is intended as the orbital component of a multi-domain sustainability assessment.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="astro-ph.EP" />
+    <category term="astro-ph.IM" />
+  </entry>
+  <entry>
+    <title>Heterogeneous SAR-optical fusion for near-real-time land use and land cover mapping under cloud contamination: A novel framework and global benchmark dataset</title>
+    <link href="http://arxiv.org/abs/2606.17713v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.17713v1</id>
+    <published>2026-06-16T00:00:00Z</published>
+    <updated>2026-06-16T00:00:00Z</updated>
+    <author>
+      <name>Jiangong Xu</name>
+    </author>
+    <author>
+      <name>Weibao Xue</name>
+    </author>
+    <author>
+      <name>Xiaoyu Yu</name>
+    </author>
+    <author>
+      <name>Jun Pan</name>
+    </author>
+    <author>
+      <name>Xinlian Lianga</name>
+    </author>
+    <author>
+      <name>Mi Wang</name>
+    </author>
+    <summary type="text">Optical remote sensing imagery is frequently degraded by cloud and cloud-shadow contamination, which limits its reliability for near-real-time land use and land cover (LULC) mapping. Although synthetic aperture radar (SAR) can provide cloud-penetrating structural information, existing SAR-optical fusion methods often assume reliable optical observations and insufficiently address the semantic uncertainty introduced by cloud contamination. To address this issue, we propose CloudLULC-Net, an end-to-end heterogeneous SAR-optical fusion framework that directly predicts LULC maps from cloud-contaminated Sentinel-2 imagery and temporally adjacent Sentinel-1 SAR observations. The proposed network incorporates optical reliability modulation to suppress unreliable optical responses, heterogeneous information adaptive aggregation to model high-order spatial-channel interactions between optical and SAR representations, and a unified semantic mapping transformer to organize fused features in a LULC-oriented latent space. A semantic anchor-guided optimization strategy is further introduced to improve the consistency of intermediate semantic representations. To support this task, we construct CloudLULC-Set, a large-scale benchmark dataset containing 40,223 curated SAR-optical-label triplets with pixel-level LULC annotations across diverse geographic regions and cloud conditions. Experimental results show that CloudLULC-Net achieves an OA of 86.60%, an F1-score of 83.29%, and an mIoU of 73.51%, outperforming representative heterogeneous reconstruction-first and end-to-end SAR-optical mapping methods. Comparisons with existing global LULC products and analyses under different cloud-cover levels further demonstrate the robustness and practical value of CloudLULC-Net for target-date LULC mapping in cloud-prone regions.The project is publicly available at: https://github.com/RSIIPAC/CloudLULC</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/RSIIPAC/CloudLULC"&gt;https://github.com/RSIIPAC/CloudLULC&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Quantum Enchanced Multi-Scale CNN with Bi-directional Mamba for Crop Field Analysis</title>
+    <link href="http://arxiv.org/abs/2606.17222v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.17222v1</id>
+    <published>2026-06-15T00:00:00Z</published>
+    <updated>2026-06-15T00:00:00Z</updated>
+    <author>
+      <name>Mohammad Salman Khan</name>
+    </author>
+    <author>
+      <name>Ehsan Atoofian</name>
+    </author>
+    <author>
+      <name>Saad B. Ahmed</name>
+    </author>
+    <summary type="text">Hyperspectral image (HSI) crop analysis is essential for precision agriculture because it captures rich spectral and spatial information for accurate crop monitoring and assessment. However, HSI classification remains challenging due to high spectral dimensionality, spatial complexity, class imbalance, and limited labeled samples. To address these challenges, this paper proposes a BiSpectral Mamba-based framework that combines multi-scale convolutional feature extraction, spectral attention, bidirectional state-space modeling, and quantum-inspired learning. A multi-scale CNN backbone first extracts hierarchical spatial-spectral representations through feature fusion across multiple resolutions. A spectral attention mechanism then emphasizes informative bands while suppressing redundant and noisy channels. The refined features are processed by a BiSpectral Mamba module that captures long-range dependencies in both forward and backward directions by modeling hyperspectral feature maps as sequential tokens. In addition, class-weighted optimization and feature fusion strategies are incorporated to improve training stability and mitigate class imbalance. Experimental evaluation on the UAVHSI-Crop dataset demonstrates the effectiveness of the proposed framework, achieving an overall accuracy of 84.83%. The results show that integrating convolutional, attention-based, and state-space modeling components enables robust spatial-spectral feature learning for crop classification. The proposed framework also shows potential for broader agricultural and remote sensing applications, including crop disease detection, yield prediction, and soil moisture estimation, while highlighting the effectiveness of structured state-space and quantum-inspired architectures for hyperspectral image analysis.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
     <title>Clay-CNN Hybrids: Leveraging Geospatial Foundation Models as Auxiliary Context for Landslide Detection</title>
-    <link href="http://arxiv.org/abs/2606.14081v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.14081v2</id>
+    <link href="http://arxiv.org/abs/2606.14081v3" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.14081v3</id>
     <published>2026-06-12T00:00:00Z</published>
     <updated>2026-06-12T00:00:00Z</updated>
     <author>

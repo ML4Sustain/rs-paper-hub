@@ -4,12 +4,122 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-16T06:28:58Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 22 entries</subtitle>
+  <updated>2026-06-17T02:16:28Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 23 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Neural Tree Reconstruction for the Open Forest Observatory</title>
+    <link href="http://arxiv.org/abs/2606.18153v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.18153v1</id>
+    <published>2026-06-16T00:00:00Z</published>
+    <updated>2026-06-16T00:00:00Z</updated>
+    <author>
+      <name>Marissa Ramirez de Chanlatte</name>
+    </author>
+    <author>
+      <name>Arjun Rewari</name>
+    </author>
+    <author>
+      <name>Trevor Darrell</name>
+    </author>
+    <author>
+      <name>Derek J. N. Young</name>
+    </author>
+    <summary type="text">The Open Forest Observatory (OFO) is a collaboration across universities and other partners to make low-cost forest mapping accessible to ecologists, land managers, and the general public. The OFO is building both a database of geospatial forest data as well as open-source methods and tools for forest mapping by uncrewed aerial vehicle. Such data are useful for a variety of climate applications including prioritizing reforestation efforts, informing wildfire hazard reduction, and monitoring carbon sequestration. In the current iteration of the OFO's forest map database, 3D tree maps are created using classical structure-from-motion techniques. This approach is prone to artifacts, lacks detail, and has particular difficulty on the forest floor where the input data (overhead imagery) has limited visibility. These reconstruction errors can potentially propagate to the downstream scientific tasks (e.g. a wildfire simulation.) Advances in 3D reconstruction, including methods like Neural Radiance Fields (NeRF), produce higher quality results that are more robust to sparse views and support data-driven priors. We explore ways to incorporate NeRFs into the OFO dataset, outline future work to support even more state-of-the-art 3D vision models, and describe the importance of high-quality 3D reconstructions for forestry applications.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICLR 2024&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>A simplified engineering algorithm for collision risk assessment and classification of LEO satellites</title>
+    <link href="http://arxiv.org/abs/2606.17947v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.17947v1</id>
+    <published>2026-06-16T00:00:00Z</published>
+    <updated>2026-06-16T00:00:00Z</updated>
+    <author>
+      <name>Federico Toson</name>
+    </author>
+    <summary type="text">Collision risk in low Earth orbit is now a sustainability constraint, not only a mission-level concern. Current standards (ECSS, NASA) classify risk in discrete per-mission categories and yield no continuous index that can be aggregated across missions or fed into broader sustainability assessments. This paper develops an engineering algorithm in which the expected number of collisions is estimated from the kinetic theory of the debris flux and combined with a severity term to give a continuous, dimensionally consistent risk index. An individual index, weighted by replacement cost, captures the expected loss to the operator; a collective index with homogeneous severity captures the burden imposed on the operational population at the mission altitude band, independent of the mission's own value. Applied with a May 2026 Celestrak snapshot to three cases (ENVISAT, Sentinel-6, Starlink V2 Mini), the collective index exceeds the individual one by over two orders of magnitude for the constellation element: operator-centred assessment understates the collective cost of large constellations. A random sample of 100 LEO satellites, swept over 100 seeds, confirms the asymmetry as structural across the constellation and Earth-observation tiers. The construction is checked internally against a snapshot proxy of the ECOB family (Spearman correlation 0.91 over 103 objects) and externally against published ECOB values for MetOp-A and Sentinel-2, matched within a factor of two. A parametric analysis gives an explicit replacement-cost threshold per altitude band, about one to five million USD across the operational LEO bands, below which any satellite is structurally underestimated by operator-centred frameworks. The index is released as an open MATLAB toolchain and is intended as the orbital component of a multi-domain sustainability assessment.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="astro-ph.EP" />
+    <category term="astro-ph.IM" />
+  </entry>
+  <entry>
+    <title>Twin-beam advantage in quantum LiDAR under correlated noise</title>
+    <link href="http://arxiv.org/abs/2606.17908v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.17908v1</id>
+    <published>2026-06-16T00:00:00Z</published>
+    <updated>2026-06-16T00:00:00Z</updated>
+    <author>
+      <name>Valeria Cimini</name>
+    </author>
+    <summary type="text">Quantum light promises improved precision in optical remote sensing, but its practical advantage depends critically on whether nonclassical resources remain useful under realistic noise and experimentally accessible detection. This question becomes especially relevant for LiDAR systems, where a quantum advantage has been demonstrated for target detection and joint range-velocity estimation, but mostly under idealized conditions or simple noise models, such as optical loss and thermal background. A key open point is whether entanglement provides an operational advantage when the dominant disturbance is not independent noise, but structured interference across sensing modes. Here, we address this question by studying the joint estimation of target range and velocity with bright two-mode Gaussian probes and homodyne detection, comparing coherent, separable squeezed, and twin-beam states at a fixed resource budget. Our results reveal a hierarchy of quantum resources set by the noise structure: separable squeezing provides a robust advantage over coherent illumination under loss and thermal background, whereas twin-beam probes become superior under correlated jamming when the receiver is adaptively optimized. These results establish correlated noise as the operational regime in which entanglement provides a robustness advantage beyond local squeezing, opening a receiver-aware route to quantum-enhanced LiDAR in realistic and potentially adversarial environments.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
+    <category term="quant-ph" />
+  </entry>
+  <entry>
+    <title>Heterogeneous SAR-optical fusion for near-real-time land use and land cover mapping under cloud contamination: A novel framework and global benchmark dataset</title>
+    <link href="http://arxiv.org/abs/2606.17713v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.17713v1</id>
+    <published>2026-06-16T00:00:00Z</published>
+    <updated>2026-06-16T00:00:00Z</updated>
+    <author>
+      <name>Jiangong Xu</name>
+    </author>
+    <author>
+      <name>Weibao Xue</name>
+    </author>
+    <author>
+      <name>Xiaoyu Yu</name>
+    </author>
+    <author>
+      <name>Jun Pan</name>
+    </author>
+    <author>
+      <name>Xinlian Lianga</name>
+    </author>
+    <author>
+      <name>Mi Wang</name>
+    </author>
+    <summary type="text">Optical remote sensing imagery is frequently degraded by cloud and cloud-shadow contamination, which limits its reliability for near-real-time land use and land cover (LULC) mapping. Although synthetic aperture radar (SAR) can provide cloud-penetrating structural information, existing SAR-optical fusion methods often assume reliable optical observations and insufficiently address the semantic uncertainty introduced by cloud contamination. To address this issue, we propose CloudLULC-Net, an end-to-end heterogeneous SAR-optical fusion framework that directly predicts LULC maps from cloud-contaminated Sentinel-2 imagery and temporally adjacent Sentinel-1 SAR observations. The proposed network incorporates optical reliability modulation to suppress unreliable optical responses, heterogeneous information adaptive aggregation to model high-order spatial-channel interactions between optical and SAR representations, and a unified semantic mapping transformer to organize fused features in a LULC-oriented latent space. A semantic anchor-guided optimization strategy is further introduced to improve the consistency of intermediate semantic representations. To support this task, we construct CloudLULC-Set, a large-scale benchmark dataset containing 40,223 curated SAR-optical-label triplets with pixel-level LULC annotations across diverse geographic regions and cloud conditions. Experimental results show that CloudLULC-Net achieves an OA of 86.60%, an F1-score of 83.29%, and an mIoU of 73.51%, outperforming representative heterogeneous reconstruction-first and end-to-end SAR-optical mapping methods. Comparisons with existing global LULC products and analyses under different cloud-cover levels further demonstrate the robustness and practical value of CloudLULC-Net for target-date LULC mapping in cloud-prone regions.The project is publicly available at: https://github.com/RSIIPAC/CloudLULC</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/RSIIPAC/CloudLULC"&gt;https://github.com/RSIIPAC/CloudLULC&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Geometric Consistency Protocol for Foundation Model Features in Multi-View Satellite Imagery</title>
+    <link href="http://arxiv.org/abs/2606.17564v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.17564v1</id>
+    <published>2026-06-16T00:00:00Z</published>
+    <updated>2026-06-16T00:00:00Z</updated>
+    <author>
+      <name>Qiyan Luo</name>
+    </author>
+    <author>
+      <name>Jie Yang</name>
+    </author>
+    <author>
+      <name>Yingdong Pi</name>
+    </author>
+    <author>
+      <name>Lekang Wen</name>
+    </author>
+    <author>
+      <name>Mi Wang</name>
+    </author>
+    <summary type="text">Standardized evaluation protocols are indispensable for robust benchmarking in remote sensing, particularly as foundation features are increasingly transferred across diverse sensors and complex imaging geometries. In satellite multi-view reconstruction, conventional evaluations relying on unconstrained 2D global matching are often misleading. The Rational Function Model (RFM) and its Rational Polynomial Coefficients (RPC) dictate a curved, height-dependent epipolar geometry that render flat 2D search spaces physically inconsistent. We propose a geometry-faithful and reproducible protocol tailored for the RPC framework. Our approach integrates an RPC-projected 3D consistency metric with a geometry-constrained dense matching proxy, specifically evaluating whether similarity responses remain localized and unique under physically plausible search manifolds. A pivotal finding of our joint reporting strategy is the decoupling of semantic agreement and geometric localization: high cross-view similarity at a projected 3D point does not guarantee reliable matchability in practical inference. Our benchmark demonstrates that incorporating geometric constraints is fundamental to the problem definition in satellite imagery. Furthermore, we show that state-of-the-art 2D backbones remain remarkably competitive against specialized 3D-aware models when subjected to this RPC-consistent evaluation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE International Geoscience and Remote Sensing Symposium(IGARSS 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>Hierarchical Fine-Grained Aerial Object Detection</title>
     <link href="http://arxiv.org/abs/2606.16448v1" rel="alternate" type="text/html" />
@@ -137,6 +247,87 @@
     <category term="Artificial Intelligence" />
   </entry>
   <entry>
+    <title>GeoDisaster: Benchmarking Orchestrated Agents for Operational Disaster Geo-Intelligence</title>
+    <link href="http://arxiv.org/abs/2606.17246v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.17246v1</id>
+    <published>2026-06-15T00:00:00Z</published>
+    <updated>2026-06-15T00:00:00Z</updated>
+    <author>
+      <name>Maram Hasan</name>
+    </author>
+    <author>
+      <name>Aman Verma</name>
+    </author>
+    <author>
+      <name>Savitra Roy</name>
+    </author>
+    <author>
+      <name>Hariseetharam Gunduboina</name>
+    </author>
+    <author>
+      <name>Daksh Jain</name>
+    </author>
+    <author>
+      <name>Muhammad Haris Khan</name>
+    </author>
+    <author>
+      <name>Subhasis Chaudhuri</name>
+    </author>
+    <author>
+      <name>Biplab Banerjee</name>
+    </author>
+    <summary type="text">Remote-sensing vision-language models (RS-VLMs) have advanced Earth-observation analysis toward visual interpretation and instruction-following, yet fall short of operational geo-intelligence, which demands tool-grounded spatial reasoning and structured, evidence-backed decisions. We introduce GeoDisaster, an operational geospatial disaster reasoning benchmark with 2,921 verified instances across 43 question types and five task families: deforestation monitoring, multi-hazard analysis, building-damage assessment, flood-safe routing, and Sentinel-1 SAR flood monitoring. Instances integrate heterogeneous EO/GIS evidence-optical and SAR imagery, raster masks, vector geometries, road networks, and exposure layers-spanning hazard detection, damage assessment, exposure estimation, and diagnostic report generation. Ground-truth answers are grounded in executable geospatial workflows and deterministic consistency checks, removing the need for language-model annotation. We further propose an orchestrated multi-agent framework with 18 disaster-oriented tools, where role-specialized agents coordinate through explicit execution contracts, aligned via Role-Contract Expectation Alignment (RCEA): failure-aware supervised fine-tuning combined with contract-grounded reinforcement learning over dense step-level signals. Experiments show that GeoDisaster challenges existing RS-VLMs and agentic systems, while RCEA improves tool use, evidence grounding, state consistency, and decision generation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 28 pages, 11 Figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="cs.MA" />
+  </entry>
+  <entry>
+    <title>Quantum Enchanced Multi-Scale CNN with Bi-directional Mamba for Crop Field Analysis</title>
+    <link href="http://arxiv.org/abs/2606.17222v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.17222v1</id>
+    <published>2026-06-15T00:00:00Z</published>
+    <updated>2026-06-15T00:00:00Z</updated>
+    <author>
+      <name>Mohammad Salman Khan</name>
+    </author>
+    <author>
+      <name>Ehsan Atoofian</name>
+    </author>
+    <author>
+      <name>Saad B. Ahmed</name>
+    </author>
+    <summary type="text">Hyperspectral image (HSI) crop analysis is essential for precision agriculture because it captures rich spectral and spatial information for accurate crop monitoring and assessment. However, HSI classification remains challenging due to high spectral dimensionality, spatial complexity, class imbalance, and limited labeled samples. To address these challenges, this paper proposes a BiSpectral Mamba-based framework that combines multi-scale convolutional feature extraction, spectral attention, bidirectional state-space modeling, and quantum-inspired learning. A multi-scale CNN backbone first extracts hierarchical spatial-spectral representations through feature fusion across multiple resolutions. A spectral attention mechanism then emphasizes informative bands while suppressing redundant and noisy channels. The refined features are processed by a BiSpectral Mamba module that captures long-range dependencies in both forward and backward directions by modeling hyperspectral feature maps as sequential tokens. In addition, class-weighted optimization and feature fusion strategies are incorporated to improve training stability and mitigate class imbalance. Experimental evaluation on the UAVHSI-Crop dataset demonstrates the effectiveness of the proposed framework, achieving an overall accuracy of 84.83%. The results show that integrating convolutional, attention-based, and state-space modeling components enables robust spatial-spectral feature learning for crop classification. The proposed framework also shows potential for broader agricultural and remote sensing applications, including crop disease detection, yield prediction, and soil moisture estimation, while highlighting the effectiveness of structured state-space and quantum-inspired architectures for hyperspectral image analysis.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Hybrid Ferromagnet-SNSPDs: Single photon induced order-to-disorder transition in ferromagnets coupled to thin film superconductors</title>
+    <link href="http://arxiv.org/abs/2606.17177v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.17177v1</id>
+    <published>2026-06-15T00:00:00Z</published>
+    <updated>2026-06-15T00:00:00Z</updated>
+    <author>
+      <name>Leif Bauer</name>
+    </author>
+    <author>
+      <name>Daien He</name>
+    </author>
+    <author>
+      <name>Sathwik Bharadwaj</name>
+    </author>
+    <author>
+      <name>Zubin Jacob</name>
+    </author>
+    <summary type="text">The development of midwave and longwave infrared single photon detectors is crucial for their emerging applications in spectroscopy, remote sensing, exoplanet detection, and free space quantum communications. However, existing sensors need to be operated at extremely low temperatures (0.08-0.9K) to reduce dark noise and hence require the use of advanced cryogenics such as dilution refrigerators or $^3$He cryogens, significantly limiting applications. Here we propose a vortex-engineering approach based on a hybrid phase transition in a ferromagnet/superconductor bilayer to increase the operating temperature of infrared single photon detectors up to 3.75K. We show that the introduction of a ferromagnetic layer produces a local magnetic field which impedes vortex crossing in the superconductor, reducing dark noise. When a single photon is incident, the photon-induced hotspot causes an order-to-disorder transition in the ferromagnet, leading to a vortex-induced phase transition in the superconducting layer. By engineering the ferromagnet's Curie temperature to be close to the device's operating temperature, single photon sensitivity can be achieved at increased operating temperatures. We predict at midwave/longwave infrared wavelengths (3-14$μ$m) the operating temperature can be raised to 3.25-3.75K, enabling significantly simpler cooling systems.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 11 pages, 6 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cond-mat.supr-con" />
+    <category term="quant-ph" />
+  </entry>
+  <entry>
     <title>Intelligent Multimodal Retrieval and Reasoning for Geospatial Knowledge Discovery on the I-GUIDE Platform</title>
     <link href="http://arxiv.org/abs/2606.15838v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2606.15838v1</id>
@@ -226,6 +417,33 @@
     <category term="cs.DC" />
   </entry>
   <entry>
+    <title>Securing Multi-Agent GIS Systems: Risk Evaluation and Prompt Hardening Optimization</title>
+    <link href="http://arxiv.org/abs/2606.17092v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.17092v1</id>
+    <published>2026-06-13T00:00:00Z</published>
+    <updated>2026-06-13T00:00:00Z</updated>
+    <author>
+      <name>Kyle Gao</name>
+    </author>
+    <author>
+      <name>Pranavi Kotta</name>
+    </author>
+    <author>
+      <name>Linlin Xu</name>
+    </author>
+    <author>
+      <name>Jonathan Li</name>
+    </author>
+    <author>
+      <name>David A. Clausi</name>
+    </author>
+    <summary type="text">Agentic systems are increasingly integrated with geographic information systems (GIS), where multi-agent coordination enables complex conversational and spatial analysis but introduces security risks. This work presents a security-oriented framework for risk identification, evaluation, and mitigation in a multi-agent GIS system while maintaining adaptability to broader agentic architectures. We test the agentic system of a commercial geospatial partner while developing a modular state-machine-based orchestration framework that abstracts agent behavior into reusable components. We evaluate robustness using a red-teaming framework with an adaptive attacker LLM and a deterministic judge that produces binary outcomes with supporting rationales across multi-turn attacks. We further improve resilience with a prompt optimization framework that treats prompts as structured signatures and injects adversarial demonstrations, enabling systematic security improvements without degrading task performance.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Kyle Gao and Pranavi Kotta contributed equally to this work&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.CR" />
+    <category term="cs.CL" />
+  </entry>
+  <entry>
     <title>Multi-Modal Attention for Automated Disaster Damage Assessment Using Remote Sensing Imagery and Deep Learning</title>
     <link href="http://arxiv.org/abs/2606.14963v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2606.14963v1</id>
@@ -249,8 +467,8 @@
   </entry>
   <entry>
     <title>Clay-CNN Hybrids: Leveraging Geospatial Foundation Models as Auxiliary Context for Landslide Detection</title>
-    <link href="http://arxiv.org/abs/2606.14081v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.14081v2</id>
+    <link href="http://arxiv.org/abs/2606.14081v3" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.14081v3</id>
     <published>2026-06-12T00:00:00Z</published>
     <updated>2026-06-12T00:00:00Z</updated>
     <author>
@@ -391,361 +609,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Partitioned Iterative Quantum Scheduling of Satellites for Urgent Disaster Response: Case study of Wildfire</title>
-    <link href="http://arxiv.org/abs/2606.12310v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.12310v1</id>
-    <published>2026-06-10T00:00:00Z</published>
-    <updated>2026-06-10T00:00:00Z</updated>
-    <author>
-      <name>Lucas T. Braydwood</name>
-    </author>
-    <author>
-      <name>Taejin Park</name>
-    </author>
-    <author>
-      <name>Hirofumi Hashimoto</name>
-    </author>
-    <author>
-      <name>Zoe Gonzalez Izquierdo</name>
-    </author>
-    <author>
-      <name>Andrew Michaelis</name>
-    </author>
-    <author>
-      <name>Eleanor Rieffel</name>
-    </author>
-    <author>
-      <name>Shon Grabbe</name>
-    </author>
-    <summary type="text">The standard in Earth-observation tasks today is having near real-time access to surface images in response to changing conditions. For instance, as urban environments interface more with wildlands and wildfires become less predictable, their tracking with satellite resources becomes essential. This requires the coordination of increasingly large constellations of satellites, giving rise to challenging computational problems. With wildfire detection and tracking as a backdrop, we investigate the power of special purpose and novel computing paradigms to tackle the ensuing satellite scheduling problems, making a compelling case for quantum algorithms. We bring quantum scheduling algorithms closer to implementation by examining both the emerging iterative quantum algorithm framework, which comes with analytic guarantees compared to some classical algorithms, and distributed quantum computing methods whose relevance is on the rise as utility-scale problems begin to get solved with quantum computers. Drawing strength from several computing fronts, we develop a distributed/parallelization scheme in conjunction with the quantum algorithm design and apply these techniques to real-world datasets for wildfire detection. While our quantum subprocesses are currently too small to see significant quantum advantage, our results validate the utility of these techniques, and continue forging the path toward distributed quantum computing.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 11 pages, 3 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="quant-ph" />
-  </entry>
-  <entry>
-    <title>Adapting Prithvi-EO for Fallow Detection for Food-Water Nexus: ViT-Adapter Necks and Parameter-Efficient Backbone tuning of Geospatial Foundation Model</title>
-    <link href="http://arxiv.org/abs/2606.12218v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.12218v1</id>
-    <published>2026-06-10T00:00:00Z</published>
-    <updated>2026-06-10T00:00:00Z</updated>
-    <author>
-      <name>Sk Muhammad Asif</name>
-    </author>
-    <author>
-      <name>Orhun Aydin</name>
-    </author>
-    <summary type="text">Understanding spatial distribution of fallow land is important for optimizing the food-water (FW) nexus, given fallowing's role in crop rotation and water conservation. Fallow is a low accuracy class in USDA Cropland Data Layer (CDL). Geospatial foundation model (GFM), Prithvi-EO has shown strong transferability across computer vision tasks. However, its Vision Transformer (ViT) backbone produces features at a single spatial scale that are ill-suited for the multi-scale features required by object detection heads. Existing approaches synthesise multi-scale pyramids through scaling of single stride tokens, sacrificing spatial heterogeneity, and full backbone fine-tuning is computationally prohibitive for GFMs. We evaluate a fallow detection pipeline combining two parameter-efficient fine tuning (PEFT) schemes: Low-Rank Adaptation (LoRA) and a hybrid PEFT, with three neck designs: pseudo multi-scale, Lite ViT-Adapter, and Full ViT-Adapter. Our best configuration, Lite ViT-Adapter with a one-stage head, achieves a mAP@50 of 0.9479 with the Diou loss, suggesting the effectiveness of center-aware localization for irregular fallow field detection. ViT-Adapter free one-stage detection under LoRA improves the adapter-free anchor-based approach by 6.42%, and the best configuration improves baseline adapter-free anchor-based approach by 25.70%. These results demonstrate that lightweight spatial prior fusion and selective backbone unfreezing enable Prithvi-EO to capture local fallow patterns more effectively, outperforming approaches that rely on reshaped single-stride ViT tokens.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, 6 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>The TEAMx Observational Campaign</title>
-    <link href="http://arxiv.org/abs/2606.12152v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.12152v1</id>
-    <published>2026-06-10T00:00:00Z</published>
-    <updated>2026-06-10T00:00:00Z</updated>
-    <author>
-      <name>Manuela Lehner</name>
-    </author>
-    <author>
-      <name>Claudia Acquistapace</name>
-    </author>
-    <author>
-      <name>Marco Arpagaus</name>
-    </author>
-    <author>
-      <name>Timothy P. Banyard</name>
-    </author>
-    <author>
-      <name>Francesco Barbano</name>
-    </author>
-    <author>
-      <name>Kathrin Baumann-Stanzer</name>
-    </author>
-    <author>
-      <name>Christophe Brun</name>
-    </author>
-    <author>
-      <name>Warren R. L. Cairns</name>
-    </author>
-    <author>
-      <name>Charles Chemel</name>
-    </author>
-    <author>
-      <name>Helen E. Dacre</name>
-    </author>
-    <author>
-      <name>Paolo di Girolamo</name>
-    </author>
-    <author>
-      <name>Luca di Liberto</name>
-    </author>
-    <author>
-      <name>Giorgio Doglioni</name>
-    </author>
-    <author>
-      <name>Philipp Gasch</name>
-    </author>
-    <author>
-      <name>Giacomo Gerosa</name>
-    </author>
-    <author>
-      <name>Lorenzo Giovannini</name>
-    </author>
-    <author>
-      <name>Sonja Gisinger</name>
-    </author>
-    <author>
-      <name>Alexander Gohm</name>
-    </author>
-    <author>
-      <name>Jan Handwerker</name>
-    </author>
-    <author>
-      <name>Neil P. Hindley</name>
-    </author>
-    <author>
-      <name>Stefan Kneifel</name>
-    </author>
-    <author>
-      <name>Peter Knippertz</name>
-    </author>
-    <author>
-      <name>Martin Kohler</name>
-    </author>
-    <author>
-      <name>Meinolf Kossmann</name>
-    </author>
-    <author>
-      <name>Stephen Mobbs</name>
-    </author>
-    <author>
-      <name>Andrew Orr</name>
-    </author>
-    <author>
-      <name>Andreas Platis</name>
-    </author>
-    <author>
-      <name>Ian Renfrew</name>
-    </author>
-    <author>
-      <name>Didier Ricard</name>
-    </author>
-    <author>
-      <name>Andrew Ross</name>
-    </author>
-    <author>
-      <name>Harald Saathoff</name>
-    </author>
-    <author>
-      <name>Leopold M. Schlagbauer</name>
-    </author>
-    <author>
-      <name>Stefano Serafin</name>
-    </author>
-    <author>
-      <name>Peter Sheridan</name>
-    </author>
-    <author>
-      <name>Ivana Stiperski</name>
-    </author>
-    <author>
-      <name>Nadia Vendrame</name>
-    </author>
-    <author>
-      <name>Hannes Vogelmann</name>
-    </author>
-    <author>
-      <name>Jutta Vüllers</name>
-    </author>
-    <author>
-      <name>Helen C. Ward</name>
-    </author>
-    <author>
-      <name>Clemens Wastl</name>
-    </author>
-    <author>
-      <name>Stephanie Westerhuis</name>
-    </author>
-    <author>
-      <name>Andreas Wieser</name>
-    </author>
-    <author>
-      <name>Norman Wildmann</name>
-    </author>
-    <author>
-      <name>Günther Zängl</name>
-    </author>
-    <author>
-      <name>Dino Zardi</name>
-    </author>
-    <author>
-      <name>TOC team</name>
-    </author>
-    <author>
-      <name>Mathias W. Rotach</name>
-    </author>
-    <summary type="text">As part of the international research programme TEAMx (multi-scale transport and exchange processes in the atmosphere over mountains - programme and experiment) a one-year long measurement campaign, the TEAMx Observational Campaign (TOC), was conducted between 2024 and 2025 in a north-south transect through the Alps. Building on the dense operational measurement network in the Alps, the TOC was designed to collect long-term atmospheric observations over the highly complex Alpine terrain. During two six-week long Extended Observational Periods, more than 40 research institutions came together to instrument about 30 sites in the four target areas of the TEAMx domain and study different transport processes, from gravity waves to orographic convection, thermally driven flows, and turbulent exchange. In addition to a suite of ground-based in-situ and remote-sensing instruments, observational activities included airborne measurements with up to three research aircraft and multiple UAS. This paper gives an overview of the science goals and the TOC design, together with preliminary analyses that highlight the potential of the collected dataset.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; This manuscript was submitted to the Journal of the European Meteorological Society for review on 4 June 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Atmospheric and Oceanic Physics" />
-  </entry>
-  <entry>
-    <title>Scalable Deep Learning Framework for Global High-Resolution Land Use Reconstruction</title>
-    <link href="http://arxiv.org/abs/2606.11793v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.11793v2</id>
-    <published>2026-06-10T00:00:00Z</published>
-    <updated>2026-06-10T00:00:00Z</updated>
-    <author>
-      <name>Amirpasha Mozaffari</name>
-    </author>
-    <author>
-      <name>Marina Castaño</name>
-    </author>
-    <author>
-      <name>Stefano Materia</name>
-    </author>
-    <author>
-      <name>Etienne Tourigny</name>
-    </author>
-    <author>
-      <name>Oscar Molina-Sedano</name>
-    </author>
-    <author>
-      <name>Jordi Varela-Agrelo</name>
-    </author>
-    <author>
-      <name>Dario Garcia-Gasulla</name>
-    </author>
-    <author>
-      <name>Miguel Castrillo Melguizo</name>
-    </author>
-    <author>
-      <name>Mario Acosta</name>
-    </author>
-    <author>
-      <name>Amanda Duarte</name>
-    </author>
-    <summary type="text">Uncertainty in the terrestrial carbon cycle remains a major constraint in climate projections, partly driven by the uncertainties affecting the land surface representation and variability in Earth system models. To address this limitation, we present a data-driven framework AI4Land, for generating high-resolution historical reconstructions and future projections of key land surface variables. The framework follows a two-phase approach using a U-Net architecture. In the first phase, which is the focus of this work, it reconstructs annual land use and land cover by integrating coarse-resolution scenario data with static geophysical features. In a planned second phase, the resulting high-resolution maps will be used to predict dynamic biophysical variables, particularly leaf area index, at finer temporal scales. Trained on Earth observation data, the models learn to reproduce spatially explicit and physically consistent land surface patterns, extending temporal coverage to periods lacking direct observations. AI4Land was developed and trained on MareNostrum5, demonstrating how GPU-accelerated HPC infrastructure enables global-scale climate AI pipelines. The final product is a suite of open-source emulators designed for real-time coupling with digital twin platforms, such as those developed under the Destination Earth initiative. By delivering realistic and evolving land surface conditions on demand, this work aims to reduce critical uncertainties and improve the predictive power of next-generation climate simulations.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-    <category term="Artificial Intelligence; Atmospheric and Oceanic Physics" />
-  </entry>
-  <entry>
-    <title>Magnitude-Based Features for Multispecies Spatial Data</title>
-    <link href="http://arxiv.org/abs/2606.11775v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.11775v1</id>
-    <published>2026-06-10T00:00:00Z</published>
-    <updated>2026-06-10T00:00:00Z</updated>
-    <author>
-      <name>Julia Sollberger</name>
-    </author>
-    <author>
-      <name>Joshua Bull</name>
-    </author>
-    <author>
-      <name>Sara Kališnik</name>
-    </author>
-    <author>
-      <name>Bernadette Stolz</name>
-    </author>
-    <summary type="text">Multispecies spatial data arise in many applications where interactions between different entities are central to system behaviour, including biomedical imaging, geospatial analysis, and species ecology. Despite their importance, relatively few quantitative tools exist to capture such interactions. In this work, we propose magnitude-based features for the analysis of multispecies spatial data. Magnitude is a real-valued invariant of finite metric spaces that can be interpreted as an effective number of points, incorporating both spatial configuration and scale. We develop global and local magnitude feature vectors and demonstrate their utility on synthetic tumour microenvironment data, and in tissue microarray data from human colorectal cancer samples. Locally, the method identifies distinct neighbourhood types and reveals spatial heterogeneity; in the model, this includes radial patterns associated with different qualitative outcomes of the simulations, while in the real-world data it reflects the importance of tertiary lymphoid structure-like interactions between B and T cell populations. Globally, the approach recovers known classifications of long-term simulation outcomes across parameter regimes in synthetic data, and suggests important roles for CD4+ T cells and CD163+ macrophages in distinguishing patients with favourable Crohn's like reactions from unfavourable diffuse immune infiltration. Together, these results suggest that magnitude-based features provide a powerful and flexible tool for the analysis of multispecies spatial data.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 32 pages, 24 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="math.MG" />
-    <category term="q-bio.QM; Machine Learning (Statistics)" />
-  </entry>
-  <entry>
-    <title>Free-Placement Optimization of Ground Station Locations for Low-Earth Orbit Satellites</title>
-    <link href="http://arxiv.org/abs/2606.12667v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.12667v1</id>
-    <published>2026-06-10T00:00:00Z</published>
-    <updated>2026-06-10T00:00:00Z</updated>
-    <author>
-      <name>Grace Ra Kim</name>
-    </author>
-    <author>
-      <name>Duncan Eddy</name>
-    </author>
-    <author>
-      <name>Vedant Srinivas</name>
-    </author>
-    <author>
-      <name>Mykel J. Kochenderfer</name>
-    </author>
-    <summary type="text">Rapidly expanding low Earth orbit satellite constellations are placing increasing demands on terrestrial ground networks, motivating the development of more efficient ground station network designs. Current approaches select sites from predefined locations, limiting optimization to existing infrastructure and constraining performance. In contrast, free-placement optimization operates over a continuous spatial domain on Earth, broadening the search space and allowing higher-throughput configurations at the cost of potentially requiring new infrastructure deployment. In this work, we introduce SCORE (Sequential Cyclic Optimization via Refinement &amp; Evaluation), a two-stage free-placement method for ground station design. SCORE combines sequential coordinate selection with cyclic refinement to manage high-dimensionality, non-convexity, and local minima that challenge global optimizers. We benchmark SCORE against one-shot methods such as differential evolution (DE) and integer programming approaches using locations from Kongsberg Satellite Services and the World Teleport Association. Tests across two commercial Earth observation constellations (Capella Space and ICEYE) and one synthetic Walker-Star constellation show that SCORE requires up to 5x fewer function evaluations to converge relative to DE while improving downlink throughput by up to 13%. Compared to fixed-site methods, unconstrained SCORE achieves up to 15% greater total downlink, establishing a strong empirical performance benchmark for flexible placement; infrastructure-constrained SCORE retains over 92% of this gain while restricting placement to within proximity of existing fiber and power infrastructure. We also explore trade-offs between expanding existing stations and deploying new sites, informing future ground network design for operational constellations.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 34 pages, 13 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.NI" />
-    <category term="Artificial Intelligence; eess.SY" />
-  </entry>
-  <entry>
-    <title>Quantifying Surface Heterogeneity Across Asteroid (101955) Bennu using Candidate Site Remote Sensing Data</title>
-    <link href="http://arxiv.org/abs/2606.12642v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.12642v1</id>
-    <published>2026-06-10T00:00:00Z</published>
-    <updated>2026-06-10T00:00:00Z</updated>
-    <author>
-      <name>Emma-Catherine Belhadfa</name>
-    </author>
-    <author>
-      <name>Neil E. Bowles</name>
-    </author>
-    <author>
-      <name>Katherine A. Shirley</name>
-    </author>
-    <author>
-      <name>Amy A. Simon</name>
-    </author>
-    <author>
-      <name>Victoria E. Hamilton</name>
-    </author>
-    <author>
-      <name>Hannah H. Kaplan</name>
-    </author>
-    <summary type="text">The OSIRIS-REx mission acquired spatially resolved (2-10 m spot sizes) visible-near infrared (VNIR) and thermal infrared (TIR) spectra across four candidate sampling sites on asteroid (101955) Bennu: Nightingale, Osprey, Sandpiper, and Kingfisher. To quantify heterogeneity across a small body (about 500 m radius) like Bennu, we explore remotely observed spectral data to draw conclusions about the mineralogical composition and key physical processes that drive surface variability. We derive diagnostic band parameters from the OSIRIS-REx Visible and Infrared Spectrometer and the OSIRIS-REx Thermal Emission Spectrometer datasets to quantify compositional and physical variability across sites and assess their mineralogical context. The VNIR spectra exhibit similar overall reflectance shapes but systematic differences in spectral slopes and the 2.74 micron OH absorption. TIR emissivity spectra reveal modest but statistically significant shifts in the Christiansen Feature, silicate stretching, and bending band positions, indicating differences in silicate composition, hydration state, and Mg/Fe relative abundance. Principal component analysis separates each site into distinct clusters in multivariate band-parameter space, whereas K-means clustering identifies intra-site spectral sub-populations. Welch's Analysis of Variance and Hotelling's tests confirm that band-parameter variations between sites are significant. These results reveal that Bennu's surface preserves measurable spectral heterogeneity at 2-10 m scales, with site-to-site variations in hydration indicators and silicate band positions. The spectral properties of Nightingale encompass the full range observed across all four sites, establishing a remote sensing baseline for contextualizing laboratory analyses of the returned sample within Bennu's broader composition diversity and alteration history.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Currently under review at JGR: Planets&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="astro-ph.EP" />
-    <category term="astro-ph.IM; stat.AP" />
-  </entry>
-  <entry>
-    <title>Emerging Flexible Designs for Geospatial Multimodal Foundation Models</title>
-    <link href="http://arxiv.org/abs/2606.12595v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.12595v1</id>
-    <published>2026-06-10T00:00:00Z</published>
-    <updated>2026-06-10T00:00:00Z</updated>
-    <author>
-      <name>Philipe Dias</name>
-    </author>
-    <author>
-      <name>Waqwoya Abebe</name>
-    </author>
-    <author>
-      <name>Abhishek Potnis</name>
-    </author>
-    <author>
-      <name>Aristeidis Tsaris</name>
-    </author>
-    <author>
-      <name>Dan Lu</name>
-    </author>
-    <author>
-      <name>Xiao Wang</name>
-    </author>
-    <author>
-      <name>Dalton Lunga</name>
-    </author>
-    <summary type="text">Foundation models are rapidly transforming Earth observation by enabling scalable pretraining across diverse unlabeled geospatial modalities. However, their architectural diversity ranging from encoder-only to encoder-decoder and masked autoencoding paradigms makes it challenging to assess performance trade offs in a consistent manner. In this work, we present an apples-to-apples comparison of leading FM architectures designed for geospatial multimodal reasoning, with a particular focus on flexibility across varied spectral band configurations. We standardize pretraining using identical self supervised learning objectives and training datasets, and evaluate all models under consistent parameterization on the GEOBench benchmark across classification and segmentation tasks. Our results offer new insights into the design trade-offs between model flexibility, modality alignment, and downstream task performance. By highlighting architectural strengths and limitations under controlled conditions, this study provides practical guidance for building next generation geospatial foundation models capable of robust multimodal reasoning.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-    <category term="Artificial Intelligence; Computer Vision" />
   </entry>
 </feed>

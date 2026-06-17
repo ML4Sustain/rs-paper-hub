@@ -23929,7 +23929,7 @@
     "Institute": "",
     "Title": "Clay-CNN Hybrids: Leveraging Geospatial Foundation Models as Auxiliary Context for Landslide Detection",
     "abbr.": "",
-    "Paper_link": "http://arxiv.org/abs/2606.14081v2",
+    "Paper_link": "http://arxiv.org/abs/2606.14081v3",
     "Abstract": "Rapid post-event landslide mapping is essential for disaster response but remains difficult to automate due to extreme class imbalance. This study evaluates whether Clay v1.5, a Geospatial Foundation Model (GFM), can improve pixel-level landslide segmentation on the Landslide4Sense (L4S) benchmark, which contains 3,799 training chips with 14 Sentinel-2 and terrain bands and approximately 2% positive pixels. We compare three strategies: Clay as the primary encoder with multi-scale residual terrain fusion, a U-Net backbone augmented with Clay semantic context at the bottleneck, and a standard U-Net baseline. The hybrid U-Net + Clay model with two-stage Low-Rank Adaptation (LoRA) achieved the best test F1 of 64.5 +/- 1.8% over three seeds, surpassing the Clay-only backbone (55.2 +/- 3.6%) and the U-Net baseline (59.9%). Clay as a standalone encoder underperformed the U-Net due to the absence of multi-scale skip connections, but its pretrained representations consistently improved performance when injected as auxiliary context. These findings suggest that GFMs are most effective for landslide detection when they complement spatially detailed convolutional architectures rather than replace them.",
     "code": "",
     "Publication": "9 pages, 7 figures",
@@ -23957,5 +23957,24 @@
     "_added_date": "2026-06-16",
     "Category": "Dataset",
     "_tasks": "IC"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "cs.MA",
+    "Date": "2026-06-15",
+    "Month": 6,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "GeoDisaster: Benchmarking Orchestrated Agents for Operational Disaster Geo-Intelligence",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2606.17246v1",
+    "Abstract": "Remote-sensing vision-language models (RS-VLMs) have advanced Earth-observation analysis toward visual interpretation and instruction-following, yet fall short of operational geo-intelligence, which demands tool-grounded spatial reasoning and structured, evidence-backed decisions. We introduce GeoDisaster, an operational geospatial disaster reasoning benchmark with 2,921 verified instances across 43 question types and five task families: deforestation monitoring, multi-hazard analysis, building-damage assessment, flood-safe routing, and Sentinel-1 SAR flood monitoring. Instances integrate heterogeneous EO/GIS evidence-optical and SAR imagery, raster masks, vector geometries, road networks, and exposure layers-spanning hazard detection, damage assessment, exposure estimation, and diagnostic report generation. Ground-truth answers are grounded in executable geospatial workflows and deterministic consistency checks, removing the need for language-model annotation. We further propose an orchestrated multi-agent framework with 18 disaster-oriented tools, where role-specialized agents coordinate through explicit execution contracts, aligned via Role-Contract Expectation Alignment (RCEA): failure-aware supervised fine-tuning combined with contract-grounded reinforcement learning over dense step-level signals. Experiments show that GeoDisaster challenges existing RS-VLMs and agentic systems, while RCEA improves tool use, evidence grounding, state consistency, and decision generation.",
+    "code": "",
+    "Publication": "28 pages, 11 Figures",
+    "BibTex": "@article{hasan2026geodisaster,\n  title={GeoDisaster: Benchmarking Orchestrated Agents for Operational Disaster Geo-Intelligence},\n  author={Maram Hasan and Aman Verma and Savitra Roy and Hariseetharam Gunduboina and Daksh Jain and Muhammad Haris Khan and Subhasis Chaudhuri and Biplab Banerjee},\n  journal={arXiv preprint arXiv:2606.17246v1},\n  year={2026},\n  url={http://arxiv.org/abs/2606.17246v1}\n}",
+    "Authors": "Maram Hasan, Aman Verma, Savitra Roy, Hariseetharam Gunduboina, Daksh Jain, Muhammad Haris Khan, Subhasis Chaudhuri, Biplab Banerjee",
+    "_added_date": "2026-06-17",
+    "Category": "Method",
+    "_tasks": "VG"
   }
 ]
