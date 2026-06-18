@@ -23976,5 +23976,24 @@
     "_added_date": "2026-06-17",
     "Category": "Method",
     "_tasks": "VG"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-06-17",
+    "Month": 6,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "A Unified Framework for Efficient Remote Sensing Visual Question Answering: Adapting Dual, Hybrid, and Encoder-Decoder Architectures",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2606.19277v1",
+    "Abstract": "Visual Question Answering (VQA) in the Remote Sensing (RS) domain presents unique challenges due to the high resolution, multi scale object distribution, and semantic complexity of aerial imagery. While general domain Foundation Models have achieved remarkable success, their direct application to RSVQA is hindered by massive domain shifts and the computationally prohibitive nature of full fine tuning. This study presents a comparative analysis of RS Adapter, a Parameter Efficient Fine Tuning (PEFT) strategy, applied across three distinct Vision Language Model (VLM) architectures: the Dual Encoder CLIP, the Encoder Decoder BLIP, and the Hybrid FLAVA. We introduce a unified architectural surgery pipeline that injects lightweight bottleneck adapters into the attention and MLP layers of frozen backbones, enabling rapid adaptation with less than 5 percent of trainable parameters. Experimental results on the high resolution RSVQA x dataset demonstrate that while all adapted models achieve convergence, the Hybrid FLAVA architecture offers a superior balance of multimodal reasoning and retrieval capabilities compared to its unimodal counterparts. Our findings establish a new baseline for resource efficient VQA in disaster assessment and urban monitoring.",
+    "code": "",
+    "Publication": "IEEE International Geoscience and Remote Sensing Symposium (IGARSS 2026",
+    "BibTex": "@article{agboada2026a,\n  title={A Unified Framework for Efficient Remote Sensing Visual Question Answering: Adapting Dual, Hybrid, and Encoder-Decoder Architectures},\n  author={Timothy Agboada and Shikha Chandel and Yadav Raj Ghimire and Leila Hashemi-Beni},\n  journal={arXiv preprint arXiv:2606.19277v1},\n  year={2026},\n  url={http://arxiv.org/abs/2606.19277v1}\n}",
+    "Authors": "Timothy Agboada, Shikha Chandel, Yadav Raj Ghimire, Leila Hashemi-Beni",
+    "_added_date": "2026-06-18",
+    "Category": "Method",
+    "_tasks": "VQA"
   }
 ]

@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_agent.xml</id>
   <link href="https://rspaper.top/output/feed_agent.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-17T06:05:41Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 5 entries</subtitle>
+  <updated>2026-06-18T02:14:05Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -100,66 +100,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="cs.CR" />
     <category term="cs.CL" />
-  </entry>
-  <entry>
-    <title>TerraBench: Can Agents Reason Over Heterogeneous Earth-System Data?</title>
-    <link href="http://arxiv.org/abs/2606.13148v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.13148v1</id>
-    <published>2026-06-11T00:00:00Z</published>
-    <updated>2026-06-11T00:00:00Z</updated>
-    <author>
-      <name>Dat Tien Nguyen</name>
-    </author>
-    <author>
-      <name>Thao Nguyen</name>
-    </author>
-    <author>
-      <name>Fadillah Adamsyah Maani</name>
-    </author>
-    <author>
-      <name>Huy M. Le</name>
-    </author>
-    <author>
-      <name>Muhammad Umer Sheikh</name>
-    </author>
-    <author>
-      <name>Numan Saeed</name>
-    </author>
-    <author>
-      <name>Muhammad Haris Khan</name>
-    </author>
-    <author>
-      <name>Salman Khan</name>
-    </author>
-    <summary type="text">Climate and environmental decision-making increasingly requires reasoning across heterogeneous inputs, including gridded physical data, satellite imagery, geospatial context, and simulator outputs. Weather and climate foundation models can forecast well, but do not reason interactively in language, while large language models (LLMs) reason in language but cannot operate directly on high-dimensional Earth-system data. As a result, real scientific workflows in Earth-science remain underserved. We introduce TerraBench, a benchmark for grounded Earth-science reasoning, built on TerraAgent, a ReAct-style executable framework that interleaves reasoning, tool calls, and observations to couple LLM planning with scientific tools for environmental retrieval, geospatial processing, simulation, and artifact-backed computation. TerraBench unifies analysis of Earth observation imagery, gridded data, GIS reasoning and simulation in a single executable interface, whereas prior benchmarks isolate these capabilities into narrow individual tasks. It is also the first in this space to pair process-level tool-use metrics with tolerance-aware numeric scoring. The benchmark comprises 403 extensive agentic tasks across three tracks (Fundamentals, Simulator-Grounded, and Document-Grounded Verification) and eight application domains with 24,500 verified execution steps. These results indicate that reliable Earth-science agents must go beyond tool access to coordinate heterogeneous workflows, parameterize tools precisely, and preserve artifact provenance.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>GeoNatureAgent Benchmark: Benchmarking LLM Agents for Environmental Geospatial Analysis Across Frontier and Open-Weight Foundation Models</title>
-    <link href="http://arxiv.org/abs/2606.12821v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.12821v1</id>
-    <published>2026-06-11T00:00:00Z</published>
-    <updated>2026-06-11T00:00:00Z</updated>
-    <author>
-      <name>Gabriel Diaz-Ireland</name>
-    </author>
-    <author>
-      <name>Diego Prieto-Herráez</name>
-    </author>
-    <author>
-      <name>Mario García Peces</name>
-    </author>
-    <author>
-      <name>Javier Velázquez</name>
-    </author>
-    <author>
-      <name>Devika Jain</name>
-    </author>
-    <summary type="text">Environmental scientists spend disproportionate effort on data wrangling rather than analysis, and AI agents that automate geospatial workflows remain unvalidated: no benchmark evaluates agents operating through structured tool calling against real APIs. We introduce the GeoNatureAgent Benchmark, the first benchmark for environmental analysis agents that operate via structured tool calls to a production-style geospatial API. It comprises 93 tasks across 18 categories, covering municipality analysis, multi-turn conversation, spatial reasoning, cross-indicator synthesis, error handling and recovery, ranking, comparison, multilingual understanding, habitat analysis, and task rejection. Tasks are evaluated against an open, self-hostable API serving three environmental indicators across Spain and Portugal via sixteen tools. We evaluate seven LLMs (Claude Sonnet 4, DeepSeek V3.2, GLM-5, Gemini 2.5 Pro, Qwen3-235B, GPT-OSS-120B, Llama 4 Scout) under three temperature-1.0 seeds, reporting capability and per-case cost as orthogonal axes. We find: (1) Claude Sonnet 4 leads at 60.8% +/- 0.8%, followed by DeepSeek V3.2 at 56.3% +/- 3.1%, with no other model above 51%; (2) the cost-accuracy Pareto frontier is occupied mostly by open-weight models, with DeepSeek V3.2 offering 93% of Claude's capability at 11x lower cost ($0.011/case); (3) comparison tasks remain universally unsolved (0% on close-value comparisons), exposing systematic reasoning limits; and (4) structured tool calling against a real API is more discriminative than general-purpose GIS benchmarks, with accuracies 25-35 points lower. We further show extensibility by integrating BigEarthNet V2 land cover for Portugal alongside Spanish CO2 and erosion indicators. The benchmark, harness, and self-hostable API are publicly available.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, 8 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="cs.ET" />
   </entry>
 </feed>
