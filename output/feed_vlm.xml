@@ -4,12 +4,110 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-18T05:51:33Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 9 entries</subtitle>
+  <updated>2026-06-19T02:42:13Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 12 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>PCFootprint: A Large-Scale Dataset and Benchmark for Vectorized Building Footprint Extraction from Aerial LiDAR Point Clouds</title>
+    <link href="http://arxiv.org/abs/2606.20455v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.20455v1</id>
+    <published>2026-06-18T00:00:00Z</published>
+    <updated>2026-06-18T00:00:00Z</updated>
+    <author>
+      <name>Haoyuan Shen</name>
+    </author>
+    <author>
+      <name>Kuihao Wang</name>
+    </author>
+    <author>
+      <name>Ruisheng Wang</name>
+    </author>
+    <author>
+      <name>Yujun Liu</name>
+    </author>
+    <summary type="text">Building footprint extraction is a fundamental task in photogrammetry, remote sensing, and computer vision. Recent image-based methods have achieved remarkable progress in extracting vectorized footprints from high-resolution optical imagery. However, optical imagery inherently susceptible to occlusions, perspective distortions, and residual relief displacement, yielding incomplete or misaligned footprint extraction. Furthermore, the lack of explicit elevation information limits its direct applicability to Level of Detail building modeling. In this paper, we present PCFootprint, the first large-scale public dataset for footprint extraction from airborne laser scanning point clouds. PCFootprint comprises \num{33000} tiles derived from the Estonian Land and Spatial Development Board, covering diverse urban and rural landscapes. Each tile spans \qtyproduct{128 x 128}{\m} with systematically aligned vectorized footprints aligned to point clouds. The dataset includes a \num{3000} tiles cross-domain test set for evaluating generalization across geographic regions. We establish comprehensive benchmarks by evaluating mainstream methods. Experimental results reveal significant challenges including high intra-class variance, data imbalance, and noise across complex geospatial environments. We believe PCFootprint will advance future research in building modeling, urban scene understanding, and geospatial analysis. The PCFootprint dataset is publicly available at \url{https://huggingface.co/datasets/Haoyuan-Shen/PCFootprint}.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://huggingface.co/datasets/Haoyuan-Shen/PCFootprint"&gt;https://huggingface.co/datasets/Haoyuan-Shen/PCFootprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 14 pages, 9 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Evaluating and Enhancing Negation Comprehension in Remote Sensing MLLMs</title>
+    <link href="http://arxiv.org/abs/2606.20177v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.20177v1</id>
+    <published>2026-06-18T00:00:00Z</published>
+    <updated>2026-06-18T00:00:00Z</updated>
+    <author>
+      <name>Haochen Han</name>
+    </author>
+    <author>
+      <name>Jue Wang</name>
+    </author>
+    <author>
+      <name>Alex Jinpeng Wang</name>
+    </author>
+    <author>
+      <name>Fangming Liu</name>
+    </author>
+    <summary type="text">Multimodal Large Language Models (MLLMs) have demonstrated remarkable success in various Remote Sensing (RS) tasks. However, their ability to comprehend negation remains underexplored, limiting deployment in real-world applications where models must explicitly identify what is false or absent, e.g., emergency responders need to locate non-flooded routes for evacuation. To comprehensively study this limitation, we introduce RS-Neg, the first benchmark to evaluate negation understanding across region-level to scene-level tasks. Specifically, we design an automated data generation pipeline for RS imagery, using LLMs to synthesize diverse negation queries, and introduce a dynamic visual focus module for verification. Our evaluation reveals that advanced RS MLLMs struggle with negation, exhibiting hallucinations and substantial performance degradation. To close this gap, we propose NeFo, a novel test-time learning method that explicitly incorporates the logical role of negation into the model optimization. Remarkably, using about 5\% unlabeled test samples, NeFo significantly improves the negation understanding of models and shows strong generalization to unseen tasks. Code and data will be released upon acceptance.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ECCV 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Multi-Modal Contrastive Learning for Implicit Earth Embeddings via Location Tying</title>
+    <link href="http://arxiv.org/abs/2606.20167v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.20167v1</id>
+    <published>2026-06-18T00:00:00Z</published>
+    <updated>2026-06-18T00:00:00Z</updated>
+    <author>
+      <name>Jonathan Hecht</name>
+    </author>
+    <author>
+      <name>Lukas Arzoumanidis</name>
+    </author>
+    <author>
+      <name>Ziyue Li</name>
+    </author>
+    <author>
+      <name>Youness Dehbi</name>
+    </author>
+    <summary type="text">Spatial prediction tasks are often limited by a lack of high-quality labelled ground-truth observations. To overcome this challenge, self-supervised pre-training is a possible solution, with contrastive learning dominant for location encoders. Those approaches usually align geographic coordinates with just one additional modality. We propose two multimodal contrastive learning architectures: Multimodal Embedding via Location Tying (MELT) and Sequential Alternating Location Training (SALT). These architectures expand this framework beyond two modalities by utilising unpaired geospatial data. Both methods are technically viable and match the performance of the strongest two-modality baseline (SATCLIP) across four downstream tasks. However, increasing the number of modalities does not consistently improve performance, suggesting that the chosen location encoder is the main limitation - the contrastive objective reaches its peak early, regardless of modality diversity or pre-training volume. MELT provides more stable training than SALT and presents a stronger foundation for future scaling.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>ReA-OVCD: Reliability-Aware Open-Vocabulary Change Detection via Semantic and Spatial Refinement</title>
+    <link href="http://arxiv.org/abs/2606.20032v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.20032v1</id>
+    <published>2026-06-18T00:00:00Z</published>
+    <updated>2026-06-18T00:00:00Z</updated>
+    <author>
+      <name>Hongming Zhu</name>
+    </author>
+    <author>
+      <name>Huaji Chen</name>
+    </author>
+    <author>
+      <name>Bowen Du</name>
+    </author>
+    <author>
+      <name>Sicong Liu</name>
+    </author>
+    <author>
+      <name>Qin Liu</name>
+    </author>
+    <summary type="text">Unlike traditional remote sensing change detection that relies on predefined categories, Open-Vocabulary Change Detection (OVCD) identifies land cover changes flexibly using arbitrary text prompts. However, existing methods suffer from an inherent trade-off when modeling changes: instance-level comparison overlooks fine-grained semantic variations (e.g., partial building extensions), while direct pixel comparison proves unreliable, yielding unstable responses and boundary artifacts due to semantic ambiguity and spatial inconsistency. To this end, we propose an efficient training-free Reliability-Aware Open-Vocabulary Change Detection (ReA-OVCD) framework. It first derives candidate change regions from pixel-wise semantic discrepancies to ensure flexible and detailed localization. To ensure reliability, it subsequently introduces a collaborative refinement strategy to explicitly model change validity from both semantic and spatial perspectives. Specifically, we develop a Semantic Change Reasoning (SCR) module that reassesses changes by jointly analyzing distributional divergence and response variation, enabling the suppression of incidental inconsistencies while preserving reliable semantic shifts. In addition, a Boundary-aware Change Refinement (BCR) module is designed to mitigate artifacts stemming from boundary misalignment and uncertainty through validating whether candidate regions are supported by reliable interior pixels. Extensive experiments across multiple datasets (LEVIR-CD, WHU-CD, DSIFN, and SECOND) demonstrate that our method consistently outperforms state-of-the-art approaches, achieving $\mathrm{F}_{1}^{C}$ improvements of 2.13\% to 9.75\% with higher computational efficiency. The code is publicly available at \https://github.com/Funny0101/ReA-OVCD</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Funny0101/ReA-OVCD"&gt;https://github.com/Funny0101/ReA-OVCD&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>A Unified Framework for Efficient Remote Sensing Visual Question Answering: Adapting Dual, Hybrid, and Encoder-Decoder Architectures</title>
     <link href="http://arxiv.org/abs/2606.19277v1" rel="alternate" type="text/html" />
@@ -257,20 +355,5 @@
     <summary type="text">The rapid growth of remote sensing data in Low Earth Orbit (LEO) satellite networks is increasingly constrained by limited downlink capacity to terrestrial networks. Satellite edge computing alleviates this pressure by enabling in-orbit data processing. However, it introduces a new challenge of spatio-temporal resource fragmentation. Variations in onboard computing capability, constrained energy availability, and intermittent inter-satellite and satellite-ground connectivity lead to highly dynamic and uneven resource distribution, which degrades the performance of conventional static routing and scheduling approaches. To address this, we propose a Retrieval-Augmented Generation (RAG)-enhanced bi-level cognitive orchestration framework for knowledge-guided, multi-objective scheduling. The proposed framework explicitly decouples network control across two different operational scales: at the strategic upper level, a Large Language Model (LLM) leverages an offline-distilled Expert Knowledge Base (EKB) to dynamically infer preference weights based on a compact abstract-state descriptor of real-time network conditions. At the lower execution level, a fidelity-aware genetic scheduler utilizes these inferred weights to compute physically feasible, collision-free joint routing and task offloading schedules. Extensive evaluations on a high-fidelity Walker-Delta network testbed under mixed-criticality workloads demonstrate that the proposed framework effectively consolidates fragmented resources, achieving a 30.7% reduction in packet loss, a 30% improvement in energy efficiency over the most competitive learning-based baseline, and an 8.5% decrease in end-to-end latency, while maintaining robust performance under cascading node-failure scenarios.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="cs.DC" />
-  </entry>
-  <entry>
-    <title>Clay-CNN Hybrids: Leveraging Geospatial Foundation Models as Auxiliary Context for Landslide Detection</title>
-    <link href="http://arxiv.org/abs/2606.14081v3" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.14081v3</id>
-    <published>2026-06-12T00:00:00Z</published>
-    <updated>2026-06-12T00:00:00Z</updated>
-    <author>
-      <name>Huong Binh Vu</name>
-    </author>
-    <summary type="text">Rapid post-event landslide mapping is essential for disaster response but remains difficult to automate due to extreme class imbalance. This study evaluates whether Clay v1.5, a Geospatial Foundation Model (GFM), can improve pixel-level landslide segmentation on the Landslide4Sense (L4S) benchmark, which contains 3,799 training chips with 14 Sentinel-2 and terrain bands and approximately 2% positive pixels. We compare three strategies: Clay as the primary encoder with multi-scale residual terrain fusion, a U-Net backbone augmented with Clay semantic context at the bottleneck, and a standard U-Net baseline. The hybrid U-Net + Clay model with two-stage Low-Rank Adaptation (LoRA) achieved the best test F1 of 64.5 +/- 1.8% over three seeds, surpassing the Clay-only backbone (55.2 +/- 3.6%) and the U-Net baseline (59.9%). Clay as a standalone encoder underperformed the U-Net due to the absence of multi-scale skip connections, but its pretrained representations consistently improved performance when injected as auxiliary context. These findings suggest that GFMs are most effective for landslide detection when they complement spatially detailed convolutional architectures rather than replace them.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 pages, 7 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence; Machine Learning; Image and Video Processing" />
   </entry>
 </feed>
