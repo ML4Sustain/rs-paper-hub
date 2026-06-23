@@ -4,12 +4,347 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-23T01:57:36Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 12 entries</subtitle>
+  <updated>2026-06-23T04:56:30Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 23 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Hedgementation = Hedgerow Segmentation: A Remote Sensing Benchmark</title>
+    <link href="http://arxiv.org/abs/2606.23615v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.23615v1</id>
+    <published>2026-06-22T00:00:00Z</published>
+    <updated>2026-06-22T00:00:00Z</updated>
+    <author>
+      <name>Nathan Senyard</name>
+    </author>
+    <author>
+      <name>Salem Hamdani</name>
+    </author>
+    <author>
+      <name>Astrid Zhang</name>
+    </author>
+    <author>
+      <name>Derek Wang</name>
+    </author>
+    <author>
+      <name>Evan Shelhamer</name>
+    </author>
+    <author>
+      <name>Mathias Lécuyer</name>
+    </author>
+    <author>
+      <name>Joséphine Gantois</name>
+    </author>
+    <summary type="text">We propose Hedgementation: a new benchmark to evaluate machine learning models for hedgerow mapping from remote sensing data at country scale and 10m$^2$ spatial resolution. We combine and harmonize multiple remote sensing data products and ground truth labels sourced from a hedgerow inventory in France. We measure the ability of three baseline models to generalize across spatial distance, and across climatic zones, a more explicitly challenging task. Our benchmark tests both supervised and self-supervised learning approaches for remote sensing, applied to tracking fine-scale features of high agricultural importance. The code to reproduce the benchmark and baselines results is available at https://github.com/hedgementation/hedgementation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/hedgementation/hedgementation"&gt;https://github.com/hedgementation/hedgementation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>AwakeForest: An Interactive Geospatial Platform for Large-Scale Forest Imagery</title>
+    <link href="http://arxiv.org/abs/2606.23542v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.23542v1</id>
+    <published>2026-06-22T00:00:00Z</published>
+    <updated>2026-06-22T00:00:00Z</updated>
+    <author>
+      <name>Suraj Prasai</name>
+    </author>
+    <author>
+      <name>Kangning Cui</name>
+    </author>
+    <author>
+      <name>Rongkun Zhu</name>
+    </author>
+    <author>
+      <name>Sarra Alqahtani</name>
+    </author>
+    <author>
+      <name>Ying Zhang</name>
+    </author>
+    <author>
+      <name>Victor Paul Pauca</name>
+    </author>
+    <author>
+      <name>Miles R. Silman</name>
+    </author>
+    <author>
+      <name>Fan Yang</name>
+    </author>
+    <summary type="text">Forest imagery analysis often involves multiple tightly coupled vision tasks, which must be performed under substantial variation in geographic regions, sensors, and acquisition conditions. However, practitioners often lack a unified tool that is geospatial-native, cloud-optimized, and ML-integrated for end-to-end workflows spanning annotation, prediction, visualization, and downstream analysis at scale. We present AwakeForest, an interactive end-to-end platform designed for large-scale forest imagery that integrates model-assisted inference, automatic annotation, and human-in-the-loop refinement within a single workflow. Our platform supports plug-and-play integration of pretrained models and enables scalable interaction with forest imagery ranging from standard aerial scenes to large orthomosaics that can span several gigabytes to hundreds of gigabytes. AwakeForest produces analysis-ready outputs that can be directly used for downstream analysis and to support iterative model and annotation updates on new scenes. We demonstrate the system on the PALMS dataset and illustrate how AwakeForest supports an end-to-end workflow for practical forest management and analysis.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="cs.SE" />
+  </entry>
+  <entry>
+    <title>UniverSat: Resolution- and Modality-Agnostic Transformers for Earth Observation</title>
+    <link href="http://arxiv.org/abs/2606.23503v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.23503v1</id>
+    <published>2026-06-22T00:00:00Z</published>
+    <updated>2026-06-22T00:00:00Z</updated>
+    <author>
+      <name>Yohann Perron</name>
+    </author>
+    <author>
+      <name>Guillaume Astruc</name>
+    </author>
+    <author>
+      <name>Nicolas Gonthier</name>
+    </author>
+    <author>
+      <name>Clement Mallet</name>
+    </author>
+    <author>
+      <name>Loic Landrieu</name>
+    </author>
+    <summary type="text">Vision Transformers (ViT) dominate computer vision. However, their reliance on rigid patch projectors hinders transfer to Earth Observation (EO), where input modalities, scales, and resolutions vary widely. We introduce UniverSat, a ViT-style backbone built around a Universal Patch Encoder that maps patches from arbitrary spatial, spectral, and temporal resolutions, and from both optical and non-optical sensors, into a shared embedding space with a shared set of weights. This enables training a single model on heterogeneous multimodal corpora via self-supervision, yielding robust, sensor-agnostic spatial features. We validate this approach with strong results across classification and segmentation on standard EO benchmarks from GeoBench, PANGEABench, and SpectralEarth. Our code and models are available at https://github.com/gastruc/UniverSat.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/gastruc/UniverSat"&gt;https://github.com/gastruc/UniverSat&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Changing Modalities: Adapting Remote Sensing Models to New Satellites and Sensors</title>
+    <link href="http://arxiv.org/abs/2606.23356v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.23356v1</id>
+    <published>2026-06-22T00:00:00Z</published>
+    <updated>2026-06-22T00:00:00Z</updated>
+    <author>
+      <name>Tim G. Zhou</name>
+    </author>
+    <author>
+      <name>Anthony Fuller</name>
+    </author>
+    <author>
+      <name>Geoff Pleiss</name>
+    </author>
+    <author>
+      <name>Evan Shelhamer</name>
+    </author>
+    <summary type="text">Machine learning models for remote sensing are trained and deployed on a static set of modalities. However, as we equip newer satellites with novel sensors and retire old ones, practitioners may wish to deploy an existing model on a substitution, superset, or subset of modalities with minimal retraining given data availability or practical computational constraints. We study the setting of updating existing models to changing modalities and identify three main scenarios: Modality Transfer (substitution), Addition (superset), and Peeking (subset). We propose DeluluNet, an architecture with modular components for all three changing modality scenarios. DeluluNet is trained end-to-end, learning a multi-modal model from a unimodal teacher and unlabeled multimodal data via modality hallucination--predicting missing modality representations from those that are present. As a result, DeluluNet can keep predicting even when input modalities change, providing a practical alternative to re-labeling and re-training in a changing world.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 17 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Satellite Mission Planning with Rydberg Atoms</title>
+    <link href="http://arxiv.org/abs/2606.23045v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.23045v1</id>
+    <published>2026-06-22T00:00:00Z</published>
+    <updated>2026-06-22T00:00:00Z</updated>
+    <author>
+      <name>Michel Nowak</name>
+    </author>
+    <author>
+      <name>Benjamin Marchand</name>
+    </author>
+    <author>
+      <name>Yassine Naghmouchi</name>
+    </author>
+    <author>
+      <name>Serge Rainjonneau</name>
+    </author>
+    <author>
+      <name>Wesley Coelho</name>
+    </author>
+    <author>
+      <name>Louis Vignoli</name>
+    </author>
+    <author>
+      <name>Louis-Paul Henry</name>
+    </author>
+    <summary type="text">Quantum computers relying on cold atoms are being built and promise a high flexibility in the way information in encoded into the physical system. In particular, the analog mode is spiking interest in the field of optimization as a classically intractable number of configurations can be tackled. In this work, we investigate a problem that requires every-day scheduling of critical tasks involving a large number of actors. Namely, fixing the planning for a Earth Observation satellite fleet composed of several of units exposed to a high density of targets to be scanned. We explore numerical schemes that convert the formulated problem into a cold-atoms friendly setup. We begin by a naive formulation of the Satellite Mission Planning problem without taking account for the agility of the satellites. We then extend the problem to take it into account based on the literature. By formulating the planning problem as a Maximum Independent Set problem, we are able to solve the problem with a QPU based on Rydberg atoms. We explore two ways of solving the MIS problem on the QPU, one relying on the graphs and on the Quadratic Unconstrained Binary Optimization Framework (QUBO). We show that the QUBO methodology is the most relevant and explore it more deeply with numerical experiments. We conclude on the potential utility of using a QPU to solve the Satellite Mission Planning problem in an operational context.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="quant-ph" />
+  </entry>
+  <entry>
+    <title>Low-threshold efficient N${_2^+}$ lasing driven by sub-cycle soliton dynamics in a hollow waveguide</title>
+    <link href="http://arxiv.org/abs/2606.22857v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.22857v1</id>
+    <published>2026-06-22T00:00:00Z</published>
+    <updated>2026-06-22T00:00:00Z</updated>
+    <author>
+      <name>Tiandao Chen</name>
+    </author>
+    <author>
+      <name>Zhiyuan Huang</name>
+    </author>
+    <author>
+      <name>Jinyu Pan</name>
+    </author>
+    <author>
+      <name>Donghan Liu</name>
+    </author>
+    <author>
+      <name>Pengtao Wang</name>
+    </author>
+    <author>
+      <name>Xinglin Zeng</name>
+    </author>
+    <author>
+      <name>Jinxin Zhan</name>
+    </author>
+    <author>
+      <name>Jiapeng Huang</name>
+    </author>
+    <author>
+      <name>Wenbin He</name>
+    </author>
+    <author>
+      <name>Xin Jiang</name>
+    </author>
+    <author>
+      <name>Huailiang Xu</name>
+    </author>
+    <author>
+      <name>Yi Liu</name>
+    </author>
+    <author>
+      <name>Meng Pang</name>
+    </author>
+    <author>
+      <name>Yuxin Leng</name>
+    </author>
+    <author>
+      <name>Ruxin Li</name>
+    </author>
+    <summary type="text">The phenomenon of N${_2^+}$ lasing, observed in femtosecond-laser filamentation, attract considerable interests in recent several years, with great application potentials in fields of remote sensing and ultrafast spectroscopy. Efficient N${_2^+}$ lasing at relatively-low pump energies and with high beam quality, while being highly-demanded for applications, remains, however, quite challenging in practical experiments. Here, we demonstrate a new route of generating low-threshold N${_2^+}$ lasing with unprecedently-high efficiency, which is enabled by soliton dynamics in a gas-filled hollow-tapered-capillary system. High-order-soliton compression of a 12-fs, 10-$μ$J-level pump pulse forms a sub-cycle asymmetric transient that tunnel-ionizes N${_2}$ to N${_2^+}$ and, through direct, single-photon resonant excitation, creates population inversion between the ground state ${X^2Σ_g^+}$ and the excited state ${B^2Σ_u^+}$${-}$a dynamic process distinct from the widely adopted three-state coupling picture${-}$and remarkably at unexpectedly low pump energy. In the experiments, we obtained 100-nJ-level N${_2^+}$ lasing pulses at 391 nm with conversion efficiencies up to 3.3$\times$10$^{-3}$, at pump energies of less than 50 $μ$J. These results represent improvement of more than one orders of magnitude in both generation efficiency and lasing threshold, compared with prevailing filamentation-based schemes. Our study bridges two generally-disparate fields (sub-cycle soliton dynamics and N${_2^+}$ lasing), and paves the way for narrow-band, high-beam-quality lasing pulses that may find wide applications in advanced spectroscopy and nonlinear pump-probe experiments.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="physics.optics" />
+  </entry>
+  <entry>
+    <title>VegSim: A Geospatial World Model for Scenario-Conditioned Vegetation Simulation</title>
+    <link href="http://arxiv.org/abs/2606.21961v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.21961v1</id>
+    <published>2026-06-20T00:00:00Z</published>
+    <updated>2026-06-20T00:00:00Z</updated>
+    <author>
+      <name>Irene Iele</name>
+    </author>
+    <author>
+      <name>Elena Mulero Ayllón</name>
+    </author>
+    <author>
+      <name>Paolo Soda</name>
+    </author>
+    <author>
+      <name>Matteo Tortora</name>
+    </author>
+    <summary type="text">Vegetation monitoring under climate stress requires answering not only how it will evolve given the expected weather, but how it would respond to alternative meteorological conditions. Forecasting models return the expected vegetation state for the observed weather and cannot answer these scenario-conditioned questions, because future weather is fixed to the recorded trajectory. We present VegSim, a geospatial world model for scenario-conditioned vegetation simulation. VegSim infers a latent vegetation state from sparse satellite-derived NDVI histories, past meteorological covariates, and static spatial context, propagates it forward under future weather forcing through recurrent latent dynamics, and decodes predictive NDVI quantiles at each lead time. Because future forcing enters as a controllable input, the same trained model supports probabilistic forecasting under observed weather and conditional simulation under user-defined meteorological forcing, without supervision on scenario responses. We evaluate VegSim on GreenEarthNet across in-distribution data and spatial, temporal, and joint spatial-temporal shift, where it achieves strong point and probabilistic accuracy against time series and Earth observation forecasting baselines while using a compact architecture. We then simulate vegetation responses across Europe under four meteorological scenarios, and in a France summer 2022 case study, obtaining spatially coherent patterns consistent with known sensitivity to temperature and precipitation. The code is available at https://github.com/arco-group/vegsim.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/arco-group/vegsim"&gt;https://github.com/arco-group/vegsim&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>CoSA: Correlation-Guided Change Attention with Learnable Residual Gating for Remote Sensing Change Detection</title>
+    <link href="http://arxiv.org/abs/2606.21932v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.21932v1</id>
+    <published>2026-06-20T00:00:00Z</published>
+    <updated>2026-06-20T00:00:00Z</updated>
+    <author>
+      <name>Abdirashid Omar</name>
+    </author>
+    <author>
+      <name>Jonghyuk Park</name>
+    </author>
+    <summary type="text">Remote sensing change detection (CD) from bi-temporal imagery is critical for applications such as urban monitoring, disaster assessment, and environmental management, yet robust localization remains challenging under sparse changes, noisy labels, and appearance variations. In this paper, we propose Context Sampling Attention (CoSA), a lightweight decoder-side refinement module that explicitly leverages bi-temporal feature correlation as a control signal for adaptive change-aware feature enhancement. This differs from conventional attention mechanisms that rely on implicit feature weighting without explicit temporal control. In the implemented FC-Siam setting, CoSA computes normalized same-location cross-correlation between paired decoder features, converts low correlation into a change gate, and injects the resulting gated residual at native 1/8 and 1/16 feature scales through learnable residual scaling. This design enables effective discrimination between stable and ambiguous regions without relying on computationally expensive global attention. Extensive experiments on four benchmark datasets (LEVIR-CD, S2Looking, DSIFN, and CLCD) demonstrate consistent improvements over strong baselines, achieving 1.5-2.6% gains in changed-class F1 while introducing negligible parameter overhead. Ablation studies confirm that multiscale placement and learnable residual gating are both important for peak performance. These results indicate that CoSA establishes a practical and effective refinement paradigm for enhancing temporal discriminability in Siamese change detection frameworks.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Access&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>AgroSense 2.0: Cross-Modal Transformer Fusion with Geospatial Raster Integration and Interpretable Multi-Task Learning for Precision Crop Recommendation</title>
+    <link href="http://arxiv.org/abs/2606.21892v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.21892v1</id>
+    <published>2026-06-20T00:00:00Z</published>
+    <updated>2026-06-20T00:00:00Z</updated>
+    <author>
+      <name>Vishal Pandey</name>
+    </author>
+    <author>
+      <name>Rishav Tewari</name>
+    </author>
+    <author>
+      <name>Ruzina Haque Laskar</name>
+    </author>
+    <summary type="text">Crop recommendation systems in precision agriculture have long suffered from a fundamental modality gap: visual soil characterization and chemical nutrient profiling are typically treated as independent inference problems, with fusion often reduced to late-stage feature concatenation. AgroSense~2.0 addresses this limitation through three architectural advances. First, we introduce continental-scale geospatial integration via a seven-band soil raster (\texttt{india\_soil\_7bands.tif}) spanning India, encoding Nitrogen, pH, SOC, Clay, Sand, Silt, and Bulk Density as $32\times32$ spatial patches, a modality entirely absent from prior work. Second, we replace naive feature concatenation with a cross-modal Transformer fusion module, where tabular nutrient features attend over image representations via multi-head attention, enabling richer inter-modal dependency modeling than shallow fusion. Third, we adopt a multi-task objective jointly optimizing soil classification and crop recommendation through a shared backbone, improving generalization via complementary cross-task signal. To enhance interpretability, we apply TreeSHAP to the tabular branch, revealing crop-conditioned nutrient sensitivity: humidity and rainfall emerge as the most influential features globally, while crop-specific profiles diverge meaningfully rainfall dominates rice, nitrogen and potassium dominate maize, and humidity and nitrogen dominate coffee. These explanations provide transparency into model decisions and surface both agronomically consistent patterns and dataset-specific divergences worth further study. Together, these contributions establish AgroSense~2.0 as a more principled, interpretable, and geospatially grounded framework for precision agriculture.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 14 Pages, 3 pages&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Prompt-Calibrated SAM 3 for Open-Vocabulary Remote Sensing Semantic Segmentation</title>
+    <link href="http://arxiv.org/abs/2606.21863v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.21863v1</id>
+    <published>2026-06-20T00:00:00Z</published>
+    <updated>2026-06-20T00:00:00Z</updated>
+    <author>
+      <name>Yanghui Song</name>
+    </author>
+    <author>
+      <name>Nanqing Liu</name>
+    </author>
+    <author>
+      <name>Haonan Yin</name>
+    </author>
+    <author>
+      <name>Yingjie Gao</name>
+    </author>
+    <author>
+      <name>Chengfu Yang</name>
+    </author>
+    <author>
+      <name>Qi Ming</name>
+    </author>
+    <summary type="text">Open-vocabulary semantic segmentation (OVSS) in remote sensing images aims to segment categories beyond a fixed label space. Recent SAM 3-based methods provide a promising training-free foundation, yet three key issues remain: (1) a single class-name prompt lacks sufficient semantic coverage for complex remote sensing categories; (2) expanding each category into multiple prompts introduces redundant online text encoding; and (3) directly aggregating multiple prompt responses propagates noisy activations into the final prediction. To address these issues, we propose ProC-SAM3, which calibrates SAM 3's prompt interface for remote sensing OVSS from three complementary aspects. First, we construct an offline prompt pool where a Category Matcher groups MLLM-generated candidates into per-category sets, and Expansion Constraints further refine each set using category-specific prior knowledge. Second, the resulting text embeddings are cached and reused across all test images, eliminating repeated text encoding. Third, we introduce Presence-Guided Residual Fusion to gate unreliable decoder outputs by prompt presence and confidence, followed by peak-preserving class aggregation that retains fine-grained activations for small and sparse objects. Experiments on eight benchmarks show that ProC-SAM3 achieves an average mIoU of 56.1%, outperforming the previous best training-free method by 3.9 percentage points. Code will be available at https://github.com/YanghuiSong/ProC-SAM3.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/YanghuiSong/ProC-SAM3"&gt;https://github.com/YanghuiSong/ProC-SAM3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 5 pages, 5 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>RAPID: A Reproducible Multi-Agent Pipeline for Interpretable Disaster Damage Assessment from Satellite and Street-View Imagery</title>
+    <link href="http://arxiv.org/abs/2606.21819v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.21819v1</id>
+    <published>2026-06-20T00:00:00Z</published>
+    <updated>2026-06-20T00:00:00Z</updated>
+    <author>
+      <name>Yifan Yang</name>
+    </author>
+    <author>
+      <name>Wenjing Gong</name>
+    </author>
+    <author>
+      <name>Kaili Zhang</name>
+    </author>
+    <author>
+      <name>Lei Zou</name>
+    </author>
+    <author>
+      <name>Zhengzhong Tu</name>
+    </author>
+    <author>
+      <name>Hao Li</name>
+    </author>
+    <author>
+      <name>Zongrong Li</name>
+    </author>
+    <author>
+      <name>Xinyue Ye</name>
+    </author>
+    <summary type="text">Due to the increasing frequency and intensity of extreme climate events, there is a clear demand for intelligent, scalable, and autonomous approaches to disaster damage assessment. Existing methods, largely based on supervised learning and task-specific fine-tuning, struggle to generalize under domain shifts, long-tailed data distributions, and heterogeneous geospatial data sources, especially in disaster scenarios. They also often lack the ability to integrate and reason across multimodal geospatial information, such as satellite images and street-view images. In this paper, we introduce RAPID, a reproducible multi-agent pipeline for interpretable disaster damage assessment, including damage-level assessment, damage-type interpretation, and actionable suggestions for response, remediation, and recovery. RAPID coordinates specialized agents to perform cross-view understanding, image restoration, structured damage recognition, and geographical reasoning across heterogeneous data modalities. Without task-specific fine-tuning, RAPID supports zero-shot damage assessment by jointly using complementary information from remote sensing and ground-level perspectives. The system produces fine-grained, interpretable assessments and automatically generates location-specific, decision-relevant disaster reports to support early-stage emergency response. We evaluate RAPID across hurricanes, floods, wildfires, and earthquakes using multiple cross-view imagery inputs, including pre- and post-disaster street-view images, post-disaster remote sensing imagery, and street-view image pairs. Experiments show that RAPID achieves 0.92 overall accuracy for multi-disaster type classification and up to 0.627 for cross-view damage severity prediction, highlighting its potential as a foundational framework for autonomous disaster intelligence.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages, 8 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;SR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Deep Learning for Soil Moisture Estimation: Fusing Satellite Data with Optimally-Lagged Meteorological Features</title>
     <link href="http://arxiv.org/abs/2606.21475v1" rel="alternate" type="text/html" />
@@ -140,8 +475,8 @@
   </entry>
   <entry>
     <title>Evaluating and Enhancing Negation Comprehension in Remote Sensing MLLMs</title>
-    <link href="http://arxiv.org/abs/2606.20177v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.20177v1</id>
+    <link href="http://arxiv.org/abs/2606.20177v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.20177v2</id>
     <published>2026-06-18T00:00:00Z</published>
     <updated>2026-06-18T00:00:00Z</updated>
     <author>

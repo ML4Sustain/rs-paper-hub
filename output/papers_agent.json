@@ -3950,5 +3950,24 @@
     "_added_date": "2026-06-17",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-06-20",
+    "Month": 6,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "RAPID: A Reproducible Multi-Agent Pipeline for Interpretable Disaster Damage Assessment from Satellite and Street-View Imagery",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2606.21819v1",
+    "Abstract": "Due to the increasing frequency and intensity of extreme climate events, there is a clear demand for intelligent, scalable, and autonomous approaches to disaster damage assessment. Existing methods, largely based on supervised learning and task-specific fine-tuning, struggle to generalize under domain shifts, long-tailed data distributions, and heterogeneous geospatial data sources, especially in disaster scenarios. They also often lack the ability to integrate and reason across multimodal geospatial information, such as satellite images and street-view images. In this paper, we introduce RAPID, a reproducible multi-agent pipeline for interpretable disaster damage assessment, including damage-level assessment, damage-type interpretation, and actionable suggestions for response, remediation, and recovery. RAPID coordinates specialized agents to perform cross-view understanding, image restoration, structured damage recognition, and geographical reasoning across heterogeneous data modalities. Without task-specific fine-tuning, RAPID supports zero-shot damage assessment by jointly using complementary information from remote sensing and ground-level perspectives. The system produces fine-grained, interpretable assessments and automatically generates location-specific, decision-relevant disaster reports to support early-stage emergency response. We evaluate RAPID across hurricanes, floods, wildfires, and earthquakes using multiple cross-view imagery inputs, including pre- and post-disaster street-view images, post-disaster remote sensing imagery, and street-view image pairs. Experiments show that RAPID achieves 0.92 overall accuracy for multi-disaster type classification and up to 0.627 for cross-view damage severity prediction, highlighting its potential as a foundational framework for autonomous disaster intelligence.",
+    "code": "",
+    "Publication": "12 pages, 8 figures",
+    "BibTex": "@article{yang2026rapid,\n  title={RAPID: A Reproducible Multi-Agent Pipeline for Interpretable Disaster Damage Assessment from Satellite and Street-View Imagery},\n  author={Yifan Yang and Wenjing Gong and Kaili Zhang and Lei Zou and Zhengzhong Tu and Hao Li and Zongrong Li and Xinyue Ye},\n  journal={arXiv preprint arXiv:2606.21819v1},\n  year={2026},\n  url={http://arxiv.org/abs/2606.21819v1}\n}",
+    "Authors": "Yifan Yang, Wenjing Gong, Kaili Zhang, Lei Zou, Zhengzhong Tu, Hao Li, Zongrong Li, Xinyue Ye",
+    "_added_date": "2026-06-23",
+    "Category": "Method",
+    "_tasks": "CLS;SR"
   }
 ]
