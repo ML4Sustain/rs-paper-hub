@@ -4,12 +4,71 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-22T06:24:54Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 13 entries</subtitle>
+  <updated>2026-06-23T01:57:36Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 12 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Deep Learning for Soil Moisture Estimation: Fusing Satellite Data with Optimally-Lagged Meteorological Features</title>
+    <link href="http://arxiv.org/abs/2606.21475v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.21475v1</id>
+    <published>2026-06-19T00:00:00Z</published>
+    <updated>2026-06-19T00:00:00Z</updated>
+    <author>
+      <name>Adrian Canovas-Rodriguez</name>
+    </author>
+    <author>
+      <name>Aurora González Vidal</name>
+    </author>
+    <author>
+      <name>Antonio F. Skarmeta</name>
+    </author>
+    <summary type="text">Accurate soil moisture estimation in semi-arid agricultural regions requires integrating remote sensing and meteorological information while accounting for the delayed response of soil moisture to atmospheric forcing. This study introduces a Cross-Correlation Function (CCF) methodology to determine optimal temporal lags (0-30 days) between meteorological variables and soil moisture, as well as inter-depth lags (0-15 days) describing vertical moisture propagation from the surface (10 cm) to deeper layers (20-50 cm). The approach was validated across seven agricultural plots in southeastern Spain. Three deep learning architectures, each targeting a distinct prediction granularity, were evaluated under five feature configurations ranging from satellite-only to full satellite-meteorology-depth fusion: a CNN for per-pixel estimation within each plot, an LSTM for frame-level (daily plot-mean) prediction, and a CNN-LSTM hybrid operating on sliding windows with pooled multi-patch training. Models were assessed on held-out data to measure genuine generalisation. Meteorological variables improved performance over the satellite-only baseline, while subsurface depth information proved decisive across all architectures. The per-pixel CNN achieved the strongest single-patch result (R^2 = 0.877, RMSE = 2.28), with a seven-patch average R^2 of 0.535, representing an improvement of +1.00 over the satellite-only baseline. The pooled CNN-LSTM hybrid obtained the highest overall performance (R^2 = 0.930, CVRMSE = 8.0%). These results demonstrate that explicitly modelling atmospheric and vertical subsurface delays substantially improves soil moisture estimation for precision agriculture.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Urban Power Grid Topology and Hierarchy Identification from Open Data</title>
+    <link href="http://arxiv.org/abs/2606.21352v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.21352v1</id>
+    <published>2026-06-19T00:00:00Z</published>
+    <updated>2026-06-19T00:00:00Z</updated>
+    <author>
+      <name>Shiliang Zhang</name>
+    </author>
+    <author>
+      <name>Sabita Maharjan</name>
+    </author>
+    <summary type="text">Understanding the complex topology and hierarchy of urban power grid is crucial for energy prognosis, power flow management, and system resilience analysis. However, detailed grid information remains largely proprietary. This creates significant barriers for research and innovation, especially when analyzing the last-mile distribution networks connecting individual buildings. This paper addresses this challenge by developing an open-data-driven framework for the complete identification of urban power grid topology, from high-voltage transmission down to individual building connections. Particularly, we fuse public infrastructure data (power-lines, substations, transformers, poles) to map the high and medium-voltage skeleton using graph-based algorithms. We then leverage geospatial machine learning on OpenStreetMap building data to group power demand clusters, and infer the physical topology of the final distribution lines linking the clustered buildings. We apply the developed framework to the district of Alna in Oslo, Norway, and we reconstruct the complete grid topology that connects 7,330 buildings and all major electricity infrastructure assets. With the research in this work, we provide a critical tool that facilitates power system analysis, e.g., power flow optimization, cascading failure simulation, and grid resilience against the penetration of distributed renewable generation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>FireDataForge: A Unified Framework for Multi-Source Wildfire Data Retrieval and Integration</title>
+    <link href="http://arxiv.org/abs/2606.21198v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.21198v1</id>
+    <published>2026-06-19T00:00:00Z</published>
+    <updated>2026-06-19T00:00:00Z</updated>
+    <author>
+      <name>Zeyu Xia</name>
+    </author>
+    <author>
+      <name>Lexie Chen</name>
+    </author>
+    <author>
+      <name>Ye Liu</name>
+    </author>
+    <author>
+      <name>Huilin Huang</name>
+    </author>
+    <summary type="text">Wildfire research, modeling, and education require geospatial data from multiple sources that vary in formats, coordinate systems, spatial resolutions, and temporal cadences. This preprocessing burden limits reproducible reuse. We present FireDataForge, an open-source Python framework that automates retrieval and harmonization of 11 wildfire-related sources spanning fire behavior, weather, land cover, vegetation, elevation, built environment, wildland-urban interface, fire history, and satellite imagery. Given an MTBS Event ID, FireDataForge retrieves relevant datasets, aligns them to a common grid, and outputs analysis-ready NumPy arrays with embedded metadata. Batch processing of historical fires demonstrates support for fire behavior simulation, educational visualization, machine learning, and AI-assisted wildfire analysis.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE International Conference on Information Reuse and Integration for Data Science (IEEE IRI 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.CE" />
+    <category term="cs.DB; Geophysics" />
+  </entry>
   <entry>
     <title>PCFootprint: A Large-Scale Dataset and Benchmark for Vectorized Building Footprint Extraction from Aerial LiDAR Point Clouds</title>
     <link href="http://arxiv.org/abs/2606.20455v1" rel="alternate" type="text/html" />
@@ -153,6 +212,24 @@
     <category term="Computer Vision" />
   </entry>
   <entry>
+    <title>BELDE: Building a Large-scale Earth-observation Land-cover Dataset for Europe</title>
+    <link href="http://arxiv.org/abs/2606.20909v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.20909v1</id>
+    <published>2026-06-18T00:00:00Z</published>
+    <updated>2026-06-18T00:00:00Z</updated>
+    <author>
+      <name>Ümit Mert Çağlar</name>
+    </author>
+    <author>
+      <name>Alptekin Temizel</name>
+    </author>
+    <summary type="text">Earth observation imagery plays a critical role in environmental monitoring, urban planning, disaster assessment, and climate analysis. While multi-spectral sensors are increasingly available, true-color (RGB) imagery remains widely used due to the power, cost, and deployment constraints of many satellite and aerial platforms. However, existing land-cover segmentation datasets are often limited in geographic coverage, scale, or public accessibility.   To bridge this gap, we introduce BELDE (Building a Large-scale Earth-observation Land-cover Dataset for Europe), a publicly available dataset tailored for RGB-based remote sensing semantic segmentation. Constructed from Sentinel-2 true-color images and ESA WorldCover data annotations, BELDE contains 1,088,385 curated image-segmentation map pairs spanning Europe with 7 land-cover classes at 10 m spatial resolution, making it one of the largest publicly available RGB land-cover segmentation datasets for Earth observation. To facilitate cross-region generalization studies, we additionally introduce BELDE-K (16,607 pairs) covering the Republic of Korea and BELDE-CA-NV (88,155 pairs) covering California and Nevada in the United States.   We establish baseline results using multiple semantic segmentation architectures and evaluate both in-domain and cross-domain performance. Models trained on BELDE achieve an F1 score of 83.0% on the European test set, while performance decreases to 66.4% on BELDE-CA-NV and 58.3% on BELDE-K, highlighting the challenges posed by out-of-distribution geographic domain shift. By providing a continental-scale RGB segmentation and evaluation benchmark, BELDE supports the development of robust and transferable Earth observation models. The dataset and benchmark resources will be publicly released.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence; Image and Video Processing" />
+  </entry>
+  <entry>
     <title>A Unified Framework for Efficient Remote Sensing Visual Question Answering: Adapting Dual, Hybrid, and Encoder-Decoder Architectures</title>
     <link href="http://arxiv.org/abs/2606.19277v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2606.19277v1</id>
@@ -219,115 +296,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="astro-ph.IM" />
     <category term="physics.optics" />
-  </entry>
-  <entry>
-    <title>Neural Tree Reconstruction for the Open Forest Observatory</title>
-    <link href="http://arxiv.org/abs/2606.18153v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.18153v1</id>
-    <published>2026-06-16T00:00:00Z</published>
-    <updated>2026-06-16T00:00:00Z</updated>
-    <author>
-      <name>Marissa Ramirez de Chanlatte</name>
-    </author>
-    <author>
-      <name>Arjun Rewari</name>
-    </author>
-    <author>
-      <name>Trevor Darrell</name>
-    </author>
-    <author>
-      <name>Derek J. N. Young</name>
-    </author>
-    <summary type="text">The Open Forest Observatory (OFO) is a collaboration across universities and other partners to make low-cost forest mapping accessible to ecologists, land managers, and the general public. The OFO is building both a database of geospatial forest data as well as open-source methods and tools for forest mapping by uncrewed aerial vehicle. Such data are useful for a variety of climate applications including prioritizing reforestation efforts, informing wildfire hazard reduction, and monitoring carbon sequestration. In the current iteration of the OFO's forest map database, 3D tree maps are created using classical structure-from-motion techniques. This approach is prone to artifacts, lacks detail, and has particular difficulty on the forest floor where the input data (overhead imagery) has limited visibility. These reconstruction errors can potentially propagate to the downstream scientific tasks (e.g. a wildfire simulation.) Advances in 3D reconstruction, including methods like Neural Radiance Fields (NeRF), produce higher quality results that are more robust to sparse views and support data-driven priors. We explore ways to incorporate NeRFs into the OFO dataset, outline future work to support even more state-of-the-art 3D vision models, and describe the importance of high-quality 3D reconstructions for forestry applications.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICLR 2024&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>A simplified engineering algorithm for collision risk assessment and classification of LEO satellites</title>
-    <link href="http://arxiv.org/abs/2606.17947v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.17947v1</id>
-    <published>2026-06-16T00:00:00Z</published>
-    <updated>2026-06-16T00:00:00Z</updated>
-    <author>
-      <name>Federico Toson</name>
-    </author>
-    <summary type="text">Collision risk in low Earth orbit is now a sustainability constraint, not only a mission-level concern. Current standards (ECSS, NASA) classify risk in discrete per-mission categories and yield no continuous index that can be aggregated across missions or fed into broader sustainability assessments. This paper develops an engineering algorithm in which the expected number of collisions is estimated from the kinetic theory of the debris flux and combined with a severity term to give a continuous, dimensionally consistent risk index. An individual index, weighted by replacement cost, captures the expected loss to the operator; a collective index with homogeneous severity captures the burden imposed on the operational population at the mission altitude band, independent of the mission's own value. Applied with a May 2026 Celestrak snapshot to three cases (ENVISAT, Sentinel-6, Starlink V2 Mini), the collective index exceeds the individual one by over two orders of magnitude for the constellation element: operator-centred assessment understates the collective cost of large constellations. A random sample of 100 LEO satellites, swept over 100 seeds, confirms the asymmetry as structural across the constellation and Earth-observation tiers. The construction is checked internally against a snapshot proxy of the ECOB family (Spearman correlation 0.91 over 103 objects) and externally against published ECOB values for MetOp-A and Sentinel-2, matched within a factor of two. A parametric analysis gives an explicit replacement-cost threshold per altitude band, about one to five million USD across the operational LEO bands, below which any satellite is structurally underestimated by operator-centred frameworks. The index is released as an open MATLAB toolchain and is intended as the orbital component of a multi-domain sustainability assessment.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages, 7 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="astro-ph.EP" />
-    <category term="astro-ph.IM" />
-  </entry>
-  <entry>
-    <title>Twin-beam advantage in quantum LiDAR under correlated noise</title>
-    <link href="http://arxiv.org/abs/2606.17908v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.17908v1</id>
-    <published>2026-06-16T00:00:00Z</published>
-    <updated>2026-06-16T00:00:00Z</updated>
-    <author>
-      <name>Valeria Cimini</name>
-    </author>
-    <summary type="text">Quantum light promises improved precision in optical remote sensing, but its practical advantage depends critically on whether nonclassical resources remain useful under realistic noise and experimentally accessible detection. This question becomes especially relevant for LiDAR systems, where a quantum advantage has been demonstrated for target detection and joint range-velocity estimation, but mostly under idealized conditions or simple noise models, such as optical loss and thermal background. A key open point is whether entanglement provides an operational advantage when the dominant disturbance is not independent noise, but structured interference across sensing modes. Here, we address this question by studying the joint estimation of target range and velocity with bright two-mode Gaussian probes and homodyne detection, comparing coherent, separable squeezed, and twin-beam states at a fixed resource budget. Our results reveal a hierarchy of quantum resources set by the noise structure: separable squeezing provides a robust advantage over coherent illumination under loss and thermal background, whereas twin-beam probes become superior under correlated jamming when the receiver is adaptively optimized. These results establish correlated noise as the operational regime in which entanglement provides a robustness advantage beyond local squeezing, opening a receiver-aware route to quantum-enhanced LiDAR in realistic and potentially adversarial environments.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
-    <category term="quant-ph" />
-  </entry>
-  <entry>
-    <title>Heterogeneous SAR-optical fusion for near-real-time land use and land cover mapping under cloud contamination: A novel framework and global benchmark dataset</title>
-    <link href="http://arxiv.org/abs/2606.17713v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.17713v1</id>
-    <published>2026-06-16T00:00:00Z</published>
-    <updated>2026-06-16T00:00:00Z</updated>
-    <author>
-      <name>Jiangong Xu</name>
-    </author>
-    <author>
-      <name>Weibao Xue</name>
-    </author>
-    <author>
-      <name>Xiaoyu Yu</name>
-    </author>
-    <author>
-      <name>Jun Pan</name>
-    </author>
-    <author>
-      <name>Xinlian Lianga</name>
-    </author>
-    <author>
-      <name>Mi Wang</name>
-    </author>
-    <summary type="text">Optical remote sensing imagery is frequently degraded by cloud and cloud-shadow contamination, which limits its reliability for near-real-time land use and land cover (LULC) mapping. Although synthetic aperture radar (SAR) can provide cloud-penetrating structural information, existing SAR-optical fusion methods often assume reliable optical observations and insufficiently address the semantic uncertainty introduced by cloud contamination. To address this issue, we propose CloudLULC-Net, an end-to-end heterogeneous SAR-optical fusion framework that directly predicts LULC maps from cloud-contaminated Sentinel-2 imagery and temporally adjacent Sentinel-1 SAR observations. The proposed network incorporates optical reliability modulation to suppress unreliable optical responses, heterogeneous information adaptive aggregation to model high-order spatial-channel interactions between optical and SAR representations, and a unified semantic mapping transformer to organize fused features in a LULC-oriented latent space. A semantic anchor-guided optimization strategy is further introduced to improve the consistency of intermediate semantic representations. To support this task, we construct CloudLULC-Set, a large-scale benchmark dataset containing 40,223 curated SAR-optical-label triplets with pixel-level LULC annotations across diverse geographic regions and cloud conditions. Experimental results show that CloudLULC-Net achieves an OA of 86.60%, an F1-score of 83.29%, and an mIoU of 73.51%, outperforming representative heterogeneous reconstruction-first and end-to-end SAR-optical mapping methods. Comparisons with existing global LULC products and analyses under different cloud-cover levels further demonstrate the robustness and practical value of CloudLULC-Net for target-date LULC mapping in cloud-prone regions.The project is publicly available at: https://github.com/RSIIPAC/CloudLULC</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/RSIIPAC/CloudLULC"&gt;https://github.com/RSIIPAC/CloudLULC&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Geometric Consistency Protocol for Foundation Model Features in Multi-View Satellite Imagery</title>
-    <link href="http://arxiv.org/abs/2606.17564v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.17564v1</id>
-    <published>2026-06-16T00:00:00Z</published>
-    <updated>2026-06-16T00:00:00Z</updated>
-    <author>
-      <name>Qiyan Luo</name>
-    </author>
-    <author>
-      <name>Jie Yang</name>
-    </author>
-    <author>
-      <name>Yingdong Pi</name>
-    </author>
-    <author>
-      <name>Lekang Wen</name>
-    </author>
-    <author>
-      <name>Mi Wang</name>
-    </author>
-    <summary type="text">Standardized evaluation protocols are indispensable for robust benchmarking in remote sensing, particularly as foundation features are increasingly transferred across diverse sensors and complex imaging geometries. In satellite multi-view reconstruction, conventional evaluations relying on unconstrained 2D global matching are often misleading. The Rational Function Model (RFM) and its Rational Polynomial Coefficients (RPC) dictate a curved, height-dependent epipolar geometry that render flat 2D search spaces physically inconsistent. We propose a geometry-faithful and reproducible protocol tailored for the RPC framework. Our approach integrates an RPC-projected 3D consistency metric with a geometry-constrained dense matching proxy, specifically evaluating whether similarity responses remain localized and unique under physically plausible search manifolds. A pivotal finding of our joint reporting strategy is the decoupling of semantic agreement and geometric localization: high cross-view similarity at a projected 3D point does not guarantee reliable matchability in practical inference. Our benchmark demonstrates that incorporating geometric constraints is fundamental to the problem definition in satellite imagery. Furthermore, we show that state-of-the-art 2D backbones remain remarkably competitive against specialized 3D-aware models when subjected to this RPC-consistent evaluation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE International Geoscience and Remote Sensing Symposium(IGARSS 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>
