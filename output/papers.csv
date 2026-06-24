@@ -48810,3 +48810,10 @@ Method,Computer Vision,Image and Video Processing,2026-06-23,6,2026,,Flood Mappi
   year={2026},
   url={http://arxiv.org/abs/2606.24120v1}
 }","Vladyslav Polushko, Tilman Bucher, Ronald Rösch, Thomas März, Markus Rauhut, Andreas Weinmann",,2026-06-24
+Method,cs.DB,,2026-06-23,6,2026,,"One Index for Subsumption and Roll-up across Time, Geography, and Ontology",,http://arxiv.org/abs/2606.24677v1,"Time-series, geospatial, and ontology systems each maintain a hierarchy -- day <= month <= year, zip <= city, is-a / part-of -- and each indexes it in a separate silo. We observe these are all subsumption posets, with one recurring workload: order testing (is x under y?) and hierarchical roll-up (aggregate a measure over everything under y). We present OEH, a single declarable index that, by a cheap structural probe, encodes a hierarchy as a nested-set order-embedding (trees) or a chain decomposition (low-width DAGs), and answers both subsumption and index-resident monoid roll-up from one structure. On five real hierarchies -- Gene Ontology, NCBI Taxonomy (1.3M), GeoNames (330k), a 2.6M-node calendar, and git commit DAGs -- OEH on trees matches a 2-hop index on query latency using about half the space and building 6--7x faster, and adds roll-up that 2-hop cannot. Its roll-up matches TimescaleDB's continuous aggregates exactly and in the same latency regime, while also answering subsumption. On high-width DAGs the chain index is declined and 2-hop dominates. Order-embedding is classical; our contribution is the unification and the structure-selected index over subsumption and index-resident roll-up.",,"7 pages, 3 figures","@article{mandarapu2026one,
+  title={One Index for Subsumption and Roll-up across Time, Geography, and Ontology},
+  author={Madhulatha Mandarapu and Sandeep Kunkunuru},
+  journal={arXiv preprint arXiv:2606.24677v1},
+  year={2026},
+  url={http://arxiv.org/abs/2606.24677v1}
+}","Madhulatha Mandarapu, Sandeep Kunkunuru",,2026-06-24
