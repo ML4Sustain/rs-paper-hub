@@ -4,12 +4,41 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-23T04:56:30Z</updated>
+  <updated>2026-06-24T01:56:15Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 10 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Flood Mapping from RGB imagery using a Vision Foundation Model</title>
+    <link href="http://arxiv.org/abs/2606.24120v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.24120v1</id>
+    <published>2026-06-23T00:00:00Z</published>
+    <updated>2026-06-23T00:00:00Z</updated>
+    <author>
+      <name>Vladyslav Polushko</name>
+    </author>
+    <author>
+      <name>Tilman Bucher</name>
+    </author>
+    <author>
+      <name>Ronald Rösch</name>
+    </author>
+    <author>
+      <name>Thomas März</name>
+    </author>
+    <author>
+      <name>Markus Rauhut</name>
+    </author>
+    <author>
+      <name>Andreas Weinmann</name>
+    </author>
+    <summary type="text">Timely, high-resolution maps of flood extent around settlements are essential for emergency response and damage assessment. We consider airborne RGB imagery for flood mapping as it can be collected rapidly at low cost. To produce flood maps, deep learning models for water segmentation are often used. CNN based and small vision transformer models are used. However, they need much data for adaptation to a change of scenery, i.e., another flooding event. Vision foundation models or large vision transformers are known to generalize across domains. Recently, foundation models for Earth observation became available. They are pretrained on satellite data, whose spatial resolution, viewing geometry, and radiometry differ from nadir RGB imagery. Thus, adaptation is required. We investigate how a satellite-pretrained Earth observation foundation model can be adapted to centimeter-scale floodwater mapping from RGB imagery. Specifically, we fine-tune a model we call Prithvi-2.0-UPN consisting of the Prithvi-EO-2.0-600M Vision Transformer combined with a UPerNet decoder for binary water segmentation on two RGB datasets (BlessemFlood21, NeuenahrFlood). In a first experiment we observe that Prithvi-2.0-UPN reaches state-of-the-art results on BlessemFlood21 and NeuenahrFlood, when trained on their datasets. In a second experiment we show that Prithvi-2.0-UPN performs better than state-of-the-art baseline models for transfer to a new flood event (trained on BlessemFlood21, tested on NeuenahrFlood) in a zero-shot setting. However, the performance indicates room for improvement. In this respect, we investigate in a third experiment how performance improves when further fine-tuning the models with small shares of NeuenahrFlood training data: Prithvi-2.0-UPN improves the fastest and reaches almost the performance level when fully trained on NeuenahrFlood, indicating transfer capabilities.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Image and Video Processing" />
+  </entry>
   <entry>
     <title>UniverSat: Resolution- and Modality-Agnostic Transformers for Earth Observation</title>
     <link href="http://arxiv.org/abs/2606.23503v1" rel="alternate" type="text/html" />
@@ -254,30 +283,6 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Funny0101/ReA-OVCD"&gt;https://github.com/Funny0101/ReA-OVCD&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>A Unified Framework for Efficient Remote Sensing Visual Question Answering: Adapting Dual, Hybrid, and Encoder-Decoder Architectures</title>
-    <link href="http://arxiv.org/abs/2606.19277v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.19277v1</id>
-    <published>2026-06-17T00:00:00Z</published>
-    <updated>2026-06-17T00:00:00Z</updated>
-    <author>
-      <name>Timothy Agboada</name>
-    </author>
-    <author>
-      <name>Shikha Chandel</name>
-    </author>
-    <author>
-      <name>Yadav Raj Ghimire</name>
-    </author>
-    <author>
-      <name>Leila Hashemi-Beni</name>
-    </author>
-    <summary type="text">Visual Question Answering (VQA) in the Remote Sensing (RS) domain presents unique challenges due to the high resolution, multi scale object distribution, and semantic complexity of aerial imagery. While general domain Foundation Models have achieved remarkable success, their direct application to RSVQA is hindered by massive domain shifts and the computationally prohibitive nature of full fine tuning. This study presents a comparative analysis of RS Adapter, a Parameter Efficient Fine Tuning (PEFT) strategy, applied across three distinct Vision Language Model (VLM) architectures: the Dual Encoder CLIP, the Encoder Decoder BLIP, and the Hybrid FLAVA. We introduce a unified architectural surgery pipeline that injects lightweight bottleneck adapters into the attention and MLP layers of frozen backbones, enabling rapid adaptation with less than 5 percent of trainable parameters. Experimental results on the high resolution RSVQA x dataset demonstrate that while all adapted models achieve convergence, the Hybrid FLAVA architecture offers a superior balance of multimodal reasoning and retrieval capabilities compared to its unimodal counterparts. Our findings establish a new baseline for resource efficient VQA in disaster assessment and urban monitoring.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE International Geoscience and Remote Sensing Symposium (IGARSS 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>

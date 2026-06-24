@@ -4,12 +4,93 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-23T04:56:30Z</updated>
+  <updated>2026-06-24T01:56:15Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 23 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>MotifGen: Spatiotemporal interpolation of misaligned satellite images via multi-source generative modeling, in an application to tropical cyclones</title>
+    <link href="http://arxiv.org/abs/2606.24263v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.24263v1</id>
+    <published>2026-06-23T00:00:00Z</published>
+    <updated>2026-06-23T00:00:00Z</updated>
+    <author>
+      <name>Clément Dauvilliers</name>
+    </author>
+    <author>
+      <name>Claire Monteleoni</name>
+    </author>
+    <summary type="text">Microwave satellite imagery plays a crucial role in monitoring tropical cyclone precipitation and intensity worldwide, but suffers from long revisit times, potentially missing rapid storm evolution phases. While this raises the need for an interpolation method, it is made challenging by the high level of heterogeneity of microwave data coming from different instruments. In this work, we introduce the first generative model that can be applied to multiple geospatial sources that change across samples, occur at irregular time intervals, are misaligned geographically, and come from instruments with varying characteristics. We apply this model to the case of spatio-temporal interpolation of tropical cyclone microwave images from other microwave and infrared instruments. We train using a self-supervised task in which a random source is masked and reconstructed, and show that it leads to a significant decrease in Continuous Ranked Probability Score over supervised training. We show a further improvement by combining infrared and microwave data compared to microwave only. Using these improvements, the generative model produces an ensemble mean on par with that of a deterministic model, while generating a power spectrum significantly closer to that of true observations. To the best of our knowledge, this is the first generative model that interpolates microwave images of cyclones by combining multiple microwave instruments and infrared observations at irregular time intervals.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Sat2City v2: Native 3D City Asset Generation from a Single Satellite Image</title>
+    <link href="http://arxiv.org/abs/2606.24138v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.24138v1</id>
+    <published>2026-06-23T00:00:00Z</published>
+    <updated>2026-06-23T00:00:00Z</updated>
+    <author>
+      <name>Tongyan Hua</name>
+    </author>
+    <author>
+      <name>Dongli Wu</name>
+    </author>
+    <author>
+      <name>Jinjing Zhu</name>
+    </author>
+    <author>
+      <name>Yinrui Ren</name>
+    </author>
+    <author>
+      <name>Zhongcheng Hong</name>
+    </author>
+    <author>
+      <name>Ying-Cong Chen</name>
+    </author>
+    <author>
+      <name>Hui Xiong</name>
+    </author>
+    <author>
+      <name>Wufan Zhao</name>
+    </author>
+    <summary type="text">Generating explicit 3D city assets from a single satellite image is important for digital twins, urban simulation, and geospatial intelligence. Unlike satellite-to-street-view synthesis, the task requires a reusable textured mesh with plausible geometry and controllable appearance rather than a 3D proxy optimized only for rendering a small set of images or videos. The ICCV Sat2City framework made a first step by conditioning cascaded sparse-voxel latent diffusion on satellite-derived height maps, but its appearance was random, its training data were synthetic, and its task-specific VAE did not scale well to noisy real-world reconstructions. We present Sat2City v2, a journal extension that adapts a pretrained native structured-latent 3D foundation model to weakly aligned satellite images and textured meshes. We build a real-world dataset with 16,241 satellite-mesh pairs across 24 regions in 9 cities. Instead of learning a 3D representation from noisy city meshes, Sat2City v2 encodes each mesh into a pretrained native 3D latent space, fine-tunes a satellite-conditioned geometry flow, and uses the decoded shape to anchor satellite-conditioned texturing. This retains Sat2City's geometry-to-appearance cascade while enabling appearance-controllable generation from the satellite input. Experiments on metric-scale DSM reconstruction and generative city-asset benchmarks for geometry and appearance show that Sat2City v2 achieves the best overall performance among evaluated baselines. Overall, Sat2City v2 advances satellite-to-city generation from rendering-oriented 3D proxies to explicit textured mesh assets, supported by, to the best of our knowledge, the first documented satellite-mesh paired dataset collected from matched geographic crops for this asset-level task. Project page: https://ai4city-hkust.github.io/Sat2City-v2/</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Flood Mapping from RGB imagery using a Vision Foundation Model</title>
+    <link href="http://arxiv.org/abs/2606.24120v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.24120v1</id>
+    <published>2026-06-23T00:00:00Z</published>
+    <updated>2026-06-23T00:00:00Z</updated>
+    <author>
+      <name>Vladyslav Polushko</name>
+    </author>
+    <author>
+      <name>Tilman Bucher</name>
+    </author>
+    <author>
+      <name>Ronald Rösch</name>
+    </author>
+    <author>
+      <name>Thomas März</name>
+    </author>
+    <author>
+      <name>Markus Rauhut</name>
+    </author>
+    <author>
+      <name>Andreas Weinmann</name>
+    </author>
+    <summary type="text">Timely, high-resolution maps of flood extent around settlements are essential for emergency response and damage assessment. We consider airborne RGB imagery for flood mapping as it can be collected rapidly at low cost. To produce flood maps, deep learning models for water segmentation are often used. CNN based and small vision transformer models are used. However, they need much data for adaptation to a change of scenery, i.e., another flooding event. Vision foundation models or large vision transformers are known to generalize across domains. Recently, foundation models for Earth observation became available. They are pretrained on satellite data, whose spatial resolution, viewing geometry, and radiometry differ from nadir RGB imagery. Thus, adaptation is required. We investigate how a satellite-pretrained Earth observation foundation model can be adapted to centimeter-scale floodwater mapping from RGB imagery. Specifically, we fine-tune a model we call Prithvi-2.0-UPN consisting of the Prithvi-EO-2.0-600M Vision Transformer combined with a UPerNet decoder for binary water segmentation on two RGB datasets (BlessemFlood21, NeuenahrFlood). In a first experiment we observe that Prithvi-2.0-UPN reaches state-of-the-art results on BlessemFlood21 and NeuenahrFlood, when trained on their datasets. In a second experiment we show that Prithvi-2.0-UPN performs better than state-of-the-art baseline models for transfer to a new flood event (trained on BlessemFlood21, tested on NeuenahrFlood) in a zero-shot setting. However, the performance indicates room for improvement. In this respect, we investigate in a third experiment how performance improves when further fine-tuning the models with small shares of NeuenahrFlood training data: Prithvi-2.0-UPN improves the fastest and reaches almost the performance level when fully trained on NeuenahrFlood, indicating transfer capabilities.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Image and Video Processing" />
+  </entry>
   <entry>
     <title>Hedgementation = Hedgerow Segmentation: A Remote Sensing Benchmark</title>
     <link href="http://arxiv.org/abs/2606.23615v1" rel="alternate" type="text/html" />
@@ -563,73 +644,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence; Image and Video Processing" />
-  </entry>
-  <entry>
-    <title>A Unified Framework for Efficient Remote Sensing Visual Question Answering: Adapting Dual, Hybrid, and Encoder-Decoder Architectures</title>
-    <link href="http://arxiv.org/abs/2606.19277v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.19277v1</id>
-    <published>2026-06-17T00:00:00Z</published>
-    <updated>2026-06-17T00:00:00Z</updated>
-    <author>
-      <name>Timothy Agboada</name>
-    </author>
-    <author>
-      <name>Shikha Chandel</name>
-    </author>
-    <author>
-      <name>Yadav Raj Ghimire</name>
-    </author>
-    <author>
-      <name>Leila Hashemi-Beni</name>
-    </author>
-    <summary type="text">Visual Question Answering (VQA) in the Remote Sensing (RS) domain presents unique challenges due to the high resolution, multi scale object distribution, and semantic complexity of aerial imagery. While general domain Foundation Models have achieved remarkable success, their direct application to RSVQA is hindered by massive domain shifts and the computationally prohibitive nature of full fine tuning. This study presents a comparative analysis of RS Adapter, a Parameter Efficient Fine Tuning (PEFT) strategy, applied across three distinct Vision Language Model (VLM) architectures: the Dual Encoder CLIP, the Encoder Decoder BLIP, and the Hybrid FLAVA. We introduce a unified architectural surgery pipeline that injects lightweight bottleneck adapters into the attention and MLP layers of frozen backbones, enabling rapid adaptation with less than 5 percent of trainable parameters. Experimental results on the high resolution RSVQA x dataset demonstrate that while all adapted models achieve convergence, the Hybrid FLAVA architecture offers a superior balance of multimodal reasoning and retrieval capabilities compared to its unimodal counterparts. Our findings establish a new baseline for resource efficient VQA in disaster assessment and urban monitoring.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE International Geoscience and Remote Sensing Symposium (IGARSS 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Global Multi-ion Solar Wind Model. I. Ion Temperatures</title>
-    <link href="http://arxiv.org/abs/2606.19232v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.19232v1</id>
-    <published>2026-06-17T00:00:00Z</published>
-    <updated>2026-06-17T00:00:00Z</updated>
-    <author>
-      <name>Bart van der Holst</name>
-    </author>
-    <author>
-      <name>Judit Szente</name>
-    </author>
-    <author>
-      <name>Enrico Landi</name>
-    </author>
-    <summary type="text">Over the past several decades, observations have shown that minor ions have a higher temperature and flow faster than protons in the solar wind. Theories based on turbulence have been developed that can explain many of these observed phenomena. We present our first step in developing a global multi-ion solar wind model with turbulence by including ion temperatures but not yet including differential streaming. The extent of this model is from the lower transition region (50,000 K temperature) to the corona and inner heliosphere. It uses low-frequency, reflection-driven incompressible turbulence to address coronal heating and solar wind acceleration. The energy partitioning of the turbulence dissipation to the electrons and various ions is based on stochastic heating and linear Landau and transit-time damping. In order to test the validity of our approach we have carried out a three-dimensional simulation of the solar corona and the solar wind using an idealized dipole magnetic field configuration, calculated the Oxygen temperature across the entire domain, and compared it to measurements obtained from the UltraViolet Coronagraph Spectrometer (UVCS) on the Solar and Heliospheric Observatory (SOHO) satellite and with the Solar Wind Ion Composition Spectrometer (SWICS) on board Advanced Composition Explorer (ACE). The comparison shows that even with the simplified magnetic field configuration the multi-ion model predictions reproduce the heavy-ion preferential heating phenomena in both remote-sensing and in-situ observations.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; submitted to ApJ&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="astro-ph.SR" />
-  </entry>
-  <entry>
-    <title>Characterization of a symmetric-facet dual-ruled grating for spatial heterodyne spectroscopy</title>
-    <link href="http://arxiv.org/abs/2606.19424v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.19424v1</id>
-    <published>2026-06-17T00:00:00Z</published>
-    <updated>2026-06-17T00:00:00Z</updated>
-    <author>
-      <name>Cole Meyer</name>
-    </author>
-    <author>
-      <name>Joanne Flores</name>
-    </author>
-    <author>
-      <name>Jason Corliss</name>
-    </author>
-    <author>
-      <name>Walter Harris</name>
-    </author>
-    <summary type="text">Dual-bandpass spatial heterodyne spectrometers (DB-SHS) enable simultaneous high-resolution measurements of widely separated passbands, providing powerful diagnostics of astrophysical and planetary environments. However, DB-SHS instruments require a single incident beam to span two adjacent diffraction gratings with distinct ruling densities and blaze angles, resulting in a large gap between ruled sections that reduces throughput. Dual-ruled gratings solve this problem by integrating multiple ruled panels onto a single substrate, minimizing the dead space between ruled sections. We present experimental validation of a first-generation symmetric-facet dual-ruled grating manufactured by Bach Research, mechanically ruled at $800$ and $\mathrm{2000\;gr\;mm^{-1}}$ with a $13.8^\circ$ blaze angle. Using a stabilized deuterium source alongside a Czerny-Turner monochromator, we measured diffraction efficiencies into the $m = 0, \pm1, \pm2$ orders from $200$ to $\mathrm{700\;nm}$. We compare these results with theoretical predictions from rigorous coupled-wave analysis (RCWA), inferring a facet asymmetry of $\lesssim1^\circ$ and $\sim70\%$ facet duty cycle indicative of minor manufacturing defects. This work demonstrates the viability of mechanically ruled, symmetric-facet, dual-ruled gratings and lays the foundation for laboratory validation of the first DB-SHS, ultimately enabling high-resolution spectroscopy of distinct spectral regions relevant to astrophysical and planetary remote sensing.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13 pages, 9 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="astro-ph.IM" />
-    <category term="physics.optics" />
   </entry>
 </feed>
