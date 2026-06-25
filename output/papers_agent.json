@@ -3969,5 +3969,24 @@
     "_added_date": "2026-06-23",
     "Category": "Method",
     "_tasks": "CLS;SR"
+  },
+  {
+    "Type": "cs.CE",
+    "Subtype": "",
+    "Date": "2026-06-24",
+    "Month": 6,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Retrieval-Grounded Multilingual LLM Assistance for Island Smallholder Farmers",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2606.25647v1",
+    "Abstract": "Smallholder farming communities in remote, depopulating areas have limited access to agricultural advice, and their locally specific agronomic knowledge, often expressed in regional dialect, is poorly represented in the global corpora on which Large Language Models (LLMs) are trained. A general-purpose chatbot therefore answers fluently but unreliably, ungrounded in authoritative local data farmers can trust. This paper presents a conversational AI assistant, Falco eleonorae, embedded in a bilingual (Greek-primary, English-secondary) e-market platform serving farmers and cooperatives of a defined island area of interest. It is a thin Backend-for-Frontend (BFF) proxy in front of a geospatially-aware agronomic agent rather than a self-hosted model. Answer generation and tool selection are delegated to a managed upstream service on OpenAI GPT-5-family models, while one bounded task, describing an uploaded field photograph, is handled directly by a vision-capable model so only text reaches the agent, and voice input is transcribed by a managed EU streaming speech-to-text service. Grounding comes not from a self-hosted vector database but from tool-augmented retrieval: a Model Context Protocol (MCP) tool queries a curated, read-only, bilingual data interface exposing local crops, a seasonal calendar, traditional practices, a dialect glossary, products, agritourism experiences, cooperatives, and training content, each wrapped in a geospatial Well-Known Text envelope anchoring the agent to the area of interest. We detail its multilingual, voice, and image modalities, its progressive-web-application and accessibility design for low-bandwidth field use, and its security and data-protection posture, and argue that for a small, resource-constrained rural deployment a managed, grounded multilingual assistant is more attainable and trustworthy than a self-hosted model.",
+    "code": "",
+    "Publication": "13, 4",
+    "BibTex": "@article{tantaroudas2026retrievalgrounded,\n  title={Retrieval-Grounded Multilingual LLM Assistance for Island Smallholder Farmers},\n  author={Nikolaos D. Tantaroudas and Ilias Karachalios and Andrew J. McCracken},\n  journal={arXiv preprint arXiv:2606.25647v1},\n  year={2026},\n  url={http://arxiv.org/abs/2606.25647v1}\n}",
+    "Authors": "Nikolaos D. Tantaroudas, Ilias Karachalios, Andrew J. McCracken",
+    "_added_date": "2026-06-25",
+    "Category": "Method",
+    "_tasks": "VG"
   }
 ]

@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-24T05:00:21Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
+  <updated>2026-06-25T02:00:06Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 1 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -32,23 +32,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/arco-group/vegsim"&gt;https://github.com/arco-group/vegsim&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>BELDE: Building a Large-scale Earth-observation Land-cover Dataset for Europe</title>
-    <link href="http://arxiv.org/abs/2606.20909v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.20909v1</id>
-    <published>2026-06-18T00:00:00Z</published>
-    <updated>2026-06-18T00:00:00Z</updated>
-    <author>
-      <name>Ümit Mert Çağlar</name>
-    </author>
-    <author>
-      <name>Alptekin Temizel</name>
-    </author>
-    <summary type="text">Earth observation imagery plays a critical role in environmental monitoring, urban planning, disaster assessment, and climate analysis. While multi-spectral sensors are increasingly available, true-color (RGB) imagery remains widely used due to the power, cost, and deployment constraints of many satellite and aerial platforms. However, existing land-cover segmentation datasets are often limited in geographic coverage, scale, or public accessibility.   To bridge this gap, we introduce BELDE (Building a Large-scale Earth-observation Land-cover Dataset for Europe), a publicly available dataset tailored for RGB-based remote sensing semantic segmentation. Constructed from Sentinel-2 true-color images and ESA WorldCover data annotations, BELDE contains 1,088,385 curated image-segmentation map pairs spanning Europe with 7 land-cover classes at 10 m spatial resolution, making it one of the largest publicly available RGB land-cover segmentation datasets for Earth observation. To facilitate cross-region generalization studies, we additionally introduce BELDE-K (16,607 pairs) covering the Republic of Korea and BELDE-CA-NV (88,155 pairs) covering California and Nevada in the United States.   We establish baseline results using multiple semantic segmentation architectures and evaluate both in-domain and cross-domain performance. Models trained on BELDE achieve an F1 score of 83.0% on the European test set, while performance decreases to 66.4% on BELDE-CA-NV and 58.3% on BELDE-K, highlighting the challenges posed by out-of-distribution geographic domain shift. By providing a continental-scale RGB segmentation and evaluation benchmark, BELDE supports the development of robust and transferable Earth observation models. The dataset and benchmark resources will be publicly released.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence; Image and Video Processing" />
   </entry>
 </feed>

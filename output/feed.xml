@@ -4,12 +4,141 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-24T05:00:21Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 24 entries</subtitle>
+  <updated>2026-06-25T02:00:06Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 26 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Retrieval-Grounded Multilingual LLM Assistance for Island Smallholder Farmers</title>
+    <link href="http://arxiv.org/abs/2606.25647v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.25647v1</id>
+    <published>2026-06-24T00:00:00Z</published>
+    <updated>2026-06-24T00:00:00Z</updated>
+    <author>
+      <name>Nikolaos D. Tantaroudas</name>
+    </author>
+    <author>
+      <name>Ilias Karachalios</name>
+    </author>
+    <author>
+      <name>Andrew J. McCracken</name>
+    </author>
+    <summary type="text">Smallholder farming communities in remote, depopulating areas have limited access to agricultural advice, and their locally specific agronomic knowledge, often expressed in regional dialect, is poorly represented in the global corpora on which Large Language Models (LLMs) are trained. A general-purpose chatbot therefore answers fluently but unreliably, ungrounded in authoritative local data farmers can trust. This paper presents a conversational AI assistant, Falco eleonorae, embedded in a bilingual (Greek-primary, English-secondary) e-market platform serving farmers and cooperatives of a defined island area of interest. It is a thin Backend-for-Frontend (BFF) proxy in front of a geospatially-aware agronomic agent rather than a self-hosted model. Answer generation and tool selection are delegated to a managed upstream service on OpenAI GPT-5-family models, while one bounded task, describing an uploaded field photograph, is handled directly by a vision-capable model so only text reaches the agent, and voice input is transcribed by a managed EU streaming speech-to-text service. Grounding comes not from a self-hosted vector database but from tool-augmented retrieval: a Model Context Protocol (MCP) tool queries a curated, read-only, bilingual data interface exposing local crops, a seasonal calendar, traditional practices, a dialect glossary, products, agritourism experiences, cooperatives, and training content, each wrapped in a geospatial Well-Known Text envelope anchoring the agent to the area of interest. We detail its multilingual, voice, and image modalities, its progressive-web-application and accessibility design for low-bandwidth field use, and its security and data-protection posture, and argue that for a small, resource-constrained rural deployment a managed, grounded multilingual assistant is more attainable and trustworthy than a self-hosted model.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13, 4&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="cs.CE" />
+  </entry>
+  <entry>
+    <title>C3-Bench: A Context-Aware Change Captioning Benchmark</title>
+    <link href="http://arxiv.org/abs/2606.25445v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.25445v1</id>
+    <published>2026-06-24T00:00:00Z</published>
+    <updated>2026-06-24T00:00:00Z</updated>
+    <author>
+      <name>Jae-Woo Kim</name>
+    </author>
+    <author>
+      <name>Hyeongbeom Kim</name>
+    </author>
+    <author>
+      <name>Ue-Hwan Kim</name>
+    </author>
+    <summary type="text">While Change Captioning systems have garnered substantial attention to respond to our evolving world, their true performance on diverse real-world change contexts remains largely unexplored due to the lack of comprehensive evaluation frameworks. To fill this gap, we propose C3-Bench, a comprehensive benchmark for evaluating Context-aware Change Captioning. C3-Bench features: (1) 4,996 human-labeled image pairs of 51 real-world change contexts across four domains (e.g., natural scenes, remote sensing imagery, image editing, and anomalies), each with diverse, carefully curated scenarios derived from multiple change-centric communities; and (2) the first LLM-as-Judge evaluation framework in the change captioning task that measure fine-grained dimensions (e.g., correctness, specificity, fluency, and relevance), along with a novel reversibility metric exploring whether models understand changes with symmetric consistency. Based on C3-Bench, we benchmark 32 models -- including conventional change captioning models, proprietary Large Multimodal Models (LMMs), and 2B-90B open-source LMMs. We reveal a fundamental blind spot in the prevailing change captioning paradigm: Once the change context departs from training-style regimes, conventional models collapse, and even state-of-the-art LMMs such as GPT-5.2 exhibit systematic domain- and position-dependent errors that distort reliable change understanding. By making these hidden failure modes explicit and measurable, we delineate the next frontier for building generalizable and trustworthy change captioning systems. All codes and datasets are publicly available on the project page.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ECCV 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>State Space Models Meet Remote Sensing: A Survey</title>
+    <link href="http://arxiv.org/abs/2606.25329v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.25329v1</id>
+    <published>2026-06-24T00:00:00Z</published>
+    <updated>2026-06-24T00:00:00Z</updated>
+    <author>
+      <name>Qinzhe Yang</name>
+    </author>
+    <author>
+      <name>Chenyang Liu</name>
+    </author>
+    <author>
+      <name>Jia Xu</name>
+    </author>
+    <author>
+      <name>Zhenwei Shi</name>
+    </author>
+    <author>
+      <name>Zhengxia Zou</name>
+    </author>
+    <summary type="text">State Space Models (SSMs), designed for long-range modeling, offer linear computational complexity and strong capabilities in capturing long-range dependencies. In the field of remote sensing, SSMs have gained popularity due to their effectiveness in addressing unique challenges such as dense visual predictions, multi-modal remote sensing data, and temporal remote sensing data, which have also yielded significant advancements in customized architectures. This paper presents a comprehensive review of SSM-based approaches in remote sensing, covering most of the relevant studies since SSMs were first introduced to the field. We offer a multi-dimensional analysis examining SSM applications in remote sensing tasks and discussing advancements in architecture design. This paper not only synthesizes the rapid progress in SSM-based research but also identifies key challenges and future opportunities. By providing a detailed perspective, this paper aims to serve as a foundational resource for remote sensing researchers, offering actionable insights to foster further advancements in this evolving domain. We will keep tracing related works at https://github.com/QinzheYang/Awesome-RS-State-Space-Model.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/QinzheYang/Awesome-RS-State-Space-Model"&gt;https://github.com/QinzheYang/Awesome-RS-State-Space-Model&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; SCIS SCIQ1 IF=8&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Survey&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Efficient Remote Sensing Instance Segmentation with Linear-Time State Space Distilled Visual Foundation Models</title>
+    <link href="http://arxiv.org/abs/2606.25324v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.25324v1</id>
+    <published>2026-06-24T00:00:00Z</published>
+    <updated>2026-06-24T00:00:00Z</updated>
+    <author>
+      <name>Qinzhe Yang</name>
+    </author>
+    <author>
+      <name>Keyan Chen</name>
+    </author>
+    <author>
+      <name>Jia Xu</name>
+    </author>
+    <author>
+      <name>Zhenwei Shi</name>
+    </author>
+    <author>
+      <name>Zhengxia Zou</name>
+    </author>
+    <summary type="text">The computational complexity of Transformers scales quadratically with the number of tokens, which significantly constrains the efficiency of vision models, particularly recent ViT-based foundation models in dense prediction tasks. Instance segmentation, a typical dense visual prediction task in the remote sensing field, faces similar challenges. In this paper, inspired by the recent advances of knowledge distillation in large language models, we introduce RS4D - a new remote sensing instance segmentation method with linear computational complexity, which addresses the inefficiency of long sequence modeling through distilled state space modeling (SSM). We propose an adaptive noise and masking knowledge distillation training method for pre-training lightweight SSM backbones, which effectively compresses knowledge from the vast self-attention space into a compact, dense linear state space. We also design a remote sensing image instance segmentation architecture based on this lightweight visual encoder, where we explore variants of three different backbones and two segmentation heads. Extensive experiments are conducted on multiple benchmark datasets, including SSDD, WHU, and NWPU. Compared to ViT-based approaches, our proposed SSM backbone achieves an 8x reduction in parameters and a 9x reduction in FLOPs while maintaining comparable or superior accuracy to both ViT- and CNN-based instance segmentation methods. The implementation codes have been publicly available at https://github.com/QinzheYang/RS4D.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/QinzheYang/RS4D"&gt;https://github.com/QinzheYang/RS4D&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE TGRS vol&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>LEVIRDet: A Million-Scale 159-Category Dataset and Foundation Model for Universal Remote Sensing Object Detection</title>
+    <link href="http://arxiv.org/abs/2606.25312v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.25312v1</id>
+    <published>2026-06-24T00:00:00Z</published>
+    <updated>2026-06-24T00:00:00Z</updated>
+    <author>
+      <name>Qinzhe Yang</name>
+    </author>
+    <author>
+      <name>Dongyu Wang</name>
+    </author>
+    <author>
+      <name>Haohan Niu</name>
+    </author>
+    <author>
+      <name>Jia Xu</name>
+    </author>
+    <author>
+      <name>Zhenwei Shi</name>
+    </author>
+    <author>
+      <name>Zhengxia Zou</name>
+    </author>
+    <summary type="text">Remote sensing object detection has advanced rapidly with the development of large-scale benchmarks and modern detection architectures. However, existing datasets and detectors remain fragmented. Most benchmarks focus on limited categories, fixed spatial resolutions, or a single sensor, while detectors still struggle to work across different sensors and categorical systems. In this paper, we introduce LEVIRDet-159, the largest and most comprehensive remote sensing object detection dataset to date, with 159 categories, 2.56 million bounding boxes, and 700k fine-grained annotations under a multi-level taxonomy. In each key scale dimension, LEVIRDet-159 exceeds the corresponding largest existing remote sensing object detection dataset, containing approximately (7x) more images, (6x) more object instances, and (4x) more categories. Based on this dataset, we design LEVIRDetNet, a scale-hierarchy-aware detection foundation model for universal remote sensing object detection. LEVIRDetNet couples online visual Ground Sampling Distance (GSD) prediction, GSD-conditioned query modulation and allocation, and a hierarchy-aware detection head for mixed-granularity remote sensing supervision. Under stringent evaluation settings, LEVIRDetNet demonstrates strong cross-domain generalization. Even without target-domain training or fine-tuning, it achieves state-of-the-art detection performance on 9 external benchmarks, improving the strongest fully supervised competing methods by 5.02 mAP on average under each benchmark's primary metric. We hope this study will facilitate the development of strongly generalizable remote sensing object detection across diverse category systems, spatial resolutions, and sensor platforms. The dataset and trained models will be released at https://qinzheyang.github.io/LEVIRDet/, accompanying the final paper.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages, 9 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>MotifGen: Spatiotemporal interpolation of misaligned satellite images via multi-source generative modeling, in an application to tropical cyclones</title>
     <link href="http://arxiv.org/abs/2606.24263v1" rel="alternate" type="text/html" />
@@ -107,6 +236,69 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 7 pages, 3 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="cs.DB" />
+  </entry>
+  <entry>
+    <title>Benchmarking the Alignment of Data-Quality Metrics, Human Judgment and Land-Cover Segmentation Performance for Earth Observation</title>
+    <link href="http://arxiv.org/abs/2606.25128v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.25128v1</id>
+    <published>2026-06-23T00:00:00Z</published>
+    <updated>2026-06-23T00:00:00Z</updated>
+    <author>
+      <name>Ümit Mert Çağlar</name>
+    </author>
+    <author>
+      <name>Alptekin Temizel</name>
+    </author>
+    <summary type="text">Volume and quality of datasets are crucial for deep learning model training, yet they are often constrained by availability and data acquisition costs. Synthetic data augmentation can extend existing datasets with realistic images, and the quality of these images is generally assessed through fidelity metrics such as FID, KID, IS, LPIPS and SSIM that measure structural or distributional similarity. However, such metrics, including the widely used FID, focus on visual fidelity without reflecting downstream utility, and can diverge from human perception under perturbations that are imperceptible to human observers. In this work, we systematically evaluate Earth observation datasets alongside synthetic counterparts generated by deep generative models, comparing automatic metrics against human perception and downstream tasks. Our results reveal a stark misalignment: semantics-preserving perturbations such as rotation drastically alter metric scores while leaving human recognition unaffected, and synthetic samples that score poorly on automatic metrics achieve comparable or higher perceived realism, and can improve downstream performance when combined with real data. By benchmarking semantic segmentation models trained on mixed real-synthetic datasets, we demonstrate that quality metrics rooted in ImageNet-pretrained feature spaces are unreliable indicators for geospatial data. Our findings underscore that automatic quality evaluation of synthetic datasets should be grounded in downstream task performance and human evaluation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+    <category term="Artificial Intelligence; Computer Vision; Machine Learning" />
+  </entry>
+  <entry>
+    <title>Feasibility-driven QAOA with penalty scheduling</title>
+    <link href="http://arxiv.org/abs/2606.25117v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.25117v1</id>
+    <published>2026-06-23T00:00:00Z</published>
+    <updated>2026-06-23T00:00:00Z</updated>
+    <author>
+      <name>Francesco Ferrari</name>
+    </author>
+    <author>
+      <name>Matteo Vandelli</name>
+    </author>
+    <author>
+      <name>Daniele Dragoni</name>
+    </author>
+    <summary type="text">Most available quantum algorithms address constrained optimization problems by treating constraints as soft penalty terms within a QUBO formulation. This approach requires careful adjustment of the penalty coefficients, which scales poorly with the number of constraints and lacks a proper strategy to balance feasibility and solution quality. In this work, we introduce two extensions of standard linear-ramp QAOA (lr-QAOA) tailored to problems with multiple heterogeneous constraints. We first construct $Λ$-lr-QAOA, in which each penalty term is assigned its own linear-ramp schedule, promoting penalty weights from external hyperparameters to internal variational parameters of QAOA, similarly to the objective and mixer parameters. By optimizing all schedules jointly in a single run, this approach eliminates nested penalty tuning and scales more efficiently to multiple constraints. The optimization is guided by a feasibility-driven loss function that pushes the quantum state towards high-quality feasible solutions. As a further refinement, we introduce piecewise-ramp QAOA, in which the linear ramps are replaced by two-segment piecewise schedules, enhancing the expressiveness of the Ansatz at the cost of a small parameter overhead independent of the circuit depth. We benchmark both methods on Earth-observation satellite mission planning tasks formulated as budget-constrained Maximum Weight Independent Set problems. Numerical results show that piecewise-ramp QAOA consistently outperforms lr-QAOA and $Λ$-lr-QAOA across circuit depths and system sizes. Furthermore, both $Λ$-lr-QAOA and piecewise-ramp QAOA exhibit a high feasibility rate, which is crucial in industrial applications. Our analysis highlights an intrinsic feasibility-optimality trade-off, which we address by introducing a filtered variant of the loss providing a single hyperparameter to tune this balance.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13 pages, 8 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="quant-ph" />
+  </entry>
+  <entry>
+    <title>What's in an Earth Embedding? An Explainability Analysis of Location Encoders</title>
+    <link href="http://arxiv.org/abs/2606.24997v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.24997v1</id>
+    <published>2026-06-23T00:00:00Z</published>
+    <updated>2026-06-23T00:00:00Z</updated>
+    <author>
+      <name>Livia Betti</name>
+    </author>
+    <author>
+      <name>Sebastian Ricke</name>
+    </author>
+    <author>
+      <name>Ivica Obadic</name>
+    </author>
+    <author>
+      <name>Adam J. Stewart</name>
+    </author>
+    <author>
+      <name>Esther Rolf</name>
+    </author>
+    <summary type="text">Geographic implicit neural representations (INRs) learn to map any coordinate on Earth to a location embedding, implicitly encoding geospatial data into the weights of a neural network. Location embeddings are widely used off the shelf as general-purpose geospatial representations, yet users lack principled tools to audit what geographic or semantic information these embeddings capture. In this work, we analyze the information content of geographic INRs through their location embeddings. We decompose these embeddings into human-interpretable features$\unicode{x2014}$namely, (i) sparse latent concepts, (ii) natural language concepts, and (iii) visual features. The latent concept embeddings are learned using sparse autoencoders. To recover natural language concepts, we apply sparse linear concept embeddings (SpLiCE) over a predefined geospatial dictionary. Finally, visual features are extracted using saliency maps derived from CLIP Surgery. We show that location embeddings can be decomposed into human-interpretable representations while retaining high reconstruction capability, revealing interpretable geographic structures such as forests, deserts, and urban features. Across methods, sparse decompositions expose systematic differences in encoded information, ranging from urban structures to broader biome and climate signals, and pretraining-space saliency maps further highlight complementary features such as roads and landmarks. We hope this work provides a first step toward interpretable geospatial representations.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
   </entry>
   <entry>
     <title>Hedgementation = Hedgerow Segmentation: A Remote Sensing Benchmark</title>
@@ -501,165 +693,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="cs.CE" />
     <category term="cs.DB; Geophysics" />
-  </entry>
-  <entry>
-    <title>PCFootprint: A Large-Scale Dataset and Benchmark for Vectorized Building Footprint Extraction from Aerial LiDAR Point Clouds</title>
-    <link href="http://arxiv.org/abs/2606.20455v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.20455v1</id>
-    <published>2026-06-18T00:00:00Z</published>
-    <updated>2026-06-18T00:00:00Z</updated>
-    <author>
-      <name>Haoyuan Shen</name>
-    </author>
-    <author>
-      <name>Kuihao Wang</name>
-    </author>
-    <author>
-      <name>Ruisheng Wang</name>
-    </author>
-    <author>
-      <name>Yujun Liu</name>
-    </author>
-    <summary type="text">Building footprint extraction is a fundamental task in photogrammetry, remote sensing, and computer vision. Recent image-based methods have achieved remarkable progress in extracting vectorized footprints from high-resolution optical imagery. However, optical imagery inherently susceptible to occlusions, perspective distortions, and residual relief displacement, yielding incomplete or misaligned footprint extraction. Furthermore, the lack of explicit elevation information limits its direct applicability to Level of Detail building modeling. In this paper, we present PCFootprint, the first large-scale public dataset for footprint extraction from airborne laser scanning point clouds. PCFootprint comprises \num{33000} tiles derived from the Estonian Land and Spatial Development Board, covering diverse urban and rural landscapes. Each tile spans \qtyproduct{128 x 128}{\m} with systematically aligned vectorized footprints aligned to point clouds. The dataset includes a \num{3000} tiles cross-domain test set for evaluating generalization across geographic regions. We establish comprehensive benchmarks by evaluating mainstream methods. Experimental results reveal significant challenges including high intra-class variance, data imbalance, and noise across complex geospatial environments. We believe PCFootprint will advance future research in building modeling, urban scene understanding, and geospatial analysis. The PCFootprint dataset is publicly available at \url{https://huggingface.co/datasets/Haoyuan-Shen/PCFootprint}.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://huggingface.co/datasets/Haoyuan-Shen/PCFootprint"&gt;https://huggingface.co/datasets/Haoyuan-Shen/PCFootprint&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 14 pages, 9 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Integrating national forest inventory, airborne lidar, and satellite imagery for wall-to-wall mapping of forest structure with computer vision</title>
-    <link href="http://arxiv.org/abs/2606.20291v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.20291v1</id>
-    <published>2026-06-18T00:00:00Z</published>
-    <updated>2026-06-18T00:00:00Z</updated>
-    <author>
-      <name>Luke J. Zachmann</name>
-    </author>
-    <author>
-      <name>David D. Diaz</name>
-    </author>
-    <author>
-      <name>Vincent A. Landau</name>
-    </author>
-    <author>
-      <name>Chelsey Walden-Schreiner</name>
-    </author>
-    <author>
-      <name>Tony Chang</name>
-    </author>
-    <author>
-      <name>Nathan E. Rutenbeck</name>
-    </author>
-    <author>
-      <name>Katharyn A. Duffy</name>
-    </author>
-    <author>
-      <name>Kiarie Ndegwa</name>
-    </author>
-    <author>
-      <name>Andreas Gros</name>
-    </author>
-    <author>
-      <name>Scott Conway</name>
-    </author>
-    <author>
-      <name>Guy Bayes</name>
-    </author>
-    <summary type="text">Remote sensing is increasingly relied upon to deliver actionable science for forest and wildfire risk management across large landscapes. Wall-to-wall, annually updated maps are a persistent need for effective forest management. Many planning systems and data collections combine disparate data sources with different purposes, vintages, and prediction quality, which leads to confounding behavior in operational planning systems. We introduce the VibrantForests framework, developed and applied to map forest attributes and provide a coherent foundation for effective forest and wildfire planning. VibrantForests includes a satellite-based forest structure model trained on lidar-derived samples and applied across the contiguous United States to concurrently generate estimates of canopy cover, canopy height, aboveground live tree biomass, basal area, and quadratic mean diameter at 10-meter resolution. We demonstrate predictive capability spanning the full spectrum of forest conditions ranging from sparse-canopy/low-biomass to dense-canopy/high-biomass. Results show that our model extends the range at which saturation is commonly encountered in comparable passive-sensor models, and reduces regression-to-mean behavior that commonly produces overestimation of forest attributes in small/sparse conditions and underestimation in large/dense conditions. The VibrantForests framework addresses a key limitation in large-area forest and wildfire planning by delivering coherent wall-to-wall estimates of management-relevant attributes at annual cadence and 10m resolution.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Evaluating and Enhancing Negation Comprehension in Remote Sensing MLLMs</title>
-    <link href="http://arxiv.org/abs/2606.20177v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.20177v2</id>
-    <published>2026-06-18T00:00:00Z</published>
-    <updated>2026-06-18T00:00:00Z</updated>
-    <author>
-      <name>Haochen Han</name>
-    </author>
-    <author>
-      <name>Jue Wang</name>
-    </author>
-    <author>
-      <name>Alex Jinpeng Wang</name>
-    </author>
-    <author>
-      <name>Fangming Liu</name>
-    </author>
-    <summary type="text">Multimodal Large Language Models (MLLMs) have demonstrated remarkable success in various Remote Sensing (RS) tasks. However, their ability to comprehend negation remains underexplored, limiting deployment in real-world applications where models must explicitly identify what is false or absent, e.g., emergency responders need to locate non-flooded routes for evacuation. To comprehensively study this limitation, we introduce RS-Neg, the first benchmark to evaluate negation understanding across region-level to scene-level tasks. Specifically, we design an automated data generation pipeline for RS imagery, using LLMs to synthesize diverse negation queries, and introduce a dynamic visual focus module for verification. Our evaluation reveals that advanced RS MLLMs struggle with negation, exhibiting hallucinations and substantial performance degradation. To close this gap, we propose NeFo, a novel test-time learning method that explicitly incorporates the logical role of negation into the model optimization. Remarkably, using about 5\% unlabeled test samples, NeFo significantly improves the negation understanding of models and shows strong generalization to unseen tasks. Code and data will be released upon acceptance.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ECCV 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Multi-Modal Contrastive Learning for Implicit Earth Embeddings via Location Tying</title>
-    <link href="http://arxiv.org/abs/2606.20167v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.20167v1</id>
-    <published>2026-06-18T00:00:00Z</published>
-    <updated>2026-06-18T00:00:00Z</updated>
-    <author>
-      <name>Jonathan Hecht</name>
-    </author>
-    <author>
-      <name>Lukas Arzoumanidis</name>
-    </author>
-    <author>
-      <name>Ziyue Li</name>
-    </author>
-    <author>
-      <name>Youness Dehbi</name>
-    </author>
-    <summary type="text">Spatial prediction tasks are often limited by a lack of high-quality labelled ground-truth observations. To overcome this challenge, self-supervised pre-training is a possible solution, with contrastive learning dominant for location encoders. Those approaches usually align geographic coordinates with just one additional modality. We propose two multimodal contrastive learning architectures: Multimodal Embedding via Location Tying (MELT) and Sequential Alternating Location Training (SALT). These architectures expand this framework beyond two modalities by utilising unpaired geospatial data. Both methods are technically viable and match the performance of the strongest two-modality baseline (SATCLIP) across four downstream tasks. However, increasing the number of modalities does not consistently improve performance, suggesting that the chosen location encoder is the main limitation - the contrastive objective reaches its peak early, regardless of modality diversity or pre-training volume. MELT provides more stable training than SALT and presents a stronger foundation for future scaling.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>ReA-OVCD: Reliability-Aware Open-Vocabulary Change Detection via Semantic and Spatial Refinement</title>
-    <link href="http://arxiv.org/abs/2606.20032v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.20032v1</id>
-    <published>2026-06-18T00:00:00Z</published>
-    <updated>2026-06-18T00:00:00Z</updated>
-    <author>
-      <name>Hongming Zhu</name>
-    </author>
-    <author>
-      <name>Huaji Chen</name>
-    </author>
-    <author>
-      <name>Bowen Du</name>
-    </author>
-    <author>
-      <name>Sicong Liu</name>
-    </author>
-    <author>
-      <name>Qin Liu</name>
-    </author>
-    <summary type="text">Unlike traditional remote sensing change detection that relies on predefined categories, Open-Vocabulary Change Detection (OVCD) identifies land cover changes flexibly using arbitrary text prompts. However, existing methods suffer from an inherent trade-off when modeling changes: instance-level comparison overlooks fine-grained semantic variations (e.g., partial building extensions), while direct pixel comparison proves unreliable, yielding unstable responses and boundary artifacts due to semantic ambiguity and spatial inconsistency. To this end, we propose an efficient training-free Reliability-Aware Open-Vocabulary Change Detection (ReA-OVCD) framework. It first derives candidate change regions from pixel-wise semantic discrepancies to ensure flexible and detailed localization. To ensure reliability, it subsequently introduces a collaborative refinement strategy to explicitly model change validity from both semantic and spatial perspectives. Specifically, we develop a Semantic Change Reasoning (SCR) module that reassesses changes by jointly analyzing distributional divergence and response variation, enabling the suppression of incidental inconsistencies while preserving reliable semantic shifts. In addition, a Boundary-aware Change Refinement (BCR) module is designed to mitigate artifacts stemming from boundary misalignment and uncertainty through validating whether candidate regions are supported by reliable interior pixels. Extensive experiments across multiple datasets (LEVIR-CD, WHU-CD, DSIFN, and SECOND) demonstrate that our method consistently outperforms state-of-the-art approaches, achieving $\mathrm{F}_{1}^{C}$ improvements of 2.13\% to 9.75\% with higher computational efficiency. The code is publicly available at \https://github.com/Funny0101/ReA-OVCD</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Funny0101/ReA-OVCD"&gt;https://github.com/Funny0101/ReA-OVCD&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>BELDE: Building a Large-scale Earth-observation Land-cover Dataset for Europe</title>
-    <link href="http://arxiv.org/abs/2606.20909v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.20909v1</id>
-    <published>2026-06-18T00:00:00Z</published>
-    <updated>2026-06-18T00:00:00Z</updated>
-    <author>
-      <name>Ümit Mert Çağlar</name>
-    </author>
-    <author>
-      <name>Alptekin Temizel</name>
-    </author>
-    <summary type="text">Earth observation imagery plays a critical role in environmental monitoring, urban planning, disaster assessment, and climate analysis. While multi-spectral sensors are increasingly available, true-color (RGB) imagery remains widely used due to the power, cost, and deployment constraints of many satellite and aerial platforms. However, existing land-cover segmentation datasets are often limited in geographic coverage, scale, or public accessibility.   To bridge this gap, we introduce BELDE (Building a Large-scale Earth-observation Land-cover Dataset for Europe), a publicly available dataset tailored for RGB-based remote sensing semantic segmentation. Constructed from Sentinel-2 true-color images and ESA WorldCover data annotations, BELDE contains 1,088,385 curated image-segmentation map pairs spanning Europe with 7 land-cover classes at 10 m spatial resolution, making it one of the largest publicly available RGB land-cover segmentation datasets for Earth observation. To facilitate cross-region generalization studies, we additionally introduce BELDE-K (16,607 pairs) covering the Republic of Korea and BELDE-CA-NV (88,155 pairs) covering California and Nevada in the United States.   We establish baseline results using multiple semantic segmentation architectures and evaluate both in-domain and cross-domain performance. Models trained on BELDE achieve an F1 score of 83.0% on the European test set, while performance decreases to 66.4% on BELDE-CA-NV and 58.3% on BELDE-K, highlighting the challenges posed by out-of-distribution geographic domain shift. By providing a continental-scale RGB segmentation and evaluation benchmark, BELDE supports the development of robust and transferable Earth observation models. The dataset and benchmark resources will be publicly released.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence; Image and Video Processing" />
   </entry>
 </feed>
