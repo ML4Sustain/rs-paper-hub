@@ -4,12 +4,110 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-25T05:00:11Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 26 entries</subtitle>
+  <updated>2026-06-26T02:01:48Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 29 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>EO-WM: A Physically Informed World Model for Probabilistic Earth Observation Forecasting</title>
+    <link href="http://arxiv.org/abs/2606.27277v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.27277v1</id>
+    <published>2026-06-25T00:00:00Z</published>
+    <updated>2026-06-25T00:00:00Z</updated>
+    <author>
+      <name>Junwei Luo</name>
+    </author>
+    <author>
+      <name>Shuai Yuan</name>
+    </author>
+    <author>
+      <name>Zhenya Yang</name>
+    </author>
+    <author>
+      <name>Yansheng Li</name>
+    </author>
+    <author>
+      <name>Zhe Liu</name>
+    </author>
+    <author>
+      <name>Hengshuang Zhao</name>
+    </author>
+    <summary type="text">Earth Observation (EO) forecasting aims to predict future Earth surface dynamics from satellite observations under changing meteorological conditions. In this paper, we view this task as a partially observed, weather-driven world modeling problem, in which weather acts as a conditioning signal, while forecasting remains uncertain due to sparse observations and unobserved land-surface states. However, existing methods do not fully capture this setting: deterministic models collapse uncertainty into a single future prediction, while diffusion-based methods typically treat weather variables as undifferentiated conditioning signals, and existing benchmarks focus mainly on reconstruction accuracy rather than whether forecasts respond correctly to changed weather forcing.We introduce EO-WM, a video diffusion transformer for multispectral EO forecasting. EO-WM incorporates a physically informed conditioning framework that represents meteorological forcing through a climatological baseline, weather anomalies, and cumulative physical stress signals. Specifically, it separates baseline and anomaly through distinct conditioning pathways, and accumulates anomalous forcing over time to capture sustained heat and drought stress. To evaluate weather-response behavior beyond standard metrics, we introduce two diagnostic benchmarks: an Extreme Summer Benchmark for severity-aware prediction of vegetation degradation under extreme weather, and a Seasonal Matched-Pair Benchmark for testing response fidelity under changed weather forcing. Experiments show that EO-WM reduces the error in predicted Normalized Difference Vegetation Index (NDVI) decline amplitude by a relative 5.63% and improves directional hit rate by a relative 7.80%, while remaining competitive on standard pixel-level metrics. The benchmarks and model will be made open-source at https://github.com/Luo-Z13/EO-WM.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Luo-Z13/EO-WM"&gt;https://github.com/Luo-Z13/EO-WM&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 28 pages, 5 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>On-board Remote-Sensing Foundation Models for Unsupervised Change Detection of Disaster Events</title>
+    <link href="http://arxiv.org/abs/2606.27018v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.27018v1</id>
+    <published>2026-06-25T00:00:00Z</published>
+    <updated>2026-06-25T00:00:00Z</updated>
+    <author>
+      <name>S. Ramírez-Gallego</name>
+    </author>
+    <summary type="text">Remote Sensing Foundation Models (RSFMs) have emerged as a powerful alternative to supervised models for Earth Observation, allowing satellites to autonomously trigger high-resolution captures or adjust tasking parameters upon detecting an anomaly, thereby maximizing the utility of the mission's limited power and computational resources. RSFMs are versatile, unified encoders that optimize onboard storage for multiple orbital applications while ensuring high-fidelity feature extraction. In particular, unsupervised change detection with RSFMs offers a well-informed and transformative path for disaster monitoring without expensive labels. In this paper, we present a novel unsupervised detection method based on ResNet (RSFM) + FPN which identifies a wide spectrum of anomalies by detecting subtle semantic shifts in the latent space between successive orbital passes. By relying on an untrained FPN architecture and its intrinsic priors, the system achieves efficient image-level generation and higher resolution mapping with minimal effort (training-free) compared to previous proposals (patch-based, trained). And by replacing tailored models with RSFMs, we can achieve comparable results through an approach that eliminates the need for bespoke training and extensive development effort and adds customization, while ensuring high-performance generalization across diverse terrains and sensors.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Predicting disease severity and large-scale spread from coupled severity measurements and imperfect indicators: Application to beet yellows</title>
+    <link href="http://arxiv.org/abs/2606.26972v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.26972v1</id>
+    <published>2026-06-25T00:00:00Z</published>
+    <updated>2026-06-25T00:00:00Z</updated>
+    <author>
+      <name>Baptiste Oger</name>
+    </author>
+    <author>
+      <name>César Martinez</name>
+    </author>
+    <author>
+      <name>François Joudelat</name>
+    </author>
+    <author>
+      <name>Samuel Soubeyrand</name>
+    </author>
+    <author>
+      <name>Lionel Benoit</name>
+    </author>
+    <summary type="text">Whether in human, animal, or plant health, effective disease management requires the ability to characterize disease dynamics across space and time. In this context, integrating indirect indicators with broad spatio-temporal coverage, even when they are noisy, can provide valuable complementary information to direct measurements, which are often sparse because they are more costly or intrusive to collect. In this article, we propose a statistical framework to leverage such indirect indicators to predict disease severity at the individual or local-scale level and reconstruct large-scale disease dynamics. This two-step approach is able to account for the specific characteristics of disease severity observations, including zero inflation and spatio-temporal structure. The first step relies on a stacked hurdle model based on multiple random forests to locally predict disease severity from the available indirect indicators. In the second step a semi-parametric spatio-temporal model is used to reconstruct large-scale epidemiological dynamics over space and time from the indicators-based predictions. The proposed methodology is designed to be both generic and modular, and is illustrated by a case study in plant health. This case study focuses on the monitoring of sugar beet yellows disease in France between 2019 and 2023 by combining sparse field measurements and satellite-based remote sensing data.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 17 pages, 6 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="stat.ME" />
+  </entry>
+  <entry>
+    <title>SpaceRipple: Lightweight Semantic Delivery for Mission-Oriented LEO Earth Observation Satellite Networks</title>
+    <link href="http://arxiv.org/abs/2606.26559v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.26559v1</id>
+    <published>2026-06-25T00:00:00Z</published>
+    <updated>2026-06-25T00:00:00Z</updated>
+    <author>
+      <name>Ziyi Yang</name>
+    </author>
+    <author>
+      <name>Hao Yuan</name>
+    </author>
+    <author>
+      <name>Yunxiang Yi</name>
+    </author>
+    <author>
+      <name>Wenbo Wang</name>
+    </author>
+    <author>
+      <name>Xing Zhang</name>
+    </author>
+    <summary type="text">Earth observation satellite networks generate massive volumes of high-resolution imagery, whereas inter-satellite and downlink resources remain limited. In many time-sensitive missions, ground users require mission-relevant semantic information rather than a full raw-image downlink. This paper proposes SpaceRipple, a lightweight framework for mission-oriented semantic delivery and on-board processing in Earth observation satellite networks. A sensing satellite performs adaptive compression and metadata generation to reduce inter-satellite traffic, while an edge computing satellite restores the received representation and extracts task-relevant semantic information. Unlike fidelity-driven image transmission, SpaceRipple coordinates compression, forwarding, restoration, and semantic inference within a collaborative pipeline, enabling semantic-oriented delivery instead of pixel-level image delivery. A compression-aware MoE enhancement module is further introduced to improve robustness under degraded visual inputs. Experimental results show that SpaceRipple achieves favorable reconstruction quality, improved semantic detection performance, and substantial bandwidth savings, demonstrating its potential for efficient and reliable Earth observation under constrained satellite-network resources.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence; cs.GR" />
+  </entry>
   <entry>
     <title>Retrieval-Grounded Multilingual LLM Assistance for Island Smallholder Farmers</title>
     <link href="http://arxiv.org/abs/2606.25647v1" rel="alternate" type="text/html" />
@@ -138,6 +236,51 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
     <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Methane-Plume Segmentation From Hyperspectral Satellite Imagery Via Multimodal Deep Learning</title>
+    <link href="http://arxiv.org/abs/2606.26416v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.26416v1</id>
+    <published>2026-06-24T00:00:00Z</published>
+    <updated>2026-06-24T00:00:00Z</updated>
+    <author>
+      <name>Brayan Quintero</name>
+    </author>
+    <author>
+      <name>Jeferson Acevedo</name>
+    </author>
+    <author>
+      <name>Samuel Traslaviña</name>
+    </author>
+    <author>
+      <name>Hoover Rueda-Chacón</name>
+    </author>
+    <summary type="text">Efficient detection of methane plumes is crucial for understanding and mitigating global warming, as accurately identifying and segmenting them in earth observation imagery remain essential for large-scale monitoring. In this work, we propose a multimodal deep learning model that integrates a feature-guided methane enhancement (FGME) mechanism which injects physically meaningful methane cues into transformer-based RGB representations at multiple semantic scales. Our method is evaluated on the MPDataset, where it outperforms the state-of-the-art with improvements of +0.92 in MIoU, +0.87 in MPrecision and +1.01 in Recall. Notably, these gains are obtained with a substantially lower computational cost than other high-performing architectures, resulting in a favorable accuracy-efficiency trade-off for large-scale methane monitoring. These results highlight the potential of efficient multimodal fusion strategies for accurate and scalable methane plume segmentation in real-world remote sensing applications.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE International Geoscience and Remote Sensing Symposium (IGARSS) 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Topology-Informed Neural Networks for Flood Detection in Optical and Synthetic Aperture Radar Imagery</title>
+    <link href="http://arxiv.org/abs/2606.26204v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.26204v1</id>
+    <published>2026-06-24T00:00:00Z</published>
+    <updated>2026-06-24T00:00:00Z</updated>
+    <author>
+      <name>Sophia Li</name>
+    </author>
+    <author>
+      <name>Max Zhao</name>
+    </author>
+    <author>
+      <name>Raghu G. Raj</name>
+    </author>
+    <author>
+      <name>Tianyu Chen</name>
+    </author>
+    <summary type="text">Floods frequently impact regions around the world. Rapid and accurate flood detection is crucial for emergency response and timely mitigation of human and economic loss. The expanding availability of satellite data and advances in artificial intelligence have enhanced monitoring of environmental hazards, but many flood events remain challenging to detect because cloud cover obscures optical satellite imagery. Rambour et al. introduced the SEN12-FLOOD dataset and extracted per-image features using a ResNet-50 convolutional neural network backbone, then fed these features into a gated recurrent unit network to show that temporal information can substantially improve accuracy compared to single-image baselines. More recently, Chamatidis et al. showed that a vision transformer can achieve strong performance with popular convolutional architectures. However, these models typically function as opaque black boxes, making it difficult to interpret their decision boundaries, learned features, and internal reasoning, especially in safety-critical domains like remote sensing. In contrast, topological data analysis (TDA) provides a mathematically grounded framework for capturing global structural features of data. TDA has emerged as a powerful tool for analyzing complex imagery, especially imagery with geometrically interpretable structures, of which floods are a prime candidate. In this work, we systematically evaluate topological descriptors for flood detection using the open-source SEN12-FLOOD dataset. By extracting topological features from each image and incorporating them into neural networks, we demonstrate that topological descriptors carry meaningful flood signals independently and complement existing networks to yield more robust and interpretable flood detection systems.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
   </entry>
   <entry>
     <title>MotifGen: Spatiotemporal interpolation of misaligned satellite images via multi-source generative modeling, in an application to tropical cyclones</title>
@@ -634,64 +777,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;SR&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Deep Learning for Soil Moisture Estimation: Fusing Satellite Data with Optimally-Lagged Meteorological Features</title>
-    <link href="http://arxiv.org/abs/2606.21475v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.21475v1</id>
-    <published>2026-06-19T00:00:00Z</published>
-    <updated>2026-06-19T00:00:00Z</updated>
-    <author>
-      <name>Adrian Canovas-Rodriguez</name>
-    </author>
-    <author>
-      <name>Aurora González Vidal</name>
-    </author>
-    <author>
-      <name>Antonio F. Skarmeta</name>
-    </author>
-    <summary type="text">Accurate soil moisture estimation in semi-arid agricultural regions requires integrating remote sensing and meteorological information while accounting for the delayed response of soil moisture to atmospheric forcing. This study introduces a Cross-Correlation Function (CCF) methodology to determine optimal temporal lags (0-30 days) between meteorological variables and soil moisture, as well as inter-depth lags (0-15 days) describing vertical moisture propagation from the surface (10 cm) to deeper layers (20-50 cm). The approach was validated across seven agricultural plots in southeastern Spain. Three deep learning architectures, each targeting a distinct prediction granularity, were evaluated under five feature configurations ranging from satellite-only to full satellite-meteorology-depth fusion: a CNN for per-pixel estimation within each plot, an LSTM for frame-level (daily plot-mean) prediction, and a CNN-LSTM hybrid operating on sliding windows with pooled multi-patch training. Models were assessed on held-out data to measure genuine generalisation. Meteorological variables improved performance over the satellite-only baseline, while subsurface depth information proved decisive across all architectures. The per-pixel CNN achieved the strongest single-patch result (R^2 = 0.877, RMSE = 2.28), with a seven-patch average R^2 of 0.535, representing an improvement of +1.00 over the satellite-only baseline. The pooled CNN-LSTM hybrid obtained the highest overall performance (R^2 = 0.930, CVRMSE = 8.0%). These results demonstrate that explicitly modelling atmospheric and vertical subsurface delays substantially improves soil moisture estimation for precision agriculture.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Urban Power Grid Topology and Hierarchy Identification from Open Data</title>
-    <link href="http://arxiv.org/abs/2606.21352v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.21352v1</id>
-    <published>2026-06-19T00:00:00Z</published>
-    <updated>2026-06-19T00:00:00Z</updated>
-    <author>
-      <name>Shiliang Zhang</name>
-    </author>
-    <author>
-      <name>Sabita Maharjan</name>
-    </author>
-    <summary type="text">Understanding the complex topology and hierarchy of urban power grid is crucial for energy prognosis, power flow management, and system resilience analysis. However, detailed grid information remains largely proprietary. This creates significant barriers for research and innovation, especially when analyzing the last-mile distribution networks connecting individual buildings. This paper addresses this challenge by developing an open-data-driven framework for the complete identification of urban power grid topology, from high-voltage transmission down to individual building connections. Particularly, we fuse public infrastructure data (power-lines, substations, transformers, poles) to map the high and medium-voltage skeleton using graph-based algorithms. We then leverage geospatial machine learning on OpenStreetMap building data to group power demand clusters, and infer the physical topology of the final distribution lines linking the clustered buildings. We apply the developed framework to the district of Alna in Oslo, Norway, and we reconstruct the complete grid topology that connects 7,330 buildings and all major electricity infrastructure assets. With the research in this work, we provide a critical tool that facilitates power system analysis, e.g., power flow optimization, cascading failure simulation, and grid resilience against the penetration of distributed renewable generation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>FireDataForge: A Unified Framework for Multi-Source Wildfire Data Retrieval and Integration</title>
-    <link href="http://arxiv.org/abs/2606.21198v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.21198v1</id>
-    <published>2026-06-19T00:00:00Z</published>
-    <updated>2026-06-19T00:00:00Z</updated>
-    <author>
-      <name>Zeyu Xia</name>
-    </author>
-    <author>
-      <name>Lexie Chen</name>
-    </author>
-    <author>
-      <name>Ye Liu</name>
-    </author>
-    <author>
-      <name>Huilin Huang</name>
-    </author>
-    <summary type="text">Wildfire research, modeling, and education require geospatial data from multiple sources that vary in formats, coordinate systems, spatial resolutions, and temporal cadences. This preprocessing burden limits reproducible reuse. We present FireDataForge, an open-source Python framework that automates retrieval and harmonization of 11 wildfire-related sources spanning fire behavior, weather, land cover, vegetation, elevation, built environment, wildland-urban interface, fire history, and satellite imagery. Given an MTBS Event ID, FireDataForge retrieves relevant datasets, aligns them to a common grid, and outputs analysis-ready NumPy arrays with embedded metadata. Batch processing of historical fires demonstrates support for fire behavior simulation, educational visualization, machine learning, and AI-assisted wildfire analysis.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE International Conference on Information Reuse and Integration for Data Science (IEEE IRI 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.CE" />
-    <category term="cs.DB; Geophysics" />
   </entry>
 </feed>
