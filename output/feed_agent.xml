@@ -4,12 +4,42 @@
   <id>https://rspaper.top/output/feed_agent.xml</id>
   <link href="https://rspaper.top/output/feed_agent.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-26T05:05:36Z</updated>
+  <updated>2026-06-29T02:06:21Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>GenWorld: Empirically Grounded Urban Simulation Infrastructure for Scalable LLM-Agent Studies</title>
+    <link href="http://arxiv.org/abs/2606.27650v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.27650v1</id>
+    <published>2026-06-26T00:00:00Z</published>
+    <updated>2026-06-26T00:00:00Z</updated>
+    <author>
+      <name>Gen Li</name>
+    </author>
+    <author>
+      <name>Jieyuan Lan</name>
+    </author>
+    <author>
+      <name>Pengcheng Xu</name>
+    </author>
+    <author>
+      <name>Zongyuan Wu</name>
+    </author>
+    <author>
+      <name>Masaki Ogura</name>
+    </author>
+    <author>
+      <name>Tao Feng</name>
+    </author>
+    <summary type="text">LLM-agent simulation faces a joint grounding and scaling problem: agents should act in environments that reflect real urban constraints, yet direct online LLM calls for city-scale populations are computationally prohibitive. We present GenWorld, an empirically grounded urban simulation infrastructure that combines a building-level synthetic city, a structured agent-environment interface, and offline compilation of LLM-derived decision signals into lookup policies for scalable rollout. In a reference instantiation for Higashihiroshima, Japan, GenWorld grounds 196,608 synthetic residents in census and geospatial data, validates demographic consistency against census tabulations, and uses YJMob100K mobile-phone data as a commuting-distance diagnostic. We demonstrate the infrastructure through three reproducible cases: a full-city weekday rollout, a weekday-weekend behavioral contrast, and a warning-response perturbation with auditable replanning traces. These cases support GenWorld as a reproducible platform for grounded and scalable LLM-agent studies, while calibrated forecasting for traffic, evacuation, or policy outcomes remains future work.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 27 pages, 24 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="cs.MA" />
+  </entry>
   <entry>
     <title>Retrieval-Grounded Multilingual LLM Assistance for Island Smallholder Farmers</title>
     <link href="http://arxiv.org/abs/2606.25647v1" rel="alternate" type="text/html" />
@@ -30,41 +60,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
     <category term="cs.CE" />
-  </entry>
-  <entry>
-    <title>RAPID: A Reproducible Multi-Agent Pipeline for Interpretable Disaster Damage Assessment from Satellite and Street-View Imagery</title>
-    <link href="http://arxiv.org/abs/2606.21819v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.21819v1</id>
-    <published>2026-06-20T00:00:00Z</published>
-    <updated>2026-06-20T00:00:00Z</updated>
-    <author>
-      <name>Yifan Yang</name>
-    </author>
-    <author>
-      <name>Wenjing Gong</name>
-    </author>
-    <author>
-      <name>Kaili Zhang</name>
-    </author>
-    <author>
-      <name>Lei Zou</name>
-    </author>
-    <author>
-      <name>Zhengzhong Tu</name>
-    </author>
-    <author>
-      <name>Hao Li</name>
-    </author>
-    <author>
-      <name>Zongrong Li</name>
-    </author>
-    <author>
-      <name>Xinyue Ye</name>
-    </author>
-    <summary type="text">Due to the increasing frequency and intensity of extreme climate events, there is a clear demand for intelligent, scalable, and autonomous approaches to disaster damage assessment. Existing methods, largely based on supervised learning and task-specific fine-tuning, struggle to generalize under domain shifts, long-tailed data distributions, and heterogeneous geospatial data sources, especially in disaster scenarios. They also often lack the ability to integrate and reason across multimodal geospatial information, such as satellite images and street-view images. In this paper, we introduce RAPID, a reproducible multi-agent pipeline for interpretable disaster damage assessment, including damage-level assessment, damage-type interpretation, and actionable suggestions for response, remediation, and recovery. RAPID coordinates specialized agents to perform cross-view understanding, image restoration, structured damage recognition, and geographical reasoning across heterogeneous data modalities. Without task-specific fine-tuning, RAPID supports zero-shot damage assessment by jointly using complementary information from remote sensing and ground-level perspectives. The system produces fine-grained, interpretable assessments and automatically generates location-specific, decision-relevant disaster reports to support early-stage emergency response. We evaluate RAPID across hurricanes, floods, wildfires, and earthquakes using multiple cross-view imagery inputs, including pre- and post-disaster street-view images, post-disaster remote sensing imagery, and street-view image pairs. Experiments show that RAPID achieves 0.92 overall accuracy for multi-disaster type classification and up to 0.627 for cross-view damage severity prediction, highlighting its potential as a foundational framework for autonomous disaster intelligence.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages, 8 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;SR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>

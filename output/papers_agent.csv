@@ -1469,3 +1469,10 @@ Method,cs.CE,,2026-06-24,6,2026,,Retrieval-Grounded Multilingual LLM Assistance 
   year={2026},
   url={http://arxiv.org/abs/2606.25647v1}
 }","Nikolaos D. Tantaroudas, Ilias Karachalios, Andrew J. McCracken",VG,2026-06-25
+Method,cs.MA,,2026-06-26,6,2026,,GenWorld: Empirically Grounded Urban Simulation Infrastructure for Scalable LLM-Agent Studies,,http://arxiv.org/abs/2606.27650v1,"LLM-agent simulation faces a joint grounding and scaling problem: agents should act in environments that reflect real urban constraints, yet direct online LLM calls for city-scale populations are computationally prohibitive. We present GenWorld, an empirically grounded urban simulation infrastructure that combines a building-level synthetic city, a structured agent-environment interface, and offline compilation of LLM-derived decision signals into lookup policies for scalable rollout. In a reference instantiation for Higashihiroshima, Japan, GenWorld grounds 196,608 synthetic residents in census and geospatial data, validates demographic consistency against census tabulations, and uses YJMob100K mobile-phone data as a commuting-distance diagnostic. We demonstrate the infrastructure through three reproducible cases: a full-city weekday rollout, a weekday-weekend behavioral contrast, and a warning-response perturbation with auditable replanning traces. These cases support GenWorld as a reproducible platform for grounded and scalable LLM-agent studies, while calibrated forecasting for traffic, evacuation, or policy outcomes remains future work.",,"27 pages, 24 figures","@article{li2026genworld,
+  title={GenWorld: Empirically Grounded Urban Simulation Infrastructure for Scalable LLM-Agent Studies},
+  author={Gen Li and Jieyuan Lan and Pengcheng Xu and Zongyuan Wu and Masaki Ogura and Tao Feng},
+  journal={arXiv preprint arXiv:2606.27650v1},
+  year={2026},
+  url={http://arxiv.org/abs/2606.27650v1}
+}","Gen Li, Jieyuan Lan, Pengcheng Xu, Zongyuan Wu, Masaki Ogura, Tao Feng",VG,2026-06-29

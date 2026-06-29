@@ -4,12 +4,86 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-26T05:05:36Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 12 entries</subtitle>
+  <updated>2026-06-29T02:06:21Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 9 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>RSICCLLM: A Multimodal Large Language Model for Remote Sensing Image Change Captioning</title>
+    <link href="http://arxiv.org/abs/2606.28266v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.28266v1</id>
+    <published>2026-06-26T00:00:00Z</published>
+    <updated>2026-06-26T00:00:00Z</updated>
+    <author>
+      <name>Yelin Wang</name>
+    </author>
+    <author>
+      <name>Zijia Song</name>
+    </author>
+    <author>
+      <name>Shuo Ye</name>
+    </author>
+    <author>
+      <name>Chuanguang Yang</name>
+    </author>
+    <author>
+      <name>Miaoyu Wang</name>
+    </author>
+    <author>
+      <name>Yong Xu</name>
+    </author>
+    <author>
+      <name>Zhulin An</name>
+    </author>
+    <author>
+      <name>Yongjun Xu</name>
+    </author>
+    <author>
+      <name>Zitong Yu</name>
+    </author>
+    <summary type="text">Remote Sensing Image Change Captioning (RSICC) aims to describe changes between bi-temporal remote sensing images and holds significant research and application value. However, most existing methods rely on conventional deep learning architectures, and the limited model capacity constrains performance. Although large-model post-training techniques have achieved great success in general domains, their direct transfer to RSICC remains challenging due to data scarcity and the need for fine-grained change understanding. To address this, we propose RSICCLLM, the first post-training framework for large vision-language models in RSICC. Specifically, we design a data generation paradigm, release the instruction dataset RSICI, and establish a task-specific RSICC benchmark. We further introduce Difference-aware Supervised Fine-tuning to explicitly extract change representations and guide the model in perceiving and understanding temporal differences. In addition, we propose Dual-Negative Preference Optimization (DNPO), which employs two complementary negative-sample construction strategies to construct the preference dataset RSICP and further refine model performance. Extensive experiments validate the superior capability of RSICCLLM, which achieves outstanding results with only 7B parameters, surpassing models of substantially larger scales. The code and dataset will be made publicly available at https://github.com/keaill/RSICCLLM.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/keaill/RSICCLLM"&gt;https://github.com/keaill/RSICCLLM&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ECCV 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>DFM: Difference Feature Modeling with Text-Guided Gated Contrastive Loss for Remote Sensing Image Change Captioning</title>
+    <link href="http://arxiv.org/abs/2606.27410v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.27410v1</id>
+    <published>2026-06-25T00:00:00Z</published>
+    <updated>2026-06-25T00:00:00Z</updated>
+    <author>
+      <name>Yelin Wang</name>
+    </author>
+    <author>
+      <name>Zijia Song</name>
+    </author>
+    <author>
+      <name>Chuanguang Yang</name>
+    </author>
+    <author>
+      <name>Miaoyu Wang</name>
+    </author>
+    <author>
+      <name>Zhulin An</name>
+    </author>
+    <author>
+      <name>Libo Huang</name>
+    </author>
+    <author>
+      <name>Yongjun Xu</name>
+    </author>
+    <summary type="text">The primary goal of Remote Sensing Image Change Captioning (RSICC) is to automatically generate descriptions of changes between remote sensing images captured at different time points. Existing models still rely on a single autoregressive generation paradigm, which tends to prioritize learning easily generated vocabulary over capturing discriminative differences between images. To address this, we reframe the training paradigm and propose a novel Difference Feature Modeling (DFM) framework. Specifically, we introduce a Text-guided Gated Contrastive Loss (TGCL) to guide the vision encoder to extract critical features from a text-modal perspective. Additionally, we incorporate a pre-trained Change Detection model to transfer stable change detection knowledge. In order to further enhance the representation, we design a Joint Feature Modeling (JFM) module to achieve the fusion of multi-scale difference representations, thereby capturing comprehensive spatiotemporal variations between multi-temporal images. Extensive experiments on multiple datasets demonstrate the effectiveness of our approach.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE ICME 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+    <category term="Machine Learning" />
+  </entry>
   <entry>
     <title>Retrieval-Grounded Multilingual LLM Assistance for Island Smallholder Farmers</title>
     <link href="http://arxiv.org/abs/2606.25647v1" rel="alternate" type="text/html" />
@@ -106,8 +180,8 @@
   </entry>
   <entry>
     <title>Topology-Informed Neural Networks for Flood Detection in Optical and Synthetic Aperture Radar Imagery</title>
-    <link href="http://arxiv.org/abs/2606.26204v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.26204v1</id>
+    <link href="http://arxiv.org/abs/2606.26204v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.26204v2</id>
     <published>2026-06-24T00:00:00Z</published>
     <updated>2026-06-24T00:00:00Z</updated>
     <author>
@@ -179,153 +253,5 @@
     <summary type="text">Geographic implicit neural representations (INRs) learn to map any coordinate on Earth to a location embedding, implicitly encoding geospatial data into the weights of a neural network. Location embeddings are widely used off the shelf as general-purpose geospatial representations, yet users lack principled tools to audit what geographic or semantic information these embeddings capture. In this work, we analyze the information content of geographic INRs through their location embeddings. We decompose these embeddings into human-interpretable features$\unicode{x2014}$namely, (i) sparse latent concepts, (ii) natural language concepts, and (iii) visual features. The latent concept embeddings are learned using sparse autoencoders. To recover natural language concepts, we apply sparse linear concept embeddings (SpLiCE) over a predefined geospatial dictionary. Finally, visual features are extracted using saliency maps derived from CLIP Surgery. We show that location embeddings can be decomposed into human-interpretable representations while retaining high reconstruction capability, revealing interpretable geographic structures such as forests, deserts, and urban features. Across methods, sparse decompositions expose systematic differences in encoded information, ranging from urban structures to broader biome and climate signals, and pretraining-space saliency maps further highlight complementary features such as roads and landmarks. We hope this work provides a first step toward interpretable geospatial representations.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>UniverSat: Resolution- and Modality-Agnostic Transformers for Earth Observation</title>
-    <link href="http://arxiv.org/abs/2606.23503v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.23503v1</id>
-    <published>2026-06-22T00:00:00Z</published>
-    <updated>2026-06-22T00:00:00Z</updated>
-    <author>
-      <name>Yohann Perron</name>
-    </author>
-    <author>
-      <name>Guillaume Astruc</name>
-    </author>
-    <author>
-      <name>Nicolas Gonthier</name>
-    </author>
-    <author>
-      <name>Clement Mallet</name>
-    </author>
-    <author>
-      <name>Loic Landrieu</name>
-    </author>
-    <summary type="text">Vision Transformers (ViT) dominate computer vision. However, their reliance on rigid patch projectors hinders transfer to Earth Observation (EO), where input modalities, scales, and resolutions vary widely. We introduce UniverSat, a ViT-style backbone built around a Universal Patch Encoder that maps patches from arbitrary spatial, spectral, and temporal resolutions, and from both optical and non-optical sensors, into a shared embedding space with a shared set of weights. This enables training a single model on heterogeneous multimodal corpora via self-supervision, yielding robust, sensor-agnostic spatial features. We validate this approach with strong results across classification and segmentation on standard EO benchmarks from GeoBench, PANGEABench, and SpectralEarth. Our code and models are available at https://github.com/gastruc/UniverSat.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/gastruc/UniverSat"&gt;https://github.com/gastruc/UniverSat&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Satellite Mission Planning with Rydberg Atoms</title>
-    <link href="http://arxiv.org/abs/2606.23045v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.23045v1</id>
-    <published>2026-06-22T00:00:00Z</published>
-    <updated>2026-06-22T00:00:00Z</updated>
-    <author>
-      <name>Michel Nowak</name>
-    </author>
-    <author>
-      <name>Benjamin Marchand</name>
-    </author>
-    <author>
-      <name>Yassine Naghmouchi</name>
-    </author>
-    <author>
-      <name>Serge Rainjonneau</name>
-    </author>
-    <author>
-      <name>Wesley Coelho</name>
-    </author>
-    <author>
-      <name>Louis Vignoli</name>
-    </author>
-    <author>
-      <name>Louis-Paul Henry</name>
-    </author>
-    <summary type="text">Quantum computers relying on cold atoms are being built and promise a high flexibility in the way information in encoded into the physical system. In particular, the analog mode is spiking interest in the field of optimization as a classically intractable number of configurations can be tackled. In this work, we investigate a problem that requires every-day scheduling of critical tasks involving a large number of actors. Namely, fixing the planning for a Earth Observation satellite fleet composed of several of units exposed to a high density of targets to be scanned. We explore numerical schemes that convert the formulated problem into a cold-atoms friendly setup. We begin by a naive formulation of the Satellite Mission Planning problem without taking account for the agility of the satellites. We then extend the problem to take it into account based on the literature. By formulating the planning problem as a Maximum Independent Set problem, we are able to solve the problem with a QPU based on Rydberg atoms. We explore two ways of solving the MIS problem on the QPU, one relying on the graphs and on the Quadratic Unconstrained Binary Optimization Framework (QUBO). We show that the QUBO methodology is the most relevant and explore it more deeply with numerical experiments. We conclude on the potential utility of using a QPU to solve the Satellite Mission Planning problem in an operational context.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="quant-ph" />
-  </entry>
-  <entry>
-    <title>VegSim: A Geospatial World Model for Scenario-Conditioned Vegetation Simulation</title>
-    <link href="http://arxiv.org/abs/2606.21961v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.21961v1</id>
-    <published>2026-06-20T00:00:00Z</published>
-    <updated>2026-06-20T00:00:00Z</updated>
-    <author>
-      <name>Irene Iele</name>
-    </author>
-    <author>
-      <name>Elena Mulero Ayllón</name>
-    </author>
-    <author>
-      <name>Paolo Soda</name>
-    </author>
-    <author>
-      <name>Matteo Tortora</name>
-    </author>
-    <summary type="text">Vegetation monitoring under climate stress requires answering not only how it will evolve given the expected weather, but how it would respond to alternative meteorological conditions. Forecasting models return the expected vegetation state for the observed weather and cannot answer these scenario-conditioned questions, because future weather is fixed to the recorded trajectory. We present VegSim, a geospatial world model for scenario-conditioned vegetation simulation. VegSim infers a latent vegetation state from sparse satellite-derived NDVI histories, past meteorological covariates, and static spatial context, propagates it forward under future weather forcing through recurrent latent dynamics, and decodes predictive NDVI quantiles at each lead time. Because future forcing enters as a controllable input, the same trained model supports probabilistic forecasting under observed weather and conditional simulation under user-defined meteorological forcing, without supervision on scenario responses. We evaluate VegSim on GreenEarthNet across in-distribution data and spatial, temporal, and joint spatial-temporal shift, where it achieves strong point and probabilistic accuracy against time series and Earth observation forecasting baselines while using a compact architecture. We then simulate vegetation responses across Europe under four meteorological scenarios, and in a France summer 2022 case study, obtaining spatially coherent patterns consistent with known sensitivity to temperature and precipitation. The code is available at https://github.com/arco-group/vegsim.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/arco-group/vegsim"&gt;https://github.com/arco-group/vegsim&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Prompt-Calibrated SAM 3 for Open-Vocabulary Remote Sensing Semantic Segmentation</title>
-    <link href="http://arxiv.org/abs/2606.21863v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.21863v1</id>
-    <published>2026-06-20T00:00:00Z</published>
-    <updated>2026-06-20T00:00:00Z</updated>
-    <author>
-      <name>Yanghui Song</name>
-    </author>
-    <author>
-      <name>Nanqing Liu</name>
-    </author>
-    <author>
-      <name>Haonan Yin</name>
-    </author>
-    <author>
-      <name>Yingjie Gao</name>
-    </author>
-    <author>
-      <name>Chengfu Yang</name>
-    </author>
-    <author>
-      <name>Qi Ming</name>
-    </author>
-    <summary type="text">Open-vocabulary semantic segmentation (OVSS) in remote sensing images aims to segment categories beyond a fixed label space. Recent SAM 3-based methods provide a promising training-free foundation, yet three key issues remain: (1) a single class-name prompt lacks sufficient semantic coverage for complex remote sensing categories; (2) expanding each category into multiple prompts introduces redundant online text encoding; and (3) directly aggregating multiple prompt responses propagates noisy activations into the final prediction. To address these issues, we propose ProC-SAM3, which calibrates SAM 3's prompt interface for remote sensing OVSS from three complementary aspects. First, we construct an offline prompt pool where a Category Matcher groups MLLM-generated candidates into per-category sets, and Expansion Constraints further refine each set using category-specific prior knowledge. Second, the resulting text embeddings are cached and reused across all test images, eliminating repeated text encoding. Third, we introduce Presence-Guided Residual Fusion to gate unreliable decoder outputs by prompt presence and confidence, followed by peak-preserving class aggregation that retains fine-grained activations for small and sparse objects. Experiments on eight benchmarks show that ProC-SAM3 achieves an average mIoU of 56.1%, outperforming the previous best training-free method by 3.9 percentage points. Code will be available at https://github.com/YanghuiSong/ProC-SAM3.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/YanghuiSong/ProC-SAM3"&gt;https://github.com/YanghuiSong/ProC-SAM3&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 5 pages, 5 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>RAPID: A Reproducible Multi-Agent Pipeline for Interpretable Disaster Damage Assessment from Satellite and Street-View Imagery</title>
-    <link href="http://arxiv.org/abs/2606.21819v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.21819v1</id>
-    <published>2026-06-20T00:00:00Z</published>
-    <updated>2026-06-20T00:00:00Z</updated>
-    <author>
-      <name>Yifan Yang</name>
-    </author>
-    <author>
-      <name>Wenjing Gong</name>
-    </author>
-    <author>
-      <name>Kaili Zhang</name>
-    </author>
-    <author>
-      <name>Lei Zou</name>
-    </author>
-    <author>
-      <name>Zhengzhong Tu</name>
-    </author>
-    <author>
-      <name>Hao Li</name>
-    </author>
-    <author>
-      <name>Zongrong Li</name>
-    </author>
-    <author>
-      <name>Xinyue Ye</name>
-    </author>
-    <summary type="text">Due to the increasing frequency and intensity of extreme climate events, there is a clear demand for intelligent, scalable, and autonomous approaches to disaster damage assessment. Existing methods, largely based on supervised learning and task-specific fine-tuning, struggle to generalize under domain shifts, long-tailed data distributions, and heterogeneous geospatial data sources, especially in disaster scenarios. They also often lack the ability to integrate and reason across multimodal geospatial information, such as satellite images and street-view images. In this paper, we introduce RAPID, a reproducible multi-agent pipeline for interpretable disaster damage assessment, including damage-level assessment, damage-type interpretation, and actionable suggestions for response, remediation, and recovery. RAPID coordinates specialized agents to perform cross-view understanding, image restoration, structured damage recognition, and geographical reasoning across heterogeneous data modalities. Without task-specific fine-tuning, RAPID supports zero-shot damage assessment by jointly using complementary information from remote sensing and ground-level perspectives. The system produces fine-grained, interpretable assessments and automatically generates location-specific, decision-relevant disaster reports to support early-stage emergency response. We evaluate RAPID across hurricanes, floods, wildfires, and earthquakes using multiple cross-view imagery inputs, including pre- and post-disaster street-view images, post-disaster remote sensing imagery, and street-view image pairs. Experiments show that RAPID achieves 0.92 overall accuracy for multi-disaster type classification and up to 0.627 for cross-view damage severity prediction, highlighting its potential as a foundational framework for autonomous disaster intelligence.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages, 8 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;SR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>
