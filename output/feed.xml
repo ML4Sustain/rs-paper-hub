@@ -4,12 +4,97 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-29T05:26:49Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 22 entries</subtitle>
+  <updated>2026-06-30T02:00:29Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 20 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Cross-Sensor SAR Data Generation Using Diffusion Models and Feature Migration</title>
+    <link href="http://arxiv.org/abs/2606.28922v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.28922v1</id>
+    <published>2026-06-27T00:00:00Z</published>
+    <updated>2026-06-27T00:00:00Z</updated>
+    <author>
+      <name>Xuanting Wu</name>
+    </author>
+    <author>
+      <name>Fan Zhang</name>
+    </author>
+    <author>
+      <name>Fei Ma</name>
+    </author>
+    <author>
+      <name>Qiang Yin</name>
+    </author>
+    <author>
+      <name>Yongsheng Zhou</name>
+    </author>
+    <summary type="text">Different synthetic aperture radar (SAR) sensors vary significantly in resolution, polarization modes, and frequency bands, making it difficult to directly apply existing models to newly launched SAR satellites. These new systems require large amounts of labeled data for model retraining, but collecting sufficient data in a short time is often infeasible. To address this contradiction, this paper proposes a data generation and transfer framework, integrating a stable diffusion model with attention distillation, that leverages historical SAR data to synthesize training data tailored to the unique characteristics of new SAR systems. Specifically, we fine-tune the low-rank adaptation (LoRA) modules within the multimodal diffusion transformer (MM-DiT) architecture to enable class-controllable SAR image generation guided by textual prompts. To ensure that the generated images reflect the statistical properties and imaging characteristics of the target SAR system, we further introduce an attention distillation mechanism that transfers sensor-specific features, such as spatial texture, speckle distribution, and structural patterns, from real target-domain data to the generative model. Extensive experiments on multi-class aircraft target datasets from two real spaceborne SAR systems demonstrate the effectiveness of the proposed approach in alleviating data scarcity and supporting cross-sensor remote sensing applications.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+  </entry>
+  <entry>
+    <title>ExACT: Exemplar-Driven Calibrated Refinement for Training-Free Visual Grounding in Remote Sensing Images</title>
+    <link href="http://arxiv.org/abs/2606.28920v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.28920v1</id>
+    <published>2026-06-27T00:00:00Z</published>
+    <updated>2026-06-27T00:00:00Z</updated>
+    <author>
+      <name>Zixiao Zhang</name>
+    </author>
+    <author>
+      <name>Lingling Li</name>
+    </author>
+    <author>
+      <name>Pei He</name>
+    </author>
+    <author>
+      <name>Xu Liu</name>
+    </author>
+    <author>
+      <name>Licheng Jiao</name>
+    </author>
+    <summary type="text">Remote sensing visual grounding (RSVG) aims to locate specific objects in high-resolution RS imagery using free-form natural language descriptions. While recent advances in multimodal large language models (MLLMs) show great potential for such open-vocabulary RSVG, their training-free adaptation is hindered by the modality gap between abstract linguistic semantics and fine-grained visual cues. In cluttered RS scenes, this gap inevitably causes severe localization drift. To bridge this gap, we propose Exemplar-driven Calibrated Refinement (ExACT), a novel training-free framework driven by a one-shot visual prompting mechanism to explicitly provide discriminative structural guidance for precise pixel-level localization. Specifically, we propose a Vision Exemplar-based Calibrator (VEC) that extracts fine-grained visual correspondences from the given exemplar to rectify the rough cross-modal priors from frozen MLLMs, effectively suppressing background artifacts and accurately outlining target boundaries. Subsequently, a Structure-Aware Refiner (SAR) employs an iterative merge-and-select clustering strategy to consolidate the calibrated priors into high-quality positive and negative geometric prompts. These prompts then guide the Segment Anything Model (SAM) to achieve precise pixel-level predictions. Extensive experiments confirm the superiority of ExACT over existing training-free and weakly-supervised methods.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 11 pages, 8 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>He3-Seeker: Robotic Information Planning for Lunar Helium-3 Distribution Mapping</title>
+    <link href="http://arxiv.org/abs/2606.28746v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.28746v1</id>
+    <published>2026-06-27T00:00:00Z</published>
+    <updated>2026-06-27T00:00:00Z</updated>
+    <author>
+      <name>Dong Li</name>
+    </author>
+    <author>
+      <name>Yujie Zheng</name>
+    </author>
+    <author>
+      <name>Chengdeng Cao</name>
+    </author>
+    <author>
+      <name>Siyu Teng</name>
+    </author>
+    <author>
+      <name>Yuchen Li</name>
+    </author>
+    <author>
+      <name>Yang Gao</name>
+    </author>
+    <author>
+      <name>Long Chen</name>
+    </author>
+    <summary type="text">Lunar helium-3 is a highly valuable strategic resource, pivotal to the advancement of both deep-space exploration and space mining. Existing lunar helium-3 exploration methodologies rely primarily on indirect measurements via remote sensing, which are often characterized by limited precision, low reliability, and insufficient spatial resolution. In this paper, we introduce He3-Seeker, an active robotic exploration method for helium-3 distribution mapping. First, we provide a formal definition of the active helium-3 exploration problem. Subsequently, we developed the He3-Seeker framework, which is conceptually based on multi-point drilling, sampling, and in situ analysis. In particular, we use robotic information planning (RIP) to guide autonomous robot navigation and active sensing. Additionally, to thoroughly evaluate the proposed algorithm, we introduce a reliable method for generating reference data of lunar helium-3 distribution based on low-resolution orbital remote sensing measurements. Simulation experiments verify that He3-Seeker achieves both rapid and high-fidelity mapping of helium-3 distribution, providing a reliable solution for resource exploration tasks. Our code and simulation environment will be publicly accessible at https://github.com/OpenSpace-Lab/He3-Seeker.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/OpenSpace-Lab/He3-Seeker"&gt;https://github.com/OpenSpace-Lab/He3-Seeker&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Submitted to the International Conference on Space Robotics (iSpaRo) 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Robotics" />
+  </entry>
   <entry>
     <title>RSICCLLM: A Multimodal Large Language Model for Remote Sensing Image Change Captioning</title>
     <link href="http://arxiv.org/abs/2606.28266v1" rel="alternate" type="text/html" />
@@ -79,6 +164,27 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
     <category term="cs.MA" />
+  </entry>
+  <entry>
+    <title>SatSplat: Geometrically-Accurate Gaussian Splatting for Satellite Imagery</title>
+    <link href="http://arxiv.org/abs/2606.28581v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.28581v1</id>
+    <published>2026-06-26T00:00:00Z</published>
+    <updated>2026-06-26T00:00:00Z</updated>
+    <author>
+      <name>Shuang Song</name>
+    </author>
+    <author>
+      <name>Jiyong Kim</name>
+    </author>
+    <author>
+      <name>Rongjun Qin</name>
+    </author>
+    <summary type="text">High-resolution satellite imagery demands 3D reconstruction methods that deliver both speed and geometric accuracy. Recent adaptations of 3D Gaussian Splatting (3DGS) to satellite imagery demonstrate strong efficiency, but reconstruction quality often degrades under diverse illumination across multi-date, high-altitude acquisitions (with small intersection angles), limiting applicability to remote sensing and vision tasks. We present SatSplat, the first framework to adapt 2D Gaussian Splatting (2DGS) to satellite photogrammetry, with online camera adjustment. We approximate satellite cameras with an affine model and learn a minimal delta parameterization for in-splat camera refinement from dense observations. The formulation is implemented with a 2DGS scene representation. To handle time-varying shadows and illumination changes, we integrate geometric shadow mapping and per-camera color correction during training. Across the evaluated DFC2019 and IARPA2016 benchmark sites, SatSplat achieves strong geometric accuracy while significantly outperforming prior 3DGS-based baselines. On our processed DFC2019 benchmark, SatSplat reduces mean absolute error by 11.93% and peak video memory by 31% relative to the previous state of the art. Our approach enables large-scale digital surface modeling with practical computational efficiency. The project page is available at https://gdaosu.github.io/satsplat/.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Photogrammetric Engineering &amp; Remote Sensing&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
   </entry>
   <entry>
     <title>EO-WM: A Physically Informed World Model for Probabilistic Earth Observation Forecasting</title>
@@ -239,6 +345,32 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
     <category term="Image and Video Processing" />
     <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>RSGPNet: Geometric Prompting for Remote Sensing Open-Vocabulary Semantic Segmentation</title>
+    <link href="http://arxiv.org/abs/2606.28410v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.28410v1</id>
+    <published>2026-06-25T00:00:00Z</published>
+    <updated>2026-06-25T00:00:00Z</updated>
+    <author>
+      <name>Shanwen Wang</name>
+    </author>
+    <author>
+      <name>Xin Sun</name>
+    </author>
+    <author>
+      <name>Sirui Wang</name>
+    </author>
+    <author>
+      <name>Xiao Xiang Zhu</name>
+    </author>
+    <summary type="text">Open-vocabulary semantic segmentation (OVSS) enables text-guided segmentation of unseen objects, breaking fixed-class limitations to achieve open-world understanding. However, existing OVSS methods primarily focus on modifying the CLIP attention mechanism, which still suffers from unstable local segmentation for remote sensing (RS) domain. To address these limitations, we propose RSGPNet, a training-free geometric prompting framework for RS OVSS that refines segmentation by leveraging object geometric areas and consistency constraints. Specifically, RSGPNet comprises three core modules: a Text-guided Coarse Mask module (TCM), a Geometric Re-prompting Module (GRP), and a Coarse-to-fine Consistency Verification Mechanism (CVM). TCM utilizes text prompts and the input image to construct initial coarse segmentation masks. GRP then converts these coarse masks into geometric box prompts, feeding them back into the segmentation model to generate refined masks. Finally, CVM employs consistency computation to prevent prompting from reinforcing erroneous regions. They allow the model to improve segmentation accuracy in complex areas, such as category boundaries. Extensive experiments on RS datasets demonstrate that RSGPNet significantly outperforms state-of-the-art methods across both quantitative and qualitative metrics while exhibiting excellent interpretability. The code is released at \href{https://github.com/wangshanwen001/RSGPNet}{https://github.com/wangshanwen001/RSGPNet}.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/wangshanwen001/RSGPNet"&gt;https://github.com/wangshanwen001/RSGPNet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Open-vocabulary, Remote sensing, Geometric prompting, Multimodal large language model&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
   </entry>
   <entry>
     <title>Retrieval-Grounded Multilingual LLM Assistance for Island Smallholder Farmers</title>
@@ -411,167 +543,6 @@
       <name>Tianyu Chen</name>
     </author>
     <summary type="text">Floods frequently impact regions around the world. Rapid and accurate flood detection is crucial for emergency response and timely mitigation of human and economic loss. The expanding availability of satellite data and advances in artificial intelligence have enhanced monitoring of environmental hazards, but many flood events remain challenging to detect because cloud cover obscures optical satellite imagery. Rambour et al. introduced the SEN12-FLOOD dataset and extracted per-image features using a ResNet-50 convolutional neural network backbone, then fed these features into a gated recurrent unit network to show that temporal information can substantially improve accuracy compared to single-image baselines. More recently, Chamatidis et al. showed that a vision transformer can achieve strong performance with popular convolutional architectures. However, these models typically function as opaque black boxes, making it difficult to interpret their decision boundaries, learned features, and internal reasoning, especially in safety-critical domains like remote sensing. In contrast, topological data analysis (TDA) provides a mathematically grounded framework for capturing global structural features of data. TDA has emerged as a powerful tool for analyzing complex imagery, especially imagery with geometrically interpretable structures, of which floods are a prime candidate. In this work, we systematically evaluate topological descriptors for flood detection using the open-source SEN12-FLOOD dataset. By extracting topological features from each image and incorporating them into neural networks, we demonstrate that topological descriptors carry meaningful flood signals independently and complement existing networks to yield more robust and interpretable flood detection systems.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>MotifGen: Spatiotemporal interpolation of misaligned satellite images via multi-source generative modeling, in an application to tropical cyclones</title>
-    <link href="http://arxiv.org/abs/2606.24263v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.24263v1</id>
-    <published>2026-06-23T00:00:00Z</published>
-    <updated>2026-06-23T00:00:00Z</updated>
-    <author>
-      <name>Clément Dauvilliers</name>
-    </author>
-    <author>
-      <name>Claire Monteleoni</name>
-    </author>
-    <summary type="text">Microwave satellite imagery plays a crucial role in monitoring tropical cyclone precipitation and intensity worldwide, but suffers from long revisit times, potentially missing rapid storm evolution phases. While this raises the need for an interpolation method, it is made challenging by the high level of heterogeneity of microwave data coming from different instruments. In this work, we introduce the first generative model that can be applied to multiple geospatial sources that change across samples, occur at irregular time intervals, are misaligned geographically, and come from instruments with varying characteristics. We apply this model to the case of spatio-temporal interpolation of tropical cyclone microwave images from other microwave and infrared instruments. We train using a self-supervised task in which a random source is masked and reconstructed, and show that it leads to a significant decrease in Continuous Ranked Probability Score over supervised training. We show a further improvement by combining infrared and microwave data compared to microwave only. Using these improvements, the generative model produces an ensemble mean on par with that of a deterministic model, while generating a power spectrum significantly closer to that of true observations. To the best of our knowledge, this is the first generative model that interpolates microwave images of cyclones by combining multiple microwave instruments and infrared observations at irregular time intervals.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Sat2City v2: Native 3D City Asset Generation from a Single Satellite Image</title>
-    <link href="http://arxiv.org/abs/2606.24138v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.24138v1</id>
-    <published>2026-06-23T00:00:00Z</published>
-    <updated>2026-06-23T00:00:00Z</updated>
-    <author>
-      <name>Tongyan Hua</name>
-    </author>
-    <author>
-      <name>Dongli Wu</name>
-    </author>
-    <author>
-      <name>Jinjing Zhu</name>
-    </author>
-    <author>
-      <name>Yinrui Ren</name>
-    </author>
-    <author>
-      <name>Zhongcheng Hong</name>
-    </author>
-    <author>
-      <name>Ying-Cong Chen</name>
-    </author>
-    <author>
-      <name>Hui Xiong</name>
-    </author>
-    <author>
-      <name>Wufan Zhao</name>
-    </author>
-    <summary type="text">Generating explicit 3D city assets from a single satellite image is important for digital twins, urban simulation, and geospatial intelligence. Unlike satellite-to-street-view synthesis, the task requires a reusable textured mesh with plausible geometry and controllable appearance rather than a 3D proxy optimized only for rendering a small set of images or videos. The ICCV Sat2City framework made a first step by conditioning cascaded sparse-voxel latent diffusion on satellite-derived height maps, but its appearance was random, its training data were synthetic, and its task-specific VAE did not scale well to noisy real-world reconstructions. We present Sat2City v2, a journal extension that adapts a pretrained native structured-latent 3D foundation model to weakly aligned satellite images and textured meshes. We build a real-world dataset with 16,241 satellite-mesh pairs across 24 regions in 9 cities. Instead of learning a 3D representation from noisy city meshes, Sat2City v2 encodes each mesh into a pretrained native 3D latent space, fine-tunes a satellite-conditioned geometry flow, and uses the decoded shape to anchor satellite-conditioned texturing. This retains Sat2City's geometry-to-appearance cascade while enabling appearance-controllable generation from the satellite input. Experiments on metric-scale DSM reconstruction and generative city-asset benchmarks for geometry and appearance show that Sat2City v2 achieves the best overall performance among evaluated baselines. Overall, Sat2City v2 advances satellite-to-city generation from rendering-oriented 3D proxies to explicit textured mesh assets, supported by, to the best of our knowledge, the first documented satellite-mesh paired dataset collected from matched geographic crops for this asset-level task. Project page: https://ai4city-hkust.github.io/Sat2City-v2/</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Flood Mapping from RGB imagery using a Vision Foundation Model</title>
-    <link href="http://arxiv.org/abs/2606.24120v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.24120v1</id>
-    <published>2026-06-23T00:00:00Z</published>
-    <updated>2026-06-23T00:00:00Z</updated>
-    <author>
-      <name>Vladyslav Polushko</name>
-    </author>
-    <author>
-      <name>Tilman Bucher</name>
-    </author>
-    <author>
-      <name>Ronald Rösch</name>
-    </author>
-    <author>
-      <name>Thomas März</name>
-    </author>
-    <author>
-      <name>Markus Rauhut</name>
-    </author>
-    <author>
-      <name>Andreas Weinmann</name>
-    </author>
-    <summary type="text">Timely, high-resolution maps of flood extent around settlements are essential for emergency response and damage assessment. We consider airborne RGB imagery for flood mapping as it can be collected rapidly at low cost. To produce flood maps, deep learning models for water segmentation are often used. CNN based and small vision transformer models are used. However, they need much data for adaptation to a change of scenery, i.e., another flooding event. Vision foundation models or large vision transformers are known to generalize across domains. Recently, foundation models for Earth observation became available. They are pretrained on satellite data, whose spatial resolution, viewing geometry, and radiometry differ from nadir RGB imagery. Thus, adaptation is required. We investigate how a satellite-pretrained Earth observation foundation model can be adapted to centimeter-scale floodwater mapping from RGB imagery. Specifically, we fine-tune a model we call Prithvi-2.0-UPN consisting of the Prithvi-EO-2.0-600M Vision Transformer combined with a UPerNet decoder for binary water segmentation on two RGB datasets (BlessemFlood21, NeuenahrFlood). In a first experiment we observe that Prithvi-2.0-UPN reaches state-of-the-art results on BlessemFlood21 and NeuenahrFlood, when trained on their datasets. In a second experiment we show that Prithvi-2.0-UPN performs better than state-of-the-art baseline models for transfer to a new flood event (trained on BlessemFlood21, tested on NeuenahrFlood) in a zero-shot setting. However, the performance indicates room for improvement. In this respect, we investigate in a third experiment how performance improves when further fine-tuning the models with small shares of NeuenahrFlood training data: Prithvi-2.0-UPN improves the fastest and reaches almost the performance level when fully trained on NeuenahrFlood, indicating transfer capabilities.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Image and Video Processing" />
-  </entry>
-  <entry>
-    <title>One Index for Subsumption and Roll-up across Time, Geography, and Ontology</title>
-    <link href="http://arxiv.org/abs/2606.24677v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.24677v1</id>
-    <published>2026-06-23T00:00:00Z</published>
-    <updated>2026-06-23T00:00:00Z</updated>
-    <author>
-      <name>Madhulatha Mandarapu</name>
-    </author>
-    <author>
-      <name>Sandeep Kunkunuru</name>
-    </author>
-    <summary type="text">Time-series, geospatial, and ontology systems each maintain a hierarchy -- day &lt;= month &lt;= year, zip &lt;= city, is-a / part-of -- and each indexes it in a separate silo. We observe these are all subsumption posets, with one recurring workload: order testing (is x under y?) and hierarchical roll-up (aggregate a measure over everything under y). We present OEH, a single declarable index that, by a cheap structural probe, encodes a hierarchy as a nested-set order-embedding (trees) or a chain decomposition (low-width DAGs), and answers both subsumption and index-resident monoid roll-up from one structure. On five real hierarchies -- Gene Ontology, NCBI Taxonomy (1.3M), GeoNames (330k), a 2.6M-node calendar, and git commit DAGs -- OEH on trees matches a 2-hop index on query latency using about half the space and building 6--7x faster, and adds roll-up that 2-hop cannot. Its roll-up matches TimescaleDB's continuous aggregates exactly and in the same latency regime, while also answering subsumption. On high-width DAGs the chain index is declined and 2-hop dominates. Order-embedding is classical; our contribution is the unification and the structure-selected index over subsumption and index-resident roll-up.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 7 pages, 3 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.DB" />
-  </entry>
-  <entry>
-    <title>Benchmarking the Alignment of Data-Quality Metrics, Human Judgment and Land-Cover Segmentation Performance for Earth Observation</title>
-    <link href="http://arxiv.org/abs/2606.25128v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.25128v1</id>
-    <published>2026-06-23T00:00:00Z</published>
-    <updated>2026-06-23T00:00:00Z</updated>
-    <author>
-      <name>Ümit Mert Çağlar</name>
-    </author>
-    <author>
-      <name>Alptekin Temizel</name>
-    </author>
-    <summary type="text">Volume and quality of datasets are crucial for deep learning model training, yet they are often constrained by availability and data acquisition costs. Synthetic data augmentation can extend existing datasets with realistic images, and the quality of these images is generally assessed through fidelity metrics such as FID, KID, IS, LPIPS and SSIM that measure structural or distributional similarity. However, such metrics, including the widely used FID, focus on visual fidelity without reflecting downstream utility, and can diverge from human perception under perturbations that are imperceptible to human observers. In this work, we systematically evaluate Earth observation datasets alongside synthetic counterparts generated by deep generative models, comparing automatic metrics against human perception and downstream tasks. Our results reveal a stark misalignment: semantics-preserving perturbations such as rotation drastically alter metric scores while leaving human recognition unaffected, and synthetic samples that score poorly on automatic metrics achieve comparable or higher perceived realism, and can improve downstream performance when combined with real data. By benchmarking semantic segmentation models trained on mixed real-synthetic datasets, we demonstrate that quality metrics rooted in ImageNet-pretrained feature spaces are unreliable indicators for geospatial data. Our findings underscore that automatic quality evaluation of synthetic datasets should be grounded in downstream task performance and human evaluation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Image and Video Processing" />
-    <category term="Artificial Intelligence; Computer Vision; Machine Learning" />
-  </entry>
-  <entry>
-    <title>Feasibility-driven QAOA with penalty scheduling</title>
-    <link href="http://arxiv.org/abs/2606.25117v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.25117v1</id>
-    <published>2026-06-23T00:00:00Z</published>
-    <updated>2026-06-23T00:00:00Z</updated>
-    <author>
-      <name>Francesco Ferrari</name>
-    </author>
-    <author>
-      <name>Matteo Vandelli</name>
-    </author>
-    <author>
-      <name>Daniele Dragoni</name>
-    </author>
-    <summary type="text">Most available quantum algorithms address constrained optimization problems by treating constraints as soft penalty terms within a QUBO formulation. This approach requires careful adjustment of the penalty coefficients, which scales poorly with the number of constraints and lacks a proper strategy to balance feasibility and solution quality. In this work, we introduce two extensions of standard linear-ramp QAOA (lr-QAOA) tailored to problems with multiple heterogeneous constraints. We first construct $Λ$-lr-QAOA, in which each penalty term is assigned its own linear-ramp schedule, promoting penalty weights from external hyperparameters to internal variational parameters of QAOA, similarly to the objective and mixer parameters. By optimizing all schedules jointly in a single run, this approach eliminates nested penalty tuning and scales more efficiently to multiple constraints. The optimization is guided by a feasibility-driven loss function that pushes the quantum state towards high-quality feasible solutions. As a further refinement, we introduce piecewise-ramp QAOA, in which the linear ramps are replaced by two-segment piecewise schedules, enhancing the expressiveness of the Ansatz at the cost of a small parameter overhead independent of the circuit depth. We benchmark both methods on Earth-observation satellite mission planning tasks formulated as budget-constrained Maximum Weight Independent Set problems. Numerical results show that piecewise-ramp QAOA consistently outperforms lr-QAOA and $Λ$-lr-QAOA across circuit depths and system sizes. Furthermore, both $Λ$-lr-QAOA and piecewise-ramp QAOA exhibit a high feasibility rate, which is crucial in industrial applications. Our analysis highlights an intrinsic feasibility-optimality trade-off, which we address by introducing a filtered variant of the loss providing a single hyperparameter to tune this balance.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13 pages, 8 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="quant-ph" />
-  </entry>
-  <entry>
-    <title>What's in an Earth Embedding? An Explainability Analysis of Location Encoders</title>
-    <link href="http://arxiv.org/abs/2606.24997v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.24997v1</id>
-    <published>2026-06-23T00:00:00Z</published>
-    <updated>2026-06-23T00:00:00Z</updated>
-    <author>
-      <name>Livia Betti</name>
-    </author>
-    <author>
-      <name>Sebastian Ricke</name>
-    </author>
-    <author>
-      <name>Ivica Obadic</name>
-    </author>
-    <author>
-      <name>Adam J. Stewart</name>
-    </author>
-    <author>
-      <name>Esther Rolf</name>
-    </author>
-    <summary type="text">Geographic implicit neural representations (INRs) learn to map any coordinate on Earth to a location embedding, implicitly encoding geospatial data into the weights of a neural network. Location embeddings are widely used off the shelf as general-purpose geospatial representations, yet users lack principled tools to audit what geographic or semantic information these embeddings capture. In this work, we analyze the information content of geographic INRs through their location embeddings. We decompose these embeddings into human-interpretable features$\unicode{x2014}$namely, (i) sparse latent concepts, (ii) natural language concepts, and (iii) visual features. The latent concept embeddings are learned using sparse autoencoders. To recover natural language concepts, we apply sparse linear concept embeddings (SpLiCE) over a predefined geospatial dictionary. Finally, visual features are extracted using saliency maps derived from CLIP Surgery. We show that location embeddings can be decomposed into human-interpretable representations while retaining high reconstruction capability, revealing interpretable geographic structures such as forests, deserts, and urban features. Across methods, sparse decompositions expose systematic differences in encoded information, ranging from urban structures to broader biome and climate signals, and pretraining-space saliency maps further highlight complementary features such as roads and landmarks. We hope this work provides a first step toward interpretable geospatial representations.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Machine Learning" />
   </entry>

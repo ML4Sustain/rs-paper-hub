@@ -4,12 +4,64 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-29T05:26:50Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 9 entries</subtitle>
+  <updated>2026-06-30T02:00:29Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 10 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Cross-Sensor SAR Data Generation Using Diffusion Models and Feature Migration</title>
+    <link href="http://arxiv.org/abs/2606.28922v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.28922v1</id>
+    <published>2026-06-27T00:00:00Z</published>
+    <updated>2026-06-27T00:00:00Z</updated>
+    <author>
+      <name>Xuanting Wu</name>
+    </author>
+    <author>
+      <name>Fan Zhang</name>
+    </author>
+    <author>
+      <name>Fei Ma</name>
+    </author>
+    <author>
+      <name>Qiang Yin</name>
+    </author>
+    <author>
+      <name>Yongsheng Zhou</name>
+    </author>
+    <summary type="text">Different synthetic aperture radar (SAR) sensors vary significantly in resolution, polarization modes, and frequency bands, making it difficult to directly apply existing models to newly launched SAR satellites. These new systems require large amounts of labeled data for model retraining, but collecting sufficient data in a short time is often infeasible. To address this contradiction, this paper proposes a data generation and transfer framework, integrating a stable diffusion model with attention distillation, that leverages historical SAR data to synthesize training data tailored to the unique characteristics of new SAR systems. Specifically, we fine-tune the low-rank adaptation (LoRA) modules within the multimodal diffusion transformer (MM-DiT) architecture to enable class-controllable SAR image generation guided by textual prompts. To ensure that the generated images reflect the statistical properties and imaging characteristics of the target SAR system, we further introduce an attention distillation mechanism that transfers sensor-specific features, such as spatial texture, speckle distribution, and structural patterns, from real target-domain data to the generative model. Extensive experiments on multi-class aircraft target datasets from two real spaceborne SAR systems demonstrate the effectiveness of the proposed approach in alleviating data scarcity and supporting cross-sensor remote sensing applications.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+  </entry>
+  <entry>
+    <title>ExACT: Exemplar-Driven Calibrated Refinement for Training-Free Visual Grounding in Remote Sensing Images</title>
+    <link href="http://arxiv.org/abs/2606.28920v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.28920v1</id>
+    <published>2026-06-27T00:00:00Z</published>
+    <updated>2026-06-27T00:00:00Z</updated>
+    <author>
+      <name>Zixiao Zhang</name>
+    </author>
+    <author>
+      <name>Lingling Li</name>
+    </author>
+    <author>
+      <name>Pei He</name>
+    </author>
+    <author>
+      <name>Xu Liu</name>
+    </author>
+    <author>
+      <name>Licheng Jiao</name>
+    </author>
+    <summary type="text">Remote sensing visual grounding (RSVG) aims to locate specific objects in high-resolution RS imagery using free-form natural language descriptions. While recent advances in multimodal large language models (MLLMs) show great potential for such open-vocabulary RSVG, their training-free adaptation is hindered by the modality gap between abstract linguistic semantics and fine-grained visual cues. In cluttered RS scenes, this gap inevitably causes severe localization drift. To bridge this gap, we propose Exemplar-driven Calibrated Refinement (ExACT), a novel training-free framework driven by a one-shot visual prompting mechanism to explicitly provide discriminative structural guidance for precise pixel-level localization. Specifically, we propose a Vision Exemplar-based Calibrator (VEC) that extracts fine-grained visual correspondences from the given exemplar to rectify the rough cross-modal priors from frozen MLLMs, effectively suppressing background artifacts and accurately outlining target boundaries. Subsequently, a Structure-Aware Refiner (SAR) employs an iterative merge-and-select clustering strategy to consolidate the calibrated priors into high-quality positive and negative geometric prompts. These prompts then guide the Segment Anything Model (SAM) to achieve precise pixel-level predictions. Extensive experiments confirm the superiority of ExACT over existing training-free and weakly-supervised methods.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 11 pages, 8 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>RSICCLLM: A Multimodal Large Language Model for Remote Sensing Image Change Captioning</title>
     <link href="http://arxiv.org/abs/2606.28266v1" rel="alternate" type="text/html" />
@@ -83,6 +135,32 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
     <category term="Image and Video Processing" />
     <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>RSGPNet: Geometric Prompting for Remote Sensing Open-Vocabulary Semantic Segmentation</title>
+    <link href="http://arxiv.org/abs/2606.28410v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.28410v1</id>
+    <published>2026-06-25T00:00:00Z</published>
+    <updated>2026-06-25T00:00:00Z</updated>
+    <author>
+      <name>Shanwen Wang</name>
+    </author>
+    <author>
+      <name>Xin Sun</name>
+    </author>
+    <author>
+      <name>Sirui Wang</name>
+    </author>
+    <author>
+      <name>Xiao Xiang Zhu</name>
+    </author>
+    <summary type="text">Open-vocabulary semantic segmentation (OVSS) enables text-guided segmentation of unseen objects, breaking fixed-class limitations to achieve open-world understanding. However, existing OVSS methods primarily focus on modifying the CLIP attention mechanism, which still suffers from unstable local segmentation for remote sensing (RS) domain. To address these limitations, we propose RSGPNet, a training-free geometric prompting framework for RS OVSS that refines segmentation by leveraging object geometric areas and consistency constraints. Specifically, RSGPNet comprises three core modules: a Text-guided Coarse Mask module (TCM), a Geometric Re-prompting Module (GRP), and a Coarse-to-fine Consistency Verification Mechanism (CVM). TCM utilizes text prompts and the input image to construct initial coarse segmentation masks. GRP then converts these coarse masks into geometric box prompts, feeding them back into the segmentation model to generate refined masks. Finally, CVM employs consistency computation to prevent prompting from reinforcing erroneous regions. They allow the model to improve segmentation accuracy in complex areas, such as category boundaries. Extensive experiments on RS datasets demonstrate that RSGPNet significantly outperforms state-of-the-art methods across both quantitative and qualitative metrics while exhibiting excellent interpretability. The code is released at \href{https://github.com/wangshanwen001/RSGPNet}{https://github.com/wangshanwen001/RSGPNet}.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/wangshanwen001/RSGPNet"&gt;https://github.com/wangshanwen001/RSGPNet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Open-vocabulary, Remote sensing, Geometric prompting, Multimodal large language model&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
   </entry>
   <entry>
     <title>Retrieval-Grounded Multilingual LLM Assistance for Island Smallholder Farmers</title>
@@ -197,60 +275,6 @@
       <name>Tianyu Chen</name>
     </author>
     <summary type="text">Floods frequently impact regions around the world. Rapid and accurate flood detection is crucial for emergency response and timely mitigation of human and economic loss. The expanding availability of satellite data and advances in artificial intelligence have enhanced monitoring of environmental hazards, but many flood events remain challenging to detect because cloud cover obscures optical satellite imagery. Rambour et al. introduced the SEN12-FLOOD dataset and extracted per-image features using a ResNet-50 convolutional neural network backbone, then fed these features into a gated recurrent unit network to show that temporal information can substantially improve accuracy compared to single-image baselines. More recently, Chamatidis et al. showed that a vision transformer can achieve strong performance with popular convolutional architectures. However, these models typically function as opaque black boxes, making it difficult to interpret their decision boundaries, learned features, and internal reasoning, especially in safety-critical domains like remote sensing. In contrast, topological data analysis (TDA) provides a mathematically grounded framework for capturing global structural features of data. TDA has emerged as a powerful tool for analyzing complex imagery, especially imagery with geometrically interpretable structures, of which floods are a prime candidate. In this work, we systematically evaluate topological descriptors for flood detection using the open-source SEN12-FLOOD dataset. By extracting topological features from each image and incorporating them into neural networks, we demonstrate that topological descriptors carry meaningful flood signals independently and complement existing networks to yield more robust and interpretable flood detection systems.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Flood Mapping from RGB imagery using a Vision Foundation Model</title>
-    <link href="http://arxiv.org/abs/2606.24120v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.24120v1</id>
-    <published>2026-06-23T00:00:00Z</published>
-    <updated>2026-06-23T00:00:00Z</updated>
-    <author>
-      <name>Vladyslav Polushko</name>
-    </author>
-    <author>
-      <name>Tilman Bucher</name>
-    </author>
-    <author>
-      <name>Ronald Rösch</name>
-    </author>
-    <author>
-      <name>Thomas März</name>
-    </author>
-    <author>
-      <name>Markus Rauhut</name>
-    </author>
-    <author>
-      <name>Andreas Weinmann</name>
-    </author>
-    <summary type="text">Timely, high-resolution maps of flood extent around settlements are essential for emergency response and damage assessment. We consider airborne RGB imagery for flood mapping as it can be collected rapidly at low cost. To produce flood maps, deep learning models for water segmentation are often used. CNN based and small vision transformer models are used. However, they need much data for adaptation to a change of scenery, i.e., another flooding event. Vision foundation models or large vision transformers are known to generalize across domains. Recently, foundation models for Earth observation became available. They are pretrained on satellite data, whose spatial resolution, viewing geometry, and radiometry differ from nadir RGB imagery. Thus, adaptation is required. We investigate how a satellite-pretrained Earth observation foundation model can be adapted to centimeter-scale floodwater mapping from RGB imagery. Specifically, we fine-tune a model we call Prithvi-2.0-UPN consisting of the Prithvi-EO-2.0-600M Vision Transformer combined with a UPerNet decoder for binary water segmentation on two RGB datasets (BlessemFlood21, NeuenahrFlood). In a first experiment we observe that Prithvi-2.0-UPN reaches state-of-the-art results on BlessemFlood21 and NeuenahrFlood, when trained on their datasets. In a second experiment we show that Prithvi-2.0-UPN performs better than state-of-the-art baseline models for transfer to a new flood event (trained on BlessemFlood21, tested on NeuenahrFlood) in a zero-shot setting. However, the performance indicates room for improvement. In this respect, we investigate in a third experiment how performance improves when further fine-tuning the models with small shares of NeuenahrFlood training data: Prithvi-2.0-UPN improves the fastest and reaches almost the performance level when fully trained on NeuenahrFlood, indicating transfer capabilities.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Image and Video Processing" />
-  </entry>
-  <entry>
-    <title>What's in an Earth Embedding? An Explainability Analysis of Location Encoders</title>
-    <link href="http://arxiv.org/abs/2606.24997v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.24997v1</id>
-    <published>2026-06-23T00:00:00Z</published>
-    <updated>2026-06-23T00:00:00Z</updated>
-    <author>
-      <name>Livia Betti</name>
-    </author>
-    <author>
-      <name>Sebastian Ricke</name>
-    </author>
-    <author>
-      <name>Ivica Obadic</name>
-    </author>
-    <author>
-      <name>Adam J. Stewart</name>
-    </author>
-    <author>
-      <name>Esther Rolf</name>
-    </author>
-    <summary type="text">Geographic implicit neural representations (INRs) learn to map any coordinate on Earth to a location embedding, implicitly encoding geospatial data into the weights of a neural network. Location embeddings are widely used off the shelf as general-purpose geospatial representations, yet users lack principled tools to audit what geographic or semantic information these embeddings capture. In this work, we analyze the information content of geographic INRs through their location embeddings. We decompose these embeddings into human-interpretable features$\unicode{x2014}$namely, (i) sparse latent concepts, (ii) natural language concepts, and (iii) visual features. The latent concept embeddings are learned using sparse autoencoders. To recover natural language concepts, we apply sparse linear concept embeddings (SpLiCE) over a predefined geospatial dictionary. Finally, visual features are extracted using saliency maps derived from CLIP Surgery. We show that location embeddings can be decomposed into human-interpretable representations while retaining high reconstruction capability, revealing interpretable geographic structures such as forests, deserts, and urban features. Across methods, sparse decompositions expose systematic differences in encoded information, ranging from urban structures to broader biome and climate signals, and pretraining-space saliency maps further highlight complementary features such as roads and landmarks. We hope this work provides a first step toward interpretable geospatial representations.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Machine Learning" />
   </entry>

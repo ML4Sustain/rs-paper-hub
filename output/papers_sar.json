@@ -7332,5 +7332,43 @@
     "_added_date": "2026-06-26",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Image and Video Processing",
+    "Subtype": "",
+    "Date": "2026-06-27",
+    "Month": 6,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Cross-Sensor SAR Data Generation Using Diffusion Models and Feature Migration",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2606.28922v1",
+    "Abstract": "Different synthetic aperture radar (SAR) sensors vary significantly in resolution, polarization modes, and frequency bands, making it difficult to directly apply existing models to newly launched SAR satellites. These new systems require large amounts of labeled data for model retraining, but collecting sufficient data in a short time is often infeasible. To address this contradiction, this paper proposes a data generation and transfer framework, integrating a stable diffusion model with attention distillation, that leverages historical SAR data to synthesize training data tailored to the unique characteristics of new SAR systems. Specifically, we fine-tune the low-rank adaptation (LoRA) modules within the multimodal diffusion transformer (MM-DiT) architecture to enable class-controllable SAR image generation guided by textual prompts. To ensure that the generated images reflect the statistical properties and imaging characteristics of the target SAR system, we further introduce an attention distillation mechanism that transfers sensor-specific features, such as spatial texture, speckle distribution, and structural patterns, from real target-domain data to the generative model. Extensive experiments on multi-class aircraft target datasets from two real spaceborne SAR systems demonstrate the effectiveness of the proposed approach in alleviating data scarcity and supporting cross-sensor remote sensing applications.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{wu2026crosssensor,\n  title={Cross-Sensor SAR Data Generation Using Diffusion Models and Feature Migration},\n  author={Xuanting Wu and Fan Zhang and Fei Ma and Qiang Yin and Yongsheng Zhou},\n  journal={arXiv preprint arXiv:2606.28922v1},\n  year={2026},\n  url={http://arxiv.org/abs/2606.28922v1}\n}",
+    "Authors": "Xuanting Wu, Fan Zhang, Fei Ma, Qiang Yin, Yongsheng Zhou",
+    "_added_date": "2026-06-30",
+    "Category": "Method",
+    "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-06-27",
+    "Month": 6,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "ExACT: Exemplar-Driven Calibrated Refinement for Training-Free Visual Grounding in Remote Sensing Images",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2606.28920v1",
+    "Abstract": "Remote sensing visual grounding (RSVG) aims to locate specific objects in high-resolution RS imagery using free-form natural language descriptions. While recent advances in multimodal large language models (MLLMs) show great potential for such open-vocabulary RSVG, their training-free adaptation is hindered by the modality gap between abstract linguistic semantics and fine-grained visual cues. In cluttered RS scenes, this gap inevitably causes severe localization drift. To bridge this gap, we propose Exemplar-driven Calibrated Refinement (ExACT), a novel training-free framework driven by a one-shot visual prompting mechanism to explicitly provide discriminative structural guidance for precise pixel-level localization. Specifically, we propose a Vision Exemplar-based Calibrator (VEC) that extracts fine-grained visual correspondences from the given exemplar to rectify the rough cross-modal priors from frozen MLLMs, effectively suppressing background artifacts and accurately outlining target boundaries. Subsequently, a Structure-Aware Refiner (SAR) employs an iterative merge-and-select clustering strategy to consolidate the calibrated priors into high-quality positive and negative geometric prompts. These prompts then guide the Segment Anything Model (SAM) to achieve precise pixel-level predictions. Extensive experiments confirm the superiority of ExACT over existing training-free and weakly-supervised methods.",
+    "code": "",
+    "Publication": "11 pages, 8 figures",
+    "BibTex": "@article{zhang2026exact,\n  title={ExACT: Exemplar-Driven Calibrated Refinement for Training-Free Visual Grounding in Remote Sensing Images},\n  author={Zixiao Zhang and Lingling Li and Pei He and Xu Liu and Licheng Jiao},\n  journal={arXiv preprint arXiv:2606.28920v1},\n  year={2026},\n  url={http://arxiv.org/abs/2606.28920v1}\n}",
+    "Authors": "Zixiao Zhang, Lingling Li, Pei He, Xu Liu, Licheng Jiao",
+    "_added_date": "2026-06-30",
+    "Category": "Method",
+    "_tasks": "VG"
   }
 ]
