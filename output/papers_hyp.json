@@ -19948,5 +19948,24 @@
     "_added_date": "2026-06-26",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-06-29",
+    "Month": 6,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "High-Resolution Flood Mapping With Sentinel-1 and Sentinel-2 via Misalignment-Robust Cross-Sensor Learning and Generative Despeckling",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2606.30511v1",
+    "Abstract": "Reliable high-resolution flood extent mapping from satellite imagery remains constrained by limited data fidelity and sensor-specific artifacts. Multispectral optical imagery is degraded by clouds, shadows, and urban confounders, while synthetic aperture radar (SAR) imagery is affected by speckle noise and sensor co-registration uncertainty. This work presents an integrated flood mapping framework that jointly addresses these limitations through curated datasets and novel learning strategies. We introduce a new Sentinel-2 (S2) and Sentinel-1 (S1) dataset covering the contiguous United States, featuring pixel-accurate 10 m water masks with emphasis on challenging weather conditions and urban environments that are underrepresented in existing benchmarks. High-quality S2 annotations are manually produced using rigorous geospatial labeling protocols and transferred to SAR imagery through weakly labeled temporally coincident acquisitions. To address SAR-specific artifacts, a shift-invariant loss function is employed to tolerate residual geolocation uncertainty between SAR imagery and optical-derived labels, and a Conditional Variational Autoencoder (CVAE) is trained on multitemporal SAR composites to suppress speckle while preserving flood-relevant spatial structure. Experiments using UNet and UNet++ architectures demonstrate strong multispectral performance (AUPRC up to 0.956) and statistically significant improvements in SAR flood mapping when using shift-invariant loss and CVAE-based despeckling compared to classical filters. These results underscore the importance of dataset fidelity, misalignment-robust training, and demonstrate the viability of generative despeckling for operational flood mapping.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{ma2026highresolution,\n  title={High-Resolution Flood Mapping With Sentinel-1 and Sentinel-2 via Misalignment-Robust Cross-Sensor Learning and Generative Despeckling},\n  author={David Ma and Jeremy Feinstein and Shreya Pandit and Arkaprabha Ganguli and Eugene Yan},\n  journal={arXiv preprint arXiv:2606.30511v1},\n  year={2026},\n  url={http://arxiv.org/abs/2606.30511v1}\n}",
+    "Authors": "David Ma, Jeremy Feinstein, Shreya Pandit, Arkaprabha Ganguli, Eugene Yan",
+    "_added_date": "2026-06-30",
+    "Category": "Method",
+    "_tasks": "GeoLoc"
   }
 ]

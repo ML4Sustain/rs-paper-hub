@@ -4,12 +4,38 @@
   <id>https://rspaper.top/output/feed_sar.xml</id>
   <link href="https://rspaper.top/output/feed_sar.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-30T02:00:29Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
+  <updated>2026-06-30T04:59:40Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>High-Resolution Flood Mapping With Sentinel-1 and Sentinel-2 via Misalignment-Robust Cross-Sensor Learning and Generative Despeckling</title>
+    <link href="http://arxiv.org/abs/2606.30511v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.30511v1</id>
+    <published>2026-06-29T00:00:00Z</published>
+    <updated>2026-06-29T00:00:00Z</updated>
+    <author>
+      <name>David Ma</name>
+    </author>
+    <author>
+      <name>Jeremy Feinstein</name>
+    </author>
+    <author>
+      <name>Shreya Pandit</name>
+    </author>
+    <author>
+      <name>Arkaprabha Ganguli</name>
+    </author>
+    <author>
+      <name>Eugene Yan</name>
+    </author>
+    <summary type="text">Reliable high-resolution flood extent mapping from satellite imagery remains constrained by limited data fidelity and sensor-specific artifacts. Multispectral optical imagery is degraded by clouds, shadows, and urban confounders, while synthetic aperture radar (SAR) imagery is affected by speckle noise and sensor co-registration uncertainty. This work presents an integrated flood mapping framework that jointly addresses these limitations through curated datasets and novel learning strategies. We introduce a new Sentinel-2 (S2) and Sentinel-1 (S1) dataset covering the contiguous United States, featuring pixel-accurate 10 m water masks with emphasis on challenging weather conditions and urban environments that are underrepresented in existing benchmarks. High-quality S2 annotations are manually produced using rigorous geospatial labeling protocols and transferred to SAR imagery through weakly labeled temporally coincident acquisitions. To address SAR-specific artifacts, a shift-invariant loss function is employed to tolerate residual geolocation uncertainty between SAR imagery and optical-derived labels, and a Conditional Variational Autoencoder (CVAE) is trained on multitemporal SAR composites to suppress speckle while preserving flood-relevant spatial structure. Experiments using UNet and UNet++ architectures demonstrate strong multispectral performance (AUPRC up to 0.956) and statistically significant improvements in SAR flood mapping when using shift-invariant loss and CVAE-based despeckling compared to classical filters. These results underscore the importance of dataset fidelity, misalignment-robust training, and demonstrate the viability of generative despeckling for operational flood mapping.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; GeoLoc&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Cross-Sensor SAR Data Generation Using Diffusion Models and Feature Migration</title>
     <link href="http://arxiv.org/abs/2606.28922v1" rel="alternate" type="text/html" />

@@ -24394,5 +24394,43 @@
     "_added_date": "2026-06-30",
     "Category": "Method",
     "_tasks": "SEG"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-06-29",
+    "Month": 6,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Semantic-Driven Scale and Spatial Selection for Efficient Cross-Modal Alignment in Referring Remote Sensing Image Segmentation",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2606.30244v1",
+    "Abstract": "Referring Remote Sensing Image Segmentation (RRSIS) seeks to localize and segment the target object or region specified by a natural language expression in a remote sensing image. While existing RRSIS models have benefited from large-scale foundation models, they predominantly rely on full fine-tuning. These approaches are computationally intensive and may weaken the generalization ability of pre-trained models, as extensive fine-tuning on significantly smaller downstream datasets can distort the well-structured feature representations learned during large-scale pre-training. Although Parameter-Efficient Tuning (PET) offers a potential alternative, existing PET frameworks primarily focus on single-modal optimization, failing to capture the complex cross-modal dependencies required for multimodal reasoning, while simultaneously struggling to bridge the substantial domain gap between natural scenes and aerial imagery. To address these limitations, we propose a novel framework, Semantic-driven Scale and Spatial Selection for Efficient Cross-modal Alignment (S4ECA), which enables effective and efficient cross-modal interaction through parameter-efficient adaptation. Specifically, we design a dual-encoder adapter architecture. The textual adapter employs learnable queries to distill highly semantic language proxies from word-level embeddings, facilitating early grounding. Simultaneously, the visual adapter refines hierarchical feature representations through a multi-scale dense extractor, followed by a language-guided scale and spatial selection mechanism that dynamically emphasizes relevant visual contexts, ensuring precise cross-modal alignment. By updating only 2.4% of the backbone parameters, our proposed model achieves state-of-the-art performance on the RRSIS-D and RefSegRS datasets, demonstrating superior efficiency and precision in complex aerial scenarios.",
+    "code": "",
+    "Publication": "Submitted",
+    "BibTex": "@article{li2026semanticdriven,\n  title={Semantic-Driven Scale and Spatial Selection for Efficient Cross-Modal Alignment in Referring Remote Sensing Image Segmentation},\n  author={Kun Li and Shengxi Gui and Francesco Nex and Michael Ying Yang},\n  journal={arXiv preprint arXiv:2606.30244v1},\n  year={2026},\n  url={http://arxiv.org/abs/2606.30244v1}\n}",
+    "Authors": "Kun Li, Shengxi Gui, Francesco Nex, Michael Ying Yang",
+    "_added_date": "2026-06-30",
+    "Category": "Method",
+    "_tasks": "VG"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Machine Learning",
+    "Date": "2026-06-29",
+    "Month": 6,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Benchmarking Geospatial Foundation Models for Agriculture Applications",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2606.29664v1",
+    "Abstract": "Geospatial foundation models pretrained on satellite imagery promise broad generalization across remote sensing tasks and regions, but their geographic transferability has not been systematically tested, especially in agriculture applications. This paper presents a controlled benchmark that evaluates three models, Prithvi, SpectralGPT, and SatMAE, on multi-temporal crop segmentation and change detection across four U.S. states, Iowa, North Carolina, California, and Minnesota. By assigning each train, validation, and test split to a separate region, we measure how well each model transfers to land it has not seen. All three degrade sharply under regional distribution shift, predicting only the most common crops while missing rare ones. We further find that fitting these models to a shared input format affects each one differently, which complicates direct architectural comparison. These results expose key limitations of current geospatial foundation models for agriculture and point to region aware evaluation as a necessary standard.",
+    "code": "",
+    "Publication": "Submitted to ACM SIGSPATIAL 2026",
+    "BibTex": "@article{shang2026benchmarking,\n  title={Benchmarking Geospatial Foundation Models for Agriculture Applications},\n  author={Zhuocheng Shang and Sanmay Das and Ahmed Eldawy},\n  journal={arXiv preprint arXiv:2606.29664v1},\n  year={2026},\n  url={http://arxiv.org/abs/2606.29664v1}\n}",
+    "Authors": "Zhuocheng Shang, Sanmay Das, Ahmed Eldawy",
+    "_added_date": "2026-06-30",
+    "Category": "Method",
+    "_tasks": "CD"
   }
 ]
