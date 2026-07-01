@@ -4007,5 +4007,43 @@
     "_added_date": "2026-06-29",
     "Category": "Method",
     "_tasks": "VG"
+  },
+  {
+    "Type": "Artificial Intelligence",
+    "Subtype": "cs.MA",
+    "Date": "2026-06-30",
+    "Month": 6,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "TreeAgent: A Generalizable Multi-Agent Framework for Automated Bias Labeling in Forestry via Compiled Expert Rules and Vision-Language Models",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2606.31976v1",
+    "Abstract": "Human-labeled data are widely used as reference annotations in ML, despite known variability across annotators in many expert-driven domains. In addition, expert annotation is slow, inconsistent, and remains a major bottleneck for scaling tasks like tree height bias classification in forestry remote sensing. We propose a multi-agent system (MAS) that orchestrates expert decision trees with Vision-Language Models (VLMs), treating the decision tree as a structural prior while VLMs perform localized semantic perception at individual nodes, with multi-agent voting to mitigate VLM stochasticity. We formalize a Decoupled Declarative Decision (D3) Framework that enables zero-modification generalization across diverse expert-defined decision structures. On a tree bias classification testbed, our framework outperforms supervised ML baselines and reduces the amount of expert labeling effort required. These results suggest that agentic orchestration of VLMs with expert priors can reproduce expert-defined labeling procedures at substantially lower annotation cost while maintaining interpretability.",
+    "code": "",
+    "Publication": "9 pages, 2 figures",
+    "BibTex": "@article{chen2026treeagent,\n  title={TreeAgent: A Generalizable Multi-Agent Framework for Automated Bias Labeling in Forestry via Compiled Expert Rules and Vision-Language Models},\n  author={Shiyi Chen and Nicholas Saban and Collin Hargreaves and Huiqi Wang},\n  journal={arXiv preprint arXiv:2606.31976v1},\n  year={2026},\n  url={http://arxiv.org/abs/2606.31976v1}\n}",
+    "Authors": "Shiyi Chen, Nicholas Saban, Collin Hargreaves, Huiqi Wang",
+    "_added_date": "2026-07-01",
+    "Category": "Method",
+    "_tasks": "CLS"
+  },
+  {
+    "Type": "Artificial Intelligence",
+    "Subtype": "",
+    "Date": "2026-06-30",
+    "Month": 6,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "An Agentic AI Framework to Accelerate Scientific Discovery in Plant Phenotyping",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2606.31831v1",
+    "Abstract": "High-throughput plant phenotyping now generates image derived datasets far faster than scientists can analyze them. At Oak Ridge National Laboratory's Advanced Plant Phenotyping Laboratory (APPL), automated stations image hundreds of plants daily across multiple remote sensing modalities; yet, trait extraction and interpretation remain manual, expert-bound, and strictly post-hoc, making analysis, not acquisition, the binding constraint on discovery. We present an end-to-end agentic AI framework that turns the facility from a data factory into an interactive autonomous, discovery platform, where scientists partner with AI agents to accelerate time to insight. A conversational Co-Scientist Agent translates a scientist's natural-language question into a structured analysis plan, and a headless Compute Agent dispatches Vision Transformer segmentation and trait extraction on the Frontier exascale supercomputer. The two agents run in separate security and resource domains and communicate over a secure, token-authenticated streaming channel, a design that accounts for the federation, data-movement, and provenance realities cloud-native agentic frameworks ignore, ensuring end-to-end provenance is captured for every interaction. The framework turns a days- to weeks-long analysis process into an interactive loop where agents reason over results, recommend next analyses, and respond to follow-up questions in seconds.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{souza2026an,\n  title={An Agentic AI Framework to Accelerate Scientific Discovery in Plant Phenotyping},\n  author={Renan Souza and Daniel Rosendo and Kelsey Carter and John Lagergren and Frédéric Suter and Shelaine L. Curd and Gerald A. Tuskan and Rafael Ferreira da Silva and David Weston},\n  journal={arXiv preprint arXiv:2606.31831v1},\n  year={2026},\n  url={http://arxiv.org/abs/2606.31831v1}\n}",
+    "Authors": "Renan Souza, Daniel Rosendo, Kelsey Carter, John Lagergren, Frédéric Suter, Shelaine L. Curd, Gerald A. Tuskan, Rafael Ferreira da Silva, David Weston",
+    "_added_date": "2026-07-01",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]

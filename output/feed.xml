@@ -4,12 +4,280 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-30T04:59:40Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 26 entries</subtitle>
+  <updated>2026-07-01T02:06:26Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 28 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>TreeAgent: A Generalizable Multi-Agent Framework for Automated Bias Labeling in Forestry via Compiled Expert Rules and Vision-Language Models</title>
+    <link href="http://arxiv.org/abs/2606.31976v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.31976v1</id>
+    <published>2026-06-30T00:00:00Z</published>
+    <updated>2026-06-30T00:00:00Z</updated>
+    <author>
+      <name>Shiyi Chen</name>
+    </author>
+    <author>
+      <name>Nicholas Saban</name>
+    </author>
+    <author>
+      <name>Collin Hargreaves</name>
+    </author>
+    <author>
+      <name>Huiqi Wang</name>
+    </author>
+    <summary type="text">Human-labeled data are widely used as reference annotations in ML, despite known variability across annotators in many expert-driven domains. In addition, expert annotation is slow, inconsistent, and remains a major bottleneck for scaling tasks like tree height bias classification in forestry remote sensing. We propose a multi-agent system (MAS) that orchestrates expert decision trees with Vision-Language Models (VLMs), treating the decision tree as a structural prior while VLMs perform localized semantic perception at individual nodes, with multi-agent voting to mitigate VLM stochasticity. We formalize a Decoupled Declarative Decision (D3) Framework that enables zero-modification generalization across diverse expert-defined decision structures. On a tree bias classification testbed, our framework outperforms supervised ML baselines and reduces the amount of expert labeling effort required. These results suggest that agentic orchestration of VLMs with expert priors can reproduce expert-defined labeling procedures at substantially lower annotation cost while maintaining interpretability.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 pages, 2 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+    <category term="cs.MA" />
+  </entry>
+  <entry>
+    <title>An Agentic AI Framework to Accelerate Scientific Discovery in Plant Phenotyping</title>
+    <link href="http://arxiv.org/abs/2606.31831v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.31831v1</id>
+    <published>2026-06-30T00:00:00Z</published>
+    <updated>2026-06-30T00:00:00Z</updated>
+    <author>
+      <name>Renan Souza</name>
+    </author>
+    <author>
+      <name>Daniel Rosendo</name>
+    </author>
+    <author>
+      <name>Kelsey Carter</name>
+    </author>
+    <author>
+      <name>John Lagergren</name>
+    </author>
+    <author>
+      <name>Frédéric Suter</name>
+    </author>
+    <author>
+      <name>Shelaine L. Curd</name>
+    </author>
+    <author>
+      <name>Gerald A. Tuskan</name>
+    </author>
+    <author>
+      <name>Rafael Ferreira da Silva</name>
+    </author>
+    <author>
+      <name>David Weston</name>
+    </author>
+    <summary type="text">High-throughput plant phenotyping now generates image derived datasets far faster than scientists can analyze them. At Oak Ridge National Laboratory's Advanced Plant Phenotyping Laboratory (APPL), automated stations image hundreds of plants daily across multiple remote sensing modalities; yet, trait extraction and interpretation remain manual, expert-bound, and strictly post-hoc, making analysis, not acquisition, the binding constraint on discovery. We present an end-to-end agentic AI framework that turns the facility from a data factory into an interactive autonomous, discovery platform, where scientists partner with AI agents to accelerate time to insight. A conversational Co-Scientist Agent translates a scientist's natural-language question into a structured analysis plan, and a headless Compute Agent dispatches Vision Transformer segmentation and trait extraction on the Frontier exascale supercomputer. The two agents run in separate security and resource domains and communicate over a secure, token-authenticated streaming channel, a design that accounts for the federation, data-movement, and provenance realities cloud-native agentic frameworks ignore, ensuring end-to-end provenance is captured for every interaction. The framework turns a days- to weeks-long analysis process into an interactive loop where agents reason over results, recommend next analyses, and respond to follow-up questions in seconds.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>PriorEye: Geospatial Visual Priors for End-to-End Autonomous Driving</title>
+    <link href="http://arxiv.org/abs/2606.31830v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.31830v1</id>
+    <published>2026-06-30T00:00:00Z</published>
+    <updated>2026-06-30T00:00:00Z</updated>
+    <author>
+      <name>Kyuhwan Yeon</name>
+    </author>
+    <author>
+      <name>Benjamin Ramtoula</name>
+    </author>
+    <author>
+      <name>Daniele De Martini</name>
+    </author>
+    <summary type="text">Most end-to-end autonomous driving methods rely solely on instantaneous sensor observations, limiting them to reactive behavior without the anticipatory foresight human drivers employ through prior experience. We introduce geospatial visual priors, street-level visual context anchored to the intended driving route, providing visual-spatial foresight independent of real-time sensors. We propose a memory augmentation module featuring a dual-memory architecture and an adaptive memory gate, which can be easily integrated into existing end-to-end approaches. This design pairs a contextual memory for retrieved priors with a persistent fallback memory, and dynamically regulates the influence of memories based on current state compatibility. Evaluated on the NAVSIM-v2 benchmark, our approach consistently improves performance across diverse end-to-end baselines. Furthermore, because these priors are independent of onboard sensors, our method inherently improves robustness against sensor corruption, while the dual-memory design ensures safe fallback when the retrieved priors themselves become unreliable. Our project page is available at https://ori-mrg.github.io/PriorEye.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ECCV 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Robotics" />
+  </entry>
+  <entry>
+    <title>JL1-CC&amp;QA: Extending the JL1-CD Benchmark with Change Captioning and Question Answering</title>
+    <link href="http://arxiv.org/abs/2606.31745v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.31745v1</id>
+    <published>2026-06-30T00:00:00Z</published>
+    <updated>2026-06-30T00:00:00Z</updated>
+    <author>
+      <name>Ziyuan Liu</name>
+    </author>
+    <author>
+      <name>Ruifei Zhu</name>
+    </author>
+    <author>
+      <name>Ouqiao Ma</name>
+    </author>
+    <author>
+      <name>Yuantao Gu</name>
+    </author>
+    <summary type="text">Remote sensing change detection (CD) traditionally focuses on pixel-level binary segmentation, which identifies where changes occur but neither what nor why. To bridge this semantic gap, we introduce JL1-CC&amp;QA, a multi-task benchmark that extends the JL1-CD dataset with two complementary annotation layers: change captioning (CC) and change question answering (QA). Built upon 5,000 bi-temporal image pairs acquired by the Jilin-1 satellite at 0.5-0.75m ground sample distance, the benchmark comprises: (i) JL1-CC, providing 17,021 quality-verified captions that describe diverse land-cover transformations; and (ii) JL1-QA, offering 20,060 question-answer pairs across eight question types, enabling fine-grained, interactive interrogation of surface changes. All annotations are produced via a three-stage pipeline consisting of multi-modal large language model (LLM) generation, vision-grounded LLM judging, and human expert verification. We hope that JL1-CC&amp;QA, as a benchmark unifying binary change masks, change captions, and change-oriented QA over the same image set, will serve as a valuable resource for the community to advance multi-task change understanding in remote sensing. The dataset is available at https://github.com/circleLZY/JL1-CD.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/circleLZY/JL1-CD"&gt;https://github.com/circleLZY/JL1-CD&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, 8 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>SAMBA: A Scatter-Guided Masked Bidirectional Mamba Foundation Model for SAR Target Recognition</title>
+    <link href="http://arxiv.org/abs/2606.31668v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.31668v1</id>
+    <published>2026-06-30T00:00:00Z</published>
+    <updated>2026-06-30T00:00:00Z</updated>
+    <author>
+      <name>Ke Wang</name>
+    </author>
+    <author>
+      <name>Xiaoyi Pan</name>
+    </author>
+    <author>
+      <name>Zhaoyu Gu</name>
+    </author>
+    <author>
+      <name>Xiaofeng Ai</name>
+    </author>
+    <author>
+      <name>Zhiming Xu</name>
+    </author>
+    <author>
+      <name>Feng Zhao</name>
+    </author>
+    <author>
+      <name>Shunping Xiao</name>
+    </author>
+    <summary type="text">Synthetic aperture radar automatic target recognition (SAR ATR) is critical for Earth observation and defense, but its practical deployment is constrained by scarce annotated training data. Self-supervised pre-training alleviates this label bottleneck, yet prevailing Transformer architectures incur prohibitive quadratic computational complexity, and conventional universal masking neglects the unique electromagnetic scattering properties intrinsic to SAR imagery. To address these limitations, we propose SAMBA (Scattering-Guided Bidirectional Mamba), an efficient self-supervised pre-training foundation model for SAR target interpretation. Our framework features three core innovations: (i) a linear-complexity Mamba encoder with a mid-sequence class token to mitigate computational bottlenecks; (ii) a three-level hierarchical Scattering-Guided Masked Autoencoder (SG-MAE) masking strategy guided by SAR physical priors, aligning the pretext task with SAR's intrinsic imaging mechanism; (iii) a lightweight SpatialMix feature interaction module to enhance cross-region feature fusion. We also design a two-stage cross-domain pre-training pipeline to optimize the overall pre-training process. Extensive evaluations demonstrate that SAMBA consistently delivers superior performance across all pre-training configurations, with substantially fewer parameters than both CNN and Transformer baselines. Compared with the default masking strategy in standard MAE, the proposed SG-MAE strategy further boosts the model's few-shot transfer capability. Benchmarking on seven downstream datasets covering classification and detection tasks shows SAMBA achieves state-of-the-art (SOTA) performance on most metrics, fully validating its robust generalizability across diverse SAR interpretation tasks. Source code and pre-trained weights are publicly available at https://github.com/mynswkk/SAMBA.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/mynswkk/SAMBA"&gt;https://github.com/mynswkk/SAMBA&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages, 5figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Role of SKA in Advancing Remote Measurements of Magnetic Fields of Solar Coronal Mass Ejections</title>
+    <link href="http://arxiv.org/abs/2606.31440v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.31440v1</id>
+    <published>2026-06-30T00:00:00Z</published>
+    <updated>2026-06-30T00:00:00Z</updated>
+    <author>
+      <name>Devojyoti Kansabanik</name>
+    </author>
+    <author>
+      <name>Surajit Mondal</name>
+    </author>
+    <author>
+      <name>Shaheda Begum Shahik</name>
+    </author>
+    <author>
+      <name>Peijin Zhang</name>
+    </author>
+    <author>
+      <name>Puja Majee</name>
+    </author>
+    <author>
+      <name>Angelos Vourlidas</name>
+    </author>
+    <author>
+      <name>John Morgan</name>
+    </author>
+    <author>
+      <name>Divya Oberoi</name>
+    </author>
+    <author>
+      <name>Anshu Kumari</name>
+    </author>
+    <author>
+      <name>Alec Thomson</name>
+    </author>
+    <author>
+      <name>Bin Chen</name>
+    </author>
+    <author>
+      <name>Carl Shneider</name>
+    </author>
+    <author>
+      <name>Hariharan Krishnan</name>
+    </author>
+    <author>
+      <name>Kamen Kozarev</name>
+    </author>
+    <author>
+      <name>Sneha Pandit</name>
+    </author>
+    <author>
+      <name>Vanessa Moss</name>
+    </author>
+    <summary type="text">Coronal Mass Ejections (CMEs) are large expulsions of magnetized plasma from the Sun into interplanetary space and are the primary drivers of extreme space weather variations. The strength and topology of CME magnetic fields largely determine their impact on Earth. Although visible-light coronagraphs routinely observe CMEs and provide their geometric and kinematic properties, they cannot directly measure CME vector magnetic fields. These fields evolve from initiation through the inner heliosphere due to interactions with other CMEs, coronal structures, and the ambient solar wind, leading to significant structural deformation. Such evolution complicates predictions of the CME magnetic field at Earth. Accurate measurements of CME magnetic fields in the corona and heliosphere are therefore essential for advancing space weather forecasting. Radio observations spanning MHz to GHz frequencies provide a powerful remote-sensing approach for measuring CME magnetic fields from the ground. Recent observations with Square Kilometre Array (SKA) precursors and pathfinder instruments, as well as other new-generation facilities, have demonstrated the potential of these radio techniques for CME magnetic-field diagnostics. At the same time, these studies have highlighted several limitations of current instruments. The higher sensitivity, wider instantaneous bandwidth, and broader frequency coverage of the SKA will open a new observational window, enabling these techniques to be fully exploited for constraining SpWx models and improving predictive accuracy. However, such observations are non-standard and require special consideration in scheduling, calibration, and imaging. Developments achieved with SKA precursors and pathfinders are paving the way for robust CME magnetic-field measurements with the SKA.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Advancing Astrophysics with SKA II (AASKAII)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="astro-ph.SR" />
+    <category term="physics.space-ph" />
+  </entry>
+  <entry>
+    <title>FROST: Training-Free Few-Shot Segmentation with Frozen Features and Nonparametric Statistics</title>
+    <link href="http://arxiv.org/abs/2606.31136v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.31136v1</id>
+    <published>2026-06-30T00:00:00Z</published>
+    <updated>2026-06-30T00:00:00Z</updated>
+    <author>
+      <name>Junghwan Park</name>
+    </author>
+    <summary type="text">Few-shot segmentation asks a model to delineate a target class in a query image from only a handful of annotated examples, a setting most acute in remote sensing, where labels are scarce and the imagery departs sharply from the natural images on which vision backbones are pretrained. Prevailing approaches either train a segmenter on labelled episodes, which raises accuracy within the training distribution but binds the model to it, or reduce each class to a lossy summary of frozen features, a single prototype, a few cluster prototypes, or a discrete clustering, none of which preserves the internal structure of a multimodal class. We argue that a class is better described by a distribution than by a point, and that frozen self-supervised features already carry enough structure to estimate that distribution directly. We introduce FROST, a training-free few-shot segmenter that treats the reference foreground and background as two point clouds on the unit sphere of frozen DINOv3 features and labels each query token by a nonparametric density ratio, with a threshold the Bayes rule fixes at zero under equal priors. Because the variance of a density estimate shrinks as its sample grows, the decision sharpens as references accumulate, and every remaining quantity from the kernel bandwidth to the spatial gate is read from the support set rather than tuned. We develop FROST for overhead imagery, where a class is typically a scatter of many small and dissimilar instances that a density tracks but a lossy summary blurs. Across seventeen remote-sensing benchmarks FROST surpasses both training-free and learning-based methods, leading by 5.6 mIoU from a single annotated example and widening its lead as the support set grows, all while remaining among the smallest models compared. Code is available at https://github.com/jhpark-ai/FROST.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/jhpark-ai/FROST"&gt;https://github.com/jhpark-ai/FROST&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 20 pages&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>TerraDiT-$Ω$: Unified Spatial Control for Satellite Image Synthesis with Any Geospatial Primitive</title>
+    <link href="http://arxiv.org/abs/2606.31029v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.31029v1</id>
+    <published>2026-06-30T00:00:00Z</published>
+    <updated>2026-06-30T00:00:00Z</updated>
+    <author>
+      <name>Brian Wei</name>
+    </author>
+    <author>
+      <name>Srikumar Sastry</name>
+    </author>
+    <author>
+      <name>Daniel Cher</name>
+    </author>
+    <author>
+      <name>Eric Xing</name>
+    </author>
+    <author>
+      <name>Nathan Jacobs</name>
+    </author>
+    <summary type="text">Generative models have achieved remarkable progress, yet applying them to satellite imagery remains challenging. Unlike natural imagery, satellite scenes are structured by spatially complex and semantically distinct geometries. Prior work addresses this complexity by adapting natural image frameworks using dense rasters or sparse prompts, trading off annotation cost and fidelity while breaking compatibility with vector primitives commonly used to represent geographic information. We introduce TerraDiT-$Ω$, a unified spatial control framework that generates satellite imagery directly from any native geospatial primitive. By jointly leveraging precise annotations (polygons, polylines) and coarser ones (bounding boxes, points), the model supports controllable layouts across varying annotation budgets, broadening applicability to design tasks such as urban planning while remaining naturally compatible with end-to-end GeoAI workflows. To effectively leverage these primitives during generation, we propose Geometry-Aware Local Attention, a conditioning mechanism that injects explicit geometric cues into the attention space. Across all conditioning formats, our approach consistently outperforms both dense-control and sparse-control baselines. Furthermore, this flexibility enables controllable synthetic data augmentation using a single generative model, improving downstream performance on land-cover segmentation, object detection, road graph extraction, and scene classification. Code, data, and weights are available at https://github.com/mvrl/TerraDiT.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/mvrl/TerraDiT"&gt;https://github.com/mvrl/TerraDiT&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; European Conference on Computer Vision 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;OD;SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Estimating Supply Incrementality in Two-sided Marketplaces: A Causal Machine Learning Approach</title>
+    <link href="http://arxiv.org/abs/2606.30999v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.30999v1</id>
+    <published>2026-06-30T00:00:00Z</published>
+    <updated>2026-06-30T00:00:00Z</updated>
+    <author>
+      <name>Yufei Wu</name>
+    </author>
+    <author>
+      <name>Daniel Schmierer</name>
+    </author>
+    <author>
+      <name>Dan Zylberglejd</name>
+    </author>
+    <summary type="text">In two-sided marketplaces with heterogeneous products, it is important to understand the causal relationship between additional supply and marketplace outcomes, such as the total quantity transacted or transaction value in the marketplace. This paper studies a causal machine learning approach to estimating this relationship across product segments. We use the Airbnb marketplace as an example, focusing on the impact of additional listing supply on total bookings, but the methodology applies to other two-sided marketplaces. Our approach combines double/debiased machine learning with a hierarchical Bayesian framework that leverages pre-existing knowledge as priors. We construct tractable and informative features for the model by leveraging measures of product segment similarity from the geospatial literature. We find that such a model provides plausible estimates of the marketplace returns to additional supply and strong out of sample performance.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the KDD 2025 Workshop on Causal Inference and Machine Learning in Practice (not presented)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+    <category term="econ.EM; stat.AP; stat.ME" />
+  </entry>
   <entry>
     <title>High-Resolution Flood Mapping With Sentinel-1 and Sentinel-2 via Misalignment-Robust Cross-Sensor Learning and Generative Despeckling</title>
     <link href="http://arxiv.org/abs/2606.30511v1" rel="alternate" type="text/html" />
@@ -552,179 +820,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Retrieval-Grounded Multilingual LLM Assistance for Island Smallholder Farmers</title>
-    <link href="http://arxiv.org/abs/2606.25647v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.25647v1</id>
-    <published>2026-06-24T00:00:00Z</published>
-    <updated>2026-06-24T00:00:00Z</updated>
-    <author>
-      <name>Nikolaos D. Tantaroudas</name>
-    </author>
-    <author>
-      <name>Ilias Karachalios</name>
-    </author>
-    <author>
-      <name>Andrew J. McCracken</name>
-    </author>
-    <summary type="text">Smallholder farming communities in remote, depopulating areas have limited access to agricultural advice, and their locally specific agronomic knowledge, often expressed in regional dialect, is poorly represented in the global corpora on which Large Language Models (LLMs) are trained. A general-purpose chatbot therefore answers fluently but unreliably, ungrounded in authoritative local data farmers can trust. This paper presents a conversational AI assistant, Falco eleonorae, embedded in a bilingual (Greek-primary, English-secondary) e-market platform serving farmers and cooperatives of a defined island area of interest. It is a thin Backend-for-Frontend (BFF) proxy in front of a geospatially-aware agronomic agent rather than a self-hosted model. Answer generation and tool selection are delegated to a managed upstream service on OpenAI GPT-5-family models, while one bounded task, describing an uploaded field photograph, is handled directly by a vision-capable model so only text reaches the agent, and voice input is transcribed by a managed EU streaming speech-to-text service. Grounding comes not from a self-hosted vector database but from tool-augmented retrieval: a Model Context Protocol (MCP) tool queries a curated, read-only, bilingual data interface exposing local crops, a seasonal calendar, traditional practices, a dialect glossary, products, agritourism experiences, cooperatives, and training content, each wrapped in a geospatial Well-Known Text envelope anchoring the agent to the area of interest. We detail its multilingual, voice, and image modalities, its progressive-web-application and accessibility design for low-bandwidth field use, and its security and data-protection posture, and argue that for a small, resource-constrained rural deployment a managed, grounded multilingual assistant is more attainable and trustworthy than a self-hosted model.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13, 4&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
-    <category term="cs.CE" />
-  </entry>
-  <entry>
-    <title>C3-Bench: A Context-Aware Change Captioning Benchmark</title>
-    <link href="http://arxiv.org/abs/2606.25445v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.25445v1</id>
-    <published>2026-06-24T00:00:00Z</published>
-    <updated>2026-06-24T00:00:00Z</updated>
-    <author>
-      <name>Jae-Woo Kim</name>
-    </author>
-    <author>
-      <name>Hyeongbeom Kim</name>
-    </author>
-    <author>
-      <name>Ue-Hwan Kim</name>
-    </author>
-    <summary type="text">While Change Captioning systems have garnered substantial attention to respond to our evolving world, their true performance on diverse real-world change contexts remains largely unexplored due to the lack of comprehensive evaluation frameworks. To fill this gap, we propose C3-Bench, a comprehensive benchmark for evaluating Context-aware Change Captioning. C3-Bench features: (1) 4,996 human-labeled image pairs of 51 real-world change contexts across four domains (e.g., natural scenes, remote sensing imagery, image editing, and anomalies), each with diverse, carefully curated scenarios derived from multiple change-centric communities; and (2) the first LLM-as-Judge evaluation framework in the change captioning task that measure fine-grained dimensions (e.g., correctness, specificity, fluency, and relevance), along with a novel reversibility metric exploring whether models understand changes with symmetric consistency. Based on C3-Bench, we benchmark 32 models -- including conventional change captioning models, proprietary Large Multimodal Models (LMMs), and 2B-90B open-source LMMs. We reveal a fundamental blind spot in the prevailing change captioning paradigm: Once the change context departs from training-style regimes, conventional models collapse, and even state-of-the-art LMMs such as GPT-5.2 exhibit systematic domain- and position-dependent errors that distort reliable change understanding. By making these hidden failure modes explicit and measurable, we delineate the next frontier for building generalizable and trustworthy change captioning systems. All codes and datasets are publicly available on the project page.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ECCV 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>State Space Models Meet Remote Sensing: A Survey</title>
-    <link href="http://arxiv.org/abs/2606.25329v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.25329v1</id>
-    <published>2026-06-24T00:00:00Z</published>
-    <updated>2026-06-24T00:00:00Z</updated>
-    <author>
-      <name>Qinzhe Yang</name>
-    </author>
-    <author>
-      <name>Chenyang Liu</name>
-    </author>
-    <author>
-      <name>Jia Xu</name>
-    </author>
-    <author>
-      <name>Zhenwei Shi</name>
-    </author>
-    <author>
-      <name>Zhengxia Zou</name>
-    </author>
-    <summary type="text">State Space Models (SSMs), designed for long-range modeling, offer linear computational complexity and strong capabilities in capturing long-range dependencies. In the field of remote sensing, SSMs have gained popularity due to their effectiveness in addressing unique challenges such as dense visual predictions, multi-modal remote sensing data, and temporal remote sensing data, which have also yielded significant advancements in customized architectures. This paper presents a comprehensive review of SSM-based approaches in remote sensing, covering most of the relevant studies since SSMs were first introduced to the field. We offer a multi-dimensional analysis examining SSM applications in remote sensing tasks and discussing advancements in architecture design. This paper not only synthesizes the rapid progress in SSM-based research but also identifies key challenges and future opportunities. By providing a detailed perspective, this paper aims to serve as a foundational resource for remote sensing researchers, offering actionable insights to foster further advancements in this evolving domain. We will keep tracing related works at https://github.com/QinzheYang/Awesome-RS-State-Space-Model.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/QinzheYang/Awesome-RS-State-Space-Model"&gt;https://github.com/QinzheYang/Awesome-RS-State-Space-Model&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; SCIS SCIQ1 IF=8&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Survey&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Efficient Remote Sensing Instance Segmentation with Linear-Time State Space Distilled Visual Foundation Models</title>
-    <link href="http://arxiv.org/abs/2606.25324v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.25324v1</id>
-    <published>2026-06-24T00:00:00Z</published>
-    <updated>2026-06-24T00:00:00Z</updated>
-    <author>
-      <name>Qinzhe Yang</name>
-    </author>
-    <author>
-      <name>Keyan Chen</name>
-    </author>
-    <author>
-      <name>Jia Xu</name>
-    </author>
-    <author>
-      <name>Zhenwei Shi</name>
-    </author>
-    <author>
-      <name>Zhengxia Zou</name>
-    </author>
-    <summary type="text">The computational complexity of Transformers scales quadratically with the number of tokens, which significantly constrains the efficiency of vision models, particularly recent ViT-based foundation models in dense prediction tasks. Instance segmentation, a typical dense visual prediction task in the remote sensing field, faces similar challenges. In this paper, inspired by the recent advances of knowledge distillation in large language models, we introduce RS4D - a new remote sensing instance segmentation method with linear computational complexity, which addresses the inefficiency of long sequence modeling through distilled state space modeling (SSM). We propose an adaptive noise and masking knowledge distillation training method for pre-training lightweight SSM backbones, which effectively compresses knowledge from the vast self-attention space into a compact, dense linear state space. We also design a remote sensing image instance segmentation architecture based on this lightweight visual encoder, where we explore variants of three different backbones and two segmentation heads. Extensive experiments are conducted on multiple benchmark datasets, including SSDD, WHU, and NWPU. Compared to ViT-based approaches, our proposed SSM backbone achieves an 8x reduction in parameters and a 9x reduction in FLOPs while maintaining comparable or superior accuracy to both ViT- and CNN-based instance segmentation methods. The implementation codes have been publicly available at https://github.com/QinzheYang/RS4D.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/QinzheYang/RS4D"&gt;https://github.com/QinzheYang/RS4D&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE TGRS vol&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>LEVIRDet: A Million-Scale 159-Category Dataset and Foundation Model for Universal Remote Sensing Object Detection</title>
-    <link href="http://arxiv.org/abs/2606.25312v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.25312v1</id>
-    <published>2026-06-24T00:00:00Z</published>
-    <updated>2026-06-24T00:00:00Z</updated>
-    <author>
-      <name>Qinzhe Yang</name>
-    </author>
-    <author>
-      <name>Dongyu Wang</name>
-    </author>
-    <author>
-      <name>Haohan Niu</name>
-    </author>
-    <author>
-      <name>Jia Xu</name>
-    </author>
-    <author>
-      <name>Zhenwei Shi</name>
-    </author>
-    <author>
-      <name>Zhengxia Zou</name>
-    </author>
-    <summary type="text">Remote sensing object detection has advanced rapidly with the development of large-scale benchmarks and modern detection architectures. However, existing datasets and detectors remain fragmented. Most benchmarks focus on limited categories, fixed spatial resolutions, or a single sensor, while detectors still struggle to work across different sensors and categorical systems. In this paper, we introduce LEVIRDet-159, the largest and most comprehensive remote sensing object detection dataset to date, with 159 categories, 2.56 million bounding boxes, and 700k fine-grained annotations under a multi-level taxonomy. In each key scale dimension, LEVIRDet-159 exceeds the corresponding largest existing remote sensing object detection dataset, containing approximately (7x) more images, (6x) more object instances, and (4x) more categories. Based on this dataset, we design LEVIRDetNet, a scale-hierarchy-aware detection foundation model for universal remote sensing object detection. LEVIRDetNet couples online visual Ground Sampling Distance (GSD) prediction, GSD-conditioned query modulation and allocation, and a hierarchy-aware detection head for mixed-granularity remote sensing supervision. Under stringent evaluation settings, LEVIRDetNet demonstrates strong cross-domain generalization. Even without target-domain training or fine-tuning, it achieves state-of-the-art detection performance on 9 external benchmarks, improving the strongest fully supervised competing methods by 5.02 mAP on average under each benchmark's primary metric. We hope this study will facilitate the development of strongly generalizable remote sensing object detection across diverse category systems, spatial resolutions, and sensor platforms. The dataset and trained models will be released at https://qinzheyang.github.io/LEVIRDet/, accompanying the final paper.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages, 9 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Methane-Plume Segmentation From Hyperspectral Satellite Imagery Via Multimodal Deep Learning</title>
-    <link href="http://arxiv.org/abs/2606.26416v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.26416v1</id>
-    <published>2026-06-24T00:00:00Z</published>
-    <updated>2026-06-24T00:00:00Z</updated>
-    <author>
-      <name>Brayan Quintero</name>
-    </author>
-    <author>
-      <name>Jeferson Acevedo</name>
-    </author>
-    <author>
-      <name>Samuel Traslaviña</name>
-    </author>
-    <author>
-      <name>Hoover Rueda-Chacón</name>
-    </author>
-    <summary type="text">Efficient detection of methane plumes is crucial for understanding and mitigating global warming, as accurately identifying and segmenting them in earth observation imagery remain essential for large-scale monitoring. In this work, we propose a multimodal deep learning model that integrates a feature-guided methane enhancement (FGME) mechanism which injects physically meaningful methane cues into transformer-based RGB representations at multiple semantic scales. Our method is evaluated on the MPDataset, where it outperforms the state-of-the-art with improvements of +0.92 in MIoU, +0.87 in MPrecision and +1.01 in Recall. Notably, these gains are obtained with a substantially lower computational cost than other high-performing architectures, resulting in a favorable accuracy-efficiency trade-off for large-scale methane monitoring. These results highlight the potential of efficient multimodal fusion strategies for accurate and scalable methane plume segmentation in real-world remote sensing applications.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE International Geoscience and Remote Sensing Symposium (IGARSS) 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Topology-Informed Neural Networks for Flood Detection in Optical and Synthetic Aperture Radar Imagery</title>
-    <link href="http://arxiv.org/abs/2606.26204v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.26204v2</id>
-    <published>2026-06-24T00:00:00Z</published>
-    <updated>2026-06-24T00:00:00Z</updated>
-    <author>
-      <name>Sophia Li</name>
-    </author>
-    <author>
-      <name>Max Zhao</name>
-    </author>
-    <author>
-      <name>Raghu G. Raj</name>
-    </author>
-    <author>
-      <name>Tianyu Chen</name>
-    </author>
-    <summary type="text">Floods frequently impact regions around the world. Rapid and accurate flood detection is crucial for emergency response and timely mitigation of human and economic loss. The expanding availability of satellite data and advances in artificial intelligence have enhanced monitoring of environmental hazards, but many flood events remain challenging to detect because cloud cover obscures optical satellite imagery. Rambour et al. introduced the SEN12-FLOOD dataset and extracted per-image features using a ResNet-50 convolutional neural network backbone, then fed these features into a gated recurrent unit network to show that temporal information can substantially improve accuracy compared to single-image baselines. More recently, Chamatidis et al. showed that a vision transformer can achieve strong performance with popular convolutional architectures. However, these models typically function as opaque black boxes, making it difficult to interpret their decision boundaries, learned features, and internal reasoning, especially in safety-critical domains like remote sensing. In contrast, topological data analysis (TDA) provides a mathematically grounded framework for capturing global structural features of data. TDA has emerged as a powerful tool for analyzing complex imagery, especially imagery with geometrically interpretable structures, of which floods are a prime candidate. In this work, we systematically evaluate topological descriptors for flood detection using the open-source SEN12-FLOOD dataset. By extracting topological features from each image and incorporating them into neural networks, we demonstrate that topological descriptors carry meaningful flood signals independently and complement existing networks to yield more robust and interpretable flood detection systems.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
   </entry>
 </feed>
