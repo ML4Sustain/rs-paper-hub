@@ -4,12 +4,72 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-01T05:17:53Z</updated>
+  <updated>2026-07-02T01:59:42Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 11 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>GeoSearcher: Anchor-Guided Progressive Reasoning for Remote Sensing Visual Grounding with Process Supervision</title>
+    <link href="http://arxiv.org/abs/2607.01050v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.01050v1</id>
+    <published>2026-07-01T00:00:00Z</published>
+    <updated>2026-07-01T00:00:00Z</updated>
+    <author>
+      <name>Dianyu Wang</name>
+    </author>
+    <author>
+      <name>Yidan Zhang</name>
+    </author>
+    <author>
+      <name>Peirong Zhang</name>
+    </author>
+    <author>
+      <name>Xuyang Li</name>
+    </author>
+    <author>
+      <name>Xiaoxuan Liu</name>
+    </author>
+    <author>
+      <name>Lei Wang</name>
+    </author>
+    <summary type="text">Recent multimodal large language models (MLLMs) have shown strong cross-modal understanding and coordinate generation abilities in visual grounding. However, transferring these abilities to remote sensing visual grounding (RSVG) remains challenging. High-resolution remote sensing images usually cover large-scale scenes, where targets are often extremely small and surrounded by numerous visually similar distractors. Meanwhile, queries often contain multiple clues, such as reference objects, spatial relations, and target attributes. Existing MLLM-based methods usually formulate RSVG as one-step coordinate generation, which may lead to unstable predictions for small-object localization and complex queries. To address these challenges, we propose GeoSearcher, which reformulates RSVG as an anchor-guided progressive reasoning process and realizes it through two coupled stages: Anchor-Centric Reasoning Supervised Fine-Tuning (ACR-SFT) and Process-Faithful Group Relative Policy Optimization (PF-GRPO). In ACR-SFT, anchor-centric reasoning data are used to teach the model to represent key visual clues as anchors and progressively integrate location, relational, and attribute clues around them. In PF-GRPO, Process-Aware Reward (PAR) and Reasoning-Informative Sample Selector (RISS) further optimize this reasoning behavior by jointly evaluating key reasoning steps and target localization, while focusing training on samples that are more beneficial for improving progressive reasoning. Through this design, GeoSearcher transforms large-scale visual search into a more constrained local reasoning process. Extensive experiments on DIOR-RSVG, OPT-RSVG, and VRS-Bench show that GeoSearcher outperforms existing state-of-the-art methods. The project will be released at https://github.com/wangdianyu954-xixi/GeoSearcher.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/wangdianyu954-xixi/GeoSearcher"&gt;https://github.com/wangdianyu954-xixi/GeoSearcher&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 14 pages,11 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Uncertainty-aware tree height change regression</title>
+    <link href="http://arxiv.org/abs/2607.00638v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.00638v1</id>
+    <published>2026-07-01T00:00:00Z</published>
+    <updated>2026-07-01T00:00:00Z</updated>
+    <author>
+      <name>Max Gaber</name>
+    </author>
+    <author>
+      <name>Dimitri Gominski</name>
+    </author>
+    <author>
+      <name>Jaime C. Revenga</name>
+    </author>
+    <author>
+      <name>Stefan Oehmcke</name>
+    </author>
+    <author>
+      <name>Rasmus Fensholt</name>
+    </author>
+    <author>
+      <name>Martin Brandt</name>
+    </author>
+    <summary type="text">Monitoring canopy height change is essential for understanding carbon sinks and forest dynamics. Remote sensing enables consistent, large-scale observations of such changes, increasingly integrated with deep learning architectures such as Geospatial Foundation Models (GFMs). However, existing methods and datasets frame the problem as binary change detection, which overlooks both the continuous nature of change, especially for vegetation, and the inherent uncertainty in labels. We present the Canopy Height Change (CHC) dataset, providing 3 $\mathrm{m}$ resolution continuous canopy height differences and associated spatially resolved uncertainties across 10598 $\mathrm{km}^2$ of northern and western Spain. The dataset is paired with a co-located time series of PlanetScope satellite imagery. Based on the dataset, we introduce the task of uncertainty-aware change regression, associated metrics and strategies for fine-tuning GFMs. Furthermore, we evaluate state-of-the-art GFMs and highlight promising directions and remaining challenges for advancing continuous canopy height change estimation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>TreeAgent: A Generalizable Multi-Agent Framework for Automated Bias Labeling in Forestry via Compiled Expert Rules and Vision-Language Models</title>
     <link href="http://arxiv.org/abs/2606.31976v1" rel="alternate" type="text/html" />
@@ -253,65 +313,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>DFM: Difference Feature Modeling with Text-Guided Gated Contrastive Loss for Remote Sensing Image Change Captioning</title>
-    <link href="http://arxiv.org/abs/2606.27410v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.27410v1</id>
-    <published>2026-06-25T00:00:00Z</published>
-    <updated>2026-06-25T00:00:00Z</updated>
-    <author>
-      <name>Yelin Wang</name>
-    </author>
-    <author>
-      <name>Zijia Song</name>
-    </author>
-    <author>
-      <name>Chuanguang Yang</name>
-    </author>
-    <author>
-      <name>Miaoyu Wang</name>
-    </author>
-    <author>
-      <name>Zhulin An</name>
-    </author>
-    <author>
-      <name>Libo Huang</name>
-    </author>
-    <author>
-      <name>Yongjun Xu</name>
-    </author>
-    <summary type="text">The primary goal of Remote Sensing Image Change Captioning (RSICC) is to automatically generate descriptions of changes between remote sensing images captured at different time points. Existing models still rely on a single autoregressive generation paradigm, which tends to prioritize learning easily generated vocabulary over capturing discriminative differences between images. To address this, we reframe the training paradigm and propose a novel Difference Feature Modeling (DFM) framework. Specifically, we introduce a Text-guided Gated Contrastive Loss (TGCL) to guide the vision encoder to extract critical features from a text-modal perspective. Additionally, we incorporate a pre-trained Change Detection model to transfer stable change detection knowledge. In order to further enhance the representation, we design a Joint Feature Modeling (JFM) module to achieve the fusion of multi-scale difference representations, thereby capturing comprehensive spatiotemporal variations between multi-temporal images. Extensive experiments on multiple datasets demonstrate the effectiveness of our approach.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE ICME 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
-    <category term="Image and Video Processing" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>RSGPNet: Geometric Prompting for Remote Sensing Open-Vocabulary Semantic Segmentation</title>
-    <link href="http://arxiv.org/abs/2606.28410v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.28410v1</id>
-    <published>2026-06-25T00:00:00Z</published>
-    <updated>2026-06-25T00:00:00Z</updated>
-    <author>
-      <name>Shanwen Wang</name>
-    </author>
-    <author>
-      <name>Xin Sun</name>
-    </author>
-    <author>
-      <name>Sirui Wang</name>
-    </author>
-    <author>
-      <name>Xiao Xiang Zhu</name>
-    </author>
-    <summary type="text">Open-vocabulary semantic segmentation (OVSS) enables text-guided segmentation of unseen objects, breaking fixed-class limitations to achieve open-world understanding. However, existing OVSS methods primarily focus on modifying the CLIP attention mechanism, which still suffers from unstable local segmentation for remote sensing (RS) domain. To address these limitations, we propose RSGPNet, a training-free geometric prompting framework for RS OVSS that refines segmentation by leveraging object geometric areas and consistency constraints. Specifically, RSGPNet comprises three core modules: a Text-guided Coarse Mask module (TCM), a Geometric Re-prompting Module (GRP), and a Coarse-to-fine Consistency Verification Mechanism (CVM). TCM utilizes text prompts and the input image to construct initial coarse segmentation masks. GRP then converts these coarse masks into geometric box prompts, feeding them back into the segmentation model to generate refined masks. Finally, CVM employs consistency computation to prevent prompting from reinforcing erroneous regions. They allow the model to improve segmentation accuracy in complex areas, such as category boundaries. Extensive experiments on RS datasets demonstrate that RSGPNet significantly outperforms state-of-the-art methods across both quantitative and qualitative metrics while exhibiting excellent interpretability. The code is released at \href{https://github.com/wangshanwen001/RSGPNet}{https://github.com/wangshanwen001/RSGPNet}.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/wangshanwen001/RSGPNet"&gt;https://github.com/wangshanwen001/RSGPNet&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Open-vocabulary, Remote sensing, Geometric prompting, Multimodal large language model&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>

@@ -4,12 +4,106 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-01T05:17:53Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 28 entries</subtitle>
+  <updated>2026-07-02T01:59:42Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 24 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>GeoSearcher: Anchor-Guided Progressive Reasoning for Remote Sensing Visual Grounding with Process Supervision</title>
+    <link href="http://arxiv.org/abs/2607.01050v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.01050v1</id>
+    <published>2026-07-01T00:00:00Z</published>
+    <updated>2026-07-01T00:00:00Z</updated>
+    <author>
+      <name>Dianyu Wang</name>
+    </author>
+    <author>
+      <name>Yidan Zhang</name>
+    </author>
+    <author>
+      <name>Peirong Zhang</name>
+    </author>
+    <author>
+      <name>Xuyang Li</name>
+    </author>
+    <author>
+      <name>Xiaoxuan Liu</name>
+    </author>
+    <author>
+      <name>Lei Wang</name>
+    </author>
+    <summary type="text">Recent multimodal large language models (MLLMs) have shown strong cross-modal understanding and coordinate generation abilities in visual grounding. However, transferring these abilities to remote sensing visual grounding (RSVG) remains challenging. High-resolution remote sensing images usually cover large-scale scenes, where targets are often extremely small and surrounded by numerous visually similar distractors. Meanwhile, queries often contain multiple clues, such as reference objects, spatial relations, and target attributes. Existing MLLM-based methods usually formulate RSVG as one-step coordinate generation, which may lead to unstable predictions for small-object localization and complex queries. To address these challenges, we propose GeoSearcher, which reformulates RSVG as an anchor-guided progressive reasoning process and realizes it through two coupled stages: Anchor-Centric Reasoning Supervised Fine-Tuning (ACR-SFT) and Process-Faithful Group Relative Policy Optimization (PF-GRPO). In ACR-SFT, anchor-centric reasoning data are used to teach the model to represent key visual clues as anchors and progressively integrate location, relational, and attribute clues around them. In PF-GRPO, Process-Aware Reward (PAR) and Reasoning-Informative Sample Selector (RISS) further optimize this reasoning behavior by jointly evaluating key reasoning steps and target localization, while focusing training on samples that are more beneficial for improving progressive reasoning. Through this design, GeoSearcher transforms large-scale visual search into a more constrained local reasoning process. Extensive experiments on DIOR-RSVG, OPT-RSVG, and VRS-Bench show that GeoSearcher outperforms existing state-of-the-art methods. The project will be released at https://github.com/wangdianyu954-xixi/GeoSearcher.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/wangdianyu954-xixi/GeoSearcher"&gt;https://github.com/wangdianyu954-xixi/GeoSearcher&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 14 pages,11 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Uncertainty-aware tree height change regression</title>
+    <link href="http://arxiv.org/abs/2607.00638v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.00638v1</id>
+    <published>2026-07-01T00:00:00Z</published>
+    <updated>2026-07-01T00:00:00Z</updated>
+    <author>
+      <name>Max Gaber</name>
+    </author>
+    <author>
+      <name>Dimitri Gominski</name>
+    </author>
+    <author>
+      <name>Jaime C. Revenga</name>
+    </author>
+    <author>
+      <name>Stefan Oehmcke</name>
+    </author>
+    <author>
+      <name>Rasmus Fensholt</name>
+    </author>
+    <author>
+      <name>Martin Brandt</name>
+    </author>
+    <summary type="text">Monitoring canopy height change is essential for understanding carbon sinks and forest dynamics. Remote sensing enables consistent, large-scale observations of such changes, increasingly integrated with deep learning architectures such as Geospatial Foundation Models (GFMs). However, existing methods and datasets frame the problem as binary change detection, which overlooks both the continuous nature of change, especially for vegetation, and the inherent uncertainty in labels. We present the Canopy Height Change (CHC) dataset, providing 3 $\mathrm{m}$ resolution continuous canopy height differences and associated spatially resolved uncertainties across 10598 $\mathrm{km}^2$ of northern and western Spain. The dataset is paired with a co-located time series of PlanetScope satellite imagery. Based on the dataset, we introduce the task of uncertainty-aware change regression, associated metrics and strategies for fine-tuning GFMs. Furthermore, we evaluate state-of-the-art GFMs and highlight promising directions and remaining challenges for advancing continuous canopy height change estimation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>EO-VGGT: Orbital Ray-Conditioned 3D Foundation Models for Satellite Multi-View Reconstruction</title>
+    <link href="http://arxiv.org/abs/2607.00417v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.00417v1</id>
+    <published>2026-07-01T00:00:00Z</published>
+    <updated>2026-07-01T00:00:00Z</updated>
+    <author>
+      <name>Qiyan Luo</name>
+    </author>
+    <author>
+      <name>Yingdong Pi</name>
+    </author>
+    <author>
+      <name>Lekang Wen</name>
+    </author>
+    <author>
+      <name>Jie Yang</name>
+    </author>
+    <author>
+      <name>Xiaoyu Wang</name>
+    </author>
+    <author>
+      <name>Haiming Zhang</name>
+    </author>
+    <author>
+      <name>Mi Wang</name>
+    </author>
+    <summary type="text">In the era of satellite constellations, multi-view optical satellite imagery is pivotal for Earth Observation (EO) and high-quality Digital Surface Model (DSM) reconstruction. Although feed-forward 3D foundation models have transformed computer vision, their deployment in satellite remote sensing is inherently constrained by the structural discrepancy between implicit perspective assumptions and explicit orbital pushbroom geometry. This geometric incongruity is further compounded by pronounced view-set heterogeneity. We present EO-VGGT, a framework that adapts a frozen perspective-driven model to orbital observations via explicit physical geometry embedding.First, the Geometry-Correlation Constrained Selection (GCCS) strategy prunes sub-optimal observations by balancing geometric diversity and radiometric consistency to optimize the input sequence. Second, a Sensor-Ray Encoder (SRE) parameterizes pixel-level pushbroom lines of sight derived from the Rational Function Model (RFM) into high-dimensional space-geometric tokens, reconciling the mathematical discrepancy between central projection and orbital kinematics. Third, a lightweight Ray-Pointing-Aware Adapter (RPAA) employs gated residual blocks to integrate these tokens directly into the frozen transformer backbone. Our findings underscore that integrating explicit physical geometry with optimized view selection is essential for robust feed-forward satellite 3D reconstruction.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; This article is submitted to journal and under review&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>TreeAgent: A Generalizable Multi-Agent Framework for Automated Bias Labeling in Forestry via Compiled Expert Rules and Vision-Language Models</title>
     <link href="http://arxiv.org/abs/2606.31976v1" rel="alternate" type="text/html" />
@@ -634,191 +728,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>EO-WM: A Physically Informed World Model for Probabilistic Earth Observation Forecasting</title>
-    <link href="http://arxiv.org/abs/2606.27277v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.27277v1</id>
-    <published>2026-06-25T00:00:00Z</published>
-    <updated>2026-06-25T00:00:00Z</updated>
-    <author>
-      <name>Junwei Luo</name>
-    </author>
-    <author>
-      <name>Shuai Yuan</name>
-    </author>
-    <author>
-      <name>Zhenya Yang</name>
-    </author>
-    <author>
-      <name>Yansheng Li</name>
-    </author>
-    <author>
-      <name>Zhe Liu</name>
-    </author>
-    <author>
-      <name>Hengshuang Zhao</name>
-    </author>
-    <summary type="text">Earth Observation (EO) forecasting aims to predict future Earth surface dynamics from satellite observations under changing meteorological conditions. In this paper, we view this task as a partially observed, weather-driven world modeling problem, in which weather acts as a conditioning signal, while forecasting remains uncertain due to sparse observations and unobserved land-surface states. However, existing methods do not fully capture this setting: deterministic models collapse uncertainty into a single future prediction, while diffusion-based methods typically treat weather variables as undifferentiated conditioning signals, and existing benchmarks focus mainly on reconstruction accuracy rather than whether forecasts respond correctly to changed weather forcing.We introduce EO-WM, a video diffusion transformer for multispectral EO forecasting. EO-WM incorporates a physically informed conditioning framework that represents meteorological forcing through a climatological baseline, weather anomalies, and cumulative physical stress signals. Specifically, it separates baseline and anomaly through distinct conditioning pathways, and accumulates anomalous forcing over time to capture sustained heat and drought stress. To evaluate weather-response behavior beyond standard metrics, we introduce two diagnostic benchmarks: an Extreme Summer Benchmark for severity-aware prediction of vegetation degradation under extreme weather, and a Seasonal Matched-Pair Benchmark for testing response fidelity under changed weather forcing. Experiments show that EO-WM reduces the error in predicted Normalized Difference Vegetation Index (NDVI) decline amplitude by a relative 5.63% and improves directional hit rate by a relative 7.80%, while remaining competitive on standard pixel-level metrics. The benchmarks and model will be made open-source at https://github.com/Luo-Z13/EO-WM.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Luo-Z13/EO-WM"&gt;https://github.com/Luo-Z13/EO-WM&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 28 pages, 5 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>On-board Remote-Sensing Foundation Models for Unsupervised Change Detection of Disaster Events</title>
-    <link href="http://arxiv.org/abs/2606.27018v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.27018v1</id>
-    <published>2026-06-25T00:00:00Z</published>
-    <updated>2026-06-25T00:00:00Z</updated>
-    <author>
-      <name>S. Ramírez-Gallego</name>
-    </author>
-    <summary type="text">Remote Sensing Foundation Models (RSFMs) have emerged as a powerful alternative to supervised models for Earth Observation, allowing satellites to autonomously trigger high-resolution captures or adjust tasking parameters upon detecting an anomaly, thereby maximizing the utility of the mission's limited power and computational resources. RSFMs are versatile, unified encoders that optimize onboard storage for multiple orbital applications while ensuring high-fidelity feature extraction. In particular, unsupervised change detection with RSFMs offers a well-informed and transformative path for disaster monitoring without expensive labels. In this paper, we present a novel unsupervised detection method based on ResNet (RSFM) + FPN which identifies a wide spectrum of anomalies by detecting subtle semantic shifts in the latent space between successive orbital passes. By relying on an untrained FPN architecture and its intrinsic priors, the system achieves efficient image-level generation and higher resolution mapping with minimal effort (training-free) compared to previous proposals (patch-based, trained). And by replacing tailored models with RSFMs, we can achieve comparable results through an approach that eliminates the need for bespoke training and extensive development effort and adds customization, while ensuring high-performance generalization across diverse terrains and sensors.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Predicting disease severity and large-scale spread from coupled severity measurements and imperfect indicators: Application to beet yellows</title>
-    <link href="http://arxiv.org/abs/2606.26972v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.26972v1</id>
-    <published>2026-06-25T00:00:00Z</published>
-    <updated>2026-06-25T00:00:00Z</updated>
-    <author>
-      <name>Baptiste Oger</name>
-    </author>
-    <author>
-      <name>César Martinez</name>
-    </author>
-    <author>
-      <name>François Joudelat</name>
-    </author>
-    <author>
-      <name>Samuel Soubeyrand</name>
-    </author>
-    <author>
-      <name>Lionel Benoit</name>
-    </author>
-    <summary type="text">Whether in human, animal, or plant health, effective disease management requires the ability to characterize disease dynamics across space and time. In this context, integrating indirect indicators with broad spatio-temporal coverage, even when they are noisy, can provide valuable complementary information to direct measurements, which are often sparse because they are more costly or intrusive to collect. In this article, we propose a statistical framework to leverage such indirect indicators to predict disease severity at the individual or local-scale level and reconstruct large-scale disease dynamics. This two-step approach is able to account for the specific characteristics of disease severity observations, including zero inflation and spatio-temporal structure. The first step relies on a stacked hurdle model based on multiple random forests to locally predict disease severity from the available indirect indicators. In the second step a semi-parametric spatio-temporal model is used to reconstruct large-scale epidemiological dynamics over space and time from the indicators-based predictions. The proposed methodology is designed to be both generic and modular, and is illustrated by a case study in plant health. This case study focuses on the monitoring of sugar beet yellows disease in France between 2019 and 2023 by combining sparse field measurements and satellite-based remote sensing data.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 17 pages, 6 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="stat.ME" />
-  </entry>
-  <entry>
-    <title>SpaceRipple: Lightweight Semantic Delivery for Mission-Oriented LEO Earth Observation Satellite Networks</title>
-    <link href="http://arxiv.org/abs/2606.26559v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.26559v1</id>
-    <published>2026-06-25T00:00:00Z</published>
-    <updated>2026-06-25T00:00:00Z</updated>
-    <author>
-      <name>Ziyi Yang</name>
-    </author>
-    <author>
-      <name>Hao Yuan</name>
-    </author>
-    <author>
-      <name>Yunxiang Yi</name>
-    </author>
-    <author>
-      <name>Wenbo Wang</name>
-    </author>
-    <author>
-      <name>Xing Zhang</name>
-    </author>
-    <summary type="text">Earth observation satellite networks generate massive volumes of high-resolution imagery, whereas inter-satellite and downlink resources remain limited. In many time-sensitive missions, ground users require mission-relevant semantic information rather than a full raw-image downlink. This paper proposes SpaceRipple, a lightweight framework for mission-oriented semantic delivery and on-board processing in Earth observation satellite networks. A sensing satellite performs adaptive compression and metadata generation to reduce inter-satellite traffic, while an edge computing satellite restores the received representation and extracts task-relevant semantic information. Unlike fidelity-driven image transmission, SpaceRipple coordinates compression, forwarding, restoration, and semantic inference within a collaborative pipeline, enabling semantic-oriented delivery instead of pixel-level image delivery. A compression-aware MoE enhancement module is further introduced to improve robustness under degraded visual inputs. Experimental results show that SpaceRipple achieves favorable reconstruction quality, improved semantic detection performance, and substantial bandwidth savings, demonstrating its potential for efficient and reliable Earth observation under constrained satellite-network resources.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence; cs.GR" />
-  </entry>
-  <entry>
-    <title>Tessellating The Earth</title>
-    <link href="http://arxiv.org/abs/2606.27514v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.27514v1</id>
-    <published>2026-06-25T00:00:00Z</published>
-    <updated>2026-06-25T00:00:00Z</updated>
-    <author>
-      <name>Daniel Cher</name>
-    </author>
-    <author>
-      <name>Hamza Iqbal</name>
-    </author>
-    <author>
-      <name>Eric Xing</name>
-    </author>
-    <author>
-      <name>Brian Wei</name>
-    </author>
-    <author>
-      <name>Nathan Jacobs</name>
-    </author>
-    <summary type="text">Geolocation encoders, which map geographic coordinates to learned representations, are emerging as an effective means of capturing visual and non-visual characteristics from a latitude-longitude pair alone. However, existing approaches project coordinates onto fixed bases (e.g., spherical harmonics), allocating representational capacity uniformly and devoting equal resources to the open ocean and to a developing city. We introduce Tessellating the Earth (TTE), a location encoder built from learnable Spherical Voronoi partitions that concentrates representational capacity where it is needed in a fully differentiable, end-to-end manner. Each Voronoi site carries its own embedding and migrates during training toward discriminative areas. To bridge the gap between local spatial structure and global semantic understanding, we introduce \emph{global semantic tokens}: a set of shared learnable concept tokens that distill semantic knowledge from the satellite imagery into a compact vocabulary the location encoder can reference at inference, enabling geographically distant sites covering similar environments to share semantics. TTE sets a new state of the art for location encoders across a suite of geospatial classification and regression tasks, and achieves the strongest results when used as a geographic prior for fine-grained species classification on iNaturalist-2018. Code, and weights are available at https://github.com/mvrl/TTE.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/mvrl/TTE"&gt;https://github.com/mvrl/TTE&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ECCV 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;GeoLoc&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>DFM: Difference Feature Modeling with Text-Guided Gated Contrastive Loss for Remote Sensing Image Change Captioning</title>
-    <link href="http://arxiv.org/abs/2606.27410v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.27410v1</id>
-    <published>2026-06-25T00:00:00Z</published>
-    <updated>2026-06-25T00:00:00Z</updated>
-    <author>
-      <name>Yelin Wang</name>
-    </author>
-    <author>
-      <name>Zijia Song</name>
-    </author>
-    <author>
-      <name>Chuanguang Yang</name>
-    </author>
-    <author>
-      <name>Miaoyu Wang</name>
-    </author>
-    <author>
-      <name>Zhulin An</name>
-    </author>
-    <author>
-      <name>Libo Huang</name>
-    </author>
-    <author>
-      <name>Yongjun Xu</name>
-    </author>
-    <summary type="text">The primary goal of Remote Sensing Image Change Captioning (RSICC) is to automatically generate descriptions of changes between remote sensing images captured at different time points. Existing models still rely on a single autoregressive generation paradigm, which tends to prioritize learning easily generated vocabulary over capturing discriminative differences between images. To address this, we reframe the training paradigm and propose a novel Difference Feature Modeling (DFM) framework. Specifically, we introduce a Text-guided Gated Contrastive Loss (TGCL) to guide the vision encoder to extract critical features from a text-modal perspective. Additionally, we incorporate a pre-trained Change Detection model to transfer stable change detection knowledge. In order to further enhance the representation, we design a Joint Feature Modeling (JFM) module to achieve the fusion of multi-scale difference representations, thereby capturing comprehensive spatiotemporal variations between multi-temporal images. Extensive experiments on multiple datasets demonstrate the effectiveness of our approach.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE ICME 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
-    <category term="Image and Video Processing" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>RSGPNet: Geometric Prompting for Remote Sensing Open-Vocabulary Semantic Segmentation</title>
-    <link href="http://arxiv.org/abs/2606.28410v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.28410v1</id>
-    <published>2026-06-25T00:00:00Z</published>
-    <updated>2026-06-25T00:00:00Z</updated>
-    <author>
-      <name>Shanwen Wang</name>
-    </author>
-    <author>
-      <name>Xin Sun</name>
-    </author>
-    <author>
-      <name>Sirui Wang</name>
-    </author>
-    <author>
-      <name>Xiao Xiang Zhu</name>
-    </author>
-    <summary type="text">Open-vocabulary semantic segmentation (OVSS) enables text-guided segmentation of unseen objects, breaking fixed-class limitations to achieve open-world understanding. However, existing OVSS methods primarily focus on modifying the CLIP attention mechanism, which still suffers from unstable local segmentation for remote sensing (RS) domain. To address these limitations, we propose RSGPNet, a training-free geometric prompting framework for RS OVSS that refines segmentation by leveraging object geometric areas and consistency constraints. Specifically, RSGPNet comprises three core modules: a Text-guided Coarse Mask module (TCM), a Geometric Re-prompting Module (GRP), and a Coarse-to-fine Consistency Verification Mechanism (CVM). TCM utilizes text prompts and the input image to construct initial coarse segmentation masks. GRP then converts these coarse masks into geometric box prompts, feeding them back into the segmentation model to generate refined masks. Finally, CVM employs consistency computation to prevent prompting from reinforcing erroneous regions. They allow the model to improve segmentation accuracy in complex areas, such as category boundaries. Extensive experiments on RS datasets demonstrate that RSGPNet significantly outperforms state-of-the-art methods across both quantitative and qualitative metrics while exhibiting excellent interpretability. The code is released at \href{https://github.com/wangshanwen001/RSGPNet}{https://github.com/wangshanwen001/RSGPNet}.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/wangshanwen001/RSGPNet"&gt;https://github.com/wangshanwen001/RSGPNet&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Open-vocabulary, Remote sensing, Geometric prompting, Multimodal large language model&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>

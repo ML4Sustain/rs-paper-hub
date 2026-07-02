@@ -4,12 +4,41 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-01T05:17:53Z</updated>
+  <updated>2026-07-02T01:59:42Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Uncertainty-aware tree height change regression</title>
+    <link href="http://arxiv.org/abs/2607.00638v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.00638v1</id>
+    <published>2026-07-01T00:00:00Z</published>
+    <updated>2026-07-01T00:00:00Z</updated>
+    <author>
+      <name>Max Gaber</name>
+    </author>
+    <author>
+      <name>Dimitri Gominski</name>
+    </author>
+    <author>
+      <name>Jaime C. Revenga</name>
+    </author>
+    <author>
+      <name>Stefan Oehmcke</name>
+    </author>
+    <author>
+      <name>Rasmus Fensholt</name>
+    </author>
+    <author>
+      <name>Martin Brandt</name>
+    </author>
+    <summary type="text">Monitoring canopy height change is essential for understanding carbon sinks and forest dynamics. Remote sensing enables consistent, large-scale observations of such changes, increasingly integrated with deep learning architectures such as Geospatial Foundation Models (GFMs). However, existing methods and datasets frame the problem as binary change detection, which overlooks both the continuous nature of change, especially for vegetation, and the inherent uncertainty in labels. We present the Canopy Height Change (CHC) dataset, providing 3 $\mathrm{m}$ resolution continuous canopy height differences and associated spatially resolved uncertainties across 10598 $\mathrm{km}^2$ of northern and western Spain. The dataset is paired with a co-located time series of PlanetScope satellite imagery. Based on the dataset, we introduce the task of uncertainty-aware change regression, associated metrics and strategies for fine-tuning GFMs. Furthermore, we evaluate state-of-the-art GFMs and highlight promising directions and remaining challenges for advancing continuous canopy height change estimation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>High-Resolution Flood Mapping With Sentinel-1 and Sentinel-2 via Misalignment-Robust Cross-Sensor Learning and Generative Despeckling</title>
     <link href="http://arxiv.org/abs/2606.30511v1" rel="alternate" type="text/html" />
@@ -34,37 +63,6 @@
     <summary type="text">Reliable high-resolution flood extent mapping from satellite imagery remains constrained by limited data fidelity and sensor-specific artifacts. Multispectral optical imagery is degraded by clouds, shadows, and urban confounders, while synthetic aperture radar (SAR) imagery is affected by speckle noise and sensor co-registration uncertainty. This work presents an integrated flood mapping framework that jointly addresses these limitations through curated datasets and novel learning strategies. We introduce a new Sentinel-2 (S2) and Sentinel-1 (S1) dataset covering the contiguous United States, featuring pixel-accurate 10 m water masks with emphasis on challenging weather conditions and urban environments that are underrepresented in existing benchmarks. High-quality S2 annotations are manually produced using rigorous geospatial labeling protocols and transferred to SAR imagery through weakly labeled temporally coincident acquisitions. To address SAR-specific artifacts, a shift-invariant loss function is employed to tolerate residual geolocation uncertainty between SAR imagery and optical-derived labels, and a Conditional Variational Autoencoder (CVAE) is trained on multitemporal SAR composites to suppress speckle while preserving flood-relevant spatial structure. Experiments using UNet and UNet++ architectures demonstrate strong multispectral performance (AUPRC up to 0.956) and statistically significant improvements in SAR flood mapping when using shift-invariant loss and CVAE-based despeckling compared to classical filters. These results underscore the importance of dataset fidelity, misalignment-robust training, and demonstrate the viability of generative despeckling for operational flood mapping.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; GeoLoc&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>EO-WM: A Physically Informed World Model for Probabilistic Earth Observation Forecasting</title>
-    <link href="http://arxiv.org/abs/2606.27277v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.27277v1</id>
-    <published>2026-06-25T00:00:00Z</published>
-    <updated>2026-06-25T00:00:00Z</updated>
-    <author>
-      <name>Junwei Luo</name>
-    </author>
-    <author>
-      <name>Shuai Yuan</name>
-    </author>
-    <author>
-      <name>Zhenya Yang</name>
-    </author>
-    <author>
-      <name>Yansheng Li</name>
-    </author>
-    <author>
-      <name>Zhe Liu</name>
-    </author>
-    <author>
-      <name>Hengshuang Zhao</name>
-    </author>
-    <summary type="text">Earth Observation (EO) forecasting aims to predict future Earth surface dynamics from satellite observations under changing meteorological conditions. In this paper, we view this task as a partially observed, weather-driven world modeling problem, in which weather acts as a conditioning signal, while forecasting remains uncertain due to sparse observations and unobserved land-surface states. However, existing methods do not fully capture this setting: deterministic models collapse uncertainty into a single future prediction, while diffusion-based methods typically treat weather variables as undifferentiated conditioning signals, and existing benchmarks focus mainly on reconstruction accuracy rather than whether forecasts respond correctly to changed weather forcing.We introduce EO-WM, a video diffusion transformer for multispectral EO forecasting. EO-WM incorporates a physically informed conditioning framework that represents meteorological forcing through a climatological baseline, weather anomalies, and cumulative physical stress signals. Specifically, it separates baseline and anomaly through distinct conditioning pathways, and accumulates anomalous forcing over time to capture sustained heat and drought stress. To evaluate weather-response behavior beyond standard metrics, we introduce two diagnostic benchmarks: an Extreme Summer Benchmark for severity-aware prediction of vegetation degradation under extreme weather, and a Seasonal Matched-Pair Benchmark for testing response fidelity under changed weather forcing. Experiments show that EO-WM reduces the error in predicted Normalized Difference Vegetation Index (NDVI) decline amplitude by a relative 5.63% and improves directional hit rate by a relative 7.80%, while remaining competitive on standard pixel-level metrics. The benchmarks and model will be made open-source at https://github.com/Luo-Z13/EO-WM.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Luo-Z13/EO-WM"&gt;https://github.com/Luo-Z13/EO-WM&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 28 pages, 5 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
     <category term="Computer Vision" />
   </entry>
 </feed>
