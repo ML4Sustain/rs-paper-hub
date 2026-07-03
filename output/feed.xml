@@ -4,12 +4,35 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-02T04:55:35Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 24 entries</subtitle>
+  <updated>2026-07-03T01:30:20Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 23 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>EO-Agents: A Three-Agent LLM Pipeline for Earth Observation Hypothesis Generation</title>
+    <link href="http://arxiv.org/abs/2607.01584v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.01584v1</id>
+    <published>2026-07-02T00:00:00Z</published>
+    <updated>2026-07-02T00:00:00Z</updated>
+    <author>
+      <name>Mahyar Ghazanfari</name>
+    </author>
+    <author>
+      <name>Amin Tabrizian</name>
+    </author>
+    <author>
+      <name>Armin Mehrabian</name>
+    </author>
+    <author>
+      <name>Peng Wei</name>
+    </author>
+    <summary type="text">Large language models have recently been explored for scientific hypothesis generation, but most prior work relies on unstructured literature and free-form textual claims. We present a pipeline for Earth observation that grounds hypothesis generation directly in the NASA Earth Observation Knowledge Graph. A heterogeneous graph neural network trained on historical co-usage relations ranks candidate dataset pairings, and a three-agent LLM pipeline filters, generates, and evaluates structured research hypotheses. Applied to 1,475 NASA datasets, the system produces 160 hypotheses spanning multiple Earth-science domains, including ecohydrology, glaciology, aerosol--cloud interactions, vegetation phenology, and stratospheric chemistry. Model-predicted novel dataset pairings are rated nearly as plausible as held-out real co-usages from the literature, indicating that the pipeline surfaces scientifically coherent yet unexplored combinations. A 2*2*2 factorial experiment across GPT-5.2 and Claude Sonnet 4.6 shows that hypothesis rankings remain stable, while absolute scores depend strongly on judge identity, highlighting limitations of single-judge LLM evaluation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the ICML 2026 AI for Science Workshop&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>GeoSearcher: Anchor-Guided Progressive Reasoning for Remote Sensing Visual Grounding with Process Supervision</title>
     <link href="http://arxiv.org/abs/2607.01050v1" rel="alternate" type="text/html" />
@@ -103,6 +126,30 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Sampling for Region-Aggregated Spatial Scan Statistics</title>
+    <link href="http://arxiv.org/abs/2607.01451v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.01451v1</id>
+    <published>2026-07-01T00:00:00Z</published>
+    <updated>2026-07-01T00:00:00Z</updated>
+    <author>
+      <name>Foad Namjoo</name>
+    </author>
+    <author>
+      <name>Drew McClelland</name>
+    </author>
+    <author>
+      <name>Michael Matheny</name>
+    </author>
+    <author>
+      <name>Jeff M. Phillips</name>
+    </author>
+    <summary type="text">Anomaly detection in geospatial data is a crucial tool in geographic information science (GIS), with applications ranging from national security to public-health surveillance to the study of societal disparities. This work focuses on spatial scan statistics and addresses a key mismatch: spatial counts are typically aggregated into predefined regions (census tracts, zip codes, counties), whereas the most efficient scan algorithms operate on spatial point data. The standard remedy -- collapsing each region to its centroid, as in widely used tools such as SaTScan -- is convenient but, as we show, discards the region's spatial extent and causes a significant loss in statistical power. To resolve this, we propose a simple yet scalable fix: replace each spatial region with 20-50 points sampled uniformly from its geometry and spread the region's values evenly across them. This approach improves statistical power while maintaining computational tractability. A convergence analysis explains why so few samples per region suffice. We recommend this sampling-based conversion as the default way to apply point-based spatial scan statistics to region-aggregated data for anomaly detection.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 24 pages, 15 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="stat.AP" />
+    <category term="cs.CG; stat.ME" />
   </entry>
   <entry>
     <title>TreeAgent: A Generalizable Multi-Agent Framework for Automated Bias Labeling in Forestry via Compiled Expert Rules and Vision-Language Models</title>
@@ -637,96 +684,5 @@
 &lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Submitted to the International Conference on Space Robotics (iSpaRo) 2026&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Robotics" />
-  </entry>
-  <entry>
-    <title>RSICCLLM: A Multimodal Large Language Model for Remote Sensing Image Change Captioning</title>
-    <link href="http://arxiv.org/abs/2606.28266v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.28266v1</id>
-    <published>2026-06-26T00:00:00Z</published>
-    <updated>2026-06-26T00:00:00Z</updated>
-    <author>
-      <name>Yelin Wang</name>
-    </author>
-    <author>
-      <name>Zijia Song</name>
-    </author>
-    <author>
-      <name>Shuo Ye</name>
-    </author>
-    <author>
-      <name>Chuanguang Yang</name>
-    </author>
-    <author>
-      <name>Miaoyu Wang</name>
-    </author>
-    <author>
-      <name>Yong Xu</name>
-    </author>
-    <author>
-      <name>Zhulin An</name>
-    </author>
-    <author>
-      <name>Yongjun Xu</name>
-    </author>
-    <author>
-      <name>Zitong Yu</name>
-    </author>
-    <summary type="text">Remote Sensing Image Change Captioning (RSICC) aims to describe changes between bi-temporal remote sensing images and holds significant research and application value. However, most existing methods rely on conventional deep learning architectures, and the limited model capacity constrains performance. Although large-model post-training techniques have achieved great success in general domains, their direct transfer to RSICC remains challenging due to data scarcity and the need for fine-grained change understanding. To address this, we propose RSICCLLM, the first post-training framework for large vision-language models in RSICC. Specifically, we design a data generation paradigm, release the instruction dataset RSICI, and establish a task-specific RSICC benchmark. We further introduce Difference-aware Supervised Fine-tuning to explicitly extract change representations and guide the model in perceiving and understanding temporal differences. In addition, we propose Dual-Negative Preference Optimization (DNPO), which employs two complementary negative-sample construction strategies to construct the preference dataset RSICP and further refine model performance. Extensive experiments validate the superior capability of RSICCLLM, which achieves outstanding results with only 7B parameters, surpassing models of substantially larger scales. The code and dataset will be made publicly available at https://github.com/keaill/RSICCLLM.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/keaill/RSICCLLM"&gt;https://github.com/keaill/RSICCLLM&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ECCV 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>GenWorld: Empirically Grounded Urban Simulation Infrastructure for Scalable LLM-Agent Studies</title>
-    <link href="http://arxiv.org/abs/2606.27650v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.27650v1</id>
-    <published>2026-06-26T00:00:00Z</published>
-    <updated>2026-06-26T00:00:00Z</updated>
-    <author>
-      <name>Gen Li</name>
-    </author>
-    <author>
-      <name>Jieyuan Lan</name>
-    </author>
-    <author>
-      <name>Pengcheng Xu</name>
-    </author>
-    <author>
-      <name>Zongyuan Wu</name>
-    </author>
-    <author>
-      <name>Masaki Ogura</name>
-    </author>
-    <author>
-      <name>Tao Feng</name>
-    </author>
-    <summary type="text">LLM-agent simulation faces a joint grounding and scaling problem: agents should act in environments that reflect real urban constraints, yet direct online LLM calls for city-scale populations are computationally prohibitive. We present GenWorld, an empirically grounded urban simulation infrastructure that combines a building-level synthetic city, a structured agent-environment interface, and offline compilation of LLM-derived decision signals into lookup policies for scalable rollout. In a reference instantiation for Higashihiroshima, Japan, GenWorld grounds 196,608 synthetic residents in census and geospatial data, validates demographic consistency against census tabulations, and uses YJMob100K mobile-phone data as a commuting-distance diagnostic. We demonstrate the infrastructure through three reproducible cases: a full-city weekday rollout, a weekday-weekend behavioral contrast, and a warning-response perturbation with auditable replanning traces. These cases support GenWorld as a reproducible platform for grounded and scalable LLM-agent studies, while calibrated forecasting for traffic, evacuation, or policy outcomes remains future work.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 27 pages, 24 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
-    <category term="cs.MA" />
-  </entry>
-  <entry>
-    <title>SatSplat: Geometrically-Accurate Gaussian Splatting for Satellite Imagery</title>
-    <link href="http://arxiv.org/abs/2606.28581v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.28581v1</id>
-    <published>2026-06-26T00:00:00Z</published>
-    <updated>2026-06-26T00:00:00Z</updated>
-    <author>
-      <name>Shuang Song</name>
-    </author>
-    <author>
-      <name>Jiyong Kim</name>
-    </author>
-    <author>
-      <name>Rongjun Qin</name>
-    </author>
-    <summary type="text">High-resolution satellite imagery demands 3D reconstruction methods that deliver both speed and geometric accuracy. Recent adaptations of 3D Gaussian Splatting (3DGS) to satellite imagery demonstrate strong efficiency, but reconstruction quality often degrades under diverse illumination across multi-date, high-altitude acquisitions (with small intersection angles), limiting applicability to remote sensing and vision tasks. We present SatSplat, the first framework to adapt 2D Gaussian Splatting (2DGS) to satellite photogrammetry, with online camera adjustment. We approximate satellite cameras with an affine model and learn a minimal delta parameterization for in-splat camera refinement from dense observations. The formulation is implemented with a 2DGS scene representation. To handle time-varying shadows and illumination changes, we integrate geometric shadow mapping and per-camera color correction during training. Across the evaluated DFC2019 and IARPA2016 benchmark sites, SatSplat achieves strong geometric accuracy while significantly outperforming prior 3DGS-based baselines. On our processed DFC2019 benchmark, SatSplat reduces mean absolute error by 11.93% and peak video memory by 31% relative to the previous state of the art. Our approach enables large-scale digital surface modeling with practical computational efficiency. The project page is available at https://gdaosu.github.io/satsplat/.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Photogrammetric Engineering &amp; Remote Sensing&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>

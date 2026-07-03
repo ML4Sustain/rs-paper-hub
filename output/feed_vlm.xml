@@ -4,12 +4,35 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-02T04:55:35Z</updated>
+  <updated>2026-07-03T01:30:20Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 11 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>EO-Agents: A Three-Agent LLM Pipeline for Earth Observation Hypothesis Generation</title>
+    <link href="http://arxiv.org/abs/2607.01584v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.01584v1</id>
+    <published>2026-07-02T00:00:00Z</published>
+    <updated>2026-07-02T00:00:00Z</updated>
+    <author>
+      <name>Mahyar Ghazanfari</name>
+    </author>
+    <author>
+      <name>Amin Tabrizian</name>
+    </author>
+    <author>
+      <name>Armin Mehrabian</name>
+    </author>
+    <author>
+      <name>Peng Wei</name>
+    </author>
+    <summary type="text">Large language models have recently been explored for scientific hypothesis generation, but most prior work relies on unstructured literature and free-form textual claims. We present a pipeline for Earth observation that grounds hypothesis generation directly in the NASA Earth Observation Knowledge Graph. A heterogeneous graph neural network trained on historical co-usage relations ranks candidate dataset pairings, and a three-agent LLM pipeline filters, generates, and evaluates structured research hypotheses. Applied to 1,475 NASA datasets, the system produces 160 hypotheses spanning multiple Earth-science domains, including ecohydrology, glaciology, aerosol--cloud interactions, vegetation phenology, and stratospheric chemistry. Model-predicted novel dataset pairings are rated nearly as plausible as held-out real co-usages from the literature, indicating that the pipeline surfaces scientifically coherent yet unexplored combinations. A 2*2*2 factorial experiment across GPT-5.2 and Claude Sonnet 4.6 shows that hypothesis rankings remain stable, while absolute scores depend strongly on judge identity, highlighting limitations of single-judge LLM evaluation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the ICML 2026 AI for Science Workshop&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>GeoSearcher: Anchor-Guided Progressive Reasoning for Remote Sensing Visual Grounding with Process Supervision</title>
     <link href="http://arxiv.org/abs/2607.01050v1" rel="alternate" type="text/html" />
@@ -272,46 +295,6 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 11 pages, 8 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>RSICCLLM: A Multimodal Large Language Model for Remote Sensing Image Change Captioning</title>
-    <link href="http://arxiv.org/abs/2606.28266v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.28266v1</id>
-    <published>2026-06-26T00:00:00Z</published>
-    <updated>2026-06-26T00:00:00Z</updated>
-    <author>
-      <name>Yelin Wang</name>
-    </author>
-    <author>
-      <name>Zijia Song</name>
-    </author>
-    <author>
-      <name>Shuo Ye</name>
-    </author>
-    <author>
-      <name>Chuanguang Yang</name>
-    </author>
-    <author>
-      <name>Miaoyu Wang</name>
-    </author>
-    <author>
-      <name>Yong Xu</name>
-    </author>
-    <author>
-      <name>Zhulin An</name>
-    </author>
-    <author>
-      <name>Yongjun Xu</name>
-    </author>
-    <author>
-      <name>Zitong Yu</name>
-    </author>
-    <summary type="text">Remote Sensing Image Change Captioning (RSICC) aims to describe changes between bi-temporal remote sensing images and holds significant research and application value. However, most existing methods rely on conventional deep learning architectures, and the limited model capacity constrains performance. Although large-model post-training techniques have achieved great success in general domains, their direct transfer to RSICC remains challenging due to data scarcity and the need for fine-grained change understanding. To address this, we propose RSICCLLM, the first post-training framework for large vision-language models in RSICC. Specifically, we design a data generation paradigm, release the instruction dataset RSICI, and establish a task-specific RSICC benchmark. We further introduce Difference-aware Supervised Fine-tuning to explicitly extract change representations and guide the model in perceiving and understanding temporal differences. In addition, we propose Dual-Negative Preference Optimization (DNPO), which employs two complementary negative-sample construction strategies to construct the preference dataset RSICP and further refine model performance. Extensive experiments validate the superior capability of RSICCLLM, which achieves outstanding results with only 7B parameters, surpassing models of substantially larger scales. The code and dataset will be made publicly available at https://github.com/keaill/RSICCLLM.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/keaill/RSICCLLM"&gt;https://github.com/keaill/RSICCLLM&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ECCV 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>

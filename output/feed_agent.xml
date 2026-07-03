@@ -4,12 +4,35 @@
   <id>https://rspaper.top/output/feed_agent.xml</id>
   <link href="https://rspaper.top/output/feed_agent.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-02T04:55:35Z</updated>
+  <updated>2026-07-03T01:30:20Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>EO-Agents: A Three-Agent LLM Pipeline for Earth Observation Hypothesis Generation</title>
+    <link href="http://arxiv.org/abs/2607.01584v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.01584v1</id>
+    <published>2026-07-02T00:00:00Z</published>
+    <updated>2026-07-02T00:00:00Z</updated>
+    <author>
+      <name>Mahyar Ghazanfari</name>
+    </author>
+    <author>
+      <name>Amin Tabrizian</name>
+    </author>
+    <author>
+      <name>Armin Mehrabian</name>
+    </author>
+    <author>
+      <name>Peng Wei</name>
+    </author>
+    <summary type="text">Large language models have recently been explored for scientific hypothesis generation, but most prior work relies on unstructured literature and free-form textual claims. We present a pipeline for Earth observation that grounds hypothesis generation directly in the NASA Earth Observation Knowledge Graph. A heterogeneous graph neural network trained on historical co-usage relations ranks candidate dataset pairings, and a three-agent LLM pipeline filters, generates, and evaluates structured research hypotheses. Applied to 1,475 NASA datasets, the system produces 160 hypotheses spanning multiple Earth-science domains, including ecohydrology, glaciology, aerosol--cloud interactions, vegetation phenology, and stratospheric chemistry. Model-predicted novel dataset pairings are rated nearly as plausible as held-out real co-usages from the literature, indicating that the pipeline surfaces scientifically coherent yet unexplored combinations. A 2*2*2 factorial experiment across GPT-5.2 and Claude Sonnet 4.6 shows that hypothesis rankings remain stable, while absolute scores depend strongly on judge identity, highlighting limitations of single-judge LLM evaluation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the ICML 2026 AI for Science Workshop&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>TreeAgent: A Generalizable Multi-Agent Framework for Automated Bias Labeling in Forestry via Compiled Expert Rules and Vision-Language Models</title>
     <link href="http://arxiv.org/abs/2606.31976v1" rel="alternate" type="text/html" />
@@ -71,35 +94,5 @@
     <summary type="text">High-throughput plant phenotyping now generates image derived datasets far faster than scientists can analyze them. At Oak Ridge National Laboratory's Advanced Plant Phenotyping Laboratory (APPL), automated stations image hundreds of plants daily across multiple remote sensing modalities; yet, trait extraction and interpretation remain manual, expert-bound, and strictly post-hoc, making analysis, not acquisition, the binding constraint on discovery. We present an end-to-end agentic AI framework that turns the facility from a data factory into an interactive autonomous, discovery platform, where scientists partner with AI agents to accelerate time to insight. A conversational Co-Scientist Agent translates a scientist's natural-language question into a structured analysis plan, and a headless Compute Agent dispatches Vision Transformer segmentation and trait extraction on the Frontier exascale supercomputer. The two agents run in separate security and resource domains and communicate over a secure, token-authenticated streaming channel, a design that accounts for the federation, data-movement, and provenance realities cloud-native agentic frameworks ignore, ensuring end-to-end provenance is captured for every interaction. The framework turns a days- to weeks-long analysis process into an interactive loop where agents reason over results, recommend next analyses, and respond to follow-up questions in seconds.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>GenWorld: Empirically Grounded Urban Simulation Infrastructure for Scalable LLM-Agent Studies</title>
-    <link href="http://arxiv.org/abs/2606.27650v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.27650v1</id>
-    <published>2026-06-26T00:00:00Z</published>
-    <updated>2026-06-26T00:00:00Z</updated>
-    <author>
-      <name>Gen Li</name>
-    </author>
-    <author>
-      <name>Jieyuan Lan</name>
-    </author>
-    <author>
-      <name>Pengcheng Xu</name>
-    </author>
-    <author>
-      <name>Zongyuan Wu</name>
-    </author>
-    <author>
-      <name>Masaki Ogura</name>
-    </author>
-    <author>
-      <name>Tao Feng</name>
-    </author>
-    <summary type="text">LLM-agent simulation faces a joint grounding and scaling problem: agents should act in environments that reflect real urban constraints, yet direct online LLM calls for city-scale populations are computationally prohibitive. We present GenWorld, an empirically grounded urban simulation infrastructure that combines a building-level synthetic city, a structured agent-environment interface, and offline compilation of LLM-derived decision signals into lookup policies for scalable rollout. In a reference instantiation for Higashihiroshima, Japan, GenWorld grounds 196,608 synthetic residents in census and geospatial data, validates demographic consistency against census tabulations, and uses YJMob100K mobile-phone data as a commuting-distance diagnostic. We demonstrate the infrastructure through three reproducible cases: a full-city weekday rollout, a weekday-weekend behavioral contrast, and a warning-response perturbation with auditable replanning traces. These cases support GenWorld as a reproducible platform for grounded and scalable LLM-agent studies, while calibrated forecasting for traffic, evacuation, or policy outcomes remains future work.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 27 pages, 24 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
-    <category term="cs.MA" />
   </entry>
 </feed>
