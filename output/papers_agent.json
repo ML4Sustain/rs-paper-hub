@@ -4083,5 +4083,24 @@
     "_added_date": "2026-07-03",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "cs.DB",
+    "Subtype": "Artificial Intelligence; cs.MA",
+    "Date": "2026-07-03",
+    "Month": 7,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "STRATOS: Bridging the Symbolic-to-Numeric Gap in Spatio-Temporal Text-to-SQL for Meteorological Data",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2607.03501v1",
+    "Abstract": "Copernicus, the European Union's Earth observation program, produces petabytes of Earth observation and climate data, offering immense potential for research, policy, and applications. However, access to these datasets requires advanced programming skills and familiarity with domain-specific formats such as NetCDF or GRIB. Moreover, general-purpose Text-to-SQL systems fail when applied naively to the meteorological domain due to a profound ``Symbolic-to-Numeric'' gap. To overcome these limitations, we present an end-to-end Text-to-SQL framework specifically engineered for real-world, scalable meteorological data exploration. Our system intercepts natural language to resolve spatial and semantic ambiguities \\textit{before} SQL generation. We design STRATOS, a Spatio-Temporal Resolution Agent for Text-to-SQL to dynamically bridge the symbolic-to-numeric gap by mapping fuzzy concepts to a localized ontology and resolving spatial entities via external knowledge bases. Further, our complexity-aware query rewriter rewrites expensive spatial predicates, reducing execution times from hours to seconds. Last, we introduce the STRATOS Evaluation Workload, comprising 7,520 complex query pairs explicitly designed by domain experts to test scalability and symbolic-to-numeric translation across challenging spatio-temporal dimensions previously unexplored by Text-to-SQL systems.",
+    "code": "",
+    "Publication": "8 pages, 4 figures",
+    "BibTex": "@article{zhang2026stratos,\n  title={STRATOS: Bridging the Symbolic-to-Numeric Gap in Spatio-Temporal Text-to-SQL for Meteorological Data},\n  author={Yi Zhang and Farhad Nooralahzadeh and Jonathan Fürst and Fabio Scherrer and Antonis Bezes and Vassiliki Kotroni and Kurt Stockinger},\n  journal={arXiv preprint arXiv:2607.03501v1},\n  year={2026},\n  url={http://arxiv.org/abs/2607.03501v1}\n}",
+    "Authors": "Yi Zhang, Farhad Nooralahzadeh, Jonathan Fürst, Fabio Scherrer, Antonis Bezes, Vassiliki Kotroni, Kurt Stockinger",
+    "_added_date": "2026-07-07",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]

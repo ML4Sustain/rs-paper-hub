@@ -4,12 +4,65 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-06T05:05:51Z</updated>
+  <updated>2026-07-07T01:48:40Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 9 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>STRATOS: Bridging the Symbolic-to-Numeric Gap in Spatio-Temporal Text-to-SQL for Meteorological Data</title>
+    <link href="http://arxiv.org/abs/2607.03501v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.03501v1</id>
+    <published>2026-07-03T00:00:00Z</published>
+    <updated>2026-07-03T00:00:00Z</updated>
+    <author>
+      <name>Yi Zhang</name>
+    </author>
+    <author>
+      <name>Farhad Nooralahzadeh</name>
+    </author>
+    <author>
+      <name>Jonathan Fürst</name>
+    </author>
+    <author>
+      <name>Fabio Scherrer</name>
+    </author>
+    <author>
+      <name>Antonis Bezes</name>
+    </author>
+    <author>
+      <name>Vassiliki Kotroni</name>
+    </author>
+    <author>
+      <name>Kurt Stockinger</name>
+    </author>
+    <summary type="text">Copernicus, the European Union's Earth observation program, produces petabytes of Earth observation and climate data, offering immense potential for research, policy, and applications. However, access to these datasets requires advanced programming skills and familiarity with domain-specific formats such as NetCDF or GRIB. Moreover, general-purpose Text-to-SQL systems fail when applied naively to the meteorological domain due to a profound ``Symbolic-to-Numeric'' gap. To overcome these limitations, we present an end-to-end Text-to-SQL framework specifically engineered for real-world, scalable meteorological data exploration. Our system intercepts natural language to resolve spatial and semantic ambiguities \textit{before} SQL generation. We design STRATOS, a Spatio-Temporal Resolution Agent for Text-to-SQL to dynamically bridge the symbolic-to-numeric gap by mapping fuzzy concepts to a localized ontology and resolving spatial entities via external knowledge bases. Further, our complexity-aware query rewriter rewrites expensive spatial predicates, reducing execution times from hours to seconds. Last, we introduce the STRATOS Evaluation Workload, comprising 7,520 complex query pairs explicitly designed by domain experts to test scalability and symbolic-to-numeric translation across challenging spatio-temporal dimensions previously unexplored by Text-to-SQL systems.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages, 4 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.DB" />
+    <category term="Artificial Intelligence; cs.MA" />
+  </entry>
+  <entry>
+    <title>LBTCap: A Lightweight Bilateral Transformer for Real-Time Remote Sensing Image Change Captioning</title>
+    <link href="http://arxiv.org/abs/2607.03320v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.03320v1</id>
+    <published>2026-07-03T00:00:00Z</published>
+    <updated>2026-07-03T00:00:00Z</updated>
+    <author>
+      <name>Licheng Zhang</name>
+    </author>
+    <author>
+      <name>Siew-Kei Lam</name>
+    </author>
+    <author>
+      <name>Naveed Akhtar</name>
+    </author>
+    <summary type="text">Remote sensing image change captioning (RSICC) generates natural-language descriptions of semantic changes between paired remote sensing images (RSIs), supporting applications such as urban planning, disaster response, and environmental monitoring. Although recent methods achieve strong captioning accuracy, most overlook computational efficiency and inference speed, which are essential for real-time deployment in practice. To this end, we propose LBTCap, a lightweight RSICC framework built on a bilateral Transformer that jointly models pre- and post-change features for efficient processing of paired RSIs. Specifically, we introduce a bilateral attention mechanism for paired inputs: the two temporal images are projected into separate queries and keys by the same query and key matrices shared across the two images, the value is formed from their concatenation, and the two resulting attention maps are combined by a learnable, structurally bilateral weighting instead of a fixed subtraction. This design keeps both temporal branches explicit while remaining compact, and, together with a truncated backbone and grouped-query attention, LBTCap uses only 39.99M parameters, of which the change-aware encoder accounts for just 2.78M. Extensive experiments on two public RSICC datasets show that LBTCap matches or closely approaches the accuracy of state-of-the-art methods while using far fewer parameters and running at markedly higher inference speed, with the benefit of the bilateral formulation most pronounced in the low-resource setting, demonstrating a favorable accuracy-efficiency trade-off for practical RSICC.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>EO-Agents: A Three-Agent LLM Pipeline for Earth Observation Hypothesis Generation</title>
     <link href="http://arxiv.org/abs/2607.01584v1" rel="alternate" type="text/html" />
@@ -98,6 +151,72 @@
     <category term="Machine Learning" />
   </entry>
   <entry>
+    <title>Echoes of Unrest: A Multimodal NLP Framework for Early Warning of Fake News and Violence-Driven Mob Activity</title>
+    <link href="http://arxiv.org/abs/2607.02734v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.02734v1</id>
+    <published>2026-07-02T00:00:00Z</published>
+    <updated>2026-07-02T00:00:00Z</updated>
+    <author>
+      <name>Md. Maruf Bangabashi</name>
+    </author>
+    <author>
+      <name>Tahmid Hasan</name>
+    </author>
+    <author>
+      <name>Golam Mahmud</name>
+    </author>
+    <author>
+      <name>Md. Mostafijur Rahman</name>
+    </author>
+    <author>
+      <name>Md. Toufiqur Rahman</name>
+    </author>
+    <author>
+      <name>Jahanur Biswas</name>
+    </author>
+    <summary type="text">Rapid growth in social media has transformed global communication by enabling fast information exchange, but it has also accelerated the spread of misinformation. Fake news, manipulated content, and provocative narratives are increasingly linked to social unrest, political instability, and mob violence. Incidents in South Asia and elsewhere demonstrate how false information disseminated via platforms such as Facebook and WhatsApp can trigger real-world harm, often spreading faster than fact-checking efforts can respond. To address this challenge, this chapter presents a multilingual, multimodal Natural Language Processing (NLP) framework for early detection of misinformation and violence-prone dynamics. A fused dataset of 138,256 Bangla and English samples was created by combining multiple benchmark datasets. The framework integrates XLM-RoBERTa for multilingual text representation, CLIP for visual embedding, and a multi-head attention mechanism for multimodal fusion, enhanced with auxiliary features such as sarcasm and geospatial metadata. Experiments on a stratified 30% subset achieved 98% test accuracy with strong precision and recall. The outcomes show the efficacy of multimodal approaches in early misinformation detection and highlight the added value of geospatial signals for anticipating real-world escalation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted for publication as a book chapter (Taylor &amp; Francis, 2026)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.CL" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Diagnosing Aerial-View Object Detectors with Foundational Image Generative Models</title>
+    <link href="http://arxiv.org/abs/2607.02718v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.02718v1</id>
+    <published>2026-07-02T00:00:00Z</published>
+    <updated>2026-07-02T00:00:00Z</updated>
+    <author>
+      <name>Stanislav Panev</name>
+    </author>
+    <author>
+      <name>Minhyek Jeon</name>
+    </author>
+    <author>
+      <name>Vaishnavi Khindkar</name>
+    </author>
+    <author>
+      <name>Ahish Deshpande</name>
+    </author>
+    <author>
+      <name>Celso M de Melo</name>
+    </author>
+    <author>
+      <name>Shuowen Hu</name>
+    </author>
+    <author>
+      <name>Shayok Chakraborty</name>
+    </author>
+    <author>
+      <name>Fernando De la Torre</name>
+    </author>
+    <summary type="text">Recent advances in large-scale image generative models enable photorealistic scene synthesis with controllable attributes. Beyond data augmentation, their potential as diagnostic tools for trained vision systems remains unexplored in the aerial and remote sensing domains. We introduce a synthetic diagnostic framework for aerial-view vehicle detection that combines text-guided generation, attribute-controlled editing, and automated attribute verification to construct a controllable synthetic testbed. This enables fine-grained evaluation of pretrained detectors under diverse scene types and environmental conditions that are difficult to isolate in real datasets. Across three detection architectures and three real aerial datasets, synthetic scene-wise performance trends closely match real-world weaknesses. Guided by these diagnostics, targeted supplementation with small real datasets from the identified weak categories yields improvements of up to 13% AP50 while requiring substantially fewer additional samples than non-targeted augmentation. Our results show that controlled synthetic probing can predict real-domain performance gaps and guide efficient data collection. The proposed diagnostic framework is modular and can incorporate alternative generative or vision-language models as capabilities evolve. Our code and datasets are available here: https://humansensinglab.github.io/AVODDiag/</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence; Machine Learning" />
+  </entry>
+  <entry>
     <title>GeoSearcher: Anchor-Guided Progressive Reasoning for Remote Sensing Visual Grounding with Process Supervision</title>
     <link href="http://arxiv.org/abs/2607.01050v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2607.01050v1</id>
@@ -155,112 +274,6 @@
     <summary type="text">Monitoring canopy height change is essential for understanding carbon sinks and forest dynamics. Remote sensing enables consistent, large-scale observations of such changes, increasingly integrated with deep learning architectures such as Geospatial Foundation Models (GFMs). However, existing methods and datasets frame the problem as binary change detection, which overlooks both the continuous nature of change, especially for vegetation, and the inherent uncertainty in labels. We present the Canopy Height Change (CHC) dataset, providing 3 $\mathrm{m}$ resolution continuous canopy height differences and associated spatially resolved uncertainties across 10598 $\mathrm{km}^2$ of northern and western Spain. The dataset is paired with a co-located time series of PlanetScope satellite imagery. Based on the dataset, we introduce the task of uncertainty-aware change regression, associated metrics and strategies for fine-tuning GFMs. Furthermore, we evaluate state-of-the-art GFMs and highlight promising directions and remaining challenges for advancing continuous canopy height change estimation.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>TreeAgent: A Generalizable Multi-Agent Framework for Automated Bias Labeling in Forestry via Compiled Expert Rules and Vision-Language Models</title>
-    <link href="http://arxiv.org/abs/2606.31976v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.31976v1</id>
-    <published>2026-06-30T00:00:00Z</published>
-    <updated>2026-06-30T00:00:00Z</updated>
-    <author>
-      <name>Shiyi Chen</name>
-    </author>
-    <author>
-      <name>Nicholas Saban</name>
-    </author>
-    <author>
-      <name>Collin Hargreaves</name>
-    </author>
-    <author>
-      <name>Huiqi Wang</name>
-    </author>
-    <summary type="text">Human-labeled data are widely used as reference annotations in ML, despite known variability across annotators in many expert-driven domains. In addition, expert annotation is slow, inconsistent, and remains a major bottleneck for scaling tasks like tree height bias classification in forestry remote sensing. We propose a multi-agent system (MAS) that orchestrates expert decision trees with Vision-Language Models (VLMs), treating the decision tree as a structural prior while VLMs perform localized semantic perception at individual nodes, with multi-agent voting to mitigate VLM stochasticity. We formalize a Decoupled Declarative Decision (D3) Framework that enables zero-modification generalization across diverse expert-defined decision structures. On a tree bias classification testbed, our framework outperforms supervised ML baselines and reduces the amount of expert labeling effort required. These results suggest that agentic orchestration of VLMs with expert priors can reproduce expert-defined labeling procedures at substantially lower annotation cost while maintaining interpretability.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 pages, 2 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="cs.MA" />
-  </entry>
-  <entry>
-    <title>PriorEye: Geospatial Visual Priors for End-to-End Autonomous Driving</title>
-    <link href="http://arxiv.org/abs/2606.31830v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.31830v1</id>
-    <published>2026-06-30T00:00:00Z</published>
-    <updated>2026-06-30T00:00:00Z</updated>
-    <author>
-      <name>Kyuhwan Yeon</name>
-    </author>
-    <author>
-      <name>Benjamin Ramtoula</name>
-    </author>
-    <author>
-      <name>Daniele De Martini</name>
-    </author>
-    <summary type="text">Most end-to-end autonomous driving methods rely solely on instantaneous sensor observations, limiting them to reactive behavior without the anticipatory foresight human drivers employ through prior experience. We introduce geospatial visual priors, street-level visual context anchored to the intended driving route, providing visual-spatial foresight independent of real-time sensors. We propose a memory augmentation module featuring a dual-memory architecture and an adaptive memory gate, which can be easily integrated into existing end-to-end approaches. This design pairs a contextual memory for retrieved priors with a persistent fallback memory, and dynamically regulates the influence of memories based on current state compatibility. Evaluated on the NAVSIM-v2 benchmark, our approach consistently improves performance across diverse end-to-end baselines. Furthermore, because these priors are independent of onboard sensors, our method inherently improves robustness against sensor corruption, while the dual-memory design ensures safe fallback when the retrieved priors themselves become unreliable. Our project page is available at https://ori-mrg.github.io/PriorEye.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ECCV 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Robotics" />
-  </entry>
-  <entry>
-    <title>JL1-CC&amp;QA: Extending the JL1-CD Benchmark with Change Captioning and Question Answering</title>
-    <link href="http://arxiv.org/abs/2606.31745v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.31745v1</id>
-    <published>2026-06-30T00:00:00Z</published>
-    <updated>2026-06-30T00:00:00Z</updated>
-    <author>
-      <name>Ziyuan Liu</name>
-    </author>
-    <author>
-      <name>Ruifei Zhu</name>
-    </author>
-    <author>
-      <name>Ouqiao Ma</name>
-    </author>
-    <author>
-      <name>Yuantao Gu</name>
-    </author>
-    <summary type="text">Remote sensing change detection (CD) traditionally focuses on pixel-level binary segmentation, which identifies where changes occur but neither what nor why. To bridge this semantic gap, we introduce JL1-CC&amp;QA, a multi-task benchmark that extends the JL1-CD dataset with two complementary annotation layers: change captioning (CC) and change question answering (QA). Built upon 5,000 bi-temporal image pairs acquired by the Jilin-1 satellite at 0.5-0.75m ground sample distance, the benchmark comprises: (i) JL1-CC, providing 17,021 quality-verified captions that describe diverse land-cover transformations; and (ii) JL1-QA, offering 20,060 question-answer pairs across eight question types, enabling fine-grained, interactive interrogation of surface changes. All annotations are produced via a three-stage pipeline consisting of multi-modal large language model (LLM) generation, vision-grounded LLM judging, and human expert verification. We hope that JL1-CC&amp;QA, as a benchmark unifying binary change masks, change captions, and change-oriented QA over the same image set, will serve as a valuable resource for the community to advance multi-task change understanding in remote sensing. The dataset is available at https://github.com/circleLZY/JL1-CD.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/circleLZY/JL1-CD"&gt;https://github.com/circleLZY/JL1-CD&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, 8 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>SAMBA: A Scatter-Guided Masked Bidirectional Mamba Foundation Model for SAR Target Recognition</title>
-    <link href="http://arxiv.org/abs/2606.31668v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.31668v1</id>
-    <published>2026-06-30T00:00:00Z</published>
-    <updated>2026-06-30T00:00:00Z</updated>
-    <author>
-      <name>Ke Wang</name>
-    </author>
-    <author>
-      <name>Xiaoyi Pan</name>
-    </author>
-    <author>
-      <name>Zhaoyu Gu</name>
-    </author>
-    <author>
-      <name>Xiaofeng Ai</name>
-    </author>
-    <author>
-      <name>Zhiming Xu</name>
-    </author>
-    <author>
-      <name>Feng Zhao</name>
-    </author>
-    <author>
-      <name>Shunping Xiao</name>
-    </author>
-    <summary type="text">Synthetic aperture radar automatic target recognition (SAR ATR) is critical for Earth observation and defense, but its practical deployment is constrained by scarce annotated training data. Self-supervised pre-training alleviates this label bottleneck, yet prevailing Transformer architectures incur prohibitive quadratic computational complexity, and conventional universal masking neglects the unique electromagnetic scattering properties intrinsic to SAR imagery. To address these limitations, we propose SAMBA (Scattering-Guided Bidirectional Mamba), an efficient self-supervised pre-training foundation model for SAR target interpretation. Our framework features three core innovations: (i) a linear-complexity Mamba encoder with a mid-sequence class token to mitigate computational bottlenecks; (ii) a three-level hierarchical Scattering-Guided Masked Autoencoder (SG-MAE) masking strategy guided by SAR physical priors, aligning the pretext task with SAR's intrinsic imaging mechanism; (iii) a lightweight SpatialMix feature interaction module to enhance cross-region feature fusion. We also design a two-stage cross-domain pre-training pipeline to optimize the overall pre-training process. Extensive evaluations demonstrate that SAMBA consistently delivers superior performance across all pre-training configurations, with substantially fewer parameters than both CNN and Transformer baselines. Compared with the default masking strategy in standard MAE, the proposed SG-MAE strategy further boosts the model's few-shot transfer capability. Benchmarking on seven downstream datasets covering classification and detection tasks shows SAMBA achieves state-of-the-art (SOTA) performance on most metrics, fully validating its robust generalizability across diverse SAR interpretation tasks. Source code and pre-trained weights are publicly available at https://github.com/mynswkk/SAMBA.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/mynswkk/SAMBA"&gt;https://github.com/mynswkk/SAMBA&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages, 5figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>

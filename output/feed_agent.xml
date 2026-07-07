@@ -4,12 +4,45 @@
   <id>https://rspaper.top/output/feed_agent.xml</id>
   <link href="https://rspaper.top/output/feed_agent.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-06T05:05:51Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
+  <updated>2026-07-07T01:48:40Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>STRATOS: Bridging the Symbolic-to-Numeric Gap in Spatio-Temporal Text-to-SQL for Meteorological Data</title>
+    <link href="http://arxiv.org/abs/2607.03501v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.03501v1</id>
+    <published>2026-07-03T00:00:00Z</published>
+    <updated>2026-07-03T00:00:00Z</updated>
+    <author>
+      <name>Yi Zhang</name>
+    </author>
+    <author>
+      <name>Farhad Nooralahzadeh</name>
+    </author>
+    <author>
+      <name>Jonathan Fürst</name>
+    </author>
+    <author>
+      <name>Fabio Scherrer</name>
+    </author>
+    <author>
+      <name>Antonis Bezes</name>
+    </author>
+    <author>
+      <name>Vassiliki Kotroni</name>
+    </author>
+    <author>
+      <name>Kurt Stockinger</name>
+    </author>
+    <summary type="text">Copernicus, the European Union's Earth observation program, produces petabytes of Earth observation and climate data, offering immense potential for research, policy, and applications. However, access to these datasets requires advanced programming skills and familiarity with domain-specific formats such as NetCDF or GRIB. Moreover, general-purpose Text-to-SQL systems fail when applied naively to the meteorological domain due to a profound ``Symbolic-to-Numeric'' gap. To overcome these limitations, we present an end-to-end Text-to-SQL framework specifically engineered for real-world, scalable meteorological data exploration. Our system intercepts natural language to resolve spatial and semantic ambiguities \textit{before} SQL generation. We design STRATOS, a Spatio-Temporal Resolution Agent for Text-to-SQL to dynamically bridge the symbolic-to-numeric gap by mapping fuzzy concepts to a localized ontology and resolving spatial entities via external knowledge bases. Further, our complexity-aware query rewriter rewrites expensive spatial predicates, reducing execution times from hours to seconds. Last, we introduce the STRATOS Evaluation Workload, comprising 7,520 complex query pairs explicitly designed by domain experts to test scalability and symbolic-to-numeric translation across challenging spatio-temporal dimensions previously unexplored by Text-to-SQL systems.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages, 4 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.DB" />
+    <category term="Artificial Intelligence; cs.MA" />
+  </entry>
   <entry>
     <title>EO-Agents: A Three-Agent LLM Pipeline for Earth Observation Hypothesis Generation</title>
     <link href="http://arxiv.org/abs/2607.01584v1" rel="alternate" type="text/html" />
@@ -59,67 +92,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Information Retrieval" />
     <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>TreeAgent: A Generalizable Multi-Agent Framework for Automated Bias Labeling in Forestry via Compiled Expert Rules and Vision-Language Models</title>
-    <link href="http://arxiv.org/abs/2606.31976v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.31976v1</id>
-    <published>2026-06-30T00:00:00Z</published>
-    <updated>2026-06-30T00:00:00Z</updated>
-    <author>
-      <name>Shiyi Chen</name>
-    </author>
-    <author>
-      <name>Nicholas Saban</name>
-    </author>
-    <author>
-      <name>Collin Hargreaves</name>
-    </author>
-    <author>
-      <name>Huiqi Wang</name>
-    </author>
-    <summary type="text">Human-labeled data are widely used as reference annotations in ML, despite known variability across annotators in many expert-driven domains. In addition, expert annotation is slow, inconsistent, and remains a major bottleneck for scaling tasks like tree height bias classification in forestry remote sensing. We propose a multi-agent system (MAS) that orchestrates expert decision trees with Vision-Language Models (VLMs), treating the decision tree as a structural prior while VLMs perform localized semantic perception at individual nodes, with multi-agent voting to mitigate VLM stochasticity. We formalize a Decoupled Declarative Decision (D3) Framework that enables zero-modification generalization across diverse expert-defined decision structures. On a tree bias classification testbed, our framework outperforms supervised ML baselines and reduces the amount of expert labeling effort required. These results suggest that agentic orchestration of VLMs with expert priors can reproduce expert-defined labeling procedures at substantially lower annotation cost while maintaining interpretability.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 pages, 2 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="cs.MA" />
-  </entry>
-  <entry>
-    <title>An Agentic AI Framework to Accelerate Scientific Discovery in Plant Phenotyping</title>
-    <link href="http://arxiv.org/abs/2606.31831v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.31831v1</id>
-    <published>2026-06-30T00:00:00Z</published>
-    <updated>2026-06-30T00:00:00Z</updated>
-    <author>
-      <name>Renan Souza</name>
-    </author>
-    <author>
-      <name>Daniel Rosendo</name>
-    </author>
-    <author>
-      <name>Kelsey Carter</name>
-    </author>
-    <author>
-      <name>John Lagergren</name>
-    </author>
-    <author>
-      <name>Frédéric Suter</name>
-    </author>
-    <author>
-      <name>Shelaine L. Curd</name>
-    </author>
-    <author>
-      <name>Gerald A. Tuskan</name>
-    </author>
-    <author>
-      <name>Rafael Ferreira da Silva</name>
-    </author>
-    <author>
-      <name>David Weston</name>
-    </author>
-    <summary type="text">High-throughput plant phenotyping now generates image derived datasets far faster than scientists can analyze them. At Oak Ridge National Laboratory's Advanced Plant Phenotyping Laboratory (APPL), automated stations image hundreds of plants daily across multiple remote sensing modalities; yet, trait extraction and interpretation remain manual, expert-bound, and strictly post-hoc, making analysis, not acquisition, the binding constraint on discovery. We present an end-to-end agentic AI framework that turns the facility from a data factory into an interactive autonomous, discovery platform, where scientists partner with AI agents to accelerate time to insight. A conversational Co-Scientist Agent translates a scientist's natural-language question into a structured analysis plan, and a headless Compute Agent dispatches Vision Transformer segmentation and trait extraction on the Frontier exascale supercomputer. The two agents run in separate security and resource domains and communicate over a secure, token-authenticated streaming channel, a design that accounts for the federation, data-movement, and provenance realities cloud-native agentic frameworks ignore, ensuring end-to-end provenance is captured for every interaction. The framework turns a days- to weeks-long analysis process into an interactive loop where agents reason over results, recommend next analyses, and respond to follow-up questions in seconds.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>
