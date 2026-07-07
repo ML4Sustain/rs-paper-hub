@@ -19986,5 +19986,43 @@
     "_added_date": "2026-07-02",
     "Category": "Method",
     "_tasks": "CD"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Machine Learning",
+    "Date": "2026-07-06",
+    "Month": 7,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Probing Geospatial SSL Representations with Environmental Signals",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2607.05207v1",
+    "Abstract": "Self-supervised learning (SSL) is designed to learn generic, transferable representations rather than representations optimized for a single task. Most geospatial benchmarks evaluate representations solely through downstream tasks, providing limited insight into the information encoded within the representation itself. We ask a different question: do SSL representations of satellite imagery preserve statistical associations with environmental variables that co-vary with the imaging process? To answer this question, we probe SSL representations using co-located ERA5 reanalysis variables, a global dataset of physically consistent environmental variables, including temperature, precipitation, surface solar radiation, surface pressure, and volumetric soil water. These variables are physically related to the spectral reflectance and radar backscatter recorded by Sentinel-1 and Sentinel-2, making them meaningful evaluation targets despite not being used during SSL pretraining. We complement this probing analysis with intrinsic representation metrics to characterize representation geometry and investigate how these properties relate to downstream performance and the encoding of environmental signals. Using DINO, MAE, and MoCo models trained under identical conditions, we show that representation-level metrics distinguish models with similar downstream benchmark performance, providing complementary information beyond task-driven benchmarks. We further find that the linear accessibility of environmental signals is associated with performance on environmentally dependent tasks in the PANGAEA benchmark. Finally, we release ERA5 annotations co-located with the SSL4EO dataset to enable physically grounded representation evaluation for future geospatial foundation models.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{mocharla2026probing,\n  title={Probing Geospatial SSL Representations with Environmental Signals},\n  author={Rohita Mocharla and Vishal M. Patel},\n  journal={arXiv preprint arXiv:2607.05207v1},\n  year={2026},\n  url={http://arxiv.org/abs/2607.05207v1}\n}",
+    "Authors": "Rohita Mocharla, Vishal M. Patel",
+    "_added_date": "2026-07-07",
+    "Category": "Method",
+    "_tasks": ""
+  },
+  {
+    "Type": "Machine Learning",
+    "Subtype": "Artificial Intelligence; Computer Vision",
+    "Date": "2026-07-04",
+    "Month": 7,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Phase-Preserving Trimodal Transformer for Tropical Forest Biomass Estimation Using Optical and PolInSAR Data",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2607.03663v1",
+    "Abstract": "The accurate estimation of Above-Ground Biomass (AGB) in mature tropical forests remains a critical challenge in remote sensing, primarily due to the saturation of Synthetic Aperture Radar (SAR) signals in high-density areas and persistent cloud cover affecting optical imagery. To overcome these physical limitations, we propose the Trimodal Coherent Co-attention Transformer (TCCT), a physics-informed deep learning architecture. The TCCT natively fuses optical surface reflectance (Landsat-5) with complex-valued Polarimetric SAR Interferometry (PolInSAR) data from both P and L bands. Unlike traditional fusion methods, our architecture employs complex-valued encoders to preserve spatial phase coherence, coupled with a dynamic co-attention mechanism that acts as an adaptive gating module, reducing the weight of cloud-corrupted optical pixels and shifting reliance to microwave phase data. We also derived a localized spatial allometric calibration model via Levenberg-Marquardt optimization, tailored to the specific wood density of the Paracou region in the Amazon basin. Evaluated using a two-stage protocol, the TCCT first underwent a rigorous 5-fold cross-validation to establish robust global weights (achieving a global RMSE of 4.19 m). Subsequently, following a localized spatial fine-tuning phase over 200 epochs, the model attained an absolute RMSE of 3.78 m and an $R^2$ of 0.33 for Canopy Height Models (CHM), outperforming standard Random Forest, CNN, and Vision Transformer baselines. Our ablation study confirms that preserving phase coherence mitigates deep-canopy signal saturation. When converted to AGB, the fine-tuned TCCT map yielded a Relative RMSE (rRMSE) of 4.51% in dense forest areas above 50 Mg/ha. By meeting the European Space Agency (ESA) BIOMASS mission requirement of less than 20% error, the TCCT provides a robust framework for continuous carbon stock mapping in tropical biomes.",
+    "code": "",
+    "Publication": "10 pages, 7 figures",
+    "BibTex": "@article{santiago2026phasepreserving,\n  title={Phase-Preserving Trimodal Transformer for Tropical Forest Biomass Estimation Using Optical and PolInSAR Data},\n  author={Luiz Felipe Parente Santiago and Rosiane Rodrigues de Freitas and Daniel Rodrigues dos Santos and Felipe Ferrari},\n  journal={arXiv preprint arXiv:2607.03663v1},\n  year={2026},\n  url={http://arxiv.org/abs/2607.03663v1}\n}",
+    "Authors": "Luiz Felipe Parente Santiago, Rosiane Rodrigues de Freitas, Daniel Rodrigues dos Santos, Felipe Ferrari",
+    "_added_date": "2026-07-07",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]

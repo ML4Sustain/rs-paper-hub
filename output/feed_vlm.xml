@@ -4,12 +4,88 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-07T01:48:40Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 9 entries</subtitle>
+  <updated>2026-07-07T04:45:52Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 12 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Probing Geospatial SSL Representations with Environmental Signals</title>
+    <link href="http://arxiv.org/abs/2607.05207v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.05207v1</id>
+    <published>2026-07-06T00:00:00Z</published>
+    <updated>2026-07-06T00:00:00Z</updated>
+    <author>
+      <name>Rohita Mocharla</name>
+    </author>
+    <author>
+      <name>Vishal M. Patel</name>
+    </author>
+    <summary type="text">Self-supervised learning (SSL) is designed to learn generic, transferable representations rather than representations optimized for a single task. Most geospatial benchmarks evaluate representations solely through downstream tasks, providing limited insight into the information encoded within the representation itself. We ask a different question: do SSL representations of satellite imagery preserve statistical associations with environmental variables that co-vary with the imaging process? To answer this question, we probe SSL representations using co-located ERA5 reanalysis variables, a global dataset of physically consistent environmental variables, including temperature, precipitation, surface solar radiation, surface pressure, and volumetric soil water. These variables are physically related to the spectral reflectance and radar backscatter recorded by Sentinel-1 and Sentinel-2, making them meaningful evaluation targets despite not being used during SSL pretraining. We complement this probing analysis with intrinsic representation metrics to characterize representation geometry and investigate how these properties relate to downstream performance and the encoding of environmental signals. Using DINO, MAE, and MoCo models trained under identical conditions, we show that representation-level metrics distinguish models with similar downstream benchmark performance, providing complementary information beyond task-driven benchmarks. We further find that the linear accessibility of environmental signals is associated with performance on environmentally dependent tasks in the PANGAEA benchmark. Finally, we release ERA5 annotations co-located with the SSL4EO dataset to enable physically grounded representation evaluation for future geospatial foundation models.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>GeoSelect: Spatial-Program Execution for Training-Free Referring Remote Sensing Image Segmentation</title>
+    <link href="http://arxiv.org/abs/2607.03869v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.03869v1</id>
+    <published>2026-07-04T00:00:00Z</published>
+    <updated>2026-07-04T00:00:00Z</updated>
+    <author>
+      <name>Yuhang Jiang</name>
+    </author>
+    <author>
+      <name>Guohui Deng</name>
+    </author>
+    <author>
+      <name>Miaozhong Xu</name>
+    </author>
+    <author>
+      <name>Chao Ruan</name>
+    </author>
+    <author>
+      <name>Jinling Zhao</name>
+    </author>
+    <author>
+      <name>Linsheng Huang</name>
+    </author>
+    <summary type="text">Referring remote sensing image segmentation isolates the object named by a natural-language expression in an aerial image. Existing training-free methods resolve the expression through implicit vision-language activations or region-text similarity, which gives weak control over the spatial, comparative, and ordinal relations that dominate aerial referring: they cannot represent constructions such as the largest ship or the second court from the left. We propose GeoSelect, a training-free pipeline that reframes referring as the execution of a typed spatial program. A frozen, text-only language model synthesises the expression into a small domain-specific language, a well-formedness checker accepts the program, and a deterministic executor runs it. The central abstraction is a single scored candidate set type under which every operator composes: continuous geometric fields realise position and proximity as dense pixel-level maps, while discrete set and order operators add the extremum, ordinal, counted-union, and relational constructions that fields alone cannot express. Because execution is explicit, every intermediate program, field, and ranking is inspectable, and a reliability ladder degrades any failing program to a field-only special case, so every expression returns an answer. GeoSelect attains 58.86 mIoU on RRSIS-D test and 55.27 mIoU on RISBench test, more than twice the best prior training-free method on RRSIS-D, with no referring supervision and on a single GPU. A controlled comparison with candidates and segmenter fixed attributes the gain to explicit execution, not the backbone; an oracle decomposition localises the residual gap to detection recall on RRSIS-D and selection on RISBench, and an exposure audit confirms robustness to pretraining leakage. Code will be released upon acceptance at the project page https://avalon-s.github.io/GeoSelect/.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 20 pages, 10 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>GeoSAM-Lite: A Lightweight Foundation Model for Onboard Remote Sensing Segmentation</title>
+    <link href="http://arxiv.org/abs/2607.03760v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.03760v1</id>
+    <published>2026-07-04T00:00:00Z</published>
+    <updated>2026-07-04T00:00:00Z</updated>
+    <author>
+      <name>Yongcong Wang</name>
+    </author>
+    <author>
+      <name>Jie Zhang</name>
+    </author>
+    <author>
+      <name>Rui Jiang</name>
+    </author>
+    <author>
+      <name>Xubing Yang</name>
+    </author>
+    <author>
+      <name>Ting Yun</name>
+    </author>
+    <author>
+      <name>Li Zhang</name>
+    </author>
+    <summary type="text">The deployment of large-scale foundation models like Segment Anything Model (SAM) on resource-constrained Earth observation platforms is hindered by prohibitive computational costs and the domain shift between natural and remote sensing imagery. To address these challenges, we propose \textit{Geo}spatial \textit{S}egment \textit{A}nything \textit{M}odel-Lite (GeoSAM-Lite), a lightweight, prompt-free segmentation framework designed for efficient onboard remote sensing segmentation. GeoSAM-Lite incorporates two core innovations: (1) Geospatial-Domain Initialization (Geo-Init), a domain-aware pre-training strategy that distills geospatial priors from a specialized teacher to bridge the domain gap; and (2) Feature Fusion Layers (FFL), which recalibrate spatial features and restore high-frequency boundary cues to overcome the capacity bottlenecks of lightweight backbones. Experiments across representative datasets, with a primary focus on cloud scenarios to evaluate performance under extreme scale variations and complex boundaries, demonstrate that GeoSAM-Lite achieves competitive accuracy while reducing parameters by 92.8\% compared to the heavyweight RSAM-Seg. By establishing a superior Pareto frontier between efficiency and fidelity, GeoSAM-Lite offers a practical solution for real-time segmentation on edge devices.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 5 pages&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>STRATOS: Bridging the Symbolic-to-Numeric Gap in Spatio-Temporal Text-to-SQL for Meteorological Data</title>
     <link href="http://arxiv.org/abs/2607.03501v1" rel="alternate" type="text/html" />
@@ -218,8 +294,8 @@
   </entry>
   <entry>
     <title>GeoSearcher: Anchor-Guided Progressive Reasoning for Remote Sensing Visual Grounding with Process Supervision</title>
-    <link href="http://arxiv.org/abs/2607.01050v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.01050v1</id>
+    <link href="http://arxiv.org/abs/2607.01050v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.01050v2</id>
     <published>2026-07-01T00:00:00Z</published>
     <updated>2026-07-01T00:00:00Z</updated>
     <author>
