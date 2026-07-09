@@ -4,12 +4,93 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-09T01:33:29Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 25 entries</subtitle>
+  <updated>2026-07-09T04:50:48Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 28 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>CarbonCLIP: Enhance Carbon Prediction from Satellite Imagery via Integrated Street-View Semantics and Temporal Context Training</title>
+    <link href="http://arxiv.org/abs/2607.07292v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.07292v1</id>
+    <published>2026-07-08T00:00:00Z</published>
+    <updated>2026-07-08T00:00:00Z</updated>
+    <author>
+      <name>Zeru Yang</name>
+    </author>
+    <author>
+      <name>Fang-Ying Gong</name>
+    </author>
+    <author>
+      <name>Steve H. L. Yim</name>
+    </author>
+    <author>
+      <name>Chau Yuen</name>
+    </author>
+    <summary type="text">Accurately estimating urban carbon emissions is critical for sustainable urban planning, yet many existing approaches remain difficult to apply consistently across cities due to data-source heterogeneity and the lack of fine-grained semantic-temporal context in remote sensing data. We propose CarbonCLIP, a task-oriented multimodal distillation framework that improves satellite-based carbon emission prediction by transferring contextual knowledge into a unified satellite representation through dual-branch contrastive learning. Unlike conventional methods that rely on static visual features, CarbonCLIP explicitly bridges the gap between top-down satellite views and ground-level human activities. Specifically, the spatial branch uses fine-grained textual descriptions automatically generated from street-view images by Large Multimodal Models (LMMs) to provide semantic priors reflecting building functions, infrastructure, and urban activities, while the temporal branch employs a month encoder to encode temporal priors associated with monthly emission variation. CarbonCLIP requires multimodal data only during the pretraining phase; during inference, it relies solely on satellite imagery, thereby supporting scalable deployment when ground-level data are unavailable at inference. Experiments on Beijing and Singapore demonstrate that CarbonCLIP outperforms baselines in both study cities. The results validate that our method effectively transfers multimodal knowledge into satellite representations, offering a robust solution for satellite-based urban carbon modeling.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>ASFR-Net: Adversarial Alignment and Spatio-Frequency Refinement Network for Heterogeneous Remote Sensing Image Change Detection</title>
+    <link href="http://arxiv.org/abs/2607.07161v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.07161v1</id>
+    <published>2026-07-08T00:00:00Z</published>
+    <updated>2026-07-08T00:00:00Z</updated>
+    <author>
+      <name>Xin-Jie Wu</name>
+    </author>
+    <author>
+      <name>Zhi-Hui You</name>
+    </author>
+    <author>
+      <name>Si-Bao Chen</name>
+    </author>
+    <author>
+      <name>Qing-Ling Shu</name>
+    </author>
+    <author>
+      <name>Xiao Wang</name>
+    </author>
+    <author>
+      <name>Jin Tang</name>
+    </author>
+    <author>
+      <name>Bin Luo</name>
+    </author>
+    <summary type="text">The core challenge of heterogeneous change detection in remote sensing imagery lies in effectively decoupling genuine land-cover changes from significant modal disparities caused by distinct imaging mechanisms. These intrinsic inconsistencies are prone to introducing pseudo-changes, thereby constraining detection accuracy. To address this, we propose a novel, end-to-end adversarial spatio-frequency refinement network (ASFR-Net). Initially, a modality-invariant representation learner (MIR-Learner) guides the backbone to extract modality-invariant features, effectively bridging the primary domain gap. Subsequently, to address persistent residual modal differences, we design an innovative spatio-frequency synergistic enhancement module (SFEM), which identifies and suppresses sensor-specific noise and artifacts that are difficult to discern in the spatial domain by leveraging frequency-domain processing. Multi-level difference features are then computed from these refined representations and fed into a decoder equipped with cascaded hierarchical guided fusion module (HGFM) blocks to generate precise change maps. To alleviate the data scarcity in heterogeneous tasks, we construct and release a new high-resolution benchmark specifically focused on building changes: the visible-near-infrared heterogeneous change detection (VisNIR-HCD) dataset. It presents unique scientific challenges arising from deceptive visual similarity and non-linear spectral inversions, providing a robust platform for evaluating model generalization. Extensive experiments on VisNIR-HCD and public datasets demonstrate that ASFR-Net achieves state-of-the-art (SOTA) performance, significantly outperforming existing methods. The source code and the VisNIR-HCD dataset are publicly available at https://github.com/LuoYang2024/ASFR-Net.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/LuoYang2024/ASFR-Net"&gt;https://github.com/LuoYang2024/ASFR-Net&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Prior-matched evaluation of operational Earth-observation classifiers: a three-number reporting method demonstrated on Sentinel-1 internal-wave detection</title>
+    <link href="http://arxiv.org/abs/2607.07146v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.07146v1</id>
+    <published>2026-07-08T00:00:00Z</published>
+    <updated>2026-07-08T00:00:00Z</updated>
+    <author>
+      <name>Joao Pinelo</name>
+    </author>
+    <author>
+      <name>Joao Goncalves</name>
+    </author>
+    <author>
+      <name>Arun Shukla</name>
+    </author>
+    <author>
+      <name>Adriana Santos-Ferreira</name>
+    </author>
+    <summary type="text">The Internal Waves Service screens the Sentinel-1 Wave-mode archive for internal solitary waves, routing detections to experts whose adjudication time is the resource the effort exists to conserve. Because attention is the cost of error, precision leads. Its classifier was trained and reported at a one-to-one class balance, fixed before the operational rate could be known. That rate has since emerged at roughly one scene in twenty, and a balanced-test score badly overstates the precision a validator meets. A model that scores 0.794 balanced-test precision scores 0.192 in real operation: the gap is a systematic artefact of reporting at the wrong prior, invisible to the metric most work quotes. We show the mismatch to be an evaluation problem in the costume of a training one at a fixed recall, prior correction and calibration cannot move precision, and answer it with a prior-matched reporting method based on three figures: balanced-test, operational-prior, and real post-deployment, whose contrast is the honest measure. A precision-first, leakage-controlled development cycle then improves the classifier lever by lever, each promoted only against a pre-registered margin; added capacity not clearing it, calibration inert, feature aggregation the one real lift, so the honest negatives are as much a result as the gain. Holding recall at a floor of 0.80 and certifying against a sealed, single-read lockbox, the promoted model reports 0.927 precision at the operational prior; an out-of-time check confirms discrimination transfers to unseen periods while a fixed operating point does not. Prior-matched reporting, begin balanced, then move to the prior as the stream reveals it, transfers to any operational Earth-observation service bootstrapping a rare-event detector under a prior it has yet to discover.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 24 pages, 6 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+    <category term="Computer Vision; Image and Video Processing" />
+  </entry>
   <entry>
     <title>ForestIR: Physics-Informed Forest Sound Simulation for Array-Based Bioacoustic Remote Sensing</title>
     <link href="http://arxiv.org/abs/2607.06299v1" rel="alternate" type="text/html" />
@@ -574,8 +655,8 @@
   </entry>
   <entry>
     <title>Phase-Preserving Trimodal Transformer for Tropical Forest Biomass Estimation Using Optical and PolInSAR Data</title>
-    <link href="http://arxiv.org/abs/2607.03663v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.03663v1</id>
+    <link href="http://arxiv.org/abs/2607.03663v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.03663v2</id>
     <published>2026-07-04T00:00:00Z</published>
     <updated>2026-07-04T00:00:00Z</updated>
     <author>
