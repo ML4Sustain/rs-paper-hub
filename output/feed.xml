@@ -4,12 +4,137 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-09T04:50:48Z</updated>
+  <updated>2026-07-10T01:26:28Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 28 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>ImputeViz: A Visual Analytics Dashboard for Diagnosing Missing Data and Comparing Imputation Methods</title>
+    <link href="http://arxiv.org/abs/2607.08579v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.08579v1</id>
+    <published>2026-07-09T00:00:00Z</published>
+    <updated>2026-07-09T00:00:00Z</updated>
+    <author>
+      <name>Aitik Dandapat</name>
+    </author>
+    <author>
+      <name>Lalith Punepalle Raveendrareddy</name>
+    </author>
+    <author>
+      <name>Mithilesh Kumar Singh</name>
+    </author>
+    <author>
+      <name>Klaus Mueller</name>
+    </author>
+    <summary type="text">Missing data is a persistent obstacle in scientific, social science, and public health research, often biasing analyses and placing accountability on analysts for how they handle missing values. We introduce ImputeViz, an integrated visual analytics dashboard that supports diagnosing missingness, configuring imputation models, and evaluating results. The system brings together widely used methods, including MICE, Random Forest, XGBoost, and kNN, within an interactive environment that makes missingness patterns explicit. To support geospatial reasoning, we introduce gKNN, a geographically informed kNN variant that blends socioeconomic and spatial distances and exposes donor contributions, enabling provenance-based visual accountability by showing which regions drive each estimate. Our primary contribution is a method-agnostic visual analytics environment that makes cross-method comparison a first-class visual task and integrates gKNN alongside standard methods. Coordinated views reveal missingness structure through heatmaps, co-missingness summaries, and distributional diagnostics that help analysts reason about missingness patterns (MCAR/MAR) and cases where missingness may be non-random (MNAR). Users can compare and tune models and interrogate results via distributional overlays, a Method Comparison Summary reporting MAE, RMSE, Delta RMSE, and runtime for each algorithm on the current target and mask, along with variable-level discrepancy views. Cached per-method results and locked axis scales reduce cognitive overhead from shifting ranges during method switching. These comparisons highlight where methods disagree, which variables are sensitive, and how imputation choices affect downstream summaries. Case studies demonstrate how ImputeViz helps analysts select effective strategies, surface sensitive variables, and assess model robustness.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.HC" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Predicting Viticulture Potential through an Ensemble of U-Net and a Geospatial Foundation Model</title>
+    <link href="http://arxiv.org/abs/2607.08449v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.08449v1</id>
+    <published>2026-07-09T00:00:00Z</published>
+    <updated>2026-07-09T00:00:00Z</updated>
+    <author>
+      <name>Jorge Ignacio Perez</name>
+    </author>
+    <author>
+      <name>Hwaai Kang Kee</name>
+    </author>
+    <author>
+      <name>Lucas Rassbach</name>
+    </author>
+    <summary type="text">Determining agricultural potential is fundamental to sustainable land management and agricultural planning. Remote sensing data is increasingly valuable as an avenue for agricultural potential due to the cost of traditional methods (surveys, in-situ measurements, soil testing, etc). ImageCLEF AI4Agri 2026: Subtask 1 is concerned with the prediction of viticulture potential in Southern France. The DS@GT ARC's submission for Subtask 1 introduces an ensemble of U-Net and a Geospatial Foundation Model (Prithvi-2.0). Our best model achieved a $\pm$1 accuracy of 68.32 on the leaderboard, ranking 2nd among 7 teams. The implementation for this work is publicly available at https://github.com/dsgt-arc/imageclef-ai4agri-2026 .</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/dsgt-arc/imageclef-ai4agri-2026"&gt;https://github.com/dsgt-arc/imageclef-ai4agri-2026&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; CLEF 2026 Working Notes&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>LUMI: Tokenizer-Agnostic LLM-Based Lossless Image Compression</title>
+    <link href="http://arxiv.org/abs/2607.08221v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.08221v1</id>
+    <published>2026-07-09T00:00:00Z</published>
+    <updated>2026-07-09T00:00:00Z</updated>
+    <author>
+      <name>Chris Xing Tian</name>
+    </author>
+    <author>
+      <name>Chengkai Wu</name>
+    </author>
+    <author>
+      <name>Ziyu Wang</name>
+    </author>
+    <author>
+      <name>Rongqun Lin</name>
+    </author>
+    <author>
+      <name>Kecheng Chen</name>
+    </author>
+    <author>
+      <name>Xiandong Meng</name>
+    </author>
+    <author>
+      <name>Haoliang Li</name>
+    </author>
+    <author>
+      <name>Shiqi Wang</name>
+    </author>
+    <author>
+      <name>Siwei Ma</name>
+    </author>
+    <summary type="text">Large language model (LLM)-based lossless image compression methods typically represent pixel data through the native text interface of a pretrained model, converting pixel values into token sequences that the LLM processes through its vocabulary head. This design shows that pretrained language models can provide probability estimates for image coding, but it also couples compression to tokenizer behavior, vocabulary-specific numeric tokens, and model-family-specific adaptation. In this paper, we present LUMI (LLM-based Unified Model-agnostic lossless Image compression), a tokenizer-agnostic framework for lossless RGB image compression with frozen LLM backbones. LUMI replaces pixel-as-text tokenization with a pixel embedding module that maps raw intensity and channel information into the continuous embedding space of the LLM. It further introduces intra-patch position encoding to retain two-dimensional spatial structure after flattening, and uses a 256-way prediction head to produce probabilities over the native pixel alphabet. Only the pixel embedding, position encoding, soft-prefix parameters, and prediction head are trained, while the LLM backbone remains fixed. Experiments on natural, medical, and remote-sensing image benchmarks with LLaMA, Qwen, and Gemma backbones show that LUMI provides a unified interface across tokenizer families, achieves competitive compression rates, and improves cross-domain robustness over tokenizer-based LLM compression baselines. These results formulate LLM-based lossless image compression as pixel-space adaptation of frozen foundation models rather than tokenizer-specific language-symbol modeling.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Preprint&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Decomposition-Based QAOA for Maximum Coverage Location Problem in Satellite Constellation Design</title>
+    <link href="http://arxiv.org/abs/2607.08102v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.08102v1</id>
+    <published>2026-07-09T00:00:00Z</published>
+    <updated>2026-07-09T00:00:00Z</updated>
+    <author>
+      <name>Divya Sisodiya</name>
+    </author>
+    <author>
+      <name>Amiratabak Bahengam</name>
+    </author>
+    <author>
+      <name>Hang Woon Lee</name>
+    </author>
+    <author>
+      <name>Hao Chen</name>
+    </author>
+    <summary type="text">An increase in earth observation missions has increased the demand of efficient design and optimization of satellite constellations. Maximizing coverage of the target while effectively utilizing the limited orbital resources is one of the critical design challenges for complex combinatorial optimization problems. The maximal covering location problem (MCLP), serves as a base for orbital coverage modeling, is NP-hard and computationally intractable for large-constellation instances. Using heuristics, metaheuristics, and mixed-integer linear programming, classical solvers have achieved optimal or near-optimal results, yet their scalability is limited as the problem size increases. Quantum computing advancements, including the quantum approximate optimization algorithms, offer a potential solution to NP-hard combinatorial optimization problems. Current quantum hardware limitations, such as low qubit counts and circuit depth, restrict solutions for small-scale instance problems. To address this challenge, this paper proposes a scalable quantum optimization framework for MCLP in satellite constellation design. A decomposition-based quantum methodology is proposed, in which large MCLP instances are partitioned into subgraphs by classical decomposition, optimized independently via quantum optimization circuits, and combined using quantum reconstruction strategies. Computational results across different constellation sizes reveal better scalability in less time while maintaining competitive coverage performance compared to classical solvers.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 21 pages, 12 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="quant-ph" />
+    <category term="eess.SY" />
+  </entry>
+  <entry>
+    <title>LOGOS: Language-guided Oriented Object Detection in Aerial Scenes</title>
+    <link href="http://arxiv.org/abs/2607.08004v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.08004v1</id>
+    <published>2026-07-09T00:00:00Z</published>
+    <updated>2026-07-09T00:00:00Z</updated>
+    <author>
+      <name>Trong-Thuan Nguyen</name>
+    </author>
+    <author>
+      <name>Minh-Triet Tran</name>
+    </author>
+    <summary type="text">Object detection in geospatial scenes, such as satellite and aerial imagery, poses significant challenges due to the varying orientations and densities of objects, as well as the complex backgrounds inherent to remote sensing imagery. Traditional methods for oriented object detection have struggled to address issues such as angular discontinuity, fixed query sizes, and inefficiencies in handling sparse or cluttered scenes. In this paper, we propose LOGOS, a novel transformer-based approach that leverages textual prompts to guide the detection of oriented objects in aerial scenes. In particular, our proposed approach incorporates prompt-modulated content queries to dynamically adjust the model's focus based on the provided text, thereby improving object detection accuracy in complex environments. Empirically, extensive experiments on the DOTA dataset demonstrate that LOGOS outperforms existing state-of-the-art methods, particularly in densely packed and rotated object scenarios. Our approach offers a significant step forward in improving the robustness and scalability of oriented object detection in remote sensing applications.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to SOICT 2025&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>CarbonCLIP: Enhance Carbon Prediction from Satellite Imagery via Integrated Street-View Semantics and Temporal Context Training</title>
     <link href="http://arxiv.org/abs/2607.07292v1" rel="alternate" type="text/html" />
@@ -90,6 +215,26 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Machine Learning" />
     <category term="Computer Vision; Image and Video Processing" />
+  </entry>
+  <entry>
+    <title>Scalable and Trustworthy Earth Observation Foundation Models</title>
+    <link href="http://arxiv.org/abs/2607.07758v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.07758v1</id>
+    <published>2026-07-08T00:00:00Z</published>
+    <updated>2026-07-08T00:00:00Z</updated>
+    <author>
+      <name>Syed Usama Imtiaz</name>
+    </author>
+    <author>
+      <name>Mitra Nasr Azadani</name>
+    </author>
+    <author>
+      <name>Nasrin Alamdari</name>
+    </author>
+    <summary type="text">Foundation models (FMs) have transformed machine learning from isolated task-specific model development toward general-purpose models pretrained on broad data and adapted to multiple downstream tasks. Earth observation (EO) is an important domain for this paradigm because satellite and airborne archives are large, high-revisit, and increasingly multimodal, while reliable field labels are often sparse. Remote sensing foundation models (RSFMs) cannot be transferred reliably/optimally without domain-specific adaptation. This is because EO data are governed by measurement physics and operational decision constraints. This chapter reviews the design principles arising from these domain-specific constraints. It first defines the FMs paradigm in remote sensing (RS), then synthesizes the current model landscape, pretraining objectives, architecture designs, downstream adaptation and trustworthiness requirements. The chapter also incorporates recent benchmark evidence showing that no single geospatial foundation model is universally best and that inconsistent evaluation remains a major issue to fair comparison and reliable deployment. In addition, two brief environmental monitoring case studies; physics-informed spectral targeted masking for harmful algal bloom prediction and reinforcement learning for adaptive environmental monitoring station selection to illustrate the FMs domain-guided principles in practice. This chapter posits that next-generation RSFMs should be evaluated not only by benchmark accuracy, but also by modality-aware transfer and physically plausible representations for trustworthy EO decisions.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; (Preprint, in review) Elsevier Book Chapter: Next-Generation Remote Sensing Methods&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
   </entry>
   <entry>
     <title>ForestIR: Physics-Informed Forest Sound Simulation for Array-Based Bioacoustic Remote Sensing</title>
@@ -655,8 +800,8 @@
   </entry>
   <entry>
     <title>Phase-Preserving Trimodal Transformer for Tropical Forest Biomass Estimation Using Optical and PolInSAR Data</title>
-    <link href="http://arxiv.org/abs/2607.03663v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.03663v2</id>
+    <link href="http://arxiv.org/abs/2607.03663v3" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.03663v3</id>
     <published>2026-07-04T00:00:00Z</published>
     <updated>2026-07-04T00:00:00Z</updated>
     <author>
@@ -676,139 +821,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Machine Learning" />
     <category term="Artificial Intelligence; Computer Vision" />
-  </entry>
-  <entry>
-    <title>STRATOS: Bridging the Symbolic-to-Numeric Gap in Spatio-Temporal Text-to-SQL for Meteorological Data</title>
-    <link href="http://arxiv.org/abs/2607.03501v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.03501v1</id>
-    <published>2026-07-03T00:00:00Z</published>
-    <updated>2026-07-03T00:00:00Z</updated>
-    <author>
-      <name>Yi Zhang</name>
-    </author>
-    <author>
-      <name>Farhad Nooralahzadeh</name>
-    </author>
-    <author>
-      <name>Jonathan Fürst</name>
-    </author>
-    <author>
-      <name>Fabio Scherrer</name>
-    </author>
-    <author>
-      <name>Antonis Bezes</name>
-    </author>
-    <author>
-      <name>Vassiliki Kotroni</name>
-    </author>
-    <author>
-      <name>Kurt Stockinger</name>
-    </author>
-    <summary type="text">Copernicus, the European Union's Earth observation program, produces petabytes of Earth observation and climate data, offering immense potential for research, policy, and applications. However, access to these datasets requires advanced programming skills and familiarity with domain-specific formats such as NetCDF or GRIB. Moreover, general-purpose Text-to-SQL systems fail when applied naively to the meteorological domain due to a profound ``Symbolic-to-Numeric'' gap. To overcome these limitations, we present an end-to-end Text-to-SQL framework specifically engineered for real-world, scalable meteorological data exploration. Our system intercepts natural language to resolve spatial and semantic ambiguities \textit{before} SQL generation. We design STRATOS, a Spatio-Temporal Resolution Agent for Text-to-SQL to dynamically bridge the symbolic-to-numeric gap by mapping fuzzy concepts to a localized ontology and resolving spatial entities via external knowledge bases. Further, our complexity-aware query rewriter rewrites expensive spatial predicates, reducing execution times from hours to seconds. Last, we introduce the STRATOS Evaluation Workload, comprising 7,520 complex query pairs explicitly designed by domain experts to test scalability and symbolic-to-numeric translation across challenging spatio-temporal dimensions previously unexplored by Text-to-SQL systems.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages, 4 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.DB" />
-    <category term="Artificial Intelligence; cs.MA" />
-  </entry>
-  <entry>
-    <title>Scale-Free Beamforming using Swarm Arrays for Remote Sensing under Interference</title>
-    <link href="http://arxiv.org/abs/2607.03499v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.03499v1</id>
-    <published>2026-07-03T00:00:00Z</published>
-    <updated>2026-07-03T00:00:00Z</updated>
-    <author>
-      <name>Bradley Hamilton</name>
-    </author>
-    <author>
-      <name>Raghu Mudumbai</name>
-    </author>
-    <author>
-      <name>Soura Dasgupta</name>
-    </author>
-    <author>
-      <name>Benjamin Peiffer</name>
-    </author>
-    <summary type="text">We consider a swarm array of autonomous relays that seek to cooperatively forward a desired signal to a fusion center with the maximum possible fidelity while canceling out a number of interferers. We present a distributed algorithm for computing the optimal zero-forcing beamforming weights at the relays without requiring prior channel knowledge. Crucially, our algorithm is {\it scale-free} in the sense that the computational and bandwidth overheads are completely independent of the size of the array. We build on recent work that introduced the concept of a Collective Array that enables such {\it scale-free} computation by imposing a constraint that the array must always function as a {\it swarm} i.e. array elements can only ever communicate with external nodes collectively and never individually. While this is a very severe restriction, we show that it allows useful computations such as zero-forcing beamforming while being robust to noise and channel time-variations.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.DC" />
-    <category term="cs.IT; Signal Processing" />
-  </entry>
-  <entry>
-    <title>LBTCap: A Lightweight Bilateral Transformer for Real-Time Remote Sensing Image Change Captioning</title>
-    <link href="http://arxiv.org/abs/2607.03320v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.03320v1</id>
-    <published>2026-07-03T00:00:00Z</published>
-    <updated>2026-07-03T00:00:00Z</updated>
-    <author>
-      <name>Licheng Zhang</name>
-    </author>
-    <author>
-      <name>Siew-Kei Lam</name>
-    </author>
-    <author>
-      <name>Naveed Akhtar</name>
-    </author>
-    <summary type="text">Remote sensing image change captioning (RSICC) generates natural-language descriptions of semantic changes between paired remote sensing images (RSIs), supporting applications such as urban planning, disaster response, and environmental monitoring. Although recent methods achieve strong captioning accuracy, most overlook computational efficiency and inference speed, which are essential for real-time deployment in practice. To this end, we propose LBTCap, a lightweight RSICC framework built on a bilateral Transformer that jointly models pre- and post-change features for efficient processing of paired RSIs. Specifically, we introduce a bilateral attention mechanism for paired inputs: the two temporal images are projected into separate queries and keys by the same query and key matrices shared across the two images, the value is formed from their concatenation, and the two resulting attention maps are combined by a learnable, structurally bilateral weighting instead of a fixed subtraction. This design keeps both temporal branches explicit while remaining compact, and, together with a truncated backbone and grouped-query attention, LBTCap uses only 39.99M parameters, of which the change-aware encoder accounts for just 2.78M. Extensive experiments on two public RSICC datasets show that LBTCap matches or closely approaches the accuracy of state-of-the-art methods while using far fewer parameters and running at markedly higher inference speed, with the benefit of the bilateral formulation most pronounced in the low-resource setting, demonstrating a favorable accuracy-efficiency trade-off for practical RSICC.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>A harmonised dataset for Earth system foundation models</title>
-    <link href="http://arxiv.org/abs/2607.03298v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.03298v1</id>
-    <published>2026-07-03T00:00:00Z</published>
-    <updated>2026-07-03T00:00:00Z</updated>
-    <author>
-      <name>Carlos Rodriguez-Pardo</name>
-    </author>
-    <author>
-      <name>Massimo Tavoni</name>
-    </author>
-    <summary type="text">Foundation models for Earth systems have so far been trained primarily on physical climate and weather data, with limited representation of the human systems that both drive and respond to environmental change. The lack of a unified global training resource that combines climate, land, ocean, cryosphere, infrastructure, hazards, and socioeconomic data on a common grid hinders progress toward truly multimodal Earth system foundation models. We present WorldTensor, a harmonised global dataset that aligns hundreds of environmental and socioeconomic variables to a standardised 0.25$^\circ$ spatial grid and annual temporal framework. WorldTensor integrates reanalysis products, remote sensing, emissions inventories, land use reconstructions, hydrological observations, infrastructure and hazard datasets, and socioeconomic indicators within a single representation designed for machine learning workflows. To build the dataset, we regridded inputs across heterogeneous native resolutions and projections, rasterised point and vector datasets into spatially meaningful gridded fields, and reconciled temporal coverages ranging from daily observations to sparse multiyear socioeconomic snapshots. All outputs are distributed as NetCDF files with standardised coordinates, variable metadata, and a common CF metadata convention. WorldTensor provides a reproducible resource for training and evaluating foundation models that learn coupled dynamics across environmental and human systems at planetary scale.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Under review&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-    <category term="Artificial Intelligence; econ.GN; Atmospheric and Oceanic Physics" />
-  </entry>
-  <entry>
-    <title>MABLE: Masked Autoencoding with Bi-Lipschitz Decoding for Embeddings and Graph Metric Learning</title>
-    <link href="http://arxiv.org/abs/2607.02990v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.02990v1</id>
-    <published>2026-07-03T00:00:00Z</published>
-    <updated>2026-07-03T00:00:00Z</updated>
-    <author>
-      <name>Yaniv Shulman</name>
-    </author>
-    <author>
-      <name>Shaghayegh Akbarpour</name>
-    </author>
-    <author>
-      <name>Jack B. Muir</name>
-    </author>
-    <summary type="text">We propose MABLE (Masked Autoencoding with Bi-Lipschitz Decoding for Embeddings and Graph Metric Learning), a self-supervised framework for learning node and graph embeddings from large, heterogeneous graphs, demonstrated here on geospatial mineral-exploration data. MABLE combines masked reconstruction with fixed cosine-similarity losses that align matched augmented views while keeping unpaired embeddings well spread. A bi-Lipschitz feature decoder ties a low-dimensional reconstruction component of each node embedding to feature similarity, while matched-node consistency shapes the remaining context used by graph pooling. Lipschitz-controlled pooling helps stabilize graph-level representations under perturbations of retained node embeddings, while augmentation alignment trains robustness to masking, node dropping, and sampling variation. Across local copper and regional Arabian Shield studies, MABLE embeddings provide complementary downstream signal and produce coherent embedding-derived layers for hypothesis generation without learned discriminators or hard-negative selection.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-    <category term="Geophysics" />
-  </entry>
-  <entry>
-    <title>Moonstone: A Multimodal Foundation Model and Benchmark for Lunar Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2607.03644v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.03644v1</id>
-    <published>2026-07-03T00:00:00Z</published>
-    <updated>2026-07-03T00:00:00Z</updated>
-    <author>
-      <name>Ayush Prasad</name>
-    </author>
-    <author>
-      <name>Swarnalee Mazumder</name>
-    </author>
-    <summary type="text">Decades of orbital missions have produced multi-modal remote sensing data for the Moon, spanning optical imagery, spectroscopy, thermal emission, radar, gravity, and elemental composition. Yet these datasets remain fragmented across archives, and no benchmark exists for evaluating machine learning on lunar data. We introduce Moonstone, the first multi-modal foundation model benchmark for lunar remote sensing. Our contributions are: (1) a 28-channel, 128 pixels-per-degree (~237 m) global lunar pretraining dataset from seven instrument families across five missions, (2) MG-MAE, a modality-grouped masked autoencoder with per-group convolutional tokenizers, a shared Vision Transformer encoder, attention masking for missing modalities, coverage-adaptive masking for heterogeneous spatial coverage, and spectral continuity regularization for physically plausible reconstructions, and (3) a benchmark of six downstream tasks covering classification, regression, and segmentation. MG-MAE pretrained features outperform scratch baselines on all tasks and surpass both ImageNet-pretrained and vanilla MAE baselines by large margins. Data and code are available at https://huggingface.co/datasets/ayushprd/Moonstone and https://github.com/ayushprd/Moonstone .</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://huggingface.co/datasets/ayushprd/Moonstone"&gt;https://huggingface.co/datasets/ayushprd/Moonstone&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ECCV 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>

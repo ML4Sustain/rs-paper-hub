@@ -4,12 +4,75 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-09T04:50:48Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 9 entries</subtitle>
+  <updated>2026-07-10T01:26:28Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 11 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>ImputeViz: A Visual Analytics Dashboard for Diagnosing Missing Data and Comparing Imputation Methods</title>
+    <link href="http://arxiv.org/abs/2607.08579v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.08579v1</id>
+    <published>2026-07-09T00:00:00Z</published>
+    <updated>2026-07-09T00:00:00Z</updated>
+    <author>
+      <name>Aitik Dandapat</name>
+    </author>
+    <author>
+      <name>Lalith Punepalle Raveendrareddy</name>
+    </author>
+    <author>
+      <name>Mithilesh Kumar Singh</name>
+    </author>
+    <author>
+      <name>Klaus Mueller</name>
+    </author>
+    <summary type="text">Missing data is a persistent obstacle in scientific, social science, and public health research, often biasing analyses and placing accountability on analysts for how they handle missing values. We introduce ImputeViz, an integrated visual analytics dashboard that supports diagnosing missingness, configuring imputation models, and evaluating results. The system brings together widely used methods, including MICE, Random Forest, XGBoost, and kNN, within an interactive environment that makes missingness patterns explicit. To support geospatial reasoning, we introduce gKNN, a geographically informed kNN variant that blends socioeconomic and spatial distances and exposes donor contributions, enabling provenance-based visual accountability by showing which regions drive each estimate. Our primary contribution is a method-agnostic visual analytics environment that makes cross-method comparison a first-class visual task and integrates gKNN alongside standard methods. Coordinated views reveal missingness structure through heatmaps, co-missingness summaries, and distributional diagnostics that help analysts reason about missingness patterns (MCAR/MAR) and cases where missingness may be non-random (MNAR). Users can compare and tune models and interrogate results via distributional overlays, a Method Comparison Summary reporting MAE, RMSE, Delta RMSE, and runtime for each algorithm on the current target and mask, along with variable-level discrepancy views. Cached per-method results and locked axis scales reduce cognitive overhead from shifting ranges during method switching. These comparisons highlight where methods disagree, which variables are sensitive, and how imputation choices affect downstream summaries. Case studies demonstrate how ImputeViz helps analysts select effective strategies, surface sensitive variables, and assess model robustness.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.HC" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Predicting Viticulture Potential through an Ensemble of U-Net and a Geospatial Foundation Model</title>
+    <link href="http://arxiv.org/abs/2607.08449v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.08449v1</id>
+    <published>2026-07-09T00:00:00Z</published>
+    <updated>2026-07-09T00:00:00Z</updated>
+    <author>
+      <name>Jorge Ignacio Perez</name>
+    </author>
+    <author>
+      <name>Hwaai Kang Kee</name>
+    </author>
+    <author>
+      <name>Lucas Rassbach</name>
+    </author>
+    <summary type="text">Determining agricultural potential is fundamental to sustainable land management and agricultural planning. Remote sensing data is increasingly valuable as an avenue for agricultural potential due to the cost of traditional methods (surveys, in-situ measurements, soil testing, etc). ImageCLEF AI4Agri 2026: Subtask 1 is concerned with the prediction of viticulture potential in Southern France. The DS@GT ARC's submission for Subtask 1 introduces an ensemble of U-Net and a Geospatial Foundation Model (Prithvi-2.0). Our best model achieved a $\pm$1 accuracy of 68.32 on the leaderboard, ranking 2nd among 7 teams. The implementation for this work is publicly available at https://github.com/dsgt-arc/imageclef-ai4agri-2026 .</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/dsgt-arc/imageclef-ai4agri-2026"&gt;https://github.com/dsgt-arc/imageclef-ai4agri-2026&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; CLEF 2026 Working Notes&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>LOGOS: Language-guided Oriented Object Detection in Aerial Scenes</title>
+    <link href="http://arxiv.org/abs/2607.08004v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.08004v1</id>
+    <published>2026-07-09T00:00:00Z</published>
+    <updated>2026-07-09T00:00:00Z</updated>
+    <author>
+      <name>Trong-Thuan Nguyen</name>
+    </author>
+    <author>
+      <name>Minh-Triet Tran</name>
+    </author>
+    <summary type="text">Object detection in geospatial scenes, such as satellite and aerial imagery, poses significant challenges due to the varying orientations and densities of objects, as well as the complex backgrounds inherent to remote sensing imagery. Traditional methods for oriented object detection have struggled to address issues such as angular discontinuity, fixed query sizes, and inefficiencies in handling sparse or cluttered scenes. In this paper, we propose LOGOS, a novel transformer-based approach that leverages textual prompts to guide the detection of oriented objects in aerial scenes. In particular, our proposed approach incorporates prompt-modulated content queries to dynamically adjust the model's focus based on the provided text, thereby improving object detection accuracy in complex environments. Empirically, extensive experiments on the DOTA dataset demonstrate that LOGOS outperforms existing state-of-the-art methods, particularly in densely packed and rotated object scenarios. Our approach offers a significant step forward in improving the robustness and scalability of oriented object detection in remote sensing applications.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to SOICT 2025&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>CarbonCLIP: Enhance Carbon Prediction from Satellite Imagery via Integrated Street-View Semantics and Temporal Context Training</title>
     <link href="http://arxiv.org/abs/2607.07292v1" rel="alternate" type="text/html" />
@@ -33,6 +96,26 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Scalable and Trustworthy Earth Observation Foundation Models</title>
+    <link href="http://arxiv.org/abs/2607.07758v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.07758v1</id>
+    <published>2026-07-08T00:00:00Z</published>
+    <updated>2026-07-08T00:00:00Z</updated>
+    <author>
+      <name>Syed Usama Imtiaz</name>
+    </author>
+    <author>
+      <name>Mitra Nasr Azadani</name>
+    </author>
+    <author>
+      <name>Nasrin Alamdari</name>
+    </author>
+    <summary type="text">Foundation models (FMs) have transformed machine learning from isolated task-specific model development toward general-purpose models pretrained on broad data and adapted to multiple downstream tasks. Earth observation (EO) is an important domain for this paradigm because satellite and airborne archives are large, high-revisit, and increasingly multimodal, while reliable field labels are often sparse. Remote sensing foundation models (RSFMs) cannot be transferred reliably/optimally without domain-specific adaptation. This is because EO data are governed by measurement physics and operational decision constraints. This chapter reviews the design principles arising from these domain-specific constraints. It first defines the FMs paradigm in remote sensing (RS), then synthesizes the current model landscape, pretraining objectives, architecture designs, downstream adaptation and trustworthiness requirements. The chapter also incorporates recent benchmark evidence showing that no single geospatial foundation model is universally best and that inconsistent evaluation remains a major issue to fair comparison and reliable deployment. In addition, two brief environmental monitoring case studies; physics-informed spectral targeted masking for harmful algal bloom prediction and reinforcement learning for adaptive environmental monitoring station selection to illustrate the FMs domain-guided principles in practice. This chapter posits that next-generation RSFMs should be evaluated not only by benchmark accuracy, but also by modality-aware transfer and physically plausible representations for trustworthy EO decisions.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; (Preprint, in review) Elsevier Book Chapter: Next-Generation Remote Sensing Methods&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
   </entry>
   <entry>
     <title>Uncertainty-Aware Cross-Modal Remote Sensing Image-Text Retrieval via Evidential Learning</title>
@@ -217,59 +300,6 @@
     <summary type="text">The deployment of large-scale foundation models like Segment Anything Model (SAM) on resource-constrained Earth observation platforms is hindered by prohibitive computational costs and the domain shift between natural and remote sensing imagery. To address these challenges, we propose \textit{Geo}spatial \textit{S}egment \textit{A}nything \textit{M}odel-Lite (GeoSAM-Lite), a lightweight, prompt-free segmentation framework designed for efficient onboard remote sensing segmentation. GeoSAM-Lite incorporates two core innovations: (1) Geospatial-Domain Initialization (Geo-Init), a domain-aware pre-training strategy that distills geospatial priors from a specialized teacher to bridge the domain gap; and (2) Feature Fusion Layers (FFL), which recalibrate spatial features and restore high-frequency boundary cues to overcome the capacity bottlenecks of lightweight backbones. Experiments across representative datasets, with a primary focus on cloud scenarios to evaluate performance under extreme scale variations and complex boundaries, demonstrate that GeoSAM-Lite achieves competitive accuracy while reducing parameters by 92.8\% compared to the heavyweight RSAM-Seg. By establishing a superior Pareto frontier between efficiency and fidelity, GeoSAM-Lite offers a practical solution for real-time segmentation on edge devices.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 5 pages&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>STRATOS: Bridging the Symbolic-to-Numeric Gap in Spatio-Temporal Text-to-SQL for Meteorological Data</title>
-    <link href="http://arxiv.org/abs/2607.03501v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.03501v1</id>
-    <published>2026-07-03T00:00:00Z</published>
-    <updated>2026-07-03T00:00:00Z</updated>
-    <author>
-      <name>Yi Zhang</name>
-    </author>
-    <author>
-      <name>Farhad Nooralahzadeh</name>
-    </author>
-    <author>
-      <name>Jonathan Fürst</name>
-    </author>
-    <author>
-      <name>Fabio Scherrer</name>
-    </author>
-    <author>
-      <name>Antonis Bezes</name>
-    </author>
-    <author>
-      <name>Vassiliki Kotroni</name>
-    </author>
-    <author>
-      <name>Kurt Stockinger</name>
-    </author>
-    <summary type="text">Copernicus, the European Union's Earth observation program, produces petabytes of Earth observation and climate data, offering immense potential for research, policy, and applications. However, access to these datasets requires advanced programming skills and familiarity with domain-specific formats such as NetCDF or GRIB. Moreover, general-purpose Text-to-SQL systems fail when applied naively to the meteorological domain due to a profound ``Symbolic-to-Numeric'' gap. To overcome these limitations, we present an end-to-end Text-to-SQL framework specifically engineered for real-world, scalable meteorological data exploration. Our system intercepts natural language to resolve spatial and semantic ambiguities \textit{before} SQL generation. We design STRATOS, a Spatio-Temporal Resolution Agent for Text-to-SQL to dynamically bridge the symbolic-to-numeric gap by mapping fuzzy concepts to a localized ontology and resolving spatial entities via external knowledge bases. Further, our complexity-aware query rewriter rewrites expensive spatial predicates, reducing execution times from hours to seconds. Last, we introduce the STRATOS Evaluation Workload, comprising 7,520 complex query pairs explicitly designed by domain experts to test scalability and symbolic-to-numeric translation across challenging spatio-temporal dimensions previously unexplored by Text-to-SQL systems.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages, 4 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.DB" />
-    <category term="Artificial Intelligence; cs.MA" />
-  </entry>
-  <entry>
-    <title>LBTCap: A Lightweight Bilateral Transformer for Real-Time Remote Sensing Image Change Captioning</title>
-    <link href="http://arxiv.org/abs/2607.03320v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.03320v1</id>
-    <published>2026-07-03T00:00:00Z</published>
-    <updated>2026-07-03T00:00:00Z</updated>
-    <author>
-      <name>Licheng Zhang</name>
-    </author>
-    <author>
-      <name>Siew-Kei Lam</name>
-    </author>
-    <author>
-      <name>Naveed Akhtar</name>
-    </author>
-    <summary type="text">Remote sensing image change captioning (RSICC) generates natural-language descriptions of semantic changes between paired remote sensing images (RSIs), supporting applications such as urban planning, disaster response, and environmental monitoring. Although recent methods achieve strong captioning accuracy, most overlook computational efficiency and inference speed, which are essential for real-time deployment in practice. To this end, we propose LBTCap, a lightweight RSICC framework built on a bilateral Transformer that jointly models pre- and post-change features for efficient processing of paired RSIs. Specifically, we introduce a bilateral attention mechanism for paired inputs: the two temporal images are projected into separate queries and keys by the same query and key matrices shared across the two images, the value is formed from their concatenation, and the two resulting attention maps are combined by a learnable, structurally bilateral weighting instead of a fixed subtraction. This design keeps both temporal branches explicit while remaining compact, and, together with a truncated backbone and grouped-query attention, LBTCap uses only 39.99M parameters, of which the change-aware encoder accounts for just 2.78M. Extensive experiments on two public RSICC datasets show that LBTCap matches or closely approaches the accuracy of state-of-the-art methods while using far fewer parameters and running at markedly higher inference speed, with the benefit of the bilateral formulation most pronounced in the low-resource setting, demonstrating a favorable accuracy-efficiency trade-off for practical RSICC.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>
