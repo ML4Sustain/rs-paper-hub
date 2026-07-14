@@ -7465,5 +7465,24 @@
     "_added_date": "2026-07-09",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Artificial Intelligence",
+    "Date": "2026-07-13",
+    "Month": 7,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Uncertainty Quantification for EO Regression Tasks: Building Height, Tree Canopy Height and Above-ground Biomass Estimation",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2607.11412v1",
+    "Abstract": "Earth Observation regression tasks such as building height, canopy height, and above-ground biomass estimation underpin critical applications in urban planning, forest monitoring, and climate policy, where both accuracy and reliability are critical. Yet most deep learning models yield only deterministic predictions, providing no indication of per-pixel reliability. These regression tasks are inherently challenging due to heterogeneous land surfaces, skewed target distributions, sensor noise, and signal saturation at high target values, making uncertainty (UC) estimation essential for reliable inference. We address this gap by modeling aleatoric uncertainty using year-long Sentinel-1 SAR and Sentinel-2 MSI time series, proposing two complementary approaches: (i) Gaussian UC, which jointly predicts mean and standard deviation under a Gaussian assumption, and (ii) Quantile UC, which estimates the 10th, 50th, and 90th quantiles to capture asymmetric and heteroscedastic error distributions. Both models are evaluated on three representative EO regression tasks at 10 m spatial resolution. Results show that both approaches match or surpass deterministic benchmarks and existing global products, while delivering well-calibrated, interpretable, and operationally useful confidence estimates. Notably, both models outperform the current 10 m state-of-the-art uncertainty-aware model for canopy height estimation. Our implementation will be available at: https://github.com/RituYadav92/EO-Regression-Uncertainty-Estimation",
+    "code": "https://github.com/RituYadav92/EO-Regression-Uncertainty-Estimation",
+    "Publication": "",
+    "BibTex": "@article{yadav2026uncertainty,\n  title={Uncertainty Quantification for EO Regression Tasks: Building Height, Tree Canopy Height and Above-ground Biomass Estimation},\n  author={Ritu Yadav and Andrea Nascetti and Yifang Ban},\n  journal={arXiv preprint arXiv:2607.11412v1},\n  year={2026},\n  url={http://arxiv.org/abs/2607.11412v1}\n}",
+    "Authors": "Ritu Yadav, Andrea Nascetti, Yifang Ban",
+    "_added_date": "2026-07-14",
+    "Category": "Method",
+    "_tasks": "3D"
   }
 ]
