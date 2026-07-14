@@ -4,12 +4,41 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-13T04:26:41Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 9 entries</subtitle>
+  <updated>2026-07-14T01:12:35Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 7 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>WeaveEarth: Structured Evidence Construction and Reasoning for Training-Free UHR Remote Sensing Understanding</title>
+    <link href="http://arxiv.org/abs/2607.10120v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.10120v1</id>
+    <published>2026-07-11T00:00:00Z</published>
+    <updated>2026-07-11T00:00:00Z</updated>
+    <author>
+      <name>Xianzhi Ma</name>
+    </author>
+    <author>
+      <name>Shujun Wang</name>
+    </author>
+    <author>
+      <name>Xiaohan Li</name>
+    </author>
+    <author>
+      <name>Hao Liu</name>
+    </author>
+    <author>
+      <name>Changhua Pei</name>
+    </author>
+    <author>
+      <name>Jianhui li</name>
+    </author>
+    <summary type="text">Ultra-High-Resolution (UHR) remote sensing image understanding requires Vision-Language Models (VLMs) to capture both the global scene layout and sparse yet task-critical local details under limited computational budgets. Existing methods mainly follow two paradigms. One is passive perception, which relies on resolution expansion or token compression and may therefore discard fine-grained details. The other is active perception, which depends on multi-round zooming and search, but suffers from high latency, contextual fragmentation, and error accumulation. We argue that a more effective path toward UHR understanding lies not in accessing more, but in organizing better. To this end, we propose WeaveEarth, a training-free framework that reformulates UHR understanding as a problem of structured evidence construction and reasoning under global context constraints. Specifically, WeaveEarth first employs Global-Aware Evidence Construction to select a compact, low-redundancy, and spatially complementary Minimal Support Evidence Set. It then introduces Structured Evidence Reasoning, which weaves local evidence, spatial metadata, and relative topology into a unified reasoning interface, thereby enhancing the VLM's ability to perform global-local joint reasoning. Extensive experiments show that WeaveEarth consistently outperforms strong baselines and existing UHR methods across multiple UHR remote sensing benchmarks and multiple frozen VLM backbones. Code is available at https://github.com/XianZhi-Ma/WeaveEarth.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/XianZhi-Ma/WeaveEarth"&gt;https://github.com/XianZhi-Ma/WeaveEarth&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Promptable Concept Segmentation from Above: Evaluating SAM 3's Zero-Shot and One-Shot Capabilities in Remote Sensing</title>
     <link href="http://arxiv.org/abs/2607.09583v1" rel="alternate" type="text/html" />
@@ -134,114 +163,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; (Preprint, in review) Elsevier Book Chapter: Next-Generation Remote Sensing Methods&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Uncertainty-Aware Cross-Modal Remote Sensing Image-Text Retrieval via Evidential Learning</title>
-    <link href="http://arxiv.org/abs/2607.06032v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.06032v1</id>
-    <published>2026-07-07T00:00:00Z</published>
-    <updated>2026-07-07T00:00:00Z</updated>
-    <author>
-      <name>Zhuoyue Wang</name>
-    </author>
-    <author>
-      <name>Xueqian Wang</name>
-    </author>
-    <author>
-      <name>Gang Li</name>
-    </author>
-    <author>
-      <name>Chengxi Li</name>
-    </author>
-    <author>
-      <name>Yongpan Liu</name>
-    </author>
-    <author>
-      <name>Yifang Ban</name>
-    </author>
-    <summary type="text">In cross-modal remote sensing image-text retrieval (CMRSITR), test-time remote sensing (RS) images and textual descriptions may deviate from well-curated benchmark conditions due to sensor- and atmosphere-related image degradations and text-side RS-vocabulary heterogeneity. Under such non-ideal conditions, existing CMRSITR methods may produce unreliable retrieval results because they perform retrieval with full certainty for each query and do not distinguish the varying uncertainty across queries. To address this issue, we propose an evidential learning-based CMRSITR (ELC) method for uncertainty-aware retrieval. During the training phase of ELC, evidential learning (EDL) is employed to model the inter-modal correspondences between RS images and textual descriptions as Dirichlet distributions, from which the uncertainty of each query can be obtained. Based on the EDL outputs, uncertainty-correctness alignment learning (UCL) is introduced to align the estimated uncertainty with retrieval correctness, encouraging high uncertainty for incorrect retrieval and low uncertainty for correct retrieval. Furthermore, intra-modal relationship learning (RL) distills the intra-modal similarity structure from pretrained mentor encoders for the trainable encoders, thereby making the Dirichlet distributions modeled by EDL more discriminative. In the test phase of ELC, the estimated uncertainty is compared with a threshold determined by a fixed deferral ratio, where low-uncertainty queries are directly returned and high-uncertainty queries are refined by RS-aware test-time augmentation (RS-TTA). Experimental results demonstrate that ELC achieves competitive retrieval performance compared with state-of-the-art CMRSITR methods and provides stronger robustness under the evaluated RS-specific degradations, including sensor- and atmosphere-related image perturbations and RS-vocabulary heterogeneity.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
-    <category term="Information Retrieval" />
-  </entry>
-  <entry>
-    <title>MonoIR-RS: Infrared Remote Sensing Vision-Language Learning with CLIP and VLM Adaptation</title>
-    <link href="http://arxiv.org/abs/2607.06552v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.06552v1</id>
-    <published>2026-07-07T00:00:00Z</published>
-    <updated>2026-07-07T00:00:00Z</updated>
-    <author>
-      <name>Jiaju Han</name>
-    </author>
-    <author>
-      <name>Ma Yaqi</name>
-    </author>
-    <author>
-      <name>Yahui Chai</name>
-    </author>
-    <author>
-      <name>Xuemeng Sun</name>
-    </author>
-    <author>
-      <name>Xin Li</name>
-    </author>
-    <author>
-      <name>Qike Zhang</name>
-    </author>
-    <author>
-      <name>Yingying Zhao</name>
-    </author>
-    <author>
-      <name>Xiang Chen</name>
-    </author>
-    <author>
-      <name>Luwei Yang</name>
-    </author>
-    <author>
-      <name>Chengyin Hu</name>
-    </author>
-    <author>
-      <name>Jiahuan Long</name>
-    </author>
-    <summary type="text">Infrared remote-sensing imagery captures intensity structure, object-background contrast, and illumination-invariant cues often invisible in RGB imagery. Yet, most remote-sensing vision-language resources and models focus on visible-band semantics, leaving infrared vision-language understanding underexplored. We introduce MonoIR-RS, a large-scale infrared remote-sensing vision-language dataset and benchmark that couples IR-aware data construction with CLIP-style contrastive adaptation and VLM instruction tuning. Built from the same source pool and split as FusionRS, MonoIR-RS retains the infrared image as the model-facing modality, yielding 600,000 synthesized infrared images and 59,032 retained IR-aware caption records. The model experiments use this retained language-supervision subset, whose captions rewrite supervision around grayscale structure and infrared-style contrast instead of RGB appearance. We show that the synthesized infrared imagery is markedly closer to real thermal imagery than a grayscale conversion on the AVIID benchmark. We fine-tune five CLIP backbones and six VLM backbones, and calibrate them against zero-shot behavior: IR-aware adaptation lifts CLIP mean recall by up to 12.8 points and drives VLM captioning IR-cue coverage to 100% while reducing residual RGB-color leakage to near zero. By isolating the infrared modality from RGB-IR dual-modal learning, MonoIR-RS offers a controlled, reproducible testbed for aligning infrared remote-sensing evidence with language.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>AirflowAttack: Thermal-Airflow Adversarial Perturbations against Infrared Remote-Sensing Vision-Language Models</title>
-    <link href="http://arxiv.org/abs/2607.06485v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.06485v1</id>
-    <published>2026-07-07T00:00:00Z</published>
-    <updated>2026-07-07T00:00:00Z</updated>
-    <author>
-      <name>Cong Su</name>
-    </author>
-    <author>
-      <name>Jiaju Han</name>
-    </author>
-    <author>
-      <name>Xuemeng Sun</name>
-    </author>
-    <author>
-      <name>Chengyin Hu</name>
-    </author>
-    <author>
-      <name>Qike Zhang</name>
-    </author>
-    <author>
-      <name>Jiujiang Guo</name>
-    </author>
-    <author>
-      <name>Yiwei Wei</name>
-    </author>
-    <author>
-      <name>Jiahuan Long</name>
-    </author>
-    <summary type="text">Vision-language models (VLMs) are increasingly deployed on infrared (IR) remote sensing imagery in security-critical settings, yet their adversarial robustness remains unexamined. We present AirflowAttack, to our knowledge the first adversarial attack for IR remote-sensing VLMs and the first to weaponize thermal-airflow turbulence as the perturbation prior. A lightweight generator synthesizes a single input-agnostic perturbation regularized toward physically plausible airflow patterns. Optimized on one surrogate CLIP model, it attains a mean zero-shot scene-classification attack success rate (ASR, the fraction of samples whose top-1 class changes) of 48.5% across five diverse CLIP backbones, far exceeding four IR-specific physical baselines (27.7--37.0%). Applied to six state-of-the-art VLMs, it cuts scene-classification accuracy by up to 38.2% relative, yet paradoxically makes some models more confident in their IR analysis, confabulating the perturbation as genuine thermal evidence such as temperature gradients and convection. Ablations show the airflow prior raises physical plausibility at no measurable cost to attack success. Together with a benchmark spanning eleven models and four tasks, these findings expose critical vulnerabilities in the rapidly expanding IR VLM ecosystem.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>

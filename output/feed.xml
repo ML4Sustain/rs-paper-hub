@@ -4,12 +4,100 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-13T04:26:41Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 18 entries</subtitle>
+  <updated>2026-07-14T01:12:35Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 17 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Align and Segment: Unsupervised Learning for Building Segmentation From Misaligned Labels</title>
+    <link href="http://arxiv.org/abs/2607.10841v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.10841v1</id>
+    <published>2026-07-12T00:00:00Z</published>
+    <updated>2026-07-12T00:00:00Z</updated>
+    <author>
+      <name>Venkanna Babu Guthula</name>
+    </author>
+    <author>
+      <name>Oswin Krause</name>
+    </author>
+    <author>
+      <name>Dimitri Gominski</name>
+    </author>
+    <author>
+      <name>Hui Zhang</name>
+    </author>
+    <author>
+      <name>Johan Mottelson</name>
+    </author>
+    <author>
+      <name>Ankit Kariryaa</name>
+    </author>
+    <author>
+      <name>Nico Lang</name>
+    </author>
+    <author>
+      <name>Christian Igel</name>
+    </author>
+    <summary type="text">Supervised learning for image segmentation typically requires spatially aligned image and label sets. When images and labels originate from different sources, the pairing may be misaligned, which can significantly deteriorate the performance of the learned models. This is especially common in remote sensing, when aerial or satellite images are co-registered with labels from another source (e.g., OpenStreetMap). In this work, we propose a novel approach for training on misaligned labels, where we simultaneously learn the label alignment. Our align and segment (AnS) approach builds on the spatial transformer module to transform the misaligned labels using an affine transformation to provide a better learning target for a canonical semantic segmentation network. We prevent shortcut learning of misaligned labels in these semantic segmentation networks through a self-supervised regularization loss and show that it is complementary to data augmentation, especially for systematically misaligned training data. A decisive characteristic of our AnS approach is that it learns without requiring any golden labels. We experimentally show on both synthetic and real-world data from different cities that our approach enables high-quality building segmentation and precise label-image alignment at the same time. Code and derived datasets are available at https://github.com/venkanna37/align-and-segment</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/venkanna37/align-and-segment"&gt;https://github.com/venkanna37/align-and-segment&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; main draft with references is 17 pages&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>WeaveEarth: Structured Evidence Construction and Reasoning for Training-Free UHR Remote Sensing Understanding</title>
+    <link href="http://arxiv.org/abs/2607.10120v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.10120v1</id>
+    <published>2026-07-11T00:00:00Z</published>
+    <updated>2026-07-11T00:00:00Z</updated>
+    <author>
+      <name>Xianzhi Ma</name>
+    </author>
+    <author>
+      <name>Shujun Wang</name>
+    </author>
+    <author>
+      <name>Xiaohan Li</name>
+    </author>
+    <author>
+      <name>Hao Liu</name>
+    </author>
+    <author>
+      <name>Changhua Pei</name>
+    </author>
+    <author>
+      <name>Jianhui li</name>
+    </author>
+    <summary type="text">Ultra-High-Resolution (UHR) remote sensing image understanding requires Vision-Language Models (VLMs) to capture both the global scene layout and sparse yet task-critical local details under limited computational budgets. Existing methods mainly follow two paradigms. One is passive perception, which relies on resolution expansion or token compression and may therefore discard fine-grained details. The other is active perception, which depends on multi-round zooming and search, but suffers from high latency, contextual fragmentation, and error accumulation. We argue that a more effective path toward UHR understanding lies not in accessing more, but in organizing better. To this end, we propose WeaveEarth, a training-free framework that reformulates UHR understanding as a problem of structured evidence construction and reasoning under global context constraints. Specifically, WeaveEarth first employs Global-Aware Evidence Construction to select a compact, low-redundancy, and spatially complementary Minimal Support Evidence Set. It then introduces Structured Evidence Reasoning, which weaves local evidence, spatial metadata, and relative topology into a unified reasoning interface, thereby enhancing the VLM's ability to perform global-local joint reasoning. Extensive experiments show that WeaveEarth consistently outperforms strong baselines and existing UHR methods across multiple UHR remote sensing benchmarks and multiple frozen VLM backbones. Code is available at https://github.com/XianZhi-Ma/WeaveEarth.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/XianZhi-Ma/WeaveEarth"&gt;https://github.com/XianZhi-Ma/WeaveEarth&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>DynaFilter: Cloud-driven Dynamic Filtering for Satellite Edge Intelligence</title>
+    <link href="http://arxiv.org/abs/2607.10098v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.10098v1</id>
+    <published>2026-07-11T00:00:00Z</published>
+    <updated>2026-07-11T00:00:00Z</updated>
+    <author>
+      <name>Ziyang Zhang</name>
+    </author>
+    <author>
+      <name>Jie Liu</name>
+    </author>
+    <author>
+      <name>Luca Mottola</name>
+    </author>
+    <summary type="text">Modern satellite edge systems, including those performing remote sensing tasks such object detection and tracking, are characterized by severely limited bandwidth and intermittent connections, making continuous data transmission to the cloud impractical. Existing edge-cloud systems, however, either require heavy pre-processing before analysis, for instance, full decompression of imagery data, or transmit all compressed data regardless of relevance. To address these challenges, we design DynaFilter, a dynamic filtering technique that enables satellite edge devices to perform selective region-of-interest (RoI) inference directly in the compressed-domain, without full decompression. Our key insight is that low-level compression syntax, specifically DC coefficients/AC energy in JPEG images and motion vectors in video streams, exhibits strong correlations with high-level semantic queries. By establishing a precise mapping between cloud query semantics and multimodal compressed-domain features, DynaFilter enables the edge to identify and transmit only relevant data associated to RoIs. Extensive evaluations show that DynaFilter reduces the total volume of pixel data for decoding and subsequent inference by 1.6x-7.1x for images, and achieves 92.0% bandwidth savings for video streams compared to state-of-the-art baselines. Furthermore, it decreases energy consumption by 43.1-88.6% on target devices and achieves a 1.6x-3.0x speedup in inference latency.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ACM MobiCom 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
   <entry>
     <title>Promptable Concept Segmentation from Above: Evaluating SAM 3's Zero-Shot and One-Shot Capabilities in Remote Sensing</title>
     <link href="http://arxiv.org/abs/2607.09583v1" rel="alternate" type="text/html" />
@@ -88,6 +176,28 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
     <category term="physics.soc-ph" />
     <category term="physics.ed-ph; physics.hist-ph" />
+  </entry>
+  <entry>
+    <title>AcadGIS: A Single-Import Python Package for Reproducible, Publication-Ready Academic Maps</title>
+    <link href="http://arxiv.org/abs/2607.10017v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.10017v1</id>
+    <published>2026-07-10T00:00:00Z</published>
+    <updated>2026-07-10T00:00:00Z</updated>
+    <author>
+      <name>Ripon Chandra Malo</name>
+    </author>
+    <author>
+      <name>Shatabdi Roy</name>
+    </author>
+    <author>
+      <name>Tong Qiu</name>
+    </author>
+    <summary type="text">Academic and project maps are often produced through a fragmented workflow: researchers locate boundaries, manage shapefiles, join tabular data, assemble locator insets, add cartographic decorations, and export figures through desktop GIS or multi-package Python scripts. This creates an accessibility barrier for non-GIS users and a reproducibility problem when data sources, styling choices, and manual edits are not captured in executable form. We present AcadGIS, a free and open-source Python package that creates publication-oriented research maps from high-level commands under one namespace, import acadgis as agis. AcadGIS provides place-name boundary access, automated study-area locator layouts, thematic cartography, raster and vector layers, curated Earth-observation products, terrain and hydrology context, and configurable PNG, PDF, and SVG export without requiring desktop GIS expertise or hand-managed shapefiles. Its design combines one-import access to the scientific-Python stack, publication-oriented defaults with progressive control, local caching, source attribution, and figure specifications based on code, named data, and a pinned package version. Through three representative use cases, we demonstrate how common paper, thesis, and project maps can be expressed as compact, inspectable scripts. Source code: https://github.com/riponcm/AcadGIS.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/riponcm/AcadGIS"&gt;https://github.com/riponcm/AcadGIS&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 19 pages, 8 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.MS" />
+    <category term="cs.GR" />
   </entry>
   <entry>
     <title>ImputeViz: A Visual Analytics Dashboard for Diagnosing Missing Data and Comparing Imputation Methods</title>
@@ -342,173 +452,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; (Preprint, in review) Elsevier Book Chapter: Next-Generation Remote Sensing Methods&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>ForestIR: Physics-Informed Forest Sound Simulation for Array-Based Bioacoustic Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2607.06299v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.06299v1</id>
-    <published>2026-07-07T00:00:00Z</published>
-    <updated>2026-07-07T00:00:00Z</updated>
-    <author>
-      <name>Xin Shen</name>
-    </author>
-    <author>
-      <name>Jennifer N. Kampe</name>
-    </author>
-    <author>
-      <name>Changwoo J. Lee</name>
-    </author>
-    <author>
-      <name>Braden Scherting</name>
-    </author>
-    <author>
-      <name>Panu Somervuo</name>
-    </author>
-    <author>
-      <name>Ari Lehtiö</name>
-    </author>
-    <author>
-      <name>Sandro von Brandenburg</name>
-    </author>
-    <author>
-      <name>Ossi Nokelainen</name>
-    </author>
-    <author>
-      <name>Otso Ovaskainen</name>
-    </author>
-    <author>
-      <name>David B. Dunson</name>
-    </author>
-    <summary type="text">Microphone array-based passive acoustic monitoring is increasingly used for biodiversity sensing in forests. However, design and evaluation of array systems and configurations remains difficult since field recordings are costly, difficult to reproduce, and provide limited control over forest and atmospheric conditions. We present ForestIR, a physics-informed and reproducible simulation framework that links forest and environmental conditions to microphone-array recordings for bioacoustic remote sensing. Through a more realistic sound propagation method and a systematic control over array design and environmental factors, ForestIR provides a practical simulation framework for optimizing array-based monitoring systems, especially for sound source localization purposes. ForestIR generates source-microphone impulse responses (IRs) under user-controlled forest and atmospheric conditions, and renders synthetic array recordings by convolving test signals with controlled background noise. We evaluate and demonstrate realistic features of ForestIR through experiments based on localization sensitivity to forest layout and atmospheric conditions, and also comparison between simulated IRs with sine-sweep IR measurements from a field experiment. ForestIR provides a practical way to test how forest and ground conditions, atmospheric state, and array geometry affect bioacoustic localization, and can support microphone-array design, robustness testing, and synthetic-data generation for passive acoustic monitoring.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Audio and Speech Processing" />
-    <category term="cs.SD" />
-  </entry>
-  <entry>
-    <title>Uncertainty-Aware Cross-Modal Remote Sensing Image-Text Retrieval via Evidential Learning</title>
-    <link href="http://arxiv.org/abs/2607.06032v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.06032v1</id>
-    <published>2026-07-07T00:00:00Z</published>
-    <updated>2026-07-07T00:00:00Z</updated>
-    <author>
-      <name>Zhuoyue Wang</name>
-    </author>
-    <author>
-      <name>Xueqian Wang</name>
-    </author>
-    <author>
-      <name>Gang Li</name>
-    </author>
-    <author>
-      <name>Chengxi Li</name>
-    </author>
-    <author>
-      <name>Yongpan Liu</name>
-    </author>
-    <author>
-      <name>Yifang Ban</name>
-    </author>
-    <summary type="text">In cross-modal remote sensing image-text retrieval (CMRSITR), test-time remote sensing (RS) images and textual descriptions may deviate from well-curated benchmark conditions due to sensor- and atmosphere-related image degradations and text-side RS-vocabulary heterogeneity. Under such non-ideal conditions, existing CMRSITR methods may produce unreliable retrieval results because they perform retrieval with full certainty for each query and do not distinguish the varying uncertainty across queries. To address this issue, we propose an evidential learning-based CMRSITR (ELC) method for uncertainty-aware retrieval. During the training phase of ELC, evidential learning (EDL) is employed to model the inter-modal correspondences between RS images and textual descriptions as Dirichlet distributions, from which the uncertainty of each query can be obtained. Based on the EDL outputs, uncertainty-correctness alignment learning (UCL) is introduced to align the estimated uncertainty with retrieval correctness, encouraging high uncertainty for incorrect retrieval and low uncertainty for correct retrieval. Furthermore, intra-modal relationship learning (RL) distills the intra-modal similarity structure from pretrained mentor encoders for the trainable encoders, thereby making the Dirichlet distributions modeled by EDL more discriminative. In the test phase of ELC, the estimated uncertainty is compared with a threshold determined by a fixed deferral ratio, where low-uncertainty queries are directly returned and high-uncertainty queries are refined by RS-aware test-time augmentation (RS-TTA). Experimental results demonstrate that ELC achieves competitive retrieval performance compared with state-of-the-art CMRSITR methods and provides stronger robustness under the evaluated RS-specific degradations, including sensor- and atmosphere-related image perturbations and RS-vocabulary heterogeneity.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
-    <category term="Information Retrieval" />
-  </entry>
-  <entry>
-    <title>MonoIR-RS: Infrared Remote Sensing Vision-Language Learning with CLIP and VLM Adaptation</title>
-    <link href="http://arxiv.org/abs/2607.06552v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.06552v1</id>
-    <published>2026-07-07T00:00:00Z</published>
-    <updated>2026-07-07T00:00:00Z</updated>
-    <author>
-      <name>Jiaju Han</name>
-    </author>
-    <author>
-      <name>Ma Yaqi</name>
-    </author>
-    <author>
-      <name>Yahui Chai</name>
-    </author>
-    <author>
-      <name>Xuemeng Sun</name>
-    </author>
-    <author>
-      <name>Xin Li</name>
-    </author>
-    <author>
-      <name>Qike Zhang</name>
-    </author>
-    <author>
-      <name>Yingying Zhao</name>
-    </author>
-    <author>
-      <name>Xiang Chen</name>
-    </author>
-    <author>
-      <name>Luwei Yang</name>
-    </author>
-    <author>
-      <name>Chengyin Hu</name>
-    </author>
-    <author>
-      <name>Jiahuan Long</name>
-    </author>
-    <summary type="text">Infrared remote-sensing imagery captures intensity structure, object-background contrast, and illumination-invariant cues often invisible in RGB imagery. Yet, most remote-sensing vision-language resources and models focus on visible-band semantics, leaving infrared vision-language understanding underexplored. We introduce MonoIR-RS, a large-scale infrared remote-sensing vision-language dataset and benchmark that couples IR-aware data construction with CLIP-style contrastive adaptation and VLM instruction tuning. Built from the same source pool and split as FusionRS, MonoIR-RS retains the infrared image as the model-facing modality, yielding 600,000 synthesized infrared images and 59,032 retained IR-aware caption records. The model experiments use this retained language-supervision subset, whose captions rewrite supervision around grayscale structure and infrared-style contrast instead of RGB appearance. We show that the synthesized infrared imagery is markedly closer to real thermal imagery than a grayscale conversion on the AVIID benchmark. We fine-tune five CLIP backbones and six VLM backbones, and calibrate them against zero-shot behavior: IR-aware adaptation lifts CLIP mean recall by up to 12.8 points and drives VLM captioning IR-cue coverage to 100% while reducing residual RGB-color leakage to near zero. By isolating the infrared modality from RGB-IR dual-modal learning, MonoIR-RS offers a controlled, reproducible testbed for aligning infrared remote-sensing evidence with language.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Life Style Levels: Neighborhood Delineation using Geospatial Data</title>
-    <link href="http://arxiv.org/abs/2607.06529v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.06529v1</id>
-    <published>2026-07-07T00:00:00Z</published>
-    <updated>2026-07-07T00:00:00Z</updated>
-    <author>
-      <name>Srivatsa Kulkarni</name>
-    </author>
-    <author>
-      <name>Debarag Banerjee</name>
-    </author>
-    <summary type="text">Fine-scale socioeconomic information is often unavailable across rapidly ur-banizing regions of the developing world, like India, limiting the ability to delineate intra-urban variations in affluence and deprivation. This study pro-poses a scalable, grid-based urban delineation framework using building morphology derived from open-source satellite imagery. Urban areas across 59 Indian cities and towns are partitioned into high-resolution spatial grids and characterized using interpretable morphological indicators, which are combined into a transparent, rule-based scoring framework to delineate areas with contrasting levels of urban affluence. The resulting classifications are validated through ground-level Google Street View observations, revealing a sharp contrast between the grid classes which are consistent with the ex-pected effects of the lifestyle affluence indicators. We further investigate density-based clustering of building footprints in Mumbai to identify dense urban settlements, demonstrating that the resulting clusters exhibit substan-tial spatial overlap with known informal settlements across the city. Finally, we conduct an exploratory analysis mapping consumer loan delinquency across the derived affluence classes. By relying entirely on publicly available geospatial data, the proposed framework provides a scalable, interpretable, and cost-effective approach for granular urban affluence mapping across In-dian cities.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 43 pages, 38 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="cs.CL" />
-  </entry>
-  <entry>
-    <title>AirflowAttack: Thermal-Airflow Adversarial Perturbations against Infrared Remote-Sensing Vision-Language Models</title>
-    <link href="http://arxiv.org/abs/2607.06485v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.06485v1</id>
-    <published>2026-07-07T00:00:00Z</published>
-    <updated>2026-07-07T00:00:00Z</updated>
-    <author>
-      <name>Cong Su</name>
-    </author>
-    <author>
-      <name>Jiaju Han</name>
-    </author>
-    <author>
-      <name>Xuemeng Sun</name>
-    </author>
-    <author>
-      <name>Chengyin Hu</name>
-    </author>
-    <author>
-      <name>Qike Zhang</name>
-    </author>
-    <author>
-      <name>Jiujiang Guo</name>
-    </author>
-    <author>
-      <name>Yiwei Wei</name>
-    </author>
-    <author>
-      <name>Jiahuan Long</name>
-    </author>
-    <summary type="text">Vision-language models (VLMs) are increasingly deployed on infrared (IR) remote sensing imagery in security-critical settings, yet their adversarial robustness remains unexamined. We present AirflowAttack, to our knowledge the first adversarial attack for IR remote-sensing VLMs and the first to weaponize thermal-airflow turbulence as the perturbation prior. A lightweight generator synthesizes a single input-agnostic perturbation regularized toward physically plausible airflow patterns. Optimized on one surrogate CLIP model, it attains a mean zero-shot scene-classification attack success rate (ASR, the fraction of samples whose top-1 class changes) of 48.5% across five diverse CLIP backbones, far exceeding four IR-specific physical baselines (27.7--37.0%). Applied to six state-of-the-art VLMs, it cuts scene-classification accuracy by up to 38.2% relative, yet paradoxically makes some models more confident in their IR analysis, confabulating the perturbation as genuine thermal evidence such as temperature gradients and convection. Ablations show the airflow prior raises physical plausibility at no measurable cost to attack success. Together with a benchmark spanning eleven models and four tasks, these findings expose critical vulnerabilities in the rapidly expanding IR VLM ecosystem.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>

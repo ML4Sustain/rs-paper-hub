@@ -24907,5 +24907,24 @@
     "_added_date": "2026-07-13",
     "Category": "Method",
     "_tasks": "CLS;OD;SEG"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-07-11",
+    "Month": 7,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "WeaveEarth: Structured Evidence Construction and Reasoning for Training-Free UHR Remote Sensing Understanding",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2607.10120v1",
+    "Abstract": "Ultra-High-Resolution (UHR) remote sensing image understanding requires Vision-Language Models (VLMs) to capture both the global scene layout and sparse yet task-critical local details under limited computational budgets. Existing methods mainly follow two paradigms. One is passive perception, which relies on resolution expansion or token compression and may therefore discard fine-grained details. The other is active perception, which depends on multi-round zooming and search, but suffers from high latency, contextual fragmentation, and error accumulation. We argue that a more effective path toward UHR understanding lies not in accessing more, but in organizing better. To this end, we propose WeaveEarth, a training-free framework that reformulates UHR understanding as a problem of structured evidence construction and reasoning under global context constraints. Specifically, WeaveEarth first employs Global-Aware Evidence Construction to select a compact, low-redundancy, and spatially complementary Minimal Support Evidence Set. It then introduces Structured Evidence Reasoning, which weaves local evidence, spatial metadata, and relative topology into a unified reasoning interface, thereby enhancing the VLM's ability to perform global-local joint reasoning. Extensive experiments show that WeaveEarth consistently outperforms strong baselines and existing UHR methods across multiple UHR remote sensing benchmarks and multiple frozen VLM backbones. Code is available at https://github.com/XianZhi-Ma/WeaveEarth.",
+    "code": "https://github.com/XianZhi-Ma/WeaveEarth",
+    "Publication": "",
+    "BibTex": "@article{ma2026weaveearth,\n  title={WeaveEarth: Structured Evidence Construction and Reasoning for Training-Free UHR Remote Sensing Understanding},\n  author={Xianzhi Ma and Shujun Wang and Xiaohan Li and Hao Liu and Changhua Pei and Jianhui li},\n  journal={arXiv preprint arXiv:2607.10120v1},\n  year={2026},\n  url={http://arxiv.org/abs/2607.10120v1}\n}",
+    "Authors": "Xianzhi Ma, Shujun Wang, Xiaohan Li, Hao Liu, Changhua Pei, Jianhui li",
+    "_added_date": "2026-07-14",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]
