@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-15T01:09:38Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 23 entries</subtitle>
+  <updated>2026-07-15T03:55:04Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 24 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -109,6 +109,27 @@
     <summary type="text">Self-accelerating optical beams follow curved trajectories rather than propagating rectilinearly, which raises the prospect for avoiding line-of-sight (LoS) obstacles blocking the beam path. However, if a conventional laser beam is intercepted by an obstacle en route to an intended LoS target, then replacing this beam with a bending beam is not adequate: the obstacle is avoided but the target cannot be concomitantly reached. Rather, a laser beam that \textit{locally} bends around the obstacle -- before continuing along its rectilinear path -- is needed. Here we show that engineering the spatiotemporal spectrum of a pulsed beam yields a space-time wave packet whose propagation dynamics can be tuned at will to locally bend around one or multiple obstacles, thereby avoiding them, to selectively reach a designated target. We carry out our experiments over distances extending to 130~m from the source, carried out in an open-air environment. In one scenario, the beam is incident on a target placed between two LoS obstacles, one preceding it and one following it -- both of which are avoided. In a second scenario, the locally bending beam avoids one and then two LoS obstacles preceding the intended target. These results may contribute to applications requiring selective incidence on targets in remote sensing, stand-off detection, directed energy, for optical and radio-frequency communications in presence of LoS obstacles, and for selectively delivered radiation therapies.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="physics.optics" />
+  </entry>
+  <entry>
+    <title>Domain-Incremental Remote Sensing Change Detection via Difference-Guided Adaptation and Frequency-Decoupled Distillation</title>
+    <link href="http://arxiv.org/abs/2607.12934v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.12934v1</id>
+    <published>2026-07-14T00:00:00Z</published>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <author>
+      <name>Daifeng Peng</name>
+    </author>
+    <author>
+      <name>Yaning Li</name>
+    </author>
+    <author>
+      <name>Haiyan Guan</name>
+    </author>
+    <summary type="text">Remote sensing change detection (RSCD) models are prone to catastrophic forgetting when incrementally adapted to new domains. Existing domain-incremental learning (DIL) methods mainly preserve image-level representations but often overlook bitemporal discrepancy cues, which are critical for robust change detection under domain shifts. To address this limitation, we propose DG-FDD, a domain-incremental change detection framework that integrates Difference-Guided Adaptation and Frequency-Decoupled Distillation. Specifically, the Difference-Guided Dynamic Adapter (DGDA) models bitemporal feature discrepancies to promote change-aware feature adaptation and reduce domain-specific interference. Meanwhile, the Frequency-Decoupled Knowledge Distillation strategy with Cross-domain Synthesis (FDKD-CS) separates structural information from domain style in the frequency domain, enabling stable knowledge transfer without historical data. Extensive experiments on three public high-resolution RSCD datasets under two- and three-domain incremental protocols demonstrate that DG-FDD effectively mitigates catastrophic forgetting. Compared with independently trained single-task models, DG-FDD records mean relative changes in F1 and IoU of only -0.23% and -0.45%, respectively, across six two-domain sequences, and -0.69% and -1.31%, respectively, across the three evaluated three-domain sequences. These results indicate a favorable stability-plasticity balance between historical knowledge retention and new-domain adaptation in continual cross-domain change detection.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 33 pages, 14 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
   </entry>
   <entry>
     <title>A Multimodal Dataset for Large Language Model Applications in the Energy Domain</title>
