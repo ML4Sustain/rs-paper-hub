@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-15T03:55:04Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 9 entries</subtitle>
+  <updated>2026-07-16T01:18:47Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 6 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -146,69 +146,6 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 14 pages, 4 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;OD;SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>ImputeViz: A Visual Analytics Dashboard for Diagnosing Missing Data and Comparing Imputation Methods</title>
-    <link href="http://arxiv.org/abs/2607.08579v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.08579v1</id>
-    <published>2026-07-09T00:00:00Z</published>
-    <updated>2026-07-09T00:00:00Z</updated>
-    <author>
-      <name>Aitik Dandapat</name>
-    </author>
-    <author>
-      <name>Lalith Punepalle Raveendrareddy</name>
-    </author>
-    <author>
-      <name>Mithilesh Kumar Singh</name>
-    </author>
-    <author>
-      <name>Klaus Mueller</name>
-    </author>
-    <summary type="text">Missing data is a persistent obstacle in scientific, social science, and public health research, often biasing analyses and placing accountability on analysts for how they handle missing values. We introduce ImputeViz, an integrated visual analytics dashboard that supports diagnosing missingness, configuring imputation models, and evaluating results. The system brings together widely used methods, including MICE, Random Forest, XGBoost, and kNN, within an interactive environment that makes missingness patterns explicit. To support geospatial reasoning, we introduce gKNN, a geographically informed kNN variant that blends socioeconomic and spatial distances and exposes donor contributions, enabling provenance-based visual accountability by showing which regions drive each estimate. Our primary contribution is a method-agnostic visual analytics environment that makes cross-method comparison a first-class visual task and integrates gKNN alongside standard methods. Coordinated views reveal missingness structure through heatmaps, co-missingness summaries, and distributional diagnostics that help analysts reason about missingness patterns (MCAR/MAR) and cases where missingness may be non-random (MNAR). Users can compare and tune models and interrogate results via distributional overlays, a Method Comparison Summary reporting MAE, RMSE, Delta RMSE, and runtime for each algorithm on the current target and mask, along with variable-level discrepancy views. Cached per-method results and locked axis scales reduce cognitive overhead from shifting ranges during method switching. These comparisons highlight where methods disagree, which variables are sensitive, and how imputation choices affect downstream summaries. Case studies demonstrate how ImputeViz helps analysts select effective strategies, surface sensitive variables, and assess model robustness.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.HC" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Predicting Viticulture Potential through an Ensemble of U-Net and a Geospatial Foundation Model</title>
-    <link href="http://arxiv.org/abs/2607.08449v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.08449v1</id>
-    <published>2026-07-09T00:00:00Z</published>
-    <updated>2026-07-09T00:00:00Z</updated>
-    <author>
-      <name>Jorge Ignacio Perez</name>
-    </author>
-    <author>
-      <name>Hwaai Kang Kee</name>
-    </author>
-    <author>
-      <name>Lucas Rassbach</name>
-    </author>
-    <summary type="text">Determining agricultural potential is fundamental to sustainable land management and agricultural planning. Remote sensing data is increasingly valuable as an avenue for agricultural potential due to the cost of traditional methods (surveys, in-situ measurements, soil testing, etc). ImageCLEF AI4Agri 2026: Subtask 1 is concerned with the prediction of viticulture potential in Southern France. The DS@GT ARC's submission for Subtask 1 introduces an ensemble of U-Net and a Geospatial Foundation Model (Prithvi-2.0). Our best model achieved a $\pm$1 accuracy of 68.32 on the leaderboard, ranking 2nd among 7 teams. The implementation for this work is publicly available at https://github.com/dsgt-arc/imageclef-ai4agri-2026 .</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/dsgt-arc/imageclef-ai4agri-2026"&gt;https://github.com/dsgt-arc/imageclef-ai4agri-2026&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; CLEF 2026 Working Notes&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>LOGOS: Language-guided Oriented Object Detection in Aerial Scenes</title>
-    <link href="http://arxiv.org/abs/2607.08004v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.08004v1</id>
-    <published>2026-07-09T00:00:00Z</published>
-    <updated>2026-07-09T00:00:00Z</updated>
-    <author>
-      <name>Trong-Thuan Nguyen</name>
-    </author>
-    <author>
-      <name>Minh-Triet Tran</name>
-    </author>
-    <summary type="text">Object detection in geospatial scenes, such as satellite and aerial imagery, poses significant challenges due to the varying orientations and densities of objects, as well as the complex backgrounds inherent to remote sensing imagery. Traditional methods for oriented object detection have struggled to address issues such as angular discontinuity, fixed query sizes, and inefficiencies in handling sparse or cluttered scenes. In this paper, we propose LOGOS, a novel transformer-based approach that leverages textual prompts to guide the detection of oriented objects in aerial scenes. In particular, our proposed approach incorporates prompt-modulated content queries to dynamically adjust the model's focus based on the provided text, thereby improving object detection accuracy in complex environments. Empirically, extensive experiments on the DOTA dataset demonstrate that LOGOS outperforms existing state-of-the-art methods, particularly in densely packed and rotated object scenarios. Our approach offers a significant step forward in improving the robustness and scalability of oriented object detection in remote sensing applications.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to SOICT 2025&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>

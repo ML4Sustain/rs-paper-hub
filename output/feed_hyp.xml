@@ -4,12 +4,25 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-15T03:55:04Z</updated>
+  <updated>2026-07-16T01:18:47Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>From Surface Forecasting to Observability Forecasting: A Latent World Model for Cloud-Aware EO Monitoring</title>
+    <link href="http://arxiv.org/abs/2607.13651v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.13651v1</id>
+    <published>2026-07-15T00:00:00Z</published>
+    <updated>2026-07-15T00:00:00Z</updated>
+    <author>
+      <name>Mohanad Albughdadi</name>
+    </author>
+    <summary type="text">The bottleneck of Earth Observation processing chains is not the arrival of new imagery but whether the surface is actually visible when the image arrives. We study this as an observability forecasting problem on EarthNet2021. Given recent multispectral imagery and exogenous weather drivers, the goal is to predict whether the next acquisition will be usable and, if not, when a usable view is likely to return. To do this, we adapt LeWorldModel, a joint-embedding predictive architecture world model, to cloud-aware Earth Observation sequences. The final pipeline converts raw minicubes into episodic HDF5 sequences with five image channels (blue, green, red, near-infrared, cloud mask) and eight meteorological and calendar covariates. The resulting model has 18.0M trainable parameters and is trained from scratch on 23,904 training episodes. The trained leWorldModel is evaluated under a locked protocol: linear probes are fit on train only, calibration choices are set on an internal validation split, and the fitted heads are then frozen for valsplit, IID, OOD, and extreme evaluation. On the full frozen-bundle observability benchmark, LeWorldModel consistently outperforms persistence. For next-step usability, balanced accuracy ranges from 0.769 to 0.887, compared with 0.493 to 0.556 for persistence. For exact first-usable-horizon prediction, accuracy ranges from 0.602 to 0.806, compared with 0.120 to 0.369 for persistence. Against a frozen LightGBM baseline fit on the same training windows, LeWorldModel is better on continuous clear/cloud regression and on exact recovery timing on valsplit, IID, and extreme, while LightGBM is stronger on the simpler binary any-usable-within-six task and is more robust on OOD. In separate sampled diagnostic analyses, LeWM also produces strong ranking-based anomaly signals under synthetic temporal inconsistencies.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Uncertainty Quantification for EO Regression Tasks: Building Height, Tree Canopy Height and Above-ground Biomass Estimation</title>
     <link href="http://arxiv.org/abs/2607.11412v1" rel="alternate" type="text/html" />
@@ -50,34 +63,6 @@
     <summary type="text">Although self-supervised learning (SSL) offers a promising way to reduce annotation effort in close-range remote sensing, its effectiveness for high-resolution multispectral unmanned aerial vehicle (UAV) imagery remains underexplored due to limited data. This study evaluated SSL pretraining for precision agriculture using cm-scale multispectral drone imagery collected across multiple sensors, years, and regions. Transformer-based encoders were pretrained with Momentum Contrast v3 (MoCo-v3) and Masked Autoencoders on a harmonized dataset combining msuav500K with newly collected multi-year UAV imagery from agricultural fields in Finland. Pretraining used four spectral bands (Green, Red, Red-Edge, Near-Infrared) for cross-sensor compatibility. The models were evaluated on crop-weed semantic segmentation using the WeedMap dataset with 5--100% training data. The following two subsets served as downstream tasks: Task A (Germany, RedEdge-M), where all pretrained models were compared under partial and full fine-tuning, and Task B (Switzerland, Sequoia), where the best encoder from Task A was assessed. Our Swin Transformer pretrained with MoCo-v3 achieved the strongest performance on both tasks, surpassing the Swin Transformer model of Doornbos et al. pretrained on a pre-release of msuav500K. Our pretrained Swin Transformer further demonstrated cross-sensor and cross-region generalization. We additionally provide a public multi-year multispectral UAV dataset from Finland to support future research.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Is sub-metre resolution necessary for cocoa mapping? A landscape-stratified evaluation of very high resolution imagery, decametric Earth Observation inputs, and operational products in Cote d'Ivoire</title>
-    <link href="http://arxiv.org/abs/2607.08945v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.08945v1</id>
-    <published>2026-07-09T00:00:00Z</published>
-    <updated>2026-07-09T00:00:00Z</updated>
-    <author>
-      <name>Kasimir Orlowski</name>
-    </author>
-    <author>
-      <name>Filip Sabo</name>
-    </author>
-    <author>
-      <name>Michele Meroni</name>
-    </author>
-    <author>
-      <name>Astrid Verhegghen</name>
-    </author>
-    <author>
-      <name>Mariana Belgiu</name>
-    </author>
-    <author>
-      <name>Felix Rembold</name>
-    </author>
-    <summary type="text">Accurate cocoa mapping is increasingly important for deforestation monitoring, supply-chain transparency, and regulatory applications. Spatial aggregation in conventional medium-resolution Earth observation (EO) imagery may limit cocoa detection in heterogeneous smallholder landscapes. In Cote d'Ivoire, we therefore evaluated how mapping performance varies across landscape conditions, whether very high resolution (VHR) imagery provides a meaningful advantage, and whether foundation-model embeddings improve decametric cocoa mapping. We developed models using 0.5 m Pleiades VHR imagery, a 10 m Sentinel-2 annual composite, and embeddings from TESSERA and AlphaEarth Foundations (AEF), and additionally assessed four publicly available cocoa mapping products. Performance was evaluated through a landscape-stratified accuracy assessment using 2,821 independently interpreted reference points distributed across gradients of tree cover density and landscape fragmentation. The VHR model achieved the highest performance (F1 = 0.92) and maintained F1-scores above 0.90 across all strata. Among the decametric inputs, TESSERA performed best (F1 = 0.86), followed by AEF (F1 = 0.82) and Sentinel-2 (F1 = 0.76). Of the existing cocoa products, the Kalischek product performed best (F1 = 0.83), comparable to the internally trained AEF model. Performance differences between VHR and decametric approaches increased with fragmentation and under low and high tree cover density conditions. Targeted VHR acquisition may therefore be particularly beneficial in complex cocoa landscapes, while foundation-model embeddings offer a scalable alternative for large-area mapping.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>
