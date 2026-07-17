@@ -4,12 +4,44 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-17T01:22:17Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 5 entries</subtitle>
+  <updated>2026-07-17T03:57:15Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 6 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>HoloGeo: Mitigating Landmark Bias in Geo-localization via Evidence-Driven Reasoning</title>
+    <link href="http://arxiv.org/abs/2607.15255v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.15255v1</id>
+    <published>2026-07-16T00:00:00Z</published>
+    <updated>2026-07-16T00:00:00Z</updated>
+    <author>
+      <name>Pengcheng Zhou</name>
+    </author>
+    <author>
+      <name>Xuanyu Liu</name>
+    </author>
+    <author>
+      <name>Yanchen Yin</name>
+    </author>
+    <author>
+      <name>Bobo Li</name>
+    </author>
+    <author>
+      <name>Shengqiong Wu</name>
+    </author>
+    <author>
+      <name>Mong-Li Lee</name>
+    </author>
+    <author>
+      <name>Wynne Hsu</name>
+    </author>
+    <summary type="text">Recent advances in Vision-Language Models (VLMs) have significantly improved image geo-localization, yet existing models remain susceptible to landmark bias, causing them to overlook geographical cues or form spurious correlations, ultimately resulting in inaccurate localization. To systematically investigate this issue, we first design two quantitative metrics, Bias Intensity (BI) and Bias Harmfulness (BH), to characterize the impact of landmarks exerted on model reasoning, and establish a comprehensive benchmark, LandmarkBias-3K. To mitigate landmark bias, we further propose an evidence-driven reasoning framework, HoloGeo, to improve the reliability of geo-localization. HoloGeo is supported by a high-quality dataset, BF-30k, annotated with structured multi-evidence bias-free reasoning chains. By incorporating multi-dimensional rewards, HoloGeo explicitly encourages balanced attention over diverse visual cues and achieves evidence-driven joint reasoning. Extensive experiments demonstrate that HoloGeo not only maintains excellent performance on IM2GPS3K and YFCC4k but also significantly outperforms existing open-source VLMs on LandmarkBias-3K, validating its effectiveness for robust geospatial reasoning.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; GeoLoc&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>TerraLogic: A Benchmark for Hierarchical Geospatial Reasoning in Earth Observation</title>
     <link href="http://arxiv.org/abs/2607.12497v1" rel="alternate" type="text/html" />

@@ -134556,5 +134556,24 @@
     "_added_date": "2026-07-17",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-07-16",
+    "Month": 7,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "HoloGeo: Mitigating Landmark Bias in Geo-localization via Evidence-Driven Reasoning",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2607.15255v1",
+    "Abstract": "Recent advances in Vision-Language Models (VLMs) have significantly improved image geo-localization, yet existing models remain susceptible to landmark bias, causing them to overlook geographical cues or form spurious correlations, ultimately resulting in inaccurate localization. To systematically investigate this issue, we first design two quantitative metrics, Bias Intensity (BI) and Bias Harmfulness (BH), to characterize the impact of landmarks exerted on model reasoning, and establish a comprehensive benchmark, LandmarkBias-3K. To mitigate landmark bias, we further propose an evidence-driven reasoning framework, HoloGeo, to improve the reliability of geo-localization. HoloGeo is supported by a high-quality dataset, BF-30k, annotated with structured multi-evidence bias-free reasoning chains. By incorporating multi-dimensional rewards, HoloGeo explicitly encourages balanced attention over diverse visual cues and achieves evidence-driven joint reasoning. Extensive experiments demonstrate that HoloGeo not only maintains excellent performance on IM2GPS3K and YFCC4k but also significantly outperforms existing open-source VLMs on LandmarkBias-3K, validating its effectiveness for robust geospatial reasoning.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{zhou2026hologeo,\n  title={HoloGeo: Mitigating Landmark Bias in Geo-localization via Evidence-Driven Reasoning},\n  author={Pengcheng Zhou and Xuanyu Liu and Yanchen Yin and Bobo Li and Shengqiong Wu and Mong-Li Lee and Wynne Hsu},\n  journal={arXiv preprint arXiv:2607.15255v1},\n  year={2026},\n  url={http://arxiv.org/abs/2607.15255v1}\n}",
+    "Authors": "Pengcheng Zhou, Xuanyu Liu, Yanchen Yin, Bobo Li, Shengqiong Wu, Mong-Li Lee, Wynne Hsu",
+    "_added_date": "2026-07-17",
+    "Category": "Method",
+    "_tasks": "GeoLoc"
   }
 ]
