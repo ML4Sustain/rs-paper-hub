@@ -6363,5 +6363,24 @@
     "_added_date": "2026-07-14",
     "Category": "Method",
     "_tasks": "SEG"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-07-16",
+    "Month": 7,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "AE-UAV: An Air-to-Air Event-Based UAV Tracking Benchmark and a Real-Time Frequency-Domain Tracker",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2607.14726v1",
+    "Abstract": "Air-to-air (A2A) unmanned aerial vehicle (UAV) tracking is fundamental to airborne remote sensing of low-altitude aerial targets. However, the deployment of continuous, real-time tracking systems on UAVs presents significant challenges. In A2A scenarios, traditional frame-based cameras suffer from severe performance degradation under low illumination, overexposure, and high-speed motion owing to their limited dynamic range and fixed temporal sampling. Although event cameras offer a promising alternative with microsecond temporal resolution and a high dynamic range, current research is bottlenecked by two primary issues: 1) the absence of dedicated A2A event-based datasets, and 2) the heavy reliance of existing trackers on GPU acceleration and extensive training data, rendering them impractical for resource-constrained UAVs. To bridge these gaps, we introduce AE-UAV, an air-to-air event-based UAV tracking benchmark. To the best of our knowledge, this is the first airborne-captured event camera dataset for A2A tracking, comprising 178 flight sequences with continuous-time cubic B-spline annotations. Furthermore, we propose the Fast-Slow Frequency-domain Tracking (FSFT) method. This lightweight, training-free framework seamlessly integrates frequency-domain template matching with search region prediction and detection-based drift correction. Extensive experiments demonstrate that FSFT operates at an ultra-fast 420 frames per second (FPS) on CPU-only hardware. It retains 93.97% of the accuracy of state-of-the-art GPU-dependent methods while delivering a 5.32-fold effective speedup and exhibiting superior temporal resolution generalization, thereby providing a highly efficient and robust solution for airborne remote sensing of aerial targets. The dataset and source code are available at https://github.com/MSP-xEN/AE-UAV.",
+    "code": "https://github.com/MSP-xEN/AE-UAV",
+    "Publication": "12 pages, 7 figures",
+    "BibTex": "@article{jiang2026aeuav,\n  title={AE-UAV: An Air-to-Air Event-Based UAV Tracking Benchmark and a Real-Time Frequency-Domain Tracker},\n  author={Zixin Jiang and Bing He and Chaoran Xiong and Zhenzhen Wang and Xin Zhao and Ling Pei},\n  journal={arXiv preprint arXiv:2607.14726v1},\n  year={2026},\n  url={http://arxiv.org/abs/2607.14726v1}\n}",
+    "Authors": "Zixin Jiang, Bing He, Chaoran Xiong, Zhenzhen Wang, Xin Zhao, Ling Pei",
+    "_added_date": "2026-07-17",
+    "Category": "Dataset",
+    "_tasks": ""
   }
 ]

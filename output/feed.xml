@@ -4,12 +4,42 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-16T03:57:45Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 21 entries</subtitle>
+  <updated>2026-07-17T01:22:17Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 20 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>AE-UAV: An Air-to-Air Event-Based UAV Tracking Benchmark and a Real-Time Frequency-Domain Tracker</title>
+    <link href="http://arxiv.org/abs/2607.14726v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.14726v1</id>
+    <published>2026-07-16T00:00:00Z</published>
+    <updated>2026-07-16T00:00:00Z</updated>
+    <author>
+      <name>Zixin Jiang</name>
+    </author>
+    <author>
+      <name>Bing He</name>
+    </author>
+    <author>
+      <name>Chaoran Xiong</name>
+    </author>
+    <author>
+      <name>Zhenzhen Wang</name>
+    </author>
+    <author>
+      <name>Xin Zhao</name>
+    </author>
+    <author>
+      <name>Ling Pei</name>
+    </author>
+    <summary type="text">Air-to-air (A2A) unmanned aerial vehicle (UAV) tracking is fundamental to airborne remote sensing of low-altitude aerial targets. However, the deployment of continuous, real-time tracking systems on UAVs presents significant challenges. In A2A scenarios, traditional frame-based cameras suffer from severe performance degradation under low illumination, overexposure, and high-speed motion owing to their limited dynamic range and fixed temporal sampling. Although event cameras offer a promising alternative with microsecond temporal resolution and a high dynamic range, current research is bottlenecked by two primary issues: 1) the absence of dedicated A2A event-based datasets, and 2) the heavy reliance of existing trackers on GPU acceleration and extensive training data, rendering them impractical for resource-constrained UAVs. To bridge these gaps, we introduce AE-UAV, an air-to-air event-based UAV tracking benchmark. To the best of our knowledge, this is the first airborne-captured event camera dataset for A2A tracking, comprising 178 flight sequences with continuous-time cubic B-spline annotations. Furthermore, we propose the Fast-Slow Frequency-domain Tracking (FSFT) method. This lightweight, training-free framework seamlessly integrates frequency-domain template matching with search region prediction and detection-based drift correction. Extensive experiments demonstrate that FSFT operates at an ultra-fast 420 frames per second (FPS) on CPU-only hardware. It retains 93.97% of the accuracy of state-of-the-art GPU-dependent methods while delivering a 5.32-fold effective speedup and exhibiting superior temporal resolution generalization, thereby providing a highly efficient and robust solution for airborne remote sensing of aerial targets. The dataset and source code are available at https://github.com/MSP-xEN/AE-UAV.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/MSP-xEN/AE-UAV"&gt;https://github.com/MSP-xEN/AE-UAV&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>From Continuous Deployment to Queryable Dataset: Terabyte-Scale AIS-Aligned Passive Acoustic Labelling</title>
     <link href="http://arxiv.org/abs/2607.13840v1" rel="alternate" type="text/html" />
@@ -43,6 +73,61 @@
     <summary type="text">The bottleneck of Earth Observation processing chains is not the arrival of new imagery but whether the surface is actually visible when the image arrives. We study this as an observability forecasting problem on EarthNet2021. Given recent multispectral imagery and exogenous weather drivers, the goal is to predict whether the next acquisition will be usable and, if not, when a usable view is likely to return. To do this, we adapt LeWorldModel, a joint-embedding predictive architecture world model, to cloud-aware Earth Observation sequences. The final pipeline converts raw minicubes into episodic HDF5 sequences with five image channels (blue, green, red, near-infrared, cloud mask) and eight meteorological and calendar covariates. The resulting model has 18.0M trainable parameters and is trained from scratch on 23,904 training episodes. The trained leWorldModel is evaluated under a locked protocol: linear probes are fit on train only, calibration choices are set on an internal validation split, and the fitted heads are then frozen for valsplit, IID, OOD, and extreme evaluation. On the full frozen-bundle observability benchmark, LeWorldModel consistently outperforms persistence. For next-step usability, balanced accuracy ranges from 0.769 to 0.887, compared with 0.493 to 0.556 for persistence. For exact first-usable-horizon prediction, accuracy ranges from 0.602 to 0.806, compared with 0.120 to 0.369 for persistence. Against a frozen LightGBM baseline fit on the same training windows, LeWorldModel is better on continuous clear/cloud regression and on exact recovery timing on valsplit, IID, and extreme, while LightGBM is stronger on the simpler binary any-usable-within-six task and is more robust on OOD. In separate sampled diagnostic analyses, LeWM also produces strong ranking-based anomaly signals under synthetic temporal inconsistencies.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>The orientation of the Amazonian geoglyphs as a clue for their interpretation</title>
+    <link href="http://arxiv.org/abs/2607.14201v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.14201v1</id>
+    <published>2026-07-15T00:00:00Z</published>
+    <updated>2026-07-15T00:00:00Z</updated>
+    <author>
+      <name>Giulio Magli</name>
+    </author>
+    <summary type="text">Amazonian earthworks, also called geoglyphs, are thousands of man-made earthen structures, mostly of geometrical shape, which progressively emerged from the tropical forest due to progressive deforestation. They were probably built between the fifth century BC and the end of the first millennium AD, but archaeological investigation on the culture of their builders is yet at the beginning. Nevertheless, a ceremonial rather than practical function seems likely, at least for those having a very regular shape. In the present paper, simple remote-sensing technique, combined with the methodological approach of modern Archaeoastronomy, are applied to study for the first time their orientation. The analysis takes in consideration virtually all known squared and rectangular structures for a total of 326 earthworks. The results show without doubts a non-random choice for their orientation and a clear interest of their builders for the annual cycle of the Sun.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="physics.hist-ph" />
+    <category term="astro-ph.EP" />
+  </entry>
+  <entry>
+    <title>OCELOT: Direct Atmospheric Forecasting from Heterogeneous Earth Observations Using a Graph-Transformer Hybrid Model</title>
+    <link href="http://arxiv.org/abs/2607.14196v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.14196v1</id>
+    <published>2026-07-15T00:00:00Z</published>
+    <updated>2026-07-15T00:00:00Z</updated>
+    <author>
+      <name>Azadeh Gholoubi</name>
+    </author>
+    <author>
+      <name>Ronald McLaren</name>
+    </author>
+    <author>
+      <name>Mu-Chieh Ko</name>
+    </author>
+    <author>
+      <name>Xin Jin</name>
+    </author>
+    <author>
+      <name>Nicholas Esposito</name>
+    </author>
+    <author>
+      <name>Andrew Collard</name>
+    </author>
+    <author>
+      <name>Cory Martin</name>
+    </author>
+    <author>
+      <name>Russ Treadon</name>
+    </author>
+    <author>
+      <name>Daniel Holdaway</name>
+    </author>
+    <author>
+      <name>Daryl Kleist</name>
+    </author>
+    <summary type="text">This study presents OCELOT (Observation-Centric Estimation and Learning for Outlook Trajectories), a global machine-learning forecasting system that predicts future Earth observations directly from heterogeneous satellite and in-situ measurements. Unlike data-driven weather models trained on gridded reanalysis states, OCELOT operates natively in observation space, preserving instrument-specific sampling, viewing geometry, and measurement characteristics. The system combines per-instrument graph-attention encoders, a shared spherical icosahedral latent mesh, a hybrid sliding-window Transformer/spatial graph neural network processor, and metadata-conditioned decoders to produce forecasts up to 12 h ahead. OCELOT is trained on observations for the years 2015 through 2023, validated on the year 2024, and evaluated out of sample on 2025 observations across satellite radiances, radiosondes, aircraft, and surface networks. In the 2025 evaluation, OCELOT produces spatially coherent +12 h forecasts across independent observing systems: microwave temperature-sounding channels show RMSE values of 1.24-1.87 K, while the more surface- and cloud-sensitive AVHRR infrared window channel shows a higher RMSE of 3.95 K. Vertical profile diagnostics show physically consistent radiosonde and aircraft temperature structure. Surface forecasts remain stable through 12 h, with 2-m air-temperature RMSE increasing from about 3.2 K at +3 h to about 3.6 K at +12 h. In paired observation-space comparisons, OCELOT remains less accurate than operational GFS but substantially outperforms persistence at longer lead times for 2-m temperature and 10-m wind components. These results demonstrate that observation-space forecasting can recover large-scale atmospheric structure and provide meaningful short-range skill without reanalysis supervision.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 34 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Atmospheric and Oceanic Physics" />
   </entry>
   <entry>
     <title>Label-Decoupled Style Augmentation for Domain Generalization in Multi-Label Remote Sensing Scene Classification</title>
@@ -428,106 +513,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Promptable Concept Segmentation from Above: Evaluating SAM 3's Zero-Shot and One-Shot Capabilities in Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2607.09583v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.09583v1</id>
-    <published>2026-07-10T00:00:00Z</published>
-    <updated>2026-07-10T00:00:00Z</updated>
-    <author>
-      <name>Mohammad Dabaja</name>
-    </author>
-    <author>
-      <name>Turgay Celik</name>
-    </author>
-    <summary type="text">The deployment of large-scale foundation models, such as the Segment Anything Model 3 (SAM 3), promises a transition toward open-vocabulary, training-free computer vision. However, their capacity to generalize out-of-distribution to the complex, top-down geometric structures of Earth Observation imagery remains largely unquantified. Driven by SAM 3's performance disparities in highly specialized domains, we present a comprehensive, multi-task empirical evaluation across remote sensing scene classification, object detection, and instance segmentation under strict zero-shot and one-shot constraints. To achieve this, we introduce a structural adaptation of SAM 3 by repurposing its decoupled binary presence head into a standalone zero-shot classifier. Furthermore, by systematically isolating textual and visual prompt modalities across five configurations, we explicitly diagnose the alignment mechanics within the model's multimodal decoder. Our findings reveal severe cross-modal interference: while visual prompts successfully align the decoder to complex remote sensing geometry, textual prompts inject misaligned, ground-level semantic bias, actively degrading coordinate regression. To benchmark these capabilities without resource-intensive training, we formulate a novel training-free proxy evaluation protocol for Generalized Zero-Shot tasks (scene classification and instance segmentation). Ultimately, our results demonstrate that SAM 3 avoids the overfitting commonly seen in legacy domain-adapted models, achieving high Harmonic Mean scores in segmentation tasks. However, it remains fundamentally constrained by sub-pixel resolution limits and overhead semantic blind spots, charting a definitive mandate for parameter-efficient geospatial fine-tuning of its multimodal decoder.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 14 pages, 4 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;OD;SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>A Survey on the Green Development of Large Models: From Resource-Efficient Architectures to Hardware-Software Co-Design</title>
-    <link href="http://arxiv.org/abs/2607.09084v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.09084v1</id>
-    <published>2026-07-10T00:00:00Z</published>
-    <updated>2026-07-10T00:00:00Z</updated>
-    <author>
-      <name>Linhui Xiao</name>
-    </author>
-    <author>
-      <name>Guiping Cao</name>
-    </author>
-    <author>
-      <name>Mingyue Guo</name>
-    </author>
-    <author>
-      <name>Xianchao Guan</name>
-    </author>
-    <author>
-      <name>Fan Yang</name>
-    </author>
-    <author>
-      <name>Ming Tao</name>
-    </author>
-    <author>
-      <name>Xin Li</name>
-    </author>
-    <author>
-      <name>Yuxin Peng</name>
-    </author>
-    <author>
-      <name>Yaowei Wang</name>
-    </author>
-    <summary type="text">The rapid expansion of large-scale AI models has led to significant performance breakthroughs across diverse domains, yet it has also raised critical concerns regarding computational costs, energy consumption, and environmental sustainability. This survey provides a comprehensive overview of the green development of large models, emphasizing resource-efficient architectures and full-stack hardware-software co-design. We systematically review recent advances in efficient model construction, including attention operator optimization, linear-complexity architectures, and model sparsification and merging, as well as training and deployment strategies such as data-efficient learning, parameter-efficient fine-tuning, and computational compression. Beyond algorithmic improvements, we explore energy-efficient AI hardware, including mainstream AI chips, memory optimization, cross-platform deployment, and sustainable infrastructure. Furthermore, we examine how large models are being applied to sustainability-critical domains such as DeepSeek, remote sensing interpretation, national-scale infrastructure, and global initiatives. Finally, we discuss key challenges and future directions, highlighting the need for continual learning paradigms, memory-centric hardware, and standardized evaluation protocols. This survey aims to offer a holistic roadmap toward sustainable, scalable, and socially responsible development of large models. Paper homepage: https://cje.ejournal.org.cn/article/doi/10.23919/cje.2025.00.438</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; CJE (2026)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Survey&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-    <category term="cs.CY" />
-  </entry>
-  <entry>
-    <title>Topological Signatures of Imperial Collapse and Fragmentation: Administrative Dissolution, Territorial Reorganization and Early-Warning Observables in the Han Dynasty Network (206~BCE\,--\,220~CE)</title>
-    <link href="http://arxiv.org/abs/2607.09010v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.09010v1</id>
-    <published>2026-07-10T00:00:00Z</published>
-    <updated>2026-07-10T00:00:00Z</updated>
-    <author>
-      <name>Jose de Jesus Bernal-Alvarado</name>
-    </author>
-    <author>
-      <name>David Delepine</name>
-    </author>
-    <author>
-      <name>Carlos Pinedo Guadarrama</name>
-    </author>
-    <summary type="text">We extend the persistent homology formalism done in references~\cite{paper1,paper2} to the Han Dynasty ($206~\mathrm{BCE}$--$220~\mathrm{CE}$), testing whether the collapse threshold $\Hstar = 0.5241$ and the three-network decomposition methodology established for the Roman--Byzantine case generalize to a mechanistically distinct imperial system. Three complementary networks are constructed from geospatial and historical data: an administrative network ($\Hadm$, 392~prefectures from CHGIS~v6), a geographic network ($\Hgeo$, with node end-dates extended beyond administrative dissolution), and an 81-node Silk Road trade network ($\Htrd$) as a structural control. Edge costs are derived via least-cost path analysis on a $1~\mathrm{km/pixel}$ digital elevation model, modulated by five historical friction channels. $\Hadm$ collapses to zero at 220~CE (phase~G slope $-0.0261~\mathrm{yr}^{-1}$, $R^2 = 0.689$) while $\Hgeo$ simultaneously \emph{increases} to $3.065$, producing a divergence $ΔH = 3.065$ -- the topological signature of \emph{internal fragmentation}. The cross-network Wasserstein distance $W_\times(\mathrm{Admin},\mathrm{Geo})$ jumps from exactly zero to $737$ at $d=190$~CE, one decade after the Yellow Turban Rebellion, and three long-lived $β_1$ cycles matching the Wei, Shu, and Wu domains emerge under the post-184~CE fragmentation model -- thirty years before formal partition. Three independent early-warning indicators (Wasserstein velocity $\dot{W}_2$, correlation length $ξ$, and the Integrated Change Tracker) signal collapse onset 45--50~years before formal dissolution.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 24 pages, 7 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
-    <category term="physics.soc-ph" />
-    <category term="physics.ed-ph; physics.hist-ph" />
-  </entry>
-  <entry>
-    <title>AcadGIS: A Single-Import Python Package for Reproducible, Publication-Ready Academic Maps</title>
-    <link href="http://arxiv.org/abs/2607.10017v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.10017v1</id>
-    <published>2026-07-10T00:00:00Z</published>
-    <updated>2026-07-10T00:00:00Z</updated>
-    <author>
-      <name>Ripon Chandra Malo</name>
-    </author>
-    <author>
-      <name>Shatabdi Roy</name>
-    </author>
-    <author>
-      <name>Tong Qiu</name>
-    </author>
-    <summary type="text">Academic and project maps are often produced through a fragmented workflow: researchers locate boundaries, manage shapefiles, join tabular data, assemble locator insets, add cartographic decorations, and export figures through desktop GIS or multi-package Python scripts. This creates an accessibility barrier for non-GIS users and a reproducibility problem when data sources, styling choices, and manual edits are not captured in executable form. We present AcadGIS, a free and open-source Python package that creates publication-oriented research maps from high-level commands under one namespace, import acadgis as agis. AcadGIS provides place-name boundary access, automated study-area locator layouts, thematic cartography, raster and vector layers, curated Earth-observation products, terrain and hydrology context, and configurable PNG, PDF, and SVG export without requiring desktop GIS expertise or hand-managed shapefiles. Its design combines one-import access to the scientific-Python stack, publication-oriented defaults with progressive control, local caching, source attribution, and figure specifications based on code, named data, and a pinned package version. Through three representative use cases, we demonstrate how common paper, thesis, and project maps can be expressed as compact, inspectable scripts. Source code: https://github.com/riponcm/AcadGIS.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/riponcm/AcadGIS"&gt;https://github.com/riponcm/AcadGIS&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 19 pages, 8 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.MS" />
-    <category term="cs.GR" />
   </entry>
 </feed>
