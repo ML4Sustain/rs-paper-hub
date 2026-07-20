@@ -4,12 +4,170 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-17T03:57:15Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 21 entries</subtitle>
+  <updated>2026-07-20T03:13:01Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 18 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>DELUGE: Towards Continental-Scale Daily Pluvial Flood Damage Prediction via Interpretable Conditioning on Foundation Model Embeddings</title>
+    <link href="http://arxiv.org/abs/2607.16050v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.16050v1</id>
+    <published>2026-07-17T00:00:00Z</published>
+    <updated>2026-07-17T00:00:00Z</updated>
+    <author>
+      <name>Yuya Kawakami</name>
+    </author>
+    <author>
+      <name>Daniel Cayan</name>
+    </author>
+    <author>
+      <name>Dongyu Liu</name>
+    </author>
+    <author>
+      <name>Kwan-Liu Ma</name>
+    </author>
+    <author>
+      <name>Tom Corringham</name>
+    </author>
+    <summary type="text">Pluvial (rainfall-driven) flooding accounts for 45% of National Flood Insurance Program (NFIP) claims in the United States and is harder to predict than its riverine and coastal counterparts, with existing approaches limited to coarse resolution, regional domains, or computationally intensive process-based models unsuitable for daily continental-scale use. We present DELUGE, a multimodal deep learning framework for daily pluvial flood damage prediction at ~1 km resolution and national scale, trained on spatially and temporally corrected NFIP claims (2017-2022) and structured around the hazard, exposure, and vulnerability components of disaster risk. Rather than blanket coverage of the Conterminous United States (CONUS), we model the top 100 highest-claim 75 km cells, distributed nationwide and accounting for ~81% of total pluvial flood claims. Our architectural novelty is a pair of parametric modules in the hydrometeorology branch, a Value Modulator and a Temporal Modulator, conditioned on terrain descriptors and AlphaEarth foundation-model embeddings, that expose directly inspectable hydrological response parameters and provide architecture-level interpretability-by-design. Under a spatial block holdout, DELUGE outperforms tuned Random Forest, XGBoost, and LightGBM baselines by 9% to 30% on a dollar-weighted area under the precision-recall curve (PR-AUC), a metric that emphasizes the rare, high-cost claims of greatest operational interest. Beyond DELUGE, we argue this interpretable conditioning scheme is a transferable pattern for integrating foundation-model embeddings into other geospatial prediction tasks.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>More with Less: a Large Scale Remote Sensing VLM with a Simple Recipe</title>
+    <link href="http://arxiv.org/abs/2607.15942v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.15942v1</id>
+    <published>2026-07-17T00:00:00Z</published>
+    <updated>2026-07-17T00:00:00Z</updated>
+    <author>
+      <name>Stefan Maria Ailuro</name>
+    </author>
+    <author>
+      <name>Mario Markov</name>
+    </author>
+    <author>
+      <name>Mohammad Mahdi</name>
+    </author>
+    <author>
+      <name>Luc Van Gool</name>
+    </author>
+    <author>
+      <name>Danda Pani Paudel</name>
+    </author>
+    <summary type="text">Remote sensing vision-language models are increasingly expected to support open-ended reasoning over Earth Observation data and a variety of tasks. Most recent progress in this area has been driven by remote-sensing-specific architectural designs, often introducing new encoders, alignment modules, or task-specific fusion mechanisms. In this work, we challenge the necessity of such architectural specialization. We show that a generally capable vision-language model can achieve competitive or state-of-the-art performance at challenging remote sensing benchmarks, provided that it is trained at sufficient scale across diverse data and tasks. Our model uses a single language policy that can either answer directly in text or invoke a localization tool for segmentation and grounding. To train this heterogeneous behaviour, we employ a multi-task reinforcement learning framework with adaptive task rewards covering multiple-choice VQA, free-form VQA, captioning, detection, and segmentation across a large variety of input types. Our approach achieves competitive results across a broad set of benchmarks, including high-resolution, multi-temporal, multi-modal and multi-view tasks. Further, as training data scales, our experiments show consistent improvements across most tasks both in and out of distribution, which correlate with per-task data diversity. These findings suggest that, for remote sensing VLMs, data scale is more important than architectural novelty.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;IC;VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>AgentFAIR: A Multi-Agent Collaborative Framework for FAIRness Evaluation of Geospatial Datasets</title>
+    <link href="http://arxiv.org/abs/2607.15781v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.15781v1</id>
+    <published>2026-07-17T00:00:00Z</published>
+    <updated>2026-07-17T00:00:00Z</updated>
+    <author>
+      <name>Ming Chen</name>
+    </author>
+    <author>
+      <name>Pranav Pai</name>
+    </author>
+    <summary type="text">Geospatial datasets support applications from urban planning to climate modeling, yet consistent assessment of FAIR compliance is difficult. Existing evaluators use different rubrics and evidence sources and may fail on JavaScript-rendered pages or repository-specific identifiers. For 50 datasets from 10 repositories, the standard deviation of normalized scores across available tools averages 15.0 percentage points and reaches 30.3 for one dataset. Because these outputs are not equivalent measurements, we use them to characterize disagreement and failure modes, not comparative accuracy. We present AgentFAIR, a multi-agent framework combining structured metadata extraction with 13 sub-principle-specific LLM evaluators. Each produces a 0-3 maturity score, cited evidence, and recommendations; a critic checks evidence and consistency and can request targeted re-evaluation. Mean Findability, Accessibility, Interoperability, and Reusability scores are 79.7%, 70.4%, 45.3%, and 72.0%. Rank correlations with four baseline tools range from 0.31 to 0.61; the FAIR-enough comparison is not statistically significant. On a 10-dataset repeated-run subset, sub-principle agreement averages 89% (standard deviation: 3 percentage points), versus 71% without the critic. A preliminary 15-dataset expert study yields Fleiss' kappa of 0.71 and 82% alignment with expert consensus. API cost is approximately USD 0.054 per dataset. These results support auditability and feasibility, while the limited benchmark, incomplete ablations, and single-model-family validation constrain claims about accuracy and generalization.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+    <category term="cs.ET; cs.MA" />
+  </entry>
+  <entry>
+    <title>GeoChrono: Benchmarking and Rethinking Long-Term Temporal Understanding in Remote Sensing</title>
+    <link href="http://arxiv.org/abs/2607.15768v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.15768v1</id>
+    <published>2026-07-17T00:00:00Z</published>
+    <updated>2026-07-17T00:00:00Z</updated>
+    <author>
+      <name>Yujie Li</name>
+    </author>
+    <author>
+      <name>Jiancheng Pan</name>
+    </author>
+    <author>
+      <name>Zhiwei Wei</name>
+    </author>
+    <author>
+      <name>Jiuniu Wang</name>
+    </author>
+    <author>
+      <name>Mugen Peng</name>
+    </author>
+    <author>
+      <name>Wenjia Xu</name>
+    </author>
+    <summary type="text">Remote sensing offers an unparalleled vantage point for observing the Earth's long-term surface evolution, yet it demands that a model not only perceive land cover at isolated moments, but also track changes, memorize evolution histories, and reason across time and space. However, existing studies lack a systematic evaluation that dissects these distinct competencies. To fill this gap, we introduce ChronoBench, a multidimensional benchmark that decomposes this task into four progressive cognitive levels (i.e., Land Cover Perception, Temporal Recognition, Long-Term Memory, and Spatio-Temporal Reasoning). The ChronoBench comprises 12 sub-tasks and 17,689 rigorously validated QA (Question-Answer) pairs. Extensive evaluations reveal that mainstream MLLMs fall drastically behind human experts, with Long-Term Memory emerging as the most critical bottleneck. Motivated by this finding, we further propose GeoChrono, an MLLM with enhanced capabilities for tracing, memorizing, and reasoning about long-term geographic evolution. Leveraging the physical prior that geographic parcels remain spatially fixed while their semantics evolve, we design a Temporal Trajectory Encoder~(TempEnc) that constructs per-location temporal trajectories for dedicated land cover evolution modeling, and we introduce a Coarse-to-Fine Token Compressor~(C2FComp) that adaptively preserves dynamic regions while compressing the static background. To support training, we also construct ChronoInstruct, a 104K-sample instruction-tuning dataset spanning all competency levels for training. GeoChrono achieves state-of-the-art performance on ChronoBench, surpassing the leading commercial MLLMs by over 20%, while C2FComp reduces visual tokens by over 56% while retaining GeoChrono's 94.6% performance. The code and data will be available at https://github.com/IntelliSensing/GeoChrono</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/IntelliSensing/GeoChrono"&gt;https://github.com/IntelliSensing/GeoChrono&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ACM MM 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Mid- and long-wavelength infrared computational ghost spectroscopy</title>
+    <link href="http://arxiv.org/abs/2607.15725v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.15725v1</id>
+    <published>2026-07-17T00:00:00Z</published>
+    <updated>2026-07-17T00:00:00Z</updated>
+    <author>
+      <name>Linzhen He</name>
+    </author>
+    <author>
+      <name>Han Wu</name>
+    </author>
+    <author>
+      <name>Wei Deng</name>
+    </author>
+    <author>
+      <name>Mingzhu She</name>
+    </author>
+    <author>
+      <name>Bo Hu</name>
+    </author>
+    <author>
+      <name>Zunwang Bo</name>
+    </author>
+    <author>
+      <name>Shensheng Han</name>
+    </author>
+    <author>
+      <name>Weili Zhang</name>
+    </author>
+    <author>
+      <name>Houkun Liang</name>
+    </author>
+    <author>
+      <name>Goëry Genty</name>
+    </author>
+    <summary type="text">Spectral-domain ghost imaging enables high-resolution spectroscopy with a single-pixel detector. The technique does not rely on spectrally resolved detectors, which makes it inherently robust against turbulence and particularly adapted to weak-light conditions. These features are very attractive for spectral imaging in the mid-infrared region which hosts numerous molecular absorption features but lacks highly sensitive detectors. The implementation of spectral ghost imaging in the mid-infrared has however been limited by the absence of suitable light sources and detectors capable of generating and measuring spectral fluctuations in real time. Here, we demonstrate spectral-domain computational ghost imaging in the mid-infrared based on a nonlinear frequency downconversion scheme. Pre-programmed spectral patterns imposed on broadband light at 1.5 mm using a programmable spectral filter are transferred into the mid-infrared through difference-frequency generation in a nonlinear crystal. This enables computational ghost spectroscopy with a spectral resolution of 0.62 cm-1 using a single-pixel mid-infrared detector. The method is flexible, broadly applicable and, as proof of concept, we demonstrate ghost spectroscopy in mid-wavelength infrared and long-wavelength infrared bands using the nonlinear frequency conversion in chirped-poling lithium niobate and ZnGeP2 crystals, respectively. Our approach provides a new avenue for mid-infrared spectroscopy, remote sensing and spectral imaging.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 23 pages, 8 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="physics.optics" />
+  </entry>
+  <entry>
+    <title>BCG-Former: Toward Pareto-Efficient Hyperspectral Image Classification via Band-Contextual Gating</title>
+    <link href="http://arxiv.org/abs/2607.15639v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.15639v1</id>
+    <published>2026-07-17T00:00:00Z</published>
+    <updated>2026-07-17T00:00:00Z</updated>
+    <author>
+      <name>Gaurav Sharma</name>
+    </author>
+    <author>
+      <name>Eungjoo Lee</name>
+    </author>
+    <summary type="text">Hyperspectral image (HSI) classification systems are increasingly deployed on platforms with strict computational budgets, such as UAVs and small spaceborne sensors. In these settings, accuracy alone is not enough; the model must also run within tight latency and memory constraints. Most recent HSI classifiers, however, focus on accuracy and pay relatively little attention to these constraints. We propose BCG-Former, a lightweight CNN-Transformer hybrid that targets this trade-off. The model introduces three innovations: (1) Band-Contextual Gating (BCG) for adaptive spectral recalibration using local inter-band context and learnable temperature sharpening, (2) a spectral summary token that bridges spectral and spatial features, and (3) single-pass Band-RoPE combined with linear attention for efficient joint representation learning. Evaluated on classical airborne (Pavia University, Salinas, Indian Pines, Houston 2013/2018) and UAV-borne benchmark datasets (WHU-Hi-LongKou, HongHu, and HanChuan), BCG-Former achieves over-all accuracy ranging from 91.51% on Houston 2018 to 99.49% on Houston 2013, while maintaining sub-millisecond inference latency (0.91-0.95ms) and using only 0.10-0.23M parameters. Across all eight benchmarks, BCG-Former consistently resides on or near the Pareto frontier of accuracy versus latency, outperforming or matching recent CNN-, Transformer-, and Mamba-based methods at a fraction of their computational cost. Ablation studies confirm that all three components are complementary, with BCG providing the largest individual contribution. These results establish BCG-Former as a strong accuracy-efficiency Pareto candidate for real-time and large-scale remote sensing applications.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>AE-UAV: An Air-to-Air Event-Based UAV Tracking Benchmark and a Real-Time Frequency-Domain Tracker</title>
     <link href="http://arxiv.org/abs/2607.14726v1" rel="alternate" type="text/html" />
@@ -306,244 +464,5 @@
     <summary type="text">Self-supervision is a powerful technique for learning visual representations from unlabeled data. Existing techniques primarily adopt a two-stage approach for self-supervised learning (SSL): a pretraining stage on unlabeled data followed by a finetuning stage on labeled data. While this pipeline has demonstrated extreme effectiveness, the interaction between self-supervised and supervised learning objectives remains insufficiently understood. In this work, we systematically investigate whether jointly optimizing the self-supervised and supervised objectives during training provides a better alternative. We compare two training paradigms: (1) the aforementioned pretraining followed by finetuning (PFT) and (2) joint training (JT), where self-supervised and supervised losses are optimized simultaneously in the same network. Across eight representative SSL methods and diverse computer vision tasks on natural, medical, crisis response, and remote sensing data, we evaluate performance under varying percentages of labeled data. Our results reveal that the relative effectiveness of PFT and JT depends strongly on the task at hand, the availability of labeled data, and the complexity of the domain. We find that JT consistently improves data and training efficiency while being robust in low-label settings, while PFT is more reliable in more specialized domains. We further analyze representation quality, robustness, and cross-domain generalization, providing new insights into how self-supervised and supervised objectives interact during optimization. We establish a comprehensive empirical benchmark for hybrid SSL-based semi-supervised learning and offer practical guidance for selecting appropriate training strategies across diverse vision applications.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>A Multimodal Dataset for Large Language Model Applications in the Energy Domain</title>
-    <link href="http://arxiv.org/abs/2607.11459v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.11459v1</id>
-    <published>2026-07-13T00:00:00Z</published>
-    <updated>2026-07-13T00:00:00Z</updated>
-    <author>
-      <name>Costas Mylonas</name>
-    </author>
-    <author>
-      <name>Magda Foti</name>
-    </author>
-    <summary type="text">This paper presents the mAIEnergy dataset, an open-access, multimodal corpus developed to support Large Language Model (LLM) applications in the energy sector. The dataset integrates approximately 50,000 textual documents, 20,000 images, 25 million numerical time series records, and 2 million geospatial and relational data entries. It includes policy and regulatory texts, scientific articles and news articles, satellite and contextual imagery, electricity system measurements, weather observations, statistical indicators, and geospatial representations of energy infrastructure and related entities. All data have been harmonized into structured, ready-to-use formats, accompanied by consistent metadata and reproducible data retrieval and preparation workflows. The dataset can serve as a foundational energy knowledge base, allowing energy stakeholders to integrate additional open-source or proprietary data. The mAIEnergy dataset adheres to Findable, Accessible, Interoperable, and Reusable (FAIR) principles, enhancing its applicability for AI-driven energy research, modeling, and decision-making.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="eess.SY" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Potential Solar Precursors to Magnetic Switchbacks</title>
-    <link href="http://arxiv.org/abs/2607.11431v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.11431v1</id>
-    <published>2026-07-13T00:00:00Z</published>
-    <updated>2026-07-13T00:00:00Z</updated>
-    <author>
-      <name>Durgesh Tripathi</name>
-    </author>
-    <author>
-      <name>Maria S. Madjarska</name>
-    </author>
-    <author>
-      <name>Judy Karpen</name>
-    </author>
-    <author>
-      <name>Marco Velli</name>
-    </author>
-    <author>
-      <name>Clara Froment</name>
-    </author>
-    <author>
-      <name>Etienne Pariat</name>
-    </author>
-    <author>
-      <name>Spiros Patsourakos</name>
-    </author>
-    <author>
-      <name>Nour E. Raouafi</name>
-    </author>
-    <author>
-      <name>Alexis P. Rouillard</name>
-    </author>
-    <author>
-      <name>Alphonse C. Sterling</name>
-    </author>
-    <author>
-      <name>Kostas Tziotziou</name>
-    </author>
-    <author>
-      <name>Peter F. Wyper</name>
-    </author>
-    <summary type="text">The origin of magnetic switchbacks-large-amplitude, spherically polarized magnetic-field fluctuations with local polarity inversions shown to be nearly ubiquitous in the inner heliosphere by Parker Solar Probe-is presently one of the most outstanding open questions in solar and heliospheric science. The occurrence of these structures in the young solar wind is a topic of active research, focusing not only on their characteristics and evolution but also on unraveling the puzzle of their origin. We first discuss the potential influence on switchback (SB) formation of large-scale coronal dynamics and restructuring processes that shape and regulate the extended solar corona. Following that, we review the dynamics, physical properties, occurrence rate, and energetics of numerous possible precursor small-scale dynamic events that occur throughout the solar atmosphere, emphasizing their possible roles in creating SBs. Finally, we discuss some recent studies attempting to connect in situ observations of SBs and SB patches with remote-sensing observations, and the related challenges in identifying solar wind source regions precisely and linking in situ observations to transient solar phenomena. We also clarify the terminology used by the solar community to describe small-scale solar phenomena.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 86 pages, 20 figrues, accepted for publication in Space Science Reviews&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="astro-ph.SR" />
-  </entry>
-  <entry>
-    <title>Uncertainty Quantification for EO Regression Tasks: Building Height, Tree Canopy Height and Above-ground Biomass Estimation</title>
-    <link href="http://arxiv.org/abs/2607.11412v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.11412v1</id>
-    <published>2026-07-13T00:00:00Z</published>
-    <updated>2026-07-13T00:00:00Z</updated>
-    <author>
-      <name>Ritu Yadav</name>
-    </author>
-    <author>
-      <name>Andrea Nascetti</name>
-    </author>
-    <author>
-      <name>Yifang Ban</name>
-    </author>
-    <summary type="text">Earth Observation regression tasks such as building height, canopy height, and above-ground biomass estimation underpin critical applications in urban planning, forest monitoring, and climate policy, where both accuracy and reliability are critical. Yet most deep learning models yield only deterministic predictions, providing no indication of per-pixel reliability. These regression tasks are inherently challenging due to heterogeneous land surfaces, skewed target distributions, sensor noise, and signal saturation at high target values, making uncertainty (UC) estimation essential for reliable inference. We address this gap by modeling aleatoric uncertainty using year-long Sentinel-1 SAR and Sentinel-2 MSI time series, proposing two complementary approaches: (i) Gaussian UC, which jointly predicts mean and standard deviation under a Gaussian assumption, and (ii) Quantile UC, which estimates the 10th, 50th, and 90th quantiles to capture asymmetric and heteroscedastic error distributions. Both models are evaluated on three representative EO regression tasks at 10 m spatial resolution. Results show that both approaches match or surpass deterministic benchmarks and existing global products, while delivering well-calibrated, interpretable, and operationally useful confidence estimates. Notably, both models outperform the current 10 m state-of-the-art uncertainty-aware model for canopy height estimation. Our implementation will be available at: https://github.com/RituYadav92/EO-Regression-Uncertainty-Estimation</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/RituYadav92/EO-Regression-Uncertainty-Estimation"&gt;https://github.com/RituYadav92/EO-Regression-Uncertainty-Estimation&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Self-supervised training for high-resolution close-range multispectral remote sensing imagery</title>
-    <link href="http://arxiv.org/abs/2607.11366v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.11366v1</id>
-    <published>2026-07-13T00:00:00Z</published>
-    <updated>2026-07-13T00:00:00Z</updated>
-    <author>
-      <name>Leon-Friedrich Thomas</name>
-    </author>
-    <author>
-      <name>Mikael Änäkkälä</name>
-    </author>
-    <author>
-      <name>Antti Lajunen</name>
-    </author>
-    <summary type="text">Although self-supervised learning (SSL) offers a promising way to reduce annotation effort in close-range remote sensing, its effectiveness for high-resolution multispectral unmanned aerial vehicle (UAV) imagery remains underexplored due to limited data. This study evaluated SSL pretraining for precision agriculture using cm-scale multispectral drone imagery collected across multiple sensors, years, and regions. Transformer-based encoders were pretrained with Momentum Contrast v3 (MoCo-v3) and Masked Autoencoders on a harmonized dataset combining msuav500K with newly collected multi-year UAV imagery from agricultural fields in Finland. Pretraining used four spectral bands (Green, Red, Red-Edge, Near-Infrared) for cross-sensor compatibility. The models were evaluated on crop-weed semantic segmentation using the WeedMap dataset with 5--100% training data. The following two subsets served as downstream tasks: Task A (Germany, RedEdge-M), where all pretrained models were compared under partial and full fine-tuning, and Task B (Switzerland, Sequoia), where the best encoder from Task A was assessed. Our Swin Transformer pretrained with MoCo-v3 achieved the strongest performance on both tasks, surpassing the Swin Transformer model of Doornbos et al. pretrained on a pre-release of msuav500K. Our pretrained Swin Transformer further demonstrated cross-sensor and cross-region generalization. We additionally provide a public multi-year multispectral UAV dataset from Finland to support future research.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Difference-Driven Gating: Adaptive Feature Fusion for U-Net Decoder</title>
-    <link href="http://arxiv.org/abs/2607.11096v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.11096v1</id>
-    <published>2026-07-13T00:00:00Z</published>
-    <updated>2026-07-13T00:00:00Z</updated>
-    <author>
-      <name>Kai Li</name>
-    </author>
-    <author>
-      <name>Xuechao Zou</name>
-    </author>
-    <author>
-      <name>Jiashen Fu</name>
-    </author>
-    <author>
-      <name>Zijun Yan</name>
-    </author>
-    <author>
-      <name>Xintong Wang</name>
-    </author>
-    <author>
-      <name>Xiaolin Hu</name>
-    </author>
-    <summary type="text">The U-Net style models have been widely used in many applications. A critical step in these models is to reconstruct the lower-level features using a top-down decoder. This reconstruction requires precise fusion of high-level semantics and low-level details. Existing attention-based fusion methods typically derive attention weights from the top-down decoder features (global) alone or the correlation between the top-down decoder features and the bottom-up encoder features (local), then modulate the encoder features using these weights. In this work, we explore a different paradigm: deriving attention weights from the difference between the two feature streams. To this end, we propose two difference-based gating approaches: Feature-difference gating (FDG), which directly uses the absolute difference between global and local features to generate adaptive gating maps, and Entropy-difference gating (EDG), which measures the representational certainty of each stream via information entropy and uses their signed entropy difference to derive the attention weights. Both methods produce coupled gating maps that simultaneously modulate the global and local features. Experiments on different tasks including medical image segmentation, remote sensing image cloud removal and speech separation showed that both methods outperformed existing attention-based fusion methods, and EDG performed better. The results suggested a new paradigm for multi-scale feature fusion in the U-Net style structures.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages, 13 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="cs.SD; Machine Learning (Statistics)" />
-  </entry>
-  <entry>
-    <title>The Emerging Paradigm of Geospatial Foundation Models: From Pre-Training to Agentic Reasoning</title>
-    <link href="http://arxiv.org/abs/2607.12177v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.12177v1</id>
-    <published>2026-07-13T00:00:00Z</published>
-    <updated>2026-07-13T00:00:00Z</updated>
-    <author>
-      <name>Shelley Cazares</name>
-    </author>
-    <summary type="text">The analysis of satellite and aerial imagery has entered a new era with the advent of foundation models. This paper describes the concept of Geospatial Foundation Models (GeoFMs), which are artificial intelligence/machine learning (AI/ML) models pre-trained on massive geospatial datasets through varied methodologies. We first articulate the core paradigm shift that GeoFMs enable: a separation of duties, where large-scale model providers perform the computationally intensive pretraining, allowing domain experts to rapidly fine-tune or prompt these models for specific, mission-critical tasks. This approach democratizes access to state-of-the-art AI/ML while maintaining the security and confidentiality of the downstream task. We then explore the novel capabilities unlocked by different types of GeoFMs, distinguishing between the finetunable vision models produced by self-supervised techniques like masked auto-encoding, and the vision-language models produced by contrastive learning which enable zero-shot tasks like open-vocabulary image analysis. Next, we discuss the practical considerations for operationalizing GeoFMs, from performance-cost analysis to the broader MLOps ecosystem. To that end, we introduce a taxonomy of model adaptation strategies and propose a framework for domain experts to select the most cost-effective adaptation approach for their particular mission set. Finally, we present a forward-looking vision of Agentic Geospatial Reasoning, where Large Language Models act as intelligent orchestrators, leveraging GeoFMs as tools to answer high-level user queries in natural language and automate complex analytical workflows, moving the field from perception to cognition.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Lecture Notes in Computer Science (LNCS)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Align and Segment: Unsupervised Learning for Building Segmentation From Misaligned Labels</title>
-    <link href="http://arxiv.org/abs/2607.10841v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.10841v1</id>
-    <published>2026-07-12T00:00:00Z</published>
-    <updated>2026-07-12T00:00:00Z</updated>
-    <author>
-      <name>Venkanna Babu Guthula</name>
-    </author>
-    <author>
-      <name>Oswin Krause</name>
-    </author>
-    <author>
-      <name>Dimitri Gominski</name>
-    </author>
-    <author>
-      <name>Hui Zhang</name>
-    </author>
-    <author>
-      <name>Johan Mottelson</name>
-    </author>
-    <author>
-      <name>Ankit Kariryaa</name>
-    </author>
-    <author>
-      <name>Nico Lang</name>
-    </author>
-    <author>
-      <name>Christian Igel</name>
-    </author>
-    <summary type="text">Supervised learning for image segmentation typically requires spatially aligned image and label sets. When images and labels originate from different sources, the pairing may be misaligned, which can significantly deteriorate the performance of the learned models. This is especially common in remote sensing, when aerial or satellite images are co-registered with labels from another source (e.g., OpenStreetMap). In this work, we propose a novel approach for training on misaligned labels, where we simultaneously learn the label alignment. Our align and segment (AnS) approach builds on the spatial transformer module to transform the misaligned labels using an affine transformation to provide a better learning target for a canonical semantic segmentation network. We prevent shortcut learning of misaligned labels in these semantic segmentation networks through a self-supervised regularization loss and show that it is complementary to data augmentation, especially for systematically misaligned training data. A decisive characteristic of our AnS approach is that it learns without requiring any golden labels. We experimentally show on both synthetic and real-world data from different cities that our approach enables high-quality building segmentation and precise label-image alignment at the same time. Code and derived datasets are available at https://github.com/venkanna37/align-and-segment</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/venkanna37/align-and-segment"&gt;https://github.com/venkanna37/align-and-segment&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; main draft with references is 17 pages&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>WeaveEarth: Structured Evidence Construction and Reasoning for Training-Free UHR Remote Sensing Understanding</title>
-    <link href="http://arxiv.org/abs/2607.10120v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.10120v1</id>
-    <published>2026-07-11T00:00:00Z</published>
-    <updated>2026-07-11T00:00:00Z</updated>
-    <author>
-      <name>Xianzhi Ma</name>
-    </author>
-    <author>
-      <name>Shujun Wang</name>
-    </author>
-    <author>
-      <name>Xiaohan Li</name>
-    </author>
-    <author>
-      <name>Hao Liu</name>
-    </author>
-    <author>
-      <name>Changhua Pei</name>
-    </author>
-    <author>
-      <name>Jianhui li</name>
-    </author>
-    <summary type="text">Ultra-High-Resolution (UHR) remote sensing image understanding requires Vision-Language Models (VLMs) to capture both the global scene layout and sparse yet task-critical local details under limited computational budgets. Existing methods mainly follow two paradigms. One is passive perception, which relies on resolution expansion or token compression and may therefore discard fine-grained details. The other is active perception, which depends on multi-round zooming and search, but suffers from high latency, contextual fragmentation, and error accumulation. We argue that a more effective path toward UHR understanding lies not in accessing more, but in organizing better. To this end, we propose WeaveEarth, a training-free framework that reformulates UHR understanding as a problem of structured evidence construction and reasoning under global context constraints. Specifically, WeaveEarth first employs Global-Aware Evidence Construction to select a compact, low-redundancy, and spatially complementary Minimal Support Evidence Set. It then introduces Structured Evidence Reasoning, which weaves local evidence, spatial metadata, and relative topology into a unified reasoning interface, thereby enhancing the VLM's ability to perform global-local joint reasoning. Extensive experiments show that WeaveEarth consistently outperforms strong baselines and existing UHR methods across multiple UHR remote sensing benchmarks and multiple frozen VLM backbones. Code is available at https://github.com/XianZhi-Ma/WeaveEarth.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/XianZhi-Ma/WeaveEarth"&gt;https://github.com/XianZhi-Ma/WeaveEarth&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>DynaFilter: Cloud-driven Dynamic Filtering for Satellite Edge Intelligence</title>
-    <link href="http://arxiv.org/abs/2607.10098v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.10098v1</id>
-    <published>2026-07-11T00:00:00Z</published>
-    <updated>2026-07-11T00:00:00Z</updated>
-    <author>
-      <name>Ziyang Zhang</name>
-    </author>
-    <author>
-      <name>Jie Liu</name>
-    </author>
-    <author>
-      <name>Luca Mottola</name>
-    </author>
-    <summary type="text">Modern satellite edge systems, including those performing remote sensing tasks such object detection and tracking, are characterized by severely limited bandwidth and intermittent connections, making continuous data transmission to the cloud impractical. Existing edge-cloud systems, however, either require heavy pre-processing before analysis, for instance, full decompression of imagery data, or transmit all compressed data regardless of relevance. To address these challenges, we design DynaFilter, a dynamic filtering technique that enables satellite edge devices to perform selective region-of-interest (RoI) inference directly in the compressed-domain, without full decompression. Our key insight is that low-level compression syntax, specifically DC coefficients/AC energy in JPEG images and motion vectors in video streams, exhibits strong correlations with high-level semantic queries. By establishing a precise mapping between cloud query semantics and multimodal compressed-domain features, DynaFilter enables the edge to identify and transmit only relevant data associated to RoIs. Extensive evaluations show that DynaFilter reduces the total volume of pixel data for decoding and subsequent inference by 1.6x-7.1x for images, and achieves 92.0% bandwidth savings for video streams compared to state-of-the-art baselines. Furthermore, it decreases energy consumption by 43.1-88.6% on target devices and achieves a 1.6x-3.0x speedup in inference latency.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ACM MobiCom 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
   </entry>
 </feed>

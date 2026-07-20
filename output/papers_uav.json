@@ -6382,5 +6382,24 @@
     "_added_date": "2026-07-17",
     "Category": "Dataset",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-07-17",
+    "Month": 7,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "BCG-Former: Toward Pareto-Efficient Hyperspectral Image Classification via Band-Contextual Gating",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2607.15639v1",
+    "Abstract": "Hyperspectral image (HSI) classification systems are increasingly deployed on platforms with strict computational budgets, such as UAVs and small spaceborne sensors. In these settings, accuracy alone is not enough; the model must also run within tight latency and memory constraints. Most recent HSI classifiers, however, focus on accuracy and pay relatively little attention to these constraints. We propose BCG-Former, a lightweight CNN-Transformer hybrid that targets this trade-off. The model introduces three innovations: (1) Band-Contextual Gating (BCG) for adaptive spectral recalibration using local inter-band context and learnable temperature sharpening, (2) a spectral summary token that bridges spectral and spatial features, and (3) single-pass Band-RoPE combined with linear attention for efficient joint representation learning. Evaluated on classical airborne (Pavia University, Salinas, Indian Pines, Houston 2013/2018) and UAV-borne benchmark datasets (WHU-Hi-LongKou, HongHu, and HanChuan), BCG-Former achieves over-all accuracy ranging from 91.51% on Houston 2018 to 99.49% on Houston 2013, while maintaining sub-millisecond inference latency (0.91-0.95ms) and using only 0.10-0.23M parameters. Across all eight benchmarks, BCG-Former consistently resides on or near the Pareto frontier of accuracy versus latency, outperforming or matching recent CNN-, Transformer-, and Mamba-based methods at a fraction of their computational cost. Ablation studies confirm that all three components are complementary, with BCG providing the largest individual contribution. These results establish BCG-Former as a strong accuracy-efficiency Pareto candidate for real-time and large-scale remote sensing applications.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{sharma2026bcgformer,\n  title={BCG-Former: Toward Pareto-Efficient Hyperspectral Image Classification via Band-Contextual Gating},\n  author={Gaurav Sharma and Eungjoo Lee},\n  journal={arXiv preprint arXiv:2607.15639v1},\n  year={2026},\n  url={http://arxiv.org/abs/2607.15639v1}\n}",
+    "Authors": "Gaurav Sharma, Eungjoo Lee",
+    "_added_date": "2026-07-20",
+    "Category": "Method",
+    "_tasks": "CLS"
   }
 ]
