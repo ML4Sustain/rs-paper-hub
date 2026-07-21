@@ -6420,5 +6420,24 @@
     "_added_date": "2026-07-21",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-07-19",
+    "Month": 7,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "SkyVLaM: Multimodal Large Language Model for UAV Video Understanding in Remote Sensing",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2607.17386v1",
+    "Abstract": "Recent advances in Multimodal Large Language Models (MLLMs) have significantly improved remote sensing (RS) multimodal understanding. Language-conditioned segmentation is crucial for fine-grained target understanding in Unmanned Aerial Vehicle (UAV) videos. However, this task remains challenging due to the prevalence of small, visually ambiguous targets and dynamic aerial perspectives. In this paper, we propose SkyVLaM, a multimodal large language model for UAV video understanding. SkyVLaM constructs sparse tokens directly from patch-level video representations through a temporal basis perceiver, regularizes the sparse basis to encourage complementary temporal cues, and adaptively selects a temporally coherent dense segment for high-resolution inspection. The resulting sparse and dense tokens are jointly processed by a large language model for query-conditioned segmentation. We further build SkyVid, consisting of SkyVid-VGCG and SkyVid-RVOS for video grounded conversation generation and referring video object segmentation, respectively. SkyVid contains 101 videos, 33.6K frames, and 1.53M pixel-level object instances. Experiments show that SkyVLaM provides a more effective allocation of the visual token budget and improves language-conditioned video segmentation in UAV scenarios.",
+    "code": "",
+    "Publication": "WAICA 2026",
+    "BibTex": "@article{jing2026skyvlam,\n  title={SkyVLaM: Multimodal Large Language Model for UAV Video Understanding in Remote Sensing},\n  author={Kaiwen Jing and Ruixu Jia and Bingyao Li and Ruizhe Ou and Ming Wu and Chuang Zhang},\n  journal={arXiv preprint arXiv:2607.17386v1},\n  year={2026},\n  url={http://arxiv.org/abs/2607.17386v1}\n}",
+    "Authors": "Kaiwen Jing, Ruixu Jia, Bingyao Li, Ruizhe Ou, Ming Wu, Chuang Zhang",
+    "_added_date": "2026-07-21",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]
