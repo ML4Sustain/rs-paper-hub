@@ -20119,5 +20119,24 @@
     "_added_date": "2026-07-20",
     "Category": "Method",
     "_tasks": "CLS"
+  },
+  {
+    "Type": "Image and Video Processing",
+    "Subtype": "",
+    "Date": "2026-07-18",
+    "Month": 7,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "A Unified Multisensor Machine-Learning Framework for Live Fuel Moisture Content Retrieval",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2607.16714v1",
+    "Abstract": "Live fuel moisture content controls vegetation flammability and is a high-importance variable in fire management. Nevertheless, it remains difficult to estimate and map over large areas due to the concentration of field observations in specific regions. We develop a unified machine-learning framework that estimates live fuel moisture content from satellite vegetation indices, meteorological variables, topography and seasonal predictors. GlobeLFMC 2.0 measurements are matched to Terra and Aqua MODIS, VIIRS, Landsat 8/9, Sentinel-2 and Sentinel-3 surface-reflectance products, combining the long MODIS record with finer-resolution recent observations. To account for differences among sensors, optical predictors are restricted to a common red, near-infrared and shortwave-infrared feature space; site--product combinations and field time series are screened for remote-sensing suitability; and spectral response function diagnostics are combined with target-independent empirical reflectance calibration toward a Sentinel-2 reference domain. Preliminary single-product experiments show that weather, topography and cyclic day-of-year provide most of the predictive gain beyond vegetation indices, whereas optional product-specific predictors do not justify their additional dependencies. Separate Grass, Shrub and Tree models are trained with Random Forest and XGBoost regressors. Under the primary validation design, which withholds observation dates from sites represented in training, the best models achieve pooled R2 values of 0.715, 0.693 and 0.700 for Grass, Shrub and Tree, respectively. The framework can incorporate additional optical sensors when compatible reflectance bands, documented spectral responses and sufficient overlap observations are available for calibration and validation.",
+    "code": "",
+    "Publication": "18 pages, 5 figures",
+    "BibTex": "@article{pampanoni2026a,\n  title={A Unified Multisensor Machine-Learning Framework for Live Fuel Moisture Content Retrieval},\n  author={Valerio Pampanoni and Emilio Chuvieco and Alvise Ferrari and Giovanni Laneve and Simone Saquella},\n  journal={arXiv preprint arXiv:2607.16714v1},\n  year={2026},\n  url={http://arxiv.org/abs/2607.16714v1}\n}",
+    "Authors": "Valerio Pampanoni, Emilio Chuvieco, Alvise Ferrari, Giovanni Laneve, Simone Saquella",
+    "_added_date": "2026-07-21",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]

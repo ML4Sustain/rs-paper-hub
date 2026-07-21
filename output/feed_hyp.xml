@@ -4,12 +4,38 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-20T04:33:21Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
+  <updated>2026-07-21T01:19:54Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>A Unified Multisensor Machine-Learning Framework for Live Fuel Moisture Content Retrieval</title>
+    <link href="http://arxiv.org/abs/2607.16714v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.16714v1</id>
+    <published>2026-07-18T00:00:00Z</published>
+    <updated>2026-07-18T00:00:00Z</updated>
+    <author>
+      <name>Valerio Pampanoni</name>
+    </author>
+    <author>
+      <name>Emilio Chuvieco</name>
+    </author>
+    <author>
+      <name>Alvise Ferrari</name>
+    </author>
+    <author>
+      <name>Giovanni Laneve</name>
+    </author>
+    <author>
+      <name>Simone Saquella</name>
+    </author>
+    <summary type="text">Live fuel moisture content controls vegetation flammability and is a high-importance variable in fire management. Nevertheless, it remains difficult to estimate and map over large areas due to the concentration of field observations in specific regions. We develop a unified machine-learning framework that estimates live fuel moisture content from satellite vegetation indices, meteorological variables, topography and seasonal predictors. GlobeLFMC 2.0 measurements are matched to Terra and Aqua MODIS, VIIRS, Landsat 8/9, Sentinel-2 and Sentinel-3 surface-reflectance products, combining the long MODIS record with finer-resolution recent observations. To account for differences among sensors, optical predictors are restricted to a common red, near-infrared and shortwave-infrared feature space; site--product combinations and field time series are screened for remote-sensing suitability; and spectral response function diagnostics are combined with target-independent empirical reflectance calibration toward a Sentinel-2 reference domain. Preliminary single-product experiments show that weather, topography and cyclic day-of-year provide most of the predictive gain beyond vegetation indices, whereas optional product-specific predictors do not justify their additional dependencies. Separate Grass, Shrub and Tree models are trained with Random Forest and XGBoost regressors. Under the primary validation design, which withholds observation dates from sites represented in training, the best models achieve pooled R2 values of 0.715, 0.693 and 0.700 for Grass, Shrub and Tree, respectively. The framework can incorporate additional optical sensors when compatible reflectance bands, documented spectral responses and sufficient overlap observations are available for calibration and validation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages, 5 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+  </entry>
   <entry>
     <title>BCG-Former: Toward Pareto-Efficient Hyperspectral Image Classification via Band-Contextual Gating</title>
     <link href="http://arxiv.org/abs/2607.15639v1" rel="alternate" type="text/html" />

@@ -4,12 +4,41 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-20T04:33:20Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 6 entries</subtitle>
+  <updated>2026-07-21T01:19:54Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 5 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>FUSAR-R1: A Large-Scale Reasoning Model for Intelligent Interpretation of SAR Images</title>
+    <link href="http://arxiv.org/abs/2607.16819v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.16819v1</id>
+    <published>2026-07-18T00:00:00Z</published>
+    <updated>2026-07-18T00:00:00Z</updated>
+    <author>
+      <name>Yi Yang</name>
+    </author>
+    <author>
+      <name>Xiaokun Zhang</name>
+    </author>
+    <author>
+      <name>Yuxuan Li</name>
+    </author>
+    <author>
+      <name>Ruyi Zhang</name>
+    </author>
+    <author>
+      <name>Xinpeng Zhou</name>
+    </author>
+    <author>
+      <name>Haipeng Wang</name>
+    </author>
+    <summary type="text">In recent years, large-scale vision-language models have been driving a paradigm shift in intelligent remote sensing image interpretation. By incorporating textual semantic information, the cognitive expression, semantic understanding, and human-computer interaction capabilities of interpretation models have been significantly improved, achieving initial progress in the field of Synthetic Aperture Radar (SAR) image interpretation. However, SAR images are affected by factors such as coherent imaging mechanisms, complex scattering characteristics, speckle noise interference, and target-background coupling, resulting in complex and variable image features with significant uncertainties and specializations. Existing SAR vision-language models do not yet possess the step-by-step analysis, logical judgment, and self-correction capabilities of human experts, making it difficult to support reliable intelligent interpretation in complex scenarios. To address this issue, this paper proposes a large-scale reasoning model, FUSAR-R1, for intelligent interpretation of SAR images. The model first constructs explicit chain-of-thought reasoning data by simulating the interpretation process of human experts and uses this data to guide instruction learning, thereby endowing the model with basic reasoning capabilities. Subsequently, a reinforcement learning strategy is introduced to optimize the model's outputs based on inference results, enabling self-correction and more reliable reasoning. Experimental results demonstrate that FUSAR-R1 consistently outperforms existing multimodal large-scale models across various SAR interpretation tasks, including target detection, target counting and classification, and land-cover category recognition.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;OD&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>DELUGE: Towards Continental-Scale Daily Pluvial Flood Damage Prediction via Interpretable Conditioning on Foundation Model Embeddings</title>
     <link href="http://arxiv.org/abs/2607.16050v1" rel="alternate" type="text/html" />
@@ -123,65 +152,6 @@
     <summary type="text">Recent advances in Vision-Language Models (VLMs) have significantly improved image geo-localization, yet existing models remain susceptible to landmark bias, causing them to overlook geographical cues or form spurious correlations, ultimately resulting in inaccurate localization. To systematically investigate this issue, we first design two quantitative metrics, Bias Intensity (BI) and Bias Harmfulness (BH), to characterize the impact of landmarks exerted on model reasoning, and establish a comprehensive benchmark, LandmarkBias-3K. To mitigate landmark bias, we further propose an evidence-driven reasoning framework, HoloGeo, to improve the reliability of geo-localization. HoloGeo is supported by a high-quality dataset, BF-30k, annotated with structured multi-evidence bias-free reasoning chains. By incorporating multi-dimensional rewards, HoloGeo explicitly encourages balanced attention over diverse visual cues and achieves evidence-driven joint reasoning. Extensive experiments demonstrate that HoloGeo not only maintains excellent performance on IM2GPS3K and YFCC4k but also significantly outperforms existing open-source VLMs on LandmarkBias-3K, validating its effectiveness for robust geospatial reasoning.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; GeoLoc&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>TerraLogic: A Benchmark for Hierarchical Geospatial Reasoning in Earth Observation</title>
-    <link href="http://arxiv.org/abs/2607.12497v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.12497v1</id>
-    <published>2026-07-14T00:00:00Z</published>
-    <updated>2026-07-14T00:00:00Z</updated>
-    <author>
-      <name>Yuhang Yan</name>
-    </author>
-    <author>
-      <name>Linchao Mou</name>
-    </author>
-    <author>
-      <name>Bokang Yang</name>
-    </author>
-    <author>
-      <name>Qingyu Li</name>
-    </author>
-    <summary type="text">Beyond perception, reasoning is essential in remote sensing for advanced interpretation, inference, and decision-making. Recent advances in large language models (LLMs) have enabled tool-augmented agents that leverage external tools to perform complex analytical tasks. However, existing studies in remote sensing primarily focus on perception-oriented tasks, leaving cognitive geospatial reasoning largely underexplored. To address this gap, we introduce TerraLogic, a benchmark for geospatial reasoning. TerraLogic comprises 545 scenario-driven, hierarchy-aware tasks, such as hazard vulnerability assessment, urban heat island analysis, and forest fragmentation dynamics, spanning optical, Synthetic Aperture Radar (SAR), and infrared (IR) imagery. It advances evaluation beyond recognition and monitoring toward cognitive-level geospatial analysis. To facilitate evaluation on TerraLogic, we further propose HieraPlan, a tool-augmented agent that organizes toolkits into functional hierarchies and performs fault-tolerant reasoning. HieraPlan enables structured abstraction, robust recovery from tool failures, and stable long-horizon planning. Extensive experiments demonstrate that current approaches struggle with hierarchical geospatial reasoning, while HieraPlan provides a strong baseline with improved reasoning, cross-modal generalization, and error handling. The dataset and agent code are publicly available at https://github.com/Ireliya/TerraLogic.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Ireliya/TerraLogic"&gt;https://github.com/Ireliya/TerraLogic&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages, 3 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>DM-KG: A Novel Method for Boosting Spatial Cognition of Vision-Language Models in Street View Imagery</title>
-    <link href="http://arxiv.org/abs/2607.12319v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.12319v1</id>
-    <published>2026-07-14T00:00:00Z</published>
-    <updated>2026-07-14T00:00:00Z</updated>
-    <author>
-      <name>Xinyue Xu</name>
-    </author>
-    <author>
-      <name>Zheng Zhang</name>
-    </author>
-    <author>
-      <name>Kunyang Ma</name>
-    </author>
-    <author>
-      <name>Ge Zhu</name>
-    </author>
-    <author>
-      <name>Lianshuai Cao</name>
-    </author>
-    <author>
-      <name>Lei Wang</name>
-    </author>
-    <author>
-      <name>Zixuan Li</name>
-    </author>
-    <author>
-      <name>Yi Cheng</name>
-    </author>
-    <summary type="text">As vision-language models (VLMs) are increasingly deployed in geospatial question answering and visual scene understanding, improving their spatial cognition capability on street view imagery for complex logical reasoning has emerged as a key research priority. However, existing VLMs frequently suffer from "spatial semantic hallucinations" when perceiving object locations, distances, and directions in real-world street view scenes. Furthermore, such errors are often recalcitrant to tracing and calibration, posing a critical bottleneck for their practical deployment in geospatial tasks. To address this pressing challenge, this study proposes DM-KG (Direction-Metric Knowledge Graph), a structurally grounded spatial representation framework for street view imagery. By explicitly extracting directional and metric relationships between entities from a single 2D image, this framework enhances the spatial reasoning accuracy of VLMs through a structured knowledge graph. Specifically, we integrate panoptic segmentation with metric depth estimation to robustly compute entity-level 3D spatial coordinates. Subsequently, we encode the clock azimuths and Euclidean distances of entity pairs into a JSON-formatted knowledge graph, which is injected into the VLM as an explicit geometric prior to guide spatial reasoning. Experimental results on public spatial question-answering (QA) benchmarks demonstrate that DM-KG reduces the mean absolute error (MAE) in distance estimation by 31.1% and the mean angular error in direction judgment by 65.8%, while simultaneously maintaining a high QA success rate. By establishing a complete, augmented reasoning pipeline, this research significantly improves the spatial cognitive capabilities of VLMs in street view scenarios, thereby providing a flexible, generalized, and interpretable framework for geographic visual question answering (GeoVQA) in open environments.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;SEG;3D&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>

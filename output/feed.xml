@@ -4,12 +4,132 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-20T04:33:20Z</updated>
+  <updated>2026-07-21T01:19:54Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 18 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Planning for Mission Efficiency, Robustness, and Resilience for Unmanned Autonomous Systems (UASs) in Contested Environments</title>
+    <link href="http://arxiv.org/abs/2607.17085v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.17085v1</id>
+    <published>2026-07-19T00:00:00Z</published>
+    <updated>2026-07-19T00:00:00Z</updated>
+    <author>
+      <name>Michael J. Gaiewski</name>
+    </author>
+    <author>
+      <name>Sergey N. Vecherin</name>
+    </author>
+    <author>
+      <name>Laurel P. Williams</name>
+    </author>
+    <author>
+      <name>Igor Linkov</name>
+    </author>
+    <summary type="text">Unmanned Autonomous Systems (UASs) can remotely sense targets across large-scale areas but may be vulnerable to threats in contested environments. Current approaches consider efficiency through UAS path planning, but missions prioritizing robustness (i.e., the capacity to withstand disruptions) and resilience (i.e., the ability to recover from disruptions) are rarely considered despite their ability to increase mission success. This paper presents robust and resilient strategies for route planning for a fleet of UASs in a heterogeneous threat landscape. By integrating components of robustness and resilience in route planning through allowing the UASs to overlap in the waypoint locations and dynamic mission adaptation, the probability of mission success of complete area coverage can be increased. The results show that a robustness-focused strategy shows significant improvement in probability of mission success over an efficiency-based strategy, and that a resilience-based strategy outperforms both the efficiency- and robustness- based strategies. The specified methodologies provide promising future directions of research to explicitly incorporate robustness and resilience into UAS mission planning.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="physics.soc-ph" />
+  </entry>
+  <entry>
+    <title>FUSAR-R1: A Large-Scale Reasoning Model for Intelligent Interpretation of SAR Images</title>
+    <link href="http://arxiv.org/abs/2607.16819v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.16819v1</id>
+    <published>2026-07-18T00:00:00Z</published>
+    <updated>2026-07-18T00:00:00Z</updated>
+    <author>
+      <name>Yi Yang</name>
+    </author>
+    <author>
+      <name>Xiaokun Zhang</name>
+    </author>
+    <author>
+      <name>Yuxuan Li</name>
+    </author>
+    <author>
+      <name>Ruyi Zhang</name>
+    </author>
+    <author>
+      <name>Xinpeng Zhou</name>
+    </author>
+    <author>
+      <name>Haipeng Wang</name>
+    </author>
+    <summary type="text">In recent years, large-scale vision-language models have been driving a paradigm shift in intelligent remote sensing image interpretation. By incorporating textual semantic information, the cognitive expression, semantic understanding, and human-computer interaction capabilities of interpretation models have been significantly improved, achieving initial progress in the field of Synthetic Aperture Radar (SAR) image interpretation. However, SAR images are affected by factors such as coherent imaging mechanisms, complex scattering characteristics, speckle noise interference, and target-background coupling, resulting in complex and variable image features with significant uncertainties and specializations. Existing SAR vision-language models do not yet possess the step-by-step analysis, logical judgment, and self-correction capabilities of human experts, making it difficult to support reliable intelligent interpretation in complex scenarios. To address this issue, this paper proposes a large-scale reasoning model, FUSAR-R1, for intelligent interpretation of SAR images. The model first constructs explicit chain-of-thought reasoning data by simulating the interpretation process of human experts and uses this data to guide instruction learning, thereby endowing the model with basic reasoning capabilities. Subsequently, a reinforcement learning strategy is introduced to optimize the model's outputs based on inference results, enabling self-correction and more reliable reasoning. Experimental results demonstrate that FUSAR-R1 consistently outperforms existing multimodal large-scale models across various SAR interpretation tasks, including target detection, target counting and classification, and land-cover category recognition.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;OD&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>A Unified Multisensor Machine-Learning Framework for Live Fuel Moisture Content Retrieval</title>
+    <link href="http://arxiv.org/abs/2607.16714v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.16714v1</id>
+    <published>2026-07-18T00:00:00Z</published>
+    <updated>2026-07-18T00:00:00Z</updated>
+    <author>
+      <name>Valerio Pampanoni</name>
+    </author>
+    <author>
+      <name>Emilio Chuvieco</name>
+    </author>
+    <author>
+      <name>Alvise Ferrari</name>
+    </author>
+    <author>
+      <name>Giovanni Laneve</name>
+    </author>
+    <author>
+      <name>Simone Saquella</name>
+    </author>
+    <summary type="text">Live fuel moisture content controls vegetation flammability and is a high-importance variable in fire management. Nevertheless, it remains difficult to estimate and map over large areas due to the concentration of field observations in specific regions. We develop a unified machine-learning framework that estimates live fuel moisture content from satellite vegetation indices, meteorological variables, topography and seasonal predictors. GlobeLFMC 2.0 measurements are matched to Terra and Aqua MODIS, VIIRS, Landsat 8/9, Sentinel-2 and Sentinel-3 surface-reflectance products, combining the long MODIS record with finer-resolution recent observations. To account for differences among sensors, optical predictors are restricted to a common red, near-infrared and shortwave-infrared feature space; site--product combinations and field time series are screened for remote-sensing suitability; and spectral response function diagnostics are combined with target-independent empirical reflectance calibration toward a Sentinel-2 reference domain. Preliminary single-product experiments show that weather, topography and cyclic day-of-year provide most of the predictive gain beyond vegetation indices, whereas optional product-specific predictors do not justify their additional dependencies. Separate Grass, Shrub and Tree models are trained with Random Forest and XGBoost regressors. Under the primary validation design, which withholds observation dates from sites represented in training, the best models achieve pooled R2 values of 0.715, 0.693 and 0.700 for Grass, Shrub and Tree, respectively. The framework can incorporate additional optical sensors when compatible reflectance bands, documented spectral responses and sufficient overlap observations are available for calibration and validation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages, 5 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+  </entry>
+  <entry>
+    <title>Foundation-Assisted Active Learning for Object Detection Annotation</title>
+    <link href="http://arxiv.org/abs/2607.16671v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.16671v1</id>
+    <published>2026-07-18T00:00:00Z</published>
+    <updated>2026-07-18T00:00:00Z</updated>
+    <author>
+      <name>Jinchang Zhang</name>
+    </author>
+    <author>
+      <name>Arnold Zumbrun</name>
+    </author>
+    <author>
+      <name>Jing Lin</name>
+    </author>
+    <author>
+      <name>Guoyu Lu</name>
+    </author>
+    <summary type="text">The annotation cost for remote sensing object detection is high, while existing active learning methods still face several challenges in object detection scenarios, including the coupling of localization and classification uncertainty, severe localization noise in the cold-start stage, and pseudo-diversity caused by high-recall candidate proposals. To address these issues, we propose a foundation-model-collaborative active learning and semi-automatic annotation framework for efficient construction of remote sensing object detection datasets. We build a dual-source mechanism consisting of a reference localization source (SA-source) based on UPN+SAM2 and a detector prediction source (OD-source), and further propose a Foundation-model-enhanced Dual-Source Uncertainty estimation to improve sample selection quality in the cold-start stage by jointly modeling localization consistency and classification confidence. Furthermore, we propose Object-Centric Diversity Sampling, which constructs object-level representations using DINOv2 features and SAM2 masks to improve sample coverage while suppressing pseudo-diversity. To address geometric noise in the semi-automatic annotation stage, we design Dual-Source Box Switching, which replaces noisy detector boxes with matched refined boxes from the SA-source, thereby reducing the manual burden of box refinement. Experiments on DIOR, HRSC2016, DOTAv2, and FAIR1M show that our method achieves superior or comparable results under most annotation budgets, with notably stronger cold-start sample efficiency in the low-budget regime.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;OD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>AlterAtlas: Shifting Travel Planning from AI Generation to Validation via Persona-Driven Simulations</title>
+    <link href="http://arxiv.org/abs/2607.16565v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.16565v1</id>
+    <published>2026-07-18T00:00:00Z</published>
+    <updated>2026-07-18T00:00:00Z</updated>
+    <author>
+      <name>William Huang</name>
+    </author>
+    <author>
+      <name>Ruofei Du</name>
+    </author>
+    <author>
+      <name>Yang Zhang</name>
+    </author>
+    <summary type="text">Travel planning requires balancing interacting goals and constraints across time and space. Current AI travel tools provide limited support for encoding these constraints and understanding how generated travel plans may fail users. We present AlterAtlas, an interactive travel planning system that supports high-fidelity itinerary validation and revision through persona-based simulations grounded in geospatial information. AlterAtlas models travelers as editable personas, generates candidate itineraries from prioritized places of interest, and simulates how different personas would experience each plan. Simulations expose route-level tradeoffs, temporal user states (e.g., fatigue, hunger), and mismatches between plans and user preferences to allow users to iteratively refine both itineraries and user personas. An expert evaluation of 51 paired itineraries demonstrates that simulation-guided revisions significantly improve plan-persona alignment. Furthermore, a within-subjects study (N=11) reveals that AlterAtlas empowers users to uncover hidden constraints, fluidly compare alternatives, and build trust in their final plans. Our results suggest that simulation-based validation is a powerful, transparent interaction layer for AI-assisted travel planning.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 11 pages, 8 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.HC" />
+  </entry>
   <entry>
     <title>DELUGE: Towards Continental-Scale Daily Pluvial Flood Damage Prediction via Interpretable Conditioning on Foundation Model Embeddings</title>
     <link href="http://arxiv.org/abs/2607.16050v1" rel="alternate" type="text/html" />
@@ -231,6 +351,28 @@
     <category term="Computer Vision" />
   </entry>
   <entry>
+    <title>DMFNet: Dual-Backbone Multiscale Fusion Network for Urban Scene Classification</title>
+    <link href="http://arxiv.org/abs/2607.16338v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.16338v1</id>
+    <published>2026-07-16T00:00:00Z</published>
+    <updated>2026-07-16T00:00:00Z</updated>
+    <author>
+      <name>Anamitra Ghosh</name>
+    </author>
+    <author>
+      <name>Abhiroop Chatterjee</name>
+    </author>
+    <author>
+      <name>Susmita Ghosh</name>
+    </author>
+    <summary type="text">This article presents DMFNet, a dual-backbone multiscale feature fusion framework with residual feature propagation and spatial attention for remote sensing scene classification. Existing approaches often face challenges in effectively capturing multiscale feature interactions and learning robust feature representations from complex aerial scenes with high intra-class variability and inter-class similarity. To address these limitations, the proposed framework employs two pretrained backbone networks to extract diverse hierarchical feature representations. A multiscale feature fusion mechanism with residual feature propagation is introduced to enhance feature interaction across multiple resolution levels. In addition, a spatial attention module is introduced to emphasize informative spatial regions in multi-object scenes. Further, a two-stage training strategy consisting of backbone freezing followed by selective fine-tuning is adopted to ensure stable optimization and improved generalization. Experiments conducted on the benchmark AID dataset demonstrate that the DMFNet achieves an average accuracy of 97.46\% $\pm$ 0.14\%. Ablative analysis further show the importance of various components in unison.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Under review at InGARSS 2026. This work was conducted during the first author's Master's studies at Jadavpur University&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
     <title>From Continuous Deployment to Queryable Dataset: Terabyte-Scale AIS-Aligned Passive Acoustic Labelling</title>
     <link href="http://arxiv.org/abs/2607.13840v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2607.13840v1</id>
@@ -318,151 +460,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 34 pages, 7 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Atmospheric and Oceanic Physics" />
-  </entry>
-  <entry>
-    <title>Label-Decoupled Style Augmentation for Domain Generalization in Multi-Label Remote Sensing Scene Classification</title>
-    <link href="http://arxiv.org/abs/2607.12704v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.12704v2</id>
-    <published>2026-07-14T00:00:00Z</published>
-    <updated>2026-07-14T00:00:00Z</updated>
-    <author>
-      <name>Alaa Almouradi</name>
-    </author>
-    <author>
-      <name>Erchan Aptoula</name>
-    </author>
-    <summary type="text">Multi-label classification assigns several co-occurring labels to each aerial scene, yet deployed models often encounter data distributions different from their training. Feature-statistics augmentation such as MixStyle, EFDMix, and correlated style uncertainty improves generalization at low cost but perturbs channel statistics globally, treating each image as a single style; one class can then contaminate the augmentation of another. Domain generalization is understudied for multi-label remote sensing; no prior method or multi-source benchmark targets it. A label-decoupled augmentation framework is therefore proposed, confining style perturbation to label-specific regions. Per-label attention, obtained from a learnable module or from gradient class-activation maps, yields per-label feature statistics; these statistics are mixed with cross-domain samples that share present labels, under independent per-label coefficients, and features are recomposed by attention-weighted normalization. Three operators combined with two attention sources produce six variants, evaluated on a leave-one-domain-out benchmark from multi-label UCM, AID, and DFC15 over six shared labels. Averaged over three splits and five seeds, the best variant attains 71.5% mean average precision, exceeding empirical risk minimization by 5.0 points and the strongest global-statistics baseline by 1.3 points, with the largest gain on the hardest transfer (up to 7.7 points). Ablations indicate that spatial attention and refreshed localization maps are most influential. The framework adds at most 0.35% parameters, leaves inference unchanged, and appears to offer a generic, inexpensive upgrade path for multi-label statistics-based domain generalization. Code is available upon acceptance at https://github.com/Alaa-Almouradi/Style-Augmentation-Upgrade.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Alaa-Almouradi/Style-Augmentation-Upgrade"&gt;https://github.com/Alaa-Almouradi/Style-Augmentation-Upgrade&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>TerraLogic: A Benchmark for Hierarchical Geospatial Reasoning in Earth Observation</title>
-    <link href="http://arxiv.org/abs/2607.12497v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.12497v1</id>
-    <published>2026-07-14T00:00:00Z</published>
-    <updated>2026-07-14T00:00:00Z</updated>
-    <author>
-      <name>Yuhang Yan</name>
-    </author>
-    <author>
-      <name>Linchao Mou</name>
-    </author>
-    <author>
-      <name>Bokang Yang</name>
-    </author>
-    <author>
-      <name>Qingyu Li</name>
-    </author>
-    <summary type="text">Beyond perception, reasoning is essential in remote sensing for advanced interpretation, inference, and decision-making. Recent advances in large language models (LLMs) have enabled tool-augmented agents that leverage external tools to perform complex analytical tasks. However, existing studies in remote sensing primarily focus on perception-oriented tasks, leaving cognitive geospatial reasoning largely underexplored. To address this gap, we introduce TerraLogic, a benchmark for geospatial reasoning. TerraLogic comprises 545 scenario-driven, hierarchy-aware tasks, such as hazard vulnerability assessment, urban heat island analysis, and forest fragmentation dynamics, spanning optical, Synthetic Aperture Radar (SAR), and infrared (IR) imagery. It advances evaluation beyond recognition and monitoring toward cognitive-level geospatial analysis. To facilitate evaluation on TerraLogic, we further propose HieraPlan, a tool-augmented agent that organizes toolkits into functional hierarchies and performs fault-tolerant reasoning. HieraPlan enables structured abstraction, robust recovery from tool failures, and stable long-horizon planning. Extensive experiments demonstrate that current approaches struggle with hierarchical geospatial reasoning, while HieraPlan provides a strong baseline with improved reasoning, cross-modal generalization, and error handling. The dataset and agent code are publicly available at https://github.com/Ireliya/TerraLogic.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Ireliya/TerraLogic"&gt;https://github.com/Ireliya/TerraLogic&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages, 3 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>DM-KG: A Novel Method for Boosting Spatial Cognition of Vision-Language Models in Street View Imagery</title>
-    <link href="http://arxiv.org/abs/2607.12319v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.12319v1</id>
-    <published>2026-07-14T00:00:00Z</published>
-    <updated>2026-07-14T00:00:00Z</updated>
-    <author>
-      <name>Xinyue Xu</name>
-    </author>
-    <author>
-      <name>Zheng Zhang</name>
-    </author>
-    <author>
-      <name>Kunyang Ma</name>
-    </author>
-    <author>
-      <name>Ge Zhu</name>
-    </author>
-    <author>
-      <name>Lianshuai Cao</name>
-    </author>
-    <author>
-      <name>Lei Wang</name>
-    </author>
-    <author>
-      <name>Zixuan Li</name>
-    </author>
-    <author>
-      <name>Yi Cheng</name>
-    </author>
-    <summary type="text">As vision-language models (VLMs) are increasingly deployed in geospatial question answering and visual scene understanding, improving their spatial cognition capability on street view imagery for complex logical reasoning has emerged as a key research priority. However, existing VLMs frequently suffer from "spatial semantic hallucinations" when perceiving object locations, distances, and directions in real-world street view scenes. Furthermore, such errors are often recalcitrant to tracing and calibration, posing a critical bottleneck for their practical deployment in geospatial tasks. To address this pressing challenge, this study proposes DM-KG (Direction-Metric Knowledge Graph), a structurally grounded spatial representation framework for street view imagery. By explicitly extracting directional and metric relationships between entities from a single 2D image, this framework enhances the spatial reasoning accuracy of VLMs through a structured knowledge graph. Specifically, we integrate panoptic segmentation with metric depth estimation to robustly compute entity-level 3D spatial coordinates. Subsequently, we encode the clock azimuths and Euclidean distances of entity pairs into a JSON-formatted knowledge graph, which is injected into the VLM as an explicit geometric prior to guide spatial reasoning. Experimental results on public spatial question-answering (QA) benchmarks demonstrate that DM-KG reduces the mean absolute error (MAE) in distance estimation by 31.1% and the mean angular error in direction judgment by 65.8%, while simultaneously maintaining a high QA success rate. By establishing a complete, augmented reasoning pipeline, this research significantly improves the spatial cognitive capabilities of VLMs in street view scenarios, thereby providing a flexible, generalized, and interpretable framework for geographic visual question answering (GeoVQA) in open environments.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;SEG;3D&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Selective avoidance of multiple line-of-sight obstacles at 130~m using locally bending space-time wave packets</title>
-    <link href="http://arxiv.org/abs/2607.12311v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.12311v1</id>
-    <published>2026-07-14T00:00:00Z</published>
-    <updated>2026-07-14T00:00:00Z</updated>
-    <author>
-      <name>Layton A. Hall</name>
-    </author>
-    <author>
-      <name>Murat Yessenov</name>
-    </author>
-    <author>
-      <name>Isabelle Lebron</name>
-    </author>
-    <author>
-      <name>Ayman F. Abouraddy</name>
-    </author>
-    <summary type="text">Self-accelerating optical beams follow curved trajectories rather than propagating rectilinearly, which raises the prospect for avoiding line-of-sight (LoS) obstacles blocking the beam path. However, if a conventional laser beam is intercepted by an obstacle en route to an intended LoS target, then replacing this beam with a bending beam is not adequate: the obstacle is avoided but the target cannot be concomitantly reached. Rather, a laser beam that \textit{locally} bends around the obstacle -- before continuing along its rectilinear path -- is needed. Here we show that engineering the spatiotemporal spectrum of a pulsed beam yields a space-time wave packet whose propagation dynamics can be tuned at will to locally bend around one or multiple obstacles, thereby avoiding them, to selectively reach a designated target. We carry out our experiments over distances extending to 130~m from the source, carried out in an open-air environment. In one scenario, the beam is incident on a target placed between two LoS obstacles, one preceding it and one following it -- both of which are avoided. In a second scenario, the locally bending beam avoids one and then two LoS obstacles preceding the intended target. These results may contribute to applications requiring selective incidence on targets in remote sensing, stand-off detection, directed energy, for optical and radio-frequency communications in presence of LoS obstacles, and for selectively delivered radiation therapies.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="physics.optics" />
-  </entry>
-  <entry>
-    <title>Domain-Incremental Remote Sensing Change Detection via Difference-Guided Adaptation and Frequency-Decoupled Distillation</title>
-    <link href="http://arxiv.org/abs/2607.12934v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.12934v1</id>
-    <published>2026-07-14T00:00:00Z</published>
-    <updated>2026-07-14T00:00:00Z</updated>
-    <author>
-      <name>Daifeng Peng</name>
-    </author>
-    <author>
-      <name>Yaning Li</name>
-    </author>
-    <author>
-      <name>Haiyan Guan</name>
-    </author>
-    <summary type="text">Remote sensing change detection (RSCD) models are prone to catastrophic forgetting when incrementally adapted to new domains. Existing domain-incremental learning (DIL) methods mainly preserve image-level representations but often overlook bitemporal discrepancy cues, which are critical for robust change detection under domain shifts. To address this limitation, we propose DG-FDD, a domain-incremental change detection framework that integrates Difference-Guided Adaptation and Frequency-Decoupled Distillation. Specifically, the Difference-Guided Dynamic Adapter (DGDA) models bitemporal feature discrepancies to promote change-aware feature adaptation and reduce domain-specific interference. Meanwhile, the Frequency-Decoupled Knowledge Distillation strategy with Cross-domain Synthesis (FDKD-CS) separates structural information from domain style in the frequency domain, enabling stable knowledge transfer without historical data. Extensive experiments on three public high-resolution RSCD datasets under two- and three-domain incremental protocols demonstrate that DG-FDD effectively mitigates catastrophic forgetting. Compared with independently trained single-task models, DG-FDD records mean relative changes in F1 and IoU of only -0.23% and -0.45%, respectively, across six two-domain sequences, and -0.69% and -1.31%, respectively, across the three evaluated three-domain sequences. These results indicate a favorable stability-plasticity balance between historical knowledge retention and new-domain adaptation in continual cross-domain change detection.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 33 pages, 14 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Self-Supervised Visual Representation Learning: Pretrain-Finetuning or Joint Training?</title>
-    <link href="http://arxiv.org/abs/2607.13192v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.13192v1</id>
-    <published>2026-07-14T00:00:00Z</published>
-    <updated>2026-07-14T00:00:00Z</updated>
-    <author>
-      <name>Nusrat Munia</name>
-    </author>
-    <author>
-      <name>Tyler Ward</name>
-    </author>
-    <author>
-      <name>Nishat Nayla</name>
-    </author>
-    <author>
-      <name>Matthew A. Massey</name>
-    </author>
-    <author>
-      <name>Abdullah-Al-Zubaer Imran</name>
-    </author>
-    <summary type="text">Self-supervision is a powerful technique for learning visual representations from unlabeled data. Existing techniques primarily adopt a two-stage approach for self-supervised learning (SSL): a pretraining stage on unlabeled data followed by a finetuning stage on labeled data. While this pipeline has demonstrated extreme effectiveness, the interaction between self-supervised and supervised learning objectives remains insufficiently understood. In this work, we systematically investigate whether jointly optimizing the self-supervised and supervised objectives during training provides a better alternative. We compare two training paradigms: (1) the aforementioned pretraining followed by finetuning (PFT) and (2) joint training (JT), where self-supervised and supervised losses are optimized simultaneously in the same network. Across eight representative SSL methods and diverse computer vision tasks on natural, medical, crisis response, and remote sensing data, we evaluate performance under varying percentages of labeled data. Our results reveal that the relative effectiveness of PFT and JT depends strongly on the task at hand, the availability of labeled data, and the complexity of the domain. We find that JT consistently improves data and training efficiency while being robust in low-label settings, while PFT is more reliable in more specialized domains. We further analyze representation quality, robustness, and cross-domain generalization, providing new insights into how self-supervised and supervised objectives interact during optimization. We establish a comprehensive empirical benchmark for hybrid SSL-based semi-supervised learning and offer practical guidance for selecting appropriate training strategies across diverse vision applications.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>
