@@ -6439,5 +6439,24 @@
     "_added_date": "2026-07-21",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-07-21",
+    "Month": 7,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "CGMap: A Geospatially Aware Deep Learning Framework for Crop Gap Mapping Using UAV",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2607.18779v1",
+    "Abstract": "In India, crop germination is primarily monitored by visual inspection and manual counting, which are prone to errors, despite their crucial role in determining eventual yield potential. This paper highlights a deep learning based pipeline which uses object detection methods and drone imagery to assess and provide a precise count of sugarcane germination in fields. The approch uses a pre-trained AI model to find germinated plant sampling and identify gaps, also known as ``bald spots'', which restricts field productivity. The techniques used here relies on the YOLOV8 architecture, which was trained on a carefully selected dataset of UAV photos taken in various agroclimatic zones of India. Here, we bring upon a novel orientation-normalization technique that uses minimum Spanning Trees (MST) to account for variations in planting geometry, allowing for dependable row and column extraction across a variety of field layouts. By converting detected seedlings into spatial point clouds, emergence gaps can be inferred from the anticipated spacing between plants. A geospatial germination map exported in Well-Known Text (WKT) format is the end result, and it can be easily incorporated into GIS platforms used by sugar mills and agronomists to direct transplant initiatives. Timely interventions based on the insights provided by the algorithm can significantly increase yield, resulting in higher profits. Hence, support proper allocation of resources, avoid wastage, and enhance long-term sustainability.",
+    "code": "",
+    "Publication": "15 pages",
+    "BibTex": "@article{sharma2026cgmap,\n  title={CGMap: A Geospatially Aware Deep Learning Framework for Crop Gap Mapping Using UAV},\n  author={Karan Sharma and Rajiv Ranjan and Dinesh Kumar and Shashank Tamaskar},\n  journal={arXiv preprint arXiv:2607.18779v1},\n  year={2026},\n  url={http://arxiv.org/abs/2607.18779v1}\n}",
+    "Authors": "Karan Sharma, Rajiv Ranjan, Dinesh Kumar, Shashank Tamaskar",
+    "_added_date": "2026-07-22",
+    "Category": "Method",
+    "_tasks": "OD;3D"
   }
 ]

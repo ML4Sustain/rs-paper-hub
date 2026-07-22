@@ -4,12 +4,90 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-21T04:12:40Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 20 entries</subtitle>
+  <updated>2026-07-22T01:18:14Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 21 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Delineate Anything v2: A Global Foundation Model for Field Delineation</title>
+    <link href="http://arxiv.org/abs/2607.19069v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.19069v1</id>
+    <published>2026-07-21T00:00:00Z</published>
+    <updated>2026-07-21T00:00:00Z</updated>
+    <author>
+      <name>Mykola Lavreniuk</name>
+    </author>
+    <author>
+      <name>Nataliia Kussul</name>
+    </author>
+    <author>
+      <name>Andrii Shelestov</name>
+    </author>
+    <author>
+      <name>Yevhenii Salii</name>
+    </author>
+    <author>
+      <name>Volodymyr Kuzin</name>
+    </author>
+    <author>
+      <name>Charlotte Julia Li-Xing Wang</name>
+    </author>
+    <author>
+      <name>Zoltan Szantoi</name>
+    </author>
+    <summary type="text">Accurate agricultural field boundary delineation at large scale is a foundational task for food security, supply chain transparency, and carbon accounting. While vision foundation models like SAM show remarkable zero-shot capabilities, they frequently fail in geospatial domains due to topological complexity, cropland texturing patterns, and a lack of physical scale awareness. In this work, we introduce Delineate Anything v2, a globally scalable foundation model designed specifically for wide-area field boundary mapping. We construct FBIS-73M, a 73-million-instance multi-resolution dataset spanning 61 countries. To address the pervasive issue of multi-field administrative parcel merging, we introduce a resolution-specific data curation pipeline that leverages topological image-space adaptation to homogenize merged parcels and strengthen weak physical boundaries. Furthermore, we establish a novel, manually curated evaluation benchmark covering 100 countries to assess independent zero-shot generalization. Our results show that Delineate Anything v2 surpasses the current state-of-the-art, including the Delineate Anything framework, by 0.284 mAP@0.5 (+103.3% relative gain), while maintaining execution speeds suitable for rapid national- and global-scale deployment, as demonstrated by nationwide mapping of Ukraine (603,000 km^2) in 5.4 hours on a consumer-grade workstation. Code, pre-trained weights, the FBIS-73M dataset, and ready-to-use national-scale vector boundary products are publicly available at https://github.com/Lavreniuk/Delineate-Anything.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Lavreniuk/Delineate-Anything"&gt;https://github.com/Lavreniuk/Delineate-Anything&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Learning Semantic-Robust Change Detection via Semantic-Invariant Self-Distillation</title>
+    <link href="http://arxiv.org/abs/2607.19000v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.19000v1</id>
+    <published>2026-07-21T00:00:00Z</published>
+    <updated>2026-07-21T00:00:00Z</updated>
+    <author>
+      <name>Jiuhe Qu</name>
+    </author>
+    <author>
+      <name>Yingping Liang</name>
+    </author>
+    <author>
+      <name>Ying Fu</name>
+    </author>
+    <summary type="text">Change detection aims to identify semantic changes between remote sensing images. However, features from models are easily disturbed by non-semantic variations, such as illumination, shadows, and atmospheric changes, leading to false alarms and limited generalization in real-world scenarios. In this paper, we propose \textbf{SCDistill}, a framework for learning semantic-robust change detection via semantic-invariant self-distillation. First, to strengthen semantic consistency, we introduce a semantic-invariant self-distillation strategy that learns semantic robustness from perturbed yet semantically consistent data, empowering the change detector to extract disturbance-resistant features and achieve more reliable and accurate semantic change identification. Second, to expand paired data with non-semantic variations, we design a diffusion-based perturbation simulation pipeline that synthesizes complex environmental changes, enabling the model to explicitly learn to distinguish semantic changes from appearance-level fluctuations and reduce false alarms caused by non-semantic disturbances. These components promote robustness from data and representation perspectives, leading to synergistic performance gains. Extensive experiments demonstrate that SCDistill achieves state-of-the-art performance on multiple semantic change detection benchmarks and exhibits strong generalization to binary change detection and change captioning tasks. Code is accessible at https://github.com/elecreak/SCDistill.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/elecreak/SCDistill"&gt;https://github.com/elecreak/SCDistill&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ECCV2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>CGMap: A Geospatially Aware Deep Learning Framework for Crop Gap Mapping Using UAV</title>
+    <link href="http://arxiv.org/abs/2607.18779v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.18779v1</id>
+    <published>2026-07-21T00:00:00Z</published>
+    <updated>2026-07-21T00:00:00Z</updated>
+    <author>
+      <name>Karan Sharma</name>
+    </author>
+    <author>
+      <name>Rajiv Ranjan</name>
+    </author>
+    <author>
+      <name>Dinesh Kumar</name>
+    </author>
+    <author>
+      <name>Shashank Tamaskar</name>
+    </author>
+    <summary type="text">In India, crop germination is primarily monitored by visual inspection and manual counting, which are prone to errors, despite their crucial role in determining eventual yield potential. This paper highlights a deep learning based pipeline which uses object detection methods and drone imagery to assess and provide a precise count of sugarcane germination in fields. The approch uses a pre-trained AI model to find germinated plant sampling and identify gaps, also known as ``bald spots'', which restricts field productivity. The techniques used here relies on the YOLOV8 architecture, which was trained on a carefully selected dataset of UAV photos taken in various agroclimatic zones of India. Here, we bring upon a novel orientation-normalization technique that uses minimum Spanning Trees (MST) to account for variations in planting geometry, allowing for dependable row and column extraction across a variety of field layouts. By converting detected seedlings into spatial point clouds, emergence gaps can be inferred from the anticipated spacing between plants. A geospatial germination map exported in Well-Known Text (WKT) format is the end result, and it can be easily incorporated into GIS platforms used by sugar mills and agronomists to direct transplant initiatives. Timely interventions based on the insights provided by the algorithm can significantly increase yield, resulting in higher profits. Hence, support proper allocation of resources, avoid wastage, and enhance long-term sustainability.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD;3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Early Yield Prediction for Sugar Beet Fields using Satellite Data -- Learnings from Specialized Vision Transformers</title>
     <link href="http://arxiv.org/abs/2607.17661v1" rel="alternate" type="text/html" />
@@ -35,6 +113,296 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Now We Know? A Systematic Comparison of TerraMind and THOR</title>
+    <link href="http://arxiv.org/abs/2607.18504v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.18504v1</id>
+    <published>2026-07-20T00:00:00Z</published>
+    <updated>2026-07-20T00:00:00Z</updated>
+    <author>
+      <name>Frederick Schindlegger</name>
+    </author>
+    <author>
+      <name>Kenzo Bounegta</name>
+    </author>
+    <author>
+      <name>Eva Gmelich Meijling</name>
+    </author>
+    <author>
+      <name>Johannes Jakubik</name>
+    </author>
+    <author>
+      <name>Arnt-Børre Salberg</name>
+    </author>
+    <author>
+      <name>Theodor Forgaard</name>
+    </author>
+    <author>
+      <name>Nicolas Longepe</name>
+    </author>
+    <author>
+      <name>Valerio Marsocci</name>
+    </author>
+    <summary type="text">Benchmarks for Geospatial Foundation Models (GFMs) increasingly rank models by aggregate score, but such rankings obscure why models differ: how much of the gap is architecture, how much is decoder capacity, and how much is a use-case-specific artefact? This study addresses that gap through a controlled comparison of two GFMs developed under European Space Agency's $Φ$-lab with contrasting design philosophies: THOR, which introduces a compute-adaptive architecture supporting variable patch sizes and unifies Sentinel-1, -2, and -3 data at their native resolutions; and TerraMind, a multimodal generative GFM pretrained with a dual-scale token/pixel objective that enables any-to-any cross-modal generation (Thinking-in-Modalities) to infer missing sensors at inference time. Rather than reporting a single leaderboard, we investigate the axes along which the two architectures actually differ - patch size, decoder complexity, finetuning regime, input modality, and model scale - across ten use cases spanning segmentation and regression in diverse domains, including climate disaster response, methane leak detection, snow monitoring, or sea ice mapping. We find that architectural design choices - patch size and decoder type in particular - explain more performance variance than model identity itself, that the two models embody complementary investment strategies (pretraining-time scale for TerraMind versus inference-time tokenisation for THOR), and that correctly interpreting results requires dataset-level characterisation. The resulting picture is not a single winner but a set of hypotheses and a diagnostic ablation methodology that we expect to generalise to future GFMs beyond THOR and TerraMind.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+    <category term="Artificial Intelligence; Computer Vision" />
+  </entry>
+  <entry>
+    <title>GUEST: Gravitational Universe Exploration with Satellite Tracking. A passive satellite laser-ranging mission for the dark gravitational Universe</title>
+    <link href="http://arxiv.org/abs/2607.18390v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.18390v1</id>
+    <published>2026-07-20T00:00:00Z</published>
+    <updated>2026-07-20T00:00:00Z</updated>
+    <author>
+      <name>Diego Blas</name>
+    </author>
+    <author>
+      <name>Aurélien Hees</name>
+    </author>
+    <author>
+      <name>F. Javier Atapuerca</name>
+    </author>
+    <author>
+      <name>Giada Bargiacchi</name>
+    </author>
+    <author>
+      <name>Massimo Bassan</name>
+    </author>
+    <author>
+      <name>Joshua N. Benabou</name>
+    </author>
+    <author>
+      <name>Bruno Bertrand</name>
+    </author>
+    <author>
+      <name>Adrien Bourgoin</name>
+    </author>
+    <author>
+      <name>Clare Burrage</name>
+    </author>
+    <author>
+      <name>Nicolò Burzillà</name>
+    </author>
+    <author>
+      <name>Alfonso Caldiero</name>
+    </author>
+    <author>
+      <name>Roberto Campagnola</name>
+    </author>
+    <author>
+      <name>Andrea Caputo</name>
+    </author>
+    <author>
+      <name>Ana Caramete</name>
+    </author>
+    <author>
+      <name>Laurentiu Caramete</name>
+    </author>
+    <author>
+      <name>Joan Manel Casalta Escuer</name>
+    </author>
+    <author>
+      <name>Julien Chabé</name>
+    </author>
+    <author>
+      <name>Gabriel Chiritoi</name>
+    </author>
+    <author>
+      <name>Marco Cinelli</name>
+    </author>
+    <author>
+      <name>Florin-Ioan Constantin</name>
+    </author>
+    <author>
+      <name>Neil J. Cornish</name>
+    </author>
+    <author>
+      <name>Clément Courde</name>
+    </author>
+    <author>
+      <name>Simone Dell'Agnello</name>
+    </author>
+    <author>
+      <name>Alessandro Di Marco</name>
+    </author>
+    <author>
+      <name>Sebastian Ellis</name>
+    </author>
+    <author>
+      <name>Malcolm Fairbairn</name>
+    </author>
+    <author>
+      <name>Ariadna Farrés</name>
+    </author>
+    <author>
+      <name>Joshua W. Foster</name>
+    </author>
+    <author>
+      <name>Silvia Gasparotto</name>
+    </author>
+    <author>
+      <name>Marta Goli</name>
+    </author>
+    <author>
+      <name>Yann Gouttenoire</name>
+    </author>
+    <author>
+      <name>Michael Häfner</name>
+    </author>
+    <author>
+      <name>Antonio J. Iovino</name>
+    </author>
+    <author>
+      <name>Maria-Catalina Isfan</name>
+    </author>
+    <author>
+      <name>Justin Janquart</name>
+    </author>
+    <author>
+      <name>Alexander C. Jenkins</name>
+    </author>
+    <author>
+      <name>Jean-Paul Kneib</name>
+    </author>
+    <author>
+      <name>Sébastien Le Maistre</name>
+    </author>
+    <author>
+      <name>David Lucchesi</name>
+    </author>
+    <author>
+      <name>Marco Lucente</name>
+    </author>
+    <author>
+      <name>Angus Macdonald</name>
+    </author>
+    <author>
+      <name>Jorge Martín Camalich</name>
+    </author>
+    <author>
+      <name>Rosa Martínez Rubiella</name>
+    </author>
+    <author>
+      <name>Josep J. Masdemont</name>
+    </author>
+    <author>
+      <name>Ilia Musco</name>
+    </author>
+    <author>
+      <name>Toshimichi Otsubo</name>
+    </author>
+    <author>
+      <name>Cristóbal Padilla</name>
+    </author>
+    <author>
+      <name>Fco. Rogelio Palomo Pinto</name>
+    </author>
+    <author>
+      <name>Alice Paun</name>
+    </author>
+    <author>
+      <name>Alice Perego</name>
+    </author>
+    <author>
+      <name>Roberto Peron</name>
+    </author>
+    <author>
+      <name>Florentina-Crenguta Pislan</name>
+    </author>
+    <author>
+      <name>Florin Adrian Popescu</name>
+    </author>
+    <author>
+      <name>Luca Porcelli</name>
+    </author>
+    <author>
+      <name>Nanda Rea</name>
+    </author>
+    <author>
+      <name>Rafael Rebolo</name>
+    </author>
+    <author>
+      <name>Marco Reyes</name>
+    </author>
+    <author>
+      <name>Ignasi Ribas</name>
+    </author>
+    <author>
+      <name>José C. Rodríguez</name>
+    </author>
+    <author>
+      <name>Pascal Rosenblatt</name>
+    </author>
+    <author>
+      <name>Albert Roura</name>
+    </author>
+    <author>
+      <name>Soumen Roy</name>
+    </author>
+    <author>
+      <name>Mariano Sánchez Nogales</name>
+    </author>
+    <author>
+      <name>Francesco Santoli</name>
+    </author>
+    <author>
+      <name>Feliciana Sapio</name>
+    </author>
+    <author>
+      <name>Anja Schlicht</name>
+    </author>
+    <author>
+      <name>Ulrich Schreiber</name>
+    </author>
+    <author>
+      <name>Angela Serrano</name>
+    </author>
+    <author>
+      <name>Daniel Serrano Lombillo</name>
+    </author>
+    <author>
+      <name>Alberto Sesana</name>
+    </author>
+    <author>
+      <name>Carlos F. Sopuerta</name>
+    </author>
+    <author>
+      <name>Krzysztof Sośnica</name>
+    </author>
+    <author>
+      <name>Nicola Tamanini</name>
+    </author>
+    <author>
+      <name>Elisa Todarello</name>
+    </author>
+    <author>
+      <name>Sokratis Trifinopoulos</name>
+    </author>
+    <author>
+      <name>Miguel Vanvlasselaer</name>
+    </author>
+    <author>
+      <name>Dario Vetrano</name>
+    </author>
+    <author>
+      <name>Massimo Visco</name>
+    </author>
+    <author>
+      <name>Hanxi Wang</name>
+    </author>
+    <author>
+      <name>Xiao Xue</name>
+    </author>
+    <author>
+      <name>Miguel Zumalacárregui</name>
+    </author>
+    <summary type="text">GUEST is a space mission concept whose central objective is the detection of gravitational waves (GWs) in the microhertz band -- a physics-rich frequency window that no other present or planned detector can reach at a significant level. The concept is simple: two dense, passive spheres, covered with cube-corner retroreflectors, deployed in {highly eccentric} Earth orbits ($e \gtrsim 0.7$, period $P \gtrsim 33$ h), tracked continuously by the global network of satellite laser-ranging stations over a minimum observation time of 10 years, with an expected total duration of 30 years. The orbits themselves act as resonant detectors of the oscillating gravitational perturbations, with the microhertz sensitivity emerging from the selected orbital parameters. From the same data stream, GUEST delivers a programme of fundamental and applied science that cuts across particle physics, gravitational-wave astronomy, cosmology, astrophysics, and geodesy: the first coherent search for GWs from supermassive black-hole binaries in the $μ$Hz band, the exploration of primordial GW backgrounds in the unexplored energy-scale gap between pulsar-timing arrays and LISA, a dedicated probe of ultra-light dark matter in a parameter region untouched by any other experiment, a new way to search for ultra-light bosons, order-of-magnitude-improved tests of new gravitational interactions at astronomical ranges, and a step change in the absolute determination of $GM_\oplus$ that underpins the Global Geodetic Observing System and future navigation and Earth-observation missions. This white paper presents the motivation, scientific reach, and mission concept of GUEST.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 23 pages, 14 figs&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="astro-ph.CO" />
+    <category term="gr-qc; hep-ph; physics.ins-det" />
   </entry>
   <entry>
     <title>Planning for Mission Efficiency, Robustness, and Resilience for Unmanned Autonomous Systems (UASs) in Contested Environments</title>
@@ -426,94 +794,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>From Continuous Deployment to Queryable Dataset: Terabyte-Scale AIS-Aligned Passive Acoustic Labelling</title>
-    <link href="http://arxiv.org/abs/2607.13840v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.13840v1</id>
-    <published>2026-07-15T00:00:00Z</published>
-    <updated>2026-07-15T00:00:00Z</updated>
-    <author>
-      <name>Wayne Renaud</name>
-    </author>
-    <author>
-      <name>Priyanka Aravindan</name>
-    </author>
-    <author>
-      <name>Gabriel Spadon</name>
-    </author>
-    <summary type="text">Long-duration passive acoustic deployments produce large archives of recordings that are not linked to vessel tracks or encounter structure, leaving range and contact conditions unavailable as variables and requiring manual selection for analysis. To address this limitation, we propose a database-native workflow that aligns hydrophone recordings with Automatic Identification System (AIS) position reports to produce distance-resolved data. Fixed-duration recording windows and AIS messages are stored as persistent geospatial tables and associated through an indexed spatiotemporal join, replacing in-memory nested iteration with a single scalable set-based database process capable of handling continuous, multi-year, million-window archival deployments without exhausting available memory. In this study, the approach processes approximately 9.5x10e5 recording windows and 6.9x10e6 AIS position reports, producing a structured table that separates no-contact, single-contact, and two-contact windows, with the closest point of approach computed directly where applicable and background conditions characterized via deterministic spectral ranking. This formulation enables a GeoAI framework in which spatially indexed, queryable data become directly usable for machine learning. The resulting data product reveals predominantly noise-dominated conditions, with vessel contributions emerging mainly at shorter ranges, indicating that the task lies in extracting structure under background-limited regimes. Spectrogram and quantitative analyses show weak tonal signatures embedded in noise and a consistent decay of signal-to-noise ratio with distance, supporting the use of this representation for scalable machine learning, similarity analysis, and predictive acoustic modelling in real maritime environments.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; OCEANS'26 - Monterey&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="cs.SD" />
-    <category term="cs.DB" />
-  </entry>
-  <entry>
-    <title>From Surface Forecasting to Observability Forecasting: A Latent World Model for Cloud-Aware EO Monitoring</title>
-    <link href="http://arxiv.org/abs/2607.13651v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.13651v1</id>
-    <published>2026-07-15T00:00:00Z</published>
-    <updated>2026-07-15T00:00:00Z</updated>
-    <author>
-      <name>Mohanad Albughdadi</name>
-    </author>
-    <summary type="text">The bottleneck of Earth Observation processing chains is not the arrival of new imagery but whether the surface is actually visible when the image arrives. We study this as an observability forecasting problem on EarthNet2021. Given recent multispectral imagery and exogenous weather drivers, the goal is to predict whether the next acquisition will be usable and, if not, when a usable view is likely to return. To do this, we adapt LeWorldModel, a joint-embedding predictive architecture world model, to cloud-aware Earth Observation sequences. The final pipeline converts raw minicubes into episodic HDF5 sequences with five image channels (blue, green, red, near-infrared, cloud mask) and eight meteorological and calendar covariates. The resulting model has 18.0M trainable parameters and is trained from scratch on 23,904 training episodes. The trained leWorldModel is evaluated under a locked protocol: linear probes are fit on train only, calibration choices are set on an internal validation split, and the fitted heads are then frozen for valsplit, IID, OOD, and extreme evaluation. On the full frozen-bundle observability benchmark, LeWorldModel consistently outperforms persistence. For next-step usability, balanced accuracy ranges from 0.769 to 0.887, compared with 0.493 to 0.556 for persistence. For exact first-usable-horizon prediction, accuracy ranges from 0.602 to 0.806, compared with 0.120 to 0.369 for persistence. Against a frozen LightGBM baseline fit on the same training windows, LeWorldModel is better on continuous clear/cloud regression and on exact recovery timing on valsplit, IID, and extreme, while LightGBM is stronger on the simpler binary any-usable-within-six task and is more robust on OOD. In separate sampled diagnostic analyses, LeWM also produces strong ranking-based anomaly signals under synthetic temporal inconsistencies.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>The orientation of the Amazonian geoglyphs as a clue for their interpretation</title>
-    <link href="http://arxiv.org/abs/2607.14201v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.14201v1</id>
-    <published>2026-07-15T00:00:00Z</published>
-    <updated>2026-07-15T00:00:00Z</updated>
-    <author>
-      <name>Giulio Magli</name>
-    </author>
-    <summary type="text">Amazonian earthworks, also called geoglyphs, are thousands of man-made earthen structures, mostly of geometrical shape, which progressively emerged from the tropical forest due to progressive deforestation. They were probably built between the fifth century BC and the end of the first millennium AD, but archaeological investigation on the culture of their builders is yet at the beginning. Nevertheless, a ceremonial rather than practical function seems likely, at least for those having a very regular shape. In the present paper, simple remote-sensing technique, combined with the methodological approach of modern Archaeoastronomy, are applied to study for the first time their orientation. The analysis takes in consideration virtually all known squared and rectangular structures for a total of 326 earthworks. The results show without doubts a non-random choice for their orientation and a clear interest of their builders for the annual cycle of the Sun.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="physics.hist-ph" />
-    <category term="astro-ph.EP" />
-  </entry>
-  <entry>
-    <title>OCELOT: Direct Atmospheric Forecasting from Heterogeneous Earth Observations Using a Graph-Transformer Hybrid Model</title>
-    <link href="http://arxiv.org/abs/2607.14196v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.14196v1</id>
-    <published>2026-07-15T00:00:00Z</published>
-    <updated>2026-07-15T00:00:00Z</updated>
-    <author>
-      <name>Azadeh Gholoubi</name>
-    </author>
-    <author>
-      <name>Ronald McLaren</name>
-    </author>
-    <author>
-      <name>Mu-Chieh Ko</name>
-    </author>
-    <author>
-      <name>Xin Jin</name>
-    </author>
-    <author>
-      <name>Nicholas Esposito</name>
-    </author>
-    <author>
-      <name>Andrew Collard</name>
-    </author>
-    <author>
-      <name>Cory Martin</name>
-    </author>
-    <author>
-      <name>Russ Treadon</name>
-    </author>
-    <author>
-      <name>Daniel Holdaway</name>
-    </author>
-    <author>
-      <name>Daryl Kleist</name>
-    </author>
-    <summary type="text">This study presents OCELOT (Observation-Centric Estimation and Learning for Outlook Trajectories), a global machine-learning forecasting system that predicts future Earth observations directly from heterogeneous satellite and in-situ measurements. Unlike data-driven weather models trained on gridded reanalysis states, OCELOT operates natively in observation space, preserving instrument-specific sampling, viewing geometry, and measurement characteristics. The system combines per-instrument graph-attention encoders, a shared spherical icosahedral latent mesh, a hybrid sliding-window Transformer/spatial graph neural network processor, and metadata-conditioned decoders to produce forecasts up to 12 h ahead. OCELOT is trained on observations for the years 2015 through 2023, validated on the year 2024, and evaluated out of sample on 2025 observations across satellite radiances, radiosondes, aircraft, and surface networks. In the 2025 evaluation, OCELOT produces spatially coherent +12 h forecasts across independent observing systems: microwave temperature-sounding channels show RMSE values of 1.24-1.87 K, while the more surface- and cloud-sensitive AVHRR infrared window channel shows a higher RMSE of 3.95 K. Vertical profile diagnostics show physically consistent radiosonde and aircraft temperature structure. Surface forecasts remain stable through 12 h, with 2-m air-temperature RMSE increasing from about 3.2 K at +3 h to about 3.6 K at +12 h. In paired observation-space comparisons, OCELOT remains less accurate than operational GFS but substantially outperforms persistence at longer lead times for 2-m temperature and 10-m wind components. These results demonstrate that observation-space forecasting can recover large-scale atmospheric structure and provide meaningful short-range skill without reanalysis supervision.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 34 pages, 7 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Atmospheric and Oceanic Physics" />
   </entry>
 </feed>
