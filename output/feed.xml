@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-22T04:13:43Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 21 entries</subtitle>
+  <updated>2026-07-23T01:45:21Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 18 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -710,89 +710,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>AE-UAV: An Air-to-Air Event-Based UAV Tracking Benchmark and a Real-Time Frequency-Domain Tracker</title>
-    <link href="http://arxiv.org/abs/2607.14726v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.14726v1</id>
-    <published>2026-07-16T00:00:00Z</published>
-    <updated>2026-07-16T00:00:00Z</updated>
-    <author>
-      <name>Zixin Jiang</name>
-    </author>
-    <author>
-      <name>Bing He</name>
-    </author>
-    <author>
-      <name>Chaoran Xiong</name>
-    </author>
-    <author>
-      <name>Zhenzhen Wang</name>
-    </author>
-    <author>
-      <name>Xin Zhao</name>
-    </author>
-    <author>
-      <name>Ling Pei</name>
-    </author>
-    <summary type="text">Air-to-air (A2A) unmanned aerial vehicle (UAV) tracking is fundamental to airborne remote sensing of low-altitude aerial targets. However, the deployment of continuous, real-time tracking systems on UAVs presents significant challenges. In A2A scenarios, traditional frame-based cameras suffer from severe performance degradation under low illumination, overexposure, and high-speed motion owing to their limited dynamic range and fixed temporal sampling. Although event cameras offer a promising alternative with microsecond temporal resolution and a high dynamic range, current research is bottlenecked by two primary issues: 1) the absence of dedicated A2A event-based datasets, and 2) the heavy reliance of existing trackers on GPU acceleration and extensive training data, rendering them impractical for resource-constrained UAVs. To bridge these gaps, we introduce AE-UAV, an air-to-air event-based UAV tracking benchmark. To the best of our knowledge, this is the first airborne-captured event camera dataset for A2A tracking, comprising 178 flight sequences with continuous-time cubic B-spline annotations. Furthermore, we propose the Fast-Slow Frequency-domain Tracking (FSFT) method. This lightweight, training-free framework seamlessly integrates frequency-domain template matching with search region prediction and detection-based drift correction. Extensive experiments demonstrate that FSFT operates at an ultra-fast 420 frames per second (FPS) on CPU-only hardware. It retains 93.97% of the accuracy of state-of-the-art GPU-dependent methods while delivering a 5.32-fold effective speedup and exhibiting superior temporal resolution generalization, thereby providing a highly efficient and robust solution for airborne remote sensing of aerial targets. The dataset and source code are available at https://github.com/MSP-xEN/AE-UAV.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/MSP-xEN/AE-UAV"&gt;https://github.com/MSP-xEN/AE-UAV&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages, 7 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>HoloGeo: Mitigating Landmark Bias in Geo-localization via Evidence-Driven Reasoning</title>
-    <link href="http://arxiv.org/abs/2607.15255v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.15255v1</id>
-    <published>2026-07-16T00:00:00Z</published>
-    <updated>2026-07-16T00:00:00Z</updated>
-    <author>
-      <name>Pengcheng Zhou</name>
-    </author>
-    <author>
-      <name>Xuanyu Liu</name>
-    </author>
-    <author>
-      <name>Yanchen Yin</name>
-    </author>
-    <author>
-      <name>Bobo Li</name>
-    </author>
-    <author>
-      <name>Shengqiong Wu</name>
-    </author>
-    <author>
-      <name>Mong-Li Lee</name>
-    </author>
-    <author>
-      <name>Wynne Hsu</name>
-    </author>
-    <summary type="text">Recent advances in Vision-Language Models (VLMs) have significantly improved image geo-localization, yet existing models remain susceptible to landmark bias, causing them to overlook geographical cues or form spurious correlations, ultimately resulting in inaccurate localization. To systematically investigate this issue, we first design two quantitative metrics, Bias Intensity (BI) and Bias Harmfulness (BH), to characterize the impact of landmarks exerted on model reasoning, and establish a comprehensive benchmark, LandmarkBias-3K. To mitigate landmark bias, we further propose an evidence-driven reasoning framework, HoloGeo, to improve the reliability of geo-localization. HoloGeo is supported by a high-quality dataset, BF-30k, annotated with structured multi-evidence bias-free reasoning chains. By incorporating multi-dimensional rewards, HoloGeo explicitly encourages balanced attention over diverse visual cues and achieves evidence-driven joint reasoning. Extensive experiments demonstrate that HoloGeo not only maintains excellent performance on IM2GPS3K and YFCC4k but also significantly outperforms existing open-source VLMs on LandmarkBias-3K, validating its effectiveness for robust geospatial reasoning.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; GeoLoc&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>DMFNet: Dual-Backbone Multiscale Fusion Network for Urban Scene Classification</title>
-    <link href="http://arxiv.org/abs/2607.16338v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.16338v1</id>
-    <published>2026-07-16T00:00:00Z</published>
-    <updated>2026-07-16T00:00:00Z</updated>
-    <author>
-      <name>Anamitra Ghosh</name>
-    </author>
-    <author>
-      <name>Abhiroop Chatterjee</name>
-    </author>
-    <author>
-      <name>Susmita Ghosh</name>
-    </author>
-    <summary type="text">This article presents DMFNet, a dual-backbone multiscale feature fusion framework with residual feature propagation and spatial attention for remote sensing scene classification. Existing approaches often face challenges in effectively capturing multiscale feature interactions and learning robust feature representations from complex aerial scenes with high intra-class variability and inter-class similarity. To address these limitations, the proposed framework employs two pretrained backbone networks to extract diverse hierarchical feature representations. A multiscale feature fusion mechanism with residual feature propagation is introduced to enhance feature interaction across multiple resolution levels. In addition, a spatial attention module is introduced to emphasize informative spatial regions in multi-object scenes. Further, a two-stage training strategy consisting of backbone freezing followed by selective fine-tuning is adopted to ensure stable optimization and improved generalization. Experiments conducted on the benchmark AID dataset demonstrate that the DMFNet achieves an average accuracy of 97.46\% $\pm$ 0.14\%. Ablative analysis further show the importance of various components in unison.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Under review at InGARSS 2026. This work was conducted during the first author's Master's studies at Jadavpur University&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>
