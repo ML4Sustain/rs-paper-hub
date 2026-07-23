@@ -6458,5 +6458,24 @@
     "_added_date": "2026-07-22",
     "Category": "Method",
     "_tasks": "OD;3D"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-07-22",
+    "Month": 7,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "RIM: A Retrieval-In-Matching Framework for Cross-Domain Global Visual Localization of UAVs",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2607.20116v1",
+    "Abstract": "Global visual localization of unmanned aerial vehicles (UAVs) using remote-sensing reference maps has attracted increasing attention. However, acquisition-time and imaging-platform differences between UAV and reference imagery induce substantial cross-domain appearance and viewpoint shifts, challenging robust six-degree-of-freedom (6-DoF) pose estimation. We address these shifts by sampling UAV-viewpoint reference views from Google 3D Tiles across locations, altitudes, and orientations. A two-stage cross-domain fine-tuning recipe adapts SALAD using pose-near positives and geographically distant hard negatives, while local geometric consistency re-ranks the Top-K candidates. We further propose Retrieval-In-Matching (RIM), which freezes the adapted DINOv2-B retriever and distils a local-descriptor decoder that reuses its token field alongside a shallow VGG19 detail stream. One query-side DINOv2-B forward thus serves both SALAD retrieval and local description, eliminating a second foundation-model backbone while preserving retrieval descriptors by construction. We evaluate RIM zero-shot on the reconstructed EPFL Urbanscape and self-collected Chang'an Park datasets, both geographically disjoint from the training data. RIM outperforms ten recent retrieval baseline families. At 25/50 m under the full 3D distance metric, it improves Recall@1 over SALAD by 8.55/13.77 percentage points on EPFL and 4.45/8.94 points on Park. At Top-K=5, the complete measured localization query, including retrieval, candidate matching, and robust geometric verification, takes 67.9 ms end-to-end: 1.8 times faster than the strongest separate sparse-matching baseline and over 40 times faster than RoMa, while achieving comparable re-ranking accuracy. These results establish an efficient and deployable pipeline for UAV global visual localization in GNSS-challenged environments.",
+    "code": "",
+    "Publication": "56 pages, 10 figures",
+    "BibTex": "@article{li2026rim,\n  title={RIM: A Retrieval-In-Matching Framework for Cross-Domain Global Visual Localization of UAVs},\n  author={Xin Li and Siyuan Duan and Shang Wang and Zhimin Mao and Bingliang Hu and Geng Zhang},\n  journal={arXiv preprint arXiv:2607.20116v1},\n  year={2026},\n  url={http://arxiv.org/abs/2607.20116v1}\n}",
+    "Authors": "Xin Li, Siyuan Duan, Shang Wang, Zhimin Mao, Bingliang Hu, Geng Zhang",
+    "_added_date": "2026-07-23",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]

@@ -4,12 +4,119 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-23T01:45:21Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 8 entries</subtitle>
+  <updated>2026-07-23T04:11:35Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 11 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Multimodal Large Language Models for Remote Sensing Image Understanding: Domain-Specific or General-Purpose?</title>
+    <link href="http://arxiv.org/abs/2607.20284v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.20284v1</id>
+    <published>2026-07-22T00:00:00Z</published>
+    <updated>2026-07-22T00:00:00Z</updated>
+    <author>
+      <name>Qiwei Ma</name>
+    </author>
+    <author>
+      <name>Chunping Qiu</name>
+    </author>
+    <author>
+      <name>Xinjun Cheng</name>
+    </author>
+    <author>
+      <name>Xiaoyu Zhang</name>
+    </author>
+    <author>
+      <name>Puhong Duan</name>
+    </author>
+    <author>
+      <name>Ke Yang</name>
+    </author>
+    <author>
+      <name>Xudong Kang</name>
+    </author>
+    <author>
+      <name>Shutao Li</name>
+    </author>
+    <summary type="text">The rapid development of multimodal large language models (MLLMs) has introduced a flexible paradigm for remote sensing image scene understanding (RSISU), enabling natural-language interaction with remote sensing imagery. However, a systematic understanding of the capability boundaries, cross-task generalization, and task-specific limitations of existing remote sensing MLLMs (RS-MLLMs) is still lacking. This paper presents a systematic survey and diagnostic evaluation of MLLMs for RSISU. We review the technical evolution of RS-MLLMs, focusing on model design, multimodal learning, training data, and downstream capabilities. We further compare RS-MLLMs with general-purpose computer vision MLLMs (CV-MLLMs) across diverse RSISU tasks and benchmarks. RS-MLLMs remain competitive in domain-specific settings, particularly remote sensing visual grounding and high-resolution visual question answering. More notably, general-purpose CV-MLLMs can match or even outperform these specialized models on several RSISU tasks without remote sensing-specific fine-tuning. These findings demonstrate the strong transferability of general-purpose CV-MLLMs and show that current RS-MLLMs do not consistently outperform them across diverse RSISU tasks. Current MLLMs also face limitations in spatial and relational reasoning, fine-grained visual understanding, instruction diversity, and generalization across heterogeneous task formats. Based on these findings, we outline future directions toward reliable evaluation, multimodal and high-resolution reasoning, efficient deployment, and tool-augmented remote sensing agents. This survey provides a systematic reference for developing robust, generalizable, and practical MLLMs for RSISU.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 27 pages, 11 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>RS-RIE-Bench: Benchmarking Reasoning-Guided Remote Sensing Image Editing</title>
+    <link href="http://arxiv.org/abs/2607.20197v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.20197v1</id>
+    <published>2026-07-22T00:00:00Z</published>
+    <updated>2026-07-22T00:00:00Z</updated>
+    <author>
+      <name>Zihan Qin</name>
+    </author>
+    <author>
+      <name>Boao Xu</name>
+    </author>
+    <author>
+      <name>Zhao Dong</name>
+    </author>
+    <author>
+      <name>Yingping Sun</name>
+    </author>
+    <author>
+      <name>Ziheng Jiao</name>
+    </author>
+    <author>
+      <name>Junying Wang</name>
+    </author>
+    <author>
+      <name>Hongwei Wang</name>
+    </author>
+    <summary type="text">Remote sensing image editing aims to modify remote sensing images according to natural language instructions while preserving geographic rules and sensor observation characteristics. Existing benchmarks mainly target natural images or general visual scenes, and thus may not fully capture the reasoning, regional control, and sensor-consistency abilities required in remote sensing editing. To fill this gap, we introduce RS-RIE-Bench, the first benchmark for reasoning-guided remote sensing image editing. RS-RIE-Bench organizes tasks into three categories: temporal reasoning, causal reasoning, and spatial reasoning. These categories capture temporal evolution, causal consequence, and spatial imaging consistency in remote sensing scenes. The evaluation protocol covers three dimensions: target region plausibility, non-target region preservation, and image quality consistency. We further demonstrate the feasibility of MLLM-based evaluation through cross-judge consistency analysis and stratified expert review. Systematic evaluation on eight open-source and closed-source image editing models shows that current models still have clear limitations in reasoning-guided remote sensing editing. Even the strongest model achieves only 24.28\% overall accuracy under the strict joint-satisfaction criterion, while the mean relaxed joint-4 success rate across all eight models is 32.23\%. Causal reasoning and spatial reasoning remain especially challenging, and several open-source models are close to zero in some categories. These results show that RS-RIE-Bench can effectively reveal the limitations of current models in geographic reasoning, regional control, and sensor-consistent generation. It also provides a standardized benchmark and a clear research direction for future remote sensing intelligent editing models.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Treatment Geometry and Causal Identification with Earth Observation Data</title>
+    <link href="http://arxiv.org/abs/2607.19908v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.19908v1</id>
+    <published>2026-07-22T00:00:00Z</published>
+    <updated>2026-07-22T00:00:00Z</updated>
+    <author>
+      <name>Jeffrey D. Michler</name>
+    </author>
+    <author>
+      <name>Anna Josephson</name>
+    </author>
+    <author>
+      <name>Elinor Benami</name>
+    </author>
+    <author>
+      <name>Patrick Behrer</name>
+    </author>
+    <author>
+      <name>Michael J. Cecil</name>
+    </author>
+    <author>
+      <name>Sydney Gourlay</name>
+    </author>
+    <author>
+      <name>Robert Heilmayr</name>
+    </author>
+    <author>
+      <name>Ella Kirchner</name>
+    </author>
+    <author>
+      <name>Gina Maskell</name>
+    </author>
+    <author>
+      <name>Kunwar Singh</name>
+    </author>
+    <summary type="text">A central task in conducting impact evaluations is determining who or what was exposed to a treatment, when, and to what degree. These questions can be especially complex in geospatial settings, where many reasonable definitions of exposure may exist. This chapter introduces treatment geometry as a core concept in geospatial impact evaluation (GIE): the spatial and temporal footprint of a treatment as represented in data. How this footprint is defined shapes identification strategies and the credibility of causal inference. Drawing on cases spanning the air pollution, wildfire, forest policy, infrastructure, pest, and food security literature, the chapter provides practical guidance on navigating key tradeoffs (including spatial resolution, temporal alignment, spillovers, and boundary uncertainty) that arise when translating real-world interventions into analyzable data. Rather than prescribing a single best approach, the chapter equips researchers with a framework for diagnosing which geometry decisions may matter most in their context, closing with synthesis questions to help readers navigate these decisions.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="econ.EM" />
+  </entry>
   <entry>
     <title>Delineate Anything v2: A Global Foundation Model for Field Delineation</title>
     <link href="http://arxiv.org/abs/2607.19069v1" rel="alternate" type="text/html" />
