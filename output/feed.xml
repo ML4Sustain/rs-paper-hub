@@ -4,12 +4,135 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-24T04:12:50Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 21 entries</subtitle>
+  <updated>2026-07-27T01:29:57Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 16 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>LunarFM: A Shared Multimodal Representation of the Moon's Surface</title>
+    <link href="http://arxiv.org/abs/2607.22408v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.22408v1</id>
+    <published>2026-07-24T00:00:00Z</published>
+    <updated>2026-07-24T00:00:00Z</updated>
+    <author>
+      <name>Marc Girona-Mata</name>
+    </author>
+    <author>
+      <name>Jakob Gawlikowski</name>
+    </author>
+    <author>
+      <name>Sumit Goski</name>
+    </author>
+    <author>
+      <name>Gautier Bardi de Fourtou</name>
+    </author>
+    <author>
+      <name>Valentin T. Bickel</name>
+    </author>
+    <author>
+      <name>Ben Moseley</name>
+    </author>
+    <author>
+      <name>Abigail Calzada-Diaz</name>
+    </author>
+    <author>
+      <name>Sylvester Kaczmarek</name>
+    </author>
+    <author>
+      <name>Raúl Ramos-Pollán</name>
+    </author>
+    <summary type="text">The renewed global focus on lunar exploration, driven by the prospect of in-situ resource utilization and a sustained human presence on the Moon, has created growing demand for accurate, large-scale characterization of the lunar surface. Although vast quantities of orbital remote-sensing data have been collected, scientific analysis and resource mapping remain fragmented by heterogeneous multiinstrument observations, sparse labels, and bespoke task-specific modelling workflows. Here we introduce LunarFM, a multimodal foundation model that learns a general representation of the lunar surface from diverse orbital measurements. LunarFM assimilates observations from six instruments across three lunar missions, mapping 18 input channels to a shared embedding space. We demonstrate that this embedding space supports a diverse range of downstream applications, including similarity search, few-shot resource mapping, mineral abundance regression, and geological unit classification, enabling efficient scientific investigation and resource-oriented analysis. We provide a machine-learning-ready dataset of co-registered multimodal observations spanning latitudes from 70°S to 70°N, a pretrained multimodal masked autoencoder, and a companion embedding dataset providing a joint 768-dimensional representation of lunar surface properties. All code and data are available at https://lunarfm.trillium.tech/</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 19 pages, 12 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>IR275K: A Benchmark for Infrared Multi-Frame Super-Resolution Toward Efficient Remote Sensing</title>
+    <link href="http://arxiv.org/abs/2607.22380v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.22380v1</id>
+    <published>2026-07-24T00:00:00Z</published>
+    <updated>2026-07-24T00:00:00Z</updated>
+    <author>
+      <name>Jie Deng</name>
+    </author>
+    <author>
+      <name>Heyang Wang</name>
+    </author>
+    <author>
+      <name>Changxin Wang</name>
+    </author>
+    <author>
+      <name>Junkai Shen</name>
+    </author>
+    <author>
+      <name>Hongyi Chen</name>
+    </author>
+    <author>
+      <name>Zhiping He</name>
+    </author>
+    <author>
+      <name>Hongxing Qi</name>
+    </author>
+    <author>
+      <name>Xudong Zhang</name>
+    </author>
+    <author>
+      <name>Jianyu Wang</name>
+    </author>
+    <summary type="text">Efficient processing is becoming increasingly important in infrared remote sensing, where satellite constellations produce large volumes of observations under constrained detector resolution, power, and downlink bandwidth. Multi-frame super-resolution (MFSR) offers a software-based route to spatial enhancement, but its evaluation in infrared sensing remains fragmented across private datasets and ad-hoc protocols. Existing benchmarks do not explicitly capture the thermal contrast, sensor noise, weak texture, and platform-induced frame-to-frame variation that characterize infrared video. We introduce IR275K, a curated benchmark containing 594 infrared video sequences and 275,196 frames. It provides sequence-level train/validation/test splits and a reproducible X4 evaluation protocol. As an initial architectural probe, we further evaluate CGMamba, a lightweight state-space model with 10.90M parameters and 112.14G FLOPs. CGMamba combines 2D rotary position encoding (2D~RoPE) with center-guided cross-Mamba (CGCM) fusion for implicit multi-frame reconstruction. It achieves 33.19dB PSNR, outperforming infrared single-image super-resolution references by 0.35--0.52~dB at substantially lower computational cost. Ablation results show that removing 2D~RoPE from CGCM causes a 1.53dB drop and severe grid-like artifacts. This indicates that explicit spatial anchoring is critical for stabilizing SSM-based cross-frame gating under infrared conditions. IR275K provides a reproducible foundation for accuracy--efficiency evaluation of infrared MFSR methods, while the architectural analysis offers a concrete starting point for spatially aware SSM design under resource-constrained infrared sensing. Dataset and evaluation resources are available at: https://github.com/InfraRecon7/IR275K.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/InfraRecon7/IR275K"&gt;https://github.com/InfraRecon7/IR275K&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Beyond Binary Rooftop Mapping: A Four-Class Deep Learning Framework for Green Roof Potential Assessment from Open Swiss Geospatial Data</title>
+    <link href="http://arxiv.org/abs/2607.22342v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.22342v1</id>
+    <published>2026-07-24T00:00:00Z</published>
+    <updated>2026-07-24T00:00:00Z</updated>
+    <author>
+      <name>Htet Yamin Ko Ko</name>
+    </author>
+    <summary type="text">The development of effective urban climate adaptation strategies requires comprehensive spatial information on rooftops and buildings, since such information underpins the assessment of ecosystem services provided by green infrastructure, particularly for urban heat island (UHI) mitigation. Although green roofs are widely acknowledged as a promising measure for improving urban thermal comfort, most existing research maps either current green rooftops or rooftops with greening potential, but not both. This study presents a modified deep convolutional neural network rooftop classification framework based on Roofpedia, developed by the Urban Analytics Lab at the National University of Singapore. The proposed model combines high resolution aerial imagery with rooftop slope information derived from a digital surface model and relies entirely on publicly available Swisstopo datasets: SWISSIMAGE orthophotos, swissSURFACE3D elevation data, and swissTLM3D building footprints. Applied to Bern, Switzerland, the model labels rooftops into four categories: existing green roofs, rooftops suitable for green roof installation, rooftops with solar panels, and flat rooftops unsuitable for greening. The framework identifies realistic opportunities for green roof expansion and supplies urban planners with evidence-based information for green infrastructure deployment in Bern and other Swiss cities. Because it is fully open source, the framework is transferable to cities worldwide.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;3D&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Filling Before Advancing: Capability-Gap-Driven Post-Training for Scenario-Specialized Remote Sensing MLLMs</title>
+    <link href="http://arxiv.org/abs/2607.22205v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.22205v1</id>
+    <published>2026-07-24T00:00:00Z</published>
+    <updated>2026-07-24T00:00:00Z</updated>
+    <author>
+      <name>Yuheng Zong</name>
+    </author>
+    <author>
+      <name>Minghua Wang</name>
+    </author>
+    <author>
+      <name>Xin Zhao</name>
+    </author>
+    <author>
+      <name>Zhi-Hui Zhan</name>
+    </author>
+    <author>
+      <name>Antonio Plaza</name>
+    </author>
+    <author>
+      <name>Jon Atli Benediktsson</name>
+    </author>
+    <summary type="text">Remote sensing multimodal large language models (RS-MLLMs) have improved general aerial-image understanding. However, Earth observation applications require fine-grained scenario specialization, constrained by scarce high-quality scenario data and incomplete capability coverage. We formulate this adaptation as a capability-gap-driven post-training problem and propose filling before advancing (FBA). Rather than relying on single-stage supervised fine-tuning (SFT) over target-domain samples, FBA first fills prerequisite capability gaps before advancing toward scenario specialization. We instantiate FBA for coastal harbor understanding, a representative multi-source scenario, by constructing CPRS (Coastal-Port Remote Sensing), a three-layer supervision dataset coupled with three ordered stages: (1) RS semantic anchoring for overhead-view visual-language alignment; (2) domain-bridge convergence for shared RS priors across target and bridging scenarios under different modalities; and (3) evidence-grounded scenario tuning for downstream performance. We construct HarborEval, an eight-track diagnostic benchmark covering perception, spatial understanding, robustness, and generation. Under comparable training budgets, HarborEval increases from 57.95 with Direct-SFT to 70.29 with FBA on LLaVA-v1.5, and from 81.09 to 83.37 on Qwen3-VL. FBA also outperforms Collapsed-SFT and leads on harbor-related VRSBench/RSVQA subsets and OpenEval. Stage-wise and role-replacement analyses validate progressive gap filling and stage-specific roles. Public examples and release updates for CPRS, HarborEval, code, and trained weights are available at https://github.com/Z0ngL1ng/filling-before-advancing.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Z0ngL1ng/filling-before-advancing"&gt;https://github.com/Z0ngL1ng/filling-before-advancing&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>T-STAR: A Large-Scale Benchmark for Spatio-Temporal Panoptic Scene Graph Generation in Satellite Video</title>
     <link href="http://arxiv.org/abs/2607.21228v1" rel="alternate" type="text/html" />
@@ -392,470 +515,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="physics.soc-ph" />
     <category term="Machine Learning; physics.data-an" />
-  </entry>
-  <entry>
-    <title>Early Yield Prediction for Sugar Beet Fields using Satellite Data -- Learnings from Specialized Vision Transformers</title>
-    <link href="http://arxiv.org/abs/2607.17661v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.17661v1</id>
-    <published>2026-07-20T00:00:00Z</published>
-    <updated>2026-07-20T00:00:00Z</updated>
-    <author>
-      <name>Philipp Vaeth</name>
-    </author>
-    <author>
-      <name>Bhumika Laxman Sadbhave</name>
-    </author>
-    <author>
-      <name>Denise Dejon</name>
-    </author>
-    <author>
-      <name>Gunther Schorcht</name>
-    </author>
-    <author>
-      <name>Magda Gregorova</name>
-    </author>
-    <summary type="text">Remote sensing has become an increasingly valuable tool for agricultural monitoring, particularly through the use of publicly available satellite imagery. However, effectively integrating domain knowledge into machine learning methods remains challenging. This study presents a real-world example of early sugar beet harvest yield forecasting from purely optical Sentinel-2 imagery, demonstrating how a tight integration of domain knowledge and machine learning can lead to synergistic gains. We empirically find that using very small vision transformer patch sizes and all available Sentinel-2 spectral bands improves our model despite being uncommon design choices in the domain. As a practical contribution, we were able to identify a large fraction of low-yield fields in a different year early on in the growth cycle through a modified training setup and a ranking-based detection of underperforming fields.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Now We Know? A Systematic Comparison of TerraMind and THOR</title>
-    <link href="http://arxiv.org/abs/2607.18504v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.18504v1</id>
-    <published>2026-07-20T00:00:00Z</published>
-    <updated>2026-07-20T00:00:00Z</updated>
-    <author>
-      <name>Frederick Schindlegger</name>
-    </author>
-    <author>
-      <name>Kenzo Bounegta</name>
-    </author>
-    <author>
-      <name>Eva Gmelich Meijling</name>
-    </author>
-    <author>
-      <name>Johannes Jakubik</name>
-    </author>
-    <author>
-      <name>Arnt-Børre Salberg</name>
-    </author>
-    <author>
-      <name>Theodor Forgaard</name>
-    </author>
-    <author>
-      <name>Nicolas Longepe</name>
-    </author>
-    <author>
-      <name>Valerio Marsocci</name>
-    </author>
-    <summary type="text">Benchmarks for Geospatial Foundation Models (GFMs) increasingly rank models by aggregate score, but such rankings obscure why models differ: how much of the gap is architecture, how much is decoder capacity, and how much is a use-case-specific artefact? This study addresses that gap through a controlled comparison of two GFMs developed under European Space Agency's $Φ$-lab with contrasting design philosophies: THOR, which introduces a compute-adaptive architecture supporting variable patch sizes and unifies Sentinel-1, -2, and -3 data at their native resolutions; and TerraMind, a multimodal generative GFM pretrained with a dual-scale token/pixel objective that enables any-to-any cross-modal generation (Thinking-in-Modalities) to infer missing sensors at inference time. Rather than reporting a single leaderboard, we investigate the axes along which the two architectures actually differ - patch size, decoder complexity, finetuning regime, input modality, and model scale - across ten use cases spanning segmentation and regression in diverse domains, including climate disaster response, methane leak detection, snow monitoring, or sea ice mapping. We find that architectural design choices - patch size and decoder type in particular - explain more performance variance than model identity itself, that the two models embody complementary investment strategies (pretraining-time scale for TerraMind versus inference-time tokenisation for THOR), and that correctly interpreting results requires dataset-level characterisation. The resulting picture is not a single winner but a set of hypotheses and a diagnostic ablation methodology that we expect to generalise to future GFMs beyond THOR and TerraMind.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-    <category term="Artificial Intelligence; Computer Vision" />
-  </entry>
-  <entry>
-    <title>GUEST: Gravitational Universe Exploration with Satellite Tracking. A passive satellite laser-ranging mission for the dark gravitational Universe</title>
-    <link href="http://arxiv.org/abs/2607.18390v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.18390v1</id>
-    <published>2026-07-20T00:00:00Z</published>
-    <updated>2026-07-20T00:00:00Z</updated>
-    <author>
-      <name>Diego Blas</name>
-    </author>
-    <author>
-      <name>Aurélien Hees</name>
-    </author>
-    <author>
-      <name>F. Javier Atapuerca</name>
-    </author>
-    <author>
-      <name>Giada Bargiacchi</name>
-    </author>
-    <author>
-      <name>Massimo Bassan</name>
-    </author>
-    <author>
-      <name>Joshua N. Benabou</name>
-    </author>
-    <author>
-      <name>Bruno Bertrand</name>
-    </author>
-    <author>
-      <name>Adrien Bourgoin</name>
-    </author>
-    <author>
-      <name>Clare Burrage</name>
-    </author>
-    <author>
-      <name>Nicolò Burzillà</name>
-    </author>
-    <author>
-      <name>Alfonso Caldiero</name>
-    </author>
-    <author>
-      <name>Roberto Campagnola</name>
-    </author>
-    <author>
-      <name>Andrea Caputo</name>
-    </author>
-    <author>
-      <name>Ana Caramete</name>
-    </author>
-    <author>
-      <name>Laurentiu Caramete</name>
-    </author>
-    <author>
-      <name>Joan Manel Casalta Escuer</name>
-    </author>
-    <author>
-      <name>Julien Chabé</name>
-    </author>
-    <author>
-      <name>Gabriel Chiritoi</name>
-    </author>
-    <author>
-      <name>Marco Cinelli</name>
-    </author>
-    <author>
-      <name>Florin-Ioan Constantin</name>
-    </author>
-    <author>
-      <name>Neil J. Cornish</name>
-    </author>
-    <author>
-      <name>Clément Courde</name>
-    </author>
-    <author>
-      <name>Simone Dell'Agnello</name>
-    </author>
-    <author>
-      <name>Alessandro Di Marco</name>
-    </author>
-    <author>
-      <name>Sebastian Ellis</name>
-    </author>
-    <author>
-      <name>Malcolm Fairbairn</name>
-    </author>
-    <author>
-      <name>Ariadna Farrés</name>
-    </author>
-    <author>
-      <name>Joshua W. Foster</name>
-    </author>
-    <author>
-      <name>Silvia Gasparotto</name>
-    </author>
-    <author>
-      <name>Marta Goli</name>
-    </author>
-    <author>
-      <name>Yann Gouttenoire</name>
-    </author>
-    <author>
-      <name>Michael Häfner</name>
-    </author>
-    <author>
-      <name>Antonio J. Iovino</name>
-    </author>
-    <author>
-      <name>Maria-Catalina Isfan</name>
-    </author>
-    <author>
-      <name>Justin Janquart</name>
-    </author>
-    <author>
-      <name>Alexander C. Jenkins</name>
-    </author>
-    <author>
-      <name>Jean-Paul Kneib</name>
-    </author>
-    <author>
-      <name>Sébastien Le Maistre</name>
-    </author>
-    <author>
-      <name>David Lucchesi</name>
-    </author>
-    <author>
-      <name>Marco Lucente</name>
-    </author>
-    <author>
-      <name>Angus Macdonald</name>
-    </author>
-    <author>
-      <name>Jorge Martín Camalich</name>
-    </author>
-    <author>
-      <name>Rosa Martínez Rubiella</name>
-    </author>
-    <author>
-      <name>Josep J. Masdemont</name>
-    </author>
-    <author>
-      <name>Ilia Musco</name>
-    </author>
-    <author>
-      <name>Toshimichi Otsubo</name>
-    </author>
-    <author>
-      <name>Cristóbal Padilla</name>
-    </author>
-    <author>
-      <name>Fco. Rogelio Palomo Pinto</name>
-    </author>
-    <author>
-      <name>Alice Paun</name>
-    </author>
-    <author>
-      <name>Alice Perego</name>
-    </author>
-    <author>
-      <name>Roberto Peron</name>
-    </author>
-    <author>
-      <name>Florentina-Crenguta Pislan</name>
-    </author>
-    <author>
-      <name>Florin Adrian Popescu</name>
-    </author>
-    <author>
-      <name>Luca Porcelli</name>
-    </author>
-    <author>
-      <name>Nanda Rea</name>
-    </author>
-    <author>
-      <name>Rafael Rebolo</name>
-    </author>
-    <author>
-      <name>Marco Reyes</name>
-    </author>
-    <author>
-      <name>Ignasi Ribas</name>
-    </author>
-    <author>
-      <name>José C. Rodríguez</name>
-    </author>
-    <author>
-      <name>Pascal Rosenblatt</name>
-    </author>
-    <author>
-      <name>Albert Roura</name>
-    </author>
-    <author>
-      <name>Soumen Roy</name>
-    </author>
-    <author>
-      <name>Mariano Sánchez Nogales</name>
-    </author>
-    <author>
-      <name>Francesco Santoli</name>
-    </author>
-    <author>
-      <name>Feliciana Sapio</name>
-    </author>
-    <author>
-      <name>Anja Schlicht</name>
-    </author>
-    <author>
-      <name>Ulrich Schreiber</name>
-    </author>
-    <author>
-      <name>Angela Serrano</name>
-    </author>
-    <author>
-      <name>Daniel Serrano Lombillo</name>
-    </author>
-    <author>
-      <name>Alberto Sesana</name>
-    </author>
-    <author>
-      <name>Carlos F. Sopuerta</name>
-    </author>
-    <author>
-      <name>Krzysztof Sośnica</name>
-    </author>
-    <author>
-      <name>Nicola Tamanini</name>
-    </author>
-    <author>
-      <name>Elisa Todarello</name>
-    </author>
-    <author>
-      <name>Sokratis Trifinopoulos</name>
-    </author>
-    <author>
-      <name>Miguel Vanvlasselaer</name>
-    </author>
-    <author>
-      <name>Dario Vetrano</name>
-    </author>
-    <author>
-      <name>Massimo Visco</name>
-    </author>
-    <author>
-      <name>Hanxi Wang</name>
-    </author>
-    <author>
-      <name>Xiao Xue</name>
-    </author>
-    <author>
-      <name>Miguel Zumalacárregui</name>
-    </author>
-    <summary type="text">GUEST is a space mission concept whose central objective is the detection of gravitational waves (GWs) in the microhertz band -- a physics-rich frequency window that no other present or planned detector can reach at a significant level. The concept is simple: two dense, passive spheres, covered with cube-corner retroreflectors, deployed in {highly eccentric} Earth orbits ($e \gtrsim 0.7$, period $P \gtrsim 33$ h), tracked continuously by the global network of satellite laser-ranging stations over a minimum observation time of 10 years, with an expected total duration of 30 years. The orbits themselves act as resonant detectors of the oscillating gravitational perturbations, with the microhertz sensitivity emerging from the selected orbital parameters. From the same data stream, GUEST delivers a programme of fundamental and applied science that cuts across particle physics, gravitational-wave astronomy, cosmology, astrophysics, and geodesy: the first coherent search for GWs from supermassive black-hole binaries in the $μ$Hz band, the exploration of primordial GW backgrounds in the unexplored energy-scale gap between pulsar-timing arrays and LISA, a dedicated probe of ultra-light dark matter in a parameter region untouched by any other experiment, a new way to search for ultra-light bosons, order-of-magnitude-improved tests of new gravitational interactions at astronomical ranges, and a step change in the absolute determination of $GM_\oplus$ that underpins the Global Geodetic Observing System and future navigation and Earth-observation missions. This white paper presents the motivation, scientific reach, and mission concept of GUEST.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 23 pages, 14 figs&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="astro-ph.CO" />
-    <category term="gr-qc; hep-ph; physics.ins-det" />
-  </entry>
-  <entry>
-    <title>Planning for Mission Efficiency, Robustness, and Resilience for Unmanned Autonomous Systems (UASs) in Contested Environments</title>
-    <link href="http://arxiv.org/abs/2607.17085v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.17085v1</id>
-    <published>2026-07-19T00:00:00Z</published>
-    <updated>2026-07-19T00:00:00Z</updated>
-    <author>
-      <name>Michael J. Gaiewski</name>
-    </author>
-    <author>
-      <name>Sergey N. Vecherin</name>
-    </author>
-    <author>
-      <name>Laurel P. Williams</name>
-    </author>
-    <author>
-      <name>Igor Linkov</name>
-    </author>
-    <summary type="text">Unmanned Autonomous Systems (UASs) can remotely sense targets across large-scale areas but may be vulnerable to threats in contested environments. Current approaches consider efficiency through UAS path planning, but missions prioritizing robustness (i.e., the capacity to withstand disruptions) and resilience (i.e., the ability to recover from disruptions) are rarely considered despite their ability to increase mission success. This paper presents robust and resilient strategies for route planning for a fleet of UASs in a heterogeneous threat landscape. By integrating components of robustness and resilience in route planning through allowing the UASs to overlap in the waypoint locations and dynamic mission adaptation, the probability of mission success of complete area coverage can be increased. The results show that a robustness-focused strategy shows significant improvement in probability of mission success over an efficiency-based strategy, and that a resilience-based strategy outperforms both the efficiency- and robustness- based strategies. The specified methodologies provide promising future directions of research to explicitly incorporate robustness and resilience into UAS mission planning.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="physics.soc-ph" />
-  </entry>
-  <entry>
-    <title>SkyVLaM: Multimodal Large Language Model for UAV Video Understanding in Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2607.17386v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.17386v1</id>
-    <published>2026-07-19T00:00:00Z</published>
-    <updated>2026-07-19T00:00:00Z</updated>
-    <author>
-      <name>Kaiwen Jing</name>
-    </author>
-    <author>
-      <name>Ruixu Jia</name>
-    </author>
-    <author>
-      <name>Bingyao Li</name>
-    </author>
-    <author>
-      <name>Ruizhe Ou</name>
-    </author>
-    <author>
-      <name>Ming Wu</name>
-    </author>
-    <author>
-      <name>Chuang Zhang</name>
-    </author>
-    <summary type="text">Recent advances in Multimodal Large Language Models (MLLMs) have significantly improved remote sensing (RS) multimodal understanding. Language-conditioned segmentation is crucial for fine-grained target understanding in Unmanned Aerial Vehicle (UAV) videos. However, this task remains challenging due to the prevalence of small, visually ambiguous targets and dynamic aerial perspectives. In this paper, we propose SkyVLaM, a multimodal large language model for UAV video understanding. SkyVLaM constructs sparse tokens directly from patch-level video representations through a temporal basis perceiver, regularizes the sparse basis to encourage complementary temporal cues, and adaptively selects a temporally coherent dense segment for high-resolution inspection. The resulting sparse and dense tokens are jointly processed by a large language model for query-conditioned segmentation. We further build SkyVid, consisting of SkyVid-VGCG and SkyVid-RVOS for video grounded conversation generation and referring video object segmentation, respectively. SkyVid contains 101 videos, 33.6K frames, and 1.53M pixel-level object instances. Experiments show that SkyVLaM provides a more effective allocation of the visual token budget and improves language-conditioned video segmentation in UAV scenarios.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; WAICA 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>FUSAR-R1: A Large-Scale Reasoning Model for Intelligent Interpretation of SAR Images</title>
-    <link href="http://arxiv.org/abs/2607.16819v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.16819v1</id>
-    <published>2026-07-18T00:00:00Z</published>
-    <updated>2026-07-18T00:00:00Z</updated>
-    <author>
-      <name>Yi Yang</name>
-    </author>
-    <author>
-      <name>Xiaokun Zhang</name>
-    </author>
-    <author>
-      <name>Yuxuan Li</name>
-    </author>
-    <author>
-      <name>Ruyi Zhang</name>
-    </author>
-    <author>
-      <name>Xinpeng Zhou</name>
-    </author>
-    <author>
-      <name>Haipeng Wang</name>
-    </author>
-    <summary type="text">In recent years, large-scale vision-language models have been driving a paradigm shift in intelligent remote sensing image interpretation. By incorporating textual semantic information, the cognitive expression, semantic understanding, and human-computer interaction capabilities of interpretation models have been significantly improved, achieving initial progress in the field of Synthetic Aperture Radar (SAR) image interpretation. However, SAR images are affected by factors such as coherent imaging mechanisms, complex scattering characteristics, speckle noise interference, and target-background coupling, resulting in complex and variable image features with significant uncertainties and specializations. Existing SAR vision-language models do not yet possess the step-by-step analysis, logical judgment, and self-correction capabilities of human experts, making it difficult to support reliable intelligent interpretation in complex scenarios. To address this issue, this paper proposes a large-scale reasoning model, FUSAR-R1, for intelligent interpretation of SAR images. The model first constructs explicit chain-of-thought reasoning data by simulating the interpretation process of human experts and uses this data to guide instruction learning, thereby endowing the model with basic reasoning capabilities. Subsequently, a reinforcement learning strategy is introduced to optimize the model's outputs based on inference results, enabling self-correction and more reliable reasoning. Experimental results demonstrate that FUSAR-R1 consistently outperforms existing multimodal large-scale models across various SAR interpretation tasks, including target detection, target counting and classification, and land-cover category recognition.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;OD&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>A Unified Multisensor Machine-Learning Framework for Live Fuel Moisture Content Retrieval</title>
-    <link href="http://arxiv.org/abs/2607.16714v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.16714v1</id>
-    <published>2026-07-18T00:00:00Z</published>
-    <updated>2026-07-18T00:00:00Z</updated>
-    <author>
-      <name>Valerio Pampanoni</name>
-    </author>
-    <author>
-      <name>Emilio Chuvieco</name>
-    </author>
-    <author>
-      <name>Alvise Ferrari</name>
-    </author>
-    <author>
-      <name>Giovanni Laneve</name>
-    </author>
-    <author>
-      <name>Simone Saquella</name>
-    </author>
-    <summary type="text">Live fuel moisture content controls vegetation flammability and is a high-importance variable in fire management. Nevertheless, it remains difficult to estimate and map over large areas due to the concentration of field observations in specific regions. We develop a unified machine-learning framework that estimates live fuel moisture content from satellite vegetation indices, meteorological variables, topography and seasonal predictors. GlobeLFMC 2.0 measurements are matched to Terra and Aqua MODIS, VIIRS, Landsat 8/9, Sentinel-2 and Sentinel-3 surface-reflectance products, combining the long MODIS record with finer-resolution recent observations. To account for differences among sensors, optical predictors are restricted to a common red, near-infrared and shortwave-infrared feature space; site--product combinations and field time series are screened for remote-sensing suitability; and spectral response function diagnostics are combined with target-independent empirical reflectance calibration toward a Sentinel-2 reference domain. Preliminary single-product experiments show that weather, topography and cyclic day-of-year provide most of the predictive gain beyond vegetation indices, whereas optional product-specific predictors do not justify their additional dependencies. Separate Grass, Shrub and Tree models are trained with Random Forest and XGBoost regressors. Under the primary validation design, which withholds observation dates from sites represented in training, the best models achieve pooled R2 values of 0.715, 0.693 and 0.700 for Grass, Shrub and Tree, respectively. The framework can incorporate additional optical sensors when compatible reflectance bands, documented spectral responses and sufficient overlap observations are available for calibration and validation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages, 5 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Image and Video Processing" />
-  </entry>
-  <entry>
-    <title>Foundation-Assisted Active Learning for Object Detection Annotation</title>
-    <link href="http://arxiv.org/abs/2607.16671v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.16671v1</id>
-    <published>2026-07-18T00:00:00Z</published>
-    <updated>2026-07-18T00:00:00Z</updated>
-    <author>
-      <name>Jinchang Zhang</name>
-    </author>
-    <author>
-      <name>Arnold Zumbrun</name>
-    </author>
-    <author>
-      <name>Jing Lin</name>
-    </author>
-    <author>
-      <name>Guoyu Lu</name>
-    </author>
-    <summary type="text">The annotation cost for remote sensing object detection is high, while existing active learning methods still face several challenges in object detection scenarios, including the coupling of localization and classification uncertainty, severe localization noise in the cold-start stage, and pseudo-diversity caused by high-recall candidate proposals. To address these issues, we propose a foundation-model-collaborative active learning and semi-automatic annotation framework for efficient construction of remote sensing object detection datasets. We build a dual-source mechanism consisting of a reference localization source (SA-source) based on UPN+SAM2 and a detector prediction source (OD-source), and further propose a Foundation-model-enhanced Dual-Source Uncertainty estimation to improve sample selection quality in the cold-start stage by jointly modeling localization consistency and classification confidence. Furthermore, we propose Object-Centric Diversity Sampling, which constructs object-level representations using DINOv2 features and SAM2 masks to improve sample coverage while suppressing pseudo-diversity. To address geometric noise in the semi-automatic annotation stage, we design Dual-Source Box Switching, which replaces noisy detector boxes with matched refined boxes from the SA-source, thereby reducing the manual burden of box refinement. Experiments on DIOR, HRSC2016, DOTAv2, and FAIR1M show that our method achieves superior or comparable results under most annotation budgets, with notably stronger cold-start sample efficiency in the low-budget regime.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;OD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>AlterAtlas: Shifting Travel Planning from AI Generation to Validation via Persona-Driven Simulations</title>
-    <link href="http://arxiv.org/abs/2607.16565v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.16565v1</id>
-    <published>2026-07-18T00:00:00Z</published>
-    <updated>2026-07-18T00:00:00Z</updated>
-    <author>
-      <name>William Huang</name>
-    </author>
-    <author>
-      <name>Ruofei Du</name>
-    </author>
-    <author>
-      <name>Yang Zhang</name>
-    </author>
-    <summary type="text">Travel planning requires balancing interacting goals and constraints across time and space. Current AI travel tools provide limited support for encoding these constraints and understanding how generated travel plans may fail users. We present AlterAtlas, an interactive travel planning system that supports high-fidelity itinerary validation and revision through persona-based simulations grounded in geospatial information. AlterAtlas models travelers as editable personas, generates candidate itineraries from prioritized places of interest, and simulates how different personas would experience each plan. Simulations expose route-level tradeoffs, temporal user states (e.g., fatigue, hunger), and mismatches between plans and user preferences to allow users to iteratively refine both itineraries and user personas. An expert evaluation of 51 paired itineraries demonstrates that simulation-guided revisions significantly improve plan-persona alignment. Furthermore, a within-subjects study (N=11) reveals that AlterAtlas empowers users to uncover hidden constraints, fluidly compare alternatives, and build trust in their final plans. Our results suggest that simulation-based validation is a powerful, transparent interaction layer for AI-assisted travel planning.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 11 pages, 8 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.HC" />
   </entry>
 </feed>

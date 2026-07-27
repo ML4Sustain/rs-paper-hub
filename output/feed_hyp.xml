@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-24T04:12:50Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
+  <updated>2026-07-27T01:29:57Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 1 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -32,57 +32,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;SEG&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Early Yield Prediction for Sugar Beet Fields using Satellite Data -- Learnings from Specialized Vision Transformers</title>
-    <link href="http://arxiv.org/abs/2607.17661v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.17661v1</id>
-    <published>2026-07-20T00:00:00Z</published>
-    <updated>2026-07-20T00:00:00Z</updated>
-    <author>
-      <name>Philipp Vaeth</name>
-    </author>
-    <author>
-      <name>Bhumika Laxman Sadbhave</name>
-    </author>
-    <author>
-      <name>Denise Dejon</name>
-    </author>
-    <author>
-      <name>Gunther Schorcht</name>
-    </author>
-    <author>
-      <name>Magda Gregorova</name>
-    </author>
-    <summary type="text">Remote sensing has become an increasingly valuable tool for agricultural monitoring, particularly through the use of publicly available satellite imagery. However, effectively integrating domain knowledge into machine learning methods remains challenging. This study presents a real-world example of early sugar beet harvest yield forecasting from purely optical Sentinel-2 imagery, demonstrating how a tight integration of domain knowledge and machine learning can lead to synergistic gains. We empirically find that using very small vision transformer patch sizes and all available Sentinel-2 spectral bands improves our model despite being uncommon design choices in the domain. As a practical contribution, we were able to identify a large fraction of low-yield fields in a different year early on in the growth cycle through a modified training setup and a ranking-based detection of underperforming fields.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>A Unified Multisensor Machine-Learning Framework for Live Fuel Moisture Content Retrieval</title>
-    <link href="http://arxiv.org/abs/2607.16714v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.16714v1</id>
-    <published>2026-07-18T00:00:00Z</published>
-    <updated>2026-07-18T00:00:00Z</updated>
-    <author>
-      <name>Valerio Pampanoni</name>
-    </author>
-    <author>
-      <name>Emilio Chuvieco</name>
-    </author>
-    <author>
-      <name>Alvise Ferrari</name>
-    </author>
-    <author>
-      <name>Giovanni Laneve</name>
-    </author>
-    <author>
-      <name>Simone Saquella</name>
-    </author>
-    <summary type="text">Live fuel moisture content controls vegetation flammability and is a high-importance variable in fire management. Nevertheless, it remains difficult to estimate and map over large areas due to the concentration of field observations in specific regions. We develop a unified machine-learning framework that estimates live fuel moisture content from satellite vegetation indices, meteorological variables, topography and seasonal predictors. GlobeLFMC 2.0 measurements are matched to Terra and Aqua MODIS, VIIRS, Landsat 8/9, Sentinel-2 and Sentinel-3 surface-reflectance products, combining the long MODIS record with finer-resolution recent observations. To account for differences among sensors, optical predictors are restricted to a common red, near-infrared and shortwave-infrared feature space; site--product combinations and field time series are screened for remote-sensing suitability; and spectral response function diagnostics are combined with target-independent empirical reflectance calibration toward a Sentinel-2 reference domain. Preliminary single-product experiments show that weather, topography and cyclic day-of-year provide most of the predictive gain beyond vegetation indices, whereas optional product-specific predictors do not justify their additional dependencies. Separate Grass, Shrub and Tree models are trained with Random Forest and XGBoost regressors. Under the primary validation design, which withholds observation dates from sites represented in training, the best models achieve pooled R2 values of 0.715, 0.693 and 0.700 for Grass, Shrub and Tree, respectively. The framework can incorporate additional optical sensors when compatible reflectance bands, documented spectral responses and sufficient overlap observations are available for calibration and validation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages, 5 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Image and Video Processing" />
   </entry>
 </feed>
