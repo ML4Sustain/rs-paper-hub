@@ -4,10 +4,70 @@
   <id>https://rspaper.top/output/feed_sar.xml</id>
   <link href="https://rspaper.top/output/feed_sar.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-27T04:34:32Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 0 entries</subtitle>
+  <updated>2026-07-28T01:20:15Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Contrastive Parameter Disentanglement for Multi-modal Remote Sensing Image Generation</title>
+    <link href="http://arxiv.org/abs/2607.23673v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.23673v1</id>
+    <published>2026-07-26T00:00:00Z</published>
+    <updated>2026-07-26T00:00:00Z</updated>
+    <author>
+      <name>Yu Zhang</name>
+    </author>
+    <author>
+      <name>Wenda Zhao</name>
+    </author>
+    <author>
+      <name>Haojun Tang</name>
+    </author>
+    <author>
+      <name>Haipeng Wang</name>
+    </author>
+    <summary type="text">Existing remote sensing image generation methods are largely confined to single-modality synthesis and therefore fail to exploit the complementary information inherent in multimodal imagery. To address this limitation, we propose a contrastive parameter disentanglement framework for multimodal remote sensing image generation, which generates semantically consistent and structurally aligned images across multiple modalities, including optical, infrared, and synthetic aperture radar (SAR), from a single text prompt. Specifically, we introduce a contrastive parameter disentanglement module that disentangles shared semantics from modality-specific attributes at the parameter level within an orthogonal core subspace. Based on this module, we develop a disentangled optimization strategy that first constrains the parameter matrix A of the LoRA adapter to capture modality-invariant semantics through a multimodal contrastive objective and then guides multiple parameter matrices B to learn modality-specific attributes under text conditioning. This strategy enables the simultaneous generation of multimodal images with consistent semantic content and distinct modality characteristics. Furthermore, to ensure structural alignment across the generated images, we devise a query-key structure transfer mechanism that jointly models multimodal sampling trajectories during inference by transferring structural correlation priors from an anchor modality to the remaining modalities. Extensive experiments demonstrate that our method outperforms state-of-the-art remote sensing image generation approaches in terms of generation quality, semantic consistency, and structural alignment, while also achieving superior performance in the downstream object classification task.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>WGDnet: Wishart-guided Geometric-aware Deep Network for PolSAR Image Classification</title>
+    <link href="http://arxiv.org/abs/2607.23638v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.23638v1</id>
+    <published>2026-07-26T00:00:00Z</published>
+    <updated>2026-07-26T00:00:00Z</updated>
+    <author>
+      <name>Junfei Shi</name>
+    </author>
+    <author>
+      <name>Haojia Zhang</name>
+    </author>
+    <author>
+      <name>Yu Cheng</name>
+    </author>
+    <author>
+      <name>Yuke Li</name>
+    </author>
+    <summary type="text">Polarimetric Synthetic Aperture Radar (PolSAR) classification underpins all-weather Earth observation. Conventional Wishart methods depend on rigid handcrafted operators with limited adaptability, while mainstream deep networks ignore PolSAR native Wishart scattering statistics. Additionally, fixed convolution windows fail to capture multi-scale, multi-directional terrain patterns, harming boundary detection and small-object characterization. To mitigate these drawbacks, we propose WGDNet, a Wishart-guided geometric-aware deep network. It integrates three core designs: (1) learnable Wishart convolutions with directional kernels for multi-scale statistical edge feature extraction; (2) an orientation-prior aggregation module that estimates dominant local directions and confidences to refine directional Wishart outputs adaptively; (3) GAnet, a scale-direction adaptive geometric-aware convolution that dynamically reshapes sampling grids to model anisotropic terrain and retain fine details. Our contributions lie in learnable Wishart statistical modeling, orientation-prior feature aggregation, and geometry-adaptive convolution. Evaluations across four real PolSAR datasets verify WGDNet surpasses existing state-of-the-art approaches in classification accuracy and boundary fidelity.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Random Indexing for Image Change Detection: A Distance-Threshold Vocabulary Approach</title>
+    <link href="http://arxiv.org/abs/2607.23609v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.23609v1</id>
+    <published>2026-07-26T00:00:00Z</published>
+    <updated>2026-07-26T00:00:00Z</updated>
+    <author>
+      <name>Cristiano Tamborrino</name>
+    </author>
+    <summary type="text">Random Indexing (RI), used almost exclusively in text analysis (notably Temporal Random Indexing, TRI, for tracking word meaning over time), represents a discrete vocabulary with fixed random vectors and accumulates context by vector summation. We explore transplanting this mechanism to change detection in multitemporal images. A naive transplant using k-means to build the visual vocabulary is unstable: pixels are frequently reassigned between acquisition dates due to small radiometric shifts, destroying the pixel-to-vector correspondence RI depends on. We propose a distance-threshold (leader) clustering vocabulary instead, and give a short formal argument -- a stability radius from the vocabulary covering/packing properties -- for why this is provably more robust to acquisition noise than k-means. Combined with spatial context accumulation, this yields a training-free change detection pipeline, evaluated on four bi-temporal remote-sensing datasets (agriculture, river, urban PolSAR, wildfire) against a Change Vector Analysis baseline, which it consistently approaches but does not surpass. Multi-seed validation exposed and let us fix a degenerate-vector failure mode in a probabilistic-sparsity RI variant, and revealed a second, unresolved source of variability -- sensitivity to the leader-clustering visitation order -- which we characterize but, despite three attempted corrections, could not eliminate, reporting it as the main open problem. Results are cross-checked against an independent re-implementation. We report an ablation, a hyperparameter sensitivity analysis, an Otsu-vs-Gaussian-mixture thresholding comparison, and discuss RI incremental accumulation for future long time-series monitoring.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
+    <category term="math.NA" />
+  </entry>
 </feed>

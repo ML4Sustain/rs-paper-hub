@@ -4,12 +4,43 @@
   <id>https://rspaper.top/output/feed_uav.xml</id>
   <link href="https://rspaper.top/output/feed_uav.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-27T04:34:32Z</updated>
+  <updated>2026-07-28T01:20:15Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Optimized Embedded Implementation of Hyperspectral-Multispectral Image Fusion on Raspberry Pi</title>
+    <link href="http://arxiv.org/abs/2607.23136v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.23136v1</id>
+    <published>2026-07-25T00:00:00Z</published>
+    <updated>2026-07-25T00:00:00Z</updated>
+    <author>
+      <name>Salah Eddine Brezini</name>
+    </author>
+    <author>
+      <name>Okba Bekhelifi</name>
+    </author>
+    <author>
+      <name>Oussama Mezouar</name>
+    </author>
+    <author>
+      <name>Chams Eddine Choucha</name>
+    </author>
+    <author>
+      <name>Sarra Boukhacheba</name>
+    </author>
+    <author>
+      <name>Fethi Abdelatif Dali</name>
+    </author>
+    <summary type="text">Remote sensing optical images have become central to a wide range of applications. In particular, hyperspectral images, with their high spectral resolution, enable the extraction of rich information about the objects and materials present in the observed scene. Nevertheless, processing such data comes at the expense of a high computational load due to its large data volume, making real-time processing very difficult to achieve. Recently, we proposed an approach to investigate the feasibility of processing such data on a Raspberry Pi by implementing a hyperspectral super-resolution technique, namely HSB-SV. However, the implementation resulted in high computational time. To overcome this limitation, we apply computational optimization techniques based on migrating the most intensive operations to PyTorch and edge inference frameworks such as ONNX Runtime and ExecuTorch with the XNNPACK backend. The proposed optimized implementation is deployed on a Raspberry Pi 5 platform. Experimental results demonstrate a significant reduction in computational time, achieving a 1.48x overall speedup on the Raspberry Pi 5, the total execution time decreases significantly, from 527.1 ms to 356.7 ms corresponding to a 32.3% dminution, while fully preserving the fusion quality, making the approach more suitable for embedded and edge computing scenarios, particularly for UAV-based hyperspectral remote sensing applications.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; paper is accepted for presentation at EDiS'2026: IEEE 5th International Conference on Embedded and Distributed Systems, Oran, Algeria, November 2-5, 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+    <category term="cs.PF" />
+  </entry>
   <entry>
     <title>RIM: A Retrieval-In-Matching Framework for Cross-Domain Global Visual Localization of UAVs</title>
     <link href="http://arxiv.org/abs/2607.20116v1" rel="alternate" type="text/html" />
@@ -37,30 +68,6 @@
     <summary type="text">Global visual localization of unmanned aerial vehicles (UAVs) using remote-sensing reference maps has attracted increasing attention. However, acquisition-time and imaging-platform differences between UAV and reference imagery induce substantial cross-domain appearance and viewpoint shifts, challenging robust six-degree-of-freedom (6-DoF) pose estimation. We address these shifts by sampling UAV-viewpoint reference views from Google 3D Tiles across locations, altitudes, and orientations. A two-stage cross-domain fine-tuning recipe adapts SALAD using pose-near positives and geographically distant hard negatives, while local geometric consistency re-ranks the Top-K candidates. We further propose Retrieval-In-Matching (RIM), which freezes the adapted DINOv2-B retriever and distils a local-descriptor decoder that reuses its token field alongside a shallow VGG19 detail stream. One query-side DINOv2-B forward thus serves both SALAD retrieval and local description, eliminating a second foundation-model backbone while preserving retrieval descriptors by construction. We evaluate RIM zero-shot on the reconstructed EPFL Urbanscape and self-collected Chang'an Park datasets, both geographically disjoint from the training data. RIM outperforms ten recent retrieval baseline families. At 25/50 m under the full 3D distance metric, it improves Recall@1 over SALAD by 8.55/13.77 percentage points on EPFL and 4.45/8.94 points on Park. At Top-K=5, the complete measured localization query, including retrieval, candidate matching, and robust geometric verification, takes 67.9 ms end-to-end: 1.8 times faster than the strongest separate sparse-matching baseline and over 40 times faster than RoMa, while achieving comparable re-ranking accuracy. These results establish an efficient and deployable pipeline for UAV global visual localization in GNSS-challenged environments.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 56 pages, 10 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>CGMap: A Geospatially Aware Deep Learning Framework for Crop Gap Mapping Using UAV</title>
-    <link href="http://arxiv.org/abs/2607.18779v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.18779v1</id>
-    <published>2026-07-21T00:00:00Z</published>
-    <updated>2026-07-21T00:00:00Z</updated>
-    <author>
-      <name>Karan Sharma</name>
-    </author>
-    <author>
-      <name>Rajiv Ranjan</name>
-    </author>
-    <author>
-      <name>Dinesh Kumar</name>
-    </author>
-    <author>
-      <name>Shashank Tamaskar</name>
-    </author>
-    <summary type="text">In India, crop germination is primarily monitored by visual inspection and manual counting, which are prone to errors, despite their crucial role in determining eventual yield potential. This paper highlights a deep learning based pipeline which uses object detection methods and drone imagery to assess and provide a precise count of sugarcane germination in fields. The approch uses a pre-trained AI model to find germinated plant sampling and identify gaps, also known as ``bald spots'', which restricts field productivity. The techniques used here relies on the YOLOV8 architecture, which was trained on a carefully selected dataset of UAV photos taken in various agroclimatic zones of India. Here, we bring upon a novel orientation-normalization technique that uses minimum Spanning Trees (MST) to account for variations in planting geometry, allowing for dependable row and column extraction across a variety of field layouts. By converting detected seedlings into spatial point clouds, emergence gaps can be inferred from the anticipated spacing between plants. A geospatial germination map exported in Well-Known Text (WKT) format is the end result, and it can be easily incorporated into GIS platforms used by sugar mills and agronomists to direct transplant initiatives. Timely interventions based on the insights provided by the algorithm can significantly increase yield, resulting in higher profits. Hence, support proper allocation of resources, avoid wastage, and enhance long-term sustainability.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD;3D&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>

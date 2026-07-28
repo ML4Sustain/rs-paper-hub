@@ -20176,5 +20176,24 @@
     "_added_date": "2026-07-24",
     "Category": "Dataset",
     "_tasks": "CLS;SEG"
+  },
+  {
+    "Type": "Image and Video Processing",
+    "Subtype": "cs.PF",
+    "Date": "2026-07-25",
+    "Month": 7,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Optimized Embedded Implementation of Hyperspectral-Multispectral Image Fusion on Raspberry Pi",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2607.23136v1",
+    "Abstract": "Remote sensing optical images have become central to a wide range of applications. In particular, hyperspectral images, with their high spectral resolution, enable the extraction of rich information about the objects and materials present in the observed scene. Nevertheless, processing such data comes at the expense of a high computational load due to its large data volume, making real-time processing very difficult to achieve. Recently, we proposed an approach to investigate the feasibility of processing such data on a Raspberry Pi by implementing a hyperspectral super-resolution technique, namely HSB-SV. However, the implementation resulted in high computational time. To overcome this limitation, we apply computational optimization techniques based on migrating the most intensive operations to PyTorch and edge inference frameworks such as ONNX Runtime and ExecuTorch with the XNNPACK backend. The proposed optimized implementation is deployed on a Raspberry Pi 5 platform. Experimental results demonstrate a significant reduction in computational time, achieving a 1.48x overall speedup on the Raspberry Pi 5, the total execution time decreases significantly, from 527.1 ms to 356.7 ms corresponding to a 32.3% dminution, while fully preserving the fusion quality, making the approach more suitable for embedded and edge computing scenarios, particularly for UAV-based hyperspectral remote sensing applications.",
+    "code": "",
+    "Publication": "paper is accepted for presentation at EDiS'2026: IEEE 5th International Conference on Embedded and Distributed Systems, Oran, Algeria, November 2-5, 2026",
+    "BibTex": "@article{brezini2026optimized,\n  title={Optimized Embedded Implementation of Hyperspectral-Multispectral Image Fusion on Raspberry Pi},\n  author={Salah Eddine Brezini and Okba Bekhelifi and Oussama Mezouar and Chams Eddine Choucha and Sarra Boukhacheba and Fethi Abdelatif Dali},\n  journal={arXiv preprint arXiv:2607.23136v1},\n  year={2026},\n  url={http://arxiv.org/abs/2607.23136v1}\n}",
+    "Authors": "Salah Eddine Brezini, Okba Bekhelifi, Oussama Mezouar, Chams Eddine Choucha, Sarra Boukhacheba, Fethi Abdelatif Dali",
+    "_added_date": "2026-07-28",
+    "Category": "Method",
+    "_tasks": "SR"
   }
 ]

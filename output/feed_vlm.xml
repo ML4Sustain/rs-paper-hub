@@ -4,12 +4,35 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-27T04:34:32Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 7 entries</subtitle>
+  <updated>2026-07-28T01:20:15Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 6 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Contrastive Parameter Disentanglement for Multi-modal Remote Sensing Image Generation</title>
+    <link href="http://arxiv.org/abs/2607.23673v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.23673v1</id>
+    <published>2026-07-26T00:00:00Z</published>
+    <updated>2026-07-26T00:00:00Z</updated>
+    <author>
+      <name>Yu Zhang</name>
+    </author>
+    <author>
+      <name>Wenda Zhao</name>
+    </author>
+    <author>
+      <name>Haojun Tang</name>
+    </author>
+    <author>
+      <name>Haipeng Wang</name>
+    </author>
+    <summary type="text">Existing remote sensing image generation methods are largely confined to single-modality synthesis and therefore fail to exploit the complementary information inherent in multimodal imagery. To address this limitation, we propose a contrastive parameter disentanglement framework for multimodal remote sensing image generation, which generates semantically consistent and structurally aligned images across multiple modalities, including optical, infrared, and synthetic aperture radar (SAR), from a single text prompt. Specifically, we introduce a contrastive parameter disentanglement module that disentangles shared semantics from modality-specific attributes at the parameter level within an orthogonal core subspace. Based on this module, we develop a disentangled optimization strategy that first constrains the parameter matrix A of the LoRA adapter to capture modality-invariant semantics through a multimodal contrastive objective and then guides multiple parameter matrices B to learn modality-specific attributes under text conditioning. This strategy enables the simultaneous generation of multimodal images with consistent semantic content and distinct modality characteristics. Furthermore, to ensure structural alignment across the generated images, we devise a query-key structure transfer mechanism that jointly models multimodal sampling trajectories during inference by transferring structural correlation priors from an anchor modality to the remaining modalities. Extensive experiments demonstrate that our method outperforms state-of-the-art remote sensing image generation approaches in terms of generation quality, semantic consistency, and structural alignment, while also achieving superior performance in the downstream object classification task.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Filling Before Advancing: Capability-Gap-Driven Post-Training for Scenario-Specialized Remote Sensing MLLMs</title>
     <link href="http://arxiv.org/abs/2607.22205v1" rel="alternate" type="text/html" />
@@ -173,59 +196,5 @@
     <summary type="text">A central task in conducting impact evaluations is determining who or what was exposed to a treatment, when, and to what degree. These questions can be especially complex in geospatial settings, where many reasonable definitions of exposure may exist. This chapter introduces treatment geometry as a core concept in geospatial impact evaluation (GIE): the spatial and temporal footprint of a treatment as represented in data. How this footprint is defined shapes identification strategies and the credibility of causal inference. Drawing on cases spanning the air pollution, wildfire, forest policy, infrastructure, pest, and food security literature, the chapter provides practical guidance on navigating key tradeoffs (including spatial resolution, temporal alignment, spillovers, and boundary uncertainty) that arise when translating real-world interventions into analyzable data. Rather than prescribing a single best approach, the chapter equips researchers with a framework for diagnosing which geometry decisions may matter most in their context, closing with synthesis questions to help readers navigate these decisions.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="econ.EM" />
-  </entry>
-  <entry>
-    <title>Delineate Anything v2: A Global Foundation Model for Field Delineation</title>
-    <link href="http://arxiv.org/abs/2607.19069v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.19069v1</id>
-    <published>2026-07-21T00:00:00Z</published>
-    <updated>2026-07-21T00:00:00Z</updated>
-    <author>
-      <name>Mykola Lavreniuk</name>
-    </author>
-    <author>
-      <name>Nataliia Kussul</name>
-    </author>
-    <author>
-      <name>Andrii Shelestov</name>
-    </author>
-    <author>
-      <name>Yevhenii Salii</name>
-    </author>
-    <author>
-      <name>Volodymyr Kuzin</name>
-    </author>
-    <author>
-      <name>Charlotte Julia Li-Xing Wang</name>
-    </author>
-    <author>
-      <name>Zoltan Szantoi</name>
-    </author>
-    <summary type="text">Accurate agricultural field boundary delineation at large scale is a foundational task for food security, supply chain transparency, and carbon accounting. While vision foundation models like SAM show remarkable zero-shot capabilities, they frequently fail in geospatial domains due to topological complexity, cropland texturing patterns, and a lack of physical scale awareness. In this work, we introduce Delineate Anything v2, a globally scalable foundation model designed specifically for wide-area field boundary mapping. We construct FBIS-73M, a 73-million-instance multi-resolution dataset spanning 61 countries. To address the pervasive issue of multi-field administrative parcel merging, we introduce a resolution-specific data curation pipeline that leverages topological image-space adaptation to homogenize merged parcels and strengthen weak physical boundaries. Furthermore, we establish a novel, manually curated evaluation benchmark covering 100 countries to assess independent zero-shot generalization. Our results show that Delineate Anything v2 surpasses the current state-of-the-art, including the Delineate Anything framework, by 0.284 mAP@0.5 (+103.3% relative gain), while maintaining execution speeds suitable for rapid national- and global-scale deployment, as demonstrated by nationwide mapping of Ukraine (603,000 km^2) in 5.4 hours on a consumer-grade workstation. Code, pre-trained weights, the FBIS-73M dataset, and ready-to-use national-scale vector boundary products are publicly available at https://github.com/Lavreniuk/Delineate-Anything.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Lavreniuk/Delineate-Anything"&gt;https://github.com/Lavreniuk/Delineate-Anything&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Learning Semantic-Robust Change Detection via Semantic-Invariant Self-Distillation</title>
-    <link href="http://arxiv.org/abs/2607.19000v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.19000v1</id>
-    <published>2026-07-21T00:00:00Z</published>
-    <updated>2026-07-21T00:00:00Z</updated>
-    <author>
-      <name>Jiuhe Qu</name>
-    </author>
-    <author>
-      <name>Yingping Liang</name>
-    </author>
-    <author>
-      <name>Ying Fu</name>
-    </author>
-    <summary type="text">Change detection aims to identify semantic changes between remote sensing images. However, features from models are easily disturbed by non-semantic variations, such as illumination, shadows, and atmospheric changes, leading to false alarms and limited generalization in real-world scenarios. In this paper, we propose \textbf{SCDistill}, a framework for learning semantic-robust change detection via semantic-invariant self-distillation. First, to strengthen semantic consistency, we introduce a semantic-invariant self-distillation strategy that learns semantic robustness from perturbed yet semantically consistent data, empowering the change detector to extract disturbance-resistant features and achieve more reliable and accurate semantic change identification. Second, to expand paired data with non-semantic variations, we design a diffusion-based perturbation simulation pipeline that synthesizes complex environmental changes, enabling the model to explicitly learn to distinguish semantic changes from appearance-level fluctuations and reduce false alarms caused by non-semantic disturbances. These components promote robustness from data and representation perspectives, leading to synergistic performance gains. Extensive experiments demonstrate that SCDistill achieves state-of-the-art performance on multiple semantic change detection benchmarks and exhibits strong generalization to binary change detection and change captioning tasks. Code is accessible at https://github.com/elecreak/SCDistill.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/elecreak/SCDistill"&gt;https://github.com/elecreak/SCDistill&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ECCV2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>
