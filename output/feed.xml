@@ -4,12 +4,130 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-28T01:20:15Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 17 entries</subtitle>
+  <updated>2026-07-28T03:56:45Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 21 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>From Machine Learning to Large-Scale EO Products: Best Practices for Making Maps</title>
+    <link href="http://arxiv.org/abs/2607.24532v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.24532v1</id>
+    <published>2026-07-27T00:00:00Z</published>
+    <updated>2026-07-27T00:00:00Z</updated>
+    <author>
+      <name>Ghjulia Sialelli</name>
+    </author>
+    <author>
+      <name>Robin Young</name>
+    </author>
+    <author>
+      <name>Yuchang Jiang</name>
+    </author>
+    <author>
+      <name>Cesar Aybar</name>
+    </author>
+    <author>
+      <name>Linus Scheibenreif</name>
+    </author>
+    <author>
+      <name>Damien Robert</name>
+    </author>
+    <author>
+      <name>Clemens Mosig</name>
+    </author>
+    <author>
+      <name>Adam J. Stewart</name>
+    </author>
+    <author>
+      <name>Jan D. Wegner</name>
+    </author>
+    <author>
+      <name>Aleksis Pirinen</name>
+    </author>
+    <author>
+      <name>Olof Mogren</name>
+    </author>
+    <author>
+      <name>Konrad Schindler</name>
+    </author>
+    <summary type="text">Recent years have seen a rapid expansion in the production of large-scale geospatial maps derived from Earth observation (EO) data, driven largely by advances in machine learning (ML) and large computing infrastructure. Although the barrier to generating such maps has dropped substantially, established best practices have yet to emerge, and design decisions made early in the pipeline can quietly propagate errors into the final product. Producing a technically sound and scientifically credible product remains challenging. Choices made at every stage are tightly coupled: preprocessing decisions shape the training signal, dataset design governs what the model can learn and how reliably its performance can be assessed, and global-scale inference introduces engineering challenges in compute and data access at scale, as well as artifact mitigation. Furthermore, uncertainty quantification and independent map validation each require dedicated methodological attention that is often underestimated. This paper presents a concise, end-to-end account of the recommended practices spanning the pipeline from satellite data to an operational map product. We organize the discussion around six interconnected themes: the EO data infrastructure landscape, data selection and preprocessing, ML dataset construction and model training, uncertainty quantification, map production and distribution, and validation. This paper is a condensed version of a longer guide that provides greater depth across all stages, accessible online at ghjuliasialelli.github.io/MLEO-Maps/.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ECCV 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Distributed Coordination for Resilient Multi-UAV Remote Sensing: A Photovoltaic Inspection Case Study</title>
+    <link href="http://arxiv.org/abs/2607.24482v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.24482v1</id>
+    <published>2026-07-27T00:00:00Z</published>
+    <updated>2026-07-27T00:00:00Z</updated>
+    <author>
+      <name>Guillermo GP-Lenza</name>
+    </author>
+    <author>
+      <name>Miguel Fernandez-Cortizas</name>
+    </author>
+    <author>
+      <name>Martin Molina</name>
+    </author>
+    <author>
+      <name>Pascual Campoy</name>
+    </author>
+    <summary type="text">Deploying multiple UAVs for remote sensing enables proportional reductions in mission time, but realizing these benefits requires the fleet to coordinate at runtime: distributing sensing targets, responding to platform failures, and recovering from degraded data quality. In inspection campaigns, where mission value depends on complete coverage and the usability of every capture, a centralized ground-station coordinator is a single point of failure: a lost link or station fault leaves sensing gaps that cannot be filled without operator intervention. We propose the \textbf{SwarmLink}, an inter-agent communication infrastructure that non-invasively extends any existing aerial framework with peer-to-peer coordination capability, without modifying the host system. We apply it to photovoltaic plant inspection as a representative large-scale sensing campaign, extending Aerostack2 with a distributed auction that unifies initial sensing-target allocation, platform-failure recovery, and data-quality-triggered reassignment into a single runtime mechanism. All three disruption scenarios reduce to the same re-auction over remaining targets and active platforms, requiring zero modifications to the Aerostack2 core and no ground-station involvement during the mission.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Robotics" />
+  </entry>
+  <entry>
+    <title>Accuracy potential of visual localization exploiting high-end street-level imagery</title>
+    <link href="http://arxiv.org/abs/2607.24409v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.24409v1</id>
+    <published>2026-07-27T00:00:00Z</published>
+    <updated>2026-07-27T00:00:00Z</updated>
+    <author>
+      <name>Jonas Meyer</name>
+    </author>
+    <author>
+      <name>Stephan Nebiker</name>
+    </author>
+    <author>
+      <name>Pascal Theiler</name>
+    </author>
+    <author>
+      <name>Norbert Haala</name>
+    </author>
+    <summary type="text">Accurate and reliable pose information with respect to a reference frame is increasingly demanded across applications such as autonomous navigation, surveying, robotics, and augmented and mixed reality. Visual localization can serve as a complementary positioning modality to GNSS, whose applicability and accuracy are often limited. Yet, the accuracy potential of visual localization has not been systematically investigated against survey-grade demands. This is mainly due to the lack of publicly available, large-scale outdoor datasets with ground-truth poses in the sub-centimeter range. In this work, we address both gaps. We introduce a scalable visual localization pipeline that employs precisely georeferenced, high-resolution street-level imagery directly as the scene representation. It combines prior-guided reference candidate selection with on-the-fly local Structure-from-Motion reconstruction and PnP-based pose estimation. We further present the FHNW Muttenz dataset, a real-world dataset covering a contiguous 10 km street network mapped in two mobile mapping campaigns approximately 1.5 years apart. It consists of high-resolution reference imagery and query sequences acquired by four different cameras across five representative scenes. All images are precisely co-registered, yielding 6-DoF ground-truth poses in the sub-centimeter range. Using this dataset, we evaluate the accuracy potential of visual localization. Our experiments demonstrate median pose accuracies in the range of 1-5 cm for translation and 0.05-0.1° for rotation, reaching as low as 1 cm and 0.03° under favorable conditions. These results show that visual localization can complement survey-grade GNSS positioning, paving the way for 3D geospatial data acquisition using consumer devices and fully automated georeferencing approaches. The dataset is publicly available at: https://fhnw-muttenz-vl-dataset.github.io/.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 26 pages, 6 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Robotics" />
+  </entry>
+  <entry>
+    <title>Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets</title>
+    <link href="http://arxiv.org/abs/2607.23908v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.23908v1</id>
+    <published>2026-07-27T00:00:00Z</published>
+    <updated>2026-07-27T00:00:00Z</updated>
+    <author>
+      <name>Syed Roshaan Ali Shah</name>
+    </author>
+    <author>
+      <name>Kristof Van Tricht</name>
+    </author>
+    <author>
+      <name>Christina Butsko</name>
+    </author>
+    <author>
+      <name>Jeroen Degerickx</name>
+    </author>
+    <author>
+      <name>Zoltan Szantoi</name>
+    </author>
+    <summary type="text">High quality reference data remain a critical bottleneck for crop-type mapping at any spatial and temporal scale. Operational systems such as WorldCereal aggregate labels from heterogeneous sources such as parcel registers, national databases, field surveys, and map-derived products, each with their own biases, coverage gaps and unknown label noise. Simple global rules are inadequate, since crop phenology and observation conditions vary strongly across regions and seasons.   In this study, we focus on a single, operationally relevant question: whether embeddings produced through geospatial foundation models are a viable basis for cleaning the reference data. We propose a practical, locality-aware, embedding-based anomaly (EBA) detection framework that operates on the embeddings of a pretrained Earth-observation encoder. We score each labelled sample against other samples of the same crop in the same area using a pretrained embedding, flag the ones that stand out, and test whether removing or down-weighting them before training yields a better model.   We establish that the flagged points are genuinely mislabelled or misplaced in two independent ways: against synthetic ground truth, the detector concentrates injected label errors 2.5-5x above chance in its flagged set (detection AUROC up to 0.84); and on real data, a model-independent test shows that removing or confidence-weighting the flagged held-out points raises measured accuracy in trained models, for both crop type and land cover. Acting on the flags then improves the WorldCereal crop-type model across five macro-regions, evaluated on a fixed held-out split under three views. We find conservative cleaning helps while over-cleaning hurts.   The EBA detector approach is designed to be reproducible and extensible, and can serve as a template for cleaning large, noisy Earth observation reference datasets beyond crop mapping.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Contrastive Parameter Disentanglement for Multi-modal Remote Sensing Image Generation</title>
     <link href="http://arxiv.org/abs/2607.23673v1" rel="alternate" type="text/html" />
@@ -322,8 +440,8 @@
   </entry>
   <entry>
     <title>HyperImageNet: A Large-Scale High-Spatial Resolution Hyperspectral Imagery Classification Benchmark</title>
-    <link href="http://arxiv.org/abs/2607.21050v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.21050v1</id>
+    <link href="http://arxiv.org/abs/2607.21050v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.21050v2</id>
     <published>2026-07-23T00:00:00Z</published>
     <updated>2026-07-23T00:00:00Z</updated>
     <author>

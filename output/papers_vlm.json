@@ -25287,5 +25287,24 @@
     "_added_date": "2026-07-28",
     "Category": "Method",
     "_tasks": "CLS"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-07-27",
+    "Month": 7,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2607.23908v1",
+    "Abstract": "High quality reference data remain a critical bottleneck for crop-type mapping at any spatial and temporal scale. Operational systems such as WorldCereal aggregate labels from heterogeneous sources such as parcel registers, national databases, field surveys, and map-derived products, each with their own biases, coverage gaps and unknown label noise. Simple global rules are inadequate, since crop phenology and observation conditions vary strongly across regions and seasons.   In this study, we focus on a single, operationally relevant question: whether embeddings produced through geospatial foundation models are a viable basis for cleaning the reference data. We propose a practical, locality-aware, embedding-based anomaly (EBA) detection framework that operates on the embeddings of a pretrained Earth-observation encoder. We score each labelled sample against other samples of the same crop in the same area using a pretrained embedding, flag the ones that stand out, and test whether removing or down-weighting them before training yields a better model.   We establish that the flagged points are genuinely mislabelled or misplaced in two independent ways: against synthetic ground truth, the detector concentrates injected label errors 2.5-5x above chance in its flagged set (detection AUROC up to 0.84); and on real data, a model-independent test shows that removing or confidence-weighting the flagged held-out points raises measured accuracy in trained models, for both crop type and land cover. Acting on the flags then improves the WorldCereal crop-type model across five macro-regions, evaluated on a fixed held-out split under three views. We find conservative cleaning helps while over-cleaning hurts.   The EBA detector approach is designed to be reproducible and extensible, and can serve as a template for cleaning large, noisy Earth observation reference datasets beyond crop mapping.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{shah2026embeddings,\n  title={Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets},\n  author={Syed Roshaan Ali Shah and Kristof Van Tricht and Christina Butsko and Jeroen Degerickx and Zoltan Szantoi},\n  journal={arXiv preprint arXiv:2607.23908v1},\n  year={2026},\n  url={http://arxiv.org/abs/2607.23908v1}\n}",
+    "Authors": "Syed Roshaan Ali Shah, Kristof Van Tricht, Christina Butsko, Jeroen Degerickx, Zoltan Szantoi",
+    "_added_date": "2026-07-28",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]

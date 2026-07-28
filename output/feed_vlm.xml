@@ -4,12 +4,37 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-28T01:20:15Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 6 entries</subtitle>
+  <updated>2026-07-28T03:56:45Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 7 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets</title>
+    <link href="http://arxiv.org/abs/2607.23908v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.23908v1</id>
+    <published>2026-07-27T00:00:00Z</published>
+    <updated>2026-07-27T00:00:00Z</updated>
+    <author>
+      <name>Syed Roshaan Ali Shah</name>
+    </author>
+    <author>
+      <name>Kristof Van Tricht</name>
+    </author>
+    <author>
+      <name>Christina Butsko</name>
+    </author>
+    <author>
+      <name>Jeroen Degerickx</name>
+    </author>
+    <author>
+      <name>Zoltan Szantoi</name>
+    </author>
+    <summary type="text">High quality reference data remain a critical bottleneck for crop-type mapping at any spatial and temporal scale. Operational systems such as WorldCereal aggregate labels from heterogeneous sources such as parcel registers, national databases, field surveys, and map-derived products, each with their own biases, coverage gaps and unknown label noise. Simple global rules are inadequate, since crop phenology and observation conditions vary strongly across regions and seasons.   In this study, we focus on a single, operationally relevant question: whether embeddings produced through geospatial foundation models are a viable basis for cleaning the reference data. We propose a practical, locality-aware, embedding-based anomaly (EBA) detection framework that operates on the embeddings of a pretrained Earth-observation encoder. We score each labelled sample against other samples of the same crop in the same area using a pretrained embedding, flag the ones that stand out, and test whether removing or down-weighting them before training yields a better model.   We establish that the flagged points are genuinely mislabelled or misplaced in two independent ways: against synthetic ground truth, the detector concentrates injected label errors 2.5-5x above chance in its flagged set (detection AUROC up to 0.84); and on real data, a model-independent test shows that removing or confidence-weighting the flagged held-out points raises measured accuracy in trained models, for both crop type and land cover. Acting on the flags then improves the WorldCereal crop-type model across five macro-regions, evaluated on a fixed held-out split under three views. We find conservative cleaning helps while over-cleaning hurts.   The EBA detector approach is designed to be reproducible and extensible, and can serve as a template for cleaning large, noisy Earth observation reference datasets beyond crop mapping.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Contrastive Parameter Disentanglement for Multi-modal Remote Sensing Image Generation</title>
     <link href="http://arxiv.org/abs/2607.23673v1" rel="alternate" type="text/html" />
