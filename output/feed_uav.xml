@@ -4,12 +4,52 @@
   <id>https://rspaper.top/output/feed_uav.xml</id>
   <link href="https://rspaper.top/output/feed_uav.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-28T03:56:45Z</updated>
+  <updated>2026-07-29T01:19:39Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>ObliCity: A Benchmark and Baseline for Roof-to-Ground Projection Displacement Correction</title>
+    <link href="http://arxiv.org/abs/2607.25210v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.25210v1</id>
+    <published>2026-07-28T00:00:00Z</published>
+    <updated>2026-07-28T00:00:00Z</updated>
+    <author>
+      <name>Kai Li</name>
+    </author>
+    <author>
+      <name>Yupeng Deng</name>
+    </author>
+    <author>
+      <name>Ligao Deng</name>
+    </author>
+    <author>
+      <name>Zhihao Xi</name>
+    </author>
+    <author>
+      <name>Chenhao Wang</name>
+    </author>
+    <author>
+      <name>Jierui Zhang</name>
+    </author>
+    <author>
+      <name>Yingrui Ji</name>
+    </author>
+    <author>
+      <name>Yu Meng</name>
+    </author>
+    <author>
+      <name>Xiangyu Zhao</name>
+    </author>
+    <summary type="text">Oblique-view urban remote sensing imagery inevitably exhibits geometric projection displacements between building roofs and footprints, leading to significant distortions in spatial structure. Existing approaches either ignore these deformations or handle them implicitly within segmentation-based frameworks, where progress is dominated by general segmentation advances rather than improvements in geometric correction. In this work, we explicitly define roof-to-footprint offset vector (RFOV) extraction as an independent learning task that decouples geometric alignment from semantic segmentation. To support this task, we introduce the Oblique City dataset (ObliCity), the first large-scale benchmark that integrates high-resolution UAV imagery and globally distributed satellite data, covering diverse city morphologies and camera perspectives. Methodologically, we reformulate DragOSM into DragRoof, an ODE-based framework inspired by human annotation behavior. By simulating the continuous process of dragging roofs toward their footprints, DragRoof learns deterministic, geometry-consistent offset fields and adaptively determines convergence through an end token. Extensive experiments on ObliCity demonstrate that DragRoof achieves state-of-the-art RFOV extraction performance, requiring fewer inference steps while delivering superior directional and length accuracy. Our dataset and model establish a principled foundation for studying projection displacement correction in oblique remote sensing imagery. The source code and dataset will be avaliable at https://github.com/likaiucas/DragRoof.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/likaiucas/DragRoof"&gt;https://github.com/likaiucas/DragRoof&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Distributed Coordination for Resilient Multi-UAV Remote Sensing: A Photovoltaic Inspection Case Study</title>
     <link href="http://arxiv.org/abs/2607.24482v1" rel="alternate" type="text/html" />
@@ -62,34 +102,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
     <category term="Image and Video Processing" />
     <category term="cs.PF" />
-  </entry>
-  <entry>
-    <title>RIM: A Retrieval-In-Matching Framework for Cross-Domain Global Visual Localization of UAVs</title>
-    <link href="http://arxiv.org/abs/2607.20116v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.20116v1</id>
-    <published>2026-07-22T00:00:00Z</published>
-    <updated>2026-07-22T00:00:00Z</updated>
-    <author>
-      <name>Xin Li</name>
-    </author>
-    <author>
-      <name>Siyuan Duan</name>
-    </author>
-    <author>
-      <name>Shang Wang</name>
-    </author>
-    <author>
-      <name>Zhimin Mao</name>
-    </author>
-    <author>
-      <name>Bingliang Hu</name>
-    </author>
-    <author>
-      <name>Geng Zhang</name>
-    </author>
-    <summary type="text">Global visual localization of unmanned aerial vehicles (UAVs) using remote-sensing reference maps has attracted increasing attention. However, acquisition-time and imaging-platform differences between UAV and reference imagery induce substantial cross-domain appearance and viewpoint shifts, challenging robust six-degree-of-freedom (6-DoF) pose estimation. We address these shifts by sampling UAV-viewpoint reference views from Google 3D Tiles across locations, altitudes, and orientations. A two-stage cross-domain fine-tuning recipe adapts SALAD using pose-near positives and geographically distant hard negatives, while local geometric consistency re-ranks the Top-K candidates. We further propose Retrieval-In-Matching (RIM), which freezes the adapted DINOv2-B retriever and distils a local-descriptor decoder that reuses its token field alongside a shallow VGG19 detail stream. One query-side DINOv2-B forward thus serves both SALAD retrieval and local description, eliminating a second foundation-model backbone while preserving retrieval descriptors by construction. We evaluate RIM zero-shot on the reconstructed EPFL Urbanscape and self-collected Chang'an Park datasets, both geographically disjoint from the training data. RIM outperforms ten recent retrieval baseline families. At 25/50 m under the full 3D distance metric, it improves Recall@1 over SALAD by 8.55/13.77 percentage points on EPFL and 4.45/8.94 points on Park. At Top-K=5, the complete measured localization query, including retrieval, candidate matching, and robust geometric verification, takes 67.9 ms end-to-end: 1.8 times faster than the strongest separate sparse-matching baseline and over 40 times faster than RoMa, while achieving comparable re-ranking accuracy. These results establish an efficient and deployable pipeline for UAV global visual localization in GNSS-challenged environments.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 56 pages, 10 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>

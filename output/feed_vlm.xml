@@ -4,12 +4,45 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-28T03:56:45Z</updated>
+  <updated>2026-07-29T01:19:39Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 7 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Few-Shot Open-Vocabulary Remote Sensing Segmentation via Textual Inversion</title>
+    <link href="http://arxiv.org/abs/2607.25563v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.25563v1</id>
+    <published>2026-07-28T00:00:00Z</published>
+    <updated>2026-07-28T00:00:00Z</updated>
+    <author>
+      <name>Junhyuk Heo</name>
+    </author>
+    <author>
+      <name>Junghwan Park</name>
+    </author>
+    <summary type="text">Open-vocabulary segmentation labels arbitrary categories from a text query without per-class training, yet on remote sensing imagery it underperforms on categories it handles reliably elsewhere. We find that much of this gap traces to the text query rather than to the segmentation model. Because these models are not specialized for overhead imagery, the class name that serves as the query is often a weak address into the vision-language embedding space. We show that a better name repairs part of the gap, while the remaining failures call for an address that the tested natural-language rephrasings do not provide. We recover that address from a few examples through textual inversion on a frozen model, keeping inference text only. On a representative benchmark this raises the mean intersection over union on the affected categories from 3.9 to 39.4, and across eight remote sensing datasets it improves over few-shot methods that instead inject visual prompts at inference.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>MARS: Multi-Agent Re-ranking for Repeat-Order Food Delivery Recommendation</title>
+    <link href="http://arxiv.org/abs/2607.25420v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.25420v1</id>
+    <published>2026-07-28T00:00:00Z</published>
+    <updated>2026-07-28T00:00:00Z</updated>
+    <author>
+      <name>Jiahao Tian</name>
+    </author>
+    <author>
+      <name>Zhenkai Wang</name>
+    </author>
+    <summary type="text">Large language models (LLMs) are increasingly used in recommender systems, but it is often unclear how much performance can be obtained from strong pre-trained backbones alone when they are placed inside a structured recommendation pipeline. In this paper, we present MARS, a modular multi-agent re-ranking framework for repeat-order food delivery recommendation. MARS serves as a controlled hybrid framework for studying how far pre-trained LLMs can go in this setting when combined with lightweight collaborative retrieval and contextual filtering. MARS performs coarse-to-fine recommendation in two stages: cuisine prediction followed by vendor ranking. The framework combines LightGCN-based global preference signals, Swing-based local peer evidence, geospatial filtering, and prompt-driven LLM reasoning over behavioral, temporal, and geographic context. We evaluate MARS on two real-world Delivery Hero benchmarks, DHRD-SE and DHRD-SG, and compare it against heuristic, sequential, graph-based, and food-delivery-specific baselines. We also provide detailed implementation and evaluation protocols, including prompting and decoding. Our study makes three contributions. First, it presents a modular multi-agent framework for repeat-order food delivery recommendation that integrates collaborative signals and LLM-based re-ranking in a transparent pipeline. Second, it shows that strong pre-trained backbones can already be competitive in repeat-order recommendation when paired with lightweight collaborative retrieval. Third, it establishes a reproducible evaluation setting for hybrid LLM recommenders in food delivery.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Information Retrieval" />
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets</title>
     <link href="http://arxiv.org/abs/2607.23908v1" rel="alternate" type="text/html" />
@@ -59,9 +92,39 @@
     <category term="Computer Vision" />
   </entry>
   <entry>
+    <title>DisasterTD: Disaster Toponym Disambiguation Using Multimodal LLMs and Cross-View Geolocalization</title>
+    <link href="http://arxiv.org/abs/2607.24856v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.24856v1</id>
+    <published>2026-07-26T00:00:00Z</published>
+    <updated>2026-07-26T00:00:00Z</updated>
+    <author>
+      <name>Wenping Yin</name>
+    </author>
+    <author>
+      <name>Ziqi Liu</name>
+    </author>
+    <author>
+      <name>Naixia Mou</name>
+    </author>
+    <author>
+      <name>Weijia Li</name>
+    </author>
+    <author>
+      <name>Danfeng Hong</name>
+    </author>
+    <author>
+      <name>Hao Li</name>
+    </author>
+    <summary type="text">Social media imagery (SMI) provides timely and fine-grained ground perspectives that are valuable for situational awareness and emergency response. Unlike satellite or aerial imagery, SMI can capture disaster impacts and ground-level conditions in a timely manner. However, geographic references in SMI are often vague or ambiguous, making accurate geolocalization challenging. To address this issue, we propose DisasterTD, a disaster toponym disambiguation framework that integrates multimodal large language model (MLLMs)-based semantic reasoning with cross-view geolocalization. First, MLLMs extract toponyms and generate candidate geolocations from noisy textual inputs. Then, cross-view matching between SMI, remote sensing imagery (RSI), and optionally street-view imagery (SVI) is used to verify and refine these candidate results. We evaluate DisasterTD on the Hurricane Harvey dataset, where SMI is augmented with collected RSI and SVI to construct a cross-view benchmark for disaster geolocalization. The dataset is divided into four categories based on toponym clarity and ambiguity, allowing a fine-grained performance analysis across scenarios. Results show that DisasterTD consistently outperforms MLLM-only and cross-view-only baselines without disambiguation, achieving geolocalization accuracies of 71.62% within 1000 m, 62.36% within 500 m, 57.99% within 250 m, 52.09% within 100 m, and 47.01% within 50 m, while reducing the mean and median errors to 11.33 km and 0.68 km, respectively. The largest improvements appear in ambiguous toponyms, where semantic reasoning with cross-view evidence reduces candidate dispersion and errors. These findings demonstrate the effectiveness of integrating MLLM-based candidate generation with cross-view verification for fine-grained disaster geolocalization.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; GeoLoc&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
     <title>Filling Before Advancing: Capability-Gap-Driven Post-Training for Scenario-Specialized Remote Sensing MLLMs</title>
-    <link href="http://arxiv.org/abs/2607.22205v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.22205v1</id>
+    <link href="http://arxiv.org/abs/2607.22205v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.22205v2</id>
     <published>2026-07-24T00:00:00Z</published>
     <updated>2026-07-24T00:00:00Z</updated>
     <author>
@@ -114,112 +177,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; The code will be released at https://github.com/fuyimin96/GeoThreat upon acceptance&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Multimodal Large Language Models for Remote Sensing Image Understanding: Domain-Specific or General-Purpose?</title>
-    <link href="http://arxiv.org/abs/2607.20284v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.20284v1</id>
-    <published>2026-07-22T00:00:00Z</published>
-    <updated>2026-07-22T00:00:00Z</updated>
-    <author>
-      <name>Qiwei Ma</name>
-    </author>
-    <author>
-      <name>Chunping Qiu</name>
-    </author>
-    <author>
-      <name>Xinjun Cheng</name>
-    </author>
-    <author>
-      <name>Xiaoyu Zhang</name>
-    </author>
-    <author>
-      <name>Puhong Duan</name>
-    </author>
-    <author>
-      <name>Ke Yang</name>
-    </author>
-    <author>
-      <name>Xudong Kang</name>
-    </author>
-    <author>
-      <name>Shutao Li</name>
-    </author>
-    <summary type="text">The rapid development of multimodal large language models (MLLMs) has introduced a flexible paradigm for remote sensing image scene understanding (RSISU), enabling natural-language interaction with remote sensing imagery. However, a systematic understanding of the capability boundaries, cross-task generalization, and task-specific limitations of existing remote sensing MLLMs (RS-MLLMs) is still lacking. This paper presents a systematic survey and diagnostic evaluation of MLLMs for RSISU. We review the technical evolution of RS-MLLMs, focusing on model design, multimodal learning, training data, and downstream capabilities. We further compare RS-MLLMs with general-purpose computer vision MLLMs (CV-MLLMs) across diverse RSISU tasks and benchmarks. RS-MLLMs remain competitive in domain-specific settings, particularly remote sensing visual grounding and high-resolution visual question answering. More notably, general-purpose CV-MLLMs can match or even outperform these specialized models on several RSISU tasks without remote sensing-specific fine-tuning. These findings demonstrate the strong transferability of general-purpose CV-MLLMs and show that current RS-MLLMs do not consistently outperform them across diverse RSISU tasks. Current MLLMs also face limitations in spatial and relational reasoning, fine-grained visual understanding, instruction diversity, and generalization across heterogeneous task formats. Based on these findings, we outline future directions toward reliable evaluation, multimodal and high-resolution reasoning, efficient deployment, and tool-augmented remote sensing agents. This survey provides a systematic reference for developing robust, generalizable, and practical MLLMs for RSISU.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 27 pages, 11 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>RS-RIE-Bench: Benchmarking Reasoning-Guided Remote Sensing Image Editing</title>
-    <link href="http://arxiv.org/abs/2607.20197v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.20197v1</id>
-    <published>2026-07-22T00:00:00Z</published>
-    <updated>2026-07-22T00:00:00Z</updated>
-    <author>
-      <name>Zihan Qin</name>
-    </author>
-    <author>
-      <name>Boao Xu</name>
-    </author>
-    <author>
-      <name>Zhao Dong</name>
-    </author>
-    <author>
-      <name>Yingping Sun</name>
-    </author>
-    <author>
-      <name>Ziheng Jiao</name>
-    </author>
-    <author>
-      <name>Junying Wang</name>
-    </author>
-    <author>
-      <name>Hongwei Wang</name>
-    </author>
-    <summary type="text">Remote sensing image editing aims to modify remote sensing images according to natural language instructions while preserving geographic rules and sensor observation characteristics. Existing benchmarks mainly target natural images or general visual scenes, and thus may not fully capture the reasoning, regional control, and sensor-consistency abilities required in remote sensing editing. To fill this gap, we introduce RS-RIE-Bench, the first benchmark for reasoning-guided remote sensing image editing. RS-RIE-Bench organizes tasks into three categories: temporal reasoning, causal reasoning, and spatial reasoning. These categories capture temporal evolution, causal consequence, and spatial imaging consistency in remote sensing scenes. The evaluation protocol covers three dimensions: target region plausibility, non-target region preservation, and image quality consistency. We further demonstrate the feasibility of MLLM-based evaluation through cross-judge consistency analysis and stratified expert review. Systematic evaluation on eight open-source and closed-source image editing models shows that current models still have clear limitations in reasoning-guided remote sensing editing. Even the strongest model achieves only 24.28\% overall accuracy under the strict joint-satisfaction criterion, while the mean relaxed joint-4 success rate across all eight models is 32.23\%. Causal reasoning and spatial reasoning remain especially challenging, and several open-source models are close to zero in some categories. These results show that RS-RIE-Bench can effectively reveal the limitations of current models in geographic reasoning, regional control, and sensor-consistent generation. It also provides a standardized benchmark and a clear research direction for future remote sensing intelligent editing models.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Treatment Geometry and Causal Identification with Earth Observation Data</title>
-    <link href="http://arxiv.org/abs/2607.19908v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.19908v1</id>
-    <published>2026-07-22T00:00:00Z</published>
-    <updated>2026-07-22T00:00:00Z</updated>
-    <author>
-      <name>Jeffrey D. Michler</name>
-    </author>
-    <author>
-      <name>Anna Josephson</name>
-    </author>
-    <author>
-      <name>Elinor Benami</name>
-    </author>
-    <author>
-      <name>Patrick Behrer</name>
-    </author>
-    <author>
-      <name>Michael J. Cecil</name>
-    </author>
-    <author>
-      <name>Sydney Gourlay</name>
-    </author>
-    <author>
-      <name>Robert Heilmayr</name>
-    </author>
-    <author>
-      <name>Ella Kirchner</name>
-    </author>
-    <author>
-      <name>Gina Maskell</name>
-    </author>
-    <author>
-      <name>Kunwar Singh</name>
-    </author>
-    <summary type="text">A central task in conducting impact evaluations is determining who or what was exposed to a treatment, when, and to what degree. These questions can be especially complex in geospatial settings, where many reasonable definitions of exposure may exist. This chapter introduces treatment geometry as a core concept in geospatial impact evaluation (GIE): the spatial and temporal footprint of a treatment as represented in data. How this footprint is defined shapes identification strategies and the credibility of causal inference. Drawing on cases spanning the air pollution, wildfire, forest policy, infrastructure, pest, and food security literature, the chapter provides practical guidance on navigating key tradeoffs (including spatial resolution, temporal alignment, spillovers, and boundary uncertainty) that arise when translating real-world interventions into analyzable data. Rather than prescribing a single best approach, the chapter equips researchers with a framework for diagnosing which geometry decisions may matter most in their context, closing with synthesis questions to help readers navigate these decisions.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="econ.EM" />
   </entry>
 </feed>

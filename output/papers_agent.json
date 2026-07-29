@@ -4197,5 +4197,24 @@
     "_added_date": "2026-07-28",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Information Retrieval",
+    "Subtype": "Artificial Intelligence",
+    "Date": "2026-07-28",
+    "Month": 7,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "MARS: Multi-Agent Re-ranking for Repeat-Order Food Delivery Recommendation",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2607.25420v1",
+    "Abstract": "Large language models (LLMs) are increasingly used in recommender systems, but it is often unclear how much performance can be obtained from strong pre-trained backbones alone when they are placed inside a structured recommendation pipeline. In this paper, we present MARS, a modular multi-agent re-ranking framework for repeat-order food delivery recommendation. MARS serves as a controlled hybrid framework for studying how far pre-trained LLMs can go in this setting when combined with lightweight collaborative retrieval and contextual filtering. MARS performs coarse-to-fine recommendation in two stages: cuisine prediction followed by vendor ranking. The framework combines LightGCN-based global preference signals, Swing-based local peer evidence, geospatial filtering, and prompt-driven LLM reasoning over behavioral, temporal, and geographic context. We evaluate MARS on two real-world Delivery Hero benchmarks, DHRD-SE and DHRD-SG, and compare it against heuristic, sequential, graph-based, and food-delivery-specific baselines. We also provide detailed implementation and evaluation protocols, including prompting and decoding. Our study makes three contributions. First, it presents a modular multi-agent framework for repeat-order food delivery recommendation that integrates collaborative signals and LLM-based re-ranking in a transparent pipeline. Second, it shows that strong pre-trained backbones can already be competitive in repeat-order recommendation when paired with lightweight collaborative retrieval. Third, it establishes a reproducible evaluation setting for hybrid LLM recommenders in food delivery.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{tian2026mars,\n  title={MARS: Multi-Agent Re-ranking for Repeat-Order Food Delivery Recommendation},\n  author={Jiahao Tian and Zhenkai Wang},\n  journal={arXiv preprint arXiv:2607.25420v1},\n  year={2026},\n  url={http://arxiv.org/abs/2607.25420v1}\n}",
+    "Authors": "Jiahao Tian, Zhenkai Wang",
+    "_added_date": "2026-07-29",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]
