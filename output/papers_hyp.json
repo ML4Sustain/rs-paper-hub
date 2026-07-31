@@ -20195,5 +20195,43 @@
     "_added_date": "2026-07-28",
     "Category": "Method",
     "_tasks": "SR"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-07-30",
+    "Month": 7,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "MSCM-net: A hyperspectral image classiffcation method based on multi-scale convolution and Mamba",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2607.28277v1",
+    "Abstract": "Hyperspectral imaging is widely used in remote sensing and engineering. Therefore, research on its classification methods is crucial. While CNN and Transformer-based methods have advanced, they still face locality constraints and high computational complexity. To address these issues, we propose an innovative hyperspectral image classification model, MSCM-net. Specifically, first of all, a model architecture combining multi-scale CNN and Mamba is proposed. It consists of a multi-scale feature extraction module (MCSE) and multiple stacked Mamba blocks, which integrates the local feature extraction capability of multi-scale CNN and the long sequence modeling advantage of Mamba. Secondly, the proposed MCSE module consists of multi-scale convolution and SENet. Convolution kernels of different scales extract local information with different receptive fields, enhancing the fusion of spatial and spectral information. Meanwhile, the SENet enables the model to automatically learn the importance of each channel in the multi-scale features. Furthermore, we also propose a dual-branch feature aggregation module, which further effectively extracts and integrates the spectral information contained in the central pixel and the spatial information in the surrounding pixels. Our model has undergone numerous experiments on three widely used benchmark datasets. The experimental results show that MSCM-net can achieve advanced classification performance while reducing computational complexity.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{chen2026mscmnet,\n  title={MSCM-net: A hyperspectral image classiffcation method based on multi-scale convolution and Mamba},\n  author={Jianjun Chen and Linlin Wang and Lifang Chang and Limin Huo and Shujiang Song and Yanjia Zhao and Mingwei Shao},\n  journal={arXiv preprint arXiv:2607.28277v1},\n  year={2026},\n  url={http://arxiv.org/abs/2607.28277v1}\n}",
+    "Authors": "Jianjun Chen, Linlin Wang, Lifang Chang, Limin Huo, Shujiang Song, Yanjia Zhao, Mingwei Shao",
+    "_added_date": "2026-07-31",
+    "Category": "Method",
+    "_tasks": "CLS"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-07-30",
+    "Month": 7,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Space2Ground 2.0: A Multi-Source Dataset and Framework for Agricultural Monitoring through Fusion of Street-Level and Satellite Imagery",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2607.28247v1",
+    "Abstract": "Accurate and scalable parcel-level agricultural monitoring remains challenging because satellite Earth Observation alone provides only an overhead perspective of agricultural parcels, while optical observations are further affected by cloud-induced temporal gaps. This paper presents Space2Ground 2.0, a multi-source framework integrating Sentinel-1 SAR and Sentinel-2 multispectral time series with geo-tagged street-level imagery acquired using vehicle-mounted cameras and shared through the Mapillary platform. A largely automated processing pipeline performs semantic filtering, image quality assessment, viewpoint-based parcel association, and dataset refinement, transforming large volumes of crowdsourced imagery into parcel-linked, analysis-ready data. Applied over Cyprus during the 2022 growing season, the pipeline produced a curated dataset of 46,050 annotated street-level images, selected from an initial collection exceeding 900,000 images and linked with satellite information for 8,581 agricultural parcels. The practical value of the dataset was assessed through parcel-level crop classification experiments using both single- and multi-source observations. The results demonstrate that street-level imagery provides complementary fine-scale visual information that enhances classification when integrated with satellite time series. Overall, Space2Ground 2.0 provides an openly available benchmark dataset and a reproducible methodology for multimodal agricultural monitoring, with potential applications in visual verification, reduced reliance on costly field inspections, and data-driven agricultural policy implementation.",
+    "code": "",
+    "Publication": "This paper has been accepted for presentation at the 45th EARSeL Symposium, Athens, Greece",
+    "BibTex": "@article{tsardanidis2026spaceground,\n  title={Space2Ground 2.0: A Multi-Source Dataset and Framework for Agricultural Monitoring through Fusion of Street-Level and Satellite Imagery},\n  author={Iason Tsardanidis and Alkiviadis Koukos and George Choumos and Vasileios Sitokontantinou and Charalampos Kontoes},\n  journal={arXiv preprint arXiv:2607.28247v1},\n  year={2026},\n  url={http://arxiv.org/abs/2607.28247v1}\n}",
+    "Authors": "Iason Tsardanidis, Alkiviadis Koukos, George Choumos, Vasileios Sitokontantinou, Charalampos Kontoes",
+    "_added_date": "2026-07-31",
+    "Category": "Dataset",
+    "_tasks": "CLS"
   }
 ]
