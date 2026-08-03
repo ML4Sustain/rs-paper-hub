@@ -20271,5 +20271,24 @@
     "_added_date": "2026-07-31",
     "Category": "Method",
     "_tasks": "3D"
+  },
+  {
+    "Type": "stat.ME",
+    "Subtype": "",
+    "Date": "2026-07-30",
+    "Month": 7,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Multiplicative Errors-in-Variables Models for Hyperspectral Unmixing",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2607.28743v1",
+    "Abstract": "Estimating endmember spectra and their corresponding abundances from hyperspectral images is a fundamental inverse problem in remote sensing. The standard linear mixing model relies on additive homoscedastic errors, which misspecifies the mean-variance relationship inherent to optical measurements for which the noise intensity might be proportional to the signal magnitude. This leads to confidence intervals with poor coverage. To address these limitations, we propose a hierarchical Bayesian multiplicative Errors-in-Variables (EIV) model. Motivated by the physics of light propagation, our formulation captures signal-dependent noise through a multivariate log-normal specification that naturally accommodates dependence across spectral bands. The EIV framework treats endmember signatures as random and allows for class-specific variance scaling, yielding a flexible and physically grounded data-generating process. We establish that the MLE of the abundance vector under the multiplicative model has a constant asymptotic multivariate coefficient of variation, implying that well-calibrated confidence intervals should scale proportionally with signal magnitude. The additive model, by contrast, produces intervals of constant width regardless of signal magnitude, leading to overcoverage at low abundance and undercoverage at high abundance when the true noise is multiplicative. Practical implementation and inference for the full hierarchical model is obtained from posterior distributions over the model parameters. Experiments on several real and simulated datasets demonstrate that confidence intervals derived from the proposed model achieve improved coverage across abundance levels compared to those from a standard additive model, with widths that scale proportionally with signal magnitude, while achieving comparable or superior signal reconstruction error.",
+    "code": "",
+    "Publication": "21 pages, 9 figures",
+    "BibTex": "@article{singh2026multiplicative,\n  title={Multiplicative Errors-in-Variables Models for Hyperspectral Unmixing},\n  author={Vivek Singh and Peter Hoff},\n  journal={arXiv preprint arXiv:2607.28743v1},\n  year={2026},\n  url={http://arxiv.org/abs/2607.28743v1}\n}",
+    "Authors": "Vivek Singh, Peter Hoff",
+    "_added_date": "2026-08-03",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]

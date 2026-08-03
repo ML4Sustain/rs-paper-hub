@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_uav.xml</id>
   <link href="https://rspaper.top/output/feed_uav.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-31T04:19:16Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
+  <updated>2026-08-03T01:25:27Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -86,58 +86,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Distributed Coordination for Resilient Multi-UAV Remote Sensing: A Photovoltaic Inspection Case Study</title>
-    <link href="http://arxiv.org/abs/2607.24482v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.24482v1</id>
-    <published>2026-07-27T00:00:00Z</published>
-    <updated>2026-07-27T00:00:00Z</updated>
-    <author>
-      <name>Guillermo GP-Lenza</name>
-    </author>
-    <author>
-      <name>Miguel Fernandez-Cortizas</name>
-    </author>
-    <author>
-      <name>Martin Molina</name>
-    </author>
-    <author>
-      <name>Pascual Campoy</name>
-    </author>
-    <summary type="text">Deploying multiple UAVs for remote sensing enables proportional reductions in mission time, but realizing these benefits requires the fleet to coordinate at runtime: distributing sensing targets, responding to platform failures, and recovering from degraded data quality. In inspection campaigns, where mission value depends on complete coverage and the usability of every capture, a centralized ground-station coordinator is a single point of failure: a lost link or station fault leaves sensing gaps that cannot be filled without operator intervention. We propose the \textbf{SwarmLink}, an inter-agent communication infrastructure that non-invasively extends any existing aerial framework with peer-to-peer coordination capability, without modifying the host system. We apply it to photovoltaic plant inspection as a representative large-scale sensing campaign, extending Aerostack2 with a distributed auction that unifies initial sensing-target allocation, platform-failure recovery, and data-quality-triggered reassignment into a single runtime mechanism. All three disruption scenarios reduce to the same re-auction over remaining targets and active platforms, requiring zero modifications to the Aerostack2 core and no ground-station involvement during the mission.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Robotics" />
-  </entry>
-  <entry>
-    <title>Optimized Embedded Implementation of Hyperspectral-Multispectral Image Fusion on Raspberry Pi</title>
-    <link href="http://arxiv.org/abs/2607.23136v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.23136v1</id>
-    <published>2026-07-25T00:00:00Z</published>
-    <updated>2026-07-25T00:00:00Z</updated>
-    <author>
-      <name>Salah Eddine Brezini</name>
-    </author>
-    <author>
-      <name>Okba Bekhelifi</name>
-    </author>
-    <author>
-      <name>Oussama Mezouar</name>
-    </author>
-    <author>
-      <name>Chams Eddine Choucha</name>
-    </author>
-    <author>
-      <name>Sarra Boukhacheba</name>
-    </author>
-    <author>
-      <name>Fethi Abdelatif Dali</name>
-    </author>
-    <summary type="text">Remote sensing optical images have become central to a wide range of applications. In particular, hyperspectral images, with their high spectral resolution, enable the extraction of rich information about the objects and materials present in the observed scene. Nevertheless, processing such data comes at the expense of a high computational load due to its large data volume, making real-time processing very difficult to achieve. Recently, we proposed an approach to investigate the feasibility of processing such data on a Raspberry Pi by implementing a hyperspectral super-resolution technique, namely HSB-SV. However, the implementation resulted in high computational time. To overcome this limitation, we apply computational optimization techniques based on migrating the most intensive operations to PyTorch and edge inference frameworks such as ONNX Runtime and ExecuTorch with the XNNPACK backend. The proposed optimized implementation is deployed on a Raspberry Pi 5 platform. Experimental results demonstrate a significant reduction in computational time, achieving a 1.48x overall speedup on the Raspberry Pi 5, the total execution time decreases significantly, from 527.1 ms to 356.7 ms corresponding to a 32.3% dminution, while fully preserving the fusion quality, making the approach more suitable for embedded and edge computing scenarios, particularly for UAV-based hyperspectral remote sensing applications.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; paper is accepted for presentation at EDiS'2026: IEEE 5th International Conference on Embedded and Distributed Systems, Oran, Algeria, November 2-5, 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
-    <category term="Image and Video Processing" />
-    <category term="cs.PF" />
   </entry>
 </feed>
