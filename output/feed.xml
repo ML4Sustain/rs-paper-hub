@@ -4,12 +4,66 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-03T04:26:10Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 21 entries</subtitle>
+  <updated>2026-08-04T01:16:11Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 20 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>GeoArbiter: Verifiability-Guided Grounding for Remote-Sensing Multimodal LLMs</title>
+    <link href="http://arxiv.org/abs/2608.00877v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.00877v1</id>
+    <published>2026-08-01T00:00:00Z</published>
+    <updated>2026-08-01T00:00:00Z</updated>
+    <author>
+      <name>Xuechen Li</name>
+    </author>
+    <summary type="text">Remote-sensing multimodal large language models (MLLMs) often assert facts that imagery cannot establish, such as a facility's identity or function. Coordinate-keyed geographic retrieval can supply this missing knowledge, improving fMoW land-use accuracy by 12.06--17.19 points across three open MLLMs. However, retrieved records can also contradict visible evidence, and we find that models frequently follow the records even when the image is decisive. We argue that source trust should therefore depend on \emph{cross-modal verifiability}: geographic records are most useful for attributes the image cannot verify and most dangerous when they dispute visually verifiable attributes. We introduce GeoArbiter, a training-free pipeline that operationalizes this principle by injecting only image-unverifiable geographic facts. Unlike arbitration prompts, which leak across attribute types and bias yes/no responses, content-level filtering preserves 84.69--87.15\% of the full-retrieval accuracy gain, reduces claim-level hallucination by 9.58--26.34\% under a source-blinded judge, and improves robustness to conflicting records across all three models. These results identify verifiability-guided content selection as a simple, effective mechanism for grounding remote-sensing MLLMs in fallible geographic knowledge.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Qualification pathways for Photonic Integrated Circuits in Astrophotonic Space Missions</title>
+    <link href="http://arxiv.org/abs/2608.00834v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.00834v1</id>
+    <published>2026-08-01T00:00:00Z</published>
+    <updated>2026-08-01T00:00:00Z</updated>
+    <author>
+      <name>Kalaga Madhav</name>
+    </author>
+    <author>
+      <name>Aashia Rahman</name>
+    </author>
+    <author>
+      <name>Máté Ádámkovics</name>
+    </author>
+    <summary type="text">Photonic integrated circuits (PICs) promise order-of-magnitude reductions in the size, weight and power (SWaP) of optical subsystems for astronomy, planetary and Earth-observation missions, yet no PIC-specific space-qualification standard exists. This paper consolidates the principal NASA and ESA qualification documents that apply, or can be tailored, to astrophotonic PICs --- arrayed waveguide gratings, photonic lanterns, fibre Bragg gratings, and integrated beam combiners (ABCD, discrete beam combiners, nullers) for spectrographs and stellar interferometers. A master qualification table lists 19 standard test steps with applicable standards and EU/USA test facilities. Two reference mission profiles --- a LEO smallsat demonstrator and an HWO-class Lagrange-2 flagship --- yield a tailoring matrix, while a TRL-versus-test-coverage roadmap maps each activity onto the NASA/ESA readiness levels and review gates. A survey of UV/visible/near-infrared platforms relates spectral coverage, maturity and flight heritage, and a radiation-effects summary shows passive silica, Si3N4 and laser-written cores are essentially radiation-tolerant while active III--V and Ge devices carry the hardness burden. The central outcome is a seven-phase qualification template (PIC-SQT) with explicit TRL gates, exact test procedures and mission-class tailoring; we further identify qualification processes relevant to PICs that current standards do not cover, and document 40+ years of optical-fibre flight heritage.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 59 pages, 4 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="astro-ph.IM" />
+    <category term="physics.optics" />
+  </entry>
+  <entry>
+    <title>BRIC-Net: Boundary-Reliable Illumination-Color Interaction for Remote Sensing Image Deshadowing</title>
+    <link href="http://arxiv.org/abs/2608.00682v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.00682v1</id>
+    <published>2026-08-01T00:00:00Z</published>
+    <updated>2026-08-01T00:00:00Z</updated>
+    <author>
+      <name>Wei Lu</name>
+    </author>
+    <author>
+      <name>Yi Liu</name>
+    </author>
+    <author>
+      <name>Si-Bao</name>
+    </author>
+    <summary type="text">Shadows in remote sensing images obscure surface appearance and disrupt radiometric continuity, reducing the reliability of visual interpretation and downstream analysis. Remote sensing image deshadowing is an ill-posed inverse problem that requires spatially varying illumination recovery while preserving chromatic and radiometric consistency in non-shadow regions. Existing methods commonly rely on hard shadow masks for compensation or directly regress RGB intensities. Hard masks may inadequately model gradual penumbra variations and are sensitive to localization errors, often producing residual shadows or halo artifacts; direct RGB regression entangles illumination recovery with chromatic reconstruction and can introduce color casts. To this end, we propose the Boundary-Reliable Illumination-Color Interaction Network (BRIC-Net), which decouples these failures at different representation levels. A Lightness Reliability Prior (LRP) derives reliability-aware guidance from CIELAB statistics. Boundary-Adaptive Gated Mixing (BAGM) performs gated interpolation between shallow RGB and lightness features around uncertain transitions, while Spatial-Channel Mutual Modulation (SCMM) coordinates deeper spatial and channel responses for appearance-preserving illumination recovery. BRIC-Net achieves 29.46~dB full-image peak signal-to-noise ratio (PSNR) on AeroDS-Syn and 27.96~dB on SRGTA. It also obtains the lowest Perception-based Image Quality Evaluator (PIQE) scores on AISD and AeroDS-Real. Region-wise evaluations and component ablations further support its effectiveness in shadow recovery and non-shadow preservation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>TerraNova: A Foundation Model for the Anthropocene</title>
     <link href="http://arxiv.org/abs/2607.29527v1" rel="alternate" type="text/html" />
@@ -355,8 +409,8 @@
   </entry>
   <entry>
     <title>OVEarth-Bench: Evaluating Category Breadth and Query Diversity for Open-Vocabulary Earth Observation</title>
-    <link href="http://arxiv.org/abs/2607.27278v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.27278v1</id>
+    <link href="http://arxiv.org/abs/2607.27278v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.27278v2</id>
     <published>2026-07-29T00:00:00Z</published>
     <updated>2026-07-29T00:00:00Z</updated>
     <author>
@@ -385,174 +439,73 @@
     <category term="Computer Vision" />
   </entry>
   <entry>
-    <title>Freq-RemoteVAR: Next-Frequency Autoregressive Modeling for Remote Sensing Change Detection</title>
-    <link href="http://arxiv.org/abs/2607.25815v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.25815v1</id>
-    <published>2026-07-28T00:00:00Z</published>
-    <updated>2026-07-28T00:00:00Z</updated>
+    <title>Volcanic Clouds Detection through QCNN and Geostationary Satellite Multispectral Imagery</title>
+    <link href="http://arxiv.org/abs/2608.00072v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.00072v1</id>
+    <published>2026-07-29T00:00:00Z</published>
+    <updated>2026-07-29T00:00:00Z</updated>
     <author>
-      <name>Luqi Gong</name>
+      <name>Federica Torrisi</name>
     </author>
     <author>
-      <name>Rui Xu</name>
+      <name>Claudia Corradino</name>
     </author>
     <author>
-      <name>Yue Chen</name>
+      <name>Alessandro Grilli</name>
     </author>
     <author>
-      <name>Chao Li</name>
+      <name>Tommaso Catuogno</name>
     </author>
     <author>
-      <name>Jingqi Hong</name>
+      <name>Mattia Verducci</name>
     </author>
     <author>
-      <name>Xuefeng Zhao</name>
+      <name>Elisabetta Paladino</name>
     </author>
-    <summary type="text">Remote sensing change detection aims to identify land-cover changes from bi-temporal images. Most existing methods follow a one-shot dense prediction paradigm, directly regressing a change mask from fused features. However, such approaches overlook the intrinsic frequency characteristics of change patterns. We propose Freq-RemoteVAR, a frequency autoregressive framework that reformulates change detection as a structured generation problem in the frequency domain. Instead of predicting the change mask in a single step, we introduce a next-frequency prediction paradigm, where change information is progressively generated from coarse to fine. We design a frequency-aware mask tokenization strategy that decomposes change supervision into multi-frequency token targets via Fourier transformation and quantization. We develop a Frequency VAR Transformer, which performs causal autoregressive modeling over frequency tokens. The model starts from learned mask queries and progressively predicts frequency-level tokens conditioned on previously generated tokens and bi-temporal image features, effectively capturing long-range dependencies across frequency scales. We introduce Scale-Aligned RoPE Cross Attention (SRCA) module, which aligns frequency-domain mask queries with spatial-domain bi-temporal features under a unified coordinate system, enhancing spatial-frequency consistency during generation. We propose a Change-quality Control module that adaptively modulates the generation process through dynamic normalization, attention biasing, and spatial offset adjustment, thereby suppressing pseudo-change responses and improving robustness. Extensive experiments on CDD, GZ-CD, and LEVIR-CD demonstrate that Freq-RemoteVAR consistently outperforms existing methods, particularly in challenging scenarios with complex appearance variations and noisy disturbances.</summary>
+    <author>
+      <name>Luigi Giannelli</name>
+    </author>
+    <author>
+      <name>Alessandro Sebastianelli</name>
+    </author>
+    <summary type="text">Recent advances in quantum computing are opening new possibilities for Earth Observation (EO) data analysis. Quantum machine learning (QML) approaches offer novel ways to process information by exploiting quantum phenomena such as superposition and entanglement. These capabilities have motivated the exploration of whether quantum-enhanced models can address long-standing challenges in satellite remote sensing, where complex spectral and spatial signals often require sophisticated feature extraction. Among various fields of application, EO data allow the global monitoring of volcanic clouds and are crucial for aviation safety, hazard assessment, real-time eruption response, and evaluation of volcanic impacts on climate. Yet accurate detection of volcanic clouds remains difficult due to their similarity with meteorological clouds, the variability of eruption signatures, and the coarse spectral sampling of geostationary sensors. In this work, the potential of hybrid quantum convolutional neural networks (QCNNs) for the classification of satellite images containing volcanic clouds was investigated. These architectures integrate quantum computational layers into a classical convolutional framework. Two QCNN variants (with 2 and 4 qubits) have been considered to evaluate their ability to classify a dataset of SEVIRI images, including scenes with volcanic clouds (composed of ash, $SO_2$, or mixed components) as well as non-volcanic backgrounds. Finally, the performance of the hybrid QCNN models was compared with that of purely classical architectures.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
   <entry>
-    <title>Revisiting-Aware In-Orbit Edge Computing for Earth Observation</title>
-    <link href="http://arxiv.org/abs/2607.25813v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.25813v1</id>
-    <published>2026-07-28T00:00:00Z</published>
-    <updated>2026-07-28T00:00:00Z</updated>
+    <title>Hybrid Quantum CNN for Cross-Sensor Spaceborne Volcanic Thermal Activity Recognition Worldwide</title>
+    <link href="http://arxiv.org/abs/2608.00069v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.00069v1</id>
+    <published>2026-07-29T00:00:00Z</published>
+    <updated>2026-07-29T00:00:00Z</updated>
     <author>
-      <name>Zehua Sun</name>
+      <name>Claudia Corradino</name>
     </author>
     <author>
-      <name>Tao Ni</name>
+      <name>Federica Torrisi</name>
     </author>
     <author>
-      <name>Kaiyan Cui</name>
+      <name>Alessandro Grilli</name>
     </author>
     <author>
-      <name>Weitao Xu</name>
+      <name>Tommaso Catuogno</name>
     </author>
     <author>
-      <name>Jingxian Wang</name>
+      <name>Mattia Verducci</name>
     </author>
-    <summary type="text">Typically, Earth observation satellites follow a rule of revisiting cycle to periodically pass over the same area of the Earth at regular intervals, which is jointly determined by their orbital properties (e.g., eccentricity, inclination) and instrument characteristics (e.g., off-nadir pointing and swath capabilities). However, we have observed delays in perceived revisiting cycles where limited satellite downlink bandwidth allows only partial images to be delivered, pushing back the timeliness of the full set of data, which we term as revisiting cycle delay.   In this paper, we present a revisiting-aware in-orbit edge computing framework for Earth observation termed Stride. Stride leverages the unique orbital revisiting properties to afford historical reference revisiting images onboard, and exploits the inherent temporal redundancy in the revisiting imagery to transmit only the Regions of Interest (RoIs). Specifically, Stride comprises a mono- and multi-temporal cloud indicator to alleviate cloud contamination, a coarse-to-fine reference selector for orbit deviation correction, and an ensemble-local change detector to address inter-band complexities and pixel-level perturbations. Experiments on a Flat-Sat testbed and a constellation simulator demonstrate Stride improves the Revisiting Imagery Delivery (RID) score by up to 4.55X, decreases the connectivity latency by 5.02X, and enlarges the mapping coverage by 2.56X, yielding state-of-the-art performance.</summary>
+    <author>
+      <name>Elisabetta Paladino</name>
+    </author>
+    <author>
+      <name>Luigi Giannelli</name>
+    </author>
+    <author>
+      <name>Alessandro Sebastianelli</name>
+    </author>
+    <summary type="text">As Earth Observation (EO) enters the Big Data era, the exponential volume of daily satellite imagery poses significant computational and storage challenges for classical Deep Learning (DL) models. Moreover, current approaches often struggle to generalize across heterogeneous sensors and volcanic environments while requiring large labeled datasets and substantial computational resources. These limitations are particularly critical for emerging On-Board Processing (OBP) applications, where memory, computational power, and annotated data are inherently limited. This work proposes a Hybrid Quantum AlexNet architecture for cross-sensor recognition of volcanic thermal activity at the global scale. The proposed model combines a classical convolutional backbone for high-level spatial features extraction with a parameterized quantum circuit (PQC) acting as a variational layer. By embedding high-level image representations into a high-dimensional Hilbert space, the quantum layer learns task-specific representations that enhance feature discrimination. Experimental results demonstrate that the proposed hybrid quantum model learns more discriminative feature representations, leading to improved cross-sensor transferability and robustness across heterogeneous volcanic environments using fewer trainable parameters and reduced training data than its classical counterpart.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.NI" />
-  </entry>
-  <entry>
-    <title>Few-Shot Open-Vocabulary Remote Sensing Segmentation via Textual Inversion</title>
-    <link href="http://arxiv.org/abs/2607.25563v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.25563v1</id>
-    <published>2026-07-28T00:00:00Z</published>
-    <updated>2026-07-28T00:00:00Z</updated>
-    <author>
-      <name>Junhyuk Heo</name>
-    </author>
-    <author>
-      <name>Junghwan Park</name>
-    </author>
-    <summary type="text">Open-vocabulary segmentation labels arbitrary categories from a text query without per-class training, yet on remote sensing imagery it underperforms on categories it handles reliably elsewhere. We find that much of this gap traces to the text query rather than to the segmentation model. Because these models are not specialized for overhead imagery, the class name that serves as the query is often a weak address into the vision-language embedding space. We show that a better name repairs part of the gap, while the remaining failures call for an address that the tested natural-language rephrasings do not provide. We recover that address from a few examples through textual inversion on a frozen model, keeping inference text only. On a representative benchmark this raises the mean intersection over union on the affected categories from 3.9 to 39.4, and across eight remote sensing datasets it improves over few-shot methods that instead inject visual prompts at inference.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>MARS: Multi-Agent Re-ranking for Repeat-Order Food Delivery Recommendation</title>
-    <link href="http://arxiv.org/abs/2607.25420v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.25420v1</id>
-    <published>2026-07-28T00:00:00Z</published>
-    <updated>2026-07-28T00:00:00Z</updated>
-    <author>
-      <name>Jiahao Tian</name>
-    </author>
-    <author>
-      <name>Zhenkai Wang</name>
-    </author>
-    <summary type="text">Large language models (LLMs) are increasingly used in recommender systems, but it is often unclear how much performance can be obtained from strong pre-trained backbones alone when they are placed inside a structured recommendation pipeline. In this paper, we present MARS, a modular multi-agent re-ranking framework for repeat-order food delivery recommendation. MARS serves as a controlled hybrid framework for studying how far pre-trained LLMs can go in this setting when combined with lightweight collaborative retrieval and contextual filtering. MARS performs coarse-to-fine recommendation in two stages: cuisine prediction followed by vendor ranking. The framework combines LightGCN-based global preference signals, Swing-based local peer evidence, geospatial filtering, and prompt-driven LLM reasoning over behavioral, temporal, and geographic context. We evaluate MARS on two real-world Delivery Hero benchmarks, DHRD-SE and DHRD-SG, and compare it against heuristic, sequential, graph-based, and food-delivery-specific baselines. We also provide detailed implementation and evaluation protocols, including prompting and decoding. Our study makes three contributions. First, it presents a modular multi-agent framework for repeat-order food delivery recommendation that integrates collaborative signals and LLM-based re-ranking in a transparent pipeline. Second, it shows that strong pre-trained backbones can already be competitive in repeat-order recommendation when paired with lightweight collaborative retrieval. Third, it establishes a reproducible evaluation setting for hybrid LLM recommenders in food delivery.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Information Retrieval" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>ObliCity: A Benchmark and Baseline for Roof-to-Ground Projection Displacement Correction</title>
-    <link href="http://arxiv.org/abs/2607.25210v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.25210v1</id>
-    <published>2026-07-28T00:00:00Z</published>
-    <updated>2026-07-28T00:00:00Z</updated>
-    <author>
-      <name>Kai Li</name>
-    </author>
-    <author>
-      <name>Yupeng Deng</name>
-    </author>
-    <author>
-      <name>Ligao Deng</name>
-    </author>
-    <author>
-      <name>Zhihao Xi</name>
-    </author>
-    <author>
-      <name>Chenhao Wang</name>
-    </author>
-    <author>
-      <name>Jierui Zhang</name>
-    </author>
-    <author>
-      <name>Yingrui Ji</name>
-    </author>
-    <author>
-      <name>Yu Meng</name>
-    </author>
-    <author>
-      <name>Xiangyu Zhao</name>
-    </author>
-    <summary type="text">Oblique-view urban remote sensing imagery inevitably exhibits geometric projection displacements between building roofs and footprints, leading to significant distortions in spatial structure. Existing approaches either ignore these deformations or handle them implicitly within segmentation-based frameworks, where progress is dominated by general segmentation advances rather than improvements in geometric correction. In this work, we explicitly define roof-to-footprint offset vector (RFOV) extraction as an independent learning task that decouples geometric alignment from semantic segmentation. To support this task, we introduce the Oblique City dataset (ObliCity), the first large-scale benchmark that integrates high-resolution UAV imagery and globally distributed satellite data, covering diverse city morphologies and camera perspectives. Methodologically, we reformulate DragOSM into DragRoof, an ODE-based framework inspired by human annotation behavior. By simulating the continuous process of dragging roofs toward their footprints, DragRoof learns deterministic, geometry-consistent offset fields and adaptively determines convergence through an end token. Extensive experiments on ObliCity demonstrate that DragRoof achieves state-of-the-art RFOV extraction performance, requiring fewer inference steps while delivering superior directional and length accuracy. Our dataset and model establish a principled foundation for studying projection displacement correction in oblique remote sensing imagery. The source code and dataset will be avaliable at https://github.com/likaiucas/DragRoof.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/likaiucas/DragRoof"&gt;https://github.com/likaiucas/DragRoof&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Beyond Zooming: Learning Multi-Tool Visual Reasoning for Ultra-High-Resolution Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2607.25993v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.25993v1</id>
-    <published>2026-07-28T00:00:00Z</published>
-    <updated>2026-07-28T00:00:00Z</updated>
-    <author>
-      <name>Fengxiang Wang</name>
-    </author>
-    <author>
-      <name>Jiangnan Huang</name>
-    </author>
-    <author>
-      <name>Mingshuo Chen</name>
-    </author>
-    <author>
-      <name>Yueying Li</name>
-    </author>
-    <author>
-      <name>Yang Shi</name>
-    </author>
-    <author>
-      <name>Junwei Luo</name>
-    </author>
-    <author>
-      <name>Haoyu Wang</name>
-    </author>
-    <author>
-      <name>Yansheng Li</name>
-    </author>
-    <author>
-      <name>Jing Zhang</name>
-    </author>
-    <author>
-      <name>Haiyan Zhao</name>
-    </author>
-    <author>
-      <name>Wenjing Yang</name>
-    </author>
-    <summary type="text">Ultra-high-resolution (UHR) remote-sensing (RS) imagery provides fine-grained Earth-observation evidence over city-scale scenes, but poses a fundamental challenge for multimodal large language models (MLLMs): task-relevant evidence is often sparse, local, and spatially dispersed across extremely large visual contexts. A natural solution is to equip MLLMs with zoom-in tools for active local inspection. However, through a pilot study on XLRS-Bench, we find that zoom-in is only partially effective: it resolves easy and medium-level tasks with locally recoverable evidence, but saturates on hard cases requiring global search, multi-region comparison, path planning, or dispersed-evidence reasoning. Motivated by this finding, we move beyond single-tool zoom-in and introduce GeoMTVR, a large-scale Geospatial Multi-Tool Visual Reasoning dataset built from wide-area satellite imagery. GeoMTVR contains 13K UHR VQA samples with interleaved reasoning trajectories, diverse visual tool calls, and returned visual observations, enabling models to learn question decomposition, tool selection, regional inspection, object-level grounding, auxiliary visual reasoning, and cross-tool evidence integration. Beyond supervised fine-tuning, we propose a tool-attention-focused reinforcement learning algorithm that concentrates optimization on critical tool-use decisions, including when to invoke tools, which tool to select, where to apply it, and how to interpret tool outputs. By combining SFT on GeoMTVR with our RL algorithm, we develop GeoLens, a multi-tool visual reasoning MLLM for UHR RS. Experiments show that GeoLens consistently outperforms direct reasoning and single-tool zoom-in baselines, achieving stronger accuracy, better evidence grounding, and more efficient tool-use trajectories.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
+    <category term="Geophysics" />
+    <category term="Machine Learning" />
   </entry>
 </feed>

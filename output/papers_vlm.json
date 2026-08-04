@@ -25430,7 +25430,7 @@
     "Institute": "",
     "Title": "OVEarth-Bench: Evaluating Category Breadth and Query Diversity for Open-Vocabulary Earth Observation",
     "abbr.": "",
-    "Paper_link": "http://arxiv.org/abs/2607.27278v1",
+    "Paper_link": "http://arxiv.org/abs/2607.27278v2",
     "Abstract": "Open-vocabulary Earth observation (EO) aims to localize geospatial concepts specified in natural language rather than a fixed label set. Existing benchmarks, however, usually cover narrow category vocabularies or limited query forms. To fill this gap, we introduce OVEarth-Bench, which extends existing evaluation in two directions: category breadth, through broad hierarchical category coverage with positive and negative expressions, and query diversity, through vocabulary, referring, and reasoning queries. The benchmark supports mask and box localization under a unified zero-shot protocol. We evaluate a broad set of general and EO-specific methods. The evaluation reveals that: (1) the performance of current methods remains limited, while broader category coverage yields more stable model rankings; (2) MLLM-based methods achieve the strongest overall performance; and (3) EO-specific methods generally underperform general models and rarely match the strongest methods. These findings provide guidance for future open-vocabulary EO method design and highlight the importance of developing more realistic, diverse, high-quality, and large-scale benchmarks for reliable evaluation. Our data and evaluation package are released at https://earth-insights.github.io/OVEarth-bench.",
     "code": "",
     "Publication": "",
@@ -25496,5 +25496,24 @@
     "_added_date": "2026-08-03",
     "Category": "Method",
     "_tasks": "CLS"
+  },
+  {
+    "Type": "Machine Learning",
+    "Subtype": "",
+    "Date": "2026-08-01",
+    "Month": 8,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "GeoArbiter: Verifiability-Guided Grounding for Remote-Sensing Multimodal LLMs",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2608.00877v1",
+    "Abstract": "Remote-sensing multimodal large language models (MLLMs) often assert facts that imagery cannot establish, such as a facility's identity or function. Coordinate-keyed geographic retrieval can supply this missing knowledge, improving fMoW land-use accuracy by 12.06--17.19 points across three open MLLMs. However, retrieved records can also contradict visible evidence, and we find that models frequently follow the records even when the image is decisive. We argue that source trust should therefore depend on \\emph{cross-modal verifiability}: geographic records are most useful for attributes the image cannot verify and most dangerous when they dispute visually verifiable attributes. We introduce GeoArbiter, a training-free pipeline that operationalizes this principle by injecting only image-unverifiable geographic facts. Unlike arbitration prompts, which leak across attribute types and bias yes/no responses, content-level filtering preserves 84.69--87.15\\% of the full-retrieval accuracy gain, reduces claim-level hallucination by 9.58--26.34\\% under a source-blinded judge, and improves robustness to conflicting records across all three models. These results identify verifiability-guided content selection as a simple, effective mechanism for grounding remote-sensing MLLMs in fallible geographic knowledge.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{li2026geoarbiter,\n  title={GeoArbiter: Verifiability-Guided Grounding for Remote-Sensing Multimodal LLMs},\n  author={Xuechen Li},\n  journal={arXiv preprint arXiv:2608.00877v1},\n  year={2026},\n  url={http://arxiv.org/abs/2608.00877v1}\n}",
+    "Authors": "Xuechen Li",
+    "_added_date": "2026-08-04",
+    "Category": "Method",
+    "_tasks": "VG"
   }
 ]

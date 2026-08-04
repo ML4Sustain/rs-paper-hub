@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_agent.xml</id>
   <link href="https://rspaper.top/output/feed_agent.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-03T04:26:10Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
+  <updated>2026-08-04T01:16:11Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 1 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -39,67 +39,6 @@
     </author>
     <summary type="text">Existing farmland remote sensing image (FRSI) segmentation follows a "Think with Intra-Image" paradigm, assuming that the current image contains sufficient visual evidence for reliable segmentation. Yet farmland appearance varies with phenology and spatial context and is often confused with other land-cover, making instantaneous, local observations inadequate. Thus, segmentation ambiguity stems not only from limited model representation, but more fundamentally from the required spatio-temporal information lying beyond the current image. Based on this insight, we redefine FRSI segmentation from an information bottleneck perspective as a dynamic decision process driven by task-relevant extra spatio-temporal information gain. We further propose FarmSeeker, a dynamic FRSI segmentation agent that identifies ambiguous regions, reasons about their causes, and queries extra spatio-temporal information on demand for accurate segmentation. To evaluate FarmSeeker, we construct GSFS-Bench, the first global-scale, high-resolution FRSI segmentation benchmark that supports reasoning-querying. Experiments show that FarmSeeker achieves more stable segmentation performance than existing methods. The project is publicly available at: https://withoutocean.github.io/FarmSeeker/</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>MARS: Multi-Agent Re-ranking for Repeat-Order Food Delivery Recommendation</title>
-    <link href="http://arxiv.org/abs/2607.25420v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.25420v1</id>
-    <published>2026-07-28T00:00:00Z</published>
-    <updated>2026-07-28T00:00:00Z</updated>
-    <author>
-      <name>Jiahao Tian</name>
-    </author>
-    <author>
-      <name>Zhenkai Wang</name>
-    </author>
-    <summary type="text">Large language models (LLMs) are increasingly used in recommender systems, but it is often unclear how much performance can be obtained from strong pre-trained backbones alone when they are placed inside a structured recommendation pipeline. In this paper, we present MARS, a modular multi-agent re-ranking framework for repeat-order food delivery recommendation. MARS serves as a controlled hybrid framework for studying how far pre-trained LLMs can go in this setting when combined with lightweight collaborative retrieval and contextual filtering. MARS performs coarse-to-fine recommendation in two stages: cuisine prediction followed by vendor ranking. The framework combines LightGCN-based global preference signals, Swing-based local peer evidence, geospatial filtering, and prompt-driven LLM reasoning over behavioral, temporal, and geographic context. We evaluate MARS on two real-world Delivery Hero benchmarks, DHRD-SE and DHRD-SG, and compare it against heuristic, sequential, graph-based, and food-delivery-specific baselines. We also provide detailed implementation and evaluation protocols, including prompting and decoding. Our study makes three contributions. First, it presents a modular multi-agent framework for repeat-order food delivery recommendation that integrates collaborative signals and LLM-based re-ranking in a transparent pipeline. Second, it shows that strong pre-trained backbones can already be competitive in repeat-order recommendation when paired with lightweight collaborative retrieval. Third, it establishes a reproducible evaluation setting for hybrid LLM recommenders in food delivery.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Information Retrieval" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Beyond Zooming: Learning Multi-Tool Visual Reasoning for Ultra-High-Resolution Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2607.25993v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.25993v1</id>
-    <published>2026-07-28T00:00:00Z</published>
-    <updated>2026-07-28T00:00:00Z</updated>
-    <author>
-      <name>Fengxiang Wang</name>
-    </author>
-    <author>
-      <name>Jiangnan Huang</name>
-    </author>
-    <author>
-      <name>Mingshuo Chen</name>
-    </author>
-    <author>
-      <name>Yueying Li</name>
-    </author>
-    <author>
-      <name>Yang Shi</name>
-    </author>
-    <author>
-      <name>Junwei Luo</name>
-    </author>
-    <author>
-      <name>Haoyu Wang</name>
-    </author>
-    <author>
-      <name>Yansheng Li</name>
-    </author>
-    <author>
-      <name>Jing Zhang</name>
-    </author>
-    <author>
-      <name>Haiyan Zhao</name>
-    </author>
-    <author>
-      <name>Wenjing Yang</name>
-    </author>
-    <summary type="text">Ultra-high-resolution (UHR) remote-sensing (RS) imagery provides fine-grained Earth-observation evidence over city-scale scenes, but poses a fundamental challenge for multimodal large language models (MLLMs): task-relevant evidence is often sparse, local, and spatially dispersed across extremely large visual contexts. A natural solution is to equip MLLMs with zoom-in tools for active local inspection. However, through a pilot study on XLRS-Bench, we find that zoom-in is only partially effective: it resolves easy and medium-level tasks with locally recoverable evidence, but saturates on hard cases requiring global search, multi-region comparison, path planning, or dispersed-evidence reasoning. Motivated by this finding, we move beyond single-tool zoom-in and introduce GeoMTVR, a large-scale Geospatial Multi-Tool Visual Reasoning dataset built from wide-area satellite imagery. GeoMTVR contains 13K UHR VQA samples with interleaved reasoning trajectories, diverse visual tool calls, and returned visual observations, enabling models to learn question decomposition, tool selection, regional inspection, object-level grounding, auxiliary visual reasoning, and cross-tool evidence integration. Beyond supervised fine-tuning, we propose a tool-attention-focused reinforcement learning algorithm that concentrates optimization on critical tool-use decisions, including when to invoke tools, which tool to select, where to apply it, and how to interpret tool outputs. By combining SFT on GeoMTVR with our RL algorithm, we develop GeoLens, a multi-tool visual reasoning MLLM for UHR RS. Experiments show that GeoLens consistently outperforms direct reasoning and single-tool zoom-in baselines, achieving stronger accuracy, better evidence grounding, and more efficient tool-use trajectories.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;VG&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>

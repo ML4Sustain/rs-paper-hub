@@ -4,12 +4,26 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-03T04:26:10Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 9 entries</subtitle>
+  <updated>2026-08-04T01:16:11Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 7 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>GeoArbiter: Verifiability-Guided Grounding for Remote-Sensing Multimodal LLMs</title>
+    <link href="http://arxiv.org/abs/2608.00877v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.00877v1</id>
+    <published>2026-08-01T00:00:00Z</published>
+    <updated>2026-08-01T00:00:00Z</updated>
+    <author>
+      <name>Xuechen Li</name>
+    </author>
+    <summary type="text">Remote-sensing multimodal large language models (MLLMs) often assert facts that imagery cannot establish, such as a facility's identity or function. Coordinate-keyed geographic retrieval can supply this missing knowledge, improving fMoW land-use accuracy by 12.06--17.19 points across three open MLLMs. However, retrieved records can also contradict visible evidence, and we find that models frequently follow the records even when the image is decisive. We argue that source trust should therefore depend on \emph{cross-modal verifiability}: geographic records are most useful for attributes the image cannot verify and most dangerous when they dispute visually verifiable attributes. We introduce GeoArbiter, a training-free pipeline that operationalizes this principle by injecting only image-unverifiable geographic facts. Unlike arbitration prompts, which leak across attribute types and bias yes/no responses, content-level filtering preserves 84.69--87.15\% of the full-retrieval accuracy gain, reduces claim-level hallucination by 9.58--26.34\% under a source-blinded judge, and improves robustness to conflicting records across all three models. These results identify verifiability-guided content selection as a simple, effective mechanism for grounding remote-sensing MLLMs in fallible geographic knowledge.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
   <entry>
     <title>Locally Consistent Transductive Information Maximization for Few-Shot Remote Sensing Scene Classification</title>
     <link href="http://arxiv.org/abs/2607.29192v1" rel="alternate" type="text/html" />
@@ -140,8 +154,8 @@
   </entry>
   <entry>
     <title>OVEarth-Bench: Evaluating Category Breadth and Query Diversity for Open-Vocabulary Earth Observation</title>
-    <link href="http://arxiv.org/abs/2607.27278v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.27278v1</id>
+    <link href="http://arxiv.org/abs/2607.27278v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.27278v2</id>
     <published>2026-07-29T00:00:00Z</published>
     <updated>2026-07-29T00:00:00Z</updated>
     <author>
@@ -167,83 +181,6 @@
     </author>
     <summary type="text">Open-vocabulary Earth observation (EO) aims to localize geospatial concepts specified in natural language rather than a fixed label set. Existing benchmarks, however, usually cover narrow category vocabularies or limited query forms. To fill this gap, we introduce OVEarth-Bench, which extends existing evaluation in two directions: category breadth, through broad hierarchical category coverage with positive and negative expressions, and query diversity, through vocabulary, referring, and reasoning queries. The benchmark supports mask and box localization under a unified zero-shot protocol. We evaluate a broad set of general and EO-specific methods. The evaluation reveals that: (1) the performance of current methods remains limited, while broader category coverage yields more stable model rankings; (2) MLLM-based methods achieve the strongest overall performance; and (3) EO-specific methods generally underperform general models and rarely match the strongest methods. These findings provide guidance for future open-vocabulary EO method design and highlight the importance of developing more realistic, diverse, high-quality, and large-scale benchmarks for reliable evaluation. Our data and evaluation package are released at https://earth-insights.github.io/OVEarth-bench.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Few-Shot Open-Vocabulary Remote Sensing Segmentation via Textual Inversion</title>
-    <link href="http://arxiv.org/abs/2607.25563v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.25563v1</id>
-    <published>2026-07-28T00:00:00Z</published>
-    <updated>2026-07-28T00:00:00Z</updated>
-    <author>
-      <name>Junhyuk Heo</name>
-    </author>
-    <author>
-      <name>Junghwan Park</name>
-    </author>
-    <summary type="text">Open-vocabulary segmentation labels arbitrary categories from a text query without per-class training, yet on remote sensing imagery it underperforms on categories it handles reliably elsewhere. We find that much of this gap traces to the text query rather than to the segmentation model. Because these models are not specialized for overhead imagery, the class name that serves as the query is often a weak address into the vision-language embedding space. We show that a better name repairs part of the gap, while the remaining failures call for an address that the tested natural-language rephrasings do not provide. We recover that address from a few examples through textual inversion on a frozen model, keeping inference text only. On a representative benchmark this raises the mean intersection over union on the affected categories from 3.9 to 39.4, and across eight remote sensing datasets it improves over few-shot methods that instead inject visual prompts at inference.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>MARS: Multi-Agent Re-ranking for Repeat-Order Food Delivery Recommendation</title>
-    <link href="http://arxiv.org/abs/2607.25420v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.25420v1</id>
-    <published>2026-07-28T00:00:00Z</published>
-    <updated>2026-07-28T00:00:00Z</updated>
-    <author>
-      <name>Jiahao Tian</name>
-    </author>
-    <author>
-      <name>Zhenkai Wang</name>
-    </author>
-    <summary type="text">Large language models (LLMs) are increasingly used in recommender systems, but it is often unclear how much performance can be obtained from strong pre-trained backbones alone when they are placed inside a structured recommendation pipeline. In this paper, we present MARS, a modular multi-agent re-ranking framework for repeat-order food delivery recommendation. MARS serves as a controlled hybrid framework for studying how far pre-trained LLMs can go in this setting when combined with lightweight collaborative retrieval and contextual filtering. MARS performs coarse-to-fine recommendation in two stages: cuisine prediction followed by vendor ranking. The framework combines LightGCN-based global preference signals, Swing-based local peer evidence, geospatial filtering, and prompt-driven LLM reasoning over behavioral, temporal, and geographic context. We evaluate MARS on two real-world Delivery Hero benchmarks, DHRD-SE and DHRD-SG, and compare it against heuristic, sequential, graph-based, and food-delivery-specific baselines. We also provide detailed implementation and evaluation protocols, including prompting and decoding. Our study makes three contributions. First, it presents a modular multi-agent framework for repeat-order food delivery recommendation that integrates collaborative signals and LLM-based re-ranking in a transparent pipeline. Second, it shows that strong pre-trained backbones can already be competitive in repeat-order recommendation when paired with lightweight collaborative retrieval. Third, it establishes a reproducible evaluation setting for hybrid LLM recommenders in food delivery.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Information Retrieval" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Beyond Zooming: Learning Multi-Tool Visual Reasoning for Ultra-High-Resolution Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2607.25993v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.25993v1</id>
-    <published>2026-07-28T00:00:00Z</published>
-    <updated>2026-07-28T00:00:00Z</updated>
-    <author>
-      <name>Fengxiang Wang</name>
-    </author>
-    <author>
-      <name>Jiangnan Huang</name>
-    </author>
-    <author>
-      <name>Mingshuo Chen</name>
-    </author>
-    <author>
-      <name>Yueying Li</name>
-    </author>
-    <author>
-      <name>Yang Shi</name>
-    </author>
-    <author>
-      <name>Junwei Luo</name>
-    </author>
-    <author>
-      <name>Haoyu Wang</name>
-    </author>
-    <author>
-      <name>Yansheng Li</name>
-    </author>
-    <author>
-      <name>Jing Zhang</name>
-    </author>
-    <author>
-      <name>Haiyan Zhao</name>
-    </author>
-    <author>
-      <name>Wenjing Yang</name>
-    </author>
-    <summary type="text">Ultra-high-resolution (UHR) remote-sensing (RS) imagery provides fine-grained Earth-observation evidence over city-scale scenes, but poses a fundamental challenge for multimodal large language models (MLLMs): task-relevant evidence is often sparse, local, and spatially dispersed across extremely large visual contexts. A natural solution is to equip MLLMs with zoom-in tools for active local inspection. However, through a pilot study on XLRS-Bench, we find that zoom-in is only partially effective: it resolves easy and medium-level tasks with locally recoverable evidence, but saturates on hard cases requiring global search, multi-region comparison, path planning, or dispersed-evidence reasoning. Motivated by this finding, we move beyond single-tool zoom-in and introduce GeoMTVR, a large-scale Geospatial Multi-Tool Visual Reasoning dataset built from wide-area satellite imagery. GeoMTVR contains 13K UHR VQA samples with interleaved reasoning trajectories, diverse visual tool calls, and returned visual observations, enabling models to learn question decomposition, tool selection, regional inspection, object-level grounding, auxiliary visual reasoning, and cross-tool evidence integration. Beyond supervised fine-tuning, we propose a tool-attention-focused reinforcement learning algorithm that concentrates optimization on critical tool-use decisions, including when to invoke tools, which tool to select, where to apply it, and how to interpret tool outputs. By combining SFT on GeoMTVR with our RL algorithm, we develop GeoLens, a multi-tool visual reasoning MLLM for UHR RS. Experiments show that GeoLens consistently outperforms direct reasoning and single-tool zoom-in baselines, achieving stronger accuracy, better evidence grounding, and more efficient tool-use trajectories.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;VG&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>

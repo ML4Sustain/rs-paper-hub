@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_uav.xml</id>
   <link href="https://rspaper.top/output/feed_uav.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-03T04:26:10Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
+  <updated>2026-08-04T01:16:11Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 1 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -45,46 +45,6 @@
 &lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ISPRS Journal of Photogrammetry and Remote Sensing&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>ObliCity: A Benchmark and Baseline for Roof-to-Ground Projection Displacement Correction</title>
-    <link href="http://arxiv.org/abs/2607.25210v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.25210v1</id>
-    <published>2026-07-28T00:00:00Z</published>
-    <updated>2026-07-28T00:00:00Z</updated>
-    <author>
-      <name>Kai Li</name>
-    </author>
-    <author>
-      <name>Yupeng Deng</name>
-    </author>
-    <author>
-      <name>Ligao Deng</name>
-    </author>
-    <author>
-      <name>Zhihao Xi</name>
-    </author>
-    <author>
-      <name>Chenhao Wang</name>
-    </author>
-    <author>
-      <name>Jierui Zhang</name>
-    </author>
-    <author>
-      <name>Yingrui Ji</name>
-    </author>
-    <author>
-      <name>Yu Meng</name>
-    </author>
-    <author>
-      <name>Xiangyu Zhao</name>
-    </author>
-    <summary type="text">Oblique-view urban remote sensing imagery inevitably exhibits geometric projection displacements between building roofs and footprints, leading to significant distortions in spatial structure. Existing approaches either ignore these deformations or handle them implicitly within segmentation-based frameworks, where progress is dominated by general segmentation advances rather than improvements in geometric correction. In this work, we explicitly define roof-to-footprint offset vector (RFOV) extraction as an independent learning task that decouples geometric alignment from semantic segmentation. To support this task, we introduce the Oblique City dataset (ObliCity), the first large-scale benchmark that integrates high-resolution UAV imagery and globally distributed satellite data, covering diverse city morphologies and camera perspectives. Methodologically, we reformulate DragOSM into DragRoof, an ODE-based framework inspired by human annotation behavior. By simulating the continuous process of dragging roofs toward their footprints, DragRoof learns deterministic, geometry-consistent offset fields and adaptively determines convergence through an end token. Extensive experiments on ObliCity demonstrate that DragRoof achieves state-of-the-art RFOV extraction performance, requiring fewer inference steps while delivering superior directional and length accuracy. Our dataset and model establish a principled foundation for studying projection displacement correction in oblique remote sensing imagery. The source code and dataset will be avaliable at https://github.com/likaiucas/DragRoof.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/likaiucas/DragRoof"&gt;https://github.com/likaiucas/DragRoof&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>
