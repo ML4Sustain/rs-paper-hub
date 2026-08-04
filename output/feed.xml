@@ -4,12 +4,349 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-04T01:16:11Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 20 entries</subtitle>
+  <updated>2026-08-04T04:00:33Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 32 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>ISRS-DETR: Detection-Guided Click Propagation for Remote Sensing Interactive Segmentation</title>
+    <link href="http://arxiv.org/abs/2608.02468v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.02468v1</id>
+    <published>2026-08-03T00:00:00Z</published>
+    <updated>2026-08-03T00:00:00Z</updated>
+    <author>
+      <name>Thanh Duc Pham</name>
+    </author>
+    <author>
+      <name>Anh Nguyen</name>
+    </author>
+    <author>
+      <name>Duong Duc Hieu</name>
+    </author>
+    <author>
+      <name>Minh-Tan Pham</name>
+    </author>
+    <summary type="text">Interactive segmentation reduces the prohibitive cost of pixel-level annotation by allowing users to delineate objects with a few clicks. However, applying this paradigm directly to remote sensing imagery is non-trivial: ultra-high resolutions, small object sizes, and sparse spatial distributions all degrade segmentation quality. Recent work has addressed the resolution barrier and achieved competitive results in interactive segmentation for remote sensing (ISRS). However, they treat all instances of a class within an image as a single objective target. Consequently, interactions spent on one object contribute nothing to its same-class neighbours, and satisfactory masks may demand up to 40 clicks per image, hindering the practicality of these frameworks. We observe that remote sensing scenes exhibit markedly strong inter-object correlation, meaning a single clicked object is highly informative about the rest of its category. Building on this, we propose ISRS-DETR, a detection-guided interactive segmentation framework that injects object-level evidence into both training and inference. Our ISRS-DETR employs an RF-DETR decoder with the interactive segmentation backbone to localise co-occurring same-class objects, and introduces a Dynamic Top-K Click Selection strategy that retains only reliable proposals and converts each into a simulated click, so one user interaction propagates across an entire class. Experiments on three standard remote sensing benchmarks show that ISRS-DETR achieves state-of-the-art accuracy while substantially reducing Number of Clicks per Image (NoC-I). All codes and data splits will be released for reproducibility upon acceptance.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Global-Scale Self-Supervised Spatiotemporal Learning for NDVI Time-Series Reconstruction</title>
+    <link href="http://arxiv.org/abs/2608.02322v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.02322v1</id>
+    <published>2026-08-03T00:00:00Z</published>
+    <updated>2026-08-03T00:00:00Z</updated>
+    <author>
+      <name>Ang Li</name>
+    </author>
+    <author>
+      <name>Menghui Jiang</name>
+    </author>
+    <author>
+      <name>Xiaobin Guan</name>
+    </author>
+    <author>
+      <name>Dong Chu</name>
+    </author>
+    <author>
+      <name>Huanfeng Shen</name>
+    </author>
+    <summary type="text">Accurate and efficient reconstruction of cloud-contaminated and noise-corrupted NDVI time series remains a challenge in remote sensing. Deep learning provides a promising solution for modeling complex spatiotemporal dependencies; however, its application is often limited by the difficulty of obtaining paired clear-sky and degraded NDVI data for identical spatiotemporal locations. To address this issue, we propose GloSSR, a Global-scale Self-supervised Spatiotemporal framework for NDVI Reconstruction. The framework constructs supervisory signals by artificially degrading relatively clean NDVI observations with realistic cloud contamination patterns, producing self-supervised training pairs that closely mimic real-world degradation. It further introduces an end-to-end spatiotemporal learning network that jointly captures long-range temporal dependencies and short-term spatiotemporal correlation through a bidirectional Transformer with a ConvLSTM architecture. A temporal-channel attention-based reconstruction module is incorporated to enhance informative features, while a spatiotemporal prior constraint is designed to preserve both fine-scale structures and long-term phenological trends during optimization. Extensive evaluations on MODIS NDVI data demonstrate the effectiveness of the proposed framework across both artificial and real-world scenarios. In artificial degraded-pixel reconstruction experiments, GloSSR consistently outperforms the comparison methods. Time-series analyses based on real observations further demonstrate that the proposed framework can accurately characterize vegetation dynamics and capture the key phenological states. Long-term vegetation trend analysis and the transferability analysis to AVHRR data validate the scalability of the framework and illustrate its broad applicability for large-scale environmental monitoring.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation</title>
+    <link href="http://arxiv.org/abs/2608.02315v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.02315v1</id>
+    <published>2026-08-03T00:00:00Z</published>
+    <updated>2026-08-03T00:00:00Z</updated>
+    <author>
+      <name>Gaetano Chiriaco</name>
+    </author>
+    <author>
+      <name>Luca Barco</name>
+    </author>
+    <author>
+      <name>Andrea Bragagnolo</name>
+    </author>
+    <author>
+      <name>Claudio Rossi</name>
+    </author>
+    <author>
+      <name>Edoardo Arnaudo</name>
+    </author>
+    <summary type="text">Geospatial foundation models aim to learn representations that transfer across regions and sensors, yet evaluating them on specific tasks requires large, high-quality, multi-modal benchmarks that measure how well such models extract value from data. Concerning flood mapping, existing datasets rarely combine bi-temporal SAR and co-registered optical imagery at scale, leaving the value of foundation models for this downstream task largely untested. We introduce GEOID-Flood, a large-scale multi-modal flood segmentation benchmark, derived from Copernicus Emergency Management Service activations, spanning 219 events across 65 countries over ten years. The dataset provides more than 14,000 tiles with co-registered pre- and post-event Sentinel-1, in GRD and RTC format, pre-event Sentinel-2 composite, and DEM, including manually validated labels that separate background from permanent water and flooded water. Using this benchmark, we evaluate foundation models against conventional encoders across single-image, multi-temporal, and multi-modal protocols. We report three main findings: foundation models offer a consistent but modest advantage; optical-SAR fusion with finetuning best resolves transient flooding; and models trained on GEOID-Flood transfer to unseen events better than those trained on existing datasets. Dataset and code available at https://github.com/links-ads/geoid-flood.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/links-ads/geoid-flood"&gt;https://github.com/links-ads/geoid-flood&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ECCV 2026 - Terrabytes II Workshop&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD;3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>A JWST Study of Stardust. I. Infrared Spectroscopy of Comet 81P/Wild 2 and Overall Composition</title>
+    <link href="http://arxiv.org/abs/2608.02190v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.02190v1</id>
+    <published>2026-08-03T00:00:00Z</published>
+    <updated>2026-08-03T00:00:00Z</updated>
+    <author>
+      <name>Nathan X. Roth</name>
+    </author>
+    <author>
+      <name>Stefanie N. Milam</name>
+    </author>
+    <author>
+      <name>Diane H. Wooden</name>
+    </author>
+    <author>
+      <name>Charles E. Woodward</name>
+    </author>
+    <author>
+      <name>Dominique Bockelee-Morvan</name>
+    </author>
+    <author>
+      <name>Michael S. P. Kelley</name>
+    </author>
+    <author>
+      <name>Steven B. Charnley</name>
+    </author>
+    <author>
+      <name>Simon J. Clemett</name>
+    </author>
+    <author>
+      <name>Martin A. Cordiner</name>
+    </author>
+    <author>
+      <name>Perry A. Gerakines</name>
+    </author>
+    <author>
+      <name>David E. Harker</name>
+    </author>
+    <author>
+      <name>Els Peeters</name>
+    </author>
+    <author>
+      <name>Ella Sciamma-O'Brien</name>
+    </author>
+    <author>
+      <name>Geronimo L. Villanueva</name>
+    </author>
+    <summary type="text">We report observations of comet 81P/Wild 2, target of the Stardust sample return mission, on UT 2023 March 20 and 24 at a heliocentric distance ($r_H$) of 1.85 au using the NIRSpec and MIRI integral field unit spectrographs on board the James Webb Space Telescope (JWST). This study is the first compositional comparison between JWST remote-sensing spectroscopy of a solar system object against terrestrial analysis of its returned samples. We securely detected molecular emission from H$_2$O, CH$_4$, C$_2$H$_6$, CH$_3$OH, CO, CO$_2$, $^{13}$CO$_2$, OCS, HCN, and CN and find molecular abundances consistent within $2σ$ with those reported during previous perihelion passages. The water ortho-to-para ratio was $2.76\pm0.05$, and the $^{12}$CO$_2$/$^{13}$CO$_2$ ratio was $85\pm4$. Thermal emission from the nucleus and dust was detected and modeled, providing an effective nucleus radius of $1.77\pm0.04$ km and a dust composition (relative mass fraction of the submicron grains) of $\sim36\%$ amorphous carbon, $\sim25\%$ amorphous Mg:Fe olivine, $\sim23\%$ Mg-rich crystalline olivine, and $\sim15\%$ amorphous Mg:Fe pyroxene. The crystalline mass fraction of the sub-micron grains in the coma was $0.362\pm0.003$. Comparison of the JWST-derived thermal model against the fine-grained materials in Stardust returned samples demonstrates complementarity between the missions, with each most sensitive to a different population of the coma dust grains.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="astro-ph.EP" />
+  </entry>
+  <entry>
+    <title>RSVideo: Are Your Vision-Language Models Ready for Remote Sensing Videos?</title>
+    <link href="http://arxiv.org/abs/2608.02039v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.02039v1</id>
+    <published>2026-08-03T00:00:00Z</published>
+    <updated>2026-08-03T00:00:00Z</updated>
+    <author>
+      <name>Hongjie Zhou</name>
+    </author>
+    <author>
+      <name>Shiqin Wang</name>
+    </author>
+    <author>
+      <name>Haoyang Chen</name>
+    </author>
+    <author>
+      <name>Haonan Guo</name>
+    </author>
+    <author>
+      <name>Di Wang</name>
+    </author>
+    <author>
+      <name>Juhua Liu</name>
+    </author>
+    <author>
+      <name>Fu Lin</name>
+    </author>
+    <author>
+      <name>Yong Luo</name>
+    </author>
+    <summary type="text">Remote-sensing videos enable real-time observation of changes in target attributes, short-term activities, and scene evolution. They record motion, actions, interactions, and scene changes that cannot be captured by isolated images. Existing models primarily target single images or discrete temporal observations spanning a long time range. However, a unified evaluation setting for assessing vision-language models on continuous remote-sensing video understanding remains lacking. We introduce RSVideo-10K, a remote-sensing video dataset comprising 10,773 instances, 1.47 million frames, and 17.02 hours of footage, containing both unmanned aerial vehicles and satellite platforms. Its fixed evaluation benchmark, RSVideo-Bench, contains 2,731 test instances and evaluates two complementary aspects of remote-sensing video understanding: L1 Perception and L2 Reasoning, spanning seven capability groups and 17 tasks. Evaluations show that current vision-language models still struggle to recover small local evidence, track short-lived states, and use scene-constrained spatial relations. Based on this analysis, we further propose RSVideo, a reinforcement learning framework for small-target spatiotemporal focusing that selects question-relevant regions across frames and suppresses redundant background tokens. RSVideo achieves a maximum absolute improvement of 9.01% with InternVL3.5-14B and attains the highest accuracy of 40.63% with Qwen3.6-27B across 26 open-source vision-language backbones.Codes will be available at https://github.com/HongjieZhou0329/RSVideo.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/HongjieZhou0329/RSVideo"&gt;https://github.com/HongjieZhou0329/RSVideo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>GeoCore-9B: Towards Geo-Aware Generative Foundation Models in Earth Observation</title>
+    <link href="http://arxiv.org/abs/2608.01896v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.01896v1</id>
+    <published>2026-08-03T00:00:00Z</published>
+    <updated>2026-08-03T00:00:00Z</updated>
+    <author>
+      <name>Jeonghyeok Do</name>
+    </author>
+    <author>
+      <name>Munchurl Kim</name>
+    </author>
+    <summary type="text">Existing generative models for earth observation (EO) predominantly rely on fine-tuning natural image priors, which limits their scalability and introduces perspective biases that conflict with geospatial constraints. To address this, we introduce GeoCore-9B, a 9-billion-parameter generative foundation model, which is the first of its scale to be trained from scratch exclusively on EO data. Unlike previous EO foundation models, GeoCore-9B is built upon a Flow Matching-based Diffusion Transformer (DiT) and natively conditions generation on text descriptions and continuous geospatial metadata, including ground sample distances, latitudes, and longitudes. To overcome the convergence and spatial disorientation challenges of training at this scale, we propose a Geospatial Semantic Alignment loss. This objective distills structural Earth surface priors (e.g., terrain and urban areas) from a frozen specialist teacher network, constraining the diffusion latent trajectory during training without adding inference overhead. Pre-trained on the global-scale Git-10M dataset, GeoCore-9B demonstrates strong downstream versatility. Beyond standard proxy generative tasks, we show that GeoCore-9B can be effectively adapted for practical EO applications, including highly challenging tasks such as cloud removal and SAR-to-optical cross-modal translation. Extensive evaluations confirm that GeoCore-9B establishes new state-of-the-art performance in both visual fidelity and geographic structural accuracy.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Please visit our project page at https://kaist-viclab.github.io/GeoCore-9B_site/&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>EchoChange: A Diffusion Language Model with Dual Pass Remasking for Factual Remote Sensing Disaster Change Captioning</title>
+    <link href="http://arxiv.org/abs/2608.01856v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.01856v1</id>
+    <published>2026-08-03T00:00:00Z</published>
+    <updated>2026-08-03T00:00:00Z</updated>
+    <author>
+      <name>Dongwei Sun</name>
+    </author>
+    <author>
+      <name>Bowen Yao</name>
+    </author>
+    <author>
+      <name>Yujie Zhang</name>
+    </author>
+    <author>
+      <name>Pei Liu</name>
+    </author>
+    <author>
+      <name>Jing Yao</name>
+    </author>
+    <author>
+      <name>Xiangyong Cao</name>
+    </author>
+    <summary type="text">Bi-temporal remote-sensing disaster change captioning often needs to identify sparse and spatially localized changes across large pre- and post-event scenes and then translate them into coherent, factual descriptions. However, existing change captioning methods always follow an autoregressive decoding paradigm to generate the change description and thus an early misinterpretation of the changed object, event, or spatial relation becomes an irreversible premise for subsequent text, amplifying visual ambiguity into cascading factual errors. To address this limitation, we propose EchoChange, a multimodal discrete diffusion language model that formulates change captioning as iterative masked-token denoising rather than left-to-right generation. By repeatedly revising the entire caption while conditioning on the image pair, EchoChange can reconsider uncertain content and correct imperfect intermediate predictions. We further introduce draft-aware dual-pass training, a progressive masking curriculum, and confidence-guided remasking to align training with iterative inference. Extensive experiments on the RSCC benchmark show that EchoChange substantially outperforms both general-purpose and remote-sensing-specific baselines across lexical and semantic metrics. The EchoChange Project is at https://github.com/sundongwei/EchoChange_Project</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/sundongwei/EchoChange_Project"&gt;https://github.com/sundongwei/EchoChange_Project&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models</title>
+    <link href="http://arxiv.org/abs/2608.01751v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.01751v1</id>
+    <published>2026-08-03T00:00:00Z</published>
+    <updated>2026-08-03T00:00:00Z</updated>
+    <author>
+      <name>Xingyan Li</name>
+    </author>
+    <author>
+      <name>Jordan A. Caraballo-Vega</name>
+    </author>
+    <author>
+      <name>Jie Gong</name>
+    </author>
+    <author>
+      <name>Mark L. Carroll</name>
+    </author>
+    <author>
+      <name>Jianwu Wang</name>
+    </author>
+    <summary type="text">Geospatial foundation models (GeoFMs), pretrained on large-scale geospatial data such as Earth observation (EO), climate, and weather data, have shown promising performance when fine-tuned on diverse downstream tasks. However, there are two challenges of adapting EO-pretrained GeoFMs to practical downstream datasets. The first challenge is how to handle spectral mismatch: pretrained patch embeddings expect a fixed set of input bands, whereas downstream sensors may provide different channels. The second challenge is how to reduce fine-tuning cost and make it efficient. While existing work has made efforts on these challenges individually, jointly improving fine-tuning performance under spectral mismatch while reducing adaptation cost remains underexplored. We propose SPECTRA, a parameter-efficient fine-tuning framework that addresses both spectral mismatch and adaptation cost. To handle spectral mismatch, SPECTRA introduces Band-Routed Embedding (BRE), which maps all available downstream bands into the band space expected by the pretrained GeoFM. By using BRE, all available bands in the downstream dataset are utilized to improve the selected-band input without changing the pretrained patch embedding interface. To reduce adaptation cost, SPECTRA further introduces a Stage-wise Transferability-aware LoRA (ST-LoRA) fine-tuning. ST-LoRA estimates stage-wise transferability before fine-tuning and assigns stage-specific LoRA ranks, concentrating trainable parameters on the stages with high transferability for the target task. Across three EO-pretrained GeoFMs and four downstream segmentation datasets, experiments show that BRE improves performance by utilizing all spectral bands, while ST-LoRA reduces trainable parameters compared with full fine-tuning and standard LoRA. Code is available at https://github.com/big-data-lab-umbc/SPECTRA.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/big-data-lab-umbc/SPECTRA"&gt;https://github.com/big-data-lab-umbc/SPECTRA&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>GISAgentBench: A Practitioner-Sourced Benchmark for Evaluating LLM Agents on GIS Tasks</title>
+    <link href="http://arxiv.org/abs/2608.01645v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.01645v1</id>
+    <published>2026-08-03T00:00:00Z</published>
+    <updated>2026-08-03T00:00:00Z</updated>
+    <author>
+      <name>Abhinav Pothuri</name>
+    </author>
+    <author>
+      <name>Zhe Jiang</name>
+    </author>
+    <author>
+      <name>Zelin Xu</name>
+    </author>
+    <author>
+      <name>Di Yang</name>
+    </author>
+    <summary type="text">Geographic Information System (GIS) professionals rely on multi-step spatial analysis workflows to support decision-making in urban planning, disaster response, and environmental monitoring. The process is tedious, time-consuming, and error-prone. While recent large language model (LLM) agents equipped with external tools have the potential to automate geospatial analysis, their ability to perform realistic GIS workflows remains largely unexplored. Existing GIS agent benchmarking datasets are mostly drawn from textbooks, tutorials, or LLM-generated seeds and remain limited in size and trajectory depth. More importantly, none provides ground truth outputs. They therefore rely on surrogate signals such as code similarity, trajectory matching, or LLM and VLM judges, which can conflate workflow resemblance with task correctness. To address this gap, we introduce GISAgentBench, a benchmark of 349 multi-step GIS tasks curated from GIS Stack Exchange and instantiated on real public data across six selected geographic areas of interest. Each task ships with an executable reference trajectory and an exact ground truth output file, enabling strict, deterministic, tolerance-aware output matching beyond LLM judging. Evaluations of six LLM models reveal that realistic GIS workflows remain challenging: the best agent completes only 32.7% of tasks under strict tolerance-aware scoring, although most models produce outputs that are close to the ground truth.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Clear-Weighted Bit Allocation for Satellite Downlinks</title>
+    <link href="http://arxiv.org/abs/2608.01457v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.01457v1</id>
+    <published>2026-08-02T00:00:00Z</published>
+    <updated>2026-08-02T00:00:00Z</updated>
+    <author>
+      <name>Alireza Furutanpey</name>
+    </author>
+    <author>
+      <name>Qiyang Zhang</name>
+    </author>
+    <author>
+      <name>Yujie Huang</name>
+    </author>
+    <author>
+      <name>Philipp Raith</name>
+    </author>
+    <author>
+      <name>Schahram Dustdar</name>
+    </author>
+    <summary type="text">Earth-observation satellites capture more imagery than intermittent ground contacts can transmit. Onboard systems threshold a cloud detector, discard frames or tiles, and compress the survivors with a fixed codec. On expert-labeled imagery, these rules remove more than one-fifth of clear pixels, primarily through detector false positives. We train a neural codec with a clear-probability-weighted reconstruction loss, reallocating coded bytes from clouds to clear ground without requiring or transmitting a cloud map onboard. Each capture is encoded into a resumable base layer and a dependent refinement layer, while clear content is estimated from features produced by the encoder. At each contact, we causally rank arrived layers using estimated clear content, unfinished bytes, deadline slack, and aggregate deadline pressure. The scheduler serves base and computational deadlines, bounds stored residual bytes, and resumes interrupted packets. We evaluate the onboard-to-downlink pipeline using real entropy-coded bytes, orbit-derived interruptible contact capacities, and measured service time and energy on resource-constrained embedded accelerators. Clear-weighted codecs require up to 47.8\% fewer bytes than learned-compression baselines at matched clear-region quality. The optimized encoder consumes less time and energy than one pass of the cloud detector used by the frame-discard rules. Relative to fixed two-stage service on the same streams, our scheduler more than doubles deadline-full clear-content delivery for the interrupted combined cohort, reaches 83.6\% of a certified clairvoyant upper bound, and exceeds replayed reference orders in deadline-usable delivery.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, 11 Figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.NI" />
+    <category term="Computer Vision; Image and Video Processing" />
+  </entry>
+  <entry>
+    <title>From Forest to Future Capital: Tracking Land Cover Change in Ibu Kota Nusantara (IKN) from 2021 to 2026 with PlanetScope Imagery</title>
+    <link href="http://arxiv.org/abs/2608.01230v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.01230v1</id>
+    <published>2026-08-02T00:00:00Z</published>
+    <updated>2026-08-02T00:00:00Z</updated>
+    <author>
+      <name>Clarissa Rui Min Ong</name>
+    </author>
+    <author>
+      <name>Elizabeth Tee Inn Loo</name>
+    </author>
+    <author>
+      <name>Kenneth Woon Hao Soh</name>
+    </author>
+    <author>
+      <name>William Rachmadi</name>
+    </author>
+    <author>
+      <name>Qiming Zheng</name>
+    </author>
+    <author>
+      <name>Hao Li</name>
+    </author>
+    <summary type="text">Indonesia's relocation of its political and administrative capital from Jakarta to Ibu Kota Nusantara (IKN) has been framed around a ``Forest City'' vision, yet rapid construction within the Core Government Area (KIPP) raises concerns over land conversion, vegetation loss, and carbon stock decline. This study applies remote sensing techniques to systematically assess land use and vegetation cover change in KIPP from 2021 to 2026 using PlanetScope SuperDove satellite imagery. Cloud-free mosaics were prepared and analysed through spectral indices, including the Normalised Difference Vegetation Index (NDVI), Normalised Difference Red Edge (NDRE), and Normalised Difference Water Index (NDWI), alongside supervised land use and land cover (LULC) classification using a Support Vector Machine algorithm. Results show substantial environmental transformation, with mean NDVI declined by 17.1\%, total carbon stock decreased by 0.28\%, developed land expanded by 672\%, and total vegetation declined by 18.1\%. Vegetation loss was most extensive between 2023 and 2024, although a temporary recovery in NDVI and carbon stock occurred from 2024 to 2025 as active clearing slowed and development shifted towards already-cleared land. Overall, the findings demonstrate that remote sensing provides an effective approach for monitoring the environmental impacts of large-scale urban development, while highlighting the need for higher-resolution, hyperspectral, and SAR-based methods to improve detection of construction stages and plantation-related land cover changes.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Breaking Diversity Collapse in Spiking Pseudo-Ensembles for Efficient OOD Detection in Remote Sensing</title>
+    <link href="http://arxiv.org/abs/2608.01090v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.01090v1</id>
+    <published>2026-08-02T00:00:00Z</published>
+    <updated>2026-08-02T00:00:00Z</updated>
+    <author>
+      <name>Srinivas Anumasa</name>
+    </author>
+    <author>
+      <name>Rushi Shah</name>
+    </author>
+    <author>
+      <name>Qiran Zou</name>
+    </author>
+    <author>
+      <name>Dianbo Liu</name>
+    </author>
+    <summary type="text">Spiking Neural Networks (SNNs) are attractive for resource-constrained remote-sensing systems, but reliable out-of-distribution (OOD) detection remains challenging. Deep ensembles provide strong predictive uncertainty, yet require multiple complete models and backbone evaluations. We propose an efficient spiking pseudo-ensemble that attaches multiple lightweight classification heads to a frozen SNN backbone. Naively training these heads with cross-entropy can lead to diversity collapse, where independently parameterized heads may produce correlated predictions. To address this, we introduce an agree--disagree objective that preserves correct predictions on clean in-distribution samples while encouraging diversity on structured, uncertainty-inducing transformations of the same inputs. This provides a diversity-promoting training signal without requiring external OOD data. Experiments with Spikformer and ResNet19-SNN on EuroSAT demonstrate consistent improvements over conventionally trained pseudo-ensembles. Using three backbones with five heads each matches or improves upon a five-model deep ensemble on UCM and AID, while requiring approximately 38% fewer parameters and 40% fewer backbone evaluations. These results show that explicit diversity promotion can recover useful ensemble-style uncertainty at substantially lower deployment cost.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
   <entry>
     <title>GeoArbiter: Verifiability-Guided Grounding for Remote-Sensing Multimodal LLMs</title>
     <link href="http://arxiv.org/abs/2608.00877v1" rel="alternate" type="text/html" />

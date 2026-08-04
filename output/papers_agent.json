@@ -4254,5 +4254,24 @@
     "_added_date": "2026-07-31",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Artificial Intelligence",
+    "Subtype": "",
+    "Date": "2026-08-03",
+    "Month": 8,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "GISAgentBench: A Practitioner-Sourced Benchmark for Evaluating LLM Agents on GIS Tasks",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2608.01645v1",
+    "Abstract": "Geographic Information System (GIS) professionals rely on multi-step spatial analysis workflows to support decision-making in urban planning, disaster response, and environmental monitoring. The process is tedious, time-consuming, and error-prone. While recent large language model (LLM) agents equipped with external tools have the potential to automate geospatial analysis, their ability to perform realistic GIS workflows remains largely unexplored. Existing GIS agent benchmarking datasets are mostly drawn from textbooks, tutorials, or LLM-generated seeds and remain limited in size and trajectory depth. More importantly, none provides ground truth outputs. They therefore rely on surrogate signals such as code similarity, trajectory matching, or LLM and VLM judges, which can conflate workflow resemblance with task correctness. To address this gap, we introduce GISAgentBench, a benchmark of 349 multi-step GIS tasks curated from GIS Stack Exchange and instantiated on real public data across six selected geographic areas of interest. Each task ships with an executable reference trajectory and an exact ground truth output file, enabling strict, deterministic, tolerance-aware output matching beyond LLM judging. Evaluations of six LLM models reveal that realistic GIS workflows remain challenging: the best agent completes only 32.7% of tasks under strict tolerance-aware scoring, although most models produce outputs that are close to the ground truth.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{pothuri2026gisagentbench,\n  title={GISAgentBench: A Practitioner-Sourced Benchmark for Evaluating LLM Agents on GIS Tasks},\n  author={Abhinav Pothuri and Zhe Jiang and Zelin Xu and Di Yang},\n  journal={arXiv preprint arXiv:2608.01645v1},\n  year={2026},\n  url={http://arxiv.org/abs/2608.01645v1}\n}",
+    "Authors": "Abhinav Pothuri, Zhe Jiang, Zelin Xu, Di Yang",
+    "_added_date": "2026-08-04",
+    "Category": "Dataset",
+    "_tasks": ""
   }
 ]

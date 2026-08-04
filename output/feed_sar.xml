@@ -4,12 +4,86 @@
   <id>https://rspaper.top/output/feed_sar.xml</id>
   <link href="https://rspaper.top/output/feed_sar.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-04T01:16:11Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
+  <updated>2026-08-04T04:00:33Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 5 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation</title>
+    <link href="http://arxiv.org/abs/2608.02315v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.02315v1</id>
+    <published>2026-08-03T00:00:00Z</published>
+    <updated>2026-08-03T00:00:00Z</updated>
+    <author>
+      <name>Gaetano Chiriaco</name>
+    </author>
+    <author>
+      <name>Luca Barco</name>
+    </author>
+    <author>
+      <name>Andrea Bragagnolo</name>
+    </author>
+    <author>
+      <name>Claudio Rossi</name>
+    </author>
+    <author>
+      <name>Edoardo Arnaudo</name>
+    </author>
+    <summary type="text">Geospatial foundation models aim to learn representations that transfer across regions and sensors, yet evaluating them on specific tasks requires large, high-quality, multi-modal benchmarks that measure how well such models extract value from data. Concerning flood mapping, existing datasets rarely combine bi-temporal SAR and co-registered optical imagery at scale, leaving the value of foundation models for this downstream task largely untested. We introduce GEOID-Flood, a large-scale multi-modal flood segmentation benchmark, derived from Copernicus Emergency Management Service activations, spanning 219 events across 65 countries over ten years. The dataset provides more than 14,000 tiles with co-registered pre- and post-event Sentinel-1, in GRD and RTC format, pre-event Sentinel-2 composite, and DEM, including manually validated labels that separate background from permanent water and flooded water. Using this benchmark, we evaluate foundation models against conventional encoders across single-image, multi-temporal, and multi-modal protocols. We report three main findings: foundation models offer a consistent but modest advantage; optical-SAR fusion with finetuning best resolves transient flooding; and models trained on GEOID-Flood transfer to unseen events better than those trained on existing datasets. Dataset and code available at https://github.com/links-ads/geoid-flood.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/links-ads/geoid-flood"&gt;https://github.com/links-ads/geoid-flood&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ECCV 2026 - Terrabytes II Workshop&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD;3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>GeoCore-9B: Towards Geo-Aware Generative Foundation Models in Earth Observation</title>
+    <link href="http://arxiv.org/abs/2608.01896v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.01896v1</id>
+    <published>2026-08-03T00:00:00Z</published>
+    <updated>2026-08-03T00:00:00Z</updated>
+    <author>
+      <name>Jeonghyeok Do</name>
+    </author>
+    <author>
+      <name>Munchurl Kim</name>
+    </author>
+    <summary type="text">Existing generative models for earth observation (EO) predominantly rely on fine-tuning natural image priors, which limits their scalability and introduces perspective biases that conflict with geospatial constraints. To address this, we introduce GeoCore-9B, a 9-billion-parameter generative foundation model, which is the first of its scale to be trained from scratch exclusively on EO data. Unlike previous EO foundation models, GeoCore-9B is built upon a Flow Matching-based Diffusion Transformer (DiT) and natively conditions generation on text descriptions and continuous geospatial metadata, including ground sample distances, latitudes, and longitudes. To overcome the convergence and spatial disorientation challenges of training at this scale, we propose a Geospatial Semantic Alignment loss. This objective distills structural Earth surface priors (e.g., terrain and urban areas) from a frozen specialist teacher network, constraining the diffusion latent trajectory during training without adding inference overhead. Pre-trained on the global-scale Git-10M dataset, GeoCore-9B demonstrates strong downstream versatility. Beyond standard proxy generative tasks, we show that GeoCore-9B can be effectively adapted for practical EO applications, including highly challenging tasks such as cloud removal and SAR-to-optical cross-modal translation. Extensive evaluations confirm that GeoCore-9B establishes new state-of-the-art performance in both visual fidelity and geographic structural accuracy.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Please visit our project page at https://kaist-viclab.github.io/GeoCore-9B_site/&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>From Forest to Future Capital: Tracking Land Cover Change in Ibu Kota Nusantara (IKN) from 2021 to 2026 with PlanetScope Imagery</title>
+    <link href="http://arxiv.org/abs/2608.01230v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.01230v1</id>
+    <published>2026-08-02T00:00:00Z</published>
+    <updated>2026-08-02T00:00:00Z</updated>
+    <author>
+      <name>Clarissa Rui Min Ong</name>
+    </author>
+    <author>
+      <name>Elizabeth Tee Inn Loo</name>
+    </author>
+    <author>
+      <name>Kenneth Woon Hao Soh</name>
+    </author>
+    <author>
+      <name>William Rachmadi</name>
+    </author>
+    <author>
+      <name>Qiming Zheng</name>
+    </author>
+    <author>
+      <name>Hao Li</name>
+    </author>
+    <summary type="text">Indonesia's relocation of its political and administrative capital from Jakarta to Ibu Kota Nusantara (IKN) has been framed around a ``Forest City'' vision, yet rapid construction within the Core Government Area (KIPP) raises concerns over land conversion, vegetation loss, and carbon stock decline. This study applies remote sensing techniques to systematically assess land use and vegetation cover change in KIPP from 2021 to 2026 using PlanetScope SuperDove satellite imagery. Cloud-free mosaics were prepared and analysed through spectral indices, including the Normalised Difference Vegetation Index (NDVI), Normalised Difference Red Edge (NDRE), and Normalised Difference Water Index (NDWI), alongside supervised land use and land cover (LULC) classification using a Support Vector Machine algorithm. Results show substantial environmental transformation, with mean NDVI declined by 17.1\%, total carbon stock decreased by 0.28\%, developed land expanded by 672\%, and total vegetation declined by 18.1\%. Vegetation loss was most extensive between 2023 and 2024, although a temporary recovery in NDVI and carbon stock occurred from 2024 to 2025 as active clearing slowed and development shifted towards already-cleared land. Overall, the findings demonstrate that remote sensing provides an effective approach for monitoring the environmental impacts of large-scale urban development, while highlighting the need for higher-resolution, hyperspectral, and SAR-based methods to improve detection of construction stages and plantation-related land cover changes.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Space2Ground 2.0: A Multi-Source Dataset and Framework for Agricultural Monitoring through Fusion of Street-Level and Satellite Imagery</title>
     <link href="http://arxiv.org/abs/2607.28247v1" rel="alternate" type="text/html" />

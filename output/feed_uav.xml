@@ -4,12 +4,47 @@
   <id>https://rspaper.top/output/feed_uav.xml</id>
   <link href="https://rspaper.top/output/feed_uav.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-04T01:16:11Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 1 entries</subtitle>
+  <updated>2026-08-04T04:00:33Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>RSVideo: Are Your Vision-Language Models Ready for Remote Sensing Videos?</title>
+    <link href="http://arxiv.org/abs/2608.02039v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.02039v1</id>
+    <published>2026-08-03T00:00:00Z</published>
+    <updated>2026-08-03T00:00:00Z</updated>
+    <author>
+      <name>Hongjie Zhou</name>
+    </author>
+    <author>
+      <name>Shiqin Wang</name>
+    </author>
+    <author>
+      <name>Haoyang Chen</name>
+    </author>
+    <author>
+      <name>Haonan Guo</name>
+    </author>
+    <author>
+      <name>Di Wang</name>
+    </author>
+    <author>
+      <name>Juhua Liu</name>
+    </author>
+    <author>
+      <name>Fu Lin</name>
+    </author>
+    <author>
+      <name>Yong Luo</name>
+    </author>
+    <summary type="text">Remote-sensing videos enable real-time observation of changes in target attributes, short-term activities, and scene evolution. They record motion, actions, interactions, and scene changes that cannot be captured by isolated images. Existing models primarily target single images or discrete temporal observations spanning a long time range. However, a unified evaluation setting for assessing vision-language models on continuous remote-sensing video understanding remains lacking. We introduce RSVideo-10K, a remote-sensing video dataset comprising 10,773 instances, 1.47 million frames, and 17.02 hours of footage, containing both unmanned aerial vehicles and satellite platforms. Its fixed evaluation benchmark, RSVideo-Bench, contains 2,731 test instances and evaluates two complementary aspects of remote-sensing video understanding: L1 Perception and L2 Reasoning, spanning seven capability groups and 17 tasks. Evaluations show that current vision-language models still struggle to recover small local evidence, track short-lived states, and use scene-constrained spatial relations. Based on this analysis, we further propose RSVideo, a reinforcement learning framework for small-target spatiotemporal focusing that selects question-relevant regions across frames and suppresses redundant background tokens. RSVideo achieves a maximum absolute improvement of 9.01% with InternVL3.5-14B and attains the highest accuracy of 40.63% with Qwen3.6-27B across 26 open-source vision-language backbones.Codes will be available at https://github.com/HongjieZhou0329/RSVideo.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/HongjieZhou0329/RSVideo"&gt;https://github.com/HongjieZhou0329/RSVideo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>CoRE-UIR: Prior-guided common and residual experts for efficient all-in-one remote sensing image restoration</title>
     <link href="http://arxiv.org/abs/2607.27898v1" rel="alternate" type="text/html" />
