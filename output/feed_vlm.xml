@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-05T01:18:05Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 15 entries</subtitle>
+  <updated>2026-08-05T03:55:46Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 19 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -66,6 +66,110 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>UniEvo-RS: Omni-Prompt Unified Remote Sensing Segmentation with Representative Exemplar-Driven Prototype Evolution</title>
+    <link href="http://arxiv.org/abs/2608.03911v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.03911v1</id>
+    <published>2026-08-04T00:00:00Z</published>
+    <updated>2026-08-04T00:00:00Z</updated>
+    <author>
+      <name>Kunquan Zhang</name>
+    </author>
+    <author>
+      <name>Peilang Li</name>
+    </author>
+    <author>
+      <name>Xikun Hu</name>
+    </author>
+    <author>
+      <name>Yunkai Yang</name>
+    </author>
+    <author>
+      <name>Yushan Zou</name>
+    </author>
+    <author>
+      <name>Zhiwei Zhang</name>
+    </author>
+    <author>
+      <name>Runmin Dong</name>
+    </author>
+    <summary type="text">Prompt-driven vision-language models (VLMs) hold immense promise for accelerating dense remote sensing (RS) annotation, but static models suffer from severe performance degradation when deployed on novel scenes, unseen categories, or visually confusing backgrounds. Moreover, existing unified paradigms primarily rely on intra-image specific prompts, lacking flexible task routing to adapt to multi-intent operational workflows. In practical batch mapping, annotators typically refine a small set of representative samples before processing large datasets. Motivated by this practice, we propose UniEvo-RS, an omni-prompt unified RS segmentation framework equipped with representative exemplar-driven prototype evolution. First, we construct a multi-instruction prompt dataset that unifies text-driven and visual-driven prompts within a single architecture, establishing a dynamic task-routing mechanism for highly diverse RS annotation scenarios. Second, we introduce a representative feedback-driven, training-free prototype evolution mechanism. By contrasting manual annotations with initial predictions on exemplars, UniEvo-RS distills prediction errors into positive and negative prototypes. These prototypes enhance LLM query recall and suppress spatial background noise under a fixed-budget clustering memory. Extensive experiments show that UniEvo-RS unifies diverse prompting tasks, achieving state-of-the-art performance across most settings. Crucially, with minimal interaction on a few exemplars, it enables training-free, progressive accuracy enhancement on unseen categories during batch annotation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages, 8 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>MultiGlobeQA: A Multilingual and Globally Diverse Benchmark for Geospatial Reasoning</title>
+    <link href="http://arxiv.org/abs/2608.03882v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.03882v1</id>
+    <published>2026-08-04T00:00:00Z</published>
+    <updated>2026-08-04T00:00:00Z</updated>
+    <author>
+      <name>Martin Böckling</name>
+    </author>
+    <author>
+      <name>Elizaveta Nosova</name>
+    </author>
+    <author>
+      <name>Heiko Paulheim</name>
+    </author>
+    <author>
+      <name>Andreea Iana</name>
+    </author>
+    <summary type="text">Geospatial reasoning, i.e., computing distances, containment, and other spatial relations over real-world entities, is central to navigation and logistics, yet large language models (LLMs) struggle with the required geometric and topological computation despite storing considerable geographic knowledge. Existing benchmarks localize these failures only partially: they are synthetic or smallscale, largely monolingual, and offer limited control over geographic coverage. We introduce MultiGlobeQA, a multilingual benchmark of 46,060 question-answer pairs spanning 14 spatial-function families and 15 answer formats, with execution-based ground truth over three knowledge graphs. It covers 201 countries and territories via income- and density-stratified sampling, with parallel questions in English and 16 additional high- and low-resource languages. Across parametric, reasoning, and agentic settings, LLMs collapse on tasks requiring grid indexing and shape computation, while topological relations and directions fare best. Retrieval and tool use yield considerable gains, yet performance plateaus below two thirds even when gold facts are supplied, indicating that computation, not access to knowledge, is the bottleneck. Models also underperform on low-income regions, a gap that gold facts widen rather than close.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="cs.CL" />
+    <category term="Artificial Intelligence; Information Retrieval" />
+  </entry>
+  <entry>
+    <title>Geo-Embed: Towards Unified Multimodal Embeddings for Urban Understanding</title>
+    <link href="http://arxiv.org/abs/2608.03826v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.03826v1</id>
+    <published>2026-08-04T00:00:00Z</published>
+    <updated>2026-08-04T00:00:00Z</updated>
+    <author>
+      <name>Jiapeng Li</name>
+    </author>
+    <author>
+      <name>Yong Li</name>
+    </author>
+    <author>
+      <name>Junjie Zhou</name>
+    </author>
+    <author>
+      <name>Fan Zhang</name>
+    </author>
+    <author>
+      <name>Yu Liu</name>
+    </author>
+    <summary type="text">Geospatial and urban applications increasingly require models to compare heterogeneous evidence across street-view imagery, remote-sensing observations, text descriptions, region proposals, and temporal change cues. However, existing multimodal embedding models and benchmarks are still largely designed and evaluated around general-purpose image-text matching, leaving unclear whether unified embedding space can support heterogeneous geospatial tasks involving spatial relationships, fine-grained semantics, and temporal changes. To address this gap, we make three key contributions. First, we introduce GeoMEB, a large-scale multimodal embedding benchmark that standardizes 45 urban evaluation tasks across retrieval, visual question answering, change detection, classification, and visual grounding, together with training collections comprising 1.32M examples and 286K evaluation queries. Second, we present Geo-Embed, a unified embedding model that adapts a shared vision-language backbone to instruction-conditioned query-target matching over heterogeneous geospatial inputs, including single images, multiple images, text, regions, and masks. On GeoMEB, Geo-Embed achieves the strongest overall performance among representative multimodal embedders, with a 15.3% relative improvement over the strongest baseline. These results motivate future geospatial embedders that organize training and evaluation around explicit query-target relations, including semantic, cross-view, region-level, and temporal correspondence.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;VQA;CD;VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>How Usable Are Geospatial Foundation Models? A Systematic Evaluation of 89 Models</title>
+    <link href="http://arxiv.org/abs/2608.03804v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.03804v1</id>
+    <published>2026-08-04T00:00:00Z</published>
+    <updated>2026-08-04T00:00:00Z</updated>
+    <author>
+      <name>Robin Young</name>
+    </author>
+    <author>
+      <name>Artyom Gabtraupov</name>
+    </author>
+    <author>
+      <name>Kenzy Soror</name>
+    </author>
+    <author>
+      <name>Srinivasan Keshav</name>
+    </author>
+    <summary type="text">Geospatial foundation models (GeoFMs) offer transformative potential for environmental monitoring, yet adoption among ecologists is uneven. Most evaluations are model-centric, focusing on architecture and benchmark accuracy, which overlooks whether the systems are usable by their intended audiences. To address this gap, we first conducted a pilot expert elicitation survey with ecology and conservation scientists that helped us identify misalignments between current GeoFM development priorities and their needs. Informed by these findings and based on HCI theory, we created a seven-dimension evaluation covering Access &amp; Deployment, Interaction &amp; Customization, Trust &amp; Transparency, Community &amp; Support, Scientific Permanence, Multilingual Support, and Offline Usability. Then, two raters applied this rubric to 89 GeoFMs. We found distinct accessibility gaps where nearly a third provide no support to practitioners beyond their source code. Dimensions along which ratings were highly consistent function as field-level diagnostics, revealing where there is room for improvement for current GeoFMs.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.HC" />
   </entry>
   <entry>
     <title>GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation</title>

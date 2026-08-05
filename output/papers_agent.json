@@ -4273,5 +4273,24 @@
     "_added_date": "2026-08-04",
     "Category": "Dataset",
     "_tasks": ""
+  },
+  {
+    "Type": "cs.CL",
+    "Subtype": "Artificial Intelligence; Information Retrieval",
+    "Date": "2026-08-04",
+    "Month": 8,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "MultiGlobeQA: A Multilingual and Globally Diverse Benchmark for Geospatial Reasoning",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2608.03882v1",
+    "Abstract": "Geospatial reasoning, i.e., computing distances, containment, and other spatial relations over real-world entities, is central to navigation and logistics, yet large language models (LLMs) struggle with the required geometric and topological computation despite storing considerable geographic knowledge. Existing benchmarks localize these failures only partially: they are synthetic or smallscale, largely monolingual, and offer limited control over geographic coverage. We introduce MultiGlobeQA, a multilingual benchmark of 46,060 question-answer pairs spanning 14 spatial-function families and 15 answer formats, with execution-based ground truth over three knowledge graphs. It covers 201 countries and territories via income- and density-stratified sampling, with parallel questions in English and 16 additional high- and low-resource languages. Across parametric, reasoning, and agentic settings, LLMs collapse on tasks requiring grid indexing and shape computation, while topological relations and directions fare best. Retrieval and tool use yield considerable gains, yet performance plateaus below two thirds even when gold facts are supplied, indicating that computation, not access to knowledge, is the bottleneck. Models also underperform on low-income regions, a gap that gold facts widen rather than close.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{bckling2026multiglobeqa,\n  title={MultiGlobeQA: A Multilingual and Globally Diverse Benchmark for Geospatial Reasoning},\n  author={Martin Böckling and Elizaveta Nosova and Heiko Paulheim and Andreea Iana},\n  journal={arXiv preprint arXiv:2608.03882v1},\n  year={2026},\n  url={http://arxiv.org/abs/2608.03882v1}\n}",
+    "Authors": "Martin Böckling, Elizaveta Nosova, Heiko Paulheim, Andreea Iana",
+    "_added_date": "2026-08-05",
+    "Category": "Dataset",
+    "_tasks": ""
   }
 ]

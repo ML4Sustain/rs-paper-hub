@@ -1574,3 +1574,10 @@ Dataset,Artificial Intelligence,,2026-08-03,8,2026,,GISAgentBench: A Practitione
   year={2026},
   url={http://arxiv.org/abs/2608.01645v1}
 }","Abhinav Pothuri, Zhe Jiang, Zelin Xu, Di Yang",,2026-08-04
+Dataset,cs.CL,Artificial Intelligence; Information Retrieval,2026-08-04,8,2026,,MultiGlobeQA: A Multilingual and Globally Diverse Benchmark for Geospatial Reasoning,,http://arxiv.org/abs/2608.03882v1,"Geospatial reasoning, i.e., computing distances, containment, and other spatial relations over real-world entities, is central to navigation and logistics, yet large language models (LLMs) struggle with the required geometric and topological computation despite storing considerable geographic knowledge. Existing benchmarks localize these failures only partially: they are synthetic or smallscale, largely monolingual, and offer limited control over geographic coverage. We introduce MultiGlobeQA, a multilingual benchmark of 46,060 question-answer pairs spanning 14 spatial-function families and 15 answer formats, with execution-based ground truth over three knowledge graphs. It covers 201 countries and territories via income- and density-stratified sampling, with parallel questions in English and 16 additional high- and low-resource languages. Across parametric, reasoning, and agentic settings, LLMs collapse on tasks requiring grid indexing and shape computation, while topological relations and directions fare best. Retrieval and tool use yield considerable gains, yet performance plateaus below two thirds even when gold facts are supplied, indicating that computation, not access to knowledge, is the bottleneck. Models also underperform on low-income regions, a gap that gold facts widen rather than close.",,,"@article{bckling2026multiglobeqa,
+  title={MultiGlobeQA: A Multilingual and Globally Diverse Benchmark for Geospatial Reasoning},
+  author={Martin Böckling and Elizaveta Nosova and Heiko Paulheim and Andreea Iana},
+  journal={arXiv preprint arXiv:2608.03882v1},
+  year={2026},
+  url={http://arxiv.org/abs/2608.03882v1}
+}","Martin Böckling, Elizaveta Nosova, Heiko Paulheim, Andreea Iana",,2026-08-05

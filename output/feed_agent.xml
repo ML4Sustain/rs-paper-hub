@@ -4,12 +4,35 @@
   <id>https://rspaper.top/output/feed_agent.xml</id>
   <link href="https://rspaper.top/output/feed_agent.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-05T01:18:05Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
+  <updated>2026-08-05T03:55:46Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>MultiGlobeQA: A Multilingual and Globally Diverse Benchmark for Geospatial Reasoning</title>
+    <link href="http://arxiv.org/abs/2608.03882v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.03882v1</id>
+    <published>2026-08-04T00:00:00Z</published>
+    <updated>2026-08-04T00:00:00Z</updated>
+    <author>
+      <name>Martin Böckling</name>
+    </author>
+    <author>
+      <name>Elizaveta Nosova</name>
+    </author>
+    <author>
+      <name>Heiko Paulheim</name>
+    </author>
+    <author>
+      <name>Andreea Iana</name>
+    </author>
+    <summary type="text">Geospatial reasoning, i.e., computing distances, containment, and other spatial relations over real-world entities, is central to navigation and logistics, yet large language models (LLMs) struggle with the required geometric and topological computation despite storing considerable geographic knowledge. Existing benchmarks localize these failures only partially: they are synthetic or smallscale, largely monolingual, and offer limited control over geographic coverage. We introduce MultiGlobeQA, a multilingual benchmark of 46,060 question-answer pairs spanning 14 spatial-function families and 15 answer formats, with execution-based ground truth over three knowledge graphs. It covers 201 countries and territories via income- and density-stratified sampling, with parallel questions in English and 16 additional high- and low-resource languages. Across parametric, reasoning, and agentic settings, LLMs collapse on tasks requiring grid indexing and shape computation, while topological relations and directions fare best. Retrieval and tool use yield considerable gains, yet performance plateaus below two thirds even when gold facts are supplied, indicating that computation, not access to knowledge, is the bottleneck. Models also underperform on low-income regions, a gap that gold facts widen rather than close.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="cs.CL" />
+    <category term="Artificial Intelligence; Information Retrieval" />
+  </entry>
   <entry>
     <title>GISAgentBench: A Practitioner-Sourced Benchmark for Evaluating LLM Agents on GIS Tasks</title>
     <link href="http://arxiv.org/abs/2608.01645v1" rel="alternate" type="text/html" />
