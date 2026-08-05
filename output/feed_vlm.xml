@@ -4,12 +4,69 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-04T04:00:33Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 13 entries</subtitle>
+  <updated>2026-08-05T01:18:05Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 15 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>CROSS: Cascaded Distillation and Dual-Constraint Grounding for Remote Sensing Referring Segmentation</title>
+    <link href="http://arxiv.org/abs/2608.03147v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.03147v1</id>
+    <published>2026-08-04T00:00:00Z</published>
+    <updated>2026-08-04T00:00:00Z</updated>
+    <author>
+      <name>Tingzhang Luo</name>
+    </author>
+    <author>
+      <name>Ruizhong Liu</name>
+    </author>
+    <author>
+      <name>Yichao Liu</name>
+    </author>
+    <author>
+      <name>Cheng Fan</name>
+    </author>
+    <author>
+      <name>Yu Liu</name>
+    </author>
+    <author>
+      <name>Jianyuan Guo</name>
+    </author>
+    <summary type="text">Referring Remote Sensing Image Segmentation (RRSIS) has achieved significant progress through the integration of VLMs and the Segment Anything Model (SAM). However, this progress largely relies on strong pre-trained capabilities, while leaving two fundamental limitations insufficiently addressed: (1) Architectural Weak-Coupling, where the unidirectional flow forces reliance on coarse VLM prompts and wastes SAM's pixel-level structural guidance, causing localization drift; and (2) Object-Centric Semantic Bias, where models overemphasize dominant object semantics while remaining insensitive to spatial reasoning crucial for RRSIS. Motivated by these observations, we propose CROSS, a tightly integrated paradigm for RRSIS. First, we introduce Linguistic-Guided Cascaded Distillation (LGCD) to bridge the architectural gap, which distills SAM's geometric affinities as soft regularizers into VLM intermediate layers, injecting dense structural priors to refine localization. Second, Perspective-Spatial Contrastive Learning (PSCL) imposes cross-anchored constraints by mining mask-filtered deceptive distractors and spatial-linguistic counterfactuals as hard negatives, explicitly shattering semantic shortcuts to enforce genuine logical consistency. Extensive experiments on RRSIS benchmarks demonstrate that CROSS achieves state-of-the-art performance and maintains precise localization even under severe spatial description perturbations, standing as a robust new paradigm for RRSIS.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the European Conference on Computer Vision (ECCV) 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG;SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Standalone DINOv3 for Training-Free Open-Vocabulary Semantic Segmentation in Remote Sensing</title>
+    <link href="http://arxiv.org/abs/2608.03023v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.03023v1</id>
+    <published>2026-08-04T00:00:00Z</published>
+    <updated>2026-08-04T00:00:00Z</updated>
+    <author>
+      <name>Changhao Zhao</name>
+    </author>
+    <author>
+      <name>Haoxiang Li</name>
+    </author>
+    <author>
+      <name>Yuke Li</name>
+    </author>
+    <author>
+      <name>Hai Liu</name>
+    </author>
+    <author>
+      <name>LingLin Zeng</name>
+    </author>
+    <summary type="text">Remote sensing semantic segmentation is hindered by costly pixel-level annotations, motivating training-free open-vocabulary methods. Recently, the recent release of DINOv3 brings DINO.txt, which equips the standalone DINO backbone with image-text contrastive learning and thus opens up the possibility of open-vocabulary segmentation. We propose DinoSplat-OV, a training-free framework that adapts DINOv3 to remote sensing without fine-tuning or additional pretraining. Targeting the dense distribution, multi-scale nature, and large size of remote sensing imagery, we design two core modules. Its Text-aware Laplacian Propagation module de-noises patch-level predictions by combining textual semantic affinities with local visual similarity, improving regional consistency while preserving boundaries. Its Gaussian Splatting Upsampling module reconstructs pixel-level features through RGB-guided anisotropic aggregation and test-time optimization. A global-anchor sliding-window strategy further supports large-scale imagery. Experiments on UDD5, DOTA, and LoveDA demonstrate competitive or superior performance over existing training-free methods, effectively filling the gap of DINO-series models in training-free open-vocabulary segmentation and providing a viable new path for further advances in this direction.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation</title>
     <link href="http://arxiv.org/abs/2608.02315v1" rel="alternate" type="text/html" />
@@ -40,8 +97,8 @@
   </entry>
   <entry>
     <title>RSVideo: Are Your Vision-Language Models Ready for Remote Sensing Videos?</title>
-    <link href="http://arxiv.org/abs/2608.02039v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.02039v1</id>
+    <link href="http://arxiv.org/abs/2608.02039v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.02039v2</id>
     <published>2026-08-03T00:00:00Z</published>
     <updated>2026-08-03T00:00:00Z</updated>
     <author>
@@ -168,6 +225,26 @@
     <summary type="text">Geographic Information System (GIS) professionals rely on multi-step spatial analysis workflows to support decision-making in urban planning, disaster response, and environmental monitoring. The process is tedious, time-consuming, and error-prone. While recent large language model (LLM) agents equipped with external tools have the potential to automate geospatial analysis, their ability to perform realistic GIS workflows remains largely unexplored. Existing GIS agent benchmarking datasets are mostly drawn from textbooks, tutorials, or LLM-generated seeds and remain limited in size and trajectory depth. More importantly, none provides ground truth outputs. They therefore rely on surrogate signals such as code similarity, trajectory matching, or LLM and VLM judges, which can conflate workflow resemblance with task correctness. To address this gap, we introduce GISAgentBench, a benchmark of 349 multi-step GIS tasks curated from GIS Stack Exchange and instantiated on real public data across six selected geographic areas of interest. Each task ships with an executable reference trajectory and an exact ground truth output file, enabling strict, deterministic, tolerance-aware output matching beyond LLM judging. Evaluations of six LLM models reveal that realistic GIS workflows remain challenging: the best agent completes only 32.7% of tasks under strict tolerance-aware scoring, although most models produce outputs that are close to the ground truth.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
     <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Better, Stronger, Faster, and Broader: Structured All-Mask Prediction for MLLM-Based Segmentation</title>
+    <link href="http://arxiv.org/abs/2608.02791v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.02791v1</id>
+    <published>2026-08-03T00:00:00Z</published>
+    <updated>2026-08-03T00:00:00Z</updated>
+    <author>
+      <name>Jiazhen Liu</name>
+    </author>
+    <author>
+      <name>Mingkuan Feng</name>
+    </author>
+    <author>
+      <name>Long Chen</name>
+    </author>
+    <summary type="text">MLLM-based segmentation faces a core segmentation trilemma: high segmentation performance, preserved dialogue ability, and fast inference. Embedding-prediction methods may disrupt language modeling through pixel-level objectives, whereas next-token generation is inefficient for dense masks. We propose All-Mask Prediction, decoupling autoregressive dialogue from non-autoregressive mask prediction. Its binary instantiation, STAMP (Simultaneous Textual All-Mask Prediction), emits an in-vocabulary &lt;SEG&gt; trigger, fuses image-aligned mask tokens with corresponding patch features, and uses hybrid attention to classify all tokens as foreground or background in one pass. It thereby combines strong referring and reasoning segmentation with preserved multimodal ability and efficient inference. However, binary masks cannot retain multiple semantic or instance identities without repeated target-specific predictions. We therefore propose Structured All-Mask Prediction and develop STAMPlus. It generates a target list with explicit IDs and optional boxes, binds these IDs to a shared multi-class mask space, and jointly predicts all targets in one non-autoregressive pass. A single unified checkpoint retains STAMP's referring and reasoning capabilities while extending to open-vocabulary semantic, instance-aware, and remote-sensing small-target segmentation, where high-resolution mask-token scaling preserves finer spatial evidence. Across these settings, STAMPlus achieves state-of-the-art segmentation performance, preserves general multimodal instruction following, and reduces 12-category latency from 13.50s for repeated STAMP inference to 5.16s. Further analyses show that accurate target cues improve segmentation and learned spatial grounding benefits look-twice reasoning. Overall, STAMPlus resolves the trilemma beyond single-target prediction.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
   </entry>
   <entry>
     <title>GeoArbiter: Verifiability-Guided Grounding for Remote-Sensing Multimodal LLMs</title>
@@ -310,36 +387,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages, 4 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="cs.IT" />
-  </entry>
-  <entry>
-    <title>OVEarth-Bench: Evaluating Category Breadth and Query Diversity for Open-Vocabulary Earth Observation</title>
-    <link href="http://arxiv.org/abs/2607.27278v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.27278v2</id>
-    <published>2026-07-29T00:00:00Z</published>
-    <updated>2026-07-29T00:00:00Z</updated>
-    <author>
-      <name>Kaiyu Li</name>
-    </author>
-    <author>
-      <name>Zepeng Xin</name>
-    </author>
-    <author>
-      <name>Zixuan Jiang</name>
-    </author>
-    <author>
-      <name>Jing Fu</name>
-    </author>
-    <author>
-      <name>Lanxuan Xue</name>
-    </author>
-    <author>
-      <name>Lingyu Zhang</name>
-    </author>
-    <author>
-      <name>Xiangyong Cao</name>
-    </author>
-    <summary type="text">Open-vocabulary Earth observation (EO) aims to localize geospatial concepts specified in natural language rather than a fixed label set. Existing benchmarks, however, usually cover narrow category vocabularies or limited query forms. To fill this gap, we introduce OVEarth-Bench, which extends existing evaluation in two directions: category breadth, through broad hierarchical category coverage with positive and negative expressions, and query diversity, through vocabulary, referring, and reasoning queries. The benchmark supports mask and box localization under a unified zero-shot protocol. We evaluate a broad set of general and EO-specific methods. The evaluation reveals that: (1) the performance of current methods remains limited, while broader category coverage yields more stable model rankings; (2) MLLM-based methods achieve the strongest overall performance; and (3) EO-specific methods generally underperform general models and rarely match the strongest methods. These findings provide guidance for future open-vocabulary EO method design and highlight the importance of developing more realistic, diverse, high-quality, and large-scale benchmarks for reliable evaluation. Our data and evaluation package are released at https://earth-insights.github.io/OVEarth-bench.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>
