@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-05T03:55:46Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 8 entries</subtitle>
+  <updated>2026-08-06T01:15:52Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -91,137 +91,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>MSCM-net: A hyperspectral image classiffcation method based on multi-scale convolution and Mamba</title>
-    <link href="http://arxiv.org/abs/2607.28277v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.28277v1</id>
-    <published>2026-07-30T00:00:00Z</published>
-    <updated>2026-07-30T00:00:00Z</updated>
-    <author>
-      <name>Jianjun Chen</name>
-    </author>
-    <author>
-      <name>Linlin Wang</name>
-    </author>
-    <author>
-      <name>Lifang Chang</name>
-    </author>
-    <author>
-      <name>Limin Huo</name>
-    </author>
-    <author>
-      <name>Shujiang Song</name>
-    </author>
-    <author>
-      <name>Yanjia Zhao</name>
-    </author>
-    <author>
-      <name>Mingwei Shao</name>
-    </author>
-    <summary type="text">Hyperspectral imaging is widely used in remote sensing and engineering. Therefore, research on its classification methods is crucial. While CNN and Transformer-based methods have advanced, they still face locality constraints and high computational complexity. To address these issues, we propose an innovative hyperspectral image classification model, MSCM-net. Specifically, first of all, a model architecture combining multi-scale CNN and Mamba is proposed. It consists of a multi-scale feature extraction module (MCSE) and multiple stacked Mamba blocks, which integrates the local feature extraction capability of multi-scale CNN and the long sequence modeling advantage of Mamba. Secondly, the proposed MCSE module consists of multi-scale convolution and SENet. Convolution kernels of different scales extract local information with different receptive fields, enhancing the fusion of spatial and spectral information. Meanwhile, the SENet enables the model to automatically learn the importance of each channel in the multi-scale features. Furthermore, we also propose a dual-branch feature aggregation module, which further effectively extracts and integrates the spectral information contained in the central pixel and the spatial information in the surrounding pixels. Our model has undergone numerous experiments on three widely used benchmark datasets. The experimental results show that MSCM-net can achieve advanced classification performance while reducing computational complexity.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Space2Ground 2.0: A Multi-Source Dataset and Framework for Agricultural Monitoring through Fusion of Street-Level and Satellite Imagery</title>
-    <link href="http://arxiv.org/abs/2607.28247v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.28247v1</id>
-    <published>2026-07-30T00:00:00Z</published>
-    <updated>2026-07-30T00:00:00Z</updated>
-    <author>
-      <name>Iason Tsardanidis</name>
-    </author>
-    <author>
-      <name>Alkiviadis Koukos</name>
-    </author>
-    <author>
-      <name>George Choumos</name>
-    </author>
-    <author>
-      <name>Vasileios Sitokontantinou</name>
-    </author>
-    <author>
-      <name>Charalampos Kontoes</name>
-    </author>
-    <summary type="text">Accurate and scalable parcel-level agricultural monitoring remains challenging because satellite Earth Observation alone provides only an overhead perspective of agricultural parcels, while optical observations are further affected by cloud-induced temporal gaps. This paper presents Space2Ground 2.0, a multi-source framework integrating Sentinel-1 SAR and Sentinel-2 multispectral time series with geo-tagged street-level imagery acquired using vehicle-mounted cameras and shared through the Mapillary platform. A largely automated processing pipeline performs semantic filtering, image quality assessment, viewpoint-based parcel association, and dataset refinement, transforming large volumes of crowdsourced imagery into parcel-linked, analysis-ready data. Applied over Cyprus during the 2022 growing season, the pipeline produced a curated dataset of 46,050 annotated street-level images, selected from an initial collection exceeding 900,000 images and linked with satellite information for 8,581 agricultural parcels. The practical value of the dataset was assessed through parcel-level crop classification experiments using both single- and multi-source observations. The results demonstrate that street-level imagery provides complementary fine-scale visual information that enhances classification when integrated with satellite time series. Overall, Space2Ground 2.0 provides an openly available benchmark dataset and a reproducible methodology for multimodal agricultural monitoring, with potential applications in visual verification, reduced reliance on costly field inspections, and data-driven agricultural policy implementation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; This paper has been accepted for presentation at the 45th EARSeL Symposium, Athens, Greece&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Forecasting Land Art Under Climate Scenarios</title>
-    <link href="http://arxiv.org/abs/2607.28489v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.28489v1</id>
-    <published>2026-07-30T00:00:00Z</published>
-    <updated>2026-07-30T00:00:00Z</updated>
-    <author>
-      <name>Alev Cinbarci</name>
-    </author>
-    <author>
-      <name>Sean Kalaycioglu</name>
-    </author>
-    <summary type="text">Robert Smithson's 1970 land artwork Spiral Jetty, located in the north arm of Utah's Great Salt Lake, provides a fixed remote-sensing target whose visual complexity reflects hydroclimatic conditions. A companion study analyzed 1,744 co-registered Landsat 4-9 and Sentinel-2 image chips spanning every year and month from 1984 to 2025. It found robust relationships between coarse-scale permutation entropy, mean intensity, and the third principal component of ResNet50 avg-pool embeddings, and lake elevation, regional temperature, and cumulative CO2. It also showed that image complexity leads lake stage by about three years and that the long-term trend is non-monotonic, with decline after 2015. Building on those findings, this paper develops a two-stage forecasting pipeline. Stage 1 applies IPCC AR6 SSP1-2.6, SSP2-4.5, and SSP5-8.5 temperature changes to forecast regional temperature, north- and south-arm lake elevation, salinity, and cumulative CO2 for 2030 and 2050. Stage 2a projects 14 image-complexity features using linear and Random Forest regressions trained on the 42-year record. All six scenario-year combinations move the inputs outside the 1984-2025 training distribution. The Random Forest model therefore saturates near the post-2015 dry-playa regime, while a threshold-based hydrological interpretation classifies Spiral Jetty as fully exposed in every scenario. Stage 2b specifies a climate-conditioned latent-diffusion framework using Stable Diffusion XL fine-tuned with LoRA on the 1,744 chips, ControlNet conditioning on the climate vector, and a hydrological physics mask for ensemble image synthesis. Code is provided, and validation results will be released after diffusion training. We conclude by discussing ethical implications of generative speculation on cultural heritage and outlining a roadmap for forecasting at Sun Tunnels, Double Negative, Lightning Field, and Roden Crater.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages, 4 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.IT" />
-  </entry>
-  <entry>
-    <title>Large scale cross-regional remote sensing flood monitoring framework for operative mapping and impact analysis</title>
-    <link href="http://arxiv.org/abs/2607.28401v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.28401v1</id>
-    <published>2026-07-30T00:00:00Z</published>
-    <updated>2026-07-30T00:00:00Z</updated>
-    <author>
-      <name>Ilya Novikov</name>
-    </author>
-    <author>
-      <name>Svetlana Illarionova</name>
-    </author>
-    <author>
-      <name>Ruslan Dzharkinov</name>
-    </author>
-    <author>
-      <name>Maria Smirnova</name>
-    </author>
-    <author>
-      <name>Ayrat Abdullin</name>
-    </author>
-    <author>
-      <name>Anna Korotkova</name>
-    </author>
-    <author>
-      <name>Mariia Ulianova</name>
-    </author>
-    <author>
-      <name>Dmitrii Shadrin</name>
-    </author>
-    <author>
-      <name>Evgeny Burnaev</name>
-    </author>
-    <summary type="text">Effective flood monitoring is critical for minimizing the impacts of flood disasters on populations and infrastructure. Yet reliable remote sensing across extensive and environmentally diverse regions remains challenging, as most segmentation algorithms lack the generalisation capacity required for large-scale application, while annotated flood data are scarce and unevenly distributed.   This study presents an end-to-end multimodal framework for Russian Federation territories sustainable flood monitoring and damage assessment based on synthetic aperture radar data, multispectral imagery, and digital elevation models with their derivatives, forming a 21-channel input. Using a self-collected multimodal dataset covering seven Russian regions, two strategies for water surface detection under limited data conditions were compared: a supervised U-Net++ model and the self-supervised AnySat architecture pre-trained and fine-tuned for the segmentation task. Under the data conditions of this study, supervised learning proved more effective, while the AnySat-based approach offered greater stability and retains advantages for settings where larger unlabelled data or missing modalities at inference are expected.   The best flood area predictions were used to estimate flood impact in urban areas in terms of the area affected, material damage, casualties, and ecological and agricultural impact. The estimations were conducted following the official methodology of the Russian Ministry of Emergency Situations. Applied to the 2019 Tulun flood, the obtained results closely matched official assessments, except for material damage, due to the open-source databases usage. The results demonstrate the potential of deep learning and multimodal satellite data integration for scalable, reliable flood monitoring across diverse environmental and data-limited conditions.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 37 pages, 11 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Multiplicative Errors-in-Variables Models for Hyperspectral Unmixing</title>
-    <link href="http://arxiv.org/abs/2607.28743v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.28743v1</id>
-    <published>2026-07-30T00:00:00Z</published>
-    <updated>2026-07-30T00:00:00Z</updated>
-    <author>
-      <name>Vivek Singh</name>
-    </author>
-    <author>
-      <name>Peter Hoff</name>
-    </author>
-    <summary type="text">Estimating endmember spectra and their corresponding abundances from hyperspectral images is a fundamental inverse problem in remote sensing. The standard linear mixing model relies on additive homoscedastic errors, which misspecifies the mean-variance relationship inherent to optical measurements for which the noise intensity might be proportional to the signal magnitude. This leads to confidence intervals with poor coverage. To address these limitations, we propose a hierarchical Bayesian multiplicative Errors-in-Variables (EIV) model. Motivated by the physics of light propagation, our formulation captures signal-dependent noise through a multivariate log-normal specification that naturally accommodates dependence across spectral bands. The EIV framework treats endmember signatures as random and allows for class-specific variance scaling, yielding a flexible and physically grounded data-generating process. We establish that the MLE of the abundance vector under the multiplicative model has a constant asymptotic multivariate coefficient of variation, implying that well-calibrated confidence intervals should scale proportionally with signal magnitude. The additive model, by contrast, produces intervals of constant width regardless of signal magnitude, leading to overcoverage at low abundance and undercoverage at high abundance when the true noise is multiplicative. Practical implementation and inference for the full hierarchical model is obtained from posterior distributions over the model parameters. Experiments on several real and simulated datasets demonstrate that confidence intervals derived from the proposed model achieve improved coverage across abundance levels compared to those from a standard additive model, with widths that scale proportionally with signal magnitude, while achieving comparable or superior signal reconstruction error.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 21 pages, 9 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="stat.ME" />
   </entry>
 </feed>
