@@ -4,12 +4,161 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-06T04:01:14Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 36 entries</subtitle>
+  <updated>2026-08-07T01:58:30Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 40 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>DARAD: Dual Adapters and Ranking-Aware Distillation for Continual Remote Sensing Image-Text Retrieval</title>
+    <link href="http://arxiv.org/abs/2608.06059v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.06059v1</id>
+    <published>2026-08-06T00:00:00Z</published>
+    <updated>2026-08-06T00:00:00Z</updated>
+    <author>
+      <name>Xi Chen</name>
+    </author>
+    <author>
+      <name>Xu Chen</name>
+    </author>
+    <author>
+      <name>Xiangyang Jia</name>
+    </author>
+    <author>
+      <name>Wei Wang</name>
+    </author>
+    <author>
+      <name>Xu Zhang</name>
+    </author>
+    <author>
+      <name>Zhenyuan Sun</name>
+    </author>
+    <summary type="text">With the rapid growth of Earth observation technologies, remote sensing archives are rapidly expanding, making remote sensing image-text retrieval (RS-ITR) increasingly important. However, continual RS-ITR remains challenging because scale variation and distribution shifts in RS aggravate cross-modal alignment space distortion, making it difficult for existing continual learning (CL) methods to support reliable continual retrieval. To address this challenge, we propose DARAD, a dual-adapter and ranking-aware distillation framework that preserves the historical cross-modal ranking structure while learning new visual and textual concepts from evolving archives. Specifically, the visual branch introduces a spatial fusion adapter, which integrates coarse regional cues and fine-grained patch cues to accommodate RS scale variation while anchoring visual updates to the pretrained alignment space. The textual branch employs multi-expert semantic routing, which separates shared textual semantics from semantically specialized residuals to absorb newly emerging descriptions while constraining global text embedding drift. Furthermore, bidirectional ranking distillation uses a frozen teacher model and historical anchors to preserve the historical cross-modal ranking structure, thereby mitigating alignment space distortion across continual stages. Experiments under a multi-stage continual retrieval protocol show that DARAD achieves superior performance over existing CL methods, improving adaptation to newly arrived data while maintaining effectiveness on historical data.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Extending RTLola with External Data Queries</title>
+    <link href="http://arxiv.org/abs/2608.06039v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.06039v1</id>
+    <published>2026-08-06T00:00:00Z</published>
+    <updated>2026-08-06T00:00:00Z</updated>
+    <author>
+      <name>Bernd Finkbeiner</name>
+    </author>
+    <author>
+      <name>Jakob Hirschler</name>
+    </author>
+    <author>
+      <name>Frederik Scheerer</name>
+    </author>
+    <author>
+      <name>Sebastian Schirmer</name>
+    </author>
+    <summary type="text">Stream-based monitoring enables the concise specification of complex temporal properties. However, existing stream-based monitors are limited when dealing with large external data sources, a task that is better handled by specialized data management systems. We address these limitations by extending stream-based monitors with the ability to query external data sources. We implement this approach in RTLola and investigate challenges such as handling delayed responses, type checking of returned data, and runtime error management. A unified interface enables the seamless integration of existing systems into our approach, such as static databases or dynamic endpoints, e.g. a weather API. Our evaluation using specifications from the aviation domain also shows that a custom geospatial backend based on k-d trees outperforms state-of-the-art database systems.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.LO" />
+  </entry>
+  <entry>
+    <title>Multi-Year Geospatial Reasoning using Interannually-Consistent Historical Predictions as a Free Input Modality</title>
+    <link href="http://arxiv.org/abs/2608.05979v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.05979v1</id>
+    <published>2026-08-06T00:00:00Z</published>
+    <updated>2026-08-06T00:00:00Z</updated>
+    <author>
+      <name>Syed Roshaan Ali Shah</name>
+    </author>
+    <author>
+      <name>Kasper Bonte</name>
+    </author>
+    <author>
+      <name>David Bekaert</name>
+    </author>
+    <author>
+      <name>Kristof Van Tricht</name>
+    </author>
+    <author>
+      <name>Dieter Wens</name>
+    </author>
+    <summary type="text">Machine learning, and deep networks in particular, are increasingly used to derive higher-level Earth observation (EO) products such as annual land-cover and crop-type maps. Many are generated operationally: each year a new acquisition is processed, typically with the same model, extending a multi-year archive. In the process these systems accumulate two kinds of useful signal that are almost never fed back into the model: the system's own archive of past predictions, and ancillary layers produced by other partners in a processing consortium. Both are normally used outside the network, as rule-based post-processing or a fixed input mask. Using the Copernicus Land Monitoring Service High Resolution Layer (HRL) Croplands crop-type product as a testbed, we show that bringing both signals inside the model turns a single-year, single-task pixel classifier into one that reasons across years. We introduce a Crop Type (CTY) embedding encoder that represents each past prediction as a confidence-scaled, time-ordered categorical token and attends over the year axis, and we study how the externally provided Base Vegetation Layer (BVL) mask should be represented in the model's inputs and outputs. To compare designs fairly when they relabel non-crop pixels, we evaluate on the 18 crop classes only and report precision and recall separately. On a pan-European dataset of about 5.4M labelled pixels, adding the prediction history raises crop-only F1 by 1.6 percentage points (pp) and, more importantly, corrects a recall-skewed error profile, with the largest gains on perennial and tree crops (olives +4.6, fruits +3.7, nuts +3.2 pp). Representing the BVL mask consistently in both the history and the target year adds about 2.5 pp on the crop classes. The approach is a low-cost recipe for any recurring geospatial or foundation model that emits class maps.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 17 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Topology-Aware Neighborhood Learning for Source-Free Cross-Scene Hyperspectral Image Classification</title>
+    <link href="http://arxiv.org/abs/2608.05964v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.05964v1</id>
+    <published>2026-08-06T00:00:00Z</published>
+    <updated>2026-08-06T00:00:00Z</updated>
+    <author>
+      <name>Qingmei Li</name>
+    </author>
+    <author>
+      <name>Juepeng Zheng</name>
+    </author>
+    <author>
+      <name>Jiarui Zhang</name>
+    </author>
+    <author>
+      <name>Jianxi Huang</name>
+    </author>
+    <author>
+      <name>Haohuan Fu</name>
+    </author>
+    <summary type="text">Domain adaptation has advanced cross-scene hyperspectral image classification, significantly improving discriminative capability in complex scenarios. However, privacy rules or storage limits often block access to data from the source domain. Conventional domain adaptation methods become impractical, severely restricting their utility in realistic remote sensing scenarios. To tackle this challenge, we propose a topology-aware source-free learning framework. We first introduce the entropy momentum pseudo-labeling (EMP) to refine k-means assignments by leveraging entropy-aware confidence and temporal prediction momentum. Under the guidance of the refined pseudo-labels, we further utilize the contextual neighborhood topology (CNT) to exploit the intrinsic geometric structure of the target feature space. Combining the global structural information extracted by collaborative representation with the local similarity information modeled by nearest neighbor search, the CNT accomplishes the comprehensive encoding of manifold-level geometric properties in the target domain feature space. The overall objective integrates cross-entropy on refined pseudo-labels, log inner product-based topology consistency, and an information-maximization term for balanced classification, ensuring stable adaptation in the source-free setting. Extensive experiments on three typical cross-scenarios demonstrate that the proposed method exceeds state-of-the-art performance, and ablation studies further validate the contribution of each module. The results highlight the critical role of topology-aware modeling in achieving robust and accurate classification without source data.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Shape-Aware Oriented Bounding Box (OBB) to Horizontal Bounding Box (HBB) Conversion</title>
+    <link href="http://arxiv.org/abs/2608.05858v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.05858v1</id>
+    <published>2026-08-06T00:00:00Z</published>
+    <updated>2026-08-06T00:00:00Z</updated>
+    <author>
+      <name>Badha Rathna Sabhapathy</name>
+    </author>
+    <author>
+      <name>Gotam Dahiya</name>
+    </author>
+    <author>
+      <name>Vishesh Vatsal</name>
+    </author>
+    <summary type="text">Accurate object detection in aerial and satellite imagery is dependent upon the bounding box representation. This is especially true for spatially oriented objects such as ships or aircrafts. Oriented Bounding Boxes (OBB) have a tighter fit and more robust non-max suppression compared to Horizontal Bounding Boxes (HBB), any current post-processing conversion from OBB to HBB either introduces excess empty and background space or removes data from the detection. This paper introduces a novel approach for a shape-aware OBB-to-HBB conversion for ship detection in remote sensing imagery. It leverages hull shape, hull fullness, and the bounding box orientation to produce a tighter axis-aligned HBB representation. The proposed method is benchmarked against three baselines methods for OBBto-HBB conversion, Outer HBB which uses minimum and maximum, Area Equivalent HBB and GBB Marginalized HBB.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Robotics" />
+  </entry>
+  <entry>
+    <title>Overcoming Attention Drift: Homogeneity-Heterogeneity Guided Feature Aggregation for Low-Light Remote Sensing Image Enhancement</title>
+    <link href="http://arxiv.org/abs/2608.05843v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.05843v1</id>
+    <published>2026-08-06T00:00:00Z</published>
+    <updated>2026-08-06T00:00:00Z</updated>
+    <author>
+      <name>Yaozi Zhong</name>
+    </author>
+    <author>
+      <name>Xingxing Yang</name>
+    </author>
+    <author>
+      <name>Shaohui Mei</name>
+    </author>
+    <author>
+      <name>Mingyang Ma</name>
+    </author>
+    <summary type="text">Restoring high-fidelity remote sensing imagery from extreme low-light degradation is indispensable for reliable Earth observation and downstream machine vision. However, under severe noise and illumination corruption, existing methods suffer from attention drift, erroneously aggregating features across distinct physical boundaries and causing severe structural blurring and color distortion. To address this, we propose HALO, a dual-prior-driven enhancement framework that formulates enhancement as a guided feature aggregation problem driven by foundation model priors. Specifically, an illumination-invariant semantic prior provides regional homogeneity as a positive bias for content-consistent aggregation, while a pseudo-3D topological prior provides boundary heterogeneity as a negative penalty to strictly prevent cross-boundary confusion. To cooperatively incorporate these two priors, we propose a Homogeneity-Heterogeneity Cooperative Attention Module (H2CAM) to resolve feature conflicts during cross-modal prior fusion. Extensive experiments demonstrate that HALO achieves state-of-the-art performance across 8 challenging synthetic and real-world remote sensing benchmarks, significantly improving physical boundary sharpness and color fidelity while maximizing the preservation of discriminative features for downstream Earth observation tasks.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>DefoEye: Python-Based Software for Facilitating Time-Series InSAR Analysis of Sentinel-1 Remote-Sensing Data</title>
     <link href="http://arxiv.org/abs/2608.04915v1" rel="alternate" type="text/html" />
@@ -165,6 +314,22 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
     <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>TSDM: A Scheduling Policy for Joint Throughput-AoI Optimization in Multichannel Wireless Networks</title>
+    <link href="http://arxiv.org/abs/2608.05348v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.05348v1</id>
+    <published>2026-08-05T00:00:00Z</published>
+    <updated>2026-08-05T00:00:00Z</updated>
+    <author>
+      <name>Lin Wang</name>
+    </author>
+    <author>
+      <name>I-Hong Hou</name>
+    </author>
+    <summary type="text">Optimizing for both low Age of Information (AoI) and high throughput is critical for remote sensing applications that rely on multichannel wireless networks. However, jointly optimizing these two metrics is an analytically challenging problem, particularly in systems with heterogeneous and unreliable channels. To address this challenge, we propose TSDM, a Two-Stage Deficit Matching scheduling framework. TSDM is based on a second-order approach that characterizes the performance of each data flow by its mean and temporal variance. In the first stage, TSDM translates the high-level utility maximization objective into a concrete set of target mean and temporal variance statistics for transmissions over each node-channel pair. In the second stage, a low-complexity Weighted Matching Deficit (WMD) rule performs real-time channel assignment. We theoretically prove that TSDM achieves the desired mean and temporal variance for each flow. Furthermore, we conduct extensive simulations on two open joint throughput-AoI optimization problems. In both cases, TSDM significantly outperforms existing scheduling policies.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="eess.SY" />
   </entry>
   <entry>
     <title>A windy sea surface with Stokes waves</title>
@@ -872,66 +1037,6 @@
     </author>
     <summary type="text">Shadows in remote sensing images obscure surface appearance and disrupt radiometric continuity, reducing the reliability of visual interpretation and downstream analysis. Remote sensing image deshadowing is an ill-posed inverse problem that requires spatially varying illumination recovery while preserving chromatic and radiometric consistency in non-shadow regions. Existing methods commonly rely on hard shadow masks for compensation or directly regress RGB intensities. Hard masks may inadequately model gradual penumbra variations and are sensitive to localization errors, often producing residual shadows or halo artifacts; direct RGB regression entangles illumination recovery with chromatic reconstruction and can introduce color casts. To this end, we propose the Boundary-Reliable Illumination-Color Interaction Network (BRIC-Net), which decouples these failures at different representation levels. A Lightness Reliability Prior (LRP) derives reliability-aware guidance from CIELAB statistics. Boundary-Adaptive Gated Mixing (BAGM) performs gated interpolation between shallow RGB and lightness features around uncertain transitions, while Spatial-Channel Mutual Modulation (SCMM) coordinates deeper spatial and channel responses for appearance-preserving illumination recovery. BRIC-Net achieves 29.46~dB full-image peak signal-to-noise ratio (PSNR) on AeroDS-Syn and 27.96~dB on SRGTA. It also obtains the lowest Perception-based Image Quality Evaluator (PIQE) scores on AISD and AeroDS-Real. Region-wise evaluations and component ablations further support its effectiveness in shadow recovery and non-shadow preservation.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>TerraNova: A Foundation Model for the Anthropocene</title>
-    <link href="http://arxiv.org/abs/2607.29527v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.29527v1</id>
-    <published>2026-07-31T00:00:00Z</published>
-    <updated>2026-07-31T00:00:00Z</updated>
-    <author>
-      <name>Carlos Rodriguez-Pardo</name>
-    </author>
-    <author>
-      <name>Massimo Tavoni</name>
-    </author>
-    <summary type="text">A defining problem of the Anthropocene is to model the physical Earth and human societies as one coupled system, yet no learned representation spans their observational breadth. We argue the obstacle is geometric: the physical Earth is measured as continuous fields that ignore political borders, whereas societies are reported for administrative units. Earth-system foundation models serve the first geometry; coupling it to the second has required lossy averaging over borders. We introduce TerraNova, a foundation model trained on 1,024 physical and societal records in their native geometries: 512 gridded Earth-system fields and 512 national indicators. Dedicated encoders represent location, country, time and task, cross-modal transformers fuse them into a shared spatiotemporal state, and a hypernetwork generates a per-query decoder whose evidential head returns a predictive distribution. Two contrastive objectives couple the representation: a population-weighted alignment between each country and coordinates in its territory, and one to pretrained geospatial embeddings carrying image-derived semantics. Read out through that decoder, the representation is competitive with purpose-built geospatial encoders while spanning axes they do not represent (time, oceans and uncertainty) and supporting country-level capabilities. The frozen backbone reconstructs dense fields from sparse observations and adapts to unseen variables in minutes on consumer hardware.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 32 pages, 16 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-    <category term="Artificial Intelligence; cs.CY; econ.EM" />
-  </entry>
-  <entry>
-    <title>Training-Free Entity-Level Few-Shot Segmentation of Remote Sensing Images with Advection Refinement</title>
-    <link href="http://arxiv.org/abs/2607.29278v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.29278v1</id>
-    <published>2026-07-31T00:00:00Z</published>
-    <updated>2026-07-31T00:00:00Z</updated>
-    <author>
-      <name>Xueting Bai</name>
-    </author>
-    <author>
-      <name>Huan Ni</name>
-    </author>
-    <summary type="text">Existing cross-domain few-shot segmentation approaches suffer from high training costs due to source-domain episodic training and pixel-wise dense prediction, while often producing fragmented and noisy predictions. To overcome these issues, we propose a training-free entity-level few-shot segmentation framework for remote sensing images with advection refinement. Specifically, we first leverage SAM3's generic geometric priors to generate category-agnostic entity primitives. By reformulating few-shot inference from pixel-level prediction to entity-level reasoning, foreground and background prototypes are constructed and combined with dense textual semantic responses from SAM3 to build a multi-modal semantic potential field. Furthermore, an advection equation-based semantic refinement mechanism is introduced to propagate category-aware information across both feature and similarity spaces, enhancing semantic continuity and suppressing local texture noise. Extensive experiments on multiple remote sensing datasets demonstrate that the proposed framework effectively mitigates domain shift and local noise, substantially improving SAM3's adaptation capability for remote sensing few-shot segmentation without additional training. Our code will be publicly available at https://github.com/yu-ni1989/ELFSS-AR.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/yu-ni1989/ELFSS-AR"&gt;https://github.com/yu-ni1989/ELFSS-AR&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Locally Consistent Transductive Information Maximization for Few-Shot Remote Sensing Scene Classification</title>
-    <link href="http://arxiv.org/abs/2607.29192v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.29192v1</id>
-    <published>2026-07-31T00:00:00Z</published>
-    <updated>2026-07-31T00:00:00Z</updated>
-    <author>
-      <name>Karim El Khoury</name>
-    </author>
-    <author>
-      <name>Benoît Gérin</name>
-    </author>
-    <author>
-      <name>Benoît Macq</name>
-    </author>
-    <author>
-      <name>Christophe De Vleeschouwer</name>
-    </author>
-    <summary type="text">Remote sensing scene classification is increasingly relying on foundation models pre-trained on large-scale Earth-observation data. Moreover, transductive inference, which exploits the collective statistical structure of the entire unlabeled query set, appears to naturally match remote sensing pipelines where large images are routinely split into patches and inferred as a batch. In this work, we introduce LC-TIM (Locally Consistent Transductive Information Maximization), which extends the state-of-the-art Transductive Information Maximization for Few-Shot CLIP (TIM++) objective with a local consistency regularizer that enforces prediction agreement between each query sample and its $κ$ nearest feature-space neighbors. The regularizer enters as a single multiplicative factor in the closed-form $q$-update, adding negligible computational overhead. We further propose a multi-source extension that fuses the affinity graph from multiple remote sensing foundation model, further boosting classification accuracy. To assess these methods, we establish the first comprehensive, open-source benchmark for transductive few-shot RS scene classification, evaluating LP++, TransCLIP, TIM++, and LC-TIM across ten diverse datasets, two remote sensing vision-language models, and across various few-shot settings. Our experiments show that transductive methods consistently outperform zero-shot baselines, and that LC-TIM achieves state-of-the-art accuracy, with the largest gains in the low-shot regime where neighborhood cues are most informative. Code is publicly available at: https://github.com/elkhouryk/LC-TIM</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/elkhouryk/LC-TIM"&gt;https://github.com/elkhouryk/LC-TIM&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ECCVW2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>

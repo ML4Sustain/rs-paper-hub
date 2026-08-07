@@ -4,12 +4,38 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-06T04:01:14Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
+  <updated>2026-08-07T01:58:30Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Topology-Aware Neighborhood Learning for Source-Free Cross-Scene Hyperspectral Image Classification</title>
+    <link href="http://arxiv.org/abs/2608.05964v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.05964v1</id>
+    <published>2026-08-06T00:00:00Z</published>
+    <updated>2026-08-06T00:00:00Z</updated>
+    <author>
+      <name>Qingmei Li</name>
+    </author>
+    <author>
+      <name>Juepeng Zheng</name>
+    </author>
+    <author>
+      <name>Jiarui Zhang</name>
+    </author>
+    <author>
+      <name>Jianxi Huang</name>
+    </author>
+    <author>
+      <name>Haohuan Fu</name>
+    </author>
+    <summary type="text">Domain adaptation has advanced cross-scene hyperspectral image classification, significantly improving discriminative capability in complex scenarios. However, privacy rules or storage limits often block access to data from the source domain. Conventional domain adaptation methods become impractical, severely restricting their utility in realistic remote sensing scenarios. To tackle this challenge, we propose a topology-aware source-free learning framework. We first introduce the entropy momentum pseudo-labeling (EMP) to refine k-means assignments by leveraging entropy-aware confidence and temporal prediction momentum. Under the guidance of the refined pseudo-labels, we further utilize the contextual neighborhood topology (CNT) to exploit the intrinsic geometric structure of the target feature space. Combining the global structural information extracted by collaborative representation with the local similarity information modeled by nearest neighbor search, the CNT accomplishes the comprehensive encoding of manifold-level geometric properties in the target domain feature space. The overall objective integrates cross-entropy on refined pseudo-labels, log inner product-based topology consistency, and an information-maximization term for balanced classification, ensuring stable adaptation in the source-free setting. Extensive experiments on three typical cross-scenarios demonstrate that the proposed method exceeds state-of-the-art performance, and ablation studies further validate the contribution of each module. The results highlight the critical role of topology-aware modeling in achieving robust and accurate classification without source data.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Global-Scale Self-Supervised Spatiotemporal Learning for NDVI Time-Series Reconstruction</title>
     <link href="http://arxiv.org/abs/2608.02322v1" rel="alternate" type="text/html" />
