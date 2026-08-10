@@ -7712,5 +7712,43 @@
     "_added_date": "2026-08-06",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Artificial Intelligence",
+    "Date": "2026-08-06",
+    "Month": 8,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "SLED: Scalable Location Encoding via Distillation",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2608.06612v1",
+    "Abstract": "The plethora of readily available geospatial data offers exciting opportunities to learn high quality representations of the planet, but the sheer size of the Earth Observations (EO), differing modalities, and different sensor types pose significant challenges in doing so. Location encoders have emerged as an efficient way of compressing EOs into location-specific embeddings. However, current state-of-the-art location encoders rely on computationally expensive CLIP-style frameworks that require large batch sizes in the 16K--32K range, suffer from false negative samples, and scale poorly with additional modalities. We introduce the Scalable Location Encoder via Distillation (SLED), a distillation-based location encoder that uses geospatial location as a binding modality to pretrain location encoders with any modality of geospatial data. The resulting location encoder framework is lightweight, modular, and can flexibly incorporate multiple modes, while eliminating the need for spatiotemporal coregistration of samples. SLED is performant with batch sizes as small as 128, enabling pretraining at a fraction of the runtime and compute costs of current state-of-the-art models. We demonstrate our approach by pretraining unimodal and multimodal SLED models on Sentinel-1, Sentinel-2, and Landsat imagery. We show that both unimodal and multimodal SLED models keep pace with or outperform existing approaches on a diverse set of 19 human-centric benchmark tasks and explore the benefits of using additional modes in pretraining.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{lane2026sled,\n  title={SLED: Scalable Location Encoding via Distillation},\n  author={Kevin Lane and Zhongying Wang and Esther Rolf and Morteza Karimzadeh},\n  journal={arXiv preprint arXiv:2608.06612v1},\n  year={2026},\n  url={http://arxiv.org/abs/2608.06612v1}\n}",
+    "Authors": "Kevin Lane, Zhongying Wang, Esther Rolf, Morteza Karimzadeh",
+    "_added_date": "2026-08-10",
+    "Category": "Method",
+    "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Machine Learning",
+    "Date": "2026-08-03",
+    "Month": 8,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Deep Evidential Regression for Sparse Forest Height Estimation from Multimodal Satellite Imagery",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2608.06406v1",
+    "Abstract": "Accurate estimation of forest height from satellite imagery is essential for applications such as carbon accounting, biodiversity monitoring, and ecosystem management. While recent deep learning approaches provide accurate predictions, they typically do not quantify predictive uncertainty. This limitation is particularly relevant in geospatial settings characterized by sparse supervision and geographic distribution shift. In this work, we investigate Deep Evidential Regression (DER) for forest height estimation on the TreeUQ benchmark, a large-scale dataset designed for the joint estimation of tree count and average tree height at 10 m resolution, based on Sentinel-1/-2 data as well as tree inventory data over the federal state of Bavaria. To account for the extreme label sparsity of the tree inventory data, we introduce a masked evidential loss for dense geospatial prediction. Using a U-Net architecture with multimodal Sentinel-1 and Sentinel-2 inputs, the proposed approach jointly predicts tree height and associated uncertainty estimates in a single forward pass. Experimental results show that DER achieves predictive performance comparable to a deterministic U-Net while additionally providing well-calibrated uncertainty estimates. These findings demonstrate the potential of evidential learning as an efficient framework for uncertainty-aware forest structure estimation from Earth observation data.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{bader2026deep,\n  title={Deep Evidential Regression for Sparse Forest Height Estimation from Multimodal Satellite Imagery},\n  author={Laura Bader and Muhammad Ammar Ahmed and Xiao Xiang Zhu and Göran Kauermann},\n  journal={arXiv preprint arXiv:2608.06406v1},\n  year={2026},\n  url={http://arxiv.org/abs/2608.06406v1}\n}",
+    "Authors": "Laura Bader, Muhammad Ammar Ahmed, Xiao Xiang Zhu, Göran Kauermann",
+    "_added_date": "2026-08-10",
+    "Category": "Method",
+    "_tasks": "3D"
   }
 ]
