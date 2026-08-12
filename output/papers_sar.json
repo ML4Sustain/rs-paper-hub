@@ -7750,5 +7750,24 @@
     "_added_date": "2026-08-10",
     "Category": "Method",
     "_tasks": "3D"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-08-11",
+    "Month": 8,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "SAR2Agri: Learning SAR Intensity Representations for Agricultural Monitoring",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2608.11142v1",
+    "Abstract": "Agricultural monitoring faces unique challenges, arising from the landscape's complex temporal, phenological, and climate dynamics, yet monitoring them is critical for ensuring food security. Synthetic Aperture Radar (SAR) satellites offer all-weather day-night imaging capability supporting key monitoring tasks including crop type mapping, yield prediction and phenological event detection. Existing multimodal remote sensing foundation models including TerraMind and CopernicusFM learn SAR representations by grounding them in optical imagery using joint encoding and contrastive learning techniques, while SAR-specific foundation models such as SAR-JEPA, SARMAE, and SAR-W-MixMAE primarily focus on target detection, flood mapping, and land cover classification applications. Recent work has introduced phenology inspired temporal pretext tasks with optical imagery which has shown strong performance on agricultural downstream tasks. In this work, we propose the first self-supervised learning pipeline focused on using only SAR intensity imagery for agricultural applications. We improve the temporal pretext tasks through masking and curriculum learning to enhance the pretraining pipeline's ability to capture phenological features from SAR. On the SICKLE benchmark, our final model achieves 84.9% IoU on crop type mapping, outperforming optical baselines (by 15.3 pt) and existing SAR baselines (by 2.2 pt), demonstrating the effectiveness of our proposed pipeline for pretraining SAR intensity encoders for agricultural monitoring.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{gupta2026saragri,\n  title={SAR2Agri: Learning SAR Intensity Representations for Agricultural Monitoring},\n  author={Moti Rattan Gupta and Anupam Sobti},\n  journal={arXiv preprint arXiv:2608.11142v1},\n  year={2026},\n  url={http://arxiv.org/abs/2608.11142v1}\n}",
+    "Authors": "Moti Rattan Gupta, Anupam Sobti",
+    "_added_date": "2026-08-12",
+    "Category": "Method",
+    "_tasks": "CLS;OD;VG"
   }
 ]
