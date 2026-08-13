@@ -7769,5 +7769,43 @@
     "_added_date": "2026-08-12",
     "Category": "Method",
     "_tasks": "CLS;OD;VG"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-08-12",
+    "Month": 8,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Warping Earth Observations for better ice labeling in the Marginal Marginal Ice Zone",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2608.11883v1",
+    "Abstract": "Multimodal satellite imagery provides complementary information for Earth Observation, but accurately combining heterogeneous sensors remains challenging in dynamic environments. Fast-changing regions, such as the Antarctic marginal ice zone, cannot fully exploit multimodal information from different satellite sensors because surface features move between image acquisitions. This spatial and temporal mismatch challenges effective perceptual grounding, violating the assumption of pixel-level correspondence that underpins most multimodal reasoning and downstream classification pipelines. Antarctic sea ice provides a challenging benchmark due to the rapid, heterogeneous drift of individual ice floes and the differing responses of sea ice to radar, visible and thermal sensing modalities. Accurate, dense supervision of sea ice remains scarce because generating pixel-wise labels requires time-consuming expert interpretation of noisy data, leading to historical reliance on coarse-resolution maritime ice charts for model training. This paper presents a novel architecture based on mutual information warping to align multi-satellite (Sentinel-1 and MODIS platforms) multimodal (visible, thermal, radar) satellite scenes. To demonstrate the approach, we introduce a sparse expert-labeled dataset of 2,088 pixel-wise annotations (7,046 expert point classifications) located at the ice-water margin interface across 43 scenes. Our results demonstrate that spatially grounding and aligning modalities prior to segmentation improves classification accuracy, and enables accurate, dense sea ice segmentation from sparse point-wise supervision.",
+    "code": "",
+    "Publication": "ECCV Workshop paper; BEAM 2",
+    "BibTex": "@article{kelly2026warping,\n  title={Warping Earth Observations for better ice labeling in the Marginal Marginal Ice Zone},\n  author={Tom Kelly and Martin S. J. Rogers},\n  journal={arXiv preprint arXiv:2608.11883v1},\n  year={2026},\n  url={http://arxiv.org/abs/2608.11883v1}\n}",
+    "Authors": "Tom Kelly, Martin S. J. Rogers",
+    "_added_date": "2026-08-13",
+    "Category": "Method",
+    "_tasks": "CLS;VG"
+  },
+  {
+    "Type": "Image and Video Processing",
+    "Subtype": "Machine Learning",
+    "Date": "2026-08-11",
+    "Month": 8,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Hardware-Aware Deployment of Joint SAR Compression and Despeckling on FPGA",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2608.11271v1",
+    "Abstract": "Next-generation Synthetic Aperture Radar (SAR) missions will generate data far faster than they can downlink, making onboard data reduction essential for near-real-time Earth observation. Learned Image Compression (LIC) offers better rate-distortion performance than handcrafted codecs used operationally today, and recent work shows that simultaneously despeckling and compressing SAR imagery enables better representation capacity while unlocking higher compression rates. These methods, however, have yet to be confronted with the strict power, compute, and operational constraints of spaceborne systems. In this work, we bridge this gap by deploying a joint SAR Despeckling and Data Compression (DDC) framework on an embedded ZCU102 FPGA-based platform, introducing model adaptations that respect the accelerator's fixed-point arithmetic and limited set of supported operations. We evaluate four model topologies across precision levels and across CPU, GPU, and FPGA platforms, revealing several findings with direct design implications. We find that replacing conventional GDN activation functions with plain ReLU improves quality on SAR, suggesting that design principles established for compression of natural images do not necessarily transfer to SAR imagery. In addition, we demonstrate that residual blocks offer little representational benefit for ten times the compute, and show that the FPGA is the most energy-efficient of the platforms tested. Together, these results set a functioning edge deployment workflow and an evidence-based starting point for onboard SAR compression. The code is available at https://github.com/CedricLeon/SAR_DDC_FPGA.",
+    "code": "https://github.com/CedricLeon/SAR_DDC_FPGA",
+    "Publication": "11 pages, 8 figures",
+    "BibTex": "@article{lonard2026hardwareaware,\n  title={Hardware-Aware Deployment of Joint SAR Compression and Despeckling on FPGA},\n  author={Cédric Léonard and Francescopaolo Sica and Martin Schulz},\n  journal={arXiv preprint arXiv:2608.11271v1},\n  year={2026},\n  url={http://arxiv.org/abs/2608.11271v1}\n}",
+    "Authors": "Cédric Léonard, Francescopaolo Sica, Martin Schulz",
+    "_added_date": "2026-08-13",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]
