@@ -4,10 +4,54 @@
   <id>https://rspaper.top/output/feed_uav.xml</id>
   <link href="https://rspaper.top/output/feed_uav.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-14T00:53:23Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 0 entries</subtitle>
+  <updated>2026-08-14T03:22:01Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 1 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>ARIES-Mission2: A Zero-Shot Vision-Language-Action Framework for Fast Large-Scale Aerial Mission Generation</title>
+    <link href="http://arxiv.org/abs/2608.12763v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.12763v1</id>
+    <published>2026-08-13T00:00:00Z</published>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <author>
+      <name>Junhao Wei</name>
+    </author>
+    <author>
+      <name>Yanxiao Li</name>
+    </author>
+    <author>
+      <name>Haochen Li</name>
+    </author>
+    <author>
+      <name>Yifu Zhao</name>
+    </author>
+    <author>
+      <name>Dexing Yao</name>
+    </author>
+    <author>
+      <name>Baili Lu</name>
+    </author>
+    <author>
+      <name>Zikun Li</name>
+    </author>
+    <author>
+      <name>Yapeng Wang</name>
+    </author>
+    <author>
+      <name>Sio-Kei Im</name>
+    </author>
+    <author>
+      <name>Dingcheng Yang</name>
+    </author>
+    <author>
+      <name>Xu Yang</name>
+    </author>
+    <summary type="text">Multimodal Large Language Models (MLLMs) have shown strong semantic understanding capabilities, but their direct use in low-altitude Unmanned Aerial Vehicle (UAV) mission generation remains limited by weak spatial optimization and inefficient route planning. To address this issue, we propose ARIES-Mission2, a zero-shot Vision-Language-Action (VLA) framework that decouples visual-semantic perception from physical route optimization. Given natural-language instructions and satellite imagery, ARIES-Mission2 first uses DeepSeek-V3 for task parsing and Molmo-7B for zero-shot target grounding, and then converts detected pixel locations into GPS waypoints through geospatial interpolation. To reduce the redundant backtracking caused by raw VLM-generated visiting orders, the back end formulates multi-target UAV traversal as a Traveling Salesperson Problem (TSP) and compares four candidate routes, including the raw VLM order and the routes optimized by PSO, GPSO, and IPSO. The minimum-cost closed-loop route is then selected for mission generation. Experiments on the UAV-VLPA-nano-30 benchmark show that ARIES-Mission2 achieves a total flight distance of 62.43 km, reducing the route length by 21.6% compared with the unoptimized VLA baseline (79.66 km) and by 9.5% compared with manual human planning (69.00 km). The complete 30-task workflow takes 575.40 s, averaging 19.18 s per task, which is approximately 3.6 times faster than human expert planning. Component-level timing shows that VLM inference dominates the runtime with 19.02 s per task, while the TSP solver requires only 0.16 s per task. Scalability analysis further indicates that the TSP module maintains lower growth in computation time as the number of targets increases.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="cs.CE" />
+  </entry>
 </feed>

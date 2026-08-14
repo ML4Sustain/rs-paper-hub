@@ -4,12 +4,123 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-14T00:53:23Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 23 entries</subtitle>
+  <updated>2026-08-14T03:22:01Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 28 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>LongEarth-R1: Benchmarking and Aligning Vision-Language Models for Long-Horizon Earth Observation Reasoning</title>
+    <link href="http://arxiv.org/abs/2608.13344v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.13344v1</id>
+    <published>2026-08-13T00:00:00Z</published>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <author>
+      <name>Yupan Ding</name>
+    </author>
+    <author>
+      <name>Jing Xiao</name>
+    </author>
+    <author>
+      <name>Zhenyuan Zhang</name>
+    </author>
+    <author>
+      <name>Chaofeng Chen</name>
+    </author>
+    <author>
+      <name>Liang Liao</name>
+    </author>
+    <author>
+      <name>Gui-Song Xia</name>
+    </author>
+    <author>
+      <name>Mi Wang</name>
+    </author>
+    <summary type="text">Long-horizon Earth observation reasoning requires models to organize multi-stage geographic evolution, localize spatial changes, detect temporal anomalies, and infer future from extended image sequences. However, existing remote sensing vision-language models mainly focus on isolated images, image pairs, or short sequences, limiting reliable grounding in the relevant frames and regions. We introduce LongEarth-Bench, a benchmark containing approximately 120k question-answering samples derived from 117k unique images. Its sequences average 15.14 frames and extend to 30 frames, covering 12 tasks across evolution summarization, spatial reasoning, anomaly identification, and logical prediction. A 30k-sample subset further provides structured reasoning traces linking key frames and changed regions to final answers. We develop LongEarth through supervised fine-tuning with explicit sequence identifiers and structured chain-of-thought supervision. Building on LongEarth, LongEarth-R1 applies group relative policy optimization with format, temporal, and spatial rewards. LongEarth-R1 achieves the best results on all 12 long-sequence tasks while remaining competitive on standard remote sensing benchmarks.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>DiCoR: Decoupled Referent Disambiguation and Contour Recalibration for Efficient Referring Remote Sensing Image Segmentation</title>
+    <link href="http://arxiv.org/abs/2608.12980v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.12980v1</id>
+    <published>2026-08-13T00:00:00Z</published>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <author>
+      <name>Ziyang Gao</name>
+    </author>
+    <author>
+      <name>Zhizhuo Jiang</name>
+    </author>
+    <author>
+      <name>Jingjing Chang</name>
+    </author>
+    <author>
+      <name>Yixin Yang</name>
+    </author>
+    <author>
+      <name>Yuwen Pan</name>
+    </author>
+    <author>
+      <name>Yong-Qiang Mao</name>
+    </author>
+    <author>
+      <name>Yu Liu</name>
+    </author>
+    <author>
+      <name>Hai-Bao Chen</name>
+    </author>
+    <summary type="text">Referring remote sensing image segmentation (RRSIS) aims to delineate targets specified by natural language expressions in remote sensing imagery. Existing methods mainly follow joint fusion segmentation (JFS) or decoupled prompt segmentation (DPS). JFS is efficient but often suffers from limited accuracy because referent localization and mask delineation are optimized under a unified objective, whereas DPS separates localization from mask generation using spatial prompts and foundation segmenters at the cost of higher memory consumption and inference latency. To bridge this gap, we propose DiCoR, a decoupled referent disambiguation and contour recalibration framework built on an efficient JFS pipeline. DiCoR addresses two key challenges: distinguishing the correct referent from ambiguous candidates and refining coarse masks after localization. A disambiguation-aware localization guidance strategy ranks salient candidate regions with adaptive linguistic cues and injects the resulting localization prior into fused features. A lightweight contour recalibration module further predicts residual corrections to coarse logits under localized contour supervision, improving mask quality with limited computational overhead. Experiments on RefSegRS, RRSIS-D, and RISBench show that DiCoR achieves the best segmentation accuracy across all three benchmarks. On RefSegRS, it improves mIoU and gIoU by 5.28% and 2.87% over a competitive JFS method while running 4.7% faster than a representative DPS method, demonstrating a favorable accuracy-efficiency trade-off. Code is available at https://github.com/zyGao1126/DiCoR.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/zyGao1126/DiCoR"&gt;https://github.com/zyGao1126/DiCoR&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>ARIES-Mission2: A Zero-Shot Vision-Language-Action Framework for Fast Large-Scale Aerial Mission Generation</title>
+    <link href="http://arxiv.org/abs/2608.12763v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.12763v1</id>
+    <published>2026-08-13T00:00:00Z</published>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <author>
+      <name>Junhao Wei</name>
+    </author>
+    <author>
+      <name>Yanxiao Li</name>
+    </author>
+    <author>
+      <name>Haochen Li</name>
+    </author>
+    <author>
+      <name>Yifu Zhao</name>
+    </author>
+    <author>
+      <name>Dexing Yao</name>
+    </author>
+    <author>
+      <name>Baili Lu</name>
+    </author>
+    <author>
+      <name>Zikun Li</name>
+    </author>
+    <author>
+      <name>Yapeng Wang</name>
+    </author>
+    <author>
+      <name>Sio-Kei Im</name>
+    </author>
+    <author>
+      <name>Dingcheng Yang</name>
+    </author>
+    <author>
+      <name>Xu Yang</name>
+    </author>
+    <summary type="text">Multimodal Large Language Models (MLLMs) have shown strong semantic understanding capabilities, but their direct use in low-altitude Unmanned Aerial Vehicle (UAV) mission generation remains limited by weak spatial optimization and inefficient route planning. To address this issue, we propose ARIES-Mission2, a zero-shot Vision-Language-Action (VLA) framework that decouples visual-semantic perception from physical route optimization. Given natural-language instructions and satellite imagery, ARIES-Mission2 first uses DeepSeek-V3 for task parsing and Molmo-7B for zero-shot target grounding, and then converts detected pixel locations into GPS waypoints through geospatial interpolation. To reduce the redundant backtracking caused by raw VLM-generated visiting orders, the back end formulates multi-target UAV traversal as a Traveling Salesperson Problem (TSP) and compares four candidate routes, including the raw VLM order and the routes optimized by PSO, GPSO, and IPSO. The minimum-cost closed-loop route is then selected for mission generation. Experiments on the UAV-VLPA-nano-30 benchmark show that ARIES-Mission2 achieves a total flight distance of 62.43 km, reducing the route length by 21.6% compared with the unoptimized VLA baseline (79.66 km) and by 9.5% compared with manual human planning (69.00 km). The complete 30-task workflow takes 575.40 s, averaging 19.18 s per task, which is approximately 3.6 times faster than human expert planning. Component-level timing shows that VLM inference dominates the runtime with 19.02 s per task, while the TSP solver requires only 0.16 s per task. Scalability analysis further indicates that the TSP module maintains lower growth in computation time as the number of targets increases.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="cs.CE" />
+  </entry>
   <entry>
     <title>Quantum-limited imaging using diffractive optical neural networks</title>
     <link href="http://arxiv.org/abs/2608.12300v1" rel="alternate" type="text/html" />
@@ -155,6 +266,60 @@
 &lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 figures, 9 tables&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Evaluating AlphaEarth Foundations Embeddings for Wildfire Susceptibility Mapping</title>
+    <link href="http://arxiv.org/abs/2608.12663v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.12663v1</id>
+    <published>2026-08-12T00:00:00Z</published>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <author>
+      <name>Yuan Zhuang</name>
+    </author>
+    <author>
+      <name>Sanaa Hobeichi</name>
+    </author>
+    <author>
+      <name>Peng Shi</name>
+    </author>
+    <author>
+      <name>Fei Huang</name>
+    </author>
+    <summary type="text">Wildfire susceptibility mapping typically relies on physical variables assembled from multiple remote-sensing, climate, and geospatial products. AlphaEarth Foundations (AEF) provides analysis-ready geospatial embeddings that may reduce this dependence on heavy harmonisation and task-specific feature engineering, but their value for wildfire susceptibility mapping has not been systematically evaluated. Using Victoria, Australia (2017-2025), as a case study, we show that AEF embeddings can reconstruct commonly used variables in wildfire susceptibility analysis with high accuracy. In downstream susceptibility models trained on satellite-derived fire occurrence data, embedding-based susceptibility models achieve ROC-AUC values above 0.92 and consistently identify high wildfire susceptibility across eastern Victoria, particularly Gippsland and the north-eastern uplands, with additional localized hotspots in central and northwestern Victoria. A key feature of AEF embeddings is their strong near-region transferability within climatically similar regions. When embedding-based models trained in Victoria are applied to Canberra and Western Sydney-Blue Mountains, ROC-AUC improves by around 4% at Canberra and declines by around 2% at Western Sydney-Blue Mountains, compared with a mean decrease of approximately 25% for physical-variable models. These findings provide practical guidance for using AEF embeddings and lay a foundation for scalable wildfire susceptibility mapping workflows for downstream users such as government agencies and (re)insurers.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="stat.AP" />
+    <category term="Machine Learning; Machine Learning (Statistics)" />
+  </entry>
+  <entry>
+    <title>HIMEC: Directional Change Representation and Fixed-Interface Decoding for Remote Sensing Image Change Captioning</title>
+    <link href="http://arxiv.org/abs/2608.12502v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.12502v1</id>
+    <published>2026-08-12T00:00:00Z</published>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <author>
+      <name>Aysha Ashraf</name>
+    </author>
+    <author>
+      <name>Shaina Ashraf</name>
+    </author>
+    <author>
+      <name>Wafaa I. M. Hussin</name>
+    </author>
+    <author>
+      <name>Ali Haider</name>
+    </author>
+    <author>
+      <name>Zhi Lu</name>
+    </author>
+    <author>
+      <name>Zhenming Peng</name>
+    </author>
+    <summary type="text">Remote sensing image change captioning (RSICC) converts bitemporal imagery into a sentence describing semantic changes. Most RSICC methods condition caption decoders directly on fused visual features, leaving intermediate change structure and decoder-interface consistency less studied. We present HIMEC, combining Directional Change Representation (DCR) with fixed-interface decoding. DCR separates signed differences into appearance-oriented, disappearance-oriented, and shared-context streams before fusion. A learned-query encoder converts the fused representation into visually conditioned change-query tokens that form the scene decoder's only sample-dependent memory. A training-only auxiliary phrase decoder supplies caption-derived supervision. With a fixed zero input, the scene decoder maintains the same interface during training and inference. Separately, we evaluate a local-to-scene cascade conditioned on teacher-forced local states during training and autoregressive states at inference. On changed LEVIR-CC validation pairs, these states have a mean cosine distance of 0.69. Regime-matched conditioning recovers most of the associated deficit, whereas permuting state correspondence causes no detectable penalty. These findings are limited to the evaluated cascade. In a matched three-seed comparison, HIMEC reaches a Consensus-based Image Description Evaluation (CIDEr) score of $142.81\pm0.60$ on LEVIR-CC, versus $139.51\pm3.40$ for direct fused-feature memory. On SECOND-CC, fixed-zero and regime-matched diagnostic conditioning reach 75.67 and 76.99 CIDEr, respectively, versus 60.77 for the mismatched cascade. The source code will be made publicly available at https://github.com/ayshaashra/HIMEC upon publication.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/ayshaashra/HIMEC"&gt;https://github.com/ayshaashra/HIMEC&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Submitted to IEEE Transactions on Geoscience and Remote Sensing (TGRS) for review&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
   <entry>
@@ -541,8 +706,8 @@
   </entry>
   <entry>
     <title>AeroReformer2: Spoken-Query Referring Segmentation for Aerial Images</title>
-    <link href="http://arxiv.org/abs/2608.08874v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.08874v1</id>
+    <link href="http://arxiv.org/abs/2608.08874v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.08874v2</id>
     <published>2026-08-09T00:00:00Z</published>
     <updated>2026-08-09T00:00:00Z</updated>
     <author>
