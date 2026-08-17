@@ -6629,5 +6629,24 @@
     "_added_date": "2026-08-14",
     "Category": "Method",
     "_tasks": "VG"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-08-14",
+    "Month": 8,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "FIRM: Fine-Grained Intra-Token Representation of Masks for Remote Sensing Reasoning Segmentation",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2608.13980v1",
+    "Abstract": "Reasoning segmentation requires multimodal large language models (MLLMs) to translate implicit instructions into precise pixel-level masks. MLLMs encode an image as visual tokens, each of which merges a group of image patches. In remote sensing images, small targets, thin structures, and adjacent instances can occupy different parts of the same visual token. Assigning a single binary mask label to such a token loses its internal spatial structure, causing nearby targets to merge and object boundaries to become coarse. To bridge this representational gap, we introduce FIRM, a Fine-grained Intra-token Representation of Masks. For each visual token, FIRM predicts a mask code that specifies an $r\\times r$ binary sub-cell pattern rather than a single foreground/background label. Given a target identified by the MLLM, the complete grid of mask codes is predicted in one mask pass. Fixed lookup converts the predicted codes into a discrete sub-cell mask, while marginalizing the code distribution yields a soft structural field. To further recover fine-grained boundaries within each sub-cell, we introduce a lightweight continuous renderer that refines this field using pre-merge visual features and image details. Across five reasoning and referring segmentation benchmarks on satellite and UAV images, FIRM achieves leading results, including $70.5/80.5$ gIoU/cIoU on LaSeRS and a $3.0$-point average gain on EarthReason. These results demonstrate the value of explicitly representing intra-token mask patterns for fine-grained MLLM segmentation.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{tang2026firm,\n  title={FIRM: Fine-Grained Intra-Token Representation of Masks for Remote Sensing Reasoning Segmentation},\n  author={Weidong Tang and Kaiyu Li and Yikai Wang and Yanan Wu and Haotian Gan and Shihong Wang and Xiangyong Cao},\n  journal={arXiv preprint arXiv:2608.13980v1},\n  year={2026},\n  url={http://arxiv.org/abs/2608.13980v1}\n}",
+    "Authors": "Weidong Tang, Kaiyu Li, Yikai Wang, Yanan Wu, Haotian Gan, Shihong Wang, Xiangyong Cao",
+    "_added_date": "2026-08-17",
+    "Category": "Method",
+    "_tasks": "SEG"
   }
 ]

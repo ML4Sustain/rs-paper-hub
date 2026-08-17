@@ -4,12 +4,121 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-17T00:29:56Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 21 entries</subtitle>
+  <updated>2026-08-17T02:17:07Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 25 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Learning to Forecast Crop Growth from Earth Observation Data</title>
+    <link href="http://arxiv.org/abs/2608.14281v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.14281v1</id>
+    <published>2026-08-14T00:00:00Z</published>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <author>
+      <name>Dominik Senti</name>
+    </author>
+    <author>
+      <name>Mehmet Ozgur Turkoglu</name>
+    </author>
+    <author>
+      <name>Michele Volpi</name>
+    </author>
+    <author>
+      <name>Helge Aasen</name>
+    </author>
+    <summary type="text">Forecasting crop growth across agricultural landscapes is important for improving the productivity, resilience, and operational management of farming systems. In this work, we investigate whether Earth observation time series and meteorological drivers can be used to predict future canopy development at country scale. We focus on winter wheat and formulate crop growth prediction as forecasting future leaf area index (LAI) trajectories beyond the last available Sentinel-2 observation. We evaluate this task on a multi-year dataset which spans the entire country of Switzerland, containing over 20 million pixel-level Sentinel-2-derived LAI time series paired with meteorological variables. Because cloud cover and revisit gaps leave LAI supervision sparse, models fit the few valid (cloud-free) LAI observations yet oscillate implausibly between them, producing trajectories no real canopy could follow. We introduce a lightweight unimodal shape regulariser which improves trajectory plausibility with negligible loss in accuracy. We compare deep learning sequence-to-sequence (Seq2Seq) models with classic machine learning baselines and show that Seq2Seq models generalise well across years, achieving $\mathrm{R}^2$ above 0.8 and consistently outperforming conventional approaches. Together, these results demonstrate that remote sensing and weather-driven sequence modelling can learn crop growth dynamics at landscape scale. S</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Connected Subspace Clustering: Hardness, a Scalable Heuristic, and an Application to Sea Level Geodesy</title>
+    <link href="http://arxiv.org/abs/2608.14215v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.14215v1</id>
+    <published>2026-08-14T00:00:00Z</published>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <author>
+      <name>Johanna Hillebrand</name>
+    </author>
+    <author>
+      <name>Jan Höckendorff</name>
+    </author>
+    <author>
+      <name>Jürgen Kusche</name>
+    </author>
+    <author>
+      <name>Kelin Luo</name>
+    </author>
+    <author>
+      <name>Heiko Röglin</name>
+    </author>
+    <author>
+      <name>Melanie Schmidt</name>
+    </author>
+    <author>
+      <name>Christian Sohler</name>
+    </author>
+    <author>
+      <name>Bernd Uebbing</name>
+    </author>
+    <summary type="text">Constrained optimization extends classical optimization by integrating side information, making it widely applicable across scientific and engineering domains. Consider a setting where we measure variables at different physical locations. When grouping these measurements, we often want clusters that are both internally similar and physically coherent. Thus, we have a constrained clustering problem where the constraint models coherence. Motivated by an application in geodesy, where contiguous regions of the sea surface must be identified for principal component analysis, we introduce the Connected Subspace Clustering problem: given high-dimensional points and a connectivity graph, partition them into $k$ connected clusters, minimizing their total squared distance to the clusters' best-fit $m'$-dimensional affine subspaces. We prove that, even for $m' = 0$ and a grid graph with holes, the problem is NP-hard to approximate within $Ω(n^{1/2-\varepsilon})$ for every $\varepsilon&gt;0$, where $n$ is the number of measurements. We then introduce an efficient Lloyd-style heuristic that alternates subspace fitting with an iterative merging procedure to enforce connectivity. Our method returns exactly $k$ connected regions by construction, whereas unconstrained methods leave up to $1{,}966$ disconnected fragments at higher cost. In a study of 160 configurations on global sea level time series, our merging-based repair is the strongest of four strategies in $73.75\%$ of cases, and consistently outperforms competitors such as (connected) Ward's method across all tested cluster counts. The resulting regions isolate signals aligning with climate indices such as the El Nino-Southern Oscillation and Indian Ocean Dipole. Although developed for geodesy, the approach applies to other spatially embedded multivariate time series, such as climate fields, remote sensing, neuroimaging, and sensor networks.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>FIRM: Fine-Grained Intra-Token Representation of Masks for Remote Sensing Reasoning Segmentation</title>
+    <link href="http://arxiv.org/abs/2608.13980v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.13980v1</id>
+    <published>2026-08-14T00:00:00Z</published>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <author>
+      <name>Weidong Tang</name>
+    </author>
+    <author>
+      <name>Kaiyu Li</name>
+    </author>
+    <author>
+      <name>Yikai Wang</name>
+    </author>
+    <author>
+      <name>Yanan Wu</name>
+    </author>
+    <author>
+      <name>Haotian Gan</name>
+    </author>
+    <author>
+      <name>Shihong Wang</name>
+    </author>
+    <author>
+      <name>Xiangyong Cao</name>
+    </author>
+    <summary type="text">Reasoning segmentation requires multimodal large language models (MLLMs) to translate implicit instructions into precise pixel-level masks. MLLMs encode an image as visual tokens, each of which merges a group of image patches. In remote sensing images, small targets, thin structures, and adjacent instances can occupy different parts of the same visual token. Assigning a single binary mask label to such a token loses its internal spatial structure, causing nearby targets to merge and object boundaries to become coarse. To bridge this representational gap, we introduce FIRM, a Fine-grained Intra-token Representation of Masks. For each visual token, FIRM predicts a mask code that specifies an $r\times r$ binary sub-cell pattern rather than a single foreground/background label. Given a target identified by the MLLM, the complete grid of mask codes is predicted in one mask pass. Fixed lookup converts the predicted codes into a discrete sub-cell mask, while marginalizing the code distribution yields a soft structural field. To further recover fine-grained boundaries within each sub-cell, we introduce a lightweight continuous renderer that refines this field using pre-merge visual features and image details. Across five reasoning and referring segmentation benchmarks on satellite and UAV images, FIRM achieves leading results, including $70.5/80.5$ gIoU/cIoU on LaSeRS and a $3.0$-point average gain on EarthReason. These results demonstrate the value of explicitly representing intra-token mask patterns for fine-grained MLLM segmentation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>From crown candidates to neighborhood screening: integrating optical GeoAI and spatial modeling for urban-canopy assessment in Davis, California</title>
+    <link href="http://arxiv.org/abs/2608.13856v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.13856v1</id>
+    <published>2026-08-14T00:00:00Z</published>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <author>
+      <name>Mohammadreza Narimani</name>
+    </author>
+    <author>
+      <name>Shreyan Mitra</name>
+    </author>
+    <author>
+      <name>Parastoo Farajpoor</name>
+    </author>
+    <summary type="text">Timely urban-canopy information is essential for linking remote sensing with heat, mobility, and neighborhood planning. We developed an optical GeoAI workflow for Davis, California, using 2022 National Agriculture Imagery Program imagery (0.6 m RGB+NIR). DeepForest generated crown candidates; an NDVI threshold, non-maximum suppression, and box-prompted Segment Anything Model (ViT-B) produced a crown-anchored canopy surface. Analyses used the 25.92 km2 Census TIGER municipal boundary and a 100 m grid. The workflow retained 11,741 candidate crowns and mapped 2.43 km2 of canopy (9.37% of the city). On the identical extent, 87.8% of mapped canopy pixels and 97.4% of candidate centers agreed with the 2022 USDA/CAL FIRE LiDAR-assisted canopy product; the optical surface represented 34.2% of the reference canopy area (IoU 0.288; Dice 0.448). Approximately 49% of candidates occurred within 15 m of a road. Canopy was inversely associated with Landsat land-surface temperature (Spearman rho = -0.293; partial rho = -0.370 controlling for built probability), and spatial-lag modeling confirmed clear neighborhood structure. Two transparent attention surfaces combined canopy need with thermal and contextual indicators. The framework provides a reproducible, updateable screening layer that complements structural canopy products and municipal inventories while retaining assumptions, data provenance, and spatial diagnostics for planning interpretation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 17 pages, 10 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+    <category term="Computer Vision; stat.AP" />
+  </entry>
   <entry>
     <title>LongEarth-R1: Benchmarking and Aligning Vision-Language Models for Long-Horizon Earth Observation Reasoning</title>
     <link href="http://arxiv.org/abs/2608.13344v1" rel="alternate" type="text/html" />
