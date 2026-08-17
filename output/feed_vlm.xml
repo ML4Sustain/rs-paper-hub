@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-14T03:22:01Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 13 entries</subtitle>
+  <updated>2026-08-17T00:29:56Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 10 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -311,91 +311,6 @@
     <summary type="text">Accurate vector mapping of buildings and walls is critical for geospatial applications but remains a labor-intensive process. While recent deep learning methods have improved automatic extraction, in order to meet cartographic standards they always require a human to perform quality control and fix complex cases in the extraction. We present Click2Poly, a human-in-the-loop AI assistant designed to speed up this manual step. Extending the Florence-2 Vision Language Model (VLM), Click2Poly responds to user clicks by editing the building or wall vector layer directly. Implemented as a QGIS plugin, Click2Poly speeds up the manual editing of building and wall vector layers in a real-world production environment.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Machine Learning" />
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Contrastive Mask Fidelity: Reference-Free Auditing of Ground-Truth Masks in Remote Sensing Semantic Segmentation</title>
-    <link href="http://arxiv.org/abs/2608.09101v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.09101v1</id>
-    <published>2026-08-10T00:00:00Z</published>
-    <updated>2026-08-10T00:00:00Z</updated>
-    <author>
-      <name>Shuaishuai Cao</name>
-    </author>
-    <author>
-      <name>Shuwei Peng</name>
-    </author>
-    <author>
-      <name>Meng Tang</name>
-    </author>
-    <author>
-      <name>Min Huang</name>
-    </author>
-    <author>
-      <name>Youjin Wang</name>
-    </author>
-    <author>
-      <name>Jie Chen</name>
-    </author>
-    <author>
-      <name>Jing Ouyang</name>
-    </author>
-    <author>
-      <name>Zhiwei Zhai</name>
-    </author>
-    <summary type="text">Semantic segmentation models are trained and evaluated against human-drawn masks, yet remote-sensing annotations are often coarse, incomplete, or misaligned; high overlap scores may then reflect agreement with imperfect labels rather than faithfulness to the image, creating an evaluation paradox. We introduce Contrastive Mask Fidelity (CMF), a training-free, reference-free metric that scores competing class masks directly against image evidence. CMF composites keep and erase counterfactual views of each mask and asks a frozen vision-language judge whether class evidence is concentrated inside the mask and absent outside. We validate CMF on controlled mask corruptions, then audit 10,731 image-class pairs across ten remote-sensing benchmarks using candidate masks from Seg-Probe, a training-free open-vocabulary probe built on SegEarth-OV3 that outperforms prior baselines on nine of ten datasets. The audit reveals systematic, class-dependent annotation distortion: man-made classes such as buildings, roads, and cars favor the candidate mask on 62-85% of pairs, whereas ambiguous land cover more often favors human annotations. On a blinded three-annotator consensus, CMF matches expert judgment on 81% of pairs, exceeding keep-only scoring, model confidence, and a trained label-quality baseline. Finally, conservative class-wise arbitration yields supervision that improves cross-domain transfer over raw annotations and matched replacement controls, positioning CMF as a scalable tool for auditing ground truth rather than presuming it infallible.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>AeroReformer2: Spoken-Query Referring Segmentation for Aerial Images</title>
-    <link href="http://arxiv.org/abs/2608.08874v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.08874v2</id>
-    <published>2026-08-09T00:00:00Z</published>
-    <updated>2026-08-09T00:00:00Z</updated>
-    <author>
-      <name>Rui Li</name>
-    </author>
-    <author>
-      <name>Chenxi Duan</name>
-    </author>
-    <author>
-      <name>Haoyang Yang</name>
-    </author>
-    <summary type="text">Spoken language offers a natural, hands-free interface for specifying an arbitrary target in dense remote-sensing imagery, yet existing referring remote-sensing image segmentation benchmarks accept only written expressions. To bridge this gap, we introduce \dataset, a spoken-query benchmark derived from RISBench that adds accent- and voice-diverse speech while preserving the original image, mask, and data splits. Its hard evaluation sets combine rotor, wind, and mixed interference with three signal-to-noise levels. We also propose \model, an efficient bilateral network that combines a boundary-preserving visual path with token-preserving speech encoding, kernel linear cross-modal attention, and a resolution refinement head. The design conditions visual features at two scales without materializing a dense speech--visual affinity matrix, then restores fine boundaries using high-resolution visual features. On the clean test split, \model with Swin-Base achieves 62.09\% mean intersection over union (mIoU) and 68.22\% overall intersection over union (oIoU), outperforming the strongest audio-adapted remote-sensing baseline by 5.38 and 2.08 percentage points, respectively. It retains the best hard-set mIoU at 54.09\%. To the best of our knowledge, this is the first benchmark and model study of full-sentence spoken-query referring segmentation for remote-sensing imagery. The code will be made publicly available.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>AdaDINO: Pair-Aware In-Backbone Adaptation of Frozen DINO for Efficient Remote Sensing Change Detection</title>
-    <link href="http://arxiv.org/abs/2608.07982v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.07982v1</id>
-    <published>2026-08-08T00:00:00Z</published>
-    <updated>2026-08-08T00:00:00Z</updated>
-    <author>
-      <name>Xu Zhang</name>
-    </author>
-    <author>
-      <name>Xinqing Li</name>
-    </author>
-    <author>
-      <name>Jianpeng Xie</name>
-    </author>
-    <author>
-      <name>Zeshuai Zhu</name>
-    </author>
-    <author>
-      <name>Xin He</name>
-    </author>
-    <author>
-      <name>Yun Liu</name>
-    </author>
-    <summary type="text">Vision foundation models (VFMs) such as DINO are pretrained for single-image representation, whereas remote sensing change detection requires reasoning over a bi-temporal pair. Existing VFM-based methods usually encode the two images independently and compare them only afterward, leaving the VFM backbone unaware of cross-temporal relations. To bridge this mismatch, we present AdaDINO, a pair-aware in-backbone adaptation framework that equips a frozen DINO encoder with bi-temporal interaction for efficient change detection. Its core component, Change-aware Gated Local Adaptation (CGLA), couples the two streams after selected frozen blocks and injects a shared temporal residual into them with opposite signs, enhancing genuine change responses while preserving the pair midpoint. Batch-Shared Chunk Selection (BSCS) further reduces feed-forward network (FFN) computation by retaining a batch-shared subset of channel chunks that can be executed as a compact dense FFN. A CGLA-Prior-Guided Refinement (CPGR) decoder reuses encoder-side change responses for coarse-to-fine prediction. Experiments on four remote sensing change detection benchmarks show that AdaDINO achieves competitive or superior performance against VFM-based baselines, with the largest gain on the category-agnostic SYSU-CD dataset. With 62.5% of the FFN hidden width removed, AdaDINO still achieves an F1 score of 85.29% on SYSU-CD while delivering a 1.41$\times$ throughput speedup. The code will be released.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>
