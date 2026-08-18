@@ -20575,5 +20575,43 @@
     "_added_date": "2026-08-17",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "cs.DC",
+    "Subtype": "",
+    "Date": "2026-08-17",
+    "Month": 8,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "HAPS through the Lens of Satellites and UAVs: A Function-Level Perspective on the Emerging High Altitude Economy",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2608.16828v1",
+    "Abstract": "High-Altitude Platform Stations (HAPS) operate in the lower stratosphere at 17-27 km, between satellites and Unmanned Aerial Vehicles (UAVs). For this third tier the architectural case has long outpaced the flight evidence, but a wave of 2020-2026 stratospheric flights now permits a direct comparison. We evaluate HAPS function by function across sensing, navigation, and communication, taking operational satellite and UAV implementations as the reference. We define a strict evidence rule, counting a function as flight-validated only on operationally relevant stratospheric data return at or above 18 km, and apply it to nineteen functions. The resulting count is lower than the literature implies: five functions have credibly crossed over (optical Earth observation, hyperspectral imaging, methane imaging, RF/SIGINT, and broadband relay), yet these rest on only four flight programs, with at most one carrying peer-reviewed flight evidence. One function is ground-demonstrated, two are partially demonstrated, three are conceptual, and eight remain unflown. Four engineering domains (size, weight, and power; station-keeping; aperture; and viewing geometry), bounded by an operational envelope of platform stability and payload operability, explain the pattern. The governing advantage is persistence at close range, not altitude. Eight use cases, supported by same-sensor forward simulations, translate the pattern into missions, led by resilient public-safety mission-critical services (MCX). On this evidence, HAPS fits as a persistent regional tier in a multi-tier non-terrestrial network and as the seed of an emerging High Altitude Economy. Carrier-grade service, station-keeping precision, and regulation remain the principal open problems, and we pose the persistent-tier reading as a testable hypothesis with dated 2030 markers.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{ahmad2026haps,\n  title={HAPS through the Lens of Satellites and UAVs: A Function-Level Perspective on the Emerging High Altitude Economy},\n  author={Mukhtiar Ahmad and Mohamed-Slim Alouini},\n  journal={arXiv preprint arXiv:2608.16828v1},\n  year={2026},\n  url={http://arxiv.org/abs/2608.16828v1}\n}",
+    "Authors": "Mukhtiar Ahmad, Mohamed-Slim Alouini",
+    "_added_date": "2026-08-18",
+    "Category": "Method",
+    "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-08-15",
+    "Month": 8,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Registration-Free Hyperspectral Reconstruction from RGB via a Permutation-Invariant Gram-Matrix Principle",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2608.14994v1",
+    "Abstract": "Reconstructing a spatially and spectrally high-resolution hyperspectral image (HR-HSI) from a low-resolution HSI (LR-HSI) and a high-resolution RGB image (HR-RGB) usually assumes precise registration and a known camera response function (CRF). Both assumptions are difficult to satisfy with different sensors. We remove both through a permutation-invariant supervision principle: the Gram matrix of an unmixed abundance map depends on shared material composition but not on pixel ordering. Matching abundance Gram matrices therefore allows RGB-to-HSI mapping to be learned without spatial correspondence and without a predefined CRF. Under a full random permutation of HR-RGB pixels, a state-of-the-art fusion method collapses, whereas our reconstruction is unchanged after inverse reindexing for evaluation. Building on this principle, a residual spectral super-resolution function maps HR-RGB directly to HR-HSI without registration, known CRF, or paired supervision. Across indoor, natural-scene, and remote-sensing benchmarks, the method achieves accuracy comparable to approaches that require these assumptions while remaining robust when they are violated. Loss ablations further show that reconstruction accuracy is largely insensitive to the specific discrepancy used to match the Gram matrices, indicating that performance arises primarily from the permutation-invariant principle rather than loss tuning.",
+    "code": "",
+    "Publication": "11 pages, 10 figures",
+    "BibTex": "@article{zhao2026registrationfree,\n  title={Registration-Free Hyperspectral Reconstruction from RGB via a Permutation-Invariant Gram-Matrix Principle},\n  author={Jiangsan Zhao and Masayuki Hirafuji and Seishi Ninomiya and Jakob Geipel and Wei Guo},\n  journal={arXiv preprint arXiv:2608.14994v1},\n  year={2026},\n  url={http://arxiv.org/abs/2608.14994v1}\n}",
+    "Authors": "Jiangsan Zhao, Masayuki Hirafuji, Seishi Ninomiya, Jakob Geipel, Wei Guo",
+    "_added_date": "2026-08-18",
+    "Category": "Method",
+    "_tasks": "SR"
   }
 ]
