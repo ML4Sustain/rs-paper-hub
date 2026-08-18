@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-17T02:17:07Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 12 entries</subtitle>
+  <updated>2026-08-18T00:29:39Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 8 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -243,127 +243,6 @@
 &lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Submitted to IEEE Transactions on Geoscience and Remote Sensing (TGRS) for review&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Evaluating Semantic and Spatial Guidance for Foundation Model Segmentation of Small-Scale PV in Remote Sensing Imagery</title>
-    <link href="http://arxiv.org/abs/2608.10801v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.10801v1</id>
-    <published>2026-08-11T00:00:00Z</published>
-    <updated>2026-08-11T00:00:00Z</updated>
-    <author>
-      <name>Roni Blushtein-Livnon</name>
-    </author>
-    <author>
-      <name>Tal Svoray</name>
-    </author>
-    <author>
-      <name>Osher Rafaeli</name>
-    </author>
-    <author>
-      <name>Michael Dorman</name>
-    </author>
-    <author>
-      <name>Itay Fischhendler</name>
-    </author>
-    <author>
-      <name>Havazelet Yahel</name>
-    </author>
-    <author>
-      <name>Emir Galilee</name>
-    </author>
-    <summary type="text">Spatio-temporal PV data are essential for understanding adoption processes in off-grid regions, yet such data remain largely unavailable. Automated segmentation of remote sensing (RS) imagery offers a promising solution; yet, residential PV systems remain challenging targets because of their small size and sparse distribution, resulting in severe target-background imbalance. Vision-language foundation models (FMs) provide a data-efficient paradigm through prompt-based semantic and spatial guidance, but the relative contribution of different prompt types remains unclear. We systematically evaluate SAM3 for small-scale PV segmentation in RS imagery by comparing textual, geometric, and hybrid prompting, under varying supervision levels, training strategies, spatial resolutions, and imaging conditions. Multi-temporal aerial imagery from a large off-grid rural region serves as a study site, with findings validated across three additional datasets. Prompting strategy emerged as the dominant factor governing model behavior. Textual prompting consistently produced the lowest performance and showed the greatest sensitivity to supervision and imaging conditions. In contrast, spatial guidance substantially improved both segmentation accuracy and robustness. Hybrid prompting achieved the highest accuracy and stability, indicating that semantic and spatial guidance provide complementary information. Most performance gains were achieved with only a few hundred annotated samples, demonstrating strong data efficiency. Transfer learning had limited overall impact, with only modest improvements observed for textual prompting under limited supervision. Overall, our findings establish prompting strategy as a key determinant of SAM3 adaptation, robustness, and generalization, highlighting the potential of promptable FMs for scalable PV mapping in data-constrained off-grid regions.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>GeoForge: Non-Parametric Self-Evolving Agents for Earth-Observation Reasoning</title>
-    <link href="http://arxiv.org/abs/2608.10494v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.10494v1</id>
-    <published>2026-08-11T00:00:00Z</published>
-    <updated>2026-08-11T00:00:00Z</updated>
-    <author>
-      <name>Xin Xiao</name>
-    </author>
-    <author>
-      <name>Jiang Zhong</name>
-    </author>
-    <author>
-      <name>Junnan Zhu</name>
-    </author>
-    <author>
-      <name>Yingchao Feng</name>
-    </author>
-    <author>
-      <name>Peijin Wang</name>
-    </author>
-    <author>
-      <name>Yidan Zhang</name>
-    </author>
-    <author>
-      <name>Kaiwen Wei</name>
-    </author>
-    <summary type="text">Earth observation (EO) agents construct scientifically valid tool workflows and ground their conclusions in current geospatial evidence. This is challenging because EO workflows are constrained by sensing semantics, product dependencies, spatial and temporal compatibility, and parameter requirements. Existing agents often search a broad operation space for each query, while recent self-evolving systems do not fully organize heterogeneous EO trajectories into reusable knowledge across different decision levels. To solve this problem, we present GeoForge, a training-free, self-evolving framework that transforms completed trajectories into a structured nonparametric execution state. GeoForge constrains the operation space according to the sensing context, then retrieves a task-conditioned prior from three complementary memories. Workflow Graph Memory captures global operation order, Action-Level Experiences provide local corrections, and the Adapted Skill Standard Operating Procedure preserves procedural and data constraints. The retrieved prior guides tool execution, while current observations remain the basis of the final answer. After each task, a safety-gated distillation process converts grounded trajectories into reusable execution knowledge for future retrieval. This execution, distillation, and reuse loop improves planning without updating the backbone LLM. Experiments on multiple geospatial benchmarks demonstrate that GeoForge consistently improves both task accuracy and tool-use trajectory quality across diverse LLM backbones, while substantially reducing tool-planning and reasoning errors for most LLMs.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="cs.MA" />
-  </entry>
-  <entry>
-    <title>GeoSeg-OV: Bridging Geospatial Gaps with Structural Guidance for Open-Vocabulary Remote Sensing Segmentation</title>
-    <link href="http://arxiv.org/abs/2608.10426v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.10426v1</id>
-    <published>2026-08-11T00:00:00Z</published>
-    <updated>2026-08-11T00:00:00Z</updated>
-    <author>
-      <name>Ruizhong Liu</name>
-    </author>
-    <author>
-      <name>Tingzhang Luo</name>
-    </author>
-    <author>
-      <name>Zaiyan Zhang</name>
-    </author>
-    <author>
-      <name>Jundong Chen</name>
-    </author>
-    <author>
-      <name>Hongruixuan Chen</name>
-    </author>
-    <author>
-      <name>Shaoguang Huang</name>
-    </author>
-    <author>
-      <name>Hongyan Zhang</name>
-    </author>
-    <summary type="text">Open-vocabulary remote sensing segmentation has recently emerged as a promising paradigm that enables pixel-level recognition of arbitrary categories specified by natural language, including classes unseen during training. However, geospatial domain shifts caused by heterogeneous regions, spatial resolutions, and acquisition platforms weaken visual-text matching and limit cross-dataset generalization. Recent attempts have begun to incorporate auxiliary vision foundation models (VFMs), typically coupling their features with text embeddings as additional matching evidence. However, this strategy may introduce inconsistent matching signals while leaving the structure-sensitive representations of VFMs insufficiently exploited. We therefore propose GeoSeg-OV, which decouples auxiliary VFM features from visual-text matching and repurposes them as structural guidance for cost aggregation and decoding. GeoSeg-OV constructs an orientation-robust cost volume from multi-rotation CLIP features, while a frozen VFM extracts multi-scale structure-sensitive features in parallel. We propose Structure-Guided Aggregation (SGA), which integrates cost tokens and CLIP semantic guidance with VFM-derived pairwise structural biases for coherent spatial propagation, followed by text-conditioned class-wise reasoning. We further introduce Cost-Aware Decoding (CAD) to adaptively refine and fuse multi-scale semantic and structural guidance based on the current decoder context. On the global High-Resolution Land Cover (HRLC) benchmark spanning seven datasets across six continents, GeoSeg-OV outperforms the state-of-the-art by +2.5 and +2.7 average mIoU under two training settings. A large-scale zero-shot case study further demonstrates its generalization across geographic domains and category systems without target-domain annotations or retraining.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Code and benchmark: https://github.com/zzaiyan/GeoSeg-OV&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Click2Poly: A VLM for vector mapping buildings and walls</title>
-    <link href="http://arxiv.org/abs/2608.11424v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.11424v1</id>
-    <published>2026-08-11T00:00:00Z</published>
-    <updated>2026-08-11T00:00:00Z</updated>
-    <author>
-      <name>Nicolas Girard</name>
-    </author>
-    <author>
-      <name>Jawher Ben Abdallah</name>
-    </author>
-    <author>
-      <name>Arno Gobbin</name>
-    </author>
-    <author>
-      <name>Liuyun Duan</name>
-    </author>
-    <author>
-      <name>Sacha Lepretre</name>
-    </author>
-    <summary type="text">Accurate vector mapping of buildings and walls is critical for geospatial applications but remains a labor-intensive process. While recent deep learning methods have improved automatic extraction, in order to meet cartographic standards they always require a human to perform quality control and fix complex cases in the extraction. We present Click2Poly, a human-in-the-loop AI assistant designed to speed up this manual step. Extending the Florence-2 Vision Language Model (VLM), Click2Poly responds to user clicks by editing the building or wall vector layer directly. Implemented as a QGIS plugin, Click2Poly speeds up the manual editing of building and wall vector layers in a real-world production environment.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
     <category term="Computer Vision" />
   </entry>
 </feed>

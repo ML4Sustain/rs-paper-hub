@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_sar.xml</id>
   <link href="https://rspaper.top/output/feed_sar.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-17T02:17:07Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
+  <updated>2026-08-18T00:29:39Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 1 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -27,44 +27,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;VG&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>SAR2Agri: Learning SAR Intensity Representations for Agricultural Monitoring</title>
-    <link href="http://arxiv.org/abs/2608.11142v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.11142v1</id>
-    <published>2026-08-11T00:00:00Z</published>
-    <updated>2026-08-11T00:00:00Z</updated>
-    <author>
-      <name>Moti Rattan Gupta</name>
-    </author>
-    <author>
-      <name>Anupam Sobti</name>
-    </author>
-    <summary type="text">Agricultural monitoring faces unique challenges, arising from the landscape's complex temporal, phenological, and climate dynamics, yet monitoring them is critical for ensuring food security. Synthetic Aperture Radar (SAR) satellites offer all-weather day-night imaging capability supporting key monitoring tasks including crop type mapping, yield prediction and phenological event detection. Existing multimodal remote sensing foundation models including TerraMind and CopernicusFM learn SAR representations by grounding them in optical imagery using joint encoding and contrastive learning techniques, while SAR-specific foundation models such as SAR-JEPA, SARMAE, and SAR-W-MixMAE primarily focus on target detection, flood mapping, and land cover classification applications. Recent work has introduced phenology inspired temporal pretext tasks with optical imagery which has shown strong performance on agricultural downstream tasks. In this work, we propose the first self-supervised learning pipeline focused on using only SAR intensity imagery for agricultural applications. We improve the temporal pretext tasks through masking and curriculum learning to enhance the pretraining pipeline's ability to capture phenological features from SAR. On the SICKLE benchmark, our final model achieves 84.9% IoU on crop type mapping, outperforming optical baselines (by 15.3 pt) and existing SAR baselines (by 2.2 pt), demonstrating the effectiveness of our proposed pipeline for pretraining SAR intensity encoders for agricultural monitoring.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;OD;VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Hardware-Aware Deployment of Joint SAR Compression and Despeckling on FPGA</title>
-    <link href="http://arxiv.org/abs/2608.11271v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.11271v1</id>
-    <published>2026-08-11T00:00:00Z</published>
-    <updated>2026-08-11T00:00:00Z</updated>
-    <author>
-      <name>Cédric Léonard</name>
-    </author>
-    <author>
-      <name>Francescopaolo Sica</name>
-    </author>
-    <author>
-      <name>Martin Schulz</name>
-    </author>
-    <summary type="text">Next-generation Synthetic Aperture Radar (SAR) missions will generate data far faster than they can downlink, making onboard data reduction essential for near-real-time Earth observation. Learned Image Compression (LIC) offers better rate-distortion performance than handcrafted codecs used operationally today, and recent work shows that simultaneously despeckling and compressing SAR imagery enables better representation capacity while unlocking higher compression rates. These methods, however, have yet to be confronted with the strict power, compute, and operational constraints of spaceborne systems. In this work, we bridge this gap by deploying a joint SAR Despeckling and Data Compression (DDC) framework on an embedded ZCU102 FPGA-based platform, introducing model adaptations that respect the accelerator's fixed-point arithmetic and limited set of supported operations. We evaluate four model topologies across precision levels and across CPU, GPU, and FPGA platforms, revealing several findings with direct design implications. We find that replacing conventional GDN activation functions with plain ReLU improves quality on SAR, suggesting that design principles established for compression of natural images do not necessarily transfer to SAR imagery. In addition, we demonstrate that residual blocks offer little representational benefit for ten times the compute, and show that the FPGA is the most energy-efficient of the platforms tested. Together, these results set a functioning edge deployment workflow and an evidence-based starting point for onboard SAR compression. The code is available at https://github.com/CedricLeon/SAR_DDC_FPGA.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/CedricLeon/SAR_DDC_FPGA"&gt;https://github.com/CedricLeon/SAR_DDC_FPGA&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 11 pages, 8 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Image and Video Processing" />
-    <category term="Machine Learning" />
   </entry>
 </feed>
