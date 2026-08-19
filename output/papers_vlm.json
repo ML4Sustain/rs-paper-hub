@@ -26370,5 +26370,24 @@
     "_added_date": "2026-08-18",
     "Category": "Method",
     "_tasks": "SEG"
+  },
+  {
+    "Type": "Machine Learning",
+    "Subtype": "cs.SI",
+    "Date": "2026-08-18",
+    "Month": 8,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2608.17848v1",
+    "Abstract": "Geospatial Foundation Models (GFMs) are emerging as a powerful paradigm for learning semantically rich and geographically consistent visual and physical representations. However, their reliance on Earth-observation (EO) data leaves information about human activity largely underrepresented. Human mobility data reveals the functional and relational structure between regions that is missing from EO data, but is often limited only to the city where it is observed, making it challenging to use for transferable urban representation learning. We introduce MoRAX, a lightweight framework for augmenting geospatial embeddings with functional structure derived from human mobility. MoRAX preserves the coverage and consistency of a GFM while providing information about the functional connectivity among urban regions, permitting zero-shot deployment in unseen cities with or without available mobility data. Across four target cities spanning two countries, the MoRAX teacher model, which observes mobility, consistently outperforms GFMs and strong urban representation baselines in eight socioeconomic and environmental prediction tasks. Meanwhile, the student model, which never takes mobility data as input, approaches the teacher in performance on most tasks. Transfer results across countries further demonstrate that modulation conditioned on mobility flows provides a general mechanism for grounding geospatial foundations in the human dimension of cities.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{wen2026morax,\n  title={MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models},\n  author={Ya Wen and Jixuan Cai and Yulun Zhou and Alec Kirkley},\n  journal={arXiv preprint arXiv:2608.17848v1},\n  year={2026},\n  url={http://arxiv.org/abs/2608.17848v1}\n}",
+    "Authors": "Ya Wen, Jixuan Cai, Yulun Zhou, Alec Kirkley",
+    "_added_date": "2026-08-19",
+    "Category": "Method",
+    "_tasks": "VG"
   }
 ]
