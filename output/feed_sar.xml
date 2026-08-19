@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_sar.xml</id>
   <link href="https://rspaper.top/output/feed_sar.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-18T02:12:40Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
+  <updated>2026-08-19T00:29:10Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 1 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -34,24 +34,6 @@
     <summary type="text">Optical imagery provides rich appearance cues, whereas synthetic aperture radar (SAR) offers observations that are less sensitive to illumination and weather, making optical--SAR fusion attractive for remote-sensing object detection. However, the presence of multiple modalities does not guarantee beneficial fusion: imperfect spatial, temporal, and semantic correspondence can make an otherwise intact stream conditionally harmful and induce negative cross-modal transfer. We handle this issue through a model-specific task-utility perspective and learn task-conditioned contribution routing using detection supervision alone. The proposed fusion-boundary-aligned routing regulates each modality's contribution before the first learned cross-modal feature-value mixing operation. For architectures with frequent shallow interaction, a Feature Router performs cross-conditioned, group-addressable modulation near the input; for dual-backbone architectures, a Dual-Statistic Semantic Router predicts stream-level contribution weights from modality-specific average and maximum statistics before late semantic fusion. The routers require no explicit utility supervision, quality labels, reconstruction, or distillation. Experiments on M4-SAR and SpaceNet6-OTD cover nominal full inputs, controlled correspondence shifts, missing modalities, and four nonzero modality-corruption scenarios. Across the reported clean-training controls, routing improves full-input $\text{mAP}_{50}$ by 0.5--5.9 points. Relative to the corresponding modality-dropout baselines, it raises missing-modality $\text{mAP}_{50}$ by 7.6--41.6 points and reduces the negative-transfer rate by up to 12.7 percentage points. Spearman correlations between the learned routing weights and model-specific leave-one-modality-out utility range from 0.45 to 0.66, supporting the task-utility interpretation of the routing coefficients.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Warping Earth Observations for better ice labeling in the Marginal Marginal Ice Zone</title>
-    <link href="http://arxiv.org/abs/2608.11883v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.11883v1</id>
-    <published>2026-08-12T00:00:00Z</published>
-    <updated>2026-08-12T00:00:00Z</updated>
-    <author>
-      <name>Tom Kelly</name>
-    </author>
-    <author>
-      <name>Martin S. J. Rogers</name>
-    </author>
-    <summary type="text">Multimodal satellite imagery provides complementary information for Earth Observation, but accurately combining heterogeneous sensors remains challenging in dynamic environments. Fast-changing regions, such as the Antarctic marginal ice zone, cannot fully exploit multimodal information from different satellite sensors because surface features move between image acquisitions. This spatial and temporal mismatch challenges effective perceptual grounding, violating the assumption of pixel-level correspondence that underpins most multimodal reasoning and downstream classification pipelines. Antarctic sea ice provides a challenging benchmark due to the rapid, heterogeneous drift of individual ice floes and the differing responses of sea ice to radar, visible and thermal sensing modalities. Accurate, dense supervision of sea ice remains scarce because generating pixel-wise labels requires time-consuming expert interpretation of noisy data, leading to historical reliance on coarse-resolution maritime ice charts for model training. This paper presents a novel architecture based on mutual information warping to align multi-satellite (Sentinel-1 and MODIS platforms) multimodal (visible, thermal, radar) satellite scenes. To demonstrate the approach, we introduce a sparse expert-labeled dataset of 2,088 pixel-wise annotations (7,046 expert point classifications) located at the ice-water margin interface across 43 scenes. Our results demonstrate that spatially grounding and aligning modalities prior to segmentation improves classification accuracy, and enables accurate, dense sea ice segmentation from sparse point-wise supervision.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ECCV Workshop paper; BEAM 2&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;VG&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>
