@@ -7826,5 +7826,24 @@
     "_added_date": "2026-08-18",
     "Category": "Method",
     "_tasks": "OD"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-08-19",
+    "Month": 8,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "SED-FOD: Scattering-Aware Expert Decomposition for Few-Shot Cross-Sensor SAR Object Detection",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2608.18755v1",
+    "Abstract": "Synthetic aperture radar (SAR) object detection is an important part of remote sensing interpretation. However, because of variations in frequency band, resolution, background clutter, and target scattering responses, the performance of existing detectors often degrades when training and testing data are acquired from different SAR domains. Although domain adaptation methods offer a promising paradigm for solving this problem, most of them mainly pursue domain-invariant feature alignment and suppress sensor-dependent scattering characteristics that are useful for object detection. This problem becomes more challenging in few-shot scenarios, where only a few fully annotated target-domain SAR images are available. To address this issue, we propose a scattering-aware shared-specific feature decomposition framework for few-shot SAR domain adaptation object detection. We decompose detection features into a shared path and several soft-gated scattering-specific expert paths. The shared path learns transferable object structural information and is used for asymmetric domain alignment, while the scattering-specific experts adaptively compensate heterogeneous SAR responses. In addition, routing-domain auxiliary loss is introduced to encourage specific experts to capture sensor-dependent routing preferences, and an expert balancing loss is used to prevent routing collapse. Extensive experiments on four bidirectional heterogeneous SAR detection tasks between FARAD-X/FARAD-Ka and MiniSAR under different few-shot settings have been conducted and experimental results demonstrate that the proposed method achieves superior performance in both forward and reverse adaptation directions.",
+    "code": "",
+    "Publication": "13 pages, 7 figures",
+    "BibTex": "@article{yang2026sedfod,\n  title={SED-FOD: Scattering-Aware Expert Decomposition for Few-Shot Cross-Sensor SAR Object Detection},\n  author={Shu Yang and Zhen Chen and Zhiyu Jiang and Yanlei Li and Xingdong Liang},\n  journal={arXiv preprint arXiv:2608.18755v1},\n  year={2026},\n  url={http://arxiv.org/abs/2608.18755v1}\n}",
+    "Authors": "Shu Yang, Zhen Chen, Zhiyu Jiang, Yanlei Li, Xingdong Liang",
+    "_added_date": "2026-08-20",
+    "Category": "Method",
+    "_tasks": "OD"
   }
 ]

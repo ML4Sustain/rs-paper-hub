@@ -4,12 +4,108 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-20T00:30:01Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 25 entries</subtitle>
+  <updated>2026-08-20T02:14:28Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 29 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Network-Scale Road Disruption from Liquefaction in Cascadia Subduction Zone Earthquakes</title>
+    <link href="http://arxiv.org/abs/2608.19143v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.19143v1</id>
+    <published>2026-08-19T00:00:00Z</published>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <author>
+      <name>M. D. Sanger</name>
+    </author>
+    <author>
+      <name>O. Blaze-Smith</name>
+    </author>
+    <author>
+      <name>B. W. Maurer</name>
+    </author>
+    <author>
+      <name>L. Wotherspoon</name>
+    </author>
+    <author>
+      <name>M. O. Eberhard</name>
+    </author>
+    <author>
+      <name>J. W. Berman</name>
+    </author>
+    <summary type="text">This paper presents a mechanics-informed, data-driven framework for modeling liquefaction-induced disruption of roadway networks following a magnitude-9 earthquake on the Cascadia Subduction Zone (CSZ). Liquefaction hazard is predicted using a geospatial liquefaction model trained on more than 37,000 cone penetration tests (CPTs) and conditioned on spatial data describing geomorphology, hydrology, climate, and surficial geology. Ground motions are derived from physics-based ensembles of CSZ rupture scenarios. Segment-level probabilities of closure and service degradation are estimated using empirically derived fragility relationships and propagated through the National Highway System using spatially correlated Monte Carlo simulation. Results indicate strong concentration of impacts in coastal lowlands, estuaries, and river valleys, with pronounced exposure along U.S. Route 101. Focused analysis in Pacific and Grays Harbor Counties, Washington, shows elevated probability of healthcare isolation. Compared with prior statewide assessments based on geologic screening, predicted bridge closures due solely to liquefaction are an order of magnitude lower, reflecting improved representation of subsurface conditions and damage mechanisms. Despite uncertainties, the framework provides a defensible tool for transportation resilience planning and asset prioritization in Cascadia.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.CE" />
+  </entry>
+  <entry>
+    <title>U.S. National Liquefaction Hazard Maps and their Implications for Engineering Practice and Policy</title>
+    <link href="http://arxiv.org/abs/2608.19137v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.19137v1</id>
+    <published>2026-08-19T00:00:00Z</published>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <author>
+      <name>Morgan D. Sanger</name>
+    </author>
+    <author>
+      <name>Victoria P. Zdanovski</name>
+    </author>
+    <author>
+      <name>Brett W. Maurer</name>
+    </author>
+    <summary type="text">This study introduces U.S. national liquefaction hazard maps (NLHMs) developed using a mechanics-informed, geospatial machine learning model which surrogates state-of-practice liquefaction models, exploits a large library of geospatial predictors to infer subsurface conditions, and is anchored to measured conditions with in-situ test data. By convolving this geospatial liquefaction model with the 2023 U.S. national seismic hazard model, liquefaction hazard is mapped across the contiguous U.S. at ~90 m resolution within both conditional (2,475-year design event) and unconditional (return period of ground failure) formulations using high-performance computing for the high-resolution magnitude-disaggregation. The resulting NLHMs provide insights for land-use policy, preliminary site assessment, regional-scale earthquake simulation and response planning, and screening tools for regulatory enforcement, among other applications. Beyond quantifying and visualizing liquefaction hazard, the NLHMs are used herein to examine three questions of engineering practice and policy across a continuous spatial domain: (i) the effect of selecting modal versus mean magnitude in conditional analyses; (ii) the differences between conditional and unconditional hazard formulations; and (iii) the extent to which liquefaction hazard compounds with socioeconomic vulnerability. Results elucidate where and how the choice of magnitude alters computed hazards; that unconditional maps reveal important spatial deviations suppressed by single-scenario maps, which are convenient and widely used in current building codes, but less than completely rational; and that modest but statistically significant socioeconomic gradients in liquefaction exposure exist.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.CE" />
+  </entry>
+  <entry>
+    <title>SED-FOD: Scattering-Aware Expert Decomposition for Few-Shot Cross-Sensor SAR Object Detection</title>
+    <link href="http://arxiv.org/abs/2608.18755v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.18755v1</id>
+    <published>2026-08-19T00:00:00Z</published>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <author>
+      <name>Shu Yang</name>
+    </author>
+    <author>
+      <name>Zhen Chen</name>
+    </author>
+    <author>
+      <name>Zhiyu Jiang</name>
+    </author>
+    <author>
+      <name>Yanlei Li</name>
+    </author>
+    <author>
+      <name>Xingdong Liang</name>
+    </author>
+    <summary type="text">Synthetic aperture radar (SAR) object detection is an important part of remote sensing interpretation. However, because of variations in frequency band, resolution, background clutter, and target scattering responses, the performance of existing detectors often degrades when training and testing data are acquired from different SAR domains. Although domain adaptation methods offer a promising paradigm for solving this problem, most of them mainly pursue domain-invariant feature alignment and suppress sensor-dependent scattering characteristics that are useful for object detection. This problem becomes more challenging in few-shot scenarios, where only a few fully annotated target-domain SAR images are available. To address this issue, we propose a scattering-aware shared-specific feature decomposition framework for few-shot SAR domain adaptation object detection. We decompose detection features into a shared path and several soft-gated scattering-specific expert paths. The shared path learns transferable object structural information and is used for asymmetric domain alignment, while the scattering-specific experts adaptively compensate heterogeneous SAR responses. In addition, routing-domain auxiliary loss is introduced to encourage specific experts to capture sensor-dependent routing preferences, and an expert balancing loss is used to prevent routing collapse. Extensive experiments on four bidirectional heterogeneous SAR detection tasks between FARAD-X/FARAD-Ka and MiniSAR under different few-shot settings have been conducted and experimental results demonstrate that the proposed method achieves superior performance in both forward and reverse adaptation directions.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Scalable Geospatial Machine Learning for Power-Line Asset Risk: Integrating Remote Sensing for Lightning and Vegetation Risk Modelling</title>
+    <link href="http://arxiv.org/abs/2608.18611v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.18611v1</id>
+    <published>2026-08-19T00:00:00Z</published>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <author>
+      <name>Artur Sokolovsky</name>
+    </author>
+    <author>
+      <name>Bhavik Merai</name>
+    </author>
+    <author>
+      <name>Moe Jafari</name>
+    </author>
+    <author>
+      <name>Muen Chen</name>
+    </author>
+    <summary type="text">Electric power networks are increasingly exposed to weather-sensitive failure mechanisms that require asset-level, spatially explicit risk modelling for effective intervention planning. This study contributes a modular, robust, and explainable probability-of-failure (PoF) modelling framework for utility asset management. The central contribution is an asset-level architecture that can be scaled to new environmental data sources and additional PoF types without reworking the underlying pipeline. This is particularly relevant for industry settings, where risk models must remain operationally maintainable while adapting to changing data availability, asset-management priorities, and climate-driven hazard conditions. We demonstrate the framework for vegetation-related and lightning-related failure modes using a harmonised geospatial machine-learning pipeline. The implementation integrates multi-source predictors, including topography (SRTM), vegetation condition (MODIS Normalised Difference Vegetation Index - NDVI), lightning climatology (LIS VHRMC), OpenStreetMap-derived proximity features, and utility operational records. The resulting architecture is computationally efficient, operationally extensible, and suitable for utility-scale deployment. It provides actionable asset-level risk stratification for inspection prioritisation, vegetation management, asset hardening, and resilience planning, supporting earlier intervention and more climate-resilient network operations.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
   <entry>
     <title>MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models</title>
     <link href="http://arxiv.org/abs/2608.17848v1" rel="alternate" type="text/html" />
