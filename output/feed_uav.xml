@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_uav.xml</id>
   <link href="https://rspaper.top/output/feed_uav.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-20T02:14:28Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
+  <updated>2026-08-21T00:32:58Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -54,64 +54,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13 pages, 5 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>FIRM: Fine-Grained Intra-Token Representation of Masks for Remote Sensing Reasoning Segmentation</title>
-    <link href="http://arxiv.org/abs/2608.13980v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.13980v1</id>
-    <published>2026-08-14T00:00:00Z</published>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <author>
-      <name>Weidong Tang</name>
-    </author>
-    <author>
-      <name>Kaiyu Li</name>
-    </author>
-    <author>
-      <name>Yikai Wang</name>
-    </author>
-    <author>
-      <name>Yanan Wu</name>
-    </author>
-    <author>
-      <name>Haotian Gan</name>
-    </author>
-    <author>
-      <name>Shihong Wang</name>
-    </author>
-    <author>
-      <name>Xiangyong Cao</name>
-    </author>
-    <summary type="text">Reasoning segmentation requires multimodal large language models (MLLMs) to translate implicit instructions into precise pixel-level masks. MLLMs encode an image as visual tokens, each of which merges a group of image patches. In remote sensing images, small targets, thin structures, and adjacent instances can occupy different parts of the same visual token. Assigning a single binary mask label to such a token loses its internal spatial structure, causing nearby targets to merge and object boundaries to become coarse. To bridge this representational gap, we introduce FIRM, a Fine-grained Intra-token Representation of Masks. For each visual token, FIRM predicts a mask code that specifies an $r\times r$ binary sub-cell pattern rather than a single foreground/background label. Given a target identified by the MLLM, the complete grid of mask codes is predicted in one mask pass. Fixed lookup converts the predicted codes into a discrete sub-cell mask, while marginalizing the code distribution yields a soft structural field. To further recover fine-grained boundaries within each sub-cell, we introduce a lightweight continuous renderer that refines this field using pre-merge visual features and image details. Across five reasoning and referring segmentation benchmarks on satellite and UAV images, FIRM achieves leading results, including $70.5/80.5$ gIoU/cIoU on LaSeRS and a $3.0$-point average gain on EarthReason. These results demonstrate the value of explicitly representing intra-token mask patterns for fine-grained MLLM segmentation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Looks Can be Deceiving: Annotator and Reviewer Performance Across Imagery Sources in Crowd-Sourced Aerial Damage Assessment</title>
-    <link href="http://arxiv.org/abs/2608.14942v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.14942v1</id>
-    <published>2026-08-14T00:00:00Z</published>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <author>
-      <name>Thomas Manzini</name>
-    </author>
-    <author>
-      <name>Priyankari Perali</name>
-    </author>
-    <author>
-      <name>Raisa Karnik</name>
-    </author>
-    <author>
-      <name>Stephen Johnson</name>
-    </author>
-    <author>
-      <name>Robin R. Murphy</name>
-    </author>
-    <summary type="text">This paper presents the first known empirical investigation of annotator and reviewer performance across multi-source remotely sensed imagery, evaluating human labeling across drone, crewed aviation, and satellite views. Because existing aerial imagery datasets rely predominantly on single-source imagery, there is no currently established state of practice for efficiently allocating human labor to curate large-scale, multi-source aerial datasets. This work addresses this limitation by analyzing annotator and reviewer performance within a post-disaster building damage assessment dataset of 9 disasters, where 20041 buildings in drone, 20695 buildings in crewed aviation, and 33392 buildings in satellite imagery were labeled. These labels, provided by 187 annotators, were then refined through two successive quality-control stages: a single-reviewer pass followed by a consensus-committee review. Our analysis reveals two findings that raise questions for standard crowd-sourcing practices. First, initial annotations were revised by the final committee at rates that rise steeply from higher- to lower-resolution sources (25.27% for crewed aviation and 36.95% for satellite), with the same ordering at every observed workflow stage. Second, a single individual review reduced but did not resolve this disagreement: after review, the committee still revised 6.85% of drone, 14.05% of crewed, and 20.86% of satellite labels. These observations suggest that, in workflows like this one, uniform review allocation leaves the most residual disagreement in lower-resolution imagery. Based on this evidence, and consistent with prior work on adaptive task assignment and budget-aware quality control, this paper offers three recommendations for multi-source dataset curation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13 pages, 6 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>

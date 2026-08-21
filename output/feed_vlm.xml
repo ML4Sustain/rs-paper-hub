@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-20T02:14:28Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 11 entries</subtitle>
+  <updated>2026-08-21T00:32:58Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 9 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -251,58 +251,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>FIRM: Fine-Grained Intra-Token Representation of Masks for Remote Sensing Reasoning Segmentation</title>
-    <link href="http://arxiv.org/abs/2608.13980v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.13980v1</id>
-    <published>2026-08-14T00:00:00Z</published>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <author>
-      <name>Weidong Tang</name>
-    </author>
-    <author>
-      <name>Kaiyu Li</name>
-    </author>
-    <author>
-      <name>Yikai Wang</name>
-    </author>
-    <author>
-      <name>Yanan Wu</name>
-    </author>
-    <author>
-      <name>Haotian Gan</name>
-    </author>
-    <author>
-      <name>Shihong Wang</name>
-    </author>
-    <author>
-      <name>Xiangyong Cao</name>
-    </author>
-    <summary type="text">Reasoning segmentation requires multimodal large language models (MLLMs) to translate implicit instructions into precise pixel-level masks. MLLMs encode an image as visual tokens, each of which merges a group of image patches. In remote sensing images, small targets, thin structures, and adjacent instances can occupy different parts of the same visual token. Assigning a single binary mask label to such a token loses its internal spatial structure, causing nearby targets to merge and object boundaries to become coarse. To bridge this representational gap, we introduce FIRM, a Fine-grained Intra-token Representation of Masks. For each visual token, FIRM predicts a mask code that specifies an $r\times r$ binary sub-cell pattern rather than a single foreground/background label. Given a target identified by the MLLM, the complete grid of mask codes is predicted in one mask pass. Fixed lookup converts the predicted codes into a discrete sub-cell mask, while marginalizing the code distribution yields a soft structural field. To further recover fine-grained boundaries within each sub-cell, we introduce a lightweight continuous renderer that refines this field using pre-merge visual features and image details. Across five reasoning and referring segmentation benchmarks on satellite and UAV images, FIRM achieves leading results, including $70.5/80.5$ gIoU/cIoU on LaSeRS and a $3.0$-point average gain on EarthReason. These results demonstrate the value of explicitly representing intra-token mask patterns for fine-grained MLLM segmentation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>From crown candidates to neighborhood screening: integrating optical GeoAI and spatial modeling for urban-canopy assessment in Davis, California</title>
-    <link href="http://arxiv.org/abs/2608.13856v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.13856v1</id>
-    <published>2026-08-14T00:00:00Z</published>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <author>
-      <name>Mohammadreza Narimani</name>
-    </author>
-    <author>
-      <name>Shreyan Mitra</name>
-    </author>
-    <author>
-      <name>Parastoo Farajpoor</name>
-    </author>
-    <summary type="text">Timely urban-canopy information is essential for linking remote sensing with heat, mobility, and neighborhood planning. We developed an optical GeoAI workflow for Davis, California, using 2022 National Agriculture Imagery Program imagery (0.6 m RGB+NIR). DeepForest generated crown candidates; an NDVI threshold, non-maximum suppression, and box-prompted Segment Anything Model (ViT-B) produced a crown-anchored canopy surface. Analyses used the 25.92 km2 Census TIGER municipal boundary and a 100 m grid. The workflow retained 11,741 candidate crowns and mapped 2.43 km2 of canopy (9.37% of the city). On the identical extent, 87.8% of mapped canopy pixels and 97.4% of candidate centers agreed with the 2022 USDA/CAL FIRE LiDAR-assisted canopy product; the optical surface represented 34.2% of the reference canopy area (IoU 0.288; Dice 0.448). Approximately 49% of candidates occurred within 15 m of a road. Canopy was inversely associated with Landsat land-surface temperature (Spearman rho = -0.293; partial rho = -0.370 controlling for built probability), and spatial-lag modeling confirmed clear neighborhood structure. Two transparent attention surfaces combined canopy need with thermal and contextual indicators. The framework provides a reproducible, updateable screening layer that complements structural canopy products and municipal inventories while retaining assumptions, data provenance, and spatial diagnostics for planning interpretation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 17 pages, 10 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Image and Video Processing" />
-    <category term="Computer Vision; stat.AP" />
   </entry>
 </feed>
