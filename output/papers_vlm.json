@@ -26389,5 +26389,24 @@
     "_added_date": "2026-08-19",
     "Category": "Method",
     "_tasks": "VG"
+  },
+  {
+    "Type": "Artificial Intelligence",
+    "Subtype": "cs.HC; Machine Learning",
+    "Date": "2026-08-21",
+    "Month": 8,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Neuro-Geospatial Modelling of EEG Affective States Using Literature-Informed Environmental Context",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2608.20807v1",
+    "Abstract": "Environmental exposures such as air pollution and greenness have been associated with affective and cognitive outcomes, but EEG and environmental datasets are rarely jointly georeferenced. We investigate whether literature-informed environmental priors can serve as an auxiliary geospatial modality for EEG-based affective-state classification when individual-level exposure data are unavailable. We combine 30-channel EEG from the EAV benchmark (42 participants, aged 20-30 years) with environmental representations derived from OpenAQ, Sentinel-2, Sentinel-5P, and OpenStreetMap data for Astana. A dual-tower architecture combines EEG-Conformer representations with a graph-based environmental encoder. Because the datasets are not co-registered, environmental context is treated as a literature-informed prior rather than measured exposure. Subject-level repeated splits, permutation and label-shuffling controls, dose-response reversal, and domain-shift experiments distinguish architecture-level gains from prior-dependent gains. The multimodal model achieves 76.2% accuracy versus 67.4% for EEG alone. Controls disrupting environmental-label structure retain part of this gain, indicating that the improvement is not attributable solely to environmental information. Replacing the Astana environmental distribution with an independently modeled Singapore distribution reduces accuracy to 72.8%. These findings demonstrate technical feasibility but do not establish an observed or causal exposure-affect association. The study provides a framework for future jointly collected mobile EEG-environment studies. Implementation: https://github.com/r11up/geo-cog",
+    "code": "https://github.com/r11up/geo-cog",
+    "Publication": "",
+    "BibTex": "@article{poudel2026neurogeospatial,\n  title={Neuro-Geospatial Modelling of EEG Affective States Using Literature-Informed Environmental Context},\n  author={Utsav Poudel and Jagannath Aryal and Subramaniyaswamy Vairavasundaram},\n  journal={arXiv preprint arXiv:2608.20807v1},\n  year={2026},\n  url={http://arxiv.org/abs/2608.20807v1}\n}",
+    "Authors": "Utsav Poudel, Jagannath Aryal, Subramaniyaswamy Vairavasundaram",
+    "_added_date": "2026-08-24",
+    "Category": "Method",
+    "_tasks": "CLS"
   }
 ]
