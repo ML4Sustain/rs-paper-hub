@@ -4,55 +4,10 @@
   <id>https://rspaper.top/output/feed_uav.xml</id>
   <link href="https://rspaper.top/output/feed_uav.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-21T02:21:19Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
+  <updated>2026-08-24T00:31:23Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 0 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
-  <entry>
-    <title>HAPS through the Lens of Satellites and UAVs: A Function-Level Perspective on the Emerging High Altitude Economy</title>
-    <link href="http://arxiv.org/abs/2608.16828v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.16828v1</id>
-    <published>2026-08-17T00:00:00Z</published>
-    <updated>2026-08-17T00:00:00Z</updated>
-    <author>
-      <name>Mukhtiar Ahmad</name>
-    </author>
-    <author>
-      <name>Mohamed-Slim Alouini</name>
-    </author>
-    <summary type="text">High-Altitude Platform Stations (HAPS) operate in the lower stratosphere at 17-27 km, between satellites and Unmanned Aerial Vehicles (UAVs). For this third tier the architectural case has long outpaced the flight evidence, but a wave of 2020-2026 stratospheric flights now permits a direct comparison. We evaluate HAPS function by function across sensing, navigation, and communication, taking operational satellite and UAV implementations as the reference. We define a strict evidence rule, counting a function as flight-validated only on operationally relevant stratospheric data return at or above 18 km, and apply it to nineteen functions. The resulting count is lower than the literature implies: five functions have credibly crossed over (optical Earth observation, hyperspectral imaging, methane imaging, RF/SIGINT, and broadband relay), yet these rest on only four flight programs, with at most one carrying peer-reviewed flight evidence. One function is ground-demonstrated, two are partially demonstrated, three are conceptual, and eight remain unflown. Four engineering domains (size, weight, and power; station-keeping; aperture; and viewing geometry), bounded by an operational envelope of platform stability and payload operability, explain the pattern. The governing advantage is persistence at close range, not altitude. Eight use cases, supported by same-sensor forward simulations, translate the pattern into missions, led by resilient public-safety mission-critical services (MCX). On this evidence, HAPS fits as a persistent regional tier in a multi-tier non-terrestrial network and as the seed of an emerging High Altitude Economy. Carrier-grade service, station-keeping precision, and regulation remain the principal open problems, and we pose the persistent-tier reading as a testable hypothesis with dated 2030 markers.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.DC" />
-  </entry>
-  <entry>
-    <title>CrevasseSeg: A Label-Efficient UAV Crevasse Segmentation Framework</title>
-    <link href="http://arxiv.org/abs/2608.15790v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.15790v2</id>
-    <published>2026-08-16T00:00:00Z</published>
-    <updated>2026-08-16T00:00:00Z</updated>
-    <author>
-      <name>Steven Wallace</name>
-    </author>
-    <author>
-      <name>William D Harcourt</name>
-    </author>
-    <author>
-      <name>Richard Hann</name>
-    </author>
-    <author>
-      <name>Aiden Durrant</name>
-    </author>
-    <author>
-      <name>Somayajulu Sripada</name>
-    </author>
-    <author>
-      <name>Georgios Leontidis</name>
-    </author>
-    <summary type="text">Crevasse mapping from uncrewed aerial vehicle (UAV) imagery matters for glaciological research and for field safety in glaciated terrain. Yet, pixel-level annotation of glacier surfaces is costly and requires domain experts. We introduce CrevasseSeg, a framework for binary segmentation over the terminus of Borebreen, Svalbard, comprising 1,938 unlabelled UAV orthomosaic tiles for self-supervised/unsupervised fine-tuning, 24 labelled tiles for validation and 176 labelled tiles for testing. Using CrevasseSeg, we benchmark five self-supervised objectives -- BYOL, a Jensen-Shannon Divergence (JSD) objective, Barlow-Twins, VICReg, and a combined BYOL-JSD objective -- across three architectures: O-Net, O-Net++, and a DINOv3-initialised O-Net. Each configuration is evaluated under two frozen-feature readouts that differ only in the form of their decision boundary: a linear probe and a non-linear XGBoost classifier fit only on the 24 labelled validation images. Our central finding is a consistent inversion between the two readouts: DINOv3 features are the weakest under linear probing but the strongest under a non-linear readout. A UMAP analysis of the learned feature space shows that DINOv3 fragments pixels into many small clusters in which the classes are locally interleaved, whereas the convolutional architectures (O-Net and O-Net++) embed them onto a single class-sorted manifold. Satellite-pretrained DINOv3 improves over natural-image initialisation across objectives, and our label-efficient DINOv3-ViT-L-Sat-O-Net-BYOL-JSD pipeline reaches 75.33 mDSC / 61.28 mIoU, outperforming standard machine learning baselines fit on the same 24 labelled images with the RGB pixel values used as features. We release CrevasseSeg to support label-efficient segmentation research in remote sensing.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13 pages, 5 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-  </entry>
 </feed>

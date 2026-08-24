@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-21T02:21:19Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
+  <updated>2026-08-24T00:31:23Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 1 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -31,48 +31,5 @@
     <summary type="text">Electric power networks are increasingly exposed to weather-sensitive failure mechanisms that require asset-level, spatially explicit risk modelling for effective intervention planning. This study contributes a modular, robust, and explainable probability-of-failure (PoF) modelling framework for utility asset management. The central contribution is an asset-level architecture that can be scaled to new environmental data sources and additional PoF types without reworking the underlying pipeline. This is particularly relevant for industry settings, where risk models must remain operationally maintainable while adapting to changing data availability, asset-management priorities, and climate-driven hazard conditions. We demonstrate the framework for vegetation-related and lightning-related failure modes using a harmonised geospatial machine-learning pipeline. The implementation integrates multi-source predictors, including topography (SRTM), vegetation condition (MODIS Normalised Difference Vegetation Index - NDVI), lightning climatology (LIS VHRMC), OpenStreetMap-derived proximity features, and utility operational records. The resulting architecture is computationally efficient, operationally extensible, and suitable for utility-scale deployment. It provides actionable asset-level risk stratification for inspection prioritisation, vegetation management, asset hardening, and resilience planning, supporting earlier intervention and more climate-resilient network operations.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>HAPS through the Lens of Satellites and UAVs: A Function-Level Perspective on the Emerging High Altitude Economy</title>
-    <link href="http://arxiv.org/abs/2608.16828v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.16828v1</id>
-    <published>2026-08-17T00:00:00Z</published>
-    <updated>2026-08-17T00:00:00Z</updated>
-    <author>
-      <name>Mukhtiar Ahmad</name>
-    </author>
-    <author>
-      <name>Mohamed-Slim Alouini</name>
-    </author>
-    <summary type="text">High-Altitude Platform Stations (HAPS) operate in the lower stratosphere at 17-27 km, between satellites and Unmanned Aerial Vehicles (UAVs). For this third tier the architectural case has long outpaced the flight evidence, but a wave of 2020-2026 stratospheric flights now permits a direct comparison. We evaluate HAPS function by function across sensing, navigation, and communication, taking operational satellite and UAV implementations as the reference. We define a strict evidence rule, counting a function as flight-validated only on operationally relevant stratospheric data return at or above 18 km, and apply it to nineteen functions. The resulting count is lower than the literature implies: five functions have credibly crossed over (optical Earth observation, hyperspectral imaging, methane imaging, RF/SIGINT, and broadband relay), yet these rest on only four flight programs, with at most one carrying peer-reviewed flight evidence. One function is ground-demonstrated, two are partially demonstrated, three are conceptual, and eight remain unflown. Four engineering domains (size, weight, and power; station-keeping; aperture; and viewing geometry), bounded by an operational envelope of platform stability and payload operability, explain the pattern. The governing advantage is persistence at close range, not altitude. Eight use cases, supported by same-sensor forward simulations, translate the pattern into missions, led by resilient public-safety mission-critical services (MCX). On this evidence, HAPS fits as a persistent regional tier in a multi-tier non-terrestrial network and as the seed of an emerging High Altitude Economy. Carrier-grade service, station-keeping precision, and regulation remain the principal open problems, and we pose the persistent-tier reading as a testable hypothesis with dated 2030 markers.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.DC" />
-  </entry>
-  <entry>
-    <title>Registration-Free Hyperspectral Reconstruction from RGB via a Permutation-Invariant Gram-Matrix Principle</title>
-    <link href="http://arxiv.org/abs/2608.14994v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.14994v1</id>
-    <published>2026-08-15T00:00:00Z</published>
-    <updated>2026-08-15T00:00:00Z</updated>
-    <author>
-      <name>Jiangsan Zhao</name>
-    </author>
-    <author>
-      <name>Masayuki Hirafuji</name>
-    </author>
-    <author>
-      <name>Seishi Ninomiya</name>
-    </author>
-    <author>
-      <name>Jakob Geipel</name>
-    </author>
-    <author>
-      <name>Wei Guo</name>
-    </author>
-    <summary type="text">Reconstructing a spatially and spectrally high-resolution hyperspectral image (HR-HSI) from a low-resolution HSI (LR-HSI) and a high-resolution RGB image (HR-RGB) usually assumes precise registration and a known camera response function (CRF). Both assumptions are difficult to satisfy with different sensors. We remove both through a permutation-invariant supervision principle: the Gram matrix of an unmixed abundance map depends on shared material composition but not on pixel ordering. Matching abundance Gram matrices therefore allows RGB-to-HSI mapping to be learned without spatial correspondence and without a predefined CRF. Under a full random permutation of HR-RGB pixels, a state-of-the-art fusion method collapses, whereas our reconstruction is unchanged after inverse reindexing for evaluation. Building on this principle, a residual spectral super-resolution function maps HR-RGB directly to HR-HSI without registration, known CRF, or paired supervision. Across indoor, natural-scene, and remote-sensing benchmarks, the method achieves accuracy comparable to approaches that require these assumptions while remaining robust when they are violated. Loss ablations further show that reconstruction accuracy is largely insensitive to the specific discrepancy used to match the Gram matrices, indicating that performance arises primarily from the permutation-invariant principle rather than loss tuning.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 11 pages, 10 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>
