@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-24T02:20:14Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
+  <updated>2026-08-25T00:31:05Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 1 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -31,29 +31,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Artificial Intelligence" />
     <category term="cs.HC; Machine Learning" />
-  </entry>
-  <entry>
-    <title>MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models</title>
-    <link href="http://arxiv.org/abs/2608.17848v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.17848v1</id>
-    <published>2026-08-18T00:00:00Z</published>
-    <updated>2026-08-18T00:00:00Z</updated>
-    <author>
-      <name>Ya Wen</name>
-    </author>
-    <author>
-      <name>Jixuan Cai</name>
-    </author>
-    <author>
-      <name>Yulun Zhou</name>
-    </author>
-    <author>
-      <name>Alec Kirkley</name>
-    </author>
-    <summary type="text">Geospatial Foundation Models (GFMs) are emerging as a powerful paradigm for learning semantically rich and geographically consistent visual and physical representations. However, their reliance on Earth-observation (EO) data leaves information about human activity largely underrepresented. Human mobility data reveals the functional and relational structure between regions that is missing from EO data, but is often limited only to the city where it is observed, making it challenging to use for transferable urban representation learning. We introduce MoRAX, a lightweight framework for augmenting geospatial embeddings with functional structure derived from human mobility. MoRAX preserves the coverage and consistency of a GFM while providing information about the functional connectivity among urban regions, permitting zero-shot deployment in unseen cities with or without available mobility data. Across four target cities spanning two countries, the MoRAX teacher model, which observes mobility, consistently outperforms GFMs and strong urban representation baselines in eight socioeconomic and environmental prediction tasks. Meanwhile, the student model, which never takes mobility data as input, approaches the teacher in performance on most tasks. Transfer results across countries further demonstrate that modulation conditioned on mobility flows provides a general mechanism for grounding geospatial foundations in the human dimension of cities.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-    <category term="cs.SI" />
   </entry>
 </feed>
