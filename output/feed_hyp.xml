@@ -4,12 +4,62 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-25T00:31:05Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
+  <updated>2026-08-25T02:15:25Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Beyond Point Predictions: Uncertainty-Aware Satellite Poverty Mapping for Public Policy</title>
+    <link href="http://arxiv.org/abs/2608.23322v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.23322v1</id>
+    <published>2026-08-24T00:00:00Z</published>
+    <updated>2026-08-24T00:00:00Z</updated>
+    <author>
+      <name>Markus B. Pettersson</name>
+    </author>
+    <author>
+      <name>James Bailie</name>
+    </author>
+    <author>
+      <name>Mohammad Kakooei</name>
+    </author>
+    <author>
+      <name>Eagon Meng</name>
+    </author>
+    <author>
+      <name>Adel Daoud</name>
+    </author>
+    <summary type="text">Despite their critical importance for policy and research, high-resolution poverty data remain limited across much of Africa. Machine learning (ML) with earth observation (EO) imagery has recently emerged as a way to supplement these data by predicting (i.e., estimating) poverty where it has not been directly measured. Yet to be used reliably, decision-makers and analysts need assurances that they will not be misled by the errors in these predictions. To meet this need, we develop an uncertainty-aware EO-ML method for poverty mapping based on simultaneous quantile regression and a novel form of conformal prediction. Using a spatiotemporal transformer trained on sequences of Landsat and nighttime-light images, we produce prediction intervals for neighborhood-level International Wealth Index estimates across Africa which are statistically guaranteed to achieve their desired coverage rates. While our method's point-prediction performance matches the state of the art, its prediction intervals are wider than might be expected given its high $R^2$ of $0.75$. However, other models of similar accuracy likely suffer from comparable uncertainty, pointing to an inherent limitation: even with its remarkably high explanatory power, EO-ML cannot naively be relied upon for policy-making, such as when designing poverty-targeting programs. To handle this challenge, we develop a procedure to efficiently allocate aid using both ground-truth surveys and model predictions while provably ensuring the risk of excluding eligible neighborhoods remains below a prespecified level. In simulations, this approach delivers substantially more aid per eligible recipient than other strategies, thereby demonstrating that EO-ML can indeed be a reliable supplement to traditional data sources---as long as methods</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Interpretable Landsat-to-Hyperspectral Dual Super-Resolution Without Large Matrix Inversion</title>
+    <link href="http://arxiv.org/abs/2608.22790v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.22790v1</id>
+    <published>2026-08-24T00:00:00Z</published>
+    <updated>2026-08-24T00:00:00Z</updated>
+    <author>
+      <name>Chia-Hsiang Lin</name>
+    </author>
+    <author>
+      <name>Jian-Kai Huang</name>
+    </author>
+    <author>
+      <name>Si-Sheng Young</name>
+    </author>
+    <author>
+      <name>Wei-Cheng Zheng</name>
+    </author>
+    <summary type="text">Direct acquisition of global hyperspectral images (HSIs) is infeasible given contemporary hardware facilities and limited resources, while global hyperspectral monitoring is critical for remote sensing applications. A more economical approach is to interpretably convert global Landsat-8/9 multispectral images into NASA's AVIRIS-level HSIs. This conversion involves both spatial super-resolution (SpaSR, 30-m to 15-m) and the highly ill-posed spectral super-resolution (SpeSR, 7-band to 172-band), collectively referred to as dual super-resolution (DualSR), whose duality between SpaSR and SpeSR has recently been established. Existing SpeSR methods, mostly designed to reconstruct CAVE-level HSIs with only 31 visible bands, are not applicable to the AVIRIS-level task involving 172 visible, near-infrared, and shortwave-infrared bands. This motivates us to customize an interpretable alternating direction method of multipliers network (ADMM-Net) using the Woodbury W-Lemma and a spectral continuity prior. Unlike conventional generative SpaSR, we employ a panchromatic sharpening strategy to recover physically grounded spatial details. However, this strategy induces very large matrix inversions (LMIs), with dimensionality proportional to the number of pixels, even after applying the W-Lemma. We resolve this issue by designing an LMI-free proximal gradient descent network (PGD-Net). Consequently, the proposed PGD-ADMM interpretable network (PAINT) achieves substantial improvements in both computational complexity and reconstruction performance. Beyond state-of-the-art reconstruction performance, PAINT improves Landsat classification from 78.98% accuracy and 76.06% kappa to 92.16% accuracy and 90.98% kappa.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 17 pages; accepted for publication in IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS). Source code: https://github.com/IHCLab/PAINT&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;SR&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+    <category term="Signal Processing" />
+  </entry>
   <entry>
     <title>Neuro-Geospatial Modelling of EEG Affective States Using Literature-Informed Environmental Context</title>
     <link href="http://arxiv.org/abs/2608.20807v1" rel="alternate" type="text/html" />
