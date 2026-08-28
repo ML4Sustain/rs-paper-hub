@@ -4,12 +4,54 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-27T10:50:31Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
+  <updated>2026-08-28T07:18:08Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 5 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Hyperspectral Diffusion Equivariant Imaging (HyDiff-EI): A Self-supervised Framework for Hyperspectral Image Inpainting</title>
+    <link href="http://arxiv.org/abs/2608.26812v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.26812v1</id>
+    <published>2026-08-27T00:00:00Z</published>
+    <updated>2026-08-27T00:00:00Z</updated>
+    <author>
+      <name>Shuo Li</name>
+    </author>
+    <author>
+      <name>Mike Davies</name>
+    </author>
+    <author>
+      <name>Mehrdad Yaghoobi</name>
+    </author>
+    <summary type="text">A novel Hyperspectral diffusion Equivariant Imaging (HyDiff-EI) framework for solving the hyperspectral image (HSI) inpainting problem has been presented here. Unlike conventional diffusion-based methods that rely on large-scale pretraining, HyDiff-EI is a test-time optimization framework that learns directly from a single corrupted HSI acquisition. This makes it flexible for different sensor configurations and particularly well-suited for practical remote sensing scenarios where large annotated hyperspectral datasets are limited. To address the ill-posed nature of unsupervised inpainting, we embed equivariant consistency constraints within the diffusion process. By leveraging the inherent geometric symmetries and intrinsic characteristics of HSIs, HyDiff-EI bridges the gap between generative diffusion modeling and self-consistent physical priors. We empirically show that coupling diffusion modeling with equivariant priors substantially enhances noise robustness and generalizability. Extensive experiments on real-world datasets including Chikusei, Botswana, and EMIT demonstrate that HyDiff-EI offers remarkable inpainting quality over existing self-supervised and diffusion-based algorithms in both noiseless and noisy cases.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 14 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Learning Woody Clearing With Loss Alignment for Zero-Shot Regrowth and Woody Segmentation</title>
+    <link href="http://arxiv.org/abs/2608.26489v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.26489v1</id>
+    <published>2026-08-27T00:00:00Z</published>
+    <updated>2026-08-27T00:00:00Z</updated>
+    <author>
+      <name>Kal Backman</name>
+    </author>
+    <author>
+      <name>Jared Wood</name>
+    </author>
+    <author>
+      <name>Adam Roff</name>
+    </author>
+    <summary type="text">Detecting woody clearing is vital for managing biodiversity. Deep learning models can detect change in woody vegetation from bitemporal remote sensing imagery, however generated products may not meet end-user specifications due to unaligned loss definitions. Further limitations of deep learning models are the reliance on large datasets which can be difficult to attain for spatially rare and ambiguous events such as regrowth detection. In this work we train a model to detect woody change using bitemporal Sentinel-2 imagery consisting of 7 years' worth of annual imagery across the state of New South Wales, Australia. To align the objective of the model with end-user metrics, we introduce the loss scaling coefficient $α$ which transforms the objective to optimize for specific $F_β$ scores. Introducing $α$ was found to increase precision by 1.85x or recall by 1.12x. We propose input imagery augmentation and generation techniques that allow the woody change detection model to zero-shot transfer to regrowth and woody segmentation tasks. For woody segmentation, image generation techniques using activation maximization with low $α$ values for stability and image generation techniques derived from handcrafted features utilizing a mosaic of clearing patches and artificial trees for contextual grounding were found to outperform prior woody segmentation works of the study area, reducing the overall error by up to 18.2%. For zero-shot woody regrowth, creating pseudo-post and prior images resulted in the model achieving an F1 score of 0.845, creating a foundation for future regrowth detection work.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Transactions on Geoscience and Remote Sensing&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD;VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Deep Learning Super Resolution for Satellite Cloud Mask Downscaling</title>
     <link href="http://arxiv.org/abs/2608.24715v1" rel="alternate" type="text/html" />
@@ -93,27 +135,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;SR&lt;/p&gt;</content>
     <category term="Image and Video Processing" />
     <category term="Signal Processing" />
-  </entry>
-  <entry>
-    <title>Neuro-Geospatial Modelling of EEG Affective States Using Literature-Informed Environmental Context</title>
-    <link href="http://arxiv.org/abs/2608.20807v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.20807v1</id>
-    <published>2026-08-21T00:00:00Z</published>
-    <updated>2026-08-21T00:00:00Z</updated>
-    <author>
-      <name>Utsav Poudel</name>
-    </author>
-    <author>
-      <name>Jagannath Aryal</name>
-    </author>
-    <author>
-      <name>Subramaniyaswamy Vairavasundaram</name>
-    </author>
-    <summary type="text">Environmental exposures such as air pollution and greenness have been associated with affective and cognitive outcomes, but EEG and environmental datasets are rarely jointly georeferenced. We investigate whether literature-informed environmental priors can serve as an auxiliary geospatial modality for EEG-based affective-state classification when individual-level exposure data are unavailable. We combine 30-channel EEG from the EAV benchmark (42 participants, aged 20-30 years) with environmental representations derived from OpenAQ, Sentinel-2, Sentinel-5P, and OpenStreetMap data for Astana. A dual-tower architecture combines EEG-Conformer representations with a graph-based environmental encoder. Because the datasets are not co-registered, environmental context is treated as a literature-informed prior rather than measured exposure. Subject-level repeated splits, permutation and label-shuffling controls, dose-response reversal, and domain-shift experiments distinguish architecture-level gains from prior-dependent gains. The multimodal model achieves 76.2% accuracy versus 67.4% for EEG alone. Controls disrupting environmental-label structure retain part of this gain, indicating that the improvement is not attributable solely to environmental information. Replacing the Astana environmental distribution with an independently modeled Singapore distribution reduces accuracy to 72.8%. These findings demonstrate technical feasibility but do not establish an observed or causal exposure-affect association. The study provides a framework for future jointly collected mobile EEG-environment studies. Implementation: https://github.com/r11up/geo-cog</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/r11up/geo-cog"&gt;https://github.com/r11up/geo-cog&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="cs.HC; Machine Learning" />
   </entry>
 </feed>

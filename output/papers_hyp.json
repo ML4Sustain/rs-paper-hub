@@ -20708,5 +20708,43 @@
     "_added_date": "2026-08-26",
     "Category": "Method",
     "_tasks": "SR"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Machine Learning",
+    "Date": "2026-08-27",
+    "Month": 8,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Hyperspectral Diffusion Equivariant Imaging (HyDiff-EI): A Self-supervised Framework for Hyperspectral Image Inpainting",
+    "abbr.": "HyDiff-EI",
+    "Paper_link": "http://arxiv.org/abs/2608.26812v1",
+    "Abstract": "A novel Hyperspectral diffusion Equivariant Imaging (HyDiff-EI) framework for solving the hyperspectral image (HSI) inpainting problem has been presented here. Unlike conventional diffusion-based methods that rely on large-scale pretraining, HyDiff-EI is a test-time optimization framework that learns directly from a single corrupted HSI acquisition. This makes it flexible for different sensor configurations and particularly well-suited for practical remote sensing scenarios where large annotated hyperspectral datasets are limited. To address the ill-posed nature of unsupervised inpainting, we embed equivariant consistency constraints within the diffusion process. By leveraging the inherent geometric symmetries and intrinsic characteristics of HSIs, HyDiff-EI bridges the gap between generative diffusion modeling and self-consistent physical priors. We empirically show that coupling diffusion modeling with equivariant priors substantially enhances noise robustness and generalizability. Extensive experiments on real-world datasets including Chikusei, Botswana, and EMIT demonstrate that HyDiff-EI offers remarkable inpainting quality over existing self-supervised and diffusion-based algorithms in both noiseless and noisy cases.",
+    "code": "",
+    "Publication": "14 pages, 7 figures",
+    "BibTex": "@article{li2026hyperspectral,\n  title={Hyperspectral Diffusion Equivariant Imaging (HyDiff-EI): A Self-supervised Framework for Hyperspectral Image Inpainting},\n  author={Shuo Li and Mike Davies and Mehrdad Yaghoobi},\n  journal={arXiv preprint arXiv:2608.26812v1},\n  year={2026},\n  url={http://arxiv.org/abs/2608.26812v1}\n}",
+    "Authors": "Shuo Li, Mike Davies, Mehrdad Yaghoobi",
+    "_added_date": "2026-08-28",
+    "Category": "Method",
+    "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-08-27",
+    "Month": 8,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Learning Woody Clearing With Loss Alignment for Zero-Shot Regrowth and Woody Segmentation",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2608.26489v1",
+    "Abstract": "Detecting woody clearing is vital for managing biodiversity. Deep learning models can detect change in woody vegetation from bitemporal remote sensing imagery, however generated products may not meet end-user specifications due to unaligned loss definitions. Further limitations of deep learning models are the reliance on large datasets which can be difficult to attain for spatially rare and ambiguous events such as regrowth detection. In this work we train a model to detect woody change using bitemporal Sentinel-2 imagery consisting of 7 years' worth of annual imagery across the state of New South Wales, Australia. To align the objective of the model with end-user metrics, we introduce the loss scaling coefficient $α$ which transforms the objective to optimize for specific $F_β$ scores. Introducing $α$ was found to increase precision by 1.85x or recall by 1.12x. We propose input imagery augmentation and generation techniques that allow the woody change detection model to zero-shot transfer to regrowth and woody segmentation tasks. For woody segmentation, image generation techniques using activation maximization with low $α$ values for stability and image generation techniques derived from handcrafted features utilizing a mosaic of clearing patches and artificial trees for contextual grounding were found to outperform prior woody segmentation works of the study area, reducing the overall error by up to 18.2%. For zero-shot woody regrowth, creating pseudo-post and prior images resulted in the model achieving an F1 score of 0.845, creating a foundation for future regrowth detection work.",
+    "code": "",
+    "Publication": "IEEE Transactions on Geoscience and Remote Sensing",
+    "BibTex": "@article{backman2026learning,\n  title={Learning Woody Clearing With Loss Alignment for Zero-Shot Regrowth and Woody Segmentation},\n  author={Kal Backman and Jared Wood and Adam Roff},\n  journal={arXiv preprint arXiv:2608.26489v1},\n  year={2026},\n  url={http://arxiv.org/abs/2608.26489v1}\n}",
+    "Authors": "Kal Backman, Jared Wood, Adam Roff",
+    "_added_date": "2026-08-28",
+    "Category": "Method",
+    "_tasks": "CD;VG"
   }
 ]

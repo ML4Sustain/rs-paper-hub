@@ -4,12 +4,99 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-27T10:50:31Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 10 entries</subtitle>
+  <updated>2026-08-28T07:18:08Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 11 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>UrbanGround: From Local Perception to Spatial Agency in a Real-Scale City</title>
+    <link href="http://arxiv.org/abs/2608.27456v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.27456v1</id>
+    <published>2026-08-27T00:00:00Z</published>
+    <updated>2026-08-27T00:00:00Z</updated>
+    <author>
+      <name>Tianjie Ju</name>
+    </author>
+    <author>
+      <name>Zheng Wu</name>
+    </author>
+    <author>
+      <name>Yueqing Sun</name>
+    </author>
+    <author>
+      <name>Yuhan Cui</name>
+    </author>
+    <author>
+      <name>Bobo Li</name>
+    </author>
+    <author>
+      <name>Shengqiong Wu</name>
+    </author>
+    <author>
+      <name>Pengzhou Cheng</name>
+    </author>
+    <author>
+      <name>Haodong Zhao</name>
+    </author>
+    <author>
+      <name>Zongru Wu</name>
+    </author>
+    <author>
+      <name>Xinbei Ma</name>
+    </author>
+    <author>
+      <name>Doris Zhang</name>
+    </author>
+    <author>
+      <name>Kunling Li</name>
+    </author>
+    <author>
+      <name>Mong-Li Lee</name>
+    </author>
+    <author>
+      <name>Wynne Hsu</name>
+    </author>
+    <author>
+      <name>Hao Fei</name>
+    </author>
+    <author>
+      <name>Qi Gu</name>
+    </author>
+    <author>
+      <name>Gongshen Liu</name>
+    </author>
+    <author>
+      <name>Zhuosheng Zhang</name>
+    </author>
+    <summary type="text">Multimodal large language models (MLLMs) can interpret a street view, but urban agency depends on whether such local evidence remains useful after the agent starts to move. In this paper, we investigate how far current MLLM agents can turn local urban perception into reliable action in a complicated real-scale city. We propose UrbanGround, the first sandbox to make this question testable in a physically constrained replica of Hong Kong built from territory-wide 3D geospatial data. UrbanGround supports closed-loop interaction from a first-person view and provides an interactive map for navigation. Agents can directly enter the 3D city and explore from a first-person view. Our analysis follows the growth of the spatial problem through three research questions. We first test whether an agent can ground a local scene well enough to answer spatial questions after active observation. Then we ask whether that grounding supports navigation as destinations become farther away and less explicit. Finally, we examine whether the resulting behavior survives changes in route availability and pedestrian motion. Contemporary MLLM agents usually show useful atomic abilities in visual recognition and short-range spatial reasoning, while orientation and pedestrian-aware movement remain unreliable. Their central failure emerges over extended exploration, where local abilities do not compose into sustained goal-directed behavior and errors accumulate without effective correction. We hope UrbanGround will support broader study of how far current MLLM agents can explore reliably in complex, open-ended urban environments.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 35 pages, 11 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Learning Woody Clearing With Loss Alignment for Zero-Shot Regrowth and Woody Segmentation</title>
+    <link href="http://arxiv.org/abs/2608.26489v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.26489v1</id>
+    <published>2026-08-27T00:00:00Z</published>
+    <updated>2026-08-27T00:00:00Z</updated>
+    <author>
+      <name>Kal Backman</name>
+    </author>
+    <author>
+      <name>Jared Wood</name>
+    </author>
+    <author>
+      <name>Adam Roff</name>
+    </author>
+    <summary type="text">Detecting woody clearing is vital for managing biodiversity. Deep learning models can detect change in woody vegetation from bitemporal remote sensing imagery, however generated products may not meet end-user specifications due to unaligned loss definitions. Further limitations of deep learning models are the reliance on large datasets which can be difficult to attain for spatially rare and ambiguous events such as regrowth detection. In this work we train a model to detect woody change using bitemporal Sentinel-2 imagery consisting of 7 years' worth of annual imagery across the state of New South Wales, Australia. To align the objective of the model with end-user metrics, we introduce the loss scaling coefficient $α$ which transforms the objective to optimize for specific $F_β$ scores. Introducing $α$ was found to increase precision by 1.85x or recall by 1.12x. We propose input imagery augmentation and generation techniques that allow the woody change detection model to zero-shot transfer to regrowth and woody segmentation tasks. For woody segmentation, image generation techniques using activation maximization with low $α$ values for stability and image generation techniques derived from handcrafted features utilizing a mosaic of clearing patches and artificial trees for contextual grounding were found to outperform prior woody segmentation works of the study area, reducing the overall error by up to 18.2%. For zero-shot woody regrowth, creating pseudo-post and prior images resulted in the model achieving an F1 score of 0.845, creating a foundation for future regrowth detection work.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Transactions on Geoscience and Remote Sensing&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD;VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Planetary Prediction Engine: Autonomous Geospatial Prediction via Intelligent Data Selection and Foundation Model Embeddings</title>
     <link href="http://arxiv.org/abs/2608.26088v1" rel="alternate" type="text/html" />
@@ -136,6 +223,38 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Characterizing the Landscape of Open-Source Satellite Software</title>
+    <link href="http://arxiv.org/abs/2608.26211v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.26211v1</id>
+    <published>2026-08-26T00:00:00Z</published>
+    <updated>2026-08-26T00:00:00Z</updated>
+    <author>
+      <name>Jinfeng Wen</name>
+    </author>
+    <author>
+      <name>Qi Liang</name>
+    </author>
+    <author>
+      <name>Yuehan Sun</name>
+    </author>
+    <author>
+      <name>Federica Sarro</name>
+    </author>
+    <author>
+      <name>Ao Zhou</name>
+    </author>
+    <author>
+      <name>Xuanzhe Liu</name>
+    </author>
+    <author>
+      <name>Shangguang Wang</name>
+    </author>
+    <summary type="text">Satellites have become fundamental components of modern technological systems, supporting critical infrastructure in communication, navigation, Earth observation, and scientific research. As space exploration advances and demand for satellite-enabled services grows, reliance on complex, heterogeneous satellite software continues to increase. A systematic understanding of the satellite software landscape is therefore increasingly important, yet existing studies still lack a comprehensive empirical examination. To address this gap, we present the first characterization study of open-source satellite software, examining its ecosystem and development practices. We mine and analyze 22,286 satellite-related GitHub projects through three research questions on popularity trends (RQ1), software goals (RQ2), and development practices (RQ3). First, we characterize the temporal evolution of projects and active developers, revealing increasing popularity. Second, through manual inspection of 646 projects, we construct a taxonomy of 43 software-goal categories spanning conceptual design, datasets, system implementation, simulation, testing, and tools. Third, we conduct an in-depth analysis of projects with source code, revealing a highly heterogeneous and task-specialized ecosystem with 66 programming languages and diverse implementation strategies. Finally, we summarize key findings and derive actionable implications for satellite developers and researchers.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; This paper has been accepted for publication in ASE 2026!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.SE" />
   </entry>
   <entry>
     <title>Real-World Knowledge-Guided Change Data Synthesis for Remote Sensing</title>
@@ -307,51 +426,5 @@
 &lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the 34th ACM International Conference on Multimedia (ACM MM 2026)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Neuro-Geospatial Modelling of EEG Affective States Using Literature-Informed Environmental Context</title>
-    <link href="http://arxiv.org/abs/2608.20807v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.20807v1</id>
-    <published>2026-08-21T00:00:00Z</published>
-    <updated>2026-08-21T00:00:00Z</updated>
-    <author>
-      <name>Utsav Poudel</name>
-    </author>
-    <author>
-      <name>Jagannath Aryal</name>
-    </author>
-    <author>
-      <name>Subramaniyaswamy Vairavasundaram</name>
-    </author>
-    <summary type="text">Environmental exposures such as air pollution and greenness have been associated with affective and cognitive outcomes, but EEG and environmental datasets are rarely jointly georeferenced. We investigate whether literature-informed environmental priors can serve as an auxiliary geospatial modality for EEG-based affective-state classification when individual-level exposure data are unavailable. We combine 30-channel EEG from the EAV benchmark (42 participants, aged 20-30 years) with environmental representations derived from OpenAQ, Sentinel-2, Sentinel-5P, and OpenStreetMap data for Astana. A dual-tower architecture combines EEG-Conformer representations with a graph-based environmental encoder. Because the datasets are not co-registered, environmental context is treated as a literature-informed prior rather than measured exposure. Subject-level repeated splits, permutation and label-shuffling controls, dose-response reversal, and domain-shift experiments distinguish architecture-level gains from prior-dependent gains. The multimodal model achieves 76.2% accuracy versus 67.4% for EEG alone. Controls disrupting environmental-label structure retain part of this gain, indicating that the improvement is not attributable solely to environmental information. Replacing the Astana environmental distribution with an independently modeled Singapore distribution reduces accuracy to 72.8%. These findings demonstrate technical feasibility but do not establish an observed or causal exposure-affect association. The study provides a framework for future jointly collected mobile EEG-environment studies. Implementation: https://github.com/r11up/geo-cog</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/r11up/geo-cog"&gt;https://github.com/r11up/geo-cog&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="cs.HC; Machine Learning" />
-  </entry>
-  <entry>
-    <title>DamageScope: Vision-Language Retrieval at Scale for Disaster Damage Assessment from Satellite Imagery</title>
-    <link href="http://arxiv.org/abs/2608.21529v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.21529v1</id>
-    <published>2026-08-21T00:00:00Z</published>
-    <updated>2026-08-21T00:00:00Z</updated>
-    <author>
-      <name>Ravi K. Rajendran</name>
-    </author>
-    <author>
-      <name>Biplob Debnath</name>
-    </author>
-    <author>
-      <name>Murugan Sankaradas</name>
-    </author>
-    <author>
-      <name>Srimat T. Chakradhar</name>
-    </author>
-    <summary type="text">Timely and accurate assessment of property damage is critical following natural disasters. Traditional on-site inspections are labor-intensive, costly, and often pose safety risks. Advances in satellite imagery and vision-language models (VLMs) enable scalable remote damage assessment; however, integrating VLMs into large-scale Earth observation pipelines presents challenges in computational efficiency, data organization, and information retrieval. To address these challenges, we present DamageScope, a retrieval-augmented framework that combines satellite imagery with Vision-Language Models (VLMs) and Large Language Models (LLMs) to automate property damage analysis. Built on a Retrieval-Augmented Generation (RAG) framework, DamageScope extracts structured visual representations from satellite imagery to support interactive natural language queries for damage assessment. To address scalability, we introduce a novel multi-vector embedding-based clustering algorithm that outperforms traditional single-vector embedding approaches while reducing indexing time by up to 14x. Furthermore, a dual-store data architecture minimizes LLM API calls, reducing both operational cost and response latency by up to approximately 3x. By effectively balancing scalability and operational efficiency, DamageScope provides a robust and practical solution for real-world damage assessment tasks.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="cs.CL; Information Retrieval" />
   </entry>
 </feed>

@@ -4,12 +4,220 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-27T10:50:31Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 32 entries</subtitle>
+  <updated>2026-08-28T07:18:08Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 29 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>UrbanGround: From Local Perception to Spatial Agency in a Real-Scale City</title>
+    <link href="http://arxiv.org/abs/2608.27456v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.27456v1</id>
+    <published>2026-08-27T00:00:00Z</published>
+    <updated>2026-08-27T00:00:00Z</updated>
+    <author>
+      <name>Tianjie Ju</name>
+    </author>
+    <author>
+      <name>Zheng Wu</name>
+    </author>
+    <author>
+      <name>Yueqing Sun</name>
+    </author>
+    <author>
+      <name>Yuhan Cui</name>
+    </author>
+    <author>
+      <name>Bobo Li</name>
+    </author>
+    <author>
+      <name>Shengqiong Wu</name>
+    </author>
+    <author>
+      <name>Pengzhou Cheng</name>
+    </author>
+    <author>
+      <name>Haodong Zhao</name>
+    </author>
+    <author>
+      <name>Zongru Wu</name>
+    </author>
+    <author>
+      <name>Xinbei Ma</name>
+    </author>
+    <author>
+      <name>Doris Zhang</name>
+    </author>
+    <author>
+      <name>Kunling Li</name>
+    </author>
+    <author>
+      <name>Mong-Li Lee</name>
+    </author>
+    <author>
+      <name>Wynne Hsu</name>
+    </author>
+    <author>
+      <name>Hao Fei</name>
+    </author>
+    <author>
+      <name>Qi Gu</name>
+    </author>
+    <author>
+      <name>Gongshen Liu</name>
+    </author>
+    <author>
+      <name>Zhuosheng Zhang</name>
+    </author>
+    <summary type="text">Multimodal large language models (MLLMs) can interpret a street view, but urban agency depends on whether such local evidence remains useful after the agent starts to move. In this paper, we investigate how far current MLLM agents can turn local urban perception into reliable action in a complicated real-scale city. We propose UrbanGround, the first sandbox to make this question testable in a physically constrained replica of Hong Kong built from territory-wide 3D geospatial data. UrbanGround supports closed-loop interaction from a first-person view and provides an interactive map for navigation. Agents can directly enter the 3D city and explore from a first-person view. Our analysis follows the growth of the spatial problem through three research questions. We first test whether an agent can ground a local scene well enough to answer spatial questions after active observation. Then we ask whether that grounding supports navigation as destinations become farther away and less explicit. Finally, we examine whether the resulting behavior survives changes in route availability and pedestrian motion. Contemporary MLLM agents usually show useful atomic abilities in visual recognition and short-range spatial reasoning, while orientation and pedestrian-aware movement remain unreliable. Their central failure emerges over extended exploration, where local abilities do not compose into sustained goal-directed behavior and errors accumulate without effective correction. We hope UrbanGround will support broader study of how far current MLLM agents can explore reliably in complex, open-ended urban environments.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 35 pages, 11 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Detection of Christmas tree plantations from high-resolution aerial imagery. A case study in the French Morvan</title>
+    <link href="http://arxiv.org/abs/2608.27290v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.27290v1</id>
+    <published>2026-08-27T00:00:00Z</published>
+    <updated>2026-08-27T00:00:00Z</updated>
+    <author>
+      <name>Francesca Razzano</name>
+    </author>
+    <author>
+      <name>Emanuele Dalsasso</name>
+    </author>
+    <author>
+      <name>Adrien Baysse-Lainé</name>
+    </author>
+    <author>
+      <name>Silvia Liberata Ullo</name>
+    </author>
+    <author>
+      <name>Gilda Schirinzi</name>
+    </author>
+    <author>
+      <name>Jocelyn Chanussot</name>
+    </author>
+    <summary type="text">Christmas tree plantations are economically relevant, yet a largely unexplored application domain in Remote Sensing (RS). Their delineation is challenging because of high planting density, short rotation cycles, visual confusion with surrounding vegetation, the availability of dense labels for one reference year only, and severe class imbalance at the landscape scale. Although Deep Learning (DL) methods have shown strong potential for vegetation mapping, existing approaches are typically designed for forests, generic plantation systems, or orchards, and do not explicitly address the structural specificity and hard-negative confusion that characterize Christmas tree plantations. In response to these challenges, this work makes three main contributions: (i) it frames Christmas tree plantation mapping as a distinct rare-target semantic segmentation problem; (ii) it introduces a Hard Negative Mining (HNM) strategy to improve discrimination against confusing background patterns; and (iii) it evaluates the proposed framework across complementary levels, including supervised testing, temporal transfer, and large-scale validation. On the 2020 test set held out, the best model, DeepLabV3 with a ResNet-34 encoder, achieves an IoU of 0.733 and an F1-score of 0.846. HNM substantially improves precision-recall behavior, increasing the area under the precision-recall curve from 0.204 to 0.913. Temporal inference further shows meaningful transferability, reaching IoU/F1 values of 0.751/0.858 on 2017/2018 and 0.691/0.817 on 2023. Large-scale validation further highlights the intrinsic difficulty of the task, as Christmas tree plantations occupied only a very small fraction of the extent of the common evaluation, corresponding to 1,498.4 ha (1.72\%) in 2017/2018 and 1,782.2 ha (2.04\%) in 2023 out of 87,309.4 ha in total.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages, 9 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Temporal Sensitivity Analysis of Tessera Embeddings</title>
+    <link href="http://arxiv.org/abs/2608.27175v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.27175v1</id>
+    <published>2026-08-27T00:00:00Z</published>
+    <updated>2026-08-27T00:00:00Z</updated>
+    <author>
+      <name>Julia Guerrero-Viu</name>
+    </author>
+    <author>
+      <name>Alex López-Cifuentes</name>
+    </author>
+    <author>
+      <name>Ignacio Pérez-Villar</name>
+    </author>
+    <author>
+      <name>Fabio Pacifici</name>
+    </author>
+    <summary type="text">Many Earth Observation applications need land-use/land-cover maps that are both precise and frequently updated, yet the strongest Earth Observation foundation models build their embeddings from a full year of observations. We present a controlled study of the temporal sensitivity of Tessera, one of these leading foundation models, for land-use/land-cover mapping. Keeping the encoder frozen, we recompute its embeddings over varying observation windows, from a full year down to a single day. We use them as inputs to a linear probe and a UNet segmentation head, benchmarking both of them against from-scratch networks on LUCAS, DynamicEarthNet, and PASTIS-R datasets. We show that the value of the embeddings is task-dependent. Where classes are separated by phenology, as for the crop types of PASTIS-R, they reach a mean Intersection-over-Union of $58.3$, about $46\%$ above the best from-scratch model. Where classes are temporally stable (e.g., forests in DynamicEarthNet and LUCAS), embedding-based and from-scratch models match only under full supervision. On both datasets, Tessera embeddings remain markedly more label-efficient. Degradation under shorter temporal windows is gradual and class-dependent. Contracting the window from one year to one month costs $39\%$ of the segmentation accuracy on PASTIS-R but only $5\%$ on DynamicEarthNet. Single-day embeddings still classify land cover in LUCAS at $3.4$ times the chance level. Our study shows that temporal coverage is therefore a tunable cost rather than a fixed prerequisite, opening regimes such as near-real-time mapping and faster land-use/land-cover refresh cycles.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Hyperspectral Diffusion Equivariant Imaging (HyDiff-EI): A Self-supervised Framework for Hyperspectral Image Inpainting</title>
+    <link href="http://arxiv.org/abs/2608.26812v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.26812v1</id>
+    <published>2026-08-27T00:00:00Z</published>
+    <updated>2026-08-27T00:00:00Z</updated>
+    <author>
+      <name>Shuo Li</name>
+    </author>
+    <author>
+      <name>Mike Davies</name>
+    </author>
+    <author>
+      <name>Mehrdad Yaghoobi</name>
+    </author>
+    <summary type="text">A novel Hyperspectral diffusion Equivariant Imaging (HyDiff-EI) framework for solving the hyperspectral image (HSI) inpainting problem has been presented here. Unlike conventional diffusion-based methods that rely on large-scale pretraining, HyDiff-EI is a test-time optimization framework that learns directly from a single corrupted HSI acquisition. This makes it flexible for different sensor configurations and particularly well-suited for practical remote sensing scenarios where large annotated hyperspectral datasets are limited. To address the ill-posed nature of unsupervised inpainting, we embed equivariant consistency constraints within the diffusion process. By leveraging the inherent geometric symmetries and intrinsic characteristics of HSIs, HyDiff-EI bridges the gap between generative diffusion modeling and self-consistent physical priors. We empirically show that coupling diffusion modeling with equivariant priors substantially enhances noise robustness and generalizability. Extensive experiments on real-world datasets including Chikusei, Botswana, and EMIT demonstrate that HyDiff-EI offers remarkable inpainting quality over existing self-supervised and diffusion-based algorithms in both noiseless and noisy cases.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 14 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Statistical Models of Ionospheric Variability and Irregularities in the Topside Ionosphere Based on the Swarm Satellite Data</title>
+    <link href="http://arxiv.org/abs/2608.26796v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.26796v1</id>
+    <published>2026-08-27T00:00:00Z</published>
+    <updated>2026-08-27T00:00:00Z</updated>
+    <author>
+      <name>Daria Kotova</name>
+    </author>
+    <author>
+      <name>Alan Wood</name>
+    </author>
+    <author>
+      <name>Eelco Doornbos</name>
+    </author>
+    <author>
+      <name>Jaroslav Urbář</name>
+    </author>
+    <author>
+      <name>Luca Spogli</name>
+    </author>
+    <author>
+      <name>Yaqi Jin</name>
+    </author>
+    <author>
+      <name>Lucilla Alfonsi</name>
+    </author>
+    <author>
+      <name>Gareth Dorrian</name>
+    </author>
+    <author>
+      <name>Mainul Hoque</name>
+    </author>
+    <author>
+      <name>Kasper van Dam</name>
+    </author>
+    <author>
+      <name>Elisabetta Iorfida</name>
+    </author>
+    <author>
+      <name>Wojciech Miloch</name>
+    </author>
+    <summary type="text">The ionosphere is a highly complex plasma containing electron density structures with a wide range of spatial scales. Coupling of the ionosphere with the Earth's magnetosphere and the solar wind, as well as to the neutral atmosphere, makes the ionosphere highly dynamic and highly dependent on the driving processes. Thus, modelling the ionosphere and capturing its full dynamic range considering all spatiotemporal scales is challenging. Swarm is the European Space Agency's (ESA) first constellation mission for Earth Observation, comprising multiple satellites in low Earth orbit. During the Swarm-VIP-Dynamic project, a suite of statistical models has been developed using observations from Swarm and proxies for heliogeophysical processes. The statistical modelling technique of Generalised Linear Modelling was used to create models for both the electron density and the variability of the plasma structures at horizontal spatial scales between 7.5 km and 100 km. Separate models were created for low, middle, auroral and polar latitudes. The models make predictions based on explanatory variables, which act as proxies for the underlying physical processes. The performance of the models of the electron density approached the theoretical best values for some of the goodness-of-fit statistics. This suggests that the modelling method is appropriate for the task undertaken. The models of ionospheric variability at larger spatial scales (about 100 km) also perform well, however the model performance decreases at smaller spatial scales. This suggests that there are physical processes missing from the models. Possible candidates are instability processes or driving forces of the ionosphere by wave activity from below, neither of which are captured by the models.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 32 pages, 3 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="physics.space-ph" />
+  </entry>
+  <entry>
+    <title>Learning Woody Clearing With Loss Alignment for Zero-Shot Regrowth and Woody Segmentation</title>
+    <link href="http://arxiv.org/abs/2608.26489v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.26489v1</id>
+    <published>2026-08-27T00:00:00Z</published>
+    <updated>2026-08-27T00:00:00Z</updated>
+    <author>
+      <name>Kal Backman</name>
+    </author>
+    <author>
+      <name>Jared Wood</name>
+    </author>
+    <author>
+      <name>Adam Roff</name>
+    </author>
+    <summary type="text">Detecting woody clearing is vital for managing biodiversity. Deep learning models can detect change in woody vegetation from bitemporal remote sensing imagery, however generated products may not meet end-user specifications due to unaligned loss definitions. Further limitations of deep learning models are the reliance on large datasets which can be difficult to attain for spatially rare and ambiguous events such as regrowth detection. In this work we train a model to detect woody change using bitemporal Sentinel-2 imagery consisting of 7 years' worth of annual imagery across the state of New South Wales, Australia. To align the objective of the model with end-user metrics, we introduce the loss scaling coefficient $α$ which transforms the objective to optimize for specific $F_β$ scores. Introducing $α$ was found to increase precision by 1.85x or recall by 1.12x. We propose input imagery augmentation and generation techniques that allow the woody change detection model to zero-shot transfer to regrowth and woody segmentation tasks. For woody segmentation, image generation techniques using activation maximization with low $α$ values for stability and image generation techniques derived from handcrafted features utilizing a mosaic of clearing patches and artificial trees for contextual grounding were found to outperform prior woody segmentation works of the study area, reducing the overall error by up to 18.2%. For zero-shot woody regrowth, creating pseudo-post and prior images resulted in the model achieving an F1 score of 0.845, creating a foundation for future regrowth detection work.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Transactions on Geoscience and Remote Sensing&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD;VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Planetary Prediction Engine: Autonomous Geospatial Prediction via Intelligent Data Selection and Foundation Model Embeddings</title>
     <link href="http://arxiv.org/abs/2608.26088v1" rel="alternate" type="text/html" />
@@ -136,6 +344,59 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Mapping Woody Vegetation from Multi-Source Imagery and Prediction Fusion for Enhanced Data Efficiency and Accuracy</title>
+    <link href="http://arxiv.org/abs/2608.26471v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.26471v1</id>
+    <published>2026-08-26T00:00:00Z</published>
+    <updated>2026-08-26T00:00:00Z</updated>
+    <author>
+      <name>Kal Backman</name>
+    </author>
+    <author>
+      <name>Jared Wood</name>
+    </author>
+    <author>
+      <name>Adam Roff</name>
+    </author>
+    <summary type="text">Tree cover maps are a fundamental remote sensing product, used to derive ecological insights about the landscape and are essential to change detection, vegetation mapping and fire monitoring programs. However, comprehensive tree cover mapping requires reliable and high-quality imagery, free of cloud and weather defects to ensure accurate model outputs. Deep learning approaches can generate high quality maps with minimal human intervention but require large amounts of human annotated data to be successful. In this work we propose a framework consisting of methods that aim to improve the data efficiency and robustness of deep learning models using data fusion techniques to segment woody vegetation defined as vegetation over the height of 2m across the state of New South Wales, Australia. To improve robustness against varying image quality, we propose an image composition method that normalizes the imagery and removes defects, whilst also minimizing the reliance on individual image quality by proposing a prediction fusion method. The two methods resulted in an error reduction of 38.2% and 53.6% respectively compared to single-source imagery. To address deep learning approaches' limitation of requiring large amounts of data, we apply label transfer to multiple sources of imagery as a form of data augmentation to improve data efficiency. Learning from multiple image sources was shown to be the biggest improvement in performance, resulting in an error reduction between 28.1% to 76.2% across the different validation experiments, whilst reducing the standard deviation of performance across image dates by a factor of 13.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Characterizing the Landscape of Open-Source Satellite Software</title>
+    <link href="http://arxiv.org/abs/2608.26211v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.26211v1</id>
+    <published>2026-08-26T00:00:00Z</published>
+    <updated>2026-08-26T00:00:00Z</updated>
+    <author>
+      <name>Jinfeng Wen</name>
+    </author>
+    <author>
+      <name>Qi Liang</name>
+    </author>
+    <author>
+      <name>Yuehan Sun</name>
+    </author>
+    <author>
+      <name>Federica Sarro</name>
+    </author>
+    <author>
+      <name>Ao Zhou</name>
+    </author>
+    <author>
+      <name>Xuanzhe Liu</name>
+    </author>
+    <author>
+      <name>Shangguang Wang</name>
+    </author>
+    <summary type="text">Satellites have become fundamental components of modern technological systems, supporting critical infrastructure in communication, navigation, Earth observation, and scientific research. As space exploration advances and demand for satellite-enabled services grows, reliance on complex, heterogeneous satellite software continues to increase. A systematic understanding of the satellite software landscape is therefore increasingly important, yet existing studies still lack a comprehensive empirical examination. To address this gap, we present the first characterization study of open-source satellite software, examining its ecosystem and development practices. We mine and analyze 22,286 satellite-related GitHub projects through three research questions on popularity trends (RQ1), software goals (RQ2), and development practices (RQ3). First, we characterize the temporal evolution of projects and active developers, revealing increasing popularity. Second, through manual inspection of 646 projects, we construct a taxonomy of 43 software-goal categories spanning conceptual design, datasets, system implementation, simulation, testing, and tools. Third, we conduct an in-depth analysis of projects with source code, revealing a highly heterogeneous and task-specialized ecosystem with 66 programming languages and diverse implementation strategies. Finally, we summarize key findings and derive actionable implications for satellite developers and researchers.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; This paper has been accepted for publication in ASE 2026!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.SE" />
   </entry>
   <entry>
     <title>Potential survivable niches for microbial life on the lunar south pole</title>
@@ -728,315 +989,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;CD&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Mining beyond Earth with Space Robots: Exploration, Sampling, and Extraction</title>
-    <link href="http://arxiv.org/abs/2608.21358v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.21358v1</id>
-    <published>2026-08-21T00:00:00Z</published>
-    <updated>2026-08-21T00:00:00Z</updated>
-    <author>
-      <name>Dong Li</name>
-    </author>
-    <author>
-      <name>Dujun Nie</name>
-    </author>
-    <author>
-      <name>Xiaotong Zhang</name>
-    </author>
-    <author>
-      <name>Ruilin Wang</name>
-    </author>
-    <author>
-      <name>Yuchen Li</name>
-    </author>
-    <author>
-      <name>Chang Ge</name>
-    </author>
-    <author>
-      <name>Chao Xiong</name>
-    </author>
-    <author>
-      <name>Kaichang Di</name>
-    </author>
-    <author>
-      <name>Andreas Nüchter</name>
-    </author>
-    <author>
-      <name>Levente Kovács</name>
-    </author>
-    <author>
-      <name>Qingquan Li</name>
-    </author>
-    <author>
-      <name>Shirong Ge</name>
-    </author>
-    <author>
-      <name>Fei-Yue Wang</name>
-    </author>
-    <author>
-      <name>Long Chen</name>
-    </author>
-    <summary type="text">Space resource acquisition and utilization, commonly referred to as Space Mining, represent critical pathways for enabling sustained human exploration and unlocking commercial opportunities in space. These resources mainly include helium-3, water, mineral resources on the Moon and Mars, and abundant mineral deposits on asteroids. Due to the harsh conditions of space, communication delays, and high launch costs, the development of autonomous robotic systems is critical to achieving efficient, cost-effective space mining. This paper provides a comprehensive overview of space mining robotics and associated technologies. First, we review the background of space mining, including international policies, commercial entities, and recent advancements. We define a systematic six-stage architecture for space mining: Exploration is initiated by (1) remote sensing for target identification and (2) precise in situ robotic detection; Sampling progresses from (3) single-robot small-scale sampling to (4) multi-robot large-scale excavation; and Extraction integrates (5) autonomous resource extraction and (6) final integration into in situ construction or terrestrial transport. Additionally, we review and curate existing resources for space mining research, including real-world mission data, terrestrial analog datasets, and high-fidelity simulation environments. Finally, we identify critical open challenges in autonomous space mining and delineate a strategic research roadmap to bridge current technological gaps, fostering the transition toward a sustainable off-world economy. To track ongoing developments in space mining, we maintain an updated project page: https://github.com/OpenSpace-Lab/Space-Mining-with-Robotics-List.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/OpenSpace-Lab/Space-Mining-with-Robotics-List"&gt;https://github.com/OpenSpace-Lab/Space-Mining-with-Robotics-List&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Robotics" />
-  </entry>
-  <entry>
-    <title>Matching Urban Flood Sensor Placement to Monitoring Objectives Using Bayesian Optimal Experimental Design</title>
-    <link href="http://arxiv.org/abs/2608.21182v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.21182v1</id>
-    <published>2026-08-21T00:00:00Z</published>
-    <updated>2026-08-21T00:00:00Z</updated>
-    <author>
-      <name>Chen Cheng</name>
-    </author>
-    <author>
-      <name>Vinh Ngoc Tran</name>
-    </author>
-    <author>
-      <name>Jiayuan Dong</name>
-    </author>
-    <author>
-      <name>Sarah Whitaker</name>
-    </author>
-    <author>
-      <name>Shannon Bergt</name>
-    </author>
-    <author>
-      <name>John Ziker</name>
-    </author>
-    <author>
-      <name>Valeriy Y. Ivanov</name>
-    </author>
-    <author>
-      <name>Xun Huan</name>
-    </author>
-    <summary type="text">Flood-monitoring sensors are often placed according to coverage, access, or expected inundation. However, the value of a measurement depends on the prediction or decision it is intended to inform. Using tRIBS-Urban simulations and a neural-network surrogate of the August 2014 metropolitan Detroit flood, we examine how this learning target changes single-sensor placement. Across 2,576 candidate locations, we compare parameter-oriented optimal experimental design (PO-OED), which values expected information gain (EIG) about model parameters, with goal-oriented optimal experimental design (GO-OED), which values EIG about specified flood predictions. We also examine how parameter EIG evolves during the event, and illustrate that parameter learning translates unevenly into reductions in predictive uncertainty across locations and lead times. Under GO-OED, point-depth targets favor nearby locations, whereas regional-average and regional maximum-depth targets can favor nonlocal locations. Weighted multi-point objectives retain similar broad spatial patterns, although their computed max-EIG locations differ. Public geospatial data further provide illustrative feasibility and contextual classifications for deployment screening. These results show how monitoring objectives shape sensor placement in optimal experimental design, and motivates an objective-first workflow that defines the intended prediction and priorities, applies field-verified restrictions, and ranks locations by EIG.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="stat.AP" />
-    <category term="Geophysics" />
-  </entry>
-  <entry>
-    <title>Neuromorphic Infrared Fibre-Optic Event-Based Sensing with Fast and Efficient Photonic-Electronic Spiking Neurons</title>
-    <link href="http://arxiv.org/abs/2608.21124v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.21124v1</id>
-    <published>2026-08-21T00:00:00Z</published>
-    <updated>2026-08-21T00:00:00Z</updated>
-    <author>
-      <name>Dylan Black</name>
-    </author>
-    <author>
-      <name>Giovanni Donati</name>
-    </author>
-    <author>
-      <name>Joshua Robertson</name>
-    </author>
-    <author>
-      <name>Qusay Raghib Ali Al-Taai</name>
-    </author>
-    <author>
-      <name>José Figueiredo</name>
-    </author>
-    <author>
-      <name>Edward Wasige</name>
-    </author>
-    <author>
-      <name>Bruno Romeira</name>
-    </author>
-    <author>
-      <name>Antonio Hurtado</name>
-    </author>
-    <summary type="text">Current photonic technologies for remote sensing require the capture of large amounts of data, suffering as a result from high energy consumption, excessive data redundancy and storage, and costly data processing requirements, limiting their ability for direct and efficient edge-processing for rapid decision making and alarm triggering. In contrast, biological sensing systems, given their event-driven nature and in-sensor processing capabilities offer energy-efficient and practical alternatives. In this work, we draw direct inspiration from the neural spiking in biological sensory systems, to propose a novel neuromorphic event-based photonic technology permitting the remote sensing of environmental events-of-interest efficiently, at high speeds and across a wide dynamic frequency range. Our approach combines widely-deployed fibre-optic telecommunication links and photo-detecting resonant tunnelling diodes (pRTD) acting as light-triggered spiking neurons. We demonstrate that this new neuromorphic photonic sensing approach allows the remote detection of different types of environmental events, including temperature variations, strain-induced motion, audio and air turbulence, with high temporal resolution (encoding them with fast nanosecond-rate neural-like spikes). These results pave the way for novel light-enabled neuromorphic remote infrared fibre-optic sensing networks that are fast, efficient, event-driven, scalable, permit direct processing at-the-edge, and offer practical alternatives to current data-intensive approaches for photonic remote sensing.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 17 pages, 6 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="physics.optics" />
-  </entry>
-  <entry>
-    <title>Remote sensing of the temporal and spatial variability of atmospheric refractivity using ADS-B interferometry (ADSBi)</title>
-    <link href="http://arxiv.org/abs/2608.21108v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.21108v1</id>
-    <published>2026-08-21T00:00:00Z</published>
-    <updated>2026-08-21T00:00:00Z</updated>
-    <author>
-      <name>Ollie Lewis</name>
-    </author>
-    <author>
-      <name>Chris Brunt</name>
-    </author>
-    <author>
-      <name>Malcolm Kitchen</name>
-    </author>
-    <author>
-      <name>Neill E. Bowler</name>
-    </author>
-    <author>
-      <name>Edmund K. Stone</name>
-    </author>
-    <summary type="text">The extreme variability of humidity in the lower atmosphere over short spatial and temporal scales presents an enormous challenge for existing observing systems. Variations in humidity can be detected due to changes in the refractive properties of the atmosphere, which influence the propagation of electromagnetic radiation. We demonstrate the ability to retrieve high-resolution refractivity gradient measurements using an interferometer to measure the refraction of the Automatic Dependent Surveillance-Broadcast (ADS-B) radio transmission routinely broadcast by commercial aircraft. The ADS-B interferometry (ADSBi) technique is sensitive to small-scale spatial and temporal variability in the refractivity gradient due to changes in humidity. We demonstrate how the retrieval of refractivity profiles is possible exploiting the differences in the observed refraction of radio transmissions broadcast by aircraft at different distances and altitudes.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages, 7 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Atmospheric and Oceanic Physics" />
-  </entry>
-  <entry>
-    <title>CoST: Semantic-Aware Urban Understanding via Spatial-Temporal Alignment</title>
-    <link href="http://arxiv.org/abs/2608.21041v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.21041v1</id>
-    <published>2026-08-21T00:00:00Z</published>
-    <updated>2026-08-21T00:00:00Z</updated>
-    <author>
-      <name>Yutian Jiang</name>
-    </author>
-    <author>
-      <name>Jiabo Liu</name>
-    </author>
-    <author>
-      <name>Xixuan Hao</name>
-    </author>
-    <author>
-      <name>Yuxuan Liang</name>
-    </author>
-    <summary type="text">Geospatial representation learning from satellite imagery is a fundamental problem for large-scale urban analysis and real-world applications. Despite recent advances, current methods struggle with cross-region generalization and semantic interpretability due to their reliance on region-specific auxiliary data and the neglect of semantic alignment within multi-temporal urban imagery. Therefore, we present CoST, a novel \underline{Co}ntrastive-based \underline{S}patial-\underline{T}emporal framework that aligns spatial context with multi-temporal semantics to extract universal geographic regularities shared across regions. Specifically, CoST explicitly models spatial correlations to capture transferable geographic structures and exploits multi-year urban change semantics to align learned representations with high-level geo-semantics. Extensive experiments demonstrate that CoST consistently achieves superior performance across various downstream tasks and in unseen scenario, yielding an average relative gain of 8.7\% over the strongest competing methods across eight city-indicator settings. The code is available in \href{https://github.com/Arandinglv/CoST}{this repo}.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Arandinglv/CoST"&gt;https://github.com/Arandinglv/CoST&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>SuppreSensing: Expert-Guided Feature Recalibration and Discrepancy Augmentation for Multimodal Object Detection</title>
-    <link href="http://arxiv.org/abs/2608.20944v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.20944v1</id>
-    <published>2026-08-21T00:00:00Z</published>
-    <updated>2026-08-21T00:00:00Z</updated>
-    <author>
-      <name>Xin Wu</name>
-    </author>
-    <author>
-      <name>Zhenyu Gao</name>
-    </author>
-    <author>
-      <name>Qiankun Zhang</name>
-    </author>
-    <author>
-      <name>Shaoyong Guo</name>
-    </author>
-    <summary type="text">Multimodal object detection in remote sensing faces challenges due to semantic heterogeneity and modality-specific noise interference. To this end, we propose SuppreSensing, which reformulates multimodal fusion as a selective collaboration process that jointly models shared information and modality-specific cues. SuppreSensing first designs an Expert-driven Multimodal Feature Recalibration (EMFR) module, which reformulates shared-consensus extraction as an input-adaptive multi-expert selection process to alleviate the symmetry trap in multimodal fusion. Complementing this, a modality-specific attribute augmentation strategy is employed to enhance specific modality features by modeling bidirectional discrepancy patterns, mitigating cross-modal heterogeneity. Furthermore, we propose an Expert-driven Customized Feature Purification (ECFP) module based on a "specialized inspection-comprehensive analysis-diagnostic update" physical examination paradigm to iteratively filter redundancies and reinforce task-relevant semantics. Extensive experiments on the DroneVehicle and VEDAI datasets demonstrate that SuppreSensing achieves state-of-the-art detection performance. Cross-domain evaluations on natural scene datasets (FLIR and LLVIP) further validate its superior robustness and generalization capability across diverse environmental conditions.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>RDANet: Relative Degradation Aware Network for Infrared Small Target Detection</title>
-    <link href="http://arxiv.org/abs/2608.20870v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.20870v1</id>
-    <published>2026-08-21T00:00:00Z</published>
-    <updated>2026-08-21T00:00:00Z</updated>
-    <author>
-      <name>Rui Liu</name>
-    </author>
-    <author>
-      <name>Jing Nie</name>
-    </author>
-    <author>
-      <name>Ying Fu</name>
-    </author>
-    <summary type="text">Infrared small target detection is still challenging in remote sensing imagery, because the targets are extremely small, exhibit weak local contrast, and are often embedded in complex and highly variable backgrounds. In addition to these inherent difficulties, we observe that existing detectors often show unstable performance when the target scale changes or when the scene background varies. This scale- and scene-sensitive degradation indicates that current methods are insufficient in simultaneously preserving target structure during feature downsampling and maintaining discriminative local contrast under background shifts, which finally results in unbalanced detection performance across different conditions. To improve detection robustness, this paper proposes a Relative Degradation Aware Network (RDANet) for infrared small target detection. RDANet consists of two dedicated modules: Multi-Scale Anti-Alias Downsampling (MSAD) and Prototype-Guided Skip Memory (PGSM). MSAD introduces multi-scale anti-alias filtering together with pixel-fold aggregation to reduce aliasing effects during resolution reduction, so that target shape information can be better preserved while irrelevant background responses are suppressed. PGSM further enhances the skip features by retrieving patch-level prototypes from a shared memory and adaptively integrating them into the current representation, which helps maintain stable local contrast cues under diverse scene backgrounds. Experiments on three public benchmarks show that RDANet achieves the best performance on most evaluation metrics, while scale- and background-stratified evaluations indicate more stable behavior across target sizes and scene complexity. The code is available at https://github.com/BIT-RuiLiu/RDANet.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/BIT-RuiLiu/RDANet"&gt;https://github.com/BIT-RuiLiu/RDANet&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; TGRS 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Neuro-Geospatial Modelling of EEG Affective States Using Literature-Informed Environmental Context</title>
-    <link href="http://arxiv.org/abs/2608.20807v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.20807v1</id>
-    <published>2026-08-21T00:00:00Z</published>
-    <updated>2026-08-21T00:00:00Z</updated>
-    <author>
-      <name>Utsav Poudel</name>
-    </author>
-    <author>
-      <name>Jagannath Aryal</name>
-    </author>
-    <author>
-      <name>Subramaniyaswamy Vairavasundaram</name>
-    </author>
-    <summary type="text">Environmental exposures such as air pollution and greenness have been associated with affective and cognitive outcomes, but EEG and environmental datasets are rarely jointly georeferenced. We investigate whether literature-informed environmental priors can serve as an auxiliary geospatial modality for EEG-based affective-state classification when individual-level exposure data are unavailable. We combine 30-channel EEG from the EAV benchmark (42 participants, aged 20-30 years) with environmental representations derived from OpenAQ, Sentinel-2, Sentinel-5P, and OpenStreetMap data for Astana. A dual-tower architecture combines EEG-Conformer representations with a graph-based environmental encoder. Because the datasets are not co-registered, environmental context is treated as a literature-informed prior rather than measured exposure. Subject-level repeated splits, permutation and label-shuffling controls, dose-response reversal, and domain-shift experiments distinguish architecture-level gains from prior-dependent gains. The multimodal model achieves 76.2% accuracy versus 67.4% for EEG alone. Controls disrupting environmental-label structure retain part of this gain, indicating that the improvement is not attributable solely to environmental information. Replacing the Astana environmental distribution with an independently modeled Singapore distribution reduces accuracy to 72.8%. These findings demonstrate technical feasibility but do not establish an observed or causal exposure-affect association. The study provides a framework for future jointly collected mobile EEG-environment studies. Implementation: https://github.com/r11up/geo-cog</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/r11up/geo-cog"&gt;https://github.com/r11up/geo-cog&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="cs.HC; Machine Learning" />
-  </entry>
-  <entry>
-    <title>Microwave Remote Sensing of Giant Planet Atmospheres: Considerations for Saturn and Uranus Orbiter Missions</title>
-    <link href="http://arxiv.org/abs/2608.20669v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.20669v1</id>
-    <published>2026-08-21T00:00:00Z</published>
-    <updated>2026-08-21T00:00:00Z</updated>
-    <author>
-      <name>Alex Akins</name>
-    </author>
-    <author>
-      <name>Mark Hofstadter</name>
-    </author>
-    <summary type="text">Microwave radiometer instruments are uniquely capable of studying volatile element abundances and heat/mass transport within the deep atmospheres of giant planets. The results of the Juno MWR experiment have challenged long-held assumptions regarding Jupiter's troposphere, and the inclusion of such an instrument on future missions to Saturn or the ice giants would similarly re-write our understanding of giant planet atmospheres. We present a high-level summary of the capabilities of microwave radiometers for the study of giant planet atmospheres, including a review of the various scientific motivations and current knowledge, concise statement of the fundamentals of radiometer remote sensing accessible at the systems-engineering level, and calculations which are of illustrative value in the design of future instruments.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 20 pages, 11 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="astro-ph.EP" />
-    <category term="astro-ph.IM" />
-  </entry>
-  <entry>
-    <title>Quantifying geographic domain shift to decouple the geospatial transferability of human mobility flow generation models</title>
-    <link href="http://arxiv.org/abs/2608.21567v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.21567v2</id>
-    <published>2026-08-21T00:00:00Z</published>
-    <updated>2026-08-21T00:00:00Z</updated>
-    <author>
-      <name>Zhiyong Zhou</name>
-    </author>
-    <author>
-      <name>Song Gao</name>
-    </author>
-    <author>
-      <name>Qianheng Zhang</name>
-    </author>
-    <author>
-      <name>Feng Zhang</name>
-    </author>
-    <author>
-      <name>Zhenhong Du</name>
-    </author>
-    <summary type="text">Human mobility serves as an essential proxy for understanding social, economic, and environmental dynamics in urban systems. Geospatial transferability, which measures a model's capability in a new location or unseen region, is a critical dimension for comparing different human mobility generation models. However, few studies have studied the intrinsic characteristics of geospatial transferability. To this end, this study systematically investigates the geospatial transferability of four representative human mobility generation models using a large-scale benchmark dataset of census tract level commuting flows across 2265 counties in the United States. Inspired by the domain adaptation theory in machine learning, we introduce geographic domain shift to describe the intrinsic differences in geographic feature distributions and spatial structures between source and target regions, which may jointly affect model transferability. Moreover, we propose two metrics, mutual information and spatial shift, to quantify the geographic domain shift. To examine their associations with model transferability, we employ linear mixed-effects regression to analyze the associations between geographic domain shifts and transferability. Our results reveal substantial spatial heterogeneity and asymmetry in transfer performance across regions. Both information shift and spatial shift exhibit statistically significant and complementary explanatory power. This indicates that geospatial transferability depends not only on model design but also on intrinsic geographic differences. These findings provide a novel methodological framework for evaluating and improving the geospatial transferability of human mobility generation models and support more robust and fair human mobility data synthesis across diverse regions. It also offers insights on spatial transferability for GeoAI model development.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 28 pages, 4 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>DamageScope: Vision-Language Retrieval at Scale for Disaster Damage Assessment from Satellite Imagery</title>
-    <link href="http://arxiv.org/abs/2608.21529v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.21529v1</id>
-    <published>2026-08-21T00:00:00Z</published>
-    <updated>2026-08-21T00:00:00Z</updated>
-    <author>
-      <name>Ravi K. Rajendran</name>
-    </author>
-    <author>
-      <name>Biplob Debnath</name>
-    </author>
-    <author>
-      <name>Murugan Sankaradas</name>
-    </author>
-    <author>
-      <name>Srimat T. Chakradhar</name>
-    </author>
-    <summary type="text">Timely and accurate assessment of property damage is critical following natural disasters. Traditional on-site inspections are labor-intensive, costly, and often pose safety risks. Advances in satellite imagery and vision-language models (VLMs) enable scalable remote damage assessment; however, integrating VLMs into large-scale Earth observation pipelines presents challenges in computational efficiency, data organization, and information retrieval. To address these challenges, we present DamageScope, a retrieval-augmented framework that combines satellite imagery with Vision-Language Models (VLMs) and Large Language Models (LLMs) to automate property damage analysis. Built on a Retrieval-Augmented Generation (RAG) framework, DamageScope extracts structured visual representations from satellite imagery to support interactive natural language queries for damage assessment. To address scalability, we introduce a novel multi-vector embedding-based clustering algorithm that outperforms traditional single-vector embedding approaches while reducing indexing time by up to 14x. Furthermore, a dual-store data architecture minimizes LLM API calls, reducing both operational cost and response latency by up to approximately 3x. By effectively balancing scalability and operational efficiency, DamageScope provides a robust and practical solution for real-world damage assessment tasks.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="cs.CL; Information Retrieval" />
   </entry>
 </feed>
