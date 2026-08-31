@@ -2890,3 +2890,10 @@ Method,Computer Vision,,2026-08-19,8,2026,,SED-FOD: Scattering-Aware Expert Deco
   year={2026},
   url={http://arxiv.org/abs/2608.18755v1}
 }","Shu Yang, Zhen Chen, Zhiyu Jiang, Yanlei Li, Xingdong Liang",OD,2026-08-20
+Method,Computer Vision,,2026-08-28,8,2026,,Learning the Target Priors Before Image Translation: A Decoupled Training Paradigm for Cross-Modal Image Translation in Remote Sensing,,http://arxiv.org/abs/2608.28517v1,"Cross-modal image translation in remote sensing must preserve source-observed content while matching the target-domain distribution. Existing methods jointly learn the target prior and cross-modal dependence from scarce paired data, overlooking a key asymmetry: only the latter intrinsically requires cross-modal correspondence. We formalize this distinction through conditional-score and denoising-risk analyses and propose Learning the Target Priors Before Image Translation (LTP-BIT), a prior-first paradigm that decouples the two learning tasks. LTP-BIT first learns a target-domain generative prior from large-scale unpaired imagery, then retains the pretrained backbone weights and learns source-conditioned control through P-DART, a parameter-efficient dual-stream architecture. Controlled experiments show that prior matching and scaling primarily improve target-domain realism, whereas instance fidelity relies more strongly on conditional adaptation. LTP-BIT achieves state-of-the-art performance across SAR-to-RGB and NIR-to-RGB benchmarks using only 9.81% task-specific parameters. On QXS-SAROPT, it retains near-full-data instance fidelity with only 25% of the paired samples.",,"26 pages, including supplementary material","@article{hu2026learning,
+  title={Learning the Target Priors Before Image Translation: A Decoupled Training Paradigm for Cross-Modal Image Translation in Remote Sensing},
+  author={Keyan Hu and Mingtao Wang and Ziyu Zhou and Tiandong Shi and Haifeng Li and Ji Qi and Chao Tao},
+  journal={arXiv preprint arXiv:2608.28517v1},
+  year={2026},
+  url={http://arxiv.org/abs/2608.28517v1}
+}","Keyan Hu, Mingtao Wang, Ziyu Zhou, Tiandong Shi, Haifeng Li, Ji Qi, Chao Tao",,2026-08-31
