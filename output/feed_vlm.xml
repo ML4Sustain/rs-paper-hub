@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-28T12:26:28Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 11 entries</subtitle>
+  <updated>2026-08-31T02:06:57Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 8 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -343,88 +343,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 25 pages, 7 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Object Counting Across Modalities: Taxonomies, Benchmarks, Applications, and Open Challenges</title>
-    <link href="http://arxiv.org/abs/2608.23845v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.23845v1</id>
-    <published>2026-08-24T00:00:00Z</published>
-    <updated>2026-08-24T00:00:00Z</updated>
-    <author>
-      <name>Joana Konadu Owusu</name>
-    </author>
-    <author>
-      <name>Shivanand Venkanna Sheshappanavar</name>
-    </author>
-    <summary type="text">Object-counting methods have rapidly shifted from class-specific density regression to open-vocabulary, foundation-model-backed counters. These methods now enumerate instances from various visual and textual prompts. While this shift marks major conceptual progress, our survey argues that claims of universal generality have outpaced the evaluative infrastructure. Most progress metrics rely on a few saturated benchmarks that models exploit for statistical regularities. Newly introduced diagnostic datasets reveal systematic failures in semantic grounding, temporal identity, and spatial reasoning with occlusion. To address these failures, we introduce a five-axis taxonomy (modality, mechanism, prompting, supervision level, and generalization setting). We use this taxonomy to audit the literature across application domains, including microscopy, remote sensing, crowd counting, and agriculture. This formalizes prevailing challenges into six structural contradictions. From these, we propose a roadmap for compositional scene understanding, active counting agents, and unified multimodal evaluation protocols. The main imperative is to build a robust evaluation infrastructure to distinguish open-world generalization from benchmark-specific optimization, rather than simple incremental engineering.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>GeoRisk-RAG: A Hierarchy-Aware Risk Framework for Improving RAG Reliability through Selective Answering</title>
-    <link href="http://arxiv.org/abs/2608.22634v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.22634v1</id>
-    <published>2026-08-23T00:00:00Z</published>
-    <updated>2026-08-23T00:00:00Z</updated>
-    <author>
-      <name>Meenu Ravi</name>
-    </author>
-    <author>
-      <name>Shailik Sarkar</name>
-    </author>
-    <author>
-      <name>Lulwah AlKulaib</name>
-    </author>
-    <author>
-      <name>Yordanos Tessema</name>
-    </author>
-    <author>
-      <name>Chang-Tien Lu</name>
-    </author>
-    <summary type="text">Current work on improving reliability in large language model (LLM)- generated answers has primarily leveraged Retrieval-Augmented Generation (RAG), knowledge-graph augmentation, and reinforcement learning. While these methods are adept at enhancing and measuring reliability through semantic similarity and faithfulness, they often struggle to distinguish semantic similarity from geographic validity. This is especially critical in natural hazard management domains where geographic granularity (i.e., town vs. city vs. state) is significant for decision-making, as responses valid in one municipality may not transfer to another. In such domains, a confidently wrong answer carries greater risk than abstaining. We present GeoRisk-RAG, a novel hierarchy-aware framework that addresses this geographic-validity gap through selective answering. This framework explicitly estimates geographic applicability using a Directed Acyclic Graph (DAG)-based distance for context retrieval before response generation. Experiments on a novel held-out wildfire-related question-answering (QA) dataset show that GeoRisk-RAG significantly reduces false confidence rates for location-dependent questions, lowering the rate to 0.009 compared with ~0.090 for standard semantic similarity and reranking baselines, while consistently achieving higher human preference alignment. This work provides a more comprehensive assessment of end-to-end RAG pipelines by integrating geographic validity and selective-answering behavior for safer decision-making in geospatial domains.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted for CIKM '26 conference&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.CL" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>HeatTok: Enhancing Remote Sensing Image Understanding via Thermodiffusion-based Tokenization</title>
-    <link href="http://arxiv.org/abs/2608.22485v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.22485v1</id>
-    <published>2026-08-23T00:00:00Z</published>
-    <updated>2026-08-23T00:00:00Z</updated>
-    <author>
-      <name>Yingying Yan</name>
-    </author>
-    <author>
-      <name>Jiaqi Tang</name>
-    </author>
-    <author>
-      <name>Wei Wei</name>
-    </author>
-    <author>
-      <name>Qianzhou Wang</name>
-    </author>
-    <author>
-      <name>Jinjian Wu</name>
-    </author>
-    <author>
-      <name>Botong Geng</name>
-    </author>
-    <author>
-      <name>Jianmin Chen</name>
-    </author>
-    <author>
-      <name>Yuyang Xia</name>
-    </author>
-    <author>
-      <name>Lei Zhang</name>
-    </author>
-    <summary type="text">Current visual tokenizers in Multimodal Large Language Models (MLLMs) predominantly rely on patch-based partitioning, which causes severe semantic mixture and object fragmentation in remote sensing imagery due to the irregular contours of geo-objects. Moreover, existing adaptive methods struggle to extract precise object-level tokens and lack dedicated geometric positional encodings for irregular regions. In this paper, we propose HeatTok, a semantic-aware tokenizer driven by thermodiffusion aggregation. Inspired by the physical principles of heat conduction, HeatTok adaptively merges adjacent homogeneous regions to generate semantically independent, object-aligned irregular tokens. To enable MLLMs to perceive these irregular shapes, we design the Gaussian Multimodal Rotary Positional Embedding (G-MRoPE), which models token spatial distributions via 2D Gaussians and explicitly injects center, scale, and orientation cues. Extensive evaluations on the VRSBench and EarthVQA datasets demonstrate that HeatTok effectively preserves object-level semantic integrity and achieves state-of-the-art performance under a reasonable token budget. The code is available: https://github.com/YingyingYan1/HeatTok.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/YingyingYan1/HeatTok"&gt;https://github.com/YingyingYan1/HeatTok&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the 34th ACM International Conference on Multimedia (ACM MM 2026)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>
