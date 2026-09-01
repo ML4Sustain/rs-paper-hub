@@ -4,12 +4,81 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-31T06:31:34Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
+  <updated>2026-09-01T02:15:40Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 5 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Minerals in the Wild: A Hyperspectral-XRF Dataset for Elemental Composition Estimation</title>
+    <link href="http://arxiv.org/abs/2608.30537v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.30537v1</id>
+    <published>2026-08-31T00:00:00Z</published>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <author>
+      <name>Eleftheria Tetoula-Tsonga</name>
+    </author>
+    <author>
+      <name>George Arvanitakis</name>
+    </author>
+    <author>
+      <name>Theodoros Giannakas</name>
+    </author>
+    <summary type="text">Rapid mineral characterization is essential for applications ranging from mineral exploration to industrial ore processing. To this end, Hyperspectral Imaging (HSI) has emerged as a promising sensing modality thanks to its fine spectral resolution, enabling mineral discrimination in both close-range and remote sensing settings. However, the scarcity of publicly available datasets with reliable ground-truth labels hinders the development and evaluation of HSI-based mineral identification methods. We release Minerals in the Wild, a multi-purpose dataset comprising 1,132 rock specimens collected across Europe. For each specimen, we provide an HSI acquisition together with an elemental characterization obtained via an XRF sensor. We define the task of elemental characterization on our dataset and propose a pruning mechanism that removes distant signatures from the USGS dictionary prior to a convex optimization approach for matching HSI pixels with USGS spectral signatures. Finally, we empirically show that our approach outperforms simpler baselines.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>MWIR-4-Plastic: The Identification of Complex End-of-Life Industrial Plastic using Mid-wave Infrared Hyperspectral Imaging and Machine Learning</title>
+    <link href="http://arxiv.org/abs/2608.28874v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.28874v1</id>
+    <published>2026-08-28T00:00:00Z</published>
+    <updated>2026-08-28T00:00:00Z</updated>
+    <author>
+      <name>Elias Arbash</name>
+    </author>
+    <author>
+      <name>Andréa de Lima Ribeiro</name>
+    </author>
+    <author>
+      <name>Filipa Simões</name>
+    </author>
+    <author>
+      <name>Ahmed Jamal Afifi</name>
+    </author>
+    <author>
+      <name>Aldino Rizaldy</name>
+    </author>
+    <author>
+      <name>Yuleika Madriz</name>
+    </author>
+    <author>
+      <name>Samuel Thiele</name>
+    </author>
+    <author>
+      <name>Sandra Lorenz</name>
+    </author>
+    <author>
+      <name>Margret Fuchs</name>
+    </author>
+    <author>
+      <name>Pedram Ghamisi</name>
+    </author>
+    <author>
+      <name>Paul Scheunders</name>
+    </author>
+    <author>
+      <name>Richard Gloaguen</name>
+    </author>
+    <summary type="text">The automated sorting of shredded black plastics from end-of-life (EOF) industrial waste presents a significant challenge in recycling facilities, primarily due to the limitations of current sensing and analytical approaches. Existing studies predominantly rely on single-point contact-based mid-infrared spectroscopy or laboratory hyperspectral imaging (HSI) setups, which fail to provide the spatially resolved analysis necessary for fast, bulk processing. Moreover, available datasets are laboratory-controlled and focus on intact rather than shredded plastics, hindering further recycling refinement. Black industrial plastics, in particular, are underrepresented, while most classification pipelines depend on manual region selection and rule-based spectral matching, neglecting spatial information and modern deep learning (DL) methods. To address these gaps, we introduce the first publicly available HSI dataset of shredded black plastics from EOF vehicle, comprising four industrial polymers across 13 co-registered RGB, VNIR, SWIR, and MWIR scenes and their segmentation pipeline. We developed a multi-modal spectral-spatial framework that integrates foreground isolation, pixel-wise classification, and object-level majority voting. By adapting advanced hyperspectral transformers from earth observation and incorporating chemometric band selection, we achieve accurate classification of complex black plastics. The study establishes the first comprehensive benchmark using nine processing methods, including chemometric, machine learning, and DL architectures. To ensure reproducibility, the complete dataset and methodologies are publicly released, establishing a benchmark for a hyperspectral object-analysis pipeline in industrial inspection.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
   <entry>
     <title>Hyperspectral Diffusion Equivariant Imaging (HyDiff-EI): A Self-supervised Framework for Hyperspectral Image Inpainting</title>
     <link href="http://arxiv.org/abs/2608.26812v1" rel="alternate" type="text/html" />
@@ -53,37 +122,27 @@
     <category term="Computer Vision" />
   </entry>
   <entry>
-    <title>Deep Learning Super Resolution for Satellite Cloud Mask Downscaling</title>
-    <link href="http://arxiv.org/abs/2608.24715v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.24715v1</id>
-    <published>2026-08-25T00:00:00Z</published>
-    <updated>2026-08-25T00:00:00Z</updated>
+    <title>Multi-Sensor Mapping of Vulnerable Urban Settlements Using SAR, Multispectral, and Hyperspectral Imagery: A Case Study in Córdoba, Argentina</title>
+    <link href="http://arxiv.org/abs/2608.28680v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.28680v1</id>
+    <published>2026-08-26T00:00:00Z</published>
+    <updated>2026-08-26T00:00:00Z</updated>
     <author>
-      <name>Angelos Georgakis</name>
+      <name>Luigi Russo</name>
     </author>
     <author>
-      <name>Valentina Kanaki</name>
+      <name>Anabella Ferral</name>
     </author>
     <author>
-      <name>Giorgos Giannopoulos</name>
+      <name>Silvia Liberata Ullo</name>
     </author>
     <author>
-      <name>Stella Girtsou</name>
+      <name>Paolo Gamba</name>
     </author>
-    <author>
-      <name>Ioannis Kontogiorgakis</name>
-    </author>
-    <author>
-      <name>Charalampos Kontoes</name>
-    </author>
-    <author>
-      <name>Kostas Philippopoulos</name>
-    </author>
-    <summary type="text">A vast amount of optical satellite data is being transmitted to Earth-based servers every day, and more than half of this data is affected by haze or clouds. Additionally, this data suffers from the fundamental trade-off between spatial and temporal resolution, which remains largely unresolved, making the acquisition of continuous high-resolution satellite observations of clouds an ongoing challenge. This work addresses this challenge by proposing two Deep Learning super-resolution methods for the accurate downscaling of SEVIRI cloud mask products, as well as a novel cross-sensor cloud mask dataset called SEVMOD-CM, created by spatially and temporally matching MODIS and SEVIRI satellite observations. The two proposed models are a CNN-based (SpatialCNN) and a GAN-based (SpatialGAN) Neural Network. Trained on the SEVIRI spectral and cloud mask products, the proposed methods predict the corresponding MODIS Cloud masks, achieving a 4x spatial enhancement across sensor domains. Both approaches are evaluated experimentally, and compared against the standard bicubic interpolation upsampling technique. The experimental results demonstrate the value of the proposed models and dataset for the remote sensing community, highlighting the benefits of applying super-resolution techniques to geostationary-derived cloud mask products for applications such as atmospheric monitoring, weather forecasting, disaster risk reduction, solar energy forecasting, and climate research.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE International Geoscience and Remote Sensing Symposium (IGARSS 2026&lt;/p&gt;
+    <summary type="text">Informal settlements represent a major urban challenge in rapidly expanding cities, yet their identification from Earth Observation (EO) data remains difficult because of their heterogeneous appearance and incomplete official inventories. This work presents a multi-sensor deep learning (DL) framework for slum-likelihood mapping in Córdoba, Argentina, integrating high-resolution PlanetScope multispectral (MS) imagery, COSMO-SkyMed (CSK) Synthetic Aperture Radar (SAR) data, and medium-resolution PRISMA hyperspectral (HS) observations. The problem is formulated as a patch-level classification task using the official Registro Nacional de Barrios Populares (ReNaBaP) inventory as reference, and the models are evaluated through four geographically partitioned folds. SAR-only and MS-only baselines, their configurations with PRISMA HS support, and early fusion (EF), middle fusion (MF), and late fusion (LF) strategies are systematically compared. Results show that LF+HS provides the best overall balance between classification performance and spatial selectivity, while PRISMA contributes complementary spectral information alongside the higher-resolution MS and SAR representations. Beyond the standard evaluation against ReNaBaP, an external municipal vulnerability layer is used to interpret detections outside the official polygons, showing that several apparent false positives overlap broader vulnerable urban areas. Thermal analysis further shows that ReNaBaP settlements exhibit significantly higher surface temperatures than their immediate surroundings during a heatwave event, indicating localised surface-heat amplification. Taken together, these results suggest that multi-sensor EO fusion can support both the mapping of ReNaBaP settlements and the interpretation of broader urban vulnerability patterns.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Submitted to IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>

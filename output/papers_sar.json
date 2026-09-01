@@ -7864,5 +7864,24 @@
     "_added_date": "2026-08-31",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-08-26",
+    "Month": 8,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Multi-Sensor Mapping of Vulnerable Urban Settlements Using SAR, Multispectral, and Hyperspectral Imagery: A Case Study in Córdoba, Argentina",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2608.28680v1",
+    "Abstract": "Informal settlements represent a major urban challenge in rapidly expanding cities, yet their identification from Earth Observation (EO) data remains difficult because of their heterogeneous appearance and incomplete official inventories. This work presents a multi-sensor deep learning (DL) framework for slum-likelihood mapping in Córdoba, Argentina, integrating high-resolution PlanetScope multispectral (MS) imagery, COSMO-SkyMed (CSK) Synthetic Aperture Radar (SAR) data, and medium-resolution PRISMA hyperspectral (HS) observations. The problem is formulated as a patch-level classification task using the official Registro Nacional de Barrios Populares (ReNaBaP) inventory as reference, and the models are evaluated through four geographically partitioned folds. SAR-only and MS-only baselines, their configurations with PRISMA HS support, and early fusion (EF), middle fusion (MF), and late fusion (LF) strategies are systematically compared. Results show that LF+HS provides the best overall balance between classification performance and spatial selectivity, while PRISMA contributes complementary spectral information alongside the higher-resolution MS and SAR representations. Beyond the standard evaluation against ReNaBaP, an external municipal vulnerability layer is used to interpret detections outside the official polygons, showing that several apparent false positives overlap broader vulnerable urban areas. Thermal analysis further shows that ReNaBaP settlements exhibit significantly higher surface temperatures than their immediate surroundings during a heatwave event, indicating localised surface-heat amplification. Taken together, these results suggest that multi-sensor EO fusion can support both the mapping of ReNaBaP settlements and the interpretation of broader urban vulnerability patterns.",
+    "code": "",
+    "Publication": "Submitted to IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+    "BibTex": "@article{russo2026multisensor,\n  title={Multi-Sensor Mapping of Vulnerable Urban Settlements Using SAR, Multispectral, and Hyperspectral Imagery: A Case Study in Córdoba, Argentina},\n  author={Luigi Russo and Anabella Ferral and Silvia Liberata Ullo and Paolo Gamba},\n  journal={arXiv preprint arXiv:2608.28680v1},\n  year={2026},\n  url={http://arxiv.org/abs/2608.28680v1}\n}",
+    "Authors": "Luigi Russo, Anabella Ferral, Silvia Liberata Ullo, Paolo Gamba",
+    "_added_date": "2026-09-01",
+    "Category": "Method",
+    "_tasks": "CLS"
   }
 ]

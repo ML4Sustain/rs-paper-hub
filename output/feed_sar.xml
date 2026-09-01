@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_sar.xml</id>
   <link href="https://rspaper.top/output/feed_sar.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-31T06:31:34Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 1 entries</subtitle>
+  <updated>2026-09-01T02:15:40Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -40,6 +40,30 @@
     <summary type="text">Cross-modal image translation in remote sensing must preserve source-observed content while matching the target-domain distribution. Existing methods jointly learn the target prior and cross-modal dependence from scarce paired data, overlooking a key asymmetry: only the latter intrinsically requires cross-modal correspondence. We formalize this distinction through conditional-score and denoising-risk analyses and propose Learning the Target Priors Before Image Translation (LTP-BIT), a prior-first paradigm that decouples the two learning tasks. LTP-BIT first learns a target-domain generative prior from large-scale unpaired imagery, then retains the pretrained backbone weights and learns source-conditioned control through P-DART, a parameter-efficient dual-stream architecture. Controlled experiments show that prior matching and scaling primarily improve target-domain realism, whereas instance fidelity relies more strongly on conditional adaptation. LTP-BIT achieves state-of-the-art performance across SAR-to-RGB and NIR-to-RGB benchmarks using only 9.81% task-specific parameters. On QXS-SAROPT, it retains near-full-data instance fidelity with only 25% of the paired samples.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 26 pages, including supplementary material&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Multi-Sensor Mapping of Vulnerable Urban Settlements Using SAR, Multispectral, and Hyperspectral Imagery: A Case Study in Córdoba, Argentina</title>
+    <link href="http://arxiv.org/abs/2608.28680v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.28680v1</id>
+    <published>2026-08-26T00:00:00Z</published>
+    <updated>2026-08-26T00:00:00Z</updated>
+    <author>
+      <name>Luigi Russo</name>
+    </author>
+    <author>
+      <name>Anabella Ferral</name>
+    </author>
+    <author>
+      <name>Silvia Liberata Ullo</name>
+    </author>
+    <author>
+      <name>Paolo Gamba</name>
+    </author>
+    <summary type="text">Informal settlements represent a major urban challenge in rapidly expanding cities, yet their identification from Earth Observation (EO) data remains difficult because of their heterogeneous appearance and incomplete official inventories. This work presents a multi-sensor deep learning (DL) framework for slum-likelihood mapping in Córdoba, Argentina, integrating high-resolution PlanetScope multispectral (MS) imagery, COSMO-SkyMed (CSK) Synthetic Aperture Radar (SAR) data, and medium-resolution PRISMA hyperspectral (HS) observations. The problem is formulated as a patch-level classification task using the official Registro Nacional de Barrios Populares (ReNaBaP) inventory as reference, and the models are evaluated through four geographically partitioned folds. SAR-only and MS-only baselines, their configurations with PRISMA HS support, and early fusion (EF), middle fusion (MF), and late fusion (LF) strategies are systematically compared. Results show that LF+HS provides the best overall balance between classification performance and spatial selectivity, while PRISMA contributes complementary spectral information alongside the higher-resolution MS and SAR representations. Beyond the standard evaluation against ReNaBaP, an external municipal vulnerability layer is used to interpret detections outside the official polygons, showing that several apparent false positives overlap broader vulnerable urban areas. Thermal analysis further shows that ReNaBaP settlements exhibit significantly higher surface temperatures than their immediate surroundings during a heatwave event, indicating localised surface-heat amplification. Taken together, these results suggest that multi-sensor EO fusion can support both the mapping of ReNaBaP settlements and the interpretation of broader urban vulnerability patterns.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Submitted to IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>

@@ -4,12 +4,127 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-31T06:31:34Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 9 entries</subtitle>
+  <updated>2026-09-01T02:15:40Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 10 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>SimCRAFT: Distilling Remote Sensing Agents via Synthetic Trajectories and Contextual Retrieval-Augmented Fine-Tuning</title>
+    <link href="http://arxiv.org/abs/2608.30277v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.30277v1</id>
+    <published>2026-08-31T00:00:00Z</published>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <author>
+      <name>Haoran Wang</name>
+    </author>
+    <author>
+      <name>Jing Yao</name>
+    </author>
+    <author>
+      <name>Xu Yang</name>
+    </author>
+    <author>
+      <name>Zeqing Wang</name>
+    </author>
+    <author>
+      <name>Yang Zhang</name>
+    </author>
+    <author>
+      <name>Pedram Ghamisi</name>
+    </author>
+    <author>
+      <name>Zhengchao Chen</name>
+    </author>
+    <summary type="text">The unprecedented surge in Earth observation data volume and diversity has exposed a critical bottleneck for traditional manual workflows, catalyzing the emergence of Remote Sensing (RS) Agents. However, the practical deployment of these advanced agents is severely hindered by their heavy reliance on large-scale general-purpose LLMs, which lack deep domain expertise and impose prohibitive infrastructure demands. To resolve this, we propose SimCRAFT, a model-agnostic framework that distills sophisticated RS orchestration capabilities into a compact 7B-scale model. Addressing data scarcity, we first pair a multiagent synthesis engine with a Mock Execution Engine that checks schema correctness, inter-tool dependencies, and sensor/tool compatibility, producing SimRS-14k, a large-scale, constraint-validated workflow planning corpus. Second, we propose Contextual Retrieval-Augmented Fine-Tuning (CRAFT) that finetunes the model to reason analogically by adapting retrieved Standard Operating Procedures to novel queries under a noise-robust objective, generalizing RAFT to multi-step RS workflow planning without mechanical copying. Extensive experiments demonstrate that SimCRAFT-7B significantly outperforms openweights LLMs and rivals advanced closedsource models and specialized RS agents, while reproducing across three 7B backbones. This work contributes a competitive open-weights baseline for lightweight RS intelligence, enabling efficient autonomous deployment under resource-constrained or resource-conserving conditions.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+    <category term="cs.MA" />
+  </entry>
+  <entry>
+    <title>Towards Continual Test-Time Adaptation of Vision-Language Models in Open-Vocabulary Semantic Segmentation</title>
+    <link href="http://arxiv.org/abs/2608.29923v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.29923v1</id>
+    <published>2026-08-30T00:00:00Z</published>
+    <updated>2026-08-30T00:00:00Z</updated>
+    <author>
+      <name>Chandler Timm C. Doloriel</name>
+    </author>
+    <author>
+      <name>Yunbei Zhang</name>
+    </author>
+    <author>
+      <name>Sarthak Kumar Maharana</name>
+    </author>
+    <author>
+      <name>Muhammad Salman Siddiqui</name>
+    </author>
+    <author>
+      <name>Tor Kristian Stevik</name>
+    </author>
+    <author>
+      <name>Fadi Al Machot</name>
+    </author>
+    <author>
+      <name>Kristian Hovde Liland</name>
+    </author>
+    <author>
+      <name>Habib Ullah</name>
+    </author>
+    <summary type="text">Open-vocabulary semantic segmentation (OVSS) relies on vision-language alignment to recognize arbitrary text-defined categories, yet this alignment is fragile under continual test-time distribution shift. Our diagnostic analysis reveals that entropy minimization drives patch-level class collapse, continual updates erode vision-language alignment, and redundant gradients from low-shift samples waste computation. We propose Diversify, Anchor, and Filter (DAF), a stabilization framework that augments entropy-based adaptation with a marginal diversity loss that resists collapse, a cross-modal anchor consistency loss that constrains feature drift relative to a frozen source model, and feature salience filtering that skips low-value backward passes to offset part of the source-anchor overhead. We evaluate on five datasets spanning natural scenes, autonomous driving, underwater imagery, and remote sensing with their corrupted variants. Across the evaluated continual shifts, DAF remains stable where entropy minimization collapses, improving mIoU by over 8 points on Pascal VOC20-C, over 9 points on LoveDA, and over 3 points on Foggy Cityscapes compared to the source model, and is robust to aggressive adaptation and learning rate choices.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; under review. code available at https://github.com/chandlerbing65nm/DAF.git&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>BEACON: Behavioral and Semantic Enrichment of AlphaEarth Embeddings through Tri-Modal Contrastive Learning</title>
+    <link href="http://arxiv.org/abs/2608.29553v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.29553v1</id>
+    <published>2026-08-30T00:00:00Z</published>
+    <updated>2026-08-30T00:00:00Z</updated>
+    <author>
+      <name>Hao Tian</name>
+    </author>
+    <author>
+      <name>Heng Cai</name>
+    </author>
+    <author>
+      <name>Yifan Yang</name>
+    </author>
+    <summary type="text">Geospatial foundation models such as the AlphaEarth Foundation produce compact and globally consistent representations of the Earth's surface that transfer effectively to a wide range of downstream tasks. However, because these models are trained primarily on Earth-observation imagery, their embeddings mainly capture physical and spectral characteristics while encoding human activity and urban function only weakly. To address this limitation, we propose BEACON, a tri-modal contrastive learning framework that aligns three complementary views of urban space: physical representations from AE embeddings, semantic representations from point-of-interest (POI) text, and human behavioral representations from hourly POI visitation, while keeping the deployed representation image-only. Using the Houston Metropolitan Area as a case study area, we evaluated the performance of the BEACON framework on nine downstream tasks, including seven regression and two classification tasks against six baselines (raw coordinates, Space2Vec, SatCLIP, TESSERA, Clay and AlphaEarth), using frozen linear and MLP probes over five seeds. Under a linear probe, BEACON improves relative R^2 over AlphaEarth by up to 43% for obesity prevalence, 34% for poor mental health, and 22% for median household income, while remaining competitive in the prediction of physical and environmental variables. These findings highlight the value of augmenting geospatial foundation models with semantic and behavioral signals, extending their applicability from physical Earth observation to human-centered urban analytics.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ACM SIGSPATIAL 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>GeoAgent: Evaluating VLM Geolocalization Through Embodied Navigation</title>
+    <link href="http://arxiv.org/abs/2608.29483v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.29483v1</id>
+    <published>2026-08-30T00:00:00Z</published>
+    <updated>2026-08-30T00:00:00Z</updated>
+    <author>
+      <name>Arka Mukherjee</name>
+    </author>
+    <author>
+      <name>Soham Roy</name>
+    </author>
+    <author>
+      <name>Kartikeya Trivedi</name>
+    </author>
+    <author>
+      <name>Shreya Ghosh</name>
+    </author>
+    <summary type="text">Modern Vision-Language Models (VLMs) perform well above the human baseline in image geolocalization, a task critically important in disaster response, OSINT verification, and location privacy. However, most efforts to study AI behavior on the task remain limited to static image-based retrieval, classification, and predictions. We argue that faithful recreation of the task should involve embodied navigation, where a multimodal agent autonomously explores its surroundings to gather observations before submitting a prediction. To this end, we introduce \textbf{GeoAgent}, an agentic environment-based benchmark that requires agents to navigate Street View environments to refine their geolocalization through sequential reasoning. Our analysis shows that modern VLMs struggle to discern regional patterns while succeeding at country- and continent-level predictions. When compared to static image-based baselines, agentic navigation significantly improves accuracy across established metrics. We also note severe bias in a developed/developing region context across frontier model architectures and poor self-improvement capabilities given incorrect priors. Overall, our work establishes the challenges of embodied navigation and geospatial reasoning. We publicly release our code and the GeoAgent environment: https://geoagent-benchmark.github.io</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to EMNLP 2026 Findings&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;GeoLoc&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="cs.CL" />
+  </entry>
   <entry>
     <title>GeBDA: Building Damage Assessment as Text-Based Sequence Prediction</title>
     <link href="http://arxiv.org/abs/2608.28567v1" rel="alternate" type="text/html" />
@@ -278,93 +393,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; This paper has been accepted for publication in ASE 2026!&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="cs.SE" />
-  </entry>
-  <entry>
-    <title>Real-World Knowledge-Guided Change Data Synthesis for Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2608.24263v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.24263v1</id>
-    <published>2026-08-25T00:00:00Z</published>
-    <updated>2026-08-25T00:00:00Z</updated>
-    <author>
-      <name>Yaoyi Qi</name>
-    </author>
-    <author>
-      <name>Xingxing Weng</name>
-    </author>
-    <author>
-      <name>Chao Pang</name>
-    </author>
-    <author>
-      <name>Yongkang Cui</name>
-    </author>
-    <author>
-      <name>Xiangyu Hao</name>
-    </author>
-    <author>
-      <name>Xiaokang Zhang</name>
-    </author>
-    <author>
-      <name>Guibo Zhu</name>
-    </author>
-    <author>
-      <name>Gui-Song Xia</name>
-    </author>
-    <summary type="text">Change data synthesis provides a cost-effective solution for expanding training data and improving the performance of change detection models. However, existing synthesis methods typically rely on handcrafted rules to simulate changes, where limited coverage of class transitions restricts the diversity of synthesized data, while predefined transition designs limit their flexibility in accommodating varied change types. In this work, we introduce KnowChange, a knowledge-guided change data synthesis framework that leverages pretrained vision-language models as knowledge sources to reason about plausible change locations and class transitions from pre-change scenes and desired change types. By integrating knowledge-guided change simulation with generalizable synthesis models, KnowChange enables flexible synthesis of diverse change types within a unified framework. Extensive experiments demonstrate that KnowChange-generated data consistently outperforms existing synthetic datasets in both synthetic-to-real transfer and synthetic data augmentation, despite being generated at a compact scale. Further analyses show that the knowledge-guided change simulation can be seamlessly integrated into existing synthesis pipelines and enhance the downstream utility of synthesized data.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 29 pages, 16 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>PlaceSeek: Human-Centered Geospatial Retrieval of Urban Outdoor Places via Semantic Grounding and Affective Alignment</title>
-    <link href="http://arxiv.org/abs/2608.24133v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.24133v1</id>
-    <published>2026-08-25T00:00:00Z</published>
-    <updated>2026-08-25T00:00:00Z</updated>
-    <author>
-      <name>Ziqi Cui</name>
-    </author>
-    <author>
-      <name>Shangyu Lou</name>
-    </author>
-    <summary type="text">People search for urban outdoor places not only by category or function, but also by what activities a place can support and how it is perceived. Existing geospatial retrieval remains largely POIcentric and metadata-driven, making it difficult to satisfy openended, affective, or activity-oriented needs. We present PlaceSeek, a human-centered outdoor place retrieval framework that maps natural-language queries to geolocated street-view imagery. PlaceSeek introduces an intent-aware retrieval mechanism that decomposes user queries into functional and affective sub-intents. A Semantic Grounding Module verifies whether candidate street-view results contain the physical evidence needed to support the intended activity, while an Affective Alignment Module re-ranks physically valid candidates using a LoRA-adapted vision-language model trained on human urban perception judgments. We evaluate PlaceSeek on 31,956 street-view locations in Milan across 10 naturallanguage queries annotated by five human evaluators. PlaceSeek achieves 88.0% Precision@5, a mean match score of 3.39/4.0, and 0.920 nDCG@5, outperforming CLIP, fine-tuned CLIP, SigLIP, and a VQA-based baseline. Ablation results show that physical grounding is essential for retrieval validity, while affective alignment improves ranking quality among physically valid candidates. These findings highlight that complex urban spatial queries require modeling both verifiable visual evidence and human perceptual preferences. PlaceSeek provides a potential framework for human-centered nextgeneration geospatial retrieval systems.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted as a Research Paper (short) at ACM SIGSPATIAL 2026. This arXiv version is the full version of the paper&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence; Information Retrieval" />
-  </entry>
-  <entry>
-    <title>LifePlanner: Evaluating LLM Agents for Geo-spatial Planning with Social Media Data</title>
-    <link href="http://arxiv.org/abs/2608.25039v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.25039v1</id>
-    <published>2026-08-25T00:00:00Z</published>
-    <updated>2026-08-25T00:00:00Z</updated>
-    <author>
-      <name>Zhen Dong</name>
-    </author>
-    <author>
-      <name>Yuning Peng</name>
-    </author>
-    <author>
-      <name>Yutao Shi</name>
-    </author>
-    <author>
-      <name>Lei Zhong</name>
-    </author>
-    <author>
-      <name>Yongsen Mao</name>
-    </author>
-    <author>
-      <name>Yuan Liu</name>
-    </author>
-    <author>
-      <name>Haiping Wang</name>
-    </author>
-    <summary type="text">Geo-spatial planning, like trip design, is a realistic testbed for LLM agents because it requires grounded tool use, noisy evidence retrieval, and multi-constraint reasoning. Most benchmarks, however, only provide clean geospatial data and tools, missing the open-ended social signals that people use in daily planning. We introduce LifePlanner, a benchmark that enriches map data with large-scale local social media posts and provides access through an MCP toolset. LifePlanner provides an evaluation suite spanning four task categories and three difficulty levels. Experiments show frontier LLMs perform well on simple retrieval but degrade sharply on complex planning, with the Pass Rate dropping to 40.2%. Results show that failures mainly stem from incomplete evidence acquisition from such a large multimodal database, imprecise tool use, and weak constraint integration rather than model size or reasoning length, suggesting that future progress requires effective grounded planning instead of scaling alone.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 25 pages, 7 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>

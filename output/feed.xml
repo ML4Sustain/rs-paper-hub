@@ -4,12 +4,250 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-31T06:31:34Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 24 entries</subtitle>
+  <updated>2026-09-01T02:15:40Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 25 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Minerals in the Wild: A Hyperspectral-XRF Dataset for Elemental Composition Estimation</title>
+    <link href="http://arxiv.org/abs/2608.30537v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.30537v1</id>
+    <published>2026-08-31T00:00:00Z</published>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <author>
+      <name>Eleftheria Tetoula-Tsonga</name>
+    </author>
+    <author>
+      <name>George Arvanitakis</name>
+    </author>
+    <author>
+      <name>Theodoros Giannakas</name>
+    </author>
+    <summary type="text">Rapid mineral characterization is essential for applications ranging from mineral exploration to industrial ore processing. To this end, Hyperspectral Imaging (HSI) has emerged as a promising sensing modality thanks to its fine spectral resolution, enabling mineral discrimination in both close-range and remote sensing settings. However, the scarcity of publicly available datasets with reliable ground-truth labels hinders the development and evaluation of HSI-based mineral identification methods. We release Minerals in the Wild, a multi-purpose dataset comprising 1,132 rock specimens collected across Europe. For each specimen, we provide an HSI acquisition together with an elemental characterization obtained via an XRF sensor. We define the task of elemental characterization on our dataset and propose a pruning mechanism that removes distant signatures from the USGS dictionary prior to a convex optimization approach for matching HSI pixels with USGS spectral signatures. Finally, we empirically show that our approach outperforms simpler baselines.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Foundation Models Meet Agriculture: Challenges Beyond Pretraining</title>
+    <link href="http://arxiv.org/abs/2608.30392v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.30392v1</id>
+    <published>2026-08-31T00:00:00Z</published>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <author>
+      <name>Vishal Nedungadi</name>
+    </author>
+    <author>
+      <name>Xingguo Xiong</name>
+    </author>
+    <author>
+      <name>Marc Rußwurm</name>
+    </author>
+    <author>
+      <name>Ioannis N. Athanasiadis</name>
+    </author>
+    <summary type="text">Global food security and sustainable climate action increasingly rely on robust, scalable agricultural monitoring. Earth observation foundation models have emerged as powerful, label-efficient tools across general remote sensing domains, yet early attempts to deploy them for agricultural applications have yielded surprisingly poor results. We hypothesize that this performance gap stems from the extreme heterogeneity of agricultural landscapes and the inherent inability of current earth observation foundation models to adapt to task-specific nuances. In this work, we systematically evaluate two critical bottlenecks hindering the deployment of foundation models in agricultural tasks, benchmarking two earth observation foundation models, a foundation model designed for tabular data, and conventional supervised baselines across seven real-world agricultural datasets spanning yield prediction, phenology estimation, and crop classification. First, we identify a pretraining-deployment modality gap: agricultural downstream tasks frequently require diverse, non-imagery data modalities that earth observation foundation models are architecturally unequipped to ingest, while a foundation model built for tabular data handles this heterogeneity more naturally. Second, we formalize the agricultural task space across five structural axes to demonstrate why current models fail to generalize reliably, resulting in highly unstable model rankings across evaluation settings. By characterizing these structural and modal gaps, our insights highlight the friction between general-purpose architectures and specialized agricultural downstream data, providing a strategic roadmap for developing the next generation of domain-aware foundation models.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>SimCRAFT: Distilling Remote Sensing Agents via Synthetic Trajectories and Contextual Retrieval-Augmented Fine-Tuning</title>
+    <link href="http://arxiv.org/abs/2608.30277v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.30277v1</id>
+    <published>2026-08-31T00:00:00Z</published>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <author>
+      <name>Haoran Wang</name>
+    </author>
+    <author>
+      <name>Jing Yao</name>
+    </author>
+    <author>
+      <name>Xu Yang</name>
+    </author>
+    <author>
+      <name>Zeqing Wang</name>
+    </author>
+    <author>
+      <name>Yang Zhang</name>
+    </author>
+    <author>
+      <name>Pedram Ghamisi</name>
+    </author>
+    <author>
+      <name>Zhengchao Chen</name>
+    </author>
+    <summary type="text">The unprecedented surge in Earth observation data volume and diversity has exposed a critical bottleneck for traditional manual workflows, catalyzing the emergence of Remote Sensing (RS) Agents. However, the practical deployment of these advanced agents is severely hindered by their heavy reliance on large-scale general-purpose LLMs, which lack deep domain expertise and impose prohibitive infrastructure demands. To resolve this, we propose SimCRAFT, a model-agnostic framework that distills sophisticated RS orchestration capabilities into a compact 7B-scale model. Addressing data scarcity, we first pair a multiagent synthesis engine with a Mock Execution Engine that checks schema correctness, inter-tool dependencies, and sensor/tool compatibility, producing SimRS-14k, a large-scale, constraint-validated workflow planning corpus. Second, we propose Contextual Retrieval-Augmented Fine-Tuning (CRAFT) that finetunes the model to reason analogically by adapting retrieved Standard Operating Procedures to novel queries under a noise-robust objective, generalizing RAFT to multi-step RS workflow planning without mechanical copying. Extensive experiments demonstrate that SimCRAFT-7B significantly outperforms openweights LLMs and rivals advanced closedsource models and specialized RS agents, while reproducing across three 7B backbones. This work contributes a competitive open-weights baseline for lightweight RS intelligence, enabling efficient autonomous deployment under resource-constrained or resource-conserving conditions.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+    <category term="cs.MA" />
+  </entry>
+  <entry>
+    <title>Site-specific Channel Modeling Based on Remote-Sensing Maps for 6G Space--Air--Ground Digital Twins</title>
+    <link href="http://arxiv.org/abs/2608.30168v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.30168v1</id>
+    <published>2026-08-31T00:00:00Z</published>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <author>
+      <name>Peijie Liu</name>
+    </author>
+    <author>
+      <name>Pan Tang</name>
+    </author>
+    <author>
+      <name>Jianhua Zhang</name>
+    </author>
+    <author>
+      <name>Lei Tian</name>
+    </author>
+    <author>
+      <name>Bin Ao</name>
+    </author>
+    <author>
+      <name>Boyang He</name>
+    </author>
+    <author>
+      <name>Hao Zheng</name>
+    </author>
+    <summary type="text">Site-specific channel models are essential for wireless digital twins of 6G space--air--ground communication systems. However, 3D maps are difficult to obtain over wide areas, which limits large-area site-specific channel modeling. To address this issue, this paper proposes a remote-sensing-based augmented ray-tracing channel modeling framework. The framework comprises a deterministic RT branch, a measurement-statistical branch, and an RT augmentation branch. To overcome the difficulty of acquiring large-area 3D maps, the deterministic RT branch reconstructs a 3D RT scene from satellite remote-sensing imagery and calibrates its electromagnetic material parameters using measured path loss. To provide the statistical parameters required for RT augmentation, the measurement-statistical branch establishes the marginal distributions and interparameter dependence models of the channel parameters. Specifically, a wideband UAV channel measurement campaign is conducted at 4.60 GHz, and a proposed multipath estimation method estimates the complex amplitudes, delays, and Doppler shifts of the measured multipath. To bridge the gap between RT predictions and measurements, the RT augmentation branch organizes the RT multipath into LoS, LoS-tail, and NLoS components, generates additional short-delay LoS-tail paths, and reallocates the component and path powers according to the measurement-derived statistics while preserving the total RT received power. The validation results show that the proposed framework reduces the path loss RMSE from 5.45 to 4.35 dB and, relative to calibrated RT, decreases the RMS delay spread and normalized Doppler spread RMSEs by 53.03 and 26.48, respectively. The proposed framework provides a site-specific channel modeling approach for 6G space--air--ground digital-twin studies.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 17 pages, 23 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Signal Processing" />
+  </entry>
+  <entry>
+    <title>Towards Continual Test-Time Adaptation of Vision-Language Models in Open-Vocabulary Semantic Segmentation</title>
+    <link href="http://arxiv.org/abs/2608.29923v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.29923v1</id>
+    <published>2026-08-30T00:00:00Z</published>
+    <updated>2026-08-30T00:00:00Z</updated>
+    <author>
+      <name>Chandler Timm C. Doloriel</name>
+    </author>
+    <author>
+      <name>Yunbei Zhang</name>
+    </author>
+    <author>
+      <name>Sarthak Kumar Maharana</name>
+    </author>
+    <author>
+      <name>Muhammad Salman Siddiqui</name>
+    </author>
+    <author>
+      <name>Tor Kristian Stevik</name>
+    </author>
+    <author>
+      <name>Fadi Al Machot</name>
+    </author>
+    <author>
+      <name>Kristian Hovde Liland</name>
+    </author>
+    <author>
+      <name>Habib Ullah</name>
+    </author>
+    <summary type="text">Open-vocabulary semantic segmentation (OVSS) relies on vision-language alignment to recognize arbitrary text-defined categories, yet this alignment is fragile under continual test-time distribution shift. Our diagnostic analysis reveals that entropy minimization drives patch-level class collapse, continual updates erode vision-language alignment, and redundant gradients from low-shift samples waste computation. We propose Diversify, Anchor, and Filter (DAF), a stabilization framework that augments entropy-based adaptation with a marginal diversity loss that resists collapse, a cross-modal anchor consistency loss that constrains feature drift relative to a frozen source model, and feature salience filtering that skips low-value backward passes to offset part of the source-anchor overhead. We evaluate on five datasets spanning natural scenes, autonomous driving, underwater imagery, and remote sensing with their corrupted variants. Across the evaluated continual shifts, DAF remains stable where entropy minimization collapses, improving mIoU by over 8 points on Pascal VOC20-C, over 9 points on LoveDA, and over 3 points on Foggy Cityscapes compared to the source model, and is robust to aggressive adaptation and learning rate choices.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; under review. code available at https://github.com/chandlerbing65nm/DAF.git&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>GridFlow: Structured Latent Flow for Seamless City-Scale 3D Point Cloud Generation</title>
+    <link href="http://arxiv.org/abs/2608.29793v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.29793v1</id>
+    <published>2026-08-30T00:00:00Z</published>
+    <updated>2026-08-30T00:00:00Z</updated>
+    <author>
+      <name>Xinyu Wang</name>
+    </author>
+    <author>
+      <name>Muhammad Ibrahim</name>
+    </author>
+    <author>
+      <name>Atif Mansoor</name>
+    </author>
+    <author>
+      <name>Ajmal Mian</name>
+    </author>
+    <summary type="text">Generating realistic 3D city environments from remote sensing data is important for simulation, urban planning, and mixed reality, yet existing point cloud generation methods are limited to single objects or bounded indoor scenes and cannot handle the scale, seamless tiling, and partial observability challenges of city-scale generation. We present \ours{}, a multi-stage framework that generates dense, colored point clouds ($10^5$ points per $150\text{m}{\times}150\text{m}$ tile) at city scale, conditioned on satellite imagery, semantic segmentation maps, and digital surface models (DSM). A \emph{Grid-Aligned VAE} encodes each tile into a topology-preserving latent grid where tokens correspond to fixed spatial regions, enabling spatially coherent multi-modal conditioning and compact latent-space edge consistency that implicitly aligns thousands of boundary points for seamless cross-tile generation. A conditional rectified flow model synthesizes geometry latents from the fused multi-modal conditions, and an orientation-aware diffusion colorizer separately handles satellite-visible horizontal surfaces and occluded vertical façades. To support standardized evaluation, we build on public 3D data sources to introduce \emph{City3D-MultiGen}, a benchmark of $163$K densely annotated tiles from Melbourne and London with aligned point clouds, satellite images, semantic maps, and elevation data. Experiments show that \ours{} outperforms adapted point cloud generation baselines across all geometry metrics and produces visually coherent colored point clouds with seamless boundaries over arbitrarily large urban extents. Our benchmark details are available at https://huggingface.co/datasets/e32/City3D-MultiGen</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://huggingface.co/datasets/e32/City3D-MultiGen"&gt;https://huggingface.co/datasets/e32/City3D-MultiGen&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG;3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>SPLG-Mamba: Structure-Preserving Local-Global Mamba Network for Salient Object Detection in Optical Remote Sensing Images</title>
+    <link href="http://arxiv.org/abs/2608.29626v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.29626v1</id>
+    <published>2026-08-30T00:00:00Z</published>
+    <updated>2026-08-30T00:00:00Z</updated>
+    <author>
+      <name>Yi Xu</name>
+    </author>
+    <author>
+      <name>Ruichao Hou</name>
+    </author>
+    <author>
+      <name>Tongwei Ren</name>
+    </author>
+    <author>
+      <name>Gangshan Wu</name>
+    </author>
+    <summary type="text">Salient object detection in optical remote sensing images (ORSI-SOD) requires dense predictions that preserve object completeness and structural continuity under complex backgrounds, scale variation, and irregular object shapes. Existing methods often localize salient regions, but their predictions may still suffer from structural degradation, including fragmented, incomplete, or locally missing foreground responses. This degradation is closely related to hierarchical feature propagation, where shallow details can introduce texture-induced background responses, deep semantics may over-smooth weak structures, and uncontrolled cross-scale fusion can disturb coherent regions. To address this issue, we propose a novel Structure-Preserving Local-Global Mamba Network, SPLG-Mamba, for ORSI-SOD. Specifically, SPLG-Mamba integrates Smooth-Detail Recalibration (SDR), hierarchy-aware Local-Global Mamba, and Gated Cross-Scale Fusion (GCSF). SDR recalibrates smoothed responses and detail residuals before state-space modeling, Local-Global Mamba assigns local modeling to shallow feature levels and global modeling to deep feature levels, and GCSF controls cross-scale detail injection during decoding. Experiments on ORSSD, EORSSD, and ORSI-4199 demonstrate state-of-the-art results and improved structural completeness and continuity. The code is available at https://github.com/yxu9910/SPLG-Mamba</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/yxu9910/SPLG-Mamba"&gt;https://github.com/yxu9910/SPLG-Mamba&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>BEACON: Behavioral and Semantic Enrichment of AlphaEarth Embeddings through Tri-Modal Contrastive Learning</title>
+    <link href="http://arxiv.org/abs/2608.29553v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.29553v1</id>
+    <published>2026-08-30T00:00:00Z</published>
+    <updated>2026-08-30T00:00:00Z</updated>
+    <author>
+      <name>Hao Tian</name>
+    </author>
+    <author>
+      <name>Heng Cai</name>
+    </author>
+    <author>
+      <name>Yifan Yang</name>
+    </author>
+    <summary type="text">Geospatial foundation models such as the AlphaEarth Foundation produce compact and globally consistent representations of the Earth's surface that transfer effectively to a wide range of downstream tasks. However, because these models are trained primarily on Earth-observation imagery, their embeddings mainly capture physical and spectral characteristics while encoding human activity and urban function only weakly. To address this limitation, we propose BEACON, a tri-modal contrastive learning framework that aligns three complementary views of urban space: physical representations from AE embeddings, semantic representations from point-of-interest (POI) text, and human behavioral representations from hourly POI visitation, while keeping the deployed representation image-only. Using the Houston Metropolitan Area as a case study area, we evaluated the performance of the BEACON framework on nine downstream tasks, including seven regression and two classification tasks against six baselines (raw coordinates, Space2Vec, SatCLIP, TESSERA, Clay and AlphaEarth), using frozen linear and MLP probes over five seeds. Under a linear probe, BEACON improves relative R^2 over AlphaEarth by up to 43% for obesity prevalence, 34% for poor mental health, and 22% for median household income, while remaining competitive in the prediction of physical and environmental variables. These findings highlight the value of augmenting geospatial foundation models with semantic and behavioral signals, extending their applicability from physical Earth observation to human-centered urban analytics.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ACM SIGSPATIAL 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>GeoAgent: Evaluating VLM Geolocalization Through Embodied Navigation</title>
+    <link href="http://arxiv.org/abs/2608.29483v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.29483v1</id>
+    <published>2026-08-30T00:00:00Z</published>
+    <updated>2026-08-30T00:00:00Z</updated>
+    <author>
+      <name>Arka Mukherjee</name>
+    </author>
+    <author>
+      <name>Soham Roy</name>
+    </author>
+    <author>
+      <name>Kartikeya Trivedi</name>
+    </author>
+    <author>
+      <name>Shreya Ghosh</name>
+    </author>
+    <summary type="text">Modern Vision-Language Models (VLMs) perform well above the human baseline in image geolocalization, a task critically important in disaster response, OSINT verification, and location privacy. However, most efforts to study AI behavior on the task remain limited to static image-based retrieval, classification, and predictions. We argue that faithful recreation of the task should involve embodied navigation, where a multimodal agent autonomously explores its surroundings to gather observations before submitting a prediction. To this end, we introduce \textbf{GeoAgent}, an agentic environment-based benchmark that requires agents to navigate Street View environments to refine their geolocalization through sequential reasoning. Our analysis shows that modern VLMs struggle to discern regional patterns while succeeding at country- and continent-level predictions. When compared to static image-based baselines, agentic navigation significantly improves accuracy across established metrics. We also note severe bias in a developed/developing region context across frontier model architectures and poor self-improvement capabilities given incorrect priors. Overall, our work establishes the challenges of embodied navigation and geospatial reasoning. We publicly release our code and the GeoAgent environment: https://geoagent-benchmark.github.io</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to EMNLP 2026 Findings&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;GeoLoc&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="cs.CL" />
+  </entry>
   <entry>
     <title>GeBDA: Building Damage Assessment as Text-Based Sequence Prediction</title>
     <link href="http://arxiv.org/abs/2608.28567v1" rel="alternate" type="text/html" />
@@ -113,6 +351,55 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>MWIR-4-Plastic: The Identification of Complex End-of-Life Industrial Plastic using Mid-wave Infrared Hyperspectral Imaging and Machine Learning</title>
+    <link href="http://arxiv.org/abs/2608.28874v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.28874v1</id>
+    <published>2026-08-28T00:00:00Z</published>
+    <updated>2026-08-28T00:00:00Z</updated>
+    <author>
+      <name>Elias Arbash</name>
+    </author>
+    <author>
+      <name>Andréa de Lima Ribeiro</name>
+    </author>
+    <author>
+      <name>Filipa Simões</name>
+    </author>
+    <author>
+      <name>Ahmed Jamal Afifi</name>
+    </author>
+    <author>
+      <name>Aldino Rizaldy</name>
+    </author>
+    <author>
+      <name>Yuleika Madriz</name>
+    </author>
+    <author>
+      <name>Samuel Thiele</name>
+    </author>
+    <author>
+      <name>Sandra Lorenz</name>
+    </author>
+    <author>
+      <name>Margret Fuchs</name>
+    </author>
+    <author>
+      <name>Pedram Ghamisi</name>
+    </author>
+    <author>
+      <name>Paul Scheunders</name>
+    </author>
+    <author>
+      <name>Richard Gloaguen</name>
+    </author>
+    <summary type="text">The automated sorting of shredded black plastics from end-of-life (EOF) industrial waste presents a significant challenge in recycling facilities, primarily due to the limitations of current sensing and analytical approaches. Existing studies predominantly rely on single-point contact-based mid-infrared spectroscopy or laboratory hyperspectral imaging (HSI) setups, which fail to provide the spatially resolved analysis necessary for fast, bulk processing. Moreover, available datasets are laboratory-controlled and focus on intact rather than shredded plastics, hindering further recycling refinement. Black industrial plastics, in particular, are underrepresented, while most classification pipelines depend on manual region selection and rule-based spectral matching, neglecting spatial information and modern deep learning (DL) methods. To address these gaps, we introduce the first publicly available HSI dataset of shredded black plastics from EOF vehicle, comprising four industrial polymers across 13 co-registered RGB, VNIR, SWIR, and MWIR scenes and their segmentation pipeline. We developed a multi-modal spectral-spatial framework that integrates foreground isolation, pixel-wise classification, and object-level majority voting. By adapting advanced hyperspectral transformers from earth observation and incorporating chemometric band selection, we achieve accurate classification of complex black plastics. The study establishes the first comprehensive benchmark using nine processing methods, including chemometric, machine learning, and DL architectures. To ensure reproducibility, the complete dataset and methodologies are publicly released, establishing a benchmark for a hyperspectral object-analysis pipeline in industrial inspection.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
   </entry>
   <entry>
     <title>UrbanGround: From Local Perception to Spatial Agency in a Real-Scale City</title>
@@ -503,373 +790,27 @@
     <category term="cs.SE" />
   </entry>
   <entry>
-    <title>Potential survivable niches for microbial life on the lunar south pole</title>
-    <link href="http://arxiv.org/abs/2608.24751v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.24751v1</id>
-    <published>2026-08-25T00:00:00Z</published>
-    <updated>2026-08-25T00:00:00Z</updated>
+    <title>Multi-Sensor Mapping of Vulnerable Urban Settlements Using SAR, Multispectral, and Hyperspectral Imagery: A Case Study in Córdoba, Argentina</title>
+    <link href="http://arxiv.org/abs/2608.28680v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.28680v1</id>
+    <published>2026-08-26T00:00:00Z</published>
+    <updated>2026-08-26T00:00:00Z</updated>
     <author>
-      <name>Prabal Saxena</name>
+      <name>Luigi Russo</name>
     </author>
     <author>
-      <name>Stefano Bertone</name>
+      <name>Anabella Ferral</name>
     </author>
     <author>
-      <name>Heather V. Graham</name>
+      <name>Silvia Liberata Ullo</name>
     </author>
     <author>
-      <name>Natalie M. Curran</name>
+      <name>Paolo Gamba</name>
     </author>
-    <author>
-      <name>Aaron B. Regberg</name>
-    </author>
-    <author>
-      <name>Andrew Needham</name>
-    </author>
-    <author>
-      <name>D. E.</name>
-    </author>
-    <author>
-      <name>Pugel</name>
-    </author>
-    <author>
-      <name>Noah E. Petro</name>
-    </author>
-    <summary type="text">Most lunar surface conditions are incredibly harsh for microbial survival. High ultraviolet radiation, temperatures, and energetic particle radiation limit survival over most unprotected lunar surfaces, particularly in equatorial regions where all previous crewed exploration occurred. However, whether these harsh conditions are widespread at lunar poles has not been examined considering topographical effects. Here, we show that recent microorganism survivability data and lunar surface remote sensing reveal likely survivable niches in lunar polar regions. Analysis of topography and latitude-driven surface conditions using remote sensing data and high-resolution illumination models indicates the lunar south pole possesses significant regions with persistent low temperatures and ultraviolet flux. Comparing these conditions to survivability data of specific microorganisms, we find significant lunar polar areas likely possess surface conditions amenable to microbial survival. Our findings suggest lunar polar regions may be less hostile to microbial survival than previously assumed. This does not encompass growth likelihood, but survival in a cryptobiotic state where growth would be possible if habitable conditions were present. Potential microbial survivability at lunar poles is particularly significant given many examined microbes will likely be transported to the Moon during crewed lunar south pole exploration planned in numerous near-term missions. Thoughtfully planning exploration and tracking its impact is key to limiting and understanding potential unintended life transfer to the Moon.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 43 pages, 3 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="astro-ph.EP" />
-    <category term="q-bio.PE" />
-  </entry>
-  <entry>
-    <title>Deep Learning Super Resolution for Satellite Cloud Mask Downscaling</title>
-    <link href="http://arxiv.org/abs/2608.24715v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.24715v1</id>
-    <published>2026-08-25T00:00:00Z</published>
-    <updated>2026-08-25T00:00:00Z</updated>
-    <author>
-      <name>Angelos Georgakis</name>
-    </author>
-    <author>
-      <name>Valentina Kanaki</name>
-    </author>
-    <author>
-      <name>Giorgos Giannopoulos</name>
-    </author>
-    <author>
-      <name>Stella Girtsou</name>
-    </author>
-    <author>
-      <name>Ioannis Kontogiorgakis</name>
-    </author>
-    <author>
-      <name>Charalampos Kontoes</name>
-    </author>
-    <author>
-      <name>Kostas Philippopoulos</name>
-    </author>
-    <summary type="text">A vast amount of optical satellite data is being transmitted to Earth-based servers every day, and more than half of this data is affected by haze or clouds. Additionally, this data suffers from the fundamental trade-off between spatial and temporal resolution, which remains largely unresolved, making the acquisition of continuous high-resolution satellite observations of clouds an ongoing challenge. This work addresses this challenge by proposing two Deep Learning super-resolution methods for the accurate downscaling of SEVIRI cloud mask products, as well as a novel cross-sensor cloud mask dataset called SEVMOD-CM, created by spatially and temporally matching MODIS and SEVIRI satellite observations. The two proposed models are a CNN-based (SpatialCNN) and a GAN-based (SpatialGAN) Neural Network. Trained on the SEVIRI spectral and cloud mask products, the proposed methods predict the corresponding MODIS Cloud masks, achieving a 4x spatial enhancement across sensor domains. Both approaches are evaluated experimentally, and compared against the standard bicubic interpolation upsampling technique. The experimental results demonstrate the value of the proposed models and dataset for the remote sensing community, highlighting the benefits of applying super-resolution techniques to geostationary-derived cloud mask products for applications such as atmospheric monitoring, weather forecasting, disaster risk reduction, solar energy forecasting, and climate research.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE International Geoscience and Remote Sensing Symposium (IGARSS 2026&lt;/p&gt;
+    <summary type="text">Informal settlements represent a major urban challenge in rapidly expanding cities, yet their identification from Earth Observation (EO) data remains difficult because of their heterogeneous appearance and incomplete official inventories. This work presents a multi-sensor deep learning (DL) framework for slum-likelihood mapping in Córdoba, Argentina, integrating high-resolution PlanetScope multispectral (MS) imagery, COSMO-SkyMed (CSK) Synthetic Aperture Radar (SAR) data, and medium-resolution PRISMA hyperspectral (HS) observations. The problem is formulated as a patch-level classification task using the official Registro Nacional de Barrios Populares (ReNaBaP) inventory as reference, and the models are evaluated through four geographically partitioned folds. SAR-only and MS-only baselines, their configurations with PRISMA HS support, and early fusion (EF), middle fusion (MF), and late fusion (LF) strategies are systematically compared. Results show that LF+HS provides the best overall balance between classification performance and spatial selectivity, while PRISMA contributes complementary spectral information alongside the higher-resolution MS and SAR representations. Beyond the standard evaluation against ReNaBaP, an external municipal vulnerability layer is used to interpret detections outside the official polygons, showing that several apparent false positives overlap broader vulnerable urban areas. Thermal analysis further shows that ReNaBaP settlements exhibit significantly higher surface temperatures than their immediate surroundings during a heatwave event, indicating localised surface-heat amplification. Taken together, these results suggest that multi-sensor EO fusion can support both the mapping of ReNaBaP settlements and the interpretation of broader urban vulnerability patterns.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Submitted to IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Implicit Q-learning-bootstrapped ant colony optimization for maritime moving-target observation scheduling with agile satellites</title>
-    <link href="http://arxiv.org/abs/2608.24471v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.24471v1</id>
-    <published>2026-08-25T00:00:00Z</published>
-    <updated>2026-08-25T00:00:00Z</updated>
-    <author>
-      <name>He Wang</name>
-    </author>
-    <author>
-      <name>Junyu Wu</name>
-    </author>
-    <author>
-      <name>Yeye Liu</name>
-    </author>
-    <author>
-      <name>Yifan Zhou</name>
-    </author>
-    <author>
-      <name>Jie Zhang</name>
-    </author>
-    <author>
-      <name>Hui Li</name>
-    </author>
-    <author>
-      <name>Yanjie Song</name>
-    </author>
-    <author>
-      <name>Liang Li</name>
-    </author>
-    <summary type="text">Maritime moving-target observation scheduling with agile Earth observation satellites is a dynamic, sequence-dependent combinatorial optimization problem. Sea-surface targets move continuously, causing feasible observation windows to vary with target motion and satellite orbital geometry. The scheduler must jointly determine task selection, satellite assignment, observation-window selection, and observation ordering under time-window, attitude-maneuvering, onboard-resource, and cloud-affected availability constraints. This paper proposes an implicit Q-learning-bootstrapped ant colony optimization method, termed IQACO, for multi-satellite maritime moving-target observation scheduling. Rather than directly learning a task-selection policy, IQACO embeds an offline implicit Q-learning module into constructive ant colony optimization to adaptively adjust the pheromone factor, heuristic factor, and evaporation rate. A compact search-state representation captures pheromone distribution, current and historical-best solution quality, and iteration progress. During online scheduling, ant colony optimization constructs feasible observation sequences, while the learned policy regulates exploration and exploitation according to the current search state. Experiments on 14 scenarios with different scales and satellite configurations show that IQACO obtains the highest mean observation benefit in every scenario, improves the result of conventional ant colony optimization by 3.40\%--9.40\%, accelerates convergence, and remains stable under different objective-weight settings. These results demonstrate that offline value learning provides an effective adaptive search-control mechanism for constrained maritime moving-target observation scheduling.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 26 pages, 12 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Reinforcement Learning-Guided Evolutionary Policy Optimization for Preference-Adjustable Heterogeneous Agile Earth Observation Satellite Scheduling</title>
-    <link href="http://arxiv.org/abs/2608.24470v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.24470v1</id>
-    <published>2026-08-25T00:00:00Z</published>
-    <updated>2026-08-25T00:00:00Z</updated>
-    <author>
-      <name>He Wang</name>
-    </author>
-    <author>
-      <name>Junyu Wu</name>
-    </author>
-    <author>
-      <name>Hui Li</name>
-    </author>
-    <author>
-      <name>Yanjie Song</name>
-    </author>
-    <author>
-      <name>Witold Pedrycz</name>
-    </author>
-    <author>
-      <name>Liang Li</name>
-    </author>
-    <summary type="text">Heterogeneous agile Earth observation satellite (AEOS) scheduling requires task selection, satellite assignment, and observation sequencing under satellite-dependent visibility windows, attitude maneuvering requirements, energy consumption, and onboard storage constraints. Since satellites differ in orbital access, maneuvering capability, and payload resources, the same task may have different feasible windows, transition costs, and resource-consumption patterns on different platforms, which increases the difficulty of unified modeling and efficient optimization. To address this problem, this paper proposes an evolutionary policy optimization framework for heterogeneous AEOS scheduling with preference-adjustable weighted objectives. In the modeling layer, assignment-based indirect encoding is combined with decoder-based equivalent-cost evaluation to retain satellite-dependent constraints while integrating task gain, energy saving, and load balance into an interpretable scalar utility. In the optimization layer, schedule decoding, population-based search, and online actor-critic operator control are decoupled, so that reinforcement learning selects high-level search operators rather than constructing schedules directly. Based on this framework, a reinforcement-learning-assisted operator-selection memetic evolutionary algorithm (RLOSMEA) is developed to coordinate global exploration, feasibility recovery, and local refinement under a limited function-evaluation budget. Experiments on different heterogeneous AEOS scenarios show that RLOSMEA achieves higher overall weighted utility and more stable convergence than representative metaheuristic baselines. Sensitivity and learning-behavior analyses further confirm the robustness of the proposed method and the effectiveness of reinforcement-learning-guided operator selection.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 14 pages, 8 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Comprehensive solar eruption analyses enabled by the tools of the SOLER project</title>
-    <link href="http://arxiv.org/abs/2608.24458v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.24458v1</id>
-    <published>2026-08-25T00:00:00Z</published>
-    <updated>2026-08-25T00:00:00Z</updated>
-    <author>
-      <name>Nina Dresing</name>
-    </author>
-    <author>
-      <name>Jan Gieseler</name>
-    </author>
-    <author>
-      <name>Markus Baumgartner-Steinleitner</name>
-    </author>
-    <author>
-      <name>Carine Briand</name>
-    </author>
-    <author>
-      <name>Karin Dissauer</name>
-    </author>
-    <author>
-      <name>Annamaria Fedeli</name>
-    </author>
-    <author>
-      <name>Robert Jarolim</name>
-    </author>
-    <author>
-      <name>Jaclyn T. Lang</name>
-    </author>
-    <author>
-      <name>Diana E. Morosan</name>
-    </author>
-    <author>
-      <name>Jake A. J Mitchell</name>
-    </author>
-    <author>
-      <name>Christian Palmroos</name>
-    </author>
-    <author>
-      <name>Jens Pomoell</name>
-    </author>
-    <author>
-      <name>Jinge Zhang</name>
-    </author>
-    <author>
-      <name>Otso Santala</name>
-    </author>
-    <author>
-      <name>Astrid M. Veronig</name>
-    </author>
-    <author>
-      <name>Laura Vuorinen</name>
-    </author>
-    <author>
-      <name>Alexander Warmuth</name>
-    </author>
-    <author>
-      <name>Oliver Flor</name>
-    </author>
-    <author>
-      <name>Myrthe Flossie</name>
-    </author>
-    <author>
-      <name>Emilia K. J. Kilpua</name>
-    </author>
-    <author>
-      <name>Werner Pötzi</name>
-    </author>
-    <author>
-      <name>Daniel J. Price</name>
-    </author>
-    <author>
-      <name>Antonio Gomes</name>
-    </author>
-    <author>
-      <name>Emil J. Hotti</name>
-    </author>
-    <author>
-      <name>Ruth A. Hyndman</name>
-    </author>
-    <author>
-      <name>M. Liebel</name>
-    </author>
-    <author>
-      <name>Amaia Razquin</name>
-    </author>
-    <author>
-      <name>Song Tan</name>
-    </author>
-    <author>
-      <name>Ramio Vainio</name>
-    </author>
-    <summary type="text">Solar eruptions comprise of a multitude of phenomena such as flares, coronal mass ejections (CMEs), large-scale coronal waves, radio bursts, and energetic particles traveling through interplanetary space. These phenomena are observed with a variety of instrumentation, including remote sensing and in-situ detectors. Obtaining a global understanding of a solar eruption often requires the analysis of various of these different datasets, including a multitude of analysis and modeling tools and a wide range of expertise. Usually, such a comprehensive analysis can only be achieved by a skilled and broad team. The Energetic Solar Eruptions: Data and Analysis Tools (SOLER) project aims at creating a comprehensive analysis platform for the study of solar eruptions that allows a single user to easily apply analysis methods addressing various counterparts of the solar event. Therefore, each partner of the project developed Python-based software, including interfaces in the form of Jupyter Notebooks, which provides application examples and concise step-to-step documentation. In this paper we introduce the comprehensive solar-eruption-analysis infrastructure developed within the SOLER project. We explain where to find the software, how to use it, and give dedicated use-case examples of how to employ selected tools in a combined manner.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="physics.space-ph" />
-    <category term="astro-ph.SR" />
-  </entry>
-  <entry>
-    <title>Real-World Knowledge-Guided Change Data Synthesis for Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2608.24263v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.24263v1</id>
-    <published>2026-08-25T00:00:00Z</published>
-    <updated>2026-08-25T00:00:00Z</updated>
-    <author>
-      <name>Yaoyi Qi</name>
-    </author>
-    <author>
-      <name>Xingxing Weng</name>
-    </author>
-    <author>
-      <name>Chao Pang</name>
-    </author>
-    <author>
-      <name>Yongkang Cui</name>
-    </author>
-    <author>
-      <name>Xiangyu Hao</name>
-    </author>
-    <author>
-      <name>Xiaokang Zhang</name>
-    </author>
-    <author>
-      <name>Guibo Zhu</name>
-    </author>
-    <author>
-      <name>Gui-Song Xia</name>
-    </author>
-    <summary type="text">Change data synthesis provides a cost-effective solution for expanding training data and improving the performance of change detection models. However, existing synthesis methods typically rely on handcrafted rules to simulate changes, where limited coverage of class transitions restricts the diversity of synthesized data, while predefined transition designs limit their flexibility in accommodating varied change types. In this work, we introduce KnowChange, a knowledge-guided change data synthesis framework that leverages pretrained vision-language models as knowledge sources to reason about plausible change locations and class transitions from pre-change scenes and desired change types. By integrating knowledge-guided change simulation with generalizable synthesis models, KnowChange enables flexible synthesis of diverse change types within a unified framework. Extensive experiments demonstrate that KnowChange-generated data consistently outperforms existing synthetic datasets in both synthetic-to-real transfer and synthetic data augmentation, despite being generated at a compact scale. Further analyses show that the knowledge-guided change simulation can be seamlessly integrated into existing synthesis pipelines and enhance the downstream utility of synthesized data.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 29 pages, 16 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>PlaceSeek: Human-Centered Geospatial Retrieval of Urban Outdoor Places via Semantic Grounding and Affective Alignment</title>
-    <link href="http://arxiv.org/abs/2608.24133v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.24133v1</id>
-    <published>2026-08-25T00:00:00Z</published>
-    <updated>2026-08-25T00:00:00Z</updated>
-    <author>
-      <name>Ziqi Cui</name>
-    </author>
-    <author>
-      <name>Shangyu Lou</name>
-    </author>
-    <summary type="text">People search for urban outdoor places not only by category or function, but also by what activities a place can support and how it is perceived. Existing geospatial retrieval remains largely POIcentric and metadata-driven, making it difficult to satisfy openended, affective, or activity-oriented needs. We present PlaceSeek, a human-centered outdoor place retrieval framework that maps natural-language queries to geolocated street-view imagery. PlaceSeek introduces an intent-aware retrieval mechanism that decomposes user queries into functional and affective sub-intents. A Semantic Grounding Module verifies whether candidate street-view results contain the physical evidence needed to support the intended activity, while an Affective Alignment Module re-ranks physically valid candidates using a LoRA-adapted vision-language model trained on human urban perception judgments. We evaluate PlaceSeek on 31,956 street-view locations in Milan across 10 naturallanguage queries annotated by five human evaluators. PlaceSeek achieves 88.0% Precision@5, a mean match score of 3.39/4.0, and 0.920 nDCG@5, outperforming CLIP, fine-tuned CLIP, SigLIP, and a VQA-based baseline. Ablation results show that physical grounding is essential for retrieval validity, while affective alignment improves ranking quality among physically valid candidates. These findings highlight that complex urban spatial queries require modeling both verifiable visual evidence and human perceptual preferences. PlaceSeek provides a potential framework for human-centered nextgeneration geospatial retrieval systems.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted as a Research Paper (short) at ACM SIGSPATIAL 2026. This arXiv version is the full version of the paper&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence; Information Retrieval" />
-  </entry>
-  <entry>
-    <title>ORBITALIF: An Efficient Spiking Federated Learning Framework for Onboard Cloud Removal</title>
-    <link href="http://arxiv.org/abs/2608.24073v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.24073v1</id>
-    <published>2026-08-25T00:00:00Z</published>
-    <updated>2026-08-25T00:00:00Z</updated>
-    <author>
-      <name>Bohan Zhang</name>
-    </author>
-    <author>
-      <name>Chenyu Xu</name>
-    </author>
-    <author>
-      <name>Yijie Mao</name>
-    </author>
-    <author>
-      <name>Yuanming Shi</name>
-    </author>
-    <summary type="text">Low-earth-orbit (LEO) satellites enable high-resolution, large-scale Earth observation for applications such as disaster monitoring and environmental surveillance. However, cloud coverage often obscures the Earth's surface, and conventional cloud-removal pipelines that download cloudy images to ground stations for processing suffer from limited contact windows, constrained satellite-to-ground bandwidth, and high latency. In this work, we propose a novel satellite federated learning framework for cloud removal across LEO constellations, named orbital attention leaky integrate-and-fire (OrbitALIF). OrbitALIF performs both onboard training and inference using a compact 2.30,M-parameter spiking neural network (SNN) backbone with an adaptive gated fusion module (AGFM) and a spectral-spatial hybrid attention module (SHAM), combined with a decentralized federated learning strategy that shares model weights via inter-satellite links. Our experiments show that OrbitALIF achieves competitive cloud removal quality while consuming only 0.287,mJ per inference on neuromorphic hardware, a 72.3 times (98.6%) energy reduction versus an equivalent artificial neural network (ANN).</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE GLOBECOM 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Neural and Evolutionary Computing" />
-    <category term="Artificial Intelligence; Computer Vision; cs.DC" />
-  </entry>
-  <entry>
-    <title>Spatially orthogonal factor models for spatial transcriptomics and remote sensing data</title>
-    <link href="http://arxiv.org/abs/2608.25172v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.25172v1</id>
-    <published>2026-08-25T00:00:00Z</published>
-    <updated>2026-08-25T00:00:00Z</updated>
-    <author>
-      <name>Dan Cunha</name>
-    </author>
-    <author>
-      <name>Lukas M. Weber</name>
-    </author>
-    <author>
-      <name>Mark A. Friedl</name>
-    </author>
-    <author>
-      <name>Luis Carvalho</name>
-    </author>
-    <summary type="text">Principal component analyses are often applied to spatial data towards inference on latent modes of spatial variation. These analyses are widespread across domains including spatial transcriptomics and environmental sciences, where the modes of spatial variation are represented by corresponding factors of gene expression or remotely sensed time series measurements. Many methods have been proposed for incorporating spatial information into a probabilistic PCA framework; however, there are three main drawbacks to currently available approaches. First, the loadings matrices are not orthogonal, and subsequent orthogonalization of those loadings corrupts the original prior spatial information. Furthermore, currently proposed methods assume stationarity in their spatial prior. Finally, current methods typically do not achieve linear-time computational complexity with respect to the number of spatial locations. To resolve these problems, we first parameterize the model directly with orthogonal loadings. For the prior distribution, we derive the sampling distribution of an SVD transformation with $k$ unique and $m-k$ repeated singular values. We then show under this model that the maximum a posteriori estimator for the orthogonal loadings is the eigendecomposition of $S + \frac{1}{n}Σ$, where $S$ is the empirical covariance matrix and $Σ$ is the prior spatial covariance. We develop a minorization-maximization-within-EM algorithm that is linear in computational complexity with respect to the number of spatial locations. We further extend our MM-EM algorithm to handle held-out locations and develop a validation strategy for optimizing the nonstationary prior covariance. Our methodology is used to infer the spatial distribution of direction-specific length scales in a human brain spatial transcriptomics case study, as well as a continental-scale phenology case study in sub-Saharan Africa.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="stat.ME" />
-    <category term="stat.AP" />
-  </entry>
-  <entry>
-    <title>LifePlanner: Evaluating LLM Agents for Geo-spatial Planning with Social Media Data</title>
-    <link href="http://arxiv.org/abs/2608.25039v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.25039v1</id>
-    <published>2026-08-25T00:00:00Z</published>
-    <updated>2026-08-25T00:00:00Z</updated>
-    <author>
-      <name>Zhen Dong</name>
-    </author>
-    <author>
-      <name>Yuning Peng</name>
-    </author>
-    <author>
-      <name>Yutao Shi</name>
-    </author>
-    <author>
-      <name>Lei Zhong</name>
-    </author>
-    <author>
-      <name>Yongsen Mao</name>
-    </author>
-    <author>
-      <name>Yuan Liu</name>
-    </author>
-    <author>
-      <name>Haiping Wang</name>
-    </author>
-    <summary type="text">Geo-spatial planning, like trip design, is a realistic testbed for LLM agents because it requires grounded tool use, noisy evidence retrieval, and multi-constraint reasoning. Most benchmarks, however, only provide clean geospatial data and tools, missing the open-ended social signals that people use in daily planning. We introduce LifePlanner, a benchmark that enriches map data with large-scale local social media posts and provides access through an MCP toolset. LifePlanner provides an evaluation suite spanning four task categories and three difficulty levels. Experiments show frontier LLMs perform well on simple retrieval but degrade sharply on complex planning, with the Pass Rate dropping to 40.2%. Results show that failures mainly stem from incomplete evidence acquisition from such a large multimodal database, imprecise tool use, and weak constraint integration rather than model size or reasoning length, suggesting that future progress requires effective grounded planning instead of scaling alone.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 25 pages, 7 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>
