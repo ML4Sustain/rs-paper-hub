@@ -26731,5 +26731,24 @@
     "_added_date": "2026-09-01",
     "Category": "Method",
     "_tasks": "CLS;GeoLoc"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Artificial Intelligence",
+    "Date": "2026-08-31",
+    "Month": 8,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "A Composition-Aware Pretraining Framework for Geospatial Foundation Models",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2608.30817v1",
+    "Abstract": "Geospatial foundation models have emerged as state-of-the-art methods for downstream Earth observation tasks. However, existing pretraining methodologies process imagery through a single-concept lens, failing to capture the highly compositional nature of complex satellite scenes. We propose a composition-aware pretraining framework that explicitly encodes fractional land-cover mixtures. Each satellite image cell is mapped to a histogram representing its fractional land-cover distribution, which we term the \"composition target\". These targets serve as the primary prediction objective and are distilled into the backbone using Earth Mover's Distance. Experimental evaluation shows that composition-aware pretraining yields substantial gains on region-level understanding tasks requiring semantic similarity judgment, including zero-shot image retrieval and scene classification, while remaining competitive on tasks requiring fine-grained spatial precision, such as segmentation and object detection. With a 36.8M-parameter backbone, our framework outperforms SatMAE and Prithvi-EO-2.0, which contain 303M and 600M parameters, respectively, in most retrieval and scene classification settings. On the fine-grained ForestNet-12 dataset, a rigorous testbed for compositional discrimination, our method boosts baseline mAP@10 from 0.279 to 0.434, a 55.6% relative improvement, providing direct evidence for the effectiveness of explicit composition modeling. The code implementation can be found at https://github.com/05kashyap/GFM_Composition_Pretraining",
+    "code": "https://github.com/05kashyap/GFM_Composition_Pretraining",
+    "Publication": "",
+    "BibTex": "@article{naveen2026a,\n  title={A Composition-Aware Pretraining Framework for Geospatial Foundation Models},\n  author={Aryan Kashyap Naveen and Abhishek Srinivas and Pranav Moothedath and Shrutilipi Bhattacharjee},\n  journal={arXiv preprint arXiv:2608.30817v1},\n  year={2026},\n  url={http://arxiv.org/abs/2608.30817v1}\n}",
+    "Authors": "Aryan Kashyap Naveen, Abhishek Srinivas, Pranav Moothedath, Shrutilipi Bhattacharjee",
+    "_added_date": "2026-09-01",
+    "Category": "Method",
+    "_tasks": "CLS;ITR;OD"
   }
 ]

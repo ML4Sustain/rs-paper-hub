@@ -20803,5 +20803,24 @@
     "_added_date": "2026-09-01",
     "Category": "Method",
     "_tasks": "CLS"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-08-31",
+    "Month": 8,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "BRF-GS: Hyperspectral Bidirectional Reflectance Factor Modeling and Image Generation Based on 3D Gaussian Splatting",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2608.31159v1",
+    "Abstract": "The bidirectional reflectance factor (BRF) characterizes the directional radiative properties of terrestrial surfaces. However, existing three-dimensional (3D) radiative transfer models require complex scene construction and computationally intensive radiative transfer solvers, limiting efficient generation of multi-angle hyperspectral reflectance imagery. 3D Gaussian Splatting (3DGS) offers an efficient framework for neural scene representation and novel view synthesis, but its low-order spherical harmonics representation is insufficient for complex directional reflectance, while the high dimensionality and inter-band quality differences of hyperspectral data introduce additional challenges. To address these challenges, we propose BRF-GS, a 3DGS-based framework for BRF modeling and hyperspectral reflectance image generation. BRF-GS introduces a hybrid BRDF-driven kernel to represent complex directional reflectance, selects geometry-reliable spectral bands for robust 3D scene initialization, and adopts a two-stage training strategy that decouples geometry optimization from spectral modeling. We further construct the AIR-BRF dataset, a multi-angle hyperspectral directional reflectance dataset comprising three scenes with diverse natural and artificial targets. Experiments demonstrate that BRF-GS achieves superior spatial and spectral fidelity and accurately reproduces characteristic view-dependent BRF responses. The proposed framework provides an efficient data-driven approach for BRF modeling and multi-angle hyperspectral reflectance image generation in remote sensing scenes.",
+    "code": "",
+    "Publication": "58 pages, 10 figures",
+    "BibTex": "@article{yao2026brfgs,\n  title={BRF-GS: Hyperspectral Bidirectional Reflectance Factor Modeling and Image Generation Based on 3D Gaussian Splatting},\n  author={Yiling Yao and Wenjuan Zhang and Bowen Wang and Bocheng Li and Wentao Song and Bing Zhang},\n  journal={arXiv preprint arXiv:2608.31159v1},\n  year={2026},\n  url={http://arxiv.org/abs/2608.31159v1}\n}",
+    "Authors": "Yiling Yao, Wenjuan Zhang, Bowen Wang, Bocheng Li, Wentao Song, Bing Zhang",
+    "_added_date": "2026-09-01",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]
