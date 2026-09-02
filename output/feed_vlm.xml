@@ -4,12 +4,40 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-01T05:57:34Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 11 entries</subtitle>
+  <updated>2026-09-02T01:38:18Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 10 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>EarthLD: Towards Unified Open-World Landslide Understanding via Vision-Language Guided Diffusion Models</title>
+    <link href="http://arxiv.org/abs/2609.00712v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.00712v1</id>
+    <published>2026-09-01T00:00:00Z</published>
+    <updated>2026-09-01T00:00:00Z</updated>
+    <author>
+      <name>Yuanchao Su</name>
+    </author>
+    <author>
+      <name>Lianru Gao</name>
+    </author>
+    <author>
+      <name>Mengying Jiang</name>
+    </author>
+    <author>
+      <name>Jiangyi Chen</name>
+    </author>
+    <author>
+      <name>Jiaxin Cheng</name>
+    </author>
+    <author>
+      <name>Yicong Zhou</name>
+    </author>
+    <summary type="text">Landslides are widespread geological hazards, yet their automated detection and mapping in remote sensing imagery remain challenging because of their irregular morphology, ambiguous spectral signatures, and substantial domain shifts across imaging platforms. To overcome these challenges, we propose EarthLD, a vision-language-guided diffusion framework for open-world landslide understanding, enabling unified landslide recognition, mapping, and trigger interpretation. At its core, EarthLD formulates landslide understanding as a diffusion process that progressively infers the presence, spatial extent, and pixel-level boundaries of landslides from noisy latent representations. This probabilistic formulation enables the model to jointly perform image-level landslide recognition and mapping while characterizing predictive uncertainty. By integrating visual observations with contextual knowledge in the denoising process, EarthLD distinguishes diverse landslides from backgrounds, produces confidence-aware predictions for suspected regions, and maps landslide ranges. We additionally construct a global-scale open-world landslide benchmark by systematically harmonizing multiple publicly available remote sensing data collected by diverse institutions. Extensive experiments across regions, sensors, and triggering events demonstrate that EarthLD consistently outperforms existing landslide detection methods, highlighting its potential as a unified and robust solution for global geological-hazard monitoring and emergency response.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>SimCRAFT: Distilling Remote Sensing Agents via Synthetic Trajectories and Contextual Retrieval-Augmented Fine-Tuning</title>
     <link href="http://arxiv.org/abs/2608.30277v1" rel="alternate" type="text/html" />
@@ -151,6 +179,25 @@
     <category term="cs.CL" />
   </entry>
   <entry>
+    <title>RAPIDMap: Rapid Multi-Agent Pipeline for Interpretable Disaster Mapping from Satellite and Street-view Imagery</title>
+    <link href="http://arxiv.org/abs/2609.00046v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.00046v1</id>
+    <published>2026-08-30T00:00:00Z</published>
+    <updated>2026-08-30T00:00:00Z</updated>
+    <author>
+      <name>Yifan Yang</name>
+    </author>
+    <author>
+      <name>Lei Zou</name>
+    </author>
+    <summary type="text">Rapid and reliable disaster mapping of impacted areas, damaged infrastructure, and affected populations is essential for emergency response and recovery. However, existing AI-based approaches often require extensive manual annotation, lack cross-hazard generalization, and rely on single-modal observations. To address these challenges, this paper proposes RAPIDMap, a rapid multi-agent pipeline for zero-shot interpretable disaster mapping from satellite and street-view imagery. The framework integrates four intelligent agents: Disaster Perception Agent (DPA), Image Restoration Agent (IRA), Damage Recognition Agent (DRA), and Disaster Mapping Agent (DMA). By combining remote sensing and street-view data, RAPIDMap eliminates the need for manual fine-tuning, generalizes across multiple disaster categories, and generates structured, map-ready disaster intelligence with recovery recommendations.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 4 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
+    <category term="cs.MA" />
+    <category term="Artificial Intelligence; cs.CY" />
+  </entry>
+  <entry>
     <title>GeBDA: Building Damage Assessment as Text-Based Sequence Prediction</title>
     <link href="http://arxiv.org/abs/2608.28567v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2608.28567v1</id>
@@ -259,164 +306,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD;VG&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Planetary Prediction Engine: Autonomous Geospatial Prediction via Intelligent Data Selection and Foundation Model Embeddings</title>
-    <link href="http://arxiv.org/abs/2608.26088v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.26088v1</id>
-    <published>2026-08-26T00:00:00Z</published>
-    <updated>2026-08-26T00:00:00Z</updated>
-    <author>
-      <name>Evelyn Ma</name>
-    </author>
-    <author>
-      <name>Rama Kumar Pasumarthi</name>
-    </author>
-    <author>
-      <name>Kishwar Shafin</name>
-    </author>
-    <author>
-      <name>Mandar Sharma</name>
-    </author>
-    <author>
-      <name>Mimi Sun</name>
-    </author>
-    <author>
-      <name>Hamed Sadeghi</name>
-    </author>
-    <author>
-      <name>Dav M. Ebengo</name>
-    </author>
-    <author>
-      <name>Mbulayi Onesime</name>
-    </author>
-    <author>
-      <name>Rouslan Solomakhin</name>
-    </author>
-    <author>
-      <name>John Wamburu</name>
-    </author>
-    <author>
-      <name>William Ogallo</name>
-    </author>
-    <author>
-      <name>Aisha Walcott-Bryant</name>
-    </author>
-    <author>
-      <name>Sanxing Chen</name>
-    </author>
-    <author>
-      <name>Arbaaz Muslim</name>
-    </author>
-    <author>
-      <name>Yael Mayer</name>
-    </author>
-    <author>
-      <name>Ronald Ho</name>
-    </author>
-    <author>
-      <name>Roy Lee</name>
-    </author>
-    <author>
-      <name>Ruth Alcantara</name>
-    </author>
-    <author>
-      <name>Abdoulaye Diack</name>
-    </author>
-    <author>
-      <name>Monica Bharel</name>
-    </author>
-    <author>
-      <name>Lambert Rosique</name>
-    </author>
-    <author>
-      <name>Jeremy Amez-Droz</name>
-    </author>
-    <author>
-      <name>Christopher Haire</name>
-    </author>
-    <author>
-      <name>James Manyika</name>
-    </author>
-    <author>
-      <name>Yossi Matias</name>
-    </author>
-    <author>
-      <name>Niv Efron</name>
-    </author>
-    <author>
-      <name>Gautam Prasad</name>
-    </author>
-    <author>
-      <name>Shravya Shetty</name>
-    </author>
-    <summary type="text">Addressing critical global challenges, from food security and disaster risk to disease outbreaks and socio-economic vulnerability, demands high-fidelity geospatial modeling. However, building predictive planetary models remains bottlenecked by a fragmented data ecosystem, requiring manual data retrieval, multimodal data curation and fusion along with iterative model selection. We present the Planetary Prediction Engine (PPE), an autonomous AI system that executes this end-to-end workflow directly from natural-language queries. PPE synthesizes multimodal datasets on the fly, retrieving spatiotemporally relevant covariates across open-web and Earth observation platforms (Data Commons, Google Earth Engine) and fusing them with geospatial foundation model embeddings (PDFM, AlphaEarth). Simultaneously, it searches over task-tailored model architecture families with automated overfitting guards. Across diverse tasks, geographies, and scientific domains, PPE consistently outperforms state-of-the-art or manually tuned expert baselines. For US spatial regression, PPE improves mean $R^2$ across 21 CDC health indicators (76.8% vs. 60.0%), FEMA national risk indices (64.9% vs. 60.0%), and the Social Vulnerability Index (66.2% vs. 58.6%). For spatial downscaling in data-scarce settings, PPE integrates localized proxies to double baseline accuracy in Nigerian food security indicators ($R^2$ of 66.1% vs. 31.5%). For epidemiological nowcasting of the 2026 DRC Bundibugyo Ebola outbreak, PPE achieves a Recall@10 of 83.3% (identifying 15 of 18 newly invaded health zones across five weekly forecasts), a +10.3 percentage-point improvement over the public state-of-the-art modeling (~73%). By combining autonomous multimodal planetary data discovery with targeted model optimization, PPE lowers the technical barrier to planetary-scale analytics, enabling rapid, customized, expert-level deployment.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Semi-Supervised Adaptation of Vision-Language Models for Image Classification</title>
-    <link href="http://arxiv.org/abs/2608.25485v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.25485v1</id>
-    <published>2026-08-26T00:00:00Z</published>
-    <updated>2026-08-26T00:00:00Z</updated>
-    <author>
-      <name>Mohamed L. Mekhalfi</name>
-    </author>
-    <author>
-      <name>Mohamad M. Al Rahhal</name>
-    </author>
-    <author>
-      <name>Yakoub Bazi</name>
-    </author>
-    <author>
-      <name>Salah E. Khenfer</name>
-    </author>
-    <author>
-      <name>Mingdeng Shi</name>
-    </author>
-    <author>
-      <name>Hua Zou</name>
-    </author>
-    <author>
-      <name>Mansour Zuair</name>
-    </author>
-    <summary type="text">Vision-language models like CLIP have shown sig- nificant potential in handling natural images, yet their perfor- mance is often limited by the distinct characteristics of satellite imagery. While parameter-efficient adaptation techniques exist, their efficacy is frequently limited by the scarcity of annotated samples. In this letter, we propose Self-Evolutionary CLIP (SE- CLIP), a semi-supervised framework designed for recursive label mining in scene classification. The approach follows a dual-phase pipeline, where an initial warm-up on a few annotated seeds is followed by a recursive discovery phase that iteratively identifies high-confidence samples from unlabeled pools. To maintain the integrity of the evolving support set, we employ a class-balanced selection strategy that prevents the model from being dominated by easily learned categories. Results on the UCM and NWPU benchmarks indicate that SE-CLIP significantly outperforms existing semi-supervised approaches. The framework provides a viable solution for adapting VLMs to the remote sensing domain with minimal human intervention.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Characterizing the Landscape of Open-Source Satellite Software</title>
-    <link href="http://arxiv.org/abs/2608.26211v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.26211v1</id>
-    <published>2026-08-26T00:00:00Z</published>
-    <updated>2026-08-26T00:00:00Z</updated>
-    <author>
-      <name>Jinfeng Wen</name>
-    </author>
-    <author>
-      <name>Qi Liang</name>
-    </author>
-    <author>
-      <name>Yuehan Sun</name>
-    </author>
-    <author>
-      <name>Federica Sarro</name>
-    </author>
-    <author>
-      <name>Ao Zhou</name>
-    </author>
-    <author>
-      <name>Xuanzhe Liu</name>
-    </author>
-    <author>
-      <name>Shangguang Wang</name>
-    </author>
-    <summary type="text">Satellites have become fundamental components of modern technological systems, supporting critical infrastructure in communication, navigation, Earth observation, and scientific research. As space exploration advances and demand for satellite-enabled services grows, reliance on complex, heterogeneous satellite software continues to increase. A systematic understanding of the satellite software landscape is therefore increasingly important, yet existing studies still lack a comprehensive empirical examination. To address this gap, we present the first characterization study of open-source satellite software, examining its ecosystem and development practices. We mine and analyze 22,286 satellite-related GitHub projects through three research questions on popularity trends (RQ1), software goals (RQ2), and development practices (RQ3). First, we characterize the temporal evolution of projects and active developers, revealing increasing popularity. Second, through manual inspection of 646 projects, we construct a taxonomy of 43 software-goal categories spanning conceptual design, datasets, system implementation, simulation, testing, and tools. Third, we conduct an in-depth analysis of projects with source code, revealing a highly heterogeneous and task-specialized ecosystem with 66 programming languages and diverse implementation strategies. Finally, we summarize key findings and derive actionable implications for satellite developers and researchers.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; This paper has been accepted for publication in ASE 2026!&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.SE" />
   </entry>
 </feed>

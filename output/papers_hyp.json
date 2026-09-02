@@ -20822,5 +20822,24 @@
     "_added_date": "2026-09-01",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Artificial Intelligence",
+    "Subtype": "Robotics",
+    "Date": "2026-08-31",
+    "Month": 8,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Deploying and Evaluating a Smart-Agriculture Agentic Engine for Full-Season Soybean Farm Operations",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2609.00106v1",
+    "Abstract": "This paper presents FAIRY, a full-stack smart-agriculture agent system developed for and deployed to an operating soybean research farm at Harbin Institute of Technology's smart-agriculture site. We develop FAIRY to execute and evaluate agentic agronomic operations on full-season spatiotemporal workflows that span ridge preparation, planting, irrigation, fertilization, pest and disease treatment, harvest, grain handling, drying, and storage. FAIRY integrates APIs and infrastructure across production-grade machinery, fixed soil and canopy sensors, multispectral and thermal drones, satellite vegetation products, a weather station, calibrated crop-process models, agronomic records, and multi-season yield histories. The system is built around the novel \"everything is an event\" execution paradigm, which represents spatiotemporal world evolution, remote sensing and UAV observations, sensor readings, crop-growth transitions, machinery actions, and management interventions as state-changing events in a shared farm process engine. On top of this event-driven world model, FAIRY implements a complete agentic stack: a knowledge library of atomic agronomic skills; multi-agent controller and orchestration backends; frontier- and edge-model execution; full-path trace logging; and deployment profiling on local nodes. We use FAIRY to evaluate nine state-of-the-art agent controllers across one hundred full-season soybean scenarios that preserve the operational coupling between spatial observations in a 64-ridge field, temporal decision sequences, agronomic constraints, delayed effects, and final yield. We develop an evaluation suite that combines agentic success, full-path spatiotemporal correctness, token cost, and edge-device runtime.",
+    "code": "",
+    "Publication": "Accepted to ACM SIGSPATIAL 2026",
+    "BibTex": "@article{qu2026deploying,\n  title={Deploying and Evaluating a Smart-Agriculture Agentic Engine for Full-Season Soybean Farm Operations},\n  author={Ao Qu and Panagiotis Michelakis and Linyuan Han and Yiannis Hadjiyianni and Kun Ouyang and Konstantinos Siskos and Feng Li and Ran Meng and Jingchi Jiang and Dimitrios Stamoulis and Jie Liu},\n  journal={arXiv preprint arXiv:2609.00106v1},\n  year={2026},\n  url={http://arxiv.org/abs/2609.00106v1}\n}",
+    "Authors": "Ao Qu, Panagiotis Michelakis, Linyuan Han, Yiannis Hadjiyianni, Kun Ouyang, Konstantinos Siskos, Feng Li, Ran Meng, Jingchi Jiang, Dimitrios Stamoulis, Jie Liu",
+    "_added_date": "2026-09-02",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]

@@ -4,12 +4,87 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-01T05:57:34Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 30 entries</subtitle>
+  <updated>2026-09-02T01:38:18Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 29 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>RingMoClaw: An Experience-Inspired Multi-Agent Framework for Self-Evolving Research in Remote Sensing</title>
+    <link href="http://arxiv.org/abs/2609.00814v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.00814v1</id>
+    <published>2026-09-01T00:00:00Z</published>
+    <updated>2026-09-01T00:00:00Z</updated>
+    <author>
+      <name>Kaiyue Kang</name>
+    </author>
+    <author>
+      <name>Qixuan He</name>
+    </author>
+    <author>
+      <name>Peijin Wang</name>
+    </author>
+    <author>
+      <name>Yingchao Feng</name>
+    </author>
+    <author>
+      <name>Chao Ren</name>
+    </author>
+    <author>
+      <name>Kangxin Wang</name>
+    </author>
+    <author>
+      <name>Wenhui Diao</name>
+    </author>
+    <author>
+      <name>Yixiao Wang</name>
+    </author>
+    <author>
+      <name>Liangjin Zhao</name>
+    </author>
+    <author>
+      <name>Kaiwen Wei</name>
+    </author>
+    <author>
+      <name>Nayu Liu</name>
+    </author>
+    <author>
+      <name>Xian Sun</name>
+    </author>
+    <summary type="text">Remote sensing visual models have continuously advanced various interpretation tasks. However, the research process behind model improvement still heavily relies on manual expertise, requiring extensive trial-and-error iterations in model design, data processing, and performance diagnosis. Existing agent-based approaches mainly focus on task execution and workflow orchestration, while lacking the capability of autonomous research iteration for continuous performance optimization. To address this issue, we propose RingMoClaw, an experience-inspired self-evolving multi-agent framework for remote sensing visual interpretation. RingMoClaw integrates a research branch, a quality-control branch, and a dual-stream dynamic experience bus to establish a closed-loop optimization process covering strategy generation, experiment execution, independent review, and experience accumulation. The heterogeneous Critic mechanism provides stage-wise diagnosis and feedback, while the dual-stream experience bus incorporates external knowledge and internal experimental experience to guide strategy evolution and eliminate ineffective searches. Extensive experiments on four remote sensing downstream tasks, including object detection, scene classification, semantic segmentation, and change detection, demonstrate the effectiveness and generalization of RingMoClaw. Compared with the corresponding baseline models, RingMoClaw improves performance by 1.84\% mAP$_{50}$ on object detection and achieves consistent gains across the other three tasks, while reducing the required evolution steps by over 40\% compared with existing research automation frameworks. These results suggest that RingMoClaw offers a feasible route from task execution toward continuous research driven model evolution in remote sensing.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;CD;OD;SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>EarthLD: Towards Unified Open-World Landslide Understanding via Vision-Language Guided Diffusion Models</title>
+    <link href="http://arxiv.org/abs/2609.00712v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.00712v1</id>
+    <published>2026-09-01T00:00:00Z</published>
+    <updated>2026-09-01T00:00:00Z</updated>
+    <author>
+      <name>Yuanchao Su</name>
+    </author>
+    <author>
+      <name>Lianru Gao</name>
+    </author>
+    <author>
+      <name>Mengying Jiang</name>
+    </author>
+    <author>
+      <name>Jiangyi Chen</name>
+    </author>
+    <author>
+      <name>Jiaxin Cheng</name>
+    </author>
+    <author>
+      <name>Yicong Zhou</name>
+    </author>
+    <summary type="text">Landslides are widespread geological hazards, yet their automated detection and mapping in remote sensing imagery remain challenging because of their irregular morphology, ambiguous spectral signatures, and substantial domain shifts across imaging platforms. To overcome these challenges, we propose EarthLD, a vision-language-guided diffusion framework for open-world landslide understanding, enabling unified landslide recognition, mapping, and trigger interpretation. At its core, EarthLD formulates landslide understanding as a diffusion process that progressively infers the presence, spatial extent, and pixel-level boundaries of landslides from noisy latent representations. This probabilistic formulation enables the model to jointly perform image-level landslide recognition and mapping while characterizing predictive uncertainty. By integrating visual observations with contextual knowledge in the denoising process, EarthLD distinguishes diverse landslides from backgrounds, produces confidence-aware predictions for suspected regions, and maps landslide ranges. We additionally construct a global-scale open-world landslide benchmark by systematically harmonizing multiple publicly available remote sensing data collected by diverse institutions. Extensive experiments across regions, sensors, and triggering events demonstrate that EarthLD consistently outperforms existing landslide detection methods, highlighting its potential as a unified and robust solution for global geological-hazard monitoring and emergency response.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Minerals in the Wild: A Hyperspectral-XRF Dataset for Elemental Composition Estimation</title>
     <link href="http://arxiv.org/abs/2608.30537v1" rel="alternate" type="text/html" />
@@ -241,6 +316,51 @@
     <category term="cs.MA; Multimedia" />
   </entry>
   <entry>
+    <title>Deploying and Evaluating a Smart-Agriculture Agentic Engine for Full-Season Soybean Farm Operations</title>
+    <link href="http://arxiv.org/abs/2609.00106v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.00106v1</id>
+    <published>2026-08-31T00:00:00Z</published>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <author>
+      <name>Ao Qu</name>
+    </author>
+    <author>
+      <name>Panagiotis Michelakis</name>
+    </author>
+    <author>
+      <name>Linyuan Han</name>
+    </author>
+    <author>
+      <name>Yiannis Hadjiyianni</name>
+    </author>
+    <author>
+      <name>Kun Ouyang</name>
+    </author>
+    <author>
+      <name>Konstantinos Siskos</name>
+    </author>
+    <author>
+      <name>Feng Li</name>
+    </author>
+    <author>
+      <name>Ran Meng</name>
+    </author>
+    <author>
+      <name>Jingchi Jiang</name>
+    </author>
+    <author>
+      <name>Dimitrios Stamoulis</name>
+    </author>
+    <author>
+      <name>Jie Liu</name>
+    </author>
+    <summary type="text">This paper presents FAIRY, a full-stack smart-agriculture agent system developed for and deployed to an operating soybean research farm at Harbin Institute of Technology's smart-agriculture site. We develop FAIRY to execute and evaluate agentic agronomic operations on full-season spatiotemporal workflows that span ridge preparation, planting, irrigation, fertilization, pest and disease treatment, harvest, grain handling, drying, and storage. FAIRY integrates APIs and infrastructure across production-grade machinery, fixed soil and canopy sensors, multispectral and thermal drones, satellite vegetation products, a weather station, calibrated crop-process models, agronomic records, and multi-season yield histories. The system is built around the novel "everything is an event" execution paradigm, which represents spatiotemporal world evolution, remote sensing and UAV observations, sensor readings, crop-growth transitions, machinery actions, and management interventions as state-changing events in a shared farm process engine. On top of this event-driven world model, FAIRY implements a complete agentic stack: a knowledge library of atomic agronomic skills; multi-agent controller and orchestration backends; frontier- and edge-model execution; full-path trace logging; and deployment profiling on local nodes. We use FAIRY to evaluate nine state-of-the-art agent controllers across one hundred full-season soybean scenarios that preserve the operational coupling between spatial observations in a 64-ridge field, temporal decision sequences, agronomic constraints, delayed effects, and final yield. We develop an evaluation suite that combines agentic success, full-path spatiotemporal correctness, token cost, and edge-device runtime.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to ACM SIGSPATIAL 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+    <category term="Robotics" />
+  </entry>
+  <entry>
     <title>Towards Continual Test-Time Adaptation of Vision-Language Models in Open-Vocabulary Semantic Segmentation</title>
     <link href="http://arxiv.org/abs/2608.29923v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2608.29923v1</id>
@@ -370,6 +490,25 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;GeoLoc&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="cs.CL" />
+  </entry>
+  <entry>
+    <title>RAPIDMap: Rapid Multi-Agent Pipeline for Interpretable Disaster Mapping from Satellite and Street-view Imagery</title>
+    <link href="http://arxiv.org/abs/2609.00046v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.00046v1</id>
+    <published>2026-08-30T00:00:00Z</published>
+    <updated>2026-08-30T00:00:00Z</updated>
+    <author>
+      <name>Yifan Yang</name>
+    </author>
+    <author>
+      <name>Lei Zou</name>
+    </author>
+    <summary type="text">Rapid and reliable disaster mapping of impacted areas, damaged infrastructure, and affected populations is essential for emergency response and recovery. However, existing AI-based approaches often require extensive manual annotation, lack cross-hazard generalization, and rely on single-modal observations. To address these challenges, this paper proposes RAPIDMap, a rapid multi-agent pipeline for zero-shot interpretable disaster mapping from satellite and street-view imagery. The framework integrates four intelligent agents: Disaster Perception Agent (DPA), Image Restoration Agent (IRA), Damage Recognition Agent (DRA), and Disaster Mapping Agent (DMA). By combining remote sensing and street-view data, RAPIDMap eliminates the need for manual fine-tuning, generalizes across multiple disaster categories, and generates structured, map-ready disaster intelligence with recovery recommendations.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 4 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
+    <category term="cs.MA" />
+    <category term="Artificial Intelligence; cs.CY" />
   </entry>
   <entry>
     <title>GeBDA: Building Damage Assessment as Text-Based Sequence Prediction</title>
@@ -730,210 +869,6 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Transactions on Geoscience and Remote Sensing&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD;VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Planetary Prediction Engine: Autonomous Geospatial Prediction via Intelligent Data Selection and Foundation Model Embeddings</title>
-    <link href="http://arxiv.org/abs/2608.26088v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.26088v1</id>
-    <published>2026-08-26T00:00:00Z</published>
-    <updated>2026-08-26T00:00:00Z</updated>
-    <author>
-      <name>Evelyn Ma</name>
-    </author>
-    <author>
-      <name>Rama Kumar Pasumarthi</name>
-    </author>
-    <author>
-      <name>Kishwar Shafin</name>
-    </author>
-    <author>
-      <name>Mandar Sharma</name>
-    </author>
-    <author>
-      <name>Mimi Sun</name>
-    </author>
-    <author>
-      <name>Hamed Sadeghi</name>
-    </author>
-    <author>
-      <name>Dav M. Ebengo</name>
-    </author>
-    <author>
-      <name>Mbulayi Onesime</name>
-    </author>
-    <author>
-      <name>Rouslan Solomakhin</name>
-    </author>
-    <author>
-      <name>John Wamburu</name>
-    </author>
-    <author>
-      <name>William Ogallo</name>
-    </author>
-    <author>
-      <name>Aisha Walcott-Bryant</name>
-    </author>
-    <author>
-      <name>Sanxing Chen</name>
-    </author>
-    <author>
-      <name>Arbaaz Muslim</name>
-    </author>
-    <author>
-      <name>Yael Mayer</name>
-    </author>
-    <author>
-      <name>Ronald Ho</name>
-    </author>
-    <author>
-      <name>Roy Lee</name>
-    </author>
-    <author>
-      <name>Ruth Alcantara</name>
-    </author>
-    <author>
-      <name>Abdoulaye Diack</name>
-    </author>
-    <author>
-      <name>Monica Bharel</name>
-    </author>
-    <author>
-      <name>Lambert Rosique</name>
-    </author>
-    <author>
-      <name>Jeremy Amez-Droz</name>
-    </author>
-    <author>
-      <name>Christopher Haire</name>
-    </author>
-    <author>
-      <name>James Manyika</name>
-    </author>
-    <author>
-      <name>Yossi Matias</name>
-    </author>
-    <author>
-      <name>Niv Efron</name>
-    </author>
-    <author>
-      <name>Gautam Prasad</name>
-    </author>
-    <author>
-      <name>Shravya Shetty</name>
-    </author>
-    <summary type="text">Addressing critical global challenges, from food security and disaster risk to disease outbreaks and socio-economic vulnerability, demands high-fidelity geospatial modeling. However, building predictive planetary models remains bottlenecked by a fragmented data ecosystem, requiring manual data retrieval, multimodal data curation and fusion along with iterative model selection. We present the Planetary Prediction Engine (PPE), an autonomous AI system that executes this end-to-end workflow directly from natural-language queries. PPE synthesizes multimodal datasets on the fly, retrieving spatiotemporally relevant covariates across open-web and Earth observation platforms (Data Commons, Google Earth Engine) and fusing them with geospatial foundation model embeddings (PDFM, AlphaEarth). Simultaneously, it searches over task-tailored model architecture families with automated overfitting guards. Across diverse tasks, geographies, and scientific domains, PPE consistently outperforms state-of-the-art or manually tuned expert baselines. For US spatial regression, PPE improves mean $R^2$ across 21 CDC health indicators (76.8% vs. 60.0%), FEMA national risk indices (64.9% vs. 60.0%), and the Social Vulnerability Index (66.2% vs. 58.6%). For spatial downscaling in data-scarce settings, PPE integrates localized proxies to double baseline accuracy in Nigerian food security indicators ($R^2$ of 66.1% vs. 31.5%). For epidemiological nowcasting of the 2026 DRC Bundibugyo Ebola outbreak, PPE achieves a Recall@10 of 83.3% (identifying 15 of 18 newly invaded health zones across five weekly forecasts), a +10.3 percentage-point improvement over the public state-of-the-art modeling (~73%). By combining autonomous multimodal planetary data discovery with targeted model optimization, PPE lowers the technical barrier to planetary-scale analytics, enabling rapid, customized, expert-level deployment.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Semi-Supervised Adaptation of Vision-Language Models for Image Classification</title>
-    <link href="http://arxiv.org/abs/2608.25485v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.25485v1</id>
-    <published>2026-08-26T00:00:00Z</published>
-    <updated>2026-08-26T00:00:00Z</updated>
-    <author>
-      <name>Mohamed L. Mekhalfi</name>
-    </author>
-    <author>
-      <name>Mohamad M. Al Rahhal</name>
-    </author>
-    <author>
-      <name>Yakoub Bazi</name>
-    </author>
-    <author>
-      <name>Salah E. Khenfer</name>
-    </author>
-    <author>
-      <name>Mingdeng Shi</name>
-    </author>
-    <author>
-      <name>Hua Zou</name>
-    </author>
-    <author>
-      <name>Mansour Zuair</name>
-    </author>
-    <summary type="text">Vision-language models like CLIP have shown sig- nificant potential in handling natural images, yet their perfor- mance is often limited by the distinct characteristics of satellite imagery. While parameter-efficient adaptation techniques exist, their efficacy is frequently limited by the scarcity of annotated samples. In this letter, we propose Self-Evolutionary CLIP (SE- CLIP), a semi-supervised framework designed for recursive label mining in scene classification. The approach follows a dual-phase pipeline, where an initial warm-up on a few annotated seeds is followed by a recursive discovery phase that iteratively identifies high-confidence samples from unlabeled pools. To maintain the integrity of the evolving support set, we employ a class-balanced selection strategy that prevents the model from being dominated by easily learned categories. Results on the UCM and NWPU benchmarks indicate that SE-CLIP significantly outperforms existing semi-supervised approaches. The framework provides a viable solution for adapting VLMs to the remote sensing domain with minimal human intervention.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Mapping Woody Vegetation from Multi-Source Imagery and Prediction Fusion for Enhanced Data Efficiency and Accuracy</title>
-    <link href="http://arxiv.org/abs/2608.26471v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.26471v1</id>
-    <published>2026-08-26T00:00:00Z</published>
-    <updated>2026-08-26T00:00:00Z</updated>
-    <author>
-      <name>Kal Backman</name>
-    </author>
-    <author>
-      <name>Jared Wood</name>
-    </author>
-    <author>
-      <name>Adam Roff</name>
-    </author>
-    <summary type="text">Tree cover maps are a fundamental remote sensing product, used to derive ecological insights about the landscape and are essential to change detection, vegetation mapping and fire monitoring programs. However, comprehensive tree cover mapping requires reliable and high-quality imagery, free of cloud and weather defects to ensure accurate model outputs. Deep learning approaches can generate high quality maps with minimal human intervention but require large amounts of human annotated data to be successful. In this work we propose a framework consisting of methods that aim to improve the data efficiency and robustness of deep learning models using data fusion techniques to segment woody vegetation defined as vegetation over the height of 2m across the state of New South Wales, Australia. To improve robustness against varying image quality, we propose an image composition method that normalizes the imagery and removes defects, whilst also minimizing the reliance on individual image quality by proposing a prediction fusion method. The two methods resulted in an error reduction of 38.2% and 53.6% respectively compared to single-source imagery. To address deep learning approaches' limitation of requiring large amounts of data, we apply label transfer to multiple sources of imagery as a form of data augmentation to improve data efficiency. Learning from multiple image sources was shown to be the biggest improvement in performance, resulting in an error reduction between 28.1% to 76.2% across the different validation experiments, whilst reducing the standard deviation of performance across image dates by a factor of 13.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Characterizing the Landscape of Open-Source Satellite Software</title>
-    <link href="http://arxiv.org/abs/2608.26211v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.26211v1</id>
-    <published>2026-08-26T00:00:00Z</published>
-    <updated>2026-08-26T00:00:00Z</updated>
-    <author>
-      <name>Jinfeng Wen</name>
-    </author>
-    <author>
-      <name>Qi Liang</name>
-    </author>
-    <author>
-      <name>Yuehan Sun</name>
-    </author>
-    <author>
-      <name>Federica Sarro</name>
-    </author>
-    <author>
-      <name>Ao Zhou</name>
-    </author>
-    <author>
-      <name>Xuanzhe Liu</name>
-    </author>
-    <author>
-      <name>Shangguang Wang</name>
-    </author>
-    <summary type="text">Satellites have become fundamental components of modern technological systems, supporting critical infrastructure in communication, navigation, Earth observation, and scientific research. As space exploration advances and demand for satellite-enabled services grows, reliance on complex, heterogeneous satellite software continues to increase. A systematic understanding of the satellite software landscape is therefore increasingly important, yet existing studies still lack a comprehensive empirical examination. To address this gap, we present the first characterization study of open-source satellite software, examining its ecosystem and development practices. We mine and analyze 22,286 satellite-related GitHub projects through three research questions on popularity trends (RQ1), software goals (RQ2), and development practices (RQ3). First, we characterize the temporal evolution of projects and active developers, revealing increasing popularity. Second, through manual inspection of 646 projects, we construct a taxonomy of 43 software-goal categories spanning conceptual design, datasets, system implementation, simulation, testing, and tools. Third, we conduct an in-depth analysis of projects with source code, revealing a highly heterogeneous and task-specialized ecosystem with 66 programming languages and diverse implementation strategies. Finally, we summarize key findings and derive actionable implications for satellite developers and researchers.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; This paper has been accepted for publication in ASE 2026!&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.SE" />
-  </entry>
-  <entry>
-    <title>Multi-Sensor Mapping of Vulnerable Urban Settlements Using SAR, Multispectral, and Hyperspectral Imagery: A Case Study in Córdoba, Argentina</title>
-    <link href="http://arxiv.org/abs/2608.28680v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.28680v1</id>
-    <published>2026-08-26T00:00:00Z</published>
-    <updated>2026-08-26T00:00:00Z</updated>
-    <author>
-      <name>Luigi Russo</name>
-    </author>
-    <author>
-      <name>Anabella Ferral</name>
-    </author>
-    <author>
-      <name>Silvia Liberata Ullo</name>
-    </author>
-    <author>
-      <name>Paolo Gamba</name>
-    </author>
-    <summary type="text">Informal settlements represent a major urban challenge in rapidly expanding cities, yet their identification from Earth Observation (EO) data remains difficult because of their heterogeneous appearance and incomplete official inventories. This work presents a multi-sensor deep learning (DL) framework for slum-likelihood mapping in Córdoba, Argentina, integrating high-resolution PlanetScope multispectral (MS) imagery, COSMO-SkyMed (CSK) Synthetic Aperture Radar (SAR) data, and medium-resolution PRISMA hyperspectral (HS) observations. The problem is formulated as a patch-level classification task using the official Registro Nacional de Barrios Populares (ReNaBaP) inventory as reference, and the models are evaluated through four geographically partitioned folds. SAR-only and MS-only baselines, their configurations with PRISMA HS support, and early fusion (EF), middle fusion (MF), and late fusion (LF) strategies are systematically compared. Results show that LF+HS provides the best overall balance between classification performance and spatial selectivity, while PRISMA contributes complementary spectral information alongside the higher-resolution MS and SAR representations. Beyond the standard evaluation against ReNaBaP, an external municipal vulnerability layer is used to interpret detections outside the official polygons, showing that several apparent false positives overlap broader vulnerable urban areas. Thermal analysis further shows that ReNaBaP settlements exhibit significantly higher surface temperatures than their immediate surroundings during a heatwave event, indicating localised surface-heat amplification. Taken together, these results suggest that multi-sensor EO fusion can support both the mapping of ReNaBaP settlements and the interpretation of broader urban vulnerability patterns.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Submitted to IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>
