@@ -4,12 +4,76 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-02T05:21:03Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 30 entries</subtitle>
+  <updated>2026-09-03T01:42:49Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 27 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>SPAR: Enhancing Industrial-Scale Generative POI Recommendation via Real-World Spatial Perception</title>
+    <link href="http://arxiv.org/abs/2609.02062v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.02062v1</id>
+    <published>2026-09-02T00:00:00Z</published>
+    <updated>2026-09-02T00:00:00Z</updated>
+    <author>
+      <name>Fangye Wang</name>
+    </author>
+    <author>
+      <name>Yunjin Gu</name>
+    </author>
+    <author>
+      <name>Haowen Lin</name>
+    </author>
+    <author>
+      <name>Yifang Yuan</name>
+    </author>
+    <author>
+      <name>Song Yang</name>
+    </author>
+    <author>
+      <name>Xiaojiang Zhou</name>
+    </author>
+    <author>
+      <name>Pengjie Wang</name>
+    </author>
+    <summary type="text">Generative Point-of-Interest (POI) recommendation, autoregressively generating a target POI's semantic ID (SID), holds great promise for Location-Based Services, where a recommendation helps only if the user can reach it. Yet, existing methods operate within an interest space defined by behavior sequences and collaborative signals, where geography enters only as a textual attribute of the SID, leaving no explicit mechanism to learn or preserve how urban places are related by distance, direction, and reachability; their predictions are thus behaviorally plausible yet far from the user's real-time location. We argue that such services require injecting real urban spatial knowledge into the interest space, rather than inferring geography from behavior alone. Hence, we propose SPAR, a unified framework whose three synergistic stages jointly construct, cultivate, and preserve urban spatial knowledge: (1) at the tokenization level, Spatially-Intrinsic SID (SI-SID) explicitly encodes longitude--latitude coordinates into a sinusoidal geospatial embedding and fuses it with the textual semantic embedding, producing identifiers via RQ-Kmeans that are simultaneously semantically and geographically consistent; (2) at the cognition level, Multi-Granular Geospatial CPT (MG-CPT) continually pre-trains the base LLM on 25 curated geospatial datasets organized into three tiers of basic attributes, pairwise relations, and city-scale navigation, so that scattered POIs cohere into a connected urban space; and (3) at the adaptation level, Task-Vector Anchored SFT (TV-SFT) anchors the acquired spatial knowledge as a frozen parameter-space task vector to prevent its catastrophic forgetting during behavioral fine-tuning, thereby fusing the two spaces. Extensive quantitative and visualization experiments on two public and four industrial-scale datasets demonstrate the effectiveness of SPAR.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Information Retrieval" />
+  </entry>
+  <entry>
+    <title>Perceptually Regularized Diffusion Model for Image Super-Resolution</title>
+    <link href="http://arxiv.org/abs/2609.02016v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.02016v1</id>
+    <published>2026-09-02T00:00:00Z</published>
+    <updated>2026-09-02T00:00:00Z</updated>
+    <author>
+      <name>Chuxiangbo Wang</name>
+    </author>
+    <author>
+      <name>Pavithra Venkatachalapathy</name>
+    </author>
+    <author>
+      <name>Ying Liang</name>
+    </author>
+    <author>
+      <name>Min Wang</name>
+    </author>
+    <author>
+      <name>Jing Qin</name>
+    </author>
+    <author>
+      <name>Yifei Lou</name>
+    </author>
+    <author>
+      <name>Weihong Guo</name>
+    </author>
+    <summary type="text">Image super-resolution, which aims to reconstruct high-resolution images from their low-resolution observations, is fundamental to medical imaging, remote sensing, surveillance, microscopy, and scientific visualization. Traditional model-based methods formulate super-resolution as an inverse problem with hand-crafted regularization priors. While interpretable and theoretically grounded, they rely on fixed assumptions and require computationally intensive iterative solvers. Deep learning methods offer data-driven flexibility by learning nonlinear mappings from low- to high-resolution images, among which diffusion models have achieved particularly impressive perceptual quality. However, the standard diffusion training objective is a pixel-domain noise-prediction loss that does not explicitly enforce perceptual fidelity, which can lead to oversmoothing and loss of fine image structure. To address these limitations, we propose a perceptually regularized diffusion framework that incorporates prior knowledge through perceptual-loss-based regularization, improving training convergence and encouraging the recovery of meaningful image features. Experiments on benchmark datasets demonstrate improved perceptual quality and competitive distortion metrics, highlighting the effectiveness of regularization for diffusion-based super resolution.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+    <category term="Computer Vision; Machine Learning" />
+  </entry>
   <entry>
     <title>RingMoClaw: An Experience-Inspired Multi-Agent Framework for Self-Evolving Research in Remote Sensing</title>
     <link href="http://arxiv.org/abs/2609.00814v1" rel="alternate" type="text/html" />
@@ -109,6 +173,22 @@
     <summary type="text">Hyperspectral unmixing is a key task in remote sensing that aims to decompose mixed pixels in hyperspectral images into their constituent material signatures, or endmembers, and their fractional abundances. Conventional modular approaches estimate the scene composition through successive model-order estimation, endmember extraction, and abundance estimation stages, whose errors can lead to redundant or ambiguous candidate components and ultimately affect the recovered decomposition. We introduce an algorithm-agnostic, large vision-language model (LVLM)-driven agentic framework that refines the outputs of such pipelines rather than replacing their underlying numerical algorithms. Starting from an initial decomposition, the agent iteratively gathers complementary spectral and spatial evidence through dedicated tools, including spectral-library retrieval and abundance-map visualization, and modifies the active endmember set through merge and discard operations followed by abundance re-estimation. We apply the same refinement procedure to several modular pipelines combining different model-order, extraction, and abundance-estimation methods, and evaluate it on HYDICE Urban, Jasper Ridge, and Stonewall Playa. Experiments show that the proposed agent consistently improves endmember cardinality and generally improves the recovered spectral signatures and abundance maps across heterogeneous modular pipelines, while remaining competitive with integrated end-to-end unmixing methods, including CNN-AE, uDAS, and R-CoNMF. These results highlight the potential of tool-using LVLM agents to combine spectral and spatial evidence for algorithm-agnostic refinement of physically grounded hyperspectral unmixing decompositions. Code is publicly available at https://anonymous.4open.science/r/agentic-hu.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>From Open Standards to Openly Governed: Standards-Setting Organizations as Stewards of Openness amid Platformization and Digital Sovereignty</title>
+    <link href="http://arxiv.org/abs/2609.01773v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.01773v1</id>
+    <published>2026-09-01T00:00:00Z</published>
+    <updated>2026-09-01T00:00:00Z</updated>
+    <author>
+      <name>Begoña G. Otero</name>
+    </author>
+    <author>
+      <name>Stefaan G. Verhulst</name>
+    </author>
+    <summary type="text">Open geospatial standards let data, services, and systems work across platforms. But openness is not just a property of specifications. It also depends on the institutions that produce them and the infrastructures in which they operate. Standards may function as digital public goods and, once embedded in public systems, as digital public infrastructure. Those roles can diverge. This paper asks when open geospatial standards remain public infrastructure rather than becoming channels of enclosure. It makes two claims. First, standards-setting governance matters: institutional design shapes whether open specifications retain their public-good character. Second, geospatial coordination is shifting toward proprietary location stacks, APIs, and cloud platforms, where roadmaps, pricing, and service terms increasingly set the rules. Sovereign-cloud and sovereign-AI strategies relocate this power rather than remove it. These dynamics reinforce each other. Weak governance pushes coordination toward the implementation layer; platformization, in turn, reduces incentives to invest in open standardization, weakening portability and FAIR reuse. Standards bodies cannot reverse platformization, but they still control the specification layer. Where legal safeguards are limited, internal governance becomes key. We frame this through four dimensions: Purpose, Principles, People and Processes, and Policies and Practices (the 4Ps framework) while stressing the limit that internal governance cannot solve alone an external structural problem.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.CY" />
   </entry>
   <entry>
     <title>Minerals in the Wild: A Hyperspectral-XRF Dataset for Elemental Composition Estimation</title>
@@ -518,8 +598,8 @@
   </entry>
   <entry>
     <title>RAPIDMap: Rapid Multi-Agent Pipeline for Interpretable Disaster Mapping from Satellite and Street-view Imagery</title>
-    <link href="http://arxiv.org/abs/2609.00046v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.00046v1</id>
+    <link href="http://arxiv.org/abs/2609.00046v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.00046v2</id>
     <published>2026-08-30T00:00:00Z</published>
     <updated>2026-08-30T00:00:00Z</updated>
     <author>
@@ -687,213 +767,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;SEG&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>UrbanGround: From Local Perception to Spatial Agency in a Real-Scale City</title>
-    <link href="http://arxiv.org/abs/2608.27456v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.27456v1</id>
-    <published>2026-08-27T00:00:00Z</published>
-    <updated>2026-08-27T00:00:00Z</updated>
-    <author>
-      <name>Tianjie Ju</name>
-    </author>
-    <author>
-      <name>Zheng Wu</name>
-    </author>
-    <author>
-      <name>Yueqing Sun</name>
-    </author>
-    <author>
-      <name>Yuhan Cui</name>
-    </author>
-    <author>
-      <name>Bobo Li</name>
-    </author>
-    <author>
-      <name>Shengqiong Wu</name>
-    </author>
-    <author>
-      <name>Pengzhou Cheng</name>
-    </author>
-    <author>
-      <name>Haodong Zhao</name>
-    </author>
-    <author>
-      <name>Zongru Wu</name>
-    </author>
-    <author>
-      <name>Xinbei Ma</name>
-    </author>
-    <author>
-      <name>Doris Zhang</name>
-    </author>
-    <author>
-      <name>Kunling Li</name>
-    </author>
-    <author>
-      <name>Mong-Li Lee</name>
-    </author>
-    <author>
-      <name>Wynne Hsu</name>
-    </author>
-    <author>
-      <name>Hao Fei</name>
-    </author>
-    <author>
-      <name>Qi Gu</name>
-    </author>
-    <author>
-      <name>Gongshen Liu</name>
-    </author>
-    <author>
-      <name>Zhuosheng Zhang</name>
-    </author>
-    <summary type="text">Multimodal large language models (MLLMs) can interpret a street view, but urban agency depends on whether such local evidence remains useful after the agent starts to move. In this paper, we investigate how far current MLLM agents can turn local urban perception into reliable action in a complicated real-scale city. We propose UrbanGround, the first sandbox to make this question testable in a physically constrained replica of Hong Kong built from territory-wide 3D geospatial data. UrbanGround supports closed-loop interaction from a first-person view and provides an interactive map for navigation. Agents can directly enter the 3D city and explore from a first-person view. Our analysis follows the growth of the spatial problem through three research questions. We first test whether an agent can ground a local scene well enough to answer spatial questions after active observation. Then we ask whether that grounding supports navigation as destinations become farther away and less explicit. Finally, we examine whether the resulting behavior survives changes in route availability and pedestrian motion. Contemporary MLLM agents usually show useful atomic abilities in visual recognition and short-range spatial reasoning, while orientation and pedestrian-aware movement remain unreliable. Their central failure emerges over extended exploration, where local abilities do not compose into sustained goal-directed behavior and errors accumulate without effective correction. We hope UrbanGround will support broader study of how far current MLLM agents can explore reliably in complex, open-ended urban environments.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 35 pages, 11 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Detection of Christmas tree plantations from high-resolution aerial imagery. A case study in the French Morvan</title>
-    <link href="http://arxiv.org/abs/2608.27290v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.27290v1</id>
-    <published>2026-08-27T00:00:00Z</published>
-    <updated>2026-08-27T00:00:00Z</updated>
-    <author>
-      <name>Francesca Razzano</name>
-    </author>
-    <author>
-      <name>Emanuele Dalsasso</name>
-    </author>
-    <author>
-      <name>Adrien Baysse-Lainé</name>
-    </author>
-    <author>
-      <name>Silvia Liberata Ullo</name>
-    </author>
-    <author>
-      <name>Gilda Schirinzi</name>
-    </author>
-    <author>
-      <name>Jocelyn Chanussot</name>
-    </author>
-    <summary type="text">Christmas tree plantations are economically relevant, yet a largely unexplored application domain in Remote Sensing (RS). Their delineation is challenging because of high planting density, short rotation cycles, visual confusion with surrounding vegetation, the availability of dense labels for one reference year only, and severe class imbalance at the landscape scale. Although Deep Learning (DL) methods have shown strong potential for vegetation mapping, existing approaches are typically designed for forests, generic plantation systems, or orchards, and do not explicitly address the structural specificity and hard-negative confusion that characterize Christmas tree plantations. In response to these challenges, this work makes three main contributions: (i) it frames Christmas tree plantation mapping as a distinct rare-target semantic segmentation problem; (ii) it introduces a Hard Negative Mining (HNM) strategy to improve discrimination against confusing background patterns; and (iii) it evaluates the proposed framework across complementary levels, including supervised testing, temporal transfer, and large-scale validation. On the 2020 test set held out, the best model, DeepLabV3 with a ResNet-34 encoder, achieves an IoU of 0.733 and an F1-score of 0.846. HNM substantially improves precision-recall behavior, increasing the area under the precision-recall curve from 0.204 to 0.913. Temporal inference further shows meaningful transferability, reaching IoU/F1 values of 0.751/0.858 on 2017/2018 and 0.691/0.817 on 2023. Large-scale validation further highlights the intrinsic difficulty of the task, as Christmas tree plantations occupied only a very small fraction of the extent of the common evaluation, corresponding to 1,498.4 ha (1.72\%) in 2017/2018 and 1,782.2 ha (2.04\%) in 2023 out of 87,309.4 ha in total.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages, 9 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Temporal Sensitivity Analysis of Tessera Embeddings</title>
-    <link href="http://arxiv.org/abs/2608.27175v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.27175v1</id>
-    <published>2026-08-27T00:00:00Z</published>
-    <updated>2026-08-27T00:00:00Z</updated>
-    <author>
-      <name>Julia Guerrero-Viu</name>
-    </author>
-    <author>
-      <name>Alex López-Cifuentes</name>
-    </author>
-    <author>
-      <name>Ignacio Pérez-Villar</name>
-    </author>
-    <author>
-      <name>Fabio Pacifici</name>
-    </author>
-    <summary type="text">Many Earth Observation applications need land-use/land-cover maps that are both precise and frequently updated, yet the strongest Earth Observation foundation models build their embeddings from a full year of observations. We present a controlled study of the temporal sensitivity of Tessera, one of these leading foundation models, for land-use/land-cover mapping. Keeping the encoder frozen, we recompute its embeddings over varying observation windows, from a full year down to a single day. We use them as inputs to a linear probe and a UNet segmentation head, benchmarking both of them against from-scratch networks on LUCAS, DynamicEarthNet, and PASTIS-R datasets. We show that the value of the embeddings is task-dependent. Where classes are separated by phenology, as for the crop types of PASTIS-R, they reach a mean Intersection-over-Union of $58.3$, about $46\%$ above the best from-scratch model. Where classes are temporally stable (e.g., forests in DynamicEarthNet and LUCAS), embedding-based and from-scratch models match only under full supervision. On both datasets, Tessera embeddings remain markedly more label-efficient. Degradation under shorter temporal windows is gradual and class-dependent. Contracting the window from one year to one month costs $39\%$ of the segmentation accuracy on PASTIS-R but only $5\%$ on DynamicEarthNet. Single-day embeddings still classify land cover in LUCAS at $3.4$ times the chance level. Our study shows that temporal coverage is therefore a tunable cost rather than a fixed prerequisite, opening regimes such as near-real-time mapping and faster land-use/land-cover refresh cycles.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Hyperspectral Diffusion Equivariant Imaging (HyDiff-EI): A Self-supervised Framework for Hyperspectral Image Inpainting</title>
-    <link href="http://arxiv.org/abs/2608.26812v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.26812v1</id>
-    <published>2026-08-27T00:00:00Z</published>
-    <updated>2026-08-27T00:00:00Z</updated>
-    <author>
-      <name>Shuo Li</name>
-    </author>
-    <author>
-      <name>Mike Davies</name>
-    </author>
-    <author>
-      <name>Mehrdad Yaghoobi</name>
-    </author>
-    <summary type="text">A novel Hyperspectral diffusion Equivariant Imaging (HyDiff-EI) framework for solving the hyperspectral image (HSI) inpainting problem has been presented here. Unlike conventional diffusion-based methods that rely on large-scale pretraining, HyDiff-EI is a test-time optimization framework that learns directly from a single corrupted HSI acquisition. This makes it flexible for different sensor configurations and particularly well-suited for practical remote sensing scenarios where large annotated hyperspectral datasets are limited. To address the ill-posed nature of unsupervised inpainting, we embed equivariant consistency constraints within the diffusion process. By leveraging the inherent geometric symmetries and intrinsic characteristics of HSIs, HyDiff-EI bridges the gap between generative diffusion modeling and self-consistent physical priors. We empirically show that coupling diffusion modeling with equivariant priors substantially enhances noise robustness and generalizability. Extensive experiments on real-world datasets including Chikusei, Botswana, and EMIT demonstrate that HyDiff-EI offers remarkable inpainting quality over existing self-supervised and diffusion-based algorithms in both noiseless and noisy cases.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 14 pages, 7 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Statistical Models of Ionospheric Variability and Irregularities in the Topside Ionosphere Based on the Swarm Satellite Data</title>
-    <link href="http://arxiv.org/abs/2608.26796v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.26796v1</id>
-    <published>2026-08-27T00:00:00Z</published>
-    <updated>2026-08-27T00:00:00Z</updated>
-    <author>
-      <name>Daria Kotova</name>
-    </author>
-    <author>
-      <name>Alan Wood</name>
-    </author>
-    <author>
-      <name>Eelco Doornbos</name>
-    </author>
-    <author>
-      <name>Jaroslav Urbář</name>
-    </author>
-    <author>
-      <name>Luca Spogli</name>
-    </author>
-    <author>
-      <name>Yaqi Jin</name>
-    </author>
-    <author>
-      <name>Lucilla Alfonsi</name>
-    </author>
-    <author>
-      <name>Gareth Dorrian</name>
-    </author>
-    <author>
-      <name>Mainul Hoque</name>
-    </author>
-    <author>
-      <name>Kasper van Dam</name>
-    </author>
-    <author>
-      <name>Elisabetta Iorfida</name>
-    </author>
-    <author>
-      <name>Wojciech Miloch</name>
-    </author>
-    <summary type="text">The ionosphere is a highly complex plasma containing electron density structures with a wide range of spatial scales. Coupling of the ionosphere with the Earth's magnetosphere and the solar wind, as well as to the neutral atmosphere, makes the ionosphere highly dynamic and highly dependent on the driving processes. Thus, modelling the ionosphere and capturing its full dynamic range considering all spatiotemporal scales is challenging. Swarm is the European Space Agency's (ESA) first constellation mission for Earth Observation, comprising multiple satellites in low Earth orbit. During the Swarm-VIP-Dynamic project, a suite of statistical models has been developed using observations from Swarm and proxies for heliogeophysical processes. The statistical modelling technique of Generalised Linear Modelling was used to create models for both the electron density and the variability of the plasma structures at horizontal spatial scales between 7.5 km and 100 km. Separate models were created for low, middle, auroral and polar latitudes. The models make predictions based on explanatory variables, which act as proxies for the underlying physical processes. The performance of the models of the electron density approached the theoretical best values for some of the goodness-of-fit statistics. This suggests that the modelling method is appropriate for the task undertaken. The models of ionospheric variability at larger spatial scales (about 100 km) also perform well, however the model performance decreases at smaller spatial scales. This suggests that there are physical processes missing from the models. Possible candidates are instability processes or driving forces of the ionosphere by wave activity from below, neither of which are captured by the models.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 32 pages, 3 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="physics.space-ph" />
-  </entry>
-  <entry>
-    <title>Learning Woody Clearing With Loss Alignment for Zero-Shot Regrowth and Woody Segmentation</title>
-    <link href="http://arxiv.org/abs/2608.26489v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.26489v1</id>
-    <published>2026-08-27T00:00:00Z</published>
-    <updated>2026-08-27T00:00:00Z</updated>
-    <author>
-      <name>Kal Backman</name>
-    </author>
-    <author>
-      <name>Jared Wood</name>
-    </author>
-    <author>
-      <name>Adam Roff</name>
-    </author>
-    <summary type="text">Detecting woody clearing is vital for managing biodiversity. Deep learning models can detect change in woody vegetation from bitemporal remote sensing imagery, however generated products may not meet end-user specifications due to unaligned loss definitions. Further limitations of deep learning models are the reliance on large datasets which can be difficult to attain for spatially rare and ambiguous events such as regrowth detection. In this work we train a model to detect woody change using bitemporal Sentinel-2 imagery consisting of 7 years' worth of annual imagery across the state of New South Wales, Australia. To align the objective of the model with end-user metrics, we introduce the loss scaling coefficient $α$ which transforms the objective to optimize for specific $F_β$ scores. Introducing $α$ was found to increase precision by 1.85x or recall by 1.12x. We propose input imagery augmentation and generation techniques that allow the woody change detection model to zero-shot transfer to regrowth and woody segmentation tasks. For woody segmentation, image generation techniques using activation maximization with low $α$ values for stability and image generation techniques derived from handcrafted features utilizing a mosaic of clearing patches and artificial trees for contextual grounding were found to outperform prior woody segmentation works of the study area, reducing the overall error by up to 18.2%. For zero-shot woody regrowth, creating pseudo-post and prior images resulted in the model achieving an F1 score of 0.845, creating a foundation for future regrowth detection work.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Transactions on Geoscience and Remote Sensing&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD;VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>

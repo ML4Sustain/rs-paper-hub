@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-02T05:21:03Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 11 entries</subtitle>
+  <updated>2026-09-03T01:42:49Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 9 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -205,8 +205,8 @@
   </entry>
   <entry>
     <title>RAPIDMap: Rapid Multi-Agent Pipeline for Interpretable Disaster Mapping from Satellite and Street-view Imagery</title>
-    <link href="http://arxiv.org/abs/2609.00046v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.00046v1</id>
+    <link href="http://arxiv.org/abs/2609.00046v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.00046v2</id>
     <published>2026-08-30T00:00:00Z</published>
     <updated>2026-08-30T00:00:00Z</updated>
     <author>
@@ -243,93 +243,6 @@
     <summary type="text">Conventionally, Building Damage Assessment (BDA) is tackled either with dedicated network architectures or by fine-tuning geospatial image foundation models. In this work, we ask whether a general-purpose Vision-Language Model (VLM) can localize buildings and grade their damage through autoregressive sequence generation alone. We cast BDA as predicting a variable-length set of bounding boxes, each specified by its coordinates and a damage label. Our preliminary implementation, based on the open Gemma model, achieves promising damage mapping results from only bi-temporal satellite images and a suitable text prompt.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>UrbanGround: From Local Perception to Spatial Agency in a Real-Scale City</title>
-    <link href="http://arxiv.org/abs/2608.27456v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.27456v1</id>
-    <published>2026-08-27T00:00:00Z</published>
-    <updated>2026-08-27T00:00:00Z</updated>
-    <author>
-      <name>Tianjie Ju</name>
-    </author>
-    <author>
-      <name>Zheng Wu</name>
-    </author>
-    <author>
-      <name>Yueqing Sun</name>
-    </author>
-    <author>
-      <name>Yuhan Cui</name>
-    </author>
-    <author>
-      <name>Bobo Li</name>
-    </author>
-    <author>
-      <name>Shengqiong Wu</name>
-    </author>
-    <author>
-      <name>Pengzhou Cheng</name>
-    </author>
-    <author>
-      <name>Haodong Zhao</name>
-    </author>
-    <author>
-      <name>Zongru Wu</name>
-    </author>
-    <author>
-      <name>Xinbei Ma</name>
-    </author>
-    <author>
-      <name>Doris Zhang</name>
-    </author>
-    <author>
-      <name>Kunling Li</name>
-    </author>
-    <author>
-      <name>Mong-Li Lee</name>
-    </author>
-    <author>
-      <name>Wynne Hsu</name>
-    </author>
-    <author>
-      <name>Hao Fei</name>
-    </author>
-    <author>
-      <name>Qi Gu</name>
-    </author>
-    <author>
-      <name>Gongshen Liu</name>
-    </author>
-    <author>
-      <name>Zhuosheng Zhang</name>
-    </author>
-    <summary type="text">Multimodal large language models (MLLMs) can interpret a street view, but urban agency depends on whether such local evidence remains useful after the agent starts to move. In this paper, we investigate how far current MLLM agents can turn local urban perception into reliable action in a complicated real-scale city. We propose UrbanGround, the first sandbox to make this question testable in a physically constrained replica of Hong Kong built from territory-wide 3D geospatial data. UrbanGround supports closed-loop interaction from a first-person view and provides an interactive map for navigation. Agents can directly enter the 3D city and explore from a first-person view. Our analysis follows the growth of the spatial problem through three research questions. We first test whether an agent can ground a local scene well enough to answer spatial questions after active observation. Then we ask whether that grounding supports navigation as destinations become farther away and less explicit. Finally, we examine whether the resulting behavior survives changes in route availability and pedestrian motion. Contemporary MLLM agents usually show useful atomic abilities in visual recognition and short-range spatial reasoning, while orientation and pedestrian-aware movement remain unreliable. Their central failure emerges over extended exploration, where local abilities do not compose into sustained goal-directed behavior and errors accumulate without effective correction. We hope UrbanGround will support broader study of how far current MLLM agents can explore reliably in complex, open-ended urban environments.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 35 pages, 11 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Learning Woody Clearing With Loss Alignment for Zero-Shot Regrowth and Woody Segmentation</title>
-    <link href="http://arxiv.org/abs/2608.26489v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.26489v1</id>
-    <published>2026-08-27T00:00:00Z</published>
-    <updated>2026-08-27T00:00:00Z</updated>
-    <author>
-      <name>Kal Backman</name>
-    </author>
-    <author>
-      <name>Jared Wood</name>
-    </author>
-    <author>
-      <name>Adam Roff</name>
-    </author>
-    <summary type="text">Detecting woody clearing is vital for managing biodiversity. Deep learning models can detect change in woody vegetation from bitemporal remote sensing imagery, however generated products may not meet end-user specifications due to unaligned loss definitions. Further limitations of deep learning models are the reliance on large datasets which can be difficult to attain for spatially rare and ambiguous events such as regrowth detection. In this work we train a model to detect woody change using bitemporal Sentinel-2 imagery consisting of 7 years' worth of annual imagery across the state of New South Wales, Australia. To align the objective of the model with end-user metrics, we introduce the loss scaling coefficient $α$ which transforms the objective to optimize for specific $F_β$ scores. Introducing $α$ was found to increase precision by 1.85x or recall by 1.12x. We propose input imagery augmentation and generation techniques that allow the woody change detection model to zero-shot transfer to regrowth and woody segmentation tasks. For woody segmentation, image generation techniques using activation maximization with low $α$ values for stability and image generation techniques derived from handcrafted features utilizing a mosaic of clearing patches and artificial trees for contextual grounding were found to outperform prior woody segmentation works of the study area, reducing the overall error by up to 18.2%. For zero-shot woody regrowth, creating pseudo-post and prior images resulted in the model achieving an F1 score of 0.845, creating a foundation for future regrowth detection work.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Transactions on Geoscience and Remote Sensing&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD;VG&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>
