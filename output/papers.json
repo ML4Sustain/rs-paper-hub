@@ -139268,5 +139268,24 @@
     "_added_date": "2026-09-03",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-09-02",
+    "Month": 9,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Genesis: A Generative Engine for Hierarchical Satellite Image Synthesis",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2609.02683v1",
+    "Abstract": "Earth observation is fundamentally multi-scale; geospatial tasks span varied resolutions, and satellite imagery is organized into cascading tile pyramids that nest fine detail within wide coverage. Current generative models of satellite imagery, however, operate along a single axis: they either zoom to enhance a single tile's resolution or pan to extend imagery at a fixed scale. As a result, no existing method produces a complete pyramid that stays consistent across both scale and space, where a high-zoom tile must agree with the coarse context it refines and with the neighbors it meets. Motivated by this gap, we introduce a new task, multi-scale tile completion: given a sparse set of seed tiles at arbitrary zoom levels and positions, synthesize a complete, uniform quadtree that is globally consistent across both scale and space. We approach this task with Genesis, a generative engine that brings both axes together by composing two specialized operators over the quadtree: a vertical super-resolution model and a horizontal mask-based outpainting model, producing pyramids that are consistent across zoom levels and seamless across neighboring tiles. Each operator achieves state-of-the-art results on its subtask, and the engine propagates sparse seeds into seamless, multi-resolution maps from any initial configuration. To evaluate the task and benchmark Genesis, we introduce dense500, a fully observed multi-scale pyramid dataset spanning diverse geographic regions, together with a suite of pyramid-level metrics. Code, models, and our dataset are available at https://github.com/mvrl/genesis.",
+    "code": "https://github.com/mvrl/genesis",
+    "Publication": "Accepted to SIGSPATIAL 2026: Application Track (Oral)",
+    "BibTex": "@article{khanal2026genesis,\n  title={Genesis: A Generative Engine for Hierarchical Satellite Image Synthesis},\n  author={Subash Khanal and Yangzhi Cui and Daniel Cher and Eric Xing and Brian Wei and Srikumar Sastry and Nathan Jacobs},\n  journal={arXiv preprint arXiv:2609.02683v1},\n  year={2026},\n  url={http://arxiv.org/abs/2609.02683v1}\n}",
+    "Authors": "Subash Khanal, Yangzhi Cui, Daniel Cher, Eric Xing, Brian Wei, Srikumar Sastry, Nathan Jacobs",
+    "_added_date": "2026-09-03",
+    "Category": "Method",
+    "_tasks": "SR"
   }
 ]
