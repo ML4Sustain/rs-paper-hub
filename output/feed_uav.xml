@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_uav.xml</id>
   <link href="https://rspaper.top/output/feed_uav.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-04T05:20:18Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
+  <updated>2026-09-07T01:30:15Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 1 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -37,82 +37,5 @@
     <summary type="text">Large-scale 3D surface reconstruction from aerial imagery is fundamental to geospatial mapping and urban modeling. Recent advances in 3D Gaussian Splatting (3DGS) have demonstrated considerable potential for this task. However, existing methods still face three major challenges in large and complex scenes: scene partitioning may split continuous scene elements across independently optimized sub-regions; geometric constraints mainly focus on the attributes of individual Gaussians while overlooking their local organization; and uniform regularization struggles to accommodate heterogeneous geometric structures. To address these issues, we propose STARS-GS, a structure-aware 3DGS framework for large-scale surface reconstruction. First, we introduce a structure-aware scene partitioning strategy that better preserves continuous scene structures during partitioning and reduces cross-region geometric inconsistencies and stitching artifacts through boundary refinement. Second, we develop neighborhood-aware Gaussian organization that extends geometric constraints from individual primitives to their neighborhood organization, encouraging Gaussians to better conform to local surface geometry. Third, we introduce adaptive surface regularization that adjusts the regularization strength according to local geometric characteristics, promoting geometric consistency in structured regions while preserving plausible variations in unstructured regions. Extensive experiments on large-scale aerial photogrammetry benchmarks demonstrate that STARS-GS consistently outperforms the evaluated Gaussian-based methods in surface reconstruction. It increases the average F1-score from 0.640 for the second-best method to 0.698, corresponding to a relative improvement of approximately 9.1\%, demonstrating effective improvements in geometric accuracy and surface completeness.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Site-specific Channel Modeling Based on Remote-Sensing Maps for 6G Space--Air--Ground Digital Twins</title>
-    <link href="http://arxiv.org/abs/2608.30168v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.30168v1</id>
-    <published>2026-08-31T00:00:00Z</published>
-    <updated>2026-08-31T00:00:00Z</updated>
-    <author>
-      <name>Peijie Liu</name>
-    </author>
-    <author>
-      <name>Pan Tang</name>
-    </author>
-    <author>
-      <name>Jianhua Zhang</name>
-    </author>
-    <author>
-      <name>Lei Tian</name>
-    </author>
-    <author>
-      <name>Bin Ao</name>
-    </author>
-    <author>
-      <name>Boyang He</name>
-    </author>
-    <author>
-      <name>Hao Zheng</name>
-    </author>
-    <summary type="text">Site-specific channel models are essential for wireless digital twins of 6G space--air--ground communication systems. However, 3D maps are difficult to obtain over wide areas, which limits large-area site-specific channel modeling. To address this issue, this paper proposes a remote-sensing-based augmented ray-tracing channel modeling framework. The framework comprises a deterministic RT branch, a measurement-statistical branch, and an RT augmentation branch. To overcome the difficulty of acquiring large-area 3D maps, the deterministic RT branch reconstructs a 3D RT scene from satellite remote-sensing imagery and calibrates its electromagnetic material parameters using measured path loss. To provide the statistical parameters required for RT augmentation, the measurement-statistical branch establishes the marginal distributions and interparameter dependence models of the channel parameters. Specifically, a wideband UAV channel measurement campaign is conducted at 4.60 GHz, and a proposed multipath estimation method estimates the complex amplitudes, delays, and Doppler shifts of the measured multipath. To bridge the gap between RT predictions and measurements, the RT augmentation branch organizes the RT multipath into LoS, LoS-tail, and NLoS components, generates additional short-delay LoS-tail paths, and reallocates the component and path powers according to the measurement-derived statistics while preserving the total RT received power. The validation results show that the proposed framework reduces the path loss RMSE from 5.45 to 4.35 dB and, relative to calibrated RT, decreases the RMS delay spread and normalized Doppler spread RMSEs by 53.03 and 26.48, respectively. The proposed framework provides a site-specific channel modeling approach for 6G space--air--ground digital-twin studies.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 17 pages, 23 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Signal Processing" />
-  </entry>
-  <entry>
-    <title>Deploying and Evaluating a Smart-Agriculture Agentic Engine for Full-Season Soybean Farm Operations</title>
-    <link href="http://arxiv.org/abs/2609.00106v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.00106v1</id>
-    <published>2026-08-31T00:00:00Z</published>
-    <updated>2026-08-31T00:00:00Z</updated>
-    <author>
-      <name>Ao Qu</name>
-    </author>
-    <author>
-      <name>Panagiotis Michelakis</name>
-    </author>
-    <author>
-      <name>Linyuan Han</name>
-    </author>
-    <author>
-      <name>Yiannis Hadjiyianni</name>
-    </author>
-    <author>
-      <name>Kun Ouyang</name>
-    </author>
-    <author>
-      <name>Konstantinos Siskos</name>
-    </author>
-    <author>
-      <name>Feng Li</name>
-    </author>
-    <author>
-      <name>Ran Meng</name>
-    </author>
-    <author>
-      <name>Jingchi Jiang</name>
-    </author>
-    <author>
-      <name>Dimitrios Stamoulis</name>
-    </author>
-    <author>
-      <name>Jie Liu</name>
-    </author>
-    <summary type="text">This paper presents FAIRY, a full-stack smart-agriculture agent system developed for and deployed to an operating soybean research farm at Harbin Institute of Technology's smart-agriculture site. We develop FAIRY to execute and evaluate agentic agronomic operations on full-season spatiotemporal workflows that span ridge preparation, planting, irrigation, fertilization, pest and disease treatment, harvest, grain handling, drying, and storage. FAIRY integrates APIs and infrastructure across production-grade machinery, fixed soil and canopy sensors, multispectral and thermal drones, satellite vegetation products, a weather station, calibrated crop-process models, agronomic records, and multi-season yield histories. The system is built around the novel "everything is an event" execution paradigm, which represents spatiotemporal world evolution, remote sensing and UAV observations, sensor readings, crop-growth transitions, machinery actions, and management interventions as state-changing events in a shared farm process engine. On top of this event-driven world model, FAIRY implements a complete agentic stack: a knowledge library of atomic agronomic skills; multi-agent controller and orchestration backends; frontier- and edge-model execution; full-path trace logging; and deployment profiling on local nodes. We use FAIRY to evaluate nine state-of-the-art agent controllers across one hundred full-season soybean scenarios that preserve the operational coupling between spatial observations in a 64-ridge field, temporal decision sequences, agronomic constraints, delayed effects, and final yield. We develop an evaluation suite that combines agentic success, full-path spatiotemporal correctness, token cost, and edge-device runtime.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to ACM SIGSPATIAL 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="Robotics" />
   </entry>
 </feed>

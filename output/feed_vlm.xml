@@ -4,16 +4,16 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-04T05:20:18Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 12 entries</subtitle>
+  <updated>2026-09-07T01:30:15Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 7 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
   <entry>
     <title>Tree species mapping in Denmark: A comparison of spectral-temporal features with geospatial foundation model embeddings</title>
-    <link href="http://arxiv.org/abs/2609.03480v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.03480v1</id>
+    <link href="http://arxiv.org/abs/2609.03480v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.03480v2</id>
     <published>2026-09-03T00:00:00Z</published>
     <updated>2026-09-03T00:00:00Z</updated>
     <author>
@@ -115,6 +115,21 @@
     <category term="Artificial Intelligence" />
   </entry>
   <entry>
+    <title>When a high-mountain slope failure cascades downstream: reconstructing the 26 August 2026 Gyirong mixed rock-ice disaster</title>
+    <link href="http://arxiv.org/abs/2609.04563v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.04563v1</id>
+    <published>2026-09-03T00:00:00Z</published>
+    <updated>2026-09-03T00:00:00Z</updated>
+    <author>
+      <name>Rui Li</name>
+    </author>
+    <summary type="text">On 26 August 2026, a high-elevation slope failure involving rock and glacier ice near the China--Nepal border developed into a channelised mass-flow and flood cascade that reached Gyirong Port/Timure. Using event-bracketing Sentinel-2, Landsat-9, PlanetScope and Sentinel-1 imagery, Copernicus DEM terrain analysis, and UNOSAT/Copernicus EMS rapid mapping, we reconstructed the source--pathway--receptor system. Nested multisensor envelopes constrained the post-event changed/source surface to a preferred 1.009 km$^2$ (0.491--1.841 km$^2$), while a terrain- and drainage-constrained representative route extended 21.843 km to Gyirong Port and descended about 3396 m. The pre-event Sentinel-2 sequence showed no unambiguous large-scale surface change; the last usable optical image preceded failure by 45.85 h. Neither GPM IMERG V07 Late nor ERA5-Land placed five prespecified precipitation windows in an unusually wet upper tail. In contrast, the 7 d ERA5-Land mean 2 m temperature (9.43 $^\circ$C) and positive-degree-day total (65.94 $^\circ$C d) exceeded all 25 matched years from 2001--2025, providing regional thermal context but not evidence of a trigger. Rapid mapping delineated a 37.353 km$^2$ downstream disturbed footprint containing 695 building points and 15.671 km of roads graded destroyed. These are preliminary mapped features, not a complete damage census. Our main contribution is an uncertainty-explicit, reproducible reconstruction of the full cascade and its observation limits: open Earth observation robustly constrained first-order source extent, propagation, environmental context and impacts, while the exact detached perimeter, source volume, short-lived pre-failure activity, initiation mechanics and source-scale hydrology remained unresolved.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <category term="Atmospheric and Oceanic Physics" />
+    <category term="Geophysics" />
+  </entry>
+  <entry>
     <title>Genesis: A Generative Engine for Hierarchical Satellite Image Synthesis</title>
     <link href="http://arxiv.org/abs/2609.02683v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2609.02683v1</id>
@@ -200,164 +215,5 @@
     <summary type="text">Hyperspectral unmixing is a key task in remote sensing that aims to decompose mixed pixels in hyperspectral images into their constituent material signatures, or endmembers, and their fractional abundances. Conventional modular approaches estimate the scene composition through successive model-order estimation, endmember extraction, and abundance estimation stages, whose errors can lead to redundant or ambiguous candidate components and ultimately affect the recovered decomposition. We introduce an algorithm-agnostic, large vision-language model (LVLM)-driven agentic framework that refines the outputs of such pipelines rather than replacing their underlying numerical algorithms. Starting from an initial decomposition, the agent iteratively gathers complementary spectral and spatial evidence through dedicated tools, including spectral-library retrieval and abundance-map visualization, and modifies the active endmember set through merge and discard operations followed by abundance re-estimation. We apply the same refinement procedure to several modular pipelines combining different model-order, extraction, and abundance-estimation methods, and evaluate it on HYDICE Urban, Jasper Ridge, and Stonewall Playa. Experiments show that the proposed agent consistently improves endmember cardinality and generally improves the recovered spectral signatures and abundance maps across heterogeneous modular pipelines, while remaining competitive with integrated end-to-end unmixing methods, including CNN-AE, uDAS, and R-CoNMF. These results highlight the potential of tool-using LVLM agents to combine spectral and spatial evidence for algorithm-agnostic refinement of physically grounded hyperspectral unmixing decompositions. Code is publicly available at https://anonymous.4open.science/r/agentic-hu.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>SimCRAFT: Distilling Remote Sensing Agents via Synthetic Trajectories and Contextual Retrieval-Augmented Fine-Tuning</title>
-    <link href="http://arxiv.org/abs/2608.30277v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.30277v1</id>
-    <published>2026-08-31T00:00:00Z</published>
-    <updated>2026-08-31T00:00:00Z</updated>
-    <author>
-      <name>Haoran Wang</name>
-    </author>
-    <author>
-      <name>Jing Yao</name>
-    </author>
-    <author>
-      <name>Xu Yang</name>
-    </author>
-    <author>
-      <name>Zeqing Wang</name>
-    </author>
-    <author>
-      <name>Yang Zhang</name>
-    </author>
-    <author>
-      <name>Pedram Ghamisi</name>
-    </author>
-    <author>
-      <name>Zhengchao Chen</name>
-    </author>
-    <summary type="text">The unprecedented surge in Earth observation data volume and diversity has exposed a critical bottleneck for traditional manual workflows, catalyzing the emergence of Remote Sensing (RS) Agents. However, the practical deployment of these advanced agents is severely hindered by their heavy reliance on large-scale general-purpose LLMs, which lack deep domain expertise and impose prohibitive infrastructure demands. To resolve this, we propose SimCRAFT, a model-agnostic framework that distills sophisticated RS orchestration capabilities into a compact 7B-scale model. Addressing data scarcity, we first pair a multiagent synthesis engine with a Mock Execution Engine that checks schema correctness, inter-tool dependencies, and sensor/tool compatibility, producing SimRS-14k, a large-scale, constraint-validated workflow planning corpus. Second, we propose Contextual Retrieval-Augmented Fine-Tuning (CRAFT) that finetunes the model to reason analogically by adapting retrieved Standard Operating Procedures to novel queries under a noise-robust objective, generalizing RAFT to multi-step RS workflow planning without mechanical copying. Extensive experiments demonstrate that SimCRAFT-7B significantly outperforms openweights LLMs and rivals advanced closedsource models and specialized RS agents, while reproducing across three 7B backbones. This work contributes a competitive open-weights baseline for lightweight RS intelligence, enabling efficient autonomous deployment under resource-constrained or resource-conserving conditions.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="cs.MA" />
-  </entry>
-  <entry>
-    <title>A Composition-Aware Pretraining Framework for Geospatial Foundation Models</title>
-    <link href="http://arxiv.org/abs/2608.30817v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.30817v1</id>
-    <published>2026-08-31T00:00:00Z</published>
-    <updated>2026-08-31T00:00:00Z</updated>
-    <author>
-      <name>Aryan Kashyap Naveen</name>
-    </author>
-    <author>
-      <name>Abhishek Srinivas</name>
-    </author>
-    <author>
-      <name>Pranav Moothedath</name>
-    </author>
-    <author>
-      <name>Shrutilipi Bhattacharjee</name>
-    </author>
-    <summary type="text">Geospatial foundation models have emerged as state-of-the-art methods for downstream Earth observation tasks. However, existing pretraining methodologies process imagery through a single-concept lens, failing to capture the highly compositional nature of complex satellite scenes. We propose a composition-aware pretraining framework that explicitly encodes fractional land-cover mixtures. Each satellite image cell is mapped to a histogram representing its fractional land-cover distribution, which we term the "composition target". These targets serve as the primary prediction objective and are distilled into the backbone using Earth Mover's Distance. Experimental evaluation shows that composition-aware pretraining yields substantial gains on region-level understanding tasks requiring semantic similarity judgment, including zero-shot image retrieval and scene classification, while remaining competitive on tasks requiring fine-grained spatial precision, such as segmentation and object detection. With a 36.8M-parameter backbone, our framework outperforms SatMAE and Prithvi-EO-2.0, which contain 303M and 600M parameters, respectively, in most retrieval and scene classification settings. On the fine-grained ForestNet-12 dataset, a rigorous testbed for compositional discrimination, our method boosts baseline mAP@10 from 0.279 to 0.434, a 55.6% relative improvement, providing direct evidence for the effectiveness of explicit composition modeling. The code implementation can be found at https://github.com/05kashyap/GFM_Composition_Pretraining</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/05kashyap/GFM_Composition_Pretraining"&gt;https://github.com/05kashyap/GFM_Composition_Pretraining&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;ITR;OD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Towards Continual Test-Time Adaptation of Vision-Language Models in Open-Vocabulary Semantic Segmentation</title>
-    <link href="http://arxiv.org/abs/2608.29923v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.29923v1</id>
-    <published>2026-08-30T00:00:00Z</published>
-    <updated>2026-08-30T00:00:00Z</updated>
-    <author>
-      <name>Chandler Timm C. Doloriel</name>
-    </author>
-    <author>
-      <name>Yunbei Zhang</name>
-    </author>
-    <author>
-      <name>Sarthak Kumar Maharana</name>
-    </author>
-    <author>
-      <name>Muhammad Salman Siddiqui</name>
-    </author>
-    <author>
-      <name>Tor Kristian Stevik</name>
-    </author>
-    <author>
-      <name>Fadi Al Machot</name>
-    </author>
-    <author>
-      <name>Kristian Hovde Liland</name>
-    </author>
-    <author>
-      <name>Habib Ullah</name>
-    </author>
-    <summary type="text">Open-vocabulary semantic segmentation (OVSS) relies on vision-language alignment to recognize arbitrary text-defined categories, yet this alignment is fragile under continual test-time distribution shift. Our diagnostic analysis reveals that entropy minimization drives patch-level class collapse, continual updates erode vision-language alignment, and redundant gradients from low-shift samples waste computation. We propose Diversify, Anchor, and Filter (DAF), a stabilization framework that augments entropy-based adaptation with a marginal diversity loss that resists collapse, a cross-modal anchor consistency loss that constrains feature drift relative to a frozen source model, and feature salience filtering that skips low-value backward passes to offset part of the source-anchor overhead. We evaluate on five datasets spanning natural scenes, autonomous driving, underwater imagery, and remote sensing with their corrupted variants. Across the evaluated continual shifts, DAF remains stable where entropy minimization collapses, improving mIoU by over 8 points on Pascal VOC20-C, over 9 points on LoveDA, and over 3 points on Foggy Cityscapes compared to the source model, and is robust to aggressive adaptation and learning rate choices.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; under review. code available at https://github.com/chandlerbing65nm/DAF.git&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>BEACON: Behavioral and Semantic Enrichment of AlphaEarth Embeddings through Tri-Modal Contrastive Learning</title>
-    <link href="http://arxiv.org/abs/2608.29553v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.29553v1</id>
-    <published>2026-08-30T00:00:00Z</published>
-    <updated>2026-08-30T00:00:00Z</updated>
-    <author>
-      <name>Hao Tian</name>
-    </author>
-    <author>
-      <name>Heng Cai</name>
-    </author>
-    <author>
-      <name>Yifan Yang</name>
-    </author>
-    <summary type="text">Geospatial foundation models such as the AlphaEarth Foundation produce compact and globally consistent representations of the Earth's surface that transfer effectively to a wide range of downstream tasks. However, because these models are trained primarily on Earth-observation imagery, their embeddings mainly capture physical and spectral characteristics while encoding human activity and urban function only weakly. To address this limitation, we propose BEACON, a tri-modal contrastive learning framework that aligns three complementary views of urban space: physical representations from AE embeddings, semantic representations from point-of-interest (POI) text, and human behavioral representations from hourly POI visitation, while keeping the deployed representation image-only. Using the Houston Metropolitan Area as a case study area, we evaluated the performance of the BEACON framework on nine downstream tasks, including seven regression and two classification tasks against six baselines (raw coordinates, Space2Vec, SatCLIP, TESSERA, Clay and AlphaEarth), using frozen linear and MLP probes over five seeds. Under a linear probe, BEACON improves relative R^2 over AlphaEarth by up to 43% for obesity prevalence, 34% for poor mental health, and 22% for median household income, while remaining competitive in the prediction of physical and environmental variables. These findings highlight the value of augmenting geospatial foundation models with semantic and behavioral signals, extending their applicability from physical Earth observation to human-centered urban analytics.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ACM SIGSPATIAL 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>GeoAgent: Evaluating VLM Geolocalization Through Embodied Navigation</title>
-    <link href="http://arxiv.org/abs/2608.29483v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.29483v1</id>
-    <published>2026-08-30T00:00:00Z</published>
-    <updated>2026-08-30T00:00:00Z</updated>
-    <author>
-      <name>Arka Mukherjee</name>
-    </author>
-    <author>
-      <name>Soham Roy</name>
-    </author>
-    <author>
-      <name>Kartikeya Trivedi</name>
-    </author>
-    <author>
-      <name>Shreya Ghosh</name>
-    </author>
-    <summary type="text">Modern Vision-Language Models (VLMs) perform well above the human baseline in image geolocalization, a task critically important in disaster response, OSINT verification, and location privacy. However, most efforts to study AI behavior on the task remain limited to static image-based retrieval, classification, and predictions. We argue that faithful recreation of the task should involve embodied navigation, where a multimodal agent autonomously explores its surroundings to gather observations before submitting a prediction. To this end, we introduce \textbf{GeoAgent}, an agentic environment-based benchmark that requires agents to navigate Street View environments to refine their geolocalization through sequential reasoning. Our analysis shows that modern VLMs struggle to discern regional patterns while succeeding at country- and continent-level predictions. When compared to static image-based baselines, agentic navigation significantly improves accuracy across established metrics. We also note severe bias in a developed/developing region context across frontier model architectures and poor self-improvement capabilities given incorrect priors. Overall, our work establishes the challenges of embodied navigation and geospatial reasoning. We publicly release our code and the GeoAgent environment: https://geoagent-benchmark.github.io</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to EMNLP 2026 Findings&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;GeoLoc&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="cs.CL" />
-  </entry>
-  <entry>
-    <title>RAPIDMap: Rapid Multi-Agent Pipeline for Interpretable Disaster Mapping from Satellite and Street-view Imagery</title>
-    <link href="http://arxiv.org/abs/2609.00046v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.00046v2</id>
-    <published>2026-08-30T00:00:00Z</published>
-    <updated>2026-08-30T00:00:00Z</updated>
-    <author>
-      <name>Yifan Yang</name>
-    </author>
-    <author>
-      <name>Lei Zou</name>
-    </author>
-    <summary type="text">Rapid and reliable disaster mapping of impacted areas, damaged infrastructure, and affected populations is essential for emergency response and recovery. However, existing AI-based approaches often require extensive manual annotation, lack cross-hazard generalization, and rely on single-modal observations. To address these challenges, this paper proposes RAPIDMap, a rapid multi-agent pipeline for zero-shot interpretable disaster mapping from satellite and street-view imagery. The framework integrates four intelligent agents: Disaster Perception Agent (DPA), Image Restoration Agent (IRA), Damage Recognition Agent (DRA), and Disaster Mapping Agent (DMA). By combining remote sensing and street-view data, RAPIDMap eliminates the need for manual fine-tuning, generalizes across multiple disaster categories, and generates structured, map-ready disaster intelligence with recovery recommendations.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 4 pages, 7 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
-    <category term="cs.MA" />
-    <category term="Artificial Intelligence; cs.CY" />
   </entry>
 </feed>
