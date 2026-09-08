@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-07T05:34:28Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 15 entries</subtitle>
+  <updated>2026-09-08T01:40:12Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 11 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -316,121 +316,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Machine Learning" />
     <category term="Artificial Intelligence; Machine Learning (Statistics)" />
-  </entry>
-  <entry>
-    <title>RingMoClaw: An Experience-Inspired Multi-Agent Framework for Self-Evolving Research in Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2609.00814v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.00814v1</id>
-    <published>2026-09-01T00:00:00Z</published>
-    <updated>2026-09-01T00:00:00Z</updated>
-    <author>
-      <name>Kaiyue Kang</name>
-    </author>
-    <author>
-      <name>Qixuan He</name>
-    </author>
-    <author>
-      <name>Peijin Wang</name>
-    </author>
-    <author>
-      <name>Yingchao Feng</name>
-    </author>
-    <author>
-      <name>Chao Ren</name>
-    </author>
-    <author>
-      <name>Kangxin Wang</name>
-    </author>
-    <author>
-      <name>Wenhui Diao</name>
-    </author>
-    <author>
-      <name>Yixiao Wang</name>
-    </author>
-    <author>
-      <name>Liangjin Zhao</name>
-    </author>
-    <author>
-      <name>Kaiwen Wei</name>
-    </author>
-    <author>
-      <name>Nayu Liu</name>
-    </author>
-    <author>
-      <name>Xian Sun</name>
-    </author>
-    <summary type="text">Remote sensing visual models have continuously advanced various interpretation tasks. However, the research process behind model improvement still heavily relies on manual expertise, requiring extensive trial-and-error iterations in model design, data processing, and performance diagnosis. Existing agent-based approaches mainly focus on task execution and workflow orchestration, while lacking the capability of autonomous research iteration for continuous performance optimization. To address this issue, we propose RingMoClaw, an experience-inspired self-evolving multi-agent framework for remote sensing visual interpretation. RingMoClaw integrates a research branch, a quality-control branch, and a dual-stream dynamic experience bus to establish a closed-loop optimization process covering strategy generation, experiment execution, independent review, and experience accumulation. The heterogeneous Critic mechanism provides stage-wise diagnosis and feedback, while the dual-stream experience bus incorporates external knowledge and internal experimental experience to guide strategy evolution and eliminate ineffective searches. Extensive experiments on four remote sensing downstream tasks, including object detection, scene classification, semantic segmentation, and change detection, demonstrate the effectiveness and generalization of RingMoClaw. Compared with the corresponding baseline models, RingMoClaw improves performance by 1.84\% mAP$_{50}$ on object detection and achieves consistent gains across the other three tasks, while reducing the required evolution steps by over 40\% compared with existing research automation frameworks. These results suggest that RingMoClaw offers a feasible route from task execution toward continuous research driven model evolution in remote sensing.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;CD;OD;SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>EarthLD: Towards Unified Open-World Landslide Understanding via Vision-Language Guided Diffusion Models</title>
-    <link href="http://arxiv.org/abs/2609.00712v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.00712v1</id>
-    <published>2026-09-01T00:00:00Z</published>
-    <updated>2026-09-01T00:00:00Z</updated>
-    <author>
-      <name>Yuanchao Su</name>
-    </author>
-    <author>
-      <name>Lianru Gao</name>
-    </author>
-    <author>
-      <name>Mengying Jiang</name>
-    </author>
-    <author>
-      <name>Jiangyi Chen</name>
-    </author>
-    <author>
-      <name>Jiaxin Cheng</name>
-    </author>
-    <author>
-      <name>Yicong Zhou</name>
-    </author>
-    <summary type="text">Landslides are widespread geological hazards, yet their automated detection and mapping in remote sensing imagery remain challenging because of their irregular morphology, ambiguous spectral signatures, and substantial domain shifts across imaging platforms. To overcome these challenges, we propose EarthLD, a vision-language-guided diffusion framework for open-world landslide understanding, enabling unified landslide recognition, mapping, and trigger interpretation. At its core, EarthLD formulates landslide understanding as a diffusion process that progressively infers the presence, spatial extent, and pixel-level boundaries of landslides from noisy latent representations. This probabilistic formulation enables the model to jointly perform image-level landslide recognition and mapping while characterizing predictive uncertainty. By integrating visual observations with contextual knowledge in the denoising process, EarthLD distinguishes diverse landslides from backgrounds, produces confidence-aware predictions for suspected regions, and maps landslide ranges. We additionally construct a global-scale open-world landslide benchmark by systematically harmonizing multiple publicly available remote sensing data collected by diverse institutions. Extensive experiments across regions, sensors, and triggering events demonstrate that EarthLD consistently outperforms existing landslide detection methods, highlighting its potential as a unified and robust solution for global geological-hazard monitoring and emergency response.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Agentic Multimodal Models for Environmental Hyperspectral Unmixing</title>
-    <link href="http://arxiv.org/abs/2609.01289v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.01289v1</id>
-    <published>2026-09-01T00:00:00Z</published>
-    <updated>2026-09-01T00:00:00Z</updated>
-    <author>
-      <name>Michał Cholewa</name>
-    </author>
-    <author>
-      <name>Luca Ciampi</name>
-    </author>
-    <author>
-      <name>Nicola Messina</name>
-    </author>
-    <author>
-      <name>Przemysław Głomb</name>
-    </author>
-    <author>
-      <name>Giuseppe Amato</name>
-    </author>
-    <summary type="text">Hyperspectral unmixing is a key task in remote sensing that aims to decompose mixed pixels in hyperspectral images into their constituent material signatures, or endmembers, and their fractional abundances. Conventional modular approaches estimate the scene composition through successive model-order estimation, endmember extraction, and abundance estimation stages, whose errors can lead to redundant or ambiguous candidate components and ultimately affect the recovered decomposition. We introduce an algorithm-agnostic, large vision-language model (LVLM)-driven agentic framework that refines the outputs of such pipelines rather than replacing their underlying numerical algorithms. Starting from an initial decomposition, the agent iteratively gathers complementary spectral and spatial evidence through dedicated tools, including spectral-library retrieval and abundance-map visualization, and modifies the active endmember set through merge and discard operations followed by abundance re-estimation. We apply the same refinement procedure to several modular pipelines combining different model-order, extraction, and abundance-estimation methods, and evaluate it on HYDICE Urban, Jasper Ridge, and Stonewall Playa. Experiments show that the proposed agent consistently improves endmember cardinality and generally improves the recovered spectral signatures and abundance maps across heterogeneous modular pipelines, while remaining competitive with integrated end-to-end unmixing methods, including CNN-AE, uDAS, and R-CoNMF. These results highlight the potential of tool-using LVLM agents to combine spectral and spatial evidence for algorithm-agnostic refinement of physically grounded hyperspectral unmixing decompositions. Code is publicly available at https://anonymous.4open.science/r/agentic-hu.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>From Open Standards to Openly Governed: Standards-Setting Organizations as Stewards of Openness amid Platformization and Digital Sovereignty</title>
-    <link href="http://arxiv.org/abs/2609.01773v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.01773v1</id>
-    <published>2026-09-01T00:00:00Z</published>
-    <updated>2026-09-01T00:00:00Z</updated>
-    <author>
-      <name>Begoña G. Otero</name>
-    </author>
-    <author>
-      <name>Stefaan G. Verhulst</name>
-    </author>
-    <summary type="text">Open geospatial standards let data, services, and systems work across platforms. But openness is not just a property of specifications. It also depends on the institutions that produce them and the infrastructures in which they operate. Standards may function as digital public goods and, once embedded in public systems, as digital public infrastructure. Those roles can diverge. This paper asks when open geospatial standards remain public infrastructure rather than becoming channels of enclosure. It makes two claims. First, standards-setting governance matters: institutional design shapes whether open specifications retain their public-good character. Second, geospatial coordination is shifting toward proprietary location stacks, APIs, and cloud platforms, where roadmaps, pricing, and service terms increasingly set the rules. Sovereign-cloud and sovereign-AI strategies relocate this power rather than remove it. These dynamics reinforce each other. Weak governance pushes coordination toward the implementation layer; platformization, in turn, reduces incentives to invest in open standardization, weakening portability and FAIR reuse. Standards bodies cannot reverse platformization, but they still control the specification layer. Where legal safeguards are limited, internal governance becomes key. We frame this through four dimensions: Purpose, Principles, People and Processes, and Policies and Practices (the 4Ps framework) while stressing the limit that internal governance cannot solve alone an external structural problem.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.CY" />
   </entry>
 </feed>
