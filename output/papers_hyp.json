@@ -20917,5 +20917,24 @@
     "_added_date": "2026-09-07",
     "Category": "Method",
     "_tasks": "3D"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Artificial Intelligence; Machine Learning",
+    "Date": "2026-09-06",
+    "Month": 9,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "AGSA-Net: Abundance-Guided Self-Attention Network for Spectral Unmixing-Aware Hyperspectral Remote Sensing Image Classification",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2609.06359v1",
+    "Abstract": "Hyperspectral image (HSI) classification plays a vital role in remote sensing applications, including agriculture, environmental monitoring, and urban analysis. However, its performance remains challenged by high spectral redundancy, noise sensitivity, and the difficulty of jointly modeling local material composition and long-range spectral dependencies. To address this, we propose AGSA-Net, an abundance-guided self-attention network that explicitly integrates spectral unmixing priors into the classification process. AGSA Net first estimates physically meaningful subpixel abundance maps subject to non-negativity and sum-to-one constraints, regularized by hybrid linear-nonlinear reconstruction decoder. The learned abundances are then used to construct an abundance affinity prior that guides a spectral transformer to emphasize class-discriminative interactions, and the resulting transformer features are fused with compact abundance descriptors for final prediction; in contrast to existing approaches that use abundance as auxiliary or concatenated features. Experiments on Indian Pines, Augsburg, and Berlin demonstrate the benefit of incorporating abundance- guided contextual modeling, particularly in heterogeneous urban scenes. The source code and trained models are available at: https://github.com/nnuvi/AGSA-Net",
+    "code": "https://github.com/nnuvi/AGSA-Net",
+    "Publication": "IEEE Transactions on Geoscience and Remote Sensing (TGRS)",
+    "BibTex": "@article{anjum2026agsanet,\n  title={AGSA-Net: Abundance-Guided Self-Attention Network for Spectral Unmixing-Aware Hyperspectral Remote Sensing Image Classification},\n  author={Nafisa Anjum and Satavisa Dey Borno and Ananna Saha and Mir Faiyaz Hossain and Sifat Momen and Nabeel Mohammed and Shafin Rahman},\n  journal={arXiv preprint arXiv:2609.06359v1},\n  year={2026},\n  url={http://arxiv.org/abs/2609.06359v1}\n}",
+    "Authors": "Nafisa Anjum, Satavisa Dey Borno, Ananna Saha, Mir Faiyaz Hossain, Sifat Momen, Nabeel Mohammed, Shafin Rahman",
+    "_added_date": "2026-09-09",
+    "Category": "Method",
+    "_tasks": "CLS"
   }
 ]

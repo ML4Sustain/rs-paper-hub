@@ -4,12 +4,38 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-08T05:32:28Z</updated>
+  <updated>2026-09-09T01:47:35Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 6 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>ProtoRAG: Prototype-Based Retrieval Augmentation for Few-Shot Fine-Grained Remote Sensing Object Detection</title>
+    <link href="http://arxiv.org/abs/2609.05953v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.05953v1</id>
+    <published>2026-09-05T00:00:00Z</published>
+    <updated>2026-09-05T00:00:00Z</updated>
+    <author>
+      <name>Jian Wang</name>
+    </author>
+    <author>
+      <name>Yuxiang Hong</name>
+    </author>
+    <author>
+      <name>Chufeng Zhou</name>
+    </author>
+    <author>
+      <name>Chao Pang</name>
+    </author>
+    <author>
+      <name>Xiaokang Zhang</name>
+    </author>
+    <summary type="text">Few-shot fine-grained object detection (FGOD) in remote sensing imagery is challenging because limited annotations must support both object localization and discrimination among visually similar subcategories. Although multimodal large language models (MLLMs) provide strong coarse object localization, they lack explicit visual evidence for reliable fine-grained recognition. To address this limitation, we propose ProtoRAG, a prototype-based retrieval-augmented framework that decouples coarse localization from fine-grained recognition by equipping MLLMs with an external object-level visual memory. To construct a reliable visual memory from limited support samples, we introduce Discriminative Prototype Space Learning (DPSL), which encourages discriminative and prototype-stable representations through supervised contrastive learning and prototype-consistency regularization. We further develop an uncertainty-guided candidate-constrained reasoning strategy that augments MLLMs with retrieved candidate-specific visual references and invokes multimodal reasoning only for ambiguous instances. Extensive experiments show that ProtoRAG consistently surpasses representative baselines in nine few-shot settings, outperforming the strongest baselines by 14.80, 2.27, and 4.04 mAP$_{50}$ on MAR20, HRSC2016, and FAIR1M-2.0, respectively.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>MEOX: Compact Multimodal Mixture-of-Experts for Earth Observation</title>
     <link href="http://arxiv.org/abs/2609.05351v1" rel="alternate" type="text/html" />
@@ -142,39 +168,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
     <category term="Atmospheric and Oceanic Physics" />
     <category term="Geophysics" />
-  </entry>
-  <entry>
-    <title>Genesis: A Generative Engine for Hierarchical Satellite Image Synthesis</title>
-    <link href="http://arxiv.org/abs/2609.02683v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.02683v1</id>
-    <published>2026-09-02T00:00:00Z</published>
-    <updated>2026-09-02T00:00:00Z</updated>
-    <author>
-      <name>Subash Khanal</name>
-    </author>
-    <author>
-      <name>Yangzhi Cui</name>
-    </author>
-    <author>
-      <name>Daniel Cher</name>
-    </author>
-    <author>
-      <name>Eric Xing</name>
-    </author>
-    <author>
-      <name>Brian Wei</name>
-    </author>
-    <author>
-      <name>Srikumar Sastry</name>
-    </author>
-    <author>
-      <name>Nathan Jacobs</name>
-    </author>
-    <summary type="text">Earth observation is fundamentally multi-scale; geospatial tasks span varied resolutions, and satellite imagery is organized into cascading tile pyramids that nest fine detail within wide coverage. Current generative models of satellite imagery, however, operate along a single axis: they either zoom to enhance a single tile's resolution or pan to extend imagery at a fixed scale. As a result, no existing method produces a complete pyramid that stays consistent across both scale and space, where a high-zoom tile must agree with the coarse context it refines and with the neighbors it meets. Motivated by this gap, we introduce a new task, multi-scale tile completion: given a sparse set of seed tiles at arbitrary zoom levels and positions, synthesize a complete, uniform quadtree that is globally consistent across both scale and space. We approach this task with Genesis, a generative engine that brings both axes together by composing two specialized operators over the quadtree: a vertical super-resolution model and a horizontal mask-based outpainting model, producing pyramids that are consistent across zoom levels and seamless across neighboring tiles. Each operator achieves state-of-the-art results on its subtask, and the engine propagates sparse seeds into seamless, multi-resolution maps from any initial configuration. To evaluate the task and benchmark Genesis, we introduce dense500, a fully observed multi-scale pyramid dataset spanning diverse geographic regions, together with a suite of pyramid-level metrics. Code, models, and our dataset are available at https://github.com/mvrl/genesis.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/mvrl/genesis"&gt;https://github.com/mvrl/genesis&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to SIGSPATIAL 2026: Application Track (Oral)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>
