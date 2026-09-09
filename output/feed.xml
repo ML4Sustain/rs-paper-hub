@@ -4,12 +4,197 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-09T01:47:35Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 11 entries</subtitle>
+  <updated>2026-09-09T05:39:17Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 22 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Remotely Detectable Keyed Communication through Motion</title>
+    <link href="http://arxiv.org/abs/2609.08920v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.08920v1</id>
+    <published>2026-09-08T00:00:00Z</published>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <author>
+      <name>Benjamin Chang</name>
+    </author>
+    <author>
+      <name>Michael Amir</name>
+    </author>
+    <author>
+      <name>Manon Flageat</name>
+    </author>
+    <author>
+      <name>Amanda Prorok</name>
+    </author>
+    <summary type="text">Messages from electronic devices are conventionally received as text, audio, or radio signals. But robots move with rich, articulate motion in the real world, opening up the possibility of transmitting messages through motion itself. In this paper, we consider the problem of motion-based communication, where we seek to modify a robot's movements so as to transmit messages detectable from remote sensing (e.g., video or motion capture), without degrading policy performance. We introduce a method for messaging through motion capable of encoding arbitrary message content over short payloads - such as an agent's current intent - as noise in any pre-trained policy's actions. This brings a new kind of robustness to robot communication: this 'physical' channel complements standard wireless communications channels but does not depend on them, requiring no extra hardware nor the establishment of a direct link to the robot. We systematically characterize the space of encoding schemes and derive design heuristics, then validate them across simulated environments and real-robot deployment; on real robots running at 50 Hz, four robots jointly recover an 8-bit message at an aggregate 0.67 bits/s.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 22 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Robotics" />
+  </entry>
+  <entry>
+    <title>CoSA: Correlation-Guided Change A ttention with Learnable Residual Gating for Remote Sensing Change Detection</title>
+    <link href="http://arxiv.org/abs/2609.08914v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.08914v1</id>
+    <published>2026-09-08T00:00:00Z</published>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <author>
+      <name>Abdirashid Omar</name>
+    </author>
+    <author>
+      <name>Jonghyuk Park</name>
+    </author>
+    <summary type="text">Pixel-level annotation of fixed traffic-camera imagery is expensive, while crosswalk models trained from street-level imagery face a substantial viewpoint and appearance shift when applied to elevated CCTV. We investigate a data-efficient target-domain pipeline using 241 manually annotated CCTV images and 5,926 unlabeled CCTV frames. A source-domain experiment trains a 31.0M-parameter custom U-Net on 3,300 first-person-view (FPV) images and obtains 93.05% IoU on its 330-image FPV test split. This result is a source baseline, not transferred performance: the released CCTV notebook instantiates a 42.0M-parameter DeepLabV3-ResNet50 from torchvision weights, and no compatible mapping from the U-Net checkpoint is implemented. Training on 201 manual CCTV images and selecting on 40 held-out manual masks yields 88.91% IoU. The model then predicts all unlabeled frames; image-level certainty and a largest-component area prior rank the candidates, and the top 1,000 attain mean certainty 0.976 and mean combined score 0.988. A repository audit shows that the reported second-stage 98.52% IoU was measured on a 150-image split containing only teacher-generated pseudo-masks. Because of a directory-layout mismatch, the executed combined-data loader found zero manual samples and split 1,000 pseudo-labeled samples into 850 training and 150 evaluation samples. We therefore report 98.52% as internal pseudo-label agreement rather than human-ground-truth accuracy. The defensible target-domain result is 88.91% IoU on the 40 manual validation images. Batch-one FP32 inference at 512 x 512 requires 12.98 ms, corresponding to 77.03 FPS, on an NVIDIA RTX A6000 48 GB GPU. These findings support the practicality of confidence-and-geometry filtering while also showing why pseudo-label evaluation must remain isolated from the labels used for self-training.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>TriCCOT: Tri-part Convolutional Conformal Transformer for Onboard Space Object Detection</title>
+    <link href="http://arxiv.org/abs/2609.08659v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.08659v1</id>
+    <published>2026-09-08T00:00:00Z</published>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <author>
+      <name>Adrien Dorise</name>
+    </author>
+    <author>
+      <name>Marjorie Bellizzi</name>
+    </author>
+    <author>
+      <name>Julia Cohen</name>
+    </author>
+    <author>
+      <name>Stéphane May</name>
+    </author>
+    <summary type="text">Onboard object detection in Earth observation is constrained by limited computational resources and the absence of fully corrected imagery. While convolutional detectors are hardware-efficient, they often struggle to extract robust representations from raw and noisy data. Conversely, transformer-based models provide stronger global reasoning capabilities but remain difficult to deploy on FPGA accelerators due to quadratic attention complexity and non-compatible operations.   We introduce TriCCOT, a tri-part architecture for robust and deployable onboard object detection. TriCCOT combines a convolutional region proposal network, a conformal prediction stage, and Aper-GATES, our hardware-friendly attention-based classifier. The region proposal network generates candidate bounding boxes, which are subsequently enlarged via conformal prediction, providing a distribution-free probabilistic coverage guarantee. The resulting crops are processed by Aper-GATES, which reformulates self-attention through convolutional projections, global channel statistics, and hardware-friendly gating operations, avoiding standard transformer operations that are poorly suited to CNN-oriented accelerators.   Experiments on the DIOR and VDVRaw datasets demonstrate competitive detection performance and improved robustness to spatial blur and signal-dependent noise when compared to FPGA-compatible architectures. Finally, we report full deployment on a Xilinx Versal VCK190 FPGA without modifying the underlying DPU architecture, enabling unified CNN-Transformer inference for spaceborne embedded applications.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; BMVC2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>From Coordinates to Candidate Regions: Temporal Change Localization via Region Selection in Remote Sensing Multimodal LLMs</title>
+    <link href="http://arxiv.org/abs/2609.08391v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.08391v1</id>
+    <published>2026-09-08T00:00:00Z</published>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <author>
+      <name>Juwan Chung</name>
+    </author>
+    <author>
+      <name>Sungjune Park</name>
+    </author>
+    <author>
+      <name>Yeongyun Kim</name>
+    </author>
+    <author>
+      <name>Yong Man Ro</name>
+    </author>
+    <summary type="text">Remote sensing multimodal large language models (RS-MLLMs) have advanced scene understanding and visual question answering over satellite imagery, yet localizing specific objects or changed regions remains challenging. Existing approaches rely on generating bounding box coordinates as token sequences, which is fragile for the small, densely packed objects common in remote sensing and increasingly error-prone when multiple targets must be localized simultaneously. In this work, we present an RS-specific formulation of the region selection paradigm, previously explored in natural-image MLLMs, and extend it to temporal change localization over multi-image sequences. Our framework employs a text-conditioned region proposal module, encodes each candidate as special tokens carrying per-frame visual features enriched with spatial and temporal cues, and lets the LLM localize targets by selecting region tokens in its response. We construct a multi-task training and evaluation suite spanning localization, referring expression, visual grounding, and understanding tasks across single-image and multi-temporal settings. Experiments show that our approach substantially outperforms coordinate-generation baselines on temporal change localization, while improving single-image visual grounding and maintaining competitive understanding performance. Oracle analysis decomposes the contributions of the region proposer and the LLM selector, providing diagnostic insight unique to this framework. Our code will be available at https://github.com/juwan-kr/RS-RegionSelect.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/juwan-kr/RS-RegionSelect"&gt;https://github.com/juwan-kr/RS-RegionSelect&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to Findings of EMNLP 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="cs.CL" />
+  </entry>
+  <entry>
+    <title>JEDI: JEPA-to-Edge Distillation for Efficient Cropland Segmentation from Satellite Imagery</title>
+    <link href="http://arxiv.org/abs/2609.07915v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.07915v1</id>
+    <published>2026-09-07T00:00:00Z</published>
+    <updated>2026-09-07T00:00:00Z</updated>
+    <author>
+      <name>Kishor Kumar Bhaumik</name>
+    </author>
+    <author>
+      <name>Nicolas Roque dos Santos</name>
+    </author>
+    <author>
+      <name>Jia Chen</name>
+    </author>
+    <author>
+      <name>Evangelos E. Papalexakis</name>
+    </author>
+    <summary type="text">Large vision models provide useful representations for remote-sensing segmentation but are often too expensive for deployment at the satellite or field edge. Existing feature-level distillation methods also tend to assume similar teacher and student architectures and often stop feature alignment when task training begins. We introduce JEDI (JEPA-to-Edge Distillation), a two-stage framework that transfers representations from a large I-JEPA Vision Transformer teacher to a compact SegFormer student. First, JEDI aligns the student's terminal representation with the teacher's token space using cross-architecture projection and spatial alignment. It then jointly optimizes supervised segmentation, temperature-scaled response distillation, and persistent feature alignment throughout task adaptation. On CalCROP21, JEDI-B0 achieves 68.0 mean Intersection-over-Union (mIoU) with 4.04M parameters, improving over the standalone student by 16.0 points and coming within 2.0 points of the 70.0 mIoU achieved by the 639M-parameter teacher. We evaluate SegFormer B0, B1, and B2 students with 4.04M, 14.33M, and 28M parameters, respectively. Across all three variants, JEDI consistently outperforms response-, structure-, channel-, and relational-distillation baselines under the same teacher-student setting. These results show that persistent representation alignment is especially valuable under aggressive compression, substantially reducing model size and computation while preserving segmentation performance.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Attestream: Usage-Aware Intermittent Data Distribution with Verifiable Lifecycle Provenance for Machine-Learning Data Streams</title>
+    <link href="http://arxiv.org/abs/2609.07641v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.07641v1</id>
+    <published>2026-09-07T00:00:00Z</published>
+    <updated>2026-09-07T00:00:00Z</updated>
+    <author>
+      <name>Kentaro Oda</name>
+    </author>
+    <summary type="text">Providers of continuously produced, commercially valuable data -- sensor streams, telemetry, and other feeds sold as machine-learning training material -- cannot observe whether delivered data is actually used, while data that keeps flowing to inactive consumers enlarges the leakage surface without producing value. We present Attestream, a blockchain-based architecture for intermittently delivered dataset streams that couples continued delivery to verifiable usage reporting. Every lifecycle event -- dataset preparation, dual-signed delivery, derivative creation (e.g., a model), and derivative distribution -- is appended to an on-chain registry as a non-repudiable, mutually linked lifecycle record. The mechanism requires provable transfer, not tokenization: plain contract storage, ERC-721 tokens, and anchored off-chain receipts are interchangeable representations of the same protocol. A usage-aware gate suspends a consumer's stream when no derivative-creation record is registered within a reporting window; evaluated lazily inside the next delivery transaction, monitoring adds no dedicated transactions. A modality-pluggable fingerprinting layer binds any leaked copy to the dual-signed delivery record of the responsible consumer, instantiated for tabular/geospatial records, images, and documents. We implement the registry as a Solidity contract with EIP-712 dual signatures and evaluate it: a full lifecycle round costs 657k gas with plain records ($0.13 on rollups; ERC-721 tokenization adds ~30k gas per record), and over a 50-consumer pool leak attribution reaches 100% from 40 leaked table rows under moderate noise, survives JPEG recompression to quality 30, and tolerates paraphrase rates up to 30% for documents.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages, 6 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.CR" />
+    <category term="cs.DC" />
+  </entry>
+  <entry>
+    <title>Topologically Consistent Agricultural Parcel Vectorization with Semantic-Guided Diffusion and Topology-Aware Polygonization</title>
+    <link href="http://arxiv.org/abs/2609.07520v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.07520v1</id>
+    <published>2026-09-07T00:00:00Z</published>
+    <updated>2026-09-07T00:00:00Z</updated>
+    <author>
+      <name>Weiqin Jiao</name>
+    </author>
+    <author>
+      <name>Xiaolong Zuo</name>
+    </author>
+    <author>
+      <name>Claudio Persello</name>
+    </author>
+    <summary type="text">Agricultural parcel polygons play a fundamental role in geospatial applications such as precision agriculture, land administration, and crop monitoring. Beyond regular polygon geometry and low vertex redundancy, practical parcel maps should avoid topological conflicts and preserve common boundaries between adjacent fields. Yet this requirement remains largely unresolved: segmentation-based methods mainly produce parcel masks or raster boundary cues and rely on heuristic raster-to-vector conversion, instance- and contour-based methods reconstruct parcels independently, and recent vector-oriented methods improve polygon regularity but do not explicitly recover adjacent parcels from a shared topological structure. To address this gap, we propose a semantic-guided diffusion framework for topologically consistent agricultural parcel vectorization. It couples joint edge--vertex latent diffusion with supervised multi-cue conditioning to generate geometrically regularised parcel-boundary and vertex primitives while suppressing false-positive responses. A topology-aware parcel polygon reconstruction method then converts these primitives into regular polygons by reconstructing parcel faces from a common planar graph, enabling adjacent predicted parcels to reuse shared boundaries and avoid mutual interior intrusion. Extensive experiments on the AI4SmallFarms and iFLYTEK datasets evaluate parcel vectorization in terms of pixel-level coverage, geometric fidelity, object-level correctness, and topological consistency. The results show strong and competitive performance, with zero measured intrusion ratio and the highest shared-edge recall, demonstrating the potential of the proposed framework for accurate, regular, and topologically consistent agricultural parcel vectorization.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>KODAMA: Multimodal Digital Twin Reconstruction for Urban RF Propagation Modelling</title>
+    <link href="http://arxiv.org/abs/2609.07298v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.07298v1</id>
+    <published>2026-09-07T00:00:00Z</published>
+    <updated>2026-09-07T00:00:00Z</updated>
+    <author>
+      <name>Maximiliano Wardle</name>
+    </author>
+    <author>
+      <name>A. Ryo Koblitz</name>
+    </author>
+    <summary type="text">3D reconstruction typically strives for geometric fidelity or visual plausibility. Radio frequency digital twins (RFDT) are instead judged by whether communication channels behave in them as they do in the real world. RFDTs promise site-specific channel prediction but current practice forces a choice between coarse automated scenes and hand-built, measurement-calibrated models that take weeks to construct per-site. We present KODAMA, an automated pipeline that reconstructs ray tracing-ready RFDTs at city scale from off-the-shelf geospatial data alone: aerial imagery, LiDAR, and photogrammetry yield terrain and watertight building meshes, while exposure-weighted multi-view fusion of street-level imagery recovers façade relief, electromagnetic materials, and clutter---all without site visits or calibration. Across three sites spanning 3.6 to 28 GHz, KODAMA's uncalibrated predictions achieve single-digit RMSE, reducing point-to-point error by up to 5.35 dB over automated baselines and coming within 0.22 dB of a measurement-calibrated, hand-built RFDT.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>DPSF-Net: A Dual-Prior Spatial-Frequency Network for Real-World Remote Sensing Image Dehazing</title>
+    <link href="http://arxiv.org/abs/2609.06962v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.06962v1</id>
+    <published>2026-09-07T00:00:00Z</published>
+    <updated>2026-09-07T00:00:00Z</updated>
+    <author>
+      <name>Mei Lu</name>
+    </author>
+    <author>
+      <name>Shangliang Shao</name>
+    </author>
+    <author>
+      <name>Shanliang Yao</name>
+    </author>
+    <summary type="text">Real-world remote sensing image dehazing (RSID) remains challenging because atmospheric scattering, spatially non-uniform haze and colour distortion jointly degrade structural and spectral information. Most deep learning methods rely on RGB inputs and spatial-domain feature extraction, which limits their ability to separate global background haze from local surface details. Here, we propose DPSF-Net, a dual-prior spatial-frequency network built on MCAF-Net for real-world RSID. The network uses hazy RGB images and dark channel prior (DCP) maps as joint inputs, allowing physical degradation cues to guide end-to-end feature learning. A spatial-frequency residual interaction block introduces a FourierUnit branch into multi-directional spatial interaction to model large-scale haze components. A prior-guided feature attention module adaptively fuses prior and attention features to reduce colour shift and structural distortion. A selective kernel complementary fusion module screens multi-scale skip features through bidirectional residual complementary gating and selective kernel fusion. Extensive experiments demonstrate that DPSF-Net achieves state-of-the-art performance on the real-world RRSHID remote sensing image dehazing benchmark and remains competitive across multiple synthetic datasets. Moreover, the proposed method strikes a favourable balance among restoration quality, parameter count and computational complexity, supporting the effectiveness of dual-prior spatial-frequency modelling.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>AGSA-Net: Abundance-Guided Self-Attention Network for Spectral Unmixing-Aware Hyperspectral Remote Sensing Image Classification</title>
     <link href="http://arxiv.org/abs/2609.06359v1" rel="alternate" type="text/html" />
@@ -74,6 +259,60 @@
 &lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages, 15 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Monte Carlo-Based Ex-Ante Assessment of the Green Benefits of an AI-Driven Smart Agriculture Platform in Hainan</title>
+    <link href="http://arxiv.org/abs/2609.06737v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.06737v1</id>
+    <published>2026-09-06T00:00:00Z</published>
+    <updated>2026-09-06T00:00:00Z</updated>
+    <author>
+      <name>Zhaoyang Li</name>
+    </author>
+    <author>
+      <name>Ruijie Zhang</name>
+    </author>
+    <author>
+      <name>Zhaoji Sun</name>
+    </author>
+    <author>
+      <name>Lu Zhang</name>
+    </author>
+    <summary type="text">Smart agriculture platforms are widely regarded as key carriers for implementing China's pesticide and fertilizer reduction, water-saving and carbon-reduction agendas, yet a unified quantitative framework for assessing their green value is still lacking. Taking an AI-driven decision platform for tropical agriculture as the object (integrating large-language-model question answering, multimodal pest diagnosis, IoT sensing, satellite remote sensing, and a closed-loop field record system), this study builds a cradle-to-farm-gate agricultural carbon accounting model covering pesticide and fertilizer production, field N2O, irrigation electricity and paddy CH4, translates platform interventions into quantifiable transmission parameters, and propagates parameter uncertainty by Monte Carlo simulation over three Hainan scenarios (mango, winter vegetable, rice/nanfan, area-weighted 40%:30%:30%). Under full adoption, median reductions are 23.5% (90% interval 15.0%-33.2%) for pesticide use, 21.0% (13.8%-28.9%) for fertilizer, 16.5% (10.9%-23.5%) for irrigation water, and 21.5% (16.1%-27.2%) for carbon intensity. Attainment probabilities are high for fertilizer reduction &gt;=15% (90.6%) and clear carbon decline (98.1%), but only about 20% for aggregate water saving &gt;=20%, favoring scenario-specific statements. Sobol first-order indices show soil-test recommendation and organic substitution jointly explain about 83% of the variance of aggregate carbon-intensity reduction. Convergence tests show 10,000 iterations stabilize all statistics; conservative/baseline/optimistic scenario bounds are reported. The framework offers a reproducible, calibration-ready methodology for ex-ante green-value assessment and pilot observation design.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13 pages, 4 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Physico-Geospatial Grounded Scene Interpretation for Mobile Robotics</title>
+    <link href="http://arxiv.org/abs/2609.06629v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.06629v1</id>
+    <published>2026-09-06T00:00:00Z</published>
+    <updated>2026-09-06T00:00:00Z</updated>
+    <author>
+      <name>Nicolas Schuler</name>
+    </author>
+    <author>
+      <name>Janik Kurtz</name>
+    </author>
+    <author>
+      <name>Lea Dewald</name>
+    </author>
+    <author>
+      <name>Marcel Sauber</name>
+    </author>
+    <author>
+      <name>Félicia Teferle</name>
+    </author>
+    <author>
+      <name>Jürgen Graf</name>
+    </author>
+    <summary type="text">Recent advancements in deep learning allow robotic agents to interact with dynamic and unstructured environments. Of special interest is the integration of physico-geospatial world knowledge into such systems, either by using physics-aware machine learning models, knowledge graphs to model relationships or spatio-temporal and logical reasoning. In the present work, we introduce an approach to augment the output of pre-trained, unmodified VLMs used for scene interpretation by integrating semantic descriptions, OpenStreetMap building data and street information with positional, temporal and metric information obtained from our sensory systems, fusing this information using LLMs. We apply this concept to an outdoor recording within a university campus, achieving an F1-Score of 0.83 in the task of grounding buildings and 0.64 for path surface grounding on our pilot evaluation set. The results demonstrate the conceptual capability of the proposed solution to deliver physico-geospatial grounded natural language descriptions. Code and results are available at https://datahub.rz.rptu.de/hstr-csrl-public/publications/physico-geospatial-grounded-scene-interpretation</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 pages, 3 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Robotics" />
   </entry>
   <entry>
     <title>ProtoRAG: Prototype-Based Retrieval Augmentation for Few-Shot Fine-Grained Remote Sensing Object Detection</title>

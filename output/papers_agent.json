@@ -4520,5 +4520,43 @@
     "_added_date": "2026-09-02",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Robotics",
+    "Subtype": "",
+    "Date": "2026-09-08",
+    "Month": 9,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Remotely Detectable Keyed Communication through Motion",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2609.08920v1",
+    "Abstract": "Messages from electronic devices are conventionally received as text, audio, or radio signals. But robots move with rich, articulate motion in the real world, opening up the possibility of transmitting messages through motion itself. In this paper, we consider the problem of motion-based communication, where we seek to modify a robot's movements so as to transmit messages detectable from remote sensing (e.g., video or motion capture), without degrading policy performance. We introduce a method for messaging through motion capable of encoding arbitrary message content over short payloads - such as an agent's current intent - as noise in any pre-trained policy's actions. This brings a new kind of robustness to robot communication: this 'physical' channel complements standard wireless communications channels but does not depend on them, requiring no extra hardware nor the establishment of a direct link to the robot. We systematically characterize the space of encoding schemes and derive design heuristics, then validate them across simulated environments and real-robot deployment; on real robots running at 50 Hz, four robots jointly recover an 8-bit message at an aggregate 0.67 bits/s.",
+    "code": "",
+    "Publication": "22 pages, 7 figures",
+    "BibTex": "@article{chang2026remotely,\n  title={Remotely Detectable Keyed Communication through Motion},\n  author={Benjamin Chang and Michael Amir and Manon Flageat and Amanda Prorok},\n  journal={arXiv preprint arXiv:2609.08920v1},\n  year={2026},\n  url={http://arxiv.org/abs/2609.08920v1}\n}",
+    "Authors": "Benjamin Chang, Michael Amir, Manon Flageat, Amanda Prorok",
+    "_added_date": "2026-09-09",
+    "Category": "Method",
+    "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Robotics",
+    "Date": "2026-09-06",
+    "Month": 9,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Physico-Geospatial Grounded Scene Interpretation for Mobile Robotics",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2609.06629v1",
+    "Abstract": "Recent advancements in deep learning allow robotic agents to interact with dynamic and unstructured environments. Of special interest is the integration of physico-geospatial world knowledge into such systems, either by using physics-aware machine learning models, knowledge graphs to model relationships or spatio-temporal and logical reasoning. In the present work, we introduce an approach to augment the output of pre-trained, unmodified VLMs used for scene interpretation by integrating semantic descriptions, OpenStreetMap building data and street information with positional, temporal and metric information obtained from our sensory systems, fusing this information using LLMs. We apply this concept to an outdoor recording within a university campus, achieving an F1-Score of 0.83 in the task of grounding buildings and 0.64 for path surface grounding on our pilot evaluation set. The results demonstrate the conceptual capability of the proposed solution to deliver physico-geospatial grounded natural language descriptions. Code and results are available at https://datahub.rz.rptu.de/hstr-csrl-public/publications/physico-geospatial-grounded-scene-interpretation",
+    "code": "",
+    "Publication": "9 pages, 3 figures",
+    "BibTex": "@article{schuler2026physicogeospatial,\n  title={Physico-Geospatial Grounded Scene Interpretation for Mobile Robotics},\n  author={Nicolas Schuler and Janik Kurtz and Lea Dewald and Marcel Sauber and Félicia Teferle and Jürgen Graf},\n  journal={arXiv preprint arXiv:2609.06629v1},\n  year={2026},\n  url={http://arxiv.org/abs/2609.06629v1}\n}",
+    "Authors": "Nicolas Schuler, Janik Kurtz, Lea Dewald, Marcel Sauber, Félicia Teferle, Jürgen Graf",
+    "_added_date": "2026-09-09",
+    "Category": "Method",
+    "_tasks": "VG"
   }
 ]
