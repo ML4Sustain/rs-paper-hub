@@ -4,38 +4,84 @@
   <id>https://rspaper.top/output/feed_uav.xml</id>
   <link href="https://rspaper.top/output/feed_uav.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-09T05:39:17Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 1 entries</subtitle>
+  <updated>2026-09-10T01:42:51Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
   <entry>
-    <title>STARS-GS: Structure-Aware Regularized Gaussian Splatting for Large-Scale Aerial Surface Reconstruction</title>
-    <link href="http://arxiv.org/abs/2609.03447v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.03447v1</id>
-    <published>2026-09-03T00:00:00Z</published>
-    <updated>2026-09-03T00:00:00Z</updated>
+    <title>ScopeMamba-YOLO: Widening the Perceptual Scope Inward and Outward for Small Object Detection in Remote Sensing Imagery</title>
+    <link href="http://arxiv.org/abs/2609.10156v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.10156v1</id>
+    <published>2026-09-09T00:00:00Z</published>
+    <updated>2026-09-09T00:00:00Z</updated>
     <author>
-      <name>Bocheng Li</name>
+      <name>Junjie Fan</name>
     </author>
     <author>
-      <name>Wenjuan Zhang</name>
+      <name>Yijun Mai</name>
     </author>
     <author>
-      <name>Jie Pan. Dongxu Han</name>
+      <name>Linduo Wei</name>
     </author>
     <author>
-      <name>Xuesong Ma</name>
+      <name>Jiayu Rao</name>
     </author>
     <author>
-      <name>Yiling Yao</name>
+      <name>Junmin Bao</name>
     </author>
     <author>
-      <name>Yaning Wang</name>
+      <name>Qiushi Jin</name>
     </author>
-    <summary type="text">Large-scale 3D surface reconstruction from aerial imagery is fundamental to geospatial mapping and urban modeling. Recent advances in 3D Gaussian Splatting (3DGS) have demonstrated considerable potential for this task. However, existing methods still face three major challenges in large and complex scenes: scene partitioning may split continuous scene elements across independently optimized sub-regions; geometric constraints mainly focus on the attributes of individual Gaussians while overlooking their local organization; and uniform regularization struggles to accommodate heterogeneous geometric structures. To address these issues, we propose STARS-GS, a structure-aware 3DGS framework for large-scale surface reconstruction. First, we introduce a structure-aware scene partitioning strategy that better preserves continuous scene structures during partitioning and reduces cross-region geometric inconsistencies and stitching artifacts through boundary refinement. Second, we develop neighborhood-aware Gaussian organization that extends geometric constraints from individual primitives to their neighborhood organization, encouraging Gaussians to better conform to local surface geometry. Third, we introduce adaptive surface regularization that adjusts the regularization strength according to local geometric characteristics, promoting geometric consistency in structured regions while preserving plausible variations in unstructured regions. Extensive experiments on large-scale aerial photogrammetry benchmarks demonstrate that STARS-GS consistently outperforms the evaluated Gaussian-based methods in surface reconstruction. It increases the average F1-score from 0.640 for the second-best method to 0.698, corresponding to a relative improvement of approximately 9.1\%, demonstrating effective improvements in geometric accuracy and surface completeness.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <author>
+      <name>Guijia Li</name>
+    </author>
+    <author>
+      <name>Yong Qi</name>
+    </author>
+    <summary type="text">Small object detection in unmanned aerial vehicle (UAV) and remote sensing imagery requires preserving high-resolution detail while modeling long-range context. Adding a stride-4 detection level and removing the stride-32 stage benefits tiny targets but weakens peripheral spatial support, whereas directly inserting selective scanning into the main feature path can interfere with weak local cues. We propose ScopeMamba-YOLO, built around an off-path, zero-gated selective-scanning principle that decouples contextual modeling from the convolutional stream. The principle is instantiated by a Cascaded Global-Context Module (CGCM) in the backbone and a Selective-Scan PAN (SS-PAN) in the neck. An Adaptive Multi-scale Strip (AMS) Block reduces the cost of high-resolution feature extraction, while a Scale-Adaptive DFL (SA-DFL) head reallocates distributional support and regression capacity across scales with only 0.008M additional parameters. Controlled experiments show that matched main-path selective scanning reduces mAP50 by 0.98 pp, whereas off-path CGCM improves the final configuration by 0.67 pp over the three-seed no-CGCM mean; operator controls indicate that this gain is not explained by auxiliary branch capacity alone. ERF analysis further shows that the complete context pathway increases the peripheral energy ratio from 0.008 to 0.090 at stride 8. On VisDrone-2019, ScopeMamba-S achieves 50.8% mAP50 with 3.57M parameters, exceeding YOLOv8s by 10.8 pp while using 32% of its parameters; ScopeMamba-M reaches 52.6% mAP50 with 6.48M parameters. Consistent improvements are also observed on AI-TOD, especially for very-tiny and tiny objects.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
     <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Experimental Validation of Combined Imaging and Vibration Mitigation for High-Altitude Platforms</title>
+    <link href="http://arxiv.org/abs/2609.09376v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.09376v1</id>
+    <published>2026-09-08T00:00:00Z</published>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <author>
+      <name>Ákos Radványi</name>
+    </author>
+    <author>
+      <name>Anita Keszler</name>
+    </author>
+    <author>
+      <name>Dániel Balogh</name>
+    </author>
+    <author>
+      <name>Béla Takarics</name>
+    </author>
+    <author>
+      <name>András Majdik</name>
+    </author>
+    <author>
+      <name>Andrej Tokarjev</name>
+    </author>
+    <author>
+      <name>Gábor Kovács</name>
+    </author>
+    <author>
+      <name>Tamás Szirányi</name>
+    </author>
+    <author>
+      <name>Bálint Vanek</name>
+    </author>
+    <summary type="text">The demand for continuous, high-resolution aerial monitoring is driving interest in High- Altitude Pseudo-Satellites (HAPS), which offer a cost-effective alternative to satellites with greater flexibility. While HAPS platforms provide valuable Earth observation potential, se- lecting an optical sensor requires balancing resolution and payload constraints, given their lightweight structures. We propose a multidisciplinary concept to enhance the Earth obser- vation capabilities of HAPS using a commercially available, weight-efficient distributed camera network, combined with advanced image processing and active vibration control. A super- resolution pipeline is introduced, where images from individual cameras are preprocessed and fed into a super-resolution algorithm. The low structural rigidity of HAPS platforms increases their sensitivity to low-frequency vibrations, which must be mitigated through active control to preserve imaging performance. A nominal H-infinity mixed-sensitivity controller is designed to suppress resonance peaks at camera locations. The methodology is experimentally validated on a simplified wing platform designed for real-time testing. Quantitative evaluation based on nine metrics demonstrates significant image quality improvements, highlighting the effectiveness of H-infinity control in mitigating low-frequency elastic modes and stabilizing the platform for super- resolution. These results show that lightweight commercial sensors, combined with advanced image processing and control, can deliver high-quality imaging for future HAPS remote sensing missions.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the journal&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
+    <category term="eess.SY" />
   </entry>
 </feed>

@@ -26969,7 +26969,7 @@
     "Institute": "",
     "Title": "KODAMA: Multimodal Digital Twin Reconstruction for Urban RF Propagation Modelling",
     "abbr.": "",
-    "Paper_link": "http://arxiv.org/abs/2609.07298v1",
+    "Paper_link": "http://arxiv.org/abs/2609.07298v2",
     "Abstract": "3D reconstruction typically strives for geometric fidelity or visual plausibility. Radio frequency digital twins (RFDT) are instead judged by whether communication channels behave in them as they do in the real world. RFDTs promise site-specific channel prediction but current practice forces a choice between coarse automated scenes and hand-built, measurement-calibrated models that take weeks to construct per-site. We present KODAMA, an automated pipeline that reconstructs ray tracing-ready RFDTs at city scale from off-the-shelf geospatial data alone: aerial imagery, LiDAR, and photogrammetry yield terrain and watertight building meshes, while exposure-weighted multi-view fusion of street-level imagery recovers façade relief, electromagnetic materials, and clutter---all without site visits or calibration. Across three sites spanning 3.6 to 28 GHz, KODAMA's uncalibrated predictions achieve single-digit RMSE, reducing point-to-point error by up to 5.35 dB over automated baselines and coming within 0.22 dB of a measurement-calibrated, hand-built RFDT.",
     "code": "",
     "Publication": "",
@@ -26997,5 +26997,24 @@
     "_added_date": "2026-09-09",
     "Category": "Method",
     "_tasks": "VG"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-09-09",
+    "Month": 9,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "From Pixels to Hierarchical Sequences: Quadtree Mask Encoding for Vision-Language Binary Change Detection",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2609.09876v1",
+    "Abstract": "Dense change detection in remote sensing requires vision-language models (VLMs) to compare bi-temporal images and generate accurate pixel-level masks. Existing VLMs are largely confined to change captioning outputs, and the few that produce pixel-level masks still rely on external decoders or flat text-as-mask serialization, which are less effective for small and fragmented changes. We introduce QUAKE-CD, a framework that recasts dense change prediction as syntax-verifiable structured generation. QUAKE-CD represents binary change masks as grammar-constrained quadtree token sequences, making the masks compact, syntactically checkable, and deterministically decodable within an autoregressive generation space. We further construct QUAKE-CoT, which pairs these sequences with chain-of-thought traces grounded in visual evidence, and jointly optimizes textual reasoning and spatial dense prediction through a progressive curriculum followed by grammar-gated dual-reward RL. On QUAKE-CoT, QUAKE-CD achieves 78.31% accumulated F1, outperforming decoder-based and flat text-as-mask VLMs while producing more faithful bi-temporal reasoning.",
+    "code": "",
+    "Publication": "26 pages, 16 figures",
+    "BibTex": "@article{an2026from,\n  title={From Pixels to Hierarchical Sequences: Quadtree Mask Encoding for Vision-Language Binary Change Detection},\n  author={Xiao An and Ruikang Zhang and Chen Zhong and Xuli Shen and Jiaxing Sun and Jiang Wu and Wei He},\n  journal={arXiv preprint arXiv:2609.09876v1},\n  year={2026},\n  url={http://arxiv.org/abs/2609.09876v1}\n}",
+    "Authors": "Xiao An, Ruikang Zhang, Chen Zhong, Xuli Shen, Jiaxing Sun, Jiang Wu, Wei He",
+    "_added_date": "2026-09-10",
+    "Category": "Method",
+    "_tasks": "IC;CD"
   }
 ]

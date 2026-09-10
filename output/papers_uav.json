@@ -6762,5 +6762,43 @@
     "_added_date": "2026-09-04",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-09-09",
+    "Month": 9,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "ScopeMamba-YOLO: Widening the Perceptual Scope Inward and Outward for Small Object Detection in Remote Sensing Imagery",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2609.10156v1",
+    "Abstract": "Small object detection in unmanned aerial vehicle (UAV) and remote sensing imagery requires preserving high-resolution detail while modeling long-range context. Adding a stride-4 detection level and removing the stride-32 stage benefits tiny targets but weakens peripheral spatial support, whereas directly inserting selective scanning into the main feature path can interfere with weak local cues. We propose ScopeMamba-YOLO, built around an off-path, zero-gated selective-scanning principle that decouples contextual modeling from the convolutional stream. The principle is instantiated by a Cascaded Global-Context Module (CGCM) in the backbone and a Selective-Scan PAN (SS-PAN) in the neck. An Adaptive Multi-scale Strip (AMS) Block reduces the cost of high-resolution feature extraction, while a Scale-Adaptive DFL (SA-DFL) head reallocates distributional support and regression capacity across scales with only 0.008M additional parameters. Controlled experiments show that matched main-path selective scanning reduces mAP50 by 0.98 pp, whereas off-path CGCM improves the final configuration by 0.67 pp over the three-seed no-CGCM mean; operator controls indicate that this gain is not explained by auxiliary branch capacity alone. ERF analysis further shows that the complete context pathway increases the peripheral energy ratio from 0.008 to 0.090 at stride 8. On VisDrone-2019, ScopeMamba-S achieves 50.8% mAP50 with 3.57M parameters, exceeding YOLOv8s by 10.8 pp while using 32% of its parameters; ScopeMamba-M reaches 52.6% mAP50 with 6.48M parameters. Consistent improvements are also observed on AI-TOD, especially for very-tiny and tiny objects.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{fan2026scopemambayolo,\n  title={ScopeMamba-YOLO: Widening the Perceptual Scope Inward and Outward for Small Object Detection in Remote Sensing Imagery},\n  author={Junjie Fan and Yijun Mai and Linduo Wei and Jiayu Rao and Junmin Bao and Qiushi Jin and Guijia Li and Yong Qi},\n  journal={arXiv preprint arXiv:2609.10156v1},\n  year={2026},\n  url={http://arxiv.org/abs/2609.10156v1}\n}",
+    "Authors": "Junjie Fan, Yijun Mai, Linduo Wei, Jiayu Rao, Junmin Bao, Qiushi Jin, Guijia Li, Yong Qi",
+    "_added_date": "2026-09-10",
+    "Category": "Method",
+    "_tasks": "OD"
+  },
+  {
+    "Type": "eess.SY",
+    "Subtype": "",
+    "Date": "2026-09-08",
+    "Month": 9,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Experimental Validation of Combined Imaging and Vibration Mitigation for High-Altitude Platforms",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2609.09376v1",
+    "Abstract": "The demand for continuous, high-resolution aerial monitoring is driving interest in High- Altitude Pseudo-Satellites (HAPS), which offer a cost-effective alternative to satellites with greater flexibility. While HAPS platforms provide valuable Earth observation potential, se- lecting an optical sensor requires balancing resolution and payload constraints, given their lightweight structures. We propose a multidisciplinary concept to enhance the Earth obser- vation capabilities of HAPS using a commercially available, weight-efficient distributed camera network, combined with advanced image processing and active vibration control. A super- resolution pipeline is introduced, where images from individual cameras are preprocessed and fed into a super-resolution algorithm. The low structural rigidity of HAPS platforms increases their sensitivity to low-frequency vibrations, which must be mitigated through active control to preserve imaging performance. A nominal H-infinity mixed-sensitivity controller is designed to suppress resonance peaks at camera locations. The methodology is experimentally validated on a simplified wing platform designed for real-time testing. Quantitative evaluation based on nine metrics demonstrates significant image quality improvements, highlighting the effectiveness of H-infinity control in mitigating low-frequency elastic modes and stabilizing the platform for super- resolution. These results show that lightweight commercial sensors, combined with advanced image processing and control, can deliver high-quality imaging for future HAPS remote sensing missions.",
+    "code": "",
+    "Publication": "the journal",
+    "BibTex": "@article{radvnyi2026experimental,\n  title={Experimental Validation of Combined Imaging and Vibration Mitigation for High-Altitude Platforms},\n  author={Ákos Radványi and Anita Keszler and Dániel Balogh and Béla Takarics and András Majdik and Andrej Tokarjev and Gábor Kovács and Tamás Szirányi and Bálint Vanek},\n  journal={arXiv preprint arXiv:2609.09376v1},\n  year={2026},\n  url={http://arxiv.org/abs/2609.09376v1}\n}",
+    "Authors": "Ákos Radványi, Anita Keszler, Dániel Balogh, Béla Takarics, András Majdik, Andrej Tokarjev, Gábor Kovács, Tamás Szirányi, Bálint Vanek",
+    "_added_date": "2026-09-10",
+    "Category": "Method",
+    "_tasks": "SR"
   }
 ]
