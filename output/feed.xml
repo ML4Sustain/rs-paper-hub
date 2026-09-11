@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-11T01:41:49Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 25 entries</subtitle>
+  <updated>2026-09-11T05:31:40Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 27 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -94,6 +94,48 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="cs.CY" />
     <category term="cs.SI" />
+  </entry>
+  <entry>
+    <title>Geospatial Foundation Models Capture Health-Relevant Dimensions of Place Beyond Conventional Social Risk Indices</title>
+    <link href="http://arxiv.org/abs/2609.11689v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.11689v1</id>
+    <published>2026-09-10T00:00:00Z</published>
+    <updated>2026-09-10T00:00:00Z</updated>
+    <author>
+      <name>Nathaniel Hendrix</name>
+    </author>
+    <author>
+      <name>Carl Y. Zhang</name>
+    </author>
+    <author>
+      <name>Chris Heitzig</name>
+    </author>
+    <author>
+      <name>Andrew Bazemore</name>
+    </author>
+    <author>
+      <name>David H. Rehkopf</name>
+    </author>
+    <summary type="text">Area-based social risk indices summarize residents' socioeconomic conditions but incompletely capture physical features of place that may affect health. We evaluated whether numerical representations of physical place produced by four geospatial foundation model families from 2022 satellite data explained residual variance in tract-level associations between the Area Deprivation Index, Social Deprivation Index, and Social Vulnerability Index with health outcomes. We used LightGBM to predict variables from the American Community Survey and 40 chronic disease and health-behavior outcomes from CDC PLACES across 82,646 census tracts in the contiguous United States, evaluating performance across 10 held-out states. Among survey variables, models were moderately predictive of some variables including housing type (R-squared up to 0.54) but weak for disability, unemployment, and income disparity. For health outcomes, models explained up to 54% of variance left unexplained by social risk indices, with the largest gains for annual checkups, arthritis, and high blood pressure. Mean total variance explained by geospatial foundation models across the 40 health-related outcomes increased from 0.31 in the smallest tract-size decile to 0.39 in the largest. Geospatial foundation models capture health-relevant features of place not represented by conventional social risk indices and may usefully augment them in epidemiological analyses.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="stat.AP" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Geospatial AI, Dataverse Metadata, and the Study of Place-Based Government</title>
+    <link href="http://arxiv.org/abs/2609.11674v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.11674v1</id>
+    <published>2026-09-10T00:00:00Z</published>
+    <updated>2026-09-10T00:00:00Z</updated>
+    <author>
+      <name>Danny EBanks</name>
+    </author>
+    <author>
+      <name>Devika Jain</name>
+    </author>
+    <summary type="text">Harvard Dataverse hosts over 150,000 research datasets, but the geographic information those datasets carry is entered as free text by depositors and has never been assembled into a searchable structure. We construct a knowledge graph from the repository's public data and metadata, organizing 102,650 datasets within a 215,985-node network of 528,003 edges linking datasets to keywords, publications, subjects, journals, and locations. Of those datasets, 43,991 (42.9 percent) carry at least one geospatial field, geographic coverage, geographic unit, or a bounding box and 96.9 percent of all nodes sit in a single connected component, so datasets remain reachable from one another even when their geospatial metadata share nothing in common. A conservative keyword search identifies 7,654 geospatially tagged datasets (17.4 percent) as directly policy-relevant, with elections and legislatures the largest cluster, followed by government administration, health policy, transportation, and education. Five datasets illustrate how this metadata behaves across policy domains and spatial scales, and an extended use case shows how community language models, stance detection with geographic aggregation, and partisan language bridging tools can attach discourse to place. The central obstacle is place resolution: the same location appears as many disconnected nodes. We argue that the graph provides a concrete setting for developing AI-driven metadata enrichment and entity resolution, and we document its coverage skew toward American, city-level data.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
   </entry>
   <entry>
     <title>On the 3D Magnetic Structure of Coronal Mass Ejections Through the Solar Corona</title>

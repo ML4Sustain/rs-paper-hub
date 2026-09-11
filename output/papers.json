@@ -139914,5 +139914,43 @@
     "_added_date": "2026-09-11",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "stat.AP",
+    "Subtype": "Machine Learning",
+    "Date": "2026-09-10",
+    "Month": 9,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Geospatial Foundation Models Capture Health-Relevant Dimensions of Place Beyond Conventional Social Risk Indices",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2609.11689v1",
+    "Abstract": "Area-based social risk indices summarize residents' socioeconomic conditions but incompletely capture physical features of place that may affect health. We evaluated whether numerical representations of physical place produced by four geospatial foundation model families from 2022 satellite data explained residual variance in tract-level associations between the Area Deprivation Index, Social Deprivation Index, and Social Vulnerability Index with health outcomes. We used LightGBM to predict variables from the American Community Survey and 40 chronic disease and health-behavior outcomes from CDC PLACES across 82,646 census tracts in the contiguous United States, evaluating performance across 10 held-out states. Among survey variables, models were moderately predictive of some variables including housing type (R-squared up to 0.54) but weak for disability, unemployment, and income disparity. For health outcomes, models explained up to 54% of variance left unexplained by social risk indices, with the largest gains for annual checkups, arthritis, and high blood pressure. Mean total variance explained by geospatial foundation models across the 40 health-related outcomes increased from 0.31 in the smallest tract-size decile to 0.39 in the largest. Geospatial foundation models capture health-relevant features of place not represented by conventional social risk indices and may usefully augment them in epidemiological analyses.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{hendrix2026geospatial,\n  title={Geospatial Foundation Models Capture Health-Relevant Dimensions of Place Beyond Conventional Social Risk Indices},\n  author={Nathaniel Hendrix and Carl Y. Zhang and Chris Heitzig and Andrew Bazemore and David H. Rehkopf},\n  journal={arXiv preprint arXiv:2609.11689v1},\n  year={2026},\n  url={http://arxiv.org/abs/2609.11689v1}\n}",
+    "Authors": "Nathaniel Hendrix, Carl Y. Zhang, Chris Heitzig, Andrew Bazemore, David H. Rehkopf",
+    "_added_date": "2026-09-11",
+    "Category": "Method",
+    "_tasks": ""
+  },
+  {
+    "Type": "Artificial Intelligence",
+    "Subtype": "",
+    "Date": "2026-09-10",
+    "Month": 9,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Geospatial AI, Dataverse Metadata, and the Study of Place-Based Government",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2609.11674v1",
+    "Abstract": "Harvard Dataverse hosts over 150,000 research datasets, but the geographic information those datasets carry is entered as free text by depositors and has never been assembled into a searchable structure. We construct a knowledge graph from the repository's public data and metadata, organizing 102,650 datasets within a 215,985-node network of 528,003 edges linking datasets to keywords, publications, subjects, journals, and locations. Of those datasets, 43,991 (42.9 percent) carry at least one geospatial field, geographic coverage, geographic unit, or a bounding box and 96.9 percent of all nodes sit in a single connected component, so datasets remain reachable from one another even when their geospatial metadata share nothing in common. A conservative keyword search identifies 7,654 geospatially tagged datasets (17.4 percent) as directly policy-relevant, with elections and legislatures the largest cluster, followed by government administration, health policy, transportation, and education. Five datasets illustrate how this metadata behaves across policy domains and spatial scales, and an extended use case shows how community language models, stance detection with geographic aggregation, and partisan language bridging tools can attach discourse to place. The central obstacle is place resolution: the same location appears as many disconnected nodes. We argue that the graph provides a concrete setting for developing AI-driven metadata enrichment and entity resolution, and we document its coverage skew toward American, city-level data.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{ebanks2026geospatial,\n  title={Geospatial AI, Dataverse Metadata, and the Study of Place-Based Government},\n  author={Danny EBanks and Devika Jain},\n  journal={arXiv preprint arXiv:2609.11674v1},\n  year={2026},\n  url={http://arxiv.org/abs/2609.11674v1}\n}",
+    "Authors": "Danny EBanks, Devika Jain",
+    "_added_date": "2026-09-11",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]
