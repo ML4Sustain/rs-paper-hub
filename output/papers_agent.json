@@ -4577,5 +4577,24 @@
     "_added_date": "2026-09-10",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Artificial Intelligence; cs.CL",
+    "Date": "2026-09-11",
+    "Month": 9,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Earth-Agent-Pro: Towards Real-World Full-Chain Earth Observation with Agents",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2609.12533v1",
+    "Abstract": "Real-world Earth observation (EO) agents must translate high-level scientific questions into executable workflows to acquire observations, prepare data, perform domain computations, and derive conclusions from runtime evidence. Existing EO agents typically start from supplied observations, while benchmarks typically provide prepared inputs or candidate answers, leaving full-chain open-world EO execution largely untested. We present Earth-Agent-Pro, an execution-adaptive Plan-and-Execute framework using expert-authored skills to constrain planning and runtime tool use. Workflow-centered structured memory records planned steps, accepted evidence, and their dependencies, enabling repair of only the affected workflow suffix when runtime evidence invalidates a step. Separate large language model adapters use sequence-level supervised fine-tuning for planner workflow composition and node-level group relative policy optimization with locally verifiable rewards for executor tool-argument grounding. Earth-Bench-Pro instantiates 248 expert-curated task cores as 744 questions under three matched regimes. Its 248 Open-World Execution questions span RGB imagery, spectral observations, and remote sensing products, pairing high-level requests with runtime data requirements, executable trajectories, and open-ended answers grounded in execution evidence. With a shared GPT-5 backbone, Earth-Agent-Pro achieves 66.13% LLM-as-Judge accuracy, exceeding ReAct by 20.95 points in this metric and 24.44 points in Tools-In-Order. Joint adapter tuning raises Qwen3.5-9B LLM-as-Judge accuracy from 38.31% to 50.00%, an 11.69-point gain over the untuned configuration. Planning-only evaluation and execution with the reference workflow show that the adapters improve workflow composition and argument grounding, respectively. Code and datasets will be released soon.",
+    "code": "",
+    "Publication": "18 pages, 8 figures",
+    "BibTex": "@article{lv2026earthagentpro,\n  title={Earth-Agent-Pro: Towards Real-World Full-Chain Earth Observation with Agents},\n  author={Zhutao Lv and Chenhao Dang and Yi Feng and Yanpei Gong and Xiaolei Wang and Junyan Ye and Conghui He and Weijia Li},\n  journal={arXiv preprint arXiv:2609.12533v1},\n  year={2026},\n  url={http://arxiv.org/abs/2609.12533v1}\n}",
+    "Authors": "Zhutao Lv, Chenhao Dang, Yi Feng, Yanpei Gong, Xiaolei Wang, Junyan Ye, Conghui He, Weijia Li",
+    "_added_date": "2026-09-14",
+    "Category": "Method",
+    "_tasks": "VG"
   }
 ]

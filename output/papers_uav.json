@@ -6800,5 +6800,24 @@
     "_added_date": "2026-09-10",
     "Category": "Method",
     "_tasks": "SR"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-09-10",
+    "Month": 9,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "When Ground-Truth Fidelity Matters: An Orchestrated UAS Framework for Wheat Streak Mosaic Virus Detection Using Vision Transformers and Machine Learning",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2609.12169v1",
+    "Abstract": "Wheat streak mosaic virus (WSMV) is a destructive pathogen of sweet corn and other cereal crops, causing yield losses and complicating early detection because symptoms are spatially variable and subtle. In sweet corn seed production, WSMV also has regulatory importance, as phytosanitary regulations from countries such as New Zealand and Chile require seed lots to be certified virus-free. Visual scouting is unreliable because symptoms can resemble abiotic stress, while enzyme-linked immunosorbent assay (ELISA) is accurate but expensive, labor-intensive, and difficult to scale. We present an automated pipeline for plant-level WSMV detection using unmanned aircraft systems (UAS) multispectral imagery. The framework integrates orthomosaic reconstruction, geospatial alignment, plant extraction, and classification using a Vision Transformer with seven-channel inputs (five spectral bands, NDVI, and NDRE). Using treatment-based labels, the model achieved 89% accuracy on over 6,500 test patches across multiple growth stages. However, ELISA-based ground truth revealed substantial label noise: only a small fraction of sampled plants in inoculated plots were infected. Treatment labels therefore did not reliably represent infection status, and the high accuracy was largely driven by label bias rather than disease detection. Performance decreased markedly against row-level symptom severity and plant-level ELISA labels. Under these higher-fidelity but smaller-sample conditions, both deep learning and classical machine learning showed limited generalization and weak separability between ELISA-confirmed mock-inoculated and infected plants. These results show that UAS-based disease detection is constrained by label fidelity and data availability, emphasizing biologically grounded labels and models aligned with real-world conditions.",
+    "code": "",
+    "Publication": "29 pages, 9 figures",
+    "BibTex": "@article{kharismawati2026when,\n  title={When Ground-Truth Fidelity Matters: An Orchestrated UAS Framework for Wheat Streak Mosaic Virus Detection Using Vision Transformers and Machine Learning},\n  author={Dewi Endah Kharismawati and Sandeep Dhakal and Courtney E. McCusker and Jennifer R. Wilson and Erik W. Ohlson and Sami Khanal},\n  journal={arXiv preprint arXiv:2609.12169v1},\n  year={2026},\n  url={http://arxiv.org/abs/2609.12169v1}\n}",
+    "Authors": "Dewi Endah Kharismawati, Sandeep Dhakal, Courtney E. McCusker, Jennifer R. Wilson, Erik W. Ohlson, Sami Khanal",
+    "_added_date": "2026-09-14",
+    "Category": "Method",
+    "_tasks": "CLS"
   }
 ]
