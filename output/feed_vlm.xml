@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-11T05:31:40Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 7 entries</subtitle>
+  <updated>2026-09-14T02:10:48Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -110,79 +110,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;VG&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="cs.CL" />
-  </entry>
-  <entry>
-    <title>KODAMA: Multimodal Digital Twin Reconstruction for Urban RF Propagation Modelling</title>
-    <link href="http://arxiv.org/abs/2609.07298v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.07298v2</id>
-    <published>2026-09-07T00:00:00Z</published>
-    <updated>2026-09-07T00:00:00Z</updated>
-    <author>
-      <name>Maximiliano Wardle</name>
-    </author>
-    <author>
-      <name>A. Ryo Koblitz</name>
-    </author>
-    <summary type="text">3D reconstruction typically strives for geometric fidelity or visual plausibility. Radio frequency digital twins (RFDT) are instead judged by whether communication channels behave in them as they do in the real world. RFDTs promise site-specific channel prediction but current practice forces a choice between coarse automated scenes and hand-built, measurement-calibrated models that take weeks to construct per-site. We present KODAMA, an automated pipeline that reconstructs ray tracing-ready RFDTs at city scale from off-the-shelf geospatial data alone: aerial imagery, LiDAR, and photogrammetry yield terrain and watertight building meshes, while exposure-weighted multi-view fusion of street-level imagery recovers façade relief, electromagnetic materials, and clutter---all without site visits or calibration. Across three sites spanning 3.6 to 28 GHz, KODAMA's uncalibrated predictions achieve single-digit RMSE, reducing point-to-point error by up to 5.35 dB over automated baselines and coming within 0.22 dB of a measurement-calibrated, hand-built RFDT.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Physico-Geospatial Grounded Scene Interpretation for Mobile Robotics</title>
-    <link href="http://arxiv.org/abs/2609.06629v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.06629v1</id>
-    <published>2026-09-06T00:00:00Z</published>
-    <updated>2026-09-06T00:00:00Z</updated>
-    <author>
-      <name>Nicolas Schuler</name>
-    </author>
-    <author>
-      <name>Janik Kurtz</name>
-    </author>
-    <author>
-      <name>Lea Dewald</name>
-    </author>
-    <author>
-      <name>Marcel Sauber</name>
-    </author>
-    <author>
-      <name>Félicia Teferle</name>
-    </author>
-    <author>
-      <name>Jürgen Graf</name>
-    </author>
-    <summary type="text">Recent advancements in deep learning allow robotic agents to interact with dynamic and unstructured environments. Of special interest is the integration of physico-geospatial world knowledge into such systems, either by using physics-aware machine learning models, knowledge graphs to model relationships or spatio-temporal and logical reasoning. In the present work, we introduce an approach to augment the output of pre-trained, unmodified VLMs used for scene interpretation by integrating semantic descriptions, OpenStreetMap building data and street information with positional, temporal and metric information obtained from our sensory systems, fusing this information using LLMs. We apply this concept to an outdoor recording within a university campus, achieving an F1-Score of 0.83 in the task of grounding buildings and 0.64 for path surface grounding on our pilot evaluation set. The results demonstrate the conceptual capability of the proposed solution to deliver physico-geospatial grounded natural language descriptions. Code and results are available at https://datahub.rz.rptu.de/hstr-csrl-public/publications/physico-geospatial-grounded-scene-interpretation</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 pages, 3 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Robotics" />
-  </entry>
-  <entry>
-    <title>ProtoRAG: Prototype-Based Retrieval Augmentation for Few-Shot Fine-Grained Remote Sensing Object Detection</title>
-    <link href="http://arxiv.org/abs/2609.05953v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.05953v1</id>
-    <published>2026-09-05T00:00:00Z</published>
-    <updated>2026-09-05T00:00:00Z</updated>
-    <author>
-      <name>Jian Wang</name>
-    </author>
-    <author>
-      <name>Yuxiang Hong</name>
-    </author>
-    <author>
-      <name>Chufeng Zhou</name>
-    </author>
-    <author>
-      <name>Chao Pang</name>
-    </author>
-    <author>
-      <name>Xiaokang Zhang</name>
-    </author>
-    <summary type="text">Few-shot fine-grained object detection (FGOD) in remote sensing imagery is challenging because limited annotations must support both object localization and discrimination among visually similar subcategories. Although multimodal large language models (MLLMs) provide strong coarse object localization, they lack explicit visual evidence for reliable fine-grained recognition. To address this limitation, we propose ProtoRAG, a prototype-based retrieval-augmented framework that decouples coarse localization from fine-grained recognition by equipping MLLMs with an external object-level visual memory. To construct a reliable visual memory from limited support samples, we introduce Discriminative Prototype Space Learning (DPSL), which encourages discriminative and prototype-stable representations through supervised contrastive learning and prototype-consistency regularization. We further develop an uncertainty-guided candidate-constrained reasoning strategy that augments MLLMs with retrieved candidate-specific visual references and invokes multimodal reasoning only for ambiguous instances. Extensive experiments show that ProtoRAG consistently surpasses representative baselines in nine few-shot settings, outperforming the strongest baselines by 14.80, 2.27, and 4.04 mAP$_{50}$ on MAR20, HRSC2016, and FAIR1M-2.0, respectively.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>
