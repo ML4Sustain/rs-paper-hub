@@ -140256,5 +140256,43 @@
     "_added_date": "2026-09-15",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Machine Learning",
+    "Subtype": "Artificial Intelligence",
+    "Date": "2026-09-14",
+    "Month": 9,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Transfer Learning for Socioeconomic Estimation in Forced-Displacement Settings",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2609.15773v1",
+    "Abstract": "Progress in inclusive household surveys has strengthened socioeconomic evidence for forcibly displaced populations, providing indispensable benchmarks on living conditions and welfare. However, these surveys remain resource-intensive and periodic, while conditions can change between rounds, particularly in settings affected by fragility, conflict, and violence. More frequently updated, spatially granular complementary evidence is therefore needed to identify where socioeconomic conditions may be changing between survey rounds and to inform operational prioritization. Earth observation and machine learning offer a scalable source of spatially explicit socioeconomic information. However, tools developed for general populations have not been systematically adapted and evaluated in forced displacement settings, where living conditions, settlement patterns, and displacement impacts may differ substantially. We address this gap by adapting a multimodal spatiotemporal vision transformer, pretrained on Demographic and Health Survey data from approximately 1.2 million households across 36 African countries, to forced displacement and host community settings in South Sudan, Cameroon, and Zambia. We develop and evaluate the updated, adapted model using socioeconomic indices derived from UNHCR FDS and RMS data. Our results show that satellite-derived geospatial covariates explain up to 66% of the variation in socioeconomic outcomes in camp-intersecting grids, with a mean absolute error (MAE) of 4.37 index points, and 41% in non-camp-intersecting areas, with an MAE of 5.41. The framework complements and adds value to periodic household surveys by filling critical spatial and temporal data gaps with regularly updated, model-based socioeconomic estimates. These estimates sustain insight between survey rounds and support timely humanitarian prioritization and field verification.",
+    "code": "",
+    "Publication": "13 pages, 7 figures",
+    "BibTex": "@article{ndungu2026transfer,\n  title={Transfer Learning for Socioeconomic Estimation in Forced-Displacement Settings},\n  author={Steven Ndung'u and Adel Daoud and Ismael Yacoubou Djima and Hai-Anh H. Dang and Patrick Michael Brock},\n  journal={arXiv preprint arXiv:2609.15773v1},\n  year={2026},\n  url={http://arxiv.org/abs/2609.15773v1}\n}",
+    "Authors": "Steven Ndung'u, Adel Daoud, Ismael Yacoubou Djima, Hai-Anh H. Dang, Patrick Michael Brock",
+    "_added_date": "2026-09-15",
+    "Category": "Method",
+    "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-09-14",
+    "Month": 9,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "MambaMPD: A Mamba-Driven Segmentation Framework for Marine Pollution Detection from Remote Sensing Imagery",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2609.15676v1",
+    "Abstract": "Accurate marine pollution detection (MPD) is essential for protecting coastal ecosystems and marine biodiversity. Vision Mamba models have shown promise in remote-sensing semantic segmentation by efficiently capturing long-range dependencies and global context, yet their potential for MPD remains underexplored. MPD is particularly challenging because of low signal-to-noise ratios, fragmented pollution patterns, and indistinct boundaries caused by the visual similarity between pollutants and the surrounding sea. To address these issues, we propose MambaMPD, an enhanced Mamba-based framework incorporating two complementary structural priors: Frequency-Aware Augmentation (FAA) and multi-scale Edge-Guided Attention (EGA). FAA integrates wavelet transforms into the encoder to decompose features into multi-scale frequency subbands, enabling the model to capture low-frequency contextual semantics and high-frequency structural details needed to identify small, low-contrast, and irregular pollution patterns. EGA adaptively fuses hierarchical, Laplacian-derived boundary cues with deep semantic representations, refining encoder features before decoding to sharpen boundaries and reduce ambiguity in visually confusing, spatially fragmented scenes. Together, these modules improve sensitivity to subtle pollution signals while preserving fine boundary structures. A U-Net-style decoder with squeeze-and-excitation attention and deep supervision progressively restores and refines semantic and spatial information across scales. Extensive experiments on two benchmark MPD datasets show that MambaMPD achieves higher mIoU than competing methods while requiring substantially less computation than foundation-model-based approaches. On MADOS, it improves F1 by 3.6% over OSDMamba; on M4D, it raises Oil Spill IoU by 6.82% over TransOilSeg.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{chen2026mambampd,\n  title={MambaMPD: A Mamba-Driven Segmentation Framework for Marine Pollution Detection from Remote Sensing Imagery},\n  author={Shuaiyu Chen and Wei Han and Peng Ren and Chunbo Luo and Zeyu Fu},\n  journal={arXiv preprint arXiv:2609.15676v1},\n  year={2026},\n  url={http://arxiv.org/abs/2609.15676v1}\n}",
+    "Authors": "Shuaiyu Chen, Wei Han, Peng Ren, Chunbo Luo, Zeyu Fu",
+    "_added_date": "2026-09-15",
+    "Category": "Method",
+    "_tasks": "SEG"
   }
 ]
