@@ -4,12 +4,192 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-14T05:51:09Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 20 entries</subtitle>
+  <updated>2026-09-15T02:18:01Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 23 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Neighbourhood-Based Generalized Dynamic Principal Components for Spatial Functional Data</title>
+    <link href="http://arxiv.org/abs/2609.14986v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.14986v1</id>
+    <published>2026-09-14T00:00:00Z</published>
+    <updated>2026-09-14T00:00:00Z</updated>
+    <author>
+      <name>Dharini Pathmanathan</name>
+    </author>
+    <author>
+      <name>Teck Xiang Seow</name>
+    </author>
+    <author>
+      <name>Philipp Otto</name>
+    </author>
+    <author>
+      <name>Sophie Dabo-Niang</name>
+    </author>
+    <summary type="text">Regular-grid spatial functional datasets arise naturally in gridded environmental, oceanographic, climate, and remote-sensing applications, where each spatial location is associated with an entire curve. Existing spectral spatial functional principal component analysis methods provide an important frequency-domain approach for such data, but they do not directly target finite-neighbourhood least-squares reconstruction from an estimated latent spatial component field. To address this, we propose Spatial Functional Generalized Dynamic Principal Components (SFGDPC), a reconstruction-based dimension-reduction method for regular-grid spatial functional data. Each function is first represented by basis coefficients, and each coefficient vector is reconstructed from a scalar latent spatial field and its Chebyshev neighbourhood on the rectangular grid. The spatial neighbourhood radius is selected using a Bayesian information criterion (BIC)-type conditional reconstruction criterion. In the local-neighbourhood transfer simulation, SFGDPC reduced mean cumulative normalized mean squared error (NMSE) relative to spatial functional principal component analysis (SFPCA) by approximately 38-53% across the reported component counts and covariance conditions. In the Indian Ocean sea surface temperature (SST) application, one SFGDPC component produced lower whole-grid reconstruction error than both the boundary-safe and high-cap SFPCA benchmarks across all 33 annual fields. The results support SFGDPC as a local reconstruction-based complement to spectral SFPCA for regular-grid spatial functional data.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 31 pages, 5 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="stat.ME" />
+  </entry>
+  <entry>
+    <title>ANASSA: An Agentic AI Orchestration Framework for Spatial Intelligence</title>
+    <link href="http://arxiv.org/abs/2609.14824v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.14824v1</id>
+    <published>2026-09-13T00:00:00Z</published>
+    <updated>2026-09-13T00:00:00Z</updated>
+    <author>
+      <name>Constantinos Papantoniou</name>
+    </author>
+    <author>
+      <name>Brian Hilton</name>
+    </author>
+    <summary type="text">The emergence of large language models (LLMs) and large multimodal models (LMMs) has enabled a new class of agentic systems capable of integrating natural language understanding with tool-based execution. In geographic information systems (GIS), this shift is transforming traditional, expert-driven workflows into semiautonomous systems that can interpret user intent, construct spatial workflows, and execute geospatial analysis tasks. However, existing approaches remain limited by fragmented integration of reasoning, execution, and evaluation, particularly in complex, real-world environments. This study synthesizes recent advances in agentic GIS frameworks, benchmarks, and surveys to identify limitations in spatial reasoning, execution robustness, validation, governance, and evaluation. Building on these insights, it introduces ANASSA (Autonomous Neural Agents for Spatial Systems Architecture), an agentic AI orchestration framework that integrates structured spatial reasoning, multi-agent workflow orchestration, execution feedback, authoritative spatial validation, provenance, uncertainty handling, and human decision authority within a unified system design. The contribution is an architecture-level specification: eleven components across four layers, a six-step Geospatial AI Cognitive Loop, cross-component contracts, and governance mechanisms intended to make agentic geospatial workflows traceable, reproducible, and accountable. Empirical performance evaluation is reserved for implementation and deployment studies.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Speak to the City: Multimodal Resolution for Outside-the-Vehicle References</title>
+    <link href="http://arxiv.org/abs/2609.14691v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.14691v1</id>
+    <published>2026-09-13T00:00:00Z</published>
+    <updated>2026-09-13T00:00:00Z</updated>
+    <author>
+      <name>Alireza Parchami</name>
+    </author>
+    <author>
+      <name>Artin Saberpour</name>
+    </author>
+    <author>
+      <name>Robin Connor Schramm</name>
+    </author>
+    <author>
+      <name>Jürgen Steimle</name>
+    </author>
+    <author>
+      <name>Ulrich Schwanecke</name>
+    </author>
+    <summary type="text">As autonomous vehicles and Extended Reality (XR) headsets enable novel in-car interactions, seamlessly querying physical landmarks, known as Outside-the-Vehicle Referencing (OVR), remains challenging due to ego-motion and referential ambiguity. We present a robust, multimodal OVR framework fusing user gaze and natural language to identify Points of Interest (POIs). To address the scarcity of dynamic vehicular data, we developed a VR-based pipeline synchronizing 360-degree transit videos with vehicle GNSS telemetry. Through a user study (N=46) mapping passenger head orientation into a 3D geospatial Digital Twin, we captured authentic gaze-speech behaviors. We subsequently trained a lightweight Transformer network, leveraging LLMs to dynamically align continuous spatial gaze vectors with discrete verbal context. Experimental results demonstrate high accuracy and low computational overhead, achieving an 83.33% Top-1 accuracy (87.72% Top-2) and an average inference time of 24.3 milliseconds. This real-time paradigm effectively resolves referential ambiguity, enabling context-aware spatial retrieval for passengers within the vehicle.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 11 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.HC" />
+    <category term="cs.CL; Information Retrieval; Machine Learning" />
+  </entry>
+  <entry>
+    <title>Towards foundation models for insurance risk modelling</title>
+    <link href="http://arxiv.org/abs/2609.14576v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.14576v1</id>
+    <published>2026-09-13T00:00:00Z</published>
+    <updated>2026-09-13T00:00:00Z</updated>
+    <author>
+      <name>Christopher Blier-Wong</name>
+    </author>
+    <summary type="text">Claim narratives, images and sensor data contain information about insured risks that is difficult to use through existing actuarial models. Foundation models learn patterns from large datasets before being adapted to particular tasks. By turning these high-dimensional sources into variables or numerical representations, they could help insurers use more of the information they already collect, potentially reducing the experience needed to develop each application. For example, a language model could identify a worsening injury in a new claim note, allowing a reserving model to recognise the change in expected cost before the payments reveal the deterioration. In this paper, we review language, vision, geospatial, time series, tabular and scientific models, explaining existing insurance applications and potential future uses. Scientific models extend this approach to future weather and climate conditions: their simulations can inform loss estimates once local hazards are linked to asset damage, repair costs and insurance coverage. We propose a process to connect these model outputs to actuarial calculations and to assess their predictive contribution, stability and compliance with rules on information use. Evaluating these applications is difficult when final claim costs become known only after long delays, large losses are rare or patterns learned elsewhere fail to transfer to the target portfolio. Richer data can reveal private information and support finer risk classification, which can change access to insurance. Reusing the same models across insurers also creates dependence on shared predictions and providers.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="q-fin.RM" />
+  </entry>
+  <entry>
+    <title>Selective Tool Use for Agentic Change Visual Question Answering in Remote Sensing</title>
+    <link href="http://arxiv.org/abs/2609.14523v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.14523v1</id>
+    <published>2026-09-13T00:00:00Z</published>
+    <updated>2026-09-13T00:00:00Z</updated>
+    <author>
+      <name>Yakoub Bazi</name>
+    </author>
+    <author>
+      <name>Mohamad M. Al Rahhal</name>
+    </author>
+    <author>
+      <name>Mohamed A. Mekhtiche</name>
+    </author>
+    <author>
+      <name>Mansour Zuair</name>
+    </author>
+    <summary type="text">Change visual question answering (Change VQA) requires understanding semantic changes across bi-temporal remote sensing images. Although vision language models (VLMs) have shown promising performance on this task, they remain unreliable when answering questions that require explicit transition statistics, area measurements, or spatial information. To address this limitation, we propose a selective tool use framework in which a single VLM either answers directly or invokes a deterministic change analysis tool to obtain question specific evidence. Specifically, the selected tool operates on bi-temporal semantic maps and returns a structured observation, which the same VLM uses to generate its final answer. To support this framework, we construct a tool augmented extension of CDVQA covering eight question families and three tools for transition, spatial, and temporal analysis. Tool use supervision and observations are derived automatically from the original semantic annotations, without additional manual labeling. We then adapt Qwen3.5-4B using Low Rank Adaptation (LoRA) to jointly learn direct answering, tool invocation, and evidence conditioned answering. Experiments on 7,164 test questions show that selective tool use with reference semantic maps improves overall accuracy from 73.77% to 88.79% and average family accuracy from 69.11% to 89.65%. When the semantic maps are predicted automatically, the framework achieves 77.47% overall accuracy and 75.06% average family accuracy. These results demonstrate the benefit of question-specific semantic evidence for Change VQA, while highlighting the influence of semantic prediction quality on the resulting performance. Code and tool-augmented annotations will be made publicly available at https://github.com/yakoubbazi/ToolChangeVQA.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/yakoubbazi/ToolChangeVQA"&gt;https://github.com/yakoubbazi/ToolChangeVQA&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Physically Typed and Geometry-Aware Representations for Earth Foundation Models</title>
+    <link href="http://arxiv.org/abs/2609.13868v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.13868v1</id>
+    <published>2026-09-12T00:00:00Z</published>
+    <updated>2026-09-12T00:00:00Z</updated>
+    <author>
+      <name>Rajiv Ranjan</name>
+    </author>
+    <summary type="text">Earth-observation (EO) foundation models have become exceptionally effective at learning se mantic, high-dimensional geospatial embeddings, while modern weather and climate models have demonstrated that Earth-specific geometry, spherical operators, meshes, and hybrid physical solvers can materially improve prediction. Yet these two advances are not equivalent. A conventional latent embedding has no inherent physical transformation law, whereas scalar fields, tangent polar-vector fields, axial/pseudovector quantities, covectors, and higher-order tensors transform differently under rotations, reflections, and changes of local coordinate frame. This proposal asks whether a general purpose Earth foundation model should preserve those distinctions explicitly, or whether standard embeddings plus augmentation already learn everything that matters. The central contribution is therefore not a more complicated architecture by assumption, but a staged falsification program. A compute-conscious ERA5 dry run first compares conventional, augmentation-matched, typed equivariant, and Hodge/Helmholtz variants under spatial, temporal, orientation, and low-data shifts. Only if explicit geometric typing yields reproducible improvements does the program advance toward a multimodal Earth foundation model in which semantic embeddings coexist with physically typed fields. The proposed gap is narrower and more defensible than claiming that current models ignore geometry entirely: several systems already respect spherical domain geometry, and emerging work explicitly learns scalar/vector fields on spheres. The unresolved question is whether foundation-scale, multimodal, parity-aware field typing produces practical gains beyond those existing approaches.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Multi-Instrument Analysis of NOAA AR 12781: Coupling Surface Evolution of the AR with Its In-Situ Solar Wind Signatures</title>
+    <link href="http://arxiv.org/abs/2609.13689v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.13689v1</id>
+    <published>2026-09-12T00:00:00Z</published>
+    <updated>2026-09-12T00:00:00Z</updated>
+    <author>
+      <name>Dharanesh Palaniappan</name>
+    </author>
+    <author>
+      <name>Khagendra Katuwal</name>
+    </author>
+    <summary type="text">Understanding the relationship between photospheric magnetic flux evolution and coronal emission remains an important problem in heliophysics. We investigate the decay of NOAA Active Region 12781 from 7 to 11 November 2020 using observations from the Solar Dynamics Observatory (SDO). Coronal emission was measured from the Atmospheric Imaging Assembly (AIA) 193\~Å images, while the photospheric signed and unsigned magnetic flux was derived from Helioseismic and Magnetic Imager (HMI) observations of the FeĨ 6173\~Å line. The unsigned magnetic flux and mean 193\~Å intensity showed a strong inverse relationship, with Pearson and Spearman correlation coefficients of $r\_p=-0.771$ and $r\_s=-0.758$, respectively. During the five-day decay phase, the unsigned magnetic flux decreased by 36.54\\% from its maximum value, while the coronal emission increased by 21.96\\%. We also compared the remote-sensing observations with near-Earth solar-wind and interplanetary magnetic-field measurements from the OMNI database using an estimated propagation delay. The results show that the coronal emission did not vary directly with the photospheric magnetic flux during the decay of AR\~12781. The possible association with the solar wind is discussed cautiously because a direct source connection cannot be established from the time-delay estimate alone.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 pages, 5 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="astro-ph.SR" />
+  </entry>
+  <entry>
+    <title>GeoSkill:Experience-Driven Hierarchical Skill Learning with Collaborative Revision forGeospatialAgents</title>
+    <link href="http://arxiv.org/abs/2609.13667v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.13667v1</id>
+    <published>2026-09-12T00:00:00Z</published>
+    <updated>2026-09-12T00:00:00Z</updated>
+    <author>
+      <name>Han Luo</name>
+    </author>
+    <author>
+      <name>Xian Xu</name>
+    </author>
+    <author>
+      <name>Yinhe Liu</name>
+    </author>
+    <author>
+      <name>Yanfei Zhong</name>
+    </author>
+    <summary type="text">Geospatial agents are increasingly expected to support recurring and evolving analytical tasks rather than execute isolated workflows. In such settings, effective agents must distill prior execution experience into reusable geospatial procedural knowledge to guide future planning and tool use. However, existing memory-augmented paradigms struggle to summarize both long-horizon tool-chain orchestration experience and tool-level invocation constraints in geospatial analysis, while directly relying on LLM self-reflection to update experience often leads to misattribution and unreliable revisions. To address these challenges, we propose GeoSkill, an experience-driven hierarchical skill learning framework for geospatial agents. GeoSkill comprises two core components: (i) a Hierarchical Skill Bank (HSB), consisting of a Planning Skill Bank and a Tool Skill Bank, which respectively distill high-level task-planning experience and tool usage constraints, enabling structured representation and cross-task reuse of historical execution experience; and (ii) a Collaborative Trace-driven Skill Revision (CTSR) mechanism, where Judge, Critic, and Refiner collaboratively perform error identification, skill-level defect localization, and targeted modification, preventing misattributed and unreliable revisions from polluting the skill bank. GeoSkill learns and validates skills from historical executions during development, and freezes the skill bank for retrieval-only guidance on unseen tasks during deployment. Extensive experiments on EarthBench and ThinkGeo demonstrate that GeoSkill effectively transforms historical execution experience into reusable hierarchical skills, improving both end-to-end task accuracy and tool-execution reliability in geospatial tasks.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Multimodal Foundation Models Adaptation based on Domain-Aware Relaxed Orthogonal Subspace for Remote Sensing</title>
+    <link href="http://arxiv.org/abs/2609.13654v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.13654v1</id>
+    <published>2026-09-12T00:00:00Z</published>
+    <updated>2026-09-12T00:00:00Z</updated>
+    <author>
+      <name>Han Luo</name>
+    </author>
+    <author>
+      <name>Ruoyu Yang</name>
+    </author>
+    <author>
+      <name>Yinhe Liu</name>
+    </author>
+    <author>
+      <name>Yanfei Zhong</name>
+    </author>
+    <summary type="text">Pretrained foundation models (FMs) have achieved remarkable success in computer vision, yet their high fine-tuning cost limits practical deployment. Parameter-efficient fine-tuning (PEFT) methods such as Low-Rank Adaptation (LoRA) improve efficiency by constraining updates to a predefined low-rank subspace. However, when applied to remote sensing tasks with substantial domain shifts, the fixed subspace is constructed without observing the downstream activation distribution and can therefore provide a poor coordinate system for adaptation, a phenomenon herein termed subspace mismatch. To address this issue, a unified framework is introduced, termed Domain-aware Relaxed Orthogonal Subspace adaptation (DROS), which reformulates low-rank adaptation as data-conditioned subspace learning and flexible subspace adaptation. Specifically, the weight decomposition is conditioned on second-order activation statistics estimated from the downstream training distribution, so that the initialization reflects the feature geometry actually induced by the remote-sensing data, followed by flexible geometric transformations enabled by a relaxed orthogonal parameterization. Furthermore, the framework is extended to multimodal settings (MM-DROS) by sharing transformation structures across modality-specific subspaces, facilitating efficient cross-modal interaction. Extensive experiments on multiple remote sensing benchmarks demonstrate that DROS achieves state-of-the-art performance, even surpassing full fine-tuning, without additional inference overhead.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Spectro-polarimetry of HAbitable Planet Earth (SHAPE) on Chandrayaan-3: Instrument characteristics, calibration and onboard performance</title>
     <link href="http://arxiv.org/abs/2609.13107v1" rel="alternate" type="text/html" />
@@ -165,6 +345,67 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence; cs.CL" />
+  </entry>
+  <entry>
+    <title>A Machine Learning API for Earth Observation Data Cubes Based on openEO</title>
+    <link href="http://arxiv.org/abs/2609.13453v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.13453v1</id>
+    <published>2026-09-11T00:00:00Z</published>
+    <updated>2026-09-11T00:00:00Z</updated>
+    <author>
+      <name>Brian Pondi</name>
+    </author>
+    <author>
+      <name>Jonas Hurst</name>
+    </author>
+    <author>
+      <name>Rolf Simoes</name>
+    </author>
+    <author>
+      <name>Jonas Starke</name>
+    </author>
+    <author>
+      <name>Marius Appel</name>
+    </author>
+    <author>
+      <name>Edzer Pebesma</name>
+    </author>
+    <summary type="text">Earth Observation (EO) data are increasingly organized as spatio-temporal data cubes, while machine learning (ML) methods operate on tabular feature matrices or structured tensor inputs. This mismatch forces platform-specific transformations that are difficult to reproduce or transfer across cloud infrastructures. The openEO specification provides a unified interface for EO data access and processing across heterogeneous backends, but lacks a standardized approach for ML integration.   We propose a process-level ML specification for openEO structured into three stages: model initialization, model actions (training, tuning, inference, validation), and model management. It supports classical algorithms such as Random Forest and SVM, as well as deep learning architectures for time-series and spatial patch-based modeling, including TempCNN, Temporal Attention Encoders, and foundation model inference. Three prototype implementations in R and Python demonstrate feasibility across diverse technology stacks. A crop type mapping use case demonstrates cross-backend interoperability by submitting an identical process graph to independent R and Python backends and comparing predictions and evaluation metrics.   Two further use cases demonstrate deep learning on time series and foundation model inference, each executed on a dedicated backend. The prototypes reveal, however, that full cross-backend portability requires deeper harmonization of serialization formats and execution semantics than the process level alone can enforce; backend library versions and preprocessing conventions outside the specification's boundary also affect reproducibility. Addressing both through explicit backend conformance profiles represents the most important near-term direction. The specification advances the reproducibility, portability, and accessibility of ML workflows on EO data cubes across cloud platforms.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 25 pages, 12 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Global-Local Contextual Progressive Expansion Network for Martian Landslide Segmentation in Multimodal Remote Sensing Imagery</title>
+    <link href="http://arxiv.org/abs/2609.13332v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.13332v1</id>
+    <published>2026-09-11T00:00:00Z</published>
+    <updated>2026-09-11T00:00:00Z</updated>
+    <author>
+      <name>Leo Thomas Ramos</name>
+    </author>
+    <author>
+      <name>Sidike Paheding</name>
+    </author>
+    <author>
+      <name>Abel A. Reyes-Angulo</name>
+    </author>
+    <author>
+      <name>Rajaneesh A.</name>
+    </author>
+    <author>
+      <name>Sajinkumar K. S.</name>
+    </author>
+    <author>
+      <name>Angel D. Sappa</name>
+    </author>
+    <author>
+      <name>Thomas Oommen</name>
+    </author>
+    <summary type="text">Automated landslide segmentation on Mars is one of the important tasks for understanding its surface processes, and all will aid in future space exploration. However, it remains a relatively underexplored open challenge because landslide morphology is highly variable, foreground regions are often sparse or irregular, and orbital observations combine heterogeneous spectral and topographic cues. In this context, this work investigates the capability of deep learning to address Martian landslide segmentation through an extensive assessment of modern neural segmentation models. To the best of our knowledge, this is the first study to provide such a comprehensive exploration in this domain. We further propose TransCPLES, a U-shaped network that couples Contextual Progressive Layer Expansion feature extraction with Transformer-based contextual reasoning, enabling the model to capture local geomorphic patterns and broader spatial dependencies for more reliable landslide delineation. Experiments on MMLSv2, a seven-band multimodal Martian landslide dataset, show that TransCPLES achieves the best overall performance when evaluated on geographically distinct samples, with consistent delineation across different landslide extents, stable foreground discrimination, and a favorable balance between accuracy and computational cost compared with several state-of-the-art convolutional, attention-based, and Transformer-based segmentation models. With this work, we hope to provide a useful reference and encourage further research and development in deep learning for planetary remote sensing. Code will be available after publication.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 21 pages, 12 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
   </entry>
   <entry>
     <title>Lava Tube Exploration with LunarLeaper</title>
@@ -440,205 +681,6 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
     <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Remotely Detectable Keyed Communication through Motion</title>
-    <link href="http://arxiv.org/abs/2609.08920v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.08920v1</id>
-    <published>2026-09-08T00:00:00Z</published>
-    <updated>2026-09-08T00:00:00Z</updated>
-    <author>
-      <name>Benjamin Chang</name>
-    </author>
-    <author>
-      <name>Michael Amir</name>
-    </author>
-    <author>
-      <name>Manon Flageat</name>
-    </author>
-    <author>
-      <name>Amanda Prorok</name>
-    </author>
-    <summary type="text">Messages from electronic devices are conventionally received as text, audio, or radio signals. But robots move with rich, articulate motion in the real world, opening up the possibility of transmitting messages through motion itself. In this paper, we consider the problem of motion-based communication, where we seek to modify a robot's movements so as to transmit messages detectable from remote sensing (e.g., video or motion capture), without degrading policy performance. We introduce a method for messaging through motion capable of encoding arbitrary message content over short payloads - such as an agent's current intent - as noise in any pre-trained policy's actions. This brings a new kind of robustness to robot communication: this 'physical' channel complements standard wireless communications channels but does not depend on them, requiring no extra hardware nor the establishment of a direct link to the robot. We systematically characterize the space of encoding schemes and derive design heuristics, then validate them across simulated environments and real-robot deployment; on real robots running at 50 Hz, four robots jointly recover an 8-bit message at an aggregate 0.67 bits/s.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 22 pages, 7 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Robotics" />
-  </entry>
-  <entry>
-    <title>CoSA: Correlation-Guided Change A ttention with Learnable Residual Gating for Remote Sensing Change Detection</title>
-    <link href="http://arxiv.org/abs/2609.08914v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.08914v1</id>
-    <published>2026-09-08T00:00:00Z</published>
-    <updated>2026-09-08T00:00:00Z</updated>
-    <author>
-      <name>Abdirashid Omar</name>
-    </author>
-    <author>
-      <name>Jonghyuk Park</name>
-    </author>
-    <summary type="text">Pixel-level annotation of fixed traffic-camera imagery is expensive, while crosswalk models trained from street-level imagery face a substantial viewpoint and appearance shift when applied to elevated CCTV. We investigate a data-efficient target-domain pipeline using 241 manually annotated CCTV images and 5,926 unlabeled CCTV frames. A source-domain experiment trains a 31.0M-parameter custom U-Net on 3,300 first-person-view (FPV) images and obtains 93.05% IoU on its 330-image FPV test split. This result is a source baseline, not transferred performance: the released CCTV notebook instantiates a 42.0M-parameter DeepLabV3-ResNet50 from torchvision weights, and no compatible mapping from the U-Net checkpoint is implemented. Training on 201 manual CCTV images and selecting on 40 held-out manual masks yields 88.91% IoU. The model then predicts all unlabeled frames; image-level certainty and a largest-component area prior rank the candidates, and the top 1,000 attain mean certainty 0.976 and mean combined score 0.988. A repository audit shows that the reported second-stage 98.52% IoU was measured on a 150-image split containing only teacher-generated pseudo-masks. Because of a directory-layout mismatch, the executed combined-data loader found zero manual samples and split 1,000 pseudo-labeled samples into 850 training and 150 evaluation samples. We therefore report 98.52% as internal pseudo-label agreement rather than human-ground-truth accuracy. The defensible target-domain result is 88.91% IoU on the 40 manual validation images. Batch-one FP32 inference at 512 x 512 requires 12.98 ms, corresponding to 77.03 FPS, on an NVIDIA RTX A6000 48 GB GPU. These findings support the practicality of confidence-and-geometry filtering while also showing why pseudo-label evaluation must remain isolated from the labels used for self-training.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>TriCCOT: Tri-part Convolutional Conformal Transformer for Onboard Space Object Detection</title>
-    <link href="http://arxiv.org/abs/2609.08659v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.08659v1</id>
-    <published>2026-09-08T00:00:00Z</published>
-    <updated>2026-09-08T00:00:00Z</updated>
-    <author>
-      <name>Adrien Dorise</name>
-    </author>
-    <author>
-      <name>Marjorie Bellizzi</name>
-    </author>
-    <author>
-      <name>Julia Cohen</name>
-    </author>
-    <author>
-      <name>Stéphane May</name>
-    </author>
-    <summary type="text">Onboard object detection in Earth observation is constrained by limited computational resources and the absence of fully corrected imagery. While convolutional detectors are hardware-efficient, they often struggle to extract robust representations from raw and noisy data. Conversely, transformer-based models provide stronger global reasoning capabilities but remain difficult to deploy on FPGA accelerators due to quadratic attention complexity and non-compatible operations.   We introduce TriCCOT, a tri-part architecture for robust and deployable onboard object detection. TriCCOT combines a convolutional region proposal network, a conformal prediction stage, and Aper-GATES, our hardware-friendly attention-based classifier. The region proposal network generates candidate bounding boxes, which are subsequently enlarged via conformal prediction, providing a distribution-free probabilistic coverage guarantee. The resulting crops are processed by Aper-GATES, which reformulates self-attention through convolutional projections, global channel statistics, and hardware-friendly gating operations, avoiding standard transformer operations that are poorly suited to CNN-oriented accelerators.   Experiments on the DIOR and VDVRaw datasets demonstrate competitive detection performance and improved robustness to spatial blur and signal-dependent noise when compared to FPGA-compatible architectures. Finally, we report full deployment on a Xilinx Versal VCK190 FPGA without modifying the underlying DPU architecture, enabling unified CNN-Transformer inference for spaceborne embedded applications.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; BMVC2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>From Coordinates to Candidate Regions: Temporal Change Localization via Region Selection in Remote Sensing Multimodal LLMs</title>
-    <link href="http://arxiv.org/abs/2609.08391v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.08391v1</id>
-    <published>2026-09-08T00:00:00Z</published>
-    <updated>2026-09-08T00:00:00Z</updated>
-    <author>
-      <name>Juwan Chung</name>
-    </author>
-    <author>
-      <name>Sungjune Park</name>
-    </author>
-    <author>
-      <name>Yeongyun Kim</name>
-    </author>
-    <author>
-      <name>Yong Man Ro</name>
-    </author>
-    <summary type="text">Remote sensing multimodal large language models (RS-MLLMs) have advanced scene understanding and visual question answering over satellite imagery, yet localizing specific objects or changed regions remains challenging. Existing approaches rely on generating bounding box coordinates as token sequences, which is fragile for the small, densely packed objects common in remote sensing and increasingly error-prone when multiple targets must be localized simultaneously. In this work, we present an RS-specific formulation of the region selection paradigm, previously explored in natural-image MLLMs, and extend it to temporal change localization over multi-image sequences. Our framework employs a text-conditioned region proposal module, encodes each candidate as special tokens carrying per-frame visual features enriched with spatial and temporal cues, and lets the LLM localize targets by selecting region tokens in its response. We construct a multi-task training and evaluation suite spanning localization, referring expression, visual grounding, and understanding tasks across single-image and multi-temporal settings. Experiments show that our approach substantially outperforms coordinate-generation baselines on temporal change localization, while improving single-image visual grounding and maintaining competitive understanding performance. Oracle analysis decomposes the contributions of the region proposer and the LLM selector, providing diagnostic insight unique to this framework. Our code will be available at https://github.com/juwan-kr/RS-RegionSelect.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/juwan-kr/RS-RegionSelect"&gt;https://github.com/juwan-kr/RS-RegionSelect&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to Findings of EMNLP 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="cs.CL" />
-  </entry>
-  <entry>
-    <title>Infra-Bench CLS: A Global, Open-Source Benchmark for Critical Infrastructure Classification with Earth Observation Foundation Models</title>
-    <link href="http://arxiv.org/abs/2609.09482v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.09482v1</id>
-    <published>2026-09-08T00:00:00Z</published>
-    <updated>2026-09-08T00:00:00Z</updated>
-    <author>
-      <name>Justin Guthrie</name>
-    </author>
-    <author>
-      <name>Edward Oughton</name>
-    </author>
-    <author>
-      <name>Konrad Wessels</name>
-    </author>
-    <author>
-      <name>Matthew Rice</name>
-    </author>
-    <author>
-      <name>Isaac Corley</name>
-    </author>
-    <summary type="text">Critical infrastructure location data is often incomplete and unevenly distributed globally, especially in developing regions. Earth observation foundation models are proposed as a new step in enabling us to more efficiently understand the natural and built environment, raising questions as to their effectiveness in performing challenging downstream tasks. Yet, foundation models remain largely untested for detecting and classifying the facility-scale critical infrastructure that underpins a range of important societal and economic functions. Subsequently, Infra-Bench CLS is introduced as a benchmark to test foundation models on 18,756 Sentinel-1 SAR and Sentinel-2 multispectral facility-scale critical infrastructure asset images covering seven continents and 13 infrastructure classes, with results reported for the 10 retained classes. Using linear probing and fine-tuning for two training dataset levels (1.0x and 0.3x), seven foundation models are evaluated (SatlasPretrain S2, SatlasPretrain S1, CROMA, Prithvi-EO-2.0, AlphaEarth Foundations, OlmoEarth v1.1-Base, and DINOv3 ViT-L/16). When comparing macro F1 scores to a ResNet-18 supervised baseline of 39.2 percent, the best foundation model achieved 57.9 percent, a 48 percent improvement. Top performing classes were airports (F1 85.3 percent), train stations (F1 82.1 percent), and data centers (F1 77.6 percent). By contrast, many of the power sector classes perform poorly (F1 27.5-46.2 percent). These findings suggest foundation models can enable superior critical infrastructure classification, but future work should evaluate performance on higher-resolution imagery, particularly for poorly performing sectors, such as power.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 figures. Supporting information with 10 figures and 13 tables. Submitted to Big Earth Data&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Applying foundation model embeddings towards urban livability evaluation</title>
-    <link href="http://arxiv.org/abs/2609.09429v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.09429v1</id>
-    <published>2026-09-08T00:00:00Z</published>
-    <updated>2026-09-08T00:00:00Z</updated>
-    <author>
-      <name>Ayush Khot</name>
-    </author>
-    <author>
-      <name>Wen Zhou</name>
-    </author>
-    <author>
-      <name>Shaowen Wang</name>
-    </author>
-    <summary type="text">While accurate measurement of socioeconomic indicators remains challenging in data-scarce regions, which limits policy interventions and resource allocation, high-resolution geospatial data is widely available and can contain information on various livability statistics. We investigate which physical features are encoded within foundation model embeddings, such as AlphaEarth, AnySat, and TerraMind, and provide a systematic framework for identifying the most predictive geospatial indicators. By analyzing how different types of geospatial data influence urban livability predictions, our approach enables researchers to prioritize the most informative features for their specific applications. Additionally, we demonstrate how to leverage foundation model embeddings to enhance prediction performance for these outcomes. This work contributes a principled methodology for extracting actionable information from satellite imagery while accounting for complex spatial dependencies, with applications in predicting urban livability in regions with limited observation data.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 11 pages, 5 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-    <category term="cs.CY" />
-  </entry>
-  <entry>
-    <title>Experimental Validation of Combined Imaging and Vibration Mitigation for High-Altitude Platforms</title>
-    <link href="http://arxiv.org/abs/2609.09376v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.09376v1</id>
-    <published>2026-09-08T00:00:00Z</published>
-    <updated>2026-09-08T00:00:00Z</updated>
-    <author>
-      <name>Ákos Radványi</name>
-    </author>
-    <author>
-      <name>Anita Keszler</name>
-    </author>
-    <author>
-      <name>Dániel Balogh</name>
-    </author>
-    <author>
-      <name>Béla Takarics</name>
-    </author>
-    <author>
-      <name>András Majdik</name>
-    </author>
-    <author>
-      <name>Andrej Tokarjev</name>
-    </author>
-    <author>
-      <name>Gábor Kovács</name>
-    </author>
-    <author>
-      <name>Tamás Szirányi</name>
-    </author>
-    <author>
-      <name>Bálint Vanek</name>
-    </author>
-    <summary type="text">The demand for continuous, high-resolution aerial monitoring is driving interest in High- Altitude Pseudo-Satellites (HAPS), which offer a cost-effective alternative to satellites with greater flexibility. While HAPS platforms provide valuable Earth observation potential, se- lecting an optical sensor requires balancing resolution and payload constraints, given their lightweight structures. We propose a multidisciplinary concept to enhance the Earth obser- vation capabilities of HAPS using a commercially available, weight-efficient distributed camera network, combined with advanced image processing and active vibration control. A super- resolution pipeline is introduced, where images from individual cameras are preprocessed and fed into a super-resolution algorithm. The low structural rigidity of HAPS platforms increases their sensitivity to low-frequency vibrations, which must be mitigated through active control to preserve imaging performance. A nominal H-infinity mixed-sensitivity controller is designed to suppress resonance peaks at camera locations. The methodology is experimentally validated on a simplified wing platform designed for real-time testing. Quantitative evaluation based on nine metrics demonstrates significant image quality improvements, highlighting the effectiveness of H-infinity control in mitigating low-frequency elastic modes and stabilizing the platform for super- resolution. These results show that lightweight commercial sensors, combined with advanced image processing and control, can deliver high-quality imaging for future HAPS remote sensing missions.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the journal&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
-    <category term="eess.SY" />
-  </entry>
-  <entry>
-    <title>An Autonomous GeoAI Agent for Arctic Eco-Navigation</title>
-    <link href="http://arxiv.org/abs/2609.09374v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.09374v1</id>
-    <published>2026-09-08T00:00:00Z</published>
-    <updated>2026-09-08T00:00:00Z</updated>
-    <author>
-      <name>Samira Alkaee Taleghan</name>
-    </author>
-    <author>
-      <name>Younghyun Koo</name>
-    </author>
-    <author>
-      <name>Farnoush Banaei-Kashani</name>
-    </author>
-    <summary type="text">Arctic maritime navigation is becoming increasingly important as changing sea-ice conditions expand seasonal accessibility while simultaneously introducing substantial operational, environmental, and community risks. Arctic route planning is inherently a multi-criteria problem: routes that improve vessel safety or efficiency may increase exposure to sea ice, sensitive ecosystems, or nearby communities. Existing routing methods prioritize travel time, fuel use, and navigational risk, often overlooking ecological and community impacts. We introduce a human-in-the-loop, multi-agent GeoAI system for Arctic eco-navigation that integrates operational, physical, ecological, and community-related criteria within a unified routing framework. Multiple specialized agents coordinate geospatial data acquisition and preparation, multi-objective route generation, and skyline-based decision support. The ecological criteria explicitly account for exposure to sensitive areas, including Essential Fish Habitat and seal critical habitat. By considering these ecosystem impacts and potential community burdens while keeping consequential value judgments under human control, the framework supports safer, more transparent, and socially responsible Arctic navigation. Project page and code are publicly available. https://samiraat.github.io/Arctic-Eco-Navigation-Agent/, https://github.com/samiraat/Arctic-Eco-Navigation-Agent</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/samiraat/Arctic-Eco-Navigation-Agent"&gt;https://github.com/samiraat/Arctic-Eco-Navigation-Agent&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Artificial Intelligence" />
   </entry>
 </feed>

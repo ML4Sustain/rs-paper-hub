@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_sar.xml</id>
   <link href="https://rspaper.top/output/feed_sar.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-14T05:51:09Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
+  <updated>2026-09-15T02:18:01Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 1 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -58,33 +58,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="astro-ph.EP" />
     <category term="Geophysics" />
-  </entry>
-  <entry>
-    <title>Infra-Bench CLS: A Global, Open-Source Benchmark for Critical Infrastructure Classification with Earth Observation Foundation Models</title>
-    <link href="http://arxiv.org/abs/2609.09482v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.09482v1</id>
-    <published>2026-09-08T00:00:00Z</published>
-    <updated>2026-09-08T00:00:00Z</updated>
-    <author>
-      <name>Justin Guthrie</name>
-    </author>
-    <author>
-      <name>Edward Oughton</name>
-    </author>
-    <author>
-      <name>Konrad Wessels</name>
-    </author>
-    <author>
-      <name>Matthew Rice</name>
-    </author>
-    <author>
-      <name>Isaac Corley</name>
-    </author>
-    <summary type="text">Critical infrastructure location data is often incomplete and unevenly distributed globally, especially in developing regions. Earth observation foundation models are proposed as a new step in enabling us to more efficiently understand the natural and built environment, raising questions as to their effectiveness in performing challenging downstream tasks. Yet, foundation models remain largely untested for detecting and classifying the facility-scale critical infrastructure that underpins a range of important societal and economic functions. Subsequently, Infra-Bench CLS is introduced as a benchmark to test foundation models on 18,756 Sentinel-1 SAR and Sentinel-2 multispectral facility-scale critical infrastructure asset images covering seven continents and 13 infrastructure classes, with results reported for the 10 retained classes. Using linear probing and fine-tuning for two training dataset levels (1.0x and 0.3x), seven foundation models are evaluated (SatlasPretrain S2, SatlasPretrain S1, CROMA, Prithvi-EO-2.0, AlphaEarth Foundations, OlmoEarth v1.1-Base, and DINOv3 ViT-L/16). When comparing macro F1 scores to a ResNet-18 supervised baseline of 39.2 percent, the best foundation model achieved 57.9 percent, a 48 percent improvement. Top performing classes were airports (F1 85.3 percent), train stations (F1 82.1 percent), and data centers (F1 77.6 percent). By contrast, many of the power sector classes perform poorly (F1 27.5-46.2 percent). These findings suggest foundation models can enable superior critical infrastructure classification, but future work should evaluate performance on higher-resolution imagery, particularly for poorly performing sectors, such as power.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 figures. Supporting information with 10 figures and 13 tables. Submitted to Big Earth Data&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
   </entry>
 </feed>
