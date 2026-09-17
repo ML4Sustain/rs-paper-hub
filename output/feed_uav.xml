@@ -4,12 +4,45 @@
   <id>https://rspaper.top/output/feed_uav.xml</id>
   <link href="https://rspaper.top/output/feed_uav.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-16T05:33:57Z</updated>
+  <updated>2026-09-17T02:00:31Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Understanding Dynamic Scenes at Gigapixel Scale: Wide-Area Spatio-Temporal Perception from UAVs</title>
+    <link href="http://arxiv.org/abs/2609.18210v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.18210v1</id>
+    <published>2026-09-16T00:00:00Z</published>
+    <updated>2026-09-16T00:00:00Z</updated>
+    <author>
+      <name>Yuhang Zhu</name>
+    </author>
+    <author>
+      <name>Meiyi Zhu</name>
+    </author>
+    <author>
+      <name>Yunkai Dang</name>
+    </author>
+    <author>
+      <name>Zhangnan Li</name>
+    </author>
+    <author>
+      <name>Yuxuan Wang</name>
+    </author>
+    <author>
+      <name>Wenbin Li</name>
+    </author>
+    <author>
+      <name>Hongbing Pan</name>
+    </author>
+    <summary type="text">UAV-borne imaging has advanced from megapixel to gigapixel sensors, shifting aerial perception from recognizing individual targets to understanding entire dynamic scenes. We characterize this demand as Wide-area Spatio-temporal Scene Understanding (WSTU), which requires wide-area coverage, per-target resolution, and temporal continuity at once, a combination existing datasets lack. To fill this gap, we introduce an ultra-High-resolution (12768x9564) Airborne Remote-sensing Dataset (HARD) annotated at three levels for object detection, multi-object tracking, and scene-level visual question answering. Ultra-high-resolution imagery raises per-frame processing time to seconds. At that scale latency can no longer be ignored in evaluation. Thus, we propose a latency-aware metric for multi-object tracking called streaming-HOTA (s-HOTA). Extensive baseline experiments show how ultra-high-resolution processing reshapes each task. For detection, the end-to-end pipeline affects accuracy and speed as much as the detector itself does. For tracking, high latency charges the association axis far more unevenly than the detection axis, and association is where pipelines diverge. As a result, the pipeline that performs best offline can lose its lead under s-HOTA. For VQA, vision-language models remain weak at cross-frame identity binding and cannot transfer their single-frame gains to it. Together these findings show that the baselines we evaluate fall short of WSTU. HARD provides the data and the systematic baselines to advance it.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 pages, 5 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;OD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Learning to Optimize UAV Path Planning for Data Sensing in Wireless Sensor Networks</title>
     <link href="http://arxiv.org/abs/2609.16629v1" rel="alternate" type="text/html" />
@@ -41,35 +74,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Robotics" />
     <category term="Neural and Evolutionary Computing" />
-  </entry>
-  <entry>
-    <title>When Ground-Truth Fidelity Matters: An Orchestrated UAS Framework for Wheat Streak Mosaic Virus Detection Using Vision Transformers and Machine Learning</title>
-    <link href="http://arxiv.org/abs/2609.12169v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.12169v1</id>
-    <published>2026-09-10T00:00:00Z</published>
-    <updated>2026-09-10T00:00:00Z</updated>
-    <author>
-      <name>Dewi Endah Kharismawati</name>
-    </author>
-    <author>
-      <name>Sandeep Dhakal</name>
-    </author>
-    <author>
-      <name>Courtney E. McCusker</name>
-    </author>
-    <author>
-      <name>Jennifer R. Wilson</name>
-    </author>
-    <author>
-      <name>Erik W. Ohlson</name>
-    </author>
-    <author>
-      <name>Sami Khanal</name>
-    </author>
-    <summary type="text">Wheat streak mosaic virus (WSMV) is a destructive pathogen of sweet corn and other cereal crops, causing yield losses and complicating early detection because symptoms are spatially variable and subtle. In sweet corn seed production, WSMV also has regulatory importance, as phytosanitary regulations from countries such as New Zealand and Chile require seed lots to be certified virus-free. Visual scouting is unreliable because symptoms can resemble abiotic stress, while enzyme-linked immunosorbent assay (ELISA) is accurate but expensive, labor-intensive, and difficult to scale. We present an automated pipeline for plant-level WSMV detection using unmanned aircraft systems (UAS) multispectral imagery. The framework integrates orthomosaic reconstruction, geospatial alignment, plant extraction, and classification using a Vision Transformer with seven-channel inputs (five spectral bands, NDVI, and NDRE). Using treatment-based labels, the model achieved 89% accuracy on over 6,500 test patches across multiple growth stages. However, ELISA-based ground truth revealed substantial label noise: only a small fraction of sampled plants in inoculated plots were infected. Treatment labels therefore did not reliably represent infection status, and the high accuracy was largely driven by label bias rather than disease detection. Performance decreased markedly against row-level symptom severity and plant-level ELISA labels. Under these higher-fidelity but smaller-sample conditions, both deep learning and classical machine learning showed limited generalization and weak separability between ELISA-confirmed mock-inoculated and infected plants. These results show that UAS-based disease detection is constrained by label fidelity and data availability, emphasizing biologically grounded labels and models aligned with real-world conditions.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 29 pages, 9 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>

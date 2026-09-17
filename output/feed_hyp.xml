@@ -4,12 +4,34 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-16T05:33:57Z</updated>
+  <updated>2026-09-17T02:00:31Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>How Much Hyperspectral Information Does Chlorophyll Retrieval Really Need?</title>
+    <link href="http://arxiv.org/abs/2609.18531v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.18531v1</id>
+    <published>2026-09-16T00:00:00Z</published>
+    <updated>2026-09-16T00:00:00Z</updated>
+    <author>
+      <name>Abed Hammoud</name>
+    </author>
+    <author>
+      <name>Xuerong Sun</name>
+    </author>
+    <author>
+      <name>Bianca Champenois</name>
+    </author>
+    <author>
+      <name>Robert J. W. Brewin</name>
+    </author>
+    <summary type="text">Satellite ocean color algorithms translate water-leaving radiance into ecological information at spatial and temporal scales that cannot be achieved by field sampling alone. One important variable derived from water-leaving radiance is chlorophyll-a concentration ($\mathrm{CHL\text{-}a}$), a widely used indicator of phytoplankton biomass and physiology. Empirical retrieval algorithms are commonly used for $\mathrm{CHL\text{-}a}$ estimation, but their performance can vary across sensors and optically diverse waters. The Plankton, Aerosol, Cloud, ocean Ecosystem (PACE) mission provides unprecedented spectral resolution, expanding the visible spectral information available for ocean color retrievals and raising a practical algorithm design question: how can this fine resolution spectrum be used to derive the next generation of interpretable $\mathrm{CHL\text{-}a}$ retrieval algorithms? We use symbolic regression to identify sparse equations that estimate $\log_{10}(\mathrm{CHL\text{-}a})$ from multi- and hyperspectral remote sensing reflectances. The analysis first tests the standard multispectral ocean color algorithm (OC3--OC6) inputs to ask whether symbolic regression recovers standard band ratio structure, then extends the search to hyperspectral PACE-like reflectances. The best expression discovered achieved a held out root mean square deviation of 0.253 in log$_{10}$ $\mathrm{CHL\text{-}a}$, compared with 0.307 for a fitted OC6 polynomial on the same split. Ablations showed that the predictive skill of hyperspectral models is almost 12\% better than the best standard ocean color retrieval models in root mean squared deviation against held out data. When evaluated by environmental regime, differences were larger for high-chlorophyll samples, which often represent turbid water conditions.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Atmospheric and Oceanic Physics" />
+  </entry>
   <entry>
     <title>Multisource Remote Sensing and Geospatial Analysis of Vineyard Wildfire Impacts and Resilience: The 2019 Kincade Fire</title>
     <link href="http://arxiv.org/abs/2609.16168v1" rel="alternate" type="text/html" />
@@ -70,36 +92,6 @@
     <summary type="text">Timely monitoring of coastal water quality is critical for environmental protection, yet conventional satellite workflows rely on downlink and ground processing, introducing latency that can limit responsiveness to rapidly evolving turbidity events. To address this limitation, we propose AquaCubeAI, a lightweight machine-learning approach for onboard estimation of coastal water turbidity from Φsat-2 multispectral imagery. By shifting inference from the ground segment to the satellite, AquaCubeAI aims to enable lower-latency, more responsive, and more operationally useful turbidity monitoring under the strict compute and bandwidth constraints of spaceborne platforms. The model is trained on simulated Φsat-2 acquisitions spatially aligned with Copernicus Marine Service (CMEMS) High-Resolution Ocean Color (HR-OC) turbidity products over selected localized coastal sites spanning four European marine macro-regions. To provide a realistic evaluation of generalization in the presence of spatial correlation, we adopt a spatial block splitting protocol that mitigates data leakage between training and evaluation subsets. The main contributions of this work are: (i) a scalable dataset generation pipeline pairing simulated Φsat-2 multispectral patches with CMEMS HR-OC turbidity labels across selected localized European coastal sites; (ii) a compact Multi-Layer Perceptron (MLP)-based turbidity regressor trained under a leakage-aware geospatial split and tailored to embedded constraints; and (iii) a reformulation for dense spatial prediction via parameter sharing, enabling turbidity mapping and simple threshold-based anomaly masks for onboard decision logic. Embedded deployment on an Intel Myriad Vision Processing Unit (VPU) further confirms the feasibility of low-power hardware and supports low-latency inference from multispectral inputs.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 16 pages, the paper is under review on IEEE JSTARS&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>When Ground-Truth Fidelity Matters: An Orchestrated UAS Framework for Wheat Streak Mosaic Virus Detection Using Vision Transformers and Machine Learning</title>
-    <link href="http://arxiv.org/abs/2609.12169v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.12169v1</id>
-    <published>2026-09-10T00:00:00Z</published>
-    <updated>2026-09-10T00:00:00Z</updated>
-    <author>
-      <name>Dewi Endah Kharismawati</name>
-    </author>
-    <author>
-      <name>Sandeep Dhakal</name>
-    </author>
-    <author>
-      <name>Courtney E. McCusker</name>
-    </author>
-    <author>
-      <name>Jennifer R. Wilson</name>
-    </author>
-    <author>
-      <name>Erik W. Ohlson</name>
-    </author>
-    <author>
-      <name>Sami Khanal</name>
-    </author>
-    <summary type="text">Wheat streak mosaic virus (WSMV) is a destructive pathogen of sweet corn and other cereal crops, causing yield losses and complicating early detection because symptoms are spatially variable and subtle. In sweet corn seed production, WSMV also has regulatory importance, as phytosanitary regulations from countries such as New Zealand and Chile require seed lots to be certified virus-free. Visual scouting is unreliable because symptoms can resemble abiotic stress, while enzyme-linked immunosorbent assay (ELISA) is accurate but expensive, labor-intensive, and difficult to scale. We present an automated pipeline for plant-level WSMV detection using unmanned aircraft systems (UAS) multispectral imagery. The framework integrates orthomosaic reconstruction, geospatial alignment, plant extraction, and classification using a Vision Transformer with seven-channel inputs (five spectral bands, NDVI, and NDRE). Using treatment-based labels, the model achieved 89% accuracy on over 6,500 test patches across multiple growth stages. However, ELISA-based ground truth revealed substantial label noise: only a small fraction of sampled plants in inoculated plots were infected. Treatment labels therefore did not reliably represent infection status, and the high accuracy was largely driven by label bias rather than disease detection. Performance decreased markedly against row-level symptom severity and plant-level ELISA labels. Under these higher-fidelity but smaller-sample conditions, both deep learning and classical machine learning showed limited generalization and weak separability between ELISA-confirmed mock-inoculated and infected plants. These results show that UAS-based disease detection is constrained by label fidelity and data availability, emphasizing biologically grounded labels and models aligned with real-world conditions.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 29 pages, 9 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>

@@ -7997,5 +7997,24 @@
     "_added_date": "2026-09-11",
     "Category": "Method",
     "_tasks": "CLS"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-09-16",
+    "Month": 9,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "PDA++: Field-Aligned Planning and Scene-Adaptive Insertion in Remote Sensing",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2609.18329v1",
+    "Abstract": "Remote sensing recognition is often constrained by scarce observations of rare targets and costly annotations, making realistic synthetic augmentation particularly valuable for few-shot and long-tailed scenarios. Object insertion provides an efficient way to increase target diversity while preserving authentic background scenes, but realistic insertion in overhead imagery requires the generated target to adapt coherently to its surrounding environment. To this end, we propose PDA++, a unified environment-aware object insertion framework organized as Plan, Decouple, and Assimilate. Planning determines scene-compatible poses through an affordance field that combines geometric clearance with structure- and scale-aware cues. Decoupling introduces a pose-conditioned background that provides precise spatial guidance together with target-scene context, allowing the reference object to preserve its identity while adapting to the target observation. This construction also naturally provides pixel-level masks for segmentation augmentation. Assimilation further improves local coherence by aligning multi-scale texture distributions through optimal transport. On the optical benchmark, PDA++ achieves a whole-image FID of 6.28 and improves average few-shot recognition mAP50 by 17.69 points, corresponding to a 28.8% relative gain over the real-data baseline. On SAR imagery, it improves ship detection by 4.10 mAP50 points and remains effective under cross-dataset transfer and amorphous-target insertion. Code is available at https://github.com/lisheyu972/PDA_PLUS.",
+    "code": "https://github.com/lisheyu972/PDA_PLUS",
+    "Publication": "ICML 2026",
+    "BibTex": "@article{dong2026pda,\n  title={PDA++: Field-Aligned Planning and Scene-Adaptive Insertion in Remote Sensing},\n  author={Xianchi Dong and Yingyan Hou and Chao Ren and Wanxuan Lu and Zihan Wei and Hongfeng Yu and Yixiao Wang and Chubo Deng and Xian Sun},\n  journal={arXiv preprint arXiv:2609.18329v1},\n  year={2026},\n  url={http://arxiv.org/abs/2609.18329v1}\n}",
+    "Authors": "Xianchi Dong, Yingyan Hou, Chao Ren, Wanxuan Lu, Zihan Wei, Hongfeng Yu, Yixiao Wang, Chubo Deng, Xian Sun",
+    "_added_date": "2026-09-17",
+    "Category": "Method",
+    "_tasks": "OD"
   }
 ]
