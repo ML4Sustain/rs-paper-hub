@@ -27358,5 +27358,43 @@
     "_added_date": "2026-09-18",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-09-17",
+    "Month": 9,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Earth Surface Immune System for Rapid Monitoring of Unknown Anomalies",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2609.20662v1",
+    "Abstract": "Earth surface anomalies, driven by escalating climate change, and expanding human activities, are increasing in both frequency and diversity, yet their limited historical data and unpredictability make them fundamentally different from conventional remote sensing targets. Existing methods address specific anomaly categories or stop at localization, leaving a gap between detection and actionable information. Here we present ESIA, an Earth Surface Immune System whose architecture is constrained by three principles from the biological immune system, refined over millions of years against equally diverse and uncertain threats. A non-specific innate immune stage treats anomalies as unobserved changes in time-series satellite imagery, generating binary localization maps at 14.51 km2/s without assuming any anomaly category, surpassing the strongest general baseline by 37% in F1. A specific adaptive immune stage applies negative selection to filter text prompts and matches surviving prompts with localized image patches through a multi-modal foundation model, enabling open-vocabulary recognition of unknown anomaly attributes including category, affected area, and damage severity, with recognition F1 exceeding 80%. A mutation mechanism tunes minimal embeddings at test time, adapting to each scene in 3.26s using a single reference image pair. We validate ESIA on a global-scale dataset covering 19,801.60 km2 across six anomaly categories, comparing against 22 models, and further apply it to quantify degraded farmland in the Dnipro Delta following the Kakhovka Dam collapse and assess burn severity from 2025 Palisades Fire in Los Angeles. This unprecedented flexibility in handling unknown anomalies opens new avenues for real-time disaster response and environmental surveillance.",
+    "code": "",
+    "Publication": "51 pages",
+    "BibTex": "@article{li2026earth,\n  title={Earth Surface Immune System for Rapid Monitoring of Unknown Anomalies},\n  author={Jingtao Li and Qian Zhu and Xinyu Wang and Deren Li and Liangpei Zhang and Yanfei Zhong},\n  journal={arXiv preprint arXiv:2609.20662v1},\n  year={2026},\n  url={http://arxiv.org/abs/2609.20662v1}\n}",
+    "Authors": "Jingtao Li, Qian Zhu, Xinyu Wang, Deren Li, Liangpei Zhang, Yanfei Zhong",
+    "_added_date": "2026-09-18",
+    "Category": "Method",
+    "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Machine Learning",
+    "Date": "2026-09-17",
+    "Month": 9,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2609.20441v1",
+    "Abstract": "Geospatial foundation models can provide strong flood-segmentation performance, but their size limits deployment on memory-constrained edge hardware. We distill a 300-million-parameter Prithvi-EO-2.0 teacher, fine-tuned on the 252 manually labeled Sen1Floods11 training scenes, into a 0.7-million-parameter EfficientViT-B0 student. The teacher supervises additional unlabeled Sentinel-2 imagery, allowing the student training set to grow without new manual annotations. At the matched budget of 252 scenes, teacher-supervised training is competitive with direct training and improves STURM-Flood performance across tested configurations; a geometry-matched control shows that label source alone does not explain the difference. Scaling the teacher-supervised pool to 2,500 scenes narrows the remaining student--teacher gap: the float student reaches 0.787 water intersection over union on the Sen1Floods11 test split against 0.822 for the teacher, matches the teacher on STURM-Flood under our evaluation protocol, and remains below it on WorldFloods-v2. After activation replacement and quantization-aware training, the student runs as a 1.5-megabyte 8-bit integer (INT8) TensorRT engine on a Jetson Xavier NX at 5.57 milliseconds of graphics processing unit (GPU) compute per 512-by-512 image, with approximately 14 megabytes of runtime device memory. A fixed modified normalized difference water index (MNDWI) threshold is competitive with both models on the two clean external benchmarks, so we interpret those benchmarks as generalization tests rather than as evidence of learned-model superiority over a spectral rule. The results support the conclusion: foundation-model supervision can amplify a fixed manual annotation budget into a substantially larger training set and yield a compact, deployable edge model.",
+    "code": "",
+    "Publication": "Main paper (17 pages) with supplementary material (11 pages). Submitted to IEEE JSTARS, Special Section on Generalist-Specialist Model Synergy for Remote Sensing: Theories, Methods, and Applications",
+    "BibTex": "@article{schmalstieg2026crossarchitecture,\n  title={Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation},\n  author={Fabian Schmalstieg and Karsten Mueller and Wojciech Samek},\n  journal={arXiv preprint arXiv:2609.20441v1},\n  year={2026},\n  url={http://arxiv.org/abs/2609.20441v1}\n}",
+    "Authors": "Fabian Schmalstieg, Karsten Mueller, Wojciech Samek",
+    "_added_date": "2026-09-18",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]
