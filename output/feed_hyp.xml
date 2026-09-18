@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-17T05:39:37Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
+  <updated>2026-09-18T01:47:48Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -55,43 +55,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Image and Video Processing" />
     <category term="Computer Vision; Atmospheric and Oceanic Physics; Geophysics" />
-  </entry>
-  <entry>
-    <title>AquaCubeAI-Powered Monitoring Turbidity on-board Φsat-2</title>
-    <link href="http://arxiv.org/abs/2609.12744v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.12744v1</id>
-    <published>2026-09-11T00:00:00Z</published>
-    <updated>2026-09-11T00:00:00Z</updated>
-    <author>
-      <name>Pietro Di Stasio</name>
-    </author>
-    <author>
-      <name>Francesca Razzano</name>
-    </author>
-    <author>
-      <name>Elisa Liparulo</name>
-    </author>
-    <author>
-      <name>Gabriele Meoni</name>
-    </author>
-    <author>
-      <name>Nicolas Longépé</name>
-    </author>
-    <author>
-      <name>Deodato Tapete</name>
-    </author>
-    <author>
-      <name>Paolo Gamba</name>
-    </author>
-    <author>
-      <name>Gilda Schirinzi</name>
-    </author>
-    <author>
-      <name>Silvia Liberata Ullo</name>
-    </author>
-    <summary type="text">Timely monitoring of coastal water quality is critical for environmental protection, yet conventional satellite workflows rely on downlink and ground processing, introducing latency that can limit responsiveness to rapidly evolving turbidity events. To address this limitation, we propose AquaCubeAI, a lightweight machine-learning approach for onboard estimation of coastal water turbidity from Φsat-2 multispectral imagery. By shifting inference from the ground segment to the satellite, AquaCubeAI aims to enable lower-latency, more responsive, and more operationally useful turbidity monitoring under the strict compute and bandwidth constraints of spaceborne platforms. The model is trained on simulated Φsat-2 acquisitions spatially aligned with Copernicus Marine Service (CMEMS) High-Resolution Ocean Color (HR-OC) turbidity products over selected localized coastal sites spanning four European marine macro-regions. To provide a realistic evaluation of generalization in the presence of spatial correlation, we adopt a spatial block splitting protocol that mitigates data leakage between training and evaluation subsets. The main contributions of this work are: (i) a scalable dataset generation pipeline pairing simulated Φsat-2 multispectral patches with CMEMS HR-OC turbidity labels across selected localized European coastal sites; (ii) a compact Multi-Layer Perceptron (MLP)-based turbidity regressor trained under a leakage-aware geospatial split and tailored to embedded constraints; and (iii) a reformulation for dense spatial prediction via parameter sharing, enabling turbidity mapping and simple threshold-based anomaly masks for onboard decision logic. Embedded deployment on an Intel Myriad Vision Processing Unit (VPU) further confirms the feasibility of low-power hardware and supports low-latency inference from multispectral inputs.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 16 pages, the paper is under review on IEEE JSTARS&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>
