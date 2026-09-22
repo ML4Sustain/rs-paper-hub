@@ -6857,5 +6857,24 @@
     "_added_date": "2026-09-17",
     "Category": "Method",
     "_tasks": "VQA;OD"
+  },
+  {
+    "Type": "Robotics",
+    "Subtype": "",
+    "Date": "2026-09-20",
+    "Month": 9,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Structured World-State Reasoning for Agentic Robotic Search",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2609.23841v1",
+    "Abstract": "Long-horizon robotic search must resolve natural language against heterogeneous, incomplete, and often ambiguous evidence: textual information, prior maps, and observations arriving over time. The core challenge is to contextualize these streams and decide where to gather evidence before selecting a target. We present WORLDS: World-state Observation and Reasoning for Language-guided Discovery and Search, a framework that grounds reasoning in a persistent graph initialized from geospatial priors and updated by perception. Parallel Reasoners maintain competing candidate interpretations and request evidence to distinguish between them. We collect and process the requested observations with a multimodal Examiner, after which a Judge selects a grounded target or requests another pass. WORLDS achieves 51.8% navigation success across all 5,311 CityNav test episodes, the highest reported success rate, exceeding the previous published best by 15.7 percentage points under an OSM-only, high-resolution orthographic protocol. On 1,000 shared episodes, it achieves 50.0% versus 27.9% for the strongest adapted baseline using the same model, prior, sensing stack, and movement budget. Observation-based verification by the Examiner contributes 5.9 points of this success, and at a reduced reasoning-effort setting WORLDS still exceeds the adapted GeoNav baseline by 18.8 points while generating fewer tokens. We also demonstrate WORLDS on a quadrotor, which flies the generated sensing waypoints and grounds three language targets, including a vehicle absent from the map, from its onboard imagery.",
+    "code": "",
+    "Publication": "IEEE International Conference on Robotics and Automation (ICRA) 2027",
+    "BibTex": "@article{holt2026structured,\n  title={Structured World-State Reasoning for Agentic Robotic Search},\n  author={Finley R. Holt and Luis A. Pabon and John Irvin Alora and Jonas Frey and Marco Pavone},\n  journal={arXiv preprint arXiv:2609.23841v1},\n  year={2026},\n  url={http://arxiv.org/abs/2609.23841v1}\n}",
+    "Authors": "Finley R. Holt, Luis A. Pabon, John Irvin Alora, Jonas Frey, Marco Pavone",
+    "_added_date": "2026-09-22",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]

@@ -4,12 +4,38 @@
   <id>https://rspaper.top/output/feed_uav.xml</id>
   <link href="https://rspaper.top/output/feed_uav.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-21T05:46:25Z</updated>
+  <updated>2026-09-22T02:04:38Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Structured World-State Reasoning for Agentic Robotic Search</title>
+    <link href="http://arxiv.org/abs/2609.23841v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.23841v1</id>
+    <published>2026-09-20T00:00:00Z</published>
+    <updated>2026-09-20T00:00:00Z</updated>
+    <author>
+      <name>Finley R. Holt</name>
+    </author>
+    <author>
+      <name>Luis A. Pabon</name>
+    </author>
+    <author>
+      <name>John Irvin Alora</name>
+    </author>
+    <author>
+      <name>Jonas Frey</name>
+    </author>
+    <author>
+      <name>Marco Pavone</name>
+    </author>
+    <summary type="text">Long-horizon robotic search must resolve natural language against heterogeneous, incomplete, and often ambiguous evidence: textual information, prior maps, and observations arriving over time. The core challenge is to contextualize these streams and decide where to gather evidence before selecting a target. We present WORLDS: World-state Observation and Reasoning for Language-guided Discovery and Search, a framework that grounds reasoning in a persistent graph initialized from geospatial priors and updated by perception. Parallel Reasoners maintain competing candidate interpretations and request evidence to distinguish between them. We collect and process the requested observations with a multimodal Examiner, after which a Judge selects a grounded target or requests another pass. WORLDS achieves 51.8% navigation success across all 5,311 CityNav test episodes, the highest reported success rate, exceeding the previous published best by 15.7 percentage points under an OSM-only, high-resolution orthographic protocol. On 1,000 shared episodes, it achieves 50.0% versus 27.9% for the strongest adapted baseline using the same model, prior, sensing stack, and movement budget. Observation-based verification by the Examiner contributes 5.9 points of this success, and at a reduced reasoning-effort setting WORLDS still exceeds the adapted GeoNav baseline by 18.8 points while generating fewer tokens. We also demonstrate WORLDS on a quadrotor, which flies the generated sensing waypoints and grounds three language targets, including a vehicle absent from the map, from its onboard imagery.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE International Conference on Robotics and Automation (ICRA) 2027&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Robotics" />
+  </entry>
   <entry>
     <title>Understanding Dynamic Scenes at Gigapixel Scale: Wide-Area Spatio-Temporal Perception from UAVs</title>
     <link href="http://arxiv.org/abs/2609.18210v1" rel="alternate" type="text/html" />
@@ -42,37 +68,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;OD&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Learning to Optimize UAV Path Planning for Data Sensing in Wireless Sensor Networks</title>
-    <link href="http://arxiv.org/abs/2609.16629v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.16629v1</id>
-    <published>2026-09-15T00:00:00Z</published>
-    <updated>2026-09-15T00:00:00Z</updated>
-    <author>
-      <name>Sijie Ma</name>
-    </author>
-    <author>
-      <name>Zeyuan Ma</name>
-    </author>
-    <author>
-      <name>Weijia Cao</name>
-    </author>
-    <author>
-      <name>Yue-Jiao Gong</name>
-    </author>
-    <author>
-      <name>Lingling Ma</name>
-    </author>
-    <author>
-      <name>Zhiyang Huang</name>
-    </author>
-    <author>
-      <name>Jun Zhang</name>
-    </author>
-    <summary type="text">UAVs have emerged as highly flexible platforms for data sensing in Wireless Sensor Networks (WSNs). Path planning for UAVs in such tasks plays a key role to assure remote sensing effectiveness and friendly energy consumption. However, existing approaches show two key limitations: i) they are primarily hand-crafted with certain design biases that harm adaptation on unseen tasks. ii) they predominantly assume idealized spatial complexities of actual environments through simplified simulation, causing them to underperform during real-world deployment. In this paper, we propose a novel learning-assisted planning framework, termed Landscape-Aware Meta Differential Evolution (LAMDE), to tackle the mentioned limitations. The major contributions come from the following aspects. We first re-formulate such UAV path planning problem to embrace challenging constraints. To efficiently navigate this highly constrained space, we propose a bi-level learning to optimize approach, where the meta-level is a trainable algorithm configuration policy that meta-learns an adaptable planning strategy for low-level planning algorithm. To address the potential training data scarcity and distribution shift in real-world environments, we introduce a landscape-aware automatic augmentation scheme that enriches training data. At the low-level, a Differential Evolution algorithm is deployed for solving the path planning tasks. To enhance the solving flexibility, we further design a variable-length encoding strategy that dynamically prunes redundant hover points and optimizes continuous flight parameters concurrently within a unified search space. Based on all proposed designs, we meta-train LAMDE and compare it with representative baselines. Comprehensive experiments demonstrate that LAMDE achieves state-of-the-art performance on the tested complex UAV path planning tasks in WSN data collection scenarios.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Robotics" />
-    <category term="Neural and Evolutionary Computing" />
   </entry>
 </feed>

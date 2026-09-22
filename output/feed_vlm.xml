@@ -4,12 +4,154 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-21T05:46:25Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 10 entries</subtitle>
+  <updated>2026-09-22T02:04:38Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 11 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>DeCo: Efficient Decouple-to-Couple Learning for Multi-Task Visual Grounding</title>
+    <link href="http://arxiv.org/abs/2609.24409v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.24409v1</id>
+    <published>2026-09-21T00:00:00Z</published>
+    <updated>2026-09-21T00:00:00Z</updated>
+    <author>
+      <name>Xiaoqiang Lu</name>
+    </author>
+    <author>
+      <name>Licheng Jiao</name>
+    </author>
+    <author>
+      <name>Long Sun</name>
+    </author>
+    <author>
+      <name>Yuting Yang</name>
+    </author>
+    <author>
+      <name>Xu Liu</name>
+    </author>
+    <author>
+      <name>Lingling Li</name>
+    </author>
+    <author>
+      <name>Wenping Ma</name>
+    </author>
+    <author>
+      <name>Fang Liu</name>
+    </author>
+    <summary type="text">Multi-task visual grounding requires models to jointly understand linguistic semantics and perform accurate visual localization and segmentation. Despite the success of multimodal large language models, effectively adapting them to multiple grounding objectives remains challenging. Existing methods commonly enforce task cooperation through shared representations, while overlooking the intrinsic conflict between task-oriented feature interests. In this paper, we introduce $\textbf{DeCo}$, an efficient $\textbf{De}$couple-to-$\textbf{Co}$uple learning framework that resolves this dilemma through a two-stage paradigm: task-specific representation decoupling followed by complementary prior coupling. Specifically, we first propose Task-aware Semantic Decoupling (TSD) to route shared visual cues into individual features under salient word-level guidance, alleviating representation interference between localization and segmentation. Furthermore, we observe that segmentation naturally provides informative localization priors due to dense supervision. Based on this insight, we introduce Hybrid Prior Coupling (HPC), which integrates sentence-level semantic prior with mask-derived spatial prior for enhanced grounding. Built upon a frozen multimodal encoder, DeCo requires lightweight trainable parameters while achieving strong generalization across multiple grounding objectives. Extensive experiments on RefCOCO/+, G-Ref, ReferIt, Flickr, DIOR-RSVG, SARVG1.0, RRSIS-D, RIS-LAD, and RefDIOR demonstrate that DeCo achieves state-of-the-art performance on both natural and remote sensing benchmarks. The code and models are available at https://github.com/xiaoqiang-lu/DeCo.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/xiaoqiang-lu/DeCo"&gt;https://github.com/xiaoqiang-lu/DeCo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 34 pages,9 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Structured World-State Reasoning for Agentic Robotic Search</title>
+    <link href="http://arxiv.org/abs/2609.23841v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.23841v1</id>
+    <published>2026-09-20T00:00:00Z</published>
+    <updated>2026-09-20T00:00:00Z</updated>
+    <author>
+      <name>Finley R. Holt</name>
+    </author>
+    <author>
+      <name>Luis A. Pabon</name>
+    </author>
+    <author>
+      <name>John Irvin Alora</name>
+    </author>
+    <author>
+      <name>Jonas Frey</name>
+    </author>
+    <author>
+      <name>Marco Pavone</name>
+    </author>
+    <summary type="text">Long-horizon robotic search must resolve natural language against heterogeneous, incomplete, and often ambiguous evidence: textual information, prior maps, and observations arriving over time. The core challenge is to contextualize these streams and decide where to gather evidence before selecting a target. We present WORLDS: World-state Observation and Reasoning for Language-guided Discovery and Search, a framework that grounds reasoning in a persistent graph initialized from geospatial priors and updated by perception. Parallel Reasoners maintain competing candidate interpretations and request evidence to distinguish between them. We collect and process the requested observations with a multimodal Examiner, after which a Judge selects a grounded target or requests another pass. WORLDS achieves 51.8% navigation success across all 5,311 CityNav test episodes, the highest reported success rate, exceeding the previous published best by 15.7 percentage points under an OSM-only, high-resolution orthographic protocol. On 1,000 shared episodes, it achieves 50.0% versus 27.9% for the strongest adapted baseline using the same model, prior, sensing stack, and movement budget. Observation-based verification by the Examiner contributes 5.9 points of this success, and at a reduced reasoning-effort setting WORLDS still exceeds the adapted GeoNav baseline by 18.8 points while generating fewer tokens. We also demonstrate WORLDS on a quadrotor, which flies the generated sensing waypoints and grounds three language targets, including a vehicle absent from the map, from its onboard imagery.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE International Conference on Robotics and Automation (ICRA) 2027&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Robotics" />
+  </entry>
+  <entry>
+    <title>RSPDBench: Benchmarking Vision Foundation Models on Earth Observation Tasks Under Physically Grounded Remote-Sensing Product Degradations</title>
+    <link href="http://arxiv.org/abs/2609.23427v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.23427v1</id>
+    <published>2026-09-20T00:00:00Z</published>
+    <updated>2026-09-20T00:00:00Z</updated>
+    <author>
+      <name>Tanjim Bin Faruk</name>
+    </author>
+    <author>
+      <name>Khondaker Masfiq Reza</name>
+    </author>
+    <author>
+      <name>Shrideep Pallickara</name>
+    </author>
+    <author>
+      <name>Sangmi Lee Pallickara</name>
+    </author>
+    <summary type="text">Vision foundation models targeting Earth observation (EO) tasks are commonly evaluated on clean downstream benchmarks, but operational EO products can already contain spatial, radiometric, alignment, noise, and harmonization defects before reaching the model. Existing robustness evaluations often use generic image corruptions or broad domain shifts, which do not isolate these product-level failure modes. We introduce \textbf{RSPDBench}, a physically grounded \textbf{r}emote-\textbf{s}ensing-\textbf{p}roduct \textbf{d}egradation \textbf{b}enchmark for vision foundation models. RSPDBench evaluates five EO datasets, seven foundation-model entries, and two supervised baselines under audited primitive degradations and compound product chains. Each model is evaluated under its clean-selected native protocol, with robustness measured as the drop from its own clean baseline. Our analysis reveals that degradation sensitivity is strongly structured: resolution-conditioned and channel-grouped encoders protect different failure axes, and the same physical defect can hurt one model while helping another. Compound chains expose failures that isolated degradations do not predict, with model-dependent amplification, saturation, or component dominance, and excess drops up to $38$ percentage points beyond the strongest component. These results show that EO robustness cannot be characterized by clean accuracy or generic perturbation tests alone; it must also be measured against the structured defects that remote-sensing products carry into deployment.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Retrieval Geometry Shapes Cache-Based Clip Adaptation</title>
+    <link href="http://arxiv.org/abs/2609.23409v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.23409v1</id>
+    <published>2026-09-20T00:00:00Z</published>
+    <updated>2026-09-20T00:00:00Z</updated>
+    <author>
+      <name>Mahir Shahriar Tamim</name>
+    </author>
+    <author>
+      <name>Md. Samiul Alim</name>
+    </author>
+    <author>
+      <name>Azmine Toushik Wasi</name>
+    </author>
+    <author>
+      <name>Shahriyar Zaman Ridoy</name>
+    </author>
+    <author>
+      <name>Meharun Nesa</name>
+    </author>
+    <author>
+      <name>Mohammad Abu Yousuf</name>
+    </author>
+    <author>
+      <name>Alex Lamb</name>
+    </author>
+    <author>
+      <name>Mohammad Ali Moni</name>
+    </author>
+    <summary type="text">Cache-based test-time adaptation improves CLIP predictions by storing and retrieving examples from the target stream while keeping the model frozen. However, existing methods largely treat the feature space used for image-image retrieval as fixed, leaving open how much adaptation depends on the retrieval space itself. We study this question by fixing the memory and changing only the retrieval encoder, finding that the same memory can yield very different gains: across sixteen retrieval spaces, ImageNet-A cache gain ranges from at most +0.44 points for CLIP and MAE to +19.7 +/- 0.4 for DINOv2-L, while label-free retrieval-space selection retains 98% of oracle gain on ImageNet-V2. These results show that memory quality depends not only on which examples are stored, but also on how they are retrieved. Motivated by this finding, we propose MARC (Memory Augmented Retrieval for CLIP), a training-free system that uses frozen CLIP for prediction and DINOv2-B for retrieval with a single fusion weight. A single-view cache repairs 1074 +/- 21 baseline errors, compared with 878 +/- 4 for a 64-view ensemble, at roughly one seventh of the cost. Across four ImageNet distribution shifts, MARC reaches a 67.91% OOD average and, at matched DINOv2-B scale and eight views, achieves 64.17 +/- 0.31% versus 62.75 +/- 0.15% for a graph-based cache system while running 2.6 times faster. Overall, our results establish retrieval space as a first-order design choice for robust cache-based adaptation in remote sensing, scientific imaging, and changing visual environments.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Under Review at ICLR&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>SatOV: Restoring Spatial Priors for Training-Free Open-Vocabulary Segmentation in Remote Sensing Imagery</title>
+    <link href="http://arxiv.org/abs/2609.22834v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.22834v1</id>
+    <published>2026-09-19T00:00:00Z</published>
+    <updated>2026-09-19T00:00:00Z</updated>
+    <author>
+      <name>Changhao Zhao</name>
+    </author>
+    <author>
+      <name>Linglin Zeng</name>
+    </author>
+    <author>
+      <name>Hai Liu</name>
+    </author>
+    <summary type="text">Open-vocabulary semantic segmentation (OVS) of remote sensing imagery is a challenging pixel-level task requiring strong generalization and adaptation to the spatial characteristics of remote sensing data. Although existing vision-language foundation models perform well in general domains, their image-level classification design weakens the spatial priors needed for high-resolution remote sensing segmentation: structural spatial relations are degraded during deep feature transformation, and fine-grained spatial details are lost during downsampling. To address these complementary deficiencies, we propose SatOV, a training-free framework for open-vocabulary remote sensing segmentation that restores spatial priors at two stages of the representation pipeline. Specifically, Residual QQ Attention (ResQQ) extracts Query-Key self-attention from an intermediate CLIP layer and fuses it with final-layer Query-Query attention via a residual combination, restoring structural spatial priors suppressed by the final-layer representation. Spatially Modulated Upsampling (SatUp) uses the original high-resolution RGB image as spatial guidance, combining spatial feature modulation with guided cross-attention to reconstruct pixel-level textures and boundaries. Extensive experiments on DOTA, UDD, LoveDA, and Vaihingen show that SatOV consistently improves training-free OVS and achieves competitive quantitative and qualitative results against state-of-the-art methods. These results validate the effectiveness of restoring spatial priors at both the representation and spatial-resolution stages for remote sensing open-vocabulary segmentation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>Geography as the Organizing Grammar of Geospatial Models</title>
     <link href="http://arxiv.org/abs/2609.19621v1" rel="alternate" type="text/html" />
@@ -78,6 +220,27 @@
     <category term="Machine Learning" />
   </entry>
   <entry>
+    <title>MarsRecon: Self-Supervised and Multimodal Surface Representations for Mars</title>
+    <link href="http://arxiv.org/abs/2609.22379v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.22379v1</id>
+    <published>2026-09-17T00:00:00Z</published>
+    <updated>2026-09-17T00:00:00Z</updated>
+    <author>
+      <name>Akshay Naik</name>
+    </author>
+    <author>
+      <name>Marius F. R. Juston</name>
+    </author>
+    <author>
+      <name>Jay Mahajan</name>
+    </author>
+    <summary type="text">High-resolution orbital imagery offers a rich record of the Martian surface, but sparse geological labels limit supervised representation learning. We present MarsRecon, a geospatially aware pipeline for learning visual and multimodal representations from HiRISE observations of Olympus Mons. The pipeline calibrates NASA Planetary Data System products, extracts valid georeferenced patches, and trains a masked autoencoder on unlabeled imagery. Increasing input resolution and filtering invalid tokens reduced held-out reconstruction loss from 0.1751 to 0.1342 in the principal Stage A model series. We then freeze the visual encoder and align its features with observation text, coordinates, and local--global image context. The strongest current local-primary model achieves image-to-text recall@10 of 0.3787, text-to-image recall@10 of 0.9161, and local-to-global recall@10 of 0.4350 on the held-out test split. These results establish a working Mars-specific pretraining and retrieval pipeline; further crop-overlap controls and downstream geological evaluations are needed to assess the broader utility of its embeddings.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 27 pages, 22 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
     <title>How Much Hyperspectral Information Does Chlorophyll Retrieval Really Need?</title>
     <link href="http://arxiv.org/abs/2609.18531v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2609.18531v1</id>
@@ -131,121 +294,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;OD&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>SPEAR NeXT Causal Latent Forecasting Across Multiple Horizons for Spectral Temporal Earth Representation Learning</title>
-    <link href="http://arxiv.org/abs/2609.16871v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.16871v1</id>
-    <published>2026-09-15T00:00:00Z</published>
-    <updated>2026-09-15T00:00:00Z</updated>
-    <author>
-      <name>Rajiv Ranjan</name>
-    </author>
-    <author>
-      <name>Udaiveer Singh</name>
-    </author>
-    <author>
-      <name>Shashank Tamaskar</name>
-    </author>
-    <author>
-      <name>Dharmendra Saraswat</name>
-    </author>
-    <summary type="text">Earth observation is inherently dynamic, yet temporal information in many foundation models is learned through reconstruction, invariance, or retrospective sequence summarization. SPEAR NeXT is introduced as a compact pixel-wise multimodal spectral temporal foundation model in which temporal self supervision is formulated as past only, multi horizon latent Earth state prediction. Instantaneous states are first encoded by the pretrained SPEAR model from optical, radar, and environmental observations into compact 32 dimensional embeddings. Their temporal evolution is then modeled by a causally masked Trans former that predicts multiple future latent states from pre ceding observations. Relative temporal order is represented using Rotary Position Embeddings, while month and year embeddings encode seasonal phase and interannual con text.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 24 Pages&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Quantifying Organizational Environmental Action from Web Data and Large Language Models</title>
-    <link href="http://arxiv.org/abs/2609.16627v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.16627v1</id>
-    <published>2026-09-15T00:00:00Z</published>
-    <updated>2026-09-15T00:00:00Z</updated>
-    <author>
-      <name>Quinn Reynolds</name>
-    </author>
-    <author>
-      <name>Daniel Shore</name>
-    </author>
-    <author>
-      <name>Vianey Leos Barajas</name>
-    </author>
-    <author>
-      <name>Tanhum Yoreh</name>
-    </author>
-    <author>
-      <name>Meredith Franklin</name>
-    </author>
-    <summary type="text">Quantifying organizational environmental action from publicly available web content remains a challenging environmental data science problem because relevant information can be dispersed across multiple webpages and is primarily communicated through unstructured text. We present a scalable computational framework for transforming organizational web content into structured measures of environmental action and demonstrate the approach using Jewish congregations in the United States. We constructed a national database of 4,964 congregations by integrating multiple geospatial, knowledge-base, directory, and manually reviewed sources. Of these, 2,657 had active websites that were successfully crawled, producing a corpus of 154,454 webpages. We compared three approaches for detecting environmental actions: keyword retrieval followed by large language model (LLM) classification, semantic vector retrieval followed by LLM classification, and direct LLM classification classification without preliminary retrieval. Agreement with an expert human reviewer was lowest for keyword retrieval ($κ$ = 0.26), higher for semantic vector retrieval ($κ$ = 0.42), and similar for direct LLM classification ($κ$ = 0.40). Although semantic retrieval achieved the highest agreement, its retrieval recall was 0.87, indicating loss of relevant content before classification. Applied to the complete corpus, direct LLM classification identified at least one environmental action at 1,398 congregations (53%), providing greater coverage than either retrieval-based approach. These results demonstrate that preliminary retrieval can reduce computational cost but may exclude relevant information before it reaches the classifier. The framework provides a reproducible approach for extracting organization-level environmental information from unstructured web content that can be adapted to other institutions.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 22 pages, 6 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="cs.CL" />
-    <category term="cs.CY; Information Retrieval" />
-  </entry>
-  <entry>
-    <title>Geospatial Metadata Improves Discoverability by Connecting Datasets Across Scientific Disciplines</title>
-    <link href="http://arxiv.org/abs/2609.16498v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.16498v2</id>
-    <published>2026-09-15T00:00:00Z</published>
-    <updated>2026-09-15T00:00:00Z</updated>
-    <author>
-      <name>Daniel Ebanks</name>
-    </author>
-    <author>
-      <name>Devika Jain</name>
-    </author>
-    <summary type="text">Research data repositories are essential infrastructure for scientific inquiry and for ensuring that datasets follow FAIR (Findable, Accessible, Interoperable, and Reusable) principles. However, repository reuse depends on the quality and completeness of geospatial and thematic metadata, which researchers generally provide voluntarily. Given limited curation resources, it is unsurprising that even Harvard Dataverse, the world's largest general-purpose research repository, contains many incomplete metadata records. Missing fields represent lost information and reduce interoperability. We find that datasets with more missing metadata receive fewer downstream citations and have fewer resolvable connections to other datasets. The implications are particularly important for geospatial datasets: only 0.3% of research datasets include a bounding box, and most represent archival points rather than complete geographic shapes. Our analysis shows that geospatial metadata helps connect concepts across disciplines. After embedding Harvard Dataverse datasets in a metadata knowledge graph, we find that datasets are twice as likely to connect across scientific disciplines through shared geospatial metadata as through keywords. This suggests that geographic metadata is a more reliable basis for cross-disciplinary interoperability than keyword vocabularies, which often remain discipline-specific. We train and fine-tune a small language model using datasets from Harvard Dataverse. Through geospatial metadata enrichment, we increase the share of datasets from different disciplines connected through metadata elements from 58.5% to 63.2%.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.DL" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>VPRef: A Cross-Domain Benchmark for Referring Remote Sensing Image Segmentation</title>
-    <link href="http://arxiv.org/abs/2609.16486v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.16486v1</id>
-    <published>2026-09-15T00:00:00Z</published>
-    <updated>2026-09-15T00:00:00Z</updated>
-    <author>
-      <name>Quanwei Liu</name>
-    </author>
-    <author>
-      <name>Tao Huang</name>
-    </author>
-    <author>
-      <name>Jiaqi Yang</name>
-    </author>
-    <author>
-      <name>Wei Xiang</name>
-    </author>
-    <summary type="text">Rapid advancements in vision-language models have propelled Referring Remote Sensing Image Segmentation (RRSIS) to the forefront of Earth observation. However, practical deployments suffer severe performance degradation under a coupled dual-drift paradigm: visual domain drift from cross-spatial-resolution mismatches and spectral variations, alongside textual logic drift from unconstrained, variable user-input granularities. To mitigate these bottlenecks, this paper establishes the first cross-domain RRSIS benchmark, designated as the Vaihingen-Potsdam Referring (VPRef) dataset, comprising 46,972 language-image-annotation triplets organized into a three-tier linguistic hierarchy. Building upon this benchmark, we develop a tailored parameter-efficient domain adaptation baseline anchored on the Segment Anything Model (SAM3) via Low-Rank Adaptation (LoRA). Our framework counteracts visual distribution discrepancies through pseudo-label-driven self-training and addresses textual logic drift via random multi-granularity text prompt mixing. Crucially, the distribution of empirical metrics across ablative variants suggests a potential decoupling between cross-modal semantic robustification and visual domain alignment, demonstrating that linguistic variance drives fine-grained semantic invariance while pseudo-label propagation governs macro-scale spatial grid alignment. Extensive benchmarks demonstrate the proposed framework achieves superior cross-domain segmentation boundaries while modifying merely 1.08\% of the foundational parameter footprint, establishing a robust baseline for future multi-modal remote sensing domain adaptation research. The dataset and code will be available at https://github.com/quanweiliu/VPRef.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/quanweiliu/VPRef"&gt;https://github.com/quanweiliu/VPRef&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages, 7 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>From Foundation Embeddings to Cropland Maps: Label Efficiency, Temporal Transferability and Independent Human Validation</title>
-    <link href="http://arxiv.org/abs/2609.17138v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.17138v1</id>
-    <published>2026-09-15T00:00:00Z</published>
-    <updated>2026-09-15T00:00:00Z</updated>
-    <author>
-      <name>Mohammad Ammar Mughees</name>
-    </author>
-    <author>
-      <name>Giovanni Montefoschi</name>
-    </author>
-    <author>
-      <name>Zhongxin Chen</name>
-    </author>
-    <author>
-      <name>Maria Antonia Brovelli</name>
-    </author>
-    <summary type="text">Geospatial foundation models provide reusable representations of satellite imagery that support downstream mapping with limited task-specific modelling. We evaluate whether annual AlphaEarth embeddings support binary cultivated-versus-non-cultivated mapping in Maine, USA, using 192 spatially separated patches and labels derived from the USDA Cropland Data Layer (CDL). Without fine-tuning the foundation model, a lightweight classifier reaches 93.7% overall accuracy and 90.8% balanced accuracy on held-out patches. Logistic regression is within 0.3 percentage points of a gradient-boosted ensemble, while a nearest-class-centroid rule, which uses class centroids but fits no parameters, reaches 90.2%. A balanced sample of 60,000 labelled pixels is within 1.3 percentage points of the full pool of 8.6 million pixels; because pixels are spatially autocorrelated, this result concerns pixel-sample efficiency rather than 60,000 independent annotation sites. In a same-region transfer experiment, classifiers trained in one year remain accurate across 2018 to 2023. Against a blind, two-interpreter consensus at 385 randomly sampled points in one contiguous 2023 block, the AlphaEarth-plus-random-forest map agrees at 95.3% ($κ=0.82$), compared with 91.7% for the CDL ($κ=0.72$; exact two-sided McNemar $p=0.0161$). This local result is consistent with partial smoothing of CDL label noise, but it does not establish statewide correction of the reference product. On the same points, the difference from a fine-tuned TerraMind segmentation model is not statistically significant (95.3% versus 93.5%; $p=0.14$), and the experiment is not a controlled comparison of computational cost. These results support frozen geospatial embeddings as a low-compute candidate for regional cropland mapping, subject to the limits of a single-state study, a 30 m-derived training reference, and a one-block human validation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 23 pages, 10 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning; Image and Video Processing" />
   </entry>
 </feed>
