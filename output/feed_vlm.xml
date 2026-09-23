@@ -4,12 +4,39 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-22T05:43:44Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 11 entries</subtitle>
+  <updated>2026-09-23T02:01:40Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 10 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Agentic Building-Aware Satellite Gaussian Splatting for Auditable Urban DSM Reconstruction</title>
+    <link href="http://arxiv.org/abs/2609.25578v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.25578v1</id>
+    <published>2026-09-22T00:00:00Z</published>
+    <updated>2026-09-22T00:00:00Z</updated>
+    <author>
+      <name>Wentao Sun</name>
+    </author>
+    <author>
+      <name>Zhengsen Xu</name>
+    </author>
+    <author>
+      <name>Yiping Chen</name>
+    </author>
+    <author>
+      <name>John S. Zelek</name>
+    </author>
+    <author>
+      <name>Jonathan Li</name>
+    </author>
+    <summary type="text">Urban-scale 3D reconstruction from satellite imagery supports disaster response, city monitoring, and geospatial digital twins, yet neural rendering methods typically optimize average visual fidelity rather than the structures that analysts inspect first: buildings. We present an agentic building-aware satellite Gaussian Splatting workflow that uses Segment Anything-derived building masks as semantic priors and an Agentic Reconstruction Controller to select, verify, and record DSM reconstruction policies. On the DFC2019 JAX\_004 scene, building-aware weighting reduces building-region DSM MAE from 0.844 m to 0.806 m, showing that semantic priors can shift reconstruction capacity toward analyst-critical regions. A staged schedule provides a balanced operating point, improving full-scene MAE from 1.362 m to 1.349 m while retaining a building gain. Across four JAX scenes, the Agent selects validated policies for both general DSM and building-focused DSM objectives, and produces building-inventory metadata and per-scene decision records. The system combines semantic priors, policy selection, region-specific DSM metrics, and DSM-derived GIS surface products for auditable urban 3D analysis.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 7 pages, 6 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>DeCo: Efficient Decouple-to-Couple Learning for Multi-Task Visual Grounding</title>
     <link href="http://arxiv.org/abs/2609.24409v1" rel="alternate" type="text/html" />
@@ -239,60 +266,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>How Much Hyperspectral Information Does Chlorophyll Retrieval Really Need?</title>
-    <link href="http://arxiv.org/abs/2609.18531v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.18531v1</id>
-    <published>2026-09-16T00:00:00Z</published>
-    <updated>2026-09-16T00:00:00Z</updated>
-    <author>
-      <name>Abed Hammoud</name>
-    </author>
-    <author>
-      <name>Xuerong Sun</name>
-    </author>
-    <author>
-      <name>Bianca Champenois</name>
-    </author>
-    <author>
-      <name>Robert J. W. Brewin</name>
-    </author>
-    <summary type="text">Satellite ocean color algorithms translate water-leaving radiance into ecological information at spatial and temporal scales that cannot be achieved by field sampling alone. One important variable derived from water-leaving radiance is chlorophyll-a concentration ($\mathrm{CHL\text{-}a}$), a widely used indicator of phytoplankton biomass and physiology. Empirical retrieval algorithms are commonly used for $\mathrm{CHL\text{-}a}$ estimation, but their performance can vary across sensors and optically diverse waters. The Plankton, Aerosol, Cloud, ocean Ecosystem (PACE) mission provides unprecedented spectral resolution, expanding the visible spectral information available for ocean color retrievals and raising a practical algorithm design question: how can this fine resolution spectrum be used to derive the next generation of interpretable $\mathrm{CHL\text{-}a}$ retrieval algorithms? We use symbolic regression to identify sparse equations that estimate $\log_{10}(\mathrm{CHL\text{-}a})$ from multi- and hyperspectral remote sensing reflectances. The analysis first tests the standard multispectral ocean color algorithm (OC3--OC6) inputs to ask whether symbolic regression recovers standard band ratio structure, then extends the search to hyperspectral PACE-like reflectances. The best expression discovered achieved a held out root mean square deviation of 0.253 in log$_{10}$ $\mathrm{CHL\text{-}a}$, compared with 0.307 for a fitted OC6 polynomial on the same split. Ablations showed that the predictive skill of hyperspectral models is almost 12\% better than the best standard ocean color retrieval models in root mean squared deviation against held out data. When evaluated by environmental regime, differences were larger for high-chlorophyll samples, which often represent turbid water conditions.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Atmospheric and Oceanic Physics" />
-  </entry>
-  <entry>
-    <title>Understanding Dynamic Scenes at Gigapixel Scale: Wide-Area Spatio-Temporal Perception from UAVs</title>
-    <link href="http://arxiv.org/abs/2609.18210v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.18210v1</id>
-    <published>2026-09-16T00:00:00Z</published>
-    <updated>2026-09-16T00:00:00Z</updated>
-    <author>
-      <name>Yuhang Zhu</name>
-    </author>
-    <author>
-      <name>Meiyi Zhu</name>
-    </author>
-    <author>
-      <name>Yunkai Dang</name>
-    </author>
-    <author>
-      <name>Zhangnan Li</name>
-    </author>
-    <author>
-      <name>Yuxuan Wang</name>
-    </author>
-    <author>
-      <name>Wenbin Li</name>
-    </author>
-    <author>
-      <name>Hongbing Pan</name>
-    </author>
-    <summary type="text">UAV-borne imaging has advanced from megapixel to gigapixel sensors, shifting aerial perception from recognizing individual targets to understanding entire dynamic scenes. We characterize this demand as Wide-area Spatio-temporal Scene Understanding (WSTU), which requires wide-area coverage, per-target resolution, and temporal continuity at once, a combination existing datasets lack. To fill this gap, we introduce an ultra-High-resolution (12768x9564) Airborne Remote-sensing Dataset (HARD) annotated at three levels for object detection, multi-object tracking, and scene-level visual question answering. Ultra-high-resolution imagery raises per-frame processing time to seconds. At that scale latency can no longer be ignored in evaluation. Thus, we propose a latency-aware metric for multi-object tracking called streaming-HOTA (s-HOTA). Extensive baseline experiments show how ultra-high-resolution processing reshapes each task. For detection, the end-to-end pipeline affects accuracy and speed as much as the detector itself does. For tracking, high latency charges the association axis far more unevenly than the detection axis, and association is where pipelines diverge. As a result, the pipeline that performs best offline can lose its lead under s-HOTA. For VQA, vision-language models remain weak at cross-frame identity binding and cannot transfer their single-frame gains to it. Together these findings show that the baselines we evaluate fall short of WSTU. HARD provides the data and the systematic baselines to advance it.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 pages, 5 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;OD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>

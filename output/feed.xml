@@ -4,12 +4,92 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-22T05:43:44Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 22 entries</subtitle>
+  <updated>2026-09-23T02:01:40Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 24 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Annual Earth-observation embeddings encode wildfire disturbance and support simplified burned area mapping</title>
+    <link href="http://arxiv.org/abs/2609.25731v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.25731v1</id>
+    <published>2026-09-22T00:00:00Z</published>
+    <updated>2026-09-22T00:00:00Z</updated>
+    <author>
+      <name>Jovana Knezevic</name>
+    </author>
+    <author>
+      <name>Clement Atzberger</name>
+    </author>
+    <author>
+      <name>Zhengpeng Feng</name>
+    </author>
+    <author>
+      <name>Adam F. A. Pellegrini</name>
+    </author>
+    <author>
+      <name>Srinivasan Keshav</name>
+    </author>
+    <author>
+      <name>David Coomes</name>
+    </author>
+    <summary type="text">Medium-resolution (10-30 m) burned area mapping is vital for monitoring wildfires and their impacts, but remains difficult to scale. Existing methods require either curated fire-specific imagery or dense time-series analysis. Here, we tested whether annual Earth-observation embeddings retain wildfire disturbance signals sufficiently to map burned areas without either requirement. Using Tessera and AlphaEarth embeddings, we tested individual burn-scar delineation, mapping of all same-year fires within an area, regional wall-to-wall mapping, cross-continental transfer, and intra-annual fire timing. Tessera strongly encoded wildfire disturbance, allowing even linear models to separate burned from unburned pixels; the signal was weaker in AlphaEarth. Models trained on a single Tessera embedding matched or exceeded equivalent models using paired pre- and post-fire HLS imagery, and outperformed post-fire imagery alone. The same approach mapped all same-year fires within benchmark scenes (F1 = 0.90). Applied across California, with no California fire data used for downstream training, it recovered 97% of reference burned area and detected substantially more small and medium-sized fires than GABAM or MCD64A1. Separately, a model trained on 2018-2021 US fires transferred without retraining to 88 European fires from 2024-2025 (F1 = 0.88). For well-detected fires, ignition timing was recovered with a mean absolute error of 13 days. Performance declined for fires ignited near the end of the calendar year, and wall-to-wall deployment produced systematic false positives in some unseen landscapes. Annual embeddings nevertheless achieve high segmentation accuracy while moving the burden of dense time series processing upstream, providing a promising path towards simpler regional burned area mapping.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Hi-OPD: Hierarchy-Aware Open-Prompt Detection for Remote Sensing Images</title>
+    <link href="http://arxiv.org/abs/2609.25584v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.25584v1</id>
+    <published>2026-09-22T00:00:00Z</published>
+    <updated>2026-09-22T00:00:00Z</updated>
+    <author>
+      <name>Jinlong Hu</name>
+    </author>
+    <author>
+      <name>Yi Zhang</name>
+    </author>
+    <author>
+      <name>Zhiqi Xia</name>
+    </author>
+    <author>
+      <name>Yikang Zhou</name>
+    </author>
+    <author>
+      <name>Shunping Ji</name>
+    </author>
+    <summary type="text">Hi-OPD addresses a failure mode left uncontrolled by flat open-prompt training: descendant retrieval need not persist under ancestor queries when multi-source remote sensing annotations exhibit inconsistent granularity and missing labels. A detector may localize \textit{car} and \textit{van} under atomic prompts yet miss the same instances under \textit{vehicle}; flat AP does not expose this cross-level inconsistency.   We propose Hi-OPD, a hierarchy-aware open-prompt detector, and construct RS153-HierOPD from 175,644 retained training image/tile records and 3.48M boxes mapped to 153 atomic categories with sparse hierarchy and alias relations. Hi-OPD learns ancestor retrieval through hierarchy-safe negative sampling, path multi-positive supervision, and one-way upward consistency, while per-source risk exclusion handles potentially missing labels. ConvVPE converts K-shot support boxes into text-compatible embeddings using detector-native features and the shared contrastive head.   On Track A, Hi-OPD obtains 79.7/72.3 AP50 on DIOR/DOTA-v2.0, above the literature-reported OpenRSD results of 76.7/71.8. Under controlled training on the original converted annotations, the full hierarchy recipe raises DOTA-v2.0 parent AP50 from 7.2 to 71.5 and FAIR1M grandparent AP50 from 31.6 to 71.4, while DOTA-v2.0 atomic AP50 changes from 71.4 to 72.3. The text path reaches 99.7% CAR50 (0.3% violation) across the three common sources and 99.9%/0.1% on FAIR1M grandparent relations. On held-out VEDAI, text AP50 is 75.9, 6.2 points above OpenRSD. Joint AP and CAR show that explicit hierarchy training repairs this failure mode while retaining atomic detection and prompt transfer.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Agentic Building-Aware Satellite Gaussian Splatting for Auditable Urban DSM Reconstruction</title>
+    <link href="http://arxiv.org/abs/2609.25578v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.25578v1</id>
+    <published>2026-09-22T00:00:00Z</published>
+    <updated>2026-09-22T00:00:00Z</updated>
+    <author>
+      <name>Wentao Sun</name>
+    </author>
+    <author>
+      <name>Zhengsen Xu</name>
+    </author>
+    <author>
+      <name>Yiping Chen</name>
+    </author>
+    <author>
+      <name>John S. Zelek</name>
+    </author>
+    <author>
+      <name>Jonathan Li</name>
+    </author>
+    <summary type="text">Urban-scale 3D reconstruction from satellite imagery supports disaster response, city monitoring, and geospatial digital twins, yet neural rendering methods typically optimize average visual fidelity rather than the structures that analysts inspect first: buildings. We present an agentic building-aware satellite Gaussian Splatting workflow that uses Segment Anything-derived building masks as semantic priors and an Agentic Reconstruction Controller to select, verify, and record DSM reconstruction policies. On the DFC2019 JAX\_004 scene, building-aware weighting reduces building-region DSM MAE from 0.844 m to 0.806 m, showing that semantic priors can shift reconstruction capacity toward analyst-critical regions. A staged schedule provides a balanced operating point, improving full-scene MAE from 1.362 m to 1.349 m while retaining a building gain. Across four JAX scenes, the Agent selects validated policies for both general DSM and building-focused DSM objectives, and produces building-inventory metadata and per-scene decision records. The system combines semantic priors, policy selection, region-specific DSM metrics, and DSM-derived GIS surface products for auditable urban 3D analysis.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 7 pages, 6 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>DeCo: Efficient Decouple-to-Couple Learning for Multi-Task Visual Grounding</title>
     <link href="http://arxiv.org/abs/2609.24409v1" rel="alternate" type="text/html" />
@@ -74,6 +154,148 @@
     <summary type="text">Climate variability influences whether a market disruption escalates into a food crisis, yet broad climate patterns like El Niño, tracked months before they alter hydro-climatic conditions, are still not incorporated as an early-warning component in food-security responses. We address this gap by introducing sensitivity regimes, a stratification of regions by the direction and strength of their vegetation response to the El Niño Southern Oscillation, and using them to estimate how food price spikes affect acute food insecurity across sub-Saharan Africa. Integrating remote sensing, socioeconomic data, and causal machine learning, we find that in regions where ENSO systematically suppresses vegetation, a price spike raises the share of the population at acute risk by 5.4 percentage points in the following month. In regions where vegetation is unaffected by or positively linked to ENSO, the estimated effect is smaller (around 2 percentage points) and statistically insignificant. These results demonstrate that climate context is critical for understanding food security vulnerabilities. Sensitivity regimes can be combined with operational price-spike triggers to stage anticipatory action: the ENSO state flags vulnerable regions months ahead, and a pre-positioned response in those regions to a price spike would avert the largest jump in acute food insecurity.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>MIND the Gap: A Geographic Implicit Neural Representation with Adjustable Spatial Scale</title>
+    <link href="http://arxiv.org/abs/2609.25454v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.25454v1</id>
+    <published>2026-09-21T00:00:00Z</published>
+    <updated>2026-09-21T00:00:00Z</updated>
+    <author>
+      <name>Isaac Corley</name>
+    </author>
+    <author>
+      <name>Arjun Rao</name>
+    </author>
+    <author>
+      <name>Esther Rolf</name>
+    </author>
+    <author>
+      <name>Konstantin Klemmer</name>
+    </author>
+    <author>
+      <name>Evan Shelhamer</name>
+    </author>
+    <author>
+      <name>Nils Lehmann</name>
+    </author>
+    <author>
+      <name>Marc Rußwurm</name>
+    </author>
+    <author>
+      <name>Gengchen Mai</name>
+    </author>
+    <author>
+      <name>Nathan Jacobs</name>
+    </author>
+    <author>
+      <name>Hannah Kerner</name>
+    </author>
+    <summary type="text">Geographic measurements are often sparse, leaving large areas without labels for the quantities we want to map. Geographic implicit neural representations (INRs) address this by learning smooth, general-purpose embeddings that can be queried at any coordinate. Downstream models combine these embeddings with sparse labels to predict target values at unsampled locations without satellite imagery at inference. However, generalization to distant regions remains largely unexplored, despite its importance for remote sensing applications. We introduce Matryoshka Implicit Neural Distillation (MIND), which distills embeddings from specialist pretrained geospatial models into a single generalist coordinate embedding with adjustable spatial granularity. MIND uses nested supervision at several embedding dimensions, which define a series of contiguous chunks. In our experiments, early chunks capture coarser geographic variation, while later chunks add more fine-grained details. A downstream predictor can retain only leading chunks or be fitted with our Chunked Penalty to downweight later chunks while keeping the full embedding, without retraining the INR. To measure MIND and compare to existing approaches around the world, we introduce CoordBench, a large-scale INR evaluation suite of $52$ datasets and $78$ targets that aims to test both local interpolation and prediction in held-out regions at various spatial scales. MIND and its Chunked Penalty variant achieve the highest aggregate regression and classification scores among tested INRs, and the highest scores overall under regional holdout, setting a new state-of-the-art for geographic INRs.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; https://research.taylorgeospatial.org/mind&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>MirrorDistill: Illumination-Aware Latent Distillation for Efficient Low-Light Restoration</title>
+    <link href="http://arxiv.org/abs/2609.25331v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.25331v1</id>
+    <published>2026-09-21T00:00:00Z</published>
+    <updated>2026-09-21T00:00:00Z</updated>
+    <author>
+      <name>Farida Mohsen</name>
+    </author>
+    <author>
+      <name>Tala Zaim</name>
+    </author>
+    <author>
+      <name>Nurul Izni Rusli</name>
+    </author>
+    <author>
+      <name>Ali Al-Zawqari</name>
+    </author>
+    <author>
+      <name>Ali Safa</name>
+    </author>
+    <author>
+      <name>Samir Brahim Belhaouari</name>
+    </author>
+    <summary type="text">Low-light image enhancement (LLIE) is an im- portant component of visual sensing systems operating under degraded illumination, including nighttime surveillance, au- tonomous navigation, remote sensing, and inspection in poorly lit industrial environments. Most LLIE methods rely on output- level reconstruction losses that supervise only the final restored image, leaving the intermediate feature recovery process weakly constrained. This paper proposes MirrorDistill, an illumination- aware latent distillation framework that links the low-light and clean domains through feature mirroring. During training, a shared encoder and an exponential-moving-average teacher decoder process the clean reference image to generate clean- domain latent targets. These targets supervise the low-light student at two levels: raw encoder features and standardized multi-scale decoder projections. The alignment is applied layer by layer, while a proposed illumination-aware weighting scheme gives greater emphasis to underexposed regions. The teacher and reference branches are used only during training, so inference requires only the lightweight student encoder-decoder and in- troduces no teacher-side computational cost. Under evaluation on the standard LOL benchmarks, MirrorDistill outperforms the state-of-the-art methods on the real-captured LOL-v2-Real set, while having the lowest compute complexity (GMACs) and while remaining competitive on the LOL-v1 and LOL-v2-Synthetic datasets. Ablation studies further show the contributions of the encoder mirror, decoder mirror, and illumination-aware weighting. Finally, we release our code as open-source for the benefit of future research.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>In-orbit operation of a programmable quantum photonic processor</title>
+    <link href="http://arxiv.org/abs/2609.25248v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.25248v1</id>
+    <published>2026-09-21T00:00:00Z</published>
+    <updated>2026-09-21T00:00:00Z</updated>
+    <author>
+      <name>Simon Steiner</name>
+    </author>
+    <author>
+      <name>Peter Schiansky</name>
+    </author>
+    <author>
+      <name>Antonius Scherer</name>
+    </author>
+    <author>
+      <name>Riccardo Albiero</name>
+    </author>
+    <author>
+      <name>Mathias Dragosits</name>
+    </author>
+    <author>
+      <name>Zhenghao Yin</name>
+    </author>
+    <author>
+      <name>Martin Mauser</name>
+    </author>
+    <author>
+      <name>Patrik Zahálka</name>
+    </author>
+    <author>
+      <name>Raphael Pimenta</name>
+    </author>
+    <author>
+      <name>Cristóbal Melo</name>
+    </author>
+    <author>
+      <name>Cédric Léonard</name>
+    </author>
+    <author>
+      <name>Abhiram Rajan</name>
+    </author>
+    <author>
+      <name>Niki Di Giano</name>
+    </author>
+    <author>
+      <name>Antonino Caime</name>
+    </author>
+    <author>
+      <name>Roberto Osellame</name>
+    </author>
+    <author>
+      <name>Francesco Ceccarelli</name>
+    </author>
+    <author>
+      <name>Daniel Martínez</name>
+    </author>
+    <author>
+      <name>Tobias Guggemos</name>
+    </author>
+    <author>
+      <name>Iris Agresti</name>
+    </author>
+    <author>
+      <name>Philip Walther</name>
+    </author>
+    <summary type="text">Quantum technologies promise computational capabilities beyond the reach of classical systems. A forward-looking application lies in satellite missions, which increasingly depend on onboard computing under stringent constraints on size, weight and power. Quantum photonics is particularly attractive here: photon interference can enhance the machine-learning models needed to process large onboard data volumes, at fixed hardware resources. However, harnessing this interference requires more than generating single photons, as they must remain mutually indistinguishable: a fragile condition that is hard to maintain within the technically demanding framework of a space mission, which includes a rocket launch, strong thermal drifts, and radiation. This is why quantum states of light, though already generated and transmitted in orbit for secure communication and fundamental tests, have never been used as a computational resource. Here, we report a programmable quantum photonic platform operating on a nanosatellite, processing two photons in a six-mode universal integrated circuit. By programming distinct unitaries and tuning the photons into indistinguishability, we observe two-photon interference, establishing the on-board generation, manipulation and detection of non-classical light. This extends space-based technologies towards in-orbit quantum-assisted computing, for instance local encoding of Earth-observation data, or nodes in a distributed quantum network.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="quant-ph" />
   </entry>
   <entry>
     <title>Structured World-State Reasoning for Agentic Robotic Search</title>
@@ -440,124 +662,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>How Much Hyperspectral Information Does Chlorophyll Retrieval Really Need?</title>
-    <link href="http://arxiv.org/abs/2609.18531v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.18531v1</id>
-    <published>2026-09-16T00:00:00Z</published>
-    <updated>2026-09-16T00:00:00Z</updated>
-    <author>
-      <name>Abed Hammoud</name>
-    </author>
-    <author>
-      <name>Xuerong Sun</name>
-    </author>
-    <author>
-      <name>Bianca Champenois</name>
-    </author>
-    <author>
-      <name>Robert J. W. Brewin</name>
-    </author>
-    <summary type="text">Satellite ocean color algorithms translate water-leaving radiance into ecological information at spatial and temporal scales that cannot be achieved by field sampling alone. One important variable derived from water-leaving radiance is chlorophyll-a concentration ($\mathrm{CHL\text{-}a}$), a widely used indicator of phytoplankton biomass and physiology. Empirical retrieval algorithms are commonly used for $\mathrm{CHL\text{-}a}$ estimation, but their performance can vary across sensors and optically diverse waters. The Plankton, Aerosol, Cloud, ocean Ecosystem (PACE) mission provides unprecedented spectral resolution, expanding the visible spectral information available for ocean color retrievals and raising a practical algorithm design question: how can this fine resolution spectrum be used to derive the next generation of interpretable $\mathrm{CHL\text{-}a}$ retrieval algorithms? We use symbolic regression to identify sparse equations that estimate $\log_{10}(\mathrm{CHL\text{-}a})$ from multi- and hyperspectral remote sensing reflectances. The analysis first tests the standard multispectral ocean color algorithm (OC3--OC6) inputs to ask whether symbolic regression recovers standard band ratio structure, then extends the search to hyperspectral PACE-like reflectances. The best expression discovered achieved a held out root mean square deviation of 0.253 in log$_{10}$ $\mathrm{CHL\text{-}a}$, compared with 0.307 for a fitted OC6 polynomial on the same split. Ablations showed that the predictive skill of hyperspectral models is almost 12\% better than the best standard ocean color retrieval models in root mean squared deviation against held out data. When evaluated by environmental regime, differences were larger for high-chlorophyll samples, which often represent turbid water conditions.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Atmospheric and Oceanic Physics" />
-  </entry>
-  <entry>
-    <title>PDA++: Field-Aligned Planning and Scene-Adaptive Insertion in Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2609.18329v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.18329v2</id>
-    <published>2026-09-16T00:00:00Z</published>
-    <updated>2026-09-16T00:00:00Z</updated>
-    <author>
-      <name>Xianchi Dong</name>
-    </author>
-    <author>
-      <name>Yingyan Hou</name>
-    </author>
-    <author>
-      <name>Chao Ren</name>
-    </author>
-    <author>
-      <name>Wanxuan Lu</name>
-    </author>
-    <author>
-      <name>Zihan Wei</name>
-    </author>
-    <author>
-      <name>Hongfeng Yu</name>
-    </author>
-    <author>
-      <name>Yixiao Wang</name>
-    </author>
-    <author>
-      <name>Chubo Deng</name>
-    </author>
-    <author>
-      <name>Xian Sun</name>
-    </author>
-    <summary type="text">Remote sensing recognition is often constrained by scarce observations of rare targets and costly annotations, making realistic synthetic augmentation particularly valuable for few-shot and long-tailed scenarios. Object insertion provides an efficient way to increase target diversity while preserving authentic background scenes, but realistic insertion in overhead imagery requires the generated target to adapt coherently to its surrounding environment. To this end, we propose PDA++, a unified environment-aware object insertion framework organized as Plan, Decouple, and Assimilate. Planning determines scene-compatible poses through an affordance field that combines geometric clearance with structure- and scale-aware cues. Decoupling introduces a pose-conditioned background that provides precise spatial guidance together with target-scene context, allowing the reference object to preserve its identity while adapting to the target observation. This construction also naturally provides pixel-level masks for segmentation augmentation. Assimilation further improves local coherence by aligning multi-scale texture distributions through optimal transport. On the optical benchmark, PDA++ achieves a whole-image FID of 6.28 and improves average few-shot recognition mAP50 by 17.69 points, corresponding to a 28.8% relative gain over the real-data baseline. On SAR imagery, it improves ship detection by 4.10 mAP50 points and remains effective under cross-dataset transfer and amorphous-target insertion. Code is available at https://github.com/lisheyu972/PDA_PLUS.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/lisheyu972/PDA_PLUS"&gt;https://github.com/lisheyu972/PDA_PLUS&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICML 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Understanding Dynamic Scenes at Gigapixel Scale: Wide-Area Spatio-Temporal Perception from UAVs</title>
-    <link href="http://arxiv.org/abs/2609.18210v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.18210v1</id>
-    <published>2026-09-16T00:00:00Z</published>
-    <updated>2026-09-16T00:00:00Z</updated>
-    <author>
-      <name>Yuhang Zhu</name>
-    </author>
-    <author>
-      <name>Meiyi Zhu</name>
-    </author>
-    <author>
-      <name>Yunkai Dang</name>
-    </author>
-    <author>
-      <name>Zhangnan Li</name>
-    </author>
-    <author>
-      <name>Yuxuan Wang</name>
-    </author>
-    <author>
-      <name>Wenbin Li</name>
-    </author>
-    <author>
-      <name>Hongbing Pan</name>
-    </author>
-    <summary type="text">UAV-borne imaging has advanced from megapixel to gigapixel sensors, shifting aerial perception from recognizing individual targets to understanding entire dynamic scenes. We characterize this demand as Wide-area Spatio-temporal Scene Understanding (WSTU), which requires wide-area coverage, per-target resolution, and temporal continuity at once, a combination existing datasets lack. To fill this gap, we introduce an ultra-High-resolution (12768x9564) Airborne Remote-sensing Dataset (HARD) annotated at three levels for object detection, multi-object tracking, and scene-level visual question answering. Ultra-high-resolution imagery raises per-frame processing time to seconds. At that scale latency can no longer be ignored in evaluation. Thus, we propose a latency-aware metric for multi-object tracking called streaming-HOTA (s-HOTA). Extensive baseline experiments show how ultra-high-resolution processing reshapes each task. For detection, the end-to-end pipeline affects accuracy and speed as much as the detector itself does. For tracking, high latency charges the association axis far more unevenly than the detection axis, and association is where pipelines diverge. As a result, the pipeline that performs best offline can lose its lead under s-HOTA. For VQA, vision-language models remain weak at cross-frame identity binding and cannot transfer their single-frame gains to it. Together these findings show that the baselines we evaluate fall short of WSTU. HARD provides the data and the systematic baselines to advance it.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 pages, 5 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;OD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Earth and space observations meet complex algebras: from complex to octonions for multivariate autoregressive time series analysis</title>
-    <link href="http://arxiv.org/abs/2609.18794v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.18794v1</id>
-    <published>2026-09-16T00:00:00Z</published>
-    <updated>2026-09-16T00:00:00Z</updated>
-    <author>
-      <name>Susana Eyheramendy</name>
-    </author>
-    <author>
-      <name>Felipe Elorrieta</name>
-    </author>
-    <author>
-      <name>Wilfredo Palma</name>
-    </author>
-    <author>
-      <name>Javier Lopatin</name>
-    </author>
-    <summary type="text">Many datasets arise as multivariate time series observed at irregular time intervals, particularly in Earth observation and astronomical measurements. Classical time-series models assume that time is discrete and observations occur at equally spaced intervals, limiting their ability to capture dynamics when observation gaps vary. Existing approaches to irregular sampling rely on continuous-time formulations, which assume that observation intervals are sufficiently small. We address this limitation by introducing a discrete-time framework that accommodates irregular observation gaps while preserving multivariate dependence structures. We introduce a framework for the analysis of irregularly observed multivariate time series based on hypercomplex autoregressive processes. The framework embeds multivariate observations into a hypercomplex algebraic structure, allowing multiple variables and their interactions to be represented within a single mathematical entity while incorporating irregular observation gaps. The resulting process admits a structured matrix representation, which enables the model to be expressed as a state-space system. This formulation provides an estimation methodology in which model parameters can be inferred using Kalman filtering techniques. The state-space representation allows recursive estimation and prediction in the presence of irregular sampling intervals. The performance of the methodology is illustrated through data and applications to remote sensing and astronomical datasets, where observations occur at nonuniform time intervals. The results demonstrate that the approach captures dynamics and cross-variable interactions difficult to model using traditional time-series techniques. The proposed framework provides a methodology for analyzing irregularly sampled multivariate time series and opens possibilities for modeling observational data across disciplines.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 37 pages, 4 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="stat.ME" />
-    <category term="stat.AP" />
   </entry>
 </feed>

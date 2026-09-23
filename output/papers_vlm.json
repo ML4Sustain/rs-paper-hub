@@ -27510,5 +27510,24 @@
     "_added_date": "2026-09-22",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-09-22",
+    "Month": 9,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Agentic Building-Aware Satellite Gaussian Splatting for Auditable Urban DSM Reconstruction",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2609.25578v1",
+    "Abstract": "Urban-scale 3D reconstruction from satellite imagery supports disaster response, city monitoring, and geospatial digital twins, yet neural rendering methods typically optimize average visual fidelity rather than the structures that analysts inspect first: buildings. We present an agentic building-aware satellite Gaussian Splatting workflow that uses Segment Anything-derived building masks as semantic priors and an Agentic Reconstruction Controller to select, verify, and record DSM reconstruction policies. On the DFC2019 JAX\\_004 scene, building-aware weighting reduces building-region DSM MAE from 0.844 m to 0.806 m, showing that semantic priors can shift reconstruction capacity toward analyst-critical regions. A staged schedule provides a balanced operating point, improving full-scene MAE from 1.362 m to 1.349 m while retaining a building gain. Across four JAX scenes, the Agent selects validated policies for both general DSM and building-focused DSM objectives, and produces building-inventory metadata and per-scene decision records. The system combines semantic priors, policy selection, region-specific DSM metrics, and DSM-derived GIS surface products for auditable urban 3D analysis.",
+    "code": "",
+    "Publication": "7 pages, 6 figures",
+    "BibTex": "@article{sun2026agentic,\n  title={Agentic Building-Aware Satellite Gaussian Splatting for Auditable Urban DSM Reconstruction},\n  author={Wentao Sun and Zhengsen Xu and Yiping Chen and John S. Zelek and Jonathan Li},\n  journal={arXiv preprint arXiv:2609.25578v1},\n  year={2026},\n  url={http://arxiv.org/abs/2609.25578v1}\n}",
+    "Authors": "Wentao Sun, Zhengsen Xu, Yiping Chen, John S. Zelek, Jonathan Li",
+    "_added_date": "2026-09-23",
+    "Category": "Method",
+    "_tasks": "3D"
   }
 ]
