@@ -27548,5 +27548,43 @@
     "_added_date": "2026-09-24",
     "Category": "Dataset",
     "_tasks": "3D"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-09-23",
+    "Month": 9,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "A Unified Framework and Dataset for Oriented Object Visual Grounding in Remote Sensing",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2609.28230v1",
+    "Abstract": "Visual grounding in remote sensing images aims to locate objects described by referring expressions. Most existing methods predict horizontal bounding boxes, which are often inaccurate for objects with arbitrary orientations. To address this limitation, we introduce O$^2$-VG, a family of models for oriented object visual grounding with three complementary designs. Specifically, O$^2$-VG-Trans is a cross-modality transformer for oriented object visual grounding. It establishes a strong discriminative foundation for the model family. Building upon it, O$^2$-VG-Uni predicts universal oriented proposals for possible foreground objects without specific text prompts. It also supports object retrieval through cached proposal embeddings. Using these universal oriented proposals as input prompts, O$^2$-VG-VLM is an autoregressive vision-language model. It generates oriented box token blocks in parallel through multi-token prediction. In addition, we construct DIOR-R-RSVG, a dataset for oriented object visual grounding in remote sensing images. It provides image, expression, and oriented box triplets for training and evaluation. Together, the O$^2$-VG family provides a flexible framework that spans discriminative transformers and generative vision-language models. It achieves superior performance across multiple benchmarks. Code is available at https://github.com/wokaikaixinxin/ai4rs.",
+    "code": "https://github.com/wokaikaixinxin/ai4rs",
+    "Publication": "",
+    "BibTex": "@article{ding2026a,\n  title={A Unified Framework and Dataset for Oriented Object Visual Grounding in Remote Sensing},\n  author={Zeyu Ding and Yong Zhou and Jiaqi Zhao and Wen-Liang Du and Xixi Li and Hancheng Zhu and Rui Yao and Abdulmotaleb El Saddik},\n  journal={arXiv preprint arXiv:2609.28230v1},\n  year={2026},\n  url={http://arxiv.org/abs/2609.28230v1}\n}",
+    "Authors": "Zeyu Ding, Yong Zhou, Jiaqi Zhao, Wen-Liang Du, Xixi Li, Hancheng Zhu, Rui Yao, Abdulmotaleb El Saddik",
+    "_added_date": "2026-09-24",
+    "Category": "Dataset",
+    "_tasks": "VG"
+  },
+  {
+    "Type": "Machine Learning",
+    "Subtype": "Computer Vision; Image and Video Processing",
+    "Date": "2026-09-23",
+    "Month": 9,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Geospatial embeddings detect old-growth forests but buffered spatial validation narrows their advantage over Sentinel features",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2609.28194v1",
+    "Abstract": "Old-growth forests develop over centuries under minimal anthropogenic disturbance, producing structurally complex and biodiverse stands. In Europe, protecting them requires mapping that is accurate for individual forest parcels yet deployable continent-wide. Geospatial foundation model (GFM) embeddings enable label-scarce land classification, but their value for old-growth detection remains unknown. Here, we map old-growth forests across 211,893 ha of Romania's Southern Carpathians, a beech-spruce landscape typical of the Alpine Biogeographic Region. We construct high-confidence, expert-informed reference labels for old-growth and non-old-growth parcels. We add AlphaEarth, TESSERA v2 and Sentinel-1/2 features to a common baseline of topographic and human-access predictors, then compare them under spatially blocked validation with and without 10 km train-test buffers to limit residual autocorrelation. With buffering, GFM and Sentinel-1/2 predictors increase precision-recall AUC by 0.21-0.25 [95% CIs: 0.15-0.34] relative to baseline, indicating spectral data contain a spatially robust old-growth signal. With a PR-AUC of 0.84 [0.79-0.88], TESSERA outperforms Sentinel-1/2 (+0.08 [+0.05 to +0.11]) and AlphaEarth (+0.08 [+0.04 to +0.12]) under unbuffered spatial validation. At a 10 km buffer, however, this advantage narrows to +0.04 [-0.01 to +0.11] and +0.03 [-0.04 to +0.10], intervals consistent with no difference. At 10 m resolution, convolutional neural networks add no benefit over pixel-based XGBoost. Comparisons with four national- and continental-scale products show the importance of non-old-growth labels, and reveal 81% agreement between our predictions and a field-calibrated map. We conclude that buffered spatial validation is vital when transferring old-growth detection models to unseen landscapes, and provide our labels and predictions for future work.",
+    "code": "",
+    "Publication": "34 pages, including supplementary material (19-page main article with 7 figures and 3 tables; 15-page supplement with 9 figures and 21 tables). Submitted for publication. Data: https://doi.org/10.5281/zenodo.22693148 (embargoed until publication); code: https://github.com/ratsakatika/detecting-old-growth-forests",
+    "BibTex": "@article{ratsakatika2026geospatial,\n  title={Geospatial embeddings detect old-growth forests but buffered spatial validation narrows their advantage over Sentinel features},\n  author={Thomas Ratsakatika and Mihai Zotta and Srinivasan Keshav and Emily R. Lines},\n  journal={arXiv preprint arXiv:2609.28194v1},\n  year={2026},\n  url={http://arxiv.org/abs/2609.28194v1}\n}",
+    "Authors": "Thomas Ratsakatika, Mihai Zotta, Srinivasan Keshav, Emily R. Lines",
+    "_added_date": "2026-09-24",
+    "Category": "Method",
+    "_tasks": "CLS"
   }
 ]

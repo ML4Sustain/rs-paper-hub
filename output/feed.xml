@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-24T01:51:25Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 22 entries</subtitle>
+  <updated>2026-09-24T05:44:58Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 25 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -81,6 +81,86 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 5 pages, 6 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>A Unified Framework and Dataset for Oriented Object Visual Grounding in Remote Sensing</title>
+    <link href="http://arxiv.org/abs/2609.28230v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.28230v1</id>
+    <published>2026-09-23T00:00:00Z</published>
+    <updated>2026-09-23T00:00:00Z</updated>
+    <author>
+      <name>Zeyu Ding</name>
+    </author>
+    <author>
+      <name>Yong Zhou</name>
+    </author>
+    <author>
+      <name>Jiaqi Zhao</name>
+    </author>
+    <author>
+      <name>Wen-Liang Du</name>
+    </author>
+    <author>
+      <name>Xixi Li</name>
+    </author>
+    <author>
+      <name>Hancheng Zhu</name>
+    </author>
+    <author>
+      <name>Rui Yao</name>
+    </author>
+    <author>
+      <name>Abdulmotaleb El Saddik</name>
+    </author>
+    <summary type="text">Visual grounding in remote sensing images aims to locate objects described by referring expressions. Most existing methods predict horizontal bounding boxes, which are often inaccurate for objects with arbitrary orientations. To address this limitation, we introduce O$^2$-VG, a family of models for oriented object visual grounding with three complementary designs. Specifically, O$^2$-VG-Trans is a cross-modality transformer for oriented object visual grounding. It establishes a strong discriminative foundation for the model family. Building upon it, O$^2$-VG-Uni predicts universal oriented proposals for possible foreground objects without specific text prompts. It also supports object retrieval through cached proposal embeddings. Using these universal oriented proposals as input prompts, O$^2$-VG-VLM is an autoregressive vision-language model. It generates oriented box token blocks in parallel through multi-token prediction. In addition, we construct DIOR-R-RSVG, a dataset for oriented object visual grounding in remote sensing images. It provides image, expression, and oriented box triplets for training and evaluation. Together, the O$^2$-VG family provides a flexible framework that spans discriminative transformers and generative vision-language models. It achieves superior performance across multiple benchmarks. Code is available at https://github.com/wokaikaixinxin/ai4rs.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/wokaikaixinxin/ai4rs"&gt;https://github.com/wokaikaixinxin/ai4rs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Geospatial embeddings detect old-growth forests but buffered spatial validation narrows their advantage over Sentinel features</title>
+    <link href="http://arxiv.org/abs/2609.28194v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.28194v1</id>
+    <published>2026-09-23T00:00:00Z</published>
+    <updated>2026-09-23T00:00:00Z</updated>
+    <author>
+      <name>Thomas Ratsakatika</name>
+    </author>
+    <author>
+      <name>Mihai Zotta</name>
+    </author>
+    <author>
+      <name>Srinivasan Keshav</name>
+    </author>
+    <author>
+      <name>Emily R. Lines</name>
+    </author>
+    <summary type="text">Old-growth forests develop over centuries under minimal anthropogenic disturbance, producing structurally complex and biodiverse stands. In Europe, protecting them requires mapping that is accurate for individual forest parcels yet deployable continent-wide. Geospatial foundation model (GFM) embeddings enable label-scarce land classification, but their value for old-growth detection remains unknown. Here, we map old-growth forests across 211,893 ha of Romania's Southern Carpathians, a beech-spruce landscape typical of the Alpine Biogeographic Region. We construct high-confidence, expert-informed reference labels for old-growth and non-old-growth parcels. We add AlphaEarth, TESSERA v2 and Sentinel-1/2 features to a common baseline of topographic and human-access predictors, then compare them under spatially blocked validation with and without 10 km train-test buffers to limit residual autocorrelation. With buffering, GFM and Sentinel-1/2 predictors increase precision-recall AUC by 0.21-0.25 [95% CIs: 0.15-0.34] relative to baseline, indicating spectral data contain a spatially robust old-growth signal. With a PR-AUC of 0.84 [0.79-0.88], TESSERA outperforms Sentinel-1/2 (+0.08 [+0.05 to +0.11]) and AlphaEarth (+0.08 [+0.04 to +0.12]) under unbuffered spatial validation. At a 10 km buffer, however, this advantage narrows to +0.04 [-0.01 to +0.11] and +0.03 [-0.04 to +0.10], intervals consistent with no difference. At 10 m resolution, convolutional neural networks add no benefit over pixel-based XGBoost. Comparisons with four national- and continental-scale products show the importance of non-old-growth labels, and reveal 81% agreement between our predictions and a field-calibrated map. We conclude that buffered spatial validation is vital when transferring old-growth detection models to unseen landscapes, and provide our labels and predictions for future work.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 34 pages, including supplementary material (19-page main article with 7 figures and 3 tables; 15-page supplement with 9 figures and 21 tables). Submitted for publication. Data: https://doi.org/10.5281/zenodo.22693148 (embargoed until publication); code: https://github.com/ratsakatika/detecting-old-growth-forests&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+    <category term="Computer Vision; Image and Video Processing" />
+  </entry>
+  <entry>
+    <title>From Change Captions to Change Detection: Semantic-Appearance Agreement Framework for Remote Sensing Change Detection</title>
+    <link href="http://arxiv.org/abs/2609.28192v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.28192v1</id>
+    <published>2026-09-23T00:00:00Z</published>
+    <updated>2026-09-23T00:00:00Z</updated>
+    <author>
+      <name>Yuan Qian</name>
+    </author>
+    <author>
+      <name>Jie Ma</name>
+    </author>
+    <summary type="text">Remote sensing change detection (RSCD) is essential for monitoring land-cover changes and urban development. However, most methods demand pixel-level change masks, which are costly and time-consuming to annotate. Weakly supervised methods reduce this cost by using image-level change labels. Yet these labels indicate only whether a change occurs, leaving models to recover the location of the change and semantic meaning through additional and complex mechanisms. This missing information can be supplied directly by change captions, which describe what changes, what it becomes, and where it occurs. Therefore, we introduce change-caption-guided RSCD, using change captions as the sole task-specific supervision to learn change masks without manually annotated change masks. Our framework has two components: a caption-driven generation pipeline that produces bi-temporal remote sensing image pairs at scale with controlled changes matching each caption, and a change detector guided by the caption's transition semantics. The detector uses our Semantic-Appearance Agreement Framework (SAAF) to combine caption-grounded semantic responses with RGB differences for change localization, while text conditioning guides dense prediction. Experiments on our newly constructed Flair-RSGen dataset and WHU-CDC show that SAAF outperforms the closest reproduced limited-supervision baselines in macro-averaged IoU and F1 under the evaluated protocols. Code is publicly available at https://github.com/qianyuancs/SAAF.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/qianyuancs/SAAF"&gt;https://github.com/qianyuancs/SAAF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages, 6 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
   <entry>
