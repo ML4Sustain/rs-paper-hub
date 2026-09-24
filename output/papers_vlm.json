@@ -27444,7 +27444,7 @@
     "Institute": "",
     "Title": "RSPDBench: Benchmarking Vision Foundation Models on Earth Observation Tasks Under Physically Grounded Remote-Sensing Product Degradations",
     "abbr.": "",
-    "Paper_link": "http://arxiv.org/abs/2609.23427v1",
+    "Paper_link": "http://arxiv.org/abs/2609.23427v2",
     "Abstract": "Vision foundation models targeting Earth observation (EO) tasks are commonly evaluated on clean downstream benchmarks, but operational EO products can already contain spatial, radiometric, alignment, noise, and harmonization defects before reaching the model. Existing robustness evaluations often use generic image corruptions or broad domain shifts, which do not isolate these product-level failure modes. We introduce \\textbf{RSPDBench}, a physically grounded \\textbf{r}emote-\\textbf{s}ensing-\\textbf{p}roduct \\textbf{d}egradation \\textbf{b}enchmark for vision foundation models. RSPDBench evaluates five EO datasets, seven foundation-model entries, and two supervised baselines under audited primitive degradations and compound product chains. Each model is evaluated under its clean-selected native protocol, with robustness measured as the drop from its own clean baseline. Our analysis reveals that degradation sensitivity is strongly structured: resolution-conditioned and channel-grouped encoders protect different failure axes, and the same physical defect can hurt one model while helping another. Compound chains expose failures that isolated degradations do not predict, with model-dependent amplification, saturation, or component dominance, and excess drops up to $38$ percentage points beyond the strongest component. These results show that EO robustness cannot be characterized by clean accuracy or generic perturbation tests alone; it must also be measured against the structured defects that remote-sensing products carry into deployment.",
     "code": "",
     "Publication": "",
@@ -27528,6 +27528,25 @@
     "Authors": "Wentao Sun, Zhengsen Xu, Yiping Chen, John S. Zelek, Jonathan Li",
     "_added_date": "2026-09-23",
     "Category": "Method",
+    "_tasks": "3D"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Image and Video Processing",
+    "Date": "2026-09-23",
+    "Month": 9,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "SatUnreal: A High-Precision Synthetic Dataset for Satellite Stereo Matching via Unreal Engine",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2609.27442v1",
+    "Abstract": "3D reconstruction from satellite imagery is essential for large-scale topographic analysis, yet the lack of high-fidelity training datasets with accurate occlusion labels remains a primary bottleneck. Existing benchmarks, such as US3D and WHU-Stereo, face inherent challenges in spatio-temporal mismatch -- environmental changes and shadow displacements between multi-view acquisitions -- and provide ambiguous ground truth in occluded regions due to LiDAR sparsity. In this paper, we propose SatUnreal, a high-precision synthetic dataset designed to fundamentally overcome these limitations through an Unreal Engine-based simulation pipeline. SatUnreal provides 10,000 stereo pairs with high resolution (0.3m GSD) and is characterized by: (1) Physical Geometry Simulation, replicating realistic satellite orbits by systematically varying baselines and azimuths; (2) Spatio-temporal Consistency, eliminating temporal noise through fixed virtual environments; (3) Topographic Diversity, spanning dense urban canyons to low-texture natural terrains; and (4) Mathematical Label Integrity, utilizing a novel two-step linetrace algorithm to generate flawless occlusion masks. Experimental results using SOTA iterative models demonstrate that models trained exclusively on SatUnreal achieve superior zero-shot transfer performance on real-world benchmarks (US3D, WHU-Stereo) compared to those trained on real datasets. Our findings prove that physically accurate synthetic data provides a more effective supervisory signal for learning geometric features than complex real-world observations, establishing a new paradigm for Sim-to-Real transfer in Earth Observation.   Code and dataset are available at https://github.com/jmp-Telepix/SatUnreal_A_High-Precision_Synthetic_Dataset_for_Satellite_Stereo_Matching_via_UnrealEngine",
+    "code": "https://github.com/jmp-Telepix/SatUnreal_A_High-Precision_Synthetic_Dataset_for_Satellite_Stereo_Matching_via_UnrealEngine",
+    "Publication": "CVPR 2026 Workshop on EarthVision (CVPRW 2026)",
+    "BibTex": "@article{kim2026satunreal,\n  title={SatUnreal: A High-Precision Synthetic Dataset for Satellite Stereo Matching via Unreal Engine},\n  author={Han-Gyeol Kim and JaeWan Park and Junmin Park and Darongsae Kwon},\n  journal={arXiv preprint arXiv:2609.27442v1},\n  year={2026},\n  url={http://arxiv.org/abs/2609.27442v1}\n}",
+    "Authors": "Han-Gyeol Kim, JaeWan Park, Junmin Park, Darongsae Kwon",
+    "_added_date": "2026-09-24",
+    "Category": "Dataset",
     "_tasks": "3D"
   }
 ]

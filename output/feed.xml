@@ -4,12 +4,85 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-23T05:26:15Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 24 entries</subtitle>
+  <updated>2026-09-24T01:51:25Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 22 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>SatUnreal: A High-Precision Synthetic Dataset for Satellite Stereo Matching via Unreal Engine</title>
+    <link href="http://arxiv.org/abs/2609.27442v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.27442v1</id>
+    <published>2026-09-23T00:00:00Z</published>
+    <updated>2026-09-23T00:00:00Z</updated>
+    <author>
+      <name>Han-Gyeol Kim</name>
+    </author>
+    <author>
+      <name>JaeWan Park</name>
+    </author>
+    <author>
+      <name>Junmin Park</name>
+    </author>
+    <author>
+      <name>Darongsae Kwon</name>
+    </author>
+    <summary type="text">3D reconstruction from satellite imagery is essential for large-scale topographic analysis, yet the lack of high-fidelity training datasets with accurate occlusion labels remains a primary bottleneck. Existing benchmarks, such as US3D and WHU-Stereo, face inherent challenges in spatio-temporal mismatch -- environmental changes and shadow displacements between multi-view acquisitions -- and provide ambiguous ground truth in occluded regions due to LiDAR sparsity. In this paper, we propose SatUnreal, a high-precision synthetic dataset designed to fundamentally overcome these limitations through an Unreal Engine-based simulation pipeline. SatUnreal provides 10,000 stereo pairs with high resolution (0.3m GSD) and is characterized by: (1) Physical Geometry Simulation, replicating realistic satellite orbits by systematically varying baselines and azimuths; (2) Spatio-temporal Consistency, eliminating temporal noise through fixed virtual environments; (3) Topographic Diversity, spanning dense urban canyons to low-texture natural terrains; and (4) Mathematical Label Integrity, utilizing a novel two-step linetrace algorithm to generate flawless occlusion masks. Experimental results using SOTA iterative models demonstrate that models trained exclusively on SatUnreal achieve superior zero-shot transfer performance on real-world benchmarks (US3D, WHU-Stereo) compared to those trained on real datasets. Our findings prove that physically accurate synthetic data provides a more effective supervisory signal for learning geometric features than complex real-world observations, establishing a new paradigm for Sim-to-Real transfer in Earth Observation.   Code and dataset are available at https://github.com/jmp-Telepix/SatUnreal_A_High-Precision_Synthetic_Dataset_for_Satellite_Stereo_Matching_via_UnrealEngine</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/jmp-Telepix/SatUnreal_A_High-Precision_Synthetic_Dataset_for_Satellite_Stereo_Matching_via_UnrealEngine"&gt;https://github.com/jmp-Telepix/SatUnreal_A_High-Precision_Synthetic_Dataset_for_Satellite_Stereo_Matching_via_UnrealEngine&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; CVPR 2026 Workshop on EarthVision (CVPRW 2026)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Image and Video Processing" />
+  </entry>
+  <entry>
+    <title>Breaking Weather-Content Coupling: Type-Severity Guided Progressive Disentanglement for All-in-One Infrared Restoration</title>
+    <link href="http://arxiv.org/abs/2609.27317v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.27317v1</id>
+    <published>2026-09-23T00:00:00Z</published>
+    <updated>2026-09-23T00:00:00Z</updated>
+    <author>
+      <name>Xinyao Wang</name>
+    </author>
+    <author>
+      <name>Lijun He</name>
+    </author>
+    <author>
+      <name>Zhihan Ren</name>
+    </author>
+    <author>
+      <name>Fan Li</name>
+    </author>
+    <summary type="text">Infrared (IR) imaging is crucial for autonomous driving, remote sensing, and other perception tasks. However, adverse weather may introduce fake structural responses that are entangled with real thermal structures. Existing IR restoration methods are typically designed for a single degradation type or directly reconstruct from degradation-entangled representations. Consequently, they struggle to distinguish intrinsic thermal structures from weather-induced fake responses and to accommodate spatially varying degradation severity, leading to artifacts or the over-suppression of weak but meaningful thermal responses. To address these issues, we propose TSGPD-IR, a type-severity guided progressive disentanglement network for all-in-one infrared restoration that factorizes restoration guidance into task-level weather semantics and region-level degradation severity. Specifically, a Weather and Semantic Co-Guided Multi-Level Prompt Generation Module combines global weather semantics with stage-wise local features to generate adaptive prompts that progressively suppress degradation-induced responses while preserving intrinsic thermal structures. To complement global weather semantics with spatial restoration control, a Proxy-Supervised Regional Degradation Estimator derives severity supervision without manual annotations and predicts spatially varying degradation priors. Guided by these cues, a Multi-Source Collaborative Expert Selection Strategy uses a shared branch to preserve weather-invariant thermal structures and hierarchical routing to select weather-specific expert pools and severity-compatible regional experts. This design progressively separates degradation interference from genuine thermal content and enables region-adaptive restoration, reducing both residual artifacts and over-suppression.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Strip Convolution and Direction-Aware Exclusion Loss for Oriented Ship Detection</title>
+    <link href="http://arxiv.org/abs/2609.27238v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.27238v1</id>
+    <published>2026-09-23T00:00:00Z</published>
+    <updated>2026-09-23T00:00:00Z</updated>
+    <author>
+      <name>Bin Chen</name>
+    </author>
+    <author>
+      <name>Yuanyuan Liu</name>
+    </author>
+    <author>
+      <name>Peng Yang</name>
+    </author>
+    <author>
+      <name>Chao Lu</name>
+    </author>
+    <summary type="text">Oriented ship detection in very high resolution (VHR) remote sensing imagery remains challenging due to elongated hull geometry and dense target distributions in complex port scenes. Existing methods typically address geometric representation and duplicate suppression separately. To jointly tackle these issues, we propose an oriented ship detector with two complementary components. The C3k2_Strip module employs orthogonal strip convolutions to better capture elongated hull structures, while the Class-Aware Direction-Aware Exclusion Loss (CA-DAEL) suppresses redundant predictions using class, direction, and confidence cues. Experiments on HRSC2016 and DIOR-R achieve 78.45% and 53.71% mAP50:95, respectively, with only 2.91M parameters. On HRSC2016, the proposed method improves mAP50:95 by 6.32 percentage points over the YOLOv11-OBB baseline, demonstrating its effectiveness for accurate oriented ship detection.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 5 pages, 6 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Annual Earth-observation embeddings encode wildfire disturbance and support simplified burned area mapping</title>
     <link href="http://arxiv.org/abs/2609.25731v1" rel="alternate" type="text/html" />
@@ -88,6 +161,37 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 7 pages, 6 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Temporally Ordered Region-Token Mamba with Logit-Space Diffusion for Remote Sensing Change Detection</title>
+    <link href="http://arxiv.org/abs/2609.27149v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.27149v1</id>
+    <published>2026-09-22T00:00:00Z</published>
+    <updated>2026-09-22T00:00:00Z</updated>
+    <author>
+      <name>Anuvab Sen</name>
+    </author>
+    <author>
+      <name>Maneet Chatterjee</name>
+    </author>
+    <author>
+      <name>Aparup Ghosh</name>
+    </author>
+    <author>
+      <name>Udayon Sen</name>
+    </author>
+    <author>
+      <name>Arnav Aditya</name>
+    </author>
+    <author>
+      <name>Yixin Zhang</name>
+    </author>
+    <summary type="text">Remote sensing change detection requires both global reasoning across bitemporal images and precise localization of changed regions. However, dense attention is computationally expensive for high-resolution imagery, while conventional feature fusion and coarse decoding may inadequately separate genuine changes from appearance variations or preserve object boundaries. We present Bitemporal Mamba-Diffusion for Change Detection (BMD-CD), which combines temporally structured state-space modeling with logit-space diffusion refinement. BMD-CD converts deep bitemporal features into region tokens and arranges them in explicit temporal partitions before bidirectional state-space propagation. Its Bitemporal Ordered Mamba Operator enables long-range cross-temporal interaction with linear sequence complexity, while Orthogonal Feature Disentanglement forms a change-oriented output and a complementary rotated output using learned pairwise rotations and unchanged-region consistency. Multiscale decoding then produces coarse change logits, which are refined through a five-step Conditional Diffusion Decoder operating directly in logit space. Experiments on LEVIR-CD, WHU-CD, DSIFN-CD, CDD, and S2Looking demonstrate strong performance across diverse change-detection settings. BMD-CD achieves F1 scores of 93.7%, 96.0%, 97.8%, and 99.0% on the four standard benchmarks and improves 3-pixel Boundary-F1 to 87.7% and 91.4% on LEVIR-CD and WHU-CD, respectively. The full model requires 32.09 GFLOPs and 47 ms per 256 x 256 image pair, while also showing zero-shot transfer to ValaisCD and B-FLAIR-test. Our code is available at https://github.com/Aparup2139/Public_WACV/</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Aparup2139/Public_WACV/"&gt;https://github.com/Aparup2139/Public_WACV/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; WACV2027&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
   <entry>
@@ -387,8 +491,8 @@
   </entry>
   <entry>
     <title>RSPDBench: Benchmarking Vision Foundation Models on Earth Observation Tasks Under Physically Grounded Remote-Sensing Product Degradations</title>
-    <link href="http://arxiv.org/abs/2609.23427v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.23427v1</id>
+    <link href="http://arxiv.org/abs/2609.23427v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.23427v2</id>
     <published>2026-09-20T00:00:00Z</published>
     <updated>2026-09-20T00:00:00Z</updated>
     <author>
@@ -525,142 +629,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="astro-ph.EP" />
     <category term="astro-ph.SR" />
-  </entry>
-  <entry>
-    <title>Task-Oriented Semantic Feature Transmission for Multi-Task Satellite Remote Sensing over Low-SNR Channels</title>
-    <link href="http://arxiv.org/abs/2609.20150v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.20150v1</id>
-    <published>2026-09-17T00:00:00Z</published>
-    <updated>2026-09-17T00:00:00Z</updated>
-    <author>
-      <name>Shuoyuan Sun</name>
-    </author>
-    <author>
-      <name>Hongyu Wang</name>
-    </author>
-    <author>
-      <name>Mugen Peng</name>
-    </author>
-    <author>
-      <name>Wenjia Xu</name>
-    </author>
-    <summary type="text">Conventional satellite remote sensing transmission follows a reconstruct-then-infer paradigm that optimizes pixel-level fidelity, creating an objective mismatch with downstream tasks such as classification and detection, especially at low SNR. This paper investigates a task-oriented framework that bypasses image reconstruction and directly transmits semantic features extracted by a multitask-pretrained backbone. A lightweight channel adaptation module (CAM) compresses feature dimensionality for bandwidth reduction, and a feature restorer recovers task-relevant structure after channel corruption. With the backbone frozen, the CAM and task-specific downstream heads are jointly optimized with task and feature-level supervision under random-SNR training. Under the adopted AWGN setting, experiments on scene classification and object detection show consistent gains over reconstruction-oriented JSCC baselines across different SNR conditions, with the largest improvements in the low-SNR regime.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;OD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Geography as the Organizing Grammar of Geospatial Models</title>
-    <link href="http://arxiv.org/abs/2609.19621v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.19621v1</id>
-    <published>2026-09-17T00:00:00Z</published>
-    <updated>2026-09-17T00:00:00Z</updated>
-    <author>
-      <name>Rajiv Ranjan</name>
-    </author>
-    <author>
-      <name>Shashank Tamaskar</name>
-    </author>
-    <summary type="text">GeoAI increasingly produces reusable Earth representation s, physical forecasts, multimodal systems, and reasoning a gents. Their progress exposes two distinct limitations. Geo graphic completeness asks whether the represented world ex tends beyond readily observed land surfaces and atmospher ic fields to oceans, biogeography, economies, institutions, and human agency. Geographic intelligence asks whether model outputs preserve place, scale, relations, process, un certainty, and the limits of valid inference. The first con cerns what exists in a model; the second concerns what may responsibly be claimed about it. This critical integrative review argues that geography provides the organizing gram mar that connects these dimensions. Seven structural gaps, propositions, and corresponding review questions translate the argument into testable requirements. The resulting re search agenda advances Living Geospatial Models as federat ed, continually updated systems that couple specialist Earth and human-domain models through shared geographic iden tity, support, relations, provenance, and uncertainty. The objective is not a single universal network, but geospatial intelligence that can explain connections and change, antic ipate plausible futures, and support accountable decisions across places and scales.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13 Pages&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="physics.soc-ph" />
-  </entry>
-  <entry>
-    <title>Earth Surface Immune System for Rapid Monitoring of Unknown Anomalies</title>
-    <link href="http://arxiv.org/abs/2609.20662v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.20662v1</id>
-    <published>2026-09-17T00:00:00Z</published>
-    <updated>2026-09-17T00:00:00Z</updated>
-    <author>
-      <name>Jingtao Li</name>
-    </author>
-    <author>
-      <name>Qian Zhu</name>
-    </author>
-    <author>
-      <name>Xinyu Wang</name>
-    </author>
-    <author>
-      <name>Deren Li</name>
-    </author>
-    <author>
-      <name>Liangpei Zhang</name>
-    </author>
-    <author>
-      <name>Yanfei Zhong</name>
-    </author>
-    <summary type="text">Earth surface anomalies, driven by escalating climate change, and expanding human activities, are increasing in both frequency and diversity, yet their limited historical data and unpredictability make them fundamentally different from conventional remote sensing targets. Existing methods address specific anomaly categories or stop at localization, leaving a gap between detection and actionable information. Here we present ESIA, an Earth Surface Immune System whose architecture is constrained by three principles from the biological immune system, refined over millions of years against equally diverse and uncertain threats. A non-specific innate immune stage treats anomalies as unobserved changes in time-series satellite imagery, generating binary localization maps at 14.51 km2/s without assuming any anomaly category, surpassing the strongest general baseline by 37% in F1. A specific adaptive immune stage applies negative selection to filter text prompts and matches surviving prompts with localized image patches through a multi-modal foundation model, enabling open-vocabulary recognition of unknown anomaly attributes including category, affected area, and damage severity, with recognition F1 exceeding 80%. A mutation mechanism tunes minimal embeddings at test time, adapting to each scene in 3.26s using a single reference image pair. We validate ESIA on a global-scale dataset covering 19,801.60 km2 across six anomaly categories, comparing against 22 models, and further apply it to quantify degraded farmland in the Dnipro Delta following the Kakhovka Dam collapse and assess burn severity from 2025 Palisades Fire in Los Angeles. This unprecedented flexibility in handling unknown anomalies opens new avenues for real-time disaster response and environmental surveillance.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 51 pages&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation</title>
-    <link href="http://arxiv.org/abs/2609.20441v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.20441v1</id>
-    <published>2026-09-17T00:00:00Z</published>
-    <updated>2026-09-17T00:00:00Z</updated>
-    <author>
-      <name>Fabian Schmalstieg</name>
-    </author>
-    <author>
-      <name>Karsten Mueller</name>
-    </author>
-    <author>
-      <name>Wojciech Samek</name>
-    </author>
-    <summary type="text">Geospatial foundation models can provide strong flood-segmentation performance, but their size limits deployment on memory-constrained edge hardware. We distill a 300-million-parameter Prithvi-EO-2.0 teacher, fine-tuned on the 252 manually labeled Sen1Floods11 training scenes, into a 0.7-million-parameter EfficientViT-B0 student. The teacher supervises additional unlabeled Sentinel-2 imagery, allowing the student training set to grow without new manual annotations. At the matched budget of 252 scenes, teacher-supervised training is competitive with direct training and improves STURM-Flood performance across tested configurations; a geometry-matched control shows that label source alone does not explain the difference. Scaling the teacher-supervised pool to 2,500 scenes narrows the remaining student--teacher gap: the float student reaches 0.787 water intersection over union on the Sen1Floods11 test split against 0.822 for the teacher, matches the teacher on STURM-Flood under our evaluation protocol, and remains below it on WorldFloods-v2. After activation replacement and quantization-aware training, the student runs as a 1.5-megabyte 8-bit integer (INT8) TensorRT engine on a Jetson Xavier NX at 5.57 milliseconds of graphics processing unit (GPU) compute per 512-by-512 image, with approximately 14 megabytes of runtime device memory. A fixed modified normalized difference water index (MNDWI) threshold is competitive with both models on the two clean external benchmarks, so we interpret those benchmarks as generalization tests rather than as evidence of learned-model superiority over a spectral rule. The results support the conclusion: foundation-model supervision can amplify a fixed manual annotation budget into a substantially larger training set and yield a compact, deployable edge model.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Main paper (17 pages) with supplementary material (11 pages). Submitted to IEEE JSTARS, Special Section on Generalist-Specialist Model Synergy for Remote Sensing: Theories, Methods, and Applications&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Signal-Centric Remote Sensing via Alternative Preprocessing and Acoustic Processing for ML-Driven Applications</title>
-    <link href="http://arxiv.org/abs/2609.21123v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.21123v1</id>
-    <published>2026-09-17T00:00:00Z</published>
-    <updated>2026-09-17T00:00:00Z</updated>
-    <author>
-      <name>Logan Luna</name>
-    </author>
-    <author>
-      <name>Sirio Jansen-Sánchez</name>
-    </author>
-    <author>
-      <name>Ilteris Demirkiran</name>
-    </author>
-    <author>
-      <name>Leo Ghelarducci</name>
-    </author>
-    <summary type="text">The dominant method of processing sonar data is using image-based representations, requiring the preprocessing of image data on autonomous systems. We propose an alternative data processing method for remote sensing applications via the use of data in Comma-Seperated Value format. Experimentation on our alternative approach shows a reduction of processing time by 91.18%, an improvement in accurate object detection by Machine Learning, and an increase in SNR (Signal-to-noise ratio), PSNR (Peak signal-to-noise ratio), and other evaluation metrics.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Proc&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-    <category term="Robotics" />
-  </entry>
-  <entry>
-    <title>MarsRecon: Self-Supervised and Multimodal Surface Representations for Mars</title>
-    <link href="http://arxiv.org/abs/2609.22379v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.22379v1</id>
-    <published>2026-09-17T00:00:00Z</published>
-    <updated>2026-09-17T00:00:00Z</updated>
-    <author>
-      <name>Akshay Naik</name>
-    </author>
-    <author>
-      <name>Marius F. R. Juston</name>
-    </author>
-    <author>
-      <name>Jay Mahajan</name>
-    </author>
-    <summary type="text">High-resolution orbital imagery offers a rich record of the Martian surface, but sparse geological labels limit supervised representation learning. We present MarsRecon, a geospatially aware pipeline for learning visual and multimodal representations from HiRISE observations of Olympus Mons. The pipeline calibrates NASA Planetary Data System products, extracts valid georeferenced patches, and trains a masked autoencoder on unlabeled imagery. Increasing input resolution and filtering invalid tokens reduced held-out reconstruction loss from 0.1751 to 0.1342 in the principal Stage A model series. We then freeze the visual encoder and align its features with observation text, coordinates, and local--global image context. The strongest current local-primary model achieves image-to-text recall@10 of 0.3787, text-to-image recall@10 of 0.9161, and local-to-global recall@10 of 0.4350 on the held-out test split. These results establish a working Mars-specific pretraining and retrieval pipeline; further crop-overlap controls and downstream geological evaluations are needed to assess the broader utility of its embeddings.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 27 pages, 22 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>
