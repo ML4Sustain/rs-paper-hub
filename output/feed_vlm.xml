@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-24T05:44:58Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 9 entries</subtitle>
+  <updated>2026-09-25T02:07:49Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 10 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -96,6 +96,41 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Machine Learning" />
     <category term="Computer Vision; Image and Video Processing" />
+  </entry>
+  <entry>
+    <title>GeoNLI - A Natural Language Interpreter for Satellite Imagery</title>
+    <link href="http://arxiv.org/abs/2609.28741v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.28741v1</id>
+    <published>2026-09-23T00:00:00Z</published>
+    <updated>2026-09-23T00:00:00Z</updated>
+    <author>
+      <name>Ashutosh Gandhe</name>
+    </author>
+    <author>
+      <name>Anupam Rawat</name>
+    </author>
+    <author>
+      <name>Geet Sethi</name>
+    </author>
+    <author>
+      <name>Kabir Nasiruddin</name>
+    </author>
+    <author>
+      <name>Madhav Kotecha</name>
+    </author>
+    <author>
+      <name>Panav Shah</name>
+    </author>
+    <author>
+      <name>Rakshit Sawarn</name>
+    </author>
+    <author>
+      <name>Soumitra Nayak</name>
+    </author>
+    <summary type="text">Multi-modal multitasking models have shown strong performance on remote sensing datasets. However, because these models are trained on heterogeneous data and vary across tasks, designing a unified model that performs well in captioning, visual question answering (VQA), and visual grounding remains challenging.   In this work, we evaluate several models on the VRS Bench and NWPU-VHR-10 datasets. The EarthMind model demonstrates strong results in both captioning and VQA. For grounding, we propose multiple pipelines - RemoteSAM-SAM-v1, RemoteSAM-SAM-v2, and DiffuSAM - and ultimately adopt a majority-voting ensemble across EarthMind, RemoteSAM, SAM3, Falcon, RemoteSAM-SAM3-v1, RemoteSAM-SAM3-v2, and DiffuSAM predictions.   Our unified, modular pipeline integrates advanced SAM variants with multimodal LLMs to jointly perform captioning, VQA, and grounding. It achieves 82% accuracy on captioning and 83.32% on VQA, with 90.94%, 52.04%, and 92.06% for binary, numeric, and semantic question types respectively. For grounding, it attains 64.94% accuracy. By combining diverse VLMs with our custom RemoteSAM-SAM3 models through ensemble majority voting, the system delivers more accurate and consistent remote-sensing understanding than task-specific approaches.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;IC;VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
   </entry>
   <entry>
     <title>Agentic Building-Aware Satellite Gaussian Splatting for Auditable Urban DSM Reconstruction</title>

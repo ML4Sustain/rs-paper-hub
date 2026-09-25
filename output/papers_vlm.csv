@@ -10163,3 +10163,10 @@ Method,Method,Machine Learning,Computer Vision; Image and Video Processing,2026-
   year={2026},
   url={http://arxiv.org/abs/2609.28194v1}
 }","Thomas Ratsakatika, Mihai Zotta, Srinivasan Keshav, Emily R. Lines",CLS,2026-09-24
+Method,Method,Computer Vision,,2026-09-23,9,2026,,GeoNLI - A Natural Language Interpreter for Satellite Imagery,,http://arxiv.org/abs/2609.28741v1,"Multi-modal multitasking models have shown strong performance on remote sensing datasets. However, because these models are trained on heterogeneous data and vary across tasks, designing a unified model that performs well in captioning, visual question answering (VQA), and visual grounding remains challenging.   In this work, we evaluate several models on the VRS Bench and NWPU-VHR-10 datasets. The EarthMind model demonstrates strong results in both captioning and VQA. For grounding, we propose multiple pipelines - RemoteSAM-SAM-v1, RemoteSAM-SAM-v2, and DiffuSAM - and ultimately adopt a majority-voting ensemble across EarthMind, RemoteSAM, SAM3, Falcon, RemoteSAM-SAM3-v1, RemoteSAM-SAM3-v2, and DiffuSAM predictions.   Our unified, modular pipeline integrates advanced SAM variants with multimodal LLMs to jointly perform captioning, VQA, and grounding. It achieves 82% accuracy on captioning and 83.32% on VQA, with 90.94%, 52.04%, and 92.06% for binary, numeric, and semantic question types respectively. For grounding, it attains 64.94% accuracy. By combining diverse VLMs with our custom RemoteSAM-SAM3 models through ensemble majority voting, the system delivers more accurate and consistent remote-sensing understanding than task-specific approaches.",,,"@article{gandhe2026geonli,
+  title={GeoNLI - A Natural Language Interpreter for Satellite Imagery},
+  author={Ashutosh Gandhe and Anupam Rawat and Geet Sethi and Kabir Nasiruddin and Madhav Kotecha and Panav Shah and Rakshit Sawarn and Soumitra Nayak},
+  journal={arXiv preprint arXiv:2609.28741v1},
+  year={2026},
+  url={http://arxiv.org/abs/2609.28741v1}
+}","Ashutosh Gandhe, Anupam Rawat, Geet Sethi, Kabir Nasiruddin, Madhav Kotecha, Panav Shah, Rakshit Sawarn, Soumitra Nayak",VQA;IC;VG,2026-09-25

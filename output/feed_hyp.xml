@@ -4,12 +4,37 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-24T05:44:58Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
+  <updated>2026-09-25T02:07:49Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Recoverable Geographic Location Information in Earth-Observation Embeddings</title>
+    <link href="http://arxiv.org/abs/2609.29151v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.29151v1</id>
+    <published>2026-09-24T00:00:00Z</published>
+    <updated>2026-09-24T00:00:00Z</updated>
+    <author>
+      <name>Peiwen Zhang</name>
+    </author>
+    <author>
+      <name>Kristie Hu</name>
+    </author>
+    <author>
+      <name>Jovana Knezevic</name>
+    </author>
+    <author>
+      <name>Shunde Yin</name>
+    </author>
+    <author>
+      <name>Kyle Gao</name>
+    </author>
+    <summary type="text">Earth-observation (EO) foundation models provide reusable embeddings, yet downstream task accuracy does not reveal whether these representations encode geographic information, which may be beneficial for location-aware applications but potentially detrimental when representations invariant to geographic location are desired. We therefore evaluate the geographic coordinate robustness of Tessera v1, Tessera v1.1, and AlphaEarth by testing whether coordinates can be predicted from the embedding representations using 284 quality-verified European solar farms from 2024. We assessed geographic information content information through the association between cosine and geodesic distances and through prediction of projected coordinates in EPSG:3035. Embeddings from all three EO foundation models contain recoverable geographic information. All prediction models significantly outperform training-range uniform random sampling baselines, with AlphaEarth exhibiting the strongest distance association and lowest mean geodesic error. Both Tessera variants also yielded higher geographic distance correlations than the Sentinel-2 controls. These findings motivate geographic information content as an additional criterion for auditing EO foundation models.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Decision-Centered Evaluation of Machine Learning Poverty Maps Using Mobile Phone and Satellite Data</title>
     <link href="http://arxiv.org/abs/2609.23805v1" rel="alternate" type="text/html" />

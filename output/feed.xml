@@ -4,12 +4,105 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-24T05:44:58Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 25 entries</subtitle>
+  <updated>2026-09-25T02:07:49Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 29 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Efficient Continuous DEM Reconstruction under Limited Target-Resolution Supervision</title>
+    <link href="http://arxiv.org/abs/2609.29864v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.29864v1</id>
+    <published>2026-09-24T00:00:00Z</published>
+    <updated>2026-09-24T00:00:00Z</updated>
+    <author>
+      <name>Zekai Shi</name>
+    </author>
+    <author>
+      <name>Meng Zhang</name>
+    </author>
+    <author>
+      <name>Haokun Zhang</name>
+    </author>
+    <author>
+      <name>Bo Zhang</name>
+    </author>
+    <summary type="text">High-resolution digital elevation models (DEMs) support Earth observation applications, but paired training references are often available only at coarser output resolutions. Reconstructing finer terrain grids therefore requires both effective transfer beyond the supervised scale and control of dense-query computation. To address this problem, SCOPE learns a continuous terrain representation from coarser-resolution pairs. It predicts a latent coefficient field on the low-resolution grid and reuses local Fourier residual functions through basis evaluation and geometry-guided ensemble fusion. This separates high-dimensional coefficient prediction from output-grid construction. Experiments on geographically distributed land--ocean samples assess supervised reconstruction, unseen-scale inference, cross-domain generalization, and theoretical computation. SCOPE leads the compared methods across six metrics in the main supervised-scale evaluation. At an unseen factor three times the training factor, land reconstruction reduces RMSE and MAE by approximately 12\% relative to bicubic interpolation, with errors close to target-scale fine-tuning. Ninefold output density increases counted multiply--accumulate operations by only about 2\%. Frozen-model validation on held-out external marine regions reduces RMSE relative to the DEM-specific implicit baseline EBCF-CDEM by approximately 19\% under self-downsampling and 2\% with cross-product inputs, while also yielding lower RMSE than LIIF-MS in both settings. These results demonstrate the value of reusable coefficient fields for accurate reconstruction beyond the supervised resolution with low incremental arithmetic cost.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 19 pages, 15 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning; Image and Video Processing" />
+  </entry>
+  <entry>
+    <title>Recoverable Geographic Location Information in Earth-Observation Embeddings</title>
+    <link href="http://arxiv.org/abs/2609.29151v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.29151v1</id>
+    <published>2026-09-24T00:00:00Z</published>
+    <updated>2026-09-24T00:00:00Z</updated>
+    <author>
+      <name>Peiwen Zhang</name>
+    </author>
+    <author>
+      <name>Kristie Hu</name>
+    </author>
+    <author>
+      <name>Jovana Knezevic</name>
+    </author>
+    <author>
+      <name>Shunde Yin</name>
+    </author>
+    <author>
+      <name>Kyle Gao</name>
+    </author>
+    <summary type="text">Earth-observation (EO) foundation models provide reusable embeddings, yet downstream task accuracy does not reveal whether these representations encode geographic information, which may be beneficial for location-aware applications but potentially detrimental when representations invariant to geographic location are desired. We therefore evaluate the geographic coordinate robustness of Tessera v1, Tessera v1.1, and AlphaEarth by testing whether coordinates can be predicted from the embedding representations using 284 quality-verified European solar farms from 2024. We assessed geographic information content information through the association between cosine and geodesic distances and through prediction of projected coordinates in EPSG:3035. Embeddings from all three EO foundation models contain recoverable geographic information. All prediction models significantly outperform training-range uniform random sampling baselines, with AlphaEarth exhibiting the strongest distance association and lowest mean geodesic error. Both Tessera variants also yielded higher geographic distance correlations than the Sentinel-2 controls. These findings motivate geographic information content as an additional criterion for auditing EO foundation models.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>A Possible Complication of Using the 4.14 μm band to Assess D/H Ratios on Icy Bodies</title>
+    <link href="http://arxiv.org/abs/2609.29003v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.29003v1</id>
+    <published>2026-09-24T00:00:00Z</published>
+    <updated>2026-09-24T00:00:00Z</updated>
+    <author>
+      <name>Mark J. Loeffler</name>
+    </author>
+    <author>
+      <name>Rebecca A. Carmack</name>
+    </author>
+    <author>
+      <name>Stephen C. Tegler</name>
+    </author>
+    <summary type="text">Determining isotopic ratios on the surfaces of extraterrestrial objects can provide insight into their formation conditions and evolution. Recently, remote-sensing detections of the 4.14 μm HDO absorption band have enabled astronomers to estimate the D/H ratio on several icy objects in the outer solar system. Here, we quantify how ice phase and radiation processing affect the 4.14 μm absorption band. While the band is visible in H2O-ice samples with a crystalline component, we cannot detect it in amorphous H2O-ice. Furthermore, we find that radiation processing, using 10 keV electrons as a proxy, quickly makes this absorption feature undetectable at a rate consistent with the amorphization of an initially crystalline sample. Interestingly, we also find that recrystallizing the irradiated sample causes this band to reappear nearly to its original band depth. For the Saturnian satellite Mimas, we estimate that the HDO feature will decrease by a factor of two within ~1 x 10^4 yrs at typical depths probed by remote sensing spectroscopy. While we suspect that existing methods could still determine the D/H ratio from a surface composed entirely of crystalline H2O-ice, deriving it for surfaces with a significant amorphous fraction may lead to severe underestimation of the true D/H ratio. However, given the direct correlation between the amorphous fraction of the sample and the HDO band depth, we propose that one could still estimate the D/H ratio of a surface with mixed phases by determining the crystalline fraction of the surface H2O-ice using other absorption features.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 14 pages; 5 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="astro-ph.EP" />
+  </entry>
+  <entry>
+    <title>GeoDose-CP: Graph-Local Conformal Inference for Continuous-Treatment Earth Observation</title>
+    <link href="http://arxiv.org/abs/2609.28895v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.28895v1</id>
+    <published>2026-09-24T00:00:00Z</published>
+    <updated>2026-09-24T00:00:00Z</updated>
+    <author>
+      <name>Md Khalid Hasan Sakib</name>
+    </author>
+    <author>
+      <name>Dristi Datta</name>
+    </author>
+    <author>
+      <name>Manoranjan Paul</name>
+    </author>
+    <author>
+      <name>Davina White</name>
+    </author>
+    <summary type="text">Reliable intervention-oriented uncertainty quantification from Earth observation (EO) remains challenging when continuous treatment shifts, spatial dependence, limited support, and satellite-outcome uncertainty must be addressed simultaneously. Existing causal, conformal, and spatial approaches address parts of this problem, but their direct combination does not generally recover the appropriate interventional reference law because candidate reassignment jointly alters treatment likelihood, standardized residuals, and graph-dependent residual likelihood. This study presents GeoDose-CP, a support-aware conformal framework for localized stochastic potential outcomes under continuous or mixed continuous-atomic treatment. Its central methodological contribution is a graph-local target-orbit law that jointly represents intervention-induced treatment shift, the inverse outcome-scale Jacobian, and spatial residual dependence. The framework further provides exact weighted candidate inversion, a scalable sparse approximation with explicit discrepancy accounting, and refusal under inadequate support. Evaluation used controlled known-truth experiments, MineDoseBench, treatment-density sensitivity analysis, external conformal comparators, and a multi-mine New South Wales (NSW) study. In MineDoseBench, GeoDose-CP achieved mean selective coverage of 0.9692 across 27 configurations and a minimum local q0.05 of 0.8951; exact-sparse auditing produced nine inclusion disagreements over 2,700 targets. In the NSW study, the absence of an auditable longitudinal rehabilitation treatment rendered treatment-dependent inference nonoperational rather than forcing inference through a proxy exposure.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="stat.AP" />
+    <category term="Machine Learning" />
+  </entry>
   <entry>
     <title>SatUnreal: A High-Precision Synthetic Dataset for Satellite Stereo Matching via Unreal Engine</title>
     <link href="http://arxiv.org/abs/2609.27442v1" rel="alternate" type="text/html" />
@@ -161,6 +254,67 @@
 &lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages, 6 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Human-in-the-Loop Geospatial Annotation for Rapid Dataset Construction in Field-Deployed UAV Systems</title>
+    <link href="http://arxiv.org/abs/2609.28767v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.28767v1</id>
+    <published>2026-09-23T00:00:00Z</published>
+    <updated>2026-09-23T00:00:00Z</updated>
+    <author>
+      <name>Morgan Masters</name>
+    </author>
+    <author>
+      <name>Nikolaas Bender</name>
+    </author>
+    <author>
+      <name>T. Luca Altaffer</name>
+    </author>
+    <author>
+      <name>Colleen Josephson</name>
+    </author>
+    <author>
+      <name>Steve McGuire</name>
+    </author>
+    <summary type="text">Real-world perception systems must adapt to changing environments, but manual image annotation cannot scale to field data volumes. We present BirdsEye, which shifts expert annotation from images to the field: an operator records target locations in world coordinates using RTK positioning and calibrated projective geometry propagates each observation to all frames where the target is visible. To quantify how well physical annotations align with image observations, we derive a first-order mapping from camera-pose uncertainty to pixel uncertainty and validate it against Monte Carlo simulation. This mapping is linear in the six per-axis pose variances, so it inverts into a sensor design tool: we give a sufficient condition converting an annotation tolerance into a convex set of admissible pose-noise budgets, a closed-form largest admissible scaling of a deployed sensor suite, and a unique per-axis pose specification under an equal-budget-share allocation. We also analyze the planar-surface approximation underlying the projection, which holds up to 10 degrees of terrain slope. By direct measurement, we show that system projection accuracy is sub-decimeter (sub-30 pixel) at AGL altitudes of 10-20m under conditions excluding sustained yawing. During an in-field case study across three agricultural sites, two field workers produced 12,524 annotated frames carrying 55,600 labels in roughly 12 hours (25.5x per-worker rate increase over manual labeling). Detectors trained on imagery collected by this workflow recovered 56-89% of in-view surveyed targets at a geographically distinct farm, at pre-registered operating points; human review of the leading configuration estimates detection precision at 83-87%, spanning three tie-break conventions for clusters carrying contradictory human verdicts.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 31 pages, 10 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Robotics" />
+  </entry>
+  <entry>
+    <title>GeoNLI - A Natural Language Interpreter for Satellite Imagery</title>
+    <link href="http://arxiv.org/abs/2609.28741v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.28741v1</id>
+    <published>2026-09-23T00:00:00Z</published>
+    <updated>2026-09-23T00:00:00Z</updated>
+    <author>
+      <name>Ashutosh Gandhe</name>
+    </author>
+    <author>
+      <name>Anupam Rawat</name>
+    </author>
+    <author>
+      <name>Geet Sethi</name>
+    </author>
+    <author>
+      <name>Kabir Nasiruddin</name>
+    </author>
+    <author>
+      <name>Madhav Kotecha</name>
+    </author>
+    <author>
+      <name>Panav Shah</name>
+    </author>
+    <author>
+      <name>Rakshit Sawarn</name>
+    </author>
+    <author>
+      <name>Soumitra Nayak</name>
+    </author>
+    <summary type="text">Multi-modal multitasking models have shown strong performance on remote sensing datasets. However, because these models are trained on heterogeneous data and vary across tasks, designing a unified model that performs well in captioning, visual question answering (VQA), and visual grounding remains challenging.   In this work, we evaluate several models on the VRS Bench and NWPU-VHR-10 datasets. The EarthMind model demonstrates strong results in both captioning and VQA. For grounding, we propose multiple pipelines - RemoteSAM-SAM-v1, RemoteSAM-SAM-v2, and DiffuSAM - and ultimately adopt a majority-voting ensemble across EarthMind, RemoteSAM, SAM3, Falcon, RemoteSAM-SAM3-v1, RemoteSAM-SAM3-v2, and DiffuSAM predictions.   Our unified, modular pipeline integrates advanced SAM variants with multimodal LLMs to jointly perform captioning, VQA, and grounding. It achieves 82% accuracy on captioning and 83.32% on VQA, with 90.94%, 52.04%, and 92.06% for binary, numeric, and semantic question types respectively. For grounding, it attains 64.94% accuracy. By combining diverse VLMs with our custom RemoteSAM-SAM3 models through ensemble majority voting, the system delivers more accurate and consistent remote-sensing understanding than task-specific approaches.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;IC;VG&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
   <entry>
@@ -668,46 +822,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="hep-ph" />
     <category term="astro-ph.HE" />
-  </entry>
-  <entry>
-    <title>Determination of Physical Height Differences from Time Transfer via the ACES Mission -- A Simulation Study</title>
-    <link href="http://arxiv.org/abs/2609.21786v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.21786v1</id>
-    <published>2026-09-18T00:00:00Z</published>
-    <updated>2026-09-18T00:00:00Z</updated>
-    <author>
-      <name>Klarissa Emma Lachmann</name>
-    </author>
-    <author>
-      <name>Jürgen Müller</name>
-    </author>
-    <author>
-      <name>Peter Vollmair</name>
-    </author>
-    <author>
-      <name>Anja Schlicht</name>
-    </author>
-    <summary type="text">The determination of physical height differences using highly stable atomic clocks has emerged as a novel approach in relativistic geodesy, exploiting the gravitational redshift as a direct observable of geopotential differences. In this study, we investigate the feasibility of satellite-based clock comparisons using the Atomic Clock Ensemble in Space (ACES) onboard the International Space Station, which enables time transfer via microwave (MWL) and optical (ELT) links. Since operational optical data are not yet available, a comprehensive full-scale simulation of realistic ACES observation scenarios is performed, including detailed noise models of clocks and links. A slope-based estimation method is applied to time series of clock comparisons in order to extract the relativistic redshift signal and derive height differences between the ground stations. The performance of the approach is evaluated for quasi-common view, non-common view, and split non-common view configurations, where the latter divides the observation period into shorter intervals. The results show that optical links enable faster convergence and can achieve height accuracies at the decimeter level within a few days and at the centimeter level over longer periods, while microwave links are more strongly affected by noise and bias contributions. Non-common view processing significantly increases observation availability with only minor loss in accuracy, and the split approach provides robust solutions for larger networks. These findings demonstrate the strong potential of satellite-based clock comparisons as a remote-sensing technique for determining physical height differences on a continental scale.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 21 pages, 9 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Geophysics" />
-  </entry>
-  <entry>
-    <title>Asteroids Impacting the Solar System Planets and the Moon. II: Comparison with Observational Impact Records</title>
-    <link href="http://arxiv.org/abs/2609.22044v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.22044v1</id>
-    <published>2026-09-18T00:00:00Z</published>
-    <updated>2026-09-18T00:00:00Z</updated>
-    <author>
-      <name>Qifeng Cheng</name>
-    </author>
-    <author>
-      <name>Daniel Scolnic</name>
-    </author>
-    <summary type="text">Planetary impact rates are difficult to infer from observations alone because impacts are rare, observational records are target-dependent, and converting observed flashes, bolides, and craters to an intrinsic impact rate depends on uncertain selection effects and conversion parameters. Building on the simulations in Paper I, we examine whether observational systematics can explain the order-of-magnitude mismatch between observed and modeled impact rates on Earth, and whether comparable discrepancies extend to other Solar System bodies. We convert 12 observed impact records for Earth, the Moon, Mars, and Jupiter to a common pre-atmospheric impact rate for $D&gt;10$ m, propagate uncertainties through the conversion chain, and compare the resulting rates with the intrinsic rates derived in Paper I. We find discrepancies for Earth (observation-to-model median ratio $2.2-21.0$), the Moon ($3.4-132.1$), Mars ($14.2-118.6$), and Jupiter ($2.6-47.7$), with the dominant source of the discrepancy differing by body. The simulated Jupiter-family comet (JFC) contribution substantially reduces the Earth discrepancy, suggesting that an additional dynamical source may help explain the gap. The lunar records disagree with each other by two orders of magnitude, with the discrepancy dominated by size-extrapolation uncertainties. The Mars mismatch is dominated by crater-to-impactor conversion. The Jupiter comparison depends mainly on uncertainties in the inferred number of bound impactors and in the observational completeness thresholds. Further investigation of this mismatch requires incorporating cometary modeling and tighter constraints on size-extrapolation scaling and improved observational completeness.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Submitting to AJ. Comments are welcome&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="astro-ph.EP" />
-    <category term="astro-ph.SR" />
   </entry>
 </feed>
