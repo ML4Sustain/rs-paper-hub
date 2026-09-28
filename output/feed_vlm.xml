@@ -4,12 +4,65 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-25T05:42:05Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 10 entries</subtitle>
+  <updated>2026-09-28T02:11:16Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 7 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>SatNav: A Scalable Benchmark for Long-Horizon UAV Vision-Language Navigation from Satellite Imagery</title>
+    <link href="http://arxiv.org/abs/2609.31507v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.31507v1</id>
+    <published>2026-09-25T00:00:00Z</published>
+    <updated>2026-09-25T00:00:00Z</updated>
+    <author>
+      <name>Jiajun Jiang</name>
+    </author>
+    <author>
+      <name>Chunliang Hua</name>
+    </author>
+    <author>
+      <name>Zichun Chen</name>
+    </author>
+    <author>
+      <name>Yanxing Wu</name>
+    </author>
+    <author>
+      <name>Zeyuan Yang</name>
+    </author>
+    <author>
+      <name>Jie Song</name>
+    </author>
+    <author>
+      <name>Xiao Hu</name>
+    </author>
+    <summary type="text">Urban uncrewed aerial vehicle (UAV) vision-language navigation (VLN) requires agents to follow instructions across extended urban spaces, inherently demanding long-term memory and geospatial grounding. However, scaling existing benchmarks remains difficult because of their reliance on costly reconstructed 3D assets, limiting geographic diversity and episode scale. To address this, we introduce SatNav, a scalable, long-horizon UAV VLN benchmark built from high-resolution satellite imagery. SatNav targets city-level navigation missions and uses satellite crops as approximations of UAV nadir views for visual observations. Through an automated cue-to-episode pipeline, SatNav constructs 118K episodes from 59 scenes across 18 cities, with an average trajectory length of 379 m. To stress-test long-horizon memory and geospatial reasoning, SatNav defines three task families: Boundary, Landmark, and Route, targeting loop progress tracking, landmark-based spatial grounding, and route following with counting cues. Benchmarking classical VLN agents and recent agents based on large vision-language models (LVLMs) on SatNav shows that city-scale navigation remains challenging. We further introduce SwiftVLN, a modular framework with switchable memory components, and conduct systematic memory-design ablations. Finally, satellite-to-UAV transfer experiments show that satellite-trained navigation models can operate on real-flight UAV observations, showing the practical relevance of SatNav. Our project page: https://eku127.github.io/SatNav/</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Robotics" />
+  </entry>
+  <entry>
+    <title>PTC-Decoder: Towards Intelligent SLMs on Offline Resource-Constrained Edge Devices</title>
+    <link href="http://arxiv.org/abs/2609.30836v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.30836v1</id>
+    <published>2026-09-25T00:00:00Z</published>
+    <updated>2026-09-25T00:00:00Z</updated>
+    <author>
+      <name>Minghui Yu</name>
+    </author>
+    <author>
+      <name>Ke Mu</name>
+    </author>
+    <author>
+      <name>Gang Wu</name>
+    </author>
+    <summary type="text">Deploying small language models (SLMs) on offline, resource-constrained edge devices such as remote sensing satellites presents a fundamental challenge: their limited reasoning capacity hinders reliable execution of multi-step agent tasks requiring complex tool orchestration. Existing plan-solve paradigms rely on prompt-based enforcement, which our experiments show SLMs almost entirely disregard: weak models fail to invoke the plan. We propose PTC-Decoder (Plan-Tool Constrained Decoder), a training-free, plug-and-play decoder framework that combines (1) a Plan-to-Act paradigm, which elevates planning to an atomic tool and forces its invocation at the first inference step, and (2) TC-Decoder, a deterministic finite automaton that imposes token-level hard constraints on tool names while preserving freedom over parameter generation, thereby retaining SLM reasoning capability. Evaluated on 200 real remote-sensing satellite tasks across 7 SLMs, PTC-Decoder yields a statistically significant mean overall score gain of +1.21 (p&lt;0.01), 95% CI [+1.13, +1.29]), with consistent improvements across models and other datasets. An ablation study that removes TC-Decoder causes substantial performance degradation across all quality metrics without reducing computational cost, confirming TC-Decoder as the primary driver. PTC-Decoder thus offers a lightweight yet effective solution for improving step-level reliability, with final-answer accuracy remaining an open challenge. In essence, we enforce plan adherence by constraining the permissible output vocabulary during inference, without requiring retraining.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>SatUnreal: A High-Precision Synthetic Dataset for Satellite Stereo Matching via Unreal Engine</title>
     <link href="http://arxiv.org/abs/2609.27442v1" rel="alternate" type="text/html" />
@@ -158,147 +211,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>DeCo: Efficient Decouple-to-Couple Learning for Multi-Task Visual Grounding</title>
-    <link href="http://arxiv.org/abs/2609.24409v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.24409v1</id>
-    <published>2026-09-21T00:00:00Z</published>
-    <updated>2026-09-21T00:00:00Z</updated>
-    <author>
-      <name>Xiaoqiang Lu</name>
-    </author>
-    <author>
-      <name>Licheng Jiao</name>
-    </author>
-    <author>
-      <name>Long Sun</name>
-    </author>
-    <author>
-      <name>Yuting Yang</name>
-    </author>
-    <author>
-      <name>Xu Liu</name>
-    </author>
-    <author>
-      <name>Lingling Li</name>
-    </author>
-    <author>
-      <name>Wenping Ma</name>
-    </author>
-    <author>
-      <name>Fang Liu</name>
-    </author>
-    <summary type="text">Multi-task visual grounding requires models to jointly understand linguistic semantics and perform accurate visual localization and segmentation. Despite the success of multimodal large language models, effectively adapting them to multiple grounding objectives remains challenging. Existing methods commonly enforce task cooperation through shared representations, while overlooking the intrinsic conflict between task-oriented feature interests. In this paper, we introduce $\textbf{DeCo}$, an efficient $\textbf{De}$couple-to-$\textbf{Co}$uple learning framework that resolves this dilemma through a two-stage paradigm: task-specific representation decoupling followed by complementary prior coupling. Specifically, we first propose Task-aware Semantic Decoupling (TSD) to route shared visual cues into individual features under salient word-level guidance, alleviating representation interference between localization and segmentation. Furthermore, we observe that segmentation naturally provides informative localization priors due to dense supervision. Based on this insight, we introduce Hybrid Prior Coupling (HPC), which integrates sentence-level semantic prior with mask-derived spatial prior for enhanced grounding. Built upon a frozen multimodal encoder, DeCo requires lightweight trainable parameters while achieving strong generalization across multiple grounding objectives. Extensive experiments on RefCOCO/+, G-Ref, ReferIt, Flickr, DIOR-RSVG, SARVG1.0, RRSIS-D, RIS-LAD, and RefDIOR demonstrate that DeCo achieves state-of-the-art performance on both natural and remote sensing benchmarks. The code and models are available at https://github.com/xiaoqiang-lu/DeCo.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/xiaoqiang-lu/DeCo"&gt;https://github.com/xiaoqiang-lu/DeCo&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 34 pages,9 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Structured World-State Reasoning for Agentic Robotic Search</title>
-    <link href="http://arxiv.org/abs/2609.23841v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.23841v1</id>
-    <published>2026-09-20T00:00:00Z</published>
-    <updated>2026-09-20T00:00:00Z</updated>
-    <author>
-      <name>Finley R. Holt</name>
-    </author>
-    <author>
-      <name>Luis A. Pabon</name>
-    </author>
-    <author>
-      <name>John Irvin Alora</name>
-    </author>
-    <author>
-      <name>Jonas Frey</name>
-    </author>
-    <author>
-      <name>Marco Pavone</name>
-    </author>
-    <summary type="text">Long-horizon robotic search must resolve natural language against heterogeneous, incomplete, and often ambiguous evidence: textual information, prior maps, and observations arriving over time. The core challenge is to contextualize these streams and decide where to gather evidence before selecting a target. We present WORLDS: World-state Observation and Reasoning for Language-guided Discovery and Search, a framework that grounds reasoning in a persistent graph initialized from geospatial priors and updated by perception. Parallel Reasoners maintain competing candidate interpretations and request evidence to distinguish between them. We collect and process the requested observations with a multimodal Examiner, after which a Judge selects a grounded target or requests another pass. WORLDS achieves 51.8% navigation success across all 5,311 CityNav test episodes, the highest reported success rate, exceeding the previous published best by 15.7 percentage points under an OSM-only, high-resolution orthographic protocol. On 1,000 shared episodes, it achieves 50.0% versus 27.9% for the strongest adapted baseline using the same model, prior, sensing stack, and movement budget. Observation-based verification by the Examiner contributes 5.9 points of this success, and at a reduced reasoning-effort setting WORLDS still exceeds the adapted GeoNav baseline by 18.8 points while generating fewer tokens. We also demonstrate WORLDS on a quadrotor, which flies the generated sensing waypoints and grounds three language targets, including a vehicle absent from the map, from its onboard imagery.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE International Conference on Robotics and Automation (ICRA) 2027&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Robotics" />
-  </entry>
-  <entry>
-    <title>RSPDBench: Benchmarking Vision Foundation Models on Earth Observation Tasks Under Physically Grounded Remote-Sensing Product Degradations</title>
-    <link href="http://arxiv.org/abs/2609.23427v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.23427v2</id>
-    <published>2026-09-20T00:00:00Z</published>
-    <updated>2026-09-20T00:00:00Z</updated>
-    <author>
-      <name>Tanjim Bin Faruk</name>
-    </author>
-    <author>
-      <name>Khondaker Masfiq Reza</name>
-    </author>
-    <author>
-      <name>Shrideep Pallickara</name>
-    </author>
-    <author>
-      <name>Sangmi Lee Pallickara</name>
-    </author>
-    <summary type="text">Vision foundation models targeting Earth observation (EO) tasks are commonly evaluated on clean downstream benchmarks, but operational EO products can already contain spatial, radiometric, alignment, noise, and harmonization defects before reaching the model. Existing robustness evaluations often use generic image corruptions or broad domain shifts, which do not isolate these product-level failure modes. We introduce \textbf{RSPDBench}, a physically grounded \textbf{r}emote-\textbf{s}ensing-\textbf{p}roduct \textbf{d}egradation \textbf{b}enchmark for vision foundation models. RSPDBench evaluates five EO datasets, seven foundation-model entries, and two supervised baselines under audited primitive degradations and compound product chains. Each model is evaluated under its clean-selected native protocol, with robustness measured as the drop from its own clean baseline. Our analysis reveals that degradation sensitivity is strongly structured: resolution-conditioned and channel-grouped encoders protect different failure axes, and the same physical defect can hurt one model while helping another. Compound chains expose failures that isolated degradations do not predict, with model-dependent amplification, saturation, or component dominance, and excess drops up to $38$ percentage points beyond the strongest component. These results show that EO robustness cannot be characterized by clean accuracy or generic perturbation tests alone; it must also be measured against the structured defects that remote-sensing products carry into deployment.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Retrieval Geometry Shapes Cache-Based Clip Adaptation</title>
-    <link href="http://arxiv.org/abs/2609.23409v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.23409v1</id>
-    <published>2026-09-20T00:00:00Z</published>
-    <updated>2026-09-20T00:00:00Z</updated>
-    <author>
-      <name>Mahir Shahriar Tamim</name>
-    </author>
-    <author>
-      <name>Md. Samiul Alim</name>
-    </author>
-    <author>
-      <name>Azmine Toushik Wasi</name>
-    </author>
-    <author>
-      <name>Shahriyar Zaman Ridoy</name>
-    </author>
-    <author>
-      <name>Meharun Nesa</name>
-    </author>
-    <author>
-      <name>Mohammad Abu Yousuf</name>
-    </author>
-    <author>
-      <name>Alex Lamb</name>
-    </author>
-    <author>
-      <name>Mohammad Ali Moni</name>
-    </author>
-    <summary type="text">Cache-based test-time adaptation improves CLIP predictions by storing and retrieving examples from the target stream while keeping the model frozen. However, existing methods largely treat the feature space used for image-image retrieval as fixed, leaving open how much adaptation depends on the retrieval space itself. We study this question by fixing the memory and changing only the retrieval encoder, finding that the same memory can yield very different gains: across sixteen retrieval spaces, ImageNet-A cache gain ranges from at most +0.44 points for CLIP and MAE to +19.7 +/- 0.4 for DINOv2-L, while label-free retrieval-space selection retains 98% of oracle gain on ImageNet-V2. These results show that memory quality depends not only on which examples are stored, but also on how they are retrieved. Motivated by this finding, we propose MARC (Memory Augmented Retrieval for CLIP), a training-free system that uses frozen CLIP for prediction and DINOv2-B for retrieval with a single fusion weight. A single-view cache repairs 1074 +/- 21 baseline errors, compared with 878 +/- 4 for a 64-view ensemble, at roughly one seventh of the cost. Across four ImageNet distribution shifts, MARC reaches a 67.91% OOD average and, at matched DINOv2-B scale and eight views, achieves 64.17 +/- 0.31% versus 62.75 +/- 0.15% for a graph-based cache system while running 2.6 times faster. Overall, our results establish retrieval space as a first-order design choice for robust cache-based adaptation in remote sensing, scientific imaging, and changing visual environments.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Under Review at ICLR&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>SatOV: Restoring Spatial Priors for Training-Free Open-Vocabulary Segmentation in Remote Sensing Imagery</title>
-    <link href="http://arxiv.org/abs/2609.22834v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.22834v1</id>
-    <published>2026-09-19T00:00:00Z</published>
-    <updated>2026-09-19T00:00:00Z</updated>
-    <author>
-      <name>Changhao Zhao</name>
-    </author>
-    <author>
-      <name>Linglin Zeng</name>
-    </author>
-    <author>
-      <name>Hai Liu</name>
-    </author>
-    <summary type="text">Open-vocabulary semantic segmentation (OVS) of remote sensing imagery is a challenging pixel-level task requiring strong generalization and adaptation to the spatial characteristics of remote sensing data. Although existing vision-language foundation models perform well in general domains, their image-level classification design weakens the spatial priors needed for high-resolution remote sensing segmentation: structural spatial relations are degraded during deep feature transformation, and fine-grained spatial details are lost during downsampling. To address these complementary deficiencies, we propose SatOV, a training-free framework for open-vocabulary remote sensing segmentation that restores spatial priors at two stages of the representation pipeline. Specifically, Residual QQ Attention (ResQQ) extracts Query-Key self-attention from an intermediate CLIP layer and fuses it with final-layer Query-Query attention via a residual combination, restoring structural spatial priors suppressed by the final-layer representation. Spatially Modulated Upsampling (SatUp) uses the original high-resolution RGB image as spatial guidance, combining spatial feature modulation with guided cross-attention to reconstruct pixel-level textures and boundaries. Extensive experiments on DOTA, UDD, LoveDA, and Vaihingen show that SatOV consistently improves training-free OVS and achieves competitive quantitative and qualitative results against state-of-the-art methods. These results validate the effectiveness of restoring spatial priors at both the representation and spatial-resolution stages for remote sensing open-vocabulary segmentation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>
