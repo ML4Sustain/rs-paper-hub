@@ -4,12 +4,214 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-28T06:13:23Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 7 entries</subtitle>
+  <updated>2026-09-29T02:57:13Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 14 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>QSCP: Beyond Class-Name Prompts for Query-Guided Semantic Change Parsing</title>
+    <link href="http://arxiv.org/abs/2609.33088v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.33088v1</id>
+    <published>2026-09-27T00:00:00Z</published>
+    <updated>2026-09-27T00:00:00Z</updated>
+    <author>
+      <name>Yuan Qian</name>
+    </author>
+    <author>
+      <name>Jie Ma</name>
+    </author>
+    <summary type="text">Traditional change detection (CD) identifies changes between bi-temporal remote sensing images, while semantic change detection (SCD) assigns predefined land-cover classes. However, mapping all changes may not meet a user's specific needs. Referring change detection (RCD) enables selective retrieval through category prompts. However, existing category-prompted RCD uses the queried category to specify the destination of a change and returns only a binary mask of the corresponding regions. Users may instead request a particular transition and paired semantic maps to understand what changed into what. Such requests require explicit source and target reasoning beyond target-class localization. To address these needs, we propose query-guided semantic change parsing (QSCP), which supports category names, synonyms, and intent-bearing sentences and returns a query-specific mask with paired temporal semantic maps. QSCP parses requests into intents and semantic slots, composes bidirectional visual evidence, and predicts both temporal states with a query-conditioned decoder. On SECOND, QSCP outperforms RCDNet on synonym, sentence, and transition queries and improves end-to-end semantic prediction over evaluated semantic baselines. WHU-CDC experiments further assess cross-dataset transfer and consistency across equivalent expressions without target-domain training. Code is available at https://github.com/qianyuancs/QSCP</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/qianyuancs/QSCP"&gt;https://github.com/qianyuancs/QSCP&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>PolyTopoBench: A Benchmark for Complex Vector Polygon Generation from Remote Sensing Imagery</title>
+    <link href="http://arxiv.org/abs/2609.32856v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.32856v1</id>
+    <published>2026-09-26T00:00:00Z</published>
+    <updated>2026-09-26T00:00:00Z</updated>
+    <author>
+      <name>Zeping Liu</name>
+    </author>
+    <author>
+      <name>Ni Lao</name>
+    </author>
+    <author>
+      <name>Weiwei Sun</name>
+    </author>
+    <author>
+      <name>Gil Wolff</name>
+    </author>
+    <author>
+      <name>Yiqun Xie</name>
+    </author>
+    <author>
+      <name>Liang Zhao</name>
+    </author>
+    <author>
+      <name>Junfeng Jiao</name>
+    </author>
+    <author>
+      <name>Gengchen Mai</name>
+    </author>
+    <summary type="text">Vector polygon generation converts visual inputs, e.g., remote sensing (RS) images, into vectorized polygonal geometries, supporting applications such as autonomous driving, vector map construction, and remote sensing. Early pipelines predict raster masks and post-process them into polygons, which prevents end-to-end optimization and may miss small objects or introduce inaccurate vertices. Recent methods directly generate vector polygons, but most focus on simple exterior contours, while they either cannot represent complex polygons with holes or fail to preserve their topology. In this paper, we propose PolyTopoBench, a unified evaluation framework for vector polygon generation from RS images with explicit emphasis on complex polygons. PolyTopoBench evaluates both exterior and interior rings, and benchmarks 11 representative methods, including segmentation-based polygonization pipelines, vision foundation model baselines, and specialized vector polygon generators, on two RS-image datasets covering buildings, roads, vegetation, and unvegetated regions. Experiments show that existing methods often recover simple exterior boundaries but degrade substantially on polygons with holes or multiple rings. These results reveal complex polygon generation as an unresolved challenge and motivate topology-aware benchmarks and model designs. Code and data are available at https://github.com/seai-lab/PolyTopoBench.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/seai-lab/PolyTopoBench"&gt;https://github.com/seai-lab/PolyTopoBench&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026 (Evaluations and Datasets Track)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>USAI-Quant: A Quantitative Reasoning Benchmark for Vision-Language Models in Built Environments</title>
+    <link href="http://arxiv.org/abs/2609.32813v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.32813v1</id>
+    <published>2026-09-26T00:00:00Z</published>
+    <updated>2026-09-26T00:00:00Z</updated>
+    <author>
+      <name>Dongdong Wang</name>
+    </author>
+    <author>
+      <name>Qingqi Song</name>
+    </author>
+    <author>
+      <name>Yuzhou Chen</name>
+    </author>
+    <author>
+      <name>Deepak Balakrishnan</name>
+    </author>
+    <author>
+      <name>Ravi Shankar Srinivasan</name>
+    </author>
+    <author>
+      <name>Shenhao Wang</name>
+    </author>
+    <summary type="text">Large vision-language models (VLMs) have emerged as a powerful paradigm for urban and spatial AI. However, current state-of-the-art large VLMs still struggle with quantitative reasoning on remote sensing imagery. Existing benchmarks and algorithms are predominantly based on qualitative Visual Question Answering (VQA), providing limited insights into the quantitative reasoning capabilities of VLMs for built environment metrics. To address this gap, we develop Quantitative Urban and Spatial AI benchmark (USAI-Quant), the first benchmark designed to quantitatively evaluate VLM's reasoning capabilities on built environment metrics via remote sensing imagery. USAI-Quant is curated from the 335 largest U.S. cities, aligning high-resolution remote sensing images with quantitative built environment metrics. We then evaluate both general-purpose and remote sensing VLMs (RS-VLMs) by applying VQAs to tens of built environment metrics across three complexity levels. Our results reveal that current state-of-the-art models consistently fall short on numeric reasoning tasks. We further conduct in-depth analyses across models, question types, and geographic locations, uncovering insights into performance variability and task-specific challenges.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, 13 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="cs.CL; Machine Learning" />
+  </entry>
+  <entry>
+    <title>Reuse or Relearn? A Spectral View of Earth Observation Foundation Models</title>
+    <link href="http://arxiv.org/abs/2609.32756v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.32756v1</id>
+    <published>2026-09-26T00:00:00Z</published>
+    <updated>2026-09-26T00:00:00Z</updated>
+    <author>
+      <name>Mehmet Ozgur Turkoglu</name>
+    </author>
+    <author>
+      <name>Valerio Marsocci</name>
+    </author>
+    <author>
+      <name>Dominik J. Mühlematter</name>
+    </author>
+    <author>
+      <name>Dominik Senti</name>
+    </author>
+    <author>
+      <name>Konrad Schindler</name>
+    </author>
+    <author>
+      <name>Helge Aasen</name>
+    </author>
+    <summary type="text">Foundation models are rarely used as generic, frozen feature extractors; instead, they are fine-tuned for the target downstream application. This practice is particularly prevalent in Earth observation (EO), and it raises a question that downstream accuracy alone cannot answer: does fine-tuning reuse the pretrained representation, or does it relearn a new one? We study this with spectral diagnostics that compare a model before and after adaptation, quantifying how well its dominant singular subspaces are preserved, how broadly the weight update is distributed, and how large it is. Using natural image models such as CLIP and DINO as a reference, we find that, under the evaluated fine-tuning settings, EO models undergo far larger, higher-rank updates and retain much less of their pretrained structure, so their downstream performance is often obtained with substantial changes to the pretrained weight structure. The diagnostics further provide insight into how cheaply a model can be adapted: where the pretrained subspaces are preserved, adapting a small fraction of the parameters can match full fine-tuning, and where they are not, it can fall behind. More broadly, foundation models, and EO foundation models in particular, should be assessed not only by benchmark accuracy, but also by how reusable their pretrained representation is.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Gradient-Guided Decoupled Adaptation for Geospatial Vision-Language Models</title>
+    <link href="http://arxiv.org/abs/2609.32737v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.32737v1</id>
+    <published>2026-09-26T00:00:00Z</published>
+    <updated>2026-09-26T00:00:00Z</updated>
+    <author>
+      <name>Dongdong Wang</name>
+    </author>
+    <author>
+      <name>Deepak Balakrishnan</name>
+    </author>
+    <author>
+      <name>Ravi Srinivasan</name>
+    </author>
+    <author>
+      <name>Shenhao Wang</name>
+    </author>
+    <summary type="text">Existing geospatial vision-language models (Geo-VLMs) typically optimize diverse geospatial tasks through a unified multi-task adaptation paradigm without explicitly accounting for the heterogeneous optimization characteristics. Our empirical observations reveal heterogeneous gradient characteristics across tasks, including vision-language differences, intra-branch gradient relationships, and task interference, which hinder effective multi-task optimization. Motivated by these observations, we propose Gradient-Guided Decoupled Adaptation (G2DA), a gradient-aware optimization framework for multi-task Geo-VLM learning. G2DA first partitions tasks into vision- and language-centric groups through gradient-guided cross-modal decoupling. It then constructs modality-specific curricula based on task gradient similarity and employs bidirectional rehearsal to mitigate the recency effects introduced by sequential optimization. We evaluate G2DA on three Geo-VLM benchmarks using six InternVL3 and Qwen3.5-VL variants, along with GeoChat and GeoLLaVA. Across all 24 benchmark-model combinations, G2DA consistently outperforms representative baselines, improving over the strongest competitor by 3.08, 4.30, and 2.81 percentage points on UrBench-MCQ, XLRS-Bench-Lite, and VRS-Bench-VQA, respectively. These results demonstrate the effectiveness of gradient-guided task organization for Geo-VLM adaptation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages, 3 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence; cs.CL; Machine Learning" />
+  </entry>
+  <entry>
+    <title>Plan-to-Synthesis: Cross-City Human Mobility Generation via Semantic Latent Flow Matching</title>
+    <link href="http://arxiv.org/abs/2609.32732v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.32732v1</id>
+    <published>2026-09-26T00:00:00Z</published>
+    <updated>2026-09-26T00:00:00Z</updated>
+    <author>
+      <name>Zhoufu Wang</name>
+    </author>
+    <author>
+      <name>Baoshen Guo</name>
+    </author>
+    <author>
+      <name>Zhiqing Hong</name>
+    </author>
+    <author>
+      <name>Junyi Li</name>
+    </author>
+    <author>
+      <name>Kailai Sun</name>
+    </author>
+    <author>
+      <name>Heye Huang</name>
+    </author>
+    <author>
+      <name>Alok Prakash</name>
+    </author>
+    <author>
+      <name>Shenhao Wang</name>
+    </author>
+    <author>
+      <name>Jinhua Zhao</name>
+    </author>
+    <summary type="text">Human mobility generation aims to synthesize realistic point-of-interest (POI) visitation trajectories and has become an important tool for travel behavior modeling, transportation management, and urban planning. Existing diffusion-based methods achieve high fidelity but require per-city generation, given the inherent heterogeneity of geospatial locations and POI categories, while large language model-based methods generalize across cities but remain too costly at scale, especially for long-horizon trajectory generation. To address this, we propose SeMoFlow, a Semantic human Mobility generation framework based on latent Flow matching. We first encode heterogeneous POIs from different cities into a shared cross-city representation space via hierarchical Semantic IDs, where shared prefixes capture transferable semantics, and successive codes progressively refine the representation toward individual POIs. Building on the semantic IDs, SeMoFlow follows a plan-to-synthesis hierarchical generation paradigm, in which an autoregressive planner generates coarse-grained semantic and recurrence patterns, and a flow matching realizer synthesizes fine-grained suffix latents. The generated latents are subsequently decoded and grounded to concrete POIs. Extensive experiments on large-scale multi-city datasets show that SeMoFlow achieves higher trajectory fidelity than existing baselines, preserves city-specific mobility motifs, and supports both joint multi-city generation and effective cross-city transfer.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.SI" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>SetOPD: From Few Visual Exemplars to Multimodal Candidate Sets for Remote-Sensing Open-Prompt Detection</title>
+    <link href="http://arxiv.org/abs/2609.32529v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.32529v1</id>
+    <published>2026-09-26T00:00:00Z</published>
+    <updated>2026-09-26T00:00:00Z</updated>
+    <author>
+      <name>Jinlong Hu</name>
+    </author>
+    <author>
+      <name>Yi Zhang</name>
+    </author>
+    <author>
+      <name>Zhiqi Xia</name>
+    </author>
+    <author>
+      <name>Yikang Zhou</name>
+    </author>
+    <author>
+      <name>Shunping Ji</name>
+    </author>
+    <summary type="text">Open-prompt detectors allow users to specify targets with text, visual exemplars, or both. We argue that existing designs underuse the visual modality in two ways. First, multiple exemplars are commonly compressed into a single class-level embedding. This textualizes visual prompting: the resulting vector plays the role of another class name, is often aligned to or injected into the text pathway, and may be suboptimal when only a few heterogeneous exemplars are available. Second, existing methods interact primarily in prompt or representation space, before modality-specific detection states are formed. We address both issues from a set perspective: \setopd preserves modality-specific decoding states from a shared prompt-conditioned initialization and performs explicit multimodal collaboration at the candidate-state level. For the first issue, we introduce \br prompting, which reads every boxed exemplar in its full scene context and decomposes the pooled support evidence into a Base anchor and a learned Residual correction; the resulting prompt has fixed capacity regardless of the number of examples and drives its own visual detection pathway. For the second, we recast text--visual collaboration from representation-level fusion into a candidate-set modeling problem. Paired-Query Arbitration (\pqa) then performs explicit cross-modal state arbitration only after modality-specific candidate states have been formed. The two readers share query initialization so their candidates are paired by index; a learned gate arbitrates within each pair, followed by a permutation-equivariant module that reasons over the fused set.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>SatNav: A Scalable Benchmark for Long-Horizon UAV Vision-Language Navigation from Satellite Imagery</title>
     <link href="http://arxiv.org/abs/2609.31507v1" rel="alternate" type="text/html" />
@@ -91,8 +293,8 @@
   </entry>
   <entry>
     <title>A Unified Framework and Dataset for Oriented Object Visual Grounding in Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2609.28230v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.28230v1</id>
+    <link href="http://arxiv.org/abs/2609.28230v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.28230v2</id>
     <published>2026-09-23T00:00:00Z</published>
     <updated>2026-09-23T00:00:00Z</updated>
     <author>
@@ -186,30 +388,38 @@
     <category term="Computer Vision" />
   </entry>
   <entry>
-    <title>Agentic Building-Aware Satellite Gaussian Splatting for Auditable Urban DSM Reconstruction</title>
-    <link href="http://arxiv.org/abs/2609.25578v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.25578v1</id>
-    <published>2026-09-22T00:00:00Z</published>
-    <updated>2026-09-22T00:00:00Z</updated>
+    <title>The Earth in One Gaze: Training-Free Active Focus for UHR Remote Sensing Understanding</title>
+    <link href="http://arxiv.org/abs/2609.31747v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.31747v1</id>
+    <published>2026-09-23T00:00:00Z</published>
+    <updated>2026-09-23T00:00:00Z</updated>
     <author>
-      <name>Wentao Sun</name>
+      <name>Yao Zhang</name>
     </author>
     <author>
-      <name>Zhengsen Xu</name>
+      <name>Pengyu Dai</name>
     </author>
     <author>
-      <name>Yiping Chen</name>
+      <name>Wei Guo</name>
     </author>
     <author>
-      <name>John S. Zelek</name>
+      <name>Jian Liang</name>
     </author>
     <author>
-      <name>Jonathan Li</name>
+      <name>Jian Song</name>
     </author>
-    <summary type="text">Urban-scale 3D reconstruction from satellite imagery supports disaster response, city monitoring, and geospatial digital twins, yet neural rendering methods typically optimize average visual fidelity rather than the structures that analysts inspect first: buildings. We present an agentic building-aware satellite Gaussian Splatting workflow that uses Segment Anything-derived building masks as semantic priors and an Agentic Reconstruction Controller to select, verify, and record DSM reconstruction policies. On the DFC2019 JAX\_004 scene, building-aware weighting reduces building-region DSM MAE from 0.844 m to 0.806 m, showing that semantic priors can shift reconstruction capacity toward analyst-critical regions. A staged schedule provides a balanced operating point, improving full-scene MAE from 1.362 m to 1.349 m while retaining a building gain. Across four JAX scenes, the Agent selects validated policies for both general DSM and building-focused DSM objectives, and produces building-inventory metadata and per-scene decision records. The system combines semantic priors, policy selection, region-specific DSM metrics, and DSM-derived GIS surface products for auditable urban 3D analysis.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 7 pages, 6 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <author>
+      <name>Yafei Ou</name>
+    </author>
+    <author>
+      <name>Hongruixuan Chen</name>
+    </author>
+    <author>
+      <name>Naoto Yokoya</name>
+    </author>
+    <summary type="text">Multimodal large language models (MLLMs) must balance local detail against scene context when interpreting ultra-high-resolution (UHR) remote sensing (RS) imagery within a limited visual-input budget. Existing selection-based methods either prune tokens and select patches through relevance scoring, or crop actively through repeated inspection. Neither strategy directly redistributes pixels within a continuous full-scene view: the first retains selected tokens or patches, and the second re-encodes a crop detached from its surroundings. Our pilot study finds that a frozen MLLM already produces useful question-guided spatial requests, yet crop-based inspection of the selected regions does not consistently improve its answers. We therefore formulate UHR understanding as a question of where to spend a fixed pixel budget. Based on this, we introduce GazeEarth, a simple-yet-effective training-free framework that couples question-guided region selection with full-scene foveated observation. The MLLM selects evidence cells from an indexed overview; a deterministic, topology-preserving warp resamples the original image onto a fixed-size canvas, enlarging their shared neighborhood while compressing the periphery; the same frozen model answers from this focused view, using at most two MLLM calls and no external selector or iterative search. Across three UHR remote sensing benchmarks and four frozen backbones, GazeEarth improves benchmark-averaged accuracy by 4.6 to 9.4 percentage points over direct answering and 3.4 to 4.3 over overview answering, outperforming task-trained methods. Our analyses show that existing MLLMs can guide where to look in UHR images on their own, and that what they can infer from the selected evidence depends on how that evidence is presented.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
+    <category term="Image and Video Processing" />
   </entry>
 </feed>
