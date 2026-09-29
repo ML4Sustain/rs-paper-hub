@@ -4,12 +4,81 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-29T02:57:13Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 14 entries</subtitle>
+  <updated>2026-09-29T06:30:29Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 16 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>ReVA: A Scene-Centric Dataset Beyond Repetition for Remote Sensing Video Question Answering</title>
+    <link href="http://arxiv.org/abs/2609.35507v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.35507v1</id>
+    <published>2026-09-28T00:00:00Z</published>
+    <updated>2026-09-28T00:00:00Z</updated>
+    <author>
+      <name>Zhen Yao</name>
+    </author>
+    <author>
+      <name>Likai Wang</name>
+    </author>
+    <author>
+      <name>Yuming Yang</name>
+    </author>
+    <author>
+      <name>Zhihao Zheng</name>
+    </author>
+    <author>
+      <name>Bo Lang</name>
+    </author>
+    <author>
+      <name>Qiuyu Tang</name>
+    </author>
+    <author>
+      <name>Jialu Sheng</name>
+    </author>
+    <author>
+      <name>Jingqi Xu</name>
+    </author>
+    <author>
+      <name>Yuehai Yang</name>
+    </author>
+    <author>
+      <name>Jumal Barker</name>
+    </author>
+    <author>
+      <name>Xiaowen Ying</name>
+    </author>
+    <author>
+      <name>Mooi Choo Chuah</name>
+    </author>
+    <summary type="text">Multimodal Large Language Models (MLLMs) have demonstrated remarkable advances in remote sensing. However, existing remote sensing multimodal reasoning benchmarks exhibit two critical limitations: they rely on (i) template-driven questions, which causes repetitive questions; and (ii) static images that fail to capture the inherent temporal nature of drone/UAV videos. This leaves systematic evaluation of remote sensing video reasoning largely unexplored. To address this gap, we introduce ReVA, a new dataset for remote sensing video question answering, designed to assess spatiotemporal, scene-centric, and reasoning-oriented capabilities of MLLMs. ReVA comprises 2,438 drone videos spanning 18 cities worldwide (580K frames) and 22K high-quality question-answer pairs across 11 challenging QA tasks. We develop a semi-automatic annotation pipeline that leverages Text LLMs and MLLMs for question-answer generation with human verification. We evaluate 23 proprietary and open-source Video LLMs on ReVA, exposing fundamental limitations of current models. These findings position ReVA as a critical benchmark toward better remote sensing video understanding and temporal reasoning capabilities for real-world deployments. Our code and dataset are available at: https://github.com/zyaocoder/ReVA</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/zyaocoder/ReVA"&gt;https://github.com/zyaocoder/ReVA&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Preference-Guided Adaptation for Open-Vocabulary Semantic Segmentation via Prompt Disagreement</title>
+    <link href="http://arxiv.org/abs/2609.34528v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.34528v1</id>
+    <published>2026-09-28T00:00:00Z</published>
+    <updated>2026-09-28T00:00:00Z</updated>
+    <author>
+      <name>Hyun-Kurl Jang</name>
+    </author>
+    <author>
+      <name>Jihun Kim</name>
+    </author>
+    <author>
+      <name>Kuk-Jin Yoon</name>
+    </author>
+    <summary type="text">Open-vocabulary semantic segmentation (OVSS) enables pixel-level prediction over arbitrary text-specified vocabularies and has shown strong generalization on common benchmarks. However, OVSS performance often degrades in specialized domains such as medical imaging, remote sensing, and industrial inspection, where dense pixel-level masks for adaptation are costly to obtain and require domain-specific expertise. We propose a preference-guided adaptation framework that replaces dense mask supervision with binary preferences. We observe that different prompt templates produce systematically different segmentations for the same image, a phenomenon we call prompt disagreement, and we repurpose it as a built-in source of preference supervision. Building on this, we mine localized preference queries from regions of high cross-template uncertainty, and adapt the OVSS model with Region-Localized Preference Optimization (RLPO) together with consistency regularization that stabilizes updates outside the queried region. Across extensive experiments on the MESS benchmark, the proposed method achieves consistent gains across diverse OVSS backbones without any pixel-level annotation, and remains effective under noisy preferences. Our code is available at https://github.com/blue-531/pref-ovss.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/blue-531/pref-ovss"&gt;https://github.com/blue-531/pref-ovss&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>QSCP: Beyond Class-Name Prompts for Query-Guided Semantic Change Parsing</title>
     <link href="http://arxiv.org/abs/2609.33088v1" rel="alternate" type="text/html" />

@@ -4,12 +4,48 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-29T02:57:13Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 1 entries</subtitle>
+  <updated>2026-09-29T06:30:29Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Spectral Super-Resolution using Spatial-Spectral Residual Operator Networks</title>
+    <link href="http://arxiv.org/abs/2609.35410v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.35410v1</id>
+    <published>2026-09-28T00:00:00Z</published>
+    <updated>2026-09-28T00:00:00Z</updated>
+    <author>
+      <name>Seokhyun Chin</name>
+    </author>
+    <summary type="text">Spectral super-resolution of multispectral satellite images can enable high temporal- and spatial-resolution hyperspectral satellite imagery at a modest cost, significantly increasing the applicability of hyperspectral remote sensing. This task is inherently ill-posed, making it well-suited for deep learning-based methods. In this study, the spectral super-resolution task is framed as an operator learning problem, and SSRON is proposed as a Deep Operator Network that effectively learns function-to-function mappings from downsampled spectra to continuous spectra. The model is trained to super-resolve Sentinel-2A-like multispectral imagery to EMIT images. Compared to baseline models, SSRON achieves superior performance across all metrics. The model also demonstrates zero-shot spectral super-resolution capability by predicting bands unseen during training. Furthermore, its continuous-output formulation suggests the potential to estimate spectra at finer wavelength intervals than the native sensor. These results suggest the potential of SSRON and establishes operator learning as a promising direction for spectral super-resolution.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE International Geoscience and Remote Sensing Symposium (IGARSS) 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>When local gains fail to transfer: Frozen Earth-observation embeddings across wildfires</title>
+    <link href="http://arxiv.org/abs/2609.34602v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.34602v1</id>
+    <published>2026-09-28T00:00:00Z</published>
+    <updated>2026-09-28T00:00:00Z</updated>
+    <author>
+      <name>Philipp Stark</name>
+    </author>
+    <author>
+      <name>Alexandros Sopasakis</name>
+    </author>
+    <author>
+      <name>Ola Hall</name>
+    </author>
+    <summary type="text">Frozen Earth-observation embeddings are judged almost entirely by spatially blocked cross-validation inside one study region. We show that this number does not predict accuracy in a new region; we show why; and we show the one setting in which such a model does keep working, using a protocol that needs only a linear probe and labels one already has. The testbed is wildfire, with Copernicus burned-area maps of six fires in Greece and Spain and descriptors from the year before each fire, comparing TESSERA and AlphaEarth with ESA WorldCover classes and annual Sentinel-2 index summaries. Inside a fire, the embeddings identify the burned land 0.05 to 0.13 ROC AUC better than the index summaries, and repeated fold allocations, spatial buffers, a block bootstrap, and gradient-boosted trees leave that margin unchanged. On a fire in another region, they lose 0.15 to 0.18 AUC, and the index summaries lose 0.06, so the three end within a few hundredths of each other. The representation is not the cause. Eight labelled blocks from the new region restore the embedding advantage and give a higher AUC than 59,000 labelled pixels from other regions, and the weight vector fitted in one region is nearly orthogonal to the vector fitted in the others, so the part that carries across regions is small and low-dimensional. Forecasting within a region is a different matter. Fitted on a fire that burned in 2023 and applied to a fire twelve kilometres away that burned in 2024, where nothing used postdates the target fire, TESSERA reaches 0.772 AUC and loses 0.04 against a classifier fitted inside the 2024 fire, while classifiers fitted in other regions lose 0.09 to 0.18. A region with one mapped fire can therefore forecast susceptibility for later fires there; a region without one cannot borrow a model from elsewhere, and every evaluation of a frozen embedding should report a held-out region.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages, 5 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
   <entry>
     <title>Recoverable Geographic Location Information in Earth-Observation Embeddings</title>
     <link href="http://arxiv.org/abs/2609.29151v1" rel="alternate" type="text/html" />
