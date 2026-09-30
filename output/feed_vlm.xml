@@ -4,12 +4,78 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-29T06:30:29Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 16 entries</subtitle>
+  <updated>2026-09-30T02:38:49Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 14 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>RS-OPSD: Reliable Privileged On-Policy-Self-Distillation for Ultra-High-Resolution Remote Sensing VQA</title>
+    <link href="http://arxiv.org/abs/2609.38072v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.38072v1</id>
+    <published>2026-09-29T00:00:00Z</published>
+    <updated>2026-09-29T00:00:00Z</updated>
+    <author>
+      <name>Chengjie Jiang</name>
+    </author>
+    <author>
+      <name>Yunqi Zhou</name>
+    </author>
+    <author>
+      <name>Jiafeng Yan</name>
+    </author>
+    <author>
+      <name>Sihang Zhao</name>
+    </author>
+    <author>
+      <name>Chun Yuan</name>
+    </author>
+    <author>
+      <name>Jing Li</name>
+    </author>
+    <summary type="text">Ultra-high-resolution (UHR) remote sensing visual question answering (VQA) requires models to resolve small visual evidence within extremely large images. Existing approaches typically rely on token pruning, visual search, or tool-augmented reasoning at inference time. We instead investigate whether the benefit of zoom-in visual privilege can be internalized into the model. We introduce RS-OPSD, a reliable privileged on-policy self-distillation (OPSD) framework for UHR remote sensing VQA. To provide high-quality privileged information with explicit question-relevant evidence, we construct GeoEvidence-6K, containing 6,750 VQA samples across seven task categories with evidence-region annotations, and develop Human Feedback-Guided Skill Refinement (HF-SR) for scalable annotation. To address context loss from tight crops and conflicting signals from imperfect teachers, RS-OPSD introduces Context-Preserving Visual Privilege (CPVP) and Correctness-Aligned Distillation (CAD). Without any additional visual search or tool calls at inference time, RS-OPSD achieves state-of-the-art (SOTA) performance on XLRS-Bench, MME-RealWorld-RS, and LRS-VQA, outperforming pervious SOTA models of comparable scale by an average of 4.0 percentage points. Moreover, our 2B variant, RS-OPD-Lite, surpasses most 8B-scale models while achieving the fastest measured inference speed. Our Code, GeoEvidence-6K, and the model weights for RS-OPSD and RS-OPD-Lite are publicly available.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 16 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>HyperSAM: A Promptable Foundation Model for Hyperspectral Remote Sensing</title>
+    <link href="http://arxiv.org/abs/2609.37340v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.37340v1</id>
+    <published>2026-09-29T00:00:00Z</published>
+    <updated>2026-09-29T00:00:00Z</updated>
+    <author>
+      <name>Li Pang</name>
+    </author>
+    <author>
+      <name>Xinqiao Wu</name>
+    </author>
+    <author>
+      <name>Jing Yao</name>
+    </author>
+    <author>
+      <name>Pedram Ghamisi</name>
+    </author>
+    <author>
+      <name>Jun Zhou</name>
+    </author>
+    <author>
+      <name>Zhengchao Chen</name>
+    </author>
+    <author>
+      <name>Deyu Meng</name>
+    </author>
+    <author>
+      <name>Xiangyong Cao</name>
+    </author>
+    <summary type="text">Hyperspectral remote sensing provides dense spectral measurements that are indispensable for material-level Earth observation, yet the construction of a general-purpose hyperspectral foundation model remains difficult. Two bottlenecks are especially limiting. First, large hyperspectral corpora rarely provide high spatial resolution together with reliable dense annotations. Second, many hyperspectral models are still trained almost from scratch, so the geometric and interactive priors learned by modern vision foundation models are not fully reused. To alleviate these issues, we \highlight{present} \textbf{HyperSAM}, a promptable hyperspectral foundation model that couples a data-centric hyperspectral synthesis pipeline with a spectral adaptation architecture based on Segment Anything Model 3 (SAM3). On the data side, HyperSAM synthesizes full-spectrum hyperspectral cubes from high-resolution SpaceNet multispectral imagery through a physics-informed abundance-transfer generator, while SAM3-derived pseudo-masks provide object-centric supervision. On the model side, the latest implementation uses a frozen SAM3 RGB image branch, a trainable hyperspectral side encoder initialized from the RGB vision transformer (ViT), ControlNet-style zero-initialized feature injection, and a lightweight mixture-of-experts mask refiner. To enhance training robustness against noisy pseudo-labels, Cross-modal Sample Selection (CromSS)-style confidence selection is incorporated for noisy-label weighting. Extensive experiments show that HyperSAM obtains strong generalization on diverse hyperspectral tasks (e.g., classification, anomaly detection, change detection, target detection, and airborne oil-spill mapping) and that high-quality synthetic hyperspectral data can be more effective than simply scaling noisy hyperspectral supervision.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Geoscience and Remote Sensing Magazine (GRSM)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;CD;OD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>ReVA: A Scene-Centric Dataset Beyond Repetition for Remote Sensing Video Question Answering</title>
     <link href="http://arxiv.org/abs/2609.35507v1" rel="alternate" type="text/html" />
@@ -335,160 +401,25 @@
     <category term="Artificial Intelligence" />
   </entry>
   <entry>
-    <title>SatUnreal: A High-Precision Synthetic Dataset for Satellite Stereo Matching via Unreal Engine</title>
-    <link href="http://arxiv.org/abs/2609.27442v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.27442v1</id>
-    <published>2026-09-23T00:00:00Z</published>
-    <updated>2026-09-23T00:00:00Z</updated>
+    <title>Label Less, Learn More: Resource-Efficient Active Semi-Supervised Learning for Onboard Satellite Image Annotation</title>
+    <link href="http://arxiv.org/abs/2609.37481v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.37481v1</id>
+    <published>2026-09-25T00:00:00Z</published>
+    <updated>2026-09-25T00:00:00Z</updated>
     <author>
-      <name>Han-Gyeol Kim</name>
+      <name>Ahmed Abdelnaby</name>
     </author>
     <author>
-      <name>JaeWan Park</name>
+      <name>Mohamed Elmahallawy</name>
     </author>
     <author>
-      <name>Junmin Park</name>
+      <name>Marius Bernahrndt</name>
     </author>
     <author>
-      <name>Darongsae Kwon</name>
+      <name>Tobias Hecking</name>
     </author>
-    <summary type="text">3D reconstruction from satellite imagery is essential for large-scale topographic analysis, yet the lack of high-fidelity training datasets with accurate occlusion labels remains a primary bottleneck. Existing benchmarks, such as US3D and WHU-Stereo, face inherent challenges in spatio-temporal mismatch -- environmental changes and shadow displacements between multi-view acquisitions -- and provide ambiguous ground truth in occluded regions due to LiDAR sparsity. In this paper, we propose SatUnreal, a high-precision synthetic dataset designed to fundamentally overcome these limitations through an Unreal Engine-based simulation pipeline. SatUnreal provides 10,000 stereo pairs with high resolution (0.3m GSD) and is characterized by: (1) Physical Geometry Simulation, replicating realistic satellite orbits by systematically varying baselines and azimuths; (2) Spatio-temporal Consistency, eliminating temporal noise through fixed virtual environments; (3) Topographic Diversity, spanning dense urban canyons to low-texture natural terrains; and (4) Mathematical Label Integrity, utilizing a novel two-step linetrace algorithm to generate flawless occlusion masks. Experimental results using SOTA iterative models demonstrate that models trained exclusively on SatUnreal achieve superior zero-shot transfer performance on real-world benchmarks (US3D, WHU-Stereo) compared to those trained on real datasets. Our findings prove that physically accurate synthetic data provides a more effective supervisory signal for learning geometric features than complex real-world observations, establishing a new paradigm for Sim-to-Real transfer in Earth Observation.   Code and dataset are available at https://github.com/jmp-Telepix/SatUnreal_A_High-Precision_Synthetic_Dataset_for_Satellite_Stereo_Matching_via_UnrealEngine</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/jmp-Telepix/SatUnreal_A_High-Precision_Synthetic_Dataset_for_Satellite_Stereo_Matching_via_UnrealEngine"&gt;https://github.com/jmp-Telepix/SatUnreal_A_High-Precision_Synthetic_Dataset_for_Satellite_Stereo_Matching_via_UnrealEngine&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; CVPR 2026 Workshop on EarthVision (CVPRW 2026)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <summary type="text">Large-scale pervasive sensing increasingly relies on high-resolution satellite imagery, yet task-specific onboard vision is constrained by costly annotation and limited computation, memory, energy, and communication resources. Existing approaches largely rely on either data-hungry supervised learning or large vision-language foundation models, limiting efficient adaptation and deployment under these constraints. We present SatLabel, a resource-aware learning framework that transforms limited satellite labels into progressively refined onboard models through adaptive sample acquisition and semi-supervised model adaptation. Rather than repeatedly training on uniformly sampled labels, SatLabel closes the loop between model uncertainty, class imbalance, and pseudo-label quality to selectively acquire informative samples while exploiting abundant unlabeled imagery. This enables a compact student to adapt to target sensing domains with reduced annotation and inference costs. We further introduce an optional Mixture-of-Experts (MoE) student with graph-based feature refinement to enhance representation capacity while retaining a lightweight footprint. We evaluate SatLabel on 11 remote-sensing datasets spanning core, extended, and unseen domains against RemoteCLIP zero-shot inference. SatLabel improves Macro-F1 on most core and extended datasets while maintaining strong cross-dataset transfer to unseen domains. More importantly, the Balanced student contains only 11.2 M parameters and occupies approximately 42.8 MB, compared with 151.3M parameters and 577 MB for RemoteCLIP, while requiring 3.65 versus 5.89 GFLOPs. Across four efficiency benchmarks, it achieves approximately 2x higher GPU-forward throughput and reduces energy per image on datasets.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
     <category term="Computer Vision" />
-    <category term="Image and Video Processing" />
-  </entry>
-  <entry>
-    <title>A Unified Framework and Dataset for Oriented Object Visual Grounding in Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2609.28230v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.28230v2</id>
-    <published>2026-09-23T00:00:00Z</published>
-    <updated>2026-09-23T00:00:00Z</updated>
-    <author>
-      <name>Zeyu Ding</name>
-    </author>
-    <author>
-      <name>Yong Zhou</name>
-    </author>
-    <author>
-      <name>Jiaqi Zhao</name>
-    </author>
-    <author>
-      <name>Wen-Liang Du</name>
-    </author>
-    <author>
-      <name>Xixi Li</name>
-    </author>
-    <author>
-      <name>Hancheng Zhu</name>
-    </author>
-    <author>
-      <name>Rui Yao</name>
-    </author>
-    <author>
-      <name>Abdulmotaleb El Saddik</name>
-    </author>
-    <summary type="text">Visual grounding in remote sensing images aims to locate objects described by referring expressions. Most existing methods predict horizontal bounding boxes, which are often inaccurate for objects with arbitrary orientations. To address this limitation, we introduce O$^2$-VG, a family of models for oriented object visual grounding with three complementary designs. Specifically, O$^2$-VG-Trans is a cross-modality transformer for oriented object visual grounding. It establishes a strong discriminative foundation for the model family. Building upon it, O$^2$-VG-Uni predicts universal oriented proposals for possible foreground objects without specific text prompts. It also supports object retrieval through cached proposal embeddings. Using these universal oriented proposals as input prompts, O$^2$-VG-VLM is an autoregressive vision-language model. It generates oriented box token blocks in parallel through multi-token prediction. In addition, we construct DIOR-R-RSVG, a dataset for oriented object visual grounding in remote sensing images. It provides image, expression, and oriented box triplets for training and evaluation. Together, the O$^2$-VG family provides a flexible framework that spans discriminative transformers and generative vision-language models. It achieves superior performance across multiple benchmarks. Code is available at https://github.com/wokaikaixinxin/ai4rs.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/wokaikaixinxin/ai4rs"&gt;https://github.com/wokaikaixinxin/ai4rs&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Geospatial embeddings detect old-growth forests but buffered spatial validation narrows their advantage over Sentinel features</title>
-    <link href="http://arxiv.org/abs/2609.28194v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.28194v1</id>
-    <published>2026-09-23T00:00:00Z</published>
-    <updated>2026-09-23T00:00:00Z</updated>
-    <author>
-      <name>Thomas Ratsakatika</name>
-    </author>
-    <author>
-      <name>Mihai Zotta</name>
-    </author>
-    <author>
-      <name>Srinivasan Keshav</name>
-    </author>
-    <author>
-      <name>Emily R. Lines</name>
-    </author>
-    <summary type="text">Old-growth forests develop over centuries under minimal anthropogenic disturbance, producing structurally complex and biodiverse stands. In Europe, protecting them requires mapping that is accurate for individual forest parcels yet deployable continent-wide. Geospatial foundation model (GFM) embeddings enable label-scarce land classification, but their value for old-growth detection remains unknown. Here, we map old-growth forests across 211,893 ha of Romania's Southern Carpathians, a beech-spruce landscape typical of the Alpine Biogeographic Region. We construct high-confidence, expert-informed reference labels for old-growth and non-old-growth parcels. We add AlphaEarth, TESSERA v2 and Sentinel-1/2 features to a common baseline of topographic and human-access predictors, then compare them under spatially blocked validation with and without 10 km train-test buffers to limit residual autocorrelation. With buffering, GFM and Sentinel-1/2 predictors increase precision-recall AUC by 0.21-0.25 [95% CIs: 0.15-0.34] relative to baseline, indicating spectral data contain a spatially robust old-growth signal. With a PR-AUC of 0.84 [0.79-0.88], TESSERA outperforms Sentinel-1/2 (+0.08 [+0.05 to +0.11]) and AlphaEarth (+0.08 [+0.04 to +0.12]) under unbuffered spatial validation. At a 10 km buffer, however, this advantage narrows to +0.04 [-0.01 to +0.11] and +0.03 [-0.04 to +0.10], intervals consistent with no difference. At 10 m resolution, convolutional neural networks add no benefit over pixel-based XGBoost. Comparisons with four national- and continental-scale products show the importance of non-old-growth labels, and reveal 81% agreement between our predictions and a field-calibrated map. We conclude that buffered spatial validation is vital when transferring old-growth detection models to unseen landscapes, and provide our labels and predictions for future work.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 34 pages, including supplementary material (19-page main article with 7 figures and 3 tables; 15-page supplement with 9 figures and 21 tables). Submitted for publication. Data: https://doi.org/10.5281/zenodo.22693148 (embargoed until publication); code: https://github.com/ratsakatika/detecting-old-growth-forests&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-    <category term="Computer Vision; Image and Video Processing" />
-  </entry>
-  <entry>
-    <title>GeoNLI - A Natural Language Interpreter for Satellite Imagery</title>
-    <link href="http://arxiv.org/abs/2609.28741v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.28741v1</id>
-    <published>2026-09-23T00:00:00Z</published>
-    <updated>2026-09-23T00:00:00Z</updated>
-    <author>
-      <name>Ashutosh Gandhe</name>
-    </author>
-    <author>
-      <name>Anupam Rawat</name>
-    </author>
-    <author>
-      <name>Geet Sethi</name>
-    </author>
-    <author>
-      <name>Kabir Nasiruddin</name>
-    </author>
-    <author>
-      <name>Madhav Kotecha</name>
-    </author>
-    <author>
-      <name>Panav Shah</name>
-    </author>
-    <author>
-      <name>Rakshit Sawarn</name>
-    </author>
-    <author>
-      <name>Soumitra Nayak</name>
-    </author>
-    <summary type="text">Multi-modal multitasking models have shown strong performance on remote sensing datasets. However, because these models are trained on heterogeneous data and vary across tasks, designing a unified model that performs well in captioning, visual question answering (VQA), and visual grounding remains challenging.   In this work, we evaluate several models on the VRS Bench and NWPU-VHR-10 datasets. The EarthMind model demonstrates strong results in both captioning and VQA. For grounding, we propose multiple pipelines - RemoteSAM-SAM-v1, RemoteSAM-SAM-v2, and DiffuSAM - and ultimately adopt a majority-voting ensemble across EarthMind, RemoteSAM, SAM3, Falcon, RemoteSAM-SAM3-v1, RemoteSAM-SAM3-v2, and DiffuSAM predictions.   Our unified, modular pipeline integrates advanced SAM variants with multimodal LLMs to jointly perform captioning, VQA, and grounding. It achieves 82% accuracy on captioning and 83.32% on VQA, with 90.94%, 52.04%, and 92.06% for binary, numeric, and semantic question types respectively. For grounding, it attains 64.94% accuracy. By combining diverse VLMs with our custom RemoteSAM-SAM3 models through ensemble majority voting, the system delivers more accurate and consistent remote-sensing understanding than task-specific approaches.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;IC;VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>The Earth in One Gaze: Training-Free Active Focus for UHR Remote Sensing Understanding</title>
-    <link href="http://arxiv.org/abs/2609.31747v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.31747v1</id>
-    <published>2026-09-23T00:00:00Z</published>
-    <updated>2026-09-23T00:00:00Z</updated>
-    <author>
-      <name>Yao Zhang</name>
-    </author>
-    <author>
-      <name>Pengyu Dai</name>
-    </author>
-    <author>
-      <name>Wei Guo</name>
-    </author>
-    <author>
-      <name>Jian Liang</name>
-    </author>
-    <author>
-      <name>Jian Song</name>
-    </author>
-    <author>
-      <name>Yafei Ou</name>
-    </author>
-    <author>
-      <name>Hongruixuan Chen</name>
-    </author>
-    <author>
-      <name>Naoto Yokoya</name>
-    </author>
-    <summary type="text">Multimodal large language models (MLLMs) must balance local detail against scene context when interpreting ultra-high-resolution (UHR) remote sensing (RS) imagery within a limited visual-input budget. Existing selection-based methods either prune tokens and select patches through relevance scoring, or crop actively through repeated inspection. Neither strategy directly redistributes pixels within a continuous full-scene view: the first retains selected tokens or patches, and the second re-encodes a crop detached from its surroundings. Our pilot study finds that a frozen MLLM already produces useful question-guided spatial requests, yet crop-based inspection of the selected regions does not consistently improve its answers. We therefore formulate UHR understanding as a question of where to spend a fixed pixel budget. Based on this, we introduce GazeEarth, a simple-yet-effective training-free framework that couples question-guided region selection with full-scene foveated observation. The MLLM selects evidence cells from an indexed overview; a deterministic, topology-preserving warp resamples the original image onto a fixed-size canvas, enlarging their shared neighborhood while compressing the periphery; the same frozen model answers from this focused view, using at most two MLLM calls and no external selector or iterative search. Across three UHR remote sensing benchmarks and four frozen backbones, GazeEarth improves benchmark-averaged accuracy by 4.6 to 9.4 percentage points over direct answering and 3.4 to 4.3 over overview answering, outperforming task-trained methods. Our analyses show that existing MLLMs can guide where to look in UHR images on their own, and that what they can infer from the selected evidence depends on how that evidence is presented.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Image and Video Processing" />
   </entry>
 </feed>
