@@ -21221,5 +21221,24 @@
     "_added_date": "2026-09-30",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-09-30",
+    "Month": 9,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Hyperspectral Image Models: Technical Report",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2609.39871v1",
+    "Abstract": "Hyperspectral remote sensing has advanced across diverse deep learning paradigms, including spectral spatial CNNs, Vision Transformers, Mamba, graph neural networks, Kolmogorov Arnold networks, and self supervised masked autoencoding. Yet progress remains hindered by fragmented repositories, incompatible tensor conventions, and non standardized evaluation. Hyperspectral Image Models addresses these challenges through a modular framework unifying 55 representative models across six paradigms with a common registry, automatic 4D/5D tensor adaptation, and standardized constructors. It integrates 24 benchmark scenes from Airborne, Spaceborne, UAV, and Mars CRISM sensors, with caching, label remapping, PCA, explicit band selection or raw spectra, optional spatial max pooling, and arbitrary PxP patch extraction. To prevent inflated accuracy from overlapping windows, it supports class balanced random partitioning and spatially disjoint regional blocking with Chebyshev guard bands that eliminate train test pixel overlap. Experiments use a single config.yaml with deterministic seeds and complete provenance, generating LaTeX benchmark tables and classification maps. Across 1,320 model scene evaluations and 6,600 seeded runs, scene difficulty dominates architecture, with mean accuracy ranging from 96.40% on Botswana to 56.70% on Houston 2018, versus a 15 point spread across paradigm means. No paradigm universally dominates, while sub 1 M parameter models can match architectures two orders of magnitude larger. Code is publicly available at https://github.com/Tanishq251/Hyperspectral-Image-Models.",
+    "code": "https://github.com/Tanishq251/Hyperspectral-Image-Models",
+    "Publication": "Documentation and benchmark library for hyperspectral image models",
+    "BibTex": "@article{rachamalla2026hyperspectral,\n  title={Hyperspectral Image Models: Technical Report},\n  author={Tanishq Rachamalla and Aryan Das and Srishti Kaushik and Swalpa Kumar Roy},\n  journal={arXiv preprint arXiv:2609.39871v1},\n  year={2026},\n  url={http://arxiv.org/abs/2609.39871v1}\n}",
+    "Authors": "Tanishq Rachamalla, Aryan Das, Srishti Kaushik, Swalpa Kumar Roy",
+    "_added_date": "2026-10-01",
+    "Category": "Method",
+    "_tasks": "CLS"
   }
 ]

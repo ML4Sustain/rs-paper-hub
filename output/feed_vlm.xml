@@ -4,16 +4,16 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-30T06:14:28Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 14 entries</subtitle>
+  <updated>2026-10-01T02:42:31Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 15 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
   <entry>
     <title>RS-OPSD: Reliable Privileged On-Policy-Self-Distillation for Ultra-High-Resolution Remote Sensing VQA</title>
-    <link href="http://arxiv.org/abs/2609.38072v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.38072v1</id>
+    <link href="http://arxiv.org/abs/2609.38072v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.38072v2</id>
     <published>2026-09-29T00:00:00Z</published>
     <updated>2026-09-29T00:00:00Z</updated>
     <author>
@@ -74,6 +74,25 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Geoscience and Remote Sensing Magazine (GRSM)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;CD;OD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Aperture: Training-Free Multiscale Concept Bottlenecks for Remote Sensing</title>
+    <link href="http://arxiv.org/abs/2609.38603v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.38603v1</id>
+    <published>2026-09-29T00:00:00Z</published>
+    <updated>2026-09-29T00:00:00Z</updated>
+    <author>
+      <name>Rishabh Mondal</name>
+    </author>
+    <author>
+      <name>Nipun Batra</name>
+    </author>
+    <author>
+      <name>Utkarsh Mall</name>
+    </author>
+    <summary type="text">While earth observation models have advanced substantially, they still lack interpretability. While concept-bottleneck models provide interpretability and expert interaction, they are either too expensive to train for the remote sensing domain or perform poorly without annotation. We posit that in expert domains like remote sensing, such training-free models require both fine details in both image and concept space. In image space, we propose a multiscale concept bottleneck using greedy quadtree routing to locate small concepts. In concept space, we replace contrastive vision language models with pre-trained MLLMs and present a way to get reliable concept scores from them. We introduce APERTURE that blends concept scores at the global image and native concept-scale level to give state-ofthe-art training-free model performance. To test these models, introduce SiFC, a fine-grained concept-centric dataset across three countries, with human-reviewed class-level concept maps. On SiFC, APERTURE outperforms the best training-free baselines by more than 10 percentage points in macro F1-score, and notably also outperforms supervised concept bottleneck models. Targeted component-removal tests examine whether concept scores respond to changes in visual evidence, while temporal experiments show that descriptor updates improve recognition of technological changes without retraining.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
   <entry>

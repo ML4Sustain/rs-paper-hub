@@ -4,16 +4,88 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-30T06:14:28Z</updated>
+  <updated>2026-10-01T02:42:31Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 39 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
   <entry>
+    <title>Hyperspectral Image Models: Technical Report</title>
+    <link href="http://arxiv.org/abs/2609.39871v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.39871v1</id>
+    <published>2026-09-30T00:00:00Z</published>
+    <updated>2026-09-30T00:00:00Z</updated>
+    <author>
+      <name>Tanishq Rachamalla</name>
+    </author>
+    <author>
+      <name>Aryan Das</name>
+    </author>
+    <author>
+      <name>Srishti Kaushik</name>
+    </author>
+    <author>
+      <name>Swalpa Kumar Roy</name>
+    </author>
+    <summary type="text">Hyperspectral remote sensing has advanced across diverse deep learning paradigms, including spectral spatial CNNs, Vision Transformers, Mamba, graph neural networks, Kolmogorov Arnold networks, and self supervised masked autoencoding. Yet progress remains hindered by fragmented repositories, incompatible tensor conventions, and non standardized evaluation. Hyperspectral Image Models addresses these challenges through a modular framework unifying 55 representative models across six paradigms with a common registry, automatic 4D/5D tensor adaptation, and standardized constructors. It integrates 24 benchmark scenes from Airborne, Spaceborne, UAV, and Mars CRISM sensors, with caching, label remapping, PCA, explicit band selection or raw spectra, optional spatial max pooling, and arbitrary PxP patch extraction. To prevent inflated accuracy from overlapping windows, it supports class balanced random partitioning and spatially disjoint regional blocking with Chebyshev guard bands that eliminate train test pixel overlap. Experiments use a single config.yaml with deterministic seeds and complete provenance, generating LaTeX benchmark tables and classification maps. Across 1,320 model scene evaluations and 6,600 seeded runs, scene difficulty dominates architecture, with mean accuracy ranging from 96.40% on Botswana to 56.70% on Houston 2018, versus a 15 point spread across paradigm means. No paradigm universally dominates, while sub 1 M parameter models can match architectures two orders of magnitude larger. Code is publicly available at https://github.com/Tanishq251/Hyperspectral-Image-Models.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Tanishq251/Hyperspectral-Image-Models"&gt;https://github.com/Tanishq251/Hyperspectral-Image-Models&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Documentation and benchmark library for hyperspectral image models&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>COBICount: Separating Object and Background Responses for Remote Sensing Object Counting Without Training on Target Data</title>
+    <link href="http://arxiv.org/abs/2609.39366v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.39366v1</id>
+    <published>2026-09-30T00:00:00Z</published>
+    <updated>2026-09-30T00:00:00Z</updated>
+    <author>
+      <name>Junjing Zheng</name>
+    </author>
+    <author>
+      <name>Zhiyi Zhou</name>
+    </author>
+    <author>
+      <name>Ningrui Yang</name>
+    </author>
+    <author>
+      <name>Hongying Meng</name>
+    </author>
+    <summary type="text">Remote sensing object counting estimates how many buildings, vehicles, or ships appear in overhead images. Most supervised counters predict a density map, whose sum gives the object count, and assume similar categories, sizes, and backgrounds. Applying them across regions, sensors, or categories often requires target data or further training, which may be costly or unavailable. We study source-only counting. Training for the counting task and model selection use one group of images that shares an object category and similar imaging conditions, with one point marking each object. Target images and information remain unavailable until the model is fixed. This reduces data preparation but makes transfer harder. A model trained on one source may place high density values, called responses, on real objects and repeated background structures. Road edges, parking grids, roof boundaries, and water boundaries may then be counted as objects, creating candidate origin ambiguity. COBICount separates response generation, acceptance, and background suppression. Candidate Evidence (CE) generates possible responses. Candidate Acceptance (CA) keeps compact responses centered on objects. Bias Isolation (BI) reduces responses associated with repeated background structures. Their outputs form the final density map. Trained on RSOC Building and evaluated directly on DOTA Large Vehicle, Small Vehicle, and Ship, COBICount achieves the lowest mean absolute error (MAE) averaged over the target domains among the compared methods, 174.132. It uses 5.07 million parameters and 17.41 billion floating point operations for a 512x512 input. COBICount improves transfer without target data or training for each target. The code will be available at: https://github.com/yixuxi22/COBICount.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/yixuxi22/COBICount"&gt;https://github.com/yixuxi22/COBICount&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 19 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>RW-Flow: One-Step Generation on Compact Manifolds via Wasserstein Gradient Flows</title>
+    <link href="http://arxiv.org/abs/2609.39271v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.39271v1</id>
+    <published>2026-09-30T00:00:00Z</published>
+    <updated>2026-09-30T00:00:00Z</updated>
+    <author>
+      <name>Ualibyek Nurgulan</name>
+    </author>
+    <author>
+      <name>Seungwoo Yoo</name>
+    </author>
+    <author>
+      <name>Prin Phunyaphibarn</name>
+    </author>
+    <author>
+      <name>Minhyuk Sung</name>
+    </author>
+    <summary type="text">Manifold-valued data, and consequently the distributions they induce, are prevalent across many domains, ranging from the locations of geospatial events, such as earthquakes, to biomolecular torsion angles that encode information about three-dimensional structure. While diffusion and flow-based generative models have been successfully extended to compact manifolds, sampling typically requires tens or hundreds of sequential network evaluations. We introduce RW-Flow, a theoretically grounded framework for learning one-step generative models on compact manifolds via Wasserstein gradient flows. The main challenge is identifiability: driving the velocity field to zero should guarantee that the model distribution matches the target distribution. We establish a necessary and sufficient condition for identifiability on compact, connected Riemannian manifolds. We specifically show that, for a symmetric, Lipschitz-continuous cost function, the velocity field induced by the Sinkhorn divergence is identifiable if and only if the associated Gibbs kernel is nondegenerate. This characterization provides a general principle for designing identifiable costs on compact manifolds. It also reveals that the squared geodesic distance, the natural manifold analogue of the squared Euclidean distance, does not always guarantee identifiability. Across benchmarks involving geospatial events, protein side chain torsion angles, RNA backbone torsion angles, and general manifolds discretized as triangular meshes, RW-Flow outperforms existing one-step methods in nearly all settings under fair comparison conditions.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 27 pages, ICLR, 2 figures, 11 tables&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
     <title>RS-OPSD: Reliable Privileged On-Policy-Self-Distillation for Ultra-High-Resolution Remote Sensing VQA</title>
-    <link href="http://arxiv.org/abs/2609.38072v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.38072v1</id>
+    <link href="http://arxiv.org/abs/2609.38072v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.38072v2</id>
     <published>2026-09-29T00:00:00Z</published>
     <updated>2026-09-29T00:00:00Z</updated>
     <author>
@@ -188,6 +260,48 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 21 pages, 4 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>After a Decade: Bringing Shadow Removal into the Real World with Agentic Training Data</title>
+    <link href="http://arxiv.org/abs/2609.38607v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.38607v1</id>
+    <published>2026-09-29T00:00:00Z</published>
+    <updated>2026-09-29T00:00:00Z</updated>
+    <author>
+      <name>Shilin Hu</name>
+    </author>
+    <author>
+      <name>Jingyi Xu</name>
+    </author>
+    <author>
+      <name>Dimitris Samaras</name>
+    </author>
+    <author>
+      <name>Hieu Le</name>
+    </author>
+    <summary type="text">Shadow removal looks nearly solved on established benchmarks, yet remains brittle in the real world. Models have advanced; the paired training data they rely on have barely changed in nearly a decade. The reason is simple: obtaining a shadow-free target requires removing the occluder while keeping the scene, camera, and illumination otherwise unchanged, making diverse paired data difficult to capture. Meanwhile, large shadow detection datasets already contain diverse real-world images and masks, but no shadow-free targets. To turn this abundant but incomplete data into paired supervision, we propose an offline agentic workflow combining physics-motivated generation, failure detection, feedback-driven retry, candidate selection, and deterministic correction. Using this workflow, we construct AgenticShadow, a dataset of 17,138 image-mask-target triplets spanning general scenes, faces, and remote sensing. Our construction workflow reduces Color Distribution Difference by 50.5% over previous shadow removal work, while training existing shadow removal models on AgenticShadow reduces cross-domain LAB RMSE by 19.7-37.5%.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Aperture: Training-Free Multiscale Concept Bottlenecks for Remote Sensing</title>
+    <link href="http://arxiv.org/abs/2609.38603v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.38603v1</id>
+    <published>2026-09-29T00:00:00Z</published>
+    <updated>2026-09-29T00:00:00Z</updated>
+    <author>
+      <name>Rishabh Mondal</name>
+    </author>
+    <author>
+      <name>Nipun Batra</name>
+    </author>
+    <author>
+      <name>Utkarsh Mall</name>
+    </author>
+    <summary type="text">While earth observation models have advanced substantially, they still lack interpretability. While concept-bottleneck models provide interpretability and expert interaction, they are either too expensive to train for the remote sensing domain or perform poorly without annotation. We posit that in expert domains like remote sensing, such training-free models require both fine details in both image and concept space. In image space, we propose a multiscale concept bottleneck using greedy quadtree routing to locate small concepts. In concept space, we replace contrastive vision language models with pre-trained MLLMs and present a way to get reliable concept scores from them. We introduce APERTURE that blends concept scores at the global image and native concept-scale level to give state-ofthe-art training-free model performance. To test these models, introduce SiFC, a fine-grained concept-centric dataset across three countries, with human-reviewed class-level concept maps. On SiFC, APERTURE outperforms the best training-free baselines by more than 10 percentage points in macro F1-score, and notably also outperforms supervised concept bottleneck models. Targeted component-removal tests examine whether concept scores respond to changes in visual evidence, while temporal experiments show that descriptor updates improve recognition of technological changes without retraining.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
   <entry>
@@ -910,115 +1024,5 @@
     <summary type="text">Large-scale pervasive sensing increasingly relies on high-resolution satellite imagery, yet task-specific onboard vision is constrained by costly annotation and limited computation, memory, energy, and communication resources. Existing approaches largely rely on either data-hungry supervised learning or large vision-language foundation models, limiting efficient adaptation and deployment under these constraints. We present SatLabel, a resource-aware learning framework that transforms limited satellite labels into progressively refined onboard models through adaptive sample acquisition and semi-supervised model adaptation. Rather than repeatedly training on uniformly sampled labels, SatLabel closes the loop between model uncertainty, class imbalance, and pseudo-label quality to selectively acquire informative samples while exploiting abundant unlabeled imagery. This enables a compact student to adapt to target sensing domains with reduced annotation and inference costs. We further introduce an optional Mixture-of-Experts (MoE) student with graph-based feature refinement to enhance representation capacity while retaining a lightweight footprint. We evaluate SatLabel on 11 remote-sensing datasets spanning core, extended, and unseen domains against RemoteCLIP zero-shot inference. SatLabel improves Macro-F1 on most core and extended datasets while maintaining strong cross-dataset transfer to unseen domains. More importantly, the Balanced student contains only 11.2 M parameters and occupies approximately 42.8 MB, compared with 151.3M parameters and 577 MB for RemoteCLIP, while requiring 3.65 versus 5.89 GFLOPs. Across four efficiency benchmarks, it achieves approximately 2x higher GPU-forward throughput and reduces energy per image on datasets.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Efficient Continuous DEM Reconstruction under Limited Target-Resolution Supervision</title>
-    <link href="http://arxiv.org/abs/2609.29864v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.29864v1</id>
-    <published>2026-09-24T00:00:00Z</published>
-    <updated>2026-09-24T00:00:00Z</updated>
-    <author>
-      <name>Zekai Shi</name>
-    </author>
-    <author>
-      <name>Meng Zhang</name>
-    </author>
-    <author>
-      <name>Haokun Zhang</name>
-    </author>
-    <author>
-      <name>Bo Zhang</name>
-    </author>
-    <summary type="text">High-resolution digital elevation models (DEMs) support Earth observation applications, but paired training references are often available only at coarser output resolutions. Reconstructing finer terrain grids therefore requires both effective transfer beyond the supervised scale and control of dense-query computation. To address this problem, SCOPE learns a continuous terrain representation from coarser-resolution pairs. It predicts a latent coefficient field on the low-resolution grid and reuses local Fourier residual functions through basis evaluation and geometry-guided ensemble fusion. This separates high-dimensional coefficient prediction from output-grid construction. Experiments on geographically distributed land--ocean samples assess supervised reconstruction, unseen-scale inference, cross-domain generalization, and theoretical computation. SCOPE leads the compared methods across six metrics in the main supervised-scale evaluation. At an unseen factor three times the training factor, land reconstruction reduces RMSE and MAE by approximately 12\% relative to bicubic interpolation, with errors close to target-scale fine-tuning. Ninefold output density increases counted multiply--accumulate operations by only about 2\%. Frozen-model validation on held-out external marine regions reduces RMSE relative to the DEM-specific implicit baseline EBCF-CDEM by approximately 19\% under self-downsampling and 2\% with cross-product inputs, while also yielding lower RMSE than LIIF-MS in both settings. These results demonstrate the value of reusable coefficient fields for accurate reconstruction beyond the supervised resolution with low incremental arithmetic cost.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 19 pages, 15 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning; Image and Video Processing" />
-  </entry>
-  <entry>
-    <title>Recoverable Geographic Location Information in Earth-Observation Embeddings</title>
-    <link href="http://arxiv.org/abs/2609.29151v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.29151v1</id>
-    <published>2026-09-24T00:00:00Z</published>
-    <updated>2026-09-24T00:00:00Z</updated>
-    <author>
-      <name>Peiwen Zhang</name>
-    </author>
-    <author>
-      <name>Kristie Hu</name>
-    </author>
-    <author>
-      <name>Jovana Knezevic</name>
-    </author>
-    <author>
-      <name>Shunde Yin</name>
-    </author>
-    <author>
-      <name>Kyle Gao</name>
-    </author>
-    <summary type="text">Earth-observation (EO) foundation models provide reusable embeddings, yet downstream task accuracy does not reveal whether these representations encode geographic information, which may be beneficial for location-aware applications but potentially detrimental when representations invariant to geographic location are desired. We therefore evaluate the geographic coordinate robustness of Tessera v1, Tessera v1.1, and AlphaEarth by testing whether coordinates can be predicted from the embedding representations using 284 quality-verified European solar farms from 2024. We assessed geographic information content information through the association between cosine and geodesic distances and through prediction of projected coordinates in EPSG:3035. Embeddings from all three EO foundation models contain recoverable geographic information. All prediction models significantly outperform training-range uniform random sampling baselines, with AlphaEarth exhibiting the strongest distance association and lowest mean geodesic error. Both Tessera variants also yielded higher geographic distance correlations than the Sentinel-2 controls. These findings motivate geographic information content as an additional criterion for auditing EO foundation models.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>A Possible Complication of Using the 4.14 μm band to Assess D/H Ratios on Icy Bodies</title>
-    <link href="http://arxiv.org/abs/2609.29003v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.29003v1</id>
-    <published>2026-09-24T00:00:00Z</published>
-    <updated>2026-09-24T00:00:00Z</updated>
-    <author>
-      <name>Mark J. Loeffler</name>
-    </author>
-    <author>
-      <name>Rebecca A. Carmack</name>
-    </author>
-    <author>
-      <name>Stephen C. Tegler</name>
-    </author>
-    <summary type="text">Determining isotopic ratios on the surfaces of extraterrestrial objects can provide insight into their formation conditions and evolution. Recently, remote-sensing detections of the 4.14 μm HDO absorption band have enabled astronomers to estimate the D/H ratio on several icy objects in the outer solar system. Here, we quantify how ice phase and radiation processing affect the 4.14 μm absorption band. While the band is visible in H2O-ice samples with a crystalline component, we cannot detect it in amorphous H2O-ice. Furthermore, we find that radiation processing, using 10 keV electrons as a proxy, quickly makes this absorption feature undetectable at a rate consistent with the amorphization of an initially crystalline sample. Interestingly, we also find that recrystallizing the irradiated sample causes this band to reappear nearly to its original band depth. For the Saturnian satellite Mimas, we estimate that the HDO feature will decrease by a factor of two within ~1 x 10^4 yrs at typical depths probed by remote sensing spectroscopy. While we suspect that existing methods could still determine the D/H ratio from a surface composed entirely of crystalline H2O-ice, deriving it for surfaces with a significant amorphous fraction may lead to severe underestimation of the true D/H ratio. However, given the direct correlation between the amorphous fraction of the sample and the HDO band depth, we propose that one could still estimate the D/H ratio of a surface with mixed phases by determining the crystalline fraction of the surface H2O-ice using other absorption features.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 14 pages; 5 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="astro-ph.EP" />
-  </entry>
-  <entry>
-    <title>GeoDose-CP: Graph-Local Conformal Inference for Continuous-Treatment Earth Observation</title>
-    <link href="http://arxiv.org/abs/2609.28895v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.28895v1</id>
-    <published>2026-09-24T00:00:00Z</published>
-    <updated>2026-09-24T00:00:00Z</updated>
-    <author>
-      <name>Md Khalid Hasan Sakib</name>
-    </author>
-    <author>
-      <name>Dristi Datta</name>
-    </author>
-    <author>
-      <name>Manoranjan Paul</name>
-    </author>
-    <author>
-      <name>Davina White</name>
-    </author>
-    <summary type="text">Reliable intervention-oriented uncertainty quantification from Earth observation (EO) remains challenging when continuous treatment shifts, spatial dependence, limited support, and satellite-outcome uncertainty must be addressed simultaneously. Existing causal, conformal, and spatial approaches address parts of this problem, but their direct combination does not generally recover the appropriate interventional reference law because candidate reassignment jointly alters treatment likelihood, standardized residuals, and graph-dependent residual likelihood. This study presents GeoDose-CP, a support-aware conformal framework for localized stochastic potential outcomes under continuous or mixed continuous-atomic treatment. Its central methodological contribution is a graph-local target-orbit law that jointly represents intervention-induced treatment shift, the inverse outcome-scale Jacobian, and spatial residual dependence. The framework further provides exact weighted candidate inversion, a scalable sparse approximation with explicit discrepancy accounting, and refusal under inadequate support. Evaluation used controlled known-truth experiments, MineDoseBench, treatment-density sensitivity analysis, external conformal comparators, and a multi-mine New South Wales (NSW) study. In MineDoseBench, GeoDose-CP achieved mean selective coverage of 0.9692 across 27 configurations and a minimum local q0.05 of 0.8951; exact-sparse auditing produced nine inclusion disagreements over 2,700 targets. In the NSW study, the absence of an auditable longitudinal rehabilitation treatment rendered treatment-dependent inference nonoperational rather than forcing inference through a proxy exposure.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="stat.AP" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Electric Vehicle Charging Station Location Selection using Geospatial Artificial Intelligence (GeoAI)</title>
-    <link href="http://arxiv.org/abs/2609.30417v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.30417v1</id>
-    <published>2026-09-24T00:00:00Z</published>
-    <updated>2026-09-24T00:00:00Z</updated>
-    <author>
-      <name>Eun Hak Lee</name>
-    </author>
-    <author>
-      <name>Euntak Lee</name>
-    </author>
-    <summary type="text">As electric vehicle (EV) adoption increases, ensuring efficient and well-distributed charging infrastructure has become a critical challenge. While many EV charging station location problem (CSLP) studies focus on minimizing costs or travel distance, it is crucial to consider the surrounding geospatial characteristics of existing stations that influence operational performance. This study proposes a geospatial artificial intelligence (GeoAI)-based framework that integrates high-dimensional EV-related geospatial data, including EV usage, land-use, population, and traffic attributes. We incorporate a variational autoencoder (VAE) and a graph convolutional network (GCN) into the model to capture similarities among existing charging stations, and to identify suitable locations for future stations. The VAE compresses high-dimensional EV input data into a low-dimensional latent space, and the GCN uses this latent representation to predict locations suitable for charging stations. Using real-world data from Bryan-College Station, Texas, US, the proposed model outperforms state-of-the-art baselines, achieving an F1-score of 0.87 in distinguishing existing station locations from non-station locations. The model also identifies 27 additional candidate locations that show geospatial characteristics similar to those of existing stations, based on a similarity score. We further evaluate two policy implementation scenarios, maximizing geospatial similarity and minimizing total travel distance, each yielding different outcomes aligned with distinct strategic objectives. The findings highlight the importance of incorporating spatial context into CSLP and provide valuable insights for future EV infrastructure planning, promoting both efficiency and accessibility in the rapidly growing electric mobility sector.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Electric vehicle charging station; Location optimization; Geospatial artificial intelligence (GeoAI); Variational autoencoder (VAE); Graph convolutional networks (GCN); Generative artificial intelligence (GenAI)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
   </entry>
 </feed>
