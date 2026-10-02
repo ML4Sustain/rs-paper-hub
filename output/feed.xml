@@ -4,12 +4,99 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-01T06:45:23Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 39 entries</subtitle>
+  <updated>2026-10-02T02:46:47Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 41 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Harnessing Domain Specialists in Multimodal Mixture-of-Experts for Efficient Adaptation</title>
+    <link href="http://arxiv.org/abs/2610.02123v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.02123v1</id>
+    <published>2026-10-01T00:00:00Z</published>
+    <updated>2026-10-01T00:00:00Z</updated>
+    <author>
+      <name>Damiano Marsili</name>
+    </author>
+    <author>
+      <name>Raphi Kang</name>
+    </author>
+    <author>
+      <name>Aditya Mehta</name>
+    </author>
+    <author>
+      <name>Pietro Perona</name>
+    </author>
+    <author>
+      <name>Georgia Gkioxari</name>
+    </author>
+    <summary type="text">Mixture-of-Experts (MoE) architectures scale model capacity through sparse computation, routing each token through only a small subset of experts. In this work, we explore whether this sparsity gives rise to emergent intrinsic organization in multimodal MoEs. We find that experts develop strong semantic specialization across modalities and domains despite not being explicitly trained for modularity. Building on this structure, we introduce ExpertLens, a data-free method that identifies domain-specialized experts directly from pretrained model weights by decoding router weights into semantically meaningful vocabulary tokens. We leverage this specialization for efficient multimodal adaptation by selectively fine-tuning experts relevant to a target domain. Across math, medical, and remote sensing tasks, ExpertLens matches or surpasses full fine-tuning while updating only 21.7 - 47.0% of model parameters and achieving a 4.0x average training speedup, and outperforms LoRA in both adaptation performance and training efficiency. These results show that sparsity introduced for efficiency can give rise to semantic modularity that is directly useful for efficient adaptation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Project page: https://glab-caltech.github.io/expertlens/&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>A two-stage approach to satellite constellation optimization: classical and QUBO formulations</title>
+    <link href="http://arxiv.org/abs/2610.01885v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.01885v1</id>
+    <published>2026-10-01T00:00:00Z</published>
+    <updated>2026-10-01T00:00:00Z</updated>
+    <author>
+      <name>Carlo Novara</name>
+    </author>
+    <summary type="text">The design of satellite constellations for Earth observation requires balancing spatial coverage, revisit time, cost, and operational complexity. This paper considers the problem of designing the orbits of a given number of Low Earth Orbit (LEO) or Very Low Earth Orbit (VLEO) satellites to maximize the spatial and temporal resolution achieved over a prescribed set of ground targets. This kind of problem is inherently nonconvex and possibly combinatorial, making its solution computationally demanding for large constellations and target sets. To address this challenge, we propose a two-stage optimization strategy that separates spatial-coverage design from temporal-resolution optimization, thereby reducing the complexity of the overall problem. Two variants of the method are developed. The first employs continuous decision variables during the spatial-optimization stage, whereas the second discretizes these variables and reformulates the problem as a Quadratic Unconstrained Binary Optimization (QUBO) problem. The latter formulation enables the use of efficient classical QUBO solvers and is directly compatible with quantum-annealing hardware. The proposed framework provides a scalable approach to the design of heterogeneous LEO and VLEO Earth-observation constellations and establishes a pathway for exploiting emerging quantum-optimization technologies in satellite mission design. Preliminary simulation results are presented to demonstrate the effectiveness of the strategy.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages, 1 figure&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="eess.SY" />
+    <category term="math.OC" />
+  </entry>
+  <entry>
+    <title>From Pixels to Policy: A Multi-Agent System for Intervention and Geo-Spatial Decision Support</title>
+    <link href="http://arxiv.org/abs/2610.01870v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.01870v1</id>
+    <published>2026-10-01T00:00:00Z</published>
+    <updated>2026-10-01T00:00:00Z</updated>
+    <author>
+      <name>Hosam Elgendy</name>
+    </author>
+    <author>
+      <name>Utkarsh Mall</name>
+    </author>
+    <summary type="text">Urban environments are shaped by design choices with long-term implications for health, safety, and quality of life, yet evaluating proposed interventions remains costly, time-consuming, and often impractical. Existing geospatial vision methods largely focus on monitoring urban indicators from aerial and street-view imagery, rather than proposing interventions and estimating their effects on such indicators. Moving beyond recognition, we introduce the problem of discovering interventions that improve target indicators for a given aerial or street-view image. We argue that a black-box indicator model, combined with a generative editing model, can serve as an implicit digital twin for testing intervention hypotheses. We present VIDA-Geo , a multi-agent system that explores this intervention space by coordinating segmentation, diffusion-based inpainting, and indicator scoring models to produce interventions that are both perceptually realistic and aligned with real-world policies. We evaluate our system on 8 indicators across aerial and street-view imagery, measuring changes in factors such as perceived safety and greenery. Our approach outperforms existing baselines in many cases, achieving up to 2X higher perceptual quality and policy alignment scores. Finally, our model provides users with multiple candidate interventions, supporting an expert city-planner-in-the-loop workflow.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>CoEvolve: Construct-to-Edit Visual Grounding with Bidirectional State Refinement</title>
+    <link href="http://arxiv.org/abs/2610.01710v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.01710v1</id>
+    <published>2026-10-01T00:00:00Z</published>
+    <updated>2026-10-01T00:00:00Z</updated>
+    <author>
+      <name>Dongwei Sun</name>
+    </author>
+    <author>
+      <name>Yujie Zhang</name>
+    </author>
+    <author>
+      <name>Bowen Yao</name>
+    </author>
+    <author>
+      <name>Pei Liu</name>
+    </author>
+    <author>
+      <name>Jing Yao</name>
+    </author>
+    <author>
+      <name>Xiangyong Cao</name>
+    </author>
+    <summary type="text">Visual grounding localizes an object described by language with a bounding box. Most multimodal grounding models compress target identification, spatial reasoning, and boundary estimation into one terminal prediction. Free-form rationales make reasoning linguistically explicit but do not necessarily expose measurable, editable spatial states. Intermediate localization errors are therefore difficult to diagnose and correct, allowing incorrect region choices and imprecise boundaries to persist in the final box. We introduce CoEvolve, a construct-to-edit framework that separates grounding into explicit state construction and state editing. Region-Evolution Reinforcement (RER) organizes grounding analysis into a progressive semantic--spatial trajectory, with each reasoning step committing to an explicit candidate region. Bidirectional Denoising Refiner (BDR) treats the reasoning text as fixed semantic context and refines the trajectory's coordinate fields through bidirectional same-position reconstruction. Geometry- and behavior-level objectives provide target geometry and edit-preference signals for consolidating reliable candidates, preserving accurate inputs, or correcting toward annotations. Evaluations cover natural-image and remote-sensing grounding. With a 9B backbone, CoEvolve rivals models up to 241B parameters in grounding accuracy. Under controlled corruption, a single BDR pass improves mean box overlap by over 27 percentage points, demonstrating strong recovery from substantial localization errors. State-source comparisons further support the complementarity of explicit state construction and source-matched editing. The project is at https://sundongwei.github.io/CoEvolve_Project/.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Hyperspectral Image Models: Technical Report</title>
     <link href="http://arxiv.org/abs/2609.39871v1" rel="alternate" type="text/html" />
@@ -61,8 +148,8 @@
   </entry>
   <entry>
     <title>RW-Flow: One-Step Generation on Compact Manifolds via Wasserstein Gradient Flows</title>
-    <link href="http://arxiv.org/abs/2609.39271v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.39271v1</id>
+    <link href="http://arxiv.org/abs/2609.39271v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.39271v2</id>
     <published>2026-09-30T00:00:00Z</published>
     <updated>2026-09-30T00:00:00Z</updated>
     <author>
@@ -80,6 +167,24 @@
     <summary type="text">Manifold-valued data, and consequently the distributions they induce, are prevalent across many domains, ranging from the locations of geospatial events, such as earthquakes, to biomolecular torsion angles that encode information about three-dimensional structure. While diffusion and flow-based generative models have been successfully extended to compact manifolds, sampling typically requires tens or hundreds of sequential network evaluations. We introduce RW-Flow, a theoretically grounded framework for learning one-step generative models on compact manifolds via Wasserstein gradient flows. The main challenge is identifiability: driving the velocity field to zero should guarantee that the model distribution matches the target distribution. We establish a necessary and sufficient condition for identifiability on compact, connected Riemannian manifolds. We specifically show that, for a symmetric, Lipschitz-continuous cost function, the velocity field induced by the Sinkhorn divergence is identifiable if and only if the associated Gibbs kernel is nondegenerate. This characterization provides a general principle for designing identifiable costs on compact manifolds. It also reveals that the squared geodesic distance, the natural manifold analogue of the squared Euclidean distance, does not always guarantee identifiability. Across benchmarks involving geospatial events, protein side chain torsion angles, RNA backbone torsion angles, and general manifolds discretized as triangular meshes, RW-Flow outperforms existing one-step methods in nearly all settings under fair comparison conditions.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 27 pages, ICLR, 2 figures, 11 tables&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>FedMAD: Modulation-Aware Directional Aggregation for Federated Learning in Remote Sensing Image Classification</title>
+    <link href="http://arxiv.org/abs/2610.00693v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.00693v1</id>
+    <published>2026-09-30T00:00:00Z</published>
+    <updated>2026-09-30T00:00:00Z</updated>
+    <author>
+      <name>Barış Büyüktaş</name>
+    </author>
+    <author>
+      <name>Begüm Demir</name>
+    </author>
+    <summary type="text">Federated learning (FL) has recently attracted increasing attention in remote sensing (RS) since it enables collaborative model training across decentralized RS image archives without requiring direct access to local data. However, FL performance significantly degrades when the data distributions between clients are heterogeneous, which often occurs due to geographical differences, seasonal changes, and varying image acquisition and atmospheric conditions. To address this challenge, in this letter, we propose a novel personalized FL framework (denoted as FedMAD) for RS image classification problems. The proposed framework separates globally shared representation parameters from client-specific adaptation parameters to preserve client-specific features while maintaining globally transferable representations. This is achieved by integrating lightweight modulation modules and local batch normalization layers into the backbone network. Although globally shared parameters are collaboratively optimized between clients, client-specific parameters remain local to preserve domain-specific feature characteristics. In addition, FedMAD introduces a modulation-aware directional aggregation strategy that dynamically adjusts the importance of aggregation for each client according to the alignment of local modulation updates. This allows the global optimization process to suppress conflicting client updates originating from heterogeneous data distributions while enhancing the contribution of clients with consistent adaptation behaviors. The experimental results obtained on the BigEarthNet-S2 and EuroSAT datasets demonstrate the effectiveness of FedMAD compared to state-of-the-art FL algorithms under heterogeneous RS data distributions. The code of the proposed framework will be publicly available at https://git.tu-berlin.de/rsim/fedmad.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
     <category term="Machine Learning" />
   </entry>
   <entry>
@@ -662,6 +767,42 @@
     <category term="cs.IT" />
   </entry>
   <entry>
+    <title>Decoding the Disaster: Multi-Task Geospatial Reasoning with Vision-Language Models and Crowdsourced Imagery for Disaster Mapping</title>
+    <link href="http://arxiv.org/abs/2610.00302v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.00302v1</id>
+    <published>2026-09-28T00:00:00Z</published>
+    <updated>2026-09-28T00:00:00Z</updated>
+    <author>
+      <name>Wenping Yin</name>
+    </author>
+    <author>
+      <name>Fabian Desuer</name>
+    </author>
+    <author>
+      <name>Ziqi Liu</name>
+    </author>
+    <author>
+      <name>Naixia Mou</name>
+    </author>
+    <author>
+      <name>Weijia Li</name>
+    </author>
+    <author>
+      <name>Pedram Ghamisi</name>
+    </author>
+    <author>
+      <name>Xiao Xiang Zhu</name>
+    </author>
+    <author>
+      <name>Hao Li</name>
+    </author>
+    <summary type="text">Crowdsourced imagery provides timely, fine-grained, street-level observations for disaster mapping, complementing conventional remote sensing imagery (RSI) during emergency response. However, such imagery is often unstructured, spatially ambiguous, and lacks reliable geographic metadata, making manual geolocalization and interpretation labor-intensive and difficult to scale. This work proposes a multi-task Geospatial Reasoning Disaster mapping framework, namely GRDisaster, to examine the potential of vision-language models (VLMs) in understanding, geolocalizing, and reasoning over crowdsourced disaster imagery. GRDisaster is built on a newly curated benchmark dataset derived from PhotoMappers, comprising 26,340 images organized into human-validated volunteered geographic information (VGI), street-view imagery (SVI), RSI cross-view triplets covering multiple disaster events from 2018 to 2024. The framework combines deterministic and probabilistic cross-view geolocalization with multi-view fusion to associate VGI images with georeferenced SVI and RSI. It introduces two sets of spatial reasoning indicators for cross-view geolocalization validation and disaster damage assessment. These indicators use structural, environmental, and global-scene cues to validate cross-view correspondences and visually observable damage evidence with expert-verified annotations to assess disaster severity, improving the interpretability of VLM outputs. To our knowledge, this study provides the first systematic investigation and unified evaluation framework for examining how VLM-based spatial reasoning can transform crowdsourced disaster imagery into actionable geospatial artificial intelligence (GeoAI) through cross-view geolocalization validation, interpretable spatial reasoning, and damage-aware severity assessment.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; GeoLoc&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
     <title>Correlation Between Nighttime Light and Various Statistical Indicators in Japan</title>
     <link href="http://arxiv.org/abs/2609.33861v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2609.33861v1</id>
@@ -936,93 +1077,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Machine Learning" />
     <category term="cs.CY; physics.soc-ph" />
-  </entry>
-  <entry>
-    <title>SatNav: A Scalable Benchmark for Long-Horizon UAV Vision-Language Navigation from Satellite Imagery</title>
-    <link href="http://arxiv.org/abs/2609.31507v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.31507v1</id>
-    <published>2026-09-25T00:00:00Z</published>
-    <updated>2026-09-25T00:00:00Z</updated>
-    <author>
-      <name>Jiajun Jiang</name>
-    </author>
-    <author>
-      <name>Chunliang Hua</name>
-    </author>
-    <author>
-      <name>Zichun Chen</name>
-    </author>
-    <author>
-      <name>Yanxing Wu</name>
-    </author>
-    <author>
-      <name>Zeyuan Yang</name>
-    </author>
-    <author>
-      <name>Jie Song</name>
-    </author>
-    <author>
-      <name>Xiao Hu</name>
-    </author>
-    <summary type="text">Urban uncrewed aerial vehicle (UAV) vision-language navigation (VLN) requires agents to follow instructions across extended urban spaces, inherently demanding long-term memory and geospatial grounding. However, scaling existing benchmarks remains difficult because of their reliance on costly reconstructed 3D assets, limiting geographic diversity and episode scale. To address this, we introduce SatNav, a scalable, long-horizon UAV VLN benchmark built from high-resolution satellite imagery. SatNav targets city-level navigation missions and uses satellite crops as approximations of UAV nadir views for visual observations. Through an automated cue-to-episode pipeline, SatNav constructs 118K episodes from 59 scenes across 18 cities, with an average trajectory length of 379 m. To stress-test long-horizon memory and geospatial reasoning, SatNav defines three task families: Boundary, Landmark, and Route, targeting loop progress tracking, landmark-based spatial grounding, and route following with counting cues. Benchmarking classical VLN agents and recent agents based on large vision-language models (LVLMs) on SatNav shows that city-scale navigation remains challenging. We further introduce SwiftVLN, a modular framework with switchable memory components, and conduct systematic memory-design ablations. Finally, satellite-to-UAV transfer experiments show that satellite-trained navigation models can operate on real-flight UAV observations, showing the practical relevance of SatNav. Our project page: https://eku127.github.io/SatNav/</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Robotics" />
-  </entry>
-  <entry>
-    <title>WeaveAgent: A Two-Stage Tool-Routing Agent for Ultra-High-Resolution Remote Sensing Imagery</title>
-    <link href="http://arxiv.org/abs/2609.31234v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.31234v1</id>
-    <published>2026-09-25T00:00:00Z</published>
-    <updated>2026-09-25T00:00:00Z</updated>
-    <author>
-      <name>Zhongyu Pang</name>
-    </author>
-    <summary type="text">Problem. Ultra-high-resolution (UHR) remote sensing with vague user intents has two bottlenecks: visual tokens are expensive, and tool calling must be format-reliable (pretrained models emit zero tool calls zero-shot). Method. WeaveAgent, a two-stage tool-routing agent, decouples routing from visual perception. Stage A is routing-first: emission is trained, not elicited. Stage B executes conditionally: intrinsic queries enter visual answering (full-scene thumbnail; a WeaveEarth-style evidence board as an optional fixed-budget, approx. 5k-token compression interface); extrinsic queries execute tool call on original full-resolution imagery, answering from tool observations in a second, observation-masked round. Training: alignment SFT, then GRPO under reward R_WA2. Results. Alignment SFT lifts extrinsic routing from 0% to 80.75% (323/400); GRPO suppresses 9 intrinsic mis-emissions while tool selection is unchanged. The trained 2B system does not beat the zero-shot 8B baseline overall (0.263 vs. 0.250), a diagnostic contribution. Oracle attribution separates two repair ingredients: loading the observation into context lifts extrinsic answer accuracy from 0.025 to 0.425 under marker-free cross-mode returns, and the two-turn SFT stage adds a further +9.3 points to 0.518 at a small routing cost. A +/- image ablation shows emission suppression is visually grounded, and a query-register matrix shows LLM-rewritten queries cost trained checkpoints 2-11 points. Scope. All training and evaluation use the 5,000 / 3,273 / 1,000-record VagueUHR corpus (600 intrinsic + 400 tool-requiring; the base seeds synthesis and is not used for optimization). Single-pass evidence construction runs at 7.31 s per image on an RTX 4090. Code, data, and evaluation protocols will be released.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>PTC-Decoder: Towards Intelligent SLMs on Offline Resource-Constrained Edge Devices</title>
-    <link href="http://arxiv.org/abs/2609.30836v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.30836v1</id>
-    <published>2026-09-25T00:00:00Z</published>
-    <updated>2026-09-25T00:00:00Z</updated>
-    <author>
-      <name>Minghui Yu</name>
-    </author>
-    <author>
-      <name>Ke Mu</name>
-    </author>
-    <author>
-      <name>Gang Wu</name>
-    </author>
-    <summary type="text">Deploying small language models (SLMs) on offline, resource-constrained edge devices such as remote sensing satellites presents a fundamental challenge: their limited reasoning capacity hinders reliable execution of multi-step agent tasks requiring complex tool orchestration. Existing plan-solve paradigms rely on prompt-based enforcement, which our experiments show SLMs almost entirely disregard: weak models fail to invoke the plan. We propose PTC-Decoder (Plan-Tool Constrained Decoder), a training-free, plug-and-play decoder framework that combines (1) a Plan-to-Act paradigm, which elevates planning to an atomic tool and forces its invocation at the first inference step, and (2) TC-Decoder, a deterministic finite automaton that imposes token-level hard constraints on tool names while preserving freedom over parameter generation, thereby retaining SLM reasoning capability. Evaluated on 200 real remote-sensing satellite tasks across 7 SLMs, PTC-Decoder yields a statistically significant mean overall score gain of +1.21 (p&lt;0.01), 95% CI [+1.13, +1.29]), with consistent improvements across models and other datasets. An ablation study that removes TC-Decoder causes substantial performance degradation across all quality metrics without reducing computational cost, confirming TC-Decoder as the primary driver. PTC-Decoder thus offers a lightweight yet effective solution for improving step-level reliability, with final-answer accuracy remaining an open challenge. In essence, we enforce plan adherence by constraining the permissible output vocabulary during inference, without requiring retraining.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Label Less, Learn More: Resource-Efficient Active Semi-Supervised Learning for Onboard Satellite Image Annotation</title>
-    <link href="http://arxiv.org/abs/2609.37481v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.37481v1</id>
-    <published>2026-09-25T00:00:00Z</published>
-    <updated>2026-09-25T00:00:00Z</updated>
-    <author>
-      <name>Ahmed Abdelnaby</name>
-    </author>
-    <author>
-      <name>Mohamed Elmahallawy</name>
-    </author>
-    <author>
-      <name>Marius Bernahrndt</name>
-    </author>
-    <author>
-      <name>Tobias Hecking</name>
-    </author>
-    <summary type="text">Large-scale pervasive sensing increasingly relies on high-resolution satellite imagery, yet task-specific onboard vision is constrained by costly annotation and limited computation, memory, energy, and communication resources. Existing approaches largely rely on either data-hungry supervised learning or large vision-language foundation models, limiting efficient adaptation and deployment under these constraints. We present SatLabel, a resource-aware learning framework that transforms limited satellite labels into progressively refined onboard models through adaptive sample acquisition and semi-supervised model adaptation. Rather than repeatedly training on uniformly sampled labels, SatLabel closes the loop between model uncertainty, class imbalance, and pseudo-label quality to selectively acquire informative samples while exploiting abundant unlabeled imagery. This enables a compact student to adapt to target sensing domains with reduced annotation and inference costs. We further introduce an optional Mixture-of-Experts (MoE) student with graph-based feature refinement to enhance representation capacity while retaining a lightweight footprint. We evaluate SatLabel on 11 remote-sensing datasets spanning core, extended, and unseen domains against RemoteCLIP zero-shot inference. SatLabel improves Macro-F1 on most core and extended datasets while maintaining strong cross-dataset transfer to unseen domains. More importantly, the Balanced student contains only 11.2 M parameters and occupies approximately 42.8 MB, compared with 151.3M parameters and 577 MB for RemoteCLIP, while requiring 3.65 versus 5.89 GFLOPs. Across four efficiency benchmarks, it achieves approximately 2x higher GPU-forward throughput and reduces energy per image on datasets.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>
