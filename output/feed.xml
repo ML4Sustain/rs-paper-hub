@@ -4,12 +4,64 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-02T06:33:15Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 41 entries</subtitle>
+  <updated>2026-10-05T02:37:21Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 19 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>On-Board Anomaly Detection for Efficient Marine Environmental Monitoring</title>
+    <link href="http://arxiv.org/abs/2610.03649v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.03649v1</id>
+    <published>2026-10-02T00:00:00Z</published>
+    <updated>2026-10-02T00:00:00Z</updated>
+    <author>
+      <name>Thomas Goudemant</name>
+    </author>
+    <author>
+      <name>Clotilde Szywala</name>
+    </author>
+    <author>
+      <name>Benjamin Francesconi</name>
+    </author>
+    <author>
+      <name>Michelle Aubrun</name>
+    </author>
+    <author>
+      <name>Yves Bobichon</name>
+    </author>
+    <author>
+      <name>Marjorie Bellizzi</name>
+    </author>
+    <author>
+      <name>Adrien Girard</name>
+    </author>
+    <summary type="text">Marine ecosystems are impacted by various threats such as oil spills, algal blooms, and sediment floods, which disrupt habitats, wildlife, and human activities. Advances in satellite imagery and Artificial Intelligence (AI) have enhanced our capabilities for early detection and mitigation of such hazards. In this paper, we propose a marine event detection pipeline for Earth observation satellites equipped with multi- or hyperspectral sensors. Our approach includes a self-supervised neural network encoder that compresses satellite images into a reduced latent space, enabling efficient onboard processing. A machine learning anomaly detection model identifies deviations from normal sea patterns to detect environmental anomalies. We compare its performance against traditional algorithms such as Isolation Forest, One-Class Support Vector Machine and Local Outlier Factors. Our lightweight, resource-efficient pipeline is optimized for deployment on satellites with limited computational resources, ranging from embedded CPUs to AI hardware accelerators. By prioritizing the transmission of critical information, our solution enhances system responsiveness and optimizes satellite communication bandwidth. Demonstrated through current integration across multiple missions, including European Space Agency's (ESA) Phisat-2 mission and Microsoft/Thales Alenia Space IMAGIN-e mission, our pipeline aims to improve marine environmental monitoring by providing timely alerts and efficient data reduction.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages, 3 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence; Machine Learning" />
+  </entry>
+  <entry>
+    <title>A Two-Stage Cascade for Near-Real-Time Forest Anomaly Detection from Sentinel-1 SAR Time Series</title>
+    <link href="http://arxiv.org/abs/2610.02763v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.02763v1</id>
+    <published>2026-10-02T00:00:00Z</published>
+    <updated>2026-10-02T00:00:00Z</updated>
+    <author>
+      <name>Pann Thinzar Seint</name>
+    </author>
+    <author>
+      <name>Subas Chhatkuli</name>
+    </author>
+    <author>
+      <name>Bryan Atwood</name>
+    </author>
+    <summary type="text">Tropical forest monitoring is essential for global climate stability and biodiversity preservation. To address the urgent need for rapid, reliable detection of forest loss which is essential for timely intervention against illegal logging, supply chain transparency, land-use governance and carbon market standards, we introduce a two-stage statistics-encoder cascade for near-real-time anomaly detection using Sentinel-1 time series. Our system is designed to overcome two fundamental challenges in remote sensing: the cloud-cover limitations that restrict optical monitoring and seasonal backscatter variation that causes SAR systems to mistake natural moisture changes for forest loss. The architecture integrates two distinct analytical engines to ensure high-fidelity detection: (1) an adaptive, robust-statistics z-score test on co-registered Sentinel-1 VH backscatter, same-season historical baseline and (2) a learned confirmation gate based on the latent-space structural similarity (SSIM) of a convolutional autoencoder trained on stable-forest patches. A candidate disturbance is confirmed as an alert only when both stages agree, and is assigned a confidence score and a Low/Medium/High risk tier from its repeat-occurrence history. The system produces per-alert auditable confidence scores and area-in-hectares estimates directly compatible with Monitoring, Reporting and Verification (MRV) workflows, sustainable forestry management, operational field checks and environmental risk assessments. Beyond its primary application, the model's flexibility allows for critical environmental applications ranging from selective logging to large-scale agricultural encroachment mapping, flood mapping and so on.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
   <entry>
     <title>Harnessing Domain Specialists in Multimodal Mixture-of-Experts for Efficient Adaptation</title>
     <link href="http://arxiv.org/abs/2610.02123v1" rel="alternate" type="text/html" />
@@ -98,9 +150,9 @@
     <category term="Computer Vision" />
   </entry>
   <entry>
-    <title>Hyperspectral Image Models: Technical Report</title>
-    <link href="http://arxiv.org/abs/2609.39871v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.39871v1</id>
+    <title>A PyTorch Library for Hyperspectral Image Models: Technical Report</title>
+    <link href="http://arxiv.org/abs/2609.39871v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.39871v2</id>
     <published>2026-09-30T00:00:00Z</published>
     <updated>2026-09-30T00:00:00Z</updated>
     <author>
@@ -305,8 +357,8 @@
   </entry>
   <entry>
     <title>Embedded Bi-Temporal Building Damage Assessment for On-Board Data Reduction</title>
-    <link href="http://arxiv.org/abs/2609.37013v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.37013v1</id>
+    <link href="http://arxiv.org/abs/2609.37013v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.37013v2</id>
     <published>2026-09-29T00:00:00Z</published>
     <updated>2026-09-29T00:00:00Z</updated>
     <author>
@@ -408,674 +460,5 @@
     <summary type="text">While earth observation models have advanced substantially, they still lack interpretability. While concept-bottleneck models provide interpretability and expert interaction, they are either too expensive to train for the remote sensing domain or perform poorly without annotation. We posit that in expert domains like remote sensing, such training-free models require both fine details in both image and concept space. In image space, we propose a multiscale concept bottleneck using greedy quadtree routing to locate small concepts. In concept space, we replace contrastive vision language models with pre-trained MLLMs and present a way to get reliable concept scores from them. We introduce APERTURE that blends concept scores at the global image and native concept-scale level to give state-ofthe-art training-free model performance. To test these models, introduce SiFC, a fine-grained concept-centric dataset across three countries, with human-reviewed class-level concept maps. On SiFC, APERTURE outperforms the best training-free baselines by more than 10 percentage points in macro F1-score, and notably also outperforms supervised concept bottleneck models. Targeted component-removal tests examine whether concept scores respond to changes in visual evidence, while temporal experiments show that descriptor updates improve recognition of technological changes without retraining.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Remote Sensing Sparse-View 3D Gaussian Splatting via Depth Image-Based Rendering</title>
-    <link href="http://arxiv.org/abs/2609.35612v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.35612v1</id>
-    <published>2026-09-28T00:00:00Z</published>
-    <updated>2026-09-28T00:00:00Z</updated>
-    <author>
-      <name>Jiaming Kang</name>
-    </author>
-    <author>
-      <name>Zhengxia Zou</name>
-    </author>
-    <author>
-      <name>Zhenwei Shi</name>
-    </author>
-    <summary type="text">Remote sensing novel view synthesis under sparse observations remains challenging due to insufficient geometric constraints and limited cross-view supervision. Existing Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) methods are prone to overfitting and face challenges of depth ambiguities, missing cross-view information, and insufficient constraints in under-observed regions. To address these challenges, we propose DIBR-GS, a neural Gaussian Splatting framework that exploits Depth Image-Based Rendering (DIBR) to generate pseudo views for cross-view consistency supervision. Specifically, reliable geometric initialization is constructed by aligning monocular depth priors with sparse SfM reconstruction, and cross-view appearance priors are incorporated into neural Gaussian representations to enhance appearance modeling under sparse observations. Furthermore, we introduce a progressive DIBR-based pseudo-view supervision strategy to provide additional geometric and appearance constraints, enabling more complete reconstruction of weakly observed regions. In addition, a height-constrained anchor growth strategy is designed to suppress unreasonable Gaussian expansion. Experiments demonstrate that the proposed method achieves superior performance over existing approaches when training with only 3 input views. Compared with the previous best-performing method, it improves PSNR by 6.83 dB, with relative gains of 14\% in SSIM and 60\% in LPIPS, while maintaining competitive computational efficiency. Our code is available at https://github.com/kanehub/DIBR-GS</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/kanehub/DIBR-GS"&gt;https://github.com/kanehub/DIBR-GS&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>ReVA: A Scene-Centric Dataset Beyond Repetition for Remote Sensing Video Question Answering</title>
-    <link href="http://arxiv.org/abs/2609.35507v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.35507v1</id>
-    <published>2026-09-28T00:00:00Z</published>
-    <updated>2026-09-28T00:00:00Z</updated>
-    <author>
-      <name>Zhen Yao</name>
-    </author>
-    <author>
-      <name>Likai Wang</name>
-    </author>
-    <author>
-      <name>Yuming Yang</name>
-    </author>
-    <author>
-      <name>Zhihao Zheng</name>
-    </author>
-    <author>
-      <name>Bo Lang</name>
-    </author>
-    <author>
-      <name>Qiuyu Tang</name>
-    </author>
-    <author>
-      <name>Jialu Sheng</name>
-    </author>
-    <author>
-      <name>Jingqi Xu</name>
-    </author>
-    <author>
-      <name>Yuehai Yang</name>
-    </author>
-    <author>
-      <name>Jumal Barker</name>
-    </author>
-    <author>
-      <name>Xiaowen Ying</name>
-    </author>
-    <author>
-      <name>Mooi Choo Chuah</name>
-    </author>
-    <summary type="text">Multimodal Large Language Models (MLLMs) have demonstrated remarkable advances in remote sensing. However, existing remote sensing multimodal reasoning benchmarks exhibit two critical limitations: they rely on (i) template-driven questions, which causes repetitive questions; and (ii) static images that fail to capture the inherent temporal nature of drone/UAV videos. This leaves systematic evaluation of remote sensing video reasoning largely unexplored. To address this gap, we introduce ReVA, a new dataset for remote sensing video question answering, designed to assess spatiotemporal, scene-centric, and reasoning-oriented capabilities of MLLMs. ReVA comprises 2,438 drone videos spanning 18 cities worldwide (580K frames) and 22K high-quality question-answer pairs across 11 challenging QA tasks. We develop a semi-automatic annotation pipeline that leverages Text LLMs and MLLMs for question-answer generation with human verification. We evaluate 23 proprietary and open-source Video LLMs on ReVA, exposing fundamental limitations of current models. These findings position ReVA as a critical benchmark toward better remote sensing video understanding and temporal reasoning capabilities for real-world deployments. Our code and dataset are available at: https://github.com/zyaocoder/ReVA</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/zyaocoder/ReVA"&gt;https://github.com/zyaocoder/ReVA&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Spectral Super-Resolution using Spatial-Spectral Residual Operator Networks</title>
-    <link href="http://arxiv.org/abs/2609.35410v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.35410v1</id>
-    <published>2026-09-28T00:00:00Z</published>
-    <updated>2026-09-28T00:00:00Z</updated>
-    <author>
-      <name>Seokhyun Chin</name>
-    </author>
-    <summary type="text">Spectral super-resolution of multispectral satellite images can enable high temporal- and spatial-resolution hyperspectral satellite imagery at a modest cost, significantly increasing the applicability of hyperspectral remote sensing. This task is inherently ill-posed, making it well-suited for deep learning-based methods. In this study, the spectral super-resolution task is framed as an operator learning problem, and SSRON is proposed as a Deep Operator Network that effectively learns function-to-function mappings from downsampled spectra to continuous spectra. The model is trained to super-resolve Sentinel-2A-like multispectral imagery to EMIT images. Compared to baseline models, SSRON achieves superior performance across all metrics. The model also demonstrates zero-shot spectral super-resolution capability by predicting bands unseen during training. Furthermore, its continuous-output formulation suggests the potential to estimate spectra at finer wavelength intervals than the native sensor. These results suggest the potential of SSRON and establishes operator learning as a promising direction for spectral super-resolution.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE International Geoscience and Remote Sensing Symposium (IGARSS) 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>When local gains fail to transfer: Frozen Earth-observation embeddings across wildfires</title>
-    <link href="http://arxiv.org/abs/2609.34602v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.34602v1</id>
-    <published>2026-09-28T00:00:00Z</published>
-    <updated>2026-09-28T00:00:00Z</updated>
-    <author>
-      <name>Philipp Stark</name>
-    </author>
-    <author>
-      <name>Alexandros Sopasakis</name>
-    </author>
-    <author>
-      <name>Ola Hall</name>
-    </author>
-    <summary type="text">Frozen Earth-observation embeddings are judged almost entirely by spatially blocked cross-validation inside one study region. We show that this number does not predict accuracy in a new region; we show why; and we show the one setting in which such a model does keep working, using a protocol that needs only a linear probe and labels one already has. The testbed is wildfire, with Copernicus burned-area maps of six fires in Greece and Spain and descriptors from the year before each fire, comparing TESSERA and AlphaEarth with ESA WorldCover classes and annual Sentinel-2 index summaries. Inside a fire, the embeddings identify the burned land 0.05 to 0.13 ROC AUC better than the index summaries, and repeated fold allocations, spatial buffers, a block bootstrap, and gradient-boosted trees leave that margin unchanged. On a fire in another region, they lose 0.15 to 0.18 AUC, and the index summaries lose 0.06, so the three end within a few hundredths of each other. The representation is not the cause. Eight labelled blocks from the new region restore the embedding advantage and give a higher AUC than 59,000 labelled pixels from other regions, and the weight vector fitted in one region is nearly orthogonal to the vector fitted in the others, so the part that carries across regions is small and low-dimensional. Forecasting within a region is a different matter. Fitted on a fire that burned in 2023 and applied to a fire twelve kilometres away that burned in 2024, where nothing used postdates the target fire, TESSERA reaches 0.772 AUC and loses 0.04 against a classifier fitted inside the 2024 fire, while classifiers fitted in other regions lose 0.09 to 0.18. A region with one mapped fire can therefore forecast susceptibility for later fires there; a region without one cannot borrow a model from elsewhere, and every evaluation of a frozen embedding should report a held-out region.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages, 5 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Joint DNN Partitioning and Resource Allocation for Satellite-Terrestrial Collaborative Inference Systems</title>
-    <link href="http://arxiv.org/abs/2609.34543v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.34543v1</id>
-    <published>2026-09-28T00:00:00Z</published>
-    <updated>2026-09-28T00:00:00Z</updated>
-    <author>
-      <name>Wenyu Liang</name>
-    </author>
-    <author>
-      <name>Zesong Fei</name>
-    </author>
-    <author>
-      <name>Peng Liu</name>
-    </author>
-    <author>
-      <name>Xinyi Wang</name>
-    </author>
-    <author>
-      <name>Ming Zeng</name>
-    </author>
-    <summary type="text">This letter investigates a satellite-terrestrial collaborative inference system for remote sensing information processing, where a ground station (GS) serves multiple low Earth orbit (LEO) satellites running heterogeneous deep neural network (DNN) inference tasks. By partitioning the DNN between the satellite and the GS, each satellite executes the front-end layers locally, transmits the resulting intermediate features to the GS, thereby offloading the remaining layers to the GS for inference completion. We jointly optimize DNN partitioning, satellite and GS computing resources, satellite-ground bandwidth allocation, and satellite transmit power to minimize the average task completion latency under per-satellite energy constraints. To address the coupling between discrete partitioning decisions and continuous communication-computing variables, we propose a two-layer optimization algorithm. The inner layer performs closed-form updates and efficient nested bisection searching to update the continuous resource variables, while the outer layer employs random-restart coordinate descent to refine the partitioning decisions. Simulation results show that the proposed algorithm effectively reduces task completion latency compared with conventional binary offloading.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 5 pages&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Signal Processing" />
-  </entry>
-  <entry>
-    <title>Preference-Guided Adaptation for Open-Vocabulary Semantic Segmentation via Prompt Disagreement</title>
-    <link href="http://arxiv.org/abs/2609.34528v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.34528v1</id>
-    <published>2026-09-28T00:00:00Z</published>
-    <updated>2026-09-28T00:00:00Z</updated>
-    <author>
-      <name>Hyun-Kurl Jang</name>
-    </author>
-    <author>
-      <name>Jihun Kim</name>
-    </author>
-    <author>
-      <name>Kuk-Jin Yoon</name>
-    </author>
-    <summary type="text">Open-vocabulary semantic segmentation (OVSS) enables pixel-level prediction over arbitrary text-specified vocabularies and has shown strong generalization on common benchmarks. However, OVSS performance often degrades in specialized domains such as medical imaging, remote sensing, and industrial inspection, where dense pixel-level masks for adaptation are costly to obtain and require domain-specific expertise. We propose a preference-guided adaptation framework that replaces dense mask supervision with binary preferences. We observe that different prompt templates produce systematically different segmentations for the same image, a phenomenon we call prompt disagreement, and we repurpose it as a built-in source of preference supervision. Building on this, we mine localized preference queries from regions of high cross-template uncertainty, and adapt the OVSS model with Region-Localized Preference Optimization (RLPO) together with consistency regularization that stabilizes updates outside the queried region. Across extensive experiments on the MESS benchmark, the proposed method achieves consistent gains across diverse OVSS backbones without any pixel-level annotation, and remains effective under noisy preferences. Our code is available at https://github.com/blue-531/pref-ovss.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/blue-531/pref-ovss"&gt;https://github.com/blue-531/pref-ovss&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Stacked Intelligent Metasurface-Diffractive Deep Neural Networks for Onboard Terrain Classification from SAR Level-0 Raw Data</title>
-    <link href="http://arxiv.org/abs/2609.34333v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.34333v1</id>
-    <published>2026-09-28T00:00:00Z</published>
-    <updated>2026-09-28T00:00:00Z</updated>
-    <author>
-      <name>Mengbing Liu</name>
-    </author>
-    <author>
-      <name>Xin Li</name>
-    </author>
-    <author>
-      <name>Jiancheng An</name>
-    </author>
-    <author>
-      <name>Chau Yuen</name>
-    </author>
-    <summary type="text">Real-time terrain classification directly from Level-0 raw Synthetic Aperture Radar (SAR) data remains restricted by traditional digital-centric paradigms, where the processing of noisy, high-dimensional patches is hindered by computationally intensive processors and significant downlink latency. To address these fundamental limitations, this work establishes a new research paradigm for autonomous on-board sensing by proposing a Stacked Intelligent Metasurface-Diffractive Deep Neural Network (SIM-D$^2$NN). This architecture leverages the physical wave-propagation medium to offload inference tasks from digital processors to a physical device. By executing in-wave feature mapping, the SIM-D$^2$NN facilitates a move toward an integrated `compute-while-transmitting' framework, providing an alternative to the traditional `digitize-then-process' sequence. The multi-layer metasurface is positioned at the forefront of the satellite communication module. The initial layer modulates the raw SAR data through both amplitude and phase adjustments, where a 90$^\circ$ phase rotation is introduced as a lightweight but effective augmentation strategy to enhance robustness against noise and Doppler distortions. Subsequent layers learn variable phase shifts, enabling advanced feature mapping for the classification task. The classification results at the terrestrial station can be directly obtained based on the signal amplitude received at each antenna. This design reduces reliance on downlink bandwidth and high-power terrestrial computing, achieving performance around 90% in the binary task directly from real raw SAR data in terms of accuracy, precision, recall, and F1 Score. Therefore, our method helps bridge the gap between next-generation remote sensing tasks and in-orbit processing needs, paving the way for computationally efficient remote sensing applications.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Transactions on Signal Processing&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Signal Processing" />
-  </entry>
-  <entry>
-    <title>A JWST Study of Stardust. II. Polycyclic Aromatic Hydrocarbons in Comet 81P/Wild 2 and Implications for Primitive Solar System Carbon</title>
-    <link href="http://arxiv.org/abs/2609.34116v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.34116v1</id>
-    <published>2026-09-28T00:00:00Z</published>
-    <updated>2026-09-28T00:00:00Z</updated>
-    <author>
-      <name>Nathan X. Roth</name>
-    </author>
-    <author>
-      <name>Stefanie N. Milam</name>
-    </author>
-    <author>
-      <name>Diane H. Wooden</name>
-    </author>
-    <author>
-      <name>Els Peeters</name>
-    </author>
-    <author>
-      <name>Charles E. Woodward</name>
-    </author>
-    <author>
-      <name>Dominique Bockelee-Morvan</name>
-    </author>
-    <author>
-      <name>Michael S. P. Kelley</name>
-    </author>
-    <author>
-      <name>Steven B. Charnley</name>
-    </author>
-    <author>
-      <name>Simon J. Clemett</name>
-    </author>
-    <author>
-      <name>Martin A. Cordiner</name>
-    </author>
-    <author>
-      <name>Perry A. Gerakines</name>
-    </author>
-    <author>
-      <name>David E. Harker</name>
-    </author>
-    <author>
-      <name>Ella Sciamma-O'Brien</name>
-    </author>
-    <author>
-      <name>Geronimo L. Villanueva</name>
-    </author>
-    <summary type="text">We report observations of comet 81P/Wild 2, target of the Stardust sample return mission, on UT 2023 March 20 and 24 at a heliocentric distance ($r_H$) of 1.85 au using the NIRSpec and MIRI integral field unit spectrographs on board the James Webb Space Telescope (JWST). This study is the first compositional comparison between JWST remote-sensing spectroscopy of a solar system object against terrestrial analysis of its returned samples. Recent work determined contributions of molecular emission from coma volatiles and thermal emission from the nucleus and coma dust grains to these spectra. Subtracting the molecular and thermal emission models produces a residual spectrum with a clear resonance near 3.37 $μ$m and multiple others spanning the $6 - 12$ $μ$m region. Analysis of these residuals provides strong evidence for the presence of polycyclic aromatic hydrocarbons (PAHs) in the coma of 81P/Wild 2. The resulting PAH populations reflect material incorporated into the nucleus of 81P/Wild 2 that was inherited from the diffuse interstellar medium, the interstellar medium, and the protoplanetary disk. The PAHs sensed by JWST are compared to those detected in laboratory analyses of the Stardust mission returned samples.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="astro-ph.EP" />
-  </entry>
-  <entry>
-    <title>From Wildfire Severity to Snow Persistence: A Multisource GeoAI Study of the 2020 Creek Fire</title>
-    <link href="http://arxiv.org/abs/2609.36345v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.36345v1</id>
-    <published>2026-09-28T00:00:00Z</published>
-    <updated>2026-09-28T00:00:00Z</updated>
-    <author>
-      <name>Parastoo Farajpoor</name>
-    </author>
-    <author>
-      <name>Mohammadreza Narimani</name>
-    </author>
-    <summary type="text">Accurate prediction of post-fire snow conditions does not necessarily establish how wildfire changed those conditions. We developed an explainable geospatial artificial intelligence framework combining multisource Earth observations, meteorological information, and matched before-after comparisons to examine seasonal snow persistence following the 2020 Creek Fire in California's Sierra Nevada. Harmonized Landsat Sentinel-2 observations were used to estimate the fraction of clear-sky observations containing snow during October-July for eleven water years, 2016-2026, on a 500 m analysis grid. We matched 3,778 snow-zone cells inside the fire perimeter to comparable unburned controls using terrain and pre-fire snow conditions; absolute standardized mean differences after matching were no greater than 0.047. HLS persistence agreed closely with MODIS, with a mean annual spatial correlation of 0.947. The landscape-average before-after control-impact contrast was +0.0017, with a year-level 95% confidence interval of -0.023 to +0.027. A stronger response emerged in the highest burn-severity class, where observed persistence increased by 0.026 relative to matched controls, equivalent to 2.6 percentage points. Under 5 km spatial cross-validation, XGBoost predicted raw post-fire persistence with an out-of-fold coefficient of determination of 0.811, whereas predictive skill for the fire-adjusted anomaly reached 0.046. Elevation and temperature together accounted for 65.7% of mean absolute model attribution. These findings distinguish a severity-associated optical snow response from the terrain-climate relationships that dominate predictive skill. Combining matched comparisons with explainable GeoAI provides a practical framework for forest monitoring that separates accurate environmental mapping from inference about disturbance effects.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 16 pages, 9 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Geophysics" />
-    <category term="Image and Video Processing; stat.AP" />
-  </entry>
-  <entry>
-    <title>Whole-disk Photometric and Colorimetric Phase Curves of Earth with the Clementine Lunar Orbiter</title>
-    <link href="http://arxiv.org/abs/2609.36291v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.36291v1</id>
-    <published>2026-09-28T00:00:00Z</published>
-    <updated>2026-09-28T00:00:00Z</updated>
-    <author>
-      <name>Chase Cooper</name>
-    </author>
-    <author>
-      <name>Tyler D. Robinson</name>
-    </author>
-    <author>
-      <name>L. C. Mayorga</name>
-    </author>
-    <author>
-      <name>Jason W. Barnes</name>
-    </author>
-    <author>
-      <name>Lily Robinthal</name>
-    </author>
-    <summary type="text">The phase curve on a planetary object can reveal key details about its atmosphere and surface, including the presence of surface liquid oceans. Phase curves for Earth can inform the search for habitable surface environments on terrestrial exoplanets, but such phase curves are quite rare. The Clementine lunar orbiter made 3,744 observations of the Earth between February and May of 1994. These observations spanned phase angles between 3.4 and 139.1 degrees. From these data, we produce phase curves of Earth in 5 distinct bands with wavelengths between 400 nm and 1000 nm. We extrapolate fits to the phase curves to derive the geometric albedo of Earth in each filter. We examine the Earth's color as a function of phase angle and find the observed values are best fitted by models that include contributions from ocean glint. We also find a number of observations where contributions from glint are minimal but the disk-integrated color is in line with the glinting model predictions; we propose that this can be explained by the presence of optically clouds on the disk. These findings stress the importance of high-phase Earth observations for high-fidelity Earth models and for future efforts to characterize terrestrial exoplanets via direct imaging.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 16 pages, 10 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="astro-ph.EP" />
-  </entry>
-  <entry>
-    <title>GeoOutageBench: Benchmarking Ambiguity-aware, Ontology-grounded Geospatiotemporal KGQA for Multimodal Power Outage and Resilience Analysis</title>
-    <link href="http://arxiv.org/abs/2609.36082v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.36082v1</id>
-    <published>2026-09-28T00:00:00Z</published>
-    <updated>2026-09-28T00:00:00Z</updated>
-    <author>
-      <name>Ethan D. Frakes</name>
-    </author>
-    <author>
-      <name>Amy Kvien</name>
-    </author>
-    <author>
-      <name>Rishabh Kundu</name>
-    </author>
-    <author>
-      <name>Redad Mehdi</name>
-    </author>
-    <author>
-      <name>Van D. Tran</name>
-    </author>
-    <author>
-      <name>Vibha S. Mandayam</name>
-    </author>
-    <author>
-      <name>Kristopher O. Davis</name>
-    </author>
-    <author>
-      <name>Erika I. Barcelos</name>
-    </author>
-    <author>
-      <name>Roger H. French</name>
-    </author>
-    <author>
-      <name>Yinghui Wu</name>
-    </author>
-    <author>
-      <name>Mengjie Li</name>
-    </author>
-    <summary type="text">We introduce GeoOutageBench, a benchmark for assessing LLM-based geospatiotemporal KGQA for multimodal outage and resilience analysis. Unlike existing KGQA benchmarks for Web knowledge, GeoOutageBench considers a spatiotemporal KG that integrates visual, textual, and structured data from outage records, remote sensing, weather observations, storm and power events, geographic entities, and domain ontologies. It provides a competency query taxonomy at different difficulty levels from spatiotemporal containment and proximity, spatiotemporal co-occurrence analysis, multimodal evidence, to hypothetical evaluation. Over multimodal KG and query classes, GeoOutageBench provides user-configurable evaluation of three important, highly coherent yet less studied tasks: (1) LLMs' understanding for ambiguous geospatiotemporal questions in terms of NL to SPARQL interpretation, (2) query-driven assessment of ontology utility, and (3) answer accuracy of multimodal KGQA retrieval. GeoOutageBench provides a design principle and foundation for assessing LLM-KG systems that support real-world infrastructure resilience analysis. Our benchmark, source code, data, results, and other documentation are available at https://github.com/UCF-SAGE/GeoOutageBench.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/UCF-SAGE/GeoOutageBench"&gt;https://github.com/UCF-SAGE/GeoOutageBench&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13 pages, 6 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="cs.CL; Information Retrieval" />
-  </entry>
-  <entry>
-    <title>Dual-Branch Vector-Quantization-Aided Satellite Digital Semantic Communication with Index Compression for High-Resolution RSI Over AFDM</title>
-    <link href="http://arxiv.org/abs/2609.35906v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.35906v1</id>
-    <published>2026-09-28T00:00:00Z</published>
-    <updated>2026-09-28T00:00:00Z</updated>
-    <author>
-      <name>Jianqiao Chen</name>
-    </author>
-    <author>
-      <name>Nan Ma</name>
-    </author>
-    <author>
-      <name>Xiaodong Xu</name>
-    </author>
-    <author>
-      <name>Tingting Zhu</name>
-    </author>
-    <author>
-      <name>Huishi Song</name>
-    </author>
-    <author>
-      <name>Chen Dong</name>
-    </author>
-    <author>
-      <name>Rui Meng</name>
-    </author>
-    <author>
-      <name>Wenkai Liu</name>
-    </author>
-    <author>
-      <name>Ke Peng</name>
-    </author>
-    <author>
-      <name>Ping Zhang</name>
-    </author>
-    <summary type="text">High-resolution remote sensing imagery (RSI) transmission is constrained by satellite-ground bandwidth and channel impairments, yet existing methods struggle to simultaneously achieve extreme compression and robust transmission. To address this, we propose a dual-branch vector-quantization aided satellite digital semantic communication (DVQ-SDSC) framework for RSI transmission over affine frequency division multiplexing (AFDM), whose bandwidth savings arise from two interrelated aspects. First, at the source-coding level, a dual-branch framework is developed to unify deep joint semantic coding, VQ-aided index transmission, channel estimation and adaption in an end-to-end architecture; departing from symmetric encoder designs, the codec is recast as an asymmetric dual-branch architecture that separately processes the high-frequency residuals and the low-frequency structural semantics, with gated fusion and channel-adaptive reconstruction jointly restoring the semantic content. Second, at the index-coding level, we develop a principal component analysis (PCA)-aided codebook reordering to align index topology with latent correlations, and devise group differential pulse-code modulation (G-DPCM) to encode prediction residuals rather than absolute indices, lowering the index bitrate while locally isolating clipping and channel errors. A two-stage training strategy further decouples channel impairments from the semantic codec. FAIR1M experiments over 3GPP NTN-TDL-D demonstrate that DVQ-SDSC with G-DPCM index coding outperforms the conventional JPEG-LDPC scheme at the base rate of 0.0625 bits per pixel (BPP), and that G-DPCM applies directly to the trained codec without retraining, yielding additional index compression at no extra cost.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.IT" />
-  </entry>
-  <entry>
-    <title>Decoding the Disaster: Multi-Task Geospatial Reasoning with Vision-Language Models and Crowdsourced Imagery for Disaster Mapping</title>
-    <link href="http://arxiv.org/abs/2610.00302v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.00302v1</id>
-    <published>2026-09-28T00:00:00Z</published>
-    <updated>2026-09-28T00:00:00Z</updated>
-    <author>
-      <name>Wenping Yin</name>
-    </author>
-    <author>
-      <name>Fabian Desuer</name>
-    </author>
-    <author>
-      <name>Ziqi Liu</name>
-    </author>
-    <author>
-      <name>Naixia Mou</name>
-    </author>
-    <author>
-      <name>Weijia Li</name>
-    </author>
-    <author>
-      <name>Pedram Ghamisi</name>
-    </author>
-    <author>
-      <name>Xiao Xiang Zhu</name>
-    </author>
-    <author>
-      <name>Hao Li</name>
-    </author>
-    <summary type="text">Crowdsourced imagery provides timely, fine-grained, street-level observations for disaster mapping, complementing conventional remote sensing imagery (RSI) during emergency response. However, such imagery is often unstructured, spatially ambiguous, and lacks reliable geographic metadata, making manual geolocalization and interpretation labor-intensive and difficult to scale. This work proposes a multi-task Geospatial Reasoning Disaster mapping framework, namely GRDisaster, to examine the potential of vision-language models (VLMs) in understanding, geolocalizing, and reasoning over crowdsourced disaster imagery. GRDisaster is built on a newly curated benchmark dataset derived from PhotoMappers, comprising 26,340 images organized into human-validated volunteered geographic information (VGI), street-view imagery (SVI), RSI cross-view triplets covering multiple disaster events from 2018 to 2024. The framework combines deterministic and probabilistic cross-view geolocalization with multi-view fusion to associate VGI images with georeferenced SVI and RSI. It introduces two sets of spatial reasoning indicators for cross-view geolocalization validation and disaster damage assessment. These indicators use structural, environmental, and global-scene cues to validate cross-view correspondences and visually observable damage evidence with expert-verified annotations to assess disaster severity, improving the interpretability of VLM outputs. To our knowledge, this study provides the first systematic investigation and unified evaluation framework for examining how VLM-based spatial reasoning can transform crowdsourced disaster imagery into actionable geospatial artificial intelligence (GeoAI) through cross-view geolocalization validation, interpretable spatial reasoning, and damage-aware severity assessment.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; GeoLoc&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Correlation Between Nighttime Light and Various Statistical Indicators in Japan</title>
-    <link href="http://arxiv.org/abs/2609.33861v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.33861v1</id>
-    <published>2026-09-27T00:00:00Z</published>
-    <updated>2026-09-27T00:00:00Z</updated>
-    <author>
-      <name>Shoichi Otomo</name>
-    </author>
-    <summary type="text">This manuscript is an English translation and extended version of a paper originally published in Japanese(otomo 2021) Recent years have seen a rapid expansion in applying satellite remote sensing and big data to economic analysis. In particular, satellite-observed nighttime light intensity has proven to be closely correlated with key socio-economic indicators, including gross domestic product, employment rates, population density, and educational attainment across countries. In this paper, I first outline the methodology for calculating regional nightlight intensity across Japanese prefectures and municipalities. Next, to evaluate the versatility of nightlight data, I examine the relationship between city-level nightlight intensity and various public socio-economic metrics, using Japan as a case study. The findings suggest that nightlight intensity can serve as a effective proxy for these diverse indicators. Finally, I explore the potential of nightlight data for enabling rapid economic impact assessments during sudden social disruptions, such as the COVID-19 pandemic.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Theory and Applications of GIS&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.CY" />
-  </entry>
-  <entry>
-    <title>The Potential of Nighttime Light Imagery for Detailed Local Economic Analysis</title>
-    <link href="http://arxiv.org/abs/2609.33859v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.33859v1</id>
-    <published>2026-09-27T00:00:00Z</published>
-    <updated>2026-09-27T00:00:00Z</updated>
-    <author>
-      <name>Shoichi Otomo</name>
-    </author>
-    <summary type="text">This manuscript is an English translation and extended version of a paper originally published in Japanese (2022). Driven by remarkable advances in remote sensing and big data processing, spatial technologies are increasingly leveraged in economic research. While satellite nighttime light intensity is widely recognized for tracking macroeconomic parameters - such as regional GDP, employment, and population - less attention has been paid to fine-grained spatial processing methodologies for local tourism economies. This study first details a raster processing technique applied to nightlight imagery. It then focuses on Yuzawa Town (Uonuma District, Niigata Prefecture), analyzing the local economy and sports/tourist attractions. Specifically, I investigate the spatio-temporal relationships between tourist arrivals and various local statistical datasets. Furthermore, this paper highlights how nightlight data can capture intra-municipal economic dynamics that remain undetectable through standard macroeconomic indicators.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IPSJ Journal&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.CY" />
-    <category term="econ.EM" />
-  </entry>
-  <entry>
-    <title>QSCP: Beyond Class-Name Prompts for Query-Guided Semantic Change Parsing</title>
-    <link href="http://arxiv.org/abs/2609.33088v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.33088v1</id>
-    <published>2026-09-27T00:00:00Z</published>
-    <updated>2026-09-27T00:00:00Z</updated>
-    <author>
-      <name>Yuan Qian</name>
-    </author>
-    <author>
-      <name>Jie Ma</name>
-    </author>
-    <summary type="text">Traditional change detection (CD) identifies changes between bi-temporal remote sensing images, while semantic change detection (SCD) assigns predefined land-cover classes. However, mapping all changes may not meet a user's specific needs. Referring change detection (RCD) enables selective retrieval through category prompts. However, existing category-prompted RCD uses the queried category to specify the destination of a change and returns only a binary mask of the corresponding regions. Users may instead request a particular transition and paired semantic maps to understand what changed into what. Such requests require explicit source and target reasoning beyond target-class localization. To address these needs, we propose query-guided semantic change parsing (QSCP), which supports category names, synonyms, and intent-bearing sentences and returns a query-specific mask with paired temporal semantic maps. QSCP parses requests into intents and semantic slots, composes bidirectional visual evidence, and predicts both temporal states with a query-conditioned decoder. On SECOND, QSCP outperforms RCDNet on synonym, sentence, and transition queries and improves end-to-end semantic prediction over evaluated semantic baselines. WHU-CDC experiments further assess cross-dataset transfer and consistency across equivalent expressions without target-domain training. Code is available at https://github.com/qianyuancs/QSCP</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/qianyuancs/QSCP"&gt;https://github.com/qianyuancs/QSCP&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>PolyTopoBench: A Benchmark for Complex Vector Polygon Generation from Remote Sensing Imagery</title>
-    <link href="http://arxiv.org/abs/2609.32856v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.32856v1</id>
-    <published>2026-09-26T00:00:00Z</published>
-    <updated>2026-09-26T00:00:00Z</updated>
-    <author>
-      <name>Zeping Liu</name>
-    </author>
-    <author>
-      <name>Ni Lao</name>
-    </author>
-    <author>
-      <name>Weiwei Sun</name>
-    </author>
-    <author>
-      <name>Gil Wolff</name>
-    </author>
-    <author>
-      <name>Yiqun Xie</name>
-    </author>
-    <author>
-      <name>Liang Zhao</name>
-    </author>
-    <author>
-      <name>Junfeng Jiao</name>
-    </author>
-    <author>
-      <name>Gengchen Mai</name>
-    </author>
-    <summary type="text">Vector polygon generation converts visual inputs, e.g., remote sensing (RS) images, into vectorized polygonal geometries, supporting applications such as autonomous driving, vector map construction, and remote sensing. Early pipelines predict raster masks and post-process them into polygons, which prevents end-to-end optimization and may miss small objects or introduce inaccurate vertices. Recent methods directly generate vector polygons, but most focus on simple exterior contours, while they either cannot represent complex polygons with holes or fail to preserve their topology. In this paper, we propose PolyTopoBench, a unified evaluation framework for vector polygon generation from RS images with explicit emphasis on complex polygons. PolyTopoBench evaluates both exterior and interior rings, and benchmarks 11 representative methods, including segmentation-based polygonization pipelines, vision foundation model baselines, and specialized vector polygon generators, on two RS-image datasets covering buildings, roads, vegetation, and unvegetated regions. Experiments show that existing methods often recover simple exterior boundaries but degrade substantially on polygons with holes or multiple rings. These results reveal complex polygon generation as an unresolved challenge and motivate topology-aware benchmarks and model designs. Code and data are available at https://github.com/seai-lab/PolyTopoBench.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/seai-lab/PolyTopoBench"&gt;https://github.com/seai-lab/PolyTopoBench&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026 (Evaluations and Datasets Track)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>USAI-Quant: A Quantitative Reasoning Benchmark for Vision-Language Models in Built Environments</title>
-    <link href="http://arxiv.org/abs/2609.32813v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.32813v1</id>
-    <published>2026-09-26T00:00:00Z</published>
-    <updated>2026-09-26T00:00:00Z</updated>
-    <author>
-      <name>Dongdong Wang</name>
-    </author>
-    <author>
-      <name>Qingqi Song</name>
-    </author>
-    <author>
-      <name>Yuzhou Chen</name>
-    </author>
-    <author>
-      <name>Deepak Balakrishnan</name>
-    </author>
-    <author>
-      <name>Ravi Shankar Srinivasan</name>
-    </author>
-    <author>
-      <name>Shenhao Wang</name>
-    </author>
-    <summary type="text">Large vision-language models (VLMs) have emerged as a powerful paradigm for urban and spatial AI. However, current state-of-the-art large VLMs still struggle with quantitative reasoning on remote sensing imagery. Existing benchmarks and algorithms are predominantly based on qualitative Visual Question Answering (VQA), providing limited insights into the quantitative reasoning capabilities of VLMs for built environment metrics. To address this gap, we develop Quantitative Urban and Spatial AI benchmark (USAI-Quant), the first benchmark designed to quantitatively evaluate VLM's reasoning capabilities on built environment metrics via remote sensing imagery. USAI-Quant is curated from the 335 largest U.S. cities, aligning high-resolution remote sensing images with quantitative built environment metrics. We then evaluate both general-purpose and remote sensing VLMs (RS-VLMs) by applying VQAs to tens of built environment metrics across three complexity levels. Our results reveal that current state-of-the-art models consistently fall short on numeric reasoning tasks. We further conduct in-depth analyses across models, question types, and geographic locations, uncovering insights into performance variability and task-specific challenges.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, 13 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="cs.CL; Machine Learning" />
-  </entry>
-  <entry>
-    <title>Reuse or Relearn? A Spectral View of Earth Observation Foundation Models</title>
-    <link href="http://arxiv.org/abs/2609.32756v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.32756v1</id>
-    <published>2026-09-26T00:00:00Z</published>
-    <updated>2026-09-26T00:00:00Z</updated>
-    <author>
-      <name>Mehmet Ozgur Turkoglu</name>
-    </author>
-    <author>
-      <name>Valerio Marsocci</name>
-    </author>
-    <author>
-      <name>Dominik J. Mühlematter</name>
-    </author>
-    <author>
-      <name>Dominik Senti</name>
-    </author>
-    <author>
-      <name>Konrad Schindler</name>
-    </author>
-    <author>
-      <name>Helge Aasen</name>
-    </author>
-    <summary type="text">Foundation models are rarely used as generic, frozen feature extractors; instead, they are fine-tuned for the target downstream application. This practice is particularly prevalent in Earth observation (EO), and it raises a question that downstream accuracy alone cannot answer: does fine-tuning reuse the pretrained representation, or does it relearn a new one? We study this with spectral diagnostics that compare a model before and after adaptation, quantifying how well its dominant singular subspaces are preserved, how broadly the weight update is distributed, and how large it is. Using natural image models such as CLIP and DINO as a reference, we find that, under the evaluated fine-tuning settings, EO models undergo far larger, higher-rank updates and retain much less of their pretrained structure, so their downstream performance is often obtained with substantial changes to the pretrained weight structure. The diagnostics further provide insight into how cheaply a model can be adapted: where the pretrained subspaces are preserved, adapting a small fraction of the parameters can match full fine-tuning, and where they are not, it can fall behind. More broadly, foundation models, and EO foundation models in particular, should be assessed not only by benchmark accuracy, but also by how reusable their pretrained representation is.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Gradient-Guided Decoupled Adaptation for Geospatial Vision-Language Models</title>
-    <link href="http://arxiv.org/abs/2609.32737v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.32737v1</id>
-    <published>2026-09-26T00:00:00Z</published>
-    <updated>2026-09-26T00:00:00Z</updated>
-    <author>
-      <name>Dongdong Wang</name>
-    </author>
-    <author>
-      <name>Deepak Balakrishnan</name>
-    </author>
-    <author>
-      <name>Ravi Srinivasan</name>
-    </author>
-    <author>
-      <name>Shenhao Wang</name>
-    </author>
-    <summary type="text">Existing geospatial vision-language models (Geo-VLMs) typically optimize diverse geospatial tasks through a unified multi-task adaptation paradigm without explicitly accounting for the heterogeneous optimization characteristics. Our empirical observations reveal heterogeneous gradient characteristics across tasks, including vision-language differences, intra-branch gradient relationships, and task interference, which hinder effective multi-task optimization. Motivated by these observations, we propose Gradient-Guided Decoupled Adaptation (G2DA), a gradient-aware optimization framework for multi-task Geo-VLM learning. G2DA first partitions tasks into vision- and language-centric groups through gradient-guided cross-modal decoupling. It then constructs modality-specific curricula based on task gradient similarity and employs bidirectional rehearsal to mitigate the recency effects introduced by sequential optimization. We evaluate G2DA on three Geo-VLM benchmarks using six InternVL3 and Qwen3.5-VL variants, along with GeoChat and GeoLLaVA. Across all 24 benchmark-model combinations, G2DA consistently outperforms representative baselines, improving over the strongest competitor by 3.08, 4.30, and 2.81 percentage points on UrBench-MCQ, XLRS-Bench-Lite, and VRS-Bench-VQA, respectively. These results demonstrate the effectiveness of gradient-guided task organization for Geo-VLM adaptation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages, 3 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence; cs.CL; Machine Learning" />
-  </entry>
-  <entry>
-    <title>Plan-to-Synthesis: Cross-City Human Mobility Generation via Semantic Latent Flow Matching</title>
-    <link href="http://arxiv.org/abs/2609.32732v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.32732v1</id>
-    <published>2026-09-26T00:00:00Z</published>
-    <updated>2026-09-26T00:00:00Z</updated>
-    <author>
-      <name>Zhoufu Wang</name>
-    </author>
-    <author>
-      <name>Baoshen Guo</name>
-    </author>
-    <author>
-      <name>Zhiqing Hong</name>
-    </author>
-    <author>
-      <name>Junyi Li</name>
-    </author>
-    <author>
-      <name>Kailai Sun</name>
-    </author>
-    <author>
-      <name>Heye Huang</name>
-    </author>
-    <author>
-      <name>Alok Prakash</name>
-    </author>
-    <author>
-      <name>Shenhao Wang</name>
-    </author>
-    <author>
-      <name>Jinhua Zhao</name>
-    </author>
-    <summary type="text">Human mobility generation aims to synthesize realistic point-of-interest (POI) visitation trajectories and has become an important tool for travel behavior modeling, transportation management, and urban planning. Existing diffusion-based methods achieve high fidelity but require per-city generation, given the inherent heterogeneity of geospatial locations and POI categories, while large language model-based methods generalize across cities but remain too costly at scale, especially for long-horizon trajectory generation. To address this, we propose SeMoFlow, a Semantic human Mobility generation framework based on latent Flow matching. We first encode heterogeneous POIs from different cities into a shared cross-city representation space via hierarchical Semantic IDs, where shared prefixes capture transferable semantics, and successive codes progressively refine the representation toward individual POIs. Building on the semantic IDs, SeMoFlow follows a plan-to-synthesis hierarchical generation paradigm, in which an autoregressive planner generates coarse-grained semantic and recurrence patterns, and a flow matching realizer synthesizes fine-grained suffix latents. The generated latents are subsequently decoded and grounded to concrete POIs. Extensive experiments on large-scale multi-city datasets show that SeMoFlow achieves higher trajectory fidelity than existing baselines, preserves city-specific mobility motifs, and supports both joint multi-city generation and effective cross-city transfer.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.SI" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Region-Local Copula Evidence Fusion for Heterogeneous Remote Sensing Change Detection</title>
-    <link href="http://arxiv.org/abs/2609.32716v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.32716v1</id>
-    <published>2026-09-26T00:00:00Z</published>
-    <updated>2026-09-26T00:00:00Z</updated>
-    <author>
-      <name>Zhiyuan Ji</name>
-    </author>
-    <author>
-      <name>Junjun Yin</name>
-    </author>
-    <author>
-      <name>Jian Yang</name>
-    </author>
-    <summary type="text">Superpixel copula models provide stable regional evidence for heterogeneous remote sensing change detection, but a single label per region limits localization within mixed superpixels. This letter develops a region-local copula evidence fusion method that retains the regional decision structure while introducing spatially varying local dependence anomalies. Independently fitted local models characterize departures from unchanged cross-image relationships. Reference ranking and an upper-tail gate transform these anomalies for fusion with continuous regional confidence. We derive the resulting regiondependent local decision threshold and identify a condition under which gating is equivalent to reparameterizing ungated fusion. On Lake and UK, whole-image optimized configurations achieve kappa coefficients of 0.78136 and 0.90817 and improve mixedregion and boundary decisions. Four-fold retrospective spatial validation over ten training subsets confirms complementary local information, with ungated reference fusion increasing mean kappa by 0.00693 and 0.01793. Fixed gating yields a larger UK gain of 0.03353 but only 0.00041 on Lake. These results support regional-local dependence interaction, while showing that calibration and gating have scene-dependent benefits.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Signal Processing" />
-  </entry>
-  <entry>
-    <title>SetOPD: From Few Visual Exemplars to Multimodal Candidate Sets for Remote-Sensing Open-Prompt Detection</title>
-    <link href="http://arxiv.org/abs/2609.32529v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.32529v1</id>
-    <published>2026-09-26T00:00:00Z</published>
-    <updated>2026-09-26T00:00:00Z</updated>
-    <author>
-      <name>Jinlong Hu</name>
-    </author>
-    <author>
-      <name>Yi Zhang</name>
-    </author>
-    <author>
-      <name>Zhiqi Xia</name>
-    </author>
-    <author>
-      <name>Yikang Zhou</name>
-    </author>
-    <author>
-      <name>Shunping Ji</name>
-    </author>
-    <summary type="text">Open-prompt detectors allow users to specify targets with text, visual exemplars, or both. We argue that existing designs underuse the visual modality in two ways. First, multiple exemplars are commonly compressed into a single class-level embedding. This textualizes visual prompting: the resulting vector plays the role of another class name, is often aligned to or injected into the text pathway, and may be suboptimal when only a few heterogeneous exemplars are available. Second, existing methods interact primarily in prompt or representation space, before modality-specific detection states are formed. We address both issues from a set perspective: \setopd preserves modality-specific decoding states from a shared prompt-conditioned initialization and performs explicit multimodal collaboration at the candidate-state level. For the first issue, we introduce \br prompting, which reads every boxed exemplar in its full scene context and decomposes the pooled support evidence into a Base anchor and a learned Residual correction; the resulting prompt has fixed capacity regardless of the number of examples and drives its own visual detection pathway. For the second, we recast text--visual collaboration from representation-level fusion into a candidate-set modeling problem. Paired-Query Arbitration (\pqa) then performs explicit cross-modal state arbitration only after modality-specific candidate states have been formed. The two readers share query initialization so their candidates are paired by index; a learned gate arbitrates within each pair, followed by a permutation-equivariant module that reasons over the fused set.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Editable Map-Conditioned Trajectory Generation for Human Mobility Simulation</title>
-    <link href="http://arxiv.org/abs/2609.32360v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.32360v1</id>
-    <published>2026-09-26T00:00:00Z</published>
-    <updated>2026-09-26T00:00:00Z</updated>
-    <author>
-      <name>Takayuki Mizuno</name>
-    </author>
-    <author>
-      <name>Shouji Fujimoto</name>
-    </author>
-    <author>
-      <name>Mikito Hiruki</name>
-    </author>
-    <author>
-      <name>Atushi Ishikawa</name>
-    </author>
-    <summary type="text">Geospatial simulation of infrastructure interventions requires mobility generators that respond directly to edited maps, yet many data-driven generators do not expose the map as an editable condition. We formulate this task as map-conditioned autoregressive generation of human mobility: a road raster conditions a decoder that emits nominal 31.25 m mesh-cell tokens at one-minute intervals. The mesh-local vocabulary supports held-out and locally edited maps without retraining or vocabulary changes. We instantiate a ResNet-50 visual-prefix configuration and a Vision Transformer (ViT) cross-attention configuration, trained from scratch on 87,400 smartphone-derived trajectories from 874 meshes in Ishikawa Prefecture, Japan; 219 meshes are held out. We evaluate map sensitivity by comparing correct-map and within-split shuffled-map generations with held-out real trajectories. On the 110-mesh test split, for the ResNet-50 configuration, correct-map generations are closer than shuffled-map generations on 60% of meshes under Hausdorff-based energy distance (p = 0.021), while DTW is directional but inconclusive (57%, p = 0.074); correlation with real density is 0.38 with the correct map versus 0.01 with shuffled maps. The ViT configuration shows weaker trajectory-level sensitivity and smaller density gains. An illustrative bridge-removal edit changes generated continuations without retraining. Together, these results support the feasibility of editable-map human-mobility simulation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the 9th ACM SIGSPATIAL International Workshop on GeoSpatial Simulation (GeoSim '26)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-    <category term="cs.CY; physics.soc-ph" />
   </entry>
 </feed>

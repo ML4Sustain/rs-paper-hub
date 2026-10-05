@@ -4,12 +4,31 @@
   <id>https://rspaper.top/output/feed_sar.xml</id>
   <link href="https://rspaper.top/output/feed_sar.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-02T06:33:15Z</updated>
+  <updated>2026-10-05T02:37:21Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>A Two-Stage Cascade for Near-Real-Time Forest Anomaly Detection from Sentinel-1 SAR Time Series</title>
+    <link href="http://arxiv.org/abs/2610.02763v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.02763v1</id>
+    <published>2026-10-02T00:00:00Z</published>
+    <updated>2026-10-02T00:00:00Z</updated>
+    <author>
+      <name>Pann Thinzar Seint</name>
+    </author>
+    <author>
+      <name>Subas Chhatkuli</name>
+    </author>
+    <author>
+      <name>Bryan Atwood</name>
+    </author>
+    <summary type="text">Tropical forest monitoring is essential for global climate stability and biodiversity preservation. To address the urgent need for rapid, reliable detection of forest loss which is essential for timely intervention against illegal logging, supply chain transparency, land-use governance and carbon market standards, we introduce a two-stage statistics-encoder cascade for near-real-time anomaly detection using Sentinel-1 time series. Our system is designed to overcome two fundamental challenges in remote sensing: the cloud-cover limitations that restrict optical monitoring and seasonal backscatter variation that causes SAR systems to mistake natural moisture changes for forest loss. The architecture integrates two distinct analytical engines to ensure high-fidelity detection: (1) an adaptive, robust-statistics z-score test on co-registered Sentinel-1 VH backscatter, same-season historical baseline and (2) a learned confirmation gate based on the latent-space structural similarity (SSIM) of a convolutional autoencoder trained on stable-forest patches. A candidate disturbance is confirmed as an alert only when both stages agree, and is assigned a confidence score and a Low/Medium/High risk tier from its repeat-occurrence history. The system produces per-alert auditable confidence scores and area-in-hectares estimates directly compatible with Monitoring, Reporting and Verification (MRV) workflows, sustainable forestry management, operational field checks and environmental risk assessments. Beyond its primary application, the model's flexibility allows for critical environmental applications ranging from selective logging to large-scale agricultural encroachment mapping, flood mapping and so on.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
   <entry>
     <title>VesselBench-800K: A Large-scale Perception Benchmark for Multimodal Vessel Detection, Counting, and Density Estimation</title>
     <link href="http://arxiv.org/abs/2609.37003v1" rel="alternate" type="text/html" />
@@ -30,29 +49,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Stacked Intelligent Metasurface-Diffractive Deep Neural Networks for Onboard Terrain Classification from SAR Level-0 Raw Data</title>
-    <link href="http://arxiv.org/abs/2609.34333v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.34333v1</id>
-    <published>2026-09-28T00:00:00Z</published>
-    <updated>2026-09-28T00:00:00Z</updated>
-    <author>
-      <name>Mengbing Liu</name>
-    </author>
-    <author>
-      <name>Xin Li</name>
-    </author>
-    <author>
-      <name>Jiancheng An</name>
-    </author>
-    <author>
-      <name>Chau Yuen</name>
-    </author>
-    <summary type="text">Real-time terrain classification directly from Level-0 raw Synthetic Aperture Radar (SAR) data remains restricted by traditional digital-centric paradigms, where the processing of noisy, high-dimensional patches is hindered by computationally intensive processors and significant downlink latency. To address these fundamental limitations, this work establishes a new research paradigm for autonomous on-board sensing by proposing a Stacked Intelligent Metasurface-Diffractive Deep Neural Network (SIM-D$^2$NN). This architecture leverages the physical wave-propagation medium to offload inference tasks from digital processors to a physical device. By executing in-wave feature mapping, the SIM-D$^2$NN facilitates a move toward an integrated `compute-while-transmitting' framework, providing an alternative to the traditional `digitize-then-process' sequence. The multi-layer metasurface is positioned at the forefront of the satellite communication module. The initial layer modulates the raw SAR data through both amplitude and phase adjustments, where a 90$^\circ$ phase rotation is introduced as a lightweight but effective augmentation strategy to enhance robustness against noise and Doppler distortions. Subsequent layers learn variable phase shifts, enabling advanced feature mapping for the classification task. The classification results at the terrestrial station can be directly obtained based on the signal amplitude received at each antenna. This design reduces reliance on downlink bandwidth and high-power terrestrial computing, achieving performance around 90% in the binary task directly from real raw SAR data in terms of accuracy, precision, recall, and F1 Score. Therefore, our method helps bridge the gap between next-generation remote sensing tasks and in-orbit processing needs, paving the way for computationally efficient remote sensing applications.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Transactions on Signal Processing&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Signal Processing" />
   </entry>
 </feed>

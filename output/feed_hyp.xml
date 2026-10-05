@@ -4,16 +4,49 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-02T06:33:15Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 6 entries</subtitle>
+  <updated>2026-10-05T02:37:21Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
   <entry>
-    <title>Hyperspectral Image Models: Technical Report</title>
-    <link href="http://arxiv.org/abs/2609.39871v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.39871v1</id>
+    <title>On-Board Anomaly Detection for Efficient Marine Environmental Monitoring</title>
+    <link href="http://arxiv.org/abs/2610.03649v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.03649v1</id>
+    <published>2026-10-02T00:00:00Z</published>
+    <updated>2026-10-02T00:00:00Z</updated>
+    <author>
+      <name>Thomas Goudemant</name>
+    </author>
+    <author>
+      <name>Clotilde Szywala</name>
+    </author>
+    <author>
+      <name>Benjamin Francesconi</name>
+    </author>
+    <author>
+      <name>Michelle Aubrun</name>
+    </author>
+    <author>
+      <name>Yves Bobichon</name>
+    </author>
+    <author>
+      <name>Marjorie Bellizzi</name>
+    </author>
+    <author>
+      <name>Adrien Girard</name>
+    </author>
+    <summary type="text">Marine ecosystems are impacted by various threats such as oil spills, algal blooms, and sediment floods, which disrupt habitats, wildlife, and human activities. Advances in satellite imagery and Artificial Intelligence (AI) have enhanced our capabilities for early detection and mitigation of such hazards. In this paper, we propose a marine event detection pipeline for Earth observation satellites equipped with multi- or hyperspectral sensors. Our approach includes a self-supervised neural network encoder that compresses satellite images into a reduced latent space, enabling efficient onboard processing. A machine learning anomaly detection model identifies deviations from normal sea patterns to detect environmental anomalies. We compare its performance against traditional algorithms such as Isolation Forest, One-Class Support Vector Machine and Local Outlier Factors. Our lightweight, resource-efficient pipeline is optimized for deployment on satellites with limited computational resources, ranging from embedded CPUs to AI hardware accelerators. By prioritizing the transmission of critical information, our solution enhances system responsiveness and optimizes satellite communication bandwidth. Demonstrated through current integration across multiple missions, including European Space Agency's (ESA) Phisat-2 mission and Microsoft/Thales Alenia Space IMAGIN-e mission, our pipeline aims to improve marine environmental monitoring by providing timely alerts and efficient data reduction.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages, 3 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence; Machine Learning" />
+  </entry>
+  <entry>
+    <title>A PyTorch Library for Hyperspectral Image Models: Technical Report</title>
+    <link href="http://arxiv.org/abs/2609.39871v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.39871v2</id>
     <published>2026-09-30T00:00:00Z</published>
     <updated>2026-09-30T00:00:00Z</updated>
     <author>
@@ -88,59 +121,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Spectral Super-Resolution using Spatial-Spectral Residual Operator Networks</title>
-    <link href="http://arxiv.org/abs/2609.35410v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.35410v1</id>
-    <published>2026-09-28T00:00:00Z</published>
-    <updated>2026-09-28T00:00:00Z</updated>
-    <author>
-      <name>Seokhyun Chin</name>
-    </author>
-    <summary type="text">Spectral super-resolution of multispectral satellite images can enable high temporal- and spatial-resolution hyperspectral satellite imagery at a modest cost, significantly increasing the applicability of hyperspectral remote sensing. This task is inherently ill-posed, making it well-suited for deep learning-based methods. In this study, the spectral super-resolution task is framed as an operator learning problem, and SSRON is proposed as a Deep Operator Network that effectively learns function-to-function mappings from downsampled spectra to continuous spectra. The model is trained to super-resolve Sentinel-2A-like multispectral imagery to EMIT images. Compared to baseline models, SSRON achieves superior performance across all metrics. The model also demonstrates zero-shot spectral super-resolution capability by predicting bands unseen during training. Furthermore, its continuous-output formulation suggests the potential to estimate spectra at finer wavelength intervals than the native sensor. These results suggest the potential of SSRON and establishes operator learning as a promising direction for spectral super-resolution.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE International Geoscience and Remote Sensing Symposium (IGARSS) 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>When local gains fail to transfer: Frozen Earth-observation embeddings across wildfires</title>
-    <link href="http://arxiv.org/abs/2609.34602v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.34602v1</id>
-    <published>2026-09-28T00:00:00Z</published>
-    <updated>2026-09-28T00:00:00Z</updated>
-    <author>
-      <name>Philipp Stark</name>
-    </author>
-    <author>
-      <name>Alexandros Sopasakis</name>
-    </author>
-    <author>
-      <name>Ola Hall</name>
-    </author>
-    <summary type="text">Frozen Earth-observation embeddings are judged almost entirely by spatially blocked cross-validation inside one study region. We show that this number does not predict accuracy in a new region; we show why; and we show the one setting in which such a model does keep working, using a protocol that needs only a linear probe and labels one already has. The testbed is wildfire, with Copernicus burned-area maps of six fires in Greece and Spain and descriptors from the year before each fire, comparing TESSERA and AlphaEarth with ESA WorldCover classes and annual Sentinel-2 index summaries. Inside a fire, the embeddings identify the burned land 0.05 to 0.13 ROC AUC better than the index summaries, and repeated fold allocations, spatial buffers, a block bootstrap, and gradient-boosted trees leave that margin unchanged. On a fire in another region, they lose 0.15 to 0.18 AUC, and the index summaries lose 0.06, so the three end within a few hundredths of each other. The representation is not the cause. Eight labelled blocks from the new region restore the embedding advantage and give a higher AUC than 59,000 labelled pixels from other regions, and the weight vector fitted in one region is nearly orthogonal to the vector fitted in the others, so the part that carries across regions is small and low-dimensional. Forecasting within a region is a different matter. Fitted on a fire that burned in 2023 and applied to a fire twelve kilometres away that burned in 2024, where nothing used postdates the target fire, TESSERA reaches 0.772 AUC and loses 0.04 against a classifier fitted inside the 2024 fire, while classifiers fitted in other regions lose 0.09 to 0.18. A region with one mapped fire can therefore forecast susceptibility for later fires there; a region without one cannot borrow a model from elsewhere, and every evaluation of a frozen embedding should report a held-out region.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages, 5 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>From Wildfire Severity to Snow Persistence: A Multisource GeoAI Study of the 2020 Creek Fire</title>
-    <link href="http://arxiv.org/abs/2609.36345v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.36345v1</id>
-    <published>2026-09-28T00:00:00Z</published>
-    <updated>2026-09-28T00:00:00Z</updated>
-    <author>
-      <name>Parastoo Farajpoor</name>
-    </author>
-    <author>
-      <name>Mohammadreza Narimani</name>
-    </author>
-    <summary type="text">Accurate prediction of post-fire snow conditions does not necessarily establish how wildfire changed those conditions. We developed an explainable geospatial artificial intelligence framework combining multisource Earth observations, meteorological information, and matched before-after comparisons to examine seasonal snow persistence following the 2020 Creek Fire in California's Sierra Nevada. Harmonized Landsat Sentinel-2 observations were used to estimate the fraction of clear-sky observations containing snow during October-July for eleven water years, 2016-2026, on a 500 m analysis grid. We matched 3,778 snow-zone cells inside the fire perimeter to comparable unburned controls using terrain and pre-fire snow conditions; absolute standardized mean differences after matching were no greater than 0.047. HLS persistence agreed closely with MODIS, with a mean annual spatial correlation of 0.947. The landscape-average before-after control-impact contrast was +0.0017, with a year-level 95% confidence interval of -0.023 to +0.027. A stronger response emerged in the highest burn-severity class, where observed persistence increased by 0.026 relative to matched controls, equivalent to 2.6 percentage points. Under 5 km spatial cross-validation, XGBoost predicted raw post-fire persistence with an out-of-fold coefficient of determination of 0.811, whereas predictive skill for the fire-adjusted anomaly reached 0.046. Elevation and temperature together accounted for 65.7% of mean absolute model attribution. These findings distinguish a severity-associated optical snow response from the terrain-climate relationships that dominate predictive skill. Combining matched comparisons with explainable GeoAI provides a practical framework for forest monitoring that separates accurate environmental mapping from inference about disturbance effects.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 16 pages, 9 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Geophysics" />
-    <category term="Image and Video Processing; stat.AP" />
   </entry>
 </feed>

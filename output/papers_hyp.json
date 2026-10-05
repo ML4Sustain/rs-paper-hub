@@ -21229,9 +21229,9 @@
     "Month": 9,
     "Year": 2026,
     "Institute": "",
-    "Title": "Hyperspectral Image Models: Technical Report",
+    "Title": "A PyTorch Library for Hyperspectral Image Models: Technical Report",
     "abbr.": "",
-    "Paper_link": "http://arxiv.org/abs/2609.39871v1",
+    "Paper_link": "http://arxiv.org/abs/2609.39871v2",
     "Abstract": "Hyperspectral remote sensing has advanced across diverse deep learning paradigms, including spectral spatial CNNs, Vision Transformers, Mamba, graph neural networks, Kolmogorov Arnold networks, and self supervised masked autoencoding. Yet progress remains hindered by fragmented repositories, incompatible tensor conventions, and non standardized evaluation. Hyperspectral Image Models addresses these challenges through a modular framework unifying 55 representative models across six paradigms with a common registry, automatic 4D/5D tensor adaptation, and standardized constructors. It integrates 24 benchmark scenes from Airborne, Spaceborne, UAV, and Mars CRISM sensors, with caching, label remapping, PCA, explicit band selection or raw spectra, optional spatial max pooling, and arbitrary PxP patch extraction. To prevent inflated accuracy from overlapping windows, it supports class balanced random partitioning and spatially disjoint regional blocking with Chebyshev guard bands that eliminate train test pixel overlap. Experiments use a single config.yaml with deterministic seeds and complete provenance, generating LaTeX benchmark tables and classification maps. Across 1,320 model scene evaluations and 6,600 seeded runs, scene difficulty dominates architecture, with mean accuracy ranging from 96.40% on Botswana to 56.70% on Houston 2018, versus a 15 point spread across paradigm means. No paradigm universally dominates, while sub 1 M parameter models can match architectures two orders of magnitude larger. Code is publicly available at https://github.com/Tanishq251/Hyperspectral-Image-Models.",
     "code": "https://github.com/Tanishq251/Hyperspectral-Image-Models",
     "Publication": "Documentation and benchmark library for hyperspectral image models",
@@ -21240,5 +21240,24 @@
     "_added_date": "2026-10-01",
     "Category": "Method",
     "_tasks": "CLS"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Artificial Intelligence; Machine Learning",
+    "Date": "2026-10-02",
+    "Month": 10,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "On-Board Anomaly Detection for Efficient Marine Environmental Monitoring",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2610.03649v1",
+    "Abstract": "Marine ecosystems are impacted by various threats such as oil spills, algal blooms, and sediment floods, which disrupt habitats, wildlife, and human activities. Advances in satellite imagery and Artificial Intelligence (AI) have enhanced our capabilities for early detection and mitigation of such hazards. In this paper, we propose a marine event detection pipeline for Earth observation satellites equipped with multi- or hyperspectral sensors. Our approach includes a self-supervised neural network encoder that compresses satellite images into a reduced latent space, enabling efficient onboard processing. A machine learning anomaly detection model identifies deviations from normal sea patterns to detect environmental anomalies. We compare its performance against traditional algorithms such as Isolation Forest, One-Class Support Vector Machine and Local Outlier Factors. Our lightweight, resource-efficient pipeline is optimized for deployment on satellites with limited computational resources, ranging from embedded CPUs to AI hardware accelerators. By prioritizing the transmission of critical information, our solution enhances system responsiveness and optimizes satellite communication bandwidth. Demonstrated through current integration across multiple missions, including European Space Agency's (ESA) Phisat-2 mission and Microsoft/Thales Alenia Space IMAGIN-e mission, our pipeline aims to improve marine environmental monitoring by providing timely alerts and efficient data reduction.",
+    "code": "",
+    "Publication": "8 pages, 3 figures",
+    "BibTex": "@article{goudemant2026onboard,\n  title={On-Board Anomaly Detection for Efficient Marine Environmental Monitoring},\n  author={Thomas Goudemant and Clotilde Szywala and Benjamin Francesconi and Michelle Aubrun and Yves Bobichon and Marjorie Bellizzi and Adrien Girard},\n  journal={arXiv preprint arXiv:2610.03649v1},\n  year={2026},\n  url={http://arxiv.org/abs/2610.03649v1}\n}",
+    "Authors": "Thomas Goudemant, Clotilde Szywala, Benjamin Francesconi, Michelle Aubrun, Yves Bobichon, Marjorie Bellizzi, Adrien Girard",
+    "_added_date": "2026-10-05",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]
