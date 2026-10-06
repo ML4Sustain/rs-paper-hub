@@ -21259,5 +21259,43 @@
     "_added_date": "2026-10-05",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-10-05",
+    "Month": 10,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "EORestore-Agent: Fidelity-Guided Agentic Restoration of Remote Sensing Images with Composite Degradations",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2610.06196v1",
+    "Abstract": "Remote sensing images often carry composite degradations, in which haze, cloud, noise, blur, low light, and low resolution coexist. Restoring them requires deciding which tool to apply, in what order, and when to stop, yet no clean reference is available at inference time to verify these decisions. All-in-one models trained on single degradations converge to a narrow PSNR band as degradations accumulate. To formulate real-world remote sensing restoration as a traceable trajectory, we present EORestore-Agent, which replaces this unmeasurable objective with reference-free, verifiable per-step decisions. A fine-tuned vision-language model reports all residual degradation types, whose tool pools are scored together, so the restoration order emerges from step-wise selection. A relative quality scorer, trained with full-reference supervision on synthetic degradation chains, predicts the changes in PSNR, SSIM, and LPIPS from the current image to each candidate. A step is accepted only when no predicted change is negative and the predicted PSNR gain is positive. Otherwise, the agent keeps the current image. On a synthetic Landsat-8 benchmark with six degradation types, EORestore-Agent improves PSNR by 2.3 to 3.2 dB over the strongest retrained all-in-one baseline on composites of two to six degradations, whereas zero-shot natural-image agents fall below the degraded input in PSNR in 17 of 18 settings. Replacing the learned scorer with no-reference quality differences costs 1.1 to 4.6 dB. The remaining harmful steps are small and cluster near the acceptance threshold. Sentinel-2 examples illustrate transfer to real atmospheric degradation without retraining.",
+    "code": "",
+    "Publication": "20 pages, 6 figures",
+    "BibTex": "@article{qi2026eorestoreagent,\n  title={EORestore-Agent: Fidelity-Guided Agentic Restoration of Remote Sensing Images with Composite Degradations},\n  author={Heli Qi and Zeqi Zhou and Jingjun Yi and Kunyi Liu and Ziyang Lihe and Junjue Wang and Osamu Yoshie and Naoto Yokoya},\n  journal={arXiv preprint arXiv:2610.06196v1},\n  year={2026},\n  url={http://arxiv.org/abs/2610.06196v1}\n}",
+    "Authors": "Heli Qi, Zeqi Zhou, Jingjun Yi, Kunyi Liu, Ziyang Lihe, Junjue Wang, Osamu Yoshie, Naoto Yokoya",
+    "_added_date": "2026-10-06",
+    "Category": "Method",
+    "_tasks": ""
+  },
+  {
+    "Type": "Artificial Intelligence",
+    "Subtype": "astro-ph.IM",
+    "Date": "2026-10-04",
+    "Month": 10,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "A Framework for Automated Multi-Source Satellite Data Analytics and LLM-Based Report Generation",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2610.05625v1",
+    "Abstract": "This paper presents the workflow for building an automated ArcGIS Pro tool using ArcPy to extract the Land Surface Temperature (LST) from Landsat 7, 8 and 9 datasets. The tool eliminates the need for manual band selection and repetitive raster computations by automating the multi-step workflow of radiometric calibration, NDVI-based emissivity correction, and thermal conversion. In addition to supporting batch and single-scene processing, the tool has an optional Large Language Model (LLM) for statistical result interpretation and reporting. Depending on batch size, the tool reduced the processing time from around 11-58 minutes when done manually to around 4-11 minutes using the tool. We tested the tool with data from Ras Al Khaimah (RAK) in the UAE, and the LST obtained for Ras Al Khaimah ranged from approximately 25C to 50C, demonstrating an accurate LST mapping compatible with the weather conditions of RAK. In summary, our tool reduces human errors and improves processing accuracy and efficiency for thermal and environmental remote sensing applications, in addition to providing an interactive LLM-based interface for result interpretation.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{alhammadi2026a,\n  title={A Framework for Automated Multi-Source Satellite Data Analytics and LLM-Based Report Generation},\n  author={Hind Yousif Alhammadi and Isam Mashhour Al Jawarneh},\n  journal={arXiv preprint arXiv:2610.05625v1},\n  year={2026},\n  url={http://arxiv.org/abs/2610.05625v1}\n}",
+    "Authors": "Hind Yousif Alhammadi, Isam Mashhour Al Jawarneh",
+    "_added_date": "2026-10-06",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]

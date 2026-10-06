@@ -4,12 +4,64 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-05T06:29:17Z</updated>
+  <updated>2026-10-06T03:30:30Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>EORestore-Agent: Fidelity-Guided Agentic Restoration of Remote Sensing Images with Composite Degradations</title>
+    <link href="http://arxiv.org/abs/2610.06196v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.06196v1</id>
+    <published>2026-10-05T00:00:00Z</published>
+    <updated>2026-10-05T00:00:00Z</updated>
+    <author>
+      <name>Heli Qi</name>
+    </author>
+    <author>
+      <name>Zeqi Zhou</name>
+    </author>
+    <author>
+      <name>Jingjun Yi</name>
+    </author>
+    <author>
+      <name>Kunyi Liu</name>
+    </author>
+    <author>
+      <name>Ziyang Lihe</name>
+    </author>
+    <author>
+      <name>Junjue Wang</name>
+    </author>
+    <author>
+      <name>Osamu Yoshie</name>
+    </author>
+    <author>
+      <name>Naoto Yokoya</name>
+    </author>
+    <summary type="text">Remote sensing images often carry composite degradations, in which haze, cloud, noise, blur, low light, and low resolution coexist. Restoring them requires deciding which tool to apply, in what order, and when to stop, yet no clean reference is available at inference time to verify these decisions. All-in-one models trained on single degradations converge to a narrow PSNR band as degradations accumulate. To formulate real-world remote sensing restoration as a traceable trajectory, we present EORestore-Agent, which replaces this unmeasurable objective with reference-free, verifiable per-step decisions. A fine-tuned vision-language model reports all residual degradation types, whose tool pools are scored together, so the restoration order emerges from step-wise selection. A relative quality scorer, trained with full-reference supervision on synthetic degradation chains, predicts the changes in PSNR, SSIM, and LPIPS from the current image to each candidate. A step is accepted only when no predicted change is negative and the predicted PSNR gain is positive. Otherwise, the agent keeps the current image. On a synthetic Landsat-8 benchmark with six degradation types, EORestore-Agent improves PSNR by 2.3 to 3.2 dB over the strongest retrained all-in-one baseline on composites of two to six degradations, whereas zero-shot natural-image agents fall below the degraded input in PSNR in 17 of 18 settings. Replacing the learned scorer with no-reference quality differences costs 1.1 to 4.6 dB. The remaining harmful steps are small and cluster near the acceptance threshold. Sentinel-2 examples illustrate transfer to real atmospheric degradation without retraining.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 20 pages, 6 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>A Framework for Automated Multi-Source Satellite Data Analytics and LLM-Based Report Generation</title>
+    <link href="http://arxiv.org/abs/2610.05625v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.05625v1</id>
+    <published>2026-10-04T00:00:00Z</published>
+    <updated>2026-10-04T00:00:00Z</updated>
+    <author>
+      <name>Hind Yousif Alhammadi</name>
+    </author>
+    <author>
+      <name>Isam Mashhour Al Jawarneh</name>
+    </author>
+    <summary type="text">This paper presents the workflow for building an automated ArcGIS Pro tool using ArcPy to extract the Land Surface Temperature (LST) from Landsat 7, 8 and 9 datasets. The tool eliminates the need for manual band selection and repetitive raster computations by automating the multi-step workflow of radiometric calibration, NDVI-based emissivity correction, and thermal conversion. In addition to supporting batch and single-scene processing, the tool has an optional Large Language Model (LLM) for statistical result interpretation and reporting. Depending on batch size, the tool reduced the processing time from around 11-58 minutes when done manually to around 4-11 minutes using the tool. We tested the tool with data from Ras Al Khaimah (RAK) in the UAE, and the LST obtained for Ras Al Khaimah ranged from approximately 25C to 50C, demonstrating an accurate LST mapping compatible with the weather conditions of RAK. In summary, our tool reduces human errors and improves processing accuracy and efficiency for thermal and environmental remote sensing applications, in addition to providing an interactive LLM-based interface for result interpretation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+    <category term="astro-ph.IM" />
+  </entry>
   <entry>
     <title>On-Board Anomaly Detection for Efficient Marine Environmental Monitoring</title>
     <link href="http://arxiv.org/abs/2610.03649v1" rel="alternate" type="text/html" />
@@ -64,60 +116,6 @@
     <summary type="text">Hyperspectral remote sensing has advanced across diverse deep learning paradigms, including spectral spatial CNNs, Vision Transformers, Mamba, graph neural networks, Kolmogorov Arnold networks, and self supervised masked autoencoding. Yet progress remains hindered by fragmented repositories, incompatible tensor conventions, and non standardized evaluation. Hyperspectral Image Models addresses these challenges through a modular framework unifying 55 representative models across six paradigms with a common registry, automatic 4D/5D tensor adaptation, and standardized constructors. It integrates 24 benchmark scenes from Airborne, Spaceborne, UAV, and Mars CRISM sensors, with caching, label remapping, PCA, explicit band selection or raw spectra, optional spatial max pooling, and arbitrary PxP patch extraction. To prevent inflated accuracy from overlapping windows, it supports class balanced random partitioning and spatially disjoint regional blocking with Chebyshev guard bands that eliminate train test pixel overlap. Experiments use a single config.yaml with deterministic seeds and complete provenance, generating LaTeX benchmark tables and classification maps. Across 1,320 model scene evaluations and 6,600 seeded runs, scene difficulty dominates architecture, with mean accuracy ranging from 96.40% on Botswana to 56.70% on Houston 2018, versus a 15 point spread across paradigm means. No paradigm universally dominates, while sub 1 M parameter models can match architectures two orders of magnitude larger. Code is publicly available at https://github.com/Tanishq251/Hyperspectral-Image-Models.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Tanishq251/Hyperspectral-Image-Models"&gt;https://github.com/Tanishq251/Hyperspectral-Image-Models&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Documentation and benchmark library for hyperspectral image models&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>HyperSAM: A Promptable Foundation Model for Hyperspectral Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2609.37340v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.37340v1</id>
-    <published>2026-09-29T00:00:00Z</published>
-    <updated>2026-09-29T00:00:00Z</updated>
-    <author>
-      <name>Li Pang</name>
-    </author>
-    <author>
-      <name>Xinqiao Wu</name>
-    </author>
-    <author>
-      <name>Jing Yao</name>
-    </author>
-    <author>
-      <name>Pedram Ghamisi</name>
-    </author>
-    <author>
-      <name>Jun Zhou</name>
-    </author>
-    <author>
-      <name>Zhengchao Chen</name>
-    </author>
-    <author>
-      <name>Deyu Meng</name>
-    </author>
-    <author>
-      <name>Xiangyong Cao</name>
-    </author>
-    <summary type="text">Hyperspectral remote sensing provides dense spectral measurements that are indispensable for material-level Earth observation, yet the construction of a general-purpose hyperspectral foundation model remains difficult. Two bottlenecks are especially limiting. First, large hyperspectral corpora rarely provide high spatial resolution together with reliable dense annotations. Second, many hyperspectral models are still trained almost from scratch, so the geometric and interactive priors learned by modern vision foundation models are not fully reused. To alleviate these issues, we \highlight{present} \textbf{HyperSAM}, a promptable hyperspectral foundation model that couples a data-centric hyperspectral synthesis pipeline with a spectral adaptation architecture based on Segment Anything Model 3 (SAM3). On the data side, HyperSAM synthesizes full-spectrum hyperspectral cubes from high-resolution SpaceNet multispectral imagery through a physics-informed abundance-transfer generator, while SAM3-derived pseudo-masks provide object-centric supervision. On the model side, the latest implementation uses a frozen SAM3 RGB image branch, a trainable hyperspectral side encoder initialized from the RGB vision transformer (ViT), ControlNet-style zero-initialized feature injection, and a lightweight mixture-of-experts mask refiner. To enhance training robustness against noisy pseudo-labels, Cross-modal Sample Selection (CromSS)-style confidence selection is incorporated for noisy-label weighting. Extensive experiments show that HyperSAM obtains strong generalization on diverse hyperspectral tasks (e.g., classification, anomaly detection, change detection, target detection, and airborne oil-spill mapping) and that high-quality synthetic hyperspectral data can be more effective than simply scaling noisy hyperspectral supervision.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Geoscience and Remote Sensing Magazine (GRSM)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;CD;OD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>A Dual-Track Curation-and-Classification Framework for Resolving Ground-Truth Label Noise in Operational Sentinel-2 Wheat Area Estimation</title>
-    <link href="http://arxiv.org/abs/2609.36975v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.36975v1</id>
-    <published>2026-09-29T00:00:00Z</published>
-    <updated>2026-09-29T00:00:00Z</updated>
-    <author>
-      <name>Kasimali Agharia</name>
-    </author>
-    <author>
-      <name>Ujjwal Kumar Gupta</name>
-    </author>
-    <summary type="text">Operational estimation of wheat-cultivated area is persistently constrained by discordance between administrative record-keeping and remotely sensed classification products. We address this administrative reference discordance for the 2022 Rabi season in Patiala district, Punjab, India, using a thirteen-timestep Sentinel-2 NDVI time series. A curated 849-sample reference dataset, developed through an iterative rule-based bootstrapping procedure, underpins both a feature sensitivity analysis and an operational classifier. Feature sensitivity independently assessed via Cohen's d and gradient-boosted information gain converges on the February-to-March grain-fill window as most discriminative. Four classifiers (1D-CNN, LSTM, hybrid CNN-LSTM, and XGBoost) were benchmarked on an identical 679/170 sample split. XGBoost achieved the highest overall accuracy (78.82%) against deep-learning baselines (64-66%), consistent with tree-based ensembles' favourable parameter-to-sample ratio in low-sample regimes. At full-population deployment across 36.25 million valid district pixels, the operational classifier attained 86.31% precision and 71.05% recall. The predicted wheat extent deviated by only +2.99% from the official tabular target, whereas the government's spatial reference mask exhibited a +25.11% positive area bias against the identical target. This asymmetry indicates that a classifier trained on an auditor-curated reference set reconciles more closely with the official tabular area than the spatial product conventionally used to validate it. We present this dual-track curation-and-classification framework as a methodological reference for crop-area reconciliation in label-noisy administrative settings.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 21 pages, 4 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Computer Vision" />
