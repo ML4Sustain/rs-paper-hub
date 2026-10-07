@@ -28061,5 +28061,24 @@
     "_added_date": "2026-10-06",
     "Category": "Method",
     "_tasks": "SEG"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-10-06",
+    "Month": 10,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "RSJEV: Discriminative Remote Sensing Scene Classification with Multimodal Large Language Models",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2610.08539v1",
+    "Abstract": "Remote sensing scene classification is a fundamental task in Earth observation and geospatial analysis. Existing approaches mainly follow three paradigms: task-specific visual classification, vision-language similarity matching, and autoregressive multimodal generation. However, visual classifiers rely on predefined label spaces, CLIP-based methods perform recognition through static image-text alignment, and multimodal large language models (MLLMs) introduce unnecessary token-level generation for classification tasks with explicit candidate categories. To address these limitations, we propose RSJEV, a one-pass multimodal decision framework for remote sensing scene classification. Unlike conventional MLLMs that formulate classification as autoregressive text generation, RSJEV reformulates scene classification as a candidate-conditioned multimodal discriminative decision process, where visual representations, task instructions, and candidate category semantics are jointly modeled. Specifically, we introduce a OnePass Decider that extracts multimodal decision states and directly estimates category probabilities within the candidate category space, eliminating autoregressive decoding while preserving vision-language interactions. Extensive experiments on three widely used remote sensing scene classification benchmarks, including UC Merced, AID, and NWPU-RESISC45, demonstrate that RSJEV achieves superior classification performance compared with representative CNN-, Transformer-, Mamba-, CLIP-, and MLLM-based methods. Moreover, RSJEV significantly reduces inference costs and achieves a better accuracy-efficiency trade-off with only a compact 0.8B-parameter model. These results demonstrate the effectiveness of state-conditioned multimodal decision making for efficient remote sensing image understanding. The code will be available at https://github.com/Dongtcs/RSJEV.",
+    "code": "https://github.com/Dongtcs/RSJEV",
+    "Publication": "",
+    "BibTex": "@article{si2026rsjev,\n  title={RSJEV: Discriminative Remote Sensing Scene Classification with Multimodal Large Language Models},\n  author={Dongchen Si and Di Wang and Mingzhen Xu and Jing Zhang and Bo Du and Liangpei Zhang},\n  journal={arXiv preprint arXiv:2610.08539v1},\n  year={2026},\n  url={http://arxiv.org/abs/2610.08539v1}\n}",
+    "Authors": "Dongchen Si, Di Wang, Mingzhen Xu, Jing Zhang, Bo Du, Liangpei Zhang",
+    "_added_date": "2026-10-07",
+    "Category": "Method",
+    "_tasks": "CLS"
   }
 ]

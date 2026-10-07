@@ -4,12 +4,125 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-06T07:05:51Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 21 entries</subtitle>
+  <updated>2026-10-07T02:55:36Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 23 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>RSJEV: Discriminative Remote Sensing Scene Classification with Multimodal Large Language Models</title>
+    <link href="http://arxiv.org/abs/2610.08539v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.08539v1</id>
+    <published>2026-10-06T00:00:00Z</published>
+    <updated>2026-10-06T00:00:00Z</updated>
+    <author>
+      <name>Dongchen Si</name>
+    </author>
+    <author>
+      <name>Di Wang</name>
+    </author>
+    <author>
+      <name>Mingzhen Xu</name>
+    </author>
+    <author>
+      <name>Jing Zhang</name>
+    </author>
+    <author>
+      <name>Bo Du</name>
+    </author>
+    <author>
+      <name>Liangpei Zhang</name>
+    </author>
+    <summary type="text">Remote sensing scene classification is a fundamental task in Earth observation and geospatial analysis. Existing approaches mainly follow three paradigms: task-specific visual classification, vision-language similarity matching, and autoregressive multimodal generation. However, visual classifiers rely on predefined label spaces, CLIP-based methods perform recognition through static image-text alignment, and multimodal large language models (MLLMs) introduce unnecessary token-level generation for classification tasks with explicit candidate categories. To address these limitations, we propose RSJEV, a one-pass multimodal decision framework for remote sensing scene classification. Unlike conventional MLLMs that formulate classification as autoregressive text generation, RSJEV reformulates scene classification as a candidate-conditioned multimodal discriminative decision process, where visual representations, task instructions, and candidate category semantics are jointly modeled. Specifically, we introduce a OnePass Decider that extracts multimodal decision states and directly estimates category probabilities within the candidate category space, eliminating autoregressive decoding while preserving vision-language interactions. Extensive experiments on three widely used remote sensing scene classification benchmarks, including UC Merced, AID, and NWPU-RESISC45, demonstrate that RSJEV achieves superior classification performance compared with representative CNN-, Transformer-, Mamba-, CLIP-, and MLLM-based methods. Moreover, RSJEV significantly reduces inference costs and achieves a better accuracy-efficiency trade-off with only a compact 0.8B-parameter model. These results demonstrate the effectiveness of state-conditioned multimodal decision making for efficient remote sensing image understanding. The code will be available at https://github.com/Dongtcs/RSJEV.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Dongtcs/RSJEV"&gt;https://github.com/Dongtcs/RSJEV&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>How Many Independent Samples Does a Satellite Image Contain? Generalization Bounds for Spatially Dependent Data</title>
+    <link href="http://arxiv.org/abs/2610.08227v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.08227v1</id>
+    <published>2026-10-06T00:00:00Z</published>
+    <updated>2026-10-06T00:00:00Z</updated>
+    <author>
+      <name>Robin Young</name>
+    </author>
+    <summary type="text">Machine learning classifiers for remote sensing imagery are typically evaluated as though every pixel were an independent sample. Spatial autocorrelation violates this assumption, since neighboring pixels carry redundant information which inflates sample sizes. How many independent samples does a satellite image actually contain? For an $n \times n$ image whose spatial correlation persists over a range of $r$ pixels, the effective sample size is $Θ(n^2/r^2)$, not $n^2$. We prove this as a finite-sample upper bound for classifiers on spatially correlated data, and show via a matching lower bound that the rate is tight, and no algorithm can do better. We extend the results to images with directional correlation and spatially varying correlation structure. Our result justifies spatial cross-validation since block holdout with separation proportional to the correlation range achieves optimal generalization guarantees, while random holdout can underestimate confidence interval widths by a factor proportional to $r$. We validate the theory on synthetic data and satellite image tiles from three sensors (Landsat 8, Sentinel-2, and Sentinel-1).</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning (Statistics)" />
+    <category term="Computer Vision; Machine Learning" />
+  </entry>
+  <entry>
+    <title>ApexQuant: Data-Free Elastic Quantization by Residual Re-Isotropization</title>
+    <link href="http://arxiv.org/abs/2610.07904v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.07904v1</id>
+    <published>2026-10-06T00:00:00Z</published>
+    <updated>2026-10-06T00:00:00Z</updated>
+    <author>
+      <name>Aksel Fristrup</name>
+    </author>
+    <author>
+      <name>Sumit Pandey</name>
+    </author>
+    <author>
+      <name>Ankit Kariryaa</name>
+    </author>
+    <summary type="text">We introduce ApexQuant, a calibration-free quantization method that recursively re-quantizes the residual error, serving as a refinement layer on top of existing quantizers. We establish that a fresh random rotation returns each residual to the uniform distribution on the hypersphere, which characterizes the rate of progressive error decay across successive passes. This result lets us determine, before any weight is read, how many passes a layer needs for a target weight-space error. Every prefix is itself a valid lower-rate model, so one artifact serves several precisions. We instantiate ApexQuant with three interchangeable stages, scalar, $E_8$ and trellis, and validate it on four open-weight LLMs and on Earth-observation and medical domains where in-distribution data is often unattainable as imagery arrives under restrictive licences or due to patient material under privacy constraints. Progressive re-isotropization comes within a few percent of full precision at four bits and gives the best two-bit arm we measure, in a completely data-free setting.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 25 pages, 6 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>RBMatch: Dual-Level Class Rebalancing for Semi-Supervised Building Footprint Extraction</title>
+    <link href="http://arxiv.org/abs/2610.07698v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.07698v1</id>
+    <published>2026-10-06T00:00:00Z</published>
+    <updated>2026-10-06T00:00:00Z</updated>
+    <author>
+      <name>Akil Ahmad Taki</name>
+    </author>
+    <author>
+      <name>Shaikh Anowarul Fattah</name>
+    </author>
+    <summary type="text">Accurate building footprint extraction from high-resolution remote sensing imagery is essential for urban planning, disaster response, and environmental monitoring. However, obtaining dense pixel-level annotations is costly, motivating the use of semi-supervised learning (SSL) to leverage unlabeled imagery. In remote sensing, severe foreground--background imbalance poses a particular challenge for self-training, as it can bias pseudo-label generation and the resulting unsupervised optimization toward the majority background class. We show that addressing this imbalance at only one stage is insufficient: balancing pseudo-label selection alone does not prevent background bias from re-emerging during unsupervised loss optimization, a failure mode we term \emph{imbalance leak}. To address this issue, we propose \textbf{RBMatch}, a dual-level class-rebalancing framework that jointly regulates pseudo-label generation and unsupervised optimization. RBMatch combines a supervised learning pathway with a self-training module comprising three components: adaptive class-specific thresholding (ACT) for balanced pseudo-label selection, confidence-aware class-balanced reweighting (CACBR) for mitigating class bias in the unsupervised loss, and distribution alignment (DAL) for matching the predicted unlabeled-data distribution to the labeled-data prior. Experiments on the WHU, INRIA, and Massachusetts building footprint datasets across labeled ratios of 1%--10% show that RBMatch consistently achieves the best building IoU and F1-score among the evaluated methods. The improvement is most pronounced on the highly imbalanced Massachusetts dataset, where RBMatch improves IoU by 1.37 points over the strongest baseline at a 1% labeling ratio and is the only method to outperform the fully supervised baseline across all twelve dataset--ratio settings.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Evaluating human-AI workflows for field research in viticulture</title>
+    <link href="http://arxiv.org/abs/2610.07669v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.07669v1</id>
+    <published>2026-10-06T00:00:00Z</published>
+    <updated>2026-10-06T00:00:00Z</updated>
+    <author>
+      <name>Niko Carvajal Janke</name>
+    </author>
+    <author>
+      <name>Daoyuan Jin</name>
+    </author>
+    <author>
+      <name>Shivranjani Baruah</name>
+    </author>
+    <author>
+      <name>Nicholas Gunner</name>
+    </author>
+    <author>
+      <name>Jacob Maus</name>
+    </author>
+    <author>
+      <name>Yu Jiang</name>
+    </author>
+    <author>
+      <name>Kaitlin M. Gold</name>
+    </author>
+    <summary type="text">We assessed the value of two live human-AI interactions in a precision disease control project in California vineyards. The project tested whether 2021-2024 commercial scouting records and remote-sensing measurements across 140 hectares could support 2025 red-leaf symptom forecasting for prioritized scouting and virus testing. In Workflow 1, Aleks v1, a multi-agent research system, developed forecasting models with iterative human refinement. We applied Aleks's 2024 vine-scale model to updated 2025 predictors and evaluated red-leaf forecasts against independent 2025 scouting. In retrospective simulations surveying 45% of all vine positions, adding model-informed row prioritization to adaptive scouting increased the encountered proportion of newly recorded red-leaf observations from 85.8% to 94.1%. Within-block scouting comparisons suggested the model mainly improved scouting allocation among blocks. Despite unreliable internal 2024 performance estimates from synthetic oversampling before train/test splitting, Aleks developed an informative vine-scale model in 145 minutes, increasing throughput and answering our research questions. In Workflow 2, we assessed whether higher model-score vines had more frequent virus detection, and whether Aleks could infer this sampling goal from a general prompt with data and literature. Aleks's plan prioritized balanced vineyard and model score coverage, while our plan prioritized field efficiency and high-model-score oversampling. Aleks's and our plans yielded 41/50 (82%) and 97/100 (97%) sampled vines. Aleks's plan omitted instructions for replacing missing vines, limiting implementation and operational value. Five of 137 sampled vines tested positive for grapevine red blotch virus (model score ROC AUC 0.735). These findings support assessing AI interactions by how well they advance field research objectives under live, project-specific constraints.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 35 pages, including supplementary materials. Supporting files S1-S4: https://doi-org.proxy.library.cornell.edu/10.5281/zenodo.23142108&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.HC" />
+    <category term="Artificial Intelligence; cs.CY" />
+  </entry>
   <entry>
     <title>Evaluating LiDAR Data Sources, Predictor Resolution, and Spatial Random Effects in Bayesian Change-of-Support Models for Forest Inventory</title>
     <link href="http://arxiv.org/abs/2610.06476v1" rel="alternate" type="text/html" />
@@ -365,6 +478,29 @@
     <category term="Computer Vision" />
   </entry>
   <entry>
+    <title>Repair Lot Skyline: A Weighted Constraint Satisfaction Approach to Pavement Repair Optimization from Geospatial Hazard Density</title>
+    <link href="http://arxiv.org/abs/2610.06989v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.06989v1</id>
+    <published>2026-10-04T00:00:00Z</published>
+    <updated>2026-10-04T00:00:00Z</updated>
+    <author>
+      <name>Takato Yasuno</name>
+    </author>
+    <author>
+      <name>Keita Kobayashi</name>
+    </author>
+    <author>
+      <name>Ryuta Sakaguchi</name>
+    </author>
+    <author>
+      <name>Takuya Okamoto</name>
+    </author>
+    <summary type="text">Pavement agencies must translate a spatially distributed distress inventory into a bounded, actionable repair-lot plan: accident-critical defects (potholes) must always be addressed, lower-risk defects (cracks) should be included only when their benefit justifies the repair cost, and historical patch locations signal re-degradation risk without themselves triggering repair. We formalize this as a Repair Lot Skyline problem: a Weighted Constraint Satisfaction Problem (WCSP) defined over chainage (distance along the road) rather than over time, so that it requires only a single-epoch distress survey and makes no claim about future deterioration. The WCSP identifies 143 candidate hazard clusters (61 hard, 82 soft), of which 106 are merged into a final repair plan totaling 1,997.4 m---83.7% of the 2,385.9 m that would be required if every soft candidate were included regardless of cost. This plan covers 100% of observed potholes (138/138) and 91.6% of observed cracks (404/441), capturing 93.6% (542/579) of the total hazard benefit available in the full candidate set. The skyline frontier shows pronounced diminishing returns beyond this point: the remaining 37 excluded soft candidates would add only 6.8% additional benefit for a 19.4% increase in repair length. We further formalize the minimum-lot-length $L_{\min}$ and historical-context radius $κ$ as a joint, four-objective hyperparameter search over this WCSP; on the same case study, the recommended configuration ($L_{\min} = 14.7$ m, $κ= 10$ m) reduces repair-crew mobilizations by 7.1% relative to an untuned default, at the cost of a 12.9% larger budget and a 1.1-percentage-point lower crack coverage.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 30 pages, 7 tables, 5 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
     <title>A Geometric-Transformation Feature-Adaptive Manifold Restoration Method for Open-Vocabulary Semantic Segmentation of Remote Sensing Images</title>
     <link href="http://arxiv.org/abs/2610.04300v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2610.04300v1</id>
@@ -547,95 +683,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
     <category term="Artificial Intelligence" />
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>A PyTorch Library for Hyperspectral Image Models: Technical Report</title>
-    <link href="http://arxiv.org/abs/2609.39871v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.39871v2</id>
-    <published>2026-09-30T00:00:00Z</published>
-    <updated>2026-09-30T00:00:00Z</updated>
-    <author>
-      <name>Tanishq Rachamalla</name>
-    </author>
-    <author>
-      <name>Aryan Das</name>
-    </author>
-    <author>
-      <name>Srishti Kaushik</name>
-    </author>
-    <author>
-      <name>Swalpa Kumar Roy</name>
-    </author>
-    <summary type="text">Hyperspectral remote sensing has advanced across diverse deep learning paradigms, including spectral spatial CNNs, Vision Transformers, Mamba, graph neural networks, Kolmogorov Arnold networks, and self supervised masked autoencoding. Yet progress remains hindered by fragmented repositories, incompatible tensor conventions, and non standardized evaluation. Hyperspectral Image Models addresses these challenges through a modular framework unifying 55 representative models across six paradigms with a common registry, automatic 4D/5D tensor adaptation, and standardized constructors. It integrates 24 benchmark scenes from Airborne, Spaceborne, UAV, and Mars CRISM sensors, with caching, label remapping, PCA, explicit band selection or raw spectra, optional spatial max pooling, and arbitrary PxP patch extraction. To prevent inflated accuracy from overlapping windows, it supports class balanced random partitioning and spatially disjoint regional blocking with Chebyshev guard bands that eliminate train test pixel overlap. Experiments use a single config.yaml with deterministic seeds and complete provenance, generating LaTeX benchmark tables and classification maps. Across 1,320 model scene evaluations and 6,600 seeded runs, scene difficulty dominates architecture, with mean accuracy ranging from 96.40% on Botswana to 56.70% on Houston 2018, versus a 15 point spread across paradigm means. No paradigm universally dominates, while sub 1 M parameter models can match architectures two orders of magnitude larger. Code is publicly available at https://github.com/Tanishq251/Hyperspectral-Image-Models.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Tanishq251/Hyperspectral-Image-Models"&gt;https://github.com/Tanishq251/Hyperspectral-Image-Models&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Documentation and benchmark library for hyperspectral image models&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>COBICount: Separating Object and Background Responses for Remote Sensing Object Counting Without Training on Target Data</title>
-    <link href="http://arxiv.org/abs/2609.39366v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.39366v1</id>
-    <published>2026-09-30T00:00:00Z</published>
-    <updated>2026-09-30T00:00:00Z</updated>
-    <author>
-      <name>Junjing Zheng</name>
-    </author>
-    <author>
-      <name>Zhiyi Zhou</name>
-    </author>
-    <author>
-      <name>Ningrui Yang</name>
-    </author>
-    <author>
-      <name>Hongying Meng</name>
-    </author>
-    <summary type="text">Remote sensing object counting estimates how many buildings, vehicles, or ships appear in overhead images. Most supervised counters predict a density map, whose sum gives the object count, and assume similar categories, sizes, and backgrounds. Applying them across regions, sensors, or categories often requires target data or further training, which may be costly or unavailable. We study source-only counting. Training for the counting task and model selection use one group of images that shares an object category and similar imaging conditions, with one point marking each object. Target images and information remain unavailable until the model is fixed. This reduces data preparation but makes transfer harder. A model trained on one source may place high density values, called responses, on real objects and repeated background structures. Road edges, parking grids, roof boundaries, and water boundaries may then be counted as objects, creating candidate origin ambiguity. COBICount separates response generation, acceptance, and background suppression. Candidate Evidence (CE) generates possible responses. Candidate Acceptance (CA) keeps compact responses centered on objects. Bias Isolation (BI) reduces responses associated with repeated background structures. Their outputs form the final density map. Trained on RSOC Building and evaluated directly on DOTA Large Vehicle, Small Vehicle, and Ship, COBICount achieves the lowest mean absolute error (MAE) averaged over the target domains among the compared methods, 174.132. It uses 5.07 million parameters and 17.41 billion floating point operations for a 512x512 input. COBICount improves transfer without target data or training for each target. The code will be available at: https://github.com/yixuxi22/COBICount.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/yixuxi22/COBICount"&gt;https://github.com/yixuxi22/COBICount&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 19 pages, 7 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>RW-Flow: One-Step Generation on Compact Manifolds via Wasserstein Gradient Flows</title>
-    <link href="http://arxiv.org/abs/2609.39271v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.39271v2</id>
-    <published>2026-09-30T00:00:00Z</published>
-    <updated>2026-09-30T00:00:00Z</updated>
-    <author>
-      <name>Ualibyek Nurgulan</name>
-    </author>
-    <author>
-      <name>Seungwoo Yoo</name>
-    </author>
-    <author>
-      <name>Prin Phunyaphibarn</name>
-    </author>
-    <author>
-      <name>Minhyuk Sung</name>
-    </author>
-    <summary type="text">Manifold-valued data, and consequently the distributions they induce, are prevalent across many domains, ranging from the locations of geospatial events, such as earthquakes, to biomolecular torsion angles that encode information about three-dimensional structure. While diffusion and flow-based generative models have been successfully extended to compact manifolds, sampling typically requires tens or hundreds of sequential network evaluations. We introduce RW-Flow, a theoretically grounded framework for learning one-step generative models on compact manifolds via Wasserstein gradient flows. The main challenge is identifiability: driving the velocity field to zero should guarantee that the model distribution matches the target distribution. We establish a necessary and sufficient condition for identifiability on compact, connected Riemannian manifolds. We specifically show that, for a symmetric, Lipschitz-continuous cost function, the velocity field induced by the Sinkhorn divergence is identifiable if and only if the associated Gibbs kernel is nondegenerate. This characterization provides a general principle for designing identifiable costs on compact manifolds. It also reveals that the squared geodesic distance, the natural manifold analogue of the squared Euclidean distance, does not always guarantee identifiability. Across benchmarks involving geospatial events, protein side chain torsion angles, RNA backbone torsion angles, and general manifolds discretized as triangular meshes, RW-Flow outperforms existing one-step methods in nearly all settings under fair comparison conditions.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 27 pages, ICLR, 2 figures, 11 tables&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>FedMAD: Modulation-Aware Directional Aggregation for Federated Learning in Remote Sensing Image Classification</title>
-    <link href="http://arxiv.org/abs/2610.00693v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.00693v1</id>
-    <published>2026-09-30T00:00:00Z</published>
-    <updated>2026-09-30T00:00:00Z</updated>
-    <author>
-      <name>Barış Büyüktaş</name>
-    </author>
-    <author>
-      <name>Begüm Demir</name>
-    </author>
-    <summary type="text">Federated learning (FL) has recently attracted increasing attention in remote sensing (RS) since it enables collaborative model training across decentralized RS image archives without requiring direct access to local data. However, FL performance significantly degrades when the data distributions between clients are heterogeneous, which often occurs due to geographical differences, seasonal changes, and varying image acquisition and atmospheric conditions. To address this challenge, in this letter, we propose a novel personalized FL framework (denoted as FedMAD) for RS image classification problems. The proposed framework separates globally shared representation parameters from client-specific adaptation parameters to preserve client-specific features while maintaining globally transferable representations. This is achieved by integrating lightweight modulation modules and local batch normalization layers into the backbone network. Although globally shared parameters are collaboratively optimized between clients, client-specific parameters remain local to preserve domain-specific feature characteristics. In addition, FedMAD introduces a modulation-aware directional aggregation strategy that dynamically adjusts the importance of aggregation for each client according to the alignment of local modulation updates. This allows the global optimization process to suppress conflicting client updates originating from heterogeneous data distributions while enhancing the contribution of clients with consistent adaptation behaviors. The experimental results obtained on the BigEarthNet-S2 and EuroSAT datasets demonstrate the effectiveness of FedMAD compared to state-of-the-art FL algorithms under heterogeneous RS data distributions. The code of the proposed framework will be publicly available at https://git.tu-berlin.de/rsim/fedmad.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
   </entry>
 </feed>
