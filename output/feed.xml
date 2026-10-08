@@ -4,12 +4,62 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-07T06:46:56Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 23 entries</subtitle>
+  <updated>2026-10-08T03:12:43Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 24 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Evolutionary Architecture Search for Chlorophyll-$a$ Prediction in Lakes using Sentinel-2</title>
+    <link href="http://arxiv.org/abs/2610.10496v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.10496v1</id>
+    <published>2026-10-07T00:00:00Z</published>
+    <updated>2026-10-07T00:00:00Z</updated>
+    <author>
+      <name>Kursat Komurcu</name>
+    </author>
+    <author>
+      <name>Linas Petkevicius</name>
+    </author>
+    <summary type="text">Small tabular datasets with expert-designed spectral features are the norm in   operational Earth observation, and the networks applied to them are typically   hand-designed. We revisit one such published model -- a Sentinel-2 algal   bloom classifier -- and ask what architecture search adds, holding the task,   the features and the lake-level train/test split of the original study fixed.   Searching an extended multilayer-perceptron space with regularized evolution,   and selecting on inner-cross-validation AUC only, we find networks that   improve held-out AUC from 0.790 to 0.820 and accuracy from 0.733 to 0.748   while using 409 trainable parameters, 26 times fewer than the strongest   hand-designed reference. The search converges on a consistent recipe -- a   single narrow layer, RMS normalisation, $\tanh$ activation, step-decayed   RMSprop and weight averaging -- that a practitioner would be unlikely to   reach by default. At 1.6\,kB the resulting model is small enough to serve as   an onboard screening trigger, which is the setting that motivates the work.   Code: https://github.com/VU-AIML/automl4eo-bloom-nas.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/VU-AIML/automl4eo-bloom-nas"&gt;https://github.com/VU-AIML/automl4eo-bloom-nas&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; AutoML4EO 2026 (non-archival AutoML conference workshop)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Neural and Evolutionary Computing" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>EM-SNN: Efficiently Modulated Spiking Neural Network for Remote Sensing Image Dehazing</title>
+    <link href="http://arxiv.org/abs/2610.09275v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.09275v1</id>
+    <published>2026-10-07T00:00:00Z</published>
+    <updated>2026-10-07T00:00:00Z</updated>
+    <author>
+      <name>Jie Shao</name>
+    </author>
+    <author>
+      <name>Jiaqi Ma</name>
+    </author>
+    <author>
+      <name>Wenwen Min</name>
+    </author>
+    <author>
+      <name>Beihang Song</name>
+    </author>
+    <author>
+      <name>Ning Chen</name>
+    </author>
+    <author>
+      <name>Youfa Liu</name>
+    </author>
+    <author>
+      <name>Jun Wan</name>
+    </author>
+    <summary type="text">Although spiking neural networks (SNNs) provide an energy-efficient alternative to artificial neural networks (ANNs), their application to remote sensing image dehazing remains limited. A key challenge arises from the coupling between haze-induced high-frequency attenuation and discrete spike thresholding. This interaction suppresses weak responses and fundamentally limits the recovery of edges, textures, and fine details in spiking dehazing models. To address this challenge, we propose the Efficiently Modulated Spiking Neural Network (EM-SNN), a dedicated spiking framework tailored to remote sensing image dehazing. EM-SNN integrates a statistics-driven Threshold-Modulated Leaky Integrate-and-Fire (TM-LIF) neuron to adaptively compensate for haze-induced contrast compression, together with a Spike Sobel Modulation (SSM) module that enhances structural cues and reduces depth-wise attenuation during spiking feature propagation. By jointly modulating activation scales and structural representations, EM-SNN improves dehazing performance while preserving the inherent event-driven sparsity of SNNs. Experiments on HRSD, RICE, RRSHID, and SateHaze1K demonstrate that EM-SNN achieves competitive dehazing performance while consuming only one quarter of the energy of the strong ANN baseline SFRDP-Net.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>RSJEV: Discriminative Remote Sensing Scene Classification with Multimodal Large Language Models</title>
     <link href="http://arxiv.org/abs/2610.08539v1" rel="alternate" type="text/html" />
@@ -124,9 +174,110 @@
     <category term="Artificial Intelligence; cs.CY" />
   </entry>
   <entry>
+    <title>GeoNatureAgent (GNA): A Framework and Benchmark for Pre-Production Evaluation of Tool-Using Agents on Geospatial and Environmental Tasks</title>
+    <link href="http://arxiv.org/abs/2610.09112v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.09112v1</id>
+    <published>2026-10-06T00:00:00Z</published>
+    <updated>2026-10-06T00:00:00Z</updated>
+    <author>
+      <name>Gabriel Diaz-Ireland</name>
+    </author>
+    <author>
+      <name>Diego Prieto-Herráez</name>
+    </author>
+    <author>
+      <name>Mario García Peces</name>
+    </author>
+    <author>
+      <name>Javier Velázquez</name>
+    </author>
+    <author>
+      <name>Benjamin Zaitchik</name>
+    </author>
+    <author>
+      <name>Devika Jain</name>
+    </author>
+    <summary type="text">Before tool-using LLM agents are deployed in environmental and geospatial workflows, teams need evidence that an agent reliably selects the right operations against real APIs. We introduce GeoNatureAgent (GNA), a framework for pre-production evaluation of tool-using agents: a fixed sixteen-tool geospatial interface published as a Model Context Protocol (MCP) server, so the agent under test is the only variable, scored against an identical tool layer, task suite, and deterministic scorer. Its flagship instance is a 103-task benchmark (a 93-task main suite across 18 categories plus a ten-task comparison expansion) evaluated against an open, self-hostable geospatial API serving three environmental indicators across Spain and Portugal. We evaluate nine LLMs under three temperature-1.0 seeds, reporting capability and per-case cost as orthogonal axes. (1) Claude Sonnet 4 achieves the highest capability (61.7% +/- 0.7% on all 103 tasks; 60.8% on the main suite), followed closely by DeepSeek V3.2 (57.9%), while no other model exceeds 53%; (2) the cost-accuracy Pareto frontier is mostly open-weight, with DeepSeek V3.2 offering 93% of Claude's capability at 11.3x lower list-price cost; (3) under strict all-checks scoring the best model sits 24-36 points below the 85-97% reported on general-purpose GIS benchmarks, whereas per-check partial credit for the top four models (86-90%) is comparable, so much of that gap reflects scoring strictness rather than task difficulty alone. The MCP server, evaluation harness, benchmark, and API are publicly available; swapping the tool executors and task suite instantiates an equivalent benchmark for any geospatial domain.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; GeoIndustry '26 (ACM SIGSPATIAL Workshop)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Anaximander: Interactively Running Geospatial Deep Learning Models on Any Compute Backend</title>
+    <link href="http://arxiv.org/abs/2610.09085v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.09085v1</id>
+    <published>2026-10-06T00:00:00Z</published>
+    <updated>2026-10-06T00:00:00Z</updated>
+    <author>
+      <name>Satej S. Soman</name>
+    </author>
+    <author>
+      <name>Akram Zaytar</name>
+    </author>
+    <author>
+      <name>Girmaw A. Tadesse</name>
+    </author>
+    <author>
+      <name>Gilles Q. Hacheme</name>
+    </author>
+    <author>
+      <name>Muhammad S. Danish</name>
+    </author>
+    <author>
+      <name>Inbal Becker-Reshef</name>
+    </author>
+    <author>
+      <name>Rahul Dodhia</name>
+    </author>
+    <author>
+      <name>Juan Lavista Ferres</name>
+    </author>
+    <summary type="text">Applying deep learning models to satellite imagery from within geographic information systems (GIS) remains high-friction for remote sensing practitioners. Models arrive in incompatible formats and target different compute environments, from local workstations to serverless cloud services. As a result, every evaluation demands custom deployment, tiling, and georeferencing code before a single prediction reaches the analyst's map. This friction discourages systematic comparison in a domain where model choice directly affects operational outcomes such as field delineation, crop monitoring, and disaster response. We present Anaximander, an open-source system that unifies model source and compute location choice behind one interactive interface. The system's backend is an inference server that loads models from multiple commonly-used sources and serves them on any accessible compute backend. The server provides session management and model caching, and streams results back per tile. The backend is paired with a QGIS plugin that drives tiling, result reassembly, georeferencing, and real-time per-tile status visualization. An additional user-interface path injects layer legends as prompts into vision-language models. We demonstrate the system in a code-free side-by-side comparison of three heterogeneous models on an agricultural field delineation task: gpt-image-1 via a cloud API, Segment Anything Model 3 (SAM3) on a remote GPU, and DelineateAnything on a local CPU. The inference backend and protocol are open-source and available at https://github.com/microsoft/nxmndr.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/microsoft/nxmndr"&gt;https://github.com/microsoft/nxmndr&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ECCV 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Assessment of sky brightness in central Portugal: the Dark Sky destination "Aldeias do Xisto" case study</title>
+    <link href="http://arxiv.org/abs/2610.09028v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.09028v1</id>
+    <published>2026-10-06T00:00:00Z</published>
+    <updated>2026-10-06T00:00:00Z</updated>
+    <author>
+      <name>Domingos Barbosa</name>
+    </author>
+    <author>
+      <name>Dalmiro Maia</name>
+    </author>
+    <author>
+      <name>Bruno Morgado</name>
+    </author>
+    <author>
+      <name>Pedro Cruz</name>
+    </author>
+    <author>
+      <name>Bernardo Relvas</name>
+    </author>
+    <author>
+      <name>Valério Ribeiro</name>
+    </author>
+    <author>
+      <name>Allan Kardec de Almeida</name>
+    </author>
+    <author>
+      <name>Timothée Vaillant</name>
+    </author>
+    <summary type="text">A combination of remote sensing techniques, open space data and field testing was developed to derive astronomical and meteorological parameters and assess Dark Sky brightness of the hitherto unstudied Schist Villages region in the mountainous Interior Center of Portugal. This study covered the period 2012-2017 and established the methodology for regular light pollution and sky brightness studies in the region using satellite imagery to reduce cost and time and increase accuracy of the final analysis. Long-term Artificial Light At Night (ALAN) data from VIIRS instrument aboard the Suomi-NPP satellite along with cloud cover inferred from MODUS/AQUA satellite data and orographic data, were analyzed in a Geographical Information Systems (GIS) environment. The derived ALAN values were consistent with a preliminary site survey selection, confirming the accuracy of the identified dark sky spots in the region. The analyzed region area spans 1624 Km$^2$ and the darkest site within it showed a sky brightness of 21.4 mag/arcsec$^2$. Ground-based SQM photometer observations of the Night Sky Brightness (NSB) at the zenith validated the satellite derived ALAN data. The devised field testing is itself a low cost solution that can be used by teams in developing countries to easily assess dark sky potential prior to the development of local observatories and astro-tourism activities. This study supported the initial certification of this region as a Dark Sky Starlight Tourist Destination since 2018, an important milestone for dark sky protection in central Portugal.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 38 pages, 16 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="astro-ph.IM" />
+    <category term="Atmospheric and Oceanic Physics; Geophysics; physics.soc-ph" />
+  </entry>
+  <entry>
     <title>Evaluating LiDAR Data Sources, Predictor Resolution, and Spatial Random Effects in Bayesian Change-of-Support Models for Forest Inventory</title>
-    <link href="http://arxiv.org/abs/2610.06476v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.06476v1</id>
+    <link href="http://arxiv.org/abs/2610.06476v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.06476v2</id>
     <published>2026-10-05T00:00:00Z</published>
     <updated>2026-10-05T00:00:00Z</updated>
     <author>
@@ -596,92 +747,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Harnessing Domain Specialists in Multimodal Mixture-of-Experts for Efficient Adaptation</title>
-    <link href="http://arxiv.org/abs/2610.02123v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.02123v1</id>
-    <published>2026-10-01T00:00:00Z</published>
-    <updated>2026-10-01T00:00:00Z</updated>
-    <author>
-      <name>Damiano Marsili</name>
-    </author>
-    <author>
-      <name>Raphi Kang</name>
-    </author>
-    <author>
-      <name>Aditya Mehta</name>
-    </author>
-    <author>
-      <name>Pietro Perona</name>
-    </author>
-    <author>
-      <name>Georgia Gkioxari</name>
-    </author>
-    <summary type="text">Mixture-of-Experts (MoE) architectures scale model capacity through sparse computation, routing each token through only a small subset of experts. In this work, we explore whether this sparsity gives rise to emergent intrinsic organization in multimodal MoEs. We find that experts develop strong semantic specialization across modalities and domains despite not being explicitly trained for modularity. Building on this structure, we introduce ExpertLens, a data-free method that identifies domain-specialized experts directly from pretrained model weights by decoding router weights into semantically meaningful vocabulary tokens. We leverage this specialization for efficient multimodal adaptation by selectively fine-tuning experts relevant to a target domain. Across math, medical, and remote sensing tasks, ExpertLens matches or surpasses full fine-tuning while updating only 21.7 - 47.0% of model parameters and achieving a 4.0x average training speedup, and outperforms LoRA in both adaptation performance and training efficiency. These results show that sparsity introduced for efficiency can give rise to semantic modularity that is directly useful for efficient adaptation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Project page: https://glab-caltech.github.io/expertlens/&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>A two-stage approach to satellite constellation optimization: classical and QUBO formulations</title>
-    <link href="http://arxiv.org/abs/2610.01885v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.01885v1</id>
-    <published>2026-10-01T00:00:00Z</published>
-    <updated>2026-10-01T00:00:00Z</updated>
-    <author>
-      <name>Carlo Novara</name>
-    </author>
-    <summary type="text">The design of satellite constellations for Earth observation requires balancing spatial coverage, revisit time, cost, and operational complexity. This paper considers the problem of designing the orbits of a given number of Low Earth Orbit (LEO) or Very Low Earth Orbit (VLEO) satellites to maximize the spatial and temporal resolution achieved over a prescribed set of ground targets. This kind of problem is inherently nonconvex and possibly combinatorial, making its solution computationally demanding for large constellations and target sets. To address this challenge, we propose a two-stage optimization strategy that separates spatial-coverage design from temporal-resolution optimization, thereby reducing the complexity of the overall problem. Two variants of the method are developed. The first employs continuous decision variables during the spatial-optimization stage, whereas the second discretizes these variables and reformulates the problem as a Quadratic Unconstrained Binary Optimization (QUBO) problem. The latter formulation enables the use of efficient classical QUBO solvers and is directly compatible with quantum-annealing hardware. The proposed framework provides a scalable approach to the design of heterogeneous LEO and VLEO Earth-observation constellations and establishes a pathway for exploiting emerging quantum-optimization technologies in satellite mission design. Preliminary simulation results are presented to demonstrate the effectiveness of the strategy.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages, 1 figure&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="eess.SY" />
-    <category term="math.OC" />
-  </entry>
-  <entry>
-    <title>From Pixels to Policy: A Multi-Agent System for Intervention and Geo-Spatial Decision Support</title>
-    <link href="http://arxiv.org/abs/2610.01870v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.01870v1</id>
-    <published>2026-10-01T00:00:00Z</published>
-    <updated>2026-10-01T00:00:00Z</updated>
-    <author>
-      <name>Hosam Elgendy</name>
-    </author>
-    <author>
-      <name>Utkarsh Mall</name>
-    </author>
-    <summary type="text">Urban environments are shaped by design choices with long-term implications for health, safety, and quality of life, yet evaluating proposed interventions remains costly, time-consuming, and often impractical. Existing geospatial vision methods largely focus on monitoring urban indicators from aerial and street-view imagery, rather than proposing interventions and estimating their effects on such indicators. Moving beyond recognition, we introduce the problem of discovering interventions that improve target indicators for a given aerial or street-view image. We argue that a black-box indicator model, combined with a generative editing model, can serve as an implicit digital twin for testing intervention hypotheses. We present VIDA-Geo , a multi-agent system that explores this intervention space by coordinating segmentation, diffusion-based inpainting, and indicator scoring models to produce interventions that are both perceptually realistic and aligned with real-world policies. We evaluate our system on 8 indicators across aerial and street-view imagery, measuring changes in factors such as perceived safety and greenery. Our approach outperforms existing baselines in many cases, achieving up to 2X higher perceptual quality and policy alignment scores. Finally, our model provides users with multiple candidate interventions, supporting an expert city-planner-in-the-loop workflow.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>CoEvolve: Construct-to-Edit Visual Grounding with Bidirectional State Refinement</title>
-    <link href="http://arxiv.org/abs/2610.01710v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.01710v1</id>
-    <published>2026-10-01T00:00:00Z</published>
-    <updated>2026-10-01T00:00:00Z</updated>
-    <author>
-      <name>Dongwei Sun</name>
-    </author>
-    <author>
-      <name>Yujie Zhang</name>
-    </author>
-    <author>
-      <name>Bowen Yao</name>
-    </author>
-    <author>
-      <name>Pei Liu</name>
-    </author>
-    <author>
-      <name>Jing Yao</name>
-    </author>
-    <author>
-      <name>Xiangyong Cao</name>
-    </author>
-    <summary type="text">Visual grounding localizes an object described by language with a bounding box. Most multimodal grounding models compress target identification, spatial reasoning, and boundary estimation into one terminal prediction. Free-form rationales make reasoning linguistically explicit but do not necessarily expose measurable, editable spatial states. Intermediate localization errors are therefore difficult to diagnose and correct, allowing incorrect region choices and imprecise boundaries to persist in the final box. We introduce CoEvolve, a construct-to-edit framework that separates grounding into explicit state construction and state editing. Region-Evolution Reinforcement (RER) organizes grounding analysis into a progressive semantic--spatial trajectory, with each reasoning step committing to an explicit candidate region. Bidirectional Denoising Refiner (BDR) treats the reasoning text as fixed semantic context and refines the trajectory's coordinate fields through bidirectional same-position reconstruction. Geometry- and behavior-level objectives provide target geometry and edit-preference signals for consolidating reliable candidates, preserving accurate inputs, or correcting toward annotations. Evaluations cover natural-image and remote-sensing grounding. With a 9B backbone, CoEvolve rivals models up to 241B parameters in grounding accuracy. Under controlled corruption, a single BDR pass improves mean box overlap by over 27 percentage points, demonstrating strong recovery from substantial localization errors. State-source comparisons further support the complementarity of explicit state construction and source-matched editing. The project is at https://sundongwei.github.io/CoEvolve_Project/.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="Computer Vision" />
   </entry>
 </feed>

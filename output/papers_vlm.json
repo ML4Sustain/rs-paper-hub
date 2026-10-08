@@ -28080,5 +28080,24 @@
     "_added_date": "2026-10-07",
     "Category": "Method",
     "_tasks": "CLS"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-10-06",
+    "Month": 10,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Anaximander: Interactively Running Geospatial Deep Learning Models on Any Compute Backend",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2610.09085v1",
+    "Abstract": "Applying deep learning models to satellite imagery from within geographic information systems (GIS) remains high-friction for remote sensing practitioners. Models arrive in incompatible formats and target different compute environments, from local workstations to serverless cloud services. As a result, every evaluation demands custom deployment, tiling, and georeferencing code before a single prediction reaches the analyst's map. This friction discourages systematic comparison in a domain where model choice directly affects operational outcomes such as field delineation, crop monitoring, and disaster response. We present Anaximander, an open-source system that unifies model source and compute location choice behind one interactive interface. The system's backend is an inference server that loads models from multiple commonly-used sources and serves them on any accessible compute backend. The server provides session management and model caching, and streams results back per tile. The backend is paired with a QGIS plugin that drives tiling, result reassembly, georeferencing, and real-time per-tile status visualization. An additional user-interface path injects layer legends as prompts into vision-language models. We demonstrate the system in a code-free side-by-side comparison of three heterogeneous models on an agricultural field delineation task: gpt-image-1 via a cloud API, Segment Anything Model 3 (SAM3) on a remote GPU, and DelineateAnything on a local CPU. The inference backend and protocol are open-source and available at https://github.com/microsoft/nxmndr.",
+    "code": "https://github.com/microsoft/nxmndr",
+    "Publication": "ECCV 2026",
+    "BibTex": "@article{soman2026anaximander,\n  title={Anaximander: Interactively Running Geospatial Deep Learning Models on Any Compute Backend},\n  author={Satej S. Soman and Akram Zaytar and Girmaw A. Tadesse and Gilles Q. Hacheme and Muhammad S. Danish and Inbal Becker-Reshef and Rahul Dodhia and Juan Lavista Ferres},\n  journal={arXiv preprint arXiv:2610.09085v1},\n  year={2026},\n  url={http://arxiv.org/abs/2610.09085v1}\n}",
+    "Authors": "Satej S. Soman, Akram Zaytar, Girmaw A. Tadesse, Gilles Q. Hacheme, Muhammad S. Danish, Inbal Becker-Reshef, Rahul Dodhia, Juan Lavista Ferres",
+    "_added_date": "2026-10-08",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]

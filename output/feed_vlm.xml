@@ -4,7 +4,7 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-07T06:46:56Z</updated>
+  <updated>2026-10-08T03:12:43Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 8 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
@@ -38,6 +38,42 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Dongtcs/RSJEV"&gt;https://github.com/Dongtcs/RSJEV&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Anaximander: Interactively Running Geospatial Deep Learning Models on Any Compute Backend</title>
+    <link href="http://arxiv.org/abs/2610.09085v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.09085v1</id>
+    <published>2026-10-06T00:00:00Z</published>
+    <updated>2026-10-06T00:00:00Z</updated>
+    <author>
+      <name>Satej S. Soman</name>
+    </author>
+    <author>
+      <name>Akram Zaytar</name>
+    </author>
+    <author>
+      <name>Girmaw A. Tadesse</name>
+    </author>
+    <author>
+      <name>Gilles Q. Hacheme</name>
+    </author>
+    <author>
+      <name>Muhammad S. Danish</name>
+    </author>
+    <author>
+      <name>Inbal Becker-Reshef</name>
+    </author>
+    <author>
+      <name>Rahul Dodhia</name>
+    </author>
+    <author>
+      <name>Juan Lavista Ferres</name>
+    </author>
+    <summary type="text">Applying deep learning models to satellite imagery from within geographic information systems (GIS) remains high-friction for remote sensing practitioners. Models arrive in incompatible formats and target different compute environments, from local workstations to serverless cloud services. As a result, every evaluation demands custom deployment, tiling, and georeferencing code before a single prediction reaches the analyst's map. This friction discourages systematic comparison in a domain where model choice directly affects operational outcomes such as field delineation, crop monitoring, and disaster response. We present Anaximander, an open-source system that unifies model source and compute location choice behind one interactive interface. The system's backend is an inference server that loads models from multiple commonly-used sources and serves them on any accessible compute backend. The server provides session management and model caching, and streams results back per tile. The backend is paired with a QGIS plugin that drives tiling, result reassembly, georeferencing, and real-time per-tile status visualization. An additional user-interface path injects layer legends as prompts into vision-language models. We demonstrate the system in a code-free side-by-side comparison of three heterogeneous models on an agricultural field delineation task: gpt-image-1 via a cloud API, Segment Anything Model 3 (SAM3) on a remote GPU, and DelineateAnything on a local CPU. The inference backend and protocol are open-source and available at https://github.com/microsoft/nxmndr.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/microsoft/nxmndr"&gt;https://github.com/microsoft/nxmndr&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ECCV 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
   <entry>
@@ -294,36 +330,6 @@
     <summary type="text">The semantic information of objects in remote sensing images is typically invariant to geometric transformations from the dihedral group D4. However, SAM3-based open-vocabulary semantic segmentation (OVSS) methods often exhibit inconsistent responses to different geometric transformations. To exploit this property and improve the stability of OVSS for remote sensing images, we propose a feature-adaptive manifold repair method based on dihedral-group geometric transformations. First, we introduce multi-scale harmonic-guided D4 view selection (MH-D4VS) to select complementary candidate views from a set of geometrically transformed views. Next, we propose original-view-anchored adaptive manifold repair (OAMR), which uses the original view as an anchor and reliable cross-view information to selectively repair locally unreliable visual features. Finally, we develop pixel decoder test-time adaptation (PD-TTA) for SAM3, which fine-tunes only the parameters of the GroupNorm layers online during inference, thereby enhancing the model's ability to adapt to sample-level distribution shifts. Experimental results show that the proposed method achieves an average mIoU of 55.6% across eight remote sensing semantic segmentation benchmarks and delivers consistent performance improvements under different SAM3-based inference frameworks.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>CoEvolve: Construct-to-Edit Visual Grounding with Bidirectional State Refinement</title>
-    <link href="http://arxiv.org/abs/2610.01710v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.01710v1</id>
-    <published>2026-10-01T00:00:00Z</published>
-    <updated>2026-10-01T00:00:00Z</updated>
-    <author>
-      <name>Dongwei Sun</name>
-    </author>
-    <author>
-      <name>Yujie Zhang</name>
-    </author>
-    <author>
-      <name>Bowen Yao</name>
-    </author>
-    <author>
-      <name>Pei Liu</name>
-    </author>
-    <author>
-      <name>Jing Yao</name>
-    </author>
-    <author>
-      <name>Xiangyong Cao</name>
-    </author>
-    <summary type="text">Visual grounding localizes an object described by language with a bounding box. Most multimodal grounding models compress target identification, spatial reasoning, and boundary estimation into one terminal prediction. Free-form rationales make reasoning linguistically explicit but do not necessarily expose measurable, editable spatial states. Intermediate localization errors are therefore difficult to diagnose and correct, allowing incorrect region choices and imprecise boundaries to persist in the final box. We introduce CoEvolve, a construct-to-edit framework that separates grounding into explicit state construction and state editing. Region-Evolution Reinforcement (RER) organizes grounding analysis into a progressive semantic--spatial trajectory, with each reasoning step committing to an explicit candidate region. Bidirectional Denoising Refiner (BDR) treats the reasoning text as fixed semantic context and refines the trajectory's coordinate fields through bidirectional same-position reconstruction. Geometry- and behavior-level objectives provide target geometry and edit-preference signals for consolidating reliable candidates, preserving accurate inputs, or correcting toward annotations. Evaluations cover natural-image and remote-sensing grounding. With a 9B backbone, CoEvolve rivals models up to 241B parameters in grounding accuracy. Under controlled corruption, a single BDR pass improves mean box overlap by over 27 percentage points, demonstrating strong recovery from substantial localization errors. State-source comparisons further support the complementarity of explicit state construction and source-matched editing. The project is at https://sundongwei.github.io/CoEvolve_Project/.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
     <category term="Computer Vision" />
   </entry>
 </feed>
