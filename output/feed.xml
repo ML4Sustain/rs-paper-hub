@@ -4,16 +4,231 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-09T07:11:51Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 26 entries</subtitle>
+  <updated>2026-10-12T02:52:32Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 25 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
   <entry>
+    <title>Revisiting the Task of Building Damage Assessment by Satellite Imaging</title>
+    <link href="http://arxiv.org/abs/2610.13857v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.13857v1</id>
+    <published>2026-10-09T00:00:00Z</published>
+    <updated>2026-10-09T00:00:00Z</updated>
+    <author>
+      <name>Anthony Cioppa</name>
+    </author>
+    <author>
+      <name>Virgile Blua</name>
+    </author>
+    <author>
+      <name>Sébastien Piérard</name>
+    </author>
+    <author>
+      <name>Pietro Ceccato</name>
+    </author>
+    <author>
+      <name>Marc Van Droogenbroeck</name>
+    </author>
+    <summary type="text">Natural disasters such as earthquakes, tropical storms, and floods cause extensive damage to buildings, and rapid, reliable damage maps are essential to guide emergency response. Automating this task, referred to as building damage assessment (BDA), from satellite imagery, has become an active research topic at the intersection of remote sensing, computer vision, and machine learning, particularly since supervised deep learning methods were shown to outperform earlier handcrafted approaches. Yet, despite a decade of intense activity and the release of several large-scale datasets, the field lacks a shared foundation. This chapter revisits the task of BDA from first principles, organized around three pillars: data, evaluation, and methods. We first clarify the candidate task for- mulations and argue for a sensor-agnostic, instance-based definition that tolerates missing pre-event imagery. We then review existing datasets along the axes of sensing modality, temporal configuration, and geographic coverage. On the evaluation side, we show that prevailing practices, largely based on a single aggregate score, are theoretically fragile, and we lay the foundations of a more informative, ranking-based, multi-score protocol. We further review methods ranging from task-specific deep networks to recent Earth observation foundation models, noticing that generalization to unseen events and regions remains an open difficulty. Finally, we discuss how these elements can inform the organization of a BDA challenge, including cross-validation, challenge, and private data-sharing setups designed to build trust between developers and users.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 82 pages, 2 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Shortcut Learning in Geospatial Foundation Model Embeddings for Cross-Disaster Damage Assessment</title>
+    <link href="http://arxiv.org/abs/2610.13766v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.13766v1</id>
+    <published>2026-10-09T00:00:00Z</published>
+    <updated>2026-10-09T00:00:00Z</updated>
+    <author>
+      <name>Ali Shibli</name>
+    </author>
+    <author>
+      <name>Andrea Nascetti</name>
+    </author>
+    <author>
+      <name>Yifang Ban</name>
+    </author>
+    <summary type="text">Geospatial foundation models can support disaster damage assessment, but high accuracy on familiar disasters may hide shortcut learning: prediction from event or scene characteristics rather than evidence that transfers to a new disaster. We study embeddings from TerraMind, Prithvi-EO-2.0, DOFA, and DINOv3 on the multi-disaster datasets xView2 and BRIGHT. Holding out an entire disaster, instead of randomly splitting image tiles, reduces mean balanced accuracy from 0.807 to 0.638 on xView2 and from 0.818 to 0.568 on BRIGHT. Four sets of tests examine what information supports prediction: event and acquisition context, before/after image inputs, building count, and correct image pairing. Pre-event images remain predictive, and a classifier given only the annotated number of buildings reaches balanced accuracy of 0.629 and 0.653. Combining before/after features performs best on average on xView2, but does not improve over pre-only features on BRIGHT. Shuffling image pairs within the same disaster and damage class causes modest losses. Motivated by these findings, we test whether feature transformations learned only from training disasters improve generalization to unseen disasters. These transformations improve performance, with supervised contrastive learning performing best on xView2 and PCA on BRIGHT. Our results highlight the importance of evaluation on unseen domains for assessing model robustness and show that simple feature-level transformations can improve generalization. Code and experiments can be found at https://github.com/alishibli97/gfm-shortcut-learning.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/alishibli97/gfm-shortcut-learning"&gt;https://github.com/alishibli97/gfm-shortcut-learning&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS REO Workshop 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Benchmarking Answer-Grounding Consistency in Remote Sensing Visual Question Answering</title>
+    <link href="http://arxiv.org/abs/2610.13636v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.13636v1</id>
+    <published>2026-10-09T00:00:00Z</published>
+    <updated>2026-10-09T00:00:00Z</updated>
+    <author>
+      <name>Ping Guo</name>
+    </author>
+    <author>
+      <name>Zhiqi Huang</name>
+    </author>
+    <author>
+      <name>Xinran Li</name>
+    </author>
+    <author>
+      <name>Linkun Yu</name>
+    </author>
+    <author>
+      <name>Jingyin Pei</name>
+    </author>
+    <author>
+      <name>Kamata Seiichiro</name>
+    </author>
+    <summary type="text">In grounded remote sensing visual question answering, a model produces a textual answer and identifies relevant objects in the image as grounding evidence. Existing evaluations measure answer correctness and localization quality, but do not directly assess answer-grounding consistency. We propose the Answer-Evidence Support Protocol (AESP) to assess this consistency through evidence support: whether the grounding evidence supports the model's own answer. AESP applies task-specific rules to existence, counting, and comparison questions. We further construct the Grounded Remote Sensing Visual Question Answering (G-RSVQA) benchmark, containing 15,027 samples with questions, reference answers, and all related object-level annotations. Experiments on seven grounded vision--language models reveal failures of evidence support across all three question types. Up to 50.82% of correct answers in the evidence evaluation subset are not supported by the provided grounding evidence.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Under review at ICASSP 2027. Code available at https://github.com/pingggg516/AESP-Evaluation&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>MOSAIC: Multi-Scale Object-Centric Slot Adaptation with Image-Guided Prototype Conditioning for Remote Sensing Image Super-Resolution</title>
+    <link href="http://arxiv.org/abs/2610.13547v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.13547v1</id>
+    <published>2026-10-09T00:00:00Z</published>
+    <updated>2026-10-09T00:00:00Z</updated>
+    <author>
+      <name>Liuqian Wang</name>
+    </author>
+    <author>
+      <name>Hanyu Xie</name>
+    </author>
+    <author>
+      <name>Rongzhen Zhao</name>
+    </author>
+    <author>
+      <name>Qi Ming</name>
+    </author>
+    <author>
+      <name>Chunjie Ma</name>
+    </author>
+    <author>
+      <name>Wentao Chao</name>
+    </author>
+    <author>
+      <name>Yufei Gao</name>
+    </author>
+    <author>
+      <name>Chengming Liu</name>
+    </author>
+    <author>
+      <name>Lei Shi</name>
+    </author>
+    <summary type="text">Pretrained diffusion Transformers provide powerful generative priors for image restoration, yet adapting them to structure-sensitive tasks remains challenging. Existing methods mainly rely on dense low-resolution features as conditions, which often entangle salient objects with dominant backgrounds and provide limited abstraction for recurring structures across scales and samples. We propose MOSAIC, an object-centric representation learning framework that learns compact structural conditions for generative model adaptation. MOSAIC organizes degraded observations into structural slots that capture complementary object-level and layout-level evidence, integrates them across resolutions, and retrieves recurring priors from a shared prototype memory to complement incomplete image-specific information. The resulting representations are injected into selected layers of a frozen diffusion Transformer through lightweight residual modulation, preserving its pretrained generative prior. We instantiate MOSAIC for remote sensing image super-resolution, where small objects, repetitive structures, and large-scale variation provide a challenging testbed. Experiments on UCMerced, AID, and RSSCN7 show consistent PSNR improvements across $\times 2$ and $\times 4$ settings and favorable LPIPS results at $\times 4$. Qualitative results further demonstrate improved preservation of small objects, structural boundaries, and repetitive spatial patterns.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Knowing Whether, Not Just Where: Anchor-Probing Distillation for Open-Set Remote Sensing Visual Grounding</title>
+    <link href="http://arxiv.org/abs/2610.13535v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.13535v1</id>
+    <published>2026-10-09T00:00:00Z</published>
+    <updated>2026-10-09T00:00:00Z</updated>
+    <author>
+      <name>Zhihao Chang</name>
+    </author>
+    <author>
+      <name>Lei Zhai</name>
+    </author>
+    <author>
+      <name>Shuyuan Yang</name>
+    </author>
+    <author>
+      <name>Zhixi Feng</name>
+    </author>
+    <summary type="text">Open-set visual grounding in remote sensing requires models to determine not only where a queried object is located, but also whether the image provides sufficient evidence for the query at all. Existing closed-set grounding models, however, tend to return plausible boxes even for absent objects, blurring localization confidence with genuine Visual Support. We introduce AnchorProbe-Distill (APD), a teacher-student framework that recasts open-set grounding as Visual Support learning. APD builds on the insight that supported queries should induce coherent spatial anchors, whereas unsupported or mismatched queries tend to produce unstable or misleading localization patterns. APD-T therefore uses the Original Query as a Reference Anchor to interpret query perturbations: Semantic-Preserving Queries retain the annotated target, Near-Category Ambiguous Queries are resolved according to whether they form a reliable alternative anchor or collapse onto the Reference Anchor, and Far-Category Counterfactual Queries provide rejection supervision. This reference-aware reasoning is distilled into APD-S, enabling unified localization and rejection from a single image--query pair. Experiments show that APD enables the resulting model to reject absent targets while also improving its localization of present targets.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Desertification Forecasting in Semi-Arid Regions: Using Deep Learning to Probe the Observability Limits of Land Degradation Dynamics</title>
+    <link href="http://arxiv.org/abs/2610.13406v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.13406v1</id>
+    <published>2026-10-09T00:00:00Z</published>
+    <updated>2026-10-09T00:00:00Z</updated>
+    <author>
+      <name>Filipe Moura Da Silva</name>
+    </author>
+    <author>
+      <name>Cláubio Landney Lima Bandeira</name>
+    </author>
+    <summary type="text">Forecasting desertification has received far less attention than mapping it. We use a convolutional LSTM (ConvLSTM) trained on ten annual Earth Observation (EO) variables (2000-2023) over the semi-arid state of Ceará, Brazil, on a 256x206 grid at roughly 2.2 km resolution, to measure how much of the year-to-year evolution of a MapBiomas-derived degradation index (IDV) can be predicted from satellite data. The network predicts a bounded change on top of the last observed state, is trained in two stages (single-step, then recursive rollout) and is evaluated on a contiguous spatial and temporal holdout. State-wide mean IDV rose from 0.238 to 0.350 between 2000 and 2023, about 0.005 per year, but cell-level change is dominated by year-to-year jumps, and a gradient-boosting model given all channels explains only 4.7% of its variance. Against this ceiling, the ConvLSTM lowers RMSE relative to persistence by 1.6% one year ahead and 4.4% four years ahead in a held-out southern band (p &lt; 0.001), beats persistence with a constant drift and reproduces 53-69% of the regional drift. Drift-aware baselines only help from the third year onward, by up to 4.4% in RMSE at six years. An earlier formulation that redrew the whole field each year predicted changes unrelated to the observed ones (correlation -0.06) and produced a spurious decline when run recursively. Channel knockouts suggest that elevation and EVI degrade the forecast, while slope and aspect have no measurable effect. Monte Carlo dropout and stochastic scenario maps convey the uncertainty that the expected-value forecast hides. Under climatological forcing, mean IDV rises from 0.350 in 2023 to 0.370 in 2030. EO-based desertification forecasting is therefore reliable for the regional trend, not for individual cells.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 14 pages, 10 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>PlacePulse: Learning Transferable Place Representations from Structural Geographic Data</title>
+    <link href="http://arxiv.org/abs/2610.13390v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.13390v1</id>
+    <published>2026-10-09T00:00:00Z</published>
+    <updated>2026-10-09T00:00:00Z</updated>
+    <author>
+      <name>Lucía García-Duarte</name>
+    </author>
+    <author>
+      <name>Miguel Álvarez</name>
+    </author>
+    <author>
+      <name>Diego Vicente</name>
+    </author>
+    <author>
+      <name>Javier Pérez Trufero</name>
+    </author>
+    <author>
+      <name>Javier de la Torre</name>
+    </author>
+    <summary type="text">Geospatial machine learning often depends on task-specific feature engineering over large collections of sociodemographic, business, and environmental variables. Geospatial foundation models offer reusable representations of place, but leading approaches typically encode dynamic signals, such as mobility and search activity, or visual signals from satellite imagery. Few models represent the static structural composition of places (who lives and works there, which businesses operate there, and which risks they face) as transferable embeddings at fine spatial resolution. We introduce PlacePulse, a structural geospatial foundation model that compresses 572 attributes, expanded to 2,288 inputs through H3 neighborhood aggregates, into 256-dimensional unit-norm embeddings for 1,055,537 H3 resolution-7 cells in the United States. We also introduce a reusable two-axis benchmark that separates intrinsic representation quality from downstream predictive utility across multiple targets and spatial supports. Intrinsically, the embeddings reconstruct standardized inputs with mean $R^2 = 0.853$, use 251 of 256 approximately decorrelated dimensions, and show strong spatial organization, with Moran's $I = 0.93$ on the leading principal component and autocorrelation persisting beyond the input radius. Extrinsically, across 74 held-out targets from 12 external sources and four spatial supports, PlacePulse outperforms a dimensionality-matched feature-selection baseline on targets unrelated to the training inputs and is competitive with Google's Population Dynamics Foundation Model, leading on health, economic, election, economic-mobility and social-vulnerability outcomes, with relative strengths that vary by domain. These findings position structural composition as a distinct and complementary modality for geospatial foundation models, not simply a fallback where behavioral or imagery data are unavailable.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 42 pages, 11 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Mind the Spatial Gap: A Benchmark for Geospatial Reasoning and Constrained Spatial Editing</title>
+    <link href="http://arxiv.org/abs/2610.12881v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.12881v1</id>
+    <published>2026-10-09T00:00:00Z</published>
+    <updated>2026-10-09T00:00:00Z</updated>
+    <author>
+      <name>Zheng Ren</name>
+    </author>
+    <author>
+      <name>Yanning Wang</name>
+    </author>
+    <author>
+      <name>Ziheng Huang</name>
+    </author>
+    <author>
+      <name>Fei Huang</name>
+    </author>
+    <author>
+      <name>Shiqi Wang</name>
+    </author>
+    <author>
+      <name>Ziqian Ye</name>
+    </author>
+    <author>
+      <name>Yang Yue</name>
+    </author>
+    <summary type="text">Understanding and manipulating spatial relations is fundamental to AI systems that reason about physical environments and construct grounded world models. However, existing evaluations of multimodal large language models (MLLMs) for spatial reasoning rely predominantly on static question-answering (QA) over small-scale or synthetic scenes, rarely probing whether models can modify spatial configurations while satisfying explicit geometric constraints. We introduce GeoSpatialBench, a benchmark designed to evaluate an escalating progression of spatial cognition, ranging from spatial relation understanding and geometric reasoning to constrained spatial editing. Grounded in real-world urban data across six geographically diverse cities, GeoSpatialBench evaluates a comprehensive taxonomy of 28 topological, directional, metric, and ordering relations across structured GeoJSON and map image modalities, with ground-truth references and constraints verified via GIS operations. Our empirical evaluation across frontier MLLMs uncovers a stark spatial gap: structured GeoJSON consistently outperforms map images, with multimodal combinations offering no reliable gain over GeoJSON alone, and while models show reasonable competence on qualitative topological and ordering, performance drops on quantitative metric relations. Crucially, editing performance on ordering relations declines relative to QA, and most failed edits violate at least one specified spatial constraint. These results highlight a gap between passively recognizing spatial relations and actively manipulating geometric configurations. GeoSpatialBench provides an open, rigorous diagnostic testbed to benchmark these spatial limitations, laying essential empirical groundwork for physically grounded world models and embodied spatial AI.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICLR 2027&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
     <title>AI-Based On-Board Maritime Object Detection for Earth Observation Payload Data Reduction on Versal Embedded Hardware</title>
-    <link href="http://arxiv.org/abs/2610.12182v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.12182v1</id>
+    <link href="http://arxiv.org/abs/2610.12182v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.12182v2</id>
     <published>2026-10-08T00:00:00Z</published>
     <updated>2026-10-08T00:00:00Z</updated>
     <author>
@@ -137,6 +352,28 @@
     <category term="Computer Vision" />
   </entry>
   <entry>
+    <title>GeoFitBench-LLM: A Benchmark for Assessing Large Language Models' Capabilities in Geospatial Data Requirements Elicitation for Geo-Analytic Tasks</title>
+    <link href="http://arxiv.org/abs/2610.12669v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.12669v1</id>
+    <published>2026-10-08T00:00:00Z</published>
+    <updated>2026-10-08T00:00:00Z</updated>
+    <author>
+      <name>Amirhossein Vahdat</name>
+    </author>
+    <author>
+      <name>Thierry Badard</name>
+    </author>
+    <author>
+      <name>Luc Lamontagne</name>
+    </author>
+    <summary type="text">Large language models are becoming central to GeoAI systems, yet their evaluation rarely considers the elicitation of geospatial data requirements. This omission is critical as retrieval oriented geo-analytic tasks cannot be supported reliably without first identifying the necessary datasets and constraints. GeoFitBench-LLM is introduced as a benchmark for assessing whether LLMs can infer the datasets, the supporting resources and the constraints required by geo-analytic requests in natural language. The benchmark is structured around two reasoning dimensions, Spatio-Temporal Relational and Semantic Grounding, reflecting long-standing challenges in geospatial information retrieval and related natural language tasks. Ground truth requirements are encoded in a fixed, provider-independent schema for reproducible evaluation of resource identification and attribute-level specification. Experiments on seven models under minimal prompting indicate that identifying the necessary resources is often achievable, with GPT-5.4 Thinking achieving the best result by recovering the complete set of resources in 66.67% of benchmark requests. Results further indicate that accurate fitness-for-use specification remains more difficult as inferential demands increase.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; GeoAI 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="cs.CL" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
     <title>Evolutionary Architecture Search for Chlorophyll-$a$ Prediction in Lakes using Sentinel-2</title>
     <link href="http://arxiv.org/abs/2610.10496v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2610.10496v1</id>
@@ -184,6 +421,32 @@
     </author>
     <summary type="text">Although spiking neural networks (SNNs) provide an energy-efficient alternative to artificial neural networks (ANNs), their application to remote sensing image dehazing remains limited. A key challenge arises from the coupling between haze-induced high-frequency attenuation and discrete spike thresholding. This interaction suppresses weak responses and fundamentally limits the recovery of edges, textures, and fine details in spiking dehazing models. To address this challenge, we propose the Efficiently Modulated Spiking Neural Network (EM-SNN), a dedicated spiking framework tailored to remote sensing image dehazing. EM-SNN integrates a statistics-driven Threshold-Modulated Leaky Integrate-and-Fire (TM-LIF) neuron to adaptively compensate for haze-induced contrast compression, together with a Spike Sobel Modulation (SSM) module that enhances structural cues and reduces depth-wise attenuation during spiking feature propagation. By jointly modulating activation scales and structural representations, EM-SNN improves dehazing performance while preserving the inherent event-driven sparsity of SNNs. Experiments on HRSD, RICE, RRSHID, and SateHaze1K demonstrate that EM-SNN achieves competitive dehazing performance while consuming only one quarter of the energy of the strong ANN baseline SFRDP-Net.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>TerraAgent: Demonstration-Grounded Multi-Agent Reasoning for Long-Context Remote Sensing Visual Question Answering</title>
+    <link href="http://arxiv.org/abs/2610.12517v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.12517v1</id>
+    <published>2026-10-07T00:00:00Z</published>
+    <updated>2026-10-07T00:00:00Z</updated>
+    <author>
+      <name>Jingwen Huang</name>
+    </author>
+    <author>
+      <name>Yiming Fang</name>
+    </author>
+    <author>
+      <name>Hanxiao Wu</name>
+    </author>
+    <author>
+      <name>Boyuan He</name>
+    </author>
+    <author>
+      <name>Keyi Luo</name>
+    </author>
+    <summary type="text">Remote sensing visual question answering (RS-VQA) requires answers that truly depend on image evidence, yet current remote sensing multimodal large language models (RS MLLMs) are still evaluated mainly by accuracy, which cannot reveal whether a correct answer was produced without using the image. This setting introduces three challenges: demonstrations retrieved across different ground sample distances (GSD), sensors, and city textures may be poorly matched; real queries often involve long visual contexts from multi-scale tiles, multi-temporal frames, and retrieved knowledge, where evidence can be diluted and errors can propagate through multi-step reasoning; and prior-only answering remains invisible to standard metrics. We present AVA, a training-free framework that wraps a frozen RS MLLM with three modules. GDR performs GSD-bucketed, scene-graph-based demonstration retrieval and filters demonstrations whose answers are unsupported by their images. MACE decomposes each query into an evidence-typed sub-question DAG, routes sub-questions to suitable perception tools, and records verified provenance in a shared evidence ledger with bounded re-perception. CVA audits the final answer through counterfactual perturbations of cited evidence, including ablation and swap, and computes a visual-dependency score for confidence calibration and evidence-forcing re-query. On RSVQA-LR/HR, VRSBench, and LHRS-Bench, AVA improves average accuracy by up to 2.40 points over the strongest same-setting baselines, raises the visual-dependency score from 0.28 to 0.49, reduces the prior-only answer rate from 46.2 percent to 21.7 percent, and lowers the hallucination rate from 17.1 percent to 9.8 percent, with 2.6x the cost of a single backbone forward pass and no fine-tuning.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
   <entry>
@@ -399,408 +662,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="astro-ph.IM" />
     <category term="Atmospheric and Oceanic Physics; Geophysics; physics.soc-ph" />
-  </entry>
-  <entry>
-    <title>Evaluating LiDAR Data Sources, Predictor Resolution, and Spatial Random Effects in Bayesian Change-of-Support Models for Forest Inventory</title>
-    <link href="http://arxiv.org/abs/2610.06476v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.06476v2</id>
-    <published>2026-10-05T00:00:00Z</published>
-    <updated>2026-10-05T00:00:00Z</updated>
-    <author>
-      <name>Arthur Spitta</name>
-    </author>
-    <author>
-      <name>Andrew O. Finley</name>
-    </author>
-    <author>
-      <name>Christoph Gollob</name>
-    </author>
-    <author>
-      <name>Ralf Kraßnitzer</name>
-    </author>
-    <author>
-      <name>Tim Ritter</name>
-    </author>
-    <author>
-      <name>Andreas Tockner</name>
-    </author>
-    <author>
-      <name>Arne Nothdurft</name>
-    </author>
-    <summary type="text">Forest managers require timely stand-level information for operational planning. Model-based estimation combines sparse field samples with remotely sensed auxiliary data to estimate growing stock volume (GSV) for small-area units. This is particularly relevant in mixed-species and structurally heterogeneous forests, where timely structural information can support management decisions under climate change and associated disturbance pressures. Uncrewed aerial vehicle laser scanning (ULS) provides flexible access to high-resolution LiDAR data, but its benefits over conventional airborne laser scanning (ALS) for model-based inference remain insufficiently understood. We compared public ALS and new ULS data using Bayesian change-of-support models to estimate GSV in a mixed-species forest in north-eastern Germany. We assessed the effects of distributional LiDAR metrics and spatial random effects. ULS models consistently outperformed ALS models, with cross-validated root mean squared prediction errors (RMSPEs) of 68.5 m^3/ha and 79.5 m^3/ha , respectively, a 13.8 % reduction in prediction error. Distributional metrics benefited ULS models more than ALS models, reducing RMSPE by up to 10.1 %, whereas spatial effects yielded minor improvements at greater computational cost. ULS models also exhibited lower stand-level predictive uncertainty for latent stand-mean GSV. This advantage may partly reflect closer temporal alignment with field data and finer-scale predictor information. These findings suggest that timely, information-rich LiDAR data may be more beneficial for stand-level GSV estimation than increasingly complex spatial model structures. ULS is promising where timely acquisition and high-resolution canopy characterization are operationally feasible. Controlled comparisons with temporally matched ALS and ULS data are needed to distinguish platform effects from temporal mismatch.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 42 pages, 9 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="stat.AP" />
-  </entry>
-  <entry>
-    <title>Multi-Task Partially Supervised Learning for Super-Resolution and Semantic Segmentation on Earth Observation data</title>
-    <link href="http://arxiv.org/abs/2610.06389v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.06389v1</id>
-    <published>2026-10-05T00:00:00Z</published>
-    <updated>2026-10-05T00:00:00Z</updated>
-    <author>
-      <name>Hoàng-Ân Lê</name>
-    </author>
-    <author>
-      <name>Minh-Tan Pham</name>
-    </author>
-    <author>
-      <name>Solange Lemai-Chenevier</name>
-    </author>
-    <author>
-      <name>Daniel Greslou</name>
-    </author>
-    <summary type="text">Super-resolution and semantic segmentation are known to benefit one another, especially in the Earth observation context. However, learning both tasks in a joint model often requires both task annotations, which is impractical and expensive. In this paper, we study the multi-task partially supervised learning paradigm for both tasks, where each example is assumed to have only a single-task annotation. To that end, we examine two multi-task architectural variations, the sequential and shared variants, and then propose a hybrid variant and a re-projection loss to benefit from the shared representation and enforce image quality of super-resolution when training with semantic segmentation. Experiments show favorable results compared to the SOTA sequential variant. Source code will be published at https://github.com/lhoangan/munera.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/lhoangan/munera"&gt;https://github.com/lhoangan/munera&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG;SR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>EORestore-Agent: Fidelity-Guided Agentic Restoration of Remote Sensing Images with Composite Degradations</title>
-    <link href="http://arxiv.org/abs/2610.06196v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.06196v1</id>
-    <published>2026-10-05T00:00:00Z</published>
-    <updated>2026-10-05T00:00:00Z</updated>
-    <author>
-      <name>Heli Qi</name>
-    </author>
-    <author>
-      <name>Zeqi Zhou</name>
-    </author>
-    <author>
-      <name>Jingjun Yi</name>
-    </author>
-    <author>
-      <name>Kunyi Liu</name>
-    </author>
-    <author>
-      <name>Ziyang Lihe</name>
-    </author>
-    <author>
-      <name>Junjue Wang</name>
-    </author>
-    <author>
-      <name>Osamu Yoshie</name>
-    </author>
-    <author>
-      <name>Naoto Yokoya</name>
-    </author>
-    <summary type="text">Remote sensing images often carry composite degradations, in which haze, cloud, noise, blur, low light, and low resolution coexist. Restoring them requires deciding which tool to apply, in what order, and when to stop, yet no clean reference is available at inference time to verify these decisions. All-in-one models trained on single degradations converge to a narrow PSNR band as degradations accumulate. To formulate real-world remote sensing restoration as a traceable trajectory, we present EORestore-Agent, which replaces this unmeasurable objective with reference-free, verifiable per-step decisions. A fine-tuned vision-language model reports all residual degradation types, whose tool pools are scored together, so the restoration order emerges from step-wise selection. A relative quality scorer, trained with full-reference supervision on synthetic degradation chains, predicts the changes in PSNR, SSIM, and LPIPS from the current image to each candidate. A step is accepted only when no predicted change is negative and the predicted PSNR gain is positive. Otherwise, the agent keeps the current image. On a synthetic Landsat-8 benchmark with six degradation types, EORestore-Agent improves PSNR by 2.3 to 3.2 dB over the strongest retrained all-in-one baseline on composites of two to six degradations, whereas zero-shot natural-image agents fall below the degraded input in PSNR in 17 of 18 settings. Replacing the learned scorer with no-reference quality differences costs 1.1 to 4.6 dB. The remaining harmful steps are small and cluster near the acceptance threshold. Sentinel-2 examples illustrate transfer to real atmospheric degradation without retraining.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 20 pages, 6 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>FairRSFM: A Biome-Aware Benchmark and Debiasing Framework for Remote Sensing Foundation Models</title>
-    <link href="http://arxiv.org/abs/2610.05790v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.05790v1</id>
-    <published>2026-10-05T00:00:00Z</published>
-    <updated>2026-10-05T00:00:00Z</updated>
-    <author>
-      <name>Md Aminur Hossain</name>
-    </author>
-    <author>
-      <name>Omkumar Vaghasiya</name>
-    </author>
-    <author>
-      <name>Rajeev Ranjan Dwivedi</name>
-    </author>
-    <author>
-      <name>Vinod Kurmi</name>
-    </author>
-    <author>
-      <name>Biplab Banerjee</name>
-    </author>
-    <summary type="text">Remote sensing foundation models (RSFMs) are commonly evaluated using aggregate metrics, which can hide systematic performance disparities across ecological regions. We introduce FairRSFM, a biome-aware benchmark for evaluating ecological group robustness in RSFMs. FairRSFM maps georeferenced samples from 14 terrestrial biome classes into six ecologically meaningful macro-groups and evaluates models under a unified frozen-backbone evaluation protocol. The benchmark covers four downstream datasets: m-EuroSAT, m-BigEarthNet, m-SA-Crop-Type, and MMEarth20K with Dynamic World label maps. Using Prithvi-EO-2.0, SatMAE, and DOFA across three random seeds, we show that aggregate performance consistently masks biome-dependent disparities across architectures and tasks. For example, Prithvi-EO-2.0 reaches 90.98% overall macro-F1 on m-EuroSAT but a mean worst-group score of only 83.72%, while m-SA-Crop-Type drops from 27.30% overall mIoU to 18.47% in the Xeric and Mineralogical group. We further evaluate Biome-Orthogonal Linear Probing (BOLP), Dynamic Biome Reweighting (DBR), and GroupDRO as complementary mitigation baselines. Their effectiveness is model- and task-dependent; for example, BOLP improves Prithvi-EO-2.0 worst-group F1@opt on m-BigEarthNet from 46.12% to 50.27% without updating the RSFM backbone. FairRSFM provides a reusable protocol for diagnosing and mitigating ecological robustness gaps in remote sensing foundation models. Code and datasets are available at: https://github.com/aminurhossain/FairRSFM.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/aminurhossain/FairRSFM"&gt;https://github.com/aminurhossain/FairRSFM&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>T-JEPA: A Temporal Joint-Embedding Predictive Architecture for Learning Better Remote Sensing Representations</title>
-    <link href="http://arxiv.org/abs/2610.05731v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.05731v1</id>
-    <published>2026-10-05T00:00:00Z</published>
-    <updated>2026-10-05T00:00:00Z</updated>
-    <author>
-      <name>Bowen Peng</name>
-    </author>
-    <author>
-      <name>Li Liu</name>
-    </author>
-    <author>
-      <name>Yongxiang Liu</name>
-    </author>
-    <author>
-      <name>Weijie Li</name>
-    </author>
-    <author>
-      <name>Jie Zhou</name>
-    </author>
-    <author>
-      <name>Zhen Liu</name>
-    </author>
-    <summary type="text">Earth observation (EO) data provide rich temporal supervision, yet existing remote sensing foundation models mainly exploit sequential observations through imposing predefined pairwise relations or aggregating holistic reconstruction context. We seek to further exploit the sparse and nonuniform temporal sampling inherent in EO sequences as supervisory signals. To this end, we propose T-JEPA, a temporal joint-embedding predictive architecture that learns time-gap-conditioned latent transitions. A shared single-frame encoder processes each observation, while a temporal predictor estimates the complete target latent field from a masked source latent representation and the actual elapsed time. Across multiple temporal intervals, these predictive constraints organize observed states into structured latent trajectories. Asymmetric metadata injection mitigates shortcut learning, and direct supervision across multiple temporal scales proves more effective than recursively rolling out intermediate states. In parallel, masked pixel reconstruction provides complementary supervision for preserving spatial details. Under matched pre-training data and throughput, T-JEPA achieves leading transfer performance on both static and temporal tasks. Analyses further reveal that T-JEPA learns representations with time-gap-dependent transition predictability and coherent latent dynamics, while maintaining strong cross-period consistency, representation diversity, and semantic discriminability.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Planetary Geospatial Foundation Models: A New Paradigm for Global Public Health</title>
-    <link href="http://arxiv.org/abs/2610.05699v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.05699v1</id>
-    <published>2026-10-05T00:00:00Z</published>
-    <updated>2026-10-05T00:00:00Z</updated>
-    <author>
-      <name>Arbaaz Muslim</name>
-    </author>
-    <author>
-      <name>Aviv Slobodkin</name>
-    </author>
-    <author>
-      <name>Katherine Wheeler-Martin</name>
-    </author>
-    <author>
-      <name>Eric Zhou</name>
-    </author>
-    <author>
-      <name>John Brittain</name>
-    </author>
-    <author>
-      <name>Martin Frasch</name>
-    </author>
-    <author>
-      <name>Hamsa Subramaniam</name>
-    </author>
-    <author>
-      <name>Jacob Bien</name>
-    </author>
-    <author>
-      <name>Hamed Sadeghi</name>
-    </author>
-    <author>
-      <name>Sarah Conderino</name>
-    </author>
-    <author>
-      <name>Stone Jiang</name>
-    </author>
-    <author>
-      <name>Ben Spoer</name>
-    </author>
-    <author>
-      <name>Daniel Neill</name>
-    </author>
-    <author>
-      <name>Mimi Sun</name>
-    </author>
-    <author>
-      <name>Joydeep Paul</name>
-    </author>
-    <author>
-      <name>Yun Liu</name>
-    </author>
-    <author>
-      <name>Tomer Shekel</name>
-    </author>
-    <author>
-      <name>Amy Chung-Yu Chou</name>
-    </author>
-    <author>
-      <name>Anna Carter</name>
-    </author>
-    <author>
-      <name>Charles Elliott</name>
-    </author>
-    <author>
-      <name>Aaron Bell</name>
-    </author>
-    <author>
-      <name>Reuven Sayag</name>
-    </author>
-    <author>
-      <name>Avinatan Hassidim</name>
-    </author>
-    <author>
-      <name>Niv Efron</name>
-    </author>
-    <author>
-      <name>Yossi Matias</name>
-    </author>
-    <author>
-      <name>Kasumi Widner</name>
-    </author>
-    <author>
-      <name>Eduardo Lopez Ortiz</name>
-    </author>
-    <author>
-      <name>José Alberto Díaz-Quiñonez</name>
-    </author>
-    <author>
-      <name>Moritz U. G. Kraemer</name>
-    </author>
-    <author>
-      <name>John Brownstein</name>
-    </author>
-    <author>
-      <name>Isaias Fernandes Co</name>
-    </author>
-    <author>
-      <name>Etien Luc Koua</name>
-    </author>
-    <author>
-      <name>Monica Bharel</name>
-    </author>
-    <author>
-      <name>Benjamin Rader</name>
-    </author>
-    <author>
-      <name>Lorna Thorpe</name>
-    </author>
-    <author>
-      <name>Marc Gourevitch</name>
-    </author>
-    <author>
-      <name>Shravya Shetty</name>
-    </author>
-    <author>
-      <name>Gautam Prasad</name>
-    </author>
-    <summary type="text">The efficacy of traditional disease prediction is limited by spatial gaps and temporal lags, which impact the timing and targets of resource deployments. Outbreaks escalate undetected, chronic disease burdens are quantified years later, and at-risk populations in data-sparse regions remain unaddressed. Planetary geospatial foundation models complement existing epidemiological workflows to provide operational improvements, encoding multimodal search, mobility, and environmental signals into generalizable place representations. As illustrations of this complementarity, we present independent global health case studies of Google Earth AI's Population Dynamics Foundation Model (PDFM) -- a foundation model for geospatial inference -- across four domains (vaccine-preventable, communicable, noncommunicable, maternal mental health), five tasks (spatial extrapolation, interpolation/nowcasting, probabilistic forecasting, prospective forecasting, risk stratification), and four countries (USA, Canada, Mexico, and the Democratic Republic of the Congo). Across these case studies, PDFM addresses critical surveillance gaps across domains: improving US-Canada border MMR vaccination coverage predictions by capturing cross-border behavioral spillovers domestic models miss; nowcasting cardiovascular disease to accelerate data availability; enhancing short-term municipal Mexican dengue forecasts for timely outbreak vector control; improving forecasts of cholera hotspots; and adding a transferable signal to individual-level postpartum-depression risk prediction in US states the model had never seen, while not replacing individual socioeconomic data or closing demographic screening gaps. Together, these results showcase capabilities of geospatial foundation models for public health surveillance.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 41 pages, 7 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-    <category term="cs.CY" />
-  </entry>
-  <entry>
-    <title>A Framework for Automated Multi-Source Satellite Data Analytics and LLM-Based Report Generation</title>
-    <link href="http://arxiv.org/abs/2610.05625v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.05625v1</id>
-    <published>2026-10-04T00:00:00Z</published>
-    <updated>2026-10-04T00:00:00Z</updated>
-    <author>
-      <name>Hind Yousif Alhammadi</name>
-    </author>
-    <author>
-      <name>Isam Mashhour Al Jawarneh</name>
-    </author>
-    <summary type="text">This paper presents the workflow for building an automated ArcGIS Pro tool using ArcPy to extract the Land Surface Temperature (LST) from Landsat 7, 8 and 9 datasets. The tool eliminates the need for manual band selection and repetitive raster computations by automating the multi-step workflow of radiometric calibration, NDVI-based emissivity correction, and thermal conversion. In addition to supporting batch and single-scene processing, the tool has an optional Large Language Model (LLM) for statistical result interpretation and reporting. Depending on batch size, the tool reduced the processing time from around 11-58 minutes when done manually to around 4-11 minutes using the tool. We tested the tool with data from Ras Al Khaimah (RAK) in the UAE, and the LST obtained for Ras Al Khaimah ranged from approximately 25C to 50C, demonstrating an accurate LST mapping compatible with the weather conditions of RAK. In summary, our tool reduces human errors and improves processing accuracy and efficiency for thermal and environmental remote sensing applications, in addition to providing an interactive LLM-based interface for result interpretation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="astro-ph.IM" />
-  </entry>
-  <entry>
-    <title>LEON: Location Embeddings from OSM Neighborhoods via Hexagonal Graph Masked Autoencoders</title>
-    <link href="http://arxiv.org/abs/2610.05497v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.05497v1</id>
-    <published>2026-10-04T00:00:00Z</published>
-    <updated>2026-10-04T00:00:00Z</updated>
-    <author>
-      <name>Szymon Soltysiak</name>
-    </author>
-    <author>
-      <name>Radoslaw Malek</name>
-    </author>
-    <author>
-      <name>Jedrzej Kusnierz</name>
-    </author>
-    <author>
-      <name>Milosz Chojecki</name>
-    </author>
-    <author>
-      <name>Piotr Szymanski</name>
-    </author>
-    <author>
-      <name>Aleksandra Kawala-Sterniuk</name>
-    </author>
-    <summary type="text">Geographic information systems increasingly rely on sophisticated spatial representation learning techniques to extract meaningful patterns from complex geospatial data. This paper introduces LEON, a novel self-supervised framework that adapts Graph Masked Autoencoders (GraphMAE) for geospatial region representation learning. Our method leverages the inherent spatial structure of geographic data by constructing hexagonal grid graphs using H3 indexing and applying masked autoencoding techniques to learn robust spatial embeddings from OpenStreetMap (OSM) amenity distribution patterns. We evaluate LEON on multiple real-world datasets including EuroSAT satellite imagery classification and various geographic prediction tasks (housing prices, crime prediction, and urban analytics). Experimental results demonstrate that LEON achieves significant improvements in spatial understanding, with up to 1.87% accuracy improvement on EuroSAT classification and consistent performance gains across geographic prediction benchmarks. The learned embeddings exhibit highly structured and distinct properties, making them particularly suitable for downstream spatial analysis tasks. Our findings suggest that self-supervised learning provides an effective paradigm for geospatial region representation learning using widely available crowdsourced data.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Advances in Computational Collective Intelligence (ICCCI 2026)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>RSure-Agent: Reliable Use of Tool Observations for Remote Sensing Agents</title>
-    <link href="http://arxiv.org/abs/2610.04836v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.04836v1</id>
-    <published>2026-10-04T00:00:00Z</published>
-    <updated>2026-10-04T00:00:00Z</updated>
-    <author>
-      <name>Fuyuan Liu</name>
-    </author>
-    <author>
-      <name>Nayu Liu</name>
-    </author>
-    <author>
-      <name>Wenhao Yu</name>
-    </author>
-    <author>
-      <name>Peijin Wang</name>
-    </author>
-    <author>
-      <name>Yingchao Feng</name>
-    </author>
-    <author>
-      <name>Fanglong Yao</name>
-    </author>
-    <author>
-      <name>Liang Wan</name>
-    </author>
-    <author>
-      <name>Wei Feng</name>
-    </author>
-    <summary type="text">Remote sensing agents rely on perception, measurement, and raster analysis tools to solve Earth observation tasks. We refer to their judgments and quantitative results about ground objects as tool observations. However, these observations are subject to substantial uncertainty and may be incorrect even when the tools execute successfully. When agents accept incorrect observations, the errors can propagate through subsequent reasoning and cause task failure. We analyze 1,229 execution trajectories across three remote sensing agent benchmarks. On each benchmark, at least 88.1% of tasks depend on tool observations. Among these tasks, at least 22.7% contain incorrect observations despite successful tool execution. These errors propagate to the final answer in at least 82.0% of affected tasks on each benchmark. To address this problem, we propose RSure-Agent, a framework for verifying tool observations and limiting error propagation. We introduce a verifiable observation protocol that requires tools to return process evidence for the agent to verify their observations. We also construct a task-tool reliability prior from offline task feedback. The prior summarizes each tool configuration's past performance across task types and provides a task-specific reference for verification. Using process evidence and this prior, RSure-Agent decides whether to accept an observation, request additional evidence, or reject it. We evaluate RSure-Agent on EarthBench, ThinkGeo, TerraLogic, and CHOICE-420. Across the three agent benchmarks, RSure-Agent reduces the error propagation rate by 21.3 to 25.9 percentage points relative to the base configuration with verification and the prior disabled. On CHOICE-420, it improves overall accuracy over direct answering by 5.71 percentage points on average across 11 backbone models. On EarthBench, it reduces the tool-call ratio by 25.9% relative to Earth-Agent.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; The demo is available at https://github.com/airs101/RSure-Agent (code will be released for further research)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Repair Lot Skyline: A Weighted Constraint Satisfaction Approach to Pavement Repair Optimization from Geospatial Hazard Density</title>
-    <link href="http://arxiv.org/abs/2610.06989v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.06989v1</id>
-    <published>2026-10-04T00:00:00Z</published>
-    <updated>2026-10-04T00:00:00Z</updated>
-    <author>
-      <name>Takato Yasuno</name>
-    </author>
-    <author>
-      <name>Keita Kobayashi</name>
-    </author>
-    <author>
-      <name>Ryuta Sakaguchi</name>
-    </author>
-    <author>
-      <name>Takuya Okamoto</name>
-    </author>
-    <summary type="text">Pavement agencies must translate a spatially distributed distress inventory into a bounded, actionable repair-lot plan: accident-critical defects (potholes) must always be addressed, lower-risk defects (cracks) should be included only when their benefit justifies the repair cost, and historical patch locations signal re-degradation risk without themselves triggering repair. We formalize this as a Repair Lot Skyline problem: a Weighted Constraint Satisfaction Problem (WCSP) defined over chainage (distance along the road) rather than over time, so that it requires only a single-epoch distress survey and makes no claim about future deterioration. The WCSP identifies 143 candidate hazard clusters (61 hard, 82 soft), of which 106 are merged into a final repair plan totaling 1,997.4 m---83.7% of the 2,385.9 m that would be required if every soft candidate were included regardless of cost. This plan covers 100% of observed potholes (138/138) and 91.6% of observed cracks (404/441), capturing 93.6% (542/579) of the total hazard benefit available in the full candidate set. The skyline frontier shows pronounced diminishing returns beyond this point: the remaining 37 excluded soft candidates would add only 6.8% additional benefit for a 19.4% increase in repair length. We further formalize the minimum-lot-length $L_{\min}$ and historical-context radius $κ$ as a joint, four-objective hyperparameter search over this WCSP; on the same case study, the recommended configuration ($L_{\min} = 14.7$ m, $κ= 10$ m) reduces repair-crew mobilizations by 7.1% relative to an untuned default, at the cost of a 12.9% larger budget and a 1.1-percentage-point lower crack coverage.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 30 pages, 7 tables, 5 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>A Geometric-Transformation Feature-Adaptive Manifold Restoration Method for Open-Vocabulary Semantic Segmentation of Remote Sensing Images</title>
-    <link href="http://arxiv.org/abs/2610.04300v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.04300v1</id>
-    <published>2026-10-03T00:00:00Z</published>
-    <updated>2026-10-03T00:00:00Z</updated>
-    <author>
-      <name>Jianzheng Wang</name>
-    </author>
-    <author>
-      <name>Huan Ni</name>
-    </author>
-    <author>
-      <name>Xiaonan Niu</name>
-    </author>
-    <author>
-      <name>Danfeng Hong</name>
-    </author>
-    <author>
-      <name>Haiyan Guan</name>
-    </author>
-    <summary type="text">The semantic information of objects in remote sensing images is typically invariant to geometric transformations from the dihedral group D4. However, SAM3-based open-vocabulary semantic segmentation (OVSS) methods often exhibit inconsistent responses to different geometric transformations. To exploit this property and improve the stability of OVSS for remote sensing images, we propose a feature-adaptive manifold repair method based on dihedral-group geometric transformations. First, we introduce multi-scale harmonic-guided D4 view selection (MH-D4VS) to select complementary candidate views from a set of geometrically transformed views. Next, we propose original-view-anchored adaptive manifold repair (OAMR), which uses the original view as an anchor and reliable cross-view information to selectively repair locally unreliable visual features. Finally, we develop pixel decoder test-time adaptation (PD-TTA) for SAM3, which fine-tunes only the parameters of the GroupNorm layers online during inference, thereby enhancing the model's ability to adapt to sample-level distribution shifts. Experimental results show that the proposed method achieves an average mIoU of 55.6% across eight remote sensing semantic segmentation benchmarks and delivers consistent performance improvements under different SAM3-based inference frameworks.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>

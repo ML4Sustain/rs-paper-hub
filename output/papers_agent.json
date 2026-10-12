@@ -4919,5 +4919,24 @@
     "_added_date": "2026-10-08",
     "Category": "Dataset",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-10-07",
+    "Month": 10,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "TerraAgent: Demonstration-Grounded Multi-Agent Reasoning for Long-Context Remote Sensing Visual Question Answering",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2610.12517v1",
+    "Abstract": "Remote sensing visual question answering (RS-VQA) requires answers that truly depend on image evidence, yet current remote sensing multimodal large language models (RS MLLMs) are still evaluated mainly by accuracy, which cannot reveal whether a correct answer was produced without using the image. This setting introduces three challenges: demonstrations retrieved across different ground sample distances (GSD), sensors, and city textures may be poorly matched; real queries often involve long visual contexts from multi-scale tiles, multi-temporal frames, and retrieved knowledge, where evidence can be diluted and errors can propagate through multi-step reasoning; and prior-only answering remains invisible to standard metrics. We present AVA, a training-free framework that wraps a frozen RS MLLM with three modules. GDR performs GSD-bucketed, scene-graph-based demonstration retrieval and filters demonstrations whose answers are unsupported by their images. MACE decomposes each query into an evidence-typed sub-question DAG, routes sub-questions to suitable perception tools, and records verified provenance in a shared evidence ledger with bounded re-perception. CVA audits the final answer through counterfactual perturbations of cited evidence, including ablation and swap, and computes a visual-dependency score for confidence calibration and evidence-forcing re-query. On RSVQA-LR/HR, VRSBench, and LHRS-Bench, AVA improves average accuracy by up to 2.40 points over the strongest same-setting baselines, raises the visual-dependency score from 0.28 to 0.49, reduces the prior-only answer rate from 46.2 percent to 21.7 percent, and lowers the hallucination rate from 17.1 percent to 9.8 percent, with 2.6x the cost of a single backbone forward pass and no fine-tuning.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{huang2026terraagent,\n  title={TerraAgent: Demonstration-Grounded Multi-Agent Reasoning for Long-Context Remote Sensing Visual Question Answering},\n  author={Jingwen Huang and Yiming Fang and Hanxiao Wu and Boyuan He and Keyi Luo},\n  journal={arXiv preprint arXiv:2610.12517v1},\n  year={2026},\n  url={http://arxiv.org/abs/2610.12517v1}\n}",
+    "Authors": "Jingwen Huang, Yiming Fang, Hanxiao Wu, Boyuan He, Keyi Luo",
+    "_added_date": "2026-10-12",
+    "Category": "Method",
+    "_tasks": "VQA"
   }
 ]
