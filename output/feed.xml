@@ -4,12 +4,406 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-13T07:17:20Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 17 entries</subtitle>
+  <updated>2026-10-14T02:21:56Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 25 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Distributed Observation Scheduling and Sensor Fusion For Large Agile Constellations</title>
+    <link href="http://arxiv.org/abs/2610.15949v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.15949v1</id>
+    <published>2026-10-11T00:00:00Z</published>
+    <updated>2026-10-11T00:00:00Z</updated>
+    <author>
+      <name>Nicholas Niziolek</name>
+    </author>
+    <author>
+      <name>Ryan Draves</name>
+    </author>
+    <author>
+      <name>Nolan Ales</name>
+    </author>
+    <author>
+      <name>Nolan Stevenson</name>
+    </author>
+    <author>
+      <name>Eli Jones</name>
+    </author>
+    <author>
+      <name>Eric Frew</name>
+    </author>
+    <author>
+      <name>Nisar Ahmed</name>
+    </author>
+    <summary type="text">With the rapid increase in interest towards large scale earth observing satellite constellations, the problem of properly commanding and utilizing these systems has become increasingly relevant. This work focuses on a complete distributed approach to this problem, incorporating an observation task allocation and scheduling algorithm in addition to a sensor data fusion algorithm for end-to-end target coverage and processing. Observation task allocation and scheduling is performed in this work through the combination of the bid warped consensus based bundle algorithm (BWCBBA) and a lightweight observation scheduler for bid scoring. This method produces a unique mapping of tasks to command agents when allowed to iterate sufficiently. The approach to distributed data fusion in this work occurs primarily through an ownership model in which one satellite takes ownership of a system track in the constellation. After local information is shared between the sensing nodes to create the system tracks, the dedicated fusion nodes assume ownership for further information fusion and track information is disseminated throughout the constellation for data association. This paper analyzes the performance of these two algorithms over a set of increasingly decentralized architectures to highlight the performance losses compared to more traditional centralized methods.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 19 pages, 16 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="eess.SY" />
+  </entry>
+  <entry>
+    <title>ChangeT$^3$: Evaluating Vision Test-Time Training for Remote Sensing Change Detection</title>
+    <link href="http://arxiv.org/abs/2610.15813v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.15813v1</id>
+    <published>2026-10-11T00:00:00Z</published>
+    <updated>2026-10-11T00:00:00Z</updated>
+    <author>
+      <name>Sharukshan Niranjan</name>
+    </author>
+    <author>
+      <name>Oshadha Samarakoon</name>
+    </author>
+    <author>
+      <name>Nichula Wasalathilaka</name>
+    </author>
+    <author>
+      <name>Roshan Godaliyadda</name>
+    </author>
+    <author>
+      <name>Parakrama Ekanayake</name>
+    </author>
+    <author>
+      <name>Vijitha Herath</name>
+    </author>
+    <summary type="text">Bitemporal remote sensing change detection requires representations that preserve spatial detail while capturing contextual information relevant to changes between acquisitions. Visual test-time training offers an alternative to explicit token-to-token attention by adapting a compact inner model to each image. This letter describes ChangeT$^3$, a vanilla Siamese configuration combining the existing hierarchical ViT$^3$-Tiny encoder with the multiscale ChangeFormer decoder. The two image streams share learned encoder parameters, while their fast weights are computed independently from their respective spatial features. Each encoder block retains the inherited global simplified SwiGLU and local adaptive depthwise-convolution branches. Temporal comparison is performed by the decoder through learned fusion of paired features at four resolutions, followed by coarse-to-fine aggregation and binary prediction. This separation provides a direct setting for examining image-conditioned inner updates without introducing an additional temporal interaction module. Trained from scratch on LEVIR-CD+ with the same decoder, recipe, and budget as a ChangeFormer control, ChangeT$^3$ reaches an F1 of 80.61$\pm$0.90 against 78.84$\pm$0.21 for ChangeFormer (three seeds each); as in the standard protocol for this dataset, checkpoints are selected on the test split. Trained with both inner updates disabled, the same encoder reaches 78.63$\pm$0.20. Neither model transfers zero-shot to SYSU-CD, DSIFN-CD, or WHU-CD, and ChangeT$^3$ is the slower of the two at small inputs despite similar parameter and operation counts.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages, 2 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Google Earth AI Geospatial Reasoning Agent: Capabilities and a Systematic Evaluation</title>
+    <link href="http://arxiv.org/abs/2610.15750v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.15750v1</id>
+    <published>2026-10-11T00:00:00Z</published>
+    <updated>2026-10-11T00:00:00Z</updated>
+    <author>
+      <name>Noam Slonim</name>
+    </author>
+    <author>
+      <name>Aviv Slobodkin</name>
+    </author>
+    <author>
+      <name>Gil Fidel</name>
+    </author>
+    <author>
+      <name>Gal Moshitch</name>
+    </author>
+    <author>
+      <name>Mimi Sun</name>
+    </author>
+    <author>
+      <name>Lily Mihalkova</name>
+    </author>
+    <author>
+      <name>Joydeep Paul</name>
+    </author>
+    <author>
+      <name>Per Bjornsson</name>
+    </author>
+    <author>
+      <name>Sydney Lin</name>
+    </author>
+    <author>
+      <name>Jamie McPike</name>
+    </author>
+    <author>
+      <name>Samapriya Roy</name>
+    </author>
+    <author>
+      <name>Utkarsh Patel</name>
+    </author>
+    <author>
+      <name>Gia Jung</name>
+    </author>
+    <author>
+      <name>Zachary Luna</name>
+    </author>
+    <author>
+      <name>Allison Berman</name>
+    </author>
+    <author>
+      <name>William Cai</name>
+    </author>
+    <author>
+      <name>Xiao Wu</name>
+    </author>
+    <author>
+      <name>Mohit Agarwal</name>
+    </author>
+    <author>
+      <name>Mandar Sharma</name>
+    </author>
+    <author>
+      <name>Aliza Hoffman</name>
+    </author>
+    <author>
+      <name>Mark Young</name>
+    </author>
+    <author>
+      <name>Rama Pasumarthi</name>
+    </author>
+    <author>
+      <name>Roy Lee</name>
+    </author>
+    <author>
+      <name>Ruth Alcantara</name>
+    </author>
+    <author>
+      <name>Luke Barrington</name>
+    </author>
+    <author>
+      <name>Aaron Bell</name>
+    </author>
+    <author>
+      <name>Reuven Sayag</name>
+    </author>
+    <author>
+      <name>Avinatan Hassidim</name>
+    </author>
+    <author>
+      <name>Yossi Matias</name>
+    </author>
+    <author>
+      <name>Tyler McHenry</name>
+    </author>
+    <author>
+      <name>Ronald Ho</name>
+    </author>
+    <author>
+      <name>Christopher Haire</name>
+    </author>
+    <author>
+      <name>Oliver Guinan</name>
+    </author>
+    <author>
+      <name>Niv Efron</name>
+    </author>
+    <author>
+      <name>Tim Thelin</name>
+    </author>
+    <author>
+      <name>Gautam Prasad</name>
+    </author>
+    <author>
+      <name>Shravya Shetty</name>
+    </author>
+    <summary type="text">Google Earth AI is a family of geospatial AI models, together with an agent that orchestrates them. We present this agent, Google Earth AI's Geospatial Reasoning agent (GRA), a Gemini-powered research system that combines geospatial data sources, foundation models, and tools to answer questions about our planet. GRA organizes these into modular domain skills and pairs them with upfront geospatial planning to decompose complex queries into multi-stage workflows. Evaluating such systems is hard: real-world problems admit multiple valid workflows, require data discovery across large catalogs, and rely on evolving ground truth. We introduce two benchmarks and release their development splits. GeoExpertQueries poses complex analytical problems grounded in practitioner use cases and refined by geospatial experts; each is paired with a consensus golden workflow from three independent experts and scored by a human-validated, tool-agnostic autorater. GeoKTools consists of templated queries with deterministic reference solvers that systematically vary the number of required tool types. We also use two external benchmarks, CBGB and UnivEARTH; the latter we find to be saturated. To isolate the contribution of GRA's tools and its agentic orchestration, we compare four configurations, each with Gemini 3.1 Pro and 3.8 Flash: a standalone LLM, the LLM with basic tools, the LLM with GRA's skills and tools but without its upfront planning and execution guidance, and GRA itself. With at most basic tools, an advanced model recovers much of the answer on templated queries but satisfies only a small fraction of the expert workflows on open-ended problems; GRA performs well on both. The largest step comes from GRA's skills and tools; on open-ended problems, its planning and execution guidance add a further gain with Gemini 3.8 Flash, letting Flash match or exceed Pro at lower cost.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 39 pages, 4 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>RSAJEV: Training-Free Abstaining Prototype Memory for Eliminating Silent Hallucination in JEV-Based Remote Sensing Classification</title>
+    <link href="http://arxiv.org/abs/2610.15742v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.15742v1</id>
+    <published>2026-10-11T00:00:00Z</published>
+    <updated>2026-10-11T00:00:00Z</updated>
+    <author>
+      <name>Man Chen</name>
+    </author>
+    <author>
+      <name>Antai Chen</name>
+    </author>
+    <author>
+      <name>Shuai Xu</name>
+    </author>
+    <author>
+      <name>Chengjie Gu</name>
+    </author>
+    <author>
+      <name>Huaping Zhou</name>
+    </author>
+    <author>
+      <name>Kelei Sun</name>
+    </author>
+    <author>
+      <name>Tao Wu</name>
+    </author>
+    <author>
+      <name>Yongjie Huang</name>
+    </author>
+    <summary type="text">Scene classification of remote sensing imagery with multimodal large language models (MLLMs) is formulated as a single-forward-pass decision problem: candidate class names are lettered options in the prompt, a registered answer slot is conditioned on the prompt, and classification is read out by scoring letter tokens with the language-modeling head. We show that although this letter binding is highly effective within its training vocabulary (97.71% OA on UCM), it behaves erratically out of vocabulary: zero-adaptation accuracy across four cross-dataset directions fluctuates between 7.35% and 96.40%, and under out-of-vocabulary weights its confidence fails inversely on open-set evaluation, assigning higher confidence to unseen than to seen classes (AUROC 0.38), a failure we term silent hallucination. We retain the slot representation and replace the readout with RSAJEV, a training-free abstaining prototype memory that performs retrieval-based prototype matching: K reference images per class are cached as prototypes via their slot representations under the same prompt, and classification becomes nearest-neighbor retrieval over the prototypes, refined by a shrinkage-Mahalanobis geometric correction. This readout is mechanistically isomorphic to retrieval-augmented generation (RAG) but operates on discriminative decisions; it is the first retrieval-based readout for MLLM slot representations. The retrieval readout reaches 89.43% on the UCM cross-dataset gate with 16 references per class and zero gradient updates, and 96.90% on AID. Its ID-ness scores attain 0.91-0.99 AUROC on open-set evaluation over two datasets, exceeding symbolic confidence (0.38-0.96) in all four open-set settings, restoring a calibratable abstention channel and supporting class addition/removal at zero extra inference cost via offline rescoring of the cached matrix.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Broadband 600- and 1200-GHz Subharmonically Pumped Schottky Diode Mixers</title>
+    <link href="http://arxiv.org/abs/2610.15657v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.15657v1</id>
+    <published>2026-10-11T00:00:00Z</published>
+    <updated>2026-10-11T00:00:00Z</updated>
+    <author>
+      <name>Peter Sobis</name>
+    </author>
+    <author>
+      <name>Vladimir Drakinskiy</name>
+    </author>
+    <author>
+      <name>Karl Jacob</name>
+    </author>
+    <author>
+      <name>Axel Murk</name>
+    </author>
+    <author>
+      <name>Anders Emrich</name>
+    </author>
+    <author>
+      <name>Jan Stake</name>
+    </author>
+    <summary type="text">A subharmonic mixer topology is introduced that uses quarter-wave stubs to create virtual RF/LO grounds and provide impedance matching in close proximity to the antiparallel Schottky barrier diode pair, thereby reducing the electrical length and enabling broadband operation. The RF/LO matching topology is demonstrated at 600 GHz and 1200 GHz, with good agreement between measured and simulated performance. The 600-GHz mixer demonstrates approximately 20% RF bandwidth with a DSB receiver noise temperature below 1300 K across most of the measured band, while the 1200-GHz implementation achieves DSB receiver noise temperatures below 3000 K over a broad frequency range. Both mixers are characterized at room temperature with approximately 2 mW of LO power. The 600-GHz mixer is used in the Submillimeter Wave Instrument (SWI) onboard ESA's Jupiter Icy Moons Explorer. Overall, these results demonstrate state-of-the-art room-temperature performance for broadband receiver front ends targeting atmospheric research and remote-sensing applications.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="physics.ins-det" />
+    <category term="astro-ph.IM" />
+  </entry>
+  <entry>
+    <title>OmniRSI: Taming Latent Diffusion for Unified Multimodal Remote Sensing Image Generation</title>
+    <link href="http://arxiv.org/abs/2610.15414v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.15414v1</id>
+    <published>2026-10-11T00:00:00Z</published>
+    <updated>2026-10-11T00:00:00Z</updated>
+    <author>
+      <name>Hebaixu Wang</name>
+    </author>
+    <author>
+      <name>Jing Zhang</name>
+    </author>
+    <author>
+      <name>Haonan Guo</name>
+    </author>
+    <author>
+      <name>Di Wang</name>
+    </author>
+    <author>
+      <name>Jiayi Ma</name>
+    </author>
+    <author>
+      <name>Bo Du</name>
+    </author>
+    <summary type="text">Multimodal remote sensing image generation emerges as a promising paradigm for recovering complete and complementary observations from heterogeneous and partially observed remote sensing data. However, existing methods predominantly depend on sensor-specific fine-tuning of natural image generation models, limiting unified multimodal generation capacity due to the absence of shared representations and robust conditioning mechanisms. To address these challenges, we propose OmniRSI, a unified multimodal remote sensing image generation model. Specifically, we develop a remote sensing-specific variational autoencoder that captures multimodal priors and promotes a locally smooth latent space for unified representation and robust reconstruction across diverse observed data. Building upon that, we fully adapt Stable Diffusion 3.5 with a ControlNet branch to support unified multimodal generation and translation conditioned on textual and visual cues. Besides, we devise a training-free cyclic latent alignment mechanism that iteratively enriches incomplete visual conditions with generated multimodal information, progressively improving guidance reliability while preserving observed measurements. We also construct RSI-MM, a large-scale dataset comprising 11.5M multi-resolution images with text annotations and partially paired data for training and evaluation. Extensive experiments verify that OmniRSI achieves superior performance in multimodal reconstruction, generation and translation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Under review. Code and datasets will be provided in the https://github.com/MiliLab/OmniRSI&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>A Decade of PhotoMappers: A Longitudinal Study of Crowdsourced Disaster Photos Geolocalization with Vision-Language Models and Geospatial Reasoning</title>
+    <link href="http://arxiv.org/abs/2610.15403v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.15403v1</id>
+    <published>2026-10-11T00:00:00Z</published>
+    <updated>2026-10-11T00:00:00Z</updated>
+    <author>
+      <name>Hao Li</name>
+    </author>
+    <author>
+      <name>Wenping Yin</name>
+    </author>
+    <author>
+      <name>Fabian Deuser</name>
+    </author>
+    <author>
+      <name>Jia Jia</name>
+    </author>
+    <author>
+      <name>Ziqi Liu</name>
+    </author>
+    <author>
+      <name>Levente Juhász</name>
+    </author>
+    <author>
+      <name>Fan Zhang</name>
+    </author>
+    <author>
+      <name>Filip Biljecki</name>
+    </author>
+    <summary type="text">Crowdsourced disaster imagery provides timely, ground-level observations when conventional disaster mapping is delayed or incomplete, yet its geographic value depends on where observations are produced, how they are interpreted, and whether they can be reliably located as actionable Geospatial Intelligence (GEOINT). Using more than a decade of PhotoMappers, a crowdsourced disaster-mapping initiative, this study examines the changing geography of disaster information and asks how emerging GeoAI models compare with human geographic interpretation. We combine longitudinal spatial analysis with cross-view geolocalization using street view imagery (SVI) and remote sensing imagery (RSI), and evaluate vision-language models (VLMs) reasoning through 30 indicators spanning geographic cues and reasoning evidence. The results reveal a geographically and temporally uneven archive shaped by changing disaster types, Community Lifelines, and operational priorities. Integrating VGI, SVI, and RSI with Sinkhorn re-ranking achieves 40.90% R@1, 61.10% R@5, and 69.45% R@10, while yearly R@1 varies markedly from 25.00% to 65.07%. Geographic reasoning is similarly uneven: Qwen3.6-27B achieves an overall agreement of 67% compared with 51% for InternVL3-8B, with both models showing greater difficulty with localized and place-specific evidence than broad spatial configurations. We argue that the value of GeoAI lies less in replacing volunteered geographic interpretation than in complementing it, scaling candidate retrieval while retaining human judgment for ambiguous and consequential cases. This provides a pathway toward more human-centered and responsible GeoAI for disaster mapping. All data and code are openly available at https://github.com/bobleegogogo/PhotoMappers-VLM.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/bobleegogogo/PhotoMappers-VLM"&gt;https://github.com/bobleegogogo/PhotoMappers-VLM&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; GeoLoc&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Global Disaster Risk Assessment Using World Risk Index Data: A Geospatial and Visual Analytics Approach</title>
+    <link href="http://arxiv.org/abs/2610.15064v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.15064v1</id>
+    <published>2026-10-10T00:00:00Z</published>
+    <updated>2026-10-10T00:00:00Z</updated>
+    <author>
+      <name>Malithi Nawarathne</name>
+    </author>
+    <author>
+      <name>Nadeesha Herath Mudiyanselage</name>
+    </author>
+    <author>
+      <name>Lihini Sangeetha</name>
+    </author>
+    <summary type="text">The world has seen several threats that include resource depletion, food security, poverty and inequality, difficulties associated with urbanization, migration, and environmental effects. The World Risk Index (WRI) is a metric that is used to measure the susceptibility of nations against natural disasters and related risks that is reported by the Humanitarian Data Exchange. The WRI is comprised of factors such as susceptibility, vulnerability to natural hazards, and coping mechanisms. The WRI index has allowed to recognize regions in advance in order to face threats and situations beforehand. This study was conducted by analyzing the data that was related to years from 2000 to 2025 using data visualization techniques. Python related libraries of Matplotlib, Seaborn, and Geopandas were used due to their efficiency and usability in analyzing WRI data. As per the analysis, it was identified that countries of Philippines, Mexico, Indonesia, and India were recorded with high WRI index values that showed these nations should be prepared for natural disasters and situations. Hence, this study has provided insights using data visualization techniques in understanding natural disasters and threats so that necessary measures can be taken</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 16 pages&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="cs.CY" />
+  </entry>
+  <entry>
+    <title>EarthAlign: Learning Language-Aligned Representations of Earth System Data</title>
+    <link href="http://arxiv.org/abs/2610.14624v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.14624v1</id>
+    <published>2026-10-10T00:00:00Z</published>
+    <updated>2026-10-10T00:00:00Z</updated>
+    <author>
+      <name>Fadillah Adamsyah Maani</name>
+    </author>
+    <author>
+      <name>Numan Saeed</name>
+    </author>
+    <author>
+      <name>Jiaqi Ma</name>
+    </author>
+    <author>
+      <name>Dat Tien Nguyen</name>
+    </author>
+    <author>
+      <name>Youssef Wehbe</name>
+    </author>
+    <author>
+      <name>Duncan Watson-Parris</name>
+    </author>
+    <author>
+      <name>Salman Khan</name>
+    </author>
+    <summary type="text">Interpreting Earth system conditions is central to understanding environmental risks and informing decisions across weather- and climate-sensitive sectors. Existing multimodal weather systems primarily target task-specific prediction, generation, or question answering, while general-purpose alignment between Earth system data and language remains underexplored due to the limited availability of diverse language supervision grounded in meteorological conditions. To fill this gap, we introduce EarthAlign, a large-scale dataset with broad geographic coverage spanning 2000-2024 that combines 10 expert-curated natural event and disaster data sources with climatology-derived normal-weather samples. Each sample includes temporal and geospatial information and four grounded caption styles aligned with 63-variable ERA5 meteorological data. Building on EarthAlign, we introduce MeteoLIP, a dual-encoder framework for learning aligned meteorology-language representations. MeteoLIP incorporates MetTok, which uses a geolocation- and time-conditioned query to aggregate variable-specific patch embeddings into a compact sequence of meteorology tokens. To comprehensively assess Earth system multimodal representations, we introduce three downstream tasks: cross-modal retrieval, weather-condition classification, and physical variable estimation. Our experiments show that MeteoLIP improves upon the corresponding CLIP and SigLIP baselines across these tasks. Further analyses highlight the importance of meteorological input, temporal and geospatial conditioning, and multi-style supervision for meteorology-language alignment. Thus, EarthAlign and MeteoLIP provide a foundation for learning and evaluating language-aligned representations of Earth system data. Our code, dataset, and weights are publicly available at https://github.com/mbzuai-oryx/EarthAlign.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/mbzuai-oryx/EarthAlign"&gt;https://github.com/mbzuai-oryx/EarthAlign&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;ITR;GeoLoc&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence; Machine Learning" />
+  </entry>
+  <entry>
+    <title>A Gated Catchment Hydrology Model (GCHM) for Physically-Interpretable Rainfall-Evapotranspiration-Runoff Simulation Across Diverse Hydroclimatic Regimes</title>
+    <link href="http://arxiv.org/abs/2610.14493v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.14493v1</id>
+    <published>2026-10-10T00:00:00Z</published>
+    <updated>2026-10-10T00:00:00Z</updated>
+    <author>
+      <name>M Jawad</name>
+    </author>
+    <author>
+      <name>HV Gupta</name>
+    </author>
+    <author>
+      <name>MA Farmani</name>
+    </author>
+    <author>
+      <name>A Behrangi</name>
+    </author>
+    <author>
+      <name>GY Niu</name>
+    </author>
+    <summary type="text">Recent advances in machine learning have improved rainfall-runoff prediction, yet most data-driven models remain difficult to interpret and do not explicitly enforce physical conservation laws. We present the Gated Catchment Hydrology Model (GCHM), a mass-conserving architecture based on the Mass-Conserving Perceptron (MCP). GCHM uses five storage states representing canopy interception, snow, soil moisture, groundwater, and streamflow generation. Constrained gates govern precipitation partitioning, evapotranspiration, infiltration, seepage, runoff, and baseflow while learning context-dependent process relationships.   We evaluate GCHM across 50 CAMELS catchments spanning snowmelt-dominated, recent-rainfall, historical-rainfall, and arid regimes, using NOAA AORC meteorological forcing and remotely sensed vegetation and land-surface data. Performance is assessed using the Jawad-Kling-Gupta Efficiency (JKGE) metric, which accounts for stationary and non-stationary hydrologic behavior. We compare the full architecture with ablated variants and recurrent neural network benchmarks.   GCHM reproduces streamflow dynamics across diverse hydroclimatic regimes, including arid catchments, while maintaining interpretable states and fluxes. Ablation experiments show that simplified architectures may perform adequately under wet conditions but struggle to represent flow persistence and recession during dry periods, when groundwater storage sustains low flows. Learned gates recover hydrologically plausible relationships governing snowmelt, runoff, seepage, and evapotranspiration. GCHM combines competitive predictive performance with mass conservation and interpretability, providing a foundation for hydrologic modeling and counterfactual analysis.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
   <entry>
     <title>Revisiting the Task of Building Damage Assessment by Satellite Imaging</title>
     <link href="http://arxiv.org/abs/2610.13857v1" rel="alternate" type="text/html" />
@@ -226,6 +620,24 @@
     <category term="Artificial Intelligence" />
   </entry>
   <entry>
+    <title>ANASSA: From High-Level Framework to Low-Level Architecture for Spatial Agentic AI</title>
+    <link href="http://arxiv.org/abs/2610.14382v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.14382v1</id>
+    <published>2026-10-09T00:00:00Z</published>
+    <updated>2026-10-09T00:00:00Z</updated>
+    <author>
+      <name>Constantinos Papantoniou</name>
+    </author>
+    <author>
+      <name>Brian Hilton</name>
+    </author>
+    <summary type="text">Agentic AI systems operating over geospatial data require more than autonomous reasoning and tool use; they must also support explicit orchestration, spatial validation, governance, provenance, failure handling, and human decision authority. Prior work introduced ANASSA, an agentic AI orchestration framework for spatial intelligence that established high-level components and responsibility boundaries for governed agentic execution (arXiv:2609.14824). However, the framework did not specify how those high-level responsibilities should be systematically decomposed into an implementation-facing low-level architecture. This paper addresses that gap by applying Design Science Research (DSR) to refine the ANASSA framework from high-level architectural (HLA) responsibilities into a low-level architecture (LLA). The resulting design preserves the responsibility boundaries of the foundational framework while translating them into executable architectural structures, including 47 logical roles, versioned task graphs, capability-based agent selection, typed contracts, explicit runtime states, spatial validation mechanisms, governance controls, failure and recovery paths, and provenance records. The architecture is demonstrated through an end-to-end execution trace and analytically evaluated for requirements traceability, internal consistency, responsibility preservation, and technology independence. The resulting high-level-to-low-level design provides an implementation-facing bridge between the ANASSA framework and future system implementations, defining how governed spatial agentic workflows can be made inspectable, reconstructable, and testable without binding the architecture to a specific AI model, geospatial platform, communication protocol, or deployment environment.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 14 pages, 2 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+    <category term="cs.MA; cs.SE" />
+  </entry>
+  <entry>
     <title>AI-Based On-Board Maritime Object Detection for Earth Observation Payload Data Reduction on Versal Embedded Hardware</title>
     <link href="http://arxiv.org/abs/2610.12182v2" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2610.12182v2</id>
@@ -372,81 +784,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
     <category term="cs.CL" />
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Evolutionary Architecture Search for Chlorophyll-$a$ Prediction in Lakes using Sentinel-2</title>
-    <link href="http://arxiv.org/abs/2610.10496v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.10496v1</id>
-    <published>2026-10-07T00:00:00Z</published>
-    <updated>2026-10-07T00:00:00Z</updated>
-    <author>
-      <name>Kursat Komurcu</name>
-    </author>
-    <author>
-      <name>Linas Petkevicius</name>
-    </author>
-    <summary type="text">Small tabular datasets with expert-designed spectral features are the norm in   operational Earth observation, and the networks applied to them are typically   hand-designed. We revisit one such published model -- a Sentinel-2 algal   bloom classifier -- and ask what architecture search adds, holding the task,   the features and the lake-level train/test split of the original study fixed.   Searching an extended multilayer-perceptron space with regularized evolution,   and selecting on inner-cross-validation AUC only, we find networks that   improve held-out AUC from 0.790 to 0.820 and accuracy from 0.733 to 0.748   while using 409 trainable parameters, 26 times fewer than the strongest   hand-designed reference. The search converges on a consistent recipe -- a   single narrow layer, RMS normalisation, $\tanh$ activation, step-decayed   RMSprop and weight averaging -- that a practitioner would be unlikely to   reach by default. At 1.6\,kB the resulting model is small enough to serve as   an onboard screening trigger, which is the setting that motivates the work.   Code: https://github.com/VU-AIML/automl4eo-bloom-nas.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/VU-AIML/automl4eo-bloom-nas"&gt;https://github.com/VU-AIML/automl4eo-bloom-nas&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; AutoML4EO 2026 (non-archival AutoML conference workshop)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Neural and Evolutionary Computing" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>EM-SNN: Efficiently Modulated Spiking Neural Network for Remote Sensing Image Dehazing</title>
-    <link href="http://arxiv.org/abs/2610.09275v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.09275v1</id>
-    <published>2026-10-07T00:00:00Z</published>
-    <updated>2026-10-07T00:00:00Z</updated>
-    <author>
-      <name>Jie Shao</name>
-    </author>
-    <author>
-      <name>Jiaqi Ma</name>
-    </author>
-    <author>
-      <name>Wenwen Min</name>
-    </author>
-    <author>
-      <name>Beihang Song</name>
-    </author>
-    <author>
-      <name>Ning Chen</name>
-    </author>
-    <author>
-      <name>Youfa Liu</name>
-    </author>
-    <author>
-      <name>Jun Wan</name>
-    </author>
-    <summary type="text">Although spiking neural networks (SNNs) provide an energy-efficient alternative to artificial neural networks (ANNs), their application to remote sensing image dehazing remains limited. A key challenge arises from the coupling between haze-induced high-frequency attenuation and discrete spike thresholding. This interaction suppresses weak responses and fundamentally limits the recovery of edges, textures, and fine details in spiking dehazing models. To address this challenge, we propose the Efficiently Modulated Spiking Neural Network (EM-SNN), a dedicated spiking framework tailored to remote sensing image dehazing. EM-SNN integrates a statistics-driven Threshold-Modulated Leaky Integrate-and-Fire (TM-LIF) neuron to adaptively compensate for haze-induced contrast compression, together with a Spike Sobel Modulation (SSM) module that enhances structural cues and reduces depth-wise attenuation during spiking feature propagation. By jointly modulating activation scales and structural representations, EM-SNN improves dehazing performance while preserving the inherent event-driven sparsity of SNNs. Experiments on HRSD, RICE, RRSHID, and SateHaze1K demonstrate that EM-SNN achieves competitive dehazing performance while consuming only one quarter of the energy of the strong ANN baseline SFRDP-Net.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>TerraAgent: Demonstration-Grounded Multi-Agent Reasoning for Long-Context Remote Sensing Visual Question Answering</title>
-    <link href="http://arxiv.org/abs/2610.12517v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.12517v1</id>
-    <published>2026-10-07T00:00:00Z</published>
-    <updated>2026-10-07T00:00:00Z</updated>
-    <author>
-      <name>Jingwen Huang</name>
-    </author>
-    <author>
-      <name>Yiming Fang</name>
-    </author>
-    <author>
-      <name>Hanxiao Wu</name>
-    </author>
-    <author>
-      <name>Boyuan He</name>
-    </author>
-    <author>
-      <name>Keyi Luo</name>
-    </author>
-    <summary type="text">Remote sensing visual question answering (RS-VQA) requires answers that truly depend on image evidence, yet current remote sensing multimodal large language models (RS MLLMs) are still evaluated mainly by accuracy, which cannot reveal whether a correct answer was produced without using the image. This setting introduces three challenges: demonstrations retrieved across different ground sample distances (GSD), sensors, and city textures may be poorly matched; real queries often involve long visual contexts from multi-scale tiles, multi-temporal frames, and retrieved knowledge, where evidence can be diluted and errors can propagate through multi-step reasoning; and prior-only answering remains invisible to standard metrics. We present AVA, a training-free framework that wraps a frozen RS MLLM with three modules. GDR performs GSD-bucketed, scene-graph-based demonstration retrieval and filters demonstrations whose answers are unsupported by their images. MACE decomposes each query into an evidence-typed sub-question DAG, routes sub-questions to suitable perception tools, and records verified provenance in a shared evidence ledger with bounded re-perception. CVA audits the final answer through counterfactual perturbations of cited evidence, including ablation and swap, and computes a visual-dependency score for confidence calibration and evidence-forcing re-query. On RSVQA-LR/HR, VRSBench, and LHRS-Bench, AVA improves average accuracy by up to 2.40 points over the strongest same-setting baselines, raises the visual-dependency score from 0.28 to 0.49, reduces the prior-only answer rate from 46.2 percent to 21.7 percent, and lowers the hallucination rate from 17.1 percent to 9.8 percent, with 2.6x the cost of a single backbone forward pass and no fine-tuning.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>
