@@ -4,7 +4,7 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-14T05:42:14Z</updated>
+  <updated>2026-10-15T02:03:25Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 18 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
@@ -158,6 +158,35 @@
     </author>
     <summary type="text">Practical remote sensing applications often require both understanding and generation capabilities for the same geographic scene. However, most existing methods address either understanding or generation in isolation, while existing unified remote sensing models' generative ability is limited to text-to-image. To bridge this gap, we propose Omni-RS, a unified framework supporting four remote sensing understanding tasks and five generation tasks. Specifically, we introduce the "Scene-Guided Two-Stage Training" strategy, which first adapts a multimodal large language model to remote sensing understanding and then uses its hidden states to guide a diffusion transformer for image generation. To enable joint learning across diverse generation tasks, we construct UniGen, a unified multi-task generation dataset, by organizing heterogeneous remote sensing data into a unified format. Furthermore, we introduce "Detailed Visual Conditioning", which uses visual conditions encoded by a VAE to guide the generation process, thereby supporting additional generation tasks that require reference images. Extensive experiments demonstrate that Omni-RS performs exceptionally well in understanding tasks and has achieved outstanding results in a variety of generative tasks.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>The Gap Is in the Geometry: A Convergent Meta-Analysis of Multi-Facet Aerial and Remote Sensing Video Understanding</title>
+    <link href="http://arxiv.org/abs/2610.19102v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.19102v1</id>
+    <published>2026-10-13T00:00:00Z</published>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <author>
+      <name>Georgios Angelidis</name>
+    </author>
+    <author>
+      <name>Aggelos Psiris</name>
+    </author>
+    <author>
+      <name>Maria Vakalopoulou</name>
+    </author>
+    <author>
+      <name>Georgios Th. Papadopoulos</name>
+    </author>
+    <author>
+      <name>Giorgos Sfikas</name>
+    </author>
+    <author>
+      <name>Iraklis Varlamis</name>
+    </author>
+    <summary type="text">Aerial and remote sensing video is increasingly evaluated like web video, by posing multiple-choice questions to multimodal large language models (MLLMs) over sampled frames and reporting accuracy. This paper argues that this recipe measures the wrong aspect, and supports the claim with a convergent meta-analysis of a broad set of published results, organized in four evidence tiers, in which a claim becomes a position only when collected evidence agrees. Parameter scale exhibits a median of +3.4 accuracy points per tenfold increase on aerial benchmarks, far below a human gap of at least 19 points, whereas acquisition conditions control perception, as 315 of 318 evaluations in 19 within-paper contrasts lose accuracy when conditions such as altitude, view, object size or time horizon become harder. No aerial benchmark in the corpus combines video input with per-task human and random baselines, competence collapses from answering to acting in closed-loop navigation, and the same MLLMs score higher on the aerial benchmark than on ground spatial ones, but lower on studies that test cross-view geometry. From these findings the current study derives five falsifiable principles and proposes the AVU-Card, a reporting card for aerial video benchmarks</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages, 3 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
   <entry>
@@ -591,28 +620,6 @@
     <summary type="text">Understanding and manipulating spatial relations is fundamental to AI systems that reason about physical environments and construct grounded world models. However, existing evaluations of multimodal large language models (MLLMs) for spatial reasoning rely predominantly on static question-answering (QA) over small-scale or synthetic scenes, rarely probing whether models can modify spatial configurations while satisfying explicit geometric constraints. We introduce GeoSpatialBench, a benchmark designed to evaluate an escalating progression of spatial cognition, ranging from spatial relation understanding and geometric reasoning to constrained spatial editing. Grounded in real-world urban data across six geographically diverse cities, GeoSpatialBench evaluates a comprehensive taxonomy of 28 topological, directional, metric, and ordering relations across structured GeoJSON and map image modalities, with ground-truth references and constraints verified via GIS operations. Our empirical evaluation across frontier MLLMs uncovers a stark spatial gap: structured GeoJSON consistently outperforms map images, with multimodal combinations offering no reliable gain over GeoJSON alone, and while models show reasonable competence on qualitative topological and ordering, performance drops on quantitative metric relations. Crucially, editing performance on ordering relations declines relative to QA, and most failed edits violate at least one specified spatial constraint. These results highlight a gap between passively recognizing spatial relations and actively manipulating geometric configurations. GeoSpatialBench provides an open, rigorous diagnostic testbed to benchmark these spatial limitations, laying essential empirical groundwork for physically grounded world models and embodied spatial AI.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICLR 2027&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>GeoFitBench-LLM: A Benchmark for Assessing Large Language Models' Capabilities in Geospatial Data Requirements Elicitation for Geo-Analytic Tasks</title>
-    <link href="http://arxiv.org/abs/2610.12669v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.12669v1</id>
-    <published>2026-10-08T00:00:00Z</published>
-    <updated>2026-10-08T00:00:00Z</updated>
-    <author>
-      <name>Amirhossein Vahdat</name>
-    </author>
-    <author>
-      <name>Thierry Badard</name>
-    </author>
-    <author>
-      <name>Luc Lamontagne</name>
-    </author>
-    <summary type="text">Large language models are becoming central to GeoAI systems, yet their evaluation rarely considers the elicitation of geospatial data requirements. This omission is critical as retrieval oriented geo-analytic tasks cannot be supported reliably without first identifying the necessary datasets and constraints. GeoFitBench-LLM is introduced as a benchmark for assessing whether LLMs can infer the datasets, the supporting resources and the constraints required by geo-analytic requests in natural language. The benchmark is structured around two reasoning dimensions, Spatio-Temporal Relational and Semantic Grounding, reflecting long-standing challenges in geospatial information retrieval and related natural language tasks. Ground truth requirements are encoded in a fixed, provider-independent schema for reproducible evaluation of resource identification and attribute-level specification. Experiments on seven models under minimal prompting indicate that identifying the necessary resources is often achievable, with GPT-5.4 Thinking achieving the best result by recovering the complete set of resources in 66.67% of benchmark requests. Results further indicate that accurate fitness-for-use specification remains more difficult as inferential demands increase.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; GeoAI 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
-    <category term="cs.CL" />
     <category term="Artificial Intelligence" />
   </entry>
 </feed>
