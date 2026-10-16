@@ -21411,5 +21411,24 @@
     "_added_date": "2026-10-15",
     "Category": "Method",
     "_tasks": "CLS"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-10-14",
+    "Month": 10,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "PiCo: Physics-Informed Concept Probing for Geo-Foundation Models",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2610.20973v1",
+    "Abstract": "Geo-foundation models (GFMs) are typically evaluated by downstream task predictive performance, revealing little about which physical features they are sensitive to or use in prediction. This limits developers' ability to test hypotheses about model behaviour and users' ability to select models for new tasks. We propose Physics-Informed Concept Probing (PiCo), a post-hoc framework for explaining GFM predictions. PiCo identifies concept vectors in a GFM's embedding space by generating synthetic multispectral satellite observations from a 3D radiative transfer model coupled with a game engine. These vectors reveal physical sensitivities that inform domain-based hypotheses about downstream performance. Projecting embeddings onto these concept vectors produces low-dimensional representations for quantifying concept importance in making predictions. We evaluate PiCo on three GFMs with different input modalities using seven physical concepts covering forest leaf optics and canopy structure. In ground-cover estimation, RGB restriction reduces dry-matter sensitivity and disproportionately degrades predictions for dry vegetation and bare ground, supporting a hypothesis derived from sensitivity analysis. For hierarchical forest type and tree species classification, concept representations retain 70.0-93.8% of full-embedding accuracy. Models capture similar physical contrasts between classes, such as structural differences between broadleaf forest and cleared ground and leaf-water-content differences between oak and beech, yet differ in the strength of these contrasts and the concepts driving classification. PiCo thus provides a physical basis for hypothesis testing and model assessment, with potential applicability beyond Earth observation wherever forward models enable controlled simulation and pretrained embeddings are accessible for probing.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{she2026pico,\n  title={PiCo: Physics-Informed Concept Probing for Geo-Foundation Models},\n  author={Yihang She and Andrew Blake and Jianbo Qi and Srinivasan Keshav},\n  journal={arXiv preprint arXiv:2610.20973v1},\n  year={2026},\n  url={http://arxiv.org/abs/2610.20973v1}\n}",
+    "Authors": "Yihang She, Andrew Blake, Jianbo Qi, Srinivasan Keshav",
+    "_added_date": "2026-10-16",
+    "Category": "Method",
+    "_tasks": "CLS"
   }
 ]

@@ -4,12 +4,35 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-15T05:27:56Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
+  <updated>2026-10-16T01:53:12Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 5 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>PiCo: Physics-Informed Concept Probing for Geo-Foundation Models</title>
+    <link href="http://arxiv.org/abs/2610.20973v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.20973v1</id>
+    <published>2026-10-14T00:00:00Z</published>
+    <updated>2026-10-14T00:00:00Z</updated>
+    <author>
+      <name>Yihang She</name>
+    </author>
+    <author>
+      <name>Andrew Blake</name>
+    </author>
+    <author>
+      <name>Jianbo Qi</name>
+    </author>
+    <author>
+      <name>Srinivasan Keshav</name>
+    </author>
+    <summary type="text">Geo-foundation models (GFMs) are typically evaluated by downstream task predictive performance, revealing little about which physical features they are sensitive to or use in prediction. This limits developers' ability to test hypotheses about model behaviour and users' ability to select models for new tasks. We propose Physics-Informed Concept Probing (PiCo), a post-hoc framework for explaining GFM predictions. PiCo identifies concept vectors in a GFM's embedding space by generating synthetic multispectral satellite observations from a 3D radiative transfer model coupled with a game engine. These vectors reveal physical sensitivities that inform domain-based hypotheses about downstream performance. Projecting embeddings onto these concept vectors produces low-dimensional representations for quantifying concept importance in making predictions. We evaluate PiCo on three GFMs with different input modalities using seven physical concepts covering forest leaf optics and canopy structure. In ground-cover estimation, RGB restriction reduces dry-matter sensitivity and disproportionately degrades predictions for dry vegetation and bare ground, supporting a hypothesis derived from sensitivity analysis. For hierarchical forest type and tree species classification, concept representations retain 70.0-93.8% of full-embedding accuracy. Models capture similar physical contrasts between classes, such as structural differences between broadleaf forest and cleared ground and leaf-water-content differences between oak and beech, yet differ in the strength of these contrasts and the concepts driving classification. PiCo thus provides a physical basis for hypothesis testing and model assessment, with potential applicability beyond Earth observation wherever forward models enable controlled simulation and pretrained embeddings are accessible for probing.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>The Last Remote Sensing Model Built by Humans? Casting Any Earth Observation Task as Recursive Self-Improvement</title>
     <link href="http://arxiv.org/abs/2610.18845v1" rel="alternate" type="text/html" />

@@ -4,12 +4,61 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-15T05:27:56Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 18 entries</subtitle>
+  <updated>2026-10-16T01:53:12Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 15 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>ISW-Agent: Integrating LLM-Driven Dialogue with n8n Workflow for Internal Solitary Wave Remote Sensing Image Processing</title>
+    <link href="http://arxiv.org/abs/2610.21502v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.21502v1</id>
+    <published>2026-10-15T00:00:00Z</published>
+    <updated>2026-10-15T00:00:00Z</updated>
+    <author>
+      <name>Hao Zhang</name>
+    </author>
+    <author>
+      <name>Hengrui Liu</name>
+    </author>
+    <author>
+      <name>Lina Sun</name>
+    </author>
+    <author>
+      <name>Junmin Meng</name>
+    </author>
+    <summary type="text">Internal solitary wave (ISW) remote sensing requires task parameters and spatial information to be transferred across image acquisition, detection, stripe extraction, and propagation prediction. Here, we present ISW-Agent, which integrates large language model (LLM) interpretation with n8n workflows and independent scientific models through structured task constraints, geospatial transformations, and stage-specific output validation. In tests of 120 Chinese instructions per backend, GPT-5.6 Sol and DeepSeek both achieved a strict task-match rate of 94.2%, with all intents and execution decisions matching the reference. Sentinel-1 cases demonstrated continuous processing from dialogue requests to wavefront prediction for the specified scene. Of 50 timed scenes, 39 completed detection, extraction, and prediction with a median turnaround time of 48.04 s; 11 stopped after empty extraction. Across 3,408 controlled fault-injection runs, retries recovered 234 transient-failure conditions and output validation rejected 234 structural defects, while 61 provenance or completeness errors indicated the need for content-consistency checks. Overall, ISW-Agent thus connects natural-language requests to traceable spatial processing chains for multimodel ISW analysis.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>A large-scale climate-aware satellite image dataset for domain adaptive land-cover semantic segmentation</title>
+    <link href="http://arxiv.org/abs/2610.21238v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.21238v1</id>
+    <published>2026-10-15T00:00:00Z</published>
+    <updated>2026-10-15T00:00:00Z</updated>
+    <author>
+      <name>Songlin Liu</name>
+    </author>
+    <author>
+      <name>Linwei Chen</name>
+    </author>
+    <author>
+      <name>Li Zhang</name>
+    </author>
+    <author>
+      <name>Jun Hu</name>
+    </author>
+    <author>
+      <name>Ying Fu</name>
+    </author>
+    <summary type="text">A few well-annotated datasets for land-cover semantic segmentation have recently been introduced to advance the field of earth observation technologies. However, these datasets overlook the significant diversity among geographic areas with different climates, which can greatly impact and diversify land cover. Consequently, this leads to a domain gap in remote sensing images and severe performance degradation of the segmentation models. To enhance land-cover semantic segmentation with improved generalization ability, we conducted the first investigation into the impact of climate on this task. In this paper, we present a unique large-scale Climate-Aware Satellite Images Dataset (CASID) specifically designed for domain adaptive land-cover semantic segmentation. It consists of 980 satellite images with a size of 5000 x 5000 pixels, collected from 30 different regions around Asia, covering over 24,500 square kilometers. These images are gathered from four distinct climate zones, namely temperate monsoon, subtropical monsoon, tropical monsoon, and tropical rainforest. It includes four sub-datasets/domains, each representing one of the aforementioned climate zones. This characteristic makes CASID the first climate-aware land-cover semantic segmentation dataset with multiple domains. Additionally, we provide a comprehensive analysis of the samples from the four climate zones, emphasizing differences in global image features, image texture, category distribution, spectral value, and object shape. These analyses offer valuable insights for subsequent research in this field. Moreover, we conduct extensive experiments to evaluate the latest semantic segmentation and unsupervised domain adaptation methods on the CASID dataset. These results serve as a robust baseline for future research endeavors. Our dataset will be made publicly available at https://github.com/Linwei-Chen/CASID.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Linwei-Chen/CASID"&gt;https://github.com/Linwei-Chen/CASID&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>MajorTOM:Elliot Pretrain, A Multi-Sensor, Multi-Temporal Pretraining Dataset for Earth Observation</title>
     <link href="http://arxiv.org/abs/2610.18624v1" rel="alternate" type="text/html" />
@@ -488,138 +537,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;ITR;GeoLoc&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence; Machine Learning" />
-  </entry>
-  <entry>
-    <title>Shortcut Learning in Geospatial Foundation Model Embeddings for Cross-Disaster Damage Assessment</title>
-    <link href="http://arxiv.org/abs/2610.13766v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.13766v1</id>
-    <published>2026-10-09T00:00:00Z</published>
-    <updated>2026-10-09T00:00:00Z</updated>
-    <author>
-      <name>Ali Shibli</name>
-    </author>
-    <author>
-      <name>Andrea Nascetti</name>
-    </author>
-    <author>
-      <name>Yifang Ban</name>
-    </author>
-    <summary type="text">Geospatial foundation models can support disaster damage assessment, but high accuracy on familiar disasters may hide shortcut learning: prediction from event or scene characteristics rather than evidence that transfers to a new disaster. We study embeddings from TerraMind, Prithvi-EO-2.0, DOFA, and DINOv3 on the multi-disaster datasets xView2 and BRIGHT. Holding out an entire disaster, instead of randomly splitting image tiles, reduces mean balanced accuracy from 0.807 to 0.638 on xView2 and from 0.818 to 0.568 on BRIGHT. Four sets of tests examine what information supports prediction: event and acquisition context, before/after image inputs, building count, and correct image pairing. Pre-event images remain predictive, and a classifier given only the annotated number of buildings reaches balanced accuracy of 0.629 and 0.653. Combining before/after features performs best on average on xView2, but does not improve over pre-only features on BRIGHT. Shuffling image pairs within the same disaster and damage class causes modest losses. Motivated by these findings, we test whether feature transformations learned only from training disasters improve generalization to unseen disasters. These transformations improve performance, with supervised contrastive learning performing best on xView2 and PCA on BRIGHT. Our results highlight the importance of evaluation on unseen domains for assessing model robustness and show that simple feature-level transformations can improve generalization. Code and experiments can be found at https://github.com/alishibli97/gfm-shortcut-learning.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/alishibli97/gfm-shortcut-learning"&gt;https://github.com/alishibli97/gfm-shortcut-learning&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS REO Workshop 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Benchmarking Answer-Grounding Consistency in Remote Sensing Visual Question Answering</title>
-    <link href="http://arxiv.org/abs/2610.13636v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.13636v1</id>
-    <published>2026-10-09T00:00:00Z</published>
-    <updated>2026-10-09T00:00:00Z</updated>
-    <author>
-      <name>Ping Guo</name>
-    </author>
-    <author>
-      <name>Zhiqi Huang</name>
-    </author>
-    <author>
-      <name>Xinran Li</name>
-    </author>
-    <author>
-      <name>Linkun Yu</name>
-    </author>
-    <author>
-      <name>Jingyin Pei</name>
-    </author>
-    <author>
-      <name>Kamata Seiichiro</name>
-    </author>
-    <summary type="text">In grounded remote sensing visual question answering, a model produces a textual answer and identifies relevant objects in the image as grounding evidence. Existing evaluations measure answer correctness and localization quality, but do not directly assess answer-grounding consistency. We propose the Answer-Evidence Support Protocol (AESP) to assess this consistency through evidence support: whether the grounding evidence supports the model's own answer. AESP applies task-specific rules to existence, counting, and comparison questions. We further construct the Grounded Remote Sensing Visual Question Answering (G-RSVQA) benchmark, containing 15,027 samples with questions, reference answers, and all related object-level annotations. Experiments on seven grounded vision--language models reveal failures of evidence support across all three question types. Up to 50.82% of correct answers in the evidence evaluation subset are not supported by the provided grounding evidence.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Under review at ICASSP 2027. Code available at https://github.com/pingggg516/AESP-Evaluation&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Knowing Whether, Not Just Where: Anchor-Probing Distillation for Open-Set Remote Sensing Visual Grounding</title>
-    <link href="http://arxiv.org/abs/2610.13535v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.13535v1</id>
-    <published>2026-10-09T00:00:00Z</published>
-    <updated>2026-10-09T00:00:00Z</updated>
-    <author>
-      <name>Zhihao Chang</name>
-    </author>
-    <author>
-      <name>Lei Zhai</name>
-    </author>
-    <author>
-      <name>Shuyuan Yang</name>
-    </author>
-    <author>
-      <name>Zhixi Feng</name>
-    </author>
-    <summary type="text">Open-set visual grounding in remote sensing requires models to determine not only where a queried object is located, but also whether the image provides sufficient evidence for the query at all. Existing closed-set grounding models, however, tend to return plausible boxes even for absent objects, blurring localization confidence with genuine Visual Support. We introduce AnchorProbe-Distill (APD), a teacher-student framework that recasts open-set grounding as Visual Support learning. APD builds on the insight that supported queries should induce coherent spatial anchors, whereas unsupported or mismatched queries tend to produce unstable or misleading localization patterns. APD-T therefore uses the Original Query as a Reference Anchor to interpret query perturbations: Semantic-Preserving Queries retain the annotated target, Near-Category Ambiguous Queries are resolved according to whether they form a reliable alternative anchor or collapse onto the Reference Anchor, and Far-Category Counterfactual Queries provide rejection supervision. This reference-aware reasoning is distilled into APD-S, enabling unified localization and rejection from a single image--query pair. Experiments show that APD enables the resulting model to reject absent targets while also improving its localization of present targets.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>PlacePulse: Learning Transferable Place Representations from Structural Geographic Data</title>
-    <link href="http://arxiv.org/abs/2610.13390v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.13390v1</id>
-    <published>2026-10-09T00:00:00Z</published>
-    <updated>2026-10-09T00:00:00Z</updated>
-    <author>
-      <name>Lucía García-Duarte</name>
-    </author>
-    <author>
-      <name>Miguel Álvarez</name>
-    </author>
-    <author>
-      <name>Diego Vicente</name>
-    </author>
-    <author>
-      <name>Javier Pérez Trufero</name>
-    </author>
-    <author>
-      <name>Javier de la Torre</name>
-    </author>
-    <summary type="text">Geospatial machine learning often depends on task-specific feature engineering over large collections of sociodemographic, business, and environmental variables. Geospatial foundation models offer reusable representations of place, but leading approaches typically encode dynamic signals, such as mobility and search activity, or visual signals from satellite imagery. Few models represent the static structural composition of places (who lives and works there, which businesses operate there, and which risks they face) as transferable embeddings at fine spatial resolution. We introduce PlacePulse, a structural geospatial foundation model that compresses 572 attributes, expanded to 2,288 inputs through H3 neighborhood aggregates, into 256-dimensional unit-norm embeddings for 1,055,537 H3 resolution-7 cells in the United States. We also introduce a reusable two-axis benchmark that separates intrinsic representation quality from downstream predictive utility across multiple targets and spatial supports. Intrinsically, the embeddings reconstruct standardized inputs with mean $R^2 = 0.853$, use 251 of 256 approximately decorrelated dimensions, and show strong spatial organization, with Moran's $I = 0.93$ on the leading principal component and autocorrelation persisting beyond the input radius. Extrinsically, across 74 held-out targets from 12 external sources and four spatial supports, PlacePulse outperforms a dimensionality-matched feature-selection baseline on targets unrelated to the training inputs and is competitive with Google's Population Dynamics Foundation Model, leading on health, economic, election, economic-mobility and social-vulnerability outcomes, with relative strengths that vary by domain. These findings position structural composition as a distinct and complementary modality for geospatial foundation models, not simply a fallback where behavioral or imagery data are unavailable.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 42 pages, 11 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Mind the Spatial Gap: A Benchmark for Geospatial Reasoning and Constrained Spatial Editing</title>
-    <link href="http://arxiv.org/abs/2610.12881v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.12881v1</id>
-    <published>2026-10-09T00:00:00Z</published>
-    <updated>2026-10-09T00:00:00Z</updated>
-    <author>
-      <name>Zheng Ren</name>
-    </author>
-    <author>
-      <name>Yanning Wang</name>
-    </author>
-    <author>
-      <name>Ziheng Huang</name>
-    </author>
-    <author>
-      <name>Fei Huang</name>
-    </author>
-    <author>
-      <name>Shiqi Wang</name>
-    </author>
-    <author>
-      <name>Ziqian Ye</name>
-    </author>
-    <author>
-      <name>Yang Yue</name>
-    </author>
-    <summary type="text">Understanding and manipulating spatial relations is fundamental to AI systems that reason about physical environments and construct grounded world models. However, existing evaluations of multimodal large language models (MLLMs) for spatial reasoning rely predominantly on static question-answering (QA) over small-scale or synthetic scenes, rarely probing whether models can modify spatial configurations while satisfying explicit geometric constraints. We introduce GeoSpatialBench, a benchmark designed to evaluate an escalating progression of spatial cognition, ranging from spatial relation understanding and geometric reasoning to constrained spatial editing. Grounded in real-world urban data across six geographically diverse cities, GeoSpatialBench evaluates a comprehensive taxonomy of 28 topological, directional, metric, and ordering relations across structured GeoJSON and map image modalities, with ground-truth references and constraints verified via GIS operations. Our empirical evaluation across frontier MLLMs uncovers a stark spatial gap: structured GeoJSON consistently outperforms map images, with multimodal combinations offering no reliable gain over GeoJSON alone, and while models show reasonable competence on qualitative topological and ordering, performance drops on quantitative metric relations. Crucially, editing performance on ordering relations declines relative to QA, and most failed edits violate at least one specified spatial constraint. These results highlight a gap between passively recognizing spatial relations and actively manipulating geometric configurations. GeoSpatialBench provides an open, rigorous diagnostic testbed to benchmark these spatial limitations, laying essential empirical groundwork for physically grounded world models and embodied spatial AI.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICLR 2027&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>
