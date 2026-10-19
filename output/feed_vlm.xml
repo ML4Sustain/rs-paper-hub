@@ -4,12 +4,104 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-16T05:20:40Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 15 entries</subtitle>
+  <updated>2026-10-19T02:08:32Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 11 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>GeoReason: Bridging Logical Reasoning and Spatial Fidelity in Remote Sensing Segmentation</title>
+    <link href="http://arxiv.org/abs/2610.23416v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.23416v1</id>
+    <published>2026-10-16T00:00:00Z</published>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <author>
+      <name>Cheng Fan</name>
+    </author>
+    <author>
+      <name>Han Wu</name>
+    </author>
+    <author>
+      <name>Tingzhang Luo</name>
+    </author>
+    <author>
+      <name>Minjing Dong</name>
+    </author>
+    <author>
+      <name>Yehui Tang</name>
+    </author>
+    <author>
+      <name>Jianyuan Guo</name>
+    </author>
+    <summary type="text">Multimodal Large Language Models (MLLMs) have significantly advanced instruction-driven perception through the "Embedding-as-Mask" paradigm. However, extending this capability to Remote Sensing (RS) reasoning segmentation remains exceptionally challenging under cluttered geographical contexts and extreme scale variations, often leading to Spatial Fidelity Degradation and Target Misidentification. We identify a critical yet underexplored bottleneck: the sequential alienation of the segmentation token [SEG] from its initial visual grounding within the autoregressive generation paradigm. Produced only at the end of long reasoning chains, [SEG] relies on visual evidence that has been progressively diluted by linguistic abstraction and autoregressive noise. This information decay is particularly catastrophic for RS targets with minuscule pixel footprints, where even marginal fidelity loss leads to localization failure. To address these bottlenecks, we propose GeoReason, a novel framework designed to fortify logical deduction and preserve spatial integrity. First, we introduce an Anticipatory Prior mechanism that injects the [SEG] token directly into the initial user query, shifting it from a terminal output to a primary condition. This paradigm shift transforms the token into a persistent spatial anchor, preventing information decay during long-form linguistic inference. Second, we enhance visual reasoning via a Location-aware Chain-of-Thought (CoT) that enforces coarse-to-fine localization using bounding boxes, coupled with a Latent Patch-to-Token Alignment (PTA) Loss that explicitly aligns the latent segmentation token with physical RS textures. Extensive experiments demonstrate that GeoReason consistently outperforms state-of-the-art methods on the Earthreason and RRSIS-D benchmarks. Code is available at https://github.com/Fanc0126/GeoReason.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Fanc0126/GeoReason"&gt;https://github.com/Fanc0126/GeoReason&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>FloodVLM-Pix: Language-Guided Pixel-Level Flood Understanding</title>
+    <link href="http://arxiv.org/abs/2610.23377v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.23377v1</id>
+    <published>2026-10-16T00:00:00Z</published>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <author>
+      <name>Chengyang Zhang</name>
+    </author>
+    <author>
+      <name>Zhihao Wang</name>
+    </author>
+    <author>
+      <name>Zhiyu Long</name>
+    </author>
+    <author>
+      <name>Xueqian Wang</name>
+    </author>
+    <author>
+      <name>Quanming Yao</name>
+    </author>
+    <author>
+      <name>Wei Wu</name>
+    </author>
+    <author>
+      <name>Gang Li</name>
+    </author>
+    <summary type="text">As climate change intensifies, floods are becoming more frequent and destructive, making accurate flood understanding an urgent priority. However, existing vision-language models perform poorly on flood-related tasks, suffering from attentional bias and inaccurate descriptions of flood magnitude. To bridge this gap, we construct the first large-scale remote sensing flood multi-modal benchmark that supports language-level flood understanding and pixel-level flood segmentation. The benchmark contains 131,200 flood image patches and corresponding 443,100 textual descriptions for flood severity and evolution. Based on this benchmark, we propose FloodVLM-Pix, a language-guided pixel-level flood understanding model that includes a flood prior module and a multi-temporal flood pixel decoder to achieve accurate flood understanding. The flood prior module automatically distills sub-region flood spatial priors and inputs priors into FloodVLM-Pix, solving the attentional bias problem in flood language understanding. The flood pixel decoder introduces a novel general-specific feature fusion mechanism to address performance degradation caused by interference (e.g., clouds or mountain shadows) during flood segmentation. Experiments on FloodVL-Pix demonstrate that FloodVLM-Pix improves both flood description quality and pixel-level flood segmentation performance compared with state-of-the-art VLMs and flood segmentation models. Our code and data will be released at https://github.com/Haomiaoyanmeng/FloodPix.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Haomiaoyanmeng/FloodPix"&gt;https://github.com/Haomiaoyanmeng/FloodPix&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Domain-specific language alignment of multimodal embeddings towards explainable predictions</title>
+    <link href="http://arxiv.org/abs/2610.23110v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.23110v1</id>
+    <published>2026-10-16T00:00:00Z</published>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <author>
+      <name>Gabrielė Tijūnaitytė</name>
+    </author>
+    <author>
+      <name>Thijs L. van der Plas</name>
+    </author>
+    <author>
+      <name>Mohamed-Bachir Belaid</name>
+    </author>
+    <author>
+      <name>Rob Knapen</name>
+    </author>
+    <author>
+      <name>Maciej J. Soja</name>
+    </author>
+    <author>
+      <name>Ioannis N. Athanasiadis</name>
+    </author>
+    <summary type="text">Multimodal data are commonly fused into latent representations that improve downstream task performance but are not interpretable, limiting their application in domains that require explainable model decisions. Vision-language alignment has made image embeddings interpretable through language, but requires vast image-caption training data. However, captioned data are typically not available for multimodal embeddings, as relevant features cannot directly be observed and annotated from embeddings alone. Here, we propose a framework to language-align any embedding space that can be linked to interpretable auxiliary data. Captioning functions convert auxiliary data into partial captions; a soft contrastive loss weights pairs by the similarity of their properties that each caption describes; and a rank-based concept retrieval task evaluates alignment against the auxiliary data rather than the captions. We apply this framework to multimodal Earth embeddings to facilitate explainable predictions for two species distribution modelling tasks: S2BMS and SatBird. AlphaEarth embeddings beat previous state-of-the-art models on 6/7 metrics, while our framework language-aligns domain-specific concepts of the embedding space, outperforming previous Earth observation vision-language models on average concept retrieval for both datasets. Finally, aligned concepts recover species-habitat associations ($ρ$=0.44) and relate habitat descriptions to species predictions, showing that abstract embeddings can be interrogated in the language of domain experts.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>ISW-Agent: Integrating LLM-Driven Dialogue with n8n Workflow for Internal Solitary Wave Remote Sensing Image Processing</title>
     <link href="http://arxiv.org/abs/2610.21502v1" rel="alternate" type="text/html" />
@@ -237,305 +329,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages, 3 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Geospatial Vector Geometry as a Native Spatial Modality for Vision-Language Models</title>
-    <link href="http://arxiv.org/abs/2610.16769v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.16769v1</id>
-    <published>2026-10-12T00:00:00Z</published>
-    <updated>2026-10-12T00:00:00Z</updated>
-    <author>
-      <name>Huang Fei</name>
-    </author>
-    <author>
-      <name>Boyi Chen</name>
-    </author>
-    <author>
-      <name>Hao Xue</name>
-    </author>
-    <author>
-      <name>Yang Yue</name>
-    </author>
-    <author>
-      <name>Yehong Xu</name>
-    </author>
-    <author>
-      <name>Xiaofang Zhou</name>
-    </author>
-    <summary type="text">Geospatial reasoning links VLMs to real-world action and decision making. Reliable reasoning requires accurate spatial information and effective spatial representations. However, current VLMs obtain this information mainly from language and vision. At larger geographic scales, limited visual observations make it difficult to establish accurate spatial references and recover precise spatial relations. This leads to a bottleneck for VLM spatial perception and reasoning. This paper proposes that geospatial vector geometry can become a native spatial modality within a VLM and introduces GeoVec-VLM. First, we develop a structured geometry representation that preserves the spatial structure and arrangement of vector objects, building an explicit spatial basis. Second, we introduce a geometry interaction strategy that brings this basis into multimodal computation, where it interacts with visual content and language references according to the queried spatial relations. Together, these designs allow perception and reasoning to operate on shared geometric references. Across five spatial reasoning tasks, GeoVec-VLM improves mean accuracy by about 11\% relative to the strongest baseline, maintains its gains under geographic transfer, and shows greater geometric consistency. Our results show that geospatial vector geometry offers a promising internal spatial basis for VLM spatial reasoning. https://github.com/TXFR/GeoVector-VLM</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/TXFR/GeoVector-VLM"&gt;https://github.com/TXFR/GeoVector-VLM&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>From Sound to Sense: An Anatomy of Semantic Supervision for Speech-Driven Visual Grounding in Remote Sensing Imagery</title>
-    <link href="http://arxiv.org/abs/2610.16364v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.16364v1</id>
-    <published>2026-10-12T00:00:00Z</published>
-    <updated>2026-10-12T00:00:00Z</updated>
-    <author>
-      <name>Zhongyu Pang</name>
-    </author>
-    <summary type="text">Speech-driven visual grounding in remote sensing (RSVG) removes the typing bottleneck of text-based interaction and is intended to preserve prosodic intent, enabling hands-free target acquisition in time-critical missions. The direct-audio paradigm, mapping raw speech straight to a bounding box and bypassing automatic speech recognition (ASR), was recently adopted by RSTalker, but what such grounders actually learn about language remains unmeasured. SemEcho grafts a frozen Whisper speech pathway onto a VLTVG grounding host so that speech and text share one decoder, making the paired text, free by construction since speech corpora in this task are synthesized from DIOR-RSVG expressions, a training-time teacher and a fair, same-host text upper bound. On this instrument we dissect three semantic injection channels (feature-mimicry distillation, word-level CTC supervision, and two-stage ASR pretraining) with linear semantic probes, and release Audio-DIOR-R (80,973 training clips; 10 timbres x K=3; Qwen3-TTS synthesis with online sox noise lambda in [0, 0.4]) and Audio-DIOR-Comp, a re-split holding out 17 attribute-category combinations under a 2x2 acoustic-semantic protocol. Our anatomy yields four findings. (i) Whether direct alignment beats a domain-trained ASR cascade is decided by recognizer quality: against a weak in-domain cascade (CTC 0.53) direct wins by 9.0 Acc@0.5 points with transcription errors concentrated on spatial-relation words, but a strong in-domain cascade (CTC 0.029) reaches the text upper bound (80.8 vs. 81.0) and beats even the strongest direct model by 8.8 points; the anti-ASR premise holds only against weak recognizers.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Google Earth AI Geospatial Reasoning Agent: Capabilities and a Systematic Evaluation</title>
-    <link href="http://arxiv.org/abs/2610.15750v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.15750v1</id>
-    <published>2026-10-11T00:00:00Z</published>
-    <updated>2026-10-11T00:00:00Z</updated>
-    <author>
-      <name>Noam Slonim</name>
-    </author>
-    <author>
-      <name>Aviv Slobodkin</name>
-    </author>
-    <author>
-      <name>Gil Fidel</name>
-    </author>
-    <author>
-      <name>Gal Moshitch</name>
-    </author>
-    <author>
-      <name>Mimi Sun</name>
-    </author>
-    <author>
-      <name>Lily Mihalkova</name>
-    </author>
-    <author>
-      <name>Joydeep Paul</name>
-    </author>
-    <author>
-      <name>Per Bjornsson</name>
-    </author>
-    <author>
-      <name>Sydney Lin</name>
-    </author>
-    <author>
-      <name>Jamie McPike</name>
-    </author>
-    <author>
-      <name>Samapriya Roy</name>
-    </author>
-    <author>
-      <name>Utkarsh Patel</name>
-    </author>
-    <author>
-      <name>Gia Jung</name>
-    </author>
-    <author>
-      <name>Zachary Luna</name>
-    </author>
-    <author>
-      <name>Allison Berman</name>
-    </author>
-    <author>
-      <name>William Cai</name>
-    </author>
-    <author>
-      <name>Xiao Wu</name>
-    </author>
-    <author>
-      <name>Mohit Agarwal</name>
-    </author>
-    <author>
-      <name>Mandar Sharma</name>
-    </author>
-    <author>
-      <name>Aliza Hoffman</name>
-    </author>
-    <author>
-      <name>Mark Young</name>
-    </author>
-    <author>
-      <name>Rama Pasumarthi</name>
-    </author>
-    <author>
-      <name>Roy Lee</name>
-    </author>
-    <author>
-      <name>Ruth Alcantara</name>
-    </author>
-    <author>
-      <name>Luke Barrington</name>
-    </author>
-    <author>
-      <name>Aaron Bell</name>
-    </author>
-    <author>
-      <name>Reuven Sayag</name>
-    </author>
-    <author>
-      <name>Avinatan Hassidim</name>
-    </author>
-    <author>
-      <name>Yossi Matias</name>
-    </author>
-    <author>
-      <name>Tyler McHenry</name>
-    </author>
-    <author>
-      <name>Ronald Ho</name>
-    </author>
-    <author>
-      <name>Christopher Haire</name>
-    </author>
-    <author>
-      <name>Oliver Guinan</name>
-    </author>
-    <author>
-      <name>Niv Efron</name>
-    </author>
-    <author>
-      <name>Tim Thelin</name>
-    </author>
-    <author>
-      <name>Gautam Prasad</name>
-    </author>
-    <author>
-      <name>Shravya Shetty</name>
-    </author>
-    <summary type="text">Google Earth AI is a family of geospatial AI models, together with an agent that orchestrates them. We present this agent, Google Earth AI's Geospatial Reasoning agent (GRA), a Gemini-powered research system that combines geospatial data sources, foundation models, and tools to answer questions about our planet. GRA organizes these into modular domain skills and pairs them with upfront geospatial planning to decompose complex queries into multi-stage workflows. Evaluating such systems is hard: real-world problems admit multiple valid workflows, require data discovery across large catalogs, and rely on evolving ground truth. We introduce two benchmarks and release their development splits. GeoExpertQueries poses complex analytical problems grounded in practitioner use cases and refined by geospatial experts; each is paired with a consensus golden workflow from three independent experts and scored by a human-validated, tool-agnostic autorater. GeoKTools consists of templated queries with deterministic reference solvers that systematically vary the number of required tool types. We also use two external benchmarks, CBGB and UnivEARTH; the latter we find to be saturated. To isolate the contribution of GRA's tools and its agentic orchestration, we compare four configurations, each with Gemini 3.1 Pro and 3.8 Flash: a standalone LLM, the LLM with basic tools, the LLM with GRA's skills and tools but without its upfront planning and execution guidance, and GRA itself. With at most basic tools, an advanced model recovers much of the answer on templated queries but satisfies only a small fraction of the expert workflows on open-ended problems; GRA performs well on both. The largest step comes from GRA's skills and tools; on open-ended problems, its planning and execution guidance add a further gain with Gemini 3.8 Flash, letting Flash match or exceed Pro at lower cost.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 39 pages, 4 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>RSAJEV: Training-Free Abstaining Prototype Memory for Eliminating Silent Hallucination in JEV-Based Remote Sensing Classification</title>
-    <link href="http://arxiv.org/abs/2610.15742v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.15742v1</id>
-    <published>2026-10-11T00:00:00Z</published>
-    <updated>2026-10-11T00:00:00Z</updated>
-    <author>
-      <name>Man Chen</name>
-    </author>
-    <author>
-      <name>Antai Chen</name>
-    </author>
-    <author>
-      <name>Shuai Xu</name>
-    </author>
-    <author>
-      <name>Chengjie Gu</name>
-    </author>
-    <author>
-      <name>Huaping Zhou</name>
-    </author>
-    <author>
-      <name>Kelei Sun</name>
-    </author>
-    <author>
-      <name>Tao Wu</name>
-    </author>
-    <author>
-      <name>Yongjie Huang</name>
-    </author>
-    <summary type="text">Scene classification of remote sensing imagery with multimodal large language models (MLLMs) is formulated as a single-forward-pass decision problem: candidate class names are lettered options in the prompt, a registered answer slot is conditioned on the prompt, and classification is read out by scoring letter tokens with the language-modeling head. We show that although this letter binding is highly effective within its training vocabulary (97.71% OA on UCM), it behaves erratically out of vocabulary: zero-adaptation accuracy across four cross-dataset directions fluctuates between 7.35% and 96.40%, and under out-of-vocabulary weights its confidence fails inversely on open-set evaluation, assigning higher confidence to unseen than to seen classes (AUROC 0.38), a failure we term silent hallucination. We retain the slot representation and replace the readout with RSAJEV, a training-free abstaining prototype memory that performs retrieval-based prototype matching: K reference images per class are cached as prototypes via their slot representations under the same prompt, and classification becomes nearest-neighbor retrieval over the prototypes, refined by a shrinkage-Mahalanobis geometric correction. This readout is mechanistically isomorphic to retrieval-augmented generation (RAG) but operates on discriminative decisions; it is the first retrieval-based readout for MLLM slot representations. The retrieval readout reaches 89.43% on the UCM cross-dataset gate with 16 references per class and zero gradient updates, and 96.90% on AID. Its ID-ness scores attain 0.91-0.99 AUROC on open-set evaluation over two datasets, exceeding symbolic confidence (0.38-0.96) in all four open-set settings, restoring a calibratable abstention channel and supporting class addition/removal at zero extra inference cost via offline rescoring of the cached matrix.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>OmniRSI: Taming Latent Diffusion for Unified Multimodal Remote Sensing Image Generation</title>
-    <link href="http://arxiv.org/abs/2610.15414v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.15414v1</id>
-    <published>2026-10-11T00:00:00Z</published>
-    <updated>2026-10-11T00:00:00Z</updated>
-    <author>
-      <name>Hebaixu Wang</name>
-    </author>
-    <author>
-      <name>Jing Zhang</name>
-    </author>
-    <author>
-      <name>Haonan Guo</name>
-    </author>
-    <author>
-      <name>Di Wang</name>
-    </author>
-    <author>
-      <name>Jiayi Ma</name>
-    </author>
-    <author>
-      <name>Bo Du</name>
-    </author>
-    <summary type="text">Multimodal remote sensing image generation emerges as a promising paradigm for recovering complete and complementary observations from heterogeneous and partially observed remote sensing data. However, existing methods predominantly depend on sensor-specific fine-tuning of natural image generation models, limiting unified multimodal generation capacity due to the absence of shared representations and robust conditioning mechanisms. To address these challenges, we propose OmniRSI, a unified multimodal remote sensing image generation model. Specifically, we develop a remote sensing-specific variational autoencoder that captures multimodal priors and promotes a locally smooth latent space for unified representation and robust reconstruction across diverse observed data. Building upon that, we fully adapt Stable Diffusion 3.5 with a ControlNet branch to support unified multimodal generation and translation conditioned on textual and visual cues. Besides, we devise a training-free cyclic latent alignment mechanism that iteratively enriches incomplete visual conditions with generated multimodal information, progressively improving guidance reliability while preserving observed measurements. We also construct RSI-MM, a large-scale dataset comprising 11.5M multi-resolution images with text annotations and partially paired data for training and evaluation. Extensive experiments verify that OmniRSI achieves superior performance in multimodal reconstruction, generation and translation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Under review. Code and datasets will be provided in the https://github.com/MiliLab/OmniRSI&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>A Decade of PhotoMappers: A Longitudinal Study of Crowdsourced Disaster Photos Geolocalization with Vision-Language Models and Geospatial Reasoning</title>
-    <link href="http://arxiv.org/abs/2610.15403v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.15403v1</id>
-    <published>2026-10-11T00:00:00Z</published>
-    <updated>2026-10-11T00:00:00Z</updated>
-    <author>
-      <name>Hao Li</name>
-    </author>
-    <author>
-      <name>Wenping Yin</name>
-    </author>
-    <author>
-      <name>Fabian Deuser</name>
-    </author>
-    <author>
-      <name>Jia Jia</name>
-    </author>
-    <author>
-      <name>Ziqi Liu</name>
-    </author>
-    <author>
-      <name>Levente Juhász</name>
-    </author>
-    <author>
-      <name>Fan Zhang</name>
-    </author>
-    <author>
-      <name>Filip Biljecki</name>
-    </author>
-    <summary type="text">Crowdsourced disaster imagery provides timely, ground-level observations when conventional disaster mapping is delayed or incomplete, yet its geographic value depends on where observations are produced, how they are interpreted, and whether they can be reliably located as actionable Geospatial Intelligence (GEOINT). Using more than a decade of PhotoMappers, a crowdsourced disaster-mapping initiative, this study examines the changing geography of disaster information and asks how emerging GeoAI models compare with human geographic interpretation. We combine longitudinal spatial analysis with cross-view geolocalization using street view imagery (SVI) and remote sensing imagery (RSI), and evaluate vision-language models (VLMs) reasoning through 30 indicators spanning geographic cues and reasoning evidence. The results reveal a geographically and temporally uneven archive shaped by changing disaster types, Community Lifelines, and operational priorities. Integrating VGI, SVI, and RSI with Sinkhorn re-ranking achieves 40.90% R@1, 61.10% R@5, and 69.45% R@10, while yearly R@1 varies markedly from 25.00% to 65.07%. Geographic reasoning is similarly uneven: Qwen3.6-27B achieves an overall agreement of 67% compared with 51% for InternVL3-8B, with both models showing greater difficulty with localized and place-specific evidence than broad spatial configurations. We argue that the value of GeoAI lies less in replacing volunteered geographic interpretation than in complementing it, scaling candidate retrieval while retaining human judgment for ambiguous and consequential cases. This provides a pathway toward more human-centered and responsible GeoAI for disaster mapping. All data and code are openly available at https://github.com/bobleegogogo/PhotoMappers-VLM.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/bobleegogogo/PhotoMappers-VLM"&gt;https://github.com/bobleegogogo/PhotoMappers-VLM&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; GeoLoc&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>EarthAlign: Learning Language-Aligned Representations of Earth System Data</title>
-    <link href="http://arxiv.org/abs/2610.14624v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.14624v1</id>
-    <published>2026-10-10T00:00:00Z</published>
-    <updated>2026-10-10T00:00:00Z</updated>
-    <author>
-      <name>Fadillah Adamsyah Maani</name>
-    </author>
-    <author>
-      <name>Numan Saeed</name>
-    </author>
-    <author>
-      <name>Jiaqi Ma</name>
-    </author>
-    <author>
-      <name>Dat Tien Nguyen</name>
-    </author>
-    <author>
-      <name>Youssef Wehbe</name>
-    </author>
-    <author>
-      <name>Duncan Watson-Parris</name>
-    </author>
-    <author>
-      <name>Salman Khan</name>
-    </author>
-    <summary type="text">Interpreting Earth system conditions is central to understanding environmental risks and informing decisions across weather- and climate-sensitive sectors. Existing multimodal weather systems primarily target task-specific prediction, generation, or question answering, while general-purpose alignment between Earth system data and language remains underexplored due to the limited availability of diverse language supervision grounded in meteorological conditions. To fill this gap, we introduce EarthAlign, a large-scale dataset with broad geographic coverage spanning 2000-2024 that combines 10 expert-curated natural event and disaster data sources with climatology-derived normal-weather samples. Each sample includes temporal and geospatial information and four grounded caption styles aligned with 63-variable ERA5 meteorological data. Building on EarthAlign, we introduce MeteoLIP, a dual-encoder framework for learning aligned meteorology-language representations. MeteoLIP incorporates MetTok, which uses a geolocation- and time-conditioned query to aggregate variable-specific patch embeddings into a compact sequence of meteorology tokens. To comprehensively assess Earth system multimodal representations, we introduce three downstream tasks: cross-modal retrieval, weather-condition classification, and physical variable estimation. Our experiments show that MeteoLIP improves upon the corresponding CLIP and SigLIP baselines across these tasks. Further analyses highlight the importance of meteorological input, temporal and geospatial conditioning, and multi-style supervision for meteorology-language alignment. Thus, EarthAlign and MeteoLIP provide a foundation for learning and evaluating language-aligned representations of Earth system data. Our code, dataset, and weights are publicly available at https://github.com/mbzuai-oryx/EarthAlign.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/mbzuai-oryx/EarthAlign"&gt;https://github.com/mbzuai-oryx/EarthAlign&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;ITR;GeoLoc&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence; Machine Learning" />
   </entry>
 </feed>
