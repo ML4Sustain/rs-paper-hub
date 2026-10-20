@@ -4,12 +4,127 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-19T05:35:04Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 26 entries</subtitle>
+  <updated>2026-10-20T02:19:49Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 21 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Does Tile Granularity Matter? An Empirical Study of Vector Tile Compression for Map Rendering with MapLibre Tiles</title>
+    <link href="http://arxiv.org/abs/2610.25755v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.25755v1</id>
+    <published>2026-10-19T00:00:00Z</published>
+    <updated>2026-10-19T00:00:00Z</updated>
+    <author>
+      <name>Viacheslav Nefedov</name>
+    </author>
+    <author>
+      <name>Ivan Nefedov</name>
+    </author>
+    <author>
+      <name>Petr Datsenko</name>
+    </author>
+    <author>
+      <name>Samuil Datsenko</name>
+    </author>
+    <summary type="text">Vector tiles are delivered as pyramids of small, independently encoded units, whose spatial granularity is largely determined by the tiling scheme. We investigate how this granularity affects compression in column-oriented MapLibre Tiles (MLT), using feature-oriented Mapbox Vector Tiles (MVT) as a baseline. Five heterogeneous geospatial datasets were encoded as conventional tile pyramids and as two denser variants grouping the area of 2 x 2 or 4 x 4 conventional tiles into one encoding unit at approximately matched logical levels of detail. Compared with conventional tiling, the 4 x 4 variant increased MLT's raw size saving over MVT by 1.0-7.3 percentage points across all five datasets. After per-tile gzip, the saving increased by 1.5-6.4 points in four datasets and decreased by 1.4 points in one. Coarser granularity lengthened MLT streams and reduced structural overhead in every dataset. The largest raw gains occurred where conventional tiles had the shortest streams: as mean values per stream rose from 27 to 2,075 across datasets, the raw gain decreased from 7.3 to 1.0 points. Encoded payload bytes per value also declined, with the strongest reductions in two datasets. For the two sparse datasets, coarser units reduced bytes per vertex across both formats, with or without gzip; the resulting 4 x 4 MLT+gzip archives were 71% and 33% smaller than the conventional ones. Thus, the measured compression advantage of MLT depends on spatial encoding-unit granularity, and conventional fine-grained tiling can understate the potential of column-oriented compression.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 16 pages, 6 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.DB" />
+    <category term="cs.GR" />
+  </entry>
+  <entry>
+    <title>Rydberg Atomic Receiver for Wireless Physical Layer: A Survey</title>
+    <link href="http://arxiv.org/abs/2610.25462v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.25462v1</id>
+    <published>2026-10-18T00:00:00Z</published>
+    <updated>2026-10-18T00:00:00Z</updated>
+    <author>
+      <name>Minze Chen</name>
+    </author>
+    <author>
+      <name>Mingyao Cui</name>
+    </author>
+    <author>
+      <name>Zhiao Zhu</name>
+    </author>
+    <author>
+      <name>Jingyi Feng</name>
+    </author>
+    <author>
+      <name>Haodong Zhang</name>
+    </author>
+    <author>
+      <name>Qunsong Zeng</name>
+    </author>
+    <author>
+      <name>Tianqi Mao</name>
+    </author>
+    <author>
+      <name>Dezhi Zheng</name>
+    </author>
+    <author>
+      <name>Kaibin Huang</name>
+    </author>
+    <summary type="text">With the escalating development of the quantum information technologies, the Rydberg atomic receiver has been envisioned as a promising alternative to its classical electronic counterparts, attracting extensive attentions from both physics and electronic engineering disciplines. By exploiting the electrical acuteness of Alkali atoms with diverse Rydberg energy states for electromagnetic field measurement, Rydberg atomic receiver is capable of surmounting the inherent limitations on the operating bandwidth and detection sensitivity of the classical electronic counterparts. Against this background, this article provides an extensive overview of Rydberg atomic communication and sensing from fundamental theory, critical technologies to practical implementations. Firstly, the milestones of the Rydberg atomic receiver evolution was introduced. Then we provide a clear understanding of Rydberg atomic receiver mechanisms from the perspective of classical communication and sensing, and highlight the unprecedented advantages over traditional electronic receivers as well as the technical challenges. Afterwards, necessary fundamentals are presented including the Rydberg atoms, typical non-coherent/coherent structures, and explicit experimental configurations, followed by discussions on state-of-the-art development of the Rydberg atomic receiver. Specifically, advancements on electric-field detection methods for accurate measurement of amplitude, phase, frequency and polarization, are extensively investigated. Based on the established methodologies, recent innovations in Rydberg atomic communication and sensing are reviewed, ranging from waveform design and array-based signal processing to radar applications like localization, imaging and remote sensing, with practical experimental results presented. Finally, we summarize the promising research trends around Rydberg atomic receiver.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Survey&lt;/p&gt;</content>
+    <category term="physics.atom-ph" />
+    <category term="quant-ph" />
+  </entry>
+  <entry>
+    <title>Exploiting sparse conditional dependence in remote sensing observing systems</title>
+    <link href="http://arxiv.org/abs/2610.24710v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.24710v1</id>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
+    <author>
+      <name>Kelvin M. Leung</name>
+    </author>
+    <author>
+      <name>Jouni Susiluoto</name>
+    </author>
+    <author>
+      <name>Regina Eckert</name>
+    </author>
+    <author>
+      <name>Youssef Marzouk</name>
+    </author>
+    <summary type="text">We develop a novel filtering algorithm for remote sensing inverse problems that exploits sparsity in the precision (inverse covariance) matrix arising from conditional independence structures in spatio-temporal satellite data. Motivated by NASA's Orbiting Carbon Observatory-2 (OCO-2), Earth Surface Mineral Dust Source Investigation (EMIT), and upcoming Explorer for Artemis Geology Lunar and Earth (EAGLE) missions, we formulate a Bayesian inference framework for retrieving atmospheric and surface parameters from hyperspectral radiance measurements. Unlike traditional methods that operate on covariances and ignore spatio-temporal dependencies, our approach models the full spatio-temporal state using sparse Gaussian graphical models, which corresponds to a block-sparse precision matrix. We derive an information filter based on this structure, enabling scalable joint inference over large spatial grids with uncertainty propagation. We demonstrate the effectiveness of the algorithm in two distinct remote sensing contexts. First, we apply the method to synthetic data configured to mimic the OCO-2 mission, focusing on retrievals of atmospheric CO$_2$, and observe a 50% reduction in CO$_2$ retrieval error compared to single-pixel methods. Then, we evaluate the algorithm using imaging spectroscopy data from the Surface Biology and Geology (SBG) High Frequency Time Series (SHIFT) campaign to retrieve surface reflectance, achieving a 20% reduction in retrieval error relative to baseline approaches.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 26 pages, 14 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="stat.CO" />
+  </entry>
+  <entry>
+    <title>UDL-RT: A unified differentiable all-sky microwave radiative transfer model with learnable parameterizations</title>
+    <link href="http://arxiv.org/abs/2610.24627v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.24627v1</id>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
+    <author>
+      <name>Zeting Li</name>
+    </author>
+    <author>
+      <name>Wei Han</name>
+    </author>
+    <author>
+      <name>Jie Peng</name>
+    </author>
+    <author>
+      <name>Xuewei Zhang</name>
+    </author>
+    <author>
+      <name>Xiaofeng Wang</name>
+    </author>
+    <author>
+      <name>Xueshun Shen</name>
+    </author>
+    <summary type="text">Radiance-based retrievals and data assimilation require radiative transfer models (RTMs) to simulate radiances and quantify their sensitivities to atmospheric and surface conditions. Conventional RTMs often rely on separately maintained forward, tangent-linear, and adjoint codes, complicating model development and extension. Here, we present the Unified Differentiable and Learnable Radiative Transfer model (UDL-RT), a PyTorch-based framework for all-sky microwave radiative transfer that couples neural-network (NN) parameterizations of gaseous absorption, hydrometeor bulk scattering properties (BSPs), and ocean surface emissivity with an explicit radiative transfer solver in a unified differentiable computational graph. Automatic differentiation directly computes Jacobians with respect to input variables, reducing the model maintenance burden. The NN parameterizations offer flexible representations of complex nonlinear relationships. For example, the NN gas-absorption parameterization reduces the standard deviation of brightness-temperature (TB) errors by approximately 60-85% in the water-vapour channels compared with linear regression. Moreover, UDL-RT propagates loss gradients to trainable parameters to optimize physical parameterizations against observations, with GPU-accelerated batched computation supporting efficient iterative learning. Using Microwave Humidity Sounder-2 (MWHS-2) observations, we optimize the snow BSP parameterization through gradient-based learning. The optimized parameterization improves agreement between simulated and observed TB distributions and reduces the systematic bias and skewness of observation-minus-background (O-B) departures. Overall, UDL-RT integrates radiance simulation, sensitivity analysis, and parameterization optimization within a unified framework, supporting future remote sensing retrieval and data assimilation applications.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 51 pages, 12 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
+    <category term="Atmospheric and Oceanic Physics" />
+  </entry>
   <entry>
     <title>Characterizing the Martin Luther King Event: Sun to Earth Evolution of the January 19, 2026 Geomagnetic Storm</title>
     <link href="http://arxiv.org/abs/2610.23704v1" rel="alternate" type="text/html" />
@@ -241,6 +356,23 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
     <category term="cs.HC" />
+  </entry>
+  <entry>
+    <title>Learning Administrative Boundary-Aware Location Encoders via Reverse Geocoding</title>
+    <link href="http://arxiv.org/abs/2610.24306v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.24306v1</id>
+    <published>2026-10-16T00:00:00Z</published>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <author>
+      <name>Lakshay Sharma</name>
+    </author>
+    <author>
+      <name>Alex Marin</name>
+    </author>
+    <summary type="text">Location encoders learn compact representations of latitude--longitude coordinates for downstream geospatial prediction tasks. Existing approaches are pretrained using continuous or naturally occurring supervision, such as imagery, climate variables, or species distributions, and therefore do not explicitly capture administrative boundaries or place names, despite their strong influence on many real-world geospatial phenomena. We introduce, to our knowledge, the first method for learning administrative boundary-aware location encoders, using reverse-geocoded text as a self-supervised training signal. Our approach can be applied to existing location encoder architectures and consistently improves their downstream performance. We further introduce RevGeoRQ, a custom architecture tailored to reverse-geocoding supervision, which yields additional gains and exceeds contemporary location encoders on several downstream tasks. Finally, the use of human-interpretable reverse-geocoded strings and residual-quantized semantic IDs provides a more interpretable representation of geographic location than existing approaches. Code and model weights to be released soon.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+    <category term="Artificial Intelligence" />
   </entry>
   <entry>
     <title>ISW-Agent: Integrating LLM-Driven Dialogue with n8n Workflow for Internal Solitary Wave Remote Sensing Image Processing</title>
@@ -494,294 +626,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Image and Video Processing" />
     <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>The Last Remote Sensing Model Built by Humans? Casting Any Earth Observation Task as Recursive Self-Improvement</title>
-    <link href="http://arxiv.org/abs/2610.18845v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.18845v2</id>
-    <published>2026-10-13T00:00:00Z</published>
-    <updated>2026-10-13T00:00:00Z</updated>
-    <author>
-      <name>Sijie Zhao</name>
-    </author>
-    <author>
-      <name>Zeqi Zhou</name>
-    </author>
-    <author>
-      <name>Heli Qi</name>
-    </author>
-    <author>
-      <name>Xuanchao Fu</name>
-    </author>
-    <author>
-      <name>Zhuo Zheng</name>
-    </author>
-    <author>
-      <name>Junshi Xia</name>
-    </author>
-    <author>
-      <name>Junjue Wang</name>
-    </author>
-    <author>
-      <name>Weihao Xuan</name>
-    </author>
-    <author>
-      <name>Naoto Yokoya</name>
-    </author>
-    <summary type="text">Earth observation (EO) models are still built by hand. For each new task, experts design a training recipe and tune it against a benchmark. We show that this loop can be handed to an agent. Any verifiable task can be cast as a harness and a verifier, where the harness defines what the agent may use and the verifier defines what counts as success. Every EO task can be made verifiable, through labeled benchmarks, independent sensors, physical models or the repeated observation of the same place. Given only these two components, a general-purpose coding agent builds the EO model and improves it recursively on its own outputs. Settings long treated as separate research problems, from learning with a handful of labels to adapting across domains, become choices of harness and verifier. On four EO benchmarks spanning optical, SAR and multispectral time-series imagery, agent-built models surpass the state of the art and keep most of that accuracy from about 1% of the training labels. This establishes a new paradigm for EO, in which people design harnesses and verifiers and agents build the models, so EO models improve as agents do.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Ongoing project&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="cs.CL" />
-  </entry>
-  <entry>
-    <title>Trust Before Autonomy: Rethinking Agentic Remote Sensing for Crisis Response</title>
-    <link href="http://arxiv.org/abs/2610.18789v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.18789v1</id>
-    <published>2026-10-13T00:00:00Z</published>
-    <updated>2026-10-13T00:00:00Z</updated>
-    <author>
-      <name>Georgios Angelidis</name>
-    </author>
-    <author>
-      <name>Aggelos Psiris</name>
-    </author>
-    <author>
-      <name>Spyridon Evangelatos</name>
-    </author>
-    <author>
-      <name>Thomas Lagkas</name>
-    </author>
-    <author>
-      <name>Panagiotis Sarigiannidis</name>
-    </author>
-    <author>
-      <name>Iraklis Varlamis</name>
-    </author>
-    <author>
-      <name>Georgios Th. Papadopoulos</name>
-    </author>
-    <summary type="text">Agentic remote sensing is evaluated on how many questions it can answer, whereas crisis response depends on whether its answers can be relied on and how much of the decision can safely be handed to the agent. This paper argues that \emph{autonomy should be earned, not assumed}: An Earth-Observation (EO) agent should be granted autonomy in proportion to demonstrated reliability, epistemic honesty and verifiability. The position is supported by an evidential meta-analysis of twelve agentic RS/EO/GIS benchmark studies from peer-reviewed venues. Only one repeats runs, three contain unanswerable tasks and none measures calibration. Their own tables show that completed workflows are often not correct (task success exceeds tool-call correctness by up to 54pp on identical queries), that the gap to an expert trajectory widens overall with trajectory length (from 7 to 56pp), and that capability does not predict abstention (Spearman r from -0.25 to 0.50, all n.s.). The paper then contributes three EO-specific trust properties, an autonomy ladder for crisis EO tasks, and a readiness protocol that replays archived emergency activations before any live use. In this context, current evidence justifies assistive roles only.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="cs.CY" />
-  </entry>
-  <entry>
-    <title>MajorTOM:Elliot Pretrain, A Multi-Sensor, Multi-Temporal Pretraining Dataset for Earth Observation</title>
-    <link href="http://arxiv.org/abs/2610.18624v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.18624v1</id>
-    <published>2026-10-13T00:00:00Z</published>
-    <updated>2026-10-13T00:00:00Z</updated>
-    <author>
-      <name>Carmen Oliver Huidobro</name>
-    </author>
-    <author>
-      <name>Mikolaj Czerkawski</name>
-    </author>
-    <author>
-      <name>Kevin Monsalvez-Pozo</name>
-    </author>
-    <author>
-      <name>Cesar Aybar</name>
-    </author>
-    <author>
-      <name>Gustau Camps-Valls</name>
-    </author>
-    <author>
-      <name>Oscar J. Pellicer-Valero</name>
-    </author>
-    <summary type="text">Pretraining generalist Earth observation foundation models requires data that combine several sensors, varied temporal sampling and, increasingly, text, yet open datasets rarely provide all three in one consistent, easily accessible form. We introduce MajorTOM:Elliot Pretrain, a collection of 279,166 tiles of 10 km drawn from the Major-TOM grid by clustering AlphaEarth embeddings. Each tile stacks Sentinel-2 L1C, Landsat-8/9, Sentinel-1 RTC, Copernicus DEM and ESA WorldCover on a shared 1056x1056-pixel, 10 m grid, complemented by cloud masks, OpenStreetMap entities and ERA5 weather. The tiles are partitioned into three temporal regimes, Monotemporal (250,000 tiles, one acquisition), Monthly (12,500 tiles, twelve acquisitions spread over the annual cycle) and Burst (16,666 tiles, six acquisitions within 30 days), and are released as 6.3 TB of Cloud Optimized GeoTIFFs indexed by TACO v3 Parquet metadata, a standard that allows cloud streaming, efficient data access, and filtering before any pixel is read. A companion library derives sensor-tagged fact sheets, captions and 16 families of vision-language tasks from these layers at load time. We test our design choices in short pretraining runs of OlmoEarth-Base. First, a 25% subset of Major-TOM Core-S2L2A curated with AlphaEarth embeddings matches or exceeds the full corpus on 8 of 9 benchmarks. Second, on Elliot-Pretrain, adding Landsat-8/9 improves or matches Sentinel-2 only pretraining on every benchmark. Third, using DEM and WorldCover as prediction targets during pretraining further improves 8 of 9 benchmarks, while giving the same maps to the encoder as inputs degrades 5 of 9. Fourth, Sentinel-1 helps on 7 of 9 benchmarks, particularly on benchmarks with radar inputs. Fifth, rule-based captions match a small language model at no cost. The dataset is openly available at https://source.coop/major-tom/elliot-pretrain.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Behavioural self-monitoring for autonomous earth observation agents: The attribute reliability monitor (ARM)</title>
-    <link href="http://arxiv.org/abs/2610.18548v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.18548v1</id>
-    <published>2026-10-13T00:00:00Z</published>
-    <updated>2026-10-13T00:00:00Z</updated>
-    <author>
-      <name>Alejandro D. Mousist</name>
-    </author>
-    <summary type="text">Language and vision language models can support autonomous systems, but changing operating conditions may compromise the reliability of their semantic outputs. This work introduces the Attribute Reliability Monitor (ARM), a framework that accumulates evidence of suspicion over time to assess individual semantic attributes. ARM accommodates different detectors and temporal monitoring methods, while leaving intervention policies to the consuming system. An initial implementation was evaluated using a specialized vision language model developed for satellite thermal infrared imagery. Monitoring followed a black box approach, using only observable responses without access to internal model states, confidence scores, or external reference answers. Under controlled input degradation, disagreement between responses provided evidence for selective suspension of attributes. The results illustrate how external behavioral monitoring can inform continued use of model outputs, while distinguishing operational suspicion from semantic correctness.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted for presentation at the European Space Agency's Agentic AI for EO 2026 Conference (see https://agentic-eo.berlin/)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Robotics" />
-  </entry>
-  <entry>
-    <title>ReDiS: Reasoning-Diagnosis Self-Evolution for Multimodal Reasoning in Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2610.18388v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.18388v1</id>
-    <published>2026-10-13T00:00:00Z</published>
-    <updated>2026-10-13T00:00:00Z</updated>
-    <author>
-      <name>Yi Liu</name>
-    </author>
-    <author>
-      <name>Wentao Jiang</name>
-    </author>
-    <author>
-      <name>Shuo Ni</name>
-    </author>
-    <author>
-      <name>Zhiming Luo</name>
-    </author>
-    <author>
-      <name>Di Wang</name>
-    </author>
-    <author>
-      <name>Zengmao Wang</name>
-    </author>
-    <author>
-      <name>Jing Zhang</name>
-    </author>
-    <author>
-      <name>Bo Du</name>
-    </author>
-    <summary type="text">Multimodal large language models (MLLMs) have shown strong potential for remote sensing understanding, yet reliable reasoning remains challenging when tasks require fine-grained visual grounding and multi-step inference. Existing approaches typically rely on either costly pre-constructed reasoning trajectories or self-generated signals such as response consistency, which can reinforce shared errors and provide unreliable supervision. We introduce \textbf{Reasoning--Diagnosis Self-Evolution (ReDiS)}, a framework that separates reasoning exploration from candidate evaluation while allowing the two processes to evolve jointly. ReDiS instantiates two role-specific experts from a shared multimodal backbone: a \textbf{Reasoner} that explores diverse visual evidence--answer candidates and a \textbf{Diagnoser} that jointly evaluates the complete candidate set and provides credibility-aware feedback. As the Reasoner evolves, it exposes new candidate distributions and failure modes; the Diagnoser adapts to these changes and, in turn, reshapes the learning signal for subsequent exploration. To handle groups in which all sampled answers are incorrect and group-relative advantages vanish, we further introduce \textbf{Failure-Triggered Recovery (FTR)}, which provides minimal outcome-level correction without prescribing intermediate reasoning trajectories. Experiments on LHRS-Bench, MME-RS, and CHOICE show consistent improvements over Qwen3.5 backbones at 0.8B, 2B, and 4B scales. ReDiS improves category-averaged accuracy by 6.47 percentage points at 0.8B, while ReDiS-4B achieves the highest average performance among the compared remote sensing MLLMs.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Hallucination-aware Faithful Reasoning in Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2610.18369v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.18369v1</id>
-    <published>2026-10-13T00:00:00Z</published>
-    <updated>2026-10-13T00:00:00Z</updated>
-    <author>
-      <name>Yi Liu</name>
-    </author>
-    <author>
-      <name>Jing Zhang</name>
-    </author>
-    <author>
-      <name>Xiang Feng</name>
-    </author>
-    <author>
-      <name>Xiaoyu Tian</name>
-    </author>
-    <author>
-      <name>Haonan Guo</name>
-    </author>
-    <author>
-      <name>Di Wang</name>
-    </author>
-    <author>
-      <name>Zengmao Wang</name>
-    </author>
-    <author>
-      <name>Bo Du</name>
-    </author>
-    <summary type="text">Multimodal large language models (MLLMs) have demonstrated promising capabilities for remote sensing reasoning, yet they frequently generate visually unsupported reasoning that contradicts the visual evidence. Existing post-training methods optimize primarily for final-answer correctness, providing limited supervision for identifying and correcting hallucinations that arise during the reasoning process. To address this limitation, we propose \textbf{FaithRS}, a hallucination-aware self-reflection framework for faithful reasoning in remote sensing. We first construct \textbf{SFHD-43K}, a dataset of 43K structured, fine-grained hallucination annotations, and train a detector to identify hallucination types, underlying causes, and supporting visual evidence. FaithRS then incorporates this diagnostic feedback into a Safe Detector-Guided Corrective Rollout framework, where a safety-aware gate selectively determines whether and how to revise the response. Training is driven by a composite reward that jointly optimizes answer accuracy, reasoning faithfulness, hallucination reduction, format compliance, and revision safety. Experiments with Qwen3.5 backbones (0.8B, 4B, and 9B) show consistent improvements across four remote sensing benchmarks, with gains of up to 11.64 points.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Omni-RS: Unifying Multi-Task Understanding and Generation in Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2610.18323v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.18323v1</id>
-    <published>2026-10-13T00:00:00Z</published>
-    <updated>2026-10-13T00:00:00Z</updated>
-    <author>
-      <name>Pan Yin. Shuai Yang</name>
-    </author>
-    <author>
-      <name>Yuanhao Liu</name>
-    </author>
-    <author>
-      <name>Datao Tang</name>
-    </author>
-    <author>
-      <name>Jialin Li</name>
-    </author>
-    <author>
-      <name>Hao Wang</name>
-    </author>
-    <author>
-      <name>Pei Liu</name>
-    </author>
-    <author>
-      <name>Kaiyu Li</name>
-    </author>
-    <author>
-      <name>Cong Zhao</name>
-    </author>
-    <author>
-      <name>Xiangyong Cao</name>
-    </author>
-    <summary type="text">Practical remote sensing applications often require both understanding and generation capabilities for the same geographic scene. However, most existing methods address either understanding or generation in isolation, while existing unified remote sensing models' generative ability is limited to text-to-image. To bridge this gap, we propose Omni-RS, a unified framework supporting four remote sensing understanding tasks and five generation tasks. Specifically, we introduce the "Scene-Guided Two-Stage Training" strategy, which first adapts a multimodal large language model to remote sensing understanding and then uses its hidden states to guide a diffusion transformer for image generation. To enable joint learning across diverse generation tasks, we construct UniGen, a unified multi-task generation dataset, by organizing heterogeneous remote sensing data into a unified format. Furthermore, we introduce "Detailed Visual Conditioning", which uses visual conditions encoded by a VAE to guide the generation process, thereby supporting additional generation tasks that require reference images. Extensive experiments demonstrate that Omni-RS performs exceptionally well in understanding tasks and has achieved outstanding results in a variety of generative tasks.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Deficit-Driven Stratified Acquisition for Building STRATA-S12: An Open SAR-Optical Corpus for Self-Supervised Learning</title>
-    <link href="http://arxiv.org/abs/2610.17680v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.17680v1</id>
-    <published>2026-10-13T00:00:00Z</published>
-    <updated>2026-10-13T00:00:00Z</updated>
-    <author>
-      <name>Christian Sanchez-Leon</name>
-    </author>
-    <author>
-      <name>Dongming Chen</name>
-    </author>
-    <author>
-      <name>Dongqi Wang</name>
-    </author>
-    <summary type="text">Building a co-registered SAR-optical corpus for self-supervised Earth Observation is above all an acquisition problem, yet the main multi-modal datasets are collected opportunistically, with no per-stratum quota control and no mechanism against the geographic dropout that non-uniform cloud cover leaves behind. We present Deficit-Driven Stratified Acquisition (DDSA), an algorithm that treats building a co-registered Sentinel-1/Sentinel-2 corpus as a constrained maximum-coverage problem over a hemisphere-corrected (class x season x region) stratification, enforces strict temporal pairing and a multi-stage quality gate, and closes the loop during acquisition with a human-in-the-loop deficit-repair stage. Measured on its own product, the algorithm yields three results a single-pass acquisition cannot report. Deficit-driven ordering makes a partial run a covering one: it holds every one of the 192 strata populated from the first few percent of the budget, where an abundance-first order leaves most strata empty until the end. Whether a failed attempt can be recovered depends on the temporal persistence of its cause, not the kind of defect: geometric failures such as nodata are among the most repairable (eta = 41.4%) while cloud is among the least (eta = 18.8%), because a cloudy location is cloudy on most dates of its season. The repair loop supplies 39.5% of the released pairs at no measurable quality cost, with 89.8% surviving manual review. The quality guarantee has a price: 2,928,370 acquisition attempts produced 740,746 released pairs. We release the corpus, STRATA-S12, with STAC/PDS4-aligned FAIR sidecars, and a pre-registered linear-probe check confirms it is fit for self-supervised pre-training. A metadata-level coverage comparison against SSL4EO-S12 and SEN12MS situates the corpus over a shared frame; systematic cross-corpus and cross-method comparison is left to follow-up work.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 55 pages. Dataset on Hugging Face: https://huggingface.co/datasets/chsanleo/strata-s12 - archived on Zenodo: STRATA-S12 corpus https://doi.org/10.5281/zenodo.22699047 ; reduced subset (D_lite) https://doi.org/10.5281/zenodo.22646276&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Image and Video Processing" />
-    <category term="Computer Vision; Machine Learning" />
-  </entry>
-  <entry>
-    <title>Exploring Interpretability in Deep Learning-Based Forest Classification - Separating Similar Forest Classes using Sentinel-2 Time Series</title>
-    <link href="http://arxiv.org/abs/2610.19270v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.19270v1</id>
-    <published>2026-10-13T00:00:00Z</published>
-    <updated>2026-10-13T00:00:00Z</updated>
-    <author>
-      <name>Maximilian Kirsch</name>
-    </author>
-    <author>
-      <name>Christine Preisach</name>
-    </author>
-    <summary type="text">The ecological insurance theory posits that diverse forests are more resilient and better able to adapt to changing environmental conditions. Increasing drought and heat stress in Central Europe promotes mixed forests for maintaining ecosystem services. However, a diverse species distribution complicates remote sensing-based species mapping, as distinguishing pure from mixed species compositions at the pixel level remains challenging. We evaluated the potential of recurrent neural networks (RNNs) for tree-species classification from Sentinel-2 time series and investigated the spectral-temporal features underlying class discrimination, with particular emphasis on separating pure from mixed Norway spruce pixels. We compared RNN classification models with Random Forest (RF) and Extreme Gradient Boosting (XGBoost) and used Integrated Gradients (IG) to quantify feature attributions across spectral bands and time. The best-performing RNN achieved a Macro-F1 score of 0.851 on the test data, outperforming XGBoost by 0.012 and Random Forest by 0.103. Beyond classification performance, the attribution analysis revealed distinct spectral-temporal patterns associated with the separation of pure and mixed Norway spruce pixels. Attribution values increased particularly after approximately day of year (DOY) 125, while B11 showed the strongest contribution during periods of increasing spectral divergence between the two classes. These findings show that recurrent models can provide competitive classification performance while also revealing the phenological periods and spectral regions that are most relevant for distinguishing closely related forest compositions. Combining time-series classification with explainability therefore provides additional insight into the spectral-temporal mechanisms underlying tree-species discrimination and may support more detailed mapping of mixed forest structures.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>The Gap Is in the Geometry: A Convergent Meta-Analysis of Multi-Facet Aerial and Remote Sensing Video Understanding</title>
-    <link href="http://arxiv.org/abs/2610.19102v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.19102v1</id>
-    <published>2026-10-13T00:00:00Z</published>
-    <updated>2026-10-13T00:00:00Z</updated>
-    <author>
-      <name>Georgios Angelidis</name>
-    </author>
-    <author>
-      <name>Aggelos Psiris</name>
-    </author>
-    <author>
-      <name>Maria Vakalopoulou</name>
-    </author>
-    <author>
-      <name>Georgios Th. Papadopoulos</name>
-    </author>
-    <author>
-      <name>Giorgos Sfikas</name>
-    </author>
-    <author>
-      <name>Iraklis Varlamis</name>
-    </author>
-    <summary type="text">Aerial and remote sensing video is increasingly evaluated like web video, by posing multiple-choice questions to multimodal large language models (MLLMs) over sampled frames and reporting accuracy. This paper argues that this recipe measures the wrong aspect, and supports the claim with a convergent meta-analysis of a broad set of published results, organized in four evidence tiers, in which a claim becomes a position only when collected evidence agrees. Parameter scale exhibits a median of +3.4 accuracy points per tenfold increase on aerial benchmarks, far below a human gap of at least 19 points, whereas acquisition conditions control perception, as 315 of 318 evaluations in 19 within-paper contrasts lose accuracy when conditions such as altitude, view, object size or time horizon become harder. No aerial benchmark in the corpus combines video input with per-task human and random baselines, competence collapses from answering to acting in closed-loop navigation, and the same MLLMs score higher on the aerial benchmark than on ground spatial ones, but lower on studies that test cross-view geometry. From these findings the current study derives five falsifiable principles and proposes the AVU-Card, a reporting card for aerial video benchmarks</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages, 3 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>

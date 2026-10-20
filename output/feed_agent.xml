@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_agent.xml</id>
   <link href="https://rspaper.top/output/feed_agent.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-19T05:35:04Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
+  <updated>2026-10-20T02:19:49Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 1 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -31,90 +31,5 @@
     <summary type="text">Internal solitary wave (ISW) remote sensing requires task parameters and spatial information to be transferred across image acquisition, detection, stripe extraction, and propagation prediction. Here, we present ISW-Agent, which integrates large language model (LLM) interpretation with n8n workflows and independent scientific models through structured task constraints, geospatial transformations, and stage-specific output validation. In tests of 120 Chinese instructions per backend, GPT-5.6 Sol and DeepSeek both achieved a strict task-match rate of 94.2%, with all intents and execution decisions matching the reference. Sentinel-1 cases demonstrated continuous processing from dialogue requests to wavefront prediction for the specified scene. Of 50 timed scenes, 39 completed detection, extraction, and prediction with a median turnaround time of 48.04 s; 11 stopped after empty extraction. Across 3,408 controlled fault-injection runs, retries recovered 234 transient-failure conditions and output validation rejected 234 structural defects, while 61 provenance or completeness errors indicated the need for content-consistency checks. Overall, ISW-Agent thus connects natural-language requests to traceable spatial processing chains for multimodel ISW analysis.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>The Last Remote Sensing Model Built by Humans? Casting Any Earth Observation Task as Recursive Self-Improvement</title>
-    <link href="http://arxiv.org/abs/2610.18845v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.18845v2</id>
-    <published>2026-10-13T00:00:00Z</published>
-    <updated>2026-10-13T00:00:00Z</updated>
-    <author>
-      <name>Sijie Zhao</name>
-    </author>
-    <author>
-      <name>Zeqi Zhou</name>
-    </author>
-    <author>
-      <name>Heli Qi</name>
-    </author>
-    <author>
-      <name>Xuanchao Fu</name>
-    </author>
-    <author>
-      <name>Zhuo Zheng</name>
-    </author>
-    <author>
-      <name>Junshi Xia</name>
-    </author>
-    <author>
-      <name>Junjue Wang</name>
-    </author>
-    <author>
-      <name>Weihao Xuan</name>
-    </author>
-    <author>
-      <name>Naoto Yokoya</name>
-    </author>
-    <summary type="text">Earth observation (EO) models are still built by hand. For each new task, experts design a training recipe and tune it against a benchmark. We show that this loop can be handed to an agent. Any verifiable task can be cast as a harness and a verifier, where the harness defines what the agent may use and the verifier defines what counts as success. Every EO task can be made verifiable, through labeled benchmarks, independent sensors, physical models or the repeated observation of the same place. Given only these two components, a general-purpose coding agent builds the EO model and improves it recursively on its own outputs. Settings long treated as separate research problems, from learning with a handful of labels to adapting across domains, become choices of harness and verifier. On four EO benchmarks spanning optical, SAR and multispectral time-series imagery, agent-built models surpass the state of the art and keep most of that accuracy from about 1% of the training labels. This establishes a new paradigm for EO, in which people design harnesses and verifiers and agents build the models, so EO models improve as agents do.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Ongoing project&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="cs.CL" />
-  </entry>
-  <entry>
-    <title>Trust Before Autonomy: Rethinking Agentic Remote Sensing for Crisis Response</title>
-    <link href="http://arxiv.org/abs/2610.18789v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.18789v1</id>
-    <published>2026-10-13T00:00:00Z</published>
-    <updated>2026-10-13T00:00:00Z</updated>
-    <author>
-      <name>Georgios Angelidis</name>
-    </author>
-    <author>
-      <name>Aggelos Psiris</name>
-    </author>
-    <author>
-      <name>Spyridon Evangelatos</name>
-    </author>
-    <author>
-      <name>Thomas Lagkas</name>
-    </author>
-    <author>
-      <name>Panagiotis Sarigiannidis</name>
-    </author>
-    <author>
-      <name>Iraklis Varlamis</name>
-    </author>
-    <author>
-      <name>Georgios Th. Papadopoulos</name>
-    </author>
-    <summary type="text">Agentic remote sensing is evaluated on how many questions it can answer, whereas crisis response depends on whether its answers can be relied on and how much of the decision can safely be handed to the agent. This paper argues that \emph{autonomy should be earned, not assumed}: An Earth-Observation (EO) agent should be granted autonomy in proportion to demonstrated reliability, epistemic honesty and verifiability. The position is supported by an evidential meta-analysis of twelve agentic RS/EO/GIS benchmark studies from peer-reviewed venues. Only one repeats runs, three contain unanswerable tasks and none measures calibration. Their own tables show that completed workflows are often not correct (task success exceeds tool-call correctness by up to 54pp on identical queries), that the gap to an expert trajectory widens overall with trajectory length (from 7 to 56pp), and that capability does not predict abstention (Spearman r from -0.25 to 0.50, all n.s.). The paper then contributes three EO-specific trust properties, an autonomy ladder for crisis EO tasks, and a readiness protocol that replays archived emergency activations before any live use. In this context, current evidence justifies assistive roles only.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="cs.CY" />
-  </entry>
-  <entry>
-    <title>Behavioural self-monitoring for autonomous earth observation agents: The attribute reliability monitor (ARM)</title>
-    <link href="http://arxiv.org/abs/2610.18548v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.18548v1</id>
-    <published>2026-10-13T00:00:00Z</published>
-    <updated>2026-10-13T00:00:00Z</updated>
-    <author>
-      <name>Alejandro D. Mousist</name>
-    </author>
-    <summary type="text">Language and vision language models can support autonomous systems, but changing operating conditions may compromise the reliability of their semantic outputs. This work introduces the Attribute Reliability Monitor (ARM), a framework that accumulates evidence of suspicion over time to assess individual semantic attributes. ARM accommodates different detectors and temporal monitoring methods, while leaving intervention policies to the consuming system. An initial implementation was evaluated using a specialized vision language model developed for satellite thermal infrared imagery. Monitoring followed a black box approach, using only observable responses without access to internal model states, confidence scores, or external reference answers. Under controlled input degradation, disagreement between responses provided evidence for selective suspension of attributes. The results illustrate how external behavioral monitoring can inform continued use of model outputs, while distinguishing operational suspicion from semantic correctness.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted for presentation at the European Space Agency's Agentic AI for EO 2026 Conference (see https://agentic-eo.berlin/)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Robotics" />
   </entry>
 </feed>

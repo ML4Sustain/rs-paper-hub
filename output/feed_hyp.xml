@@ -4,12 +4,35 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-19T05:35:04Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 6 entries</subtitle>
+  <updated>2026-10-20T02:19:49Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Exploiting sparse conditional dependence in remote sensing observing systems</title>
+    <link href="http://arxiv.org/abs/2610.24710v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.24710v1</id>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
+    <author>
+      <name>Kelvin M. Leung</name>
+    </author>
+    <author>
+      <name>Jouni Susiluoto</name>
+    </author>
+    <author>
+      <name>Regina Eckert</name>
+    </author>
+    <author>
+      <name>Youssef Marzouk</name>
+    </author>
+    <summary type="text">We develop a novel filtering algorithm for remote sensing inverse problems that exploits sparsity in the precision (inverse covariance) matrix arising from conditional independence structures in spatio-temporal satellite data. Motivated by NASA's Orbiting Carbon Observatory-2 (OCO-2), Earth Surface Mineral Dust Source Investigation (EMIT), and upcoming Explorer for Artemis Geology Lunar and Earth (EAGLE) missions, we formulate a Bayesian inference framework for retrieving atmospheric and surface parameters from hyperspectral radiance measurements. Unlike traditional methods that operate on covariances and ignore spatio-temporal dependencies, our approach models the full spatio-temporal state using sparse Gaussian graphical models, which corresponds to a block-sparse precision matrix. We derive an information filter based on this structure, enabling scalable joint inference over large spatial grids with uncertainty propagation. We demonstrate the effectiveness of the algorithm in two distinct remote sensing contexts. First, we apply the method to synthetic data configured to mimic the OCO-2 mission, focusing on retrievals of atmospheric CO$_2$, and observe a 50% reduction in CO$_2$ retrieval error compared to single-pixel methods. Then, we evaluate the algorithm using imaging spectroscopy data from the Surface Biology and Geology (SBG) High Frequency Time Series (SHIFT) campaign to retrieve surface reflectance, achieving a 20% reduction in retrieval error relative to baseline approaches.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 26 pages, 14 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="stat.CO" />
+  </entry>
   <entry>
     <title>PiCo: Physics-Informed Concept Probing for Geo-Foundation Models</title>
     <link href="http://arxiv.org/abs/2610.20973v1" rel="alternate" type="text/html" />
@@ -55,113 +78,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Image and Video Processing" />
     <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>The Last Remote Sensing Model Built by Humans? Casting Any Earth Observation Task as Recursive Self-Improvement</title>
-    <link href="http://arxiv.org/abs/2610.18845v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.18845v2</id>
-    <published>2026-10-13T00:00:00Z</published>
-    <updated>2026-10-13T00:00:00Z</updated>
-    <author>
-      <name>Sijie Zhao</name>
-    </author>
-    <author>
-      <name>Zeqi Zhou</name>
-    </author>
-    <author>
-      <name>Heli Qi</name>
-    </author>
-    <author>
-      <name>Xuanchao Fu</name>
-    </author>
-    <author>
-      <name>Zhuo Zheng</name>
-    </author>
-    <author>
-      <name>Junshi Xia</name>
-    </author>
-    <author>
-      <name>Junjue Wang</name>
-    </author>
-    <author>
-      <name>Weihao Xuan</name>
-    </author>
-    <author>
-      <name>Naoto Yokoya</name>
-    </author>
-    <summary type="text">Earth observation (EO) models are still built by hand. For each new task, experts design a training recipe and tune it against a benchmark. We show that this loop can be handed to an agent. Any verifiable task can be cast as a harness and a verifier, where the harness defines what the agent may use and the verifier defines what counts as success. Every EO task can be made verifiable, through labeled benchmarks, independent sensors, physical models or the repeated observation of the same place. Given only these two components, a general-purpose coding agent builds the EO model and improves it recursively on its own outputs. Settings long treated as separate research problems, from learning with a handful of labels to adapting across domains, become choices of harness and verifier. On four EO benchmarks spanning optical, SAR and multispectral time-series imagery, agent-built models surpass the state of the art and keep most of that accuracy from about 1% of the training labels. This establishes a new paradigm for EO, in which people design harnesses and verifiers and agents build the models, so EO models improve as agents do.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Ongoing project&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="cs.CL" />
-  </entry>
-  <entry>
-    <title>MajorTOM:Elliot Pretrain, A Multi-Sensor, Multi-Temporal Pretraining Dataset for Earth Observation</title>
-    <link href="http://arxiv.org/abs/2610.18624v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.18624v1</id>
-    <published>2026-10-13T00:00:00Z</published>
-    <updated>2026-10-13T00:00:00Z</updated>
-    <author>
-      <name>Carmen Oliver Huidobro</name>
-    </author>
-    <author>
-      <name>Mikolaj Czerkawski</name>
-    </author>
-    <author>
-      <name>Kevin Monsalvez-Pozo</name>
-    </author>
-    <author>
-      <name>Cesar Aybar</name>
-    </author>
-    <author>
-      <name>Gustau Camps-Valls</name>
-    </author>
-    <author>
-      <name>Oscar J. Pellicer-Valero</name>
-    </author>
-    <summary type="text">Pretraining generalist Earth observation foundation models requires data that combine several sensors, varied temporal sampling and, increasingly, text, yet open datasets rarely provide all three in one consistent, easily accessible form. We introduce MajorTOM:Elliot Pretrain, a collection of 279,166 tiles of 10 km drawn from the Major-TOM grid by clustering AlphaEarth embeddings. Each tile stacks Sentinel-2 L1C, Landsat-8/9, Sentinel-1 RTC, Copernicus DEM and ESA WorldCover on a shared 1056x1056-pixel, 10 m grid, complemented by cloud masks, OpenStreetMap entities and ERA5 weather. The tiles are partitioned into three temporal regimes, Monotemporal (250,000 tiles, one acquisition), Monthly (12,500 tiles, twelve acquisitions spread over the annual cycle) and Burst (16,666 tiles, six acquisitions within 30 days), and are released as 6.3 TB of Cloud Optimized GeoTIFFs indexed by TACO v3 Parquet metadata, a standard that allows cloud streaming, efficient data access, and filtering before any pixel is read. A companion library derives sensor-tagged fact sheets, captions and 16 families of vision-language tasks from these layers at load time. We test our design choices in short pretraining runs of OlmoEarth-Base. First, a 25% subset of Major-TOM Core-S2L2A curated with AlphaEarth embeddings matches or exceeds the full corpus on 8 of 9 benchmarks. Second, on Elliot-Pretrain, adding Landsat-8/9 improves or matches Sentinel-2 only pretraining on every benchmark. Third, using DEM and WorldCover as prediction targets during pretraining further improves 8 of 9 benchmarks, while giving the same maps to the encoder as inputs degrades 5 of 9. Fourth, Sentinel-1 helps on 7 of 9 benchmarks, particularly on benchmarks with radar inputs. Fifth, rule-based captions match a small language model at no cost. The dataset is openly available at https://source.coop/major-tom/elliot-pretrain.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Deficit-Driven Stratified Acquisition for Building STRATA-S12: An Open SAR-Optical Corpus for Self-Supervised Learning</title>
-    <link href="http://arxiv.org/abs/2610.17680v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.17680v1</id>
-    <published>2026-10-13T00:00:00Z</published>
-    <updated>2026-10-13T00:00:00Z</updated>
-    <author>
-      <name>Christian Sanchez-Leon</name>
-    </author>
-    <author>
-      <name>Dongming Chen</name>
-    </author>
-    <author>
-      <name>Dongqi Wang</name>
-    </author>
-    <summary type="text">Building a co-registered SAR-optical corpus for self-supervised Earth Observation is above all an acquisition problem, yet the main multi-modal datasets are collected opportunistically, with no per-stratum quota control and no mechanism against the geographic dropout that non-uniform cloud cover leaves behind. We present Deficit-Driven Stratified Acquisition (DDSA), an algorithm that treats building a co-registered Sentinel-1/Sentinel-2 corpus as a constrained maximum-coverage problem over a hemisphere-corrected (class x season x region) stratification, enforces strict temporal pairing and a multi-stage quality gate, and closes the loop during acquisition with a human-in-the-loop deficit-repair stage. Measured on its own product, the algorithm yields three results a single-pass acquisition cannot report. Deficit-driven ordering makes a partial run a covering one: it holds every one of the 192 strata populated from the first few percent of the budget, where an abundance-first order leaves most strata empty until the end. Whether a failed attempt can be recovered depends on the temporal persistence of its cause, not the kind of defect: geometric failures such as nodata are among the most repairable (eta = 41.4%) while cloud is among the least (eta = 18.8%), because a cloudy location is cloudy on most dates of its season. The repair loop supplies 39.5% of the released pairs at no measurable quality cost, with 89.8% surviving manual review. The quality guarantee has a price: 2,928,370 acquisition attempts produced 740,746 released pairs. We release the corpus, STRATA-S12, with STAC/PDS4-aligned FAIR sidecars, and a pre-registered linear-probe check confirms it is fit for self-supervised pre-training. A metadata-level coverage comparison against SSL4EO-S12 and SEN12MS situates the corpus over a shared frame; systematic cross-corpus and cross-method comparison is left to follow-up work.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 55 pages. Dataset on Hugging Face: https://huggingface.co/datasets/chsanleo/strata-s12 - archived on Zenodo: STRATA-S12 corpus https://doi.org/10.5281/zenodo.22699047 ; reduced subset (D_lite) https://doi.org/10.5281/zenodo.22646276&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Image and Video Processing" />
-    <category term="Computer Vision; Machine Learning" />
-  </entry>
-  <entry>
-    <title>Exploring Interpretability in Deep Learning-Based Forest Classification - Separating Similar Forest Classes using Sentinel-2 Time Series</title>
-    <link href="http://arxiv.org/abs/2610.19270v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.19270v1</id>
-    <published>2026-10-13T00:00:00Z</published>
-    <updated>2026-10-13T00:00:00Z</updated>
-    <author>
-      <name>Maximilian Kirsch</name>
-    </author>
-    <author>
-      <name>Christine Preisach</name>
-    </author>
-    <summary type="text">The ecological insurance theory posits that diverse forests are more resilient and better able to adapt to changing environmental conditions. Increasing drought and heat stress in Central Europe promotes mixed forests for maintaining ecosystem services. However, a diverse species distribution complicates remote sensing-based species mapping, as distinguishing pure from mixed species compositions at the pixel level remains challenging. We evaluated the potential of recurrent neural networks (RNNs) for tree-species classification from Sentinel-2 time series and investigated the spectral-temporal features underlying class discrimination, with particular emphasis on separating pure from mixed Norway spruce pixels. We compared RNN classification models with Random Forest (RF) and Extreme Gradient Boosting (XGBoost) and used Integrated Gradients (IG) to quantify feature attributions across spectral bands and time. The best-performing RNN achieved a Macro-F1 score of 0.851 on the test data, outperforming XGBoost by 0.012 and Random Forest by 0.103. Beyond classification performance, the attribution analysis revealed distinct spectral-temporal patterns associated with the separation of pure and mixed Norway spruce pixels. Attribution values increased particularly after approximately day of year (DOY) 125, while B11 showed the strongest contribution during periods of increasing spectral divergence between the two classes. These findings show that recurrent models can provide competitive classification performance while also revealing the phenological periods and spectral regions that are most relevant for distinguishing closely related forest compositions. Combining time-series classification with explainability therefore provides additional insight into the spectral-temporal mechanisms underlying tree-species discrimination and may support more detailed mapping of mixed forest structures.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>
