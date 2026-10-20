@@ -28413,7 +28413,7 @@
     "Institute": "",
     "Title": "Omni-RS: Unifying Multi-Task Understanding and Generation in Remote Sensing",
     "abbr.": "",
-    "Paper_link": "http://arxiv.org/abs/2610.18323v1",
+    "Paper_link": "http://arxiv.org/abs/2610.18323v2",
     "Abstract": "Practical remote sensing applications often require both understanding and generation capabilities for the same geographic scene. However, most existing methods address either understanding or generation in isolation, while existing unified remote sensing models' generative ability is limited to text-to-image. To bridge this gap, we propose Omni-RS, a unified framework supporting four remote sensing understanding tasks and five generation tasks. Specifically, we introduce the \"Scene-Guided Two-Stage Training\" strategy, which first adapts a multimodal large language model to remote sensing understanding and then uses its hidden states to guide a diffusion transformer for image generation. To enable joint learning across diverse generation tasks, we construct UniGen, a unified multi-task generation dataset, by organizing heterogeneous remote sensing data into a unified format. Furthermore, we introduce \"Detailed Visual Conditioning\", which uses visual conditions encoded by a VAE to guide the generation process, thereby supporting additional generation tasks that require reference images. Extensive experiments demonstrate that Omni-RS performs exceptionally well in understanding tasks and has achieved outstanding results in a variety of generative tasks.",
     "code": "",
     "Publication": "",

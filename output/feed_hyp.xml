@@ -4,12 +4,70 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-20T02:19:49Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
+  <updated>2026-10-20T05:37:28Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 5 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Quantifying Uncertainty Bounds in Spectral Shallow Water Bathymetry: The Profile Likelihood Framework for Semi-Analytical Models</title>
+    <link href="http://arxiv.org/abs/2610.26352v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.26352v1</id>
+    <published>2026-10-19T00:00:00Z</published>
+    <updated>2026-10-19T00:00:00Z</updated>
+    <author>
+      <name>Mohamed Ali Ghannami</name>
+    </author>
+    <author>
+      <name>Guillaume Sicot</name>
+    </author>
+    <author>
+      <name>Isabelle Quidu</name>
+    </author>
+    <author>
+      <name>Sylvie Daniel</name>
+    </author>
+    <summary type="text">Accurate bathymetric mapping in shallow waters is critical for coastal monitoring, navigation safety, and environmental conservation. While semi-analytical (SA) models have proven effective for estimating water column depth (WCD) from optical remote sensing data, quantifying the associated uncertainties remains a significant challenge. This study introduces a unified framework based on profile likelihood to evaluate WCD uncertainties in Semi-Analytical (SA) models, bridging traditional variance-covariance methods with likelihood-based inference. Through controlled simulations, we systematically assess the performance of first-order statistical tests-likelihood ratio, Wald (observed and expected), and score tests-across varying environmental conditions and sensor configurations.&lt;p&gt;Our results demonstrate that the expected Fisher information Wald test, equivalent to classical variance-covariance propagation, provides reliable uncertainty bounds in hyperspectral settings with clear waters. However, its performance deteriorates in multispectral applications and complex water conditions, where likelihood ratio tests prove more robust. This divergence highlights fundamental limitations in the small-sample regime typical of per-pixel spectral bathymetry. Notably, even under idealized conditions with true parameter initialization, local optimization challenges in SA models can compromise both parameter estimation and uncertainty quantification, suggesting even greater challenges in practical applications with less favorable initialization. The findings underscore the importance of robust statistical inference in improving the reliability of bathymetric products for operational applications.&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="stat.AP" />
+  </entry>
+  <entry>
+    <title>A Generic On-Board AI Processing Chain for Earth Observation: From Application Development to Embedded Deployment and Mission-Level Orchestration</title>
+    <link href="http://arxiv.org/abs/2610.26340v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.26340v1</id>
+    <published>2026-10-19T00:00:00Z</published>
+    <updated>2026-10-19T00:00:00Z</updated>
+    <author>
+      <name>Michel-Fran{\c c}ois Foulon</name>
+    </author>
+    <author>
+      <name>Liz Ramos Medina</name>
+    </author>
+    <author>
+      <name>Thomas Goudemant</name>
+    </author>
+    <author>
+      <name>Clotilde Szywala</name>
+    </author>
+    <author>
+      <name>Virgile Robles</name>
+    </author>
+    <author>
+      <name>Cl{é}ment Petitjean</name>
+    </author>
+    <author>
+      <name>Ad{è}le Hankache</name>
+    </author>
+    <author>
+      <name>Omar Hlimi</name>
+    </author>
+    <summary type="text">Earth observation satellites acquire more data than they can downlink. Extracting information on board with artificial intelligence (AI) turns the satellite into a data-reduction stage that downlinks compact products, such as masks or detections, instead of full scenes; deploying it in a mission, however, involves the whole processing chain and not only the neural network. We present a generic on-board AI processing chain along three axes, with wildfire segmentation as the worked example among ship detection and cloud segmentation. (i) The AI model is tuned (spectral-band selection, input normalization), quantized to 8-bit integers (int8) and ported to an AMD Versal VCK190, with its excellent segmentation performance preserved on the board. (ii) A modular tiler-inference-mosaicer workflow, reused unchanged across applications, brings the tile-level model to scene level, turning a full acquisition into a scene-level mask or detection list. (iii) Each step is packaged as a unikernel and orchestrated on board by ORCHIDE, a cloud-native orchestrator. The chain is characterized end to end, from the standalone execution on the target to its execution under orchestration with parallel workflows on a representative test bench. Beyond AI inference on individual tiles, this approach aims at increasing the maturity of on-board AI deployment by addressing a complete processing chain, from the acquired scene to the mission-level execution.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+    <category term="cs.AR; cs.DC" />
+  </entry>
   <entry>
     <title>Exploiting sparse conditional dependence in remote sensing observing systems</title>
     <link href="http://arxiv.org/abs/2610.24710v1" rel="alternate" type="text/html" />
