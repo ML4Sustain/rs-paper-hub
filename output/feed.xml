@@ -4,12 +4,70 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-20T05:37:28Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 25 entries</subtitle>
+  <updated>2026-10-21T02:13:12Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 28 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Towards Consistent Geospatial Representations: Aligning One Encoder to Many Foundation Models</title>
+    <link href="http://arxiv.org/abs/2610.28313v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.28313v1</id>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <author>
+      <name>Arthur Ouaknine</name>
+    </author>
+    <author>
+      <name>David Rolnick</name>
+    </author>
+    <summary type="text">Geospatial foundation models (GFMs) differ widely in pretraining objective, modality and resolution, and none leads across benchmarks. We ask whether their representations are complementary, and whether a single encoder can inherit that complementarity. We introduce Pangaea-Latents, an extension of the Pangaea benchmark providing frozen embeddings of $5$ GFMs over its $11$ datasets, along with reproduced baselines, and find GFM embeddings to be neither redundant nor disjoint. We then propose GeoMixture, a preliminary framework to align a ViT to several GFMs per dataset through a multi-representation alignment (mREPA) objective. Our encoder ties the best GFM in average rank across nine Pangaea datasets, trading peak performance for cross-task consistency.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS REO Workshop 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Revealing Inter-Channel Modality Discriminability: Channel Selective Interaction Fusion Network for Optical-SAR Object Detection</title>
+    <link href="http://arxiv.org/abs/2610.27757v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.27757v1</id>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <author>
+      <name>Haojie Li</name>
+    </author>
+    <author>
+      <name>Yuanfei Huang</name>
+    </author>
+    <author>
+      <name>Lingfei Song</name>
+    </author>
+    <author>
+      <name>Jia Li</name>
+    </author>
+    <author>
+      <name>Lizhi Wang</name>
+    </author>
+    <summary type="text">Synthetic aperture radar (SAR) and optical imagery provide complementary structural and appearance information for remote sensing object detection. However, substantial cross-modal discrepancies and indiscriminate channel interaction inevitably introduce redundant or conflicting features. Since different feature channels encode heterogeneous semantic information and contribute unequally to cross-modal fusion, selectively highlighting task-relevant channels while suppressing redundant ones is essential. To address this issue, we propose the Channel Selective Interaction Fusion Network (CSIF-Net), which performs selective channel-level cross-modal interaction. CSIF-Net first employs a frequency decomposition module to construct frequency-aware SAR inputs, facilitating the separation of structural information from noise-related responses. It then models cross-modal channel relationships through a cross-attention channel selection module and dynamically partitions the features into shared and modality-specific components. Finally, a dual-branch fusion module performs cross-modal interaction and channel realignment for shared features while independently enhancing SAR-specific features, thereby exploiting complementary information and suppressing modality interference. Extensive experiments on the OGSOD 1.0 and M4-SAR datasets demonstrate that CSIF-Net achieves state-of-the-art performance in both horizontal and oriented object detection, surpassing the existing methods by 4.01% and 3.18% gains, respectively.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Multimedia" />
+  </entry>
+  <entry>
+    <title>Semantic Communications: Principles, Architectures and Applications</title>
+    <link href="http://arxiv.org/abs/2610.27544v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.27544v1</id>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <author>
+      <name>Sasa Maric</name>
+    </author>
+    <summary type="text">Conventional communication systems are designed to transmit data reliably, focusing on metrics such as bit error rate, throughput, and channel capacity. However, these traditional measures do not evaluate whether the received information is actually useful for a specific downstream task. To address this limitation, semantic communication has emerged as a promising paradigm that prioritizes the meaning, context, and task relevance of transmitted information rather than raw bit level reconstruction. This paper presents a comprehensive review of the theoretical foundations, system architectures, learning techniques, and evaluation practices in semantic communications. We classify existing state-of-the-art algorithms ranging from deep joint source-channel coding (Deep JSCC) and task-oriented feature transmission to generative diffusion models and contrast their operational trade offs against conventional baselines. Furthermore, we examine key application domains, including remote sensing, autonomous vehicles, and healthcare IoT, while addressing open challenges in security, privacy, robustness, and standardized evaluation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 pages 3 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.NI" />
+  </entry>
   <entry>
     <title>Does Tile Granularity Matter? An Empirical Study of Vector Tile Compression for Map Rendering with MapLibre Tiles</title>
     <link href="http://arxiv.org/abs/2610.25755v1" rel="alternate" type="text/html" />
@@ -138,6 +196,142 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
     <category term="Artificial Intelligence" />
     <category term="cs.AR; cs.DC" />
+  </entry>
+  <entry>
+    <title>Choose your own adventure: How data source selection shapes urban accessibility analyses</title>
+    <link href="http://arxiv.org/abs/2610.27390v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.27390v1</id>
+    <published>2026-10-19T00:00:00Z</published>
+    <updated>2026-10-19T00:00:00Z</updated>
+    <author>
+      <name>Geoff Boeing</name>
+    </author>
+    <author>
+      <name>Jiyoon Kim</name>
+    </author>
+    <author>
+      <name>Daniele Simon-Thompson</name>
+    </author>
+    <author>
+      <name>Jaehyun Ha</name>
+    </author>
+    <author>
+      <name>Ruoyu Chen</name>
+    </author>
+    <summary type="text">Urban park accessibility shapes mental health, physical well-being, and community cohesion. Measuring it is thus central to urban and landscape planning. Although researchers have debated the impacts of different accessibility measures on analysis results, scant attention has been paid to variability from data source selection. Do the results of accessibility analyses vary depending on the dataset used to define park locations and attributes? We compare four widely used geospatial data sources - OpenStreetMap, Esri, SafeGraph, and The Trust for Public Land - by validating their data and measuring park access across two cities. These datasets purport to cover the same spatial features, but our findings reveal wide discrepancies in accessibility results, driven by differences in dataset completeness, coverage, and accuracy between the sources. We provide guidelines for selecting and carefully validating data for accessibility analyses, as these decisions directly impact the accuracy and equity of downstream urban park planning and decision-making.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="stat.AP" />
+    <category term="cs.CY; econ.GN" />
+  </entry>
+  <entry>
+    <title>Analytical Chemistry at the Planetary Frontier</title>
+    <link href="http://arxiv.org/abs/2610.27197v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.27197v1</id>
+    <published>2026-10-19T00:00:00Z</published>
+    <updated>2026-10-19T00:00:00Z</updated>
+    <author>
+      <name>Mavia Anjum</name>
+    </author>
+    <summary type="text">Planetary science depends on chemical measurements made under conditions very different from those in a terrestrial laboratory. This review treats the analytical methods of planetary science as one connected chain, from orbital remote sensing through in-situ measurements by landers and rovers and sample collection and curation, to the micro-analysis of returned material on Earth. Orbital methods, including visible and near-infrared reflectance, thermal emission and gamma-ray and neutron spectroscopy, are discussed first. In-situ techniques are then reviewed, including laser-induced breakdown spectroscopy (LIBS), micro-focus X-ray fluorescence (XRF), deep-ultraviolet Raman and fluorescence spectroscopy, evolved gas analysis with gas chromatography-mass spectrometry (GC-MS) and miniaturized mass spectrometry. Contamination control and curation practices are described, followed by laboratory techniques such as secondary ion mass spectrometry (SIMS and NanoSIMS), atom probe tomography (APT), thermal ionization mass spectrometry (TIMS), synchrotron micro-XRF and X-ray absorption near-edge structure (XANES) spectroscopy. Accuracy, calibration and reference materials are discussed as the link between in-situ and laboratory data, and the role of chemometrics and data fusion is examined. Flight and laboratory instruments are compared in terms of spatial resolution, detection limit, sample consumption and throughput. Active neutron-gamma spectroscopy planned for the Dragonfly mission to Titan is also discussed. This comparison shows that in-situ and laboratory techniques are complementary. In-situ instruments provide context and select samples, while laboratory techniques provide isotopic, molecular and speciation data that cannot yet be obtained in situ.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 Pages, 6 Figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="astro-ph.EP" />
+    <category term="astro-ph.IM; physics.ins-det" />
+  </entry>
+  <entry>
+    <title>The science case for an in-situ measurement platform in the Venus clouds</title>
+    <link href="http://arxiv.org/abs/2610.27038v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.27038v1</id>
+    <published>2026-10-19T00:00:00Z</published>
+    <updated>2026-10-19T00:00:00Z</updated>
+    <author>
+      <name>Maureen Cohen</name>
+    </author>
+    <author>
+      <name>Joanna Egan</name>
+    </author>
+    <author>
+      <name>Martin Airey</name>
+    </author>
+    <author>
+      <name>Karen Aplin</name>
+    </author>
+    <author>
+      <name>Gilles Bailet</name>
+    </author>
+    <author>
+      <name>Paul Byrne</name>
+    </author>
+    <author>
+      <name>Chris Castelli</name>
+    </author>
+    <author>
+      <name>Charles Cockell</name>
+    </author>
+    <author>
+      <name>Nathan Mayne</name>
+    </author>
+    <author>
+      <name>Blair McGinness</name>
+    </author>
+    <author>
+      <name>Ingo Mueller-Wodarg</name>
+    </author>
+    <author>
+      <name>John Plane</name>
+    </author>
+    <author>
+      <name>Julia Semprich</name>
+    </author>
+    <author>
+      <name>Denis Sergeev</name>
+    </author>
+    <author>
+      <name>Wencheng Shao</name>
+    </author>
+    <author>
+      <name>Alexander Stott</name>
+    </author>
+    <author>
+      <name>Roland Young</name>
+    </author>
+    <summary type="text">The next step for Venus exploration after the remote sensing missions of the early 2030s will be in-situ aerial platforms, the Venus equivalent of rovers for Mars. Sophisticated Venus balloon technology is already under development and presents an opportunity for the United Kingdom to act as a bilateral partner in missions exploring key questions about the volcanic and geological history of Venus, the potential habitability of the Venus clouds, and Venus as an analogue for exoplanets. White paper written for the UKSA Space Frontiers 2035 programme.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 11 pages, UKSA Space Frontiers 2035&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="astro-ph.IM" />
+    <category term="astro-ph.EP" />
+  </entry>
+  <entry>
+    <title>Long-wave Infrared Polarimetric Remote Sensing Image Fusion for Vehicle Detection</title>
+    <link href="http://arxiv.org/abs/2610.27018v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.27018v1</id>
+    <published>2026-10-19T00:00:00Z</published>
+    <updated>2026-10-19T00:00:00Z</updated>
+    <author>
+      <name>Wenjuan Zhang</name>
+    </author>
+    <author>
+      <name>Xiangrui Peng</name>
+    </author>
+    <author>
+      <name>Zhen Li</name>
+    </author>
+    <author>
+      <name>Caimeng Yi</name>
+    </author>
+    <author>
+      <name>Xuesong Ma</name>
+    </author>
+    <author>
+      <name>Jianwei Wang</name>
+    </author>
+    <author>
+      <name>Jie Pan</name>
+    </author>
+    <summary type="text">Blurred vehicle contours and low contrast limit detection performance in infrared remote sensing imagery, while existing fusion methods may introduce polarization noise and fail to integrate complementary information effectively. To address these limitations, we propose a Mamba-based infrared polarimetric remote sensing image fusion model. Infrared polarization information reflects surface material properties and geometry, providing complementary information to infrared intensity. The proposed method first combines long-wave infrared total intensity S0 and the degree of linear polarization (DoLP), using a physics-inspired polarization-response proxy and spatial structural continuity to extract guidance features. It then employs bidirectional state space scanning along horizontal, vertical, and both diagonal orientations to enable cross-modal feature fusion across the entire image. Prior-guided multi-window structural similarity, reconstruction constraints, and a relative lower-bound loss for polarization saliency are jointly introduced to suppress noise while preserving global background structures and target polarization features. In addition, we construct AIR-LWIR-Pol, a dataset of 1,901 accurately registered image pairs acquired using an airborne division-of-aperture long-wave infrared polarimetric imaging system, and evaluate downstream vehicle detection using YOLO11. The experimental results show that the proposed method outperforms the comparison methods on four fusion metrics, including entropy and structural similarity. Vehicle detection mAP50 and mAP50-95 reach 55.0% and 29.4%. These results demonstrate the effectiveness of combining physical priors with state space modeling for long-wave infrared polarization image fusion and support its use for target detection in complex remote sensing scenes.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
   </entry>
   <entry>
     <title>Rydberg Atomic Receiver for Wireless Physical Layer: A Survey</title>
@@ -284,8 +478,8 @@
   </entry>
   <entry>
     <title>ShadowCast: On-the-Fly Context-Aware Shadow Augmentation for Remote Sensing Image Segmentation</title>
-    <link href="http://arxiv.org/abs/2610.23440v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.23440v1</id>
+    <link href="http://arxiv.org/abs/2610.23440v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.23440v2</id>
     <published>2026-10-16T00:00:00Z</published>
     <updated>2026-10-16T00:00:00Z</updated>
     <author>
@@ -464,8 +658,8 @@
   </entry>
   <entry>
     <title>Learning Administrative Boundary-Aware Location Encoders via Reverse Geocoding</title>
-    <link href="http://arxiv.org/abs/2610.24306v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.24306v1</id>
+    <link href="http://arxiv.org/abs/2610.24306v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.24306v2</id>
     <published>2026-10-16T00:00:00Z</published>
     <updated>2026-10-16T00:00:00Z</updated>
     <author>
@@ -574,162 +768,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Revealing the Spatial Distribution of Dust and Plasma Solitary Waves in Jupiter's Innermost Magnetosphere Using Juno Waves Observations</title>
-    <link href="http://arxiv.org/abs/2610.20541v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.20541v1</id>
-    <published>2026-10-14T00:00:00Z</published>
-    <updated>2026-10-14T00:00:00Z</updated>
-    <author>
-      <name>Wenyu Zhang</name>
-    </author>
-    <author>
-      <name>Hao Cao</name>
-    </author>
-    <author>
-      <name>William S. Kurth</name>
-    </author>
-    <author>
-      <name>Mitchell M. Shen</name>
-    </author>
-    <author>
-      <name>Darrelle Wilkinson</name>
-    </author>
-    <author>
-      <name>Donglai Ma</name>
-    </author>
-    <author>
-      <name>Martin Brennan</name>
-    </author>
-    <author>
-      <name>George Hospodarsky</name>
-    </author>
-    <author>
-      <name>Scott J. Bolton</name>
-    </author>
-    <summary type="text">Jupiter's faint ring system contains micron- and submicron-sized dust whose dynamics are influenced by the planet's rapidly rotating magnetic field. Optical observations have established the morphology of the main ring and halo, but tenuous dust close to Jupiter remains difficult to characterize. We analyze nearly a decade of in-situ Juno Waves electric-field measurements using a two-stage convolutional neural network to identify and classify dust impacts, solitary waves, and other plasma waves. These in-situ dust-impact detections reveal a radially evolving structure extending well inside the traditionally observed halo. In the innermost region, dust is concentrated in a compact, equatorially symmetric layer, indicating that the optical inner boundary does not mark the end of the dust population. Farther outward, the layer expands vertically into a broad halo before contracting toward the main ring, directly revealing the toroidal morphology of the Jovian halo. Dust number density is enhanced within the halo and near the main-ring--halo transition. The vertical distribution also develops hemispheric asymmetries that vary with radial distance, consistent with an influence of Jupiter's magnetic geometry on charged-dust dynamics. In contrast, solitary waves occur predominantly at high latitudes, and their mapped magnetic footprints show a strong spatial correspondence with Jovian auroral structures, particularly the main auroral oval. Together, these in-situ measurements extend the remote-sensing picture of Jupiter's rings and reveal previously unresolved dust and plasma structures in its innermost magnetosphere.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Submitted to Astrophysics Journal (APJ)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="astro-ph.EP" />
-    <category term="physics.space-ph" />
-  </entry>
-  <entry>
-    <title>Tracking a solar energetic eruption and associated energetic particles from Sun to spacecraft</title>
-    <link href="http://arxiv.org/abs/2610.20026v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.20026v1</id>
-    <published>2026-10-14T00:00:00Z</published>
-    <updated>2026-10-14T00:00:00Z</updated>
-    <author>
-      <name>D. E. Morosan</name>
-    </author>
-    <author>
-      <name>M. Baumgartner-Steinleitner</name>
-    </author>
-    <author>
-      <name>K. Bhandari</name>
-    </author>
-    <author>
-      <name>N. Dresing</name>
-    </author>
-    <author>
-      <name>G. Farwa</name>
-    </author>
-    <author>
-      <name>J. A. J. Mitchell</name>
-    </author>
-    <author>
-      <name>C. Palmroos</name>
-    </author>
-    <author>
-      <name>A. Razquin</name>
-    </author>
-    <author>
-      <name>J. Zhang</name>
-    </author>
-    <author>
-      <name>C. Briand</name>
-    </author>
-    <author>
-      <name>K. Dissauer</name>
-    </author>
-    <author>
-      <name>A. Fedeli</name>
-    </author>
-    <author>
-      <name>J. Gieseler</name>
-    </author>
-    <author>
-      <name>E. K. J. Kilpua</name>
-    </author>
-    <author>
-      <name>S. Normo</name>
-    </author>
-    <author>
-      <name>J. Pomoell</name>
-    </author>
-    <author>
-      <name>D. J. Price</name>
-    </author>
-    <author>
-      <name>A. M. Veronig</name>
-    </author>
-    <author>
-      <name>A. Warmuth</name>
-    </author>
-    <author>
-      <name>R. Vainio</name>
-    </author>
-    <summary type="text">Context. Solar energetic particles (SEPs) in the heliosphere are produced by flaring processes on the Sun or shocks driven by coronal mass ejections (CMEs). Electrons, in particular, are regularly detected remotely as electromagnetic radiation (X-rays or radio emission), which they generate through various processes, as well as in situ by spacecraft monitoring the Sun and the heliosphere. Aims. We aim to combine remote-sensing and in situ observations of an energetic solar eruption to link energetic processes in the solar corona to energetic particles observed in situ in the heliosphere. This will be done using the tools developed in the Horizon Europe SOLER project. Methods. Here, we investigate a solar energetic eruption at the Sun together with its associated signatures of accelerated electrons observed at radio and X-ray wavelengths and combine these remote observations to in situ particles observed by spacecraft on 10 March 2024. These observations are combined with a magneto-hydrodynamic (MHD) model of the solar corona in order to make the remote to in situ connections. Results. We observe a high-energy SEP event at multiple spacecraft (&gt;25 MeV protons and 1 MeV electrons), despite the event being associated with a slow white-light CME. Remote observations of the Sun show that the event was associated with a fast large scale coronal wave (1400 km/s) and also multiple regions where electrons are accelerated around this large scale wave observed as type II radio bursts. In addition, we observe a strong coronal dimming away from the main flaring region, providing evidence of field lines getting opened to interplanetary space, dislocated from the flare site.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages, 11 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="astro-ph.SR" />
-    <category term="physics.space-ph" />
-  </entry>
-  <entry>
-    <title>PiCo: Physics-Informed Concept Probing for Geo-Foundation Models</title>
-    <link href="http://arxiv.org/abs/2610.20973v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.20973v1</id>
-    <published>2026-10-14T00:00:00Z</published>
-    <updated>2026-10-14T00:00:00Z</updated>
-    <author>
-      <name>Yihang She</name>
-    </author>
-    <author>
-      <name>Andrew Blake</name>
-    </author>
-    <author>
-      <name>Jianbo Qi</name>
-    </author>
-    <author>
-      <name>Srinivasan Keshav</name>
-    </author>
-    <summary type="text">Geo-foundation models (GFMs) are typically evaluated by downstream task predictive performance, revealing little about which physical features they are sensitive to or use in prediction. This limits developers' ability to test hypotheses about model behaviour and users' ability to select models for new tasks. We propose Physics-Informed Concept Probing (PiCo), a post-hoc framework for explaining GFM predictions. PiCo identifies concept vectors in a GFM's embedding space by generating synthetic multispectral satellite observations from a 3D radiative transfer model coupled with a game engine. These vectors reveal physical sensitivities that inform domain-based hypotheses about downstream performance. Projecting embeddings onto these concept vectors produces low-dimensional representations for quantifying concept importance in making predictions. We evaluate PiCo on three GFMs with different input modalities using seven physical concepts covering forest leaf optics and canopy structure. In ground-cover estimation, RGB restriction reduces dry-matter sensitivity and disproportionately degrades predictions for dry vegetation and bare ground, supporting a hypothesis derived from sensitivity analysis. For hierarchical forest type and tree species classification, concept representations retain 70.0-93.8% of full-embedding accuracy. Models capture similar physical contrasts between classes, such as structural differences between broadleaf forest and cleared ground and leaf-water-content differences between oak and beech, yet differ in the strength of these contrasts and the concepts driving classification. PiCo thus provides a physical basis for hypothesis testing and model assessment, with potential applicability beyond Earth observation wherever forward models enable controlled simulation and pretrained embeddings are accessible for probing.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Deep Learning for Forest Plantation Mapping in Godavari Districts of Andhra Pradesh, India</title>
-    <link href="http://arxiv.org/abs/2610.22415v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.22415v1</id>
-    <published>2026-10-14T00:00:00Z</published>
-    <updated>2026-10-14T00:00:00Z</updated>
-    <author>
-      <name>Snehal More</name>
-    </author>
-    <author>
-      <name>Anuj Karpatne</name>
-    </author>
-    <author>
-      <name>Valerie A. Thomas</name>
-    </author>
-    <author>
-      <name>Randolph H. Wynne</name>
-    </author>
-    <summary type="text">Small-area forest plantations play a vital role in the socioeconomic well-being of farmers in Southeast Asia. Most plantations are established on former agricultural land, often on land less suitable for agriculture. Plantations that are converted from natural forest have adverse impacts on biodiversity. Mapping small-area plantations is thus important to understand the dynamics of forest cover in Southeast Asia and to study the social, economic, and ecological effects of this important land cover and land use change. While the small size of forest plantations makes it difficult to detect them using moderate resolution satellite sensors, the problem is exacerbated by the high degree of mixing between plantations, surrounding vegetation, and other land covers, which often show variegated responses in satellite signals across space and time. In this paper, we study the problem of mapping small-area forest plantations in East and West Godavari districts of Andhra Pradesh, India using deep learning methods. Remotely sensed cloud-free data from the Harmonized Landsat Sentinel-2 S10 product were classified using a pixel-level neural network and training data labeled using a field-based survey in concert with expert aerial photo interpretation. We compare the performance of deep learning methods with a baseline random forest classifier in our study region of 21543 sq. km over a period of 3 years and analyze the differences in the results across land cover classes and seasons.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Image and Video Processing" />
-    <category term="Machine Learning" />
   </entry>
 </feed>

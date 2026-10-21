@@ -8206,5 +8206,24 @@
     "_added_date": "2026-10-16",
     "Category": "Method",
     "_tasks": "CLS"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Multimedia",
+    "Date": "2026-10-20",
+    "Month": 10,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Revealing Inter-Channel Modality Discriminability: Channel Selective Interaction Fusion Network for Optical-SAR Object Detection",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2610.27757v1",
+    "Abstract": "Synthetic aperture radar (SAR) and optical imagery provide complementary structural and appearance information for remote sensing object detection. However, substantial cross-modal discrepancies and indiscriminate channel interaction inevitably introduce redundant or conflicting features. Since different feature channels encode heterogeneous semantic information and contribute unequally to cross-modal fusion, selectively highlighting task-relevant channels while suppressing redundant ones is essential. To address this issue, we propose the Channel Selective Interaction Fusion Network (CSIF-Net), which performs selective channel-level cross-modal interaction. CSIF-Net first employs a frequency decomposition module to construct frequency-aware SAR inputs, facilitating the separation of structural information from noise-related responses. It then models cross-modal channel relationships through a cross-attention channel selection module and dynamically partitions the features into shared and modality-specific components. Finally, a dual-branch fusion module performs cross-modal interaction and channel realignment for shared features while independently enhancing SAR-specific features, thereby exploiting complementary information and suppressing modality interference. Extensive experiments on the OGSOD 1.0 and M4-SAR datasets demonstrate that CSIF-Net achieves state-of-the-art performance in both horizontal and oriented object detection, surpassing the existing methods by 4.01% and 3.18% gains, respectively.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{li2026revealing,\n  title={Revealing Inter-Channel Modality Discriminability: Channel Selective Interaction Fusion Network for Optical-SAR Object Detection},\n  author={Haojie Li and Yuanfei Huang and Lingfei Song and Jia Li and Lizhi Wang},\n  journal={arXiv preprint arXiv:2610.27757v1},\n  year={2026},\n  url={http://arxiv.org/abs/2610.27757v1}\n}",
+    "Authors": "Haojie Li, Yuanfei Huang, Lingfei Song, Jia Li, Lizhi Wang",
+    "_added_date": "2026-10-21",
+    "Category": "Method",
+    "_tasks": "OD"
   }
 ]

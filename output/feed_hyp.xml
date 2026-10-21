@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-20T05:37:28Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 5 entries</subtitle>
+  <updated>2026-10-21T02:13:12Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -90,51 +90,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 26 pages, 14 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="stat.CO" />
-  </entry>
-  <entry>
-    <title>PiCo: Physics-Informed Concept Probing for Geo-Foundation Models</title>
-    <link href="http://arxiv.org/abs/2610.20973v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.20973v1</id>
-    <published>2026-10-14T00:00:00Z</published>
-    <updated>2026-10-14T00:00:00Z</updated>
-    <author>
-      <name>Yihang She</name>
-    </author>
-    <author>
-      <name>Andrew Blake</name>
-    </author>
-    <author>
-      <name>Jianbo Qi</name>
-    </author>
-    <author>
-      <name>Srinivasan Keshav</name>
-    </author>
-    <summary type="text">Geo-foundation models (GFMs) are typically evaluated by downstream task predictive performance, revealing little about which physical features they are sensitive to or use in prediction. This limits developers' ability to test hypotheses about model behaviour and users' ability to select models for new tasks. We propose Physics-Informed Concept Probing (PiCo), a post-hoc framework for explaining GFM predictions. PiCo identifies concept vectors in a GFM's embedding space by generating synthetic multispectral satellite observations from a 3D radiative transfer model coupled with a game engine. These vectors reveal physical sensitivities that inform domain-based hypotheses about downstream performance. Projecting embeddings onto these concept vectors produces low-dimensional representations for quantifying concept importance in making predictions. We evaluate PiCo on three GFMs with different input modalities using seven physical concepts covering forest leaf optics and canopy structure. In ground-cover estimation, RGB restriction reduces dry-matter sensitivity and disproportionately degrades predictions for dry vegetation and bare ground, supporting a hypothesis derived from sensitivity analysis. For hierarchical forest type and tree species classification, concept representations retain 70.0-93.8% of full-embedding accuracy. Models capture similar physical contrasts between classes, such as structural differences between broadleaf forest and cleared ground and leaf-water-content differences between oak and beech, yet differ in the strength of these contrasts and the concepts driving classification. PiCo thus provides a physical basis for hypothesis testing and model assessment, with potential applicability beyond Earth observation wherever forward models enable controlled simulation and pretrained embeddings are accessible for probing.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Deep Learning for Forest Plantation Mapping in Godavari Districts of Andhra Pradesh, India</title>
-    <link href="http://arxiv.org/abs/2610.22415v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.22415v1</id>
-    <published>2026-10-14T00:00:00Z</published>
-    <updated>2026-10-14T00:00:00Z</updated>
-    <author>
-      <name>Snehal More</name>
-    </author>
-    <author>
-      <name>Anuj Karpatne</name>
-    </author>
-    <author>
-      <name>Valerie A. Thomas</name>
-    </author>
-    <author>
-      <name>Randolph H. Wynne</name>
-    </author>
-    <summary type="text">Small-area forest plantations play a vital role in the socioeconomic well-being of farmers in Southeast Asia. Most plantations are established on former agricultural land, often on land less suitable for agriculture. Plantations that are converted from natural forest have adverse impacts on biodiversity. Mapping small-area plantations is thus important to understand the dynamics of forest cover in Southeast Asia and to study the social, economic, and ecological effects of this important land cover and land use change. While the small size of forest plantations makes it difficult to detect them using moderate resolution satellite sensors, the problem is exacerbated by the high degree of mixing between plantations, surrounding vegetation, and other land covers, which often show variegated responses in satellite signals across space and time. In this paper, we study the problem of mapping small-area forest plantations in East and West Godavari districts of Andhra Pradesh, India using deep learning methods. Remotely sensed cloud-free data from the Harmonized Landsat Sentinel-2 S10 product were classified using a pixel-level neural network and training data labeled using a field-based survey in concert with expert aerial photo interpretation. We compare the performance of deep learning methods with a baseline random forest classifier in our study region of 21543 sq. km over a period of 3 years and analyze the differences in the results across land cover classes and seasons.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Image and Video Processing" />
-    <category term="Machine Learning" />
   </entry>
 </feed>
