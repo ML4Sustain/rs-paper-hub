@@ -4,12 +4,134 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-21T05:38:39Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 28 entries</subtitle>
+  <updated>2026-10-22T02:07:39Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 30 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Multiclass Boundary Refinement with Neural Cellular Automata for Remote Sensing Land Cover Segmentation</title>
+    <link href="http://arxiv.org/abs/2610.30007v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.30007v1</id>
+    <published>2026-10-21T00:00:00Z</published>
+    <updated>2026-10-21T00:00:00Z</updated>
+    <author>
+      <name>Pascoassis Souza Santos Meira</name>
+    </author>
+    <author>
+      <name>Gilson Antonio Giraldi</name>
+    </author>
+    <author>
+      <name>Rafael Duarte Coelho dos Santos</name>
+    </author>
+    <summary type="text">Semantic segmentation of remote sensing imagery often places class boundaries a few pixels away from where they truly lie, and this position error is concentrated in the thin band measured by Boundary IoU (BIoU). We treat boundary refinement as the iterated application of a small learned local rule: the Boundary Refinement Neural Cellular Automaton (BRNCA), that starts from the class probabilities of a frozen, pre-trained segmenter and corrects them cell by cell. We generalise the binary rNCA to the multiclass case by keeping the visible channels on the probability simplex through an Aitchison (log-space) update and by adding free hidden channels. The best configuration improves the mean BIoU over the base segmenter by 2.36 points (from 46.63 to 48.99). The gain is concentrated on the irregular woodland class (+8.5 points BIoU); this suggests that position error is correlated with the fractal dimension of the class boundaries.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Geospatial Dynamics of Online Attention to Nuclear Power in Japan Before and After Fukushima</title>
+    <link href="http://arxiv.org/abs/2610.29924v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.29924v1</id>
+    <published>2026-10-21T00:00:00Z</published>
+    <updated>2026-10-21T00:00:00Z</updated>
+    <author>
+      <name>Yifan Sun</name>
+    </author>
+    <author>
+      <name>Ken Kurosaki</name>
+    </author>
+    <author>
+      <name>Benjamin C. McLellan</name>
+    </author>
+    <summary type="text">Nuclear power is increasingly seen as necessary for sustainable development, but this role depends on informed public engagement and support. Building this support requires understanding what citizens want to know, as reflected in their spontaneous online searches. To map this demand, we present the first long-term (2004-2024), prefecture-level analysis of Google Trends data on nuclear power in Japan. The results indicate that in routine periods, search interest followed a host-locality pattern, being significantly higher in prefectures hosting nuclear plants, with little spillover to their neighbors. Immediately after the Fukushima Daiichi accident in March 2011, this pattern changed, and interest instead declined with distance from Fukushima, before the host-locality pattern returned from 2012. During March 2011, searches leaned heavily toward general and live information rather than guidance on what to do. Their framing also varied with proximity, as those near Fukushima prioritized live updates and formal countermeasures, while others leaned toward background information and personal-scale questions. These patterns and the shift between them provide a behavioral evidence base for designing communication strategies in Japan and countries weighing the use of nuclear power. More broadly, the finding that searches vary with proximity can inform public communication in other geographically anchored crises.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 11 pages, 5 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.SI" />
+  </entry>
+  <entry>
+    <title>Key Findings for Small UAS for Post-Disaster Damage Assessment from the CURSE'26 Exercise</title>
+    <link href="http://arxiv.org/abs/2610.29777v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.29777v1</id>
+    <published>2026-10-21T00:00:00Z</published>
+    <updated>2026-10-21T00:00:00Z</updated>
+    <author>
+      <name>Thomas Manzini</name>
+    </author>
+    <author>
+      <name>Stephen Johnson</name>
+    </author>
+    <author>
+      <name>Priyankari Perali</name>
+    </author>
+    <author>
+      <name>David Merrick</name>
+    </author>
+    <author>
+      <name>Robin Murphy</name>
+    </author>
+    <summary type="text">The CLARKE building and road damage assessment AI classifier was incorporated into the Catastrophic Unmanned Remote Sensing Exercise (CURSE) 2026, which trained 23 small uncrewed aerial systems (sUAS) teams from state and local agencies and non-governmental organizations in Florida and Missouri on how to collect imagery for an incident command Remote Sensing Cell. Although CLARKE has been operationally deployed to two hurricanes (Debby and Helene), CURSE'26 presented an opportunity to evaluate the machine learning model with a larger set of never-before-seen orthomosaics. The results show that building and road damage assessment together ran in 3.5 minutes on average, and that building damage assessment achieved a Micro F1 of 0.834 with no manual adjustments to correct spatial misalignment and delivered that performance in both Florida and Missouri, demonstrating good geographic transfer. It also showed that road damage assessment performed poorly due to sensitivity to misalignment between road maps and the images, and to lighting and environmental conditions in an urban setting. The analysis of CURSE'26 presents five other findings of value to the sUAS community: that the use of sUAS and machine learning is now operationally normalized and accepted, sUAS teams in the field can improve classification accuracy by timing their flights, exercises are good operational tests but their value for evaluating learning models is less clear, edge computing is needed to overcome the wireless upload barrier, and the application of sUAS and AI to disaster response has ethical and legal ramifications for pilots and data managers.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages, 5 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>OpenEarth-OVS44: A Multimodal Remote Sensing Dataset for Open-Vocabulary Segmentation</title>
+    <link href="http://arxiv.org/abs/2610.29642v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.29642v1</id>
+    <published>2026-10-21T00:00:00Z</published>
+    <updated>2026-10-21T00:00:00Z</updated>
+    <author>
+      <name>Yimin Wei</name>
+    </author>
+    <author>
+      <name>Hongruixuan Chen</name>
+    </author>
+    <author>
+      <name>Hao Zheng</name>
+    </author>
+    <author>
+      <name>Hao Liu</name>
+    </author>
+    <author>
+      <name>Jian Song</name>
+    </author>
+    <author>
+      <name>Yuting Zhu</name>
+    </author>
+    <author>
+      <name>Junshi Xia</name>
+    </author>
+    <author>
+      <name>Naoto Yokoya</name>
+    </author>
+    <summary type="text">In remote sensing, open-vocabulary segmentation is particularly important for flexible and scalable land-cover understanding across diverse regions, as it improves generalization to novel categories without requiring exhaustive pixel-level annotations. Despite its great promise, progress in this area remains largely constrained by existing datasets with limited category coverage and overly coarse taxonomies, and therefore struggles to support fine-grained semantic understanding required in real-world applications such as urban functional zoning, carbon accounting, and post-disaster assessment. To address these challenges, we present OpenEarth-OVS44, a multimodal benchmark with 290,587 expert-verified segments from 2,832 RGB images and 1,341 strictly registered RGB-SAR pairs at sub-meter spatial resolution, covering 40 cities across France, Japan, and the United States under a unified 44-class taxonomy organized into 9 base categories. Three evaluation tracks are provided: an RGB-only fine-grained benchmark, a multimodal track with diverse synthetic cloudy conditions for weather-robust evaluation, and a held-out cross-region track. Extensive experiments on representative open-vocabulary segmentation models demonstrate that training on OpenEarth-OVS44 substantially improves fine-grained segmentation performance over the strongest training-free baseline, with improvements of up to 7.1 mIoU points on unseen categories and 27.6 mIoU points on seen categories. The dataset and code will be released.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Optimization of Petal-Shaped Occulters for Exo-Earth Observation</title>
+    <link href="http://arxiv.org/abs/2610.29628v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.29628v1</id>
+    <published>2026-10-21T00:00:00Z</published>
+    <updated>2026-10-21T00:00:00Z</updated>
+    <author>
+      <name>Simon Prunet</name>
+    </author>
+    <author>
+      <name>Céline Theys</name>
+    </author>
+    <author>
+      <name>Claude Aime</name>
+    </author>
+    <summary type="text">Petal-shaped occulters are giant, formation-flying optical devices designed for use in space astronomy. Their primary function is to block the intense starlight to enable the direct observation of exoplanets, a process challenged by the extreme contrast ratio (lower than 1e-10 for an exo-Earth). This study focuses on optimizing the shape of the occulter in order to significantly reduce Fresnel diffraction. For a circular occulter, the diffraction pattern shows the bright Arago spot. Nevertheless, we construct an apodized occulter as the weighted sum of circular occulters of various diameters, owing to the fact that their diffraction are complex amplitudes which can, with adequate weighting, interfere with each other in such a way as to form a resulting diffraction pattern with a very dark central area. This basis of circular occulters allows the use of a simple analytical form for their Fresnel diffraction. First, occulter diameters are fixed on a regularly sampled linear scale, and the weights are obtained by minimizing a quadratic criterion. An improvement is then obtained using a combined optimization over the weights and the diameters sizes. Eventually, the apodized profile is used to design the petal-shaped occulter for physical imple- mentation constraints. The resulting rejection rates are comparable to the results obtained using SISTER ( http://sister.caltech.edu ), which uses a completely different non-parametric approach.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Proceedings of SPIE Astronomical Telescopes + Instrumentation conference, Copenhagen, July 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="astro-ph.IM" />
+    <category term="physics.optics" />
+  </entry>
   <entry>
     <title>Towards Consistent Geospatial Representations: Aligning One Encoder to Many Foundation Models</title>
     <link href="http://arxiv.org/abs/2610.28313v1" rel="alternate" type="text/html" />
@@ -67,6 +189,24 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 pages 3 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="cs.NI" />
+  </entry>
+  <entry>
+    <title>SAIL: A Learnable Generalisation of Spatial Autocorrelation over Graph-Structured Data</title>
+    <link href="http://arxiv.org/abs/2610.28806v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.28806v1</id>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <author>
+      <name>Piotr Keller</name>
+    </author>
+    <author>
+      <name>Fayyaz Minhas</name>
+    </author>
+    <summary type="text">In vision and scientific domains involving spatial data, a key question is whether node feature values vary independently across space or form coherent spatial structures. Classical spatial autocorrelation statistics such as Moran's $I$ and Geary's $C$ quantify this phenomenon but operate on a single scalar variable with fixed neighbourhood weights, limiting their use for high-dimensional graph-like data. We introduce SAIL (Spatial Autocorrelation Index Learner), a differentiable framework that generalises spatial autocorrelation into a learnable operator by jointly learning feature projections defining candidate scalar fields and inter-node neighbourhood affinities. SAIL produces interpretable local and global spatial coherence descriptors, enabling supervised prediction and unsupervised discovery of spatial autocorrelation modes and hotspots. We show that SAIL exactly recovers classical spatial statistics under appropriate parametrisations and, for tasks driven by latent spatial autocorrelation, can approximate the Bayes-optimal predictor with an inductive bias matched to such tasks. Experiments on synthetic data and large-scale biomedical graphs demonstrate statistical correctness and discovery of spatial coherence with applications across vision, geospatial analysis, and biomedicine. The code repository is available at: https://github.com/pkeller00/SAIL.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/pkeller00/SAIL"&gt;https://github.com/pkeller00/SAIL&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 44 pages, 22 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
   </entry>
   <entry>
     <title>Does Tile Granularity Matter? An Empirical Study of Vector Tile Compression for Map Rendering with MapLibre Tiles</title>
@@ -672,101 +812,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Machine Learning" />
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>ISW-Agent: Integrating LLM-Driven Dialogue with n8n Workflow for Internal Solitary Wave Remote Sensing Image Processing</title>
-    <link href="http://arxiv.org/abs/2610.21502v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.21502v1</id>
-    <published>2026-10-15T00:00:00Z</published>
-    <updated>2026-10-15T00:00:00Z</updated>
-    <author>
-      <name>Hao Zhang</name>
-    </author>
-    <author>
-      <name>Hengrui Liu</name>
-    </author>
-    <author>
-      <name>Lina Sun</name>
-    </author>
-    <author>
-      <name>Junmin Meng</name>
-    </author>
-    <summary type="text">Internal solitary wave (ISW) remote sensing requires task parameters and spatial information to be transferred across image acquisition, detection, stripe extraction, and propagation prediction. Here, we present ISW-Agent, which integrates large language model (LLM) interpretation with n8n workflows and independent scientific models through structured task constraints, geospatial transformations, and stage-specific output validation. In tests of 120 Chinese instructions per backend, GPT-5.6 Sol and DeepSeek both achieved a strict task-match rate of 94.2%, with all intents and execution decisions matching the reference. Sentinel-1 cases demonstrated continuous processing from dialogue requests to wavefront prediction for the specified scene. Of 50 timed scenes, 39 completed detection, extraction, and prediction with a median turnaround time of 48.04 s; 11 stopped after empty extraction. Across 3,408 controlled fault-injection runs, retries recovered 234 transient-failure conditions and output validation rejected 234 structural defects, while 61 provenance or completeness errors indicated the need for content-consistency checks. Overall, ISW-Agent thus connects natural-language requests to traceable spatial processing chains for multimodel ISW analysis.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Climate Physicalization: Bridging Tangible Interaction and Data Visualization for Environmental Communication</title>
-    <link href="http://arxiv.org/abs/2610.21401v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.21401v1</id>
-    <published>2026-10-15T00:00:00Z</published>
-    <updated>2026-10-15T00:00:00Z</updated>
-    <author>
-      <name>Milena Vuckovic</name>
-    </author>
-    <author>
-      <name>Marlene Huber</name>
-    </author>
-    <author>
-      <name>Fabrizia Bando-Bechtold</name>
-    </author>
-    <author>
-      <name>Daniel Cornel</name>
-    </author>
-    <author>
-      <name>Daniel Pahr</name>
-    </author>
-    <summary type="text">Raising awareness of climate topics, such as urban heat mitigation, requires communicating complex data to a broad audience. Data physicalization has emerged as a novel method to connect audiences to such complex topics through tangible forms while also leveraging interactivity to foster deeper engagement. This paper introduces an situated geospatial thermal physicalization prototype, designed to enhance communication and education of environmental information through hands-on engagement. The physical model depicts a 3D model of an urban neighborhood, with radiation data represented as a layered contour structure. The model incorporates three interchangeable climate adaptation scenarios, alongside an externally mounted, electronically driven solar path representation featuring multiple discrete LEDs that can be switched on and off at will. To investigate how people engage with the model, we conducted a hands-on qualitative lab study with 16 participants, using think-aloud, observational, and questionnaire protocols. Overall, participants responded very favorably to the model, highlighting the novelty of the visualization approach and its capacity to improve the interpretability of the presented information.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.HC" />
-  </entry>
-  <entry>
-    <title>A large-scale climate-aware satellite image dataset for domain adaptive land-cover semantic segmentation</title>
-    <link href="http://arxiv.org/abs/2610.21238v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.21238v1</id>
-    <published>2026-10-15T00:00:00Z</published>
-    <updated>2026-10-15T00:00:00Z</updated>
-    <author>
-      <name>Songlin Liu</name>
-    </author>
-    <author>
-      <name>Linwei Chen</name>
-    </author>
-    <author>
-      <name>Li Zhang</name>
-    </author>
-    <author>
-      <name>Jun Hu</name>
-    </author>
-    <author>
-      <name>Ying Fu</name>
-    </author>
-    <summary type="text">A few well-annotated datasets for land-cover semantic segmentation have recently been introduced to advance the field of earth observation technologies. However, these datasets overlook the significant diversity among geographic areas with different climates, which can greatly impact and diversify land cover. Consequently, this leads to a domain gap in remote sensing images and severe performance degradation of the segmentation models. To enhance land-cover semantic segmentation with improved generalization ability, we conducted the first investigation into the impact of climate on this task. In this paper, we present a unique large-scale Climate-Aware Satellite Images Dataset (CASID) specifically designed for domain adaptive land-cover semantic segmentation. It consists of 980 satellite images with a size of 5000 x 5000 pixels, collected from 30 different regions around Asia, covering over 24,500 square kilometers. These images are gathered from four distinct climate zones, namely temperate monsoon, subtropical monsoon, tropical monsoon, and tropical rainforest. It includes four sub-datasets/domains, each representing one of the aforementioned climate zones. This characteristic makes CASID the first climate-aware land-cover semantic segmentation dataset with multiple domains. Additionally, we provide a comprehensive analysis of the samples from the four climate zones, emphasizing differences in global image features, image texture, category distribution, spectral value, and object shape. These analyses offer valuable insights for subsequent research in this field. Moreover, we conduct extensive experiments to evaluate the latest semantic segmentation and unsupervised domain adaptation methods on the CASID dataset. These results serve as a robust baseline for future research endeavors. Our dataset will be made publicly available at https://github.com/Linwei-Chen/CASID.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Linwei-Chen/CASID"&gt;https://github.com/Linwei-Chen/CASID&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Data-Efficient ConvNeXt Pretraining for High-Resolution Sentinel-1 GRD SAR Representation Learning</title>
-    <link href="http://arxiv.org/abs/2610.21993v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.21993v1</id>
-    <published>2026-10-15T00:00:00Z</published>
-    <updated>2026-10-15T00:00:00Z</updated>
-    <author>
-      <name>Yuki Natsume</name>
-    </author>
-    <author>
-      <name>Sang-Ho Yun</name>
-    </author>
-    <author>
-      <name>Chai Kiat Yeo</name>
-    </author>
-    <summary type="text">Labeled Sentinel-1 Ground Range Detected (S1GRD) datasets remain scarce, limiting supervised deep learning for land-surface remote sensing, while self-supervised pretraining for this domain has been dominated by Vision Transformer (ViT)-based masked image modeling requiring substantial data and compute. We propose SparK-SAR, a sparse convolutional masked pretraining framework built on SparK and ConvNeXt, designed to exploit convolutional inductive biases for S1GRD imagery under constrained compute. SparK-SAR makes three core technical contributions: (i) ConvNeXt-RS, a domain-adapted encoder that halves the stem stride (4x to 2x) to produce 14x14 feature maps at stride 16x, providing 4x more spatial tokens at identical parameter count; (ii) a lightweight ConvNeXt-512 reconstruction decoder with PixelShuffle upsampling that reduces pretraining VRAM by 7.5-8.5% per GPU relative to a UNet-128 baseline while matching its accuracy; and (iii) an empirical characterization of FP16 mixed-precision pretraining instability in the standard SparK UNet-768 decoder on S1GRD data, complemented by a finding that finetuning with layer-wise learning rate decay (LLRD) improves downstream performance of pretrained encoders. On four Copernicus-Bench S1GRD tasks, our finetuned 27.8M-parameter ConvNeXt-RS encoder improves over a non-pretrained baseline by +4.7, +5.0, +5.8, and +1.4 pp on EuroSAT-S1, BigEarthNet-S1, DFC2020-S1, and Flood-S1 respectively, and outperforms the Copernicus-FM ViT (139M parameters, frozen) on three of four tasks at roughly 5x fewer parameters. A pretraining data-scaling study reveals task-dependent data efficiency: classification saturates with as little as 10-25% of the SSL4EO-S12 v1.1 corpus, while dense prediction continues to improve significantly up to 25-50%. The study also includes a CKA representation analysis and a geographic de-collision experiment.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Remote Sensing 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>

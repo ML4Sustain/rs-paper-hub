@@ -4,12 +4,46 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-21T05:38:39Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 6 entries</subtitle>
+  <updated>2026-10-22T02:07:39Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 5 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>OpenEarth-OVS44: A Multimodal Remote Sensing Dataset for Open-Vocabulary Segmentation</title>
+    <link href="http://arxiv.org/abs/2610.29642v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.29642v1</id>
+    <published>2026-10-21T00:00:00Z</published>
+    <updated>2026-10-21T00:00:00Z</updated>
+    <author>
+      <name>Yimin Wei</name>
+    </author>
+    <author>
+      <name>Hongruixuan Chen</name>
+    </author>
+    <author>
+      <name>Hao Zheng</name>
+    </author>
+    <author>
+      <name>Hao Liu</name>
+    </author>
+    <author>
+      <name>Jian Song</name>
+    </author>
+    <author>
+      <name>Yuting Zhu</name>
+    </author>
+    <author>
+      <name>Junshi Xia</name>
+    </author>
+    <author>
+      <name>Naoto Yokoya</name>
+    </author>
+    <summary type="text">In remote sensing, open-vocabulary segmentation is particularly important for flexible and scalable land-cover understanding across diverse regions, as it improves generalization to novel categories without requiring exhaustive pixel-level annotations. Despite its great promise, progress in this area remains largely constrained by existing datasets with limited category coverage and overly coarse taxonomies, and therefore struggles to support fine-grained semantic understanding required in real-world applications such as urban functional zoning, carbon accounting, and post-disaster assessment. To address these challenges, we present OpenEarth-OVS44, a multimodal benchmark with 290,587 expert-verified segments from 2,832 RGB images and 1,341 strictly registered RGB-SAR pairs at sub-meter spatial resolution, covering 40 cities across France, Japan, and the United States under a unified 44-class taxonomy organized into 9 base categories. Three evaluation tracks are provided: an RGB-only fine-grained benchmark, a multimodal track with diverse synthetic cloudy conditions for weather-robust evaluation, and a held-out cross-region track. Extensive experiments on representative open-vocabulary segmentation models demonstrate that training on OpenEarth-OVS44 substantially improves fine-grained segmentation performance over the strongest training-free baseline, with improvements of up to 7.1 mIoU points on unseen categories and 27.6 mIoU points on seen categories. The dataset and code will be released.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Towards Consistent Geospatial Representations: Aligning One Encoder to Many Foundation Models</title>
     <link href="http://arxiv.org/abs/2610.28313v1" rel="alternate" type="text/html" />
@@ -117,55 +151,6 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC&lt;/p&gt;</content>
     <category term="Machine Learning" />
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>ISW-Agent: Integrating LLM-Driven Dialogue with n8n Workflow for Internal Solitary Wave Remote Sensing Image Processing</title>
-    <link href="http://arxiv.org/abs/2610.21502v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.21502v1</id>
-    <published>2026-10-15T00:00:00Z</published>
-    <updated>2026-10-15T00:00:00Z</updated>
-    <author>
-      <name>Hao Zhang</name>
-    </author>
-    <author>
-      <name>Hengrui Liu</name>
-    </author>
-    <author>
-      <name>Lina Sun</name>
-    </author>
-    <author>
-      <name>Junmin Meng</name>
-    </author>
-    <summary type="text">Internal solitary wave (ISW) remote sensing requires task parameters and spatial information to be transferred across image acquisition, detection, stripe extraction, and propagation prediction. Here, we present ISW-Agent, which integrates large language model (LLM) interpretation with n8n workflows and independent scientific models through structured task constraints, geospatial transformations, and stage-specific output validation. In tests of 120 Chinese instructions per backend, GPT-5.6 Sol and DeepSeek both achieved a strict task-match rate of 94.2%, with all intents and execution decisions matching the reference. Sentinel-1 cases demonstrated continuous processing from dialogue requests to wavefront prediction for the specified scene. Of 50 timed scenes, 39 completed detection, extraction, and prediction with a median turnaround time of 48.04 s; 11 stopped after empty extraction. Across 3,408 controlled fault-injection runs, retries recovered 234 transient-failure conditions and output validation rejected 234 structural defects, while 61 provenance or completeness errors indicated the need for content-consistency checks. Overall, ISW-Agent thus connects natural-language requests to traceable spatial processing chains for multimodel ISW analysis.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>A large-scale climate-aware satellite image dataset for domain adaptive land-cover semantic segmentation</title>
-    <link href="http://arxiv.org/abs/2610.21238v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.21238v1</id>
-    <published>2026-10-15T00:00:00Z</published>
-    <updated>2026-10-15T00:00:00Z</updated>
-    <author>
-      <name>Songlin Liu</name>
-    </author>
-    <author>
-      <name>Linwei Chen</name>
-    </author>
-    <author>
-      <name>Li Zhang</name>
-    </author>
-    <author>
-      <name>Jun Hu</name>
-    </author>
-    <author>
-      <name>Ying Fu</name>
-    </author>
-    <summary type="text">A few well-annotated datasets for land-cover semantic segmentation have recently been introduced to advance the field of earth observation technologies. However, these datasets overlook the significant diversity among geographic areas with different climates, which can greatly impact and diversify land cover. Consequently, this leads to a domain gap in remote sensing images and severe performance degradation of the segmentation models. To enhance land-cover semantic segmentation with improved generalization ability, we conducted the first investigation into the impact of climate on this task. In this paper, we present a unique large-scale Climate-Aware Satellite Images Dataset (CASID) specifically designed for domain adaptive land-cover semantic segmentation. It consists of 980 satellite images with a size of 5000 x 5000 pixels, collected from 30 different regions around Asia, covering over 24,500 square kilometers. These images are gathered from four distinct climate zones, namely temperate monsoon, subtropical monsoon, tropical monsoon, and tropical rainforest. It includes four sub-datasets/domains, each representing one of the aforementioned climate zones. This characteristic makes CASID the first climate-aware land-cover semantic segmentation dataset with multiple domains. Additionally, we provide a comprehensive analysis of the samples from the four climate zones, emphasizing differences in global image features, image texture, category distribution, spectral value, and object shape. These analyses offer valuable insights for subsequent research in this field. Moreover, we conduct extensive experiments to evaluate the latest semantic segmentation and unsupervised domain adaptation methods on the CASID dataset. These results serve as a robust baseline for future research endeavors. Our dataset will be made publicly available at https://github.com/Linwei-Chen/CASID.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Linwei-Chen/CASID"&gt;https://github.com/Linwei-Chen/CASID&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>
