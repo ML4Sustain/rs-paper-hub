@@ -4,12 +4,132 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-22T05:40:05Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 30 entries</subtitle>
+  <updated>2026-10-23T02:15:45Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 26 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Data-Driven Vision-Language Models for Remote Sensing: A Survey</title>
+    <link href="http://arxiv.org/abs/2610.31304v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.31304v1</id>
+    <published>2026-10-22T00:00:00Z</published>
+    <updated>2026-10-22T00:00:00Z</updated>
+    <author>
+      <name>Yue Zhou</name>
+    </author>
+    <author>
+      <name>Shujun Zhao</name>
+    </author>
+    <author>
+      <name>Xue Yang</name>
+    </author>
+    <author>
+      <name>Ruigang Li</name>
+    </author>
+    <author>
+      <name>Tianwen Zhang</name>
+    </author>
+    <author>
+      <name>Mengcheng Lan</name>
+    </author>
+    <author>
+      <name>Chaofeng Chen</name>
+    </author>
+    <author>
+      <name>Lingfei Ma</name>
+    </author>
+    <author>
+      <name>Hongjie He</name>
+    </author>
+    <author>
+      <name>Jonathan Li</name>
+    </author>
+    <summary type="text">During the deep learning era, innovations in remote sensing (RS) vision models primarily focused on optimizing network architectures for specific tasks and conducting end-to-end training. However, with the advent of the Vision-Language Models (VLMs) era, constrained by substantial computational resource demands, the mainstream research paradigm has shifted towards adapting general-purpose VLMs using RS vertical domain data for fine-tuning, rather than modifying their core architectures. This transition marks a change in the innovation pathway from model-centric to data-centric. Despite the increasing importance of data, the academic community still lacks a systematic, data-centric survey to guide researchers in constructing high-quality RS vision-language datasets for various application scenarios and in conducting effective model fine-tuning and performance evaluation based on these datasets. To address this gap, this paper presents a systematic review of the development status of RS datasets tailored for VLMs. It further provides a comprehensive practical guide for RS researchers in the large model era, covering the entire pipeline from data construction to fine-tuning and evaluation. This paper aims to encourage the academic community to build more diverse and higher-quality vision-language datasets for specialized RS sub-fields. Ultimately, the goal is to converge these efforts into a comprehensive RS vision-language corpus that offers extensive task coverage and a wide geographical distribution, thereby laying a solid data foundation for advancing towards general artificial intelligence in RS.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 44 pages, 15 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Survey&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>In-Orbit Computing for Remote Sensing: Task-Oriented Processing and Transmission</title>
+    <link href="http://arxiv.org/abs/2610.30693v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.30693v1</id>
+    <published>2026-10-22T00:00:00Z</published>
+    <updated>2026-10-22T00:00:00Z</updated>
+    <author>
+      <name>Yi Zhang</name>
+    </author>
+    <author>
+      <name>Zesong Fei</name>
+    </author>
+    <author>
+      <name>Jingxuan Huang</name>
+    </author>
+    <author>
+      <name>Hua Dang</name>
+    </author>
+    <author>
+      <name>Jihao Luo</name>
+    </author>
+    <author>
+      <name>Wenyu Liang</name>
+    </author>
+    <author>
+      <name>Haoran Zhang</name>
+    </author>
+    <author>
+      <name>Xinyi Wang</name>
+    </author>
+    <summary type="text">The growing volume and timeliness requirements of remote sensing data are exposing the limitations of the conventional "transmit-then-process" architecture, particularly under intermittent satellite-ground connectivity, constrained downlink bandwidth, and limited onboard computing resources. This article presents a semantic-aware space-ground collaborative remote sensing (SSGC-RS) framework, in which remote sensing data are processed to different semantic depths according to task requirements and available communication-computing resources. Three operating modes are considered, ranging from fully onboard task inference to semantic representation delivery and space-ground split inference. A land-cover recognition case study illustrates how these modes address different communication and computing bottlenecks. Finally, emerging challenges and future directions for intelligent remote sensing systems are discussed.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Signal Processing" />
+  </entry>
+  <entry>
+    <title>A Topology-Guided GeoAI Agentic Framework for Urban Flood Screening</title>
+    <link href="http://arxiv.org/abs/2610.30660v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.30660v1</id>
+    <published>2026-10-22T00:00:00Z</published>
+    <updated>2026-10-22T00:00:00Z</updated>
+    <author>
+      <name>Yutian Tao</name>
+    </author>
+    <author>
+      <name>Haoan Feng</name>
+    </author>
+    <author>
+      <name>Xin Xu</name>
+    </author>
+    <author>
+      <name>Leila De Floriani</name>
+    </author>
+    <summary type="text">Open-world geographic artificial intelligence (GeoAI) agents can transform public geospatial data into accessible decision support for real-world challenges, but must balance autonomous reasoning with reliable spatial analysis and human oversight. We present a topology-guided GeoAI agentic framework for urban flood screening that takes a place name, drawn region, or uploaded boundary and returns ranked candidate basins with an interactive map and report. A deterministic controller retrieves public elevation, rainfall, soil, land-cover, exposure, and infrastructure layers, extracts terrain depressions with discrete Morse theory, and ranks basins with a relative flood-priority score. The language model acts only at recorded decision points: selecting a persistence threshold from a precomputed candidate table, drafting recommendations from computed evidence, and reviewing each recommendation against the same evidence. Three human-in-the-loop checkpoints let users revise the threshold, factor weights, or recommendation. In a College Park, Maryland case study, the selected threshold reduced 278 raw terrain minima to 70 basins, with 77% of these basins' lowest points also identified as sinks by a separately computed eight-direction (D8) flow-routing model. Across four further study areas, agreement ranged from 61% to 83%. By combining open data, explicit spatial reasoning, traceable evidence, and human oversight, the framework enables transparent first-pass flood screening while keeping consequential recommendations inspectable and user-controlled.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>KinoUAV: A Benchmark for Safe and Stable UAV Vision-Language Navigation with Kinodynamic Modeling</title>
+    <link href="http://arxiv.org/abs/2610.30609v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.30609v1</id>
+    <published>2026-10-22T00:00:00Z</published>
+    <updated>2026-10-22T00:00:00Z</updated>
+    <author>
+      <name>Chenyao Yang</name>
+    </author>
+    <author>
+      <name>Peijin Wang</name>
+    </author>
+    <author>
+      <name>Yingchao Feng</name>
+    </author>
+    <author>
+      <name>Wenhui Diao</name>
+    </author>
+    <summary type="text">Unmanned aerial vehicles (UAVs) have recently emerged as important remote sensing platforms, and UAV navigation has shown great potential in remote sensing applications. However, existing methods do not explicitly incorporate kinodynamic modeling or safety distances into trajectory generation, resulting in high absolute yaw rates, frequent collisions, and low navigation success rates, which limit safety and motion stability. To address this challenge, we introduce KinoUAV, a kinodynamic benchmark comprising a dataset and KinoUAV-Agent. First, we develop a hierarchical kinodynamic trajectory generation pipeline that drives UAV through acceleration actions. It uses waypoint chains from global planning and generates trajectories segment by segment under velocity, acceleration, and jerk constraints, reducing oscillations and improving trajectory stability. Furthermore, we introduce directional free-space distance (DFD) labels into the constructed dataset to describe the available clearance for safe motion decisions. The proposed KinoUAV-Agent predicts DFDs and uses them to generate safe actions, decoupling perception from action decision-making. This design enables autonomous obstacle avoidance and improves navigation safety. The benchmark incorporates the proposed Cruise-Seek task, in which the UAV first enters the target region and then searches for the target, reducing the difficulty of target search and improving navigation success. Experiments on KinoUAV show that KinoUAV-Agent outperforms existing methods, achieving the highest success rate while maintaining lower absolute yaw rates and collision rates. These results demonstrate the effectiveness of kinodynamic modeling for safe and stable UAV navigation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Multiclass Boundary Refinement with Neural Cellular Automata for Remote Sensing Land Cover Segmentation</title>
     <link href="http://arxiv.org/abs/2610.30007v1" rel="alternate" type="text/html" />
@@ -131,6 +251,34 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="astro-ph.IM" />
     <category term="physics.optics" />
+  </entry>
+  <entry>
+    <title>Bayesian Downscaling of Satellite-Derived Solar-Induced Chlorophyll Fluorescence</title>
+    <link href="http://arxiv.org/abs/2610.30508v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.30508v1</id>
+    <published>2026-10-21T00:00:00Z</published>
+    <updated>2026-10-21T00:00:00Z</updated>
+    <author>
+      <name>Russell Goebel</name>
+    </author>
+    <author>
+      <name>Leeza Moldavchuk</name>
+    </author>
+    <author>
+      <name>Taylor S. Jones</name>
+    </author>
+    <author>
+      <name>Jonathan Dooley</name>
+    </author>
+    <author>
+      <name>Lucy R. Hutyra</name>
+    </author>
+    <author>
+      <name>Luis Carvalho</name>
+    </author>
+    <summary type="text">We present an extendable Bayesian framework for spatial downscaling of satellite-derived measurements with coarse, irregular footprints. Motivated by measurements of solar-induced chlorophyll fluorescence (SIF) from the earth-observing OCO-2 satellite, we model coarse-resolution observations as noisy, weighted averages over an underlying fine-resolution spatial field. The latent process is defined over a regular grid and regularized using a Simultaneous Autoregressive (SAR) prior, yielding a sparse precision structure that enforces spatial smoothness. This formulation enables efficient posterior inference including uncertainty quantification and naturally accommodates land cover information through modified neighborhood structures or covariates. To assess accuracy, we conduct a semi-synthetic validation using albedo data derived from Sentinel-2 satellite surface reflectance, finding strong correspondence between posterior means and the synthetic generating field (R2 = 0.72 when including the proportion of water as a covariate and 0.57 without any covariates). We apply our method to a high-density OCO-2 target mode SIF observations over Boston, demonstrating that it produces fine-resolution posterior maps that reflect heterogeneity in urban environments and align with greenness, with a moderate relationship with the Normalized Difference Vegetation Index (NDVI) (R2 = 0.417 for pixels with 20+ overlapping soundings, 0.323 overall). Our approach achieves high-resolution recovery of satellite measurements with principled uncertainty quantification.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="stat.AP" />
   </entry>
   <entry>
     <title>Towards Consistent Geospatial Representations: Aligning One Encoder to Many Foundation Models</title>
@@ -563,254 +711,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
     <category term="Atmospheric and Oceanic Physics" />
-  </entry>
-  <entry>
-    <title>Characterizing the Martin Luther King Event: Sun to Earth Evolution of the January 19, 2026 Geomagnetic Storm</title>
-    <link href="http://arxiv.org/abs/2610.23704v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.23704v1</id>
-    <published>2026-10-16T00:00:00Z</published>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <author>
-      <name>Abril Sahade</name>
-    </author>
-    <author>
-      <name>Cecilia Mac Cormack</name>
-    </author>
-    <author>
-      <name>Andreas J. Weiss</name>
-    </author>
-    <author>
-      <name>Antonio Niemela</name>
-    </author>
-    <author>
-      <name>Diego G. Lloveras</name>
-    </author>
-    <author>
-      <name>Erika Palmerio</name>
-    </author>
-    <author>
-      <name>Teresa Nieves-Chinchilla</name>
-    </author>
-    <summary type="text">We present a comprehensive Sun-to-Earth analysis of the extreme space weather event of 18 -19 January 2026, hereafter the Martin Luther King (MLK) storm, which produced a severe (G4) geomagnetic storm and one of the most intense solar radiation storms of Solar Cycle 25. The geomagnetic disturbance was driven by a fast Earth-directed coronal mass ejection (CME) associated with an X1.9-class flare from NOAA Active Region 14341. We combine multi-viewpoint remote-sensing observations, in situ measurements from Solar Orbiter and Wind, and physics-based magnetohydrodynamic simulations using the CORHEL-CME framework to reconstruct the eruption from the low corona to 1 au and identify the mechanisms governing its geoeffectiveness. Observations and simulations indicate that the eruption originated from a right-handed magnetic flux rope embedded in a complex magnetic environment dominated by a neighboring positive-polarity coronal hole. The simulations reproduce the observed CME morphology, asymmetric expansion, magnetic fields measured at both spacecraft, and Dst index evolution. The main discrepancy is attributed to filament material not included in the model. Favorable magnetic polarity alignment between the CME and coronal-hole field minimized magnetic erosion through interchange reconnection, enabling rapid escape and preservation of the strong southward magnetic field that drove the geomagnetic storm. The prolonged recovery phase resulted from interaction between the trailing CME and a following high-speed stream from the same coronal hole. These results demonstrate that storm intensity was primarily established by the coronal magnetic configuration, whereas storm duration was controlled by the ambient solar wind.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="astro-ph.SR" />
-  </entry>
-  <entry>
-    <title>Earth Observation Satellite Scheduling Models: Taxonomy, Classification and Open Challenges</title>
-    <link href="http://arxiv.org/abs/2610.23520v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.23520v1</id>
-    <published>2026-10-16T00:00:00Z</published>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <author>
-      <name>Margarida Caleiras</name>
-    </author>
-    <author>
-      <name>Paulo Jorge Nascimento</name>
-    </author>
-    <author>
-      <name>Samuel Moniz</name>
-    </author>
-    <summary type="text">Over the past three decades, a large number of optimization models have been proposed for Earth observation satellite (EOS) scheduling. The main goal of this paper is to provide an overview of these models and to relate them to the characteristics of the problems they address. To do so, we first identify the main features of EOS scheduling problems and those with the most impact on the computational complexity of the model. Based on these features, we propose a new taxonomy of satellite agility and a classification of EOS scheduling problems that allows the problem under study to be clearly identified. We then propose a classification of the optimization models into five categories, based on their time and event representations, and describe representative formulations of each category in a unified notation, together with their extensions, discussing the respective advantages and limitations. The trade-offs between the alternative representations are analyzed, showing that discrete-time formulations allow time-dependent parameters, such as transition times and image quality, to be pre-computed, which preserves the linearity of the model but makes its size depend on the adopted discretization, whereas continuous-time formulations treat these parameters as functions of the start times, which introduces nonlinearities unless simplifying assumptions are adopted. Finally, we identify the main open challenges, including the exact modeling of time-dependent transition times and the integrated scheduling of active imaging satellites.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 45 pages, 9 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="math.OC" />
-  </entry>
-  <entry>
-    <title>ShadowCast: On-the-Fly Context-Aware Shadow Augmentation for Remote Sensing Image Segmentation</title>
-    <link href="http://arxiv.org/abs/2610.23440v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.23440v2</id>
-    <published>2026-10-16T00:00:00Z</published>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <author>
-      <name>Yechan Kim</name>
-    </author>
-    <author>
-      <name>Dongho Yoon</name>
-    </author>
-    <author>
-      <name>Jongmin Joo</name>
-    </author>
-    <author>
-      <name>JongHyun Park</name>
-    </author>
-    <author>
-      <name>Moongu Jeon</name>
-    </author>
-    <summary type="text">Shadows cast by elevated objects alter the spectral appearance and obscure the boundaries of objects in remote sensing images, thereby degrading semantic segmentation performance. Most existing approaches handle shadows as degradations to be detected and removed, requiring additional costs from dedicated networks and shadow-specific annotations. We propose ShadowCast, which takes the opposite approach: it synthesizes shadows and injects them during training for remote sensing segmentation. It extracts masks of elevated objects, such as buildings and trees, directly from the segmentation labels and estimates an image-specific cast-shadow direction cue by probing the brightness around them. It then projects synthetic shadows along the inferred cast-shadow direction, requiring no learned network and no acquisition metadata. Experiments on three widely used remote sensing benchmarks, Vaihingen, Potsdam, and LoveDA, show that ShadowCast consistently outperforms the baseline across diverse state-of-the-art segmentation architectures. Moreover, it brings additional performance gains when combined with standard augmentation and regularization techniques, indicating that stochastic shadow injection serves as a simple and complementary augmentation strategy for remote sensing segmentation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>GeoReason: Bridging Logical Reasoning and Spatial Fidelity in Remote Sensing Segmentation</title>
-    <link href="http://arxiv.org/abs/2610.23416v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.23416v1</id>
-    <published>2026-10-16T00:00:00Z</published>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <author>
-      <name>Cheng Fan</name>
-    </author>
-    <author>
-      <name>Han Wu</name>
-    </author>
-    <author>
-      <name>Tingzhang Luo</name>
-    </author>
-    <author>
-      <name>Minjing Dong</name>
-    </author>
-    <author>
-      <name>Yehui Tang</name>
-    </author>
-    <author>
-      <name>Jianyuan Guo</name>
-    </author>
-    <summary type="text">Multimodal Large Language Models (MLLMs) have significantly advanced instruction-driven perception through the "Embedding-as-Mask" paradigm. However, extending this capability to Remote Sensing (RS) reasoning segmentation remains exceptionally challenging under cluttered geographical contexts and extreme scale variations, often leading to Spatial Fidelity Degradation and Target Misidentification. We identify a critical yet underexplored bottleneck: the sequential alienation of the segmentation token [SEG] from its initial visual grounding within the autoregressive generation paradigm. Produced only at the end of long reasoning chains, [SEG] relies on visual evidence that has been progressively diluted by linguistic abstraction and autoregressive noise. This information decay is particularly catastrophic for RS targets with minuscule pixel footprints, where even marginal fidelity loss leads to localization failure. To address these bottlenecks, we propose GeoReason, a novel framework designed to fortify logical deduction and preserve spatial integrity. First, we introduce an Anticipatory Prior mechanism that injects the [SEG] token directly into the initial user query, shifting it from a terminal output to a primary condition. This paradigm shift transforms the token into a persistent spatial anchor, preventing information decay during long-form linguistic inference. Second, we enhance visual reasoning via a Location-aware Chain-of-Thought (CoT) that enforces coarse-to-fine localization using bounding boxes, coupled with a Latent Patch-to-Token Alignment (PTA) Loss that explicitly aligns the latent segmentation token with physical RS textures. Extensive experiments demonstrate that GeoReason consistently outperforms state-of-the-art methods on the Earthreason and RRSIS-D benchmarks. Code is available at https://github.com/Fanc0126/GeoReason.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Fanc0126/GeoReason"&gt;https://github.com/Fanc0126/GeoReason&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>FloodVLM-Pix: Language-Guided Pixel-Level Flood Understanding</title>
-    <link href="http://arxiv.org/abs/2610.23377v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.23377v1</id>
-    <published>2026-10-16T00:00:00Z</published>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <author>
-      <name>Chengyang Zhang</name>
-    </author>
-    <author>
-      <name>Zhihao Wang</name>
-    </author>
-    <author>
-      <name>Zhiyu Long</name>
-    </author>
-    <author>
-      <name>Xueqian Wang</name>
-    </author>
-    <author>
-      <name>Quanming Yao</name>
-    </author>
-    <author>
-      <name>Wei Wu</name>
-    </author>
-    <author>
-      <name>Gang Li</name>
-    </author>
-    <summary type="text">As climate change intensifies, floods are becoming more frequent and destructive, making accurate flood understanding an urgent priority. However, existing vision-language models perform poorly on flood-related tasks, suffering from attentional bias and inaccurate descriptions of flood magnitude. To bridge this gap, we construct the first large-scale remote sensing flood multi-modal benchmark that supports language-level flood understanding and pixel-level flood segmentation. The benchmark contains 131,200 flood image patches and corresponding 443,100 textual descriptions for flood severity and evolution. Based on this benchmark, we propose FloodVLM-Pix, a language-guided pixel-level flood understanding model that includes a flood prior module and a multi-temporal flood pixel decoder to achieve accurate flood understanding. The flood prior module automatically distills sub-region flood spatial priors and inputs priors into FloodVLM-Pix, solving the attentional bias problem in flood language understanding. The flood pixel decoder introduces a novel general-specific feature fusion mechanism to address performance degradation caused by interference (e.g., clouds or mountain shadows) during flood segmentation. Experiments on FloodVL-Pix demonstrate that FloodVLM-Pix improves both flood description quality and pixel-level flood segmentation performance compared with state-of-the-art VLMs and flood segmentation models. Our code and data will be released at https://github.com/Haomiaoyanmeng/FloodPix.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Haomiaoyanmeng/FloodPix"&gt;https://github.com/Haomiaoyanmeng/FloodPix&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Understanding sub-arcsecond scale radio sources and space weather with the SKA-Low using interplanetary scintillation</title>
-    <link href="http://arxiv.org/abs/2610.23220v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.23220v1</id>
-    <published>2026-10-16T00:00:00Z</published>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <author>
-      <name>Rajan Chhetri</name>
-    </author>
-    <author>
-      <name>John Morgan</name>
-    </author>
-    <author>
-      <name>Harsha Avinash Tanti</name>
-    </author>
-    <author>
-      <name>Hayley Bignall</name>
-    </author>
-    <author>
-      <name>Emily Kerrison</name>
-    </author>
-    <author>
-      <name>Abhirup Datta</name>
-    </author>
-    <author>
-      <name>Anshu Kumari</name>
-    </author>
-    <summary type="text">Continuum surveys with SKA-Low will provide excellent spectral information for detected objects. However, the angular resolution it provides cannot clearly distinguish between extended radio galaxies and their sub-arcsecond scale counterparts. We have previously used an interplanetary scintillation (IPS) technique with wide field-of-view instruments (the MWA and ASKAP) to detect and study $&lt;$0.3\arcsec\ objects. The ability to identify hundreds of compact sources from large areas of the sky using $&lt;$5 minutes of data, and associated low computational cost makes widefield IPS a very efficient approach to identify sub-arcsecond scale objects at low radio frequencies.   We aim to utilise SKA-Low's flexibility in data capture, frequency coverage and high sensitivity to develop widefield IPS technique with SKA-Low, enabling the identification of compact radio sources at angular scales more than an order of magnitude smaller than that achieved by SKA-Low's longest baselines. This capability will facilitate studies of compact source populations (e.g., AGN cores), their relationship to extended radio galaxies, AGN contributions in star-forming galaxies, identify candidates for pulsars and HI absorption, and provide a network of calibrators for direction-dependent ionospheric calibration for SKA-Low. Additionally, ground-based IPS observations are one of the very few remote sensing techniques to probe the Heliosphere which will enable SKA-Low to provide unique insights into the solar wind.   Here, we present recent developments in the field of compact sources at low frequencies, their synergies with other fields of astronomy and space weather, and outline the technical developments and approaches that are necessary with the SKA-Low to realise these studies.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Advancing Astrophysics with the SKA II (AASKAII)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="astro-ph.IM" />
-    <category term="astro-ph.CO" />
-  </entry>
-  <entry>
-    <title>Domain-specific language alignment of multimodal embeddings towards explainable predictions</title>
-    <link href="http://arxiv.org/abs/2610.23110v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.23110v1</id>
-    <published>2026-10-16T00:00:00Z</published>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <author>
-      <name>Gabrielė Tijūnaitytė</name>
-    </author>
-    <author>
-      <name>Thijs L. van der Plas</name>
-    </author>
-    <author>
-      <name>Mohamed-Bachir Belaid</name>
-    </author>
-    <author>
-      <name>Rob Knapen</name>
-    </author>
-    <author>
-      <name>Maciej J. Soja</name>
-    </author>
-    <author>
-      <name>Ioannis N. Athanasiadis</name>
-    </author>
-    <summary type="text">Multimodal data are commonly fused into latent representations that improve downstream task performance but are not interpretable, limiting their application in domains that require explainable model decisions. Vision-language alignment has made image embeddings interpretable through language, but requires vast image-caption training data. However, captioned data are typically not available for multimodal embeddings, as relevant features cannot directly be observed and annotated from embeddings alone. Here, we propose a framework to language-align any embedding space that can be linked to interpretable auxiliary data. Captioning functions convert auxiliary data into partial captions; a soft contrastive loss weights pairs by the similarity of their properties that each caption describes; and a rank-based concept retrieval task evaluates alignment against the auxiliary data rather than the captions. We apply this framework to multimodal Earth embeddings to facilitate explainable predictions for two species distribution modelling tasks: S2BMS and SatBird. AlphaEarth embeddings beat previous state-of-the-art models on 6/7 metrics, while our framework language-aligns domain-specific concepts of the embedding space, outperforming previous Earth observation vision-language models on average concept retrieval for both datasets. Finally, aligned concepts recover species-habitat associations ($ρ$=0.44) and relate habitat descriptions to species predictions, showing that abstract embeddings can be interrogated in the language of domain experts.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Immersive Focus+Context Techniques to Assist in Interpretation of High Density Forest Point Clouds</title>
-    <link href="http://arxiv.org/abs/2610.22878v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.22878v1</id>
-    <published>2026-10-16T00:00:00Z</published>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <author>
-      <name>Spencer O'Keeffe</name>
-    </author>
-    <author>
-      <name>Jan Rombouts</name>
-    </author>
-    <author>
-      <name>Bruce H Thomas</name>
-    </author>
-    <author>
-      <name>Michelle Balasso</name>
-    </author>
-    <author>
-      <name>Jim O'Hehir</name>
-    </author>
-    <author>
-      <name>Andrew Cunningham</name>
-    </author>
-    <summary type="text">Virtual Reality (VR) is changing how we interact with complex spatial datasets. VR has the potential within forestry to help analyse remotely sensed spatial data for inventory management. However, challenges of scale and legibility of dense forest point clouds must be addressed. To do so, we present three VR Focus+Context (F+C) techniques: Wedgelight, Remote Lantern, and Ray Lantern. These techniques present point cloud data using a constrained highdetail focus within a broader abstracted context representation, manipulated using egocentric and exocentric interactions. We conducted two user studies. The first informed the design of the F+C techniques. The results from the first study indicate that VR significantly outperforms desktop displays in basic analysis of forestry point clouds, with improvements to both time and accuracy. The second study evaluated the performance of the resulting F+C techniques in a task analogous to real-world forestry operations. Our F+C techniques significantly outperformed current approaches, confirming their viability for facilitating detailed and effective forest assessments. These findings indicate that VR has significant advantages for spatial data analysis tasks in forestry, making a strong argument for its adoption in future analytical frameworks. The F+C visualisation techniques we introduced show considerable promise for analysis of high density point clouds, opening new avenues for development in immersive analytics. Supplemental materials (code, scans, results) are available at https://osf.io/hqc9u.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
-    <category term="cs.HC" />
-  </entry>
-  <entry>
-    <title>Learning Administrative Boundary-Aware Location Encoders via Reverse Geocoding</title>
-    <link href="http://arxiv.org/abs/2610.24306v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.24306v2</id>
-    <published>2026-10-16T00:00:00Z</published>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <author>
-      <name>Lakshay Sharma</name>
-    </author>
-    <author>
-      <name>Alex Marin</name>
-    </author>
-    <summary type="text">Location encoders learn compact representations of latitude--longitude coordinates for downstream geospatial prediction tasks. Existing approaches are pretrained using continuous or naturally occurring supervision, such as imagery, climate variables, or species distributions, and therefore do not explicitly capture administrative boundaries or place names, despite their strong influence on many real-world geospatial phenomena. We introduce, to our knowledge, the first method for learning administrative boundary-aware location encoders, using reverse-geocoded text as a self-supervised training signal. Our approach can be applied to existing location encoder architectures and consistently improves their downstream performance. We further introduce RevGeoRQ, a custom architecture tailored to reverse-geocoding supervision, which yields additional gains and exceeds contemporary location encoders on several downstream tasks. Finally, the use of human-interpretable reverse-geocoded strings and residual-quantized semantic IDs provides a more interpretable representation of geographic location than existing approaches. Code and model weights to be released soon.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>

@@ -4,12 +4,40 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-22T05:40:05Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
+  <updated>2026-10-23T02:15:45Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Bayesian Downscaling of Satellite-Derived Solar-Induced Chlorophyll Fluorescence</title>
+    <link href="http://arxiv.org/abs/2610.30508v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.30508v1</id>
+    <published>2026-10-21T00:00:00Z</published>
+    <updated>2026-10-21T00:00:00Z</updated>
+    <author>
+      <name>Russell Goebel</name>
+    </author>
+    <author>
+      <name>Leeza Moldavchuk</name>
+    </author>
+    <author>
+      <name>Taylor S. Jones</name>
+    </author>
+    <author>
+      <name>Jonathan Dooley</name>
+    </author>
+    <author>
+      <name>Lucy R. Hutyra</name>
+    </author>
+    <author>
+      <name>Luis Carvalho</name>
+    </author>
+    <summary type="text">We present an extendable Bayesian framework for spatial downscaling of satellite-derived measurements with coarse, irregular footprints. Motivated by measurements of solar-induced chlorophyll fluorescence (SIF) from the earth-observing OCO-2 satellite, we model coarse-resolution observations as noisy, weighted averages over an underlying fine-resolution spatial field. The latent process is defined over a regular grid and regularized using a Simultaneous Autoregressive (SAR) prior, yielding a sparse precision structure that enforces spatial smoothness. This formulation enables efficient posterior inference including uncertainty quantification and naturally accommodates land cover information through modified neighborhood structures or covariates. To assess accuracy, we conduct a semi-synthetic validation using albedo data derived from Sentinel-2 satellite surface reflectance, finding strong correspondence between posterior means and the synthetic generating field (R2 = 0.72 when including the proportion of water as a covariate and 0.57 without any covariates). We apply our method to a high-density OCO-2 target mode SIF observations over Boston, demonstrating that it produces fine-resolution posterior maps that reflect heterogeneity in urban environments and align with greenness, with a moderate relationship with the Normalized Difference Vegetation Index (NDVI) (R2 = 0.417 for pixels with 20+ overlapping soundings, 0.323 overall). Our approach achieves high-resolution recovery of satellite measurements with principled uncertainty quantification.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="stat.AP" />
+  </entry>
   <entry>
     <title>Quantifying Uncertainty Bounds in Spectral Shallow Water Bathymetry: The Profile Likelihood Framework for Semi-Analytical Models</title>
     <link href="http://arxiv.org/abs/2610.26352v1" rel="alternate" type="text/html" />

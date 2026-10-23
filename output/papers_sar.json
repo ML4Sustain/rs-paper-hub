@@ -8244,5 +8244,24 @@
     "_added_date": "2026-10-22",
     "Category": "Dataset",
     "_tasks": ""
+  },
+  {
+    "Type": "stat.AP",
+    "Subtype": "",
+    "Date": "2026-10-21",
+    "Month": 10,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Bayesian Downscaling of Satellite-Derived Solar-Induced Chlorophyll Fluorescence",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2610.30508v1",
+    "Abstract": "We present an extendable Bayesian framework for spatial downscaling of satellite-derived measurements with coarse, irregular footprints. Motivated by measurements of solar-induced chlorophyll fluorescence (SIF) from the earth-observing OCO-2 satellite, we model coarse-resolution observations as noisy, weighted averages over an underlying fine-resolution spatial field. The latent process is defined over a regular grid and regularized using a Simultaneous Autoregressive (SAR) prior, yielding a sparse precision structure that enforces spatial smoothness. This formulation enables efficient posterior inference including uncertainty quantification and naturally accommodates land cover information through modified neighborhood structures or covariates. To assess accuracy, we conduct a semi-synthetic validation using albedo data derived from Sentinel-2 satellite surface reflectance, finding strong correspondence between posterior means and the synthetic generating field (R2 = 0.72 when including the proportion of water as a covariate and 0.57 without any covariates). We apply our method to a high-density OCO-2 target mode SIF observations over Boston, demonstrating that it produces fine-resolution posterior maps that reflect heterogeneity in urban environments and align with greenness, with a moderate relationship with the Normalized Difference Vegetation Index (NDVI) (R2 = 0.417 for pixels with 20+ overlapping soundings, 0.323 overall). Our approach achieves high-resolution recovery of satellite measurements with principled uncertainty quantification.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{goebel2026bayesian,\n  title={Bayesian Downscaling of Satellite-Derived Solar-Induced Chlorophyll Fluorescence},\n  author={Russell Goebel and Leeza Moldavchuk and Taylor S. Jones and Jonathan Dooley and Lucy R. Hutyra and Luis Carvalho},\n  journal={arXiv preprint arXiv:2610.30508v1},\n  year={2026},\n  url={http://arxiv.org/abs/2610.30508v1}\n}",
+    "Authors": "Russell Goebel, Leeza Moldavchuk, Taylor S. Jones, Jonathan Dooley, Lucy R. Hutyra, Luis Carvalho",
+    "_added_date": "2026-10-23",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]
