@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-26T01:58:37Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
+  <updated>2026-10-26T05:41:54Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -27,6 +27,73 @@
     </author>
     <summary type="text">Geospatial foundation models (GeoFMs) are costly to pretrain, yet model families often repeat this process across backbone scales and sensing modalities. We investigate feature distillation as a more efficient way to reuse existing representations. First, we distill frozen CROMA and TerraMind teachers into smaller Vision Transformers through patch-level feature matching. Across nine PANGAEA tasks, distilled TerraMind Tiny, Small, and Base outperform their scale-matched released counterparts by 2.76, 3.02, and 1.87 mean IoU points, respectively; each also matches or exceeds the next-larger released model. Distilled CROMA-Base gains 2.05 points. TerraMind-Base required only 43 A6000 GPU-hours, approximately 0.5\% of the reported cost of independent pretraining. Second, we introduce TEDI, an unpaired multi-expert approach combining TerraMind for multispectral imagery and DINOv3 for high-resolution RGB. Separate patch embeddings route unpaired inputs into a shared Transformer trunk, removing the need for co-registered data. TEDI-Large achieves the highest single-model mean in our PANGAEA-9 comparison (62.51 mIoU), outperforming both teachers overall while retaining their modality-specific strengths. TEDI-Base reaches 61.75 mIoU with 72\% fewer parameters. These results show that distillation improves the GeoFM accuracy-compute frontier while consolidating complementary experts into a single versatile backbone.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>LoCA: Enabling Multi-Modality in Geospatial Location Encoders</title>
+    <link href="http://arxiv.org/abs/2610.32894v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.32894v1</id>
+    <published>2026-10-23T00:00:00Z</published>
+    <updated>2026-10-23T00:00:00Z</updated>
+    <author>
+      <name>Panagiotis Koromilas</name>
+    </author>
+    <author>
+      <name>Eleanna Vali</name>
+    </author>
+    <author>
+      <name>Diogenis Antonopoulos</name>
+    </author>
+    <author>
+      <name>Eleni Saka</name>
+    </author>
+    <author>
+      <name>Dimitris Christofis</name>
+    </author>
+    <author>
+      <name>Nikolaos Ioannis Bountos</name>
+    </author>
+    <author>
+      <name>Konstantin Klemmer</name>
+    </author>
+    <author>
+      <name>Ioannis Papoutsis</name>
+    </author>
+    <author>
+      <name>Yannis Panagakis</name>
+    </author>
+    <author>
+      <name>Mihalis A. Nicolaou</name>
+    </author>
+    <summary type="text">Location encoders map geographic coordinates to high-dimensional descriptors through contrastive alignment with paired Earth Observation imagery. We prove that this construction is structurally limited: any Lipschitz location encoder produces an output of intrinsic dimension at most 2, regardless of architecture or bandwidth, which forces the contrastive loss to strictly exceed its asymptotic optimum. Empirically, joint training also collapses the encoder's embedding covariance to low rank. Although dimension-limited, current location encoders sidestep this spectral collapse by training against a frozen image encoder, which we reinterpret as a covariance regularizer that supplies a high-rank target for the location encoder to fold onto. However, extending this approach to multimodal inputs is challenging, as location encoders should simultaneously map a single location to multiple, potentially incompatible, descriptors. We identify two requirements a regularizer must satisfy for location encoding in multimodal regimes: co-alignment across modalities, since adapters alone cannot align independently pretrained encoders; and high effective rank, since the location encoder inherits its target's spectrum. We propose LoCA (Location Contrastive Alignment), a two-stage pipeline that satisfies both. Stage 1 jointly trains Sentinel-1 and Sentinel-2 encoders with contrastive learning, producing a co-aligned, high-rank multimodal target. Stage 2 freezes the image encoders and trains a location and a tabular metadata encoder as projection adapters with multi-view contrastive learning. Against five state-of-the-art encoders on 17 tasks ranging from land cover and wildfire forecasting to geophysical, socio-economic, biodiversity and climate applications, LoCA achieves the most task wins, is the only model to outperform every other on a majority of tasks, and wins 68.8% of all per-task comparisons.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>SCDM-HTD: Spectral-Wise Conditional Diffusion Model for Hyperspectral Target Detection</title>
+    <link href="http://arxiv.org/abs/2610.32768v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.32768v1</id>
+    <published>2026-10-23T00:00:00Z</published>
+    <updated>2026-10-23T00:00:00Z</updated>
+    <author>
+      <name>Dunbin Shen</name>
+    </author>
+    <author>
+      <name>Wenfeng Kong</name>
+    </author>
+    <author>
+      <name>Jianjun Liu</name>
+    </author>
+    <author>
+      <name>Xiaorui Ma</name>
+    </author>
+    <author>
+      <name>Hongyu Wang</name>
+    </author>
+    <summary type="text">Hyperspectral target detection (HTD) aims to locate and recognize objects at a fine-grained scale, playing a pivotal role in remote sensing. Despite significant progress, current HTD methods primarily focus on feature comparison while neglecting distribution learning for background-target separation, which can limit detection robustness in practical applications. This paper addresses this issue by introducing a spectral-wise conditional diffusion model that reformulates HTD as a task of generating a detection map. Specifically, we treat background and target confidence scores as training samples and use the corresponding pixel spectra as guiding conditions to capture the distributional discrepancy between background and target through diffusion and denoising. To enhance practical applicability, we propose a lightweight conditional denoising network based on multilayer perceptron to map noisy confidence scores to their ideal counterparts and adopt a deterministic reverse non-Markov chain to skip sampling steps, thereby accelerating the generation process. Furthermore, we introduce a composite loss to improve background-target separation. This loss integrates constrained energy minimization loss to enhance target saliency and suppress the background by maximizing the target response while minimizing average output energy, alongside binary cross-entropy loss to classify background and target using pixel-wise labels. Experimental results on four benchmark datasets demonstrate the effectiveness of the proposed method, with improvements in both quantitative metrics and qualitative visual effects.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
   <entry>
