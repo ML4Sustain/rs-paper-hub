@@ -4,12 +4,31 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-23T05:39:13Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
+  <updated>2026-10-26T01:58:37Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Reuse, Don't Retrain: Efficient, Modality-Versatile Geospatial Foundation Models through Feature Distillation</title>
+    <link href="http://arxiv.org/abs/2610.32566v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.32566v1</id>
+    <published>2026-10-23T00:00:00Z</published>
+    <updated>2026-10-23T00:00:00Z</updated>
+    <author>
+      <name>Mario Hamon</name>
+    </author>
+    <author>
+      <name>Pierre Adorni</name>
+    </author>
+    <author>
+      <name>Minh-Tan Pham</name>
+    </author>
+    <summary type="text">Geospatial foundation models (GeoFMs) are costly to pretrain, yet model families often repeat this process across backbone scales and sensing modalities. We investigate feature distillation as a more efficient way to reuse existing representations. First, we distill frozen CROMA and TerraMind teachers into smaller Vision Transformers through patch-level feature matching. Across nine PANGAEA tasks, distilled TerraMind Tiny, Small, and Base outperform their scale-matched released counterparts by 2.76, 3.02, and 1.87 mean IoU points, respectively; each also matches or exceeds the next-larger released model. Distilled CROMA-Base gains 2.05 points. TerraMind-Base required only 43 A6000 GPU-hours, approximately 0.5\% of the reported cost of independent pretraining. Second, we introduce TEDI, an unpaired multi-expert approach combining TerraMind for multispectral imagery and DINOv3 for high-resolution RGB. Separate patch embeddings route unpaired inputs into a shared Transformer trunk, removing the need for co-registered data. TEDI-Large achieves the highest single-model mean in our PANGAEA-9 comparison (62.51 mIoU), outperforming both teachers overall while retaining their modality-specific strengths. TEDI-Base reaches 61.75 mIoU with 72\% fewer parameters. These results show that distillation improves the GeoFM accuracy-compute frontier while consolidating complementary experts into a single versatile backbone.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Bayesian Downscaling of Satellite-Derived Solar-Induced Chlorophyll Fluorescence</title>
     <link href="http://arxiv.org/abs/2610.30508v1" rel="alternate" type="text/html" />
@@ -37,86 +56,5 @@
     <summary type="text">We present an extendable Bayesian framework for spatial downscaling of satellite-derived measurements with coarse, irregular footprints. Motivated by measurements of solar-induced chlorophyll fluorescence (SIF) from the earth-observing OCO-2 satellite, we model coarse-resolution observations as noisy, weighted averages over an underlying fine-resolution spatial field. The latent process is defined over a regular grid and regularized using a Simultaneous Autoregressive (SAR) prior, yielding a sparse precision structure that enforces spatial smoothness. This formulation enables efficient posterior inference including uncertainty quantification and naturally accommodates land cover information through modified neighborhood structures or covariates. To assess accuracy, we conduct a semi-synthetic validation using albedo data derived from Sentinel-2 satellite surface reflectance, finding strong correspondence between posterior means and the synthetic generating field (R2 = 0.72 when including the proportion of water as a covariate and 0.57 without any covariates). We apply our method to a high-density OCO-2 target mode SIF observations over Boston, demonstrating that it produces fine-resolution posterior maps that reflect heterogeneity in urban environments and align with greenness, with a moderate relationship with the Normalized Difference Vegetation Index (NDVI) (R2 = 0.417 for pixels with 20+ overlapping soundings, 0.323 overall). Our approach achieves high-resolution recovery of satellite measurements with principled uncertainty quantification.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="stat.AP" />
-  </entry>
-  <entry>
-    <title>Quantifying Uncertainty Bounds in Spectral Shallow Water Bathymetry: The Profile Likelihood Framework for Semi-Analytical Models</title>
-    <link href="http://arxiv.org/abs/2610.26352v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.26352v1</id>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <author>
-      <name>Mohamed Ali Ghannami</name>
-    </author>
-    <author>
-      <name>Guillaume Sicot</name>
-    </author>
-    <author>
-      <name>Isabelle Quidu</name>
-    </author>
-    <author>
-      <name>Sylvie Daniel</name>
-    </author>
-    <summary type="text">Accurate bathymetric mapping in shallow waters is critical for coastal monitoring, navigation safety, and environmental conservation. While semi-analytical (SA) models have proven effective for estimating water column depth (WCD) from optical remote sensing data, quantifying the associated uncertainties remains a significant challenge. This study introduces a unified framework based on profile likelihood to evaluate WCD uncertainties in Semi-Analytical (SA) models, bridging traditional variance-covariance methods with likelihood-based inference. Through controlled simulations, we systematically assess the performance of first-order statistical tests-likelihood ratio, Wald (observed and expected), and score tests-across varying environmental conditions and sensor configurations.&lt;p&gt;Our results demonstrate that the expected Fisher information Wald test, equivalent to classical variance-covariance propagation, provides reliable uncertainty bounds in hyperspectral settings with clear waters. However, its performance deteriorates in multispectral applications and complex water conditions, where likelihood ratio tests prove more robust. This divergence highlights fundamental limitations in the small-sample regime typical of per-pixel spectral bathymetry. Notably, even under idealized conditions with true parameter initialization, local optimization challenges in SA models can compromise both parameter estimation and uncertainty quantification, suggesting even greater challenges in practical applications with less favorable initialization. The findings underscore the importance of robust statistical inference in improving the reliability of bathymetric products for operational applications.&lt;/p&gt;</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="stat.AP" />
-  </entry>
-  <entry>
-    <title>A Generic On-Board AI Processing Chain for Earth Observation: From Application Development to Embedded Deployment and Mission-Level Orchestration</title>
-    <link href="http://arxiv.org/abs/2610.26340v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.26340v1</id>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <author>
-      <name>Michel-Fran{\c c}ois Foulon</name>
-    </author>
-    <author>
-      <name>Liz Ramos Medina</name>
-    </author>
-    <author>
-      <name>Thomas Goudemant</name>
-    </author>
-    <author>
-      <name>Clotilde Szywala</name>
-    </author>
-    <author>
-      <name>Virgile Robles</name>
-    </author>
-    <author>
-      <name>Cl{é}ment Petitjean</name>
-    </author>
-    <author>
-      <name>Ad{è}le Hankache</name>
-    </author>
-    <author>
-      <name>Omar Hlimi</name>
-    </author>
-    <summary type="text">Earth observation satellites acquire more data than they can downlink. Extracting information on board with artificial intelligence (AI) turns the satellite into a data-reduction stage that downlinks compact products, such as masks or detections, instead of full scenes; deploying it in a mission, however, involves the whole processing chain and not only the neural network. We present a generic on-board AI processing chain along three axes, with wildfire segmentation as the worked example among ship detection and cloud segmentation. (i) The AI model is tuned (spectral-band selection, input normalization), quantized to 8-bit integers (int8) and ported to an AMD Versal VCK190, with its excellent segmentation performance preserved on the board. (ii) A modular tiler-inference-mosaicer workflow, reused unchanged across applications, brings the tile-level model to scene level, turning a full acquisition into a scene-level mask or detection list. (iii) Each step is packaged as a unikernel and orchestrated on board by ORCHIDE, a cloud-native orchestrator. The chain is characterized end to end, from the standalone execution on the target to its execution under orchestration with parallel workflows on a representative test bench. Beyond AI inference on individual tiles, this approach aims at increasing the maturity of on-board AI deployment by addressing a complete processing chain, from the acquired scene to the mission-level execution.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="cs.AR; cs.DC" />
-  </entry>
-  <entry>
-    <title>Exploiting sparse conditional dependence in remote sensing observing systems</title>
-    <link href="http://arxiv.org/abs/2610.24710v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.24710v1</id>
-    <published>2026-10-17T00:00:00Z</published>
-    <updated>2026-10-17T00:00:00Z</updated>
-    <author>
-      <name>Kelvin M. Leung</name>
-    </author>
-    <author>
-      <name>Jouni Susiluoto</name>
-    </author>
-    <author>
-      <name>Regina Eckert</name>
-    </author>
-    <author>
-      <name>Youssef Marzouk</name>
-    </author>
-    <summary type="text">We develop a novel filtering algorithm for remote sensing inverse problems that exploits sparsity in the precision (inverse covariance) matrix arising from conditional independence structures in spatio-temporal satellite data. Motivated by NASA's Orbiting Carbon Observatory-2 (OCO-2), Earth Surface Mineral Dust Source Investigation (EMIT), and upcoming Explorer for Artemis Geology Lunar and Earth (EAGLE) missions, we formulate a Bayesian inference framework for retrieving atmospheric and surface parameters from hyperspectral radiance measurements. Unlike traditional methods that operate on covariances and ignore spatio-temporal dependencies, our approach models the full spatio-temporal state using sparse Gaussian graphical models, which corresponds to a block-sparse precision matrix. We derive an information filter based on this structure, enabling scalable joint inference over large spatial grids with uncertainty propagation. We demonstrate the effectiveness of the algorithm in two distinct remote sensing contexts. First, we apply the method to synthetic data configured to mimic the OCO-2 mission, focusing on retrievals of atmospheric CO$_2$, and observe a 50% reduction in CO$_2$ retrieval error compared to single-pixel methods. Then, we evaluate the algorithm using imaging spectroscopy data from the Surface Biology and Geology (SBG) High Frequency Time Series (SHIFT) campaign to retrieve surface reflectance, achieving a 20% reduction in retrieval error relative to baseline approaches.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 26 pages, 14 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="stat.CO" />
   </entry>
 </feed>
