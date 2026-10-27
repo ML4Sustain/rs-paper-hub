@@ -28783,5 +28783,24 @@
     "_added_date": "2026-10-26",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-10-24",
+    "Month": 10,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Cross-Scale Sparse Attention for Referring Segmentation in Remote Sensing",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2610.33551v1",
+    "Abstract": "High-resolution remote sensing (RS) imagery provides fine spatial detail over large areas, making it essential for fine-grained scene understanding. Referring Remote Sensing Image Segmentation (RRSIS) aims to segment regions described by natural language, yet many existing methods rely on sequential alignment--fusion pipelines with limited joint modeling of cross-scale visual hierarchies and linguistic dependencies. Moreover, dense attention mechanisms struggle with the sparsity and wide spatial dispersion of RS targets, while current datasets offer limited structured evaluation of multi-target references, multi-hop relational reasoning, and multi-granularity descriptions, limiting both model development and evaluation. To address these challenges, we propose a Cross-Scale Sparse Attention Model (CSSAM), which aligns multiscale visual features with complex referring expressions through two key modules. The Cross-scale Modality-aligned Fusion Module (CMFM) performs unified cross-scale cross-modal fusion, while the Dynamic Multimodal Sparse Hybrid Attention (DMSHA) selectively attends to informative visual--textual tokens, reducing dense visual interactions. Furthermore, we introduce M$^{3}$RRSIS-D, a RRSIS dataset explicitly designed around three core reasoning dimensions: multi-target (M$^{1}$), reference-dependent multi-hop (M$^{2}$), and multi-granularity (M$^{3}$) expressions. Extensive experiments on M$^{3}$RRSIS-D and two public RRSIS benchmarks demonstrate that CSSAM achieves competitive performance across accuracy, fine-grained reasoning, and high-IoU localization metrics, validating its effectiveness for complex semantic reasoning in realistic RS scenarios. Code, dataset, and model weights will be released upon acceptance.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{li2026crossscale,\n  title={Cross-Scale Sparse Attention for Referring Segmentation in Remote Sensing},\n  author={Yuxi Li and Lu Si and Xia Liao and Yidong Shen and Zheng Wei and Jun Zhang and Xin Yuan},\n  journal={arXiv preprint arXiv:2610.33551v1},\n  year={2026},\n  url={http://arxiv.org/abs/2610.33551v1}\n}",
+    "Authors": "Yuxi Li, Lu Si, Xia Liao, Yidong Shen, Zheng Wei, Jun Zhang, Xin Yuan",
+    "_added_date": "2026-10-27",
+    "Category": "Method",
+    "_tasks": "SEG"
   }
 ]

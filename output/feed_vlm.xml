@@ -4,12 +4,44 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-26T05:41:54Z</updated>
+  <updated>2026-10-27T02:36:35Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 11 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Cross-Scale Sparse Attention for Referring Segmentation in Remote Sensing</title>
+    <link href="http://arxiv.org/abs/2610.33551v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.33551v1</id>
+    <published>2026-10-24T00:00:00Z</published>
+    <updated>2026-10-24T00:00:00Z</updated>
+    <author>
+      <name>Yuxi Li</name>
+    </author>
+    <author>
+      <name>Lu Si</name>
+    </author>
+    <author>
+      <name>Xia Liao</name>
+    </author>
+    <author>
+      <name>Yidong Shen</name>
+    </author>
+    <author>
+      <name>Zheng Wei</name>
+    </author>
+    <author>
+      <name>Jun Zhang</name>
+    </author>
+    <author>
+      <name>Xin Yuan</name>
+    </author>
+    <summary type="text">High-resolution remote sensing (RS) imagery provides fine spatial detail over large areas, making it essential for fine-grained scene understanding. Referring Remote Sensing Image Segmentation (RRSIS) aims to segment regions described by natural language, yet many existing methods rely on sequential alignment--fusion pipelines with limited joint modeling of cross-scale visual hierarchies and linguistic dependencies. Moreover, dense attention mechanisms struggle with the sparsity and wide spatial dispersion of RS targets, while current datasets offer limited structured evaluation of multi-target references, multi-hop relational reasoning, and multi-granularity descriptions, limiting both model development and evaluation. To address these challenges, we propose a Cross-Scale Sparse Attention Model (CSSAM), which aligns multiscale visual features with complex referring expressions through two key modules. The Cross-scale Modality-aligned Fusion Module (CMFM) performs unified cross-scale cross-modal fusion, while the Dynamic Multimodal Sparse Hybrid Attention (DMSHA) selectively attends to informative visual--textual tokens, reducing dense visual interactions. Furthermore, we introduce M$^{3}$RRSIS-D, a RRSIS dataset explicitly designed around three core reasoning dimensions: multi-target (M$^{1}$), reference-dependent multi-hop (M$^{2}$), and multi-granularity (M$^{3}$) expressions. Extensive experiments on M$^{3}$RRSIS-D and two public RRSIS benchmarks demonstrate that CSSAM achieves competitive performance across accuracy, fine-grained reasoning, and high-IoU localization metrics, validating its effectiveness for complex semantic reasoning in realistic RS scenarios. Code, dataset, and model weights will be released upon acceptance.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Reuse, Don't Retrain: Efficient, Modality-Versatile Geospatial Foundation Models through Feature Distillation</title>
     <link href="http://arxiv.org/abs/2610.32566v1" rel="alternate" type="text/html" />
@@ -273,23 +305,6 @@
     </author>
     <summary type="text">In remote sensing, open-vocabulary segmentation is particularly important for flexible and scalable land-cover understanding across diverse regions, as it improves generalization to novel categories without requiring exhaustive pixel-level annotations. Despite its great promise, progress in this area remains largely constrained by existing datasets with limited category coverage and overly coarse taxonomies, and therefore struggles to support fine-grained semantic understanding required in real-world applications such as urban functional zoning, carbon accounting, and post-disaster assessment. To address these challenges, we present OpenEarth-OVS44, a multimodal benchmark with 290,587 expert-verified segments from 2,832 RGB images and 1,341 strictly registered RGB-SAR pairs at sub-meter spatial resolution, covering 40 cities across France, Japan, and the United States under a unified 44-class taxonomy organized into 9 base categories. Three evaluation tracks are provided: an RGB-only fine-grained benchmark, a multimodal track with diverse synthetic cloudy conditions for weather-robust evaluation, and a held-out cross-region track. Extensive experiments on representative open-vocabulary segmentation models demonstrate that training on OpenEarth-OVS44 substantially improves fine-grained segmentation performance over the strongest training-free baseline, with improvements of up to 7.1 mIoU points on unseen categories and 27.6 mIoU points on seen categories. The dataset and code will be released.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Towards Consistent Geospatial Representations: Aligning One Encoder to Many Foundation Models</title>
-    <link href="http://arxiv.org/abs/2610.28313v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.28313v1</id>
-    <published>2026-10-20T00:00:00Z</published>
-    <updated>2026-10-20T00:00:00Z</updated>
-    <author>
-      <name>Arthur Ouaknine</name>
-    </author>
-    <author>
-      <name>David Rolnick</name>
-    </author>
-    <summary type="text">Geospatial foundation models (GFMs) differ widely in pretraining objective, modality and resolution, and none leads across benchmarks. We ask whether their representations are complementary, and whether a single encoder can inherit that complementarity. We introduce Pangaea-Latents, an extension of the Pangaea benchmark providing frozen embeddings of $5$ GFMs over its $11$ datasets, along with reproduced baselines, and find GFM embeddings to be neither redundant nor disjoint. We then propose GeoMixture, a preliminary framework to align a ViT to several GFMs per dataset through a multi-representation alignment (mREPA) objective. Our encoder ties the best GFM in average rank across nine Pangaea datasets, trading peak performance for cross-task consistency.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS REO Workshop 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>

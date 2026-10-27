@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_sar.xml</id>
   <link href="https://rspaper.top/output/feed_sar.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-26T05:41:54Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
+  <updated>2026-10-27T02:36:35Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -112,32 +112,5 @@
     <summary type="text">We present an extendable Bayesian framework for spatial downscaling of satellite-derived measurements with coarse, irregular footprints. Motivated by measurements of solar-induced chlorophyll fluorescence (SIF) from the earth-observing OCO-2 satellite, we model coarse-resolution observations as noisy, weighted averages over an underlying fine-resolution spatial field. The latent process is defined over a regular grid and regularized using a Simultaneous Autoregressive (SAR) prior, yielding a sparse precision structure that enforces spatial smoothness. This formulation enables efficient posterior inference including uncertainty quantification and naturally accommodates land cover information through modified neighborhood structures or covariates. To assess accuracy, we conduct a semi-synthetic validation using albedo data derived from Sentinel-2 satellite surface reflectance, finding strong correspondence between posterior means and the synthetic generating field (R2 = 0.72 when including the proportion of water as a covariate and 0.57 without any covariates). We apply our method to a high-density OCO-2 target mode SIF observations over Boston, demonstrating that it produces fine-resolution posterior maps that reflect heterogeneity in urban environments and align with greenness, with a moderate relationship with the Normalized Difference Vegetation Index (NDVI) (R2 = 0.417 for pixels with 20+ overlapping soundings, 0.323 overall). Our approach achieves high-resolution recovery of satellite measurements with principled uncertainty quantification.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="stat.AP" />
-  </entry>
-  <entry>
-    <title>Revealing Inter-Channel Modality Discriminability: Channel Selective Interaction Fusion Network for Optical-SAR Object Detection</title>
-    <link href="http://arxiv.org/abs/2610.27757v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.27757v1</id>
-    <published>2026-10-20T00:00:00Z</published>
-    <updated>2026-10-20T00:00:00Z</updated>
-    <author>
-      <name>Haojie Li</name>
-    </author>
-    <author>
-      <name>Yuanfei Huang</name>
-    </author>
-    <author>
-      <name>Lingfei Song</name>
-    </author>
-    <author>
-      <name>Jia Li</name>
-    </author>
-    <author>
-      <name>Lizhi Wang</name>
-    </author>
-    <summary type="text">Synthetic aperture radar (SAR) and optical imagery provide complementary structural and appearance information for remote sensing object detection. However, substantial cross-modal discrepancies and indiscriminate channel interaction inevitably introduce redundant or conflicting features. Since different feature channels encode heterogeneous semantic information and contribute unequally to cross-modal fusion, selectively highlighting task-relevant channels while suppressing redundant ones is essential. To address this issue, we propose the Channel Selective Interaction Fusion Network (CSIF-Net), which performs selective channel-level cross-modal interaction. CSIF-Net first employs a frequency decomposition module to construct frequency-aware SAR inputs, facilitating the separation of structural information from noise-related responses. It then models cross-modal channel relationships through a cross-attention channel selection module and dynamically partitions the features into shared and modality-specific components. Finally, a dual-branch fusion module performs cross-modal interaction and channel realignment for shared features while independently enhancing SAR-specific features, thereby exploiting complementary information and suppressing modality interference. Extensive experiments on the OGSOD 1.0 and M4-SAR datasets demonstrate that CSIF-Net achieves state-of-the-art performance in both horizontal and oriented object detection, surpassing the existing methods by 4.01% and 3.18% gains, respectively.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Multimedia" />
   </entry>
 </feed>
