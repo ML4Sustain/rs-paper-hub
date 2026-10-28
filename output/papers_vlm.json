@@ -28840,5 +28840,43 @@
     "_added_date": "2026-10-27",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Machine Learning",
+    "Date": "2026-10-27",
+    "Month": 10,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Evaluating AlphaEarth Embeddings for Crop Classification: Separability, Temporal Dynamics, and Cross-Regional Transferability",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2610.36857v1",
+    "Abstract": "Earth Observation (EO)-based agricultural monitoring is shifting from pixel-level spectral analysis toward representation-driven modeling, yet systematic evaluation of learned representations across spatial, temporal, and domain-generalization dimensions remains limited. Geospatial foundation models generate high-dimensional embeddings encoding spatio-temporal land-surface properties, but their utility for agricultural applications remains insufficiently understood. This study presents a representation-agnostic evaluation framework integrating geometric separability, temporal dynamics, spatial robustness, and cross-regional generalisation. A 64-dimensional AlphaEarth embedding space is benchmarked against Sentinel-2 reflectance, NDVI-derived phenology, and harmonic features using field-scale data from the Conterminous United States (CONUS; 2017-2023) and Northern India (2021).   Traditional features achieve strong linear separability (Fisher ratio), while embeddings provide superior distribution-aware separation -- Bhattacharyya and Mahalanobis distances up to an order of magnitude higher for spectrally similar pairs (e.g. Corn/Soybeans: 3.9 vs. 0.10). Embeddings uniquely capture multi-year crop rotation dynamics, reaching a separability ratio of 1.784 versus a maximum of 1.003 across all engineered features, and exhibit lower residual spatial autocorrelation of errors (mean Moran's $I \\approx 0.17$). However, harmonic and NDVI features show stronger cross-continental transferability (US $\\to$ India Macro F1: 0.493 vs. 0.326 for embeddings), reflecting better distributional alignment. The combined feature space yields balanced performance, supporting hybrid modeling. These findings reveal a fundamental trade-off between representational richness and cross-region transferability, providing a structured framework for feature selection in large-scale crop classification.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{goyal2026evaluating,\n  title={Evaluating AlphaEarth Embeddings for Crop Classification: Separability, Temporal Dynamics, and Cross-Regional Transferability},\n  author={Priyanka Goyal and Maitreyee Sar and Adway Mitra and Manjira Sinha},\n  journal={arXiv preprint arXiv:2610.36857v1},\n  year={2026},\n  url={http://arxiv.org/abs/2610.36857v1}\n}",
+    "Authors": "Priyanka Goyal, Maitreyee Sar, Adway Mitra, Manjira Sinha",
+    "_added_date": "2026-10-28",
+    "Category": "Method",
+    "_tasks": "CLS"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-10-27",
+    "Month": 10,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Efficient Remote Sensing Image-Text Retrieval via Interaction-Free Recall and Text-Guided Reranking",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2610.36756v1",
+    "Abstract": "Remote sensing (RS) image-text retrieval plays a critical role in understanding massive RS imagery. However, the dense multi-object distribution and complex backgrounds in RS imagery make it difficult to simultaneously achieve fine-grained cross-modal alignment and efficient retrieval. Existing methods either rely on complex cross-modal interactions that lead to low retrieval efficiency, or depend on large-scale vision-language adaptation, which requires massive data and computational resources. To address these issues, we develop a fast-then-fine (FTF) retrieval framework centered on interaction-free multi-granular recall and parameter-free text-guided cross-modal reranking with the Balanced Text-guided Interaction Block (BTIB). Specifically, interaction-free multi-granular recall pre-computes gallery embeddings and matches them with the corresponding query embedding without full-gallery token-level text-image interaction, while text-guided cross-modal reranking with BTIB refines local semantic correspondence within the top-K candidate set. Furthermore, an inter- and intra-modal loss is designed to jointly optimize cross-modal alignment across multi-granular representations. Extensive experiments on public benchmarks demonstrate that the FTF achieves competitive retrieval accuracy while significantly improving retrieval efficiency compared with existing methods.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{chen2026efficient,\n  title={Efficient Remote Sensing Image-Text Retrieval via Interaction-Free Recall and Text-Guided Reranking},\n  author={Xi Chen and Xu Chen and Xiamgyang Jia and Wei Wang and Xu Zhang and Zhenyuan Shun},\n  journal={arXiv preprint arXiv:2610.36756v1},\n  year={2026},\n  url={http://arxiv.org/abs/2610.36756v1}\n}",
+    "Authors": "Xi Chen, Xu Chen, Xiamgyang Jia, Wei Wang, Xu Zhang, Zhenyuan Shun",
+    "_added_date": "2026-10-28",
+    "Category": "Method",
+    "_tasks": "ITR"
   }
 ]

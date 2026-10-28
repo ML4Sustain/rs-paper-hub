@@ -3051,3 +3051,10 @@ Method,Computer Vision,Machine Learning,2026-10-23,10,2026,,LoCA: Enabling Multi
   year={2026},
   url={http://arxiv.org/abs/2610.32894v1}
 }","Panagiotis Koromilas, Eleanna Vali, Diogenis Antonopoulos, Eleni Saka, Dimitris Christofis, Nikolaos Ioannis Bountos, Konstantin Klemmer, Ioannis Papoutsis, Yannis Panagakis, Mihalis A. Nicolaou",,2026-10-26
+Method,Image and Video Processing,Computer Vision; Machine Learning,2026-10-27,10,2026,,Quantized Edge Inference of a Self-Supervised SAR-Optical Encoder on Commodity x86 Hardware,,http://arxiv.org/abs/2610.37056v1,"Self-supervised vision transformers are increasingly used as reusable encoders for Earth observation, but their inference cost on the hardware available in the field is rarely characterized. We deploy a pretrained SAR-optical masked-autoencoder encoder on three commodity x86 nodes, from a low-power CPU without AVX2 to an AVX2+VNNI reference, at FP32, FP16 and INT8 on the CPU and, where present, the integrated GPU, and report latency, energy (RAPL and wall plug) and linear-probe accuracy. Quantization is accuracy-neutral: INT8 changes micro-mAP by only +0.0006, within the seed spread, so precision becomes a pure cost decision. INT8 lowers CPU latency on every node, by 1.45x even on the CPU without AVX2, and CPU energy wherever it is measured, and the VNNI reference (1.53x) suggests a further gain beyond AVX2. The Pareto-optimal device shifts from the integrated GPU, which is 4.38x faster than the CPU on the weakest node, to the CPU as the CPU class improves.",,"3 pages, 1 figure","@article{sanchezleon2026quantized,
+  title={Quantized Edge Inference of a Self-Supervised SAR-Optical Encoder on Commodity x86 Hardware},
+  author={Christian Sanchez-Leon and Dongming Chen},
+  journal={arXiv preprint arXiv:2610.37056v1},
+  year={2026},
+  url={http://arxiv.org/abs/2610.37056v1}
+}","Christian Sanchez-Leon, Dongming Chen",,2026-10-28

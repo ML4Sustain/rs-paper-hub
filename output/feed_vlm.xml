@@ -4,12 +4,65 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-27T05:51:28Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 13 entries</subtitle>
+  <updated>2026-10-28T02:45:47Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 14 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Evaluating AlphaEarth Embeddings for Crop Classification: Separability, Temporal Dynamics, and Cross-Regional Transferability</title>
+    <link href="http://arxiv.org/abs/2610.36857v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.36857v1</id>
+    <published>2026-10-27T00:00:00Z</published>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <author>
+      <name>Priyanka Goyal</name>
+    </author>
+    <author>
+      <name>Maitreyee Sar</name>
+    </author>
+    <author>
+      <name>Adway Mitra</name>
+    </author>
+    <author>
+      <name>Manjira Sinha</name>
+    </author>
+    <summary type="text">Earth Observation (EO)-based agricultural monitoring is shifting from pixel-level spectral analysis toward representation-driven modeling, yet systematic evaluation of learned representations across spatial, temporal, and domain-generalization dimensions remains limited. Geospatial foundation models generate high-dimensional embeddings encoding spatio-temporal land-surface properties, but their utility for agricultural applications remains insufficiently understood. This study presents a representation-agnostic evaluation framework integrating geometric separability, temporal dynamics, spatial robustness, and cross-regional generalisation. A 64-dimensional AlphaEarth embedding space is benchmarked against Sentinel-2 reflectance, NDVI-derived phenology, and harmonic features using field-scale data from the Conterminous United States (CONUS; 2017-2023) and Northern India (2021).   Traditional features achieve strong linear separability (Fisher ratio), while embeddings provide superior distribution-aware separation -- Bhattacharyya and Mahalanobis distances up to an order of magnitude higher for spectrally similar pairs (e.g. Corn/Soybeans: 3.9 vs. 0.10). Embeddings uniquely capture multi-year crop rotation dynamics, reaching a separability ratio of 1.784 versus a maximum of 1.003 across all engineered features, and exhibit lower residual spatial autocorrelation of errors (mean Moran's $I \approx 0.17$). However, harmonic and NDVI features show stronger cross-continental transferability (US $\to$ India Macro F1: 0.493 vs. 0.326 for embeddings), reflecting better distributional alignment. The combined feature space yields balanced performance, supporting hybrid modeling. These findings reveal a fundamental trade-off between representational richness and cross-region transferability, providing a structured framework for feature selection in large-scale crop classification.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Efficient Remote Sensing Image-Text Retrieval via Interaction-Free Recall and Text-Guided Reranking</title>
+    <link href="http://arxiv.org/abs/2610.36756v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.36756v1</id>
+    <published>2026-10-27T00:00:00Z</published>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <author>
+      <name>Xi Chen</name>
+    </author>
+    <author>
+      <name>Xu Chen</name>
+    </author>
+    <author>
+      <name>Xiamgyang Jia</name>
+    </author>
+    <author>
+      <name>Wei Wang</name>
+    </author>
+    <author>
+      <name>Xu Zhang</name>
+    </author>
+    <author>
+      <name>Zhenyuan Shun</name>
+    </author>
+    <summary type="text">Remote sensing (RS) image-text retrieval plays a critical role in understanding massive RS imagery. However, the dense multi-object distribution and complex backgrounds in RS imagery make it difficult to simultaneously achieve fine-grained cross-modal alignment and efficient retrieval. Existing methods either rely on complex cross-modal interactions that lead to low retrieval efficiency, or depend on large-scale vision-language adaptation, which requires massive data and computational resources. To address these issues, we develop a fast-then-fine (FTF) retrieval framework centered on interaction-free multi-granular recall and parameter-free text-guided cross-modal reranking with the Balanced Text-guided Interaction Block (BTIB). Specifically, interaction-free multi-granular recall pre-computes gallery embeddings and matches them with the corresponding query embedding without full-gallery token-level text-image interaction, while text-guided cross-modal reranking with BTIB refines local semantic correspondence within the top-K candidate set. Furthermore, an inter- and intra-modal loss is designed to jointly optimize cross-modal alignment across multi-granular representations. Extensive experiments on public benchmarks demonstrate that the FTF achieves competitive retrieval accuracy while significantly improving retrieval efficiency compared with existing methods.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>ArchiveLens: A Generative Spatial Knowledge Framework for Semantic Reconstruction of Historical Maps</title>
     <link href="http://arxiv.org/abs/2610.35606v1" rel="alternate" type="text/html" />
@@ -334,39 +387,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Machine Learning" />
     <category term="Machine Learning (Statistics)" />
-  </entry>
-  <entry>
-    <title>OpenEarth-OVS44: A Multimodal Remote Sensing Dataset for Open-Vocabulary Segmentation</title>
-    <link href="http://arxiv.org/abs/2610.29642v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.29642v1</id>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <author>
-      <name>Yimin Wei</name>
-    </author>
-    <author>
-      <name>Hongruixuan Chen</name>
-    </author>
-    <author>
-      <name>Hao Zheng</name>
-    </author>
-    <author>
-      <name>Hao Liu</name>
-    </author>
-    <author>
-      <name>Jian Song</name>
-    </author>
-    <author>
-      <name>Yuting Zhu</name>
-    </author>
-    <author>
-      <name>Junshi Xia</name>
-    </author>
-    <author>
-      <name>Naoto Yokoya</name>
-    </author>
-    <summary type="text">In remote sensing, open-vocabulary segmentation is particularly important for flexible and scalable land-cover understanding across diverse regions, as it improves generalization to novel categories without requiring exhaustive pixel-level annotations. Despite its great promise, progress in this area remains largely constrained by existing datasets with limited category coverage and overly coarse taxonomies, and therefore struggles to support fine-grained semantic understanding required in real-world applications such as urban functional zoning, carbon accounting, and post-disaster assessment. To address these challenges, we present OpenEarth-OVS44, a multimodal benchmark with 290,587 expert-verified segments from 2,832 RGB images and 1,341 strictly registered RGB-SAR pairs at sub-meter spatial resolution, covering 40 cities across France, Japan, and the United States under a unified 44-class taxonomy organized into 9 base categories. Three evaluation tracks are provided: an RGB-only fine-grained benchmark, a multimodal track with diverse synthetic cloudy conditions for weather-robust evaluation, and a held-out cross-region track. Extensive experiments on representative open-vocabulary segmentation models demonstrate that training on OpenEarth-OVS44 substantially improves fine-grained segmentation performance over the strongest training-free baseline, with improvements of up to 7.1 mIoU points on unseen categories and 27.6 mIoU points on seen categories. The dataset and code will be released.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>

@@ -4,12 +4,30 @@
   <id>https://rspaper.top/output/feed_sar.xml</id>
   <link href="https://rspaper.top/output/feed_sar.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-27T05:51:28Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
+  <updated>2026-10-28T02:45:47Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Quantized Edge Inference of a Self-Supervised SAR-Optical Encoder on Commodity x86 Hardware</title>
+    <link href="http://arxiv.org/abs/2610.37056v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.37056v1</id>
+    <published>2026-10-27T00:00:00Z</published>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <author>
+      <name>Christian Sanchez-Leon</name>
+    </author>
+    <author>
+      <name>Dongming Chen</name>
+    </author>
+    <summary type="text">Self-supervised vision transformers are increasingly used as reusable encoders for Earth observation, but their inference cost on the hardware available in the field is rarely characterized. We deploy a pretrained SAR-optical masked-autoencoder encoder on three commodity x86 nodes, from a low-power CPU without AVX2 to an AVX2+VNNI reference, at FP32, FP16 and INT8 on the CPU and, where present, the integrated GPU, and report latency, energy (RAPL and wall plug) and linear-probe accuracy. Quantization is accuracy-neutral: INT8 changes micro-mAP by only +0.0006, within the seed spread, so precision becomes a pure cost decision. INT8 lowers CPU latency on every node, by 1.45x even on the CPU without AVX2, and CPU energy wherever it is measured, and the VNNI reference (1.53x) suggests a further gain beyond AVX2. The Pareto-optimal device shifts from the integrated GPU, which is 4.38x faster than the CPU on the weakest node, to the CPU as the CPU class improves.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 3 pages, 1 figure&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+    <category term="Computer Vision; Machine Learning" />
+  </entry>
   <entry>
     <title>LoCA: Enabling Multi-Modality in Geospatial Location Encoders</title>
     <link href="http://arxiv.org/abs/2610.32894v1" rel="alternate" type="text/html" />
@@ -50,67 +68,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>OpenEarth-OVS44: A Multimodal Remote Sensing Dataset for Open-Vocabulary Segmentation</title>
-    <link href="http://arxiv.org/abs/2610.29642v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.29642v1</id>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <author>
-      <name>Yimin Wei</name>
-    </author>
-    <author>
-      <name>Hongruixuan Chen</name>
-    </author>
-    <author>
-      <name>Hao Zheng</name>
-    </author>
-    <author>
-      <name>Hao Liu</name>
-    </author>
-    <author>
-      <name>Jian Song</name>
-    </author>
-    <author>
-      <name>Yuting Zhu</name>
-    </author>
-    <author>
-      <name>Junshi Xia</name>
-    </author>
-    <author>
-      <name>Naoto Yokoya</name>
-    </author>
-    <summary type="text">In remote sensing, open-vocabulary segmentation is particularly important for flexible and scalable land-cover understanding across diverse regions, as it improves generalization to novel categories without requiring exhaustive pixel-level annotations. Despite its great promise, progress in this area remains largely constrained by existing datasets with limited category coverage and overly coarse taxonomies, and therefore struggles to support fine-grained semantic understanding required in real-world applications such as urban functional zoning, carbon accounting, and post-disaster assessment. To address these challenges, we present OpenEarth-OVS44, a multimodal benchmark with 290,587 expert-verified segments from 2,832 RGB images and 1,341 strictly registered RGB-SAR pairs at sub-meter spatial resolution, covering 40 cities across France, Japan, and the United States under a unified 44-class taxonomy organized into 9 base categories. Three evaluation tracks are provided: an RGB-only fine-grained benchmark, a multimodal track with diverse synthetic cloudy conditions for weather-robust evaluation, and a held-out cross-region track. Extensive experiments on representative open-vocabulary segmentation models demonstrate that training on OpenEarth-OVS44 substantially improves fine-grained segmentation performance over the strongest training-free baseline, with improvements of up to 7.1 mIoU points on unseen categories and 27.6 mIoU points on seen categories. The dataset and code will be released.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Bayesian Downscaling of Satellite-Derived Solar-Induced Chlorophyll Fluorescence</title>
-    <link href="http://arxiv.org/abs/2610.30508v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.30508v1</id>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <author>
-      <name>Russell Goebel</name>
-    </author>
-    <author>
-      <name>Leeza Moldavchuk</name>
-    </author>
-    <author>
-      <name>Taylor S. Jones</name>
-    </author>
-    <author>
-      <name>Jonathan Dooley</name>
-    </author>
-    <author>
-      <name>Lucy R. Hutyra</name>
-    </author>
-    <author>
-      <name>Luis Carvalho</name>
-    </author>
-    <summary type="text">We present an extendable Bayesian framework for spatial downscaling of satellite-derived measurements with coarse, irregular footprints. Motivated by measurements of solar-induced chlorophyll fluorescence (SIF) from the earth-observing OCO-2 satellite, we model coarse-resolution observations as noisy, weighted averages over an underlying fine-resolution spatial field. The latent process is defined over a regular grid and regularized using a Simultaneous Autoregressive (SAR) prior, yielding a sparse precision structure that enforces spatial smoothness. This formulation enables efficient posterior inference including uncertainty quantification and naturally accommodates land cover information through modified neighborhood structures or covariates. To assess accuracy, we conduct a semi-synthetic validation using albedo data derived from Sentinel-2 satellite surface reflectance, finding strong correspondence between posterior means and the synthetic generating field (R2 = 0.72 when including the proportion of water as a covariate and 0.57 without any covariates). We apply our method to a high-density OCO-2 target mode SIF observations over Boston, demonstrating that it produces fine-resolution posterior maps that reflect heterogeneity in urban environments and align with greenness, with a moderate relationship with the Normalized Difference Vegetation Index (NDVI) (R2 = 0.417 for pixels with 20+ overlapping soundings, 0.323 overall). Our approach achieves high-resolution recovery of satellite measurements with principled uncertainty quantification.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="stat.AP" />
   </entry>
 </feed>

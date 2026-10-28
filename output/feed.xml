@@ -4,12 +4,115 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-27T05:51:28Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 27 entries</subtitle>
+  <updated>2026-10-28T02:45:47Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 26 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>INTR++: INterpretable TRansformer with better Accuracy, Interpretability, and Adaptability</title>
+    <link href="http://arxiv.org/abs/2610.37178v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.37178v1</id>
+    <published>2026-10-27T00:00:00Z</published>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <author>
+      <name>Dipanjyoti Paul</name>
+    </author>
+    <author>
+      <name>Arpita Chowdhury</name>
+    </author>
+    <author>
+      <name>Maneet Chatterjee</name>
+    </author>
+    <author>
+      <name>Daichi Kitaguchi</name>
+    </author>
+    <author>
+      <name>Tanya Berger-Wolf</name>
+    </author>
+    <author>
+      <name>Tetsuya Sakurai</name>
+    </author>
+    <author>
+      <name>Wei-Lun Chao</name>
+    </author>
+    <summary type="text">Interpretable Transformers often perform well in domain specific settings but lose effectiveness beyond that. Achieving ViT-like broad applicability requires models with consistent performance across domains. Recent works on Interpretable Transformers, INTR and Prompt-CAM, were developed keeping domain adaptability in mind. Prompt-CAM leverages learnable prompts to promote adaptability. However, these prompts are fixed in nature and therefore struggle to adapt to domains with substantial variation in input image characteristics, resulting in reduced interpretability. To address this limitation, we propose INTR++, which extends Prompt-CAM by incorporating a lightweight Prompt Adapter Module (PAM). PAM enables prompts to be adaptive by enriching them with domain-specific knowledge, thereby ensuring consistent interpretability across diverse domains including those with varying image characteristics such as medical imaging, micro-scopic imaging, and remote sensing imagery. INTR++ retains the standard architecture and end-to-end learning of Interpretable Transformer based models, while adding only a small number of additional parameters compared to Prompt-CAM. We demonstrate that INTR++ delivers consistent improvements in all aspects across domains like animals, plants, medical imaging, microscopic imaging, remote sensing imagery and object-centric data.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2027)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Quantized Edge Inference of a Self-Supervised SAR-Optical Encoder on Commodity x86 Hardware</title>
+    <link href="http://arxiv.org/abs/2610.37056v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.37056v1</id>
+    <published>2026-10-27T00:00:00Z</published>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <author>
+      <name>Christian Sanchez-Leon</name>
+    </author>
+    <author>
+      <name>Dongming Chen</name>
+    </author>
+    <summary type="text">Self-supervised vision transformers are increasingly used as reusable encoders for Earth observation, but their inference cost on the hardware available in the field is rarely characterized. We deploy a pretrained SAR-optical masked-autoencoder encoder on three commodity x86 nodes, from a low-power CPU without AVX2 to an AVX2+VNNI reference, at FP32, FP16 and INT8 on the CPU and, where present, the integrated GPU, and report latency, energy (RAPL and wall plug) and linear-probe accuracy. Quantization is accuracy-neutral: INT8 changes micro-mAP by only +0.0006, within the seed spread, so precision becomes a pure cost decision. INT8 lowers CPU latency on every node, by 1.45x even on the CPU without AVX2, and CPU energy wherever it is measured, and the VNNI reference (1.53x) suggests a further gain beyond AVX2. The Pareto-optimal device shifts from the integrated GPU, which is 4.38x faster than the CPU on the weakest node, to the CPU as the CPU class improves.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 3 pages, 1 figure&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+    <category term="Computer Vision; Machine Learning" />
+  </entry>
+  <entry>
+    <title>Evaluating AlphaEarth Embeddings for Crop Classification: Separability, Temporal Dynamics, and Cross-Regional Transferability</title>
+    <link href="http://arxiv.org/abs/2610.36857v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.36857v1</id>
+    <published>2026-10-27T00:00:00Z</published>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <author>
+      <name>Priyanka Goyal</name>
+    </author>
+    <author>
+      <name>Maitreyee Sar</name>
+    </author>
+    <author>
+      <name>Adway Mitra</name>
+    </author>
+    <author>
+      <name>Manjira Sinha</name>
+    </author>
+    <summary type="text">Earth Observation (EO)-based agricultural monitoring is shifting from pixel-level spectral analysis toward representation-driven modeling, yet systematic evaluation of learned representations across spatial, temporal, and domain-generalization dimensions remains limited. Geospatial foundation models generate high-dimensional embeddings encoding spatio-temporal land-surface properties, but their utility for agricultural applications remains insufficiently understood. This study presents a representation-agnostic evaluation framework integrating geometric separability, temporal dynamics, spatial robustness, and cross-regional generalisation. A 64-dimensional AlphaEarth embedding space is benchmarked against Sentinel-2 reflectance, NDVI-derived phenology, and harmonic features using field-scale data from the Conterminous United States (CONUS; 2017-2023) and Northern India (2021).   Traditional features achieve strong linear separability (Fisher ratio), while embeddings provide superior distribution-aware separation -- Bhattacharyya and Mahalanobis distances up to an order of magnitude higher for spectrally similar pairs (e.g. Corn/Soybeans: 3.9 vs. 0.10). Embeddings uniquely capture multi-year crop rotation dynamics, reaching a separability ratio of 1.784 versus a maximum of 1.003 across all engineered features, and exhibit lower residual spatial autocorrelation of errors (mean Moran's $I \approx 0.17$). However, harmonic and NDVI features show stronger cross-continental transferability (US $\to$ India Macro F1: 0.493 vs. 0.326 for embeddings), reflecting better distributional alignment. The combined feature space yields balanced performance, supporting hybrid modeling. These findings reveal a fundamental trade-off between representational richness and cross-region transferability, providing a structured framework for feature selection in large-scale crop classification.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Efficient Remote Sensing Image-Text Retrieval via Interaction-Free Recall and Text-Guided Reranking</title>
+    <link href="http://arxiv.org/abs/2610.36756v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.36756v1</id>
+    <published>2026-10-27T00:00:00Z</published>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <author>
+      <name>Xi Chen</name>
+    </author>
+    <author>
+      <name>Xu Chen</name>
+    </author>
+    <author>
+      <name>Xiamgyang Jia</name>
+    </author>
+    <author>
+      <name>Wei Wang</name>
+    </author>
+    <author>
+      <name>Xu Zhang</name>
+    </author>
+    <author>
+      <name>Zhenyuan Shun</name>
+    </author>
+    <summary type="text">Remote sensing (RS) image-text retrieval plays a critical role in understanding massive RS imagery. However, the dense multi-object distribution and complex backgrounds in RS imagery make it difficult to simultaneously achieve fine-grained cross-modal alignment and efficient retrieval. Existing methods either rely on complex cross-modal interactions that lead to low retrieval efficiency, or depend on large-scale vision-language adaptation, which requires massive data and computational resources. To address these issues, we develop a fast-then-fine (FTF) retrieval framework centered on interaction-free multi-granular recall and parameter-free text-guided cross-modal reranking with the Balanced Text-guided Interaction Block (BTIB). Specifically, interaction-free multi-granular recall pre-computes gallery embeddings and matches them with the corresponding query embedding without full-gallery token-level text-image interaction, while text-guided cross-modal reranking with BTIB refines local semantic correspondence within the top-K candidate set. Furthermore, an inter- and intra-modal loss is designed to jointly optimize cross-modal alignment across multi-granular representations. Extensive experiments on public benchmarks demonstrate that the FTF achieves competitive retrieval accuracy while significantly improving retrieval efficiency compared with existing methods.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Accuracy and efficiency of compact foundation models for surface-water mapping during floods</title>
     <link href="http://arxiv.org/abs/2610.34904v1" rel="alternate" type="text/html" />
@@ -168,6 +271,26 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Adaptive Calibration of RF Digital Twins via Budget-Constrained Radio Measurement Selection</title>
+    <link href="http://arxiv.org/abs/2610.36406v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.36406v1</id>
+    <published>2026-10-26T00:00:00Z</published>
+    <updated>2026-10-26T00:00:00Z</updated>
+    <author>
+      <name>Yalin E. Sagduyu</name>
+    </author>
+    <author>
+      <name>Tugba Erpek</name>
+    </author>
+    <author>
+      <name>Hossein Jafari</name>
+    </author>
+    <summary type="text">Radio-frequency (RF) digital twins (DTs) enable site-specific wireless propagation prediction by explicitly reconstructing the physical environment and modeling electromagnetic interactions. Although physics-based DTs reduce reliance on exhaustive measurements, systematic bias relative to real radio data arises from environmental uncertainty, material inaccuracies, and geometric abstractions. Calibration using field measurements is therefore necessary but costly under limited sampling budgets. This paper studies active RF DT calibration, in which measurement locations are selected sequentially and in an online manner to estimate a calibration offset under strict measurement budget constraints. A physics-based RF DT pipeline is developed, integrating semantic geospatial data from OpenStreetMap, 3D modeling in Blender, and deterministic ray tracing in Sionna to capture dominant building and foliage effects. This RF DT is calibrated using path-loss measurements collected with software-defined radios. Multiple online calibration strategies that select radio measurement locations are compared, including random sampling, rank-structured sampling with balanced coverage, quasi-Monte Carlo ranked selection, progressive structure-aware allocation, and fully adaptive uncertainty-driven sampling with estimator stabilization. Results demonstrate that adaptive and structure-aware schemes significantly improve both mean and worst-case calibration accuracy, particularly in the low-budget regime for radio measurements.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.NI" />
+    <category term="Signal Processing" />
   </entry>
   <entry>
     <title>Weighted Fairness in Multi-User Earth Observation Satellite Scheduling</title>
@@ -595,155 +718,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Machine Learning" />
     <category term="Machine Learning (Statistics)" />
-  </entry>
-  <entry>
-    <title>Multiclass Boundary Refinement with Neural Cellular Automata for Remote Sensing Land Cover Segmentation</title>
-    <link href="http://arxiv.org/abs/2610.30007v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.30007v1</id>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <author>
-      <name>Pascoassis Souza Santos Meira</name>
-    </author>
-    <author>
-      <name>Gilson Antonio Giraldi</name>
-    </author>
-    <author>
-      <name>Rafael Duarte Coelho dos Santos</name>
-    </author>
-    <summary type="text">Semantic segmentation of remote sensing imagery often places class boundaries a few pixels away from where they truly lie, and this position error is concentrated in the thin band measured by Boundary IoU (BIoU). We treat boundary refinement as the iterated application of a small learned local rule: the Boundary Refinement Neural Cellular Automaton (BRNCA), that starts from the class probabilities of a frozen, pre-trained segmenter and corrects them cell by cell. We generalise the binary rNCA to the multiclass case by keeping the visible channels on the probability simplex through an Aitchison (log-space) update and by adding free hidden channels. The best configuration improves the mean BIoU over the base segmenter by 2.36 points (from 46.63 to 48.99). The gain is concentrated on the irregular woodland class (+8.5 points BIoU); this suggests that position error is correlated with the fractal dimension of the class boundaries.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Geospatial Dynamics of Online Attention to Nuclear Power in Japan Before and After Fukushima</title>
-    <link href="http://arxiv.org/abs/2610.29924v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.29924v1</id>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <author>
-      <name>Yifan Sun</name>
-    </author>
-    <author>
-      <name>Ken Kurosaki</name>
-    </author>
-    <author>
-      <name>Benjamin C. McLellan</name>
-    </author>
-    <summary type="text">Nuclear power is increasingly seen as necessary for sustainable development, but this role depends on informed public engagement and support. Building this support requires understanding what citizens want to know, as reflected in their spontaneous online searches. To map this demand, we present the first long-term (2004-2024), prefecture-level analysis of Google Trends data on nuclear power in Japan. The results indicate that in routine periods, search interest followed a host-locality pattern, being significantly higher in prefectures hosting nuclear plants, with little spillover to their neighbors. Immediately after the Fukushima Daiichi accident in March 2011, this pattern changed, and interest instead declined with distance from Fukushima, before the host-locality pattern returned from 2012. During March 2011, searches leaned heavily toward general and live information rather than guidance on what to do. Their framing also varied with proximity, as those near Fukushima prioritized live updates and formal countermeasures, while others leaned toward background information and personal-scale questions. These patterns and the shift between them provide a behavioral evidence base for designing communication strategies in Japan and countries weighing the use of nuclear power. More broadly, the finding that searches vary with proximity can inform public communication in other geographically anchored crises.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 11 pages, 5 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.SI" />
-  </entry>
-  <entry>
-    <title>Key Findings for Small UAS for Post-Disaster Damage Assessment from the CURSE'26 Exercise</title>
-    <link href="http://arxiv.org/abs/2610.29777v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.29777v1</id>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <author>
-      <name>Thomas Manzini</name>
-    </author>
-    <author>
-      <name>Stephen Johnson</name>
-    </author>
-    <author>
-      <name>Priyankari Perali</name>
-    </author>
-    <author>
-      <name>David Merrick</name>
-    </author>
-    <author>
-      <name>Robin Murphy</name>
-    </author>
-    <summary type="text">The CLARKE building and road damage assessment AI classifier was incorporated into the Catastrophic Unmanned Remote Sensing Exercise (CURSE) 2026, which trained 23 small uncrewed aerial systems (sUAS) teams from state and local agencies and non-governmental organizations in Florida and Missouri on how to collect imagery for an incident command Remote Sensing Cell. Although CLARKE has been operationally deployed to two hurricanes (Debby and Helene), CURSE'26 presented an opportunity to evaluate the machine learning model with a larger set of never-before-seen orthomosaics. The results show that building and road damage assessment together ran in 3.5 minutes on average, and that building damage assessment achieved a Micro F1 of 0.834 with no manual adjustments to correct spatial misalignment and delivered that performance in both Florida and Missouri, demonstrating good geographic transfer. It also showed that road damage assessment performed poorly due to sensitivity to misalignment between road maps and the images, and to lighting and environmental conditions in an urban setting. The analysis of CURSE'26 presents five other findings of value to the sUAS community: that the use of sUAS and machine learning is now operationally normalized and accepted, sUAS teams in the field can improve classification accuracy by timing their flights, exercises are good operational tests but their value for evaluating learning models is less clear, edge computing is needed to overcome the wireless upload barrier, and the application of sUAS and AI to disaster response has ethical and legal ramifications for pilots and data managers.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages, 5 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>OpenEarth-OVS44: A Multimodal Remote Sensing Dataset for Open-Vocabulary Segmentation</title>
-    <link href="http://arxiv.org/abs/2610.29642v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.29642v1</id>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <author>
-      <name>Yimin Wei</name>
-    </author>
-    <author>
-      <name>Hongruixuan Chen</name>
-    </author>
-    <author>
-      <name>Hao Zheng</name>
-    </author>
-    <author>
-      <name>Hao Liu</name>
-    </author>
-    <author>
-      <name>Jian Song</name>
-    </author>
-    <author>
-      <name>Yuting Zhu</name>
-    </author>
-    <author>
-      <name>Junshi Xia</name>
-    </author>
-    <author>
-      <name>Naoto Yokoya</name>
-    </author>
-    <summary type="text">In remote sensing, open-vocabulary segmentation is particularly important for flexible and scalable land-cover understanding across diverse regions, as it improves generalization to novel categories without requiring exhaustive pixel-level annotations. Despite its great promise, progress in this area remains largely constrained by existing datasets with limited category coverage and overly coarse taxonomies, and therefore struggles to support fine-grained semantic understanding required in real-world applications such as urban functional zoning, carbon accounting, and post-disaster assessment. To address these challenges, we present OpenEarth-OVS44, a multimodal benchmark with 290,587 expert-verified segments from 2,832 RGB images and 1,341 strictly registered RGB-SAR pairs at sub-meter spatial resolution, covering 40 cities across France, Japan, and the United States under a unified 44-class taxonomy organized into 9 base categories. Three evaluation tracks are provided: an RGB-only fine-grained benchmark, a multimodal track with diverse synthetic cloudy conditions for weather-robust evaluation, and a held-out cross-region track. Extensive experiments on representative open-vocabulary segmentation models demonstrate that training on OpenEarth-OVS44 substantially improves fine-grained segmentation performance over the strongest training-free baseline, with improvements of up to 7.1 mIoU points on unseen categories and 27.6 mIoU points on seen categories. The dataset and code will be released.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Optimization of Petal-Shaped Occulters for Exo-Earth Observation</title>
-    <link href="http://arxiv.org/abs/2610.29628v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.29628v1</id>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <author>
-      <name>Simon Prunet</name>
-    </author>
-    <author>
-      <name>Céline Theys</name>
-    </author>
-    <author>
-      <name>Claude Aime</name>
-    </author>
-    <summary type="text">Petal-shaped occulters are giant, formation-flying optical devices designed for use in space astronomy. Their primary function is to block the intense starlight to enable the direct observation of exoplanets, a process challenged by the extreme contrast ratio (lower than 1e-10 for an exo-Earth). This study focuses on optimizing the shape of the occulter in order to significantly reduce Fresnel diffraction. For a circular occulter, the diffraction pattern shows the bright Arago spot. Nevertheless, we construct an apodized occulter as the weighted sum of circular occulters of various diameters, owing to the fact that their diffraction are complex amplitudes which can, with adequate weighting, interfere with each other in such a way as to form a resulting diffraction pattern with a very dark central area. This basis of circular occulters allows the use of a simple analytical form for their Fresnel diffraction. First, occulter diameters are fixed on a regularly sampled linear scale, and the weights are obtained by minimizing a quadratic criterion. An improvement is then obtained using a combined optimization over the weights and the diameters sizes. Eventually, the apodized profile is used to design the petal-shaped occulter for physical imple- mentation constraints. The resulting rejection rates are comparable to the results obtained using SISTER ( http://sister.caltech.edu ), which uses a completely different non-parametric approach.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Proceedings of SPIE Astronomical Telescopes + Instrumentation conference, Copenhagen, July 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="astro-ph.IM" />
-    <category term="physics.optics" />
-  </entry>
-  <entry>
-    <title>Bayesian Downscaling of Satellite-Derived Solar-Induced Chlorophyll Fluorescence</title>
-    <link href="http://arxiv.org/abs/2610.30508v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.30508v1</id>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <author>
-      <name>Russell Goebel</name>
-    </author>
-    <author>
-      <name>Leeza Moldavchuk</name>
-    </author>
-    <author>
-      <name>Taylor S. Jones</name>
-    </author>
-    <author>
-      <name>Jonathan Dooley</name>
-    </author>
-    <author>
-      <name>Lucy R. Hutyra</name>
-    </author>
-    <author>
-      <name>Luis Carvalho</name>
-    </author>
-    <summary type="text">We present an extendable Bayesian framework for spatial downscaling of satellite-derived measurements with coarse, irregular footprints. Motivated by measurements of solar-induced chlorophyll fluorescence (SIF) from the earth-observing OCO-2 satellite, we model coarse-resolution observations as noisy, weighted averages over an underlying fine-resolution spatial field. The latent process is defined over a regular grid and regularized using a Simultaneous Autoregressive (SAR) prior, yielding a sparse precision structure that enforces spatial smoothness. This formulation enables efficient posterior inference including uncertainty quantification and naturally accommodates land cover information through modified neighborhood structures or covariates. To assess accuracy, we conduct a semi-synthetic validation using albedo data derived from Sentinel-2 satellite surface reflectance, finding strong correspondence between posterior means and the synthetic generating field (R2 = 0.72 when including the proportion of water as a covariate and 0.57 without any covariates). We apply our method to a high-density OCO-2 target mode SIF observations over Boston, demonstrating that it produces fine-resolution posterior maps that reflect heterogeneity in urban environments and align with greenness, with a moderate relationship with the Normalized Difference Vegetation Index (NDVI) (R2 = 0.417 for pixels with 20+ overlapping soundings, 0.323 overall). Our approach achieves high-resolution recovery of satellite measurements with principled uncertainty quantification.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="stat.AP" />
   </entry>
 </feed>

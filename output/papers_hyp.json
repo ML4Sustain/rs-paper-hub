@@ -21620,5 +21620,24 @@
     "_added_date": "2026-10-27",
     "Category": "Method",
     "_tasks": "SR"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Machine Learning",
+    "Date": "2026-10-27",
+    "Month": 10,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Evaluating AlphaEarth Embeddings for Crop Classification: Separability, Temporal Dynamics, and Cross-Regional Transferability",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2610.36857v1",
+    "Abstract": "Earth Observation (EO)-based agricultural monitoring is shifting from pixel-level spectral analysis toward representation-driven modeling, yet systematic evaluation of learned representations across spatial, temporal, and domain-generalization dimensions remains limited. Geospatial foundation models generate high-dimensional embeddings encoding spatio-temporal land-surface properties, but their utility for agricultural applications remains insufficiently understood. This study presents a representation-agnostic evaluation framework integrating geometric separability, temporal dynamics, spatial robustness, and cross-regional generalisation. A 64-dimensional AlphaEarth embedding space is benchmarked against Sentinel-2 reflectance, NDVI-derived phenology, and harmonic features using field-scale data from the Conterminous United States (CONUS; 2017-2023) and Northern India (2021).   Traditional features achieve strong linear separability (Fisher ratio), while embeddings provide superior distribution-aware separation -- Bhattacharyya and Mahalanobis distances up to an order of magnitude higher for spectrally similar pairs (e.g. Corn/Soybeans: 3.9 vs. 0.10). Embeddings uniquely capture multi-year crop rotation dynamics, reaching a separability ratio of 1.784 versus a maximum of 1.003 across all engineered features, and exhibit lower residual spatial autocorrelation of errors (mean Moran's $I \\approx 0.17$). However, harmonic and NDVI features show stronger cross-continental transferability (US $\\to$ India Macro F1: 0.493 vs. 0.326 for embeddings), reflecting better distributional alignment. The combined feature space yields balanced performance, supporting hybrid modeling. These findings reveal a fundamental trade-off between representational richness and cross-region transferability, providing a structured framework for feature selection in large-scale crop classification.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{goyal2026evaluating,\n  title={Evaluating AlphaEarth Embeddings for Crop Classification: Separability, Temporal Dynamics, and Cross-Regional Transferability},\n  author={Priyanka Goyal and Maitreyee Sar and Adway Mitra and Manjira Sinha},\n  journal={arXiv preprint arXiv:2610.36857v1},\n  year={2026},\n  url={http://arxiv.org/abs/2610.36857v1}\n}",
+    "Authors": "Priyanka Goyal, Maitreyee Sar, Adway Mitra, Manjira Sinha",
+    "_added_date": "2026-10-28",
+    "Category": "Method",
+    "_tasks": "CLS"
   }
 ]
