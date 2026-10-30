@@ -4,12 +4,128 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-30T03:10:32Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 15 entries</subtitle>
+  <updated>2026-10-30T06:42:24Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 20 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Rethinking Neural Thickets Without Weight Perturbations</title>
+    <link href="http://arxiv.org/abs/2610.40649v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.40649v1</id>
+    <published>2026-10-29T00:00:00Z</published>
+    <updated>2026-10-29T00:00:00Z</updated>
+    <author>
+      <name>Nicolas Dufour</name>
+    </author>
+    <author>
+      <name>Elouan Gardès</name>
+    </author>
+    <author>
+      <name>Amil Dravid</name>
+    </author>
+    <author>
+      <name>Patrick Pérez</name>
+    </author>
+    <author>
+      <name>Loic Landrieu</name>
+    </author>
+    <summary type="text">The Neural Thickets hypothesis posits that pretrained language models lie in dense neighborhoods of task-specific experts in weight space, which random Gaussian perturbations can uncover. We reproduce the reported gains, but show that they do not require this geometric explanation. Perturbing a single decoder block already recovers much of the improvement, while keeping the model entirely frozen and adding a random bias to its output logits matches or exceeds full-weight perturbations on most reasoning tasks. This suggests an alternative explanation based on output diversity, validation-based selection, and voting. We formalize this view as Perturb-Select-Vote (PSV), a general procedure that generates perturbed predictors, selects high-performing members on a small validation set, and aggregates their predictions.   This interpretation connects Neural Thickets to established inference-time methods, including sampling, self-consistency, and verifier-guided selection. A first-order analysis further shows that small weight perturbations act primarily through their induced logit shifts. We extend this analysis to vision, where logit PSV substantially improves performance under domain shift, including on Earth observation, while full-weight perturbations provide little additional benefit. Together, these results suggest that the gains attributed to nearby weight-space experts can instead be obtained through output diversity, selection, and voting. Logit PSV realizes these benefits with a fully frozen model, providing a simple, training-free alternative to full-weight perturbation ensembles across language and vision.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Project page can be found here: https://kyutai.org/logit-psv&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+    <category term="Artificial Intelligence; Computer Vision" />
+  </entry>
+  <entry>
+    <title>Soil Moisture Estimation in Precision Agriculture: A Knowledge Distillation Approach</title>
+    <link href="http://arxiv.org/abs/2610.40432v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.40432v1</id>
+    <published>2026-10-29T00:00:00Z</published>
+    <updated>2026-10-29T00:00:00Z</updated>
+    <author>
+      <name>Mohammed Rakib</name>
+    </author>
+    <author>
+      <name>Vrinda Nagula</name>
+    </author>
+    <author>
+      <name>Arunkumar Bagavathi</name>
+    </author>
+    <summary type="text">Accurate soil moisture estimation is critical for precision agriculture, influencing irrigation, fertilization, and harvesting strategies. Traditional methods primarily rely on meteorological and soil property data, while recent approaches incorporate visual modalities such as aerial and geospatial imagery. However, these high-resolution images are expensive and computationally demanding to analyze. In this work, we propose Soil Moisture Distillation (SMD), a Knowledge Distillation (KD)-based multimodal learning framework that leverages unimodal teachers to enhance multimodal soil moisture estimation. SMD surpasses not only traditional multimodal fusion techniques, including MIS-ME, but also outperforms unimodal models, demonstrating the benefits of guided unimodal knowledge transfer. Additionally, we conduct a comparative analysis of soil patches and crop images, showing that crop images provide superior visual cues, leading to improved prediction accuracy. SMD achieves a 2% improvement in MAPE for soil patches and 1.2% for crops over state-of-the-art baselines, highlighting the effectiveness of leveraging both meteorological and visual data through knowledge distillation for enhanced soil moisture forecasting.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; MWAIS 2025&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Causal-prior-constrained deep learning for rapid-intensification warning of western North Pacific tropical cyclones</title>
+    <link href="http://arxiv.org/abs/2610.40304v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.40304v1</id>
+    <published>2026-10-29T00:00:00Z</published>
+    <updated>2026-10-29T00:00:00Z</updated>
+    <author>
+      <name>Xinrui Li</name>
+    </author>
+    <author>
+      <name>Yijun Jin</name>
+    </author>
+    <author>
+      <name>Yifan Dong</name>
+    </author>
+    <author>
+      <name>Shoujuan Shu</name>
+    </author>
+    <summary type="text">Rapid intensification (RI) is one of the most dangerous and unpredictable phases of tropical cyclones, and its environmental and structural drivers are difficult to identify and separate in observations. Here we introduce CausalVisionRI, a causal-prior-constrained deep-learning system for 24-h RI warning in the western North Pacific. It integrates infrared remote sensing imagery, atmospheric and oceanic fields, and an observationally discovered causal graph into a unified model. The graph and eight sign-verified effects on 24-h intensity change provide an auditable causal prior for training. Discovered from 522 cyclones in 2000-2017, it identifies causal pathways linking atmospheric and oceanic conditions, the cyclone's dynamical and structural state, and its 24-h intensity change. On a forward holdout covering 2020-2024 and 3,004 records, the five-member ensemble achieves a Brier skill score (BSS) of 0.259 relative to a fixed development climatology, significantly exceeding four reference systems; the three LDA baselines reach at most 0.105. It also attains higher detection rates than a published knowledge-block scheme and a reconstructed contrastive-learning scheme at matched false-detection rates under our USA 30-kt standard and the published RITCF standard. Ablations show that the graph pathway adds 0.032 BSS across the holdout and 0.063 over 2020-2021, with a significant contribution in one ensemble member. A deep-learning model constrained by observationally discovered causal structure thus offers a new route to physically informed RI warning.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 33 pages, including 15 pages of supplementary information; 5 main figures and 6 supplementary figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+    <category term="Atmospheric and Oceanic Physics" />
+  </entry>
+  <entry>
+    <title>NeurEO: dissecting Earth observation embeddings with computational neuroscience</title>
+    <link href="http://arxiv.org/abs/2610.40137v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.40137v1</id>
+    <published>2026-10-29T00:00:00Z</published>
+    <updated>2026-10-29T00:00:00Z</updated>
+    <author>
+      <name>Thijs L van der Plas</name>
+    </author>
+    <author>
+      <name>Jacob JW Bakermans</name>
+    </author>
+    <author>
+      <name>Ioannis N Athanasiadis</name>
+    </author>
+    <summary type="text">Earth embeddings are compressed representations of rich Earth observation data that enable downstream models to tackle a wide range of complex geospatial tasks. Yet, this increase in performance comes at the cost of decreased interpretability, as the semantic meaning of Earth embeddings is unknown. To address this challenge, we borrow methods from the field of computational neuroscience, which aim to interpret activity in (biological) neurons. Here, we adapt and apply these methods to assign meaning to AlphaEarth embeddings. We analyse embedding features both as stand-alone data, equivalent to spontaneous neural activity, and in relation to land cover and elevation correlates, equivalent to stimulus-response neural activity. We demonstrate correlational and multi-scale structure in the embedding features. Embedding features can display highly specific and directional tuning to land cover and elevation, such as a `North vs South woodland edge' response. When we remove the main trends of combined land cover responses (like water versus land tuning), we discover fine-grained representational details with increased effective dimensionality. Together, our analyses start to unravel what these Earth embeddings represent, which is critical for developing trustworthy downstream applications.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the EurIPS 2025 REO workshop&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Quantum-Inspired Convolutional Networks for High-Resolution Pseudo-Label Generation from Multimodal Earth Observation Data</title>
+    <link href="http://arxiv.org/abs/2610.39773v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.39773v1</id>
+    <published>2026-10-29T00:00:00Z</published>
+    <updated>2026-10-29T00:00:00Z</updated>
+    <author>
+      <name>Abhishek Singh</name>
+    </author>
+    <author>
+      <name>Giovanni Cuozzo</name>
+    </author>
+    <author>
+      <name>Alexander Jacob</name>
+    </author>
+    <author>
+      <name>Claudia Notarnicola</name>
+    </author>
+    <summary type="text">Accurate land-cover mapping from multimodal Earth observation (EO) data remains a challenge in regions where high-resolution annotations are scarce or costly to obtain. This work introduces a quantum convolutional encoder-decoder network for pseudo-label generation using Sentinel-1 SAR and Sentinel-2 multispectral imagery, guided only by coarse MODIS-derived land-cover maps. The proposed framework uses quantum-inspired convolutional blocks to enhance feature extraction and cross-sensor fusion, enabling the model to infer a fine-scale semantic structure from heterogeneous inputs. Experiments were conducted on the DFC2020 dataset, which provides a quadruple of Sentinel-1 SAR, Sentinel-2 multispectral, low-resolution MODIS labels and high-resolution reference land-cover maps. The proposed training framework first learns a robust representation of multimodal inputs through the reconstruction branch before any supervision from low-resolution labels is applied. This self-supervised stage enables the model to capture a fine-scale spectral-spatial structure, which is then used to generate high-resolution pseudo-labels. These pseudo-labels are subsequently evaluated through classification metrics on the test data, demonstrating that the proposed approach produces more spatially coherent and class-consistent compared to classical baselines. The results highlight the potential of quantum-inspired deep learning to improve label generation in low-annotation remote sensing scenarios, offering a scalable path towards high-quality land-cover products for EO applications.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>INTR++: INterpretable TRansformer with better Accuracy, Interpretability, and Adaptability</title>
     <link href="http://arxiv.org/abs/2610.37178v1" rel="alternate" type="text/html" />
@@ -62,8 +178,8 @@
   </entry>
   <entry>
     <title>Evaluating AlphaEarth Embeddings for Crop Classification: Separability, Temporal Dynamics, and Cross-Regional Transferability</title>
-    <link href="http://arxiv.org/abs/2610.36857v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.36857v1</id>
+    <link href="http://arxiv.org/abs/2610.36857v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.36857v2</id>
     <published>2026-10-27T00:00:00Z</published>
     <updated>2026-10-27T00:00:00Z</updated>
     <author>
