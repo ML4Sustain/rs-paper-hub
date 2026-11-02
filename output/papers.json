@@ -144778,5 +144778,24 @@
     "_added_date": "2026-10-30",
     "Category": "Method",
     "_tasks": "CLS"
+  },
+  {
+    "Type": "Artificial Intelligence",
+    "Subtype": "Machine Learning",
+    "Date": "2026-10-30",
+    "Month": 10,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Differential rank preservation manifold learning",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2610.41107v1",
+    "Abstract": "Manifold learning methods like t-SNE and UMAP preserve local neighborhoods, but they do not preserve the ranking of the neighbors inside them. Two embeddings can return the same neighbor set while disagreeing on which point is closest. This loss of order degrades downstream applications that value the order in the embedding. We propose Smooth Rank t-SNE (SR-tSNE), which adds a differentiable rank term to the standard t-SNE loss. To enable efficient training, this term uses a sigmoid rank approximation to explicitly force a point's true high-dimensional neighbors to outrank unrelated intruders and retain their original order. We also introduce Ordinal DLP (O-DLP), an extension of the Degree of Locality Preservation (DLP) metric that credits a neighbor only when it returns at its original rank. Across eight benchmarks spanning image, text, speech, remote-sensing and single-cell data, SR-tSNE outperforms 12 baselines in rank preservation and neighborhood overlap. Ablation studies demonstrate our rank term alone boosts O-DLP by 5% to 28%, a gain not achievable using standard pairwise loss. This advantage transfers to downstream applications. SR-tSNE achieves the best label-transfer performance across seven vision datasets. For cell-type discovery across six single-cell datasets, it ranks first in 17 of 18 dataset-metric combinations, whether clustering resolution is selected with or without cell-type labels. In intraday trading, SR-tSNE achieves higher returns, lower risk, and lower turnover than the baselines. To our knowledge, SR-tSNE is the first t-SNE-family method with explicit order preservation.",
+    "code": "",
+    "Publication": "67 pages, 10 figures",
+    "BibTex": "@article{han2026differential,\n  title={Differential rank preservation manifold learning},\n  author={Henry Han and Luyu Niu and Diane Li and Jiacun Wang},\n  journal={arXiv preprint arXiv:2610.41107v1},\n  year={2026},\n  url={http://arxiv.org/abs/2610.41107v1}\n}",
+    "Authors": "Henry Han, Luyu Niu, Diane Li, Jiacun Wang",
+    "_added_date": "2026-11-02",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]
