@@ -8320,5 +8320,24 @@
     "_added_date": "2026-10-30",
     "Category": "Method",
     "_tasks": "CLS"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-10-30",
+    "Month": 10,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "SAR-TS-BERT: Physics-Guided Self-Supervised Pre-Training With Polarimetric Features for SAR Time-Series Crop Classification",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2610.41728v1",
+    "Abstract": "Multitemporal synthetic aperture radar (SAR) imagery provides continuous, cloud-free observations of crop phenology for agricultural monitoring in cloudy and rainy regions, yet high-accuracy classification typically requires extensive labeled samples. Although self-supervised pre-training mitigates label dependency in remote sensing, existing frameworks primarily target optical imagery or generic spatial SAR scenes, underutilizing temporal backscatter dynamics and polarimetric scattering mechanisms. We propose SAR-TS-BERT, a physics-guided BERT-style self-supervised pre-training framework for SAR time-series crop classification. SAR-TS-BERT integrates backscatter intensities and polarimetric ratio features (VV, VH, and VV/VH) with dual-polarimetric Cloude-Pottier decomposition parameters ($H/α/A$) into a six-band input representation through two core designs: 1) a physics-guided span masking strategy (SpanPhysics) that adaptively selects contiguous masked spans based on temporal backscatter change rates to prioritize key phenological transitions; and 2) a dual-branch cross-modal fusion encoder that models backscatter and polarimetric decomposition features through separate Transformer branches followed by bidirectional cross-attention fusion. On independent test sets in Estonia (EuroCropsML) and the USA (California CDL), SAR-TS-BERT achieves overall accuracies (OAs) of 96.78% and 87.29%, respectively, and attains a mean monthly OA of 99.37% on Chongming Island, Shanghai. On the Estonia benchmark, pre-training improves OA and Macro F1 by 1.17 and 1.59 percentage points over training from scratch under full supervision, and by 2.58 and 5.19 percentage points using only 1% labeled data. Incorporating SAR scattering physics into temporal self-supervised pre-training effectively enhances crop classification accuracy, parcel-level mapping consistency, and few-shot transferability.",
+    "code": "",
+    "Publication": "18 pages, 13 figures",
+    "BibTex": "@article{wang2026sartsbert,\n  title={SAR-TS-BERT: Physics-Guided Self-Supervised Pre-Training With Polarimetric Features for SAR Time-Series Crop Classification},\n  author={Jieqiu Wang and Yuhan Zhang and Bo Zheng and Shaoming Zhang},\n  journal={arXiv preprint arXiv:2610.41728v1},\n  year={2026},\n  url={http://arxiv.org/abs/2610.41728v1}\n}",
+    "Authors": "Jieqiu Wang, Yuhan Zhang, Bo Zheng, Shaoming Zhang",
+    "_added_date": "2026-11-02",
+    "Category": "Method",
+    "_tasks": "CLS"
   }
 ]
