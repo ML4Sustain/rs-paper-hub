@@ -4,12 +4,63 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-02T07:02:57Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
+  <updated>2026-11-03T04:15:03Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>The MASSIMAL Dataset: UAV Hyperspectral Images and Ground Truth Observations for Coastal Habitat Mapping in Norway</title>
+    <link href="http://arxiv.org/abs/2611.00763v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.00763v1</id>
+    <published>2026-10-31T00:00:00Z</published>
+    <updated>2026-10-31T00:00:00Z</updated>
+    <author>
+      <name>Martin Hansen Skjelvareid</name>
+    </author>
+    <author>
+      <name>Eli Rinde</name>
+    </author>
+    <author>
+      <name>Kasper Hancke</name>
+    </author>
+    <author>
+      <name>Katalin Blix</name>
+    </author>
+    <author>
+      <name>Galice Guillaume Hoarau</name>
+    </author>
+    <author>
+      <name>Nicolo Grometto</name>
+    </author>
+    <author>
+      <name>Maia Røst Kile</name>
+    </author>
+    <summary type="text">The MASSIMAL dataset was collected in an effort to develop new remote sensing methods for mapping shallow water coastal habitats, such as kelp forests, seagrass meadows and maerl beds. The main component of the dataset is a set of hyperspectral images collected using a unmanned aerial vehicle (UAV). Images were collected during 45 UAV flights performed at 4 main areas along the Norwegian coast, spanning across a wide latitude range, from 59 to 67 degrees north. The ground sampling distance of the hyperspectral images is 3.5 cm, and the spectral range is 400-1000 nm, sampled across 300 spectral bands. During acquisition, push-broom imagery was automatically split into images with a maximum along-track length of 2000 lines. Out of approximately 1000 hyperspectral images, 221 have been annotated, using segmentation masks and a hierarchical taxonomy. An open source image processing pipeline has been developed as part of the dataset preparation, enabling efficient generation of reflectance images and glint-corrected images based on published radiance images. The dataset also includes color images (RGB) and multispectral images collected using UAV, and georeferenced image mosaics constructed from these. Ground truth data supporting the remote sensing images include hours of underwater video, thousands of geotagged underwater images, and tens of kilometers of single-beam sonar data. The data provide a foundation for assessing habitat distribution, tracking changes, and evaluating ecosystem services, thus supporting evidence-based management in Norwegian coastal environments.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 25 pages, 8 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Vision-based Sensing of Urban Environment using Hardware-Software co-design at Scale</title>
+    <link href="http://arxiv.org/abs/2611.00699v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.00699v1</id>
+    <published>2026-10-31T00:00:00Z</published>
+    <updated>2026-10-31T00:00:00Z</updated>
+    <author>
+      <name>Akshit Gupta</name>
+    </author>
+    <author>
+      <name>R Venkatesha Prasad</name>
+    </author>
+    <summary type="text">Urban environmental monitoring is crucial for climate-adaptive cities, yet current approaches rely heavily on human inspection, overhead remote sensing, or limited terrestrial RGB imagery, thereby lacking comprehensive multispectral perspectives at street level. To bridge this gap, this paper introduces UrbanScapes, an adaptable and flexible hardware-software co-design platform for large-scale, vision-based sensing of urban environments. Built on a modular architecture, UrbanScapes seamlessly integrates multispectral imaging channels, including Red, Green, Blue (RGB), Near-Infrared, and Thermal, to capture multispectral street-level imagery. The system is designed for both opportunistic deployment on bicycles, vehicles, or pedestrians and targeted deployments on municipal fleets, ensuring high spatio-temporal scalability without requiring hardware redesigns. Crucially, the platform utilizes on-device deep learning models to automatically remove personally identifiable information (PII) at the edge, addressing privacy concerns inherent in street-level data collection. By combining this multispectral street-level imagery with overhead multispectral remote sensing imagery, UrbanScapes enables scalable calculation of physics-based environmental indices, providing a foundational tool for advanced citywide analysis.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE World Forum for Internet of Things 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="eess.SY" />
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Spectral Haar Binarizer: Compact Boolean Contrast Representations for Hyperspectral Classification</title>
     <link href="http://arxiv.org/abs/2610.41478v1" rel="alternate" type="text/html" />
@@ -50,29 +101,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Machine Learning" />
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Evaluating AlphaEarth Embeddings for Crop Classification: Separability, Temporal Dynamics, and Cross-Regional Transferability</title>
-    <link href="http://arxiv.org/abs/2610.36857v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.36857v2</id>
-    <published>2026-10-27T00:00:00Z</published>
-    <updated>2026-10-27T00:00:00Z</updated>
-    <author>
-      <name>Priyanka Goyal</name>
-    </author>
-    <author>
-      <name>Maitreyee Sar</name>
-    </author>
-    <author>
-      <name>Adway Mitra</name>
-    </author>
-    <author>
-      <name>Manjira Sinha</name>
-    </author>
-    <summary type="text">Earth Observation (EO)-based agricultural monitoring is shifting from pixel-level spectral analysis toward representation-driven modeling, yet systematic evaluation of learned representations across spatial, temporal, and domain-generalization dimensions remains limited. Geospatial foundation models generate high-dimensional embeddings encoding spatio-temporal land-surface properties, but their utility for agricultural applications remains insufficiently understood. This study presents a representation-agnostic evaluation framework integrating geometric separability, temporal dynamics, spatial robustness, and cross-regional generalisation. A 64-dimensional AlphaEarth embedding space is benchmarked against Sentinel-2 reflectance, NDVI-derived phenology, and harmonic features using field-scale data from the Conterminous United States (CONUS; 2017-2023) and Northern India (2021).   Traditional features achieve strong linear separability (Fisher ratio), while embeddings provide superior distribution-aware separation -- Bhattacharyya and Mahalanobis distances up to an order of magnitude higher for spectrally similar pairs (e.g. Corn/Soybeans: 3.9 vs. 0.10). Embeddings uniquely capture multi-year crop rotation dynamics, reaching a separability ratio of 1.784 versus a maximum of 1.003 across all engineered features, and exhibit lower residual spatial autocorrelation of errors (mean Moran's $I \approx 0.17$). However, harmonic and NDVI features show stronger cross-continental transferability (US $\to$ India Macro F1: 0.493 vs. 0.326 for embeddings), reflecting better distributional alignment. The combined feature space yields balanced performance, supporting hybrid modeling. These findings reveal a fundamental trade-off between representational richness and cross-region transferability, providing a structured framework for feature selection in large-scale crop classification.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
   </entry>
 </feed>

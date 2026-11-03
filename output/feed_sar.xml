@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_sar.xml</id>
   <link href="https://rspaper.top/output/feed_sar.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-02T07:02:57Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
+  <updated>2026-11-03T04:15:03Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -57,23 +57,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Machine Learning" />
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Quantized Edge Inference of a Self-Supervised SAR-Optical Encoder on Commodity x86 Hardware</title>
-    <link href="http://arxiv.org/abs/2610.37056v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.37056v1</id>
-    <published>2026-10-27T00:00:00Z</published>
-    <updated>2026-10-27T00:00:00Z</updated>
-    <author>
-      <name>Christian Sanchez-Leon</name>
-    </author>
-    <author>
-      <name>Dongming Chen</name>
-    </author>
-    <summary type="text">Self-supervised vision transformers are increasingly used as reusable encoders for Earth observation, but their inference cost on the hardware available in the field is rarely characterized. We deploy a pretrained SAR-optical masked-autoencoder encoder on three commodity x86 nodes, from a low-power CPU without AVX2 to an AVX2+VNNI reference, at FP32, FP16 and INT8 on the CPU and, where present, the integrated GPU, and report latency, energy (RAPL and wall plug) and linear-probe accuracy. Quantization is accuracy-neutral: INT8 changes micro-mAP by only +0.0006, within the seed spread, so precision becomes a pure cost decision. INT8 lowers CPU latency on every node, by 1.45x even on the CPU without AVX2, and CPU energy wherever it is measured, and the VNNI reference (1.53x) suggests a further gain beyond AVX2. The Pareto-optimal device shifts from the integrated GPU, which is 4.38x faster than the CPU on the weakest node, to the CPU as the CPU class improves.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 3 pages, 1 figure&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Image and Video Processing" />
-    <category term="Computer Vision; Machine Learning" />
   </entry>
 </feed>
