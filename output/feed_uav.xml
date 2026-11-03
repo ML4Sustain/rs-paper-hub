@@ -4,12 +4,38 @@
   <id>https://rspaper.top/output/feed_uav.xml</id>
   <link href="https://rspaper.top/output/feed_uav.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-03T04:15:03Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
+  <updated>2026-11-03T07:27:58Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>KAUSTics-Net: Diffusion-Based Through-Water UAV Restoration with a Semi-Synthetic Dataset</title>
+    <link href="http://arxiv.org/abs/2611.03120v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.03120v1</id>
+    <published>2026-11-02T00:00:00Z</published>
+    <updated>2026-11-02T00:00:00Z</updated>
+    <author>
+      <name>Dario Scilla</name>
+    </author>
+    <author>
+      <name>Omar A. Lopez</name>
+    </author>
+    <author>
+      <name>Kasper Johansen</name>
+    </author>
+    <author>
+      <name>Brian O. Nieuwenhuis</name>
+    </author>
+    <author>
+      <name>Matthew F. McCabe</name>
+    </author>
+    <summary type="text">Accurate mapping of shallow-water environments using unmanned aerial vehicle (UAV) imagery is challenged by water-induced distortions, including refraction, caustics, and wavelength-dependent attenuation. The scarcity of paired distorted and reference imagery further limits the development of supervised restoration methods. To address this challenge, we introduce KAUSTics, a semi-synthetic dataset combining 1,280 reference patches derived from 32 high-resolution UAV images with 12,800 degraded observations generated through Blender-based water-surface rendering and empirical color and blur augmentations. We further propose KAUSTics-Net, a pixel-space conditional diffusion framework integrating a multi-scale conditional encoder, feature-wise linear modulation (FiLM), cross-attention, and a composite reconstruction objective to restore shallow-water imagery. We evaluated the framework against eight image-restoration methods, complemented by architectural ablations and cross-dataset experiments. On KAUSTics, KAUSTics-Net achieved a mean peak signal-to-noise ratio (PSNR) of 31.715 +/- 0.439 dB, structural similarity index (SSIM) of 0.849 +/- 0.002, and learned perceptual image patch similarity (LPIPS) of 0.145 +/- 0.007 across three training seeds. On the independent Sea-Undistort dataset, sampler-aware fine-tuning improved restoration fidelity, reaching 19.469 +/- 0.332 dB PSNR and 0.554 +/- 0.005 SSIM under combined water-surface distortions, although perceptual trade-offs remained. Additional experiments on real UAV imagery examined feature preservation and segmentation behavior. These findings demonstrate the potential of semi-synthetic training and conditional diffusion for shallow-water image restoration while highlighting the importance of evaluating both reconstruction fidelity and downstream remote-sensing utility.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>The MASSIMAL Dataset: UAV Hyperspectral Images and Ground Truth Observations for Coastal Habitat Mapping in Norway</title>
     <link href="http://arxiv.org/abs/2611.00763v1" rel="alternate" type="text/html" />

@@ -4,12 +4,85 @@
   <id>https://rspaper.top/output/feed_sar.xml</id>
   <link href="https://rspaper.top/output/feed_sar.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-03T04:15:03Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
+  <updated>2026-11-03T07:27:58Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Shared-Pattern Collaborative Network for Multi-Source Remote Sensing Data Classification</title>
+    <link href="http://arxiv.org/abs/2611.03069v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.03069v1</id>
+    <published>2026-11-02T00:00:00Z</published>
+    <updated>2026-11-02T00:00:00Z</updated>
+    <author>
+      <name>Chenfang Yang</name>
+    </author>
+    <author>
+      <name>Chuanzheng Gong</name>
+    </author>
+    <author>
+      <name>Feng Gao</name>
+    </author>
+    <author>
+      <name>Junyu Dong</name>
+    </author>
+    <author>
+      <name>Qian Du</name>
+    </author>
+    <summary type="text">Multi-source remote sensing data classification has received growing attention recently. However, existing methods still struggle to jointly model long-range contextual dependencies and shared spatial patterns across heterogeneous modalities. To address this issue, we propose a Shared-Pattern Collaborative Network (SPCNet) for HSI and SAR/LiDAR joint classification. To enhance cross-modal collaborative learning, Shared-Pattern Collaborative Block (SPCB) is designed by introducing a shared large-kernel operator and a dynamic convolution branch, enabling the network to capture common spatial structures and content-adaptive local features. Furthermore, Region-Adaptive Modality Allocator (RAMA) is developed to assign spatially varying modality weights for reliable feature fusion. Experiments on Houston2013, Augsburg, and Houston2018 datasets demonstrate that SPCNet achieves superior classification performance over several state-of-the-art methods. The code will be made publicly available at https://github.com/oucailab/SPCNet</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/oucailab/SPCNet"&gt;https://github.com/oucailab/SPCNet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE JSTARS 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Forecasting Earth Surface Change in Embedding Space</title>
+    <link href="http://arxiv.org/abs/2611.02211v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.02211v1</id>
+    <published>2026-11-01T00:00:00Z</published>
+    <updated>2026-11-01T00:00:00Z</updated>
+    <author>
+      <name>Jingtao Li</name>
+    </author>
+    <author>
+      <name>Sadiq Jaffer</name>
+    </author>
+    <author>
+      <name>Anil Madhavapeddy</name>
+    </author>
+    <author>
+      <name>Pedro Sousa</name>
+    </author>
+    <author>
+      <name>Anthony Ortiz</name>
+    </author>
+    <author>
+      <name>Kyle Gao</name>
+    </author>
+    <author>
+      <name>Zhengpeng Feng</name>
+    </author>
+    <author>
+      <name>Yanfei Zhong</name>
+    </author>
+    <author>
+      <name>Kevin White</name>
+    </author>
+    <author>
+      <name>Srinivasan Keshav</name>
+    </author>
+    <summary type="text">Repeated satellite imagery permits understanding of how our planet changes over time, letting us predict its future and plan mitigating actions. Most existing studies that rely on a time series of satellite observations forecast the spectral values at each pixel for a future target date. However, clouds, shadows, and sensor noise often corrupt these observations, so that spectral forecasters waste much of their capacity on low-level features or noise rather than real change. With the advent of Earth foundation models, we argue that forecasting in embedding space is a feasible and more effective alternative. To this end, we design a token space that handles irregular histories from different sensors and foundation models and supports forecasts at any query date. Tokens from this space are inputs to our proposed forecaster, E$^2$Forecast, which is a transformer with two branches: a Gaussian branch that directly predicts a mean point forecast and per-dimension standard deviations, and a rectified-flow branch that generates forecast ensembles. On Sentinel-1 and Sentinel-2 benchmarks, forecasting embeddings instead of spectral values halves the cosine distance (from 0.20 to 0.10) and greatly reduces overconfidence, lowering the z-score standard deviation from 2.63 to 1.22. By comparing new observations with its forecasts, E$^2$Forecast can also detect anomalous changes without labels or retraining, raising F$_1$ from 41.58 to 48.70 on a global benchmark. This consistent superiority is validated on nine remote sensing foundation models. Beyond change detection, we believe our approach advances the field by permitting effective reuse of diverse pretrained task heads. Our code is publicly available at https://github.com/ucam-eo/e2forecast.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/ucam-eo/e2forecast"&gt;https://github.com/ucam-eo/e2forecast&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 22 pages, Code: https://github.com/ucam-eo/e2forecast&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>SAR-TS-BERT: Physics-Guided Self-Supervised Pre-Training With Polarimetric Features for SAR Time-Series Crop Classification</title>
     <link href="http://arxiv.org/abs/2610.41728v1" rel="alternate" type="text/html" />

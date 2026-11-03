@@ -8339,5 +8339,43 @@
     "_added_date": "2026-11-02",
     "Category": "Method",
     "_tasks": "CLS"
+  },
+  {
+    "Type": "Image and Video Processing",
+    "Subtype": "Computer Vision",
+    "Date": "2026-11-02",
+    "Month": 11,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Shared-Pattern Collaborative Network for Multi-Source Remote Sensing Data Classification",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2611.03069v1",
+    "Abstract": "Multi-source remote sensing data classification has received growing attention recently. However, existing methods still struggle to jointly model long-range contextual dependencies and shared spatial patterns across heterogeneous modalities. To address this issue, we propose a Shared-Pattern Collaborative Network (SPCNet) for HSI and SAR/LiDAR joint classification. To enhance cross-modal collaborative learning, Shared-Pattern Collaborative Block (SPCB) is designed by introducing a shared large-kernel operator and a dynamic convolution branch, enabling the network to capture common spatial structures and content-adaptive local features. Furthermore, Region-Adaptive Modality Allocator (RAMA) is developed to assign spatially varying modality weights for reliable feature fusion. Experiments on Houston2013, Augsburg, and Houston2018 datasets demonstrate that SPCNet achieves superior classification performance over several state-of-the-art methods. The code will be made publicly available at https://github.com/oucailab/SPCNet",
+    "code": "https://github.com/oucailab/SPCNet",
+    "Publication": "IEEE JSTARS 2026",
+    "BibTex": "@article{yang2026sharedpattern,\n  title={Shared-Pattern Collaborative Network for Multi-Source Remote Sensing Data Classification},\n  author={Chenfang Yang and Chuanzheng Gong and Feng Gao and Junyu Dong and Qian Du},\n  journal={arXiv preprint arXiv:2611.03069v1},\n  year={2026},\n  url={http://arxiv.org/abs/2611.03069v1}\n}",
+    "Authors": "Chenfang Yang, Chuanzheng Gong, Feng Gao, Junyu Dong, Qian Du",
+    "_added_date": "2026-11-03",
+    "Category": "Method",
+    "_tasks": "CLS"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Artificial Intelligence",
+    "Date": "2026-11-01",
+    "Month": 11,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Forecasting Earth Surface Change in Embedding Space",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2611.02211v1",
+    "Abstract": "Repeated satellite imagery permits understanding of how our planet changes over time, letting us predict its future and plan mitigating actions. Most existing studies that rely on a time series of satellite observations forecast the spectral values at each pixel for a future target date. However, clouds, shadows, and sensor noise often corrupt these observations, so that spectral forecasters waste much of their capacity on low-level features or noise rather than real change. With the advent of Earth foundation models, we argue that forecasting in embedding space is a feasible and more effective alternative. To this end, we design a token space that handles irregular histories from different sensors and foundation models and supports forecasts at any query date. Tokens from this space are inputs to our proposed forecaster, E$^2$Forecast, which is a transformer with two branches: a Gaussian branch that directly predicts a mean point forecast and per-dimension standard deviations, and a rectified-flow branch that generates forecast ensembles. On Sentinel-1 and Sentinel-2 benchmarks, forecasting embeddings instead of spectral values halves the cosine distance (from 0.20 to 0.10) and greatly reduces overconfidence, lowering the z-score standard deviation from 2.63 to 1.22. By comparing new observations with its forecasts, E$^2$Forecast can also detect anomalous changes without labels or retraining, raising F$_1$ from 41.58 to 48.70 on a global benchmark. This consistent superiority is validated on nine remote sensing foundation models. Beyond change detection, we believe our approach advances the field by permitting effective reuse of diverse pretrained task heads. Our code is publicly available at https://github.com/ucam-eo/e2forecast.",
+    "code": "https://github.com/ucam-eo/e2forecast",
+    "Publication": "22 pages, Code: https://github.com/ucam-eo/e2forecast",
+    "BibTex": "@article{li2026forecasting,\n  title={Forecasting Earth Surface Change in Embedding Space},\n  author={Jingtao Li and Sadiq Jaffer and Anil Madhavapeddy and Pedro Sousa and Anthony Ortiz and Kyle Gao and Zhengpeng Feng and Yanfei Zhong and Kevin White and Srinivasan Keshav},\n  journal={arXiv preprint arXiv:2611.02211v1},\n  year={2026},\n  url={http://arxiv.org/abs/2611.02211v1}\n}",
+    "Authors": "Jingtao Li, Sadiq Jaffer, Anil Madhavapeddy, Pedro Sousa, Anthony Ortiz, Kyle Gao, Zhengpeng Feng, Yanfei Zhong, Kevin White, Srinivasan Keshav",
+    "_added_date": "2026-11-03",
+    "Category": "Method",
+    "_tasks": "CD"
   }
 ]
