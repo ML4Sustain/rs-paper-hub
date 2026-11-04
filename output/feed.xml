@@ -4,12 +4,78 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-03T07:27:58Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 27 entries</subtitle>
+  <updated>2026-11-04T03:33:27Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 29 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Large Language Model-Assisted Adaptive Heuristic Search for Agile Earth Observation Satellite Scheduling</title>
+    <link href="http://arxiv.org/abs/2611.04458v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.04458v1</id>
+    <published>2026-11-03T00:00:00Z</published>
+    <updated>2026-11-03T00:00:00Z</updated>
+    <author>
+      <name>He Wang</name>
+    </author>
+    <author>
+      <name>Yeye Liu</name>
+    </author>
+    <author>
+      <name>Ruijie Li</name>
+    </author>
+    <author>
+      <name>Xuemei Jiang</name>
+    </author>
+    <author>
+      <name>Junyu Wu</name>
+    </author>
+    <author>
+      <name>Lining Liu Zhuoqi Man</name>
+    </author>
+    <author>
+      <name>Tao Li</name>
+    </author>
+    <author>
+      <name>Yanjie Song</name>
+    </author>
+    <summary type="text">Agile Earth observation satellites must coordinate imaging tasks within limited observation windows, while accounting for attitude maneuvering and onboard energy constraints. Competition among observation opportunities makes scheduling performance sensitive to the heuristic rules used for task selection. This letter proposes a large language model (LLM)-assisted adaptive heuristic search method for agile Earth observation satellite scheduling. The LLM generates an initial heuristic rule according to the characteristics of the scheduling instance. During the subsequent ant colony search, search performance and scheduling information are fed back to the LLM to refine the heuristic rule. The proposed modifications are evaluated through paired solution constructions before being incorporated into the search process. A unified scheduling procedure determines task selection, satellite assignment, and observation timing under the operational constraints. Experiments on six scheduling scenarios involving 50--200 imaging tasks demonstrate that the proposed method achieves 4.3\%--9.6\% higher mean observation benefit than the strongest baseline.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 5 pages,4 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+    <category term="cs.CL" />
+  </entry>
+  <entry>
+    <title>OSGR: Observation-Support Graph Reasoning for Earth Observation Question Answering</title>
+    <link href="http://arxiv.org/abs/2611.04301v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.04301v1</id>
+    <published>2026-11-03T00:00:00Z</published>
+    <updated>2026-11-03T00:00:00Z</updated>
+    <author>
+      <name>Dazhou Yu</name>
+    </author>
+    <author>
+      <name>Zerong Wang</name>
+    </author>
+    <author>
+      <name>Riyang Bao</name>
+    </author>
+    <author>
+      <name>Longxiang Li</name>
+    </author>
+    <author>
+      <name>Yang Liu</name>
+    </author>
+    <author>
+      <name>Liang Zhao</name>
+    </author>
+    <summary type="text">Answering geographic queries over Earth observation (EO) archives requires solving a joint retrieval-and-derivation problem under strict spatiotemporal constraints. Existing LLM agents fail to ground observation items or suffer from search-space explosion. We propose OSGR, a two-stage framework that factorizes this search into offline symbolic concept deduction and online Relation-Conditioned Grounding. OSGR leverages an offline Observation-Support Graph to deduce valid target-to-result support paths at the concept level, and applies spatiotemporal compatibility kernels to instantiate grounded observation-item sets. On Earth-Bench and DisasterM3-Reason, OSGR improves GPT-4o accuracy from 49.3\% to 63.7\% while reducing the execution-step ratio from 2.9 to 2.5.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+    <category term="Information Retrieval" />
+  </entry>
   <entry>
     <title>ASCoR: Asymmetric Semantic-Spatial Learning for Remote Sensing Domain Generalization</title>
     <link href="http://arxiv.org/abs/2611.03382v1" rel="alternate" type="text/html" />
@@ -344,6 +410,26 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Artificial Intelligence" />
     <category term="Information Retrieval" />
+  </entry>
+  <entry>
+    <title>A Modular Open-Source Python Framework for Small Satellite Attitude Determination and Control</title>
+    <link href="http://arxiv.org/abs/2611.03957v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.03957v1</id>
+    <published>2026-11-02T00:00:00Z</published>
+    <updated>2026-11-02T00:00:00Z</updated>
+    <author>
+      <name>Patrick McKeen</name>
+    </author>
+    <author>
+      <name>Niclas Scheuer</name>
+    </author>
+    <author>
+      <name>Kerri Cahoy</name>
+    </author>
+    <summary type="text">Advanced attitude determination and control (ADCS) techniques can be difficult for small satellite teams to adopt: tightly coupled implementations require substantial code changes to evaluate different actuators, sensors, orbits, mission goals, and control laws. Existing tools often emphasize orbit mechanics or flight software rather than closed-loop ADCS. This paper presents an open-source, modular ADCS framework in pure Python for rapid development, repeatable testing, and flight-oriented integration across heterogeneous spacecraft.   The package supports torque- and command-level control, bound-respecting allocation, and full- and reduced-attitude objectives. Interchangeable estimation, control, planning, and actuator/sensor modules are reconfigured through configuration changes. Integrated simulation includes attitude and orbit propagation, sensor and actuator bias and noise, and environmental disturbances. An actuator-aware planner supports underactuated architectures, while hardware-in-the-loop (HIL) capability enables testing on mission-representative computers.   Case studies include a 3U CubeSat with three magnetorquers and one reaction wheel, a magnetorquer-only 1U, and a 6U with three reaction wheels and thrusters. These demonstrate actuator and sensor failures, full- and reduced-attitude goals, and momentum management. HIL testing on a Raspberry Pi uses the same package. Adapting a published control law to a new actuator configuration requires fewer than five lines of configuration changes. The framework underpins flight software for an Earth-observing CubeSat with visible and long-wave infrared imagers, three magnetorquers, and one reaction wheel, without star trackers or propulsion.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages, 4 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="eess.SY" />
   </entry>
   <entry>
     <title>Forecasting Earth Surface Change in Embedding Space</title>
@@ -791,24 +877,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Machine Learning" />
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>SpatialVec: A Unified Representation Learning Framework for Geospatial Objects with Boundary-Aware Sampling</title>
-    <link href="http://arxiv.org/abs/2611.00111v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.00111v1</id>
-    <published>2026-10-28T00:00:00Z</published>
-    <updated>2026-10-28T00:00:00Z</updated>
-    <author>
-      <name>Samya Acharja</name>
-    </author>
-    <author>
-      <name>Kanchan Chowdhury</name>
-    </author>
-    <summary type="text">Spatial representation learning is essential for Geospatial Artificial Intelligence (GeoAI) applications, enabling machine learning models to capture the geometry, location, and spatial relationships of geographic entities such as points, polylines, and polygons. Existing spatial encoding methods often struggle to preserve fine-grained topological information, particularly for interactions involving complex geometries such as polylines and polygons. These approaches inadequately capture boundary structure and local spatial context, causing topology-sensitive relationships near geometry boundaries to be underrepresented in the learned embedding space. Consequently, accurately modeling complex spatial interactions remains a significant challenge for downstream spatial reasoning tasks. To fill the gap, we introduce SpatialVec, a boundary-aware spatial representation learning framework that adaptively samples geometry boundaries and their surrounding regions, capturing fine-grained geometric structures critical for topology-aware spatial reasoning. A transformer-based encoder-decoder trained through geometry reconstruction produces compact, geometry-aware, and unified representations for points, polylines, and polygons. Empirical evaluation on two real-world datasets shows that SpatialVec substantially improves the preservation of challenging topological relationships involving polygonal interactions and outperforms state-of-the-art baselines significantly on downstream prediction and classification tasks.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to 2026 IEEE International Conference on Big Data as a full research paper&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="cs.DB; Information Retrieval; Machine Learning" />
   </entry>
 </feed>
