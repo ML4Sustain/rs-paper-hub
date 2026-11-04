@@ -29106,5 +29106,43 @@
     "_added_date": "2026-11-04",
     "Category": "Method",
     "_tasks": "VG"
+  },
+  {
+    "Type": "Machine Learning",
+    "Subtype": "Artificial Intelligence",
+    "Date": "2026-11-03",
+    "Month": 11,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Basin2Vec: Learning Basin-Centric Embeddings for Scalable Hydrological Modeling",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2611.05164v1",
+    "Abstract": "Reliable streamflow prediction across time and in ungauged basins requires representations that capture hydrologically relevant basin characteristics. Existing methods rely on either fixed handcrafted attributes or general-purpose Earth observation embeddings not tailored to basin structure. We introduce \\textbf{Basin2Vec}, a self-supervised framework that learns compact basin representations from hydroclimatic and physiographic data without observed streamflow. Basin2Vec organizes representation learning around basin scale and relationships across space and time. Across multiple forecasting architectures, it consistently outperforms predefined attributes and general-purpose geospatial embeddings in temporal generalization and zero-shot spatial transfer. Basin2Vec provides average relative gains of up to 8.3% temporally and achieves 3.5x the median predictive performance of the strongest baselines on unseen basins. These results demonstrate the effectiveness of basin-centric pretraining for transferable hydrologic prediction. Code is available at https://github.com/Muhammad-Talha-MT/basin2vec",
+    "code": "https://github.com/Muhammad-Talha-MT/basin2vec",
+    "Publication": "",
+    "BibTex": "@article{talha2026basinvec,\n  title={Basin2Vec: Learning Basin-Centric Embeddings for Scalable Hydrological Modeling},\n  author={Muhammad Talha and Xiaofeng Liu and Yuan Yang and Pang-Ning Tan and A. Pouyan Nejadhashemi},\n  journal={arXiv preprint arXiv:2611.05164v1},\n  year={2026},\n  url={http://arxiv.org/abs/2611.05164v1}\n}",
+    "Authors": "Muhammad Talha, Xiaofeng Liu, Yuan Yang, Pang-Ning Tan, A. Pouyan Nejadhashemi",
+    "_added_date": "2026-11-04",
+    "Category": "Method",
+    "_tasks": ""
+  },
+  {
+    "Type": "cs.MA",
+    "Subtype": "Artificial Intelligence",
+    "Date": "2026-11-03",
+    "Month": 11,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "GeoFaham: Domain-Specialized Multi-Agent Geospatial Analytics for Disaster Response",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2611.04977v1",
+    "Abstract": "Real-world geospatial decision support requires more than single-step retrieval or code generation. Disaster-response questions often involve multi-source workflows that combine spatial databases, map-derived features, satellite imagery, raster products, and reusable geospatial artifacts, where correctness depends on preserving spatial scope, temporal context, and intermediate execution state. While large language models and coding agents offer a promising interface for such workflows, they struggle with geospatial-specific failure modes, including handling large artifacts, selecting the wrong evidence source, losing spatial or temporal metadata, and applying invalid geometric operations. We introduce GeoFaham, a domain-specialized multi-agent system for geospatial disaster analytics. GeoFaham decomposes workflows into specialist agents for vector operations, map feature retrieval, imagery discovery, and raster analysis, coordinated by an Orchestrator with a dual-ledger control loop for dependency-aware planning, progress tracking, validation, and replanning. To support artifact-centric collaboration, GeoFaham uses a Response Store that persists full geospatial outputs and typed metadata outside the LLM context window while agents exchange compact identifiers and summaries. We also introduce GeoFaham-Bench, a 40-task benchmark grounded in 17 real-world disaster records, designed to evaluate multi-step geospatial reasoning, cross-source integration, raster-vector computation, artifact generation, and recovery under non-rigid ground truth. We evaluate GeoFaham on GeoFaham-Bench against strong general-purpose coding-agent baselines, including Codex, Claude Code, and OpenCode. GeoFaham achieves the best overall performance, scoring 0.940 versus the next-best 0.879, while using 7.5 times fewer tokens. Our code and benchmark are publicly available at https://github.com/microsoft/GeoFaham.",
+    "code": "https://github.com/microsoft/GeoFaham",
+    "Publication": "",
+    "BibTex": "@article{danish2026geofaham,\n  title={GeoFaham: Domain-Specialized Multi-Agent Geospatial Analytics for Disaster Response},\n  author={Muhammad Sohail Danish and Gilles Q. Hacheme and Akram Zaytar and Satej S. Soman and Inbal Becker-Reshef and Juan Lavista Ferres and Salman Khan and Girmaw Abebe Tadesse},\n  journal={arXiv preprint arXiv:2611.04977v1},\n  year={2026},\n  url={http://arxiv.org/abs/2611.04977v1}\n}",
+    "Authors": "Muhammad Sohail Danish, Gilles Q. Hacheme, Akram Zaytar, Satej S. Soman, Inbal Becker-Reshef, Juan Lavista Ferres, Salman Khan, Girmaw Abebe Tadesse",
+    "_added_date": "2026-11-04",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]

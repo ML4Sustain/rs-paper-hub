@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_agent.xml</id>
   <link href="https://rspaper.top/output/feed_agent.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-04T03:33:27Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
+  <updated>2026-11-04T07:09:11Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -39,6 +39,42 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
     <category term="Artificial Intelligence" />
     <category term="Information Retrieval" />
+  </entry>
+  <entry>
+    <title>GeoFaham: Domain-Specialized Multi-Agent Geospatial Analytics for Disaster Response</title>
+    <link href="http://arxiv.org/abs/2611.04977v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.04977v1</id>
+    <published>2026-11-03T00:00:00Z</published>
+    <updated>2026-11-03T00:00:00Z</updated>
+    <author>
+      <name>Muhammad Sohail Danish</name>
+    </author>
+    <author>
+      <name>Gilles Q. Hacheme</name>
+    </author>
+    <author>
+      <name>Akram Zaytar</name>
+    </author>
+    <author>
+      <name>Satej S. Soman</name>
+    </author>
+    <author>
+      <name>Inbal Becker-Reshef</name>
+    </author>
+    <author>
+      <name>Juan Lavista Ferres</name>
+    </author>
+    <author>
+      <name>Salman Khan</name>
+    </author>
+    <author>
+      <name>Girmaw Abebe Tadesse</name>
+    </author>
+    <summary type="text">Real-world geospatial decision support requires more than single-step retrieval or code generation. Disaster-response questions often involve multi-source workflows that combine spatial databases, map-derived features, satellite imagery, raster products, and reusable geospatial artifacts, where correctness depends on preserving spatial scope, temporal context, and intermediate execution state. While large language models and coding agents offer a promising interface for such workflows, they struggle with geospatial-specific failure modes, including handling large artifacts, selecting the wrong evidence source, losing spatial or temporal metadata, and applying invalid geometric operations. We introduce GeoFaham, a domain-specialized multi-agent system for geospatial disaster analytics. GeoFaham decomposes workflows into specialist agents for vector operations, map feature retrieval, imagery discovery, and raster analysis, coordinated by an Orchestrator with a dual-ledger control loop for dependency-aware planning, progress tracking, validation, and replanning. To support artifact-centric collaboration, GeoFaham uses a Response Store that persists full geospatial outputs and typed metadata outside the LLM context window while agents exchange compact identifiers and summaries. We also introduce GeoFaham-Bench, a 40-task benchmark grounded in 17 real-world disaster records, designed to evaluate multi-step geospatial reasoning, cross-source integration, raster-vector computation, artifact generation, and recovery under non-rigid ground truth. We evaluate GeoFaham on GeoFaham-Bench against strong general-purpose coding-agent baselines, including Codex, Claude Code, and OpenCode. GeoFaham achieves the best overall performance, scoring 0.940 versus the next-best 0.879, while using 7.5 times fewer tokens. Our code and benchmark are publicly available at https://github.com/microsoft/GeoFaham.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/microsoft/GeoFaham"&gt;https://github.com/microsoft/GeoFaham&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.MA" />
+    <category term="Artificial Intelligence" />
   </entry>
   <entry>
     <title>ArabGeoText: Tool-Augmented Vision-Language Models for Arabic Geospatial Text Spotting</title>

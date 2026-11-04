@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-04T03:33:27Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 29 entries</subtitle>
+  <updated>2026-11-04T07:09:11Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 32 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -75,6 +75,95 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
     <category term="Artificial Intelligence" />
     <category term="Information Retrieval" />
+  </entry>
+  <entry>
+    <title>Fusing Earth observation embeddings and spaceborne terrain with meteorological forcing for flood peak depth prediction from high-water marks</title>
+    <link href="http://arxiv.org/abs/2611.05220v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.05220v1</id>
+    <published>2026-11-03T00:00:00Z</published>
+    <updated>2026-11-03T00:00:00Z</updated>
+    <author>
+      <name>Wen Zhou</name>
+    </author>
+    <author>
+      <name>Shaowen Wang</name>
+    </author>
+    <author>
+      <name>Upmanu Lall</name>
+    </author>
+    <author>
+      <name>Venkatesh Merwade</name>
+    </author>
+    <author>
+      <name>Dingqi Ye</name>
+    </author>
+    <summary type="text">Flood peak depth on normally dry land governs damage and risk to life, but is observed only sparsely, by post-event high-water mark (HWM) surveys, and depth derived from satellite flood extent is produced after the event and inherits the vertical error of the digital elevation model (DEM) it is computed from. Deep-learning flood models have in turn been trained on hydrodynamic simulations rather than on observed depths. We ask whether flood peak depth can be learned from field observations and predicted before the peak from spaceborne terrain, geospatial foundation-model embeddings and antecedent meteorological forcing. We assembled 5689 USGS HWM surveys from 39 events (2011-2025) in 24 U.S. states and Puerto Rico, assigned each a peak time from nearby sensors, paired each with a rain-free window at the same site, and linked them to Copernicus GLO-30 terrain, AlphaEarth embeddings and 144 h of hourly forcing masked to the lead time. A cross-modal fusion network trained on these observations predicts depth at the surveyed marks with a mean absolute error of 0.39 m 6 h ahead of the peak. Supervision by surveyed depth corrects the DEM error implicitly: differencing the measured peak water level with the same DEM gives 0.93 m at the same marks, 2.4 times larger, although it uses the measured water level and the model does not. Forcing accounts for 77% of the attributed reduction in depth error; terrain and the embeddings are statistically equivalent to each other and contribute the remaining 23%. On eleven held-out events the model still separates flooded from rain-free conditions but no longer resolves depth at the marks (R2 = 0.03), so the skill reported here is confined to the events and regions sampled. Field-surveyed depths can thus supervise flood depth prediction and correct terrain error that extent-based estimation cannot, while transfer to unseen storms remains the open problem.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Basin2Vec: Learning Basin-Centric Embeddings for Scalable Hydrological Modeling</title>
+    <link href="http://arxiv.org/abs/2611.05164v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.05164v1</id>
+    <published>2026-11-03T00:00:00Z</published>
+    <updated>2026-11-03T00:00:00Z</updated>
+    <author>
+      <name>Muhammad Talha</name>
+    </author>
+    <author>
+      <name>Xiaofeng Liu</name>
+    </author>
+    <author>
+      <name>Yuan Yang</name>
+    </author>
+    <author>
+      <name>Pang-Ning Tan</name>
+    </author>
+    <author>
+      <name>A. Pouyan Nejadhashemi</name>
+    </author>
+    <summary type="text">Reliable streamflow prediction across time and in ungauged basins requires representations that capture hydrologically relevant basin characteristics. Existing methods rely on either fixed handcrafted attributes or general-purpose Earth observation embeddings not tailored to basin structure. We introduce \textbf{Basin2Vec}, a self-supervised framework that learns compact basin representations from hydroclimatic and physiographic data without observed streamflow. Basin2Vec organizes representation learning around basin scale and relationships across space and time. Across multiple forecasting architectures, it consistently outperforms predefined attributes and general-purpose geospatial embeddings in temporal generalization and zero-shot spatial transfer. Basin2Vec provides average relative gains of up to 8.3% temporally and achieves 3.5x the median predictive performance of the strongest baselines on unseen basins. These results demonstrate the effectiveness of basin-centric pretraining for transferable hydrologic prediction. Code is available at https://github.com/Muhammad-Talha-MT/basin2vec</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Muhammad-Talha-MT/basin2vec"&gt;https://github.com/Muhammad-Talha-MT/basin2vec&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>GeoFaham: Domain-Specialized Multi-Agent Geospatial Analytics for Disaster Response</title>
+    <link href="http://arxiv.org/abs/2611.04977v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.04977v1</id>
+    <published>2026-11-03T00:00:00Z</published>
+    <updated>2026-11-03T00:00:00Z</updated>
+    <author>
+      <name>Muhammad Sohail Danish</name>
+    </author>
+    <author>
+      <name>Gilles Q. Hacheme</name>
+    </author>
+    <author>
+      <name>Akram Zaytar</name>
+    </author>
+    <author>
+      <name>Satej S. Soman</name>
+    </author>
+    <author>
+      <name>Inbal Becker-Reshef</name>
+    </author>
+    <author>
+      <name>Juan Lavista Ferres</name>
+    </author>
+    <author>
+      <name>Salman Khan</name>
+    </author>
+    <author>
+      <name>Girmaw Abebe Tadesse</name>
+    </author>
+    <summary type="text">Real-world geospatial decision support requires more than single-step retrieval or code generation. Disaster-response questions often involve multi-source workflows that combine spatial databases, map-derived features, satellite imagery, raster products, and reusable geospatial artifacts, where correctness depends on preserving spatial scope, temporal context, and intermediate execution state. While large language models and coding agents offer a promising interface for such workflows, they struggle with geospatial-specific failure modes, including handling large artifacts, selecting the wrong evidence source, losing spatial or temporal metadata, and applying invalid geometric operations. We introduce GeoFaham, a domain-specialized multi-agent system for geospatial disaster analytics. GeoFaham decomposes workflows into specialist agents for vector operations, map feature retrieval, imagery discovery, and raster analysis, coordinated by an Orchestrator with a dual-ledger control loop for dependency-aware planning, progress tracking, validation, and replanning. To support artifact-centric collaboration, GeoFaham uses a Response Store that persists full geospatial outputs and typed metadata outside the LLM context window while agents exchange compact identifiers and summaries. We also introduce GeoFaham-Bench, a 40-task benchmark grounded in 17 real-world disaster records, designed to evaluate multi-step geospatial reasoning, cross-source integration, raster-vector computation, artifact generation, and recovery under non-rigid ground truth. We evaluate GeoFaham on GeoFaham-Bench against strong general-purpose coding-agent baselines, including Codex, Claude Code, and OpenCode. GeoFaham achieves the best overall performance, scoring 0.940 versus the next-best 0.879, while using 7.5 times fewer tokens. Our code and benchmark are publicly available at https://github.com/microsoft/GeoFaham.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/microsoft/GeoFaham"&gt;https://github.com/microsoft/GeoFaham&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.MA" />
+    <category term="Artificial Intelligence" />
   </entry>
   <entry>
     <title>ASCoR: Asymmetric Semantic-Spatial Learning for Remote Sensing Domain Generalization</title>
