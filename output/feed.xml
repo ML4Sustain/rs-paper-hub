@@ -4,12 +4,181 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-04T07:09:11Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 32 entries</subtitle>
+  <updated>2026-11-05T03:54:46Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 36 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>TOP: Transmission-Oriented Remote Sensing Pansharpening</title>
+    <link href="http://arxiv.org/abs/2611.06430v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.06430v1</id>
+    <published>2026-11-04T00:00:00Z</published>
+    <updated>2026-11-04T00:00:00Z</updated>
+    <author>
+      <name>Zi-Han Cao</name>
+    </author>
+    <author>
+      <name>Jing-Ze Liang</name>
+    </author>
+    <author>
+      <name>Shao-Jie Wu</name>
+    </author>
+    <author>
+      <name>Jin-Cheng Di</name>
+    </author>
+    <author>
+      <name>Liang-Jian Deng</name>
+    </author>
+    <author>
+      <name>Gemine Vivone</name>
+    </author>
+    <summary type="text">Pansharpening has been extensively studied as a fundamental image fusion task in remote sensing. However, most existing methods focus on improving fusion quality under the implicit assumption that high-resolution observations have already been fully downlinked to the ground. As a result, existing models are highly vulnerable to perturbations introduced by lossy compression used for downlink transmission. To address this limitation, we present, to the best of our knowledge, the first transmission oriented pansharpening (TOP) framework, which unifies compact latent coding, onboard pansharpening, and efficient downlink transmission within a single satellite-toground pipeline. TOP encodes remote-sensing observations into a compact binary latent space, where a lightweight onboard fusion module can efficiently predict the fused binary latent code. Since only the compact fused code is downlinked, the transmission payload is substantially reduced. Overall, TOP enables low-payload downlink and lightweight onboard processing while maintaining high fusion quality under severe bandwidth constraints. Experiments across multispectral and hyperspectral settings show that TOP consistently achieves superior fusion quality at higher compression ratios than representative pansharpening methods paired with standard lossy codecs. For example, on GaoFen-2, TOP attains a fusion PSNR of 31.4 dB at a downlink compression ratio of 50x. This design also points toward transmissionoriented processing for other remote-sensing tasks. The code will be made available at https://github.com/JingZe-Liang/TOP.git.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/JingZe-Liang/TOP.git"&gt;https://github.com/JingZe-Liang/TOP.git&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>CAPE-JEPA - Cross-modal Adversarial Probabilistic Embedding JEPA</title>
+    <link href="http://arxiv.org/abs/2611.06247v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.06247v1</id>
+    <published>2026-11-04T00:00:00Z</published>
+    <updated>2026-11-04T00:00:00Z</updated>
+    <author>
+      <name>Aniket Junghare</name>
+    </author>
+    <author>
+      <name>Biplab Banerjee</name>
+    </author>
+    <summary type="text">Cross-modal remote sensing image retrieval (RS-CMIR) requires representations that are simultaneously modality-invariant and semantically discriminative, despite the profound physical gap between heterogeneous sensors such as Synthetic Aperture Radar (SAR) and multispectral imagery. Recent JEPA-based Predictive self-supervised approaches such as X-JEPA formulate cross-modal alignment as a deterministic latent forecasting task, implicitly assuming uniform patch predictability and leaving cross-modal distributional alignment unaddressed. We propose CAPE-JEPA, a probabilistic cross-modal Joint Embedding Predictive Architecture with three contributions: (i) a cross-attentional Gaussian predictor outputting per-patch parameters (mu, sigma^2) conditioned on opposite-modality context, trained via negative log-likelihood to model inherent cross-sensor prediction uncertainty; (ii) adversarial distributional regularization combining unimodal isotropic Gaussian regularization with a novel cross-modal adversarial variant that aligns modality distributions via worst-case Epps-Pulley characteristic function tests without explicit sample pairing; and (iii) in-training contrastive learning with attention-pooled heads for scene-level discriminative grounding. Evaluated on BigEarthNet-14K (BEN-14K) and fMoW across SAR, multispectral, and RGB modalities, CAPE-JEPA surpasses X-JEPA by up to 13.74 points on BEN-14K and 15.59 points on fMoW, outperforming all baselines including SkySense and CROMA across both unimodal and cross-modal directions while using fewer parameters (407.30M vs. 432.72M).</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; BMVC 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR;VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>FireOPS: A Human-Centric Emergency Operations Platform</title>
+    <link href="http://arxiv.org/abs/2611.06176v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.06176v1</id>
+    <published>2026-11-04T00:00:00Z</published>
+    <updated>2026-11-04T00:00:00Z</updated>
+    <author>
+      <name>Alexander Wallner</name>
+    </author>
+    <author>
+      <name>Michael Riegler</name>
+    </author>
+    <author>
+      <name>Philipp Neuhauser</name>
+    </author>
+    <author>
+      <name>Helmut Haider</name>
+    </author>
+    <author>
+      <name>Lukas Neuhauser</name>
+    </author>
+    <author>
+      <name>Marco Stadler</name>
+    </author>
+    <author>
+      <name>Eduard Paireder</name>
+    </author>
+    <summary type="text">Volunteer fire brigades rely on fragmented alerting channels and radio plus paper for situational awareness, hindering a shared common operational picture (COP). FireOPS integrates smartphone alerting, navigation, a live geospatial COP, a district resource-load overview and contextual manuals into a human-centric decision-support surface for commanders and responders, running on an edge + cloud architecture whose dual-channel provides source-level redundancy against failure of either the radio or the provincial server feed; delivery to smartphones still depends on the cloud core and mobile networks. This lessons-learned report presents the design rationale, positions FireOPS within emergency-response information systems research, and reports operational findings from a primary log extract of a major regional flood in 2024 and from the 2025 public app release. A feature-matrix comparison with DIVERA 24/7, blaulichtSMS and the LifeRescue prototype identifies COP, decision support and dual-ingestion redundancy as the main differentiators, and we map the operational gaps observed during the flood to concrete engineering responses, deployed or in active development.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.CY" />
+    <category term="cs.HC" />
+  </entry>
+  <entry>
+    <title>CARM: Conformal Adaptive Risk Masking for Reliable Scientific Super-Resolution</title>
+    <link href="http://arxiv.org/abs/2611.06151v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.06151v1</id>
+    <published>2026-11-04T00:00:00Z</published>
+    <updated>2026-11-04T00:00:00Z</updated>
+    <author>
+      <name>Guangtao Zhang</name>
+    </author>
+    <author>
+      <name>Haonan Wu</name>
+    </author>
+    <author>
+      <name>Junxuan Gao</name>
+    </author>
+    <author>
+      <name>Zhengyang Liu</name>
+    </author>
+    <author>
+      <name>Zhaoxi Zeng</name>
+    </author>
+    <author>
+      <name>Zhihao Li</name>
+    </author>
+    <author>
+      <name>Jianguo Huang</name>
+    </author>
+    <author>
+      <name>Zhiqiang Liu</name>
+    </author>
+    <summary type="text">Deep learning-based super-resolution (SR) can reconstruct fine-scale Earth-observation fields from coarse observations, but reconstruction accuracy alone does not provide a calibrated rule for identifying reliable spatial regions. Conformal Mask Calibration (CMC), built on conformal risk control, converts a spatial uncertainty score into a trust mask and controls the expected worst-case local distortion under exchangeability. However, its fixed threshold can become miscalibrated in Earth-observation streams affected by seasonality and episodic events. We propose $\textit{CARM}$ (Conformal Adaptive Risk Masking), a statistical framework for adaptive spatial risk control under temporal distribution shift. CARM maintains experts with heterogeneous update rates and aggregates their threshold proposals online using an asymmetric surrogate loss, balancing rapid adaptation to distribution changes against stability during relatively stationary periods. All updates are causal and use only mature feedback available after a fixed delay, allowing CARM to operate with any SR model that provides a spatial uncertainty score. We prove that the time-averaged mask-conditioned risk converges to at most $α$ at an $O(1/T)$ rate, without distributional assumptions and for any choice of aggregation weights across experts. On a daily South China Sea chlorophyll-$\textit{a}$ SR stream, CARM reduces the empirical violation rate from $43.49\%$ to $9.38\%$ and the moving-average exceedance frequency from $47.29\%$ to $1.22\%$ at $α=0.10$, while retaining a non-trivial trusted region. Experiments on ERA5 wind and OSTIA sea-surface temperature further show consistent relative improvements across multiple SR backbones.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+    <category term="Machine Learning; math.PR" />
+  </entry>
+  <entry>
+    <title>ChanSFormer: A Channel Agnostic Vision Transformer for Multi-Channel Cell Painting Images</title>
+    <link href="http://arxiv.org/abs/2611.06015v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.06015v1</id>
+    <published>2026-11-04T00:00:00Z</published>
+    <updated>2026-11-04T00:00:00Z</updated>
+    <author>
+      <name>Jingwei Zhang</name>
+    </author>
+    <author>
+      <name>Srinivasan Sivanandan</name>
+    </author>
+    <author>
+      <name>Dimitris Samaras</name>
+    </author>
+    <summary type="text">High-content multi-channel imaging, from Cell Painting assays to remote sensing, is central to modern scientific pipelines. Because these channels are highly heterogeneous and experimental configurations frequently evolve, a practical vision backbone must be fundamentally channel-agnostic. Current channel-adaptive vision transformers rely on global self-attention with learnable channel embeddings, which can be computed only for previously known channels. Attempts to overcome this limitation of new channels either discard the embeddings, losing channel identity, or process each channel independently, thereby eliminating critical cross-channel interactions. To address this, we introduce ChanSFormer, an efficient Vision Transformer that replaces rigid embeddings with disentangled spatial-channel attention and individual channel CLS tokens. This architecture natively preserves both distinct channel identities and cross-channel information flow. Furthermore, the individual channel class token design unlocks more informative feature representations for self-supervised learning and enables representation-based channel sampling while remaining channel-agnostic. We evaluate ChanSFormer on two biology multi-channel datasets, CHAMMI, JUMP-CP and a satellite dataset, So2Sat. Experimental results show that ChanSFormer outperforms state-of-the-art methods by 3.93%-4.27% on JUMP-CP in classification accuracy. It also demonstrates exceptional cross-dataset transferability under a self-supervised setting, outperforming previous methods by up to 2.72% in accuracy in the same classification tasks. Furthermore, the disentangled attention reduces the quadratic complexity of channel-by-spatial sequence length of the global attention baseline, thus improving throughput by 55%-313%. Code is available at https://github.com/cvlab-stonybrook/ChanSFormer.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/cvlab-stonybrook/ChanSFormer"&gt;https://github.com/cvlab-stonybrook/ChanSFormer&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>ReTailor: A Residual Feature Tailoring Framework for Real-Time Cross-Sensor Pansharpening Adaptation</title>
+    <link href="http://arxiv.org/abs/2611.05811v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.05811v1</id>
+    <published>2026-11-04T00:00:00Z</published>
+    <updated>2026-11-04T00:00:00Z</updated>
+    <author>
+      <name>Jing-Ze Liang</name>
+    </author>
+    <author>
+      <name>Wei-Jie Xiao</name>
+    </author>
+    <author>
+      <name>Zi-Han Cao</name>
+    </author>
+    <author>
+      <name>Yang-Dong Li</name>
+    </author>
+    <author>
+      <name>Tian-Yi Hu</name>
+    </author>
+    <author>
+      <name>Liang-Jian Deng</name>
+    </author>
+    <summary type="text">Recent pansharpening models achieve strong fusion performance on trained sensors, yet often generalize poorly to unseen sensors. Existing cross-sensor adaptation is limited by target-sensor retraining, which requires target-sensor training pairs and a dedicated training stage, and by per-image zero-shot adaptation, which is computationally expensive due to whole-network optimization for each test image. To address these problems, we propose ReTailor, a real-time sequential cross-sensor adaptation framework. Only a lightweight residual Feature Tailor is rapidly optimized under self-supervised, physics-aware constraints to correct cross-sensor shifts without modifying the well-learned fusion prior. For efficient and effective deployment, ReTailor combines content-aware patch selection, which identifies a few informative patches per image for optimization at negligible cost to improve both quality and efficiency, with rolling residual bootstrap, which inherits sensor-related knowledge across the image stream to further improve quality. Extensive experiments on cross-sensor adaptation settings show that ReTailor mitigates cross-sensor degradation both effectively and efficiently. Moreover, we compare ReTailor with Low-Rank Adaptation (LoRA), a widely used method for fine-tuning, to demonstrate the advantages of our approach. We further evaluate the core principle of ReTailor on two additional remote sensing tasks: super-resolution pansharpening and image segmentation, where it consistently improves performance. In general, ReTailor provides a highly effective and efficient strategy for deploying pansharpening models under real-world cross-sensor degradation, while also offering useful insights into managing cross-sensor degradation in other remote sensing tasks. Code will be released at https://github.com/JingZe-Liang/ReTailor .</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/JingZe-Liang/ReTailor"&gt;https://github.com/JingZe-Liang/ReTailor&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages, 12 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Large Language Model-Assisted Adaptive Heuristic Search for Agile Earth Observation Satellite Scheduling</title>
     <link href="http://arxiv.org/abs/2611.04458v1" rel="alternate" type="text/html" />
@@ -164,6 +333,78 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="cs.MA" />
     <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>GeoDIVE: Geospatial Descent Informed by Value Estimation</title>
+    <link href="http://arxiv.org/abs/2611.05697v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.05697v1</id>
+    <published>2026-11-03T00:00:00Z</published>
+    <updated>2026-11-03T00:00:00Z</updated>
+    <author>
+      <name>Hamza Iqbal</name>
+    </author>
+    <author>
+      <name>Dan Cher</name>
+    </author>
+    <author>
+      <name>Eric Xing</name>
+    </author>
+    <author>
+      <name>Pranavi Kolouju</name>
+    </author>
+    <author>
+      <name>Abby Stylianou</name>
+    </author>
+    <author>
+      <name>Robert Pless</name>
+    </author>
+    <author>
+      <name>Nathan Jacobs</name>
+    </author>
+    <summary type="text">Finding specific objects, structures, and spatial patterns supports critical work in agriculture, infrastructure planning, environmental monitoring, and disaster response. These features, however, are often dispersed across very large regions and span dramatically different spatial scales, which defines a search space that is costly to embed, maintain, and search naively. We introduce GeoDIVE, a model that treats a multiresolution satellite image gallery as a forest and uses best-first traversal to determine which tiles to encode. At each visited node, a lightweight model then predicts an optimistic estimate of the best query similarity hidden among its descendants using the query and subtree representations. In evaluations with image and open-vocabulary text queries, GeoDIVE matches exhaustive search at 10% of the encoding cost for image queries and leads all tested baselines at every budget in both modalities. To support future evaluation of multiscale geospatial search, we also release object-level image and text queries for Git-10M, constructed from Microsoft building footprints and OpenStreetMap polygons with VLM-generated captions. Source code and models will be made publicly available.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; WACV 2027&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>ChangeJEPA: Predict Before You Compare for Remote Sensing Change Detection</title>
+    <link href="http://arxiv.org/abs/2611.05570v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.05570v1</id>
+    <published>2026-11-03T00:00:00Z</published>
+    <updated>2026-11-03T00:00:00Z</updated>
+    <author>
+      <name>Buddhi Wijenayake</name>
+    </author>
+    <author>
+      <name>Dhananjaya Jayasundara</name>
+    </author>
+    <author>
+      <name>Vishal M. Patel</name>
+    </author>
+    <summary type="text">Remote sensing change detection is typically formulated as Siamese feature comparison, where two images are encoded independently and a decoder determines which discrepancies correspond to meaningful change. This is challenging because the encoders preserve both true scene changes and nuisance variations such as illumination, seasonal, radiometric, and geometric differences. We introduce ChangeJEPA, a bitemporal joint-embedding predictive architecture that reformulates change detection as latent post-state prediction. Given a pre-change image and partial post-change evidence, ChangeJEPA predicts the full post-change representation under two complementary conditions: a prior hypothesis derived from the pre-change scene and an updated hypothesis conditioned on observed post-change context. A joint-embedding predictive loss aligns both hypotheses with the target latent representation, encouraging semantic consistency while suppressing transient appearance variations. Change is then inferred from the disagreement among the pre-change representation, the observed post-change target, and the predicted latent states, capturing complementary evidence of change, prior surprise, contextual update, and prediction reliability. Across SYSU-CD, LEVIR-CD+, and CDD, ChangeJEPA consistently outperforms its decoder matched Siamese baseline by up to 1.51 IoU points and achieves the best IoU and F1-score on all three benchmarks, demonstrating the advantage of latent post-state prediction over direct feature comparison. Page: https://buddhi19.github.io/ChangeJEPA</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Role-based Effectiveness of an Epistemic Uncertainty Estimate in Training Models for Semantic Segmentation of 3D LiDAR Point Clouds</title>
+    <link href="http://arxiv.org/abs/2611.05569v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.05569v1</id>
+    <published>2026-11-03T00:00:00Z</published>
+    <updated>2026-11-03T00:00:00Z</updated>
+    <author>
+      <name>Krishnakumar N</name>
+    </author>
+    <author>
+      <name>Jaya Sreevalsan-Nair</name>
+    </author>
+    <summary type="text">Point cloud segmentation is a fundamental task in 3D data analysis, with applications across robotics, augmented and virtual reality, and remote sensing. However, the inherent sparsity, noise, and unordered nature of point clouds introduce significant challenges, particularly in achieving reliable classification. While the state-of-the-art rely on training models for explicit modeling of uncertainty, there is a gap in exploring different roles that estimated uncertainty using generative approaches can play. This work investigates the impact of deterministic uncertainty in point cloud segmentation by explicitly modeling epistemic uncertainty and using it in different roles, namely, as a feature and in loss function. We evaluate a baseline artificial neural network (ANN) and two uncertainty-aware variants (uncertainty as an additional input feature and as a per-sample confidence weight in the training loss) on four large-scale LiDAR benchmarks spanning airborne and mobile acquisition, namely ISPRS Vaihingen, AHN3, Paris-Lille-3D, and Toronto-3D, together with PointNet++ and RandLA-Net references and their uncertainty-augmented counterparts under canonical spatially disjoint train and test splits. Under this protocol, uncertainty-aware modeling improves mean Intersection over Union, recovers minority classes that the baseline ANN never predicts at all, and in half of the configurations improves the alignment between prediction error and estimated uncertainty as measured by Patch Accuracy versus Patch Uncertainty. Our findings indicate that uncertainty can play multiple roles in the segmentation pipeline rather than as a device for improving accuracy alone.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 23 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;SEG;3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
   </entry>
   <entry>
     <title>ASCoR: Asymmetric Semantic-Spatial Learning for Remote Sensing Domain Generalization</title>
@@ -849,122 +1090,6 @@
     </author>
     <summary type="text">Aerial Vision-and-Language Navigation (VLN) requires UAVs to locate language-specified goals in large-scale urban environments, where objects often appear small and visually ambiguous from high-altitude viewpoints. Existing methods largely follow a reactive paradigm common in indoor VLN, repeatedly updating navigation states from local observations while underutilizing the geospatial structure that remains stable during navigation. As a result, visually similar distractors can cause a reactive goal search to repeatedly reinforce locally plausible goal hypotheses based on passively accumulated evidence, leading to unreliable localization. To address this, we propose GeoReasoner, a robust framework that shifts the paradigm of Aerial VLN from reactive trial-and-error to geospatial-guided active reasoning. Specifically, GeoReasoner first performs pre-search geospatial reasoning to derive region-level priors and constrain the goal hypothesis space. Building on these, it further conducts hypothesis-driven exploration to actively acquire discriminative evidence and refine competing goal hypotheses. Finally, consistency-aware goal verification adversarially assesses complementary evidence sources before stopping, hence reducing premature or erroneous goal confirmations. Experiments on the real-world CityNav benchmark demonstrate that GeoReasoner sets a new SOTA among zero-shot Aerial VLN methods while competing favorably with supervised approaches.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Rethinking Neural Thickets Without Weight Perturbations</title>
-    <link href="http://arxiv.org/abs/2610.40649v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.40649v1</id>
-    <published>2026-10-29T00:00:00Z</published>
-    <updated>2026-10-29T00:00:00Z</updated>
-    <author>
-      <name>Nicolas Dufour</name>
-    </author>
-    <author>
-      <name>Elouan Gardès</name>
-    </author>
-    <author>
-      <name>Amil Dravid</name>
-    </author>
-    <author>
-      <name>Patrick Pérez</name>
-    </author>
-    <author>
-      <name>Loic Landrieu</name>
-    </author>
-    <summary type="text">The Neural Thickets hypothesis posits that pretrained language models lie in dense neighborhoods of task-specific experts in weight space, which random Gaussian perturbations can uncover. We reproduce the reported gains, but show that they do not require this geometric explanation. Perturbing a single decoder block already recovers much of the improvement, while keeping the model entirely frozen and adding a random bias to its output logits matches or exceeds full-weight perturbations on most reasoning tasks. This suggests an alternative explanation based on output diversity, validation-based selection, and voting. We formalize this view as Perturb-Select-Vote (PSV), a general procedure that generates perturbed predictors, selects high-performing members on a small validation set, and aggregates their predictions.   This interpretation connects Neural Thickets to established inference-time methods, including sampling, self-consistency, and verifier-guided selection. A first-order analysis further shows that small weight perturbations act primarily through their induced logit shifts. We extend this analysis to vision, where logit PSV substantially improves performance under domain shift, including on Earth observation, while full-weight perturbations provide little additional benefit. Together, these results suggest that the gains attributed to nearby weight-space experts can instead be obtained through output diversity, selection, and voting. Logit PSV realizes these benefits with a fully frozen model, providing a simple, training-free alternative to full-weight perturbation ensembles across language and vision.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Project page can be found here: https://kyutai.org/logit-psv&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-    <category term="Artificial Intelligence; Computer Vision" />
-  </entry>
-  <entry>
-    <title>Soil Moisture Estimation in Precision Agriculture: A Knowledge Distillation Approach</title>
-    <link href="http://arxiv.org/abs/2610.40432v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.40432v1</id>
-    <published>2026-10-29T00:00:00Z</published>
-    <updated>2026-10-29T00:00:00Z</updated>
-    <author>
-      <name>Mohammed Rakib</name>
-    </author>
-    <author>
-      <name>Vrinda Nagula</name>
-    </author>
-    <author>
-      <name>Arunkumar Bagavathi</name>
-    </author>
-    <summary type="text">Accurate soil moisture estimation is critical for precision agriculture, influencing irrigation, fertilization, and harvesting strategies. Traditional methods primarily rely on meteorological and soil property data, while recent approaches incorporate visual modalities such as aerial and geospatial imagery. However, these high-resolution images are expensive and computationally demanding to analyze. In this work, we propose Soil Moisture Distillation (SMD), a Knowledge Distillation (KD)-based multimodal learning framework that leverages unimodal teachers to enhance multimodal soil moisture estimation. SMD surpasses not only traditional multimodal fusion techniques, including MIS-ME, but also outperforms unimodal models, demonstrating the benefits of guided unimodal knowledge transfer. Additionally, we conduct a comparative analysis of soil patches and crop images, showing that crop images provide superior visual cues, leading to improved prediction accuracy. SMD achieves a 2% improvement in MAPE for soil patches and 1.2% for crops over state-of-the-art baselines, highlighting the effectiveness of leveraging both meteorological and visual data through knowledge distillation for enhanced soil moisture forecasting.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; MWAIS 2025&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Causal-prior-constrained deep learning for rapid-intensification warning of western North Pacific tropical cyclones</title>
-    <link href="http://arxiv.org/abs/2610.40304v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.40304v2</id>
-    <published>2026-10-29T00:00:00Z</published>
-    <updated>2026-10-29T00:00:00Z</updated>
-    <author>
-      <name>Xinrui Li</name>
-    </author>
-    <author>
-      <name>Yijun Jin</name>
-    </author>
-    <author>
-      <name>Yifan Dong</name>
-    </author>
-    <author>
-      <name>Shoujuan Shu</name>
-    </author>
-    <summary type="text">Rapid intensification (RI) is one of the most dangerous and unpredictable phases of tropical cyclones, and its environmental and structural drivers are difficult to identify and separate in observations. Here we introduce CausalVisionRI, a causal-prior-constrained deep-learning system for 24-h RI warning in the western North Pacific. It integrates infrared remote sensing imagery, atmospheric and oceanic fields, and an observationally discovered causal graph into a unified model. The graph and eight sign-verified effects on 24-h intensity change provide an auditable causal prior for training. Discovered from 522 cyclones in 2000-2017, it identifies causal pathways linking atmospheric and oceanic conditions, the cyclone's dynamical and structural state, and its 24-h intensity change. On a forward holdout covering 2020-2024 and 3,004 records, the five-member ensemble achieves a Brier skill score (BSS) of 0.259 relative to a fixed development climatology, significantly exceeding four reference systems; the three LDA baselines reach at most 0.105. It also attains higher detection rates than a published knowledge-block scheme and a reconstructed contrastive-learning scheme at matched false-detection rates under our USA 30-kt standard and the published RITCF standard. Ablations show that the graph pathway adds 0.032 BSS across the holdout and 0.063 over 2020-2021, with a significant contribution in one ensemble member. A deep-learning model constrained by observationally discovered causal structure thus offers a new route to physically informed RI warning.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 33 pages, including 15 pages of supplementary information; 5 main figures and 6 supplementary figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-    <category term="Atmospheric and Oceanic Physics" />
-  </entry>
-  <entry>
-    <title>NeurEO: dissecting Earth observation embeddings with computational neuroscience</title>
-    <link href="http://arxiv.org/abs/2610.40137v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.40137v1</id>
-    <published>2026-10-29T00:00:00Z</published>
-    <updated>2026-10-29T00:00:00Z</updated>
-    <author>
-      <name>Thijs L van der Plas</name>
-    </author>
-    <author>
-      <name>Jacob JW Bakermans</name>
-    </author>
-    <author>
-      <name>Ioannis N Athanasiadis</name>
-    </author>
-    <summary type="text">Earth embeddings are compressed representations of rich Earth observation data that enable downstream models to tackle a wide range of complex geospatial tasks. Yet, this increase in performance comes at the cost of decreased interpretability, as the semantic meaning of Earth embeddings is unknown. To address this challenge, we borrow methods from the field of computational neuroscience, which aim to interpret activity in (biological) neurons. Here, we adapt and apply these methods to assign meaning to AlphaEarth embeddings. We analyse embedding features both as stand-alone data, equivalent to spontaneous neural activity, and in relation to land cover and elevation correlates, equivalent to stimulus-response neural activity. We demonstrate correlational and multi-scale structure in the embedding features. Embedding features can display highly specific and directional tuning to land cover and elevation, such as a `North vs South woodland edge' response. When we remove the main trends of combined land cover responses (like water versus land tuning), we discover fine-grained representational details with increased effective dimensionality. Together, our analyses start to unravel what these Earth embeddings represent, which is critical for developing trustworthy downstream applications.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the EurIPS 2025 REO workshop&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Quantum-Inspired Convolutional Networks for High-Resolution Pseudo-Label Generation from Multimodal Earth Observation Data</title>
-    <link href="http://arxiv.org/abs/2610.39773v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.39773v1</id>
-    <published>2026-10-29T00:00:00Z</published>
-    <updated>2026-10-29T00:00:00Z</updated>
-    <author>
-      <name>Abhishek Singh</name>
-    </author>
-    <author>
-      <name>Giovanni Cuozzo</name>
-    </author>
-    <author>
-      <name>Alexander Jacob</name>
-    </author>
-    <author>
-      <name>Claudia Notarnicola</name>
-    </author>
-    <summary type="text">Accurate land-cover mapping from multimodal Earth observation (EO) data remains a challenge in regions where high-resolution annotations are scarce or costly to obtain. This work introduces a quantum convolutional encoder-decoder network for pseudo-label generation using Sentinel-1 SAR and Sentinel-2 multispectral imagery, guided only by coarse MODIS-derived land-cover maps. The proposed framework uses quantum-inspired convolutional blocks to enhance feature extraction and cross-sensor fusion, enabling the model to infer a fine-scale semantic structure from heterogeneous inputs. Experiments were conducted on the DFC2020 dataset, which provides a quadruple of Sentinel-1 SAR, Sentinel-2 multispectral, low-resolution MODIS labels and high-resolution reference land-cover maps. The proposed training framework first learns a robust representation of multimodal inputs through the reconstruction branch before any supervision from low-resolution labels is applied. This self-supervised stage enables the model to capture a fine-scale spectral-spatial structure, which is then used to generate high-resolution pseudo-labels. These pseudo-labels are subsequently evaluated through classification metrics on the test data, demonstrating that the proposed approach produces more spatially coherent and class-consistent compared to classical baselines. The results highlight the potential of quantum-inspired deep learning to improve label generation in low-annotation remote sensing scenarios, offering a scalable path towards high-quality land-cover products for EO applications.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Machine Learning" />
     <category term="Computer Vision" />
   </entry>
 </feed>

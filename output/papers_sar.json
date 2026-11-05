@@ -8377,5 +8377,24 @@
     "_added_date": "2026-11-03",
     "Category": "Method",
     "_tasks": "CD"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-11-04",
+    "Month": 11,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "CAPE-JEPA - Cross-modal Adversarial Probabilistic Embedding JEPA",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2611.06247v1",
+    "Abstract": "Cross-modal remote sensing image retrieval (RS-CMIR) requires representations that are simultaneously modality-invariant and semantically discriminative, despite the profound physical gap between heterogeneous sensors such as Synthetic Aperture Radar (SAR) and multispectral imagery. Recent JEPA-based Predictive self-supervised approaches such as X-JEPA formulate cross-modal alignment as a deterministic latent forecasting task, implicitly assuming uniform patch predictability and leaving cross-modal distributional alignment unaddressed. We propose CAPE-JEPA, a probabilistic cross-modal Joint Embedding Predictive Architecture with three contributions: (i) a cross-attentional Gaussian predictor outputting per-patch parameters (mu, sigma^2) conditioned on opposite-modality context, trained via negative log-likelihood to model inherent cross-sensor prediction uncertainty; (ii) adversarial distributional regularization combining unimodal isotropic Gaussian regularization with a novel cross-modal adversarial variant that aligns modality distributions via worst-case Epps-Pulley characteristic function tests without explicit sample pairing; and (iii) in-training contrastive learning with attention-pooled heads for scene-level discriminative grounding. Evaluated on BigEarthNet-14K (BEN-14K) and fMoW across SAR, multispectral, and RGB modalities, CAPE-JEPA surpasses X-JEPA by up to 13.74 points on BEN-14K and 15.59 points on fMoW, outperforming all baselines including SkySense and CROMA across both unimodal and cross-modal directions while using fewer parameters (407.30M vs. 432.72M).",
+    "code": "",
+    "Publication": "BMVC 2026",
+    "BibTex": "@article{junghare2026capejepa,\n  title={CAPE-JEPA - Cross-modal Adversarial Probabilistic Embedding JEPA},\n  author={Aniket Junghare and Biplab Banerjee},\n  journal={arXiv preprint arXiv:2611.06247v1},\n  year={2026},\n  url={http://arxiv.org/abs/2611.06247v1}\n}",
+    "Authors": "Aniket Junghare, Biplab Banerjee",
+    "_added_date": "2026-11-05",
+    "Category": "Method",
+    "_tasks": "ITR;VG"
   }
 ]
