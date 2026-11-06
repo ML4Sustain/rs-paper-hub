@@ -4,12 +4,73 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-05T07:38:18Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 37 entries</subtitle>
+  <updated>2026-11-06T03:52:37Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 33 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>When GeoFMs Meet VHR: Benchmarking Foundation Models on Very High Resolution Earth Observation Imagery</title>
+    <link href="http://arxiv.org/abs/2611.08003v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.08003v1</id>
+    <published>2026-11-05T00:00:00Z</published>
+    <updated>2026-11-05T00:00:00Z</updated>
+    <author>
+      <name>Kshitij Raj Sharma</name>
+    </author>
+    <author>
+      <name>Pierre Adorni</name>
+    </author>
+    <author>
+      <name>Minh-Tan Pham</name>
+    </author>
+    <author>
+      <name>Dirk Tiede</name>
+    </author>
+    <author>
+      <name>Sébastien Lefèvre</name>
+    </author>
+    <summary type="text">Geospatial foundation models are a widely adopted starting point for remote sensing tasks. Most are pretrained on Sentinel-1/2 and Landsat imagery at a ground sampling distance (GSD) of 10m or coarser. Many applications instead rely on very high resolution (VHR) imagery, where individual buildings, roads, and amenities are resolved. We study which pretraining regimes transfer well to this scale. We introduce VHR-Bench, a benchmark suite of ten datasets at 1.5m GSD or finer spanning five task families, eight application domains, and both satellite and aerial platforms. We evaluate twelve encoders in three pretraining tiers with frozen backbones at two training-data fractions. We find that both pretraining on large natural-image collections and VHR-specific pretraining transfer effectively to VHR tasks, with complementary strengths. SkySense leads when labels are scarce; at the full label fraction the web-pretrained DINOv3 ViT-L edges ahead, with the two close together there. Encoders pretrained only on Sentinel-scale imagery transfer least well under RGB input. Guided by these complementary results, we continue the self-supervised pretraining of DINOv3 ViT-L on 1.02 million held-out VHR tiles and evaluate the resulting encoder without changing the downstream protocol. The continued model gives a clear improvement over the released backbone when labels are scarce and a modest one at the full fraction, at no increase in inference parameters or compute. These findings support a generalize-then-specialize strategy: already strong, broad natural-image pretraining can be further improved by a short VHR continuation stage while preserving its general visual features.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>MP-DualNet: A Dual-Branch Deep Learning Approach for Magnetopause Boundary Detection Using Simulated SXI Images</title>
+    <link href="http://arxiv.org/abs/2611.07433v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.07433v1</id>
+    <published>2026-11-05T00:00:00Z</published>
+    <updated>2026-11-05T00:00:00Z</updated>
+    <author>
+      <name>Cheng Zhong</name>
+    </author>
+    <author>
+      <name>Zhongwei Yang</name>
+    </author>
+    <author>
+      <name>Tianran Sun</name>
+    </author>
+    <author>
+      <name>Chengyan Huang</name>
+    </author>
+    <author>
+      <name>Jiajia Liu</name>
+    </author>
+    <author>
+      <name>Jingnan Guo</name>
+    </author>
+    <author>
+      <name>Yuming Wang</name>
+    </author>
+    <author>
+      <name>Chi Wang</name>
+    </author>
+    <summary type="text">The Earth's magnetopause is a key boundary governing solar wind-magnetosphere coupling. The Solar wind Magnetosphere Ionosphere Link Explorer (SMILE) mission will provide global soft X-ray imaging of the magnetosphere through solar wind charge exchange (SWCX) emission, offering a new opportunity for remote sensing of magnetopause dynamics. However, the limited field of view (FOV) and variable observation geometry of the Soft X-ray Imager (SXI) pose challenges for reliable magnetopause detection. In this study, we develop MP-DualNet, an end-to-end dual-branch deep learning framework for automated magnetopause detection from simulated SXI observations. The framework jointly performs coarse localization to determine magnetopause visibility and relative position within the FOV, and fine-scale boundary localization through pixel-level segmentation. The model is trained and evaluated using line-of-sight magnetopause envelope maps derived from global hybrid simulations under different solar wind and interplanetary magnetic field conditions. The results demonstrate stable and consistent performance, with a classification accuracy exceeding 0.94 and a segmentation IoU above 0.97. For the test set, the mean absolute angular displacement from the reference boundary was 0.488 degrees. The model maintains robust performance across a wide range of noise levels and generalizes well, as demonstrated by its application to an independent storm event. These results indicate that MP-DualNet provides a reliable and generalizable approach for magnetopause detection in SXI observations, supporting future 3D reconstruction and space weather studies in the context of the SMILE mission.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;3D&lt;/p&gt;</content>
+    <category term="astro-ph.SR" />
+    <category term="astro-ph.IM" />
+  </entry>
   <entry>
     <title>TOP: Transmission-Oriented Remote Sensing Pansharpening</title>
     <link href="http://arxiv.org/abs/2611.06430v1" rel="alternate" type="text/html" />
@@ -941,175 +1002,6 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE World Forum for Internet of Things 2026&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="eess.SY" />
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Differential rank preservation manifold learning</title>
-    <link href="http://arxiv.org/abs/2610.41107v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.41107v1</id>
-    <published>2026-10-30T00:00:00Z</published>
-    <updated>2026-10-30T00:00:00Z</updated>
-    <author>
-      <name>Henry Han</name>
-    </author>
-    <author>
-      <name>Luyu Niu</name>
-    </author>
-    <author>
-      <name>Diane Li</name>
-    </author>
-    <author>
-      <name>Jiacun Wang</name>
-    </author>
-    <summary type="text">Manifold learning methods like t-SNE and UMAP preserve local neighborhoods, but they do not preserve the ranking of the neighbors inside them. Two embeddings can return the same neighbor set while disagreeing on which point is closest. This loss of order degrades downstream applications that value the order in the embedding. We propose Smooth Rank t-SNE (SR-tSNE), which adds a differentiable rank term to the standard t-SNE loss. To enable efficient training, this term uses a sigmoid rank approximation to explicitly force a point's true high-dimensional neighbors to outrank unrelated intruders and retain their original order. We also introduce Ordinal DLP (O-DLP), an extension of the Degree of Locality Preservation (DLP) metric that credits a neighbor only when it returns at its original rank. Across eight benchmarks spanning image, text, speech, remote-sensing and single-cell data, SR-tSNE outperforms 12 baselines in rank preservation and neighborhood overlap. Ablation studies demonstrate our rank term alone boosts O-DLP by 5% to 28%, a gain not achievable using standard pairwise loss. This advantage transfers to downstream applications. SR-tSNE achieves the best label-transfer performance across seven vision datasets. For cell-type discovery across six single-cell datasets, it ranks first in 17 of 18 dataset-metric combinations, whether clustering resolution is selected with or without cell-type labels. In intraday trading, SR-tSNE achieves higher returns, lower risk, and lower turnover than the baselines. To our knowledge, SR-tSNE is the first t-SNE-family method with explicit order preservation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 67 pages, 10 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Laboratory study of mineral dust optical properties extending in the far-infrared spectral range</title>
-    <link href="http://arxiv.org/abs/2610.41907v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.41907v1</id>
-    <published>2026-10-30T00:00:00Z</published>
-    <updated>2026-10-30T00:00:00Z</updated>
-    <author>
-      <name>Perla Alalam</name>
-    </author>
-    <author>
-      <name>Hervé Herbin</name>
-    </author>
-    <author>
-      <name>Denis Petitprez</name>
-    </author>
-    <author>
-      <name>Sylvie Gosselin</name>
-    </author>
-    <author>
-      <name>Valentine Bizet</name>
-    </author>
-    <author>
-      <name>Paola Formenti</name>
-    </author>
-    <author>
-      <name>Pasquale Sellitto</name>
-    </author>
-    <author>
-      <name>Claudia Di Biagio</name>
-    </author>
-    <summary type="text">Mineral dust is one of the most abundant atmospheric aerosol types and remains a major source of uncertainty in estimates of aerosol radiative forcing. This uncertainty is particularly important in the far-infrared (FIR) spectral region, where the optical properties of natural mineral dust, especially its complex refractive index (CRI), remain poorly known. Previous measurements have commonly relied on pellet- or film-based methods, which can alter particle size, shape, and vibrational modes, inducing errors in the CRI determination. In this study, we present a laboratory investigation on six natural mineral dust samples with contrasting compositions and originated from major dust source regions worldwide, including Arizona, Atacama, China, Niger, Saudi Arabia, and Tunisia. Suspended dust aerosols were generated under controlled dry conditions and characterized using extinction spectroscopy from the infrared 250 to 4000 cm^-1 (2.5 to 40 micrometers) to the Ultraviolet-Visible (UV-Vis) from 10000 to 40000 cm^-1 (0.25 to 1 micrometer) spectral range, combined with particle size distribution measurements. The real and imaginary parts of the CRI were retrieved for all six samples, revealing a significant absorption and pronounced spectral variability in the FIR. These variations should be accounted for in remote sensing and dust radiative effect studies.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 39 pages, 7 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Atmospheric and Oceanic Physics" />
-  </entry>
-  <entry>
-    <title>SAR-TS-BERT: Physics-Guided Self-Supervised Pre-Training With Polarimetric Features for SAR Time-Series Crop Classification</title>
-    <link href="http://arxiv.org/abs/2610.41728v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.41728v1</id>
-    <published>2026-10-30T00:00:00Z</published>
-    <updated>2026-10-30T00:00:00Z</updated>
-    <author>
-      <name>Jieqiu Wang</name>
-    </author>
-    <author>
-      <name>Yuhan Zhang</name>
-    </author>
-    <author>
-      <name>Bo Zheng</name>
-    </author>
-    <author>
-      <name>Shaoming Zhang</name>
-    </author>
-    <summary type="text">Multitemporal synthetic aperture radar (SAR) imagery provides continuous, cloud-free observations of crop phenology for agricultural monitoring in cloudy and rainy regions, yet high-accuracy classification typically requires extensive labeled samples. Although self-supervised pre-training mitigates label dependency in remote sensing, existing frameworks primarily target optical imagery or generic spatial SAR scenes, underutilizing temporal backscatter dynamics and polarimetric scattering mechanisms. We propose SAR-TS-BERT, a physics-guided BERT-style self-supervised pre-training framework for SAR time-series crop classification. SAR-TS-BERT integrates backscatter intensities and polarimetric ratio features (VV, VH, and VV/VH) with dual-polarimetric Cloude-Pottier decomposition parameters ($H/α/A$) into a six-band input representation through two core designs: 1) a physics-guided span masking strategy (SpanPhysics) that adaptively selects contiguous masked spans based on temporal backscatter change rates to prioritize key phenological transitions; and 2) a dual-branch cross-modal fusion encoder that models backscatter and polarimetric decomposition features through separate Transformer branches followed by bidirectional cross-attention fusion. On independent test sets in Estonia (EuroCropsML) and the USA (California CDL), SAR-TS-BERT achieves overall accuracies (OAs) of 96.78% and 87.29%, respectively, and attains a mean monthly OA of 99.37% on Chongming Island, Shanghai. On the Estonia benchmark, pre-training improves OA and Macro F1 by 1.17 and 1.59 percentage points over training from scratch under full supervision, and by 2.58 and 5.19 percentage points using only 1% labeled data. Incorporating SAR scattering physics into temporal self-supervised pre-training effectively enhances crop classification accuracy, parcel-level mapping consistency, and few-shot transferability.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages, 13 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Quantum machine learning geospatial time-series by seasonal encoding</title>
-    <link href="http://arxiv.org/abs/2610.41649v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.41649v1</id>
-    <published>2026-10-30T00:00:00Z</published>
-    <updated>2026-10-30T00:00:00Z</updated>
-    <author>
-      <name>Devjyoti Tripathy</name>
-    </author>
-    <author>
-      <name>Reece Robertson</name>
-    </author>
-    <author>
-      <name>Josey Stevens</name>
-    </author>
-    <author>
-      <name>Catherine Nakalembe</name>
-    </author>
-    <author>
-      <name>Sebastian Deffner</name>
-    </author>
-    <summary type="text">Quantum data reuploading models can increase the expressive capacity of variational quantum models, but do not necessarily improve predictive performance. In the present work, we investigate this behavior for seasonal time series forecasting and show that data encoding determines how well temporal structures are represented as circuit depth increases. We develop a fidelity-based quantum geometric description in which repeated encodings contribute to an effective input generator, so that reuploading depth changes the quantum geometry through which approximately recurrent inputs are distinguished. We construct fixed and adaptive seasonal encodings that represent observation magnitude and seasonal phase in distinct Bloch-sphere coordinates. We evaluate these encodings for monthly precipitation derived from ERA5-Land, a global reanalysis dataset, from a representative semi-arid, drought-prone tropical region in East Africa, using a 14-month lag window and reuploading depths $L$= 1-6. We find that in ideal simulations, standard value-based encodings degrade markedly with depth, whereas adaptive seasonal encodings preserve temporal correlation, spectral structure, and forecasting accuracy. Noisy simulations show that this encoding hierarchy persists at shallow and intermediate depths, while larger depths are limited by circuit noise and optimization difficulty. The seasonal quantum models remain competitive with established classical forecasting methods (ARIMA, random forests, and LSTMs). These results identify structure-aware quantum data encoding as a general strategy for building deeper quantum reuploading models.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 31 pages, 9 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="quant-ph" />
-  </entry>
-  <entry>
-    <title>Spectral Haar Binarizer: Compact Boolean Contrast Representations for Hyperspectral Classification</title>
-    <link href="http://arxiv.org/abs/2610.41478v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.41478v1</id>
-    <published>2026-10-30T00:00:00Z</published>
-    <updated>2026-10-30T00:00:00Z</updated>
-    <author>
-      <name>Michał Romaszewski</name>
-    </author>
-    <author>
-      <name>Przemysław Głomb</name>
-    </author>
-    <summary type="text">Tsetlin Machines offer an interpretable, hardware-friendly alternative to conventional machine learning models, but applying them to continuous hyperspectral measurements requires converting spectral signals into Boolean representations. Standard binarisation methods typically discretise each spectral band independently, potentially discarding important relationships between neighbouring wavelengths. In this paper, we introduce the Spectral Haar Binarizer (SHB), a contrast-based spectral representation method that constructs Boolean predicates from differences between selected spectral intervals. Inspired by Haar-like contrast features, the method uses an AdaBoost-style selection procedure to obtain a compact set of discriminative spectral predicates. We evaluate SHB on five heterogeneous hyperspectral datasets covering forensic blood detection, agricultural and urban remote sensing, and rainforest tree-species classification. Across binary and multiclass tasks, SHB consistently outperforms standard per-band binarisation strategies and provides the strongest or near-strongest results across classifiers. In binary tasks, TM-SHB achieves the best average performance, while RF-SHB is strongest in multiclass settings. Bayesian and rank-based analyses confirm that SHB's advantage is robust across datasets and not driven by isolated cases. The results show that representing continuous hyperspectral measurements is a central processing step for efficient classification. That contrast-based Boolean features provide an effective bridge between information-rich sensor measurements and compact, logic-based processing.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Beyond Trial-and-Error: A Geospatial-Guided Active Reasoning Framework for Robust Aerial Vision-and-Language Navigation</title>
-    <link href="http://arxiv.org/abs/2610.41446v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.41446v1</id>
-    <published>2026-10-30T00:00:00Z</published>
-    <updated>2026-10-30T00:00:00Z</updated>
-    <author>
-      <name>Jiawei Ge</name>
-    </author>
-    <author>
-      <name>Wenkang Gong</name>
-    </author>
-    <author>
-      <name>Jiuxin Cao</name>
-    </author>
-    <author>
-      <name>Bo Liu</name>
-    </author>
-    <author>
-      <name>Lei Cui</name>
-    </author>
-    <author>
-      <name>Haoran Wang</name>
-    </author>
-    <author>
-      <name>Xuelin Zhu</name>
-    </author>
-    <author>
-      <name>Biwei Cao</name>
-    </author>
-    <author>
-      <name>Chang Liu</name>
-    </author>
-    <author>
-      <name>Chen Feng</name>
-    </author>
-    <author>
-      <name>Ioannis Patras</name>
-    </author>
-    <summary type="text">Aerial Vision-and-Language Navigation (VLN) requires UAVs to locate language-specified goals in large-scale urban environments, where objects often appear small and visually ambiguous from high-altitude viewpoints. Existing methods largely follow a reactive paradigm common in indoor VLN, repeatedly updating navigation states from local observations while underutilizing the geospatial structure that remains stable during navigation. As a result, visually similar distractors can cause a reactive goal search to repeatedly reinforce locally plausible goal hypotheses based on passively accumulated evidence, leading to unreliable localization. To address this, we propose GeoReasoner, a robust framework that shifts the paradigm of Aerial VLN from reactive trial-and-error to geospatial-guided active reasoning. Specifically, GeoReasoner first performs pre-search geospatial reasoning to derive region-level priors and constrain the goal hypothesis space. Building on these, it further conducts hypothesis-driven exploration to actively acquire discriminative evidence and refine competing goal hypotheses. Finally, consistency-aware goal verification adversarially assesses complementary evidence sources before stopping, hence reducing premature or erroneous goal confirmations. Experiments on the real-world CityNav benchmark demonstrate that GeoReasoner sets a new SOTA among zero-shot Aerial VLN methods while competing favorably with supervised approaches.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>
