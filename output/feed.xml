@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-06T03:52:37Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 33 entries</subtitle>
+  <updated>2026-11-06T07:32:48Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 34 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -70,6 +70,30 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;3D&lt;/p&gt;</content>
     <category term="astro-ph.SR" />
     <category term="astro-ph.IM" />
+  </entry>
+  <entry>
+    <title>TerraMesh-Masks: Open-Vocabulary Segmentation for Earth Observation</title>
+    <link href="http://arxiv.org/abs/2611.08081v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.08081v1</id>
+    <published>2026-11-05T00:00:00Z</published>
+    <updated>2026-11-05T00:00:00Z</updated>
+    <author>
+      <name>Benedikt Blumenstiel</name>
+    </author>
+    <author>
+      <name>Hugues Devimeux</name>
+    </author>
+    <author>
+      <name>Johannes Jakubik</name>
+    </author>
+    <author>
+      <name>Konrad Schindler</name>
+    </author>
+    <summary type="text">Open-vocabulary segmentation (OVS) enables models to segment a variety of concepts specified in natural language, removing the need for fixed label sets and fine-tuning. While recent OVS approaches have shown strong performance on natural images, they transfer poorly to Earth observation (EO) data due to differing semantics, scales, sensing modality, and geographic context. To date, large-scale EO-specific datasets and benchmarks for OVS remain scarce. We, therefore, introduce TerraMesh-Masks, a large-scale open-vocabulary segmentation dataset for EO, comprising 16 million binary masks aligned with nine million multimodal TerraMesh samples and annotated using OpenStreetMap and Overture-derived semantics. In addition, we provide an expert-reviewed evaluation set of 523 samples covering over 200 classes to enable robust evaluation. To demonstrate the impact of TerraMesh-Masks, we build an open-vocabulary version of TerraMind. Our results demonstrate significantly improved performance over general-purpose state-of-the-art models reaching 35.18% IoU versus 16.29% for DINOv3.txt and 11.33% for SAM-3. We release the dataset publicly under a permissive license at https://huggingface.co/datasets/ibm-esa-geospatial/TerraMesh-Masks.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://huggingface.co/datasets/ibm-esa-geospatial/TerraMesh-Masks"&gt;https://huggingface.co/datasets/ibm-esa-geospatial/TerraMesh-Masks&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
   </entry>
   <entry>
     <title>TOP: Transmission-Oriented Remote Sensing Pansharpening</title>

@@ -145538,5 +145538,24 @@
     "_added_date": "2026-11-06",
     "Category": "Method",
     "_tasks": "CLS;3D"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-11-05",
+    "Month": 11,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "TerraMesh-Masks: Open-Vocabulary Segmentation for Earth Observation",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2611.08081v1",
+    "Abstract": "Open-vocabulary segmentation (OVS) enables models to segment a variety of concepts specified in natural language, removing the need for fixed label sets and fine-tuning. While recent OVS approaches have shown strong performance on natural images, they transfer poorly to Earth observation (EO) data due to differing semantics, scales, sensing modality, and geographic context. To date, large-scale EO-specific datasets and benchmarks for OVS remain scarce. We, therefore, introduce TerraMesh-Masks, a large-scale open-vocabulary segmentation dataset for EO, comprising 16 million binary masks aligned with nine million multimodal TerraMesh samples and annotated using OpenStreetMap and Overture-derived semantics. In addition, we provide an expert-reviewed evaluation set of 523 samples covering over 200 classes to enable robust evaluation. To demonstrate the impact of TerraMesh-Masks, we build an open-vocabulary version of TerraMind. Our results demonstrate significantly improved performance over general-purpose state-of-the-art models reaching 35.18% IoU versus 16.29% for DINOv3.txt and 11.33% for SAM-3. We release the dataset publicly under a permissive license at https://huggingface.co/datasets/ibm-esa-geospatial/TerraMesh-Masks.",
+    "code": "https://huggingface.co/datasets/ibm-esa-geospatial/TerraMesh-Masks",
+    "Publication": "NeurIPS 2026",
+    "BibTex": "@article{blumenstiel2026terrameshmasks,\n  title={TerraMesh-Masks: Open-Vocabulary Segmentation for Earth Observation},\n  author={Benedikt Blumenstiel and Hugues Devimeux and Johannes Jakubik and Konrad Schindler},\n  journal={arXiv preprint arXiv:2611.08081v1},\n  year={2026},\n  url={http://arxiv.org/abs/2611.08081v1}\n}",
+    "Authors": "Benedikt Blumenstiel, Hugues Devimeux, Johannes Jakubik, Konrad Schindler",
+    "_added_date": "2026-11-06",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]
