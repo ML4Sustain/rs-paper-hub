@@ -145614,5 +145614,24 @@
     "_added_date": "2026-11-09",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Image and Video Processing",
+    "Subtype": "Computer Vision; Geophysics",
+    "Date": "2026-11-06",
+    "Month": 11,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Super-resolved digital terrain models for GEDI geolocation correction: agreement with airborne LiDAR DTM-based corrections at the beam level, not the footprint level",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2611.09854v1",
+    "Abstract": "The Global Ecosystem Dynamics Investigation (GEDI) mission measures three-dimensional forest structure with a LiDAR aboard the International Space Station. GEDI observations have geolocation errors of about 10 m, which cause misalignment with other remote sensing data and reduce the accuracy of downstream tasks. Matching GEDI ground elevations against high-resolution digital terrain models (DTMs) from airborne LiDAR is one way to correct these errors, but such DTMs exist in few regions. To widen this method's applicability, we super-resolved a more widely available low-resolution DTM and used it for the matching. Our question is whether a super-resolved DTM yields the same correction as a 1 m-resolution airborne LiDAR DTM and, if not, why. In steep forests of western Japan, we super-resolved an existing 10 m-resolution DTM to 1 m. Improving its accuracy required fusion with a global 30 m-resolution DTM from a different source. Using the resulting DTM, we corrected GEDI observation positions first by a single shift per ground track, then per observation. For most tracks, the shifts nearly matched those from the airborne LiDAR DTM, likely because DTM errors canceled out across many observations. Per-observation corrections, however, did not match. At a single observation, the error does not cancel out and is too large for the correction. This error likely originates mainly from the input DTM. Therefore, even without a 1 m-resolution DTM, a roughly 10 m-resolution DTM, fused with a global DTM and super-resolved to 1 m, should yield track-wise corrections nearly matching those from a 1 m-resolution DTM.",
+    "code": "",
+    "Publication": "Appendices will be added in a future version",
+    "BibTex": "@article{yuda2026superresolved,\n  title={Super-resolved digital terrain models for GEDI geolocation correction: agreement with airborne LiDAR DTM-based corrections at the beam level, not the footprint level},\n  author={Natsuki Yuda and Shinichiro Shirota},\n  journal={arXiv preprint arXiv:2611.09854v1},\n  year={2026},\n  url={http://arxiv.org/abs/2611.09854v1}\n}",
+    "Authors": "Natsuki Yuda, Shinichiro Shirota",
+    "_added_date": "2026-11-09",
+    "Category": "Method",
+    "_tasks": "GeoLoc"
   }
 ]
