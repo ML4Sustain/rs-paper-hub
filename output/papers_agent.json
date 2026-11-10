@@ -5185,5 +5185,24 @@
     "_added_date": "2026-11-04",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "physics.soc-ph",
+    "Subtype": "",
+    "Date": "2026-11-08",
+    "Month": 11,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Toward Self-Evolving Geospatial Algorithms: An LLM-Driven Framework with a Case Study on Spatial Regime Discovery",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2611.11669v1",
+    "Abstract": "Geospatial algorithms have been developed through expert-driven discovery: a researcher spots a limitation, proposes a structural fix, and checks it by hand. With LLM-driven multi-agent systems becoming practical, much of the candidate-generation, evaluation, and selection work can now be largely automated, while the researcher's role shifts upstream toward problem formulation, evaluation design, and interpretation. We refer to this paradigm as Self-Evolving Geospatial Algorithms (SEGA) and propose a framework with three required modules: a two-loop architecture with embedded geographic knowledge as the inner-loop engine; an automatic code formatter that converts any raw geospatial algorithm into the standardized triple required by the inner loop; and a simulation-driven training protocol, in which evolution runs only on synthetic data with known ground truth, and the discovered algorithm is applied unchanged to real data, keeping real-world results out-of-sample. We use spatial regime discovery as a case study, seeded with the Two-stage K-Models algorithm. Evolution uses the Rand Index against the ground-truth partition as fitness signal; the frozen algorithm is then evaluated on 150 simulated grids and 11 real-world datasets across climate, health, hydrology, and politics. The evolved algorithm outperforms its seed, knowledge-free baselines, and four classical regionalization methods. Ablations further indicate that the channel of geographic-knowledge injection, structured retrieval versus prompt-level hints, is itself load-bearing. In this case study, LLM-assisted search sped up the inner loop; whether it does so for other seeds and task families remains open. The geographer's role -- asking the right questions, designing trustworthy evaluation -- grows more central.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{lou2026toward,\n  title={Toward Self-Evolving Geospatial Algorithms: An LLM-Driven Framework with a Case Study on Spatial Regime Discovery},\n  author={Xiayin Lou and Peng Luo and Liqiu Meng},\n  journal={arXiv preprint arXiv:2611.11669v1},\n  year={2026},\n  url={http://arxiv.org/abs/2611.11669v1}\n}",
+    "Authors": "Xiayin Lou, Peng Luo, Liqiu Meng",
+    "_added_date": "2026-11-10",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]
