@@ -4,12 +4,41 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-09T07:31:27Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
+  <updated>2026-11-10T04:55:39Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 5 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Frequency-Structure Complementary Modeling for Hyperspectral Image Fusion</title>
+    <link href="http://arxiv.org/abs/2611.10413v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.10413v1</id>
+    <published>2026-11-07T00:00:00Z</published>
+    <updated>2026-11-07T00:00:00Z</updated>
+    <author>
+      <name>Song Qiya</name>
+    </author>
+    <author>
+      <name>Tian Siyu</name>
+    </author>
+    <author>
+      <name>Li Shutao</name>
+    </author>
+    <author>
+      <name>Dian Renwei</name>
+    </author>
+    <author>
+      <name>Sun Long</name>
+    </author>
+    <author>
+      <name>Liu Jinyang</name>
+    </author>
+    <summary type="text">Existing methods mainly rely on convolutional aggregation or attention-based spatial-spectral interaction. However, conventional feature-domain attention does not explicitly characterize variation patterns along spatial-token and learned latent-channel coordinates, while spatially shared local operators lack the flexibility to adapt neighborhood aggregation to heterogeneous structures. To address these limitations, we propose a Frequency-Structure Complementary Modeling Network (FSCM-Net), which couples frequency-aware dependency learning with structure-adaptive local refinement. Specifically, a Spatial-Spectral Frequency Calibration Attention (SSFCA) module constructs spatial-token affinities from Fourier-interacted query-key representations and builds latent-channel affinities after input-conditioned frequency filtering along learned channel coordinates. The latent-channel response is then calibrated by a learned shared gain and combined with the spatial-token response. Complementarily, a Structure-Coherent Dynamic Feature Fusion (SC-DFF) module combines regularized structure-tensor cues from MSI features with context-modulated HSI detail representations to generate channel- and position-dependent aggregation kernels. This design makes local HSI refinement responsive to smooth regions, edges, and textures while maintaining spectral fidelity. The two modules are progressively integrated within a multiscale encoder-decoder to coordinate representation-level interaction and structure-adaptive reconstruction. Experiments on two simulated benchmarks and one real remote-sensing dataset demonstrate favorable performance against representative fusion methods in spatial detail reconstruction and spectral preservation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>When GeoFMs Meet VHR: Benchmarking Foundation Models on Very High Resolution Earth Observation Imagery</title>
     <link href="http://arxiv.org/abs/2611.08003v1" rel="alternate" type="text/html" />

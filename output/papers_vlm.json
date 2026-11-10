@@ -29296,5 +29296,24 @@
     "_added_date": "2026-11-09",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Artificial Intelligence",
+    "Date": "2026-11-04",
+    "Month": 11,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "EarthJev: Efficient Visual Evidence Acquisition and Decision for UHR Remote Sensing Understanding",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2611.10005v1",
+    "Abstract": "Ultra-high-resolution (UHR) remote sensing visual question answering (VQA) requires locating fine-grained evidence in large scenes under limited visual input budgets. Active observation addresses this challenge through selective exploration, but repeated generative judgments can make region search costly. Its decisions also concern distinct prediction targets: spatial pointer validity, evidence presence, and reasoning correctness. We propose EarthJev, a framework that separates region scoring from answer generation and uses target-specific decision signals while keeping the answering model frozen. A spatial pointer verifier uses visual and geometric cues to guide exploration or bypass search. An evidence-aware decision mechanism scores compact candidate views in batches using a lightweight head on frozen representations, without generating textual region judgments. Format-specific confidence calibration then guides selection between candidate answers generated from memory and overview presentations of the acquired evidence. Across five benchmarks, EarthJev achieves a mean accuracy of 53.06% with Qwen3.5-9B, outperforming ZoomSearch with the same answering model by 2.33 to 14.73 percentage points per benchmark while reducing mean latency from 11.30 - 1.67 seconds per question. With four additional frozen answering models, model-specific fitting of the decision modules and calibration mappings yields mean accuracy gains of 3.41 - 6.53 percentage points over the corresponding single-pass baselines. Code is available at https://github.com/Da1daidaidai/EarthJev",
+    "code": "https://github.com/Da1daidaidai/EarthJev",
+    "Publication": "13 pages, 8 figures",
+    "BibTex": "@article{dai2026earthjev,\n  title={EarthJev: Efficient Visual Evidence Acquisition and Decision for UHR Remote Sensing Understanding},\n  author={Pengyu Dai and Yao Zhang and Jian Song and Junjue Wang and Yafei Ou and Yuzeng Chen and Junshi Xia and Hongruixuan Chen and Naoto Yokoya},\n  journal={arXiv preprint arXiv:2611.10005v1},\n  year={2026},\n  url={http://arxiv.org/abs/2611.10005v1}\n}",
+    "Authors": "Pengyu Dai, Yao Zhang, Jian Song, Junjue Wang, Yafei Ou, Yuzeng Chen, Junshi Xia, Hongruixuan Chen, Naoto Yokoya",
+    "_added_date": "2026-11-10",
+    "Category": "Method",
+    "_tasks": "VQA"
   }
 ]

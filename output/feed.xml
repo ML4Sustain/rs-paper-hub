@@ -4,12 +4,62 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-09T07:31:27Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 22 entries</subtitle>
+  <updated>2026-11-10T04:55:39Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 17 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Decomposing Earth Embeddings with Sparse Autoencoders</title>
+    <link href="http://arxiv.org/abs/2611.11398v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.11398v1</id>
+    <published>2026-11-08T00:00:00Z</published>
+    <updated>2026-11-08T00:00:00Z</updated>
+    <author>
+      <name>Vitus Benson</name>
+    </author>
+    <author>
+      <name>Fanny Yang</name>
+    </author>
+    <author>
+      <name>Markus Reichstein</name>
+    </author>
+    <summary type="text">Earth observation foundation models produce global metre-resolution embeddings that underpin work across agriculture, ecology, hydrology, and beyond. Yet these embeddings are opaque: each dimension entangles unrelated physical concepts, which makes them difficult to interpret and their robustness hard to assess. Here, we propose sparse autoencoders (SAEs) as a principled way to decompose Earth embeddings into sparse, approximately monosemantic features over an overcomplete dictionary. Because LLM judges of interpretations do not transfer to satellite pixels, and spatial autocorrelation matters, we introduce a tailored evaluation protocol. It scores any SAE on reconstruction at matched sparsity, alignment with reference concepts, and spatial scale, each against baselines that include an SAE whose decoder is a frozen random dictionary. On this protocol, SAEs reconstruct AlphaEarth and Tessera embeddings better than every baseline at matched sparsity. Their features align with far fewer reference concepts than raw embedding dimensions (on AlphaEarth, 88% align with at most one of 20 concept groups, most with none, against a median of 12 per raw dimension). They also carry more of their variance at fine spatial scales (23 to 32% within a 640 m patch for BatchTopK and Matryoshka, against 9%). An SAE with a frozen random decoder shares both properties, which therefore follow from sparsity, whereas only a learned dictionary reconstructs the embedding accurately: on AlphaEarth, trained SAEs leave eight times less variance unexplained. We test the sparse code on two applications, discovering land-cover sub-concepts and detecting out-of-distribution pixels by area-of-applicability estimation. Both indicate how sparse features could be used, but neither is yet reliable enough for practical use. Together, these results are a step toward Earth observation models whose features can be inspected.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+    <category term="Computer Vision; Geophysics" />
+  </entry>
+  <entry>
+    <title>Frequency-Structure Complementary Modeling for Hyperspectral Image Fusion</title>
+    <link href="http://arxiv.org/abs/2611.10413v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.10413v1</id>
+    <published>2026-11-07T00:00:00Z</published>
+    <updated>2026-11-07T00:00:00Z</updated>
+    <author>
+      <name>Song Qiya</name>
+    </author>
+    <author>
+      <name>Tian Siyu</name>
+    </author>
+    <author>
+      <name>Li Shutao</name>
+    </author>
+    <author>
+      <name>Dian Renwei</name>
+    </author>
+    <author>
+      <name>Sun Long</name>
+    </author>
+    <author>
+      <name>Liu Jinyang</name>
+    </author>
+    <summary type="text">Existing methods mainly rely on convolutional aggregation or attention-based spatial-spectral interaction. However, conventional feature-domain attention does not explicitly characterize variation patterns along spatial-token and learned latent-channel coordinates, while spatially shared local operators lack the flexibility to adapt neighborhood aggregation to heterogeneous structures. To address these limitations, we propose a Frequency-Structure Complementary Modeling Network (FSCM-Net), which couples frequency-aware dependency learning with structure-adaptive local refinement. Specifically, a Spatial-Spectral Frequency Calibration Attention (SSFCA) module constructs spatial-token affinities from Fourier-interacted query-key representations and builds latent-channel affinities after input-conditioned frequency filtering along learned channel coordinates. The latent-channel response is then calibrated by a learned shared gain and combined with the spatial-token response. Complementarily, a Structure-Coherent Dynamic Feature Fusion (SC-DFF) module combines regularized structure-tensor cues from MSI features with context-modulated HSI detail representations to generate channel- and position-dependent aggregation kernels. This design makes local HSI refinement responsive to smooth regions, edges, and textures while maintaining spectral fidelity. The two modules are progressively integrated within a multiscale encoder-decoder to coordinate representation-level interaction and structure-adaptive reconstruction. Experiments on two simulated benchmarks and one real remote-sensing dataset demonstrate favorable performance against representative fusion methods in spatial detail reconstruction and spectral preservation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>GeoJeV: Unified Spatial Probability for Training-Free Efficient Evidence Acquisition in Ultra-High-Resolution Remote Sensing</title>
     <link href="http://arxiv.org/abs/2611.08879v1" rel="alternate" type="text/html" />
@@ -388,230 +438,44 @@
     <category term="Computer Vision" />
   </entry>
   <entry>
-    <title>Large Language Model-Assisted Adaptive Heuristic Search for Agile Earth Observation Satellite Scheduling</title>
-    <link href="http://arxiv.org/abs/2611.04458v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.04458v1</id>
-    <published>2026-11-03T00:00:00Z</published>
-    <updated>2026-11-03T00:00:00Z</updated>
+    <title>EarthJev: Efficient Visual Evidence Acquisition and Decision for UHR Remote Sensing Understanding</title>
+    <link href="http://arxiv.org/abs/2611.10005v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.10005v1</id>
+    <published>2026-11-04T00:00:00Z</published>
+    <updated>2026-11-04T00:00:00Z</updated>
     <author>
-      <name>He Wang</name>
+      <name>Pengyu Dai</name>
     </author>
     <author>
-      <name>Yeye Liu</name>
+      <name>Yao Zhang</name>
     </author>
     <author>
-      <name>Ruijie Li</name>
+      <name>Jian Song</name>
     </author>
     <author>
-      <name>Xuemei Jiang</name>
+      <name>Junjue Wang</name>
     </author>
     <author>
-      <name>Junyu Wu</name>
+      <name>Yafei Ou</name>
     </author>
     <author>
-      <name>Lining Liu Zhuoqi Man</name>
+      <name>Yuzeng Chen</name>
     </author>
     <author>
-      <name>Tao Li</name>
+      <name>Junshi Xia</name>
     </author>
     <author>
-      <name>Yanjie Song</name>
-    </author>
-    <summary type="text">Agile Earth observation satellites must coordinate imaging tasks within limited observation windows, while accounting for attitude maneuvering and onboard energy constraints. Competition among observation opportunities makes scheduling performance sensitive to the heuristic rules used for task selection. This letter proposes a large language model (LLM)-assisted adaptive heuristic search method for agile Earth observation satellite scheduling. The LLM generates an initial heuristic rule according to the characteristics of the scheduling instance. During the subsequent ant colony search, search performance and scheduling information are fed back to the LLM to refine the heuristic rule. The proposed modifications are evaluated through paired solution constructions before being incorporated into the search process. A unified scheduling procedure determines task selection, satellite assignment, and observation timing under the operational constraints. Experiments on six scheduling scenarios involving 50--200 imaging tasks demonstrate that the proposed method achieves 4.3\%--9.6\% higher mean observation benefit than the strongest baseline.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 5 pages,4 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="cs.CL" />
-  </entry>
-  <entry>
-    <title>OSGR: Observation-Support Graph Reasoning for Earth Observation Question Answering</title>
-    <link href="http://arxiv.org/abs/2611.04301v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.04301v1</id>
-    <published>2026-11-03T00:00:00Z</published>
-    <updated>2026-11-03T00:00:00Z</updated>
-    <author>
-      <name>Dazhou Yu</name>
+      <name>Hongruixuan Chen</name>
     </author>
     <author>
-      <name>Zerong Wang</name>
+      <name>Naoto Yokoya</name>
     </author>
-    <author>
-      <name>Riyang Bao</name>
-    </author>
-    <author>
-      <name>Longxiang Li</name>
-    </author>
-    <author>
-      <name>Yang Liu</name>
-    </author>
-    <author>
-      <name>Liang Zhao</name>
-    </author>
-    <summary type="text">Answering geographic queries over Earth observation (EO) archives requires solving a joint retrieval-and-derivation problem under strict spatiotemporal constraints. Existing LLM agents fail to ground observation items or suffer from search-space explosion. We propose OSGR, a two-stage framework that factorizes this search into offline symbolic concept deduction and online Relation-Conditioned Grounding. OSGR leverages an offline Observation-Support Graph to deduce valid target-to-result support paths at the concept level, and applies spatiotemporal compatibility kernels to instantiate grounded observation-item sets. On Earth-Bench and DisasterM3-Reason, OSGR improves GPT-4o accuracy from 49.3\% to 63.7\% while reducing the execution-step ratio from 2.9 to 2.5.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="Information Retrieval" />
-  </entry>
-  <entry>
-    <title>Fusing Earth observation embeddings and spaceborne terrain with meteorological forcing for flood peak depth prediction from high-water marks</title>
-    <link href="http://arxiv.org/abs/2611.05220v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.05220v1</id>
-    <published>2026-11-03T00:00:00Z</published>
-    <updated>2026-11-03T00:00:00Z</updated>
-    <author>
-      <name>Wen Zhou</name>
-    </author>
-    <author>
-      <name>Shaowen Wang</name>
-    </author>
-    <author>
-      <name>Upmanu Lall</name>
-    </author>
-    <author>
-      <name>Venkatesh Merwade</name>
-    </author>
-    <author>
-      <name>Dingqi Ye</name>
-    </author>
-    <summary type="text">Flood peak depth on normally dry land governs damage and risk to life, but is observed only sparsely, by post-event high-water mark (HWM) surveys, and depth derived from satellite flood extent is produced after the event and inherits the vertical error of the digital elevation model (DEM) it is computed from. Deep-learning flood models have in turn been trained on hydrodynamic simulations rather than on observed depths. We ask whether flood peak depth can be learned from field observations and predicted before the peak from spaceborne terrain, geospatial foundation-model embeddings and antecedent meteorological forcing. We assembled 5689 USGS HWM surveys from 39 events (2011-2025) in 24 U.S. states and Puerto Rico, assigned each a peak time from nearby sensors, paired each with a rain-free window at the same site, and linked them to Copernicus GLO-30 terrain, AlphaEarth embeddings and 144 h of hourly forcing masked to the lead time. A cross-modal fusion network trained on these observations predicts depth at the surveyed marks with a mean absolute error of 0.39 m 6 h ahead of the peak. Supervision by surveyed depth corrects the DEM error implicitly: differencing the measured peak water level with the same DEM gives 0.93 m at the same marks, 2.4 times larger, although it uses the measured water level and the model does not. Forcing accounts for 77% of the attributed reduction in depth error; terrain and the embeddings are statistically equivalent to each other and contribute the remaining 23%. On eleven held-out events the model still separates flooded from rain-free conditions but no longer resolves depth at the marks (R2 = 0.03), so the skill reported here is confined to the events and regions sampled. Field-surveyed depths can thus supervise flood depth prediction and correct terrain error that extent-based estimation cannot, while transfer to unseen storms remains the open problem.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; 3D&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Basin2Vec: Learning Basin-Centric Embeddings for Scalable Hydrological Modeling</title>
-    <link href="http://arxiv.org/abs/2611.05164v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.05164v1</id>
-    <published>2026-11-03T00:00:00Z</published>
-    <updated>2026-11-03T00:00:00Z</updated>
-    <author>
-      <name>Muhammad Talha</name>
-    </author>
-    <author>
-      <name>Xiaofeng Liu</name>
-    </author>
-    <author>
-      <name>Yuan Yang</name>
-    </author>
-    <author>
-      <name>Pang-Ning Tan</name>
-    </author>
-    <author>
-      <name>A. Pouyan Nejadhashemi</name>
-    </author>
-    <summary type="text">Reliable streamflow prediction across time and in ungauged basins requires representations that capture hydrologically relevant basin characteristics. Existing methods rely on either fixed handcrafted attributes or general-purpose Earth observation embeddings not tailored to basin structure. We introduce \textbf{Basin2Vec}, a self-supervised framework that learns compact basin representations from hydroclimatic and physiographic data without observed streamflow. Basin2Vec organizes representation learning around basin scale and relationships across space and time. Across multiple forecasting architectures, it consistently outperforms predefined attributes and general-purpose geospatial embeddings in temporal generalization and zero-shot spatial transfer. Basin2Vec provides average relative gains of up to 8.3% temporally and achieves 3.5x the median predictive performance of the strongest baselines on unseen basins. These results demonstrate the effectiveness of basin-centric pretraining for transferable hydrologic prediction. Code is available at https://github.com/Muhammad-Talha-MT/basin2vec</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Muhammad-Talha-MT/basin2vec"&gt;https://github.com/Muhammad-Talha-MT/basin2vec&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>GeoFaham: Domain-Specialized Multi-Agent Geospatial Analytics for Disaster Response</title>
-    <link href="http://arxiv.org/abs/2611.04977v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.04977v1</id>
-    <published>2026-11-03T00:00:00Z</published>
-    <updated>2026-11-03T00:00:00Z</updated>
-    <author>
-      <name>Muhammad Sohail Danish</name>
-    </author>
-    <author>
-      <name>Gilles Q. Hacheme</name>
-    </author>
-    <author>
-      <name>Akram Zaytar</name>
-    </author>
-    <author>
-      <name>Satej S. Soman</name>
-    </author>
-    <author>
-      <name>Inbal Becker-Reshef</name>
-    </author>
-    <author>
-      <name>Juan Lavista Ferres</name>
-    </author>
-    <author>
-      <name>Salman Khan</name>
-    </author>
-    <author>
-      <name>Girmaw Abebe Tadesse</name>
-    </author>
-    <summary type="text">Real-world geospatial decision support requires more than single-step retrieval or code generation. Disaster-response questions often involve multi-source workflows that combine spatial databases, map-derived features, satellite imagery, raster products, and reusable geospatial artifacts, where correctness depends on preserving spatial scope, temporal context, and intermediate execution state. While large language models and coding agents offer a promising interface for such workflows, they struggle with geospatial-specific failure modes, including handling large artifacts, selecting the wrong evidence source, losing spatial or temporal metadata, and applying invalid geometric operations. We introduce GeoFaham, a domain-specialized multi-agent system for geospatial disaster analytics. GeoFaham decomposes workflows into specialist agents for vector operations, map feature retrieval, imagery discovery, and raster analysis, coordinated by an Orchestrator with a dual-ledger control loop for dependency-aware planning, progress tracking, validation, and replanning. To support artifact-centric collaboration, GeoFaham uses a Response Store that persists full geospatial outputs and typed metadata outside the LLM context window while agents exchange compact identifiers and summaries. We also introduce GeoFaham-Bench, a 40-task benchmark grounded in 17 real-world disaster records, designed to evaluate multi-step geospatial reasoning, cross-source integration, raster-vector computation, artifact generation, and recovery under non-rigid ground truth. We evaluate GeoFaham on GeoFaham-Bench against strong general-purpose coding-agent baselines, including Codex, Claude Code, and OpenCode. GeoFaham achieves the best overall performance, scoring 0.940 versus the next-best 0.879, while using 7.5 times fewer tokens. Our code and benchmark are publicly available at https://github.com/microsoft/GeoFaham.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/microsoft/GeoFaham"&gt;https://github.com/microsoft/GeoFaham&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.MA" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>GeoDIVE: Geospatial Descent Informed by Value Estimation</title>
-    <link href="http://arxiv.org/abs/2611.05697v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.05697v1</id>
-    <published>2026-11-03T00:00:00Z</published>
-    <updated>2026-11-03T00:00:00Z</updated>
-    <author>
-      <name>Hamza Iqbal</name>
-    </author>
-    <author>
-      <name>Dan Cher</name>
-    </author>
-    <author>
-      <name>Eric Xing</name>
-    </author>
-    <author>
-      <name>Pranavi Kolouju</name>
-    </author>
-    <author>
-      <name>Abby Stylianou</name>
-    </author>
-    <author>
-      <name>Robert Pless</name>
-    </author>
-    <author>
-      <name>Nathan Jacobs</name>
-    </author>
-    <summary type="text">Finding specific objects, structures, and spatial patterns supports critical work in agriculture, infrastructure planning, environmental monitoring, and disaster response. These features, however, are often dispersed across very large regions and span dramatically different spatial scales, which defines a search space that is costly to embed, maintain, and search naively. We introduce GeoDIVE, a model that treats a multiresolution satellite image gallery as a forest and uses best-first traversal to determine which tiles to encode. At each visited node, a lightweight model then predicts an optimistic estimate of the best query similarity hidden among its descendants using the query and subtree representations. In evaluations with image and open-vocabulary text queries, GeoDIVE matches exhaustive search at 10% of the encoding cost for image queries and leads all tested baselines at every budget in both modalities. To support future evaluation of multiscale geospatial search, we also release object-level image and text queries for Git-10M, constructed from Microsoft building footprints and OpenStreetMap polygons with VLM-generated captions. Source code and models will be made publicly available.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; WACV 2027&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>ChangeJEPA: Predict Before You Compare for Remote Sensing Change Detection</title>
-    <link href="http://arxiv.org/abs/2611.05570v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.05570v1</id>
-    <published>2026-11-03T00:00:00Z</published>
-    <updated>2026-11-03T00:00:00Z</updated>
-    <author>
-      <name>Buddhi Wijenayake</name>
-    </author>
-    <author>
-      <name>Dhananjaya Jayasundara</name>
-    </author>
-    <author>
-      <name>Vishal M. Patel</name>
-    </author>
-    <summary type="text">Remote sensing change detection is typically formulated as Siamese feature comparison, where two images are encoded independently and a decoder determines which discrepancies correspond to meaningful change. This is challenging because the encoders preserve both true scene changes and nuisance variations such as illumination, seasonal, radiometric, and geometric differences. We introduce ChangeJEPA, a bitemporal joint-embedding predictive architecture that reformulates change detection as latent post-state prediction. Given a pre-change image and partial post-change evidence, ChangeJEPA predicts the full post-change representation under two complementary conditions: a prior hypothesis derived from the pre-change scene and an updated hypothesis conditioned on observed post-change context. A joint-embedding predictive loss aligns both hypotheses with the target latent representation, encouraging semantic consistency while suppressing transient appearance variations. Change is then inferred from the disagreement among the pre-change representation, the observed post-change target, and the predicted latent states, capturing complementary evidence of change, prior surprise, contextual update, and prediction reliability. Across SYSU-CD, LEVIR-CD+, and CDD, ChangeJEPA consistently outperforms its decoder matched Siamese baseline by up to 1.51 IoU points and achieves the best IoU and F1-score on all three benchmarks, demonstrating the advantage of latent post-state prediction over direct feature comparison. Page: https://buddhi19.github.io/ChangeJEPA</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages&lt;/p&gt;
+    <summary type="text">Ultra-high-resolution (UHR) remote sensing visual question answering (VQA) requires locating fine-grained evidence in large scenes under limited visual input budgets. Active observation addresses this challenge through selective exploration, but repeated generative judgments can make region search costly. Its decisions also concern distinct prediction targets: spatial pointer validity, evidence presence, and reasoning correctness. We propose EarthJev, a framework that separates region scoring from answer generation and uses target-specific decision signals while keeping the answering model frozen. A spatial pointer verifier uses visual and geometric cues to guide exploration or bypass search. An evidence-aware decision mechanism scores compact candidate views in batches using a lightweight head on frozen representations, without generating textual region judgments. Format-specific confidence calibration then guides selection between candidate answers generated from memory and overview presentations of the acquired evidence. Across five benchmarks, EarthJev achieves a mean accuracy of 53.06% with Qwen3.5-9B, outperforming ZoomSearch with the same answering model by 2.33 to 14.73 percentage points per benchmark while reducing mean latency from 11.30 - 1.67 seconds per question. With four additional frozen answering models, model-specific fitting of the decision modules and calibration mappings yields mean accuracy gains of 3.41 - 6.53 percentage points over the corresponding single-pass baselines. Code is available at https://github.com/Da1daidaidai/EarthJev</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Da1daidaidai/EarthJev"&gt;https://github.com/Da1daidaidai/EarthJev&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13 pages, 8 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Role-based Effectiveness of an Epistemic Uncertainty Estimate in Training Models for Semantic Segmentation of 3D LiDAR Point Clouds</title>
-    <link href="http://arxiv.org/abs/2611.05569v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.05569v1</id>
-    <published>2026-11-03T00:00:00Z</published>
-    <updated>2026-11-03T00:00:00Z</updated>
-    <author>
-      <name>Krishnakumar N</name>
-    </author>
-    <author>
-      <name>Jaya Sreevalsan-Nair</name>
-    </author>
-    <summary type="text">Point cloud segmentation is a fundamental task in 3D data analysis, with applications across robotics, augmented and virtual reality, and remote sensing. However, the inherent sparsity, noise, and unordered nature of point clouds introduce significant challenges, particularly in achieving reliable classification. While the state-of-the-art rely on training models for explicit modeling of uncertainty, there is a gap in exploring different roles that estimated uncertainty using generative approaches can play. This work investigates the impact of deterministic uncertainty in point cloud segmentation by explicitly modeling epistemic uncertainty and using it in different roles, namely, as a feature and in loss function. We evaluate a baseline artificial neural network (ANN) and two uncertainty-aware variants (uncertainty as an additional input feature and as a per-sample confidence weight in the training loss) on four large-scale LiDAR benchmarks spanning airborne and mobile acquisition, namely ISPRS Vaihingen, AHN3, Paris-Lille-3D, and Toronto-3D, together with PointNet++ and RandLA-Net references and their uncertainty-augmented counterparts under canonical spatially disjoint train and test splits. Under this protocol, uncertainty-aware modeling improves mean Intersection over Union, recovers minority classes that the baseline ANN never predicts at all, and in half of the configurations improves the alignment between prediction error and estimated uncertainty as measured by Patch Accuracy versus Patch Uncertainty. Our findings indicate that uncertainty can play multiple roles in the segmentation pipeline rather than as a device for improving accuracy alone.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 23 pages, 7 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;SEG;3D&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
+    <category term="Artificial Intelligence" />
   </entry>
 </feed>
