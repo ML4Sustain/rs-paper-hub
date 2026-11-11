@@ -4,12 +4,53 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-10T07:57:22Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 5 entries</subtitle>
+  <updated>2026-11-11T03:23:37Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Earth Embeddings in Environmental Remote Sensing</title>
+    <link href="http://arxiv.org/abs/2611.13612v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.13612v1</id>
+    <published>2026-11-10T00:00:00Z</published>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <author>
+      <name>Yuchi Ma</name>
+    </author>
+    <author>
+      <name>Jiaqi Yang</name>
+    </author>
+    <author>
+      <name>Mengyu Liang</name>
+    </author>
+    <author>
+      <name>Ivan Higuera-Mendieta</name>
+    </author>
+    <author>
+      <name>Caleb Robinson</name>
+    </author>
+    <author>
+      <name>Anthony Ortiz</name>
+    </author>
+    <author>
+      <name>Min Chen</name>
+    </author>
+    <author>
+      <name>David B. Lobell</name>
+    </author>
+    <author>
+      <name>Inbal Becker-Reshef</name>
+    </author>
+    <author>
+      <name>Juan M. Lavista Ferres</name>
+    </author>
+    <summary type="text">Earth observations from satellite platforms have profoundly transformed research and applications across numerous domains. However, uneven observation coverage and frequent data gaps continue to limit their ability to capture Earth's surface dynamics. Moreover, processing multi-modal Earth observations requires substantial computational resources and sophisticated data harmonization frameworks, which may not be readily accessible to many remote sensing practitioners. Earth embeddings have emerged as promising solutions to these challenges. As general-purpose representations converted from multi-source Earth observations, Earth embeddings can support a wide range of downstream tasks with no requirement of task-specific feature design and preprocessing. In this study, we first introduce the theoretical foundations of Earth embeddings. Then, we review several representative Earth embedding products. We next examine the applications of Earth embeddings across six major domains of environmental remote sensing. Finally, we systematically assess the performance of Earth embeddings in four downstream tasks, including hyperspectral image classification, individual tree crown segmentation, crop yield prediction, and aboveground biomass mapping. Our review and case studies suggest that, despite several advantages over conventional Earth observation data, current Earth embeddings do not always outperform remote sensing imagery or hand-crafted features. Earth embeddings should not be viewed as a direct replacement for conventional EO data, but rather as representations that provide stable information across space and time. Remote sensing practitioners may consider evaluating Earth embeddings' suitability for specific tasks and using them strategically, rather than assuming superior performance by default.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>Frequency-Structure Complementary Modeling for Hyperspectral Image Fusion</title>
     <link href="http://arxiv.org/abs/2611.10413v1" rel="alternate" type="text/html" />
@@ -40,6 +81,36 @@
     <category term="Artificial Intelligence" />
   </entry>
   <entry>
+    <title>EarthRecord: From Pixels to Land Change with Multimodal Agents over Four Decades of Satellite Imagery</title>
+    <link href="http://arxiv.org/abs/2611.12934v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.12934v1</id>
+    <published>2026-11-06T00:00:00Z</published>
+    <updated>2026-11-06T00:00:00Z</updated>
+    <author>
+      <name>Haoran Zhang</name>
+    </author>
+    <author>
+      <name>Huizhen Sun</name>
+    </author>
+    <author>
+      <name>Hanbin Wen</name>
+    </author>
+    <author>
+      <name>Jie Leng</name>
+    </author>
+    <author>
+      <name>Jiaxin Zhu</name>
+    </author>
+    <author>
+      <name>Zhaohua Sun</name>
+    </author>
+    <summary type="text">While multimodal agents now carry out complex data analysis with tools, their ability to turn decades of satellite imagery into reliable land-change analysis, crucial for Earth observation science, remains unmeasured. Existing benchmarks fall short: they pose questions on curated images or give agents preprocessed inputs, leaving out the raw multi-sensor archives where such analysis begins. We introduce EarthRecord, a benchmark built on the raw record of 56 sites: four decades of Landsat, MODIS, VIIRS, and Sentinel-2 data, with cloud masking and cross-sensor harmonization left to the agent. It poses 238 land-change questions across ten analysis tasks, scored against withheld references from global products, agreement among methods, and visual interpretation. Two controls test what answers rest on: the closed book removes the record, and instrument pairs alter one satellite's data while nothing changes on the ground. Evaluations of twelve multimodal agents reveal that leading agents complete most analyses end to end but falter when an answer requires mapping from imagery. Further analysis shows that the record moves answers from prior knowledge to the pixels but not yet to the real change on the ground: when one satellite's data are altered, half of the right answers follow the alteration. EarthRecord thus provides a principled platform for measuring and advancing agents from pixels to land change.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 23 pages, 9 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
     <title>When GeoFMs Meet VHR: Benchmarking Foundation Models on Very High Resolution Earth Observation Imagery</title>
     <link href="http://arxiv.org/abs/2611.08003v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2611.08003v1</id>
@@ -62,85 +133,6 @@
     </author>
     <summary type="text">Geospatial foundation models are a widely adopted starting point for remote sensing tasks. Most are pretrained on Sentinel-1/2 and Landsat imagery at a ground sampling distance (GSD) of 10m or coarser. Many applications instead rely on very high resolution (VHR) imagery, where individual buildings, roads, and amenities are resolved. We study which pretraining regimes transfer well to this scale. We introduce VHR-Bench, a benchmark suite of ten datasets at 1.5m GSD or finer spanning five task families, eight application domains, and both satellite and aerial platforms. We evaluate twelve encoders in three pretraining tiers with frozen backbones at two training-data fractions. We find that both pretraining on large natural-image collections and VHR-specific pretraining transfer effectively to VHR tasks, with complementary strengths. SkySense leads when labels are scarce; at the full label fraction the web-pretrained DINOv3 ViT-L edges ahead, with the two close together there. Encoders pretrained only on Sentinel-scale imagery transfer least well under RGB input. Guided by these complementary results, we continue the self-supervised pretraining of DINOv3 ViT-L on 1.02 million held-out VHR tiles and evaluate the resulting encoder without changing the downstream protocol. The continued model gives a clear improvement over the released backbone when labels are scarce and a modest one at the full fraction, at no increase in inference parameters or compute. These findings support a generalize-then-specialize strategy: already strong, broad natural-image pretraining can be further improved by a short VHR continuation stage while preserving its general visual features.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>TOP: Transmission-Oriented Remote Sensing Pansharpening</title>
-    <link href="http://arxiv.org/abs/2611.06430v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.06430v1</id>
-    <published>2026-11-04T00:00:00Z</published>
-    <updated>2026-11-04T00:00:00Z</updated>
-    <author>
-      <name>Zi-Han Cao</name>
-    </author>
-    <author>
-      <name>Jing-Ze Liang</name>
-    </author>
-    <author>
-      <name>Shao-Jie Wu</name>
-    </author>
-    <author>
-      <name>Jin-Cheng Di</name>
-    </author>
-    <author>
-      <name>Liang-Jian Deng</name>
-    </author>
-    <author>
-      <name>Gemine Vivone</name>
-    </author>
-    <summary type="text">Pansharpening has been extensively studied as a fundamental image fusion task in remote sensing. However, most existing methods focus on improving fusion quality under the implicit assumption that high-resolution observations have already been fully downlinked to the ground. As a result, existing models are highly vulnerable to perturbations introduced by lossy compression used for downlink transmission. To address this limitation, we present, to the best of our knowledge, the first transmission oriented pansharpening (TOP) framework, which unifies compact latent coding, onboard pansharpening, and efficient downlink transmission within a single satellite-toground pipeline. TOP encodes remote-sensing observations into a compact binary latent space, where a lightweight onboard fusion module can efficiently predict the fused binary latent code. Since only the compact fused code is downlinked, the transmission payload is substantially reduced. Overall, TOP enables low-payload downlink and lightweight onboard processing while maintaining high fusion quality under severe bandwidth constraints. Experiments across multispectral and hyperspectral settings show that TOP consistently achieves superior fusion quality at higher compression ratios than representative pansharpening methods paired with standard lossy codecs. For example, on GaoFen-2, TOP attains a fusion PSNR of 31.4 dB at a downlink compression ratio of 50x. This design also points toward transmissionoriented processing for other remote-sensing tasks. The code will be made available at https://github.com/JingZe-Liang/TOP.git.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/JingZe-Liang/TOP.git"&gt;https://github.com/JingZe-Liang/TOP.git&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Image and Video Processing" />
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>CAPE-JEPA - Cross-modal Adversarial Probabilistic Embedding JEPA</title>
-    <link href="http://arxiv.org/abs/2611.06247v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.06247v1</id>
-    <published>2026-11-04T00:00:00Z</published>
-    <updated>2026-11-04T00:00:00Z</updated>
-    <author>
-      <name>Aniket Junghare</name>
-    </author>
-    <author>
-      <name>Biplab Banerjee</name>
-    </author>
-    <summary type="text">Cross-modal remote sensing image retrieval (RS-CMIR) requires representations that are simultaneously modality-invariant and semantically discriminative, despite the profound physical gap between heterogeneous sensors such as Synthetic Aperture Radar (SAR) and multispectral imagery. Recent JEPA-based Predictive self-supervised approaches such as X-JEPA formulate cross-modal alignment as a deterministic latent forecasting task, implicitly assuming uniform patch predictability and leaving cross-modal distributional alignment unaddressed. We propose CAPE-JEPA, a probabilistic cross-modal Joint Embedding Predictive Architecture with three contributions: (i) a cross-attentional Gaussian predictor outputting per-patch parameters (mu, sigma^2) conditioned on opposite-modality context, trained via negative log-likelihood to model inherent cross-sensor prediction uncertainty; (ii) adversarial distributional regularization combining unimodal isotropic Gaussian regularization with a novel cross-modal adversarial variant that aligns modality distributions via worst-case Epps-Pulley characteristic function tests without explicit sample pairing; and (iii) in-training contrastive learning with attention-pooled heads for scene-level discriminative grounding. Evaluated on BigEarthNet-14K (BEN-14K) and fMoW across SAR, multispectral, and RGB modalities, CAPE-JEPA surpasses X-JEPA by up to 13.74 points on BEN-14K and 15.59 points on fMoW, outperforming all baselines including SkySense and CROMA across both unimodal and cross-modal directions while using fewer parameters (407.30M vs. 432.72M).</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; BMVC 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR;VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>ReTailor: A Residual Feature Tailoring Framework for Real-Time Cross-Sensor Pansharpening Adaptation</title>
-    <link href="http://arxiv.org/abs/2611.05811v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.05811v1</id>
-    <published>2026-11-04T00:00:00Z</published>
-    <updated>2026-11-04T00:00:00Z</updated>
-    <author>
-      <name>Jing-Ze Liang</name>
-    </author>
-    <author>
-      <name>Wei-Jie Xiao</name>
-    </author>
-    <author>
-      <name>Zi-Han Cao</name>
-    </author>
-    <author>
-      <name>Yang-Dong Li</name>
-    </author>
-    <author>
-      <name>Tian-Yi Hu</name>
-    </author>
-    <author>
-      <name>Liang-Jian Deng</name>
-    </author>
-    <summary type="text">Recent pansharpening models achieve strong fusion performance on trained sensors, yet often generalize poorly to unseen sensors. Existing cross-sensor adaptation is limited by target-sensor retraining, which requires target-sensor training pairs and a dedicated training stage, and by per-image zero-shot adaptation, which is computationally expensive due to whole-network optimization for each test image. To address these problems, we propose ReTailor, a real-time sequential cross-sensor adaptation framework. Only a lightweight residual Feature Tailor is rapidly optimized under self-supervised, physics-aware constraints to correct cross-sensor shifts without modifying the well-learned fusion prior. For efficient and effective deployment, ReTailor combines content-aware patch selection, which identifies a few informative patches per image for optimization at negligible cost to improve both quality and efficiency, with rolling residual bootstrap, which inherits sensor-related knowledge across the image stream to further improve quality. Extensive experiments on cross-sensor adaptation settings show that ReTailor mitigates cross-sensor degradation both effectively and efficiently. Moreover, we compare ReTailor with Low-Rank Adaptation (LoRA), a widely used method for fine-tuning, to demonstrate the advantages of our approach. We further evaluate the core principle of ReTailor on two additional remote sensing tasks: super-resolution pansharpening and image segmentation, where it consistently improves performance. In general, ReTailor provides a highly effective and efficient strategy for deploying pansharpening models under real-world cross-sensor degradation, while also offering useful insights into managing cross-sensor degradation in other remote sensing tasks. Code will be released at https://github.com/JingZe-Liang/ReTailor .</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/JingZe-Liang/ReTailor"&gt;https://github.com/JingZe-Liang/ReTailor&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages, 12 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>
