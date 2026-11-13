@@ -4,12 +4,89 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-13T03:48:16Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 9 entries</subtitle>
+  <updated>2026-11-13T07:32:02Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 12 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>SpotDiff: A Plug-and-Play Framework for Zero-Shot Change Detection in Remote Sensing Imagery</title>
+    <link href="http://arxiv.org/abs/2611.17172v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.17172v1</id>
+    <published>2026-11-12T00:00:00Z</published>
+    <updated>2026-11-12T00:00:00Z</updated>
+    <author>
+      <name>Anit Upadhyaya</name>
+    </author>
+    <author>
+      <name>Ata Akbari Asanjan</name>
+    </author>
+    <author>
+      <name>Chaitanya Jalluri</name>
+    </author>
+    <author>
+      <name>Subash Yeggina</name>
+    </author>
+    <author>
+      <name>Jeremy Kravitz</name>
+    </author>
+    <summary type="text">Remote sensing change detection usually relies on large collections of temporally aligned, pixel-level annotations, which limits its scalability across regions, imaging platforms and application domains. Recent zero-shot approaches reduce the need for supervision, but they often localize fine-grained changes poorly because their features are coarse or inconsistent across time. We present SpotDiff, a training-free, plug-and-play framework for zero-shot change detection built by composing complementary vision foundation models. SpotDiff uses DINOv3 for semantically robust features, AnyUp to reconstruct them at pixel resolution, and SAM 3 for text-guided region-of-interest proposals, which an inference-time multi-scale strategy (SWIMS) makes reliable on small objects. Change is then measured by comparing the reconstructed features of the two dates inside the proposed regions, with no learnable components, fine-tuning or change labels. To our knowledge, SpotDiff is the first change detection method to use a universal feature upsampler, which alone adds 13.8 F1 over bilinear upsampling of the same features. On LEVIR-CD, SpotDiff reaches 82.46 F1, 2.06 points above the strongest prior training-free method, and on the multi-class SECOND benchmark it improves building change detection by 10.3 IoU and the six-class average by 2.2 IoU. Qualitative results on PlanetScope (3 m) and Sentinel-2 (10 m) imagery show that the same pipeline transfers across resolutions without modification. Our results indicate that composing modern foundation models is an effective route to scalable, label-free change detection.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>RICapBench: A Fine-Grained Visual Understanding Benchmark Dataset for Vision-Language Models in Remote Sensing</title>
+    <link href="http://arxiv.org/abs/2611.16413v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.16413v1</id>
+    <published>2026-11-12T00:00:00Z</published>
+    <updated>2026-11-12T00:00:00Z</updated>
+    <author>
+      <name>Xue Wang</name>
+    </author>
+    <author>
+      <name>Yubin Xu</name>
+    </author>
+    <author>
+      <name>Kun Tan</name>
+    </author>
+    <summary type="text">Advances in vision-language models (VLMs) have improved remote sensing image analysis and supported geospatial decision-making. However, fine-grained understanding of remote sensing imagery remains challenging for VLMs. Large variations in object scale, complex geospatial relations among instances, and limited visual detail hinder precise instance localization, visible attribute identification, and spatial relation understanding, potentially leading to descriptions that lack visual grounding. Existing datasets and benchmarks insufficiently assess end-to-end instance localization and captioning without target-specific textual cues. To support this evaluation, we introduce RICapBench, a dataset and benchmark that unifies instance localization and fine-grained captioning in remote sensing. RICapBench contains 245,466 instance-level annotations and 498,005 spatial relation tuples spanning general remote sensing, UAV remote sensing, and dense small-object scenarios. Each annotation pairs an object's oriented bounding box with a natural language description of its visible attributes and spatial relations to surrounding instances and environmental elements. To evaluate the accuracy and completeness of spatial relation captioning, we propose a remote sensing spatial relation parser and the RelCap-F1 metric. We combine RelCap-F1 with instance localization and attribute captioning metrics into a composite metric, RICScore. Our evaluation of 15 advanced open-source and closed-source VLMs identifies instance localization as a major bottleneck for these models. LocateAnything achieves the highest RICScore of 31.68, but scores lower on spatial relation captioning than other task-fine-tuned open-source VLMs. Code and dataset are available at https://github.com/Xldln/RICapBench.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Xldln/RICapBench"&gt;https://github.com/Xldln/RICapBench&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13 pages, 4 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;OD;VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Gravity and Flight: Learning to Navigate Fine-Grained Remote Sensing Scenes</title>
+    <link href="http://arxiv.org/abs/2611.16408v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.16408v1</id>
+    <published>2026-11-12T00:00:00Z</published>
+    <updated>2026-11-12T00:00:00Z</updated>
+    <author>
+      <name>Yuheng Zong</name>
+    </author>
+    <author>
+      <name>Minghua Wang</name>
+    </author>
+    <author>
+      <name>Xin Zhao</name>
+    </author>
+    <author>
+      <name>Xiaobin Liu</name>
+    </author>
+    <author>
+      <name>Yongjian Dong</name>
+    </author>
+    <author>
+      <name>Chanho Eom</name>
+    </author>
+    <summary type="text">Vision-language models are increasingly capable, yet their reasoning in complex remote sensing scenes can remain coarse-grained and insufficiently grounded in task-relevant visual evidence. We propose Gravity and Flight (G&amp;F), a framework for scene specialization with limited supervision that separates visual and reasoning verification while coupling policy updates. It combines Evidence-of-Thought supervised fine-tuning (EoT-SFT) and Relational Transfer Policy Optimization (RTPO). EoT-SFT teaches fine-grained observation and faithful reasoning through description, analysis, and supported conclusions. RTPO independently samples responses to scene-matched image pairs with fine-grained visual differences under a shared task. Its rubric-based verification combines Gravity, which checks visual fidelity and description coverage, and Flight, which takes descriptions as premises to assess evidence use and relations between paired judgments. Their scores and task correctness yield a shared pair-level advantage that couples policy updates from both responses. Using 1,008 demonstrations and 500 training pairs for harbor specialization, G&amp;F achieves a mean score of 69.12 across six evaluation sets, exceeding the backbone and supervised initialization by 9.76 and 4.56 points. Matched controls show gains over single-image and joint-input RL, and removing either verification view reduces performance. Applying G&amp;F to urban specialization also improves on the base model and supervised initialization across three evaluation subsets. Project details and updates are available at https://github.com/Z0ngL1ng/Gravity-and-Flight.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Z0ngL1ng/Gravity-and-Flight"&gt;https://github.com/Z0ngL1ng/Gravity-and-Flight&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>RSLiveBench-UAV: A Continually Evolving Vision-Language Benchmark for Aerial Spatial Intelligence</title>
     <link href="http://arxiv.org/abs/2611.14953v1" rel="alternate" type="text/html" />

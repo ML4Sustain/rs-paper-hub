@@ -4,12 +4,123 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-13T03:48:16Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 22 entries</subtitle>
+  <updated>2026-11-13T07:32:02Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 27 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>SpotDiff: A Plug-and-Play Framework for Zero-Shot Change Detection in Remote Sensing Imagery</title>
+    <link href="http://arxiv.org/abs/2611.17172v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.17172v1</id>
+    <published>2026-11-12T00:00:00Z</published>
+    <updated>2026-11-12T00:00:00Z</updated>
+    <author>
+      <name>Anit Upadhyaya</name>
+    </author>
+    <author>
+      <name>Ata Akbari Asanjan</name>
+    </author>
+    <author>
+      <name>Chaitanya Jalluri</name>
+    </author>
+    <author>
+      <name>Subash Yeggina</name>
+    </author>
+    <author>
+      <name>Jeremy Kravitz</name>
+    </author>
+    <summary type="text">Remote sensing change detection usually relies on large collections of temporally aligned, pixel-level annotations, which limits its scalability across regions, imaging platforms and application domains. Recent zero-shot approaches reduce the need for supervision, but they often localize fine-grained changes poorly because their features are coarse or inconsistent across time. We present SpotDiff, a training-free, plug-and-play framework for zero-shot change detection built by composing complementary vision foundation models. SpotDiff uses DINOv3 for semantically robust features, AnyUp to reconstruct them at pixel resolution, and SAM 3 for text-guided region-of-interest proposals, which an inference-time multi-scale strategy (SWIMS) makes reliable on small objects. Change is then measured by comparing the reconstructed features of the two dates inside the proposed regions, with no learnable components, fine-tuning or change labels. To our knowledge, SpotDiff is the first change detection method to use a universal feature upsampler, which alone adds 13.8 F1 over bilinear upsampling of the same features. On LEVIR-CD, SpotDiff reaches 82.46 F1, 2.06 points above the strongest prior training-free method, and on the multi-class SECOND benchmark it improves building change detection by 10.3 IoU and the six-class average by 2.2 IoU. Qualitative results on PlanetScope (3 m) and Sentinel-2 (10 m) imagery show that the same pipeline transfers across resolutions without modification. Our results indicate that composing modern foundation models is an effective route to scalable, label-free change detection.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>SALT: State-Aligned Low-Rank Transfer for Single-Temporal Cross-Dataset Structural Localization in Remote Sensing</title>
+    <link href="http://arxiv.org/abs/2611.17077v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.17077v1</id>
+    <published>2026-11-12T00:00:00Z</published>
+    <updated>2026-11-12T00:00:00Z</updated>
+    <author>
+      <name>Aggelos Psiris</name>
+    </author>
+    <author>
+      <name>Georgios Angelidis</name>
+    </author>
+    <author>
+      <name>Giorgos Sfikas</name>
+    </author>
+    <author>
+      <name>Maria Vakalopoulou</name>
+    </author>
+    <author>
+      <name>Thomas Lagkas</name>
+    </author>
+    <author>
+      <name>Panagiotis Sarigiannidis</name>
+    </author>
+    <author>
+      <name>Georgios Th. Papadopoulos</name>
+    </author>
+    <summary type="text">Change detection in remote sensing conventionally relies on spatially aligned bi-temporal imagery, which may be unavailable or unreliable in practical scenarios. Recent single-temporal approaches address this limitation by learning structural evidence, such as building regions, from a labeled source dataset and transferring it to unseen target imagery using only the current image. However, adaptation to the source dataset can over-specialize pretrained features and reduce their cross-dataset generalization, a risk that this paper argues is higher when the feature adaptation is parameterized independently of the states used for prediction. To address this issue, the current study introduces SALT, a State-Aligned Low-Rank Transfer framework. SALT keeps a DINOv3 backbone frozen and learns negative and positive structural states that both score each patch and, through State-Aligned Low-Rank Adaptation (SALA), span the rank-2 subspace in which patch features are corrected. Directional State Alignment supervises these corrections to raise the evidence of positive patches and lower that of negative ones, while Geometry Preservation limits changes to the pairwise relations among pretrained patch features. Experiments on LEVIR-CD and the WHU aerial building dataset show that, at the pixel level and in both transfer directions, SALT outperforms four baselines reproduced under a common source-only protocol, improving over the strongest reproduced baselines by 9.45 and 5.79 points in pixel-level AP and by 27.69 and 14.25 points in IoU (LEVIR-CD to WHU and WHU to LEVIR-CD, respectively), with only 0.068M trainable parameters and 40.2 ms per image. In order to facilitate reproducibility and further research, the source code of SALT is available at https://github.com/gthpapadopoulos/SALT</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/gthpapadopoulos/SALT"&gt;https://github.com/gthpapadopoulos/SALT&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the Third Workshop on Computer Vision for Geospatial Image Analysis (GeoCV)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>RICapBench: A Fine-Grained Visual Understanding Benchmark Dataset for Vision-Language Models in Remote Sensing</title>
+    <link href="http://arxiv.org/abs/2611.16413v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.16413v1</id>
+    <published>2026-11-12T00:00:00Z</published>
+    <updated>2026-11-12T00:00:00Z</updated>
+    <author>
+      <name>Xue Wang</name>
+    </author>
+    <author>
+      <name>Yubin Xu</name>
+    </author>
+    <author>
+      <name>Kun Tan</name>
+    </author>
+    <summary type="text">Advances in vision-language models (VLMs) have improved remote sensing image analysis and supported geospatial decision-making. However, fine-grained understanding of remote sensing imagery remains challenging for VLMs. Large variations in object scale, complex geospatial relations among instances, and limited visual detail hinder precise instance localization, visible attribute identification, and spatial relation understanding, potentially leading to descriptions that lack visual grounding. Existing datasets and benchmarks insufficiently assess end-to-end instance localization and captioning without target-specific textual cues. To support this evaluation, we introduce RICapBench, a dataset and benchmark that unifies instance localization and fine-grained captioning in remote sensing. RICapBench contains 245,466 instance-level annotations and 498,005 spatial relation tuples spanning general remote sensing, UAV remote sensing, and dense small-object scenarios. Each annotation pairs an object's oriented bounding box with a natural language description of its visible attributes and spatial relations to surrounding instances and environmental elements. To evaluate the accuracy and completeness of spatial relation captioning, we propose a remote sensing spatial relation parser and the RelCap-F1 metric. We combine RelCap-F1 with instance localization and attribute captioning metrics into a composite metric, RICScore. Our evaluation of 15 advanced open-source and closed-source VLMs identifies instance localization as a major bottleneck for these models. LocateAnything achieves the highest RICScore of 31.68, but scores lower on spatial relation captioning than other task-fine-tuned open-source VLMs. Code and dataset are available at https://github.com/Xldln/RICapBench.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Xldln/RICapBench"&gt;https://github.com/Xldln/RICapBench&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13 pages, 4 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;OD;VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Gravity and Flight: Learning to Navigate Fine-Grained Remote Sensing Scenes</title>
+    <link href="http://arxiv.org/abs/2611.16408v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.16408v1</id>
+    <published>2026-11-12T00:00:00Z</published>
+    <updated>2026-11-12T00:00:00Z</updated>
+    <author>
+      <name>Yuheng Zong</name>
+    </author>
+    <author>
+      <name>Minghua Wang</name>
+    </author>
+    <author>
+      <name>Xin Zhao</name>
+    </author>
+    <author>
+      <name>Xiaobin Liu</name>
+    </author>
+    <author>
+      <name>Yongjian Dong</name>
+    </author>
+    <author>
+      <name>Chanho Eom</name>
+    </author>
+    <summary type="text">Vision-language models are increasingly capable, yet their reasoning in complex remote sensing scenes can remain coarse-grained and insufficiently grounded in task-relevant visual evidence. We propose Gravity and Flight (G&amp;F), a framework for scene specialization with limited supervision that separates visual and reasoning verification while coupling policy updates. It combines Evidence-of-Thought supervised fine-tuning (EoT-SFT) and Relational Transfer Policy Optimization (RTPO). EoT-SFT teaches fine-grained observation and faithful reasoning through description, analysis, and supported conclusions. RTPO independently samples responses to scene-matched image pairs with fine-grained visual differences under a shared task. Its rubric-based verification combines Gravity, which checks visual fidelity and description coverage, and Flight, which takes descriptions as premises to assess evidence use and relations between paired judgments. Their scores and task correctness yield a shared pair-level advantage that couples policy updates from both responses. Using 1,008 demonstrations and 500 training pairs for harbor specialization, G&amp;F achieves a mean score of 69.12 across six evaluation sets, exceeding the backbone and supervised initialization by 9.76 and 4.56 points. Matched controls show gains over single-image and joint-input RL, and removing either verification view reduces performance. Applying G&amp;F to urban specialization also improves on the base model and supervised initialization across three evaluation subsets. Project details and updates are available at https://github.com/Z0ngL1ng/Gravity-and-Flight.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Z0ngL1ng/Gravity-and-Flight"&gt;https://github.com/Z0ngL1ng/Gravity-and-Flight&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>SkillEarth: Teaching General-Purpose Agents to Act on Earth via Skill Evolution</title>
     <link href="http://arxiv.org/abs/2611.15481v1" rel="alternate" type="text/html" />
@@ -112,6 +223,29 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, 6 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
     <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>A Remote-Sensing Framework for Interpreting CME Transit Effects</title>
+    <link href="http://arxiv.org/abs/2611.15935v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.15935v1</id>
+    <published>2026-11-11T00:00:00Z</published>
+    <updated>2026-11-11T00:00:00Z</updated>
+    <author>
+      <name>Sotiris Stamkos</name>
+    </author>
+    <author>
+      <name>Angelos Vourlidas</name>
+    </author>
+    <author>
+      <name>Evangelos Paouris</name>
+    </author>
+    <author>
+      <name>Spiros Patsourakos</name>
+    </author>
+    <summary type="text">We develop a remote-sensing framework to diagnose coronal mass ejection (CME) transit effects by comparing observed density evolution with an idealized self-similar reference shell and snowplow-based compression benchmarks. We apply the method to the 27 January 2012 CME using STEREO/SECCHI COR2-A and COR2-B and SOHO/LASCO C3. Electron-density profiles are extracted along the CME front in position-angle sectors and compared with synthetic profiles from a forward-modeled GCS shell. Sector-wise power-law fits quantify the radial density falloff and reveal substantial azimuthal variability. In COR2-A, several western sectors flatten relative to the synthetic shell and approach the snowplow-like compression regime, while other sectors show steeper-than-synthetic declines. COR2-B and LASCO C3 provide complementary viewpoints and also show sector-dependent departures, although the detailed pattern changes with viewing geometry. Conservative excess-density criteria identify clear pile-up only in localized COR2-A sectors, indicating that compression is spatially structured rather than uniform across the front. Comparison with snowplow benchmarks also depends strongly on the assumed upstream solar-wind conditions. These results show that CME-front density evolution is better described as a mixed system containing compression-dominated regions together with localized steepening that may reflect depletion, redistribution of material, or erosion-like evolution. The framework provides a practical way to separate competing processes that modify CME structure during heliospheric transit.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages, 16 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="astro-ph.SR" />
   </entry>
   <entry>
     <title>Towards Text-Only Remote Sensing Scene Classification via Semantic Proxy</title>
@@ -321,8 +455,8 @@
   </entry>
   <entry>
     <title>UniFlow-RS: Unified Generative Prediction for Heterogeneous Remote-Sensing Tasks</title>
-    <link href="http://arxiv.org/abs/2611.14281v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.14281v1</id>
+    <link href="http://arxiv.org/abs/2611.14281v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.14281v2</id>
     <published>2026-11-10T00:00:00Z</published>
     <updated>2026-11-10T00:00:00Z</updated>
     <author>

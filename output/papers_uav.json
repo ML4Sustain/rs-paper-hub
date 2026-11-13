@@ -7104,5 +7104,24 @@
     "_added_date": "2026-11-13",
     "Category": "Dataset",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-11-12",
+    "Month": 11,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "RICapBench: A Fine-Grained Visual Understanding Benchmark Dataset for Vision-Language Models in Remote Sensing",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2611.16413v1",
+    "Abstract": "Advances in vision-language models (VLMs) have improved remote sensing image analysis and supported geospatial decision-making. However, fine-grained understanding of remote sensing imagery remains challenging for VLMs. Large variations in object scale, complex geospatial relations among instances, and limited visual detail hinder precise instance localization, visible attribute identification, and spatial relation understanding, potentially leading to descriptions that lack visual grounding. Existing datasets and benchmarks insufficiently assess end-to-end instance localization and captioning without target-specific textual cues. To support this evaluation, we introduce RICapBench, a dataset and benchmark that unifies instance localization and fine-grained captioning in remote sensing. RICapBench contains 245,466 instance-level annotations and 498,005 spatial relation tuples spanning general remote sensing, UAV remote sensing, and dense small-object scenarios. Each annotation pairs an object's oriented bounding box with a natural language description of its visible attributes and spatial relations to surrounding instances and environmental elements. To evaluate the accuracy and completeness of spatial relation captioning, we propose a remote sensing spatial relation parser and the RelCap-F1 metric. We combine RelCap-F1 with instance localization and attribute captioning metrics into a composite metric, RICScore. Our evaluation of 15 advanced open-source and closed-source VLMs identifies instance localization as a major bottleneck for these models. LocateAnything achieves the highest RICScore of 31.68, but scores lower on spatial relation captioning than other task-fine-tuned open-source VLMs. Code and dataset are available at https://github.com/Xldln/RICapBench.",
+    "code": "https://github.com/Xldln/RICapBench",
+    "Publication": "13 pages, 4 figures",
+    "BibTex": "@article{wang2026ricapbench,\n  title={RICapBench: A Fine-Grained Visual Understanding Benchmark Dataset for Vision-Language Models in Remote Sensing},\n  author={Xue Wang and Yubin Xu and Kun Tan},\n  journal={arXiv preprint arXiv:2611.16413v1},\n  year={2026},\n  url={http://arxiv.org/abs/2611.16413v1}\n}",
+    "Authors": "Xue Wang, Yubin Xu, Kun Tan",
+    "_added_date": "2026-11-13",
+    "Category": "Dataset",
+    "_tasks": "IC;OD;VG"
   }
 ]
