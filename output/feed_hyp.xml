@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-12T07:54:40Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
+  <updated>2026-11-13T03:48:16Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -106,35 +106,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>EarthRecord: From Pixels to Land Change with Multimodal Agents over Four Decades of Satellite Imagery</title>
-    <link href="http://arxiv.org/abs/2611.12934v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.12934v1</id>
-    <published>2026-11-06T00:00:00Z</published>
-    <updated>2026-11-06T00:00:00Z</updated>
-    <author>
-      <name>Haoran Zhang</name>
-    </author>
-    <author>
-      <name>Huizhen Sun</name>
-    </author>
-    <author>
-      <name>Hanbin Wen</name>
-    </author>
-    <author>
-      <name>Jie Leng</name>
-    </author>
-    <author>
-      <name>Jiaxin Zhu</name>
-    </author>
-    <author>
-      <name>Zhaohua Sun</name>
-    </author>
-    <summary type="text">While multimodal agents now carry out complex data analysis with tools, their ability to turn decades of satellite imagery into reliable land-change analysis, crucial for Earth observation science, remains unmeasured. Existing benchmarks fall short: they pose questions on curated images or give agents preprocessed inputs, leaving out the raw multi-sensor archives where such analysis begins. We introduce EarthRecord, a benchmark built on the raw record of 56 sites: four decades of Landsat, MODIS, VIIRS, and Sentinel-2 data, with cloud masking and cross-sensor harmonization left to the agent. It poses 238 land-change questions across ten analysis tasks, scored against withheld references from global products, agreement among methods, and visual interpretation. Two controls test what answers rest on: the closed book removes the record, and instrument pairs alter one satellite's data while nothing changes on the ground. Evaluations of twelve multimodal agents reveal that leading agents complete most analyses end to end but falter when an answer requires mapping from imagery. Further analysis shows that the record moves answers from prior knowledge to the pixels but not yet to the real change on the ground: when one satellite's data are altered, half of the right answers follow the alteration. EarthRecord thus provides a principled platform for measuring and advancing agents from pixels to land change.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 23 pages, 9 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="Computer Vision" />
   </entry>
 </feed>

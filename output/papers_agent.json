@@ -5242,5 +5242,24 @@
     "_added_date": "2026-11-11",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Artificial Intelligence",
+    "Subtype": "Computer Vision",
+    "Date": "2026-11-11",
+    "Month": 11,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "SkillEarth: Teaching General-Purpose Agents to Act on Earth via Skill Evolution",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2611.15481v1",
+    "Abstract": "Recently developed remote sensing (RS) agents execute real-world tasks with complex workflows through multi-step tool invocation. These agents, however, typically rely on predefined expertise or parameter updates. They thus require updating expert knowledge or retraining models whenever new tools, tasks, or execution patterns emerge, limiting their continual adaptability in dynamic Earth environments. In this work, we seek to equip general-purpose agents with RS tool-call knowledge that can be automatically extracted from demonstrated trajectories without expert intervention or parameter updates. Specifically, we propose SkillEarth, a self-evolving skill extraction method that externalizes RS tool-call knowledge as reusable, retrievable, and evolvable skill files and refines them through observation-grounded evolution. Unlike existing automatic skill extraction methods that rely on outcome-based reflection to refine skills holistically, SkillEarth grounds skill evolution in real tool-chain execution and combines dual-judge feedback with a grounded observation routing graph for precise component-level refinement. The resulting skills are generalizable, reliable, and transferable: they improve overall RS tool-call performance across three frontier LLMs and four open-source LLMs, are refined through real tool execution feedback, and support cross-model reuse without retraining. Experiments on OpenEarth-Bench and Earth-Bench demonstrate that SkillEarth achieves better tool selection, argument correctness, execution-order consistency, and task completion than existing RS agents and skill extraction methods.",
+    "code": "",
+    "Publication": "20 pages, 7 figures",
+    "BibTex": "@article{tang2026skillearth,\n  title={SkillEarth: Teaching General-Purpose Agents to Act on Earth via Skill Evolution},\n  author={Haojun Tang and Wenda Zhao and Xiang Zhou and Qiwei Lin and Lida Huang and Yan Wang},\n  journal={arXiv preprint arXiv:2611.15481v1},\n  year={2026},\n  url={http://arxiv.org/abs/2611.15481v1}\n}",
+    "Authors": "Haojun Tang, Wenda Zhao, Xiang Zhou, Qiwei Lin, Lida Huang, Yan Wang",
+    "_added_date": "2026-11-13",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]

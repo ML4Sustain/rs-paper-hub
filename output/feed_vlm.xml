@@ -4,12 +4,59 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-12T07:54:40Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 10 entries</subtitle>
+  <updated>2026-11-13T03:48:16Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 9 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>RSLiveBench-UAV: A Continually Evolving Vision-Language Benchmark for Aerial Spatial Intelligence</title>
+    <link href="http://arxiv.org/abs/2611.14953v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.14953v1</id>
+    <published>2026-11-11T00:00:00Z</published>
+    <updated>2026-11-11T00:00:00Z</updated>
+    <author>
+      <name>Yue Zhou</name>
+    </author>
+    <author>
+      <name>Jiawei Liu</name>
+    </author>
+    <author>
+      <name>Jue Chen</name>
+    </author>
+    <author>
+      <name>Ziyang Gong</name>
+    </author>
+    <author>
+      <name>Haojia Wei</name>
+    </author>
+    <author>
+      <name>Jingxiang Li</name>
+    </author>
+    <author>
+      <name>Xue Jiang</name>
+    </author>
+    <author>
+      <name>Zhihang Zhong</name>
+    </author>
+    <author>
+      <name>Pai Peng</name>
+    </author>
+    <author>
+      <name>Xue Yang</name>
+    </author>
+    <author>
+      <name>Yansheng Li</name>
+    </author>
+    <author>
+      <name>Jonathan Li</name>
+    </author>
+    <summary type="text">Aerial spatial intelligence (ASI) requires models to understand objects and spatial relationships across changing viewpoints and scales. Evaluating these abilities as models evolve calls for fresh physical observations, yet producing new aerial spatial questions requires repeatedly establishing entity identities, geometric references, and cross-view correspondences. We introduce \textbf{RSLiveBench-UAV}, a continually evolving vision-language benchmark driven by recurring acquisition of real UAV imagery. Its update protocol admits images captured after the preceding release and delays answer disclosure. An entity-centered production workflow uses geometry-assisted association to link repeated observations of physical vehicles, reuse human-verified attributes, and combine them with view-specific annotations and spatial references for traceable question generation. All tasks use deterministic scoring without model judges. We evaluate 30 general-purpose, remote-sensing, and embodied models on 35,491 question records from ten scenes, covering 17 tasks across 2D perception, 3D perception, cross-view perception, and reasoning. All 18 tested embodied models outperform the three selected remote-sensing comparators in Overall, although the strongest embodied model scores 43.29 versus 59.88 for GPT-6-Astra. Fine-grained vehicle recognition remains challenging, and performance varies across heights and camera pitches. Retrospective scene-group comparisons and rolling-window replay characterize score-pattern consistency under scene renewal. RSLiveBench-UAV connects fresh physical observations, entity-centered answer production, and systematic model evaluation to support continual assessment of ASI. Benchmark will release at https://rslivebench.space</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, 6 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Towards Text-Only Remote Sensing Scene Classification via Semantic Proxy</title>
     <link href="http://arxiv.org/abs/2611.13851v1" rel="alternate" type="text/html" />
@@ -243,68 +290,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>GeoJeV: Unified Spatial Probability for Training-Free Efficient Evidence Acquisition in Ultra-High-Resolution Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2611.08879v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.08879v1</id>
-    <published>2026-11-06T00:00:00Z</published>
-    <updated>2026-11-06T00:00:00Z</updated>
-    <author>
-      <name>Xinyi Niu</name>
-    </author>
-    <author>
-      <name>Lingfeng Chen</name>
-    </author>
-    <author>
-      <name>Jiehua Zhang</name>
-    </author>
-    <author>
-      <name>Panhe Hu</name>
-    </author>
-    <author>
-      <name>Li Liu</name>
-    </author>
-    <author>
-      <name>Zhen Liu</name>
-    </author>
-    <author>
-      <name>Yongxiang Liu</name>
-    </author>
-    <summary type="text">Ultra-high-resolution (UHR) remote sensing imagery provides rich spatial details but poses challenges for accurate and efficient multimodal understanding. Existing evidence acquisition methods selectively explore relevant image regions, yet largely rely on generative multimodal large language models (MLLMs) for intermediate search control. However, reinforcement learning from human feedback (RLHF) primarily aligns these models with human-preferred responses rather than explicitly optimizing region-level relevance judgments, while repeated autoregressive decoding introduces additional computational overhead. To address these limitations, we propose GeoJeV, a training-free method that formulates evidence acquisition as spatial probability-driven decision making. At each evaluated region, a frozen JeV model produces a probability distribution over candidate regions. Specifically, Region Rank prioritizes candidate regions, Sparse Branch adaptively determines branching width through sparse probability support, and Depth Gate controls refinement depth based on branch sparsity and distribution concentration. By coordinating search priority, branching width, and refinement depth through a shared distribution, GeoJeV reduces reliance on RLHF-aligned generation and eliminates intermediate decoding. Experiments on LRS-GRO, MME-RealWorld-RS, and LRS-VQA achieve accuracies of 60.59%, 52.79%, and 34.32%, respectively. Across the three benchmarks, GeoJeV improves the average accuracy of Qwen3-VL-8B by +5.32pp with only 1.12 additional seconds per question, while achieving a 7.8-fold inference speedup over the recent method.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Signal Processing" />
-  </entry>
-  <entry>
-    <title>EarthRecord: From Pixels to Land Change with Multimodal Agents over Four Decades of Satellite Imagery</title>
-    <link href="http://arxiv.org/abs/2611.12934v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.12934v1</id>
-    <published>2026-11-06T00:00:00Z</published>
-    <updated>2026-11-06T00:00:00Z</updated>
-    <author>
-      <name>Haoran Zhang</name>
-    </author>
-    <author>
-      <name>Huizhen Sun</name>
-    </author>
-    <author>
-      <name>Hanbin Wen</name>
-    </author>
-    <author>
-      <name>Jie Leng</name>
-    </author>
-    <author>
-      <name>Jiaxin Zhu</name>
-    </author>
-    <author>
-      <name>Zhaohua Sun</name>
-    </author>
-    <summary type="text">While multimodal agents now carry out complex data analysis with tools, their ability to turn decades of satellite imagery into reliable land-change analysis, crucial for Earth observation science, remains unmeasured. Existing benchmarks fall short: they pose questions on curated images or give agents preprocessed inputs, leaving out the raw multi-sensor archives where such analysis begins. We introduce EarthRecord, a benchmark built on the raw record of 56 sites: four decades of Landsat, MODIS, VIIRS, and Sentinel-2 data, with cloud masking and cross-sensor harmonization left to the agent. It poses 238 land-change questions across ten analysis tasks, scored against withheld references from global products, agreement among methods, and visual interpretation. Two controls test what answers rest on: the closed book removes the record, and instrument pairs alter one satellite's data while nothing changes on the ground. Evaluations of twelve multimodal agents reveal that leading agents complete most analyses end to end but falter when an answer requires mapping from imagery. Further analysis shows that the record moves answers from prior knowledge to the pixels but not yet to the real change on the ground: when one satellite's data are altered, half of the right answers follow the alteration. EarthRecord thus provides a principled platform for measuring and advancing agents from pixels to land change.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 23 pages, 9 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="Computer Vision" />
   </entry>
 </feed>

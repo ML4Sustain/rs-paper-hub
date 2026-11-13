@@ -7085,5 +7085,24 @@
     "_added_date": "2026-11-11",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-11-11",
+    "Month": 11,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "RSLiveBench-UAV: A Continually Evolving Vision-Language Benchmark for Aerial Spatial Intelligence",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2611.14953v1",
+    "Abstract": "Aerial spatial intelligence (ASI) requires models to understand objects and spatial relationships across changing viewpoints and scales. Evaluating these abilities as models evolve calls for fresh physical observations, yet producing new aerial spatial questions requires repeatedly establishing entity identities, geometric references, and cross-view correspondences. We introduce \\textbf{RSLiveBench-UAV}, a continually evolving vision-language benchmark driven by recurring acquisition of real UAV imagery. Its update protocol admits images captured after the preceding release and delays answer disclosure. An entity-centered production workflow uses geometry-assisted association to link repeated observations of physical vehicles, reuse human-verified attributes, and combine them with view-specific annotations and spatial references for traceable question generation. All tasks use deterministic scoring without model judges. We evaluate 30 general-purpose, remote-sensing, and embodied models on 35,491 question records from ten scenes, covering 17 tasks across 2D perception, 3D perception, cross-view perception, and reasoning. All 18 tested embodied models outperform the three selected remote-sensing comparators in Overall, although the strongest embodied model scores 43.29 versus 59.88 for GPT-6-Astra. Fine-grained vehicle recognition remains challenging, and performance varies across heights and camera pitches. Retrospective scene-group comparisons and rolling-window replay characterize score-pattern consistency under scene renewal. RSLiveBench-UAV connects fresh physical observations, entity-centered answer production, and systematic model evaluation to support continual assessment of ASI. Benchmark will release at https://rslivebench.space",
+    "code": "",
+    "Publication": "10 pages, 6 figures",
+    "BibTex": "@article{zhou2026rslivebenchuav,\n  title={RSLiveBench-UAV: A Continually Evolving Vision-Language Benchmark for Aerial Spatial Intelligence},\n  author={Yue Zhou and Jiawei Liu and Jue Chen and Ziyang Gong and Haojia Wei and Jingxiang Li and Xue Jiang and Zhihang Zhong and Pai Peng and Xue Yang and Yansheng Li and Jonathan Li},\n  journal={arXiv preprint arXiv:2611.14953v1},\n  year={2026},\n  url={http://arxiv.org/abs/2611.14953v1}\n}",
+    "Authors": "Yue Zhou, Jiawei Liu, Jue Chen, Ziyang Gong, Haojia Wei, Jingxiang Li, Xue Jiang, Zhihang Zhong, Pai Peng, Xue Yang, Yansheng Li, Jonathan Li",
+    "_added_date": "2026-11-13",
+    "Category": "Dataset",
+    "_tasks": ""
   }
 ]

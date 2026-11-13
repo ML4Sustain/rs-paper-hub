@@ -4,12 +4,115 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-12T07:54:40Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 23 entries</subtitle>
+  <updated>2026-11-13T03:48:16Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 22 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>SkillEarth: Teaching General-Purpose Agents to Act on Earth via Skill Evolution</title>
+    <link href="http://arxiv.org/abs/2611.15481v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.15481v1</id>
+    <published>2026-11-11T00:00:00Z</published>
+    <updated>2026-11-11T00:00:00Z</updated>
+    <author>
+      <name>Haojun Tang</name>
+    </author>
+    <author>
+      <name>Wenda Zhao</name>
+    </author>
+    <author>
+      <name>Xiang Zhou</name>
+    </author>
+    <author>
+      <name>Qiwei Lin</name>
+    </author>
+    <author>
+      <name>Lida Huang</name>
+    </author>
+    <author>
+      <name>Yan Wang</name>
+    </author>
+    <summary type="text">Recently developed remote sensing (RS) agents execute real-world tasks with complex workflows through multi-step tool invocation. These agents, however, typically rely on predefined expertise or parameter updates. They thus require updating expert knowledge or retraining models whenever new tools, tasks, or execution patterns emerge, limiting their continual adaptability in dynamic Earth environments. In this work, we seek to equip general-purpose agents with RS tool-call knowledge that can be automatically extracted from demonstrated trajectories without expert intervention or parameter updates. Specifically, we propose SkillEarth, a self-evolving skill extraction method that externalizes RS tool-call knowledge as reusable, retrievable, and evolvable skill files and refines them through observation-grounded evolution. Unlike existing automatic skill extraction methods that rely on outcome-based reflection to refine skills holistically, SkillEarth grounds skill evolution in real tool-chain execution and combines dual-judge feedback with a grounded observation routing graph for precise component-level refinement. The resulting skills are generalizable, reliable, and transferable: they improve overall RS tool-call performance across three frontier LLMs and four open-source LLMs, are refined through real tool execution feedback, and support cross-model reuse without retraining. Experiments on OpenEarth-Bench and Earth-Bench demonstrate that SkillEarth achieves better tool selection, argument correctness, execution-order consistency, and task completion than existing RS agents and skill extraction methods.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 20 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>A physics-constrained deep reinforcement learning method for autonomous mission planning of Titan deep space probes</title>
+    <link href="http://arxiv.org/abs/2611.15389v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.15389v1</id>
+    <published>2026-11-11T00:00:00Z</published>
+    <updated>2026-11-11T00:00:00Z</updated>
+    <author>
+      <name>Hanmin Li</name>
+    </author>
+    <author>
+      <name>Tao Wang</name>
+    </author>
+    <author>
+      <name>Shuangliang Liu</name>
+    </author>
+    <author>
+      <name>Zhe Zhang</name>
+    </author>
+    <author>
+      <name>Maodeng Li</name>
+    </author>
+    <summary type="text">Titan is a compelling target for future deep space exploration, while its extreme Earth-Titan distance and complex environment make continuous ground-in-the-loop planning impractical. Existing planning methods, primarily developed for Earth-observation scenarios, have limited generalizability to uncertain deep space conditions and adaptability to time-varying mission states. To address these challenges, this paper proposes a physics-constrained maskable proximal policy optimization (PCM-PPO) method for Titan autonomous mission planning. A Titan-specific discrete-time Markov decision process is established to characterize mission feasibility and resource constraints. A system dynamics and geometric model is incorporated to enhance physical representation, including central gravity, J2 perturbation, third-body attraction, and downlink occultation. To accommodate opportunity targets under a bounded action dimension, PCM-PPO organizes predefined and opportunity targets through a fixed-capacity target pool and represents the mission state with a target-wise state matrix and a global state vector. A physics-constrained action mask constructs an admissible decision domain from current mission states, guiding policy learning toward physically executable decisions and avoiding infeasible exploration. An integrated training strategy facilitates policy optimization under coupled constraints. Comparative, ablation, and uncertainty experiments validate the effectiveness of PCM-PPO. PCM-PPO provides a feasible and interpretable scheme for autonomous mission planning of Titan deep space probes.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+    <category term="Robotics" />
+  </entry>
+  <entry>
+    <title>RSLiveBench-UAV: A Continually Evolving Vision-Language Benchmark for Aerial Spatial Intelligence</title>
+    <link href="http://arxiv.org/abs/2611.14953v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.14953v1</id>
+    <published>2026-11-11T00:00:00Z</published>
+    <updated>2026-11-11T00:00:00Z</updated>
+    <author>
+      <name>Yue Zhou</name>
+    </author>
+    <author>
+      <name>Jiawei Liu</name>
+    </author>
+    <author>
+      <name>Jue Chen</name>
+    </author>
+    <author>
+      <name>Ziyang Gong</name>
+    </author>
+    <author>
+      <name>Haojia Wei</name>
+    </author>
+    <author>
+      <name>Jingxiang Li</name>
+    </author>
+    <author>
+      <name>Xue Jiang</name>
+    </author>
+    <author>
+      <name>Zhihang Zhong</name>
+    </author>
+    <author>
+      <name>Pai Peng</name>
+    </author>
+    <author>
+      <name>Xue Yang</name>
+    </author>
+    <author>
+      <name>Yansheng Li</name>
+    </author>
+    <author>
+      <name>Jonathan Li</name>
+    </author>
+    <summary type="text">Aerial spatial intelligence (ASI) requires models to understand objects and spatial relationships across changing viewpoints and scales. Evaluating these abilities as models evolve calls for fresh physical observations, yet producing new aerial spatial questions requires repeatedly establishing entity identities, geometric references, and cross-view correspondences. We introduce \textbf{RSLiveBench-UAV}, a continually evolving vision-language benchmark driven by recurring acquisition of real UAV imagery. Its update protocol admits images captured after the preceding release and delays answer disclosure. An entity-centered production workflow uses geometry-assisted association to link repeated observations of physical vehicles, reuse human-verified attributes, and combine them with view-specific annotations and spatial references for traceable question generation. All tasks use deterministic scoring without model judges. We evaluate 30 general-purpose, remote-sensing, and embodied models on 35,491 question records from ten scenes, covering 17 tasks across 2D perception, 3D perception, cross-view perception, and reasoning. All 18 tested embodied models outperform the three selected remote-sensing comparators in Overall, although the strongest embodied model scores 43.29 versus 59.88 for GPT-6-Astra. Fine-grained vehicle recognition remains challenging, and performance varies across heights and camera pitches. Retrospective scene-group comparisons and rolling-window replay characterize score-pattern consistency under scene renewal. RSLiveBench-UAV connects fresh physical observations, entity-centered answer production, and systematic model evaluation to support continual assessment of ASI. Benchmark will release at https://rslivebench.space</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, 6 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Towards Text-Only Remote Sensing Scene Classification via Semantic Proxy</title>
     <link href="http://arxiv.org/abs/2611.13851v1" rel="alternate" type="text/html" />
@@ -539,109 +642,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>GeoJeV: Unified Spatial Probability for Training-Free Efficient Evidence Acquisition in Ultra-High-Resolution Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2611.08879v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.08879v1</id>
-    <published>2026-11-06T00:00:00Z</published>
-    <updated>2026-11-06T00:00:00Z</updated>
-    <author>
-      <name>Xinyi Niu</name>
-    </author>
-    <author>
-      <name>Lingfeng Chen</name>
-    </author>
-    <author>
-      <name>Jiehua Zhang</name>
-    </author>
-    <author>
-      <name>Panhe Hu</name>
-    </author>
-    <author>
-      <name>Li Liu</name>
-    </author>
-    <author>
-      <name>Zhen Liu</name>
-    </author>
-    <author>
-      <name>Yongxiang Liu</name>
-    </author>
-    <summary type="text">Ultra-high-resolution (UHR) remote sensing imagery provides rich spatial details but poses challenges for accurate and efficient multimodal understanding. Existing evidence acquisition methods selectively explore relevant image regions, yet largely rely on generative multimodal large language models (MLLMs) for intermediate search control. However, reinforcement learning from human feedback (RLHF) primarily aligns these models with human-preferred responses rather than explicitly optimizing region-level relevance judgments, while repeated autoregressive decoding introduces additional computational overhead. To address these limitations, we propose GeoJeV, a training-free method that formulates evidence acquisition as spatial probability-driven decision making. At each evaluated region, a frozen JeV model produces a probability distribution over candidate regions. Specifically, Region Rank prioritizes candidate regions, Sparse Branch adaptively determines branching width through sparse probability support, and Depth Gate controls refinement depth based on branch sparsity and distribution concentration. By coordinating search priority, branching width, and refinement depth through a shared distribution, GeoJeV reduces reliance on RLHF-aligned generation and eliminates intermediate decoding. Experiments on LRS-GRO, MME-RealWorld-RS, and LRS-VQA achieve accuracies of 60.59%, 52.79%, and 34.32%, respectively. Across the three benchmarks, GeoJeV improves the average accuracy of Qwen3-VL-8B by +5.32pp with only 1.12 additional seconds per question, while achieving a 7.8-fold inference speedup over the recent method.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Signal Processing" />
-  </entry>
-  <entry>
-    <title>Global Solar Siting from Geospatial Embeddings</title>
-    <link href="http://arxiv.org/abs/2611.08831v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.08831v1</id>
-    <published>2026-11-06T00:00:00Z</published>
-    <updated>2026-11-06T00:00:00Z</updated>
-    <author>
-      <name>Abdullah Rehman</name>
-    </author>
-    <author>
-      <name>Quentin Paletta</name>
-    </author>
-    <author>
-      <name>Rui Song</name>
-    </author>
-    <summary type="text">Global solar photovoltaic (PV) capacity is rapidly growing, helping decrease our emissions and dependence on fossil fuels. However, optimally siting a solar plant remains challenging, requiring anticipation of geographical, urban, and infrastructure needs. Current methods rely on multi-criteria decision analysis (MCDA) using hand-picked geophysical layers and solar-resource products, however these strategies are not geographically transferable and do not capture the practical requirements of solar sites. We use geospatial embeddings, dense vectors representing geophysical properties of a location, to analyse 38,591 existing solar sites and the land they were built on to learn the latent solar suitability signal. We assess a set of linear and non-linear models and select a soft-voting ensemble of a random forest and a multilayer perceptron (RF+MLP ensemble), chosen for accuracy and large scale deployability. Validated against future installations in thirteen countries, the ensemble separates existing solar sites from random land with a median ROC-AUC of 0.90. Compared with published MCDA strategies, the ensemble increases ROC-AUC by 0.06-0.30 in every country. The ranking also concentrates real deployment: the most-suitable 20% of land holds 84% of estimated generation (annual energy yield) and 67% of installed capacity (potential power output). After applying standard siting constraints, 5.6% of global land (9.8% if cropland is permitted) remains highly suited to solar. The global 10 m resolution solar suitability dataset and code can be found here: https://github.com/Abdullahr29/Global-Solar-Siting.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Abdullahr29/Global-Solar-Siting"&gt;https://github.com/Abdullahr29/Global-Solar-Siting&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Tackling Climate Change with Machine Learning workshop at NeurIPS 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-    <category term="Computer Vision; cs.CY" />
-  </entry>
-  <entry>
-    <title>Super-resolved digital terrain models for GEDI geolocation correction: agreement with airborne LiDAR DTM-based corrections at the beam level, not the footprint level</title>
-    <link href="http://arxiv.org/abs/2611.09854v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.09854v1</id>
-    <published>2026-11-06T00:00:00Z</published>
-    <updated>2026-11-06T00:00:00Z</updated>
-    <author>
-      <name>Natsuki Yuda</name>
-    </author>
-    <author>
-      <name>Shinichiro Shirota</name>
-    </author>
-    <summary type="text">The Global Ecosystem Dynamics Investigation (GEDI) mission measures three-dimensional forest structure with a LiDAR aboard the International Space Station. GEDI observations have geolocation errors of about 10 m, which cause misalignment with other remote sensing data and reduce the accuracy of downstream tasks. Matching GEDI ground elevations against high-resolution digital terrain models (DTMs) from airborne LiDAR is one way to correct these errors, but such DTMs exist in few regions. To widen this method's applicability, we super-resolved a more widely available low-resolution DTM and used it for the matching. Our question is whether a super-resolved DTM yields the same correction as a 1 m-resolution airborne LiDAR DTM and, if not, why. In steep forests of western Japan, we super-resolved an existing 10 m-resolution DTM to 1 m. Improving its accuracy required fusion with a global 30 m-resolution DTM from a different source. Using the resulting DTM, we corrected GEDI observation positions first by a single shift per ground track, then per observation. For most tracks, the shifts nearly matched those from the airborne LiDAR DTM, likely because DTM errors canceled out across many observations. Per-observation corrections, however, did not match. At a single observation, the error does not cancel out and is too large for the correction. This error likely originates mainly from the input DTM. Therefore, even without a 1 m-resolution DTM, a roughly 10 m-resolution DTM, fused with a global DTM and super-resolved to 1 m, should yield track-wise corrections nearly matching those from a 1 m-resolution DTM.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Appendices will be added in a future version&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; GeoLoc&lt;/p&gt;</content>
-    <category term="Image and Video Processing" />
-    <category term="Computer Vision; Geophysics" />
-  </entry>
-  <entry>
-    <title>EarthRecord: From Pixels to Land Change with Multimodal Agents over Four Decades of Satellite Imagery</title>
-    <link href="http://arxiv.org/abs/2611.12934v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.12934v1</id>
-    <published>2026-11-06T00:00:00Z</published>
-    <updated>2026-11-06T00:00:00Z</updated>
-    <author>
-      <name>Haoran Zhang</name>
-    </author>
-    <author>
-      <name>Huizhen Sun</name>
-    </author>
-    <author>
-      <name>Hanbin Wen</name>
-    </author>
-    <author>
-      <name>Jie Leng</name>
-    </author>
-    <author>
-      <name>Jiaxin Zhu</name>
-    </author>
-    <author>
-      <name>Zhaohua Sun</name>
-    </author>
-    <summary type="text">While multimodal agents now carry out complex data analysis with tools, their ability to turn decades of satellite imagery into reliable land-change analysis, crucial for Earth observation science, remains unmeasured. Existing benchmarks fall short: they pose questions on curated images or give agents preprocessed inputs, leaving out the raw multi-sensor archives where such analysis begins. We introduce EarthRecord, a benchmark built on the raw record of 56 sites: four decades of Landsat, MODIS, VIIRS, and Sentinel-2 data, with cloud masking and cross-sensor harmonization left to the agent. It poses 238 land-change questions across ten analysis tasks, scored against withheld references from global products, agreement among methods, and visual interpretation. Two controls test what answers rest on: the closed book removes the record, and instrument pairs alter one satellite's data while nothing changes on the ground. Evaluations of twelve multimodal agents reveal that leading agents complete most analyses end to end but falter when an answer requires mapping from imagery. Further analysis shows that the record moves answers from prior knowledge to the pixels but not yet to the real change on the ground: when one satellite's data are altered, half of the right answers follow the alteration. EarthRecord thus provides a principled platform for measuring and advancing agents from pixels to land change.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 23 pages, 9 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="Computer Vision" />
   </entry>
 </feed>
