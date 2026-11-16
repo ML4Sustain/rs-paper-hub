@@ -4,12 +4,131 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-13T07:32:02Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 27 entries</subtitle>
+  <updated>2026-11-16T03:25:28Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 24 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>WeatherDreamer: Learning a World Model from Multimodal Earth Observations</title>
+    <link href="http://arxiv.org/abs/2611.18393v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.18393v1</id>
+    <published>2026-11-13T00:00:00Z</published>
+    <updated>2026-11-13T00:00:00Z</updated>
+    <author>
+      <name>Kate Duffy</name>
+    </author>
+    <author>
+      <name>Elise Penn</name>
+    </author>
+    <author>
+      <name>Tristan Ballard</name>
+    </author>
+    <author>
+      <name>August Posch</name>
+    </author>
+    <author>
+      <name>Thomas J. Vandal</name>
+    </author>
+    <summary type="text">Machine learning weather models now rival operational global forecasts but still start from analyses produced by separate, expensive data assimilation (DA) systems, which for global models are typically updated every six hours. Observation-to-observation models avoid this dependence, but most omit the recursive filtering cycle that lets DA systems carry a background state through sparse, irregular observations. We introduce WeatherDreamer, a world model that learns this cycle end-to-end from 18 global observing systems, without reanalysis. It infers a latent state from observations, carries it forward hour by hour with learned dynamics, corrects it each hour with new observations, and can predict what any of its observing systems would measure at any location. At held-out stations, its ensembles beat NOAA's Global Ensemble Forecast System (GEFS) for temperature, dew point and wind out to 12 h and are better calibrated than GEFS and the ECMWF ensemble. Precipitation, cloud-top height and solar irradiance, never inputs at inference, are inferred with skill matching or exceeding operational products at short leads. Against the first guess of NOAA's Gridpoint Statistical Interpolation (GSI) DA system, WeatherDreamer's short-range departures are within 10% of GSI's at surface stations and within 25% for moisture-sensitive microwave channels, but up to five times larger for temperature-sounding channels. Never given observation errors, its learned update assumes errors close to known instrument and retrieval errors of microwave sounders and scatterometer winds. WeatherDreamer also separates viewing geometry from atmospheric state, recovering 83-96% of observed limb darkening and producing seamless nadir-view imagery. Producing an hourly global analysis in about 1.5 minutes on one GPU, WeatherDreamer shows that assimilation and forecasting can be learned together directly from observations.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+    <category term="Atmospheric and Oceanic Physics" />
+  </entry>
+  <entry>
+    <title>MaskSCD: Bitemporal Mask Classification for Semantic Change Detection in Remote Sensing Images</title>
+    <link href="http://arxiv.org/abs/2611.18350v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.18350v1</id>
+    <published>2026-11-13T00:00:00Z</published>
+    <updated>2026-11-13T00:00:00Z</updated>
+    <author>
+      <name>Weikang Yu</name>
+    </author>
+    <author>
+      <name>Pedram Ghamisi</name>
+    </author>
+    <summary type="text">Semantic change detection (SCD) identifies where the land surface has changed and which land-cover transition has taken place. Most deep SCD networks predict the change map and the land-cover map of each date with separate per-pixel decoders. These outputs need not agree, so a pixel can be labeled as changed although it has the same class at both dates, and per-pixel decisions fragment objects. We present MaskSCD, which formulates SCD as the mask classification of a bitemporal label-pair image. Each bitemporal segment, a region of constant land-cover class pair, is predicted as one mask shared by both dates together with one class per date, and the change map is derived from the predicted class pair. This formulation keeps the change and semantic maps consistent and the label space linear in the number of classes. A bitemporal masked-attention transformer decoder implements it by reading each segment in both images and relating the two readings, and a bitemporal fusion pyramid provides per-date and change-aware features. MaskSCD is evaluated on SECOND, Landsat-SCD and Hi-UCD, which span 0.1 to 30 m resolution and four to nine land-cover classes, against fourteen recent SCD models re-trained under one protocol. MaskSCD achieves the best separated kappa, semantic change $F_1$ and transition $F_1$ on all three datasets and exceeds the strongest competitor by about five points in mean separated kappa. It produces no contradictory change pixels, which account for nearly 30% of the predicted change of some multi-task networks. The code is available at https://github.com/EricYu97/MaskSCD.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/EricYu97/MaskSCD"&gt;https://github.com/EricYu97/MaskSCD&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Few-Shot Open-Set Hyperspectral Pixel-Wise Classification with Spatial Aware Label Propagation</title>
+    <link href="http://arxiv.org/abs/2611.17974v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.17974v1</id>
+    <published>2026-11-13T00:00:00Z</published>
+    <updated>2026-11-13T00:00:00Z</updated>
+    <author>
+      <name>Matheus Pereira</name>
+    </author>
+    <author>
+      <name>Jefersson Santos</name>
+    </author>
+    <author>
+      <name>Laurent Najman</name>
+    </author>
+    <summary type="text">Pixelwise classification of hyperspectral images (HSI) is a fundamental task in remote sensing, but its deployment in real-world applications is often limited by the scarcity of labeled data and the presence of unknown classes at inference time. In this work, we propose Few-shot Open-set hyperspectral recognition from Self-Supervised Learning training (FOSSeL), a unified framework for few-shot, open-set hyperspectral pixelwise classification that does not require supervised training. The proposed approach first leverages self-supervised learning to construct a discriminative feature space from unlabeled data. Then, given a small set of labeled seed pixels, class predictions are obtained through spatially-aware graph-based label propagation over superpixel representations, enabling the joint exploitation of spectral similarity and spatial consistency. To address the open-set scenario, we introduce simple yet effective strategies to identify pixels that do not belong to the known classes. We evaluate FOSSeL on three benchmark hyperspectral datasets under multiple few-shot settings. The results show that the proposed framework achieves competitive or superior performance compared to fully supervised methods while maintaining robustness in the presence of unknown classes. These findings highlight the potential of combining self-supervised feature learning with graph-based inference for practical HSI analysis in low-annotation and open-world scenarios.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;SEG&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+    <category term="Neural and Evolutionary Computing" />
+  </entry>
+  <entry>
+    <title>Quantum Graph Neural Networks: Architectures, Trainability, and Applications</title>
+    <link href="http://arxiv.org/abs/2611.17886v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.17886v1</id>
+    <published>2026-11-13T00:00:00Z</published>
+    <updated>2026-11-13T00:00:00Z</updated>
+    <author>
+      <name>Zeinab Sharifi</name>
+    </author>
+    <author>
+      <name>Hossein Shirazi</name>
+    </author>
+    <summary type="text">Quantum graph neural networks (QGNNs) apply parametrized quantum circuits to graph-structured data, with the aim of overcoming limits of classical graph neural networks in scalability, expressivity, and long-range information flow. Since the first Hamiltonian-based model in 2019, the field has produced many architectures, applications, and claims, but the evidence behind them has not been assessed systematically. This survey introduces a unified formalism that describes every QGNN as an encoder, a graph-conditioned circuit, observables, and an optional classical head, together with a circuit-level condition for permutation equivariance and a resource model for comparing costs. We organize the literature into five architecture families (convolutional, equivariant, message-passing and recurrent, Hamiltonian, and hybrid) and compare them by qubit cost, symmetry, scalability, and evidence. We then review symmetry and geometric inductive biases (permutation, rotation, and Lorentz), the results on expressivity, trainability, noise, and scalability, and applications in high-energy physics, chemistry, finance, healthcare, earth observation, and transportation. An audit of datasets and evaluation practices leads to a minimum reporting protocol. Our main finding is that the design space is rich and symmetry is the best-supported inductive bias, whereas the evidence remains thin: results are mostly simulated, on small graphs, at parity with classical models or with fewer parameters, and no advantage has yet been established on tasks over classical graph data. We identify five open challenges and a research agenda covering provable advantage, equivariant and geometric designs, fault-tolerant implementations, and shared benchmarks. The coverage extends through 2026 and emphasizes recent work.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Orbit-AWARE: From Onboard AI Deployment to Sustainable In-Orbit Intelligence</title>
+    <link href="http://arxiv.org/abs/2611.17689v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.17689v1</id>
+    <published>2026-11-13T00:00:00Z</published>
+    <updated>2026-11-13T00:00:00Z</updated>
+    <author>
+      <name>Yunxin Geng</name>
+    </author>
+    <author>
+      <name>Kaige Zhu</name>
+    </author>
+    <author>
+      <name>Tongtong Shu</name>
+    </author>
+    <author>
+      <name>Zhan Gao</name>
+    </author>
+    <author>
+      <name>Yanxiao Li</name>
+    </author>
+    <author>
+      <name>Yan Liu</name>
+    </author>
+    <author>
+      <name>Weiwei Jiang</name>
+    </author>
+    <author>
+      <name>Zhiqing Wei</name>
+    </author>
+    <author>
+      <name>Zhiyong Feng</name>
+    </author>
+    <summary type="text">The growing role of space computing in time-critical satellite services makes the long-term reliability of onboard artificial intelligence (AI) a mission-level requirement. Model drift can undermine this reliability through critical-observation suppression or noncritical priority flooding, displacing both mission information and evidence for model correction. To address this drift-induced evidence displacement, this article presents Orbit-AWARE, a safeguard-first lifecycle management (LCM) architecture. A comparison of existing approaches motivates cooperative Data, Cognitive, and Trust Planes for continuous monitoring, event-triggered agentic orchestration, and deterministic governance. The architecture retains a model-independent sample stream before degradation is confirmed and coordinates evidence selection and exchange for diagnosis and ground-assisted adaptation. Candidate updates are verified before control over data disposition is restored. In an xBD-based emergency Earth observation (EO) case study, Orbit-AWARE delivers 14.3\% more critical observations and achieves 8.3\% higher sustainable mission utility than the Rule-Based Drift Loop under a common 10\% downlink budget. Finally, we discuss future research directions for extending LCM through task-aware reliability assessment, memory- and tool-enabled onboard agents, and evidence-centric space networking. This work makes evidence availability and recovery authorization explicit design objectives for dependable onboard AI services.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, 4 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="eess.SY" />
+  </entry>
   <entry>
     <title>SpotDiff: A Plug-and-Play Framework for Zero-Shot Change Detection in Remote Sensing Imagery</title>
     <link href="http://arxiv.org/abs/2611.17172v1" rel="alternate" type="text/html" />
@@ -94,8 +213,8 @@
   </entry>
   <entry>
     <title>Gravity and Flight: Learning to Navigate Fine-Grained Remote Sensing Scenes</title>
-    <link href="http://arxiv.org/abs/2611.16408v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.16408v1</id>
+    <link href="http://arxiv.org/abs/2611.16408v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.16408v2</id>
     <published>2026-11-12T00:00:00Z</published>
     <updated>2026-11-12T00:00:00Z</updated>
     <author>
@@ -120,6 +239,32 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Z0ngL1ng/Gravity-and-Flight"&gt;https://github.com/Z0ngL1ng/Gravity-and-Flight&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Resilient Transmission of Highly Structured Light via Active Convolved Illumination</title>
+    <link href="http://arxiv.org/abs/2611.17471v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.17471v1</id>
+    <published>2026-11-12T00:00:00Z</published>
+    <updated>2026-11-12T00:00:00Z</updated>
+    <author>
+      <name>Anindya Ghoshroy</name>
+    </author>
+    <author>
+      <name>James Davis</name>
+    </author>
+    <author>
+      <name>Martin Wilkens</name>
+    </author>
+    <author>
+      <name>Sahin K. Ozdemir</name>
+    </author>
+    <author>
+      <name>Durdu O. Guney</name>
+    </author>
+    <summary type="text">Wave propagation through lossy and noisy systems as well as spatiotemporally dynamic random media often limits the complex information that can be reliably transmitted or retrieved. Progress in adaptive optics, wavefront shaping, machine learning, and wave propagation theories has significantly advanced physical and computational correction techniques. However, many approaches remain constrained by restrictive operating conditions, limiting their ability to meet growing application-specific demands, such as higher spatial resolution in imaging and greater data capacity in communications, particularly in highly dynamic environments. Recently, active convolved illumination (ACI) was proposed as a novel framework for preserving the spatial structure of optical modes during propagation through strongly distorting environments, such as atmospheric turbulence. ACI aims to bypass the prohibitive complexity of global distortion tracking by combining spectrally localized characterization with compensation using a correlated auxiliary source. Here, we provide a comprehensive review of ACI, detailing the formulation of correlation-injecting and auxiliary sources and the role of segmented reciprocal-space characterization and distortion compensation. We explore extensions in free-space optical communication and potential high-precision phase measurement, and numerically evaluate interferometric strategies for experimental implementation. This work highlights ACI as a potentially versatile framework for distortion-resilient light transmission, with broad interdisciplinary utility ranging from atmospheric physics and remote sensing to telecommunications, target tracking, and biomedical diagnosis, offering flexible deployment either as a standalone paradigm or hybridized with existing optical systems.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="physics.optics" />
   </entry>
   <entry>
     <title>SkillEarth: Teaching General-Purpose Agents to Act on Earth via Skill Evolution</title>
@@ -523,258 +668,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;SEG&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>GeoScope: Training-Free Program Execution beyond the Counting Horizon for Ultra-High-Resolution Remote Sensing Question Answering</title>
-    <link href="http://arxiv.org/abs/2611.12699v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.12699v1</id>
-    <published>2026-11-09T00:00:00Z</published>
-    <updated>2026-11-09T00:00:00Z</updated>
-    <author>
-      <name>Guohui Deng</name>
-    </author>
-    <author>
-      <name>Yuhang Jiang</name>
-    </author>
-    <author>
-      <name>Chengjun Wang</name>
-    </author>
-    <author>
-      <name>Zhongwen Hu</name>
-    </author>
-    <author>
-      <name>Zhaocong Wu</name>
-    </author>
-    <author>
-      <name>Linsheng Huang</name>
-    </author>
-    <author>
-      <name>Jinling Zhao</name>
-    </author>
-    <author>
-      <name>Chao Ruan</name>
-    </author>
-    <author>
-      <name>Miaozhong Xu</name>
-    </author>
-    <author>
-      <name>Chi Chen</name>
-    </author>
-    <summary type="text">In ultra-high-resolution (UHR) remote sensing images, the objects that questions count in a region or relate by direction often span only a few pixels. Existing methods mainly decide where a vision-language model (VLM) should look and trust its answer in the chosen view. We show that this assumption fails for counting, and measure VLMs as one calibrates a sensor. All eight open VLMs tested fall increasingly short once a view holds more than a certain number of objects, about five for most on DOTA aerial images. This counting horizon narrows as views grow and objects appear smaller. An empirical power-law response model predicts the undercount a split recovers and the spurious counts it adds, and supports the rule of splitting only views beyond the horizon. In GeoScope, a text-only language model parses the question into a typed spatial program that fixes the region and its resolution. The VLM only grounds and counts within its operating range, and directions are computed explicitly from the grounded boxes. To our knowledge, it is the first UHR method to split views by a measured limit of the VLM. Without training, it improves Qwen3-VL-8B by 16.3 points on regional counting and 10.5 on spatial relations in XLRS-Bench, and has the highest reported accuracy, trained methods included, on regional counting and on the whole benchmark by question. On UHR-Micro it improves global and regional counting by 16.8 and 36.2 points, 15.6 of the former from splitting. On MME-RealWorld counting it gains 11.4 points, and we show that an option that is almost never correct yet often chosen distorts comparisons there. Project page: https://avalon-s.github.io/GeoScope/</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Preprint. 72 pages including the Supplementary Material. Project page: https://avalon-s.github.io/GeoScope/&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>National-Scale Crop Type Mapping in Morocco Using Google AlphaEarth Foundations Embeddings and the Fields of the World Field Boundary Map</title>
-    <link href="http://arxiv.org/abs/2611.12681v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.12681v1</id>
-    <published>2026-11-09T00:00:00Z</published>
-    <updated>2026-11-09T00:00:00Z</updated>
-    <author>
-      <name>Walid Elbarz</name>
-    </author>
-    <author>
-      <name>Mohamed Bourriz</name>
-    </author>
-    <author>
-      <name>Vincent Simonneaux</name>
-    </author>
-    <author>
-      <name>Hamd Ait Abdelali</name>
-    </author>
-    <author>
-      <name>François Bourzeix</name>
-    </author>
-    <summary type="text">Recent geospatial foundation models have introduced a new paradigm for large-scale Earth observation by providing pretrained embedding representations that can be directly exploited for downstream tasks. In this work, we investigate the use of Google AlphaEarth Foundations embeddings for national-scale crop type mapping in Morocco. The proposed workflow operates directly on publicly available 64-dimensional pretrained embeddings using lightweight downstream classifiers, eliminating the need to process raw satellite imagery during model training and inference. The approach targets three crop categories, namely winter cereals, tree crops, and other crops. For nationwide inference, the Fields of the World global field boundary map is used to constrain predictions to agricultural parcels, enabling efficient large-scale mapping. Experimental evaluation on an independent test set over ten repeated runs achieved an average classification accuracy of (87.17 +/- 0.42%). Nationwide inference over Morocco was completed in approximately five hours, with the dominant computational cost arising from cloud-based retrieval of the embeddings rather than model execution. These results demonstrate the potential of pretrained embedding representations for computationally efficient national-scale crop type mapping.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; GeoAI4SD 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Detecting space objects with Earth-observation radar satellites</title>
-    <link href="http://arxiv.org/abs/2611.12158v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.12158v1</id>
-    <published>2026-11-09T00:00:00Z</published>
-    <updated>2026-11-09T00:00:00Z</updated>
-    <author>
-      <name>Juha Vierinen</name>
-    </author>
-    <author>
-      <name>Laura-Kristin Scholtz</name>
-    </author>
-    <author>
-      <name>Ulrik Noer</name>
-    </author>
-    <author>
-      <name>Theresa Rexer</name>
-    </author>
-    <author>
-      <name>Daniel Kastinen</name>
-    </author>
-    <author>
-      <name>Pål Gunnar Ellingsen</name>
-    </author>
-    <summary type="text">Millimetre-to-centimetre orbital debris poses a hazard to spacecraft, but its abundance remains difficult to measure. Spaceborne radars offer a substantial sensitivity advantage at close range: received echo power decreases with the fourth power of distance, so an otherwise identical object ten times closer produces a 10,000 times stronger echo. We investigate this opportunity using openly available Sentinel-1 radar voltages recorded on six calendar days. Catalogue-assisted processing identifies a manually validated sample of 76 objects at ranges of 41.7--492.9 km, including satellites, rocket bodies and debris fragments. A blind search recovers two selected debris transits without using their orbital predictions during detection. A short debris encounter also demonstrates how precise range and Doppler measurements can refine a catalogue orbit. Ground scatter increases the effective background and is the principal sensitivity limitation in Earth-looking observations. An ideal receiver-noise sensitivity comparison predicts detectable conducting-sphere diameters of approximately 3.4 mm for Sentinel-1 and 0.6 mm for EarthCARE at 10 km range, assuming coherent integration limited by beam transit time and a 10 ms cap. These results establish the feasibility of space-object detection using existing Earth-observation radars and motivate statistical debris surveys and targeted orbit refinement following collision warnings. Observations directed away from Earth and receive windows adapted to nearby objects could improve sensitivity to small debris.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 19 pages, 7 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; OD&lt;/p&gt;</content>
-    <category term="astro-ph.EP" />
-    <category term="astro-ph.IM; physics.space-ph" />
-  </entry>
-  <entry>
-    <title>GeoPilot: Diagnosis-Guided Interventions and Geometric Evaluation for Aerial Reconstruction</title>
-    <link href="http://arxiv.org/abs/2611.11751v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.11751v1</id>
-    <published>2026-11-09T00:00:00Z</published>
-    <updated>2026-11-09T00:00:00Z</updated>
-    <author>
-      <name>Pengyu Yin</name>
-    </author>
-    <author>
-      <name>Jie Pan</name>
-    </author>
-    <author>
-      <name>Junxiang Tan</name>
-    </author>
-    <author>
-      <name>Mengqi Fu</name>
-    </author>
-    <author>
-      <name>Kun Cheng</name>
-    </author>
-    <author>
-      <name>Yifan Liu</name>
-    </author>
-    <summary type="text">When a mesh reconstructed from aerial remote-sensing imagery disagrees with reference geometry, deciding what to change requires a diagnosis of the reconstruction process. We present GeoPilot, a workflow that turns diagnostics and prior observations into executable program or camera-configuration interventions. A large language model proposes the change, numerical tools reconstruct the mesh, and an external evaluator measures its geometry under a stated coordinate and reference protocol. The main case tests a shared-intrinsics hypothesis proposed before the comparison. On 224 Metashape-raster development images, shared intrinsics improved all six native-coordinate measures and reduced mean surface-to-reference distance by 7.04%. Reference-assisted alignment fitted and evaluated on separate within-scene checkerboard samples reversed the mean-distance ranking, limiting that gain to native-frame delivery. A separate matched comparison on publisher-undistorted images favored fixed published cameras on all six measures, reducing mean distance by 12.11%; the cameras retain upstream image and laser-scanning adjustment information. With one reconstruction per configuration, these comparisons provide conditional evidence for camera handling. Three end-to-end runs each delivered a mesh and six-metric evaluation from all 327 images of a second development scene.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 33 pages, including supplementary material&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Multimodal Road Closure Mapping via Cross-Modal Graph Attention</title>
-    <link href="http://arxiv.org/abs/2611.13192v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.13192v1</id>
-    <published>2026-11-09T00:00:00Z</published>
-    <updated>2026-11-09T00:00:00Z</updated>
-    <author>
-      <name>Izzeddin Teeti</name>
-    </author>
-    <author>
-      <name>Vaibhav Kango</name>
-    </author>
-    <author>
-      <name>Nidhi Sridhar</name>
-    </author>
-    <author>
-      <name>Mohamed Moustafa</name>
-    </author>
-    <summary type="text">Accurate and timely identification of road closures is critical for large-scale navigation and logistics systems, yet remains challenging due to the need to jointly reason over visual evidence, spatial context, and road network topology. Existing approaches either rely on manual map updates or focus on detecting closure-related objects without resolving which road segment is affected. In this work, we introduce a unified multimodal and multitask framework that jointly performs road closure classification (no, partial, complete) and road segment association within a single learning architecture. Our model integrates graph-structured map data, satellite imagery augmented with projected street-level detections, and street-view images using modality-specific encoders and cross-modal transformer attention, enabling explicit reasoning over visual cues and network topology. Evaluated on nearly 20K real-world scenarios collected from a large-scale commercial vehicle fleet, our approach achieves 72.7% closure classification accuracy and 60% road segment association accuracy, outperforming frontier vision-language models by over 28 percentage points on closure classification while being over 4,000x smaller and 100x faster at inference. Extensive ablations demonstrate the importance of cross-modal attention, edge-aware pooling, and graph message passing for accurate geospatial reasoning. This work establishes the first benchmark for joint road closure classification and segment-level attribution, and shows that task-specific architectural inductive biases substantially outperform general-purpose multimodal models for structured geospatial understanding.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ACM SIGSPATIAL 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>SpatialSR: Spatial Resolution-Centric Pipeline for Arbitrary-Scale Remote Sensing Super-Resolution</title>
-    <link href="http://arxiv.org/abs/2611.13046v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.13046v1</id>
-    <published>2026-11-09T00:00:00Z</published>
-    <updated>2026-11-09T00:00:00Z</updated>
-    <author>
-      <name>Yan Zhang</name>
-    </author>
-    <author>
-      <name>Runfeng Luo</name>
-    </author>
-    <author>
-      <name>Liangke Gao</name>
-    </author>
-    <author>
-      <name>Lin Yuan</name>
-    </author>
-    <author>
-      <name>Bin Xiao</name>
-    </author>
-    <author>
-      <name>Xinbo Gao</name>
-    </author>
-    <summary type="text">Although remote sensing image arbitrary-scale super-resolution (RSI-ASSR) methods support reconstruction at arbitrary or continuous scales, they predominantly condition on the relative scale factor and have not sufficiently investigated the absolute spatial resolution itself as a reconstruction prior, thereby disregarding the inherent spatial context of objects, which frequently leads to spatial-related distortions and compromised performance in downstream remote sensing applications. To address these challenges, we introduce SpatialSR, a SRe-centric arbitrary-scale RSISR method that leverages the spatial resolution (SRe) of remote sensing images (RSI) as an essential prior for super-resolution reconstruction. Distinct from existing SR methods, SpatialSR aims to restore high-resolution remote sensing images with a target SRe (typically set to 0.1m/pixel to align with the metadata of commonly used downstream task datasets). Specifically, we design a Spatial Resolution Estimation Module (SREM) to estimate the SRe of low-resolution (LR) images, thereby dynamically determining the required arbitrary scaling factor. Next, we employ a pretrained SRe-to-image diffusion model to extract SRe-specified texture-style codes, which are further incorporated into a carefully designed Resolution-aware Style Consistency Module (RSCM) to constrain the SRe-aware texture consistency of reconstructed images. Furthermore, to overcome the high computational expense inherent in diffusion-based SR methods, we wrap the iterative diffusion process as a Trajectory Consistency (TC) loss, which enables comparable reconstructed texture quality of the generative model in SpatialSR within a single step. Extensive experiments demonstrate that the proposed SpatialSR achieves state-of-the-art (SOTA) performance on commonly used RSISR and downstream (image classification and segmentation tasks) datasets.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 39 pages, 20 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;SR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Decomposing Earth Embeddings with Sparse Autoencoders</title>
-    <link href="http://arxiv.org/abs/2611.11398v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.11398v1</id>
-    <published>2026-11-08T00:00:00Z</published>
-    <updated>2026-11-08T00:00:00Z</updated>
-    <author>
-      <name>Vitus Benson</name>
-    </author>
-    <author>
-      <name>Fanny Yang</name>
-    </author>
-    <author>
-      <name>Markus Reichstein</name>
-    </author>
-    <summary type="text">Earth observation foundation models produce global metre-resolution embeddings that underpin work across agriculture, ecology, hydrology, and beyond. Yet these embeddings are opaque: each dimension entangles unrelated physical concepts, which makes them difficult to interpret and their robustness hard to assess. Here, we propose sparse autoencoders (SAEs) as a principled way to decompose Earth embeddings into sparse, approximately monosemantic features over an overcomplete dictionary. Because LLM judges of interpretations do not transfer to satellite pixels, and spatial autocorrelation matters, we introduce a tailored evaluation protocol. It scores any SAE on reconstruction at matched sparsity, alignment with reference concepts, and spatial scale, each against baselines that include an SAE whose decoder is a frozen random dictionary. On this protocol, SAEs reconstruct AlphaEarth and Tessera embeddings better than every baseline at matched sparsity. Their features align with far fewer reference concepts than raw embedding dimensions (on AlphaEarth, 88% align with at most one of 20 concept groups, most with none, against a median of 12 per raw dimension). They also carry more of their variance at fine spatial scales (23 to 32% within a 640 m patch for BatchTopK and Matryoshka, against 9%). An SAE with a frozen random decoder shares both properties, which therefore follow from sparsity, whereas only a learned dictionary reconstructs the embedding accurately: on AlphaEarth, trained SAEs leave eight times less variance unexplained. We test the sparse code on two applications, discovering land-cover sub-concepts and detecting out-of-distribution pixels by area-of-applicability estimation. Both indicate how sparse features could be used, but neither is yet reliable enough for practical use. Together, these results are a step toward Earth observation models whose features can be inspected.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-    <category term="Computer Vision; Geophysics" />
-  </entry>
-  <entry>
-    <title>Toward Self-Evolving Geospatial Algorithms: An LLM-Driven Framework with a Case Study on Spatial Regime Discovery</title>
-    <link href="http://arxiv.org/abs/2611.11669v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.11669v1</id>
-    <published>2026-11-08T00:00:00Z</published>
-    <updated>2026-11-08T00:00:00Z</updated>
-    <author>
-      <name>Xiayin Lou</name>
-    </author>
-    <author>
-      <name>Peng Luo</name>
-    </author>
-    <author>
-      <name>Liqiu Meng</name>
-    </author>
-    <summary type="text">Geospatial algorithms have been developed through expert-driven discovery: a researcher spots a limitation, proposes a structural fix, and checks it by hand. With LLM-driven multi-agent systems becoming practical, much of the candidate-generation, evaluation, and selection work can now be largely automated, while the researcher's role shifts upstream toward problem formulation, evaluation design, and interpretation. We refer to this paradigm as Self-Evolving Geospatial Algorithms (SEGA) and propose a framework with three required modules: a two-loop architecture with embedded geographic knowledge as the inner-loop engine; an automatic code formatter that converts any raw geospatial algorithm into the standardized triple required by the inner loop; and a simulation-driven training protocol, in which evolution runs only on synthetic data with known ground truth, and the discovered algorithm is applied unchanged to real data, keeping real-world results out-of-sample. We use spatial regime discovery as a case study, seeded with the Two-stage K-Models algorithm. Evolution uses the Rand Index against the ground-truth partition as fitness signal; the frozen algorithm is then evaluated on 150 simulated grids and 11 real-world datasets across climate, health, hydrology, and politics. The evolved algorithm outperforms its seed, knowledge-free baselines, and four classical regionalization methods. Ablations further indicate that the channel of geographic-knowledge injection, structured retrieval versus prompt-level hints, is itself load-bearing. In this case study, LLM-assisted search sped up the inner loop; whether it does so for other seeds and task families remains open. The geographer's role -- asking the right questions, designing trustworthy evaluation -- grows more central.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="physics.soc-ph" />
-  </entry>
-  <entry>
-    <title>Frequency-Structure Complementary Modeling for Hyperspectral Image Fusion</title>
-    <link href="http://arxiv.org/abs/2611.10413v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.10413v1</id>
-    <published>2026-11-07T00:00:00Z</published>
-    <updated>2026-11-07T00:00:00Z</updated>
-    <author>
-      <name>Song Qiya</name>
-    </author>
-    <author>
-      <name>Tian Siyu</name>
-    </author>
-    <author>
-      <name>Li Shutao</name>
-    </author>
-    <author>
-      <name>Dian Renwei</name>
-    </author>
-    <author>
-      <name>Sun Long</name>
-    </author>
-    <author>
-      <name>Liu Jinyang</name>
-    </author>
-    <summary type="text">Existing methods mainly rely on convolutional aggregation or attention-based spatial-spectral interaction. However, conventional feature-domain attention does not explicitly characterize variation patterns along spatial-token and learned latent-channel coordinates, while spatially shared local operators lack the flexibility to adapt neighborhood aggregation to heterogeneous structures. To address these limitations, we propose a Frequency-Structure Complementary Modeling Network (FSCM-Net), which couples frequency-aware dependency learning with structure-adaptive local refinement. Specifically, a Spatial-Spectral Frequency Calibration Attention (SSFCA) module constructs spatial-token affinities from Fourier-interacted query-key representations and builds latent-channel affinities after input-conditioned frequency filtering along learned channel coordinates. The latent-channel response is then calibrated by a learned shared gain and combined with the spatial-token response. Complementarily, a Structure-Coherent Dynamic Feature Fusion (SC-DFF) module combines regularized structure-tensor cues from MSI features with context-modulated HSI detail representations to generate channel- and position-dependent aggregation kernels. This design makes local HSI refinement responsive to smooth regions, edges, and textures while maintaining spectral fidelity. The two modules are progressively integrated within a multiscale encoder-decoder to coordinate representation-level interaction and structure-adaptive reconstruction. Experiments on two simulated benchmarks and one real remote-sensing dataset demonstrate favorable performance against representative fusion methods in spatial detail reconstruction and spectral preservation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>

@@ -4,12 +4,38 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-13T07:32:02Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 12 entries</subtitle>
+  <updated>2026-11-16T03:25:28Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 9 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>WeatherDreamer: Learning a World Model from Multimodal Earth Observations</title>
+    <link href="http://arxiv.org/abs/2611.18393v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.18393v1</id>
+    <published>2026-11-13T00:00:00Z</published>
+    <updated>2026-11-13T00:00:00Z</updated>
+    <author>
+      <name>Kate Duffy</name>
+    </author>
+    <author>
+      <name>Elise Penn</name>
+    </author>
+    <author>
+      <name>Tristan Ballard</name>
+    </author>
+    <author>
+      <name>August Posch</name>
+    </author>
+    <author>
+      <name>Thomas J. Vandal</name>
+    </author>
+    <summary type="text">Machine learning weather models now rival operational global forecasts but still start from analyses produced by separate, expensive data assimilation (DA) systems, which for global models are typically updated every six hours. Observation-to-observation models avoid this dependence, but most omit the recursive filtering cycle that lets DA systems carry a background state through sparse, irregular observations. We introduce WeatherDreamer, a world model that learns this cycle end-to-end from 18 global observing systems, without reanalysis. It infers a latent state from observations, carries it forward hour by hour with learned dynamics, corrects it each hour with new observations, and can predict what any of its observing systems would measure at any location. At held-out stations, its ensembles beat NOAA's Global Ensemble Forecast System (GEFS) for temperature, dew point and wind out to 12 h and are better calibrated than GEFS and the ECMWF ensemble. Precipitation, cloud-top height and solar irradiance, never inputs at inference, are inferred with skill matching or exceeding operational products at short leads. Against the first guess of NOAA's Gridpoint Statistical Interpolation (GSI) DA system, WeatherDreamer's short-range departures are within 10% of GSI's at surface stations and within 25% for moisture-sensitive microwave channels, but up to five times larger for temperature-sounding channels. Never given observation errors, its learned update assumes errors close to known instrument and retrieval errors of microwave sounders and scatterometer winds. WeatherDreamer also separates viewing geometry from atmospheric state, recovering 83-96% of observed limb darkening and producing seamless nadir-view imagery. Producing an hourly global analysis in about 1.5 minutes on one GPU, WeatherDreamer shows that assimilation and forecasting can be learned together directly from observations.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+    <category term="Atmospheric and Oceanic Physics" />
+  </entry>
   <entry>
     <title>SpotDiff: A Plug-and-Play Framework for Zero-Shot Change Detection in Remote Sensing Imagery</title>
     <link href="http://arxiv.org/abs/2611.17172v1" rel="alternate" type="text/html" />
@@ -60,8 +86,8 @@
   </entry>
   <entry>
     <title>Gravity and Flight: Learning to Navigate Fine-Grained Remote Sensing Scenes</title>
-    <link href="http://arxiv.org/abs/2611.16408v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.16408v1</id>
+    <link href="http://arxiv.org/abs/2611.16408v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.16408v2</id>
     <published>2026-11-12T00:00:00Z</published>
     <updated>2026-11-12T00:00:00Z</updated>
     <author>
@@ -244,128 +270,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>GeoScope: Training-Free Program Execution beyond the Counting Horizon for Ultra-High-Resolution Remote Sensing Question Answering</title>
-    <link href="http://arxiv.org/abs/2611.12699v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.12699v1</id>
-    <published>2026-11-09T00:00:00Z</published>
-    <updated>2026-11-09T00:00:00Z</updated>
-    <author>
-      <name>Guohui Deng</name>
-    </author>
-    <author>
-      <name>Yuhang Jiang</name>
-    </author>
-    <author>
-      <name>Chengjun Wang</name>
-    </author>
-    <author>
-      <name>Zhongwen Hu</name>
-    </author>
-    <author>
-      <name>Zhaocong Wu</name>
-    </author>
-    <author>
-      <name>Linsheng Huang</name>
-    </author>
-    <author>
-      <name>Jinling Zhao</name>
-    </author>
-    <author>
-      <name>Chao Ruan</name>
-    </author>
-    <author>
-      <name>Miaozhong Xu</name>
-    </author>
-    <author>
-      <name>Chi Chen</name>
-    </author>
-    <summary type="text">In ultra-high-resolution (UHR) remote sensing images, the objects that questions count in a region or relate by direction often span only a few pixels. Existing methods mainly decide where a vision-language model (VLM) should look and trust its answer in the chosen view. We show that this assumption fails for counting, and measure VLMs as one calibrates a sensor. All eight open VLMs tested fall increasingly short once a view holds more than a certain number of objects, about five for most on DOTA aerial images. This counting horizon narrows as views grow and objects appear smaller. An empirical power-law response model predicts the undercount a split recovers and the spurious counts it adds, and supports the rule of splitting only views beyond the horizon. In GeoScope, a text-only language model parses the question into a typed spatial program that fixes the region and its resolution. The VLM only grounds and counts within its operating range, and directions are computed explicitly from the grounded boxes. To our knowledge, it is the first UHR method to split views by a measured limit of the VLM. Without training, it improves Qwen3-VL-8B by 16.3 points on regional counting and 10.5 on spatial relations in XLRS-Bench, and has the highest reported accuracy, trained methods included, on regional counting and on the whole benchmark by question. On UHR-Micro it improves global and regional counting by 16.8 and 36.2 points, 15.6 of the former from splitting. On MME-RealWorld counting it gains 11.4 points, and we show that an option that is almost never correct yet often chosen distorts comparisons there. Project page: https://avalon-s.github.io/GeoScope/</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Preprint. 72 pages including the Supplementary Material. Project page: https://avalon-s.github.io/GeoScope/&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>National-Scale Crop Type Mapping in Morocco Using Google AlphaEarth Foundations Embeddings and the Fields of the World Field Boundary Map</title>
-    <link href="http://arxiv.org/abs/2611.12681v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.12681v1</id>
-    <published>2026-11-09T00:00:00Z</published>
-    <updated>2026-11-09T00:00:00Z</updated>
-    <author>
-      <name>Walid Elbarz</name>
-    </author>
-    <author>
-      <name>Mohamed Bourriz</name>
-    </author>
-    <author>
-      <name>Vincent Simonneaux</name>
-    </author>
-    <author>
-      <name>Hamd Ait Abdelali</name>
-    </author>
-    <author>
-      <name>François Bourzeix</name>
-    </author>
-    <summary type="text">Recent geospatial foundation models have introduced a new paradigm for large-scale Earth observation by providing pretrained embedding representations that can be directly exploited for downstream tasks. In this work, we investigate the use of Google AlphaEarth Foundations embeddings for national-scale crop type mapping in Morocco. The proposed workflow operates directly on publicly available 64-dimensional pretrained embeddings using lightweight downstream classifiers, eliminating the need to process raw satellite imagery during model training and inference. The approach targets three crop categories, namely winter cereals, tree crops, and other crops. For nationwide inference, the Fields of the World global field boundary map is used to constrain predictions to agricultural parcels, enabling efficient large-scale mapping. Experimental evaluation on an independent test set over ten repeated runs achieved an average classification accuracy of (87.17 +/- 0.42%). Nationwide inference over Morocco was completed in approximately five hours, with the dominant computational cost arising from cloud-based retrieval of the embeddings rather than model execution. These results demonstrate the potential of pretrained embedding representations for computationally efficient national-scale crop type mapping.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; GeoAI4SD 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>GeoPilot: Diagnosis-Guided Interventions and Geometric Evaluation for Aerial Reconstruction</title>
-    <link href="http://arxiv.org/abs/2611.11751v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.11751v1</id>
-    <published>2026-11-09T00:00:00Z</published>
-    <updated>2026-11-09T00:00:00Z</updated>
-    <author>
-      <name>Pengyu Yin</name>
-    </author>
-    <author>
-      <name>Jie Pan</name>
-    </author>
-    <author>
-      <name>Junxiang Tan</name>
-    </author>
-    <author>
-      <name>Mengqi Fu</name>
-    </author>
-    <author>
-      <name>Kun Cheng</name>
-    </author>
-    <author>
-      <name>Yifan Liu</name>
-    </author>
-    <summary type="text">When a mesh reconstructed from aerial remote-sensing imagery disagrees with reference geometry, deciding what to change requires a diagnosis of the reconstruction process. We present GeoPilot, a workflow that turns diagnostics and prior observations into executable program or camera-configuration interventions. A large language model proposes the change, numerical tools reconstruct the mesh, and an external evaluator measures its geometry under a stated coordinate and reference protocol. The main case tests a shared-intrinsics hypothesis proposed before the comparison. On 224 Metashape-raster development images, shared intrinsics improved all six native-coordinate measures and reduced mean surface-to-reference distance by 7.04%. Reference-assisted alignment fitted and evaluated on separate within-scene checkerboard samples reversed the mean-distance ranking, limiting that gain to native-frame delivery. A separate matched comparison on publisher-undistorted images favored fixed published cameras on all six measures, reducing mean distance by 12.11%; the cameras retain upstream image and laser-scanning adjustment information. With one reconstruction per configuration, these comparisons provide conditional evidence for camera handling. Three end-to-end runs each delivered a mesh and six-metric evaluation from all 327 images of a second development scene.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 33 pages, including supplementary material&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Multimodal Road Closure Mapping via Cross-Modal Graph Attention</title>
-    <link href="http://arxiv.org/abs/2611.13192v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.13192v1</id>
-    <published>2026-11-09T00:00:00Z</published>
-    <updated>2026-11-09T00:00:00Z</updated>
-    <author>
-      <name>Izzeddin Teeti</name>
-    </author>
-    <author>
-      <name>Vaibhav Kango</name>
-    </author>
-    <author>
-      <name>Nidhi Sridhar</name>
-    </author>
-    <author>
-      <name>Mohamed Moustafa</name>
-    </author>
-    <summary type="text">Accurate and timely identification of road closures is critical for large-scale navigation and logistics systems, yet remains challenging due to the need to jointly reason over visual evidence, spatial context, and road network topology. Existing approaches either rely on manual map updates or focus on detecting closure-related objects without resolving which road segment is affected. In this work, we introduce a unified multimodal and multitask framework that jointly performs road closure classification (no, partial, complete) and road segment association within a single learning architecture. Our model integrates graph-structured map data, satellite imagery augmented with projected street-level detections, and street-view images using modality-specific encoders and cross-modal transformer attention, enabling explicit reasoning over visual cues and network topology. Evaluated on nearly 20K real-world scenarios collected from a large-scale commercial vehicle fleet, our approach achieves 72.7% closure classification accuracy and 60% road segment association accuracy, outperforming frontier vision-language models by over 28 percentage points on closure classification while being over 4,000x smaller and 100x faster at inference. Extensive ablations demonstrate the importance of cross-modal attention, edge-aware pooling, and graph message passing for accurate geospatial reasoning. This work establishes the first benchmark for joint road closure classification and segment-level attribution, and shows that task-specific architectural inductive biases substantially outperform general-purpose multimodal models for structured geospatial understanding.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ACM SIGSPATIAL 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>
