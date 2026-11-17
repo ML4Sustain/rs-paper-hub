@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-17T05:25:51Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 24 entries</subtitle>
+  <updated>2026-11-17T08:44:14Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 28 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -58,6 +58,100 @@
     <summary type="text">Remote sensing image segmentation plays a critical role in various applications. Interactive instance segmentation, a specialized task within image segmentation, aims to generate precise segmentation results for target objects based on user input prompts. However, previous studies on interactive instance segmentation primarily focus on single-view images, limiting their ability to comprehensively understand complex 3D remote sensing scenes. In this study, we extend interactive instance segmentation from a single-view to a multi-view framework, which can also be easily converted to a 3D segmentation format, thus achieving more accurate and comprehensive 3D remote sensing scene perception across multiple views. First, we construct a multi-view interactive instance segmentation dataset for remote sensing, comprising five distinct scenes, each captured from about one hundred different views. Second, we propose InterRSGaussian, a novel instance segmentation method based on 3D Gaussians. InterRSGaussian enables users to provide point clicks on target objects from any arbitrary view and generates view-consistent instance segmentation results across all input views without requiring manual annotations. The resulting multi-view segmentation can further be projected onto 3D point clouds for 3D segmentation. To improve training efficiency and segmentation performance, we introduce a prior distillation network for initialization. Overall, this study extends traditional 2D remote sensing scene perception into a 3D multi-view framework, enabling a more comprehensive understanding of target objects in complex environments with user interactivity.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG;3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Out of Sight, Into Memory: Compact Visual Latents Retain Local Evidence in Ultra-High-Resolution Remote Sensing</title>
+    <link href="http://arxiv.org/abs/2611.21457v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.21457v1</id>
+    <published>2026-11-16T00:00:00Z</published>
+    <updated>2026-11-16T00:00:00Z</updated>
+    <author>
+      <name>Meng Tang</name>
+    </author>
+    <author>
+      <name>Siyuan Du</name>
+    </author>
+    <author>
+      <name>Yuxin Liu</name>
+    </author>
+    <author>
+      <name>Shuaishuai Cao</name>
+    </author>
+    <author>
+      <name>Di Wang</name>
+    </author>
+    <author>
+      <name>Haonan Guo</name>
+    </author>
+    <summary type="text">Question answering over ultra-high-resolution (UHR) remote sensing scenes poses a tension for multimodal large language models: global overviews obscure small objects and local attributes, whereas detailed crops consume substantial context. Compressing inspected crops into short sequences of continuous visual latents offers a compact memory once crop tokens are discarded, yet diagnostic studies on natural images find that models often ignore latent content, leaving unclear whether compact latents can retain fine-grained targets lost in downsampled UHR remote sensing scenes. To isolate evidence retention from region selection, we encode high-resolution crops into latent memory tokens for frozen backbones and evaluate both their predictive utility and content dependence. Across two generations of Qwen-VL on LRS-GRO, a 64-token memory achieves 7.6- to 9.9-fold compression of retained crop tokens and improves accuracy by 2.5 to 4.8 percentage points over the downsampled global image alone, recovering most of the high-resolution crop gain with consistent behavior on XLRS-Bench. Substituting memory from another image or another region of the same scene reduces accuracy by 5.8 to 7.4 percentage points and yields lower accuracy than removing memory altogether, demonstrating that predictions depend on the encoded regional evidence. Restoring the source crop within the same model reduces the accuracy loss caused by zeroing or removing memory. These findings establish that compact visual latents retain useful local evidence in UHR remote sensing and identify evidence availability as a key factor governing their contribution.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Model-based neural network for global floodplains analysis</title>
+    <link href="http://arxiv.org/abs/2611.21146v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.21146v1</id>
+    <published>2026-11-16T00:00:00Z</published>
+    <updated>2026-11-16T00:00:00Z</updated>
+    <author>
+      <name>Pierre Audisio</name>
+    </author>
+    <author>
+      <name>Barbara Belletti</name>
+    </author>
+    <author>
+      <name>Nelly Pustelnik</name>
+    </author>
+    <summary type="text">We address the super-resolution of multispectral remote sensing imagery for long-term floodplain monitoring, enhancing Landsat acquisitions towards Sentinel-2 resolution. Exploiting the period during which both missions observed the same areas, we build DLhasa-L2S , to our knowledge the first paired dataset dedicated to multispectral super-resolution for river analysis. It covers the Lhasa River (Tibet), whose strong anthropogenic changes and diverse hydromorphological profiles make it an ideal study area. We developed two model-based neural networks: a forward-backward (FB) plug-and-play scheme and an unfolded FB scheme. We compared them against learned neural networks baselines (SwinIR, RDN) on synthetic data, on real scenes, and through a statistical test over the whole real paired Landsat-Sentinel dataset. The unfolded network achieves the highest PSNR and SSIM on the real RGB components with fast inference, offering the best trade-off between accuracy and computational cost. For NDWI-based water segmentation, its performance shows no statistically significant difference from that of the best methods.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Source-Free Domain Adaptation for Multi-Label Image Classification: A Framework, Baselines, and Benchmark</title>
+    <link href="http://arxiv.org/abs/2611.21107v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.21107v1</id>
+    <published>2026-11-16T00:00:00Z</published>
+    <updated>2026-11-16T00:00:00Z</updated>
+    <author>
+      <name>Salih Numan Büyükbaş</name>
+    </author>
+    <author>
+      <name>Erchan Aptoula</name>
+    </author>
+    <author>
+      <name>Mamatha Thota</name>
+    </author>
+    <author>
+      <name>Petra Bosilj</name>
+    </author>
+    <summary type="text">Source-free domain adaptation (SFDA) adapts a model trained on a labelled source domain to an unlabelled target domain without access to the source data. Almost the entire SFDA literature assumes mutually exclusive classes, yet many deployed settings are multi-label. This paper formulates SFDA for multi-label classification and establishes the first benchmark for it: five adaptation tasks over six datasets spanning remote sensing, natural, clipart-style and driving imagery, with four single-label SFDA methods extended to provide the first baselines and a published multi-label method run alongside them, over three seeds. The benchmark shows that extending a single-label method is unreliable rather than merely suboptimal: half of the extended baselines fail to improve on the unadapted source model at all, and on two of the five tasks none of them does. The failures are not incidental. Nearest-centroid pseudo-labelling, softmax-based confidence, the diversity term of information maximization and confidence-weighted prototype construction each rely on mutual exclusivity, and each fails differently without it, so replacing the softmax with per-class sigmoids is a valid but insufficient extension. Multi-label Prototype Alignment with Contrastive Teaching (MPACT) is proposed in response, a mean-teacher framework whose objective, prototype construction and alignment term are each reconsidered for overlapping label sets. It attains the best average on every reported metric and is the only method that improves on the unadapted source model on all five tasks. The analysis further introduces a prototype-agreement diagnostic separating feature-space alignment from self-reinforcing agreement with the classifier, and reports a negative result for confidence-based pseudo-label filtering.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 21 pages, 5 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>PhaseCLIP: Phase-Aware Frequency-Domain Adaptation of Vision-Language Models for Few-Shot Remote-Sensing Classification</title>
+    <link href="http://arxiv.org/abs/2611.20787v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.20787v1</id>
+    <published>2026-11-16T00:00:00Z</published>
+    <updated>2026-11-16T00:00:00Z</updated>
+    <author>
+      <name>Mehmet Sergen Catal</name>
+    </author>
+    <author>
+      <name>Abdurrahman Gumus</name>
+    </author>
+    <author>
+      <name>Mehmet Zübeyir Ünlü</name>
+    </author>
+    <summary type="text">Remote-sensing (RS) image scene classification aims to assign a semantic category to an overhead image, and in practice must often do so from only a handful of labelled examples, since annotation requires expert interpretation and the resulting labels transfer poorly across sensors and regions. Recent progress has come from adapting vision-language models (VLMs) such as CLIP, through learned prompts or feature adapters. Although effective, these methods construct their representation entirely in the spatial domain. RS scenes are dominated by periodic texture and regular geometry, which the Fourier spectrum describes compactly through an amplitude component, carrying texture and contrast statistics, and a phase component, carrying spatial structure. Existing frequency-domain adaptation of VLMs either exploits amplitude alone or does not separate amplitude from phase, leaving the structural component unused. In this article, we propose PhaseCLIP, which inserts phase-capable spectral modules and a feature-gating module into a frozen CLIP visual encoder and trains only 1.30% of its parameters. Because the amplitude and phase pathways share an identical parameter layout, a single weight set is learned on phase and transferred exactly to amplitude, giving a two-stage scheme that adds no parameters. Experiments on five public RS datasets, EuroSAT, PatternNet, UC Merced, LSRS and RSSCN7, against eight baselines under a matched protocol, show that PhaseCLIP attains 84.28% mean accuracy and is the best method in 23 of 30 dataset-by-shot cells, with phase contributing 1.93 points overall and 4.36 points on the most difficult dataset. Because the modules act on the spectrum of image patches and transformer tokens and leave the text encoder untouched, the approach can be extended to other RS sensors and tasks, and to other domains in which class evidence lies in spatial structure.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 23 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
   <entry>
