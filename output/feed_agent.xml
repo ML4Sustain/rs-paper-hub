@@ -4,12 +4,54 @@
   <id>https://rspaper.top/output/feed_agent.xml</id>
   <link href="https://rspaper.top/output/feed_agent.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-16T07:32:25Z</updated>
+  <updated>2026-11-17T05:25:51Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>MAPS: A Multimodal Agentic Framework for POI Data Production Based on Crowdsourced Street-view Imagery</title>
+    <link href="http://arxiv.org/abs/2611.19807v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.19807v1</id>
+    <published>2026-11-15T00:00:00Z</published>
+    <updated>2026-11-15T00:00:00Z</updated>
+    <author>
+      <name>Sijie Ruan</name>
+    </author>
+    <author>
+      <name>Tingyu Xie</name>
+    </author>
+    <author>
+      <name>Mingfei Liu</name>
+    </author>
+    <author>
+      <name>Yicheng Tang</name>
+    </author>
+    <author>
+      <name>Haoyu Han</name>
+    </author>
+    <author>
+      <name>Jingnan Qi</name>
+    </author>
+    <author>
+      <name>Jingshu Zeng</name>
+    </author>
+    <author>
+      <name>Dongqi Xu</name>
+    </author>
+    <author>
+      <name>Jing Wang</name>
+    </author>
+    <author>
+      <name>Shuliang Wang</name>
+    </author>
+    <summary type="text">Point-of-interest (POI) databases support location-based services, yet urban changes quickly make their records stale and manual maintenance is costly. Crowdsourced street-view images provide timely visual evidence, but converting them into database actions requires separating multiple POIs and irrelevant text in each image, then resolving incomplete observations against ambiguous records. We study Street-view Image-based POI Data Production and propose MAPS, the first framework to integrate structured POI extraction with database maintenance from such imagery. MAPS contains two cascaded modules. SPICE progressively adapts a lightweight vision-language model to reconstruct and filter text, group entries belonging to the same POI, and classify their semantics and completeness. RIMA retrieves candidate records, performs evidence-grounded POI matching and attribute-level reasoning, and selectively acquires complementary visual, geospatial, or external-source evidence when necessary. In human-reviewed full-task evaluation, MAPS outperforms the strongest baseline by 21.8\%. MAPS has also been deployed in Kuaishou's large-scale POI production pipeline, reducing average processing time by 76.9\% relative to manual annotation. These results demonstrate the effectiveness and practical value of MAPS for scalable POI maintenance.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted for presentation at the 33rd ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2027), Cycle 1&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+    <category term="cs.DB" />
+  </entry>
   <entry>
     <title>Orbit-AWARE: From Onboard AI Deployment to Sustainable In-Orbit Intelligence</title>
     <link href="http://arxiv.org/abs/2611.17689v1" rel="alternate" type="text/html" />
@@ -77,39 +119,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Artificial Intelligence" />
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>DisasterAgent: An Evidence-Driven Agent for Verifiable Disaster Report Generation From Remote Sensing Imagery</title>
-    <link href="http://arxiv.org/abs/2611.13776v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.13776v1</id>
-    <published>2026-11-10T00:00:00Z</published>
-    <updated>2026-11-10T00:00:00Z</updated>
-    <author>
-      <name>Zhijian Li</name>
-    </author>
-    <author>
-      <name>Jiawei Song</name>
-    </author>
-    <author>
-      <name>Chao Ren</name>
-    </author>
-    <author>
-      <name>Yidan Zhang</name>
-    </author>
-    <author>
-      <name>Peijin Wang</name>
-    </author>
-    <author>
-      <name>Xian Sun</name>
-    </author>
-    <author>
-      <name>Kun Fu</name>
-    </author>
-    <summary type="text">Remote sensing disaster assessment is moving from simple damage classification toward comprehensive report-level analysis. In this setting, responders need not only damage descriptions but also verifiable evidence to guide response and recovery. Recent vision-language models (VLMs) and tool-augmented agents offer strong multimodal reasoning and perception, but they struggle to provide the evidence required for high-stakes verification. To address these limitations, we propose DisasterAgent, an evidence-driven agent that uses a Perception-Augmentation-Generation workflow to generate verifiable disaster reports from bitemporal optical imagery. DisasterAgent first invokes a specialized vision expert toolkit in the perception phase to build a Spatiotemporal Perception Graph (STPG), serving as a structured memory to store and organize disaster-induced changes across space and time. Evidence-based Augmentation (EA) then extracts evidence from the STPG, attaching inline citations that form a closed evidence loop from each statement to the supporting visual evidence. Extensive experiments on the DisasterM3 and RSCC benchmarks demonstrate that DisasterAgent consistently outperforms general-domain VLMs, remote sensing-specialized models, and existing remote sensing agents. Notably, compared with the original model, it improves the average score for disaster report generation on DisasterM3 by 13.5\% and ST5-SCS on RSCC by 15.34\%, providing a more accurate and verifiable solution for disaster emergency response. The code will be available at https://github.com/ZhijianLi2003/DisasterAgent.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/ZhijianLi2003/DisasterAgent"&gt;https://github.com/ZhijianLi2003/DisasterAgent&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>

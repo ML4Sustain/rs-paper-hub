@@ -7123,5 +7123,43 @@
     "_added_date": "2026-11-13",
     "Category": "Dataset",
     "_tasks": "IC;OD;VG"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-11-16",
+    "Month": 11,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "STARS: Stage-Adaptive Responsibility Separation for Shadow Removal in Remote Sensing Images",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2611.20698v1",
+    "Abstract": "Shadows are a ubiquitous radiative attenuation phenomenon in remote sensing images and can severely affect high-resolution remote sensing interpretation tasks. In shadow removal, although introducing a mask prior provides explicit positional information for the restoration network, it also causes non-shadow regions to be modulated by the shadow prior, producing a systematic brightness shift; notably, this phenomenon is independent of whether the mask is accurate. In remote sensing images, non-shadow regions usually occupy a larger proportion, so a small shift over these regions incurs a much higher cost on whole-image metrics than an equal gain in shadow regions. Adopting a task-decoupling perspective, we therefore decompose shadow removal into two tasks, shadow-region restoration and non-shadow-region identity, within a cascaded architecture, and handle them sequentially. Based on this insight, we propose STARS, a cascaded shadow removal framework that separates regional responsibilities across stages. The method retains the advantages of the shadow mask while resolving the degradation of non-shadow regions, without requiring a complex parallel dual-branch structure. Meanwhile, to introduce large-model prior knowledge into remote sensing tasks, we further design a Feature Selection and Fusion Adapter (FSFA). We conduct extensive experiments on three benchmark datasets, UAV-SC+, ISTD+ and WSRD+ 2026, demonstrating the superiority of STARS. The framework shows that decoupling regional responsibilities can resolve the intrinsic contradiction of mask priors, providing a new direction for image restoration with region heterogeneity.",
+    "code": "",
+    "Publication": "10 pages, 8 figures",
+    "BibTex": "@article{song2026stars,\n  title={STARS: Stage-Adaptive Responsibility Separation for Shadow Removal in Remote Sensing Images},\n  author={Gaoliang Song and Chengjie Li and Pengju Liu and Chenchen Chang and Jinhao You and Hongzhi Zhang},\n  journal={arXiv preprint arXiv:2611.20698v1},\n  year={2026},\n  url={http://arxiv.org/abs/2611.20698v1}\n}",
+    "Authors": "Gaoliang Song, Chengjie Li, Pengju Liu, Chenchen Chang, Jinhao You, Hongzhi Zhang",
+    "_added_date": "2026-11-17",
+    "Category": "Method",
+    "_tasks": "SR"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-11-13",
+    "Month": 11,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "RAVEN-Bench: A Paired EO-IR Video QA Benchmark for Aerial Multimodal Understanding",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2611.18880v1",
+    "Abstract": "Multimodal large language models (MLLMs) have advanced rapidly in image and video understanding, yet their ability to reason over paired aerial electro-optical and infrared (EO-IR) videos remains poorly understood. Such video poses a harder test than standard RGB video QA: targets are often small, evidence may appear only briefly, viewpoints change with the platform, and useful cues may appear in only one stream. We introduce RAVEN-Bench (Reasoning over Aerial Videos with EO-IR aligNment), a paired EO-IR video QA benchmark for low-altitude aerial multimodal understanding. RAVEN-Bench contains 100 temporally aligned EO-IR video pairs and 1,200 human-authored four-way multiple-choice questions, each independently audited for answer keys, modality requirements, evidence intervals, and group validity. It supports EO-only, IR-only, and paired EO+IR evaluation, and uses hierarchical capability levels and structured question groups to diagnose paired-input gain beyond the stronger unimodal condition, unimodal reliance, target consistency, and evidence-chain coherence. We evaluate frontier, open-weight, and remote-sensing MLLMs, showing that aggregate accuracy can overstate evidence-supported EO-IR reasoning. RAVEN-Bench provides controlled modality conditions and group-level diagnostics for auditing whether progress on RGB video benchmarks transfers to aerial cross-spectral understanding. Code and data are available at https://github.com/yuhu990424/RAVEN-Bench and https://huggingface.co/datasets/TerraSenseAnalytics/RAVEN-Bench.",
+    "code": "https://github.com/yuhu990424/RAVEN-Bench",
+    "Publication": "NeurIPS 2026 (Datasets and Benchmarks Track)",
+    "BibTex": "@article{hu2026ravenbench,\n  title={RAVEN-Bench: A Paired EO-IR Video QA Benchmark for Aerial Multimodal Understanding},\n  author={Yu Hu and Jianyang Gu and Yue Cao and Hao Liu and Kangnan Wang and Jozsef Hamari and Zheng Liu and Mohsen Zardadi},\n  journal={arXiv preprint arXiv:2611.18880v1},\n  year={2026},\n  url={http://arxiv.org/abs/2611.18880v1}\n}",
+    "Authors": "Yu Hu, Jianyang Gu, Yue Cao, Hao Liu, Kangnan Wang, Jozsef Hamari, Zheng Liu, Mohsen Zardadi",
+    "_added_date": "2026-11-17",
+    "Category": "Dataset",
+    "_tasks": ""
   }
 ]

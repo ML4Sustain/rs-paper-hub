@@ -5280,5 +5280,24 @@
     "_added_date": "2026-11-16",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Artificial Intelligence",
+    "Subtype": "cs.DB",
+    "Date": "2026-11-15",
+    "Month": 11,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "MAPS: A Multimodal Agentic Framework for POI Data Production Based on Crowdsourced Street-view Imagery",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2611.19807v1",
+    "Abstract": "Point-of-interest (POI) databases support location-based services, yet urban changes quickly make their records stale and manual maintenance is costly. Crowdsourced street-view images provide timely visual evidence, but converting them into database actions requires separating multiple POIs and irrelevant text in each image, then resolving incomplete observations against ambiguous records. We study Street-view Image-based POI Data Production and propose MAPS, the first framework to integrate structured POI extraction with database maintenance from such imagery. MAPS contains two cascaded modules. SPICE progressively adapts a lightweight vision-language model to reconstruct and filter text, group entries belonging to the same POI, and classify their semantics and completeness. RIMA retrieves candidate records, performs evidence-grounded POI matching and attribute-level reasoning, and selectively acquires complementary visual, geospatial, or external-source evidence when necessary. In human-reviewed full-task evaluation, MAPS outperforms the strongest baseline by 21.8\\%. MAPS has also been deployed in Kuaishou's large-scale POI production pipeline, reducing average processing time by 76.9\\% relative to manual annotation. These results demonstrate the effectiveness and practical value of MAPS for scalable POI maintenance.",
+    "code": "",
+    "Publication": "Accepted for presentation at the 33rd ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2027), Cycle 1",
+    "BibTex": "@article{ruan2026maps,\n  title={MAPS: A Multimodal Agentic Framework for POI Data Production Based on Crowdsourced Street-view Imagery},\n  author={Sijie Ruan and Tingyu Xie and Mingfei Liu and Yicheng Tang and Haoyu Han and Jingnan Qi and Jingshu Zeng and Dongqi Xu and Jing Wang and Shuliang Wang},\n  journal={arXiv preprint arXiv:2611.19807v1},\n  year={2026},\n  url={http://arxiv.org/abs/2611.19807v1}\n}",
+    "Authors": "Sijie Ruan, Tingyu Xie, Mingfei Liu, Yicheng Tang, Haoyu Han, Jingnan Qi, Jingshu Zeng, Dongqi Xu, Jing Wang, Shuliang Wang",
+    "_added_date": "2026-11-17",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]

@@ -4,12 +4,232 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-16T07:32:25Z</updated>
+  <updated>2026-11-17T05:25:51Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 24 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>STARS: Stage-Adaptive Responsibility Separation for Shadow Removal in Remote Sensing Images</title>
+    <link href="http://arxiv.org/abs/2611.20698v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.20698v1</id>
+    <published>2026-11-16T00:00:00Z</published>
+    <updated>2026-11-16T00:00:00Z</updated>
+    <author>
+      <name>Gaoliang Song</name>
+    </author>
+    <author>
+      <name>Chengjie Li</name>
+    </author>
+    <author>
+      <name>Pengju Liu</name>
+    </author>
+    <author>
+      <name>Chenchen Chang</name>
+    </author>
+    <author>
+      <name>Jinhao You</name>
+    </author>
+    <author>
+      <name>Hongzhi Zhang</name>
+    </author>
+    <summary type="text">Shadows are a ubiquitous radiative attenuation phenomenon in remote sensing images and can severely affect high-resolution remote sensing interpretation tasks. In shadow removal, although introducing a mask prior provides explicit positional information for the restoration network, it also causes non-shadow regions to be modulated by the shadow prior, producing a systematic brightness shift; notably, this phenomenon is independent of whether the mask is accurate. In remote sensing images, non-shadow regions usually occupy a larger proportion, so a small shift over these regions incurs a much higher cost on whole-image metrics than an equal gain in shadow regions. Adopting a task-decoupling perspective, we therefore decompose shadow removal into two tasks, shadow-region restoration and non-shadow-region identity, within a cascaded architecture, and handle them sequentially. Based on this insight, we propose STARS, a cascaded shadow removal framework that separates regional responsibilities across stages. The method retains the advantages of the shadow mask while resolving the degradation of non-shadow regions, without requiring a complex parallel dual-branch structure. Meanwhile, to introduce large-model prior knowledge into remote sensing tasks, we further design a Feature Selection and Fusion Adapter (FSFA). We conduct extensive experiments on three benchmark datasets, UAV-SC+, ISTD+ and WSRD+ 2026, demonstrating the superiority of STARS. The framework shows that decoupling regional responsibilities can resolve the intrinsic contradiction of mask priors, providing a new direction for image restoration with region heterogeneity.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, 8 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>InterRSGaussian: Interactive Multi-view Instance Segmentation for 3D Remote Sensing Scenes</title>
+    <link href="http://arxiv.org/abs/2611.20425v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.20425v1</id>
+    <published>2026-11-16T00:00:00Z</published>
+    <updated>2026-11-16T00:00:00Z</updated>
+    <author>
+      <name>Zipeng Qi</name>
+    </author>
+    <author>
+      <name>Zhengxia Zou</name>
+    </author>
+    <author>
+      <name>Zhenwei Shi</name>
+    </author>
+    <summary type="text">Remote sensing image segmentation plays a critical role in various applications. Interactive instance segmentation, a specialized task within image segmentation, aims to generate precise segmentation results for target objects based on user input prompts. However, previous studies on interactive instance segmentation primarily focus on single-view images, limiting their ability to comprehensively understand complex 3D remote sensing scenes. In this study, we extend interactive instance segmentation from a single-view to a multi-view framework, which can also be easily converted to a 3D segmentation format, thus achieving more accurate and comprehensive 3D remote sensing scene perception across multiple views. First, we construct a multi-view interactive instance segmentation dataset for remote sensing, comprising five distinct scenes, each captured from about one hundred different views. Second, we propose InterRSGaussian, a novel instance segmentation method based on 3D Gaussians. InterRSGaussian enables users to provide point clicks on target objects from any arbitrary view and generates view-consistent instance segmentation results across all input views without requiring manual annotations. The resulting multi-view segmentation can further be projected onto 3D point clouds for 3D segmentation. To improve training efficiency and segmentation performance, we introduce a prior distillation network for initialization. Overall, this study extends traditional 2D remote sensing scene perception into a 3D multi-view framework, enabling a more comprehensive understanding of target objects in complex environments with user interactivity.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG;3D&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>GeoReVis: Learning Selective Revision and Evidence Consolidation for Remote Sensing Segmentation</title>
+    <link href="http://arxiv.org/abs/2611.20183v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.20183v1</id>
+    <published>2026-11-15T00:00:00Z</published>
+    <updated>2026-11-15T00:00:00Z</updated>
+    <author>
+      <name>Ke An</name>
+    </author>
+    <author>
+      <name>Liang Chen</name>
+    </author>
+    <author>
+      <name>Yupei Wang</name>
+    </author>
+    <summary type="text">Recent methods try to inspect and revise masks to mitigate referential ambiguity and localization errors caused by complex spatial relations in language-guided remote sensing segmentation. However, these solutions often lead to Revision Degradation: revising missing regions may introduce errors into previously correct ones. Even a globally better mask can omit correct regions found in inferior masks. We term this Evidence Fragmentation: correct target evidence is scattered across imperfect masks. All masks generated by the model at this time are suboptimal. We propose GeoReVis, which unifies revision guided by execution feedback, Candidate Selection, and Cross-Mask Evidence Consolidation. It learns fine-grained revision from real actions that improve segmentation when executed and learns to select a better mask through quality comparisons between actual candidates, reducing the risk of degradation during revision. The selected whole mask can still discard useful regions. GeoReVis therefore retains all candidates across rounds, partitions their spatial disagreements into composable regions, and jointly reconstructs regions conditioned on the full instruction and context. This makes complementary and fragmentary evidence reusable regardless of its source candidate's overall quality, yielding improved segmentation. We further build a data pipeline to generate fine-grained multi-round segmentation trajectories and derive supervision for revision actions, candidate selection, and region composition from the model's own outputs, extending training beyond whole-mask IoU supervision. We also propose ReVis-Eval, a benchmark protocol evaluating multi-round revision and cross-round evidence consolidation accuracy. Experiments on ReVis-Eval and 5 benchmarks for remote sensing reasoning and referring segmentation demonstrate the effectiveness of GeoReVis.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 31 pages&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Illusion of Explainability: A Sanity Check for Spectral Band Attribution in Satellite Time-Series Crop Classification</title>
+    <link href="http://arxiv.org/abs/2611.19889v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.19889v1</id>
+    <published>2026-11-15T00:00:00Z</published>
+    <updated>2026-11-15T00:00:00Z</updated>
+    <author>
+      <name>Sumit Tahiliani</name>
+    </author>
+    <author>
+      <name>Avi Mathur</name>
+    </author>
+    <author>
+      <name>Sandarbh Agarwal</name>
+    </author>
+    <author>
+      <name>Rakshith Sathish</name>
+    </author>
+    <author>
+      <name>Ashwathi Nambiar</name>
+    </author>
+    <summary type="text">Attribution methods are commonly validated through convergence across methods and consistency with domain knowledge, yet neither criterion establishes whether identified features are necessary for a task. This limitation is particularly relevant in multispectral remote sensing, where overlapping spectral information makes individual bands potentially substitutable. We investigate this gap in crop-type classification using GradientSHAP, Shapley sampling, and Occlusion on a U-TAE segmentation model trained on Sentinel-2 time series from the PASTIS benchmark. All three methods identify vegetation-sensitive spectral regions consistent with domain knowledge, while Shapley and Occlusion exhibit strong ordering sensitivity in deletion and insertion tests. However, these properties do not reliably predict retraining performance. Aggregate attribution consensus masks substantial per-class disagreement, with pairwise mean Spearman correlations ranging from 0.09 to 0.79. Models retrained from scratch using the five lowest-ranked bands perform comparably to or better than those using the five highest-ranked bands. Furthermore, attribution rankings from an independently trained model with identical configuration and seed identify a different top-five subset that yields better retraining performance. Analysis of all 252 five-band subsets reveals consistently low effective dimensionality (1.35 to 2.62), suggesting substantial spectral redundancy. These findings demonstrate that plausible and apparently faithful attribution rankings do not necessarily identify task-relevant bands for improved retrained performance, highlighting the limitations of band-level feature attribution in spectrally redundant input spaces.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the 4th Computer Vision for Earth Observation (CV4EO) Workshop at WACV 2027&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>MAPS: A Multimodal Agentic Framework for POI Data Production Based on Crowdsourced Street-view Imagery</title>
+    <link href="http://arxiv.org/abs/2611.19807v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.19807v1</id>
+    <published>2026-11-15T00:00:00Z</published>
+    <updated>2026-11-15T00:00:00Z</updated>
+    <author>
+      <name>Sijie Ruan</name>
+    </author>
+    <author>
+      <name>Tingyu Xie</name>
+    </author>
+    <author>
+      <name>Mingfei Liu</name>
+    </author>
+    <author>
+      <name>Yicheng Tang</name>
+    </author>
+    <author>
+      <name>Haoyu Han</name>
+    </author>
+    <author>
+      <name>Jingnan Qi</name>
+    </author>
+    <author>
+      <name>Jingshu Zeng</name>
+    </author>
+    <author>
+      <name>Dongqi Xu</name>
+    </author>
+    <author>
+      <name>Jing Wang</name>
+    </author>
+    <author>
+      <name>Shuliang Wang</name>
+    </author>
+    <summary type="text">Point-of-interest (POI) databases support location-based services, yet urban changes quickly make their records stale and manual maintenance is costly. Crowdsourced street-view images provide timely visual evidence, but converting them into database actions requires separating multiple POIs and irrelevant text in each image, then resolving incomplete observations against ambiguous records. We study Street-view Image-based POI Data Production and propose MAPS, the first framework to integrate structured POI extraction with database maintenance from such imagery. MAPS contains two cascaded modules. SPICE progressively adapts a lightweight vision-language model to reconstruct and filter text, group entries belonging to the same POI, and classify their semantics and completeness. RIMA retrieves candidate records, performs evidence-grounded POI matching and attribute-level reasoning, and selectively acquires complementary visual, geospatial, or external-source evidence when necessary. In human-reviewed full-task evaluation, MAPS outperforms the strongest baseline by 21.8\%. MAPS has also been deployed in Kuaishou's large-scale POI production pipeline, reducing average processing time by 76.9\% relative to manual annotation. These results demonstrate the effectiveness and practical value of MAPS for scalable POI maintenance.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted for presentation at the 33rd ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2027), Cycle 1&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+    <category term="cs.DB" />
+  </entry>
+  <entry>
+    <title>Food co-purchasing networks encode geographic disparities in cardiometabolic health</title>
+    <link href="http://arxiv.org/abs/2611.19420v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.19420v1</id>
+    <published>2026-11-14T00:00:00Z</published>
+    <updated>2026-11-14T00:00:00Z</updated>
+    <author>
+      <name>Antonio Desiderio</name>
+    </author>
+    <author>
+      <name>Leonardo Rodovero</name>
+    </author>
+    <author>
+      <name>Sune Lehmann</name>
+    </author>
+    <summary type="text">Unhealthy diets are a major driver of cardiometabolic disease, yet the geospatial structure of dietary behavior and its links to population health remain poorly understood. While large-scale retail transaction data offer a unique view of population dietary behavior, conventional approaches reduce purchases to isolated items, not accounting for how foods are actually combined. Here, we analyze 51 million grocery receipts across 95 Danish municipalities using a statistically validated bipartite network framework to isolate co-purchases that product popularity alone cannot explain. We find that, although municipalities buy largely the same products, their co-purchasing networks reorganize along a continuous urban-to-peripheral gradient in how those products are combined. The network backbone can be resolved into modular dietary communities whose local cohesion allows us to predict cardiometabolic prescriptions, explaining a quarter to a half of the variance left after sociodemographic adjustment, beyond what product prevalence alone accounts for. Ultra-processed foods (UPFs) show no spatial gradient in prevalence and are located at the network periphery, where they share baskets with fresh foods but rarely form the combinations that hold the network together. Taken together, our findings show that geographic dietary differences are encoded not only in what people purchase, but in how foods are systematically combined within shopping baskets, offering a scalable network approach for population nutritional epidemiology.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 24 pages, 3 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="physics.soc-ph" />
+    <category term="cs.SI" />
+  </entry>
+  <entry>
+    <title>XLSAR-Bench: Towards Extremely Large SAR Imagery Understanding of MLLMs</title>
+    <link href="http://arxiv.org/abs/2611.19364v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.19364v1</id>
+    <published>2026-11-14T00:00:00Z</published>
+    <updated>2026-11-14T00:00:00Z</updated>
+    <author>
+      <name>La Jiang</name>
+    </author>
+    <author>
+      <name>Lingfeng Chen</name>
+    </author>
+    <author>
+      <name>Jiaqi Zhu</name>
+    </author>
+    <author>
+      <name>Fengrong Guo</name>
+    </author>
+    <author>
+      <name>Jiehua Zhang</name>
+    </author>
+    <author>
+      <name>Panhe Hu</name>
+    </author>
+    <author>
+      <name>Li Liu</name>
+    </author>
+    <author>
+      <name>Zhen Liu</name>
+    </author>
+    <summary type="text">The rapid development of multimodal large language models (MLLMs) has highlighted the need for comprehensive benchmarks to assess their capabilities and limitations in remote sensing (RS). However, evaluating MLLMs in large-size synthetic aperture radar (SAR) scenarios remains challenging, as understanding complete scenes requires both global semantic interpretation and fine-grained target perception. Existing SAR benchmarks predominantly rely on small image patches, limiting their ability to assess these capabilities jointly. To address these limitations, we present XLSAR-Bench, a comprehensive benchmark for evaluating the perception and reasoning capabilities of MLLMs in large-scene SAR imagery. XLSAR-Bench comprises 405 images with an average size of 7153$\times$7153 pixels, ten tasks spanning visual question answering, visual grounding, and detailed image captioning, with all evaluation samples meticulously annotated manually, assisted by a semi-automatic captioner. Experimental results from general-purpose and domain-specific MLLMs reveal persistent challenges in understanding large SAR scenes and accurately perceiving small targets. We have open-sourced XLSAR-Bench to support further research in developing more powerful MLLMs for complete large SAR scenes.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;IC;VG&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Puzzle: One Pass Is Not Enough for Open-Vocabulary Remote Sensing Segmentation</title>
+    <link href="http://arxiv.org/abs/2611.19146v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.19146v1</id>
+    <published>2026-11-14T00:00:00Z</published>
+    <updated>2026-11-14T00:00:00Z</updated>
+    <author>
+      <name>Wensong Xu</name>
+    </author>
+    <author>
+      <name>Siqi Lu</name>
+    </author>
+    <author>
+      <name>Jibao Yuan</name>
+    </author>
+    <author>
+      <name>Yongbin Zheng</name>
+    </author>
+    <summary type="text">Open-vocabulary remote sensing image segmentation (OVRSIS) enables the segmentation of unseen classes without additional annotation or retraining. By analyzing the predictions of existing OVRSIS methods, we find that many misclassified patches coexist with visually similar, correctly classified patches of the same class within the same image. Unfortunately, most of these methods stop after a single inference rather than using their predictions to guide further inference. Motivated by this observation, we propose \textbf{Puzzle}, a plug-and-play iterative re-inference framework that combines prediction history with a visual-similarity prior to progressively refine patch-level attention. Puzzle employs a lightweight history-conditioned controller to regulate each patch's contribution as an information source and its reliance on visually similar patches, while an adaptive stopping rule determines when to stop. It keeps the segmentation model frozen and reuses the same controller across different models and datasets without retraining. Extensive experiments demonstrate consistent performance improvements across diverse OVRSIS models and datasets, highlighting the strong transferability of Puzzle. Moreover, Puzzle can further improve the performance of SOTA methods.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>WeatherDreamer: Learning a World Model from Multimodal Earth Observations</title>
     <link href="http://arxiv.org/abs/2611.18393v1" rel="alternate" type="text/html" />
@@ -128,6 +348,73 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, 4 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="eess.SY" />
+  </entry>
+  <entry>
+    <title>RAVEN-Bench: A Paired EO-IR Video QA Benchmark for Aerial Multimodal Understanding</title>
+    <link href="http://arxiv.org/abs/2611.18880v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.18880v1</id>
+    <published>2026-11-13T00:00:00Z</published>
+    <updated>2026-11-13T00:00:00Z</updated>
+    <author>
+      <name>Yu Hu</name>
+    </author>
+    <author>
+      <name>Jianyang Gu</name>
+    </author>
+    <author>
+      <name>Yue Cao</name>
+    </author>
+    <author>
+      <name>Hao Liu</name>
+    </author>
+    <author>
+      <name>Kangnan Wang</name>
+    </author>
+    <author>
+      <name>Jozsef Hamari</name>
+    </author>
+    <author>
+      <name>Zheng Liu</name>
+    </author>
+    <author>
+      <name>Mohsen Zardadi</name>
+    </author>
+    <summary type="text">Multimodal large language models (MLLMs) have advanced rapidly in image and video understanding, yet their ability to reason over paired aerial electro-optical and infrared (EO-IR) videos remains poorly understood. Such video poses a harder test than standard RGB video QA: targets are often small, evidence may appear only briefly, viewpoints change with the platform, and useful cues may appear in only one stream. We introduce RAVEN-Bench (Reasoning over Aerial Videos with EO-IR aligNment), a paired EO-IR video QA benchmark for low-altitude aerial multimodal understanding. RAVEN-Bench contains 100 temporally aligned EO-IR video pairs and 1,200 human-authored four-way multiple-choice questions, each independently audited for answer keys, modality requirements, evidence intervals, and group validity. It supports EO-only, IR-only, and paired EO+IR evaluation, and uses hierarchical capability levels and structured question groups to diagnose paired-input gain beyond the stronger unimodal condition, unimodal reliance, target consistency, and evidence-chain coherence. We evaluate frontier, open-weight, and remote-sensing MLLMs, showing that aggregate accuracy can overstate evidence-supported EO-IR reasoning. RAVEN-Bench provides controlled modality conditions and group-level diagnostics for auditing whether progress on RGB video benchmarks transfers to aerial cross-spectral understanding. Code and data are available at https://github.com/yuhu990424/RAVEN-Bench and https://huggingface.co/datasets/TerraSenseAnalytics/RAVEN-Bench.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/yuhu990424/RAVEN-Bench"&gt;https://github.com/yuhu990424/RAVEN-Bench&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026 (Datasets and Benchmarks Track)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Scaling Channel-Adaptive Self-Supervised Learning</title>
+    <link href="http://arxiv.org/abs/2611.18849v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.18849v1</id>
+    <published>2026-11-13T00:00:00Z</published>
+    <updated>2026-11-13T00:00:00Z</updated>
+    <author>
+      <name>Alice V. De Lorenci</name>
+    </author>
+    <author>
+      <name>Seungeun Yi</name>
+    </author>
+    <author>
+      <name>Theo Moutakanni</name>
+    </author>
+    <author>
+      <name>Piotr Bojanowski</name>
+    </author>
+    <author>
+      <name>Camille Couprie</name>
+    </author>
+    <author>
+      <name>Juan C. Caicedo</name>
+    </author>
+    <author>
+      <name>Wolfgang M. Pernice</name>
+    </author>
+    <summary type="text">Recent advances in self-supervised pre-training of foundation models for natural images have made them a popular choice for various visual systems and applications. Self-supervised strategies are also promising in non-RGB scientific imaging domains such as in biology, medical and satellite imagery, but their broader application is hampered by heterogeneity in channel composition and semantics between relevant datasets: two datasets may contain different numbers of channels, and these may reveal distinct aspects of an object or scene. Recent works on channel adaptive strategies report substantial advantages for those that account for variable channel compositions without sacrificing the ability to jointly encode channels; yet, how these strategies behave at scale remains unclear. We here show that, surprisingly, trained across large-scale datasets, independent-encoding of channels outperforms joint-encoding methods by a substantial margin. We validate this result along an extensive set of experiments on various datasets from cell microscopy to geospatial imagery. Our DINO BoC approach sets a new state-of-the-art across challenging benchmarks, including generalization to out-of-distribution tasks and unseen channel combinations. We open-source code and model weights for a new general-purpose feature extractor for fluorescent microscopy.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
   </entry>
   <entry>
     <title>SpotDiff: A Plug-and-Play Framework for Zero-Shot Change Detection in Remote Sensing Imagery</title>
@@ -391,282 +678,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages, 16 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="astro-ph.SR" />
-  </entry>
-  <entry>
-    <title>Towards Text-Only Remote Sensing Scene Classification via Semantic Proxy</title>
-    <link href="http://arxiv.org/abs/2611.13851v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.13851v1</id>
-    <published>2026-11-10T00:00:00Z</published>
-    <updated>2026-11-10T00:00:00Z</updated>
-    <author>
-      <name>Xianping Ma</name>
-    </author>
-    <author>
-      <name>Kunlin Wu</name>
-    </author>
-    <author>
-      <name>Xiaofeng Liu</name>
-    </author>
-    <author>
-      <name>Xiaokang Zhang</name>
-    </author>
-    <author>
-      <name>Yuanxin Ye</name>
-    </author>
-    <summary type="text">Remote sensing scene classification (RSSC) is traditionally formulated as a vision-centric problem, where inference relies on rich visual representations extracted from images. In this work, we revisit this assumption by introducing text-only RSSC, a new problem setting that investigates whether remote sensing scenes can be recognized using only textual semantic representations. To enable this study, we propose SeProRS, which reformulates RSSC as a text-only classification task through semantic proxy generation. Specifically, a vision-language model (VLM) is first employed to convert remote sensing images into textual descriptions, termed semantic proxies, which are then encoded by a text embedding model for scene classification. This decoupled pipeline provides a unified and reproducible benchmark for evaluating text-only scene understanding. Furthermore, we investigate representative prompting strategies and proxy generators, and analyze their impact on classification performance, text embedding behavior, cross-generator transferability, and efficiency. Extensive experiments on three well-known RSSC datasets show that semantic proxies can preserve substantial discriminative information, while also revealing inherent limitations of purely text-based scene understanding. This paper does not aim to replace image-based RSSC, but instead establishes a new research direction by quantifying the feasibility and boundaries of semantic proxy-based scene recognition. The proposed benchmark and analysis provide a foundation for future research on efficient and modality-reduced remote sensing scene understanding. The source code and datasets will be accessible at https://github.com/sstary/SSRS.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/sstary/SSRS"&gt;https://github.com/sstary/SSRS&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13 pages, 4 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Satellite Pretraining Is Not One Thing: A Matched-Pair Study of Generic and Earth-Observation Foundation Models for Scene Classification</title>
-    <link href="http://arxiv.org/abs/2611.13849v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.13849v1</id>
-    <published>2026-11-10T00:00:00Z</published>
-    <updated>2026-11-10T00:00:00Z</updated>
-    <author>
-      <name>Sandarbh Agrawal</name>
-    </author>
-    <author>
-      <name>Rakshith Sathish</name>
-    </author>
-    <author>
-      <name>Ashwathi Nambiar</name>
-    </author>
-    <summary type="text">Geospatial foundation models are pretrained on satellite and aerial imagery, but whether such an encoder beats a strong generic one for few-label land-use/land-cover mapping remains unclear, as prior comparisons rarely isolate the pretraining data. We study five matched pairs of Earth-observation (EO) and generic encoders sharing objective and architecture (DINO/SatDINO, DINOv3/DINOv3-SAT, MAE/SatMAE, MAE/Scale-MAE, CLIP/RemoteCLIP) within a benchmark of 14 frozen encoders on five RGB scene-classification datasets (0.06-30 m GSD). With native preprocessing, we evaluate k-NN, linear and attentive probes and image retrieval over six low-label splits, using paired per-image significance tests. EO pretraining is not uniformly helpful: on most datasets and metrics, it significantly improves three pairs (SatDINO, Scale-MAE, RemoteCLIP, the latter evaluated only on unseen datasets) and significantly hurts two (linear probe: DINOv3-SAT by up to 22.5 points, SatMAE by up to 8.8), with opposite outcomes even for two MAEs pretrained on the same fMoW-RGB imagery. These effects are robust to patch-token pooling and attentive probing, concentrate on small man-made objects, and are largest with 1-5% labels. Across encoders, the silhouette score of frozen embeddings predicts k-NN accuracy and retrieval mAP almost perfectly (Spearman $ρ\geq 0.96$ on four of five datasets). Pretraining on satellite imagery is thus not a reliable selection criterion; candidate checkpoints must be validated on target data.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the 3rd Workshop on Computer Vision for Geospatial Image Analysis (GeoCV) at WACV 2027&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;ITR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Relaxing Cross-Modal Correspondence for Multimodal Remote Sensing Pretraining</title>
-    <link href="http://arxiv.org/abs/2611.13807v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.13807v1</id>
-    <published>2026-11-10T00:00:00Z</published>
-    <updated>2026-11-10T00:00:00Z</updated>
-    <author>
-      <name>Xianping Ma</name>
-    </author>
-    <author>
-      <name>Yu Zhang</name>
-    </author>
-    <author>
-      <name>Mingzhe Jiang</name>
-    </author>
-    <author>
-      <name>Wanxin Xie</name>
-    </author>
-    <author>
-      <name>Qing Zhu</name>
-    </author>
-    <author>
-      <name>Nan Xu</name>
-    </author>
-    <author>
-      <name>Xiaokang Zhang</name>
-    </author>
-    <author>
-      <name>Yuanxin Ye</name>
-    </author>
-    <summary type="text">Multimodal remote sensing pretraining commonly relies on exact instance-level correspondence across modalities, implicitly treating strictly paired observations as a prerequisite for learning transferable representations. In this work, we revisit this assumption by relaxing cross-modal correspondence from the instance level to the semantic level. We introduce Semantic Pairing (SemPair), a pairing-relaxed pretraining strategy that replaces exact instance pairs with class-consistent cross-instance pairs. To characterize the effect of correspondence relaxation, we formulate a latent-factor model that separates cross-modal dependence into shared semantic structure and instance-specific correlation, showing that SemPair preserves the former while marginalizing instance-specific cross-modal correlations in expectation. We further introduce Mixed Pairing (MixPair) as a controlled interpolation between semantic and exact pairing to study correspondence granularity along a continuous spectrum. Extensive experiments consistently show that SemPair achieves transfer performance comparable to exact pairing (ExaPair), while MixPair reveals a non-monotonic relationship between downstream transfer and the instance-pairing ratio. These results demonstrate that exact instance correspondence is not a prerequisite for effective multimodal remote sensing pretraining and establish cross-modal correspondence granularity as an important design dimension for transferable multimodal representation learning. More broadly, this finding suggests a practical route toward scaling multimodal pretraining with reduced dependence on costly instance-aligned data.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 16 pages, 9 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>DisasterAgent: An Evidence-Driven Agent for Verifiable Disaster Report Generation From Remote Sensing Imagery</title>
-    <link href="http://arxiv.org/abs/2611.13776v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.13776v1</id>
-    <published>2026-11-10T00:00:00Z</published>
-    <updated>2026-11-10T00:00:00Z</updated>
-    <author>
-      <name>Zhijian Li</name>
-    </author>
-    <author>
-      <name>Jiawei Song</name>
-    </author>
-    <author>
-      <name>Chao Ren</name>
-    </author>
-    <author>
-      <name>Yidan Zhang</name>
-    </author>
-    <author>
-      <name>Peijin Wang</name>
-    </author>
-    <author>
-      <name>Xian Sun</name>
-    </author>
-    <author>
-      <name>Kun Fu</name>
-    </author>
-    <summary type="text">Remote sensing disaster assessment is moving from simple damage classification toward comprehensive report-level analysis. In this setting, responders need not only damage descriptions but also verifiable evidence to guide response and recovery. Recent vision-language models (VLMs) and tool-augmented agents offer strong multimodal reasoning and perception, but they struggle to provide the evidence required for high-stakes verification. To address these limitations, we propose DisasterAgent, an evidence-driven agent that uses a Perception-Augmentation-Generation workflow to generate verifiable disaster reports from bitemporal optical imagery. DisasterAgent first invokes a specialized vision expert toolkit in the perception phase to build a Spatiotemporal Perception Graph (STPG), serving as a structured memory to store and organize disaster-induced changes across space and time. Evidence-based Augmentation (EA) then extracts evidence from the STPG, attaching inline citations that form a closed evidence loop from each statement to the supporting visual evidence. Extensive experiments on the DisasterM3 and RSCC benchmarks demonstrate that DisasterAgent consistently outperforms general-domain VLMs, remote sensing-specialized models, and existing remote sensing agents. Notably, compared with the original model, it improves the average score for disaster report generation on DisasterM3 by 13.5\% and ST5-SCS on RSCC by 15.34\%, providing a more accurate and verifiable solution for disaster emergency response. The code will be available at https://github.com/ZhijianLi2003/DisasterAgent.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/ZhijianLi2003/DisasterAgent"&gt;https://github.com/ZhijianLi2003/DisasterAgent&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Earth Embeddings in Environmental Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2611.13612v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.13612v1</id>
-    <published>2026-11-10T00:00:00Z</published>
-    <updated>2026-11-10T00:00:00Z</updated>
-    <author>
-      <name>Yuchi Ma</name>
-    </author>
-    <author>
-      <name>Jiaqi Yang</name>
-    </author>
-    <author>
-      <name>Mengyu Liang</name>
-    </author>
-    <author>
-      <name>Ivan Higuera-Mendieta</name>
-    </author>
-    <author>
-      <name>Caleb Robinson</name>
-    </author>
-    <author>
-      <name>Anthony Ortiz</name>
-    </author>
-    <author>
-      <name>Min Chen</name>
-    </author>
-    <author>
-      <name>David B. Lobell</name>
-    </author>
-    <author>
-      <name>Inbal Becker-Reshef</name>
-    </author>
-    <author>
-      <name>Juan M. Lavista Ferres</name>
-    </author>
-    <summary type="text">Earth observations from satellite platforms have profoundly transformed research and applications across numerous domains. However, uneven observation coverage and frequent data gaps continue to limit their ability to capture Earth's surface dynamics. Moreover, processing multi-modal Earth observations requires substantial computational resources and sophisticated data harmonization frameworks, which may not be readily accessible to many remote sensing practitioners. Earth embeddings have emerged as promising solutions to these challenges. As general-purpose representations converted from multi-source Earth observations, Earth embeddings can support a wide range of downstream tasks with no requirement of task-specific feature design and preprocessing. In this study, we first introduce the theoretical foundations of Earth embeddings. Then, we review several representative Earth embedding products. We next examine the applications of Earth embeddings across six major domains of environmental remote sensing. Finally, we systematically assess the performance of Earth embeddings in four downstream tasks, including hyperspectral image classification, individual tree crown segmentation, crop yield prediction, and aboveground biomass mapping. Our review and case studies suggest that, despite several advantages over conventional Earth observation data, current Earth embeddings do not always outperform remote sensing imagery or hand-crafted features. Earth embeddings should not be viewed as a direct replacement for conventional EO data, but rather as representations that provide stable information across space and time. Remote sensing practitioners may consider evaluating Earth embeddings' suitability for specific tasks and using them strategically, rather than assuming superior performance by default.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Distribution Shift Detection in Remote Sensing Imagery using Machine Learning Models</title>
-    <link href="http://arxiv.org/abs/2611.13510v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.13510v1</id>
-    <published>2026-11-10T00:00:00Z</published>
-    <updated>2026-11-10T00:00:00Z</updated>
-    <author>
-      <name>Abdullah Almansour</name>
-    </author>
-    <author>
-      <name>Ozan K. Tonguz</name>
-    </author>
-    <summary type="text">Remote sensing imagery acquired by Unmanned Aerial Vehicles (UAVs) supports wide range of applications; however, deploying machine learning (ML) models on resource-constrained aerial platforms introduces challenges beyond predictive accuracy, particularly when deployment data differ from the distributions observed during training. Such shifts are common in remote sensing due to geographic, sensor, seasonal, and other visual variations. A practical solution is to equip deployed models with mechanisms that detect emerging distribution shifts and support subsequent responsive actions. This paper presents an empirical case study of three open-source detection tools: (i) Alibi-Detect; (ii) NannyML; and (iii) PyTorch-OOD. Using cross-dataset remote-sensing shifts, we evaluate both detection effectiveness and computational latency of these tools. Our results reveal differences in detection behavior and processing cost across methods and implementations, highlighting trade-offs between detection capability and response-time. These findings motivate further work toward lightweight, and latency-aware monitoring mechanisms for resource-constrained systems.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; WACV 2027&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning; Image and Video Processing; Signal Processing" />
-  </entry>
-  <entry>
-    <title>RS-JEPA: Remote Sensing Joint-Embedding Predictive Architecture with Scan-Path Views for Cross-Sensor Image Retrieval</title>
-    <link href="http://arxiv.org/abs/2611.14496v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.14496v1</id>
-    <published>2026-11-10T00:00:00Z</published>
-    <updated>2026-11-10T00:00:00Z</updated>
-    <author>
-      <name>Tanishq Rachamalla</name>
-    </author>
-    <author>
-      <name>Srishti Kaushik</name>
-    </author>
-    <author>
-      <name>Muhammad Attique Khan</name>
-    </author>
-    <author>
-      <name>Gustau Camps-Valls</name>
-    </author>
-    <author>
-      <name>Swalpa Kumar Roy</name>
-    </author>
-    <summary type="text">Cross-sensor remote sensing image retrieval aims to find scenes with the same content across heterogeneous sensors, such as SAR and optical or panchromatic (PAN) and multispectral (MS) imagery, without manual labels. Existing self-supervised methods either reconstruct sensor-specific pixel detail, align each image only with its co-registered twin, or rely on large transformers with 118-173M parameters (and up to 398M). We introduce RS-JEPA, a compact joint-embedding predictive framework built on a Vision Mamba encoder shared by both sensors. Since a state-space encoder reads an image as an ordered sequence of patches, we propose scan-path views, which treat two reading orders of the same image as two views with identical pixels and predict the hidden patches in one order from the visible patches in the other.To keep this prediction challenging, we propose Adversarial View Coupling (AVC), which learns the hardest split of the visible patches, and a neighbourhood consensus loss that aligns the scene similarities of both sensors. Extensive experiments on SAR-optical (BEN-14K, CBRSIR-VS) and PAN-MS (DSRSID) benchmarks demonstrate that RS-JEPA achieves the highest F1@5 among twelve re-implemented methods (72.92, 80.35 and 94.43) with a retrieval network of only 3.88M parameters (14.57M in training, 8-16times fewer than prior JEPA retrievers). Like prior methods, RS-JEPA trains on co-registered pairs. Our results highlight reading order as a source of self-supervised views. code: https://github.com/Tanishq251/RSJEPA.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Tanishq251/RSJEPA"&gt;https://github.com/Tanishq251/RSJEPA&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>UniFlow-RS: Unified Generative Prediction for Heterogeneous Remote-Sensing Tasks</title>
-    <link href="http://arxiv.org/abs/2611.14281v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.14281v2</id>
-    <published>2026-11-10T00:00:00Z</published>
-    <updated>2026-11-10T00:00:00Z</updated>
-    <author>
-      <name>Jianlong He</name>
-    </author>
-    <author>
-      <name>Liang Liao</name>
-    </author>
-    <author>
-      <name>Jing Xiao</name>
-    </author>
-    <author>
-      <name>Chaofeng Chen</name>
-    </author>
-    <author>
-      <name>Gui-Song Xia</name>
-    </author>
-    <summary type="text">Remote-sensing foundation models increasingly unify representations across sensing modalities and downstream tasks, yet their prediction mechanisms remain largely task-specific. Separate decoders, prediction heads, and objectives leave prediction fragmented across tasks. This naturally raises a question: can heterogeneous remote-sensing tasks share the prediction process? UniFlow-RS answers this question with a single latent flow-matching predictor shared across tasks. This requires addressing two key challenges: unifying heterogeneous prediction spaces and harmonizing joint optimization across tasks. First, we cast heterogeneous task outputs into structured visual targets in a common latent space, allowing them to be modeled by the same pretrained flow predictor. Task-dependent conditioning further accommodates differences in input configurations. Second, we optimize all tasks with a common Flow Matching objective, eliminating task-specific prediction losses. To mitigate optimization mismatch across tasks and modalities, we introduce Task-Modality Adaptive Timestep Sampling (TMAS), which dynamically allocates training timesteps according to the online learning state of each task-modality group. Using a single shared model, UniFlow-RS handles six tasks and thirteen datasets, surpassing recent task-specific state-of-the-art methods on several benchmarks while remaining competitive on the others. Beyond these benchmarks, the same checkpoint demonstrates strong zero-shot transfer across unseen datasets, task settings, occlusion conditions, and near-infrared false-color imagery, without target-specific adaptation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Estimating multidimensional poverty under incomplete data in North Macedonia</title>
-    <link href="http://arxiv.org/abs/2611.14146v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.14146v1</id>
-    <published>2026-11-10T00:00:00Z</published>
-    <updated>2026-11-10T00:00:00Z</updated>
-    <author>
-      <name>Maja Gerovska Mitev</name>
-    </author>
-    <author>
-      <name>Viktor Stojkoski</name>
-    </author>
-    <summary type="text">Multidimensional Poverty Indices (MPIs) are available for more than 100 countries, but rarely below the national or regional level. Local estimates require knowing how deprivations overlap within households, yet the sources that cover every locality, such as censuses and geospatial data, cannot be linked at the household level. We show how to measure local multidimensional poverty under such incomplete data, using North Macedonia as a case study. Combining settlement-level access to services with municipal census data, we pair an independence-based point estimate with sharp bounds over all joint distributions consistent with the data. We find that, nationally, 5.01 percent of households are multidimensionally poor, with bounds of 2.01 to 17.44 percent. Also, poverty is concentrated in small rural municipalities, which are poorer than nearly all municipalities of the capital city under any dependence structure. Validating our index against official statistics, the Global MPI, and a fieldwork deprivation index indicates that the socio-economic part of the index is consistent with external measures of deprivation, while the geographic part captures a distinct dimension of remoteness. Our approach thus presents a promising way to measure multidimensional poverty at the local level in countries where linked household data are unavailable.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="econ.GN" />
-  </entry>
-  <entry>
-    <title>CroCoMAE: Cross-modal self-supervised collaborative representation learning for SAR-optical remote sensing data</title>
-    <link href="http://arxiv.org/abs/2611.14124v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.14124v1</id>
-    <published>2026-11-10T00:00:00Z</published>
-    <updated>2026-11-10T00:00:00Z</updated>
-    <author>
-      <name>Vito Recchia</name>
-    </author>
-    <author>
-      <name>Giuseppe Guarino</name>
-    </author>
-    <author>
-      <name>Cássio Fraga Dantas</name>
-    </author>
-    <author>
-      <name>Giuseppina Andresini</name>
-    </author>
-    <author>
-      <name>Annalisa Appice</name>
-    </author>
-    <author>
-      <name>Dino Ienco</name>
-    </author>
-    <summary type="text">Remote sensing increasingly captures the Earth's surface through complementary sensors such as SAR and optical, yet ground-truth annotations remain scarce, limiting supervised approaches. Self-supervised learning (SSL) addresses the label scarcity, and cross-modal SSL further exploits the complementarity between co-located sensors, but existing cross-modal frameworks align modalities mostly through global image-level representations or treat them as largely redundant, leaving their fine-grained complementary structure underexploited. We propose CroCoMAE, a cross-modal SSL framework for SAR-optical remote sensing that unifies contrastive learning and masked image modeling within a ViT-based architecture, operating at two complementary levels. At the image level, an intra-modality contrastive loss on the class token yields globally discriminative, augmentation-invariant representations. At the patch level, masked image modeling drives fine-grained per-modality representations, while a cross-modal contrastive objective aligns a shared subspace across SAR and optical patch tokens, leaving the complementary subspace unconstrained to retain modality-specific information. On two SAR-optical benchmarks covering scene classification and semantic segmentation, CroCoMAE improves over uni-modal SSL baselines and outperforms state-of-the-art cross-modal frameworks in most configurations, with gains in both single-modality and multi-modal evaluation across varying label regimes and the largest improvements on semantic segmentation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
   </entry>
 </feed>
