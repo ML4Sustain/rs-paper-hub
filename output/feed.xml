@@ -4,12 +4,149 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-18T08:07:51Z</updated>
+  <updated>2026-11-19T04:43:55Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 30 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Metadata-Driven AI: An Architectural Pattern for Sustainable Data Analysis with LLMs</title>
+    <link href="http://arxiv.org/abs/2611.24661v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.24661v1</id>
+    <published>2026-11-18T00:00:00Z</published>
+    <updated>2026-11-18T00:00:00Z</updated>
+    <author>
+      <name>Renaud Pawlak</name>
+    </author>
+    <author>
+      <name>Armen Sulejmani</name>
+    </author>
+    <author>
+      <name>Jordi Cabot</name>
+    </author>
+    <summary type="text">Large Language Models (LLMs) let users analyse data in natural language, either by giving the data to the model to read directly or by having the model generate code to process it. Both routes send the data, or fragments of it, to the model; both pay for inference on every run; and the code a model writes to answer a question is usually discarded once the question is answered. We present Metadata-Driven AI, an architectural pattern that keeps the data away from the model and turns each analysis into a reusable program. Only metadata (not the actual data) crosses a one-way inference boundary to the LLM. The program the LLM returns runs next to the data and is kept, so that inference is paid once per analysis rather than once per run. We describe the pattern together with a simple cost model, a measurement of how little information crosses the boundary on public datasets, and a benchmark showing that a small, locally hosted model can serve as the generator. We illustrate the pattern on three applications, each built on a different implementation of it: geospatial photovoltaic prospection over live public APIs, extraction of portfolio positions from bank statements, and a conversational assistant over smart-city dashboards.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 29 pages, 4 tables, 5 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="cs.SE" />
+  </entry>
+  <entry>
+    <title>ABSClaw: From Invented Worlds to Reality-Grounded Social Simulation</title>
+    <link href="http://arxiv.org/abs/2611.24517v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.24517v1</id>
+    <published>2026-11-18T00:00:00Z</published>
+    <updated>2026-11-18T00:00:00Z</updated>
+    <author>
+      <name>Shaobin He</name>
+    </author>
+    <author>
+      <name>Yan Gao</name>
+    </author>
+    <author>
+      <name>Quan Zheng</name>
+    </author>
+    <author>
+      <name>Zhenyang Lin</name>
+    </author>
+    <author>
+      <name>Zhen Liu</name>
+    </author>
+    <author>
+      <name>Jiyan He</name>
+    </author>
+    <author>
+      <name>Shuxin Zheng</name>
+    </author>
+    <summary type="text">LLM-based artificial societies exhibit rich behavior but often lack scientific grounding: personas and environments are assumed, interaction networks are synthetic, and simulators are generated as free-form code, making results difficult to tie to real populations and sensitive to the backbone model. We argue that simulated worlds should be sampled from observed data, while simulation logic should be implemented by composing operations from a shared, task-independent vocabulary. In this paper, we introduce ABSClaw, a zero-code agent that compiles natural-language requests into executable, reality-grounded social simulations. ABSClaw grounds who acts, where they act, and with whom they interact in survey and census data, geospatial sources, and real networks. It expresses state transitions through 26 atomic operations. To support an open and extensible ecosystem, ABSClaw further allows capabilities to be added as lifecycle-scoped skills without modifying its core. Furthermore, we propose ABSBench, a benchmark of 193 real-world social-simulation tasks. On ABSBench, ABSClaw achieves the best overall performance among the evaluated social simulators. Three real-world case studies show that grounding personas, environments, and interaction networks each improves agreement with observed outcomes. With one runtime skill, ABSClaw executes 13 population-scale simulations, collectively involving 25 million agents. Together, these results demonstrate ABSClaw's real-world fidelity, extensibility, and scalability.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Anchoring with Visual Evidence: Explicit Semantic Anchors for Joint Change Detection and Captioning</title>
+    <link href="http://arxiv.org/abs/2611.24462v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.24462v1</id>
+    <published>2026-11-18T00:00:00Z</published>
+    <updated>2026-11-18T00:00:00Z</updated>
+    <author>
+      <name>Kai Zheng</name>
+    </author>
+    <author>
+      <name>Hang-Cheng Dong</name>
+    </author>
+    <author>
+      <name>Puyi Fang</name>
+    </author>
+    <author>
+      <name>Junjia Pan</name>
+    </author>
+    <author>
+      <name>Zhenkai Wu</name>
+    </author>
+    <author>
+      <name>Wei Zhang</name>
+    </author>
+    <summary type="text">Joint change detection and captioning seeks to localize changes and describe them from bi-temporal remote sensing images. A key challenge is translating dense visual evidence into the semantic conditions that guide description generation. We propose Explicit Semantic Anchors (ESA), a supervised interface that exposes entity presence, temporal appearance variation, and spatial extent. A prediction-guided readout combines visual features and predicted change probabilities, and three factor heads estimate the corresponding anchor activations. These activations guide generation through two complementary routes. The context route maps the three factor activations to three separate memory tokens, one per factor, and appends them to the dense visual memory, while the lexicon route produces an additive vocabulary bias at each decoding step. Dense visual memory remains available for spatial detail and information beyond the explicit factors. Anchor targets are derived from existing images and change annotations, requiring no additional anchor-level language annotation. At inference, all conditions are computed from the input image pair and the model's own predictions. Experiments on LEVIR-MCI and WHU-CDC show strong joint detection and captioning performance, supporting the use of supervised visual attributes as explicit conditions for change description generation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;CD&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Benchmarking Reasoning Reliability,Prior_Evidence Contrast,and Spectral Discrimination in Remote-Sensing Geological Image Interpretation</title>
+    <link href="http://arxiv.org/abs/2611.24068v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.24068v1</id>
+    <published>2026-11-18T00:00:00Z</published>
+    <updated>2026-11-18T00:00:00Z</updated>
+    <author>
+      <name>Jun Wang</name>
+    </author>
+    <author>
+      <name>Fengpeng Li</name>
+    </author>
+    <author>
+      <name>Wei Han</name>
+    </author>
+    <author>
+      <name>Yuxuan Li</name>
+    </author>
+    <author>
+      <name>Tianjin Huang</name>
+    </author>
+    <author>
+      <name>Jining Yan</name>
+    </author>
+    <author>
+      <name>Sheng Wang</name>
+    </author>
+    <author>
+      <name>Kan Sun</name>
+    </author>
+    <author>
+      <name>Lizhe Wang</name>
+    </author>
+    <summary type="text">Reliable lithology interpretation requires accurate geological recognition and reasoning grounded in visual evidence. Although Multimodal Large Language Models show promise in remote sensing, their reliability in geological interpretation remains unclear. We introduce HyGeoBench, a diagnostic benchmark of 10,000 questions based on hyperspectral imagery across three dimensions: reasoning reliability, prior_evidence contrast, and spectral discrimination. It covers ten task types, with both multiple-choice and open-ended response formats. Integrating hyperspectral satellite imagery with geological annotations and verified evidence, HyGeoBench examines reasoning errors, conflicts between geological priors and visual evidence, and cross-band inconsistencies. Evaluations reveal limitations in fine-grained recognition and evidence-grounded interpretation. To address these challenges, we propose HyGeoAgent, a tool-augmented framework integrating region observation, text knowledge retrieval, same-band image retrieval, and native PCA analysis through adaptive tool use. Experiments demonstrate consistent improvements over the corresponding base models, improving geological image interpretation across diagnostic dimensions.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Developing a Subdistrict-Level Economic Progress Index Using Geospatial Data</title>
+    <link href="http://arxiv.org/abs/2611.23798v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.23798v1</id>
+    <published>2026-11-18T00:00:00Z</published>
+    <updated>2026-11-18T00:00:00Z</updated>
+    <author>
+      <name>Meenu Mohan</name>
+    </author>
+    <author>
+      <name>Siddhartha Chattopadhyay</name>
+    </author>
+    <summary type="text">This paper develops an Economic Progress Index (EPI), a composite measure built from Earth Observation (EO) and open geospatial data with unsupervised Principal Component Analysis (PCA) weighting. The index captures the observable productive and enabling capacity of local economies and the intensity with which economic space is used. Sub-national monitoring in developing economies is held back by sparse data: district GDP estimates arrive with multi-year lags, rely on price deflators and top-down allocation, and do not exist at the subdistrict (taluka/tehsil) scale where place-based policy is targeted. The EPI fuses multi-sensor satellite data, gridded population and OpenStreetMap road and amenity networks across 357 subdistricts of Maharashtra, India, over 46 quarters (2015 Q1 - 2026 Q2). Seasonal-Trend decomposition using LOESS (STL) separates long-run trends from monsoon and crop-cycle seasonality. A non-negative PCA gives sign-consistent, interpretable weights and rankings nearly identical to standard PCA ($ρ$ = 0.998). Across districts, the index explains 74% of the variation in the NFHS-5 wealth index, 52% in household consumption (HCES 2023-24) and about 78% in real district GDP levels (65% in logs), but does not track short-run output growth. Because it measures structural capacity rather than annual output, the index kept rising through the FY2020-21 COVID-19 contraction. Across Maharashtra's six revenue divisions, relative inequality fell by 44% even as the absolute gap between leading and lagging divisions widened by 32%; district-level $β$-convergence implies a half-life of about 14 years. The framework offers a scalable, deflator-free basis for structural monitoring in data-sparse economies.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 52 pages (46 pages main text, 6 pages appendices), 5 figures, 13 tables (6 main text, 7 appendix). An earlier version was presented at the XKDR Alternate Data Workshop, Mumbai. JEL: R11, R12, O18, E01, C43, C38&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="econ.EM" />
+    <category term="stat.AP" />
+  </entry>
   <entry>
     <title>Performance analysis of a Rydberg atom THz radiometer concept</title>
     <link href="http://arxiv.org/abs/2611.23193v1" rel="alternate" type="text/html" />
@@ -653,142 +790,5 @@
     <summary type="text">Recent advances in self-supervised pre-training of foundation models for natural images have made them a popular choice for various visual systems and applications. Self-supervised strategies are also promising in non-RGB scientific imaging domains such as in biology, medical and satellite imagery, but their broader application is hampered by heterogeneity in channel composition and semantics between relevant datasets: two datasets may contain different numbers of channels, and these may reveal distinct aspects of an object or scene. Recent works on channel adaptive strategies report substantial advantages for those that account for variable channel compositions without sacrificing the ability to jointly encode channels; yet, how these strategies behave at scale remains unclear. We here show that, surprisingly, trained across large-scale datasets, independent-encoding of channels outperforms joint-encoding methods by a substantial margin. We validate this result along an extensive set of experiments on various datasets from cell microscopy to geospatial imagery. Our DINO BoC approach sets a new state-of-the-art across challenging benchmarks, including generalization to out-of-distribution tasks and unseen channel combinations. We open-source code and model weights for a new general-purpose feature extractor for fluorescent microscopy.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>SpotDiff: A Plug-and-Play Framework for Zero-Shot Change Detection in Remote Sensing Imagery</title>
-    <link href="http://arxiv.org/abs/2611.17172v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.17172v1</id>
-    <published>2026-11-12T00:00:00Z</published>
-    <updated>2026-11-12T00:00:00Z</updated>
-    <author>
-      <name>Anit Upadhyaya</name>
-    </author>
-    <author>
-      <name>Ata Akbari Asanjan</name>
-    </author>
-    <author>
-      <name>Chaitanya Jalluri</name>
-    </author>
-    <author>
-      <name>Subash Yeggina</name>
-    </author>
-    <author>
-      <name>Jeremy Kravitz</name>
-    </author>
-    <summary type="text">Remote sensing change detection usually relies on large collections of temporally aligned, pixel-level annotations, which limits its scalability across regions, imaging platforms and application domains. Recent zero-shot approaches reduce the need for supervision, but they often localize fine-grained changes poorly because their features are coarse or inconsistent across time. We present SpotDiff, a training-free, plug-and-play framework for zero-shot change detection built by composing complementary vision foundation models. SpotDiff uses DINOv3 for semantically robust features, AnyUp to reconstruct them at pixel resolution, and SAM 3 for text-guided region-of-interest proposals, which an inference-time multi-scale strategy (SWIMS) makes reliable on small objects. Change is then measured by comparing the reconstructed features of the two dates inside the proposed regions, with no learnable components, fine-tuning or change labels. To our knowledge, SpotDiff is the first change detection method to use a universal feature upsampler, which alone adds 13.8 F1 over bilinear upsampling of the same features. On LEVIR-CD, SpotDiff reaches 82.46 F1, 2.06 points above the strongest prior training-free method, and on the multi-class SECOND benchmark it improves building change detection by 10.3 IoU and the six-class average by 2.2 IoU. Qualitative results on PlanetScope (3 m) and Sentinel-2 (10 m) imagery show that the same pipeline transfers across resolutions without modification. Our results indicate that composing modern foundation models is an effective route to scalable, label-free change detection.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>SALT: State-Aligned Low-Rank Transfer for Single-Temporal Cross-Dataset Structural Localization in Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2611.17077v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.17077v1</id>
-    <published>2026-11-12T00:00:00Z</published>
-    <updated>2026-11-12T00:00:00Z</updated>
-    <author>
-      <name>Aggelos Psiris</name>
-    </author>
-    <author>
-      <name>Georgios Angelidis</name>
-    </author>
-    <author>
-      <name>Giorgos Sfikas</name>
-    </author>
-    <author>
-      <name>Maria Vakalopoulou</name>
-    </author>
-    <author>
-      <name>Thomas Lagkas</name>
-    </author>
-    <author>
-      <name>Panagiotis Sarigiannidis</name>
-    </author>
-    <author>
-      <name>Georgios Th. Papadopoulos</name>
-    </author>
-    <summary type="text">Change detection in remote sensing conventionally relies on spatially aligned bi-temporal imagery, which may be unavailable or unreliable in practical scenarios. Recent single-temporal approaches address this limitation by learning structural evidence, such as building regions, from a labeled source dataset and transferring it to unseen target imagery using only the current image. However, adaptation to the source dataset can over-specialize pretrained features and reduce their cross-dataset generalization, a risk that this paper argues is higher when the feature adaptation is parameterized independently of the states used for prediction. To address this issue, the current study introduces SALT, a State-Aligned Low-Rank Transfer framework. SALT keeps a DINOv3 backbone frozen and learns negative and positive structural states that both score each patch and, through State-Aligned Low-Rank Adaptation (SALA), span the rank-2 subspace in which patch features are corrected. Directional State Alignment supervises these corrections to raise the evidence of positive patches and lower that of negative ones, while Geometry Preservation limits changes to the pairwise relations among pretrained patch features. Experiments on LEVIR-CD and the WHU aerial building dataset show that, at the pixel level and in both transfer directions, SALT outperforms four baselines reproduced under a common source-only protocol, improving over the strongest reproduced baselines by 9.45 and 5.79 points in pixel-level AP and by 27.69 and 14.25 points in IoU (LEVIR-CD to WHU and WHU to LEVIR-CD, respectively), with only 0.068M trainable parameters and 40.2 ms per image. In order to facilitate reproducibility and further research, the source code of SALT is available at https://github.com/gthpapadopoulos/SALT</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/gthpapadopoulos/SALT"&gt;https://github.com/gthpapadopoulos/SALT&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the Third Workshop on Computer Vision for Geospatial Image Analysis (GeoCV)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>RICapBench: A Fine-Grained Visual Understanding Benchmark Dataset for Vision-Language Models in Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2611.16413v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.16413v1</id>
-    <published>2026-11-12T00:00:00Z</published>
-    <updated>2026-11-12T00:00:00Z</updated>
-    <author>
-      <name>Xue Wang</name>
-    </author>
-    <author>
-      <name>Yubin Xu</name>
-    </author>
-    <author>
-      <name>Kun Tan</name>
-    </author>
-    <summary type="text">Advances in vision-language models (VLMs) have improved remote sensing image analysis and supported geospatial decision-making. However, fine-grained understanding of remote sensing imagery remains challenging for VLMs. Large variations in object scale, complex geospatial relations among instances, and limited visual detail hinder precise instance localization, visible attribute identification, and spatial relation understanding, potentially leading to descriptions that lack visual grounding. Existing datasets and benchmarks insufficiently assess end-to-end instance localization and captioning without target-specific textual cues. To support this evaluation, we introduce RICapBench, a dataset and benchmark that unifies instance localization and fine-grained captioning in remote sensing. RICapBench contains 245,466 instance-level annotations and 498,005 spatial relation tuples spanning general remote sensing, UAV remote sensing, and dense small-object scenarios. Each annotation pairs an object's oriented bounding box with a natural language description of its visible attributes and spatial relations to surrounding instances and environmental elements. To evaluate the accuracy and completeness of spatial relation captioning, we propose a remote sensing spatial relation parser and the RelCap-F1 metric. We combine RelCap-F1 with instance localization and attribute captioning metrics into a composite metric, RICScore. Our evaluation of 15 advanced open-source and closed-source VLMs identifies instance localization as a major bottleneck for these models. LocateAnything achieves the highest RICScore of 31.68, but scores lower on spatial relation captioning than other task-fine-tuned open-source VLMs. Code and dataset are available at https://github.com/Xldln/RICapBench.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Xldln/RICapBench"&gt;https://github.com/Xldln/RICapBench&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13 pages, 4 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;OD;VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Gravity and Flight: Learning to Navigate Fine-Grained Remote Sensing Scenes</title>
-    <link href="http://arxiv.org/abs/2611.16408v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.16408v2</id>
-    <published>2026-11-12T00:00:00Z</published>
-    <updated>2026-11-12T00:00:00Z</updated>
-    <author>
-      <name>Yuheng Zong</name>
-    </author>
-    <author>
-      <name>Minghua Wang</name>
-    </author>
-    <author>
-      <name>Xin Zhao</name>
-    </author>
-    <author>
-      <name>Xiaobin Liu</name>
-    </author>
-    <author>
-      <name>Yongjian Dong</name>
-    </author>
-    <author>
-      <name>Chanho Eom</name>
-    </author>
-    <summary type="text">Vision-language models are increasingly capable, yet their reasoning in complex remote sensing scenes can remain coarse-grained and insufficiently grounded in task-relevant visual evidence. We propose Gravity and Flight (G&amp;F), a framework for scene specialization with limited supervision that separates visual and reasoning verification while coupling policy updates. It combines Evidence-of-Thought supervised fine-tuning (EoT-SFT) and Relational Transfer Policy Optimization (RTPO). EoT-SFT teaches fine-grained observation and faithful reasoning through description, analysis, and supported conclusions. RTPO independently samples responses to scene-matched image pairs with fine-grained visual differences under a shared task. Its rubric-based verification combines Gravity, which checks visual fidelity and description coverage, and Flight, which takes descriptions as premises to assess evidence use and relations between paired judgments. Their scores and task correctness yield a shared pair-level advantage that couples policy updates from both responses. Using 1,008 demonstrations and 500 training pairs for harbor specialization, G&amp;F achieves a mean score of 69.12 across six evaluation sets, exceeding the backbone and supervised initialization by 9.76 and 4.56 points. Matched controls show gains over single-image and joint-input RL, and removing either verification view reduces performance. Applying G&amp;F to urban specialization also improves on the base model and supervised initialization across three evaluation subsets. Project details and updates are available at https://github.com/Z0ngL1ng/Gravity-and-Flight.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Z0ngL1ng/Gravity-and-Flight"&gt;https://github.com/Z0ngL1ng/Gravity-and-Flight&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Resilient Transmission of Highly Structured Light via Active Convolved Illumination</title>
-    <link href="http://arxiv.org/abs/2611.17471v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.17471v1</id>
-    <published>2026-11-12T00:00:00Z</published>
-    <updated>2026-11-12T00:00:00Z</updated>
-    <author>
-      <name>Anindya Ghoshroy</name>
-    </author>
-    <author>
-      <name>James Davis</name>
-    </author>
-    <author>
-      <name>Martin Wilkens</name>
-    </author>
-    <author>
-      <name>Sahin K. Ozdemir</name>
-    </author>
-    <author>
-      <name>Durdu O. Guney</name>
-    </author>
-    <summary type="text">Wave propagation through lossy and noisy systems as well as spatiotemporally dynamic random media often limits the complex information that can be reliably transmitted or retrieved. Progress in adaptive optics, wavefront shaping, machine learning, and wave propagation theories has significantly advanced physical and computational correction techniques. However, many approaches remain constrained by restrictive operating conditions, limiting their ability to meet growing application-specific demands, such as higher spatial resolution in imaging and greater data capacity in communications, particularly in highly dynamic environments. Recently, active convolved illumination (ACI) was proposed as a novel framework for preserving the spatial structure of optical modes during propagation through strongly distorting environments, such as atmospheric turbulence. ACI aims to bypass the prohibitive complexity of global distortion tracking by combining spectrally localized characterization with compensation using a correlated auxiliary source. Here, we provide a comprehensive review of ACI, detailing the formulation of correlation-injecting and auxiliary sources and the role of segmented reciprocal-space characterization and distortion compensation. We explore extensions in free-space optical communication and potential high-precision phase measurement, and numerically evaluate interferometric strategies for experimental implementation. This work highlights ACI as a potentially versatile framework for distortion-resilient light transmission, with broad interdisciplinary utility ranging from atmospheric physics and remote sensing to telecommunications, target tracking, and biomedical diagnosis, offering flexible deployment either as a standalone paradigm or hybridized with existing optical systems.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages, 7 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="physics.optics" />
   </entry>
 </feed>
