@@ -4,12 +4,63 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-19T08:17:01Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 14 entries</subtitle>
+  <updated>2026-11-20T04:34:41Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 15 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>From Geographic Memory to Spatial Generalization in Large Language Models</title>
+    <link href="http://arxiv.org/abs/2611.25703v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.25703v1</id>
+    <published>2026-11-19T00:00:00Z</published>
+    <updated>2026-11-19T00:00:00Z</updated>
+    <author>
+      <name>Chen Chu</name>
+    </author>
+    <author>
+      <name>Zhaonan Wang</name>
+    </author>
+    <author>
+      <name>Cyrus Shahabi</name>
+    </author>
+    <author>
+      <name>Hengcai Zhang</name>
+    </author>
+    <author>
+      <name>Feng Lu</name>
+    </author>
+    <summary type="text">Large language models (LLMs) can associate places with geographic descriptions, but recovering an observed association does not establish an ability to generalize across geographic space. We distinguish geospatial memory, the recovery of location--description associations observed during training, from spatial generalization, the prediction of descriptions for locations in unobserved regions. We investigate whether continuous location representations improve this generalization and encourage geographic knowledge to become spatially organized within an LLM. We frame this organization as a latent spatial field: a learned mapping from locations to descriptions connected through spatial dependencies. Building on a continuous spatial encoder, we project location representations into the model's embedding space and supply them as spatial tokens. We evaluate the resulting models on two newly curated geo-text benchmarks for Los Angeles and London using two complementary assessments. Geospatial captioning tests both memory and spatial generalization by generating descriptions at observed locations and at locations beyond the spatial coverage of the training observations. A separate geospatial grounding model tests whether generated location--description pairs provide useful additional supervision for mapping text to geographic space. Across multiple LLM families, continuous location representations improve captioning at unobserved locations relative to textual coordinates, while their generated descriptions yield modest but consistent improvements in downstream grounding. Layer-wise probing and representation clustering provide additional evidence consistent with spatially organized geographic representations. Together, these findings show the value of evaluating spatial generalization separately from memory and of incorporating continuous spatial representations into language models.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;VG&lt;/p&gt;</content>
+    <category term="cs.CL" />
+    <category term="Artificial Intelligence; Machine Learning" />
+  </entry>
+  <entry>
+    <title>RemoteVLPG: How to Obtain a Specific VLM for Language-Guided Path Generation on Remote Sensing Images?</title>
+    <link href="http://arxiv.org/abs/2611.25458v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.25458v1</id>
+    <published>2026-11-19T00:00:00Z</published>
+    <updated>2026-11-19T00:00:00Z</updated>
+    <author>
+      <name>Junzhe Dang</name>
+    </author>
+    <author>
+      <name>Mengmeng Zhang</name>
+    </author>
+    <author>
+      <name>Yuxiang Zhang</name>
+    </author>
+    <author>
+      <name>Wei Li</name>
+    </author>
+    <summary type="text">We study how to obtain a task-specific Vision-Language Model (VLM) for language-guided path generation between start and end points on remote sensing images. We explore this question from three aspects. First, we implement three widely used architectural approaches and compare their performance. Second, we design a scalable method for constructing pre-training data and build an effective pre-training dataset with a degree of diversity. Methods trained on this dataset achieve promising zero-shot performance. Third, we construct three benchmarks that support stratified evaluation and design three metrics for path generation. We investigate this problem through extensive experiments. The results show that the zero-shot performance of methods trained on the constructed pre-training dataset can exceed that of some advanced commercial VLMs. Code and Dataset can be available at https://github.com/jzdang/RemoteVLPG</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/jzdang/RemoteVLPG"&gt;https://github.com/jzdang/RemoteVLPG&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages, 10 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Metadata-Driven AI: An Architectural Pattern for Sustainable Data Analysis with LLMs</title>
     <link href="http://arxiv.org/abs/2611.24661v1" rel="alternate" type="text/html" />
@@ -66,6 +117,110 @@
     <summary type="text">Reliable lithology interpretation requires accurate geological recognition and reasoning grounded in visual evidence. Although Multimodal Large Language Models show promise in remote sensing, their reliability in geological interpretation remains unclear. We introduce HyGeoBench, a diagnostic benchmark of 10,000 questions based on hyperspectral imagery across three dimensions: reasoning reliability, prior_evidence contrast, and spectral discrimination. It covers ten task types, with both multiple-choice and open-ended response formats. Integrating hyperspectral satellite imagery with geological annotations and verified evidence, HyGeoBench examines reasoning errors, conflicts between geological priors and visual evidence, and cross-band inconsistencies. Evaluations reveal limitations in fine-grained recognition and evidence-grounded interpretation. To address these challenges, we propose HyGeoAgent, a tool-augmented framework integrating region observation, text knowledge retrieval, same-band image retrieval, and native PCA analysis through adaptive tool use. Experiments demonstrate consistent improvements over the corresponding base models, improving geological image interpretation across diagnostic dimensions.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>MKA: Evaluating Multimodal Knowledge Agents on end-to-end professional tasks</title>
+    <link href="http://arxiv.org/abs/2611.25228v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.25228v1</id>
+    <published>2026-11-18T00:00:00Z</published>
+    <updated>2026-11-18T00:00:00Z</updated>
+    <author>
+      <name>Anima Singh</name>
+    </author>
+    <author>
+      <name>Suhas Yogin</name>
+    </author>
+    <author>
+      <name>Weicheng Kuo</name>
+    </author>
+    <author>
+      <name>Ivor Rendulic</name>
+    </author>
+    <author>
+      <name>Ivan Jurin</name>
+    </author>
+    <author>
+      <name>Antoine Yang</name>
+    </author>
+    <author>
+      <name>Oran Kelly</name>
+    </author>
+    <author>
+      <name>Rohan Doshi</name>
+    </author>
+    <author>
+      <name>Hammad Ayyubi</name>
+    </author>
+    <author>
+      <name>Ioana Bica</name>
+    </author>
+    <author>
+      <name>Sergi Caelles</name>
+    </author>
+    <author>
+      <name>Matthew Conniff</name>
+    </author>
+    <author>
+      <name>Dan Graur</name>
+    </author>
+    <author>
+      <name>Anastasija Ilić</name>
+    </author>
+    <author>
+      <name>Ahmet Iscen</name>
+    </author>
+    <author>
+      <name>Chao Jia</name>
+    </author>
+    <author>
+      <name>Tomasz Kępa</name>
+    </author>
+    <author>
+      <name>Chunyuan Li</name>
+    </author>
+    <author>
+      <name>Noah Ó Donnaile</name>
+    </author>
+    <author>
+      <name>Filip Pavetic</name>
+    </author>
+    <author>
+      <name>Goran Petrovic</name>
+    </author>
+    <author>
+      <name>Khalid Salama</name>
+    </author>
+    <author>
+      <name>Zhicheng Wang</name>
+    </author>
+    <author>
+      <name>Polina Zablotskaia</name>
+    </author>
+    <author>
+      <name>Yiqian Zhang</name>
+    </author>
+    <author>
+      <name>Ming Zhao</name>
+    </author>
+    <author>
+      <name>Benjamin Caine</name>
+    </author>
+    <author>
+      <name>Mario Lučić</name>
+    </author>
+    <author>
+      <name>Melvin Johnson</name>
+    </author>
+    <author>
+      <name>Radu Soricut</name>
+    </author>
+    <author>
+      <name>Jean-Baptiste Alayrac</name>
+    </author>
+    <summary type="text">We introduce the Multimodal Knowledge Agent (MKA) benchmark, which measures how well autonomous agents perform end-to-end professional knowledge work that depends on visual understanding. Each task requires an agent to extract and combine information from multiple visually dense files, such as CAD blueprints, electronics schematics, radiographs, complex charts and geospatial maps, and to produce a standalone deliverable in .xlsx, .pptx, .pdf, .docx, .html or .png format. Existing benchmarks leave this capability largely untested: removing image-viewing tools leaves Gemini 4 Carbon's score on GDPval unchanged, and single-format evaluations such as GDP.pdf and GDP.xlsx do not require reasoning across files or modalities. MKA contains 200 tasks across 10 economic sectors. Deliverables are graded against expert-weighted rubrics by a sandboxed agentic autorater that agrees with human domain experts on 96.2% of criterion judgments in our expert-graded study (Cohen's $κ= 0.91$), scored by weighted satisfaction rate (WSR) overall and on frontier criteria unsaturated by prior-generation models (Climb-WSR). Across the frontier models we evaluate (Gemini 4 Carbon, Claude Fable 5.2, Claude Opus 5.5, and GPT-6 Astra), Claude Fable 5.2 (56.6% Climb-WSR, 73.3% Overall WSR) and Gemini 4 Carbon (54.3% Climb-WSR, 71.9% Overall WSR) achieve the highest scores, while Carbon uses $5.7\times$ fewer tokens. Even for the strongest models, Climb-WSR remains below 57%, leaving substantial headroom for multimodal agents.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
     <category term="Computer Vision" />
   </entry>
   <entry>
@@ -325,68 +480,6 @@
     </author>
     <summary type="text">Open-vocabulary remote sensing image segmentation (OVRSIS) enables the segmentation of unseen classes without additional annotation or retraining. By analyzing the predictions of existing OVRSIS methods, we find that many misclassified patches coexist with visually similar, correctly classified patches of the same class within the same image. Unfortunately, most of these methods stop after a single inference rather than using their predictions to guide further inference. Motivated by this observation, we propose \textbf{Puzzle}, a plug-and-play iterative re-inference framework that combines prediction history with a visual-similarity prior to progressively refine patch-level attention. Puzzle employs a lightweight history-conditioned controller to regulate each patch's contribution as an information source and its reliance on visually similar patches, while an adaptive stopping rule determines when to stop. It keeps the segmentation model frozen and reuses the same controller across different models and datasets without retraining. Extensive experiments demonstrate consistent performance improvements across diverse OVRSIS models and datasets, highlighting the strong transferability of Puzzle. Moreover, Puzzle can further improve the performance of SOTA methods.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>WeatherDreamer: Learning a World Model from Multimodal Earth Observations</title>
-    <link href="http://arxiv.org/abs/2611.18393v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.18393v1</id>
-    <published>2026-11-13T00:00:00Z</published>
-    <updated>2026-11-13T00:00:00Z</updated>
-    <author>
-      <name>Kate Duffy</name>
-    </author>
-    <author>
-      <name>Elise Penn</name>
-    </author>
-    <author>
-      <name>Tristan Ballard</name>
-    </author>
-    <author>
-      <name>August Posch</name>
-    </author>
-    <author>
-      <name>Thomas J. Vandal</name>
-    </author>
-    <summary type="text">Machine learning weather models now rival operational global forecasts but still start from analyses produced by separate, expensive data assimilation (DA) systems, which for global models are typically updated every six hours. Observation-to-observation models avoid this dependence, but most omit the recursive filtering cycle that lets DA systems carry a background state through sparse, irregular observations. We introduce WeatherDreamer, a world model that learns this cycle end-to-end from 18 global observing systems, without reanalysis. It infers a latent state from observations, carries it forward hour by hour with learned dynamics, corrects it each hour with new observations, and can predict what any of its observing systems would measure at any location. At held-out stations, its ensembles beat NOAA's Global Ensemble Forecast System (GEFS) for temperature, dew point and wind out to 12 h and are better calibrated than GEFS and the ECMWF ensemble. Precipitation, cloud-top height and solar irradiance, never inputs at inference, are inferred with skill matching or exceeding operational products at short leads. Against the first guess of NOAA's Gridpoint Statistical Interpolation (GSI) DA system, WeatherDreamer's short-range departures are within 10% of GSI's at surface stations and within 25% for moisture-sensitive microwave channels, but up to five times larger for temperature-sounding channels. Never given observation errors, its learned update assumes errors close to known instrument and retrieval errors of microwave sounders and scatterometer winds. WeatherDreamer also separates viewing geometry from atmospheric state, recovering 83-96% of observed limb darkening and producing seamless nadir-view imagery. Producing an hourly global analysis in about 1.5 minutes on one GPU, WeatherDreamer shows that assimilation and forecasting can be learned together directly from observations.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Machine Learning" />
-    <category term="Atmospheric and Oceanic Physics" />
-  </entry>
-  <entry>
-    <title>RAVEN-Bench: A Paired EO-IR Video QA Benchmark for Aerial Multimodal Understanding</title>
-    <link href="http://arxiv.org/abs/2611.18880v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.18880v1</id>
-    <published>2026-11-13T00:00:00Z</published>
-    <updated>2026-11-13T00:00:00Z</updated>
-    <author>
-      <name>Yu Hu</name>
-    </author>
-    <author>
-      <name>Jianyang Gu</name>
-    </author>
-    <author>
-      <name>Yue Cao</name>
-    </author>
-    <author>
-      <name>Hao Liu</name>
-    </author>
-    <author>
-      <name>Kangnan Wang</name>
-    </author>
-    <author>
-      <name>Jozsef Hamari</name>
-    </author>
-    <author>
-      <name>Zheng Liu</name>
-    </author>
-    <author>
-      <name>Mohsen Zardadi</name>
-    </author>
-    <summary type="text">Multimodal large language models (MLLMs) have advanced rapidly in image and video understanding, yet their ability to reason over paired aerial electro-optical and infrared (EO-IR) videos remains poorly understood. Such video poses a harder test than standard RGB video QA: targets are often small, evidence may appear only briefly, viewpoints change with the platform, and useful cues may appear in only one stream. We introduce RAVEN-Bench (Reasoning over Aerial Videos with EO-IR aligNment), a paired EO-IR video QA benchmark for low-altitude aerial multimodal understanding. RAVEN-Bench contains 100 temporally aligned EO-IR video pairs and 1,200 human-authored four-way multiple-choice questions, each independently audited for answer keys, modality requirements, evidence intervals, and group validity. It supports EO-only, IR-only, and paired EO+IR evaluation, and uses hierarchical capability levels and structured question groups to diagnose paired-input gain beyond the stronger unimodal condition, unimodal reliance, target consistency, and evidence-chain coherence. We evaluate frontier, open-weight, and remote-sensing MLLMs, showing that aggregate accuracy can overstate evidence-supported EO-IR reasoning. RAVEN-Bench provides controlled modality conditions and group-level diagnostics for auditing whether progress on RGB video benchmarks transfers to aerial cross-spectral understanding. Code and data are available at https://github.com/yuhu990424/RAVEN-Bench and https://huggingface.co/datasets/TerraSenseAnalytics/RAVEN-Bench.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/yuhu990424/RAVEN-Bench"&gt;https://github.com/yuhu990424/RAVEN-Bench&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026 (Datasets and Benchmarks Track)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>

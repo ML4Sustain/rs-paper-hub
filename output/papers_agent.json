@@ -5337,5 +5337,24 @@
     "_added_date": "2026-11-19",
     "Category": "Method",
     "_tasks": "ITR"
+  },
+  {
+    "Type": "Artificial Intelligence",
+    "Subtype": "Computer Vision",
+    "Date": "2026-11-18",
+    "Month": 11,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "MKA: Evaluating Multimodal Knowledge Agents on end-to-end professional tasks",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2611.25228v1",
+    "Abstract": "We introduce the Multimodal Knowledge Agent (MKA) benchmark, which measures how well autonomous agents perform end-to-end professional knowledge work that depends on visual understanding. Each task requires an agent to extract and combine information from multiple visually dense files, such as CAD blueprints, electronics schematics, radiographs, complex charts and geospatial maps, and to produce a standalone deliverable in .xlsx, .pptx, .pdf, .docx, .html or .png format. Existing benchmarks leave this capability largely untested: removing image-viewing tools leaves Gemini 4 Carbon's score on GDPval unchanged, and single-format evaluations such as GDP.pdf and GDP.xlsx do not require reasoning across files or modalities. MKA contains 200 tasks across 10 economic sectors. Deliverables are graded against expert-weighted rubrics by a sandboxed agentic autorater that agrees with human domain experts on 96.2% of criterion judgments in our expert-graded study (Cohen's $κ= 0.91$), scored by weighted satisfaction rate (WSR) overall and on frontier criteria unsaturated by prior-generation models (Climb-WSR). Across the frontier models we evaluate (Gemini 4 Carbon, Claude Fable 5.2, Claude Opus 5.5, and GPT-6 Astra), Claude Fable 5.2 (56.6% Climb-WSR, 73.3% Overall WSR) and Gemini 4 Carbon (54.3% Climb-WSR, 71.9% Overall WSR) achieve the highest scores, while Carbon uses $5.7\\times$ fewer tokens. Even for the strongest models, Climb-WSR remains below 57%, leaving substantial headroom for multimodal agents.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{singh2026mka,\n  title={MKA: Evaluating Multimodal Knowledge Agents on end-to-end professional tasks},\n  author={Anima Singh and Suhas Yogin and Weicheng Kuo and Ivor Rendulic and Ivan Jurin and Antoine Yang and Oran Kelly and Rohan Doshi and Hammad Ayyubi and Ioana Bica and Sergi Caelles and Matthew Conniff and Dan Graur and Anastasija Ilić and Ahmet Iscen and Chao Jia and Tomasz Kępa and Chunyuan Li and Noah Ó Donnaile and Filip Pavetic and Goran Petrovic and Khalid Salama and Zhicheng Wang and Polina Zablotskaia and Yiqian Zhang and Ming Zhao and Benjamin Caine and Mario Lučić and Melvin Johnson and Radu Soricut and Jean-Baptiste Alayrac},\n  journal={arXiv preprint arXiv:2611.25228v1},\n  year={2026},\n  url={http://arxiv.org/abs/2611.25228v1}\n}",
+    "Authors": "Anima Singh, Suhas Yogin, Weicheng Kuo, Ivor Rendulic, Ivan Jurin, Antoine Yang, Oran Kelly, Rohan Doshi, Hammad Ayyubi, Ioana Bica, Sergi Caelles, Matthew Conniff, Dan Graur, Anastasija Ilić, Ahmet Iscen, Chao Jia, Tomasz Kępa, Chunyuan Li, Noah Ó Donnaile, Filip Pavetic, Goran Petrovic, Khalid Salama, Zhicheng Wang, Polina Zablotskaia, Yiqian Zhang, Ming Zhao, Benjamin Caine, Mario Lučić, Melvin Johnson, Radu Soricut, Jean-Baptiste Alayrac",
+    "_added_date": "2026-11-20",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]

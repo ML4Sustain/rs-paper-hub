@@ -4,7 +4,7 @@
   <id>https://rspaper.top/output/feed_agent.xml</id>
   <link href="https://rspaper.top/output/feed_agent.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-19T08:17:01Z</updated>
+  <updated>2026-11-20T04:34:41Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
@@ -81,6 +81,110 @@
     <category term="Computer Vision" />
   </entry>
   <entry>
+    <title>MKA: Evaluating Multimodal Knowledge Agents on end-to-end professional tasks</title>
+    <link href="http://arxiv.org/abs/2611.25228v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.25228v1</id>
+    <published>2026-11-18T00:00:00Z</published>
+    <updated>2026-11-18T00:00:00Z</updated>
+    <author>
+      <name>Anima Singh</name>
+    </author>
+    <author>
+      <name>Suhas Yogin</name>
+    </author>
+    <author>
+      <name>Weicheng Kuo</name>
+    </author>
+    <author>
+      <name>Ivor Rendulic</name>
+    </author>
+    <author>
+      <name>Ivan Jurin</name>
+    </author>
+    <author>
+      <name>Antoine Yang</name>
+    </author>
+    <author>
+      <name>Oran Kelly</name>
+    </author>
+    <author>
+      <name>Rohan Doshi</name>
+    </author>
+    <author>
+      <name>Hammad Ayyubi</name>
+    </author>
+    <author>
+      <name>Ioana Bica</name>
+    </author>
+    <author>
+      <name>Sergi Caelles</name>
+    </author>
+    <author>
+      <name>Matthew Conniff</name>
+    </author>
+    <author>
+      <name>Dan Graur</name>
+    </author>
+    <author>
+      <name>Anastasija Ilić</name>
+    </author>
+    <author>
+      <name>Ahmet Iscen</name>
+    </author>
+    <author>
+      <name>Chao Jia</name>
+    </author>
+    <author>
+      <name>Tomasz Kępa</name>
+    </author>
+    <author>
+      <name>Chunyuan Li</name>
+    </author>
+    <author>
+      <name>Noah Ó Donnaile</name>
+    </author>
+    <author>
+      <name>Filip Pavetic</name>
+    </author>
+    <author>
+      <name>Goran Petrovic</name>
+    </author>
+    <author>
+      <name>Khalid Salama</name>
+    </author>
+    <author>
+      <name>Zhicheng Wang</name>
+    </author>
+    <author>
+      <name>Polina Zablotskaia</name>
+    </author>
+    <author>
+      <name>Yiqian Zhang</name>
+    </author>
+    <author>
+      <name>Ming Zhao</name>
+    </author>
+    <author>
+      <name>Benjamin Caine</name>
+    </author>
+    <author>
+      <name>Mario Lučić</name>
+    </author>
+    <author>
+      <name>Melvin Johnson</name>
+    </author>
+    <author>
+      <name>Radu Soricut</name>
+    </author>
+    <author>
+      <name>Jean-Baptiste Alayrac</name>
+    </author>
+    <summary type="text">We introduce the Multimodal Knowledge Agent (MKA) benchmark, which measures how well autonomous agents perform end-to-end professional knowledge work that depends on visual understanding. Each task requires an agent to extract and combine information from multiple visually dense files, such as CAD blueprints, electronics schematics, radiographs, complex charts and geospatial maps, and to produce a standalone deliverable in .xlsx, .pptx, .pdf, .docx, .html or .png format. Existing benchmarks leave this capability largely untested: removing image-viewing tools leaves Gemini 4 Carbon's score on GDPval unchanged, and single-format evaluations such as GDP.pdf and GDP.xlsx do not require reasoning across files or modalities. MKA contains 200 tasks across 10 economic sectors. Deliverables are graded against expert-weighted rubrics by a sandboxed agentic autorater that agrees with human domain experts on 96.2% of criterion judgments in our expert-graded study (Cohen's $κ= 0.91$), scored by weighted satisfaction rate (WSR) overall and on frontier criteria unsaturated by prior-generation models (Climb-WSR). Across the frontier models we evaluate (Gemini 4 Carbon, Claude Fable 5.2, Claude Opus 5.5, and GPT-6 Astra), Claude Fable 5.2 (56.6% Climb-WSR, 73.3% Overall WSR) and Gemini 4 Carbon (54.3% Climb-WSR, 71.9% Overall WSR) achieve the highest scores, while Carbon uses $5.7\times$ fewer tokens. Even for the strongest models, Climb-WSR remains below 57%, leaving substantial headroom for multimodal agents.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
     <title>MAPS: A Multimodal Agentic Framework for POI Data Production Based on Crowdsourced Street-view Imagery</title>
     <link href="http://arxiv.org/abs/2611.19807v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2611.19807v1</id>
@@ -121,43 +225,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Artificial Intelligence" />
     <category term="cs.DB" />
-  </entry>
-  <entry>
-    <title>Orbit-AWARE: From Onboard AI Deployment to Sustainable In-Orbit Intelligence</title>
-    <link href="http://arxiv.org/abs/2611.17689v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.17689v1</id>
-    <published>2026-11-13T00:00:00Z</published>
-    <updated>2026-11-13T00:00:00Z</updated>
-    <author>
-      <name>Yunxin Geng</name>
-    </author>
-    <author>
-      <name>Kaige Zhu</name>
-    </author>
-    <author>
-      <name>Tongtong Shu</name>
-    </author>
-    <author>
-      <name>Zhan Gao</name>
-    </author>
-    <author>
-      <name>Yanxiao Li</name>
-    </author>
-    <author>
-      <name>Yan Liu</name>
-    </author>
-    <author>
-      <name>Weiwei Jiang</name>
-    </author>
-    <author>
-      <name>Zhiqing Wei</name>
-    </author>
-    <author>
-      <name>Zhiyong Feng</name>
-    </author>
-    <summary type="text">The growing role of space computing in time-critical satellite services makes the long-term reliability of onboard artificial intelligence (AI) a mission-level requirement. Model drift can undermine this reliability through critical-observation suppression or noncritical priority flooding, displacing both mission information and evidence for model correction. To address this drift-induced evidence displacement, this article presents Orbit-AWARE, a safeguard-first lifecycle management (LCM) architecture. A comparison of existing approaches motivates cooperative Data, Cognitive, and Trust Planes for continuous monitoring, event-triggered agentic orchestration, and deterministic governance. The architecture retains a model-independent sample stream before degradation is confirmed and coordinates evidence selection and exchange for diagnosis and ground-assisted adaptation. Candidate updates are verified before control over data disposition is restored. In an xBD-based emergency Earth observation (EO) case study, Orbit-AWARE delivers 14.3\% more critical observations and achieves 8.3\% higher sustainable mission utility than the Rule-Based Drift Loop under a common 10\% downlink budget. Finally, we discuss future research directions for extending LCM through task-aware reliability assessment, memory- and tool-enabled onboard agents, and evidence-centric space networking. This work makes evidence availability and recovery authorization explicit design objectives for dependable onboard AI services.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, 4 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="eess.SY" />
   </entry>
 </feed>

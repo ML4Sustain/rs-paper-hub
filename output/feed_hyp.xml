@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-19T08:17:01Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 6 entries</subtitle>
+  <updated>2026-11-20T04:34:41Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -116,44 +116,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>MaskSCD: Bitemporal Mask Classification for Semantic Change Detection in Remote Sensing Images</title>
-    <link href="http://arxiv.org/abs/2611.18350v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.18350v1</id>
-    <published>2026-11-13T00:00:00Z</published>
-    <updated>2026-11-13T00:00:00Z</updated>
-    <author>
-      <name>Weikang Yu</name>
-    </author>
-    <author>
-      <name>Pedram Ghamisi</name>
-    </author>
-    <summary type="text">Semantic change detection (SCD) identifies where the land surface has changed and which land-cover transition has taken place. Most deep SCD networks predict the change map and the land-cover map of each date with separate per-pixel decoders. These outputs need not agree, so a pixel can be labeled as changed although it has the same class at both dates, and per-pixel decisions fragment objects. We present MaskSCD, which formulates SCD as the mask classification of a bitemporal label-pair image. Each bitemporal segment, a region of constant land-cover class pair, is predicted as one mask shared by both dates together with one class per date, and the change map is derived from the predicted class pair. This formulation keeps the change and semantic maps consistent and the label space linear in the number of classes. A bitemporal masked-attention transformer decoder implements it by reading each segment in both images and relating the two readings, and a bitemporal fusion pyramid provides per-date and change-aware features. MaskSCD is evaluated on SECOND, Landsat-SCD and Hi-UCD, which span 0.1 to 30 m resolution and four to nine land-cover classes, against fourteen recent SCD models re-trained under one protocol. MaskSCD achieves the best separated kappa, semantic change $F_1$ and transition $F_1$ on all three datasets and exceeds the strongest competitor by about five points in mean separated kappa. It produces no contradictory change pixels, which account for nearly 30% of the predicted change of some multi-task networks. The code is available at https://github.com/EricYu97/MaskSCD.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/EricYu97/MaskSCD"&gt;https://github.com/EricYu97/MaskSCD&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;CD&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Few-Shot Open-Set Hyperspectral Pixel-Wise Classification with Spatial Aware Label Propagation</title>
-    <link href="http://arxiv.org/abs/2611.17974v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.17974v1</id>
-    <published>2026-11-13T00:00:00Z</published>
-    <updated>2026-11-13T00:00:00Z</updated>
-    <author>
-      <name>Matheus Pereira</name>
-    </author>
-    <author>
-      <name>Jefersson Santos</name>
-    </author>
-    <author>
-      <name>Laurent Najman</name>
-    </author>
-    <summary type="text">Pixelwise classification of hyperspectral images (HSI) is a fundamental task in remote sensing, but its deployment in real-world applications is often limited by the scarcity of labeled data and the presence of unknown classes at inference time. In this work, we propose Few-shot Open-set hyperspectral recognition from Self-Supervised Learning training (FOSSeL), a unified framework for few-shot, open-set hyperspectral pixelwise classification that does not require supervised training. The proposed approach first leverages self-supervised learning to construct a discriminative feature space from unlabeled data. Then, given a small set of labeled seed pixels, class predictions are obtained through spatially-aware graph-based label propagation over superpixel representations, enabling the joint exploitation of spectral similarity and spatial consistency. To address the open-set scenario, we introduce simple yet effective strategies to identify pixels that do not belong to the known classes. We evaluate FOSSeL on three benchmark hyperspectral datasets under multiple few-shot settings. The results show that the proposed framework achieves competitive or superior performance compared to fully supervised methods while maintaining robustness in the presence of unknown classes. These findings highlight the potential of combining self-supervised feature learning with graph-based inference for practical HSI analysis in low-annotation and open-world scenarios.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;SEG&lt;/p&gt;</content>
-    <category term="Image and Video Processing" />
-    <category term="Neural and Evolutionary Computing" />
   </entry>
 </feed>
