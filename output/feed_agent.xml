@@ -4,12 +4,58 @@
   <id>https://rspaper.top/output/feed_agent.xml</id>
   <link href="https://rspaper.top/output/feed_agent.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-20T07:58:03Z</updated>
+  <updated>2026-11-23T04:18:30Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>RemoteEvolver: Expanding Earth Observation Capabilities through Agent Harness Evolution</title>
+    <link href="http://arxiv.org/abs/2611.27110v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.27110v1</id>
+    <published>2026-11-20T00:00:00Z</published>
+    <updated>2026-11-20T00:00:00Z</updated>
+    <author>
+      <name>Shengxiang Xu</name>
+    </author>
+    <author>
+      <name>Liang Yao</name>
+    </author>
+    <author>
+      <name>Shuyi Chen</name>
+    </author>
+    <author>
+      <name>Yishu Wang</name>
+    </author>
+    <author>
+      <name>Shimin Di</name>
+    </author>
+    <author>
+      <name>Fan Liu</name>
+    </author>
+    <author>
+      <name>Bishun Yao</name>
+    </author>
+    <author>
+      <name>Hanghui Guo</name>
+    </author>
+    <author>
+      <name>Xinyu Liu</name>
+    </author>
+    <author>
+      <name>Chengye Liang</name>
+    </author>
+    <author>
+      <name>Yuyu Luo</name>
+    </author>
+    <author>
+      <name>Min-Ling Zhang</name>
+    </author>
+    <summary type="text">We are interested in developing a continually self-improving remote sensing agentic system. It should identify and address its capability gaps, retaining the resulting improvements to enhance performance on subsequent tasks. However, existing systems typically rely on fixed toolsets and confine their experience accumulation to re-orchestrating predefined capabilities, constraining both capability expansion and the transfer of improvements across tasks. As the infrastructure for agentic systems, the harness manages tools and workflow knowledge as editable, persistent resources outside the base model. These resources can therefore be updated and reused across tasks without additional post-training. Based on these observations, we propose RemoteEvolver, an external harness for remote sensing agents that drives tool and workflow evolution through execution feedback. With the base model parameters fixed, RemoteEvolver acquires missing specialized tools on demand and distills verified successful execution experience from individual tasks into agent skills that can be reused across tasks. The acquired tools and accumulated skills jointly support planning and execution on subsequent tasks. Experiments on Earth-Bench and OpenEarthAgent-Bench show that RemoteEvolver achieves average accuracy gains of 8.18 and 23.86 percentage points over its initial state when tools are fully available and partially missing. Under the same settings, it also outperforms the state-of-the-art methods by an average of 6.77 and 17.10 percentage points, respectively.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>ABSClaw: From Invented Worlds to Reality-Grounded Social Simulation</title>
     <link href="http://arxiv.org/abs/2611.24517v1" rel="alternate" type="text/html" />
@@ -183,47 +229,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Artificial Intelligence" />
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>MAPS: A Multimodal Agentic Framework for POI Data Production Based on Crowdsourced Street-view Imagery</title>
-    <link href="http://arxiv.org/abs/2611.19807v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.19807v1</id>
-    <published>2026-11-15T00:00:00Z</published>
-    <updated>2026-11-15T00:00:00Z</updated>
-    <author>
-      <name>Sijie Ruan</name>
-    </author>
-    <author>
-      <name>Tingyu Xie</name>
-    </author>
-    <author>
-      <name>Mingfei Liu</name>
-    </author>
-    <author>
-      <name>Yicheng Tang</name>
-    </author>
-    <author>
-      <name>Haoyu Han</name>
-    </author>
-    <author>
-      <name>Jingnan Qi</name>
-    </author>
-    <author>
-      <name>Jingshu Zeng</name>
-    </author>
-    <author>
-      <name>Dongqi Xu</name>
-    </author>
-    <author>
-      <name>Jing Wang</name>
-    </author>
-    <author>
-      <name>Shuliang Wang</name>
-    </author>
-    <summary type="text">Point-of-interest (POI) databases support location-based services, yet urban changes quickly make their records stale and manual maintenance is costly. Crowdsourced street-view images provide timely visual evidence, but converting them into database actions requires separating multiple POIs and irrelevant text in each image, then resolving incomplete observations against ambiguous records. We study Street-view Image-based POI Data Production and propose MAPS, the first framework to integrate structured POI extraction with database maintenance from such imagery. MAPS contains two cascaded modules. SPICE progressively adapts a lightweight vision-language model to reconstruct and filter text, group entries belonging to the same POI, and classify their semantics and completeness. RIMA retrieves candidate records, performs evidence-grounded POI matching and attribute-level reasoning, and selectively acquires complementary visual, geospatial, or external-source evidence when necessary. In human-reviewed full-task evaluation, MAPS outperforms the strongest baseline by 21.8\%. MAPS has also been deployed in Kuaishou's large-scale POI production pipeline, reducing average processing time by 76.9\% relative to manual annotation. These results demonstrate the effectiveness and practical value of MAPS for scalable POI maintenance.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted for presentation at the 33rd ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2027), Cycle 1&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="cs.DB" />
   </entry>
 </feed>

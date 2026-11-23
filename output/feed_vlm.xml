@@ -4,12 +4,96 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-20T07:58:03Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 15 entries</subtitle>
+  <updated>2026-11-23T04:18:30Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 10 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>WINSO: A Large-Size Very-High-Resolution Remote Sensing Dataset for Wind Turbine Detection and Solar Panel Segmentation</title>
+    <link href="http://arxiv.org/abs/2611.27241v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.27241v1</id>
+    <published>2026-11-20T00:00:00Z</published>
+    <updated>2026-11-20T00:00:00Z</updated>
+    <author>
+      <name>Di Wang</name>
+    </author>
+    <author>
+      <name>Ke Li</name>
+    </author>
+    <author>
+      <name>Zhaokun Li</name>
+    </author>
+    <author>
+      <name>Weiping Ni</name>
+    </author>
+    <author>
+      <name>Junzheng Wu</name>
+    </author>
+    <author>
+      <name>Yahu Liu</name>
+    </author>
+    <author>
+      <name>Quan Wang</name>
+    </author>
+    <author>
+      <name>Xinbo Gao</name>
+    </author>
+    <summary type="text">Wind and solar energy are central to the global transition toward net-zero emissions and sustainable development. Accurate spatial inventories of wind and solar facilities are essential for future energy planning. Satellite remote sensing provides a practical and efficient means to acquire such geospatial data at scale. However, reliable facility mapping from large-size satellite images remains constrained by the scarcity of carefully annotated datasets and the lack of systematic evaluation protocols. To address these limitations, we introduce \textbf{WINSO}, a large-scale wind and solar benchmark based on very-high-resolution (VHR) satellite imagery with ground sampling distances (GSDs) of 0.5--0.7\,m. WINSO comprises 10,962 large-size images sampled from diverse geographic locations across the Asia-Pacific region, covering at least 71,600\,$\text{km}^2$ and totaling 286.36 gigapixels, with individual image dimensions reaching 44,032$\times$62,208 pixels. Through manual annotation and expert verification, a total of 166,473 instances are labeled using horizontal bounding boxes (HBBs) for wind turbines and polygon masks for solar panels. To build baselines for clean-energy facility mapping, we evaluate state-of-the-art detection and segmentation models, specialized ultra-high-resolution (UHR) architectures, and vision-language models across different inference strategies. Furthermore, cross-dataset evaluations on two external public datasets illustrate the strong generalization capability of the WINSO. WINSO establishes a standardized benchmark to advance automated clean-energy mapping, paving the way for wide-area monitoring of the clean-energy transition.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>FM4SAR-Bench 1.0: Towards A Fair Benchmark for Evaluating Foundation Models for SAR Image Interpretation</title>
+    <link href="http://arxiv.org/abs/2611.27158v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.27158v1</id>
+    <published>2026-11-20T00:00:00Z</published>
+    <updated>2026-11-20T00:00:00Z</updated>
+    <author>
+      <name>Mingyao Chen</name>
+    </author>
+    <author>
+      <name>Yongxiang Liu</name>
+    </author>
+    <author>
+      <name>Tianpeng Liu</name>
+    </author>
+    <author>
+      <name>Yuchen Yong</name>
+    </author>
+    <author>
+      <name>Jie Zhou</name>
+    </author>
+    <author>
+      <name>Zhenhao Yang</name>
+    </author>
+    <author>
+      <name>Pinyi Huang</name>
+    </author>
+    <author>
+      <name>Weijie Li</name>
+    </author>
+    <author>
+      <name>Jiehua Zhang</name>
+    </author>
+    <author>
+      <name>Bowen Peng</name>
+    </author>
+    <author>
+      <name>Zhimao Peng</name>
+    </author>
+    <author>
+      <name>Zhiyuan Zhang</name>
+    </author>
+    <author>
+      <name>Li Liu</name>
+    </author>
+    <summary type="text">Foundation models have advanced SAR image interpretation but created a heterogeneous, fragmented model ecosystem. Existing models differ substantially in their input, training data, objectives, architectures, and release policy, yet the field lacks a unified taxonomy and comparative framework. Current evaluations rely primarily on task-specific benchmarks, which are ill-suited to fair comparison among models with fundamentally different input-output formats and task paradigms, and often overlook data transparency, reproducibility, interpretability, and deployment readiness. Limited SAR data accessibility also means high reported performance does not guarantee access to training data, code, or weights, limiting reproduction, benchmarking, and deployment. To address these issues, we propose a systematic taxonomy and hierarchical evaluation framework for SAR-related foundation models: five rating levels, six dimensions, and fine-grained criteria, with separate protocols for VFMs and VLMs. Beyond overall ratings, it yields interpretable multidimensional capability profiles and supports user-defined weighting, so rankings follow user priorities. Utilizing a fixed auxiliary multimodal large language model in combination with human review, we conduct a systematic meta-analysis and multidimensional assessment of 76 VFMs and 40 VLMs. In terms of SAR benchmark task performance under our framework, SAR-native VLMs do not significantly outperform remote sensing VLMs pretrained on mixed multimodal corpora in which SAR is one of several modalities. This lack of clear advantage is largely due to data availability: large-scale, high-quality, public annotated SAR data remain scarce, restricting both model and training-data scale for SAR-native models. The framework provides a structured basis for requirement-aware model selection and remains extensible as new models emerge.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+    <category term="Computer Vision; Machine Learning" />
+  </entry>
   <entry>
     <title>From Geographic Memory to Spatial Generalization in Large Language Models</title>
     <link href="http://arxiv.org/abs/2611.25703v1" rel="alternate" type="text/html" />
@@ -282,204 +366,6 @@
     <summary type="text">Synthetic aperture radar (SAR) foundation models provide transferable representations for diverse perception tasks in all-weather Earth observation. However, their development often relies on costly large-scale SAR pretraining, raising the question of whether such extensive domain-specific pretraining is necessary. We find that modern multimodal large language models (MLLMs) already provide visual encoders that can outperform dedicated SAR foundation models as downstream initializations. This motivates a new paradigm: reuse general visual capabilities and devote domain training to brief specialization. We therefore introduce SARVIA, an adaptive post-pretraining method that specializes modern MLLMs using self-supervised visual questions with computable answers. These questions are constructed from unlabeled observations through general image tasks that capture spatial relations and SAR-specific tasks that exploit native measurements and SAR--optical correspondence. A shared answer-prediction objective jointly trains low-rank adapters across visual and language components, with loss-driven task sampling. We then export the adapted visual encoder as a standalone backbone. With 600 adaptation steps and 2 GPU-hours, SARVIA outperforms the compared foundation models on all six SAR detection and segmentation benchmarks. Compared with dedicated SAR pretraining, SARVIA reduces domain-training costs by orders of magnitude while improving visual transfer across architectures and scales. This new paradigm shifts the emphasis from repeated, costly pretraining to a reusable specialization process that can benefit from advances in open MLLMs. Dataset and code: https://github.com/zcablii/SARVIA.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/zcablii/SARVIA"&gt;https://github.com/zcablii/SARVIA&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Out of Sight, Into Memory: Compact Visual Latents Retain Local Evidence in Ultra-High-Resolution Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2611.21457v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.21457v1</id>
-    <published>2026-11-16T00:00:00Z</published>
-    <updated>2026-11-16T00:00:00Z</updated>
-    <author>
-      <name>Meng Tang</name>
-    </author>
-    <author>
-      <name>Siyuan Du</name>
-    </author>
-    <author>
-      <name>Yuxin Liu</name>
-    </author>
-    <author>
-      <name>Shuaishuai Cao</name>
-    </author>
-    <author>
-      <name>Di Wang</name>
-    </author>
-    <author>
-      <name>Haonan Guo</name>
-    </author>
-    <summary type="text">Question answering over ultra-high-resolution (UHR) remote sensing scenes poses a tension for multimodal large language models: global overviews obscure small objects and local attributes, whereas detailed crops consume substantial context. Compressing inspected crops into short sequences of continuous visual latents offers a compact memory once crop tokens are discarded, yet diagnostic studies on natural images find that models often ignore latent content, leaving unclear whether compact latents can retain fine-grained targets lost in downsampled UHR remote sensing scenes. To isolate evidence retention from region selection, we encode high-resolution crops into latent memory tokens for frozen backbones and evaluate both their predictive utility and content dependence. Across two generations of Qwen-VL on LRS-GRO, a 64-token memory achieves 7.6- to 9.9-fold compression of retained crop tokens and improves accuracy by 2.5 to 4.8 percentage points over the downsampled global image alone, recovering most of the high-resolution crop gain with consistent behavior on XLRS-Bench. Substituting memory from another image or another region of the same scene reduces accuracy by 5.8 to 7.4 percentage points and yields lower accuracy than removing memory altogether, demonstrating that predictions depend on the encoded regional evidence. Restoring the source crop within the same model reduces the accuracy loss caused by zeroing or removing memory. These findings establish that compact visual latents retain useful local evidence in UHR remote sensing and identify evidence availability as a key factor governing their contribution.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>PhaseCLIP: Phase-Aware Frequency-Domain Adaptation of Vision-Language Models for Few-Shot Remote-Sensing Classification</title>
-    <link href="http://arxiv.org/abs/2611.20787v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.20787v1</id>
-    <published>2026-11-16T00:00:00Z</published>
-    <updated>2026-11-16T00:00:00Z</updated>
-    <author>
-      <name>Mehmet Sergen Catal</name>
-    </author>
-    <author>
-      <name>Abdurrahman Gumus</name>
-    </author>
-    <author>
-      <name>Mehmet Zübeyir Ünlü</name>
-    </author>
-    <summary type="text">Remote-sensing (RS) image scene classification aims to assign a semantic category to an overhead image, and in practice must often do so from only a handful of labelled examples, since annotation requires expert interpretation and the resulting labels transfer poorly across sensors and regions. Recent progress has come from adapting vision-language models (VLMs) such as CLIP, through learned prompts or feature adapters. Although effective, these methods construct their representation entirely in the spatial domain. RS scenes are dominated by periodic texture and regular geometry, which the Fourier spectrum describes compactly through an amplitude component, carrying texture and contrast statistics, and a phase component, carrying spatial structure. Existing frequency-domain adaptation of VLMs either exploits amplitude alone or does not separate amplitude from phase, leaving the structural component unused. In this article, we propose PhaseCLIP, which inserts phase-capable spectral modules and a feature-gating module into a frozen CLIP visual encoder and trains only 1.30% of its parameters. Because the amplitude and phase pathways share an identical parameter layout, a single weight set is learned on phase and transferred exactly to amplitude, giving a two-stage scheme that adds no parameters. Experiments on five public RS datasets, EuroSAT, PatternNet, UC Merced, LSRS and RSSCN7, against eight baselines under a matched protocol, show that PhaseCLIP attains 84.28% mean accuracy and is the best method in 23 of 30 dataset-by-shot cells, with phase contributing 1.93 points overall and 4.36 points on the most difficult dataset. Because the modules act on the spectrum of image patches and transformer tokens and leave the text encoder untouched, the approach can be extended to other RS sensors and tasks, and to other domains in which class evidence lies in spatial structure.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 23 pages, 7 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Rethinking Perceptual Similarity for Remote Sensing: Multi-Layer Attention Scoring and Human Preference Benchmarking</title>
-    <link href="http://arxiv.org/abs/2611.21816v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.21816v1</id>
-    <published>2026-11-16T00:00:00Z</published>
-    <updated>2026-11-16T00:00:00Z</updated>
-    <author>
-      <name>Eli Underwood</name>
-    </author>
-    <author>
-      <name>Marc Bosch</name>
-    </author>
-    <author>
-      <name>Neil Joshi</name>
-    </author>
-    <author>
-      <name>Jeffrey Wen</name>
-    </author>
-    <author>
-      <name>Myron Brown</name>
-    </author>
-    <summary type="text">Perceptual similarity metrics for natural images transfer poorly to remote sensing (RS), where severe geospatial and semantic failures can remain visually plausible while still being decisively wrong for downstream use. To address this, we develop a novel human-aligned perceptual quality metric for generated RS imagery and evaluate it across several generation tasks. We first conduct a controlled perturbation study where we progressively increase the severity of common synthetic perturbations. Using the layer-wise Aligned Attention Score (AAS) responses in RemoteCLIP, we find that different RS artifacts are best captured at different depths. Based on these findings, we introduce Remote Sensing Perceptual Distance (RSPD), a pairwise metric that averages seven independently calibrated layer distances without tuning on human-preference labels. To evaluate our metric on realistic RS generation tasks, we construct a blind, reference-conditioned two-alternative forced-choice (2AFC) benchmark with five 300-triplet subsets spanning synthetic artifacts, airborne and spaceborne super-resolution, SAR-to-optical translation, and timeseries controls. We also construct a 300-triplet ordered misregistration benchmark with deterministic labels. Using the same RemoteCLIP checkpoint, RSPD substantially outperforms simple cosine distance with the final global embedding and is competitive with the strongest generic baselines across the realistic RS generation tasks.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; WACV 2027&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>GeoReVis: Learning Selective Revision and Evidence Consolidation for Remote Sensing Segmentation</title>
-    <link href="http://arxiv.org/abs/2611.20183v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.20183v1</id>
-    <published>2026-11-15T00:00:00Z</published>
-    <updated>2026-11-15T00:00:00Z</updated>
-    <author>
-      <name>Ke An</name>
-    </author>
-    <author>
-      <name>Liang Chen</name>
-    </author>
-    <author>
-      <name>Yupei Wang</name>
-    </author>
-    <summary type="text">Recent methods try to inspect and revise masks to mitigate referential ambiguity and localization errors caused by complex spatial relations in language-guided remote sensing segmentation. However, these solutions often lead to Revision Degradation: revising missing regions may introduce errors into previously correct ones. Even a globally better mask can omit correct regions found in inferior masks. We term this Evidence Fragmentation: correct target evidence is scattered across imperfect masks. All masks generated by the model at this time are suboptimal. We propose GeoReVis, which unifies revision guided by execution feedback, Candidate Selection, and Cross-Mask Evidence Consolidation. It learns fine-grained revision from real actions that improve segmentation when executed and learns to select a better mask through quality comparisons between actual candidates, reducing the risk of degradation during revision. The selected whole mask can still discard useful regions. GeoReVis therefore retains all candidates across rounds, partitions their spatial disagreements into composable regions, and jointly reconstructs regions conditioned on the full instruction and context. This makes complementary and fragmentary evidence reusable regardless of its source candidate's overall quality, yielding improved segmentation. We further build a data pipeline to generate fine-grained multi-round segmentation trajectories and derive supervision for revision actions, candidate selection, and region composition from the model's own outputs, extending training beyond whole-mask IoU supervision. We also propose ReVis-Eval, a benchmark protocol evaluating multi-round revision and cross-round evidence consolidation accuracy. Experiments on ReVis-Eval and 5 benchmarks for remote sensing reasoning and referring segmentation demonstrate the effectiveness of GeoReVis.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 31 pages&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>MAPS: A Multimodal Agentic Framework for POI Data Production Based on Crowdsourced Street-view Imagery</title>
-    <link href="http://arxiv.org/abs/2611.19807v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.19807v1</id>
-    <published>2026-11-15T00:00:00Z</published>
-    <updated>2026-11-15T00:00:00Z</updated>
-    <author>
-      <name>Sijie Ruan</name>
-    </author>
-    <author>
-      <name>Tingyu Xie</name>
-    </author>
-    <author>
-      <name>Mingfei Liu</name>
-    </author>
-    <author>
-      <name>Yicheng Tang</name>
-    </author>
-    <author>
-      <name>Haoyu Han</name>
-    </author>
-    <author>
-      <name>Jingnan Qi</name>
-    </author>
-    <author>
-      <name>Jingshu Zeng</name>
-    </author>
-    <author>
-      <name>Dongqi Xu</name>
-    </author>
-    <author>
-      <name>Jing Wang</name>
-    </author>
-    <author>
-      <name>Shuliang Wang</name>
-    </author>
-    <summary type="text">Point-of-interest (POI) databases support location-based services, yet urban changes quickly make their records stale and manual maintenance is costly. Crowdsourced street-view images provide timely visual evidence, but converting them into database actions requires separating multiple POIs and irrelevant text in each image, then resolving incomplete observations against ambiguous records. We study Street-view Image-based POI Data Production and propose MAPS, the first framework to integrate structured POI extraction with database maintenance from such imagery. MAPS contains two cascaded modules. SPICE progressively adapts a lightweight vision-language model to reconstruct and filter text, group entries belonging to the same POI, and classify their semantics and completeness. RIMA retrieves candidate records, performs evidence-grounded POI matching and attribute-level reasoning, and selectively acquires complementary visual, geospatial, or external-source evidence when necessary. In human-reviewed full-task evaluation, MAPS outperforms the strongest baseline by 21.8\%. MAPS has also been deployed in Kuaishou's large-scale POI production pipeline, reducing average processing time by 76.9\% relative to manual annotation. These results demonstrate the effectiveness and practical value of MAPS for scalable POI maintenance.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted for presentation at the 33rd ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2027), Cycle 1&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="cs.DB" />
-  </entry>
-  <entry>
-    <title>XLSAR-Bench: Towards Extremely Large SAR Imagery Understanding of MLLMs</title>
-    <link href="http://arxiv.org/abs/2611.19364v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.19364v1</id>
-    <published>2026-11-14T00:00:00Z</published>
-    <updated>2026-11-14T00:00:00Z</updated>
-    <author>
-      <name>La Jiang</name>
-    </author>
-    <author>
-      <name>Lingfeng Chen</name>
-    </author>
-    <author>
-      <name>Jiaqi Zhu</name>
-    </author>
-    <author>
-      <name>Fengrong Guo</name>
-    </author>
-    <author>
-      <name>Jiehua Zhang</name>
-    </author>
-    <author>
-      <name>Panhe Hu</name>
-    </author>
-    <author>
-      <name>Li Liu</name>
-    </author>
-    <author>
-      <name>Zhen Liu</name>
-    </author>
-    <summary type="text">The rapid development of multimodal large language models (MLLMs) has highlighted the need for comprehensive benchmarks to assess their capabilities and limitations in remote sensing (RS). However, evaluating MLLMs in large-size synthetic aperture radar (SAR) scenarios remains challenging, as understanding complete scenes requires both global semantic interpretation and fine-grained target perception. Existing SAR benchmarks predominantly rely on small image patches, limiting their ability to assess these capabilities jointly. To address these limitations, we present XLSAR-Bench, a comprehensive benchmark for evaluating the perception and reasoning capabilities of MLLMs in large-scene SAR imagery. XLSAR-Bench comprises 405 images with an average size of 7153$\times$7153 pixels, ten tasks spanning visual question answering, visual grounding, and detailed image captioning, with all evaluation samples meticulously annotated manually, assisted by a semi-automatic captioner. Experimental results from general-purpose and domain-specific MLLMs reveal persistent challenges in understanding large SAR scenes and accurately perceiving small targets. We have open-sourced XLSAR-Bench to support further research in developing more powerful MLLMs for complete large SAR scenes.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;IC;VG&lt;/p&gt;</content>
-    <category term="Image and Video Processing" />
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Puzzle: One Pass Is Not Enough for Open-Vocabulary Remote Sensing Segmentation</title>
-    <link href="http://arxiv.org/abs/2611.19146v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.19146v1</id>
-    <published>2026-11-14T00:00:00Z</published>
-    <updated>2026-11-14T00:00:00Z</updated>
-    <author>
-      <name>Wensong Xu</name>
-    </author>
-    <author>
-      <name>Siqi Lu</name>
-    </author>
-    <author>
-      <name>Jibao Yuan</name>
-    </author>
-    <author>
-      <name>Yongbin Zheng</name>
-    </author>
-    <summary type="text">Open-vocabulary remote sensing image segmentation (OVRSIS) enables the segmentation of unseen classes without additional annotation or retraining. By analyzing the predictions of existing OVRSIS methods, we find that many misclassified patches coexist with visually similar, correctly classified patches of the same class within the same image. Unfortunately, most of these methods stop after a single inference rather than using their predictions to guide further inference. Motivated by this observation, we propose \textbf{Puzzle}, a plug-and-play iterative re-inference framework that combines prediction history with a visual-similarity prior to progressively refine patch-level attention. Puzzle employs a lightweight history-conditioned controller to regulate each patch's contribution as an information source and its reliance on visually similar patches, while an adaptive stopping rule determines when to stop. It keeps the segmentation model frozen and reuses the same controller across different models and datasets without retraining. Extensive experiments demonstrate consistent performance improvements across diverse OVRSIS models and datasets, highlighting the strong transferability of Puzzle. Moreover, Puzzle can further improve the performance of SOTA methods.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>

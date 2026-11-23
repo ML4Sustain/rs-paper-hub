@@ -8529,5 +8529,43 @@
     "_added_date": "2026-11-18",
     "Category": "Method",
     "_tasks": "SR"
+  },
+  {
+    "Type": "Image and Video Processing",
+    "Subtype": "Computer Vision; Machine Learning",
+    "Date": "2026-11-20",
+    "Month": 11,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "FM4SAR-Bench 1.0: Towards A Fair Benchmark for Evaluating Foundation Models for SAR Image Interpretation",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2611.27158v1",
+    "Abstract": "Foundation models have advanced SAR image interpretation but created a heterogeneous, fragmented model ecosystem. Existing models differ substantially in their input, training data, objectives, architectures, and release policy, yet the field lacks a unified taxonomy and comparative framework. Current evaluations rely primarily on task-specific benchmarks, which are ill-suited to fair comparison among models with fundamentally different input-output formats and task paradigms, and often overlook data transparency, reproducibility, interpretability, and deployment readiness. Limited SAR data accessibility also means high reported performance does not guarantee access to training data, code, or weights, limiting reproduction, benchmarking, and deployment. To address these issues, we propose a systematic taxonomy and hierarchical evaluation framework for SAR-related foundation models: five rating levels, six dimensions, and fine-grained criteria, with separate protocols for VFMs and VLMs. Beyond overall ratings, it yields interpretable multidimensional capability profiles and supports user-defined weighting, so rankings follow user priorities. Utilizing a fixed auxiliary multimodal large language model in combination with human review, we conduct a systematic meta-analysis and multidimensional assessment of 76 VFMs and 40 VLMs. In terms of SAR benchmark task performance under our framework, SAR-native VLMs do not significantly outperform remote sensing VLMs pretrained on mixed multimodal corpora in which SAR is one of several modalities. This lack of clear advantage is largely due to data availability: large-scale, high-quality, public annotated SAR data remain scarce, restricting both model and training-data scale for SAR-native models. The framework provides a structured basis for requirement-aware model selection and remains extensible as new models emerge.",
+    "code": "",
+    "Publication": "",
+    "BibTex": "@article{chen2026fmsarbench,\n  title={FM4SAR-Bench 1.0: Towards A Fair Benchmark for Evaluating Foundation Models for SAR Image Interpretation},\n  author={Mingyao Chen and Yongxiang Liu and Tianpeng Liu and Yuchen Yong and Jie Zhou and Zhenhao Yang and Pinyi Huang and Weijie Li and Jiehua Zhang and Bowen Peng and Zhimao Peng and Zhiyuan Zhang and Li Liu},\n  journal={arXiv preprint arXiv:2611.27158v1},\n  year={2026},\n  url={http://arxiv.org/abs/2611.27158v1}\n}",
+    "Authors": "Mingyao Chen, Yongxiang Liu, Tianpeng Liu, Yuchen Yong, Jie Zhou, Zhenhao Yang, Pinyi Huang, Weijie Li, Jiehua Zhang, Bowen Peng, Zhimao Peng, Zhiyuan Zhang, Li Liu",
+    "_added_date": "2026-11-23",
+    "Category": "Dataset",
+    "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-11-20",
+    "Month": 11,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "PIU-CR: Physics-Informed Deep Unfolding with SAR-Optical Image Fusion for Cloud Removal",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2611.27093v1",
+    "Abstract": "Multi-modal cloud removal exploits complementary optical and synthetic aperture radar (SAR) images to restore cloud-degraded remote sensing images. Most existing methods rely on black-box, data-driven architectures with limited interpretability of cross-modal interactions. Although some attempts introduce physical priors into networks, their oversimplified formulations fail to faithfully characterize the underlying physical imaging process and the networks remain loosely coupled with optimization variables. To address these issues, we propose a physics-informed deep unfolding network for cloud removal via optical-SAR image fusion, termed as PIU-CR. We first formulate cloud removal as a physics-informed optimization problem. Specifically, we fundamentally ground the optimization in the physical imaging mechanism of cloud degradation by embedding the atmospheric scattering model into the data fidelity term. Then, the regularization terms establish an explicit cross-modal interaction mechanism, overcoming the single-modal information scarcity and the obscure, uninterpretable interactions in black-box models. They are dedicated to SAR-guided structure and spectral regularization, jointly introducing cross-modal structural feature alignment and coordinated spectral consistency constraints. The resulting optimization problem is then unfolded into a multi-stage neural network with dedicated structure and spectral branches. Each stage corresponds to an explicit optimization iteration step, enabling interpretable and effective reconstruction process. Experiments demonstrate that the proposed method outperforms state-of-the-art methods. The code is publicly available at https://github.com/Fgq188/PIU_CR.",
+    "code": "https://github.com/Fgq188/PIU_CR",
+    "Publication": "",
+    "BibTex": "@article{fan2026piucr,\n  title={PIU-CR: Physics-Informed Deep Unfolding with SAR-Optical Image Fusion for Cloud Removal},\n  author={Gengque Fan and Han Xu and Junxi Li and Hao Zhang and Guangcan Liu and Jiayi Ma},\n  journal={arXiv preprint arXiv:2611.27093v1},\n  year={2026},\n  url={http://arxiv.org/abs/2611.27093v1}\n}",
+    "Authors": "Gengque Fan, Han Xu, Junxi Li, Hao Zhang, Guangcan Liu, Jiayi Ma",
+    "_added_date": "2026-11-23",
+    "Category": "Method",
+    "_tasks": ""
   }
 ]

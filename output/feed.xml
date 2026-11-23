@@ -4,12 +4,192 @@
   <id>https://rspaper.top/output/feed.xml</id>
   <link href="https://rspaper.top/output/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-20T07:58:03Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 30 entries</subtitle>
+  <updated>2026-11-23T04:18:30Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 22 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>WINSO: A Large-Size Very-High-Resolution Remote Sensing Dataset for Wind Turbine Detection and Solar Panel Segmentation</title>
+    <link href="http://arxiv.org/abs/2611.27241v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.27241v1</id>
+    <published>2026-11-20T00:00:00Z</published>
+    <updated>2026-11-20T00:00:00Z</updated>
+    <author>
+      <name>Di Wang</name>
+    </author>
+    <author>
+      <name>Ke Li</name>
+    </author>
+    <author>
+      <name>Zhaokun Li</name>
+    </author>
+    <author>
+      <name>Weiping Ni</name>
+    </author>
+    <author>
+      <name>Junzheng Wu</name>
+    </author>
+    <author>
+      <name>Yahu Liu</name>
+    </author>
+    <author>
+      <name>Quan Wang</name>
+    </author>
+    <author>
+      <name>Xinbo Gao</name>
+    </author>
+    <summary type="text">Wind and solar energy are central to the global transition toward net-zero emissions and sustainable development. Accurate spatial inventories of wind and solar facilities are essential for future energy planning. Satellite remote sensing provides a practical and efficient means to acquire such geospatial data at scale. However, reliable facility mapping from large-size satellite images remains constrained by the scarcity of carefully annotated datasets and the lack of systematic evaluation protocols. To address these limitations, we introduce \textbf{WINSO}, a large-scale wind and solar benchmark based on very-high-resolution (VHR) satellite imagery with ground sampling distances (GSDs) of 0.5--0.7\,m. WINSO comprises 10,962 large-size images sampled from diverse geographic locations across the Asia-Pacific region, covering at least 71,600\,$\text{km}^2$ and totaling 286.36 gigapixels, with individual image dimensions reaching 44,032$\times$62,208 pixels. Through manual annotation and expert verification, a total of 166,473 instances are labeled using horizontal bounding boxes (HBBs) for wind turbines and polygon masks for solar panels. To build baselines for clean-energy facility mapping, we evaluate state-of-the-art detection and segmentation models, specialized ultra-high-resolution (UHR) architectures, and vision-language models across different inference strategies. Furthermore, cross-dataset evaluations on two external public datasets illustrate the strong generalization capability of the WINSO. WINSO establishes a standardized benchmark to advance automated clean-energy mapping, paving the way for wide-area monitoring of the clean-energy transition.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>FM4SAR-Bench 1.0: Towards A Fair Benchmark for Evaluating Foundation Models for SAR Image Interpretation</title>
+    <link href="http://arxiv.org/abs/2611.27158v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.27158v1</id>
+    <published>2026-11-20T00:00:00Z</published>
+    <updated>2026-11-20T00:00:00Z</updated>
+    <author>
+      <name>Mingyao Chen</name>
+    </author>
+    <author>
+      <name>Yongxiang Liu</name>
+    </author>
+    <author>
+      <name>Tianpeng Liu</name>
+    </author>
+    <author>
+      <name>Yuchen Yong</name>
+    </author>
+    <author>
+      <name>Jie Zhou</name>
+    </author>
+    <author>
+      <name>Zhenhao Yang</name>
+    </author>
+    <author>
+      <name>Pinyi Huang</name>
+    </author>
+    <author>
+      <name>Weijie Li</name>
+    </author>
+    <author>
+      <name>Jiehua Zhang</name>
+    </author>
+    <author>
+      <name>Bowen Peng</name>
+    </author>
+    <author>
+      <name>Zhimao Peng</name>
+    </author>
+    <author>
+      <name>Zhiyuan Zhang</name>
+    </author>
+    <author>
+      <name>Li Liu</name>
+    </author>
+    <summary type="text">Foundation models have advanced SAR image interpretation but created a heterogeneous, fragmented model ecosystem. Existing models differ substantially in their input, training data, objectives, architectures, and release policy, yet the field lacks a unified taxonomy and comparative framework. Current evaluations rely primarily on task-specific benchmarks, which are ill-suited to fair comparison among models with fundamentally different input-output formats and task paradigms, and often overlook data transparency, reproducibility, interpretability, and deployment readiness. Limited SAR data accessibility also means high reported performance does not guarantee access to training data, code, or weights, limiting reproduction, benchmarking, and deployment. To address these issues, we propose a systematic taxonomy and hierarchical evaluation framework for SAR-related foundation models: five rating levels, six dimensions, and fine-grained criteria, with separate protocols for VFMs and VLMs. Beyond overall ratings, it yields interpretable multidimensional capability profiles and supports user-defined weighting, so rankings follow user priorities. Utilizing a fixed auxiliary multimodal large language model in combination with human review, we conduct a systematic meta-analysis and multidimensional assessment of 76 VFMs and 40 VLMs. In terms of SAR benchmark task performance under our framework, SAR-native VLMs do not significantly outperform remote sensing VLMs pretrained on mixed multimodal corpora in which SAR is one of several modalities. This lack of clear advantage is largely due to data availability: large-scale, high-quality, public annotated SAR data remain scarce, restricting both model and training-data scale for SAR-native models. The framework provides a structured basis for requirement-aware model selection and remains extensible as new models emerge.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+    <category term="Computer Vision; Machine Learning" />
+  </entry>
+  <entry>
+    <title>How Does SAM-3 Adapt? Capacity, Update Geometry, and Domain Transfer</title>
+    <link href="http://arxiv.org/abs/2611.27142v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.27142v1</id>
+    <published>2026-11-20T00:00:00Z</published>
+    <updated>2026-11-20T00:00:00Z</updated>
+    <author>
+      <name>Allan Kazakov</name>
+    </author>
+    <author>
+      <name>Abdurrahman Javat</name>
+    </author>
+    <author>
+      <name>Duygu Cakir</name>
+    </author>
+    <summary type="text">Promptable segmentation foundation models are increasingly used in specialized domains, but it remains unclear how SAM-3 should be fine-tuned when adapting it beyond its original training distribution. We study this question by comparing five adaptation families --LoRA, HiRA, KRAdapter, QuanTA, and Full Fine-Tuning-- across five segmentation datasets spanning medical imaging, remote sensing, and dense material segmentation. Across these datasets, compact parameter-efficient fine-tuning methods often match or approach Full Fine-Tuning in DSC and IoU, suggesting that strong in-domain adaptation does not always require updating the full model. However, this performance cannot be explained by nominal adapter rank or trainable parameter count alone. To investigate why different methods perform similarly, we analyze their update spectra and their behavior under LoveDA Urban/Rural transfer. Our SVD analysis shows that Full Fine-Tuning updates are spectrally compressible. However, successful PEFT methods do not simply recover the same update directions; instead, they often concentrate changes in different components and subspaces. The domain-transfer study further shows that methods with similar in-domain performance can respond differently under distribution shift. Together, these results suggest that SAM-3 adaptation is often capacity-saturated in practice, while competitive fine-tuning arises through method-specific update paths rather than a single low-rank approximation to Full Fine-Tuning.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ECCV 2026 MEDFMB Workshop&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>RemoteEvolver: Expanding Earth Observation Capabilities through Agent Harness Evolution</title>
+    <link href="http://arxiv.org/abs/2611.27110v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.27110v1</id>
+    <published>2026-11-20T00:00:00Z</published>
+    <updated>2026-11-20T00:00:00Z</updated>
+    <author>
+      <name>Shengxiang Xu</name>
+    </author>
+    <author>
+      <name>Liang Yao</name>
+    </author>
+    <author>
+      <name>Shuyi Chen</name>
+    </author>
+    <author>
+      <name>Yishu Wang</name>
+    </author>
+    <author>
+      <name>Shimin Di</name>
+    </author>
+    <author>
+      <name>Fan Liu</name>
+    </author>
+    <author>
+      <name>Bishun Yao</name>
+    </author>
+    <author>
+      <name>Hanghui Guo</name>
+    </author>
+    <author>
+      <name>Xinyu Liu</name>
+    </author>
+    <author>
+      <name>Chengye Liang</name>
+    </author>
+    <author>
+      <name>Yuyu Luo</name>
+    </author>
+    <author>
+      <name>Min-Ling Zhang</name>
+    </author>
+    <summary type="text">We are interested in developing a continually self-improving remote sensing agentic system. It should identify and address its capability gaps, retaining the resulting improvements to enhance performance on subsequent tasks. However, existing systems typically rely on fixed toolsets and confine their experience accumulation to re-orchestrating predefined capabilities, constraining both capability expansion and the transfer of improvements across tasks. As the infrastructure for agentic systems, the harness manages tools and workflow knowledge as editable, persistent resources outside the base model. These resources can therefore be updated and reused across tasks without additional post-training. Based on these observations, we propose RemoteEvolver, an external harness for remote sensing agents that drives tool and workflow evolution through execution feedback. With the base model parameters fixed, RemoteEvolver acquires missing specialized tools on demand and distills verified successful execution experience from individual tasks into agent skills that can be reused across tasks. The acquired tools and accumulated skills jointly support planning and execution on subsequent tasks. Experiments on Earth-Bench and OpenEarthAgent-Bench show that RemoteEvolver achieves average accuracy gains of 8.18 and 23.86 percentage points over its initial state when tools are fully available and partially missing. Under the same settings, it also outperforms the state-of-the-art methods by an average of 6.77 and 17.10 percentage points, respectively.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>PIU-CR: Physics-Informed Deep Unfolding with SAR-Optical Image Fusion for Cloud Removal</title>
+    <link href="http://arxiv.org/abs/2611.27093v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.27093v1</id>
+    <published>2026-11-20T00:00:00Z</published>
+    <updated>2026-11-20T00:00:00Z</updated>
+    <author>
+      <name>Gengque Fan</name>
+    </author>
+    <author>
+      <name>Han Xu</name>
+    </author>
+    <author>
+      <name>Junxi Li</name>
+    </author>
+    <author>
+      <name>Hao Zhang</name>
+    </author>
+    <author>
+      <name>Guangcan Liu</name>
+    </author>
+    <author>
+      <name>Jiayi Ma</name>
+    </author>
+    <summary type="text">Multi-modal cloud removal exploits complementary optical and synthetic aperture radar (SAR) images to restore cloud-degraded remote sensing images. Most existing methods rely on black-box, data-driven architectures with limited interpretability of cross-modal interactions. Although some attempts introduce physical priors into networks, their oversimplified formulations fail to faithfully characterize the underlying physical imaging process and the networks remain loosely coupled with optimization variables. To address these issues, we propose a physics-informed deep unfolding network for cloud removal via optical-SAR image fusion, termed as PIU-CR. We first formulate cloud removal as a physics-informed optimization problem. Specifically, we fundamentally ground the optimization in the physical imaging mechanism of cloud degradation by embedding the atmospheric scattering model into the data fidelity term. Then, the regularization terms establish an explicit cross-modal interaction mechanism, overcoming the single-modal information scarcity and the obscure, uninterpretable interactions in black-box models. They are dedicated to SAR-guided structure and spectral regularization, jointly introducing cross-modal structural feature alignment and coordinated spectral consistency constraints. The resulting optimization problem is then unfolded into a multi-stage neural network with dedicated structure and spectral branches. Each stage corresponds to an explicit optimization iteration step, enabling interpretable and effective reconstruction process. Experiments demonstrate that the proposed method outperforms state-of-the-art methods. The code is publicly available at https://github.com/Fgq188/PIU_CR.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Fgq188/PIU_CR"&gt;https://github.com/Fgq188/PIU_CR&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Tracing Magnetic Helicity in Interplanetary Space. A Multi-Spacecraft Analysis of the 2024 March 23 ICME</title>
     <link href="http://arxiv.org/abs/2611.26455v1" rel="alternate" type="text/html" />
@@ -530,347 +710,6 @@
     <summary type="text">Synthetic aperture radar (SAR) foundation models provide transferable representations for diverse perception tasks in all-weather Earth observation. However, their development often relies on costly large-scale SAR pretraining, raising the question of whether such extensive domain-specific pretraining is necessary. We find that modern multimodal large language models (MLLMs) already provide visual encoders that can outperform dedicated SAR foundation models as downstream initializations. This motivates a new paradigm: reuse general visual capabilities and devote domain training to brief specialization. We therefore introduce SARVIA, an adaptive post-pretraining method that specializes modern MLLMs using self-supervised visual questions with computable answers. These questions are constructed from unlabeled observations through general image tasks that capture spatial relations and SAR-specific tasks that exploit native measurements and SAR--optical correspondence. A shared answer-prediction objective jointly trains low-rank adapters across visual and language components, with loss-driven task sampling. We then export the adapted visual encoder as a standalone backbone. With 600 adaptation steps and 2 GPU-hours, SARVIA outperforms the compared foundation models on all six SAR detection and segmentation benchmarks. Compared with dedicated SAR pretraining, SARVIA reduces domain-training costs by orders of magnitude while improving visual transfer across architectures and scales. This new paradigm shifts the emphasis from repeated, costly pretraining to a reusable specialization process that can benefit from advances in open MLLMs. Dataset and code: https://github.com/zcablii/SARVIA.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/zcablii/SARVIA"&gt;https://github.com/zcablii/SARVIA&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>STARS: Stage-Adaptive Responsibility Separation for Shadow Removal in Remote Sensing Images</title>
-    <link href="http://arxiv.org/abs/2611.20698v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.20698v1</id>
-    <published>2026-11-16T00:00:00Z</published>
-    <updated>2026-11-16T00:00:00Z</updated>
-    <author>
-      <name>Gaoliang Song</name>
-    </author>
-    <author>
-      <name>Chengjie Li</name>
-    </author>
-    <author>
-      <name>Pengju Liu</name>
-    </author>
-    <author>
-      <name>Chenchen Chang</name>
-    </author>
-    <author>
-      <name>Jinhao You</name>
-    </author>
-    <author>
-      <name>Hongzhi Zhang</name>
-    </author>
-    <summary type="text">Shadows are a ubiquitous radiative attenuation phenomenon in remote sensing images and can severely affect high-resolution remote sensing interpretation tasks. In shadow removal, although introducing a mask prior provides explicit positional information for the restoration network, it also causes non-shadow regions to be modulated by the shadow prior, producing a systematic brightness shift; notably, this phenomenon is independent of whether the mask is accurate. In remote sensing images, non-shadow regions usually occupy a larger proportion, so a small shift over these regions incurs a much higher cost on whole-image metrics than an equal gain in shadow regions. Adopting a task-decoupling perspective, we therefore decompose shadow removal into two tasks, shadow-region restoration and non-shadow-region identity, within a cascaded architecture, and handle them sequentially. Based on this insight, we propose STARS, a cascaded shadow removal framework that separates regional responsibilities across stages. The method retains the advantages of the shadow mask while resolving the degradation of non-shadow regions, without requiring a complex parallel dual-branch structure. Meanwhile, to introduce large-model prior knowledge into remote sensing tasks, we further design a Feature Selection and Fusion Adapter (FSFA). We conduct extensive experiments on three benchmark datasets, UAV-SC+, ISTD+ and WSRD+ 2026, demonstrating the superiority of STARS. The framework shows that decoupling regional responsibilities can resolve the intrinsic contradiction of mask priors, providing a new direction for image restoration with region heterogeneity.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, 8 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>InterRSGaussian: Interactive Multi-view Instance Segmentation for 3D Remote Sensing Scenes</title>
-    <link href="http://arxiv.org/abs/2611.20425v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.20425v1</id>
-    <published>2026-11-16T00:00:00Z</published>
-    <updated>2026-11-16T00:00:00Z</updated>
-    <author>
-      <name>Zipeng Qi</name>
-    </author>
-    <author>
-      <name>Zhengxia Zou</name>
-    </author>
-    <author>
-      <name>Zhenwei Shi</name>
-    </author>
-    <summary type="text">Remote sensing image segmentation plays a critical role in various applications. Interactive instance segmentation, a specialized task within image segmentation, aims to generate precise segmentation results for target objects based on user input prompts. However, previous studies on interactive instance segmentation primarily focus on single-view images, limiting their ability to comprehensively understand complex 3D remote sensing scenes. In this study, we extend interactive instance segmentation from a single-view to a multi-view framework, which can also be easily converted to a 3D segmentation format, thus achieving more accurate and comprehensive 3D remote sensing scene perception across multiple views. First, we construct a multi-view interactive instance segmentation dataset for remote sensing, comprising five distinct scenes, each captured from about one hundred different views. Second, we propose InterRSGaussian, a novel instance segmentation method based on 3D Gaussians. InterRSGaussian enables users to provide point clicks on target objects from any arbitrary view and generates view-consistent instance segmentation results across all input views without requiring manual annotations. The resulting multi-view segmentation can further be projected onto 3D point clouds for 3D segmentation. To improve training efficiency and segmentation performance, we introduce a prior distillation network for initialization. Overall, this study extends traditional 2D remote sensing scene perception into a 3D multi-view framework, enabling a more comprehensive understanding of target objects in complex environments with user interactivity.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG;3D&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Out of Sight, Into Memory: Compact Visual Latents Retain Local Evidence in Ultra-High-Resolution Remote Sensing</title>
-    <link href="http://arxiv.org/abs/2611.21457v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.21457v1</id>
-    <published>2026-11-16T00:00:00Z</published>
-    <updated>2026-11-16T00:00:00Z</updated>
-    <author>
-      <name>Meng Tang</name>
-    </author>
-    <author>
-      <name>Siyuan Du</name>
-    </author>
-    <author>
-      <name>Yuxin Liu</name>
-    </author>
-    <author>
-      <name>Shuaishuai Cao</name>
-    </author>
-    <author>
-      <name>Di Wang</name>
-    </author>
-    <author>
-      <name>Haonan Guo</name>
-    </author>
-    <summary type="text">Question answering over ultra-high-resolution (UHR) remote sensing scenes poses a tension for multimodal large language models: global overviews obscure small objects and local attributes, whereas detailed crops consume substantial context. Compressing inspected crops into short sequences of continuous visual latents offers a compact memory once crop tokens are discarded, yet diagnostic studies on natural images find that models often ignore latent content, leaving unclear whether compact latents can retain fine-grained targets lost in downsampled UHR remote sensing scenes. To isolate evidence retention from region selection, we encode high-resolution crops into latent memory tokens for frozen backbones and evaluate both their predictive utility and content dependence. Across two generations of Qwen-VL on LRS-GRO, a 64-token memory achieves 7.6- to 9.9-fold compression of retained crop tokens and improves accuracy by 2.5 to 4.8 percentage points over the downsampled global image alone, recovering most of the high-resolution crop gain with consistent behavior on XLRS-Bench. Substituting memory from another image or another region of the same scene reduces accuracy by 5.8 to 7.4 percentage points and yields lower accuracy than removing memory altogether, demonstrating that predictions depend on the encoded regional evidence. Restoring the source crop within the same model reduces the accuracy loss caused by zeroing or removing memory. These findings establish that compact visual latents retain useful local evidence in UHR remote sensing and identify evidence availability as a key factor governing their contribution.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Model-based neural network for global floodplains analysis</title>
-    <link href="http://arxiv.org/abs/2611.21146v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.21146v1</id>
-    <published>2026-11-16T00:00:00Z</published>
-    <updated>2026-11-16T00:00:00Z</updated>
-    <author>
-      <name>Pierre Audisio</name>
-    </author>
-    <author>
-      <name>Barbara Belletti</name>
-    </author>
-    <author>
-      <name>Nelly Pustelnik</name>
-    </author>
-    <summary type="text">We address the super-resolution of multispectral remote sensing imagery for long-term floodplain monitoring, enhancing Landsat acquisitions towards Sentinel-2 resolution. Exploiting the period during which both missions observed the same areas, we build DLhasa-L2S , to our knowledge the first paired dataset dedicated to multispectral super-resolution for river analysis. It covers the Lhasa River (Tibet), whose strong anthropogenic changes and diverse hydromorphological profiles make it an ideal study area. We developed two model-based neural networks: a forward-backward (FB) plug-and-play scheme and an unfolded FB scheme. We compared them against learned neural networks baselines (SwinIR, RDN) on synthetic data, on real scenes, and through a statistical test over the whole real paired Landsat-Sentinel dataset. The unfolded network achieves the highest PSNR and SSIM on the real RGB components with fast inference, offering the best trade-off between accuracy and computational cost. For NDWI-based water segmentation, its performance shows no statistically significant difference from that of the best methods.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Source-Free Domain Adaptation for Multi-Label Image Classification: A Framework, Baselines, and Benchmark</title>
-    <link href="http://arxiv.org/abs/2611.21107v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.21107v1</id>
-    <published>2026-11-16T00:00:00Z</published>
-    <updated>2026-11-16T00:00:00Z</updated>
-    <author>
-      <name>Salih Numan Büyükbaş</name>
-    </author>
-    <author>
-      <name>Erchan Aptoula</name>
-    </author>
-    <author>
-      <name>Mamatha Thota</name>
-    </author>
-    <author>
-      <name>Petra Bosilj</name>
-    </author>
-    <summary type="text">Source-free domain adaptation (SFDA) adapts a model trained on a labelled source domain to an unlabelled target domain without access to the source data. Almost the entire SFDA literature assumes mutually exclusive classes, yet many deployed settings are multi-label. This paper formulates SFDA for multi-label classification and establishes the first benchmark for it: five adaptation tasks over six datasets spanning remote sensing, natural, clipart-style and driving imagery, with four single-label SFDA methods extended to provide the first baselines and a published multi-label method run alongside them, over three seeds. The benchmark shows that extending a single-label method is unreliable rather than merely suboptimal: half of the extended baselines fail to improve on the unadapted source model at all, and on two of the five tasks none of them does. The failures are not incidental. Nearest-centroid pseudo-labelling, softmax-based confidence, the diversity term of information maximization and confidence-weighted prototype construction each rely on mutual exclusivity, and each fails differently without it, so replacing the softmax with per-class sigmoids is a valid but insufficient extension. Multi-label Prototype Alignment with Contrastive Teaching (MPACT) is proposed in response, a mean-teacher framework whose objective, prototype construction and alignment term are each reconsidered for overlapping label sets. It attains the best average on every reported metric and is the only method that improves on the unadapted source model on all five tasks. The analysis further introduces a prototype-agreement diagnostic separating feature-space alignment from self-reinforcing agreement with the classifier, and reports a negative result for confidence-based pseudo-label filtering.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 21 pages, 5 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>PhaseCLIP: Phase-Aware Frequency-Domain Adaptation of Vision-Language Models for Few-Shot Remote-Sensing Classification</title>
-    <link href="http://arxiv.org/abs/2611.20787v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.20787v1</id>
-    <published>2026-11-16T00:00:00Z</published>
-    <updated>2026-11-16T00:00:00Z</updated>
-    <author>
-      <name>Mehmet Sergen Catal</name>
-    </author>
-    <author>
-      <name>Abdurrahman Gumus</name>
-    </author>
-    <author>
-      <name>Mehmet Zübeyir Ünlü</name>
-    </author>
-    <summary type="text">Remote-sensing (RS) image scene classification aims to assign a semantic category to an overhead image, and in practice must often do so from only a handful of labelled examples, since annotation requires expert interpretation and the resulting labels transfer poorly across sensors and regions. Recent progress has come from adapting vision-language models (VLMs) such as CLIP, through learned prompts or feature adapters. Although effective, these methods construct their representation entirely in the spatial domain. RS scenes are dominated by periodic texture and regular geometry, which the Fourier spectrum describes compactly through an amplitude component, carrying texture and contrast statistics, and a phase component, carrying spatial structure. Existing frequency-domain adaptation of VLMs either exploits amplitude alone or does not separate amplitude from phase, leaving the structural component unused. In this article, we propose PhaseCLIP, which inserts phase-capable spectral modules and a feature-gating module into a frozen CLIP visual encoder and trains only 1.30% of its parameters. Because the amplitude and phase pathways share an identical parameter layout, a single weight set is learned on phase and transferred exactly to amplitude, giving a two-stage scheme that adds no parameters. Experiments on five public RS datasets, EuroSAT, PatternNet, UC Merced, LSRS and RSSCN7, against eight baselines under a matched protocol, show that PhaseCLIP attains 84.28% mean accuracy and is the best method in 23 of 30 dataset-by-shot cells, with phase contributing 1.93 points overall and 4.36 points on the most difficult dataset. Because the modules act on the spectrum of image patches and transformer tokens and leave the text encoder untouched, the approach can be extended to other RS sensors and tasks, and to other domains in which class evidence lies in spatial structure.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 23 pages, 7 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Rethinking Perceptual Similarity for Remote Sensing: Multi-Layer Attention Scoring and Human Preference Benchmarking</title>
-    <link href="http://arxiv.org/abs/2611.21816v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.21816v1</id>
-    <published>2026-11-16T00:00:00Z</published>
-    <updated>2026-11-16T00:00:00Z</updated>
-    <author>
-      <name>Eli Underwood</name>
-    </author>
-    <author>
-      <name>Marc Bosch</name>
-    </author>
-    <author>
-      <name>Neil Joshi</name>
-    </author>
-    <author>
-      <name>Jeffrey Wen</name>
-    </author>
-    <author>
-      <name>Myron Brown</name>
-    </author>
-    <summary type="text">Perceptual similarity metrics for natural images transfer poorly to remote sensing (RS), where severe geospatial and semantic failures can remain visually plausible while still being decisively wrong for downstream use. To address this, we develop a novel human-aligned perceptual quality metric for generated RS imagery and evaluate it across several generation tasks. We first conduct a controlled perturbation study where we progressively increase the severity of common synthetic perturbations. Using the layer-wise Aligned Attention Score (AAS) responses in RemoteCLIP, we find that different RS artifacts are best captured at different depths. Based on these findings, we introduce Remote Sensing Perceptual Distance (RSPD), a pairwise metric that averages seven independently calibrated layer distances without tuning on human-preference labels. To evaluate our metric on realistic RS generation tasks, we construct a blind, reference-conditioned two-alternative forced-choice (2AFC) benchmark with five 300-triplet subsets spanning synthetic artifacts, airborne and spaceborne super-resolution, SAR-to-optical translation, and timeseries controls. We also construct a 300-triplet ordered misregistration benchmark with deterministic labels. Using the same RemoteCLIP checkpoint, RSPD substantially outperforms simple cosine distance with the final global embedding and is competitive with the strongest generic baselines across the realistic RS generation tasks.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; WACV 2027&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>GeoReVis: Learning Selective Revision and Evidence Consolidation for Remote Sensing Segmentation</title>
-    <link href="http://arxiv.org/abs/2611.20183v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.20183v1</id>
-    <published>2026-11-15T00:00:00Z</published>
-    <updated>2026-11-15T00:00:00Z</updated>
-    <author>
-      <name>Ke An</name>
-    </author>
-    <author>
-      <name>Liang Chen</name>
-    </author>
-    <author>
-      <name>Yupei Wang</name>
-    </author>
-    <summary type="text">Recent methods try to inspect and revise masks to mitigate referential ambiguity and localization errors caused by complex spatial relations in language-guided remote sensing segmentation. However, these solutions often lead to Revision Degradation: revising missing regions may introduce errors into previously correct ones. Even a globally better mask can omit correct regions found in inferior masks. We term this Evidence Fragmentation: correct target evidence is scattered across imperfect masks. All masks generated by the model at this time are suboptimal. We propose GeoReVis, which unifies revision guided by execution feedback, Candidate Selection, and Cross-Mask Evidence Consolidation. It learns fine-grained revision from real actions that improve segmentation when executed and learns to select a better mask through quality comparisons between actual candidates, reducing the risk of degradation during revision. The selected whole mask can still discard useful regions. GeoReVis therefore retains all candidates across rounds, partitions their spatial disagreements into composable regions, and jointly reconstructs regions conditioned on the full instruction and context. This makes complementary and fragmentary evidence reusable regardless of its source candidate's overall quality, yielding improved segmentation. We further build a data pipeline to generate fine-grained multi-round segmentation trajectories and derive supervision for revision actions, candidate selection, and region composition from the model's own outputs, extending training beyond whole-mask IoU supervision. We also propose ReVis-Eval, a benchmark protocol evaluating multi-round revision and cross-round evidence consolidation accuracy. Experiments on ReVis-Eval and 5 benchmarks for remote sensing reasoning and referring segmentation demonstrate the effectiveness of GeoReVis.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 31 pages&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Illusion of Explainability: A Sanity Check for Spectral Band Attribution in Satellite Time-Series Crop Classification</title>
-    <link href="http://arxiv.org/abs/2611.19889v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.19889v1</id>
-    <published>2026-11-15T00:00:00Z</published>
-    <updated>2026-11-15T00:00:00Z</updated>
-    <author>
-      <name>Sumit Tahiliani</name>
-    </author>
-    <author>
-      <name>Avi Mathur</name>
-    </author>
-    <author>
-      <name>Sandarbh Agarwal</name>
-    </author>
-    <author>
-      <name>Rakshith Sathish</name>
-    </author>
-    <author>
-      <name>Ashwathi Nambiar</name>
-    </author>
-    <summary type="text">Attribution methods are commonly validated through convergence across methods and consistency with domain knowledge, yet neither criterion establishes whether identified features are necessary for a task. This limitation is particularly relevant in multispectral remote sensing, where overlapping spectral information makes individual bands potentially substitutable. We investigate this gap in crop-type classification using GradientSHAP, Shapley sampling, and Occlusion on a U-TAE segmentation model trained on Sentinel-2 time series from the PASTIS benchmark. All three methods identify vegetation-sensitive spectral regions consistent with domain knowledge, while Shapley and Occlusion exhibit strong ordering sensitivity in deletion and insertion tests. However, these properties do not reliably predict retraining performance. Aggregate attribution consensus masks substantial per-class disagreement, with pairwise mean Spearman correlations ranging from 0.09 to 0.79. Models retrained from scratch using the five lowest-ranked bands perform comparably to or better than those using the five highest-ranked bands. Furthermore, attribution rankings from an independently trained model with identical configuration and seed identify a different top-five subset that yields better retraining performance. Analysis of all 252 five-band subsets reveals consistently low effective dimensionality (1.35 to 2.62), suggesting substantial spectral redundancy. These findings demonstrate that plausible and apparently faithful attribution rankings do not necessarily identify task-relevant bands for improved retrained performance, highlighting the limitations of band-level feature attribution in spectrally redundant input spaces.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the 4th Computer Vision for Earth Observation (CV4EO) Workshop at WACV 2027&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>MAPS: A Multimodal Agentic Framework for POI Data Production Based on Crowdsourced Street-view Imagery</title>
-    <link href="http://arxiv.org/abs/2611.19807v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.19807v1</id>
-    <published>2026-11-15T00:00:00Z</published>
-    <updated>2026-11-15T00:00:00Z</updated>
-    <author>
-      <name>Sijie Ruan</name>
-    </author>
-    <author>
-      <name>Tingyu Xie</name>
-    </author>
-    <author>
-      <name>Mingfei Liu</name>
-    </author>
-    <author>
-      <name>Yicheng Tang</name>
-    </author>
-    <author>
-      <name>Haoyu Han</name>
-    </author>
-    <author>
-      <name>Jingnan Qi</name>
-    </author>
-    <author>
-      <name>Jingshu Zeng</name>
-    </author>
-    <author>
-      <name>Dongqi Xu</name>
-    </author>
-    <author>
-      <name>Jing Wang</name>
-    </author>
-    <author>
-      <name>Shuliang Wang</name>
-    </author>
-    <summary type="text">Point-of-interest (POI) databases support location-based services, yet urban changes quickly make their records stale and manual maintenance is costly. Crowdsourced street-view images provide timely visual evidence, but converting them into database actions requires separating multiple POIs and irrelevant text in each image, then resolving incomplete observations against ambiguous records. We study Street-view Image-based POI Data Production and propose MAPS, the first framework to integrate structured POI extraction with database maintenance from such imagery. MAPS contains two cascaded modules. SPICE progressively adapts a lightweight vision-language model to reconstruct and filter text, group entries belonging to the same POI, and classify their semantics and completeness. RIMA retrieves candidate records, performs evidence-grounded POI matching and attribute-level reasoning, and selectively acquires complementary visual, geospatial, or external-source evidence when necessary. In human-reviewed full-task evaluation, MAPS outperforms the strongest baseline by 21.8\%. MAPS has also been deployed in Kuaishou's large-scale POI production pipeline, reducing average processing time by 76.9\% relative to manual annotation. These results demonstrate the effectiveness and practical value of MAPS for scalable POI maintenance.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted for presentation at the 33rd ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2027), Cycle 1&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="cs.DB" />
-  </entry>
-  <entry>
-    <title>Food co-purchasing networks encode geographic disparities in cardiometabolic health</title>
-    <link href="http://arxiv.org/abs/2611.19420v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.19420v1</id>
-    <published>2026-11-14T00:00:00Z</published>
-    <updated>2026-11-14T00:00:00Z</updated>
-    <author>
-      <name>Antonio Desiderio</name>
-    </author>
-    <author>
-      <name>Leonardo Rodovero</name>
-    </author>
-    <author>
-      <name>Sune Lehmann</name>
-    </author>
-    <summary type="text">Unhealthy diets are a major driver of cardiometabolic disease, yet the geospatial structure of dietary behavior and its links to population health remain poorly understood. While large-scale retail transaction data offer a unique view of population dietary behavior, conventional approaches reduce purchases to isolated items, not accounting for how foods are actually combined. Here, we analyze 51 million grocery receipts across 95 Danish municipalities using a statistically validated bipartite network framework to isolate co-purchases that product popularity alone cannot explain. We find that, although municipalities buy largely the same products, their co-purchasing networks reorganize along a continuous urban-to-peripheral gradient in how those products are combined. The network backbone can be resolved into modular dietary communities whose local cohesion allows us to predict cardiometabolic prescriptions, explaining a quarter to a half of the variance left after sociodemographic adjustment, beyond what product prevalence alone accounts for. Ultra-processed foods (UPFs) show no spatial gradient in prevalence and are located at the network periphery, where they share baskets with fresh foods but rarely form the combinations that hold the network together. Taken together, our findings show that geographic dietary differences are encoded not only in what people purchase, but in how foods are systematically combined within shopping baskets, offering a scalable network approach for population nutritional epidemiology.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 24 pages, 3 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="physics.soc-ph" />
-    <category term="cs.SI" />
-  </entry>
-  <entry>
-    <title>XLSAR-Bench: Towards Extremely Large SAR Imagery Understanding of MLLMs</title>
-    <link href="http://arxiv.org/abs/2611.19364v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.19364v1</id>
-    <published>2026-11-14T00:00:00Z</published>
-    <updated>2026-11-14T00:00:00Z</updated>
-    <author>
-      <name>La Jiang</name>
-    </author>
-    <author>
-      <name>Lingfeng Chen</name>
-    </author>
-    <author>
-      <name>Jiaqi Zhu</name>
-    </author>
-    <author>
-      <name>Fengrong Guo</name>
-    </author>
-    <author>
-      <name>Jiehua Zhang</name>
-    </author>
-    <author>
-      <name>Panhe Hu</name>
-    </author>
-    <author>
-      <name>Li Liu</name>
-    </author>
-    <author>
-      <name>Zhen Liu</name>
-    </author>
-    <summary type="text">The rapid development of multimodal large language models (MLLMs) has highlighted the need for comprehensive benchmarks to assess their capabilities and limitations in remote sensing (RS). However, evaluating MLLMs in large-size synthetic aperture radar (SAR) scenarios remains challenging, as understanding complete scenes requires both global semantic interpretation and fine-grained target perception. Existing SAR benchmarks predominantly rely on small image patches, limiting their ability to assess these capabilities jointly. To address these limitations, we present XLSAR-Bench, a comprehensive benchmark for evaluating the perception and reasoning capabilities of MLLMs in large-scene SAR imagery. XLSAR-Bench comprises 405 images with an average size of 7153$\times$7153 pixels, ten tasks spanning visual question answering, visual grounding, and detailed image captioning, with all evaluation samples meticulously annotated manually, assisted by a semi-automatic captioner. Experimental results from general-purpose and domain-specific MLLMs reveal persistent challenges in understanding large SAR scenes and accurately perceiving small targets. We have open-sourced XLSAR-Bench to support further research in developing more powerful MLLMs for complete large SAR scenes.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;IC;VG&lt;/p&gt;</content>
-    <category term="Image and Video Processing" />
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Puzzle: One Pass Is Not Enough for Open-Vocabulary Remote Sensing Segmentation</title>
-    <link href="http://arxiv.org/abs/2611.19146v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.19146v1</id>
-    <published>2026-11-14T00:00:00Z</published>
-    <updated>2026-11-14T00:00:00Z</updated>
-    <author>
-      <name>Wensong Xu</name>
-    </author>
-    <author>
-      <name>Siqi Lu</name>
-    </author>
-    <author>
-      <name>Jibao Yuan</name>
-    </author>
-    <author>
-      <name>Yongbin Zheng</name>
-    </author>
-    <summary type="text">Open-vocabulary remote sensing image segmentation (OVRSIS) enables the segmentation of unseen classes without additional annotation or retraining. By analyzing the predictions of existing OVRSIS methods, we find that many misclassified patches coexist with visually similar, correctly classified patches of the same class within the same image. Unfortunately, most of these methods stop after a single inference rather than using their predictions to guide further inference. Motivated by this observation, we propose \textbf{Puzzle}, a plug-and-play iterative re-inference framework that combines prediction history with a visual-similarity prior to progressively refine patch-level attention. Puzzle employs a lightweight history-conditioned controller to regulate each patch's contribution as an information source and its reliance on visually similar patches, while an adaptive stopping rule determines when to stop. It keeps the segmentation model frozen and reuses the same controller across different models and datasets without retraining. Extensive experiments demonstrate consistent performance improvements across diverse OVRSIS models and datasets, highlighting the strong transferability of Puzzle. Moreover, Puzzle can further improve the performance of SOTA methods.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>

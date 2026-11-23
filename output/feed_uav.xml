@@ -4,40 +4,10 @@
   <id>https://rspaper.top/output/feed_uav.xml</id>
   <link href="https://rspaper.top/output/feed_uav.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-20T07:58:03Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 1 entries</subtitle>
+  <updated>2026-11-23T04:18:30Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 0 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
-  <entry>
-    <title>STARS: Stage-Adaptive Responsibility Separation for Shadow Removal in Remote Sensing Images</title>
-    <link href="http://arxiv.org/abs/2611.20698v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.20698v1</id>
-    <published>2026-11-16T00:00:00Z</published>
-    <updated>2026-11-16T00:00:00Z</updated>
-    <author>
-      <name>Gaoliang Song</name>
-    </author>
-    <author>
-      <name>Chengjie Li</name>
-    </author>
-    <author>
-      <name>Pengju Liu</name>
-    </author>
-    <author>
-      <name>Chenchen Chang</name>
-    </author>
-    <author>
-      <name>Jinhao You</name>
-    </author>
-    <author>
-      <name>Hongzhi Zhang</name>
-    </author>
-    <summary type="text">Shadows are a ubiquitous radiative attenuation phenomenon in remote sensing images and can severely affect high-resolution remote sensing interpretation tasks. In shadow removal, although introducing a mask prior provides explicit positional information for the restoration network, it also causes non-shadow regions to be modulated by the shadow prior, producing a systematic brightness shift; notably, this phenomenon is independent of whether the mask is accurate. In remote sensing images, non-shadow regions usually occupy a larger proportion, so a small shift over these regions incurs a much higher cost on whole-image metrics than an equal gain in shadow regions. Adopting a task-decoupling perspective, we therefore decompose shadow removal into two tasks, shadow-region restoration and non-shadow-region identity, within a cascaded architecture, and handle them sequentially. Based on this insight, we propose STARS, a cascaded shadow removal framework that separates regional responsibilities across stages. The method retains the advantages of the shadow mask while resolving the degradation of non-shadow regions, without requiring a complex parallel dual-branch structure. Meanwhile, to introduce large-model prior knowledge into remote sensing tasks, we further design a Feature Selection and Fusion Adapter (FSFA). We conduct extensive experiments on three benchmark datasets, UAV-SC+, ISTD+ and WSRD+ 2026, demonstrating the superiority of STARS. The framework shows that decoupling regional responsibilities can resolve the intrinsic contradiction of mask priors, providing a new direction for image restoration with region heterogeneity.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, 8 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
 </feed>

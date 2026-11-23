@@ -4,12 +4,91 @@
   <id>https://rspaper.top/output/feed_sar.xml</id>
   <link href="https://rspaper.top/output/feed_sar.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-20T07:58:03Z</updated>
+  <updated>2026-11-23T04:18:30Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 3 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>FM4SAR-Bench 1.0: Towards A Fair Benchmark for Evaluating Foundation Models for SAR Image Interpretation</title>
+    <link href="http://arxiv.org/abs/2611.27158v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.27158v1</id>
+    <published>2026-11-20T00:00:00Z</published>
+    <updated>2026-11-20T00:00:00Z</updated>
+    <author>
+      <name>Mingyao Chen</name>
+    </author>
+    <author>
+      <name>Yongxiang Liu</name>
+    </author>
+    <author>
+      <name>Tianpeng Liu</name>
+    </author>
+    <author>
+      <name>Yuchen Yong</name>
+    </author>
+    <author>
+      <name>Jie Zhou</name>
+    </author>
+    <author>
+      <name>Zhenhao Yang</name>
+    </author>
+    <author>
+      <name>Pinyi Huang</name>
+    </author>
+    <author>
+      <name>Weijie Li</name>
+    </author>
+    <author>
+      <name>Jiehua Zhang</name>
+    </author>
+    <author>
+      <name>Bowen Peng</name>
+    </author>
+    <author>
+      <name>Zhimao Peng</name>
+    </author>
+    <author>
+      <name>Zhiyuan Zhang</name>
+    </author>
+    <author>
+      <name>Li Liu</name>
+    </author>
+    <summary type="text">Foundation models have advanced SAR image interpretation but created a heterogeneous, fragmented model ecosystem. Existing models differ substantially in their input, training data, objectives, architectures, and release policy, yet the field lacks a unified taxonomy and comparative framework. Current evaluations rely primarily on task-specific benchmarks, which are ill-suited to fair comparison among models with fundamentally different input-output formats and task paradigms, and often overlook data transparency, reproducibility, interpretability, and deployment readiness. Limited SAR data accessibility also means high reported performance does not guarantee access to training data, code, or weights, limiting reproduction, benchmarking, and deployment. To address these issues, we propose a systematic taxonomy and hierarchical evaluation framework for SAR-related foundation models: five rating levels, six dimensions, and fine-grained criteria, with separate protocols for VFMs and VLMs. Beyond overall ratings, it yields interpretable multidimensional capability profiles and supports user-defined weighting, so rankings follow user priorities. Utilizing a fixed auxiliary multimodal large language model in combination with human review, we conduct a systematic meta-analysis and multidimensional assessment of 76 VFMs and 40 VLMs. In terms of SAR benchmark task performance under our framework, SAR-native VLMs do not significantly outperform remote sensing VLMs pretrained on mixed multimodal corpora in which SAR is one of several modalities. This lack of clear advantage is largely due to data availability: large-scale, high-quality, public annotated SAR data remain scarce, restricting both model and training-data scale for SAR-native models. The framework provides a structured basis for requirement-aware model selection and remains extensible as new models emerge.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+    <category term="Computer Vision; Machine Learning" />
+  </entry>
+  <entry>
+    <title>PIU-CR: Physics-Informed Deep Unfolding with SAR-Optical Image Fusion for Cloud Removal</title>
+    <link href="http://arxiv.org/abs/2611.27093v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.27093v1</id>
+    <published>2026-11-20T00:00:00Z</published>
+    <updated>2026-11-20T00:00:00Z</updated>
+    <author>
+      <name>Gengque Fan</name>
+    </author>
+    <author>
+      <name>Han Xu</name>
+    </author>
+    <author>
+      <name>Junxi Li</name>
+    </author>
+    <author>
+      <name>Hao Zhang</name>
+    </author>
+    <author>
+      <name>Guangcan Liu</name>
+    </author>
+    <author>
+      <name>Jiayi Ma</name>
+    </author>
+    <summary type="text">Multi-modal cloud removal exploits complementary optical and synthetic aperture radar (SAR) images to restore cloud-degraded remote sensing images. Most existing methods rely on black-box, data-driven architectures with limited interpretability of cross-modal interactions. Although some attempts introduce physical priors into networks, their oversimplified formulations fail to faithfully characterize the underlying physical imaging process and the networks remain loosely coupled with optimization variables. To address these issues, we propose a physics-informed deep unfolding network for cloud removal via optical-SAR image fusion, termed as PIU-CR. We first formulate cloud removal as a physics-informed optimization problem. Specifically, we fundamentally ground the optimization in the physical imaging mechanism of cloud degradation by embedding the atmospheric scattering model into the data fidelity term. Then, the regularization terms establish an explicit cross-modal interaction mechanism, overcoming the single-modal information scarcity and the obscure, uninterpretable interactions in black-box models. They are dedicated to SAR-guided structure and spectral regularization, jointly introducing cross-modal structural feature alignment and coordinated spectral consistency constraints. The resulting optimization problem is then unfolded into a multi-stage neural network with dedicated structure and spectral branches. Each stage corresponds to an explicit optimization iteration step, enabling interpretable and effective reconstruction process. Experiments demonstrate that the proposed method outperforms state-of-the-art methods. The code is publicly available at https://github.com/Fgq188/PIU_CR.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Fgq188/PIU_CR"&gt;https://github.com/Fgq188/PIU_CR&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>SARVIA: Fast-Adapting the Strong SAR Foundation Models That Are Already in Your MLLMs</title>
     <link href="http://arxiv.org/abs/2611.22273v1" rel="alternate" type="text/html" />
@@ -28,69 +107,6 @@
     <summary type="text">Synthetic aperture radar (SAR) foundation models provide transferable representations for diverse perception tasks in all-weather Earth observation. However, their development often relies on costly large-scale SAR pretraining, raising the question of whether such extensive domain-specific pretraining is necessary. We find that modern multimodal large language models (MLLMs) already provide visual encoders that can outperform dedicated SAR foundation models as downstream initializations. This motivates a new paradigm: reuse general visual capabilities and devote domain training to brief specialization. We therefore introduce SARVIA, an adaptive post-pretraining method that specializes modern MLLMs using self-supervised visual questions with computable answers. These questions are constructed from unlabeled observations through general image tasks that capture spatial relations and SAR-specific tasks that exploit native measurements and SAR--optical correspondence. A shared answer-prediction objective jointly trains low-rank adapters across visual and language components, with loss-driven task sampling. We then export the adapted visual encoder as a standalone backbone. With 600 adaptation steps and 2 GPU-hours, SARVIA outperforms the compared foundation models on all six SAR detection and segmentation benchmarks. Compared with dedicated SAR pretraining, SARVIA reduces domain-training costs by orders of magnitude while improving visual transfer across architectures and scales. This new paradigm shifts the emphasis from repeated, costly pretraining to a reusable specialization process that can benefit from advances in open MLLMs. Dataset and code: https://github.com/zcablii/SARVIA.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/zcablii/SARVIA"&gt;https://github.com/zcablii/SARVIA&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Rethinking Perceptual Similarity for Remote Sensing: Multi-Layer Attention Scoring and Human Preference Benchmarking</title>
-    <link href="http://arxiv.org/abs/2611.21816v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.21816v1</id>
-    <published>2026-11-16T00:00:00Z</published>
-    <updated>2026-11-16T00:00:00Z</updated>
-    <author>
-      <name>Eli Underwood</name>
-    </author>
-    <author>
-      <name>Marc Bosch</name>
-    </author>
-    <author>
-      <name>Neil Joshi</name>
-    </author>
-    <author>
-      <name>Jeffrey Wen</name>
-    </author>
-    <author>
-      <name>Myron Brown</name>
-    </author>
-    <summary type="text">Perceptual similarity metrics for natural images transfer poorly to remote sensing (RS), where severe geospatial and semantic failures can remain visually plausible while still being decisively wrong for downstream use. To address this, we develop a novel human-aligned perceptual quality metric for generated RS imagery and evaluate it across several generation tasks. We first conduct a controlled perturbation study where we progressively increase the severity of common synthetic perturbations. Using the layer-wise Aligned Attention Score (AAS) responses in RemoteCLIP, we find that different RS artifacts are best captured at different depths. Based on these findings, we introduce Remote Sensing Perceptual Distance (RSPD), a pairwise metric that averages seven independently calibrated layer distances without tuning on human-preference labels. To evaluate our metric on realistic RS generation tasks, we construct a blind, reference-conditioned two-alternative forced-choice (2AFC) benchmark with five 300-triplet subsets spanning synthetic artifacts, airborne and spaceborne super-resolution, SAR-to-optical translation, and timeseries controls. We also construct a 300-triplet ordered misregistration benchmark with deterministic labels. Using the same RemoteCLIP checkpoint, RSPD substantially outperforms simple cosine distance with the final global embedding and is competitive with the strongest generic baselines across the realistic RS generation tasks.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; WACV 2027&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>XLSAR-Bench: Towards Extremely Large SAR Imagery Understanding of MLLMs</title>
-    <link href="http://arxiv.org/abs/2611.19364v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.19364v1</id>
-    <published>2026-11-14T00:00:00Z</published>
-    <updated>2026-11-14T00:00:00Z</updated>
-    <author>
-      <name>La Jiang</name>
-    </author>
-    <author>
-      <name>Lingfeng Chen</name>
-    </author>
-    <author>
-      <name>Jiaqi Zhu</name>
-    </author>
-    <author>
-      <name>Fengrong Guo</name>
-    </author>
-    <author>
-      <name>Jiehua Zhang</name>
-    </author>
-    <author>
-      <name>Panhe Hu</name>
-    </author>
-    <author>
-      <name>Li Liu</name>
-    </author>
-    <author>
-      <name>Zhen Liu</name>
-    </author>
-    <summary type="text">The rapid development of multimodal large language models (MLLMs) has highlighted the need for comprehensive benchmarks to assess their capabilities and limitations in remote sensing (RS). However, evaluating MLLMs in large-size synthetic aperture radar (SAR) scenarios remains challenging, as understanding complete scenes requires both global semantic interpretation and fine-grained target perception. Existing SAR benchmarks predominantly rely on small image patches, limiting their ability to assess these capabilities jointly. To address these limitations, we present XLSAR-Bench, a comprehensive benchmark for evaluating the perception and reasoning capabilities of MLLMs in large-scene SAR imagery. XLSAR-Bench comprises 405 images with an average size of 7153$\times$7153 pixels, ten tasks spanning visual question answering, visual grounding, and detailed image captioning, with all evaluation samples meticulously annotated manually, assisted by a semi-automatic captioner. Experimental results from general-purpose and domain-specific MLLMs reveal persistent challenges in understanding large SAR scenes and accurately perceiving small targets. We have open-sourced XLSAR-Bench to support further research in developing more powerful MLLMs for complete large SAR scenes.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;IC;VG&lt;/p&gt;</content>
-    <category term="Image and Video Processing" />
     <category term="Computer Vision" />
   </entry>
 </feed>

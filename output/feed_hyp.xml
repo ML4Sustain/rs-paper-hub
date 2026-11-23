@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-20T07:58:03Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
+  <updated>2026-11-23T04:18:30Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -68,53 +68,5 @@
 &lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Available on: https://ieeexplore.ieee.org/document/11793642. Early Access&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Model-based neural network for global floodplains analysis</title>
-    <link href="http://arxiv.org/abs/2611.21146v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.21146v1</id>
-    <published>2026-11-16T00:00:00Z</published>
-    <updated>2026-11-16T00:00:00Z</updated>
-    <author>
-      <name>Pierre Audisio</name>
-    </author>
-    <author>
-      <name>Barbara Belletti</name>
-    </author>
-    <author>
-      <name>Nelly Pustelnik</name>
-    </author>
-    <summary type="text">We address the super-resolution of multispectral remote sensing imagery for long-term floodplain monitoring, enhancing Landsat acquisitions towards Sentinel-2 resolution. Exploiting the period during which both missions observed the same areas, we build DLhasa-L2S , to our knowledge the first paired dataset dedicated to multispectral super-resolution for river analysis. It covers the Lhasa River (Tibet), whose strong anthropogenic changes and diverse hydromorphological profiles make it an ideal study area. We developed two model-based neural networks: a forward-backward (FB) plug-and-play scheme and an unfolded FB scheme. We compared them against learned neural networks baselines (SwinIR, RDN) on synthetic data, on real scenes, and through a statistical test over the whole real paired Landsat-Sentinel dataset. The unfolded network achieves the highest PSNR and SSIM on the real RGB components with fast inference, offering the best trade-off between accuracy and computational cost. For NDWI-based water segmentation, its performance shows no statistically significant difference from that of the best methods.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Illusion of Explainability: A Sanity Check for Spectral Band Attribution in Satellite Time-Series Crop Classification</title>
-    <link href="http://arxiv.org/abs/2611.19889v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.19889v1</id>
-    <published>2026-11-15T00:00:00Z</published>
-    <updated>2026-11-15T00:00:00Z</updated>
-    <author>
-      <name>Sumit Tahiliani</name>
-    </author>
-    <author>
-      <name>Avi Mathur</name>
-    </author>
-    <author>
-      <name>Sandarbh Agarwal</name>
-    </author>
-    <author>
-      <name>Rakshith Sathish</name>
-    </author>
-    <author>
-      <name>Ashwathi Nambiar</name>
-    </author>
-    <summary type="text">Attribution methods are commonly validated through convergence across methods and consistency with domain knowledge, yet neither criterion establishes whether identified features are necessary for a task. This limitation is particularly relevant in multispectral remote sensing, where overlapping spectral information makes individual bands potentially substitutable. We investigate this gap in crop-type classification using GradientSHAP, Shapley sampling, and Occlusion on a U-TAE segmentation model trained on Sentinel-2 time series from the PASTIS benchmark. All three methods identify vegetation-sensitive spectral regions consistent with domain knowledge, while Shapley and Occlusion exhibit strong ordering sensitivity in deletion and insertion tests. However, these properties do not reliably predict retraining performance. Aggregate attribution consensus masks substantial per-class disagreement, with pairwise mean Spearman correlations ranging from 0.09 to 0.79. Models retrained from scratch using the five lowest-ranked bands perform comparably to or better than those using the five highest-ranked bands. Furthermore, attribution rankings from an independently trained model with identical configuration and seed identify a different top-five subset that yields better retraining performance. Analysis of all 252 five-band subsets reveals consistently low effective dimensionality (1.35 to 2.62), suggesting substantial spectral redundancy. These findings demonstrate that plausible and apparently faithful attribution rankings do not necessarily identify task-relevant bands for improved retrained performance, highlighting the limitations of band-level feature attribution in spectrally redundant input spaces.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the 4th Computer Vision for Earth Observation (CV4EO) Workshop at WACV 2027&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning" />
   </entry>
 </feed>
