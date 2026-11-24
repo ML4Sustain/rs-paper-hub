@@ -4,12 +4,99 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-23T08:29:43Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 10 entries</subtitle>
+  <updated>2026-11-24T07:16:23Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 12 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Benchmarking Geospatial Foundation Models under Calibrated Label Errors</title>
+    <link href="http://arxiv.org/abs/2611.30215v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.30215v1</id>
+    <published>2026-11-23T00:00:00Z</published>
+    <updated>2026-11-23T00:00:00Z</updated>
+    <author>
+      <name>Mollah Md Saif</name>
+    </author>
+    <author>
+      <name>Showrin Rahman</name>
+    </author>
+    <author>
+      <name>Anindya Majumder</name>
+    </author>
+    <author>
+      <name>Sowad Rahman</name>
+    </author>
+    <author>
+      <name>Md. Golam Rabiul Alam</name>
+    </author>
+    <summary type="text">Earth-observation labels from maps, older products or hurried annotation arrive misaligned, coarse, loosely outlined or incomplete. Geospatial foundation models (GFMs) are nevertheless benchmarked with labels taken as correct. A practitioner therefore cannot tell which encoder to choose when the labels are imperfect. We present a benchmark protocol for fine-tuning under such labels. Four spatially structured error types are calibrated to equal label mIoU and applied identically to every model and seed. Every contrast is paired and read against an equivalence margin of $\pm 3$ points and a minimum detectable effect. We apply it to nine encoders, six decoder heads and ten datasets. In an exploratory reading at a matched learning rate the satellite-pretrained and web-pretrained DINOv3 encoders are equivalent within the margin on 8 of 9 datasets. Multispectral GFMs and an ImageNet ResNet-50 are equivalent within the margin on about half of them. Labels with random offsets cost the least at equal label quality. Under other decoder heads the verdicts mostly hold on FLAIR-2 and are decoder dependent on HLS Burn Scars. On four of five real label pairs the real label costs more than its matched simulated type. No choice of pretraining data makes an encoder consistently more robust, so the encoder is better chosen by its accuracy under imperfect labels.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 100 pages (15 pages main text and references, 85 pages appendix), 78 figures, 68 tables. Extended version including supplementary material&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Geospatial foundation models and deep learning for climate resilience: a review of transfer, uncertainty and decision readiness</title>
+    <link href="http://arxiv.org/abs/2611.30198v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.30198v1</id>
+    <published>2026-11-23T00:00:00Z</published>
+    <updated>2026-11-23T00:00:00Z</updated>
+    <author>
+      <name>Parastoo Farajpoor</name>
+    </author>
+    <author>
+      <name>Mohammadreza Narimani</name>
+    </author>
+    <summary type="text">Geospatial foundation models can reuse information learned from large Earth-observation archives, but their value for climate resilience depends on whether that information transfers to unfamiliar events, regions and observing conditions. This review connects advances in deep learning with the evidence needed for hazard monitoring and early warning. A descriptive audit of 137 full-text hazard-application studies is interpreted alongside a separate corpus of 37 model and benchmark records. Ninety-eight application studies reported an out-of-distribution experiment, whereas headline evaluations included held-out events in 31 studies, regions in 25 and sensors in only two. None of the ten studies coded for geospatial foundation-model fine-tuning used sensor holdout as a headline test. Uncertainty-related methods were recorded in 16 studies, including two with explicitly calibrated probabilistic output. These overlapping counts describe evaluation practice within the coded corpus, not a ranking of model families. We distinguish Earth-observation representation learning from atmospheric forecasting and examine how labels, observability, forecast lead time and decision requirements constrain their contribution across flood, wildfire, drought, heat, cryosphere and cascading-hazard applications. We then develop a decision-backward evaluation framework: define the action and information available when it must be taken, reproduce the relevant shift, retain a matched task-specific baseline, and report misses, false alarms, reliability and end-to-end latency. The framework turns transferability from a broad model claim into a testable requirement for climate adaptation and risk management.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 16 pages, 8 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Survey&lt;/p&gt;</content>
+    <category term="Image and Video Processing" />
+    <category term="Machine Learning; Atmospheric and Oceanic Physics; Geophysics" />
+  </entry>
+  <entry>
+    <title>SpectralRoute: Adaptive Spectral Routing for Training-Free Open-Vocabulary Hyperspectral Segmentation</title>
+    <link href="http://arxiv.org/abs/2611.29919v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.29919v1</id>
+    <published>2026-11-23T00:00:00Z</published>
+    <updated>2026-11-23T00:00:00Z</updated>
+    <author>
+      <name>Qingmei Li</name>
+    </author>
+    <author>
+      <name>Xiaoya Fan</name>
+    </author>
+    <author>
+      <name>Juepeng Zheng</name>
+    </author>
+    <author>
+      <name>Jianxi Huang</name>
+    </author>
+    <author>
+      <name>Haohuan Fu</name>
+    </author>
+    <summary type="text">Open-vocabulary semantic segmentation enables the recognition of arbitrary categories through natural language descriptions and has recently been extended from natural images to remote sensing. However, existing approaches primarily focus on three-channel optical imagery or limited-band multispectral data, while pretrained vision-language models (VLMs) struggle to directly exploit the rich spectral information of hyperspectral imagery (HSI) without additional adaptation. More importantly, different land-cover categories rely on distinct spectral cues, which may be weakened by uniform fusion. To address these challenges, we propose SpectralRoute, a training-free framework for open-vocabulary hyperspectral segmentation. Specifically, we construct complementary spectral views from HSI and enrich category descriptions with external spectral knowledge, enabling frozen vision-language models to extract diverse spectral-semantic responses. We then introduce a class-adaptive spectral routing mechanism that selectively amplifies discriminative spectral responses for each category, overcoming the limitations of uniform fusion. Furthermore, physical spectral priors are incorporated to refine predictions for visually similar land-cover categories. Experiments on three hyperspectral benchmarks demonstrate that SpectralRoute consistently outperforms state-of-the-art methods without additional training.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Tissot indicatrix for location encoders: Characterizing local distortion in learned geographic embeddings</title>
+    <link href="http://arxiv.org/abs/2611.29249v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.29249v1</id>
+    <published>2026-11-22T00:00:00Z</published>
+    <updated>2026-11-22T00:00:00Z</updated>
+    <author>
+      <name>Guofeng Cao</name>
+    </author>
+    <author>
+      <name>Gengchen Mai</name>
+    </author>
+    <summary type="text">With the increasing adoption of geographic artificial intelligence, location encoders are widely used to map geographic coordinates to learned embeddings for tasks in Earth observation and geospatial modeling. Similar to map projections, location encoders can distort geographic space, that is, equal-distance displacements in different directions can result in unequal embedding changes. However, such distortion remains largely unexamined, and it can propagate into downstream applications. We adapt Tissot's indicatrix, a cartographic tool for map projection distortion, to characterize this distortion. At each location, we compare encoder outputs at equal distances in 32 directions and fit a tensor, represented by an ellipse, whose elongation (anisotropy) and orientation describe the local distortion. The fit requires only encoder outputs without access to model internals and is validated against references with known geometry. By applying the method to thirteen released checkpoints of five encoder families, we find that distortions vary across space and inherit the input geometry to varying degrees, closely in GeoCLIP with its Equal Earth input (anisotropy correlation of 0.88) and weakly or moderately in the other encoders. The distortion also affects the locations an encoder treats as neighbors. Within 1km of 20 query sites, the 40 nearest neighbors in geographic and embedding space overlap by a median of only 57.5--87.5% across the checkpoints, while the fitted ellipses select exactly the same embedding neighbors in 265 of 299 comparisons. These findings provide a geographic basis for assessing location encoders, and the accompanying eTissot package implements the methods for user-specified encoders.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Machine Learning" />
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>WINSO: A Large-Size Very-High-Resolution Remote Sensing Dataset for Wind Turbine Detection and Solar Panel Segmentation</title>
     <link href="http://arxiv.org/abs/2611.27241v1" rel="alternate" type="text/html" />
@@ -308,64 +395,40 @@
     <category term="Computer Vision" />
   </entry>
   <entry>
-    <title>Performance analysis of a Rydberg atom THz radiometer concept</title>
-    <link href="http://arxiv.org/abs/2611.23193v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.23193v1</id>
-    <published>2026-11-17T00:00:00Z</published>
-    <updated>2026-11-17T00:00:00Z</updated>
+    <title>ROSE-SAM3: Response-Oriented Prompt Selection for Open-Vocabulary Remote Sensing Segmentation</title>
+    <link href="http://arxiv.org/abs/2611.28112v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.28112v1</id>
+    <published>2026-11-18T00:00:00Z</published>
+    <updated>2026-11-18T00:00:00Z</updated>
     <author>
-      <name>Richard J. Murchie</name>
+      <name>Yanghui Song</name>
     </author>
     <author>
-      <name>Petronilo Martin-Iglesias</name>
+      <name>Chengfu Yang</name>
     </author>
     <author>
-      <name>Julian Hofmann</name>
+      <name>Yongpeng Wen</name>
     </author>
     <author>
-      <name>Christophe Buisset</name>
-    </author>
-    <summary type="text">THz receiver technology lies between electronics and photonics; as such, its implementation is not as mature. This warrants investigation into alternative THz receivers such as Rydberg atom sensors, which are highly susceptible to electric fields. In particular, the conversion architecture has been demonstrated to coherently transduce thermal radiation. This system offers room-temperature operation and does not necessarily require a local oscillator at the frequency of the input signal. We provide an assessment of the feasibility of such sensors for THz radiometry within the context of Earth observation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 16 pages, 4 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="quant-ph" />
-    <category term="Atmospheric and Oceanic Physics" />
-  </entry>
-  <entry>
-    <title>DARWIN: a Geospatial Foundation Model for Marine Intelligence</title>
-    <link href="http://arxiv.org/abs/2611.22496v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.22496v1</id>
-    <published>2026-11-17T00:00:00Z</published>
-    <updated>2026-11-17T00:00:00Z</updated>
-    <author>
-      <name>Coen van den Elsen</name>
+      <name>Zhanxuan Hu</name>
     </author>
     <author>
-      <name>Laurens Geffert</name>
-    </author>
-    <summary type="text">We present DARWIN, a geospatial foundation model for marine intelligence. Recent Earth-observation foundation models have concentrated on terrestrial domains. The marine realm poses distinct challenges: missingness, multi-modal physical and biogeochemical variables, sparse labels, and dynamics that are transient, multi-scale, and non stationary over time. DARWIN adapts a masked-autoencoder backbone to these properties through missingness-aware encoding, expanded spatial and temporal masking, and Fourier-style positional embeddings, and is pretrained on 26 years of global Copernicus reanalysis together with GEBCO bathymetry.   On predicting chlorophyll-a, the pretrained backbone attains the lowest monthly relative error in every month of 2022, outperforming both no-encoder baselines and an identically architected random-init encoder. At 10% of the supervised training data, DARWIN already surpasses the random-init model trained on 100% of the data. Embedding analysis and qualitative reconstructions show that DARWIN captures coherent oceanographic structure rather than memorising input statistics, providing a scalable backbone for downstream marine applications such as anomaly detection, species distribution modelling, and environmental monitoring.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="Atmospheric and Oceanic Physics" />
-  </entry>
-  <entry>
-    <title>SARVIA: Fast-Adapting the Strong SAR Foundation Models That Are Already in Your MLLMs</title>
-    <link href="http://arxiv.org/abs/2611.22273v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.22273v1</id>
-    <published>2026-11-17T00:00:00Z</published>
-    <updated>2026-11-17T00:00:00Z</updated>
-    <author>
-      <name>Yuxuan Li</name>
+      <name>Wei Lu</name>
     </author>
     <author>
-      <name>Zichen Tian</name>
+      <name>Qi Ming</name>
     </author>
     <author>
-      <name>Qianru Sun</name>
+      <name>Nanqing Liu</name>
     </author>
-    <summary type="text">Synthetic aperture radar (SAR) foundation models provide transferable representations for diverse perception tasks in all-weather Earth observation. However, their development often relies on costly large-scale SAR pretraining, raising the question of whether such extensive domain-specific pretraining is necessary. We find that modern multimodal large language models (MLLMs) already provide visual encoders that can outperform dedicated SAR foundation models as downstream initializations. This motivates a new paradigm: reuse general visual capabilities and devote domain training to brief specialization. We therefore introduce SARVIA, an adaptive post-pretraining method that specializes modern MLLMs using self-supervised visual questions with computable answers. These questions are constructed from unlabeled observations through general image tasks that capture spatial relations and SAR-specific tasks that exploit native measurements and SAR--optical correspondence. A shared answer-prediction objective jointly trains low-rank adapters across visual and language components, with loss-driven task sampling. We then export the adapted visual encoder as a standalone backbone. With 600 adaptation steps and 2 GPU-hours, SARVIA outperforms the compared foundation models on all six SAR detection and segmentation benchmarks. Compared with dedicated SAR pretraining, SARVIA reduces domain-training costs by orders of magnitude while improving visual transfer across architectures and scales. This new paradigm shifts the emphasis from repeated, costly pretraining to a reusable specialization process that can benefit from advances in open MLLMs. Dataset and code: https://github.com/zcablii/SARVIA.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/zcablii/SARVIA"&gt;https://github.com/zcablii/SARVIA&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <author>
+      <name>Heng-Chao Li</name>
+    </author>
+    <summary type="text">In open-vocabulary semantic segmentation (OVSS) of remote-sensing imagery, class-name prompts can miss objects with varied appearances, while richer descriptions can activate competing classes. We propose Response-Oriented Prompt Selection for SAM 3 (ROSE-SAM3), a training-free framework that selects descriptions using frozen SAM 3 responses on unlabeled target-domain images. We screen candidate descriptions for coverage beyond the native prompts while protecting reliable native class responses, retaining candidates that pass these checks on at least four of five image folds. An offline directed acyclic graph (DAG) search then evaluates candidate combinations and builds a compact PromptBank for each class. Each bank retains the native prompts and adds selected descriptions, which we call residual prompts. At inference, the bank is fixed, and Semantic-Instance Cooperative Head (SICH) uses instance evidence to refine semantic responses before assigning pixel labels. We also introduce RS-OVSS-C to evaluate robustness under six image corruption families across eight remote-sensing datasets, preserving their class vocabularies and reference labels. ROSE-SAM3 achieves 57.3% mean mIoU across eight clean benchmarks and 54.7% on RS-OVSS-C, achieving state-of-the-art performance among training-free methods. The code is publicly available at https://github.com/YanghuiSong/ROSE-SAM3.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/YanghuiSong/ROSE-SAM3"&gt;https://github.com/YanghuiSong/ROSE-SAM3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13 pages, 11 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>

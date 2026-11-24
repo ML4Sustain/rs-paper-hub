@@ -4,12 +4,89 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-23T08:29:43Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 2 entries</subtitle>
+  <updated>2026-11-24T07:16:23Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Benchmarking Geospatial Foundation Models under Calibrated Label Errors</title>
+    <link href="http://arxiv.org/abs/2611.30215v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.30215v1</id>
+    <published>2026-11-23T00:00:00Z</published>
+    <updated>2026-11-23T00:00:00Z</updated>
+    <author>
+      <name>Mollah Md Saif</name>
+    </author>
+    <author>
+      <name>Showrin Rahman</name>
+    </author>
+    <author>
+      <name>Anindya Majumder</name>
+    </author>
+    <author>
+      <name>Sowad Rahman</name>
+    </author>
+    <author>
+      <name>Md. Golam Rabiul Alam</name>
+    </author>
+    <summary type="text">Earth-observation labels from maps, older products or hurried annotation arrive misaligned, coarse, loosely outlined or incomplete. Geospatial foundation models (GFMs) are nevertheless benchmarked with labels taken as correct. A practitioner therefore cannot tell which encoder to choose when the labels are imperfect. We present a benchmark protocol for fine-tuning under such labels. Four spatially structured error types are calibrated to equal label mIoU and applied identically to every model and seed. Every contrast is paired and read against an equivalence margin of $\pm 3$ points and a minimum detectable effect. We apply it to nine encoders, six decoder heads and ten datasets. In an exploratory reading at a matched learning rate the satellite-pretrained and web-pretrained DINOv3 encoders are equivalent within the margin on 8 of 9 datasets. Multispectral GFMs and an ImageNet ResNet-50 are equivalent within the margin on about half of them. Labels with random offsets cost the least at equal label quality. Under other decoder heads the verdicts mostly hold on FLAIR-2 and are decoder dependent on HLS Burn Scars. On four of five real label pairs the real label costs more than its matched simulated type. No choice of pretraining data makes an encoder consistently more robust, so the encoder is better chosen by its accuracy under imperfect labels.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 100 pages (15 pages main text and references, 85 pages appendix), 78 figures, 68 tables. Extended version including supplementary material&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Designing Incoherent Multispectral Diffractive Optical Networks for Satellite Image Classification</title>
+    <link href="http://arxiv.org/abs/2611.30079v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.30079v1</id>
+    <published>2026-11-23T00:00:00Z</published>
+    <updated>2026-11-23T00:00:00Z</updated>
+    <author>
+      <name>Xilin Yang</name>
+    </author>
+    <author>
+      <name>Md Sadman Sakib Rahman</name>
+    </author>
+    <author>
+      <name>Ryan Lee</name>
+    </author>
+    <author>
+      <name>Aydogan Ozcan</name>
+    </author>
+    <summary type="text">Optical neural networks and diffractive optical computing provide a promising route for performing task-specific inference with high parallelism and lightweight electronic post-processing. These advantages are especially attractive for multispectral satellite imaging, where conventional workflows rely on transmitting high-dimensional image cubes to the ground for downstream electronic analysis. Here, we introduce a computationally efficient surrogate model-guided framework for designing incoherent multispectral diffractive optical networks that directly output class probabilities onboard, eliminating the need to capture and transfer the full multispectral data cube for ground-side inference. We first train a physically compatible surrogate model, represented by a non-negative fully connected model that accommodates a generalized detector readout, yielding a task-specific non-negative multispectral intensity transformation that can be transferred to an optical processor. We then synthesize its diffractive counterpart through data-free point-spread-function-based optimization under spatially incoherent illumination. Using this approach, we numerically demonstrate a six-spectral-channel diffractive classifier for tri-class satellite-scene recognition, achieving a blind-testing accuracy of 79.8% for artificial surface, water body, and vegetated land images, closely approaching the 81.8% accuracy of its surrogate. We further demonstrate a more compact three-spectral-channel design that numerically achieves 72.7% blind-testing accuracy, compared with 75.1% for its corresponding surrogate model. This surrogate model-guided strategy provides a practical pathway for designing compact, task-specific incoherent multispectral optical processors for resource-constrained remote-sensing inference.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 21 Pages, 5 Figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="physics.optics" />
+    <category term="Neural and Evolutionary Computing; physics.app-ph" />
+  </entry>
+  <entry>
+    <title>SpectralRoute: Adaptive Spectral Routing for Training-Free Open-Vocabulary Hyperspectral Segmentation</title>
+    <link href="http://arxiv.org/abs/2611.29919v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.29919v1</id>
+    <published>2026-11-23T00:00:00Z</published>
+    <updated>2026-11-23T00:00:00Z</updated>
+    <author>
+      <name>Qingmei Li</name>
+    </author>
+    <author>
+      <name>Xiaoya Fan</name>
+    </author>
+    <author>
+      <name>Juepeng Zheng</name>
+    </author>
+    <author>
+      <name>Jianxi Huang</name>
+    </author>
+    <author>
+      <name>Haohuan Fu</name>
+    </author>
+    <summary type="text">Open-vocabulary semantic segmentation enables the recognition of arbitrary categories through natural language descriptions and has recently been extended from natural images to remote sensing. However, existing approaches primarily focus on three-channel optical imagery or limited-band multispectral data, while pretrained vision-language models (VLMs) struggle to directly exploit the rich spectral information of hyperspectral imagery (HSI) without additional adaptation. More importantly, different land-cover categories rely on distinct spectral cues, which may be weakened by uniform fusion. To address these challenges, we propose SpectralRoute, a training-free framework for open-vocabulary hyperspectral segmentation. Specifically, we construct complementary spectral views from HSI and enrich category descriptions with external spectral knowledge, enabling frozen vision-language models to extract diverse spectral-semantic responses. We then introduce a class-adaptive spectral routing mechanism that selectively amplifies discriminative spectral responses for each category, overcoming the limitations of uniform fusion. Furthermore, physical spectral priors are incorporated to refine predictions for visually similar land-cover categories. Experiments on three hyperspectral benchmarks demonstrate that SpectralRoute consistently outperforms state-of-the-art methods without additional training.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Benchmarking Reasoning Reliability,Prior_Evidence Contrast,and Spectral Discrimination in Remote-Sensing Geological Image Interpretation</title>
     <link href="http://arxiv.org/abs/2611.24068v1" rel="alternate" type="text/html" />
@@ -46,27 +123,6 @@
     <summary type="text">Reliable lithology interpretation requires accurate geological recognition and reasoning grounded in visual evidence. Although Multimodal Large Language Models show promise in remote sensing, their reliability in geological interpretation remains unclear. We introduce HyGeoBench, a diagnostic benchmark of 10,000 questions based on hyperspectral imagery across three dimensions: reasoning reliability, prior_evidence contrast, and spectral discrimination. It covers ten task types, with both multiple-choice and open-ended response formats. Integrating hyperspectral satellite imagery with geological annotations and verified evidence, HyGeoBench examines reasoning errors, conflicts between geological priors and visual evidence, and cross-band inconsistencies. Evaluations reveal limitations in fine-grained recognition and evidence-grounded interpretation. To address these challenges, we propose HyGeoAgent, a tool-augmented framework integrating region observation, text knowledge retrieval, same-band image retrieval, and native PCA analysis through adaptive tool use. Experiments demonstrate consistent improvements over the corresponding base models, improving geological image interpretation across diagnostic dimensions.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>SWIR-cGAN: Synthesizing SWIR Bands Using VNIR Imagery from CBERS and AMAZONIA-1</title>
-    <link href="http://arxiv.org/abs/2611.22922v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.22922v1</id>
-    <published>2026-11-17T00:00:00Z</published>
-    <updated>2026-11-17T00:00:00Z</updated>
-    <author>
-      <name>Alisson Cleiton de Oliveira</name>
-    </author>
-    <author>
-      <name>Rennan de Freitas Bezerra Marujo</name>
-    </author>
-    <author>
-      <name>Thales Sehn Körting</name>
-    </author>
-    <summary type="text">Spectral band synthesis is an important research topic in remote sensing. The Brazilian satellites CBERS-4, CBERS-4A, and AMAZONIA-1 provide high temporal resolution (1-3 days) visible and near-infrared (VNIR) imagery through the Wide-Field Imager (WFI), but lack short-wave infrared (SWIR) bands. Recent deep learning methods have shown promising results for spectral synthesis, but challenges remain for cross-satellite generalization and spectrally distant bands. This paper presents a conditional Generative Adversarial Network (cGAN) with an attention-enhanced U-net generator and a multi-loss objective to synthesize Sentinel-2/MSI SWIR bands 11 (SWIR-1) and 12 (SWIR-2) from WFI VNIR inputs. Experiments used 4,125 patches for training and cross-validation and 1,026 unseen patches for testing, with hyperparameters optimized using a subset of the training data. On SWIR-1, the model achieved SSIM of 0.900, PSNR of 31.44 dB, and MAE of 0.019 in TOA reflectance. On SWIR-2, it achieved SSIM of 0.917, PSNR of 33.35 dB, and MAE of 0.015. Benchmarking was performed on the test dataset, with each model optimized separately prior to evaluation. SWIR-cGAN outperformed the baselines, particularly for SWIR-2. The ablation study identified the multi-loss as the main performance contributor, while the attention and residual modules provided additional improvements. Our results demonstrate the feasibility of synthesizing SWIR bands from WFI imagery. The SWIR-cGAN is available at https://github.com/marujore/swir-cgan.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/marujore/swir-cgan"&gt;https://github.com/marujore/swir-cgan&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Available on: https://ieeexplore.ieee.org/document/11793642. Early Access&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>

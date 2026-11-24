@@ -4,10 +4,41 @@
   <id>https://rspaper.top/output/feed_uav.xml</id>
   <link href="https://rspaper.top/output/feed_uav.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-23T08:29:43Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 0 entries</subtitle>
+  <updated>2026-11-24T07:16:23Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 1 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>MQCODet: Modality Quality-Guided Collaborative Optimization for UAV-Based RGB-T Tiny Pedestrian Detection</title>
+    <link href="http://arxiv.org/abs/2611.28850v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.28850v1</id>
+    <published>2026-11-21T00:00:00Z</published>
+    <updated>2026-11-21T00:00:00Z</updated>
+    <author>
+      <name>Hui Li</name>
+    </author>
+    <author>
+      <name>Jianbo Ma</name>
+    </author>
+    <author>
+      <name>Hui Luo</name>
+    </author>
+    <author>
+      <name>Guanglin Qi</name>
+    </author>
+    <author>
+      <name>Zhixing Wang</name>
+    </author>
+    <author>
+      <name>Haorui Zuo</name>
+    </author>
+    <author>
+      <name>Jianlin Zhang</name>
+    </author>
+    <summary type="text">Unmanned aerial vehicle (UAV)-based RGB-thermal (RGB-T) remote sensing provides complementary visual and thermal information for pedestrian perception under complex aerial observation conditions. However, detecting tiny pedestrians in UAV-based RGB-T imagery remains challenging due to cross-modal spatial heterogeneity, manifested as modality quality imbalance and spatial position misalignment. Existing RGB-T detectors primarily address these challenges at the feature fusion stage, without establishing an effective coupling between feature fusion and object localization, potentially resulting in suboptimal detection performance. To address this limitation, we introduce a Modality Quality-Guided Collaborative Optimization Detector (MQCODet), which extends modality quality from a fusion prior to a localization supervision cue. Specifically, we propose a Dynamic Calibration and Region-Aware Fusion (DCRF) module that progressively refines cross-modal spatial alignment and performs region-aware fusion to generate reliable multi-scale features and a scene-level modality quality prior. We further design an Efficient Contextual Interaction (ECI) encoder to enhance multi-scale feature interaction while preserving fine-grained spatial details. Moreover, we propose a Modality-Aware Adaptive (MAA) loss that incorporates the modality prior and object scale to adaptively balance spatial consistency and geometric similarity for localization supervision. Extensive experiments demonstrate that MQCODet surpasses state-of-the-art methods on two UAV-based RGB-T tiny pedestrian detection benchmarks while achieving real-time inference on the edge platform.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
 </feed>
