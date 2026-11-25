@@ -4,12 +4,163 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-24T10:36:52Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 12 entries</subtitle>
+  <updated>2026-11-25T05:50:17Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 15 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Beyond Static Semantics: Instance-Adaptive Vision-Language Alignment for Building Damage Assessment</title>
+    <link href="http://arxiv.org/abs/2611.32777v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.32777v1</id>
+    <published>2026-11-24T00:00:00Z</published>
+    <updated>2026-11-24T00:00:00Z</updated>
+    <author>
+      <name>Hang Yin</name>
+    </author>
+    <author>
+      <name>Jiepan Li</name>
+    </author>
+    <author>
+      <name>Hongruixuan Chen</name>
+    </author>
+    <author>
+      <name>Guangyi Yang</name>
+    </author>
+    <author>
+      <name>Wei He</name>
+    </author>
+    <summary type="text">Instance-level building damage assessment (IBDA) from bi-temporal remote sensing imagery remains challenging, as the same damage grade may exhibit diverse visual manifestations across individual buildings. Natural language offers explicit descriptions of physical damage, providing complementary semantic cues beyond discrete category labels. However, existing vision--language approaches have not fully addressed how damage semantics should adapt to local bi-temporal evidence and subsequently serve as instance-specific references for severity discrimination. To bridge this gap, we propose LAMIA-IBDA, a unified vision--language framework that progressively grounds shared damage semantics in local observations and individual buildings. Specifically, Adaptive Text-Visual Alignment (ATVA) enables evidence-adaptive semantic interaction by jointly contextualizing multiple damage descriptions and bi-temporal visual features under reliability-aware attention supervision. Dynamic Instance-Prototype Grounding (DIPG) further associates these contextualized semantics with individual building regions to construct instance-adaptive prototypes for fine-grained damage classification. Instance-level description preferences additionally supervise fusion-stage attention, linking semantic adaptation with instance discrimination. Extensive experiments on xBD and BRIGHT demonstrate state-of-the-art performance across optical--optical and optical--SAR settings. The source code is publicly available https://github.com/Cutensil/LAMIA-IBDA.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Cutensil/LAMIA-IBDA"&gt;https://github.com/Cutensil/LAMIA-IBDA&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;CD;VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>On the Capabilities and Limitations of Zero-Shot Open-Vocabulary Cloud Segmentation</title>
+    <link href="http://arxiv.org/abs/2611.32625v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.32625v1</id>
+    <published>2026-11-24T00:00:00Z</published>
+    <updated>2026-11-24T00:00:00Z</updated>
+    <author>
+      <name>Jose Sosa</name>
+    </author>
+    <author>
+      <name>Thomas Gillet</name>
+    </author>
+    <author>
+      <name>Rim Sleimi</name>
+    </author>
+    <author>
+      <name>Albert Abello</name>
+    </author>
+    <summary type="text">Recent advances in vision-language foundation models have enabled open-vocabulary semantic segmentation (OVSS) without task-specific training, offering new opportunities for Earth Observation (EO) applications. However, their capabilities for cloud detection remain insufficiently explored. In this work, we evaluate twelve OVSS approaches across six publicly available EO datasets in a zero-shot setting, i.e., without fine-tuning or adaptation to the target data. We investigate both binary cloud detection and multiclass segmentation, distinguishing between thick clouds, thin clouds, cloud shadows, and background. Our results show differences in performance across models and datasets, with SegEarth-OV3 achieving the highest binary cloud detection performance on four of the six datasets. While several approaches demonstrate promising performance in binary cloud detection, multiclass segmentation remains more challenging, particularly when distinguishing between fine-grained cloud categories. Furthermore, our controlled prompt sensitivity analysis reveals model-dependent responses to alternative textual descriptions, with appearance-oriented prompts benefiting certain approaches while degrading the performance of others. Overall, our findings demonstrate both the potential and current limitations of zero-shot OVSS for cloud detection, establishing a comparative benchmark for future research on generalisable cloud segmentation. Code will be available at: https://github.com/josesosajs/zero-shot-cloudovss.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/josesosajs/zero-shot-cloudovss"&gt;https://github.com/josesosajs/zero-shot-cloudovss&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>RSReasoner: Reformulating and Auditing Geospatial Reasoning Segmentation</title>
+    <link href="http://arxiv.org/abs/2611.32536v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.32536v1</id>
+    <published>2026-11-24T00:00:00Z</published>
+    <updated>2026-11-24T00:00:00Z</updated>
+    <author>
+      <name>Xu Zhang</name>
+    </author>
+    <author>
+      <name>Xinpeng Zhang</name>
+    </author>
+    <author>
+      <name>Yunrui Zou</name>
+    </author>
+    <author>
+      <name>Hongliang Chen</name>
+    </author>
+    <author>
+      <name>Xiaotian Jiang</name>
+    </author>
+    <author>
+      <name>Yang Zheng</name>
+    </author>
+    <author>
+      <name>Kaitai Guo</name>
+    </author>
+    <author>
+      <name>Jimin Liang</name>
+    </author>
+    <summary type="text">Geospatial reasoning segmentation aims to localize geographic targets from language requiring semantic inference beyond direct visual perception. However, existing benchmarks often operationalize reasoning as category omission while overlooking attribute mixing, which neglects explicit-category reasoning, introduces perceptual shortcuts, and fails to precisely evaluate reasoning capability. To diagnose and address these limitations, we first reformulate geospatial reasoning segmentation along category expression (explicit vs. implicit) and attribute nature (perceptual vs. inferential), and audit 90,708 queries across existing benchmarks to reveal that pure explicit-inferential queries account for only 0.61% whereas 31.98% mix both attribute types. We then develop a three-stage pipeline that harnesses OpenStreetMap attributes while mitigating geometric and semantic noise to construct RSReasoner, a large-scale dataset of 106,610 images with 213,220 reasoning queries, and RSReasoner-Bench, a diagnostic benchmark of 75,400 queries across four canonical types and controlled variants. Extensive experiments demonstrate that RSReasoner-Bench precisely evaluates model capability across multiple dimensions while exposing shortcut behaviors, and fine-tuning on RSReasoner boosts both reasoning and cross-type generalization. Our findings offer key insights for future geospatial reasoning research and benchmark design. Datasets and code will be released at https://github.com/Ricardo-XZ/RSReasoner.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Ricardo-XZ/RSReasoner"&gt;https://github.com/Ricardo-XZ/RSReasoner&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>HS-OVSeg: Multi-Granularity Open-Vocabulary Semantic Segmentation in Remote Sensing via Heterogeneous Supervision</title>
+    <link href="http://arxiv.org/abs/2611.32518v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.32518v1</id>
+    <published>2026-11-24T00:00:00Z</published>
+    <updated>2026-11-24T00:00:00Z</updated>
+    <author>
+      <name>Wei Huang</name>
+    </author>
+    <author>
+      <name>Chenying Liu</name>
+    </author>
+    <author>
+      <name>Xudong Kang</name>
+    </author>
+    <author>
+      <name>Xiao Xiang Zhu</name>
+    </author>
+    <summary type="text">Open-vocabulary semantic segmentation (OVSS) enables flexible, text-driven mapping of remote sensing (RS) imagery beyond predefined categories. Despite advances in segmentation foundation models, RS-OVSS remains constrained by the scarcity of large-scale, semantically diverse datasets with accurate pixel-level annotations. Meanwhile, existing RS datasets contain abundant scene- and object-level annotations that offer valuable semantic information but lack precise pixel-wise supervision. To exploit these complementary sources, we propose HS-OVSeg, a unified training framework that integrates heterogeneous scene-, object-, and pixel-level supervision for RS-OVSS. Specifically, we generate pixel-wise pseudo-labels using SAM3, conditioned on scene-level class names and object-level class names with bounding boxes. Combined with ground-truth semantic masks, these pseudo-labels enable joint training across all three annotation granularities through LoRA-based fine-tuning of SAM3. Our unified training spans 20 RS datasets, including 3 scene classification, 4 object detection, and 13 semantic segmentation datasets, with 1,000 images from the 7 classification and detection datasets manually annotated for pixel-level evaluation. HS-OVSeg substantially outperforms existing RS-OVSS models across both the 20 training-source and 5 held-out datasets, demonstrating strong multi-granularity segmentation capabilities under heterogeneous supervision. The code will be publicly available upon publication.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS;OD;SEG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>An Integrated Remote Sensing and Machine Learning Framework for Mapping Hazard Associated with Leached Metals</title>
+    <link href="http://arxiv.org/abs/2611.32505v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.32505v1</id>
+    <published>2026-11-24T00:00:00Z</published>
+    <updated>2026-11-24T00:00:00Z</updated>
+    <author>
+      <name>Salman Karim</name>
+    </author>
+    <author>
+      <name>Bahareh Nojabaei</name>
+    </author>
+    <author>
+      <name>Hosein Foroutan</name>
+    </author>
+    <summary type="text">This study integrates satellite remote sensing, groundwater monitoring, and machine learning to map leached-metal-associated hazards at four coal combustion residual (CCR) sites in Virginia, USA. Constituent-specific groundwater concentrations were expressed as Hazard Quotients (HQ) and combined into a composite Hazard Index (HI). Predictors included Sentinel-2 vegetation indices, biophysical parameters, and spatiotemporal metrics (2019-2025), alongside soil, climate, hydrology, topography, and land cover. Six supervised classifiers were evaluated using spatially separated test blocks, feature-set ablation, and leave-one-site-out testing. Higher HQ coincided with lower vegetation indices in 24 of 33 metal-site combinations near monitoring wells (sign test p = 0.007). Well HI was negatively correlated with CIRE and canopy chlorophyll content at three sites (Spearman rho as low as -0.71). Random Forest achieved within-site HI classification accuracies of 0.768-0.924 and higher-HI-class recall of 0.965-0.999. For 34 constituent-site combinations, HQ classification accuracies ranged from 0.775 to 0.989. Environmental covariates generally contributed more predictive information than vegetation features. Removing vegetation predictors did not reduce performance, and distance to the CCR unit alone performed best at one site. Zero-shot cross-site accuracy declined to 0.734-0.749, no better than the majority-class baseline. These findings demonstrate the potential of integrating satellite observations and environmental data with groundwater measurements for site-calibrated spatial hazard screening. The framework identifies indirect environmental associations rather than directly detecting dissolved metals, highlighting the importance of local calibration and independent validation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Beyond Before-and-After Images: Evaluating Temporal Grounding in a Lightweight VLM for Disaster Assessment</title>
+    <link href="http://arxiv.org/abs/2611.32022v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.32022v1</id>
+    <published>2026-11-24T00:00:00Z</published>
+    <updated>2026-11-24T00:00:00Z</updated>
+    <author>
+      <name>Shubh Garg</name>
+    </author>
+    <author>
+      <name>Pratham Arora</name>
+    </author>
+    <author>
+      <name>Debabrata Ghosh</name>
+    </author>
+    <summary type="text">Bi-temporal satellite imagery is central to disaster assessment: deciding what was damaged requires comparing a pre-event scene with its post-event counterpart. A vision-language model (VLM) can nonetheless appear to answer change questions while relying mainly on the post-event image or on the prompt's temporal framing. We present a controlled diagnostic of temporal grounding and apply it to one lightweight VLM, InternVL3-2B, on DisasterM3: 1,659 optical and SAR image pairs from 41 events and nine disaster types, in event-disjoint partitions, with 9,031 reasoning questions. We compare post-only input, the true pre/post pair, the post image repeated twice, reversed image order, and an unrelated pre-event image. The true pair scores $+0.5$ accuracy points above the repeated-post control (95\% paired bootstrap CI $[-0.2, +1.2]$), and reversing the order changes accuracy by $-0.2$ points ($[-0.8, +0.5]$). Under this protocol we therefore find no measurable benefit from the content of the true pre-event image and little sensitivity to temporal order. The model is not blind to the first image, however: the true pair scores $2.5$ points above a pair whose pre-event image comes from another event ($[+1.6, +3.4]$). State-transition and multi-hop questions remain hard, and optical and SAR inputs show different profiles. We outline temporal scene graphs as a testable next step, not a validated solution, and argue that temporal benchmarks for Earth observation should report whether answers depend on the intended evidence, not only how often they are right.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the CV4EO Workshop&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD;VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>Benchmarking Geospatial Foundation Models under Calibrated Label Errors</title>
     <link href="http://arxiv.org/abs/2611.30215v1" rel="alternate" type="text/html" />
@@ -79,6 +230,40 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
     <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>LimoBench: How Street Smart Are Large Language Models?</title>
+    <link href="http://arxiv.org/abs/2611.31682v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.31682v1</id>
+    <published>2026-11-23T00:00:00Z</published>
+    <updated>2026-11-23T00:00:00Z</updated>
+    <author>
+      <name>Gautam Choudhary</name>
+    </author>
+    <author>
+      <name>Jack Peng</name>
+    </author>
+    <author>
+      <name>Udesh Kumarasinghe</name>
+    </author>
+    <author>
+      <name>Rachel Rafik</name>
+    </author>
+    <author>
+      <name>Yousef Hammad</name>
+    </author>
+    <author>
+      <name>Ahmed Samy</name>
+    </author>
+    <author>
+      <name>Walid G. Aref</name>
+    </author>
+    <summary type="text">Large language models (LLMs) have transformed how humans interact with information, enabling natural-language interfaces across various domains. They are increasingly deployed for geospatial applications including map-based question answering, location-based services, and natural-language interfaces to spatial databases. But are LLMs truly location-aware, able to reliably interpret and precisely answer location queries involving real-world coordinates, points of interest (POIs), and geospatial distances? To answer this concretely, we present LimoBench, a street-level benchmark of 82 natural-language location queries over seven canonical spatial operations: geocoding, reverse geocoding, routing, directionality, range search, $k$-nearest-neighbor search, and spatial join. The queries are grounded in real map data of West Lafayette, Indiana, and are graded by location and semantic complexity. They are designed to probe LLMs' street-level spatial awareness, from simple lookups to multi-step spatial reasoning. We also present Limo, an approach based on the Model Context Protocol (MCP) that enhances the location awareness of LLMs. Limo grounds LLMs in PostGIS-backed spatial data through a compact set of tools. We find that ungrounded models mostly achieve single-digit accuracy (3.1% for GPT-6 Luna) across different spatial operations. In contrast, the same models achieve near-perfect accuracy (99.3% for GPT-6 Luna) when given access to Limo's spatial tools through MCP. Current LLMs thus have limited and unreliable street-level spatial knowledge, while grounding provides accurate answers at modest overhead (+0.2 s latency, 7.7$\times$ tokens, and 2.2$\times$ cost for GPT-6 Luna). We release the benchmark, Limo toolset, and evaluation code to encourage the community to evaluate their own location-aware LLM approaches.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VG&lt;/p&gt;</content>
+    <category term="Artificial Intelligence" />
+    <category term="cs.CL; cs.DB" />
   </entry>
   <entry>
     <title>Tissot indicatrix for location encoders: Characterizing local distortion in learned geographic embeddings</title>
@@ -230,205 +415,6 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/jzdang/RemoteVLPG"&gt;https://github.com/jzdang/RemoteVLPG&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages, 10 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Metadata-Driven AI: An Architectural Pattern for Sustainable Data Analysis with LLMs</title>
-    <link href="http://arxiv.org/abs/2611.24661v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.24661v1</id>
-    <published>2026-11-18T00:00:00Z</published>
-    <updated>2026-11-18T00:00:00Z</updated>
-    <author>
-      <name>Renaud Pawlak</name>
-    </author>
-    <author>
-      <name>Armen Sulejmani</name>
-    </author>
-    <author>
-      <name>Jordi Cabot</name>
-    </author>
-    <summary type="text">Large Language Models (LLMs) let users analyse data in natural language, either by giving the data to the model to read directly or by having the model generate code to process it. Both routes send the data, or fragments of it, to the model; both pay for inference on every run; and the code a model writes to answer a question is usually discarded once the question is answered. We present Metadata-Driven AI, an architectural pattern that keeps the data away from the model and turns each analysis into a reusable program. Only metadata (not the actual data) crosses a one-way inference boundary to the LLM. The program the LLM returns runs next to the data and is kept, so that inference is paid once per analysis rather than once per run. We describe the pattern together with a simple cost model, a measurement of how little information crosses the boundary on public datasets, and a benchmark showing that a small, locally hosted model can serve as the generator. We illustrate the pattern on three applications, each built on a different implementation of it: geospatial photovoltaic prospection over live public APIs, extraction of portfolio positions from bank statements, and a conversational assistant over smart-city dashboards.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 29 pages, 4 tables, 5 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="cs.SE" />
-  </entry>
-  <entry>
-    <title>Benchmarking Reasoning Reliability,Prior_Evidence Contrast,and Spectral Discrimination in Remote-Sensing Geological Image Interpretation</title>
-    <link href="http://arxiv.org/abs/2611.24068v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.24068v1</id>
-    <published>2026-11-18T00:00:00Z</published>
-    <updated>2026-11-18T00:00:00Z</updated>
-    <author>
-      <name>Jun Wang</name>
-    </author>
-    <author>
-      <name>Fengpeng Li</name>
-    </author>
-    <author>
-      <name>Wei Han</name>
-    </author>
-    <author>
-      <name>Yuxuan Li</name>
-    </author>
-    <author>
-      <name>Tianjin Huang</name>
-    </author>
-    <author>
-      <name>Jining Yan</name>
-    </author>
-    <author>
-      <name>Sheng Wang</name>
-    </author>
-    <author>
-      <name>Kan Sun</name>
-    </author>
-    <author>
-      <name>Lizhe Wang</name>
-    </author>
-    <summary type="text">Reliable lithology interpretation requires accurate geological recognition and reasoning grounded in visual evidence. Although Multimodal Large Language Models show promise in remote sensing, their reliability in geological interpretation remains unclear. We introduce HyGeoBench, a diagnostic benchmark of 10,000 questions based on hyperspectral imagery across three dimensions: reasoning reliability, prior_evidence contrast, and spectral discrimination. It covers ten task types, with both multiple-choice and open-ended response formats. Integrating hyperspectral satellite imagery with geological annotations and verified evidence, HyGeoBench examines reasoning errors, conflicts between geological priors and visual evidence, and cross-band inconsistencies. Evaluations reveal limitations in fine-grained recognition and evidence-grounded interpretation. To address these challenges, we propose HyGeoAgent, a tool-augmented framework integrating region observation, text knowledge retrieval, same-band image retrieval, and native PCA analysis through adaptive tool use. Experiments demonstrate consistent improvements over the corresponding base models, improving geological image interpretation across diagnostic dimensions.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>MKA: Evaluating Multimodal Knowledge Agents on end-to-end professional tasks</title>
-    <link href="http://arxiv.org/abs/2611.25228v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.25228v1</id>
-    <published>2026-11-18T00:00:00Z</published>
-    <updated>2026-11-18T00:00:00Z</updated>
-    <author>
-      <name>Anima Singh</name>
-    </author>
-    <author>
-      <name>Suhas Yogin</name>
-    </author>
-    <author>
-      <name>Weicheng Kuo</name>
-    </author>
-    <author>
-      <name>Ivor Rendulic</name>
-    </author>
-    <author>
-      <name>Ivan Jurin</name>
-    </author>
-    <author>
-      <name>Antoine Yang</name>
-    </author>
-    <author>
-      <name>Oran Kelly</name>
-    </author>
-    <author>
-      <name>Rohan Doshi</name>
-    </author>
-    <author>
-      <name>Hammad Ayyubi</name>
-    </author>
-    <author>
-      <name>Ioana Bica</name>
-    </author>
-    <author>
-      <name>Sergi Caelles</name>
-    </author>
-    <author>
-      <name>Matthew Conniff</name>
-    </author>
-    <author>
-      <name>Dan Graur</name>
-    </author>
-    <author>
-      <name>Anastasija Ilić</name>
-    </author>
-    <author>
-      <name>Ahmet Iscen</name>
-    </author>
-    <author>
-      <name>Chao Jia</name>
-    </author>
-    <author>
-      <name>Tomasz Kępa</name>
-    </author>
-    <author>
-      <name>Chunyuan Li</name>
-    </author>
-    <author>
-      <name>Noah Ó Donnaile</name>
-    </author>
-    <author>
-      <name>Filip Pavetic</name>
-    </author>
-    <author>
-      <name>Goran Petrovic</name>
-    </author>
-    <author>
-      <name>Khalid Salama</name>
-    </author>
-    <author>
-      <name>Zhicheng Wang</name>
-    </author>
-    <author>
-      <name>Polina Zablotskaia</name>
-    </author>
-    <author>
-      <name>Yiqian Zhang</name>
-    </author>
-    <author>
-      <name>Ming Zhao</name>
-    </author>
-    <author>
-      <name>Benjamin Caine</name>
-    </author>
-    <author>
-      <name>Mario Lučić</name>
-    </author>
-    <author>
-      <name>Melvin Johnson</name>
-    </author>
-    <author>
-      <name>Radu Soricut</name>
-    </author>
-    <author>
-      <name>Jean-Baptiste Alayrac</name>
-    </author>
-    <summary type="text">We introduce the Multimodal Knowledge Agent (MKA) benchmark, which measures how well autonomous agents perform end-to-end professional knowledge work that depends on visual understanding. Each task requires an agent to extract and combine information from multiple visually dense files, such as CAD blueprints, electronics schematics, radiographs, complex charts and geospatial maps, and to produce a standalone deliverable in .xlsx, .pptx, .pdf, .docx, .html or .png format. Existing benchmarks leave this capability largely untested: removing image-viewing tools leaves Gemini 4 Carbon's score on GDPval unchanged, and single-format evaluations such as GDP.pdf and GDP.xlsx do not require reasoning across files or modalities. MKA contains 200 tasks across 10 economic sectors. Deliverables are graded against expert-weighted rubrics by a sandboxed agentic autorater that agrees with human domain experts on 96.2% of criterion judgments in our expert-graded study (Cohen's $κ= 0.91$), scored by weighted satisfaction rate (WSR) overall and on frontier criteria unsaturated by prior-generation models (Climb-WSR). Across the frontier models we evaluate (Gemini 4 Carbon, Claude Fable 5.2, Claude Opus 5.5, and GPT-6 Astra), Claude Fable 5.2 (56.6% Climb-WSR, 73.3% Overall WSR) and Gemini 4 Carbon (54.3% Climb-WSR, 71.9% Overall WSR) achieve the highest scores, while Carbon uses $5.7\times$ fewer tokens. Even for the strongest models, Climb-WSR remains below 57%, leaving substantial headroom for multimodal agents.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Artificial Intelligence" />
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>ROSE-SAM3: Response-Oriented Prompt Selection for Open-Vocabulary Remote Sensing Segmentation</title>
-    <link href="http://arxiv.org/abs/2611.28112v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.28112v1</id>
-    <published>2026-11-18T00:00:00Z</published>
-    <updated>2026-11-18T00:00:00Z</updated>
-    <author>
-      <name>Yanghui Song</name>
-    </author>
-    <author>
-      <name>Chengfu Yang</name>
-    </author>
-    <author>
-      <name>Yongpeng Wen</name>
-    </author>
-    <author>
-      <name>Zhanxuan Hu</name>
-    </author>
-    <author>
-      <name>Wei Lu</name>
-    </author>
-    <author>
-      <name>Qi Ming</name>
-    </author>
-    <author>
-      <name>Nanqing Liu</name>
-    </author>
-    <author>
-      <name>Heng-Chao Li</name>
-    </author>
-    <summary type="text">In open-vocabulary semantic segmentation (OVSS) of remote-sensing imagery, class-name prompts can miss objects with varied appearances, while richer descriptions can activate competing classes. We propose Response-Oriented Prompt Selection for SAM 3 (ROSE-SAM3), a training-free framework that selects descriptions using frozen SAM 3 responses on unlabeled target-domain images. We screen candidate descriptions for coverage beyond the native prompts while protecting reliable native class responses, retaining candidates that pass these checks on at least four of five image folds. An offline directed acyclic graph (DAG) search then evaluates candidate combinations and builds a compact PromptBank for each class. Each bank retains the native prompts and adds selected descriptions, which we call residual prompts. At inference, the bank is fixed, and Semantic-Instance Cooperative Head (SICH) uses instance evidence to refine semantic responses before assigning pixel labels. We also introduce RS-OVSS-C to evaluate robustness under six image corruption families across eight remote-sensing datasets, preserving their class vocabularies and reference labels. ROSE-SAM3 achieves 57.3% mean mIoU across eight clean benchmarks and 54.7% on RS-OVSS-C, achieving state-of-the-art performance among training-free methods. The code is publicly available at https://github.com/YanghuiSong/ROSE-SAM3.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/YanghuiSong/ROSE-SAM3"&gt;https://github.com/YanghuiSong/ROSE-SAM3&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13 pages, 11 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>

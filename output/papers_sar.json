@@ -8586,5 +8586,43 @@
     "_added_date": "2026-11-24",
     "Category": "Method",
     "_tasks": ""
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "",
+    "Date": "2026-11-24",
+    "Month": 11,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Beyond Static Semantics: Instance-Adaptive Vision-Language Alignment for Building Damage Assessment",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2611.32777v1",
+    "Abstract": "Instance-level building damage assessment (IBDA) from bi-temporal remote sensing imagery remains challenging, as the same damage grade may exhibit diverse visual manifestations across individual buildings. Natural language offers explicit descriptions of physical damage, providing complementary semantic cues beyond discrete category labels. However, existing vision--language approaches have not fully addressed how damage semantics should adapt to local bi-temporal evidence and subsequently serve as instance-specific references for severity discrimination. To bridge this gap, we propose LAMIA-IBDA, a unified vision--language framework that progressively grounds shared damage semantics in local observations and individual buildings. Specifically, Adaptive Text-Visual Alignment (ATVA) enables evidence-adaptive semantic interaction by jointly contextualizing multiple damage descriptions and bi-temporal visual features under reliability-aware attention supervision. Dynamic Instance-Prototype Grounding (DIPG) further associates these contextualized semantics with individual building regions to construct instance-adaptive prototypes for fine-grained damage classification. Instance-level description preferences additionally supervise fusion-stage attention, linking semantic adaptation with instance discrimination. Extensive experiments on xBD and BRIGHT demonstrate state-of-the-art performance across optical--optical and optical--SAR settings. The source code is publicly available https://github.com/Cutensil/LAMIA-IBDA.",
+    "code": "https://github.com/Cutensil/LAMIA-IBDA",
+    "Publication": "",
+    "BibTex": "@article{yin2026beyond,\n  title={Beyond Static Semantics: Instance-Adaptive Vision-Language Alignment for Building Damage Assessment},\n  author={Hang Yin and Jiepan Li and Hongruixuan Chen and Guangyi Yang and Wei He},\n  journal={arXiv preprint arXiv:2611.32777v1},\n  year={2026},\n  url={http://arxiv.org/abs/2611.32777v1}\n}",
+    "Authors": "Hang Yin, Jiepan Li, Hongruixuan Chen, Guangyi Yang, Wei He",
+    "_added_date": "2026-11-25",
+    "Category": "Method",
+    "_tasks": "CLS;CD;VG"
+  },
+  {
+    "Type": "Computer Vision",
+    "Subtype": "Artificial Intelligence",
+    "Date": "2026-11-24",
+    "Month": 11,
+    "Year": 2026,
+    "Institute": "",
+    "Title": "Beyond Before-and-After Images: Evaluating Temporal Grounding in a Lightweight VLM for Disaster Assessment",
+    "abbr.": "",
+    "Paper_link": "http://arxiv.org/abs/2611.32022v1",
+    "Abstract": "Bi-temporal satellite imagery is central to disaster assessment: deciding what was damaged requires comparing a pre-event scene with its post-event counterpart. A vision-language model (VLM) can nonetheless appear to answer change questions while relying mainly on the post-event image or on the prompt's temporal framing. We present a controlled diagnostic of temporal grounding and apply it to one lightweight VLM, InternVL3-2B, on DisasterM3: 1,659 optical and SAR image pairs from 41 events and nine disaster types, in event-disjoint partitions, with 9,031 reasoning questions. We compare post-only input, the true pre/post pair, the post image repeated twice, reversed image order, and an unrelated pre-event image. The true pair scores $+0.5$ accuracy points above the repeated-post control (95\\% paired bootstrap CI $[-0.2, +1.2]$), and reversing the order changes accuracy by $-0.2$ points ($[-0.8, +0.5]$). Under this protocol we therefore find no measurable benefit from the content of the true pre-event image and little sensitivity to temporal order. The model is not blind to the first image, however: the true pair scores $2.5$ points above a pair whose pre-event image comes from another event ($[+1.6, +3.4]$). State-transition and multi-hop questions remain hard, and optical and SAR inputs show different profiles. We outline temporal scene graphs as a testable next step, not a validated solution, and argue that temporal benchmarks for Earth observation should report whether answers depend on the intended evidence, not only how often they are right.",
+    "code": "",
+    "Publication": "the CV4EO Workshop",
+    "BibTex": "@article{garg2026beyond,\n  title={Beyond Before-and-After Images: Evaluating Temporal Grounding in a Lightweight VLM for Disaster Assessment},\n  author={Shubh Garg and Pratham Arora and Debabrata Ghosh},\n  journal={arXiv preprint arXiv:2611.32022v1},\n  year={2026},\n  url={http://arxiv.org/abs/2611.32022v1}\n}",
+    "Authors": "Shubh Garg, Pratham Arora, Debabrata Ghosh",
+    "_added_date": "2026-11-25",
+    "Category": "Method",
+    "_tasks": "CD;VG"
   }
 ]

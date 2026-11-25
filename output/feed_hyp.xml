@@ -4,12 +4,32 @@
   <id>https://rspaper.top/output/feed_hyp.xml</id>
   <link href="https://rspaper.top/output/feed_hyp.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-24T10:36:52Z</updated>
+  <updated>2026-11-25T05:50:17Z</updated>
   <subtitle>Latest remote sensing papers (last 7 days) — 4 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>An Integrated Remote Sensing and Machine Learning Framework for Mapping Hazard Associated with Leached Metals</title>
+    <link href="http://arxiv.org/abs/2611.32505v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.32505v1</id>
+    <published>2026-11-24T00:00:00Z</published>
+    <updated>2026-11-24T00:00:00Z</updated>
+    <author>
+      <name>Salman Karim</name>
+    </author>
+    <author>
+      <name>Bahareh Nojabaei</name>
+    </author>
+    <author>
+      <name>Hosein Foroutan</name>
+    </author>
+    <summary type="text">This study integrates satellite remote sensing, groundwater monitoring, and machine learning to map leached-metal-associated hazards at four coal combustion residual (CCR) sites in Virginia, USA. Constituent-specific groundwater concentrations were expressed as Hazard Quotients (HQ) and combined into a composite Hazard Index (HI). Predictors included Sentinel-2 vegetation indices, biophysical parameters, and spatiotemporal metrics (2019-2025), alongside soil, climate, hydrology, topography, and land cover. Six supervised classifiers were evaluated using spatially separated test blocks, feature-set ablation, and leave-one-site-out testing. Higher HQ coincided with lower vegetation indices in 24 of 33 metal-site combinations near monitoring wells (sign test p = 0.007). Well HI was negatively correlated with CIRE and canopy chlorophyll content at three sites (Spearman rho as low as -0.71). Random Forest achieved within-site HI classification accuracies of 0.768-0.924 and higher-HI-class recall of 0.965-0.999. For 34 constituent-site combinations, HQ classification accuracies ranged from 0.775 to 0.989. Environmental covariates generally contributed more predictive information than vegetation features. Removing vegetation predictors did not reduce performance, and distance to the CCR unit alone performed best at one site. Zero-shot cross-site accuracy declined to 0.734-0.749, no better than the majority-class baseline. These findings demonstrate the potential of integrating satellite observations and environmental data with groundwater measurements for site-calibrated spatial hazard screening. The framework identifies indirect environmental associations rather than directly detecting dissolved metals, highlighting the importance of local calibration and independent validation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Benchmarking Geospatial Foundation Models under Calibrated Label Errors</title>
     <link href="http://arxiv.org/abs/2611.30215v1" rel="alternate" type="text/html" />
@@ -85,44 +105,6 @@
     <summary type="text">Open-vocabulary semantic segmentation enables the recognition of arbitrary categories through natural language descriptions and has recently been extended from natural images to remote sensing. However, existing approaches primarily focus on three-channel optical imagery or limited-band multispectral data, while pretrained vision-language models (VLMs) struggle to directly exploit the rich spectral information of hyperspectral imagery (HSI) without additional adaptation. More importantly, different land-cover categories rely on distinct spectral cues, which may be weakened by uniform fusion. To address these challenges, we propose SpectralRoute, a training-free framework for open-vocabulary hyperspectral segmentation. Specifically, we construct complementary spectral views from HSI and enrich category descriptions with external spectral knowledge, enabling frozen vision-language models to extract diverse spectral-semantic responses. We then introduce a class-adaptive spectral routing mechanism that selectively amplifies discriminative spectral responses for each category, overcoming the limitations of uniform fusion. Furthermore, physical spectral priors are incorporated to refine predictions for visually similar land-cover categories. Experiments on three hyperspectral benchmarks demonstrate that SpectralRoute consistently outperforms state-of-the-art methods without additional training.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; SEG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Benchmarking Reasoning Reliability,Prior_Evidence Contrast,and Spectral Discrimination in Remote-Sensing Geological Image Interpretation</title>
-    <link href="http://arxiv.org/abs/2611.24068v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.24068v1</id>
-    <published>2026-11-18T00:00:00Z</published>
-    <updated>2026-11-18T00:00:00Z</updated>
-    <author>
-      <name>Jun Wang</name>
-    </author>
-    <author>
-      <name>Fengpeng Li</name>
-    </author>
-    <author>
-      <name>Wei Han</name>
-    </author>
-    <author>
-      <name>Yuxuan Li</name>
-    </author>
-    <author>
-      <name>Tianjin Huang</name>
-    </author>
-    <author>
-      <name>Jining Yan</name>
-    </author>
-    <author>
-      <name>Sheng Wang</name>
-    </author>
-    <author>
-      <name>Kan Sun</name>
-    </author>
-    <author>
-      <name>Lizhe Wang</name>
-    </author>
-    <summary type="text">Reliable lithology interpretation requires accurate geological recognition and reasoning grounded in visual evidence. Although Multimodal Large Language Models show promise in remote sensing, their reliability in geological interpretation remains unclear. We introduce HyGeoBench, a diagnostic benchmark of 10,000 questions based on hyperspectral imagery across three dimensions: reasoning reliability, prior_evidence contrast, and spectral discrimination. It covers ten task types, with both multiple-choice and open-ended response formats. Integrating hyperspectral satellite imagery with geological annotations and verified evidence, HyGeoBench examines reasoning errors, conflicts between geological priors and visual evidence, and cross-band inconsistencies. Evaluations reveal limitations in fine-grained recognition and evidence-grounded interpretation. To address these challenges, we propose HyGeoAgent, a tool-augmented framework integrating region observation, text knowledge retrieval, same-band image retrieval, and native PCA analysis through adaptive tool use. Experiments demonstrate consistent improvements over the corresponding base models, improving geological image interpretation across diagnostic dimensions.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; ITR&lt;/p&gt;</content>
     <category term="Computer Vision" />
   </entry>
 </feed>
