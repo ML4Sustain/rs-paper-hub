@@ -4,12 +4,168 @@
   <id>https://rspaper.top/output/feed_vlm.xml</id>
   <link href="https://rspaper.top/output/feed_vlm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-25T09:27:02Z</updated>
-  <subtitle>Latest remote sensing papers (last 7 days) — 15 entries</subtitle>
+  <updated>2026-11-26T05:40:47Z</updated>
+  <subtitle>Latest remote sensing papers (last 7 days) — 19 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Enhancing Maritime Domain Awareness using Latent Space Representations</title>
+    <link href="http://arxiv.org/abs/2611.34899v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.34899v1</id>
+    <published>2026-11-25T00:00:00Z</published>
+    <updated>2026-11-25T00:00:00Z</updated>
+    <author>
+      <name>Rikard Vinge</name>
+    </author>
+    <author>
+      <name>Miguel A. Belenguer-Plomer</name>
+    </author>
+    <author>
+      <name>Isabelle Wittmann</name>
+    </author>
+    <author>
+      <name>Octavian Dumitru</name>
+    </author>
+    <author>
+      <name>Michele Lazzarini</name>
+    </author>
+    <author>
+      <name>Sergio Albani</name>
+    </author>
+    <author>
+      <name>Conrad M Albrecht</name>
+    </author>
+    <summary type="text">This work presents a novel application of Earth Observation (EO) embeddings for Maritime Domain Awareness (MDA) from the perspective of the geospatial foundation model TerraMind. By operating directly on compressed latent-space representations rather than on the original Sentinel-1 imagery, this approach directly addresses the data gravity bottleneck that increasingly constrains operational EO processing, in line with the objectives of the Embed2Scale project. In particular, linear and non-linear probing of compressed embeddings, latent space representations of synthetic aperture radar (SAR) imagery, is used to detect, localise, and characterise vessels from Sentinel-1 GRD images. Vessel detection achieves a ROC-AUC of 0.95, while vessel localisation has a median error of around 300 m for vessels longer than 100 m, and vessel AIS type-code classification achieves 62% accuracy for the majority classes. The latter, however, is highly correlated with vessel length. These results reveal both the potential and current limitations of Geospatial Foundation Models (GeoFMs) when applied to fine-grained MDA understanding in real-world scenarios.   Additionally, a new maritime remote sensing dataset is released, pairing about 2,000 Sentinel-1 images with temporally aligned AIS signals from commercial vessels. Through manual inspection, each candidate sample was verified for bounding-box quality and for consistency between the AIS-reported vessel length and the observed vessel extent, cross-checking vessel identity and location against publicly available vessel records and, where available, photographs. The dataset was made ready for use with the NeuCo-Bench neural compression benchmark framework, publicly available on HuggingFace through https://huggingface.co/datasets/embed2scale/S1-single-ship-downstream .</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://huggingface.co/datasets/embed2scale/S1-single-ship-downstream"&gt;https://huggingface.co/datasets/embed2scale/S1-single-ship-downstream&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; SPIE Conference Proceedings&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence; Machine Learning" />
+  </entry>
+  <entry>
+    <title>Seeing the Right Context: Grounded On-Policy Distillation for Remote Sensing</title>
+    <link href="http://arxiv.org/abs/2611.34700v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.34700v1</id>
+    <published>2026-11-25T00:00:00Z</published>
+    <updated>2026-11-25T00:00:00Z</updated>
+    <author>
+      <name>Yichang Luo</name>
+    </author>
+    <author>
+      <name>Hourun Zhu</name>
+    </author>
+    <author>
+      <name>Shixiong Liu</name>
+    </author>
+    <author>
+      <name>Kan Wei</name>
+    </author>
+    <author>
+      <name>Shi Liang</name>
+    </author>
+    <author>
+      <name>Yidan Zhang</name>
+    </author>
+    <author>
+      <name>Lei Wang</name>
+    </author>
+    <summary type="text">Remote sensing scene understanding requires multimodal large language models (MLLMs) to interpret queried targets in relation to nearby objects and surrounding structures, which serve as spatial references or define the scope of an answer. However, standard answers and bounding boxes often leave these contextual relationships implicit. Thus, we construct GeoContext-5K to make them explicit in 5,394 training pairs for visual question answering (VQA), with spatial cues, visual facts, and supporting regions. GeOPD uses these annotations for on-policy distillation, guiding a frozen teacher with region marks on the full image and a visual fact while preserving surrounding spatial references. It prioritizes teacher corrections that agree with the shift in the student's next token distribution when evidence is restored. A complementary objective weights the contrast between the student's scores on the two views by how much masking lowers the teacher's log probability for the same sampled token. Experiments on five remote sensing VQA benchmarks show that GeOPD outperforms the evaluated open-source MLLMs and matched post-training baselines, improving over the 4B and 9B base models by 5.81 and 2.97 percentage points on average. The dataset and code will be publicly released at https://github.com/YeeCharm/GeOPD.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/YeeCharm/GeOPD"&gt;https://github.com/YeeCharm/GeOPD&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 20 pages, including supplementary material&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Analemma $\infty$: A Temporal Benchmark for Geospatial Foundation Models</title>
+    <link href="http://arxiv.org/abs/2611.34240v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.34240v1</id>
+    <published>2026-11-25T00:00:00Z</published>
+    <updated>2026-11-25T00:00:00Z</updated>
+    <author>
+      <name>Alex López-Cifuentes</name>
+    </author>
+    <author>
+      <name>Laura Martínez-Ferrer</name>
+    </author>
+    <author>
+      <name>Juan Ignacio Bravo Pérez-Villar</name>
+    </author>
+    <summary type="text">Satellite time series capture how land surfaces change over time. Pixel-wise temporal foundation models read a year of satellite observations per pixel, yet public benchmarks lack a temporal axis or subsample it to a few dates. We introduce Analemma, a temporal benchmark of six datasets that carry every 10 and 20 m Sentinel-2 band and a time series spanning a growing season, completed where their releases omit geometry, dates, or cloud masks. One frozen-encoder protocol evaluates all models across label ratios and three seeds, with two baselines without pretraining. The TESSERA model ranks first overall. A from-scratch model on monthly composites outranks every foundation model except OlmoEarth v1.3-Base, suggesting that temporal input explains most of the performance. Three evaluation choices left unstated by the source publications each shift TESSERA v1 by 7.6 to 18.6 mIoU, against top-two gaps of 0.6 to 2.8. Data, harness and leaderboard will be publicly released soon.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 30 pages, 13 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>geo-eval-harness: An Evaluation Harness for Geospatial Foundation Models</title>
+    <link href="http://arxiv.org/abs/2611.33990v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.33990v1</id>
+    <published>2026-11-25T00:00:00Z</published>
+    <updated>2026-11-25T00:00:00Z</updated>
+    <author>
+      <name>Nils Lehmann</name>
+    </author>
+    <author>
+      <name>Caleb Robinson</name>
+    </author>
+    <author>
+      <name>Isaac Corley</name>
+    </author>
+    <author>
+      <name>Jennifer Marcus</name>
+    </author>
+    <author>
+      <name>Inbal Becker-Reshef</name>
+    </author>
+    <author>
+      <name>Juan M. Lavista Ferres</name>
+    </author>
+    <author>
+      <name>Hannah Kerner</name>
+    </author>
+    <summary type="text">Geospatial foundation model (GFM) research papers are plagued by inconsistent evaluation settings (e.g., different pre-processing and probes), making it difficult to separate performance from evaluation choices. We propose geo-eval-harness}, an open-source framework for controlled model comparisons. We use this harness to evaluate 100 GFMs and general vision models on 6 classification and 14 segmentation datasets, using multiple probes on frozen or low-rank-adapted encoders. We show that under controlled evaluation, general vision backbones are competitive on RGB classification and high-resolution segmentation, but GFMs shine on multispectral tasks. When we compare any two of the top-ten classification models on a single dataset, their 95% confidence intervals overlap 73% of the time. We show that bigger models are not always better: inference FLOPs correlate weakly with segmentation performance. Moreover, translating inference compute into large-area mapping workloads shows how small accuracy differences have outsized deployment cost differences: with frozen encoders on SpaceNet2, a 0.9-point mIoU difference corresponds to 5.9x the compute and days of additional projected GPU time. Our findings stress the importance of comparing models under explicit and fixed settings, and reporting uncertainty and deployment compute alongside accuracy. Our geo-eval-harness makes controlled experiments easy, fast, and fully reproducible. We release the code, configurations, and results at https://github.com/torchgeo/geo-eval-harness.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/torchgeo/geo-eval-harness"&gt;https://github.com/torchgeo/geo-eval-harness&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CLS&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
+  <entry>
+    <title>Bridging Transferability and Discriminability via Positive-Unlabeled Domain Adaptation for Building Damage Mapping Across Disaster Events</title>
+    <link href="http://arxiv.org/abs/2611.33790v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.33790v1</id>
+    <published>2026-11-25T00:00:00Z</published>
+    <updated>2026-11-25T00:00:00Z</updated>
+    <author>
+      <name>Qirui Wang</name>
+    </author>
+    <author>
+      <name>Hengwei Zhao</name>
+    </author>
+    <author>
+      <name>Xiaoshu Yang</name>
+    </author>
+    <author>
+      <name>Jingtao Li</name>
+    </author>
+    <author>
+      <name>Bo Li</name>
+    </author>
+    <author>
+      <name>Sorin Popescu</name>
+    </author>
+    <author>
+      <name>Rusty Feagin</name>
+    </author>
+    <author>
+      <name>Wenzhe Jiao</name>
+    </author>
+    <summary type="text">Mapping the damage to buildings following natural and human-caused disasters is essential for disaster response and humanitarian assistance. However, differences in hazard types, geographic environments, building characteristics, and imaging conditions cause cross-event distribution shifts that limit the generalization of deep learning models to new disaster events, even for geospatial foundation models (GFMs) pretrained on extensive Earth observation data. Unsupervised domain adaptation (UDA) can mitigate these shifts, but adaptation remains challenging when damage-proportion and damage-appearance shifts coexist and interact. We identify enhancing target-domain discriminability as key to addressing this challenge. To this end, inspired by positive-unlabeled (PU) learning, we introduce positive-unlabeled domain adaptation, a paradigm that incorporates PU weak supervision to enhance target-domain discriminability, requiring only a few labeled damaged buildings in the target domain. Building upon this straightforward intuition, we develop Positive-ANchored Domain Adaptation (PANDA), comprising two complementary and mutually reinforcing components: Pairwise Alignment with Intra-class Robustness (PAIR) for discriminative representation learning and Refine Gate and Verifier (RAV) for supervision refinement. On a global-scale multi-disaster benchmark, PANDA generally outperforms representative domain adaptation and PU learning methods. Results on the 2025 Los Angeles wildfires show its effectiveness in new disaster scenarios with few labeled damaged buildings. Further experiments demonstrate the potential of integrating PANDA with GFMs for cross-event adaptation. These findings highlight PANDA's practical potential for rapid, reliable, and cross-event building damage mapping.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+  </entry>
   <entry>
     <title>Beyond Static Semantics: Instance-Adaptive Vision-Language Alignment for Building Damage Assessment</title>
     <link href="http://arxiv.org/abs/2611.32777v1" rel="alternate" type="text/html" />
@@ -158,6 +314,33 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the CV4EO Workshop&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; CD;VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Benchmarking Segmentation Models for Scalable Mangrove Mapping with Sentinel-1/2 Imagery</title>
+    <link href="http://arxiv.org/abs/2611.33369v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.33369v1</id>
+    <published>2026-11-24T00:00:00Z</published>
+    <updated>2026-11-24T00:00:00Z</updated>
+    <author>
+      <name>Damba Koné</name>
+    </author>
+    <author>
+      <name>Sara Mobsite</name>
+    </author>
+    <author>
+      <name>Joris Guérin</name>
+    </author>
+    <author>
+      <name>Élodie Blanchard</name>
+    </author>
+    <author>
+      <name>Thibault Catry</name>
+    </author>
+    <summary type="text">Mangroves are dynamic coastal ecosystems that contribute to carbon storage, coastal protection and biodiversity conservation, but are vulnerable to climate change. Very-high-resolution imagery such as Pléiades enables detailed mangrove mapping but it is costly and have a low revisit rate. Large-scale monitoring requires free and regularly available data such as Sentinel-1 and Sentinel-2 but their spatial resolution poses challenges for detailed mangrove mapping. In this work, we benchmark deep learning approaches for mangrove mapping from Sentinel-1 radar and Sentinel-2 optical imagery using reference maps derived from very-high-resolution Pléiades imagery. We compare four segmentation configurations based on CROMA and BigEarthNet-pretrained ResNet50 representations with different segmentation decoders. We construct a mangrove mapping dataset covering French Guiana, Suriname, and Amapá. CROMA + UPerNet achieves the best performance, with an F1-score of 0.9218 and an IoU of 0.8549. These results highlight the potential of pretrained multimodal Earth observation representations and open Sentinel data to support mangrove resilience through scalable monitoring.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the Tackling Climate Change with Machine Learning (TCCML) Workshop at NeurIPS 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence" />
   </entry>
@@ -365,56 +548,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
     <category term="Image and Video Processing" />
     <category term="Computer Vision; Machine Learning" />
-  </entry>
-  <entry>
-    <title>From Geographic Memory to Spatial Generalization in Large Language Models</title>
-    <link href="http://arxiv.org/abs/2611.25703v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.25703v1</id>
-    <published>2026-11-19T00:00:00Z</published>
-    <updated>2026-11-19T00:00:00Z</updated>
-    <author>
-      <name>Chen Chu</name>
-    </author>
-    <author>
-      <name>Zhaonan Wang</name>
-    </author>
-    <author>
-      <name>Cyrus Shahabi</name>
-    </author>
-    <author>
-      <name>Hengcai Zhang</name>
-    </author>
-    <author>
-      <name>Feng Lu</name>
-    </author>
-    <summary type="text">Large language models (LLMs) can associate places with geographic descriptions, but recovering an observed association does not establish an ability to generalize across geographic space. We distinguish geospatial memory, the recovery of location--description associations observed during training, from spatial generalization, the prediction of descriptions for locations in unobserved regions. We investigate whether continuous location representations improve this generalization and encourage geographic knowledge to become spatially organized within an LLM. We frame this organization as a latent spatial field: a learned mapping from locations to descriptions connected through spatial dependencies. Building on a continuous spatial encoder, we project location representations into the model's embedding space and supply them as spatial tokens. We evaluate the resulting models on two newly curated geo-text benchmarks for Los Angeles and London using two complementary assessments. Geospatial captioning tests both memory and spatial generalization by generating descriptions at observed locations and at locations beyond the spatial coverage of the training observations. A separate geospatial grounding model tests whether generated location--description pairs provide useful additional supervision for mapping text to geographic space. Across multiple LLM families, continuous location representations improve captioning at unobserved locations relative to textual coordinates, while their generated descriptions yield modest but consistent improvements in downstream grounding. Layer-wise probing and representation clustering provide additional evidence consistent with spatially organized geographic representations. Together, these findings show the value of evaluating spatial generalization separately from memory and of incorporating continuous spatial representations into language models.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;VG&lt;/p&gt;</content>
-    <category term="cs.CL" />
-    <category term="Artificial Intelligence; Machine Learning" />
-  </entry>
-  <entry>
-    <title>RemoteVLPG: How to Obtain a Specific VLM for Language-Guided Path Generation on Remote Sensing Images?</title>
-    <link href="http://arxiv.org/abs/2611.25458v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.25458v1</id>
-    <published>2026-11-19T00:00:00Z</published>
-    <updated>2026-11-19T00:00:00Z</updated>
-    <author>
-      <name>Junzhe Dang</name>
-    </author>
-    <author>
-      <name>Mengmeng Zhang</name>
-    </author>
-    <author>
-      <name>Yuxiang Zhang</name>
-    </author>
-    <author>
-      <name>Wei Li</name>
-    </author>
-    <summary type="text">We study how to obtain a task-specific Vision-Language Model (VLM) for language-guided path generation between start and end points on remote sensing images. We explore this question from three aspects. First, we implement three widely used architectural approaches and compare their performance. Second, we design a scalable method for constructing pre-training data and build an effective pre-training dataset with a degree of diversity. Methods trained on this dataset achieve promising zero-shot performance. Third, we construct three benchmarks that support stratified evaluation and design three metrics for path generation. We investigate this problem through extensive experiments. The results show that the zero-shot performance of methods trained on the constructed pre-training dataset can exceed that of some advanced commercial VLMs. Code and Dataset can be available at https://github.com/jzdang/RemoteVLPG</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/jzdang/RemoteVLPG"&gt;https://github.com/jzdang/RemoteVLPG&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages, 10 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
   </entry>
 </feed>
